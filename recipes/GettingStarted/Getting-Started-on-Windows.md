@@ -23,7 +23,7 @@ Every prerequisite is installed by Wave Engine installer, detecting whether it i
 
 # Install Wave Engine
 
-Visit the official [Wave Engine](https://waveengine.net/) web-site, click on Download Wave Engine button (it will redirect to the [Download](http://waveengine.net/Download) page) and finally Download Installer one. Please assure the platform below is Windows.
+Visit the official [Wave Engine](https://waveengine.net/) web-site, click on Download Wave Engine button (it will redirect to the [Download](http://waveengine.net/Downloads) page) and finally Download Installer one. Please assure the platform below is Windows.
 
 ![Download Wave Windows](images/DownloadWaveIntallerWindows.PNG)
 
@@ -36,16 +36,9 @@ Once the setup ends, you will find a Wave Visual Editor shortcut on your Desktop
 ![Wave Editor Short cut](images/WaveEditorShortCut.PNG)
 
 # Create a Wave Engine Account
-
 The first time you open Wave Visual Editor you will be asked for an user account.
 
-![Wave login](images/WindowsLogin.PNG)
-
-If you click on Create a new Account, the browser will take you to the [join form](http://waveengine.net/account/register).
-
-![Register Wave](images/RegisterNewAccount.PNG)
-
-Please, fill such in and click on Submit. You should immediately receive a confirmation e-mail. Congratulations! You can now login into the Editor and proceed with your first application.
+[Create a Wave Engine Account](Create-Account.md).
 
 # Your First Application
 
