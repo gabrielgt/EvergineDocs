@@ -10,7 +10,7 @@ Every [Drawable2D](xref:WaveEngine.Framework.Graphics.Drawable2D) and [Drawable3
 
 ### With Wave Visual Editor
 
-Since Wave Visual Editor supports seeing in real time the current scene rendered, it also supplies diagnostic info, with culling counters included. Follow [[Activate diagnostics mode]] to achieve this. The "Culled" label which will be printed on the top left corner of the Viewport will do just that.
+Since Wave Visual Editor supports seeing in real time the current scene rendered, it also supplies diagnostic info, with culling counters included. Follow [Activate diagnostics mode](http://doc.waveengine.net/recipes/Performance/Activate-diagnostics-mode.html) to achieve this. The "Culled" label which will be printed on the top left corner of the Viewport will do just that.
 
 ### With Visual Studio/Xamarin Studio
 
