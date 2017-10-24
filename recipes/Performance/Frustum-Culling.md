@@ -4,7 +4,7 @@ Frustum Culling is the technique which does not draw those things which are out 
 
 ## Hands-on
 
-Every [Drawable2D](xref:Wave​Engine.​Framework.​Graphics.Drawable2D) and [Drawable3D](xref:Wave​Engine.​Framework.​Graphics.Drawable3D) component supports Frustum Culling technique through the [CullingEnabled](xref:Wave​Engine.​Framework.​Graphics.Drawable2D.CullingEnabled) and [FrustumCullingEnabled](xref:Wave​Engine.​Framework.​Graphics.Drawable3D.FrustumCullingEnabled) properties, respectively, which are `true` by default. In order to Wave Engine detect whether an object is inside or outside the scope of the camera, such needs to pack a collider. Please refer to [Detect 3d collisions](../Graphics3D/Detect-3D-Collisions.md) and [Detect 2D collisions](../Graphics2D/Detect-2d-collisions.md) which focus on how to work with colliders -this will not be covered here.
+Every [Drawable2D](xref:WaveEngine.Framework.Graphics.Drawable2D) and [Drawable3D](xref:WaveEngine.Framework.Graphics.Drawable3D) component supports Frustum Culling technique through the [CullingEnabled](xref:WaveEngine.Framework.Graphics.Drawable2D.CullingEnabled) and [FrustumCullingEnabled](xref:WaveEngine.Framework.Graphics.Drawable3D.FrustumCullingEnabled) properties, respectively, which are `true` by default. In order to Wave Engine detect whether an object is inside or outside the scope of the camera, such needs to pack a collider. Please refer to [Detect 3d collisions](../Graphics3D/Detect-3D-Collisions.md) and [Detect 2D collisions](../Graphics2D/Detect-2d-collisions.md) which focus on how to work with colliders -this will not be covered here.
 
 [FrustumCulling](https://github.com/WaveEngine/Samples/tree/master/Performance/FrustumCulling) sample graphically shows entities dis/appearing on demand, with a mesh representing the frustum culling area.
 
@@ -14,7 +14,7 @@ Since Wave Visual Editor supports seeing in real time the current scene rendered
 
 ### With Visual Studio/Xamarin Studio
 
-This technique can be disabled globally also through [RenderManager](xref:Wave​Engine.​Framework.​Managers.RenderManager)'s [FrustumCullingEnabled](xref:Wave​Engine.​Framework.​Managers.RenderManager.FrustumCullingEnabled) property, setting it as `false`.
+This technique can be disabled globally also through [RenderManager](xref:WaveEngine.Framework.Managers.RenderManager)'s [FrustumCullingEnabled](xref:WaveEngine.Framework.Managers.RenderManager.FrustumCullingEnabled) property, setting it as `false`.
 
 Further, this recipe does not involve source code which would require Visual Studio/Xamarin Studio.
 
