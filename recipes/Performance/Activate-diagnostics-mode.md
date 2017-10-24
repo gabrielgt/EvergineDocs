@@ -18,10 +18,16 @@ You just need create an empty new project in **Visual Wave Editor**, and switch 
 To activate the diagnostic mode you need to add this line of code:
 
 ```C#
-WaveServices.ScreenContextManager.SetDiagnosticsActive(true);
+...
+ protected override void CreateScene()
+        {
+            base.CreateScene();
+            WaveServices.ScreenContextManager.SetDiagnosticsActive(true);
+            ....
+        }
 ```
 
-And add the *PROFILE* conditional compilation symbol to your project.
+Also **you need to add** the *PROFILE* conditional compilation symbol to your project.
 
 By doing this, a FPS counter will appear in the upper left corner on the screen.
 But **Wave Engine** offers some simple tools to track the information we need. You can add labels for literal content or timers to measure things with the code:
