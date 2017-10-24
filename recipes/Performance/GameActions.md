@@ -13,7 +13,7 @@ GameActions can only be runned in the context of a scene.
 You Can create different actions from the `GameActionFactory`
 You need the a scene to run a game action:
 
-In the next example, when run, *first* execute MyAction, *when finished* continues with second action, then *waits for tap event*, then *waits five more seconds* and them runs SomeAction and just finish leaving SomeAction running in background.
+In the next example, when run, **first** execute MyAction, **when finished** continues with second action, then **waits for tap event**, then **waits five more seconds** and them runs SomeAction and **just finish** leaving SomeAction running in background.
 
 ```C#
 using WaveEngine.Components.GameActions;
@@ -38,7 +38,7 @@ private void SomeAction(){}
 
 ## Animations
 
-###Scale animation
+### Scale animation
 For example a simple way of making scale animations for 3D elements is by using `Vector3AnimationGameAction`
 ```C#
  var amination = new Vector3AnimationGameAction(this.Owner, Vector3.Zero, Vector3.One, TimeSpan.FromSeconds(1), ease, (f) =>
@@ -49,8 +49,8 @@ For example a simple way of making scale animations for 3D elements is by using 
 	animation.Run();
 ```
 
-###Parallel Animations
-We can  run several actions in parallel and decided when continue, for example a Fade animation with scale that only waits fade and plays sound while scale is still running
+### Parallel Animations
+We can  run *several actions in parallel* and decided when continue, for example a Fade animation with scale that only waits fade and plays sound while scale is still running
 
 ```C#
 private Transform2D transform = null;
@@ -79,8 +79,8 @@ private Transform2D transform = null;
 	animation.Run();
 ```
 
-###And play Animations
-Run parallel play media for an action, for example an scale and sound effect
+### And play Animations
+Run *parallel* play media for an action, for example an scale and sound effect
 
 ```C#
 private Transform2D transform = null;
@@ -99,7 +99,7 @@ private Transform2D transform = null;
 	
 	animation.Run();
 ```
-##Extensions Methods
+## Extensions Methods
 They are defined as extensions method, and you need to add the namespace *[WaveEngine.Components.GameActions](xref:WaveEngine.Components.GameActions)*
 
 Once you add that namespace, you can use the following set of predefined actions:
