@@ -16,6 +16,7 @@ On the editor you can enable this mode by checking the button *Diagnostic* on th
 You just need create an empty new project in **Visual Wave Editor**, and switch to **Visual Studio** or **Xamarin Studio** by clicking on *File > Open C# Solution...*
 
 To activate the diagnostic mode you need to add this line of code:
+You can see and example in [Lines sample](https://github.com/WaveEngine/Samples/blob/b00057faf3fb92837011f29a8e13dccb51c7b7fd/Graphics2D/Lines/SharedSource/Main/MyScene.cs)
 
 ```C#
 ...
