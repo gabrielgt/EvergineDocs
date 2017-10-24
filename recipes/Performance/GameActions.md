@@ -15,6 +15,8 @@ You need the a scene to run a game action:
 
 In the next example, when run, **first** execute MyAction, **when finished** continues with second action, then **waits for tap event**, then **waits five more seconds** and them runs SomeAction and **just finish** leaving SomeAction running in background.
 
+You can see and example in [Navigation Service Sample](https://github.com/WaveEngine/Samples/blob/19b2d516170730181a7cc2ca86f753f617ae6a17/Basic/NavigationFlow/SharedSource/Main/Navigation/NavigationService.cs)
+
 ```C#
 using WaveEngine.Components.GameActions;
 ...
