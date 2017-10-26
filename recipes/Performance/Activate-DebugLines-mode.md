@@ -2,6 +2,8 @@
 
 Within this recipe you will learn how to enable debug lines to see every debuggable lines that an entity has and that can be shown in real time.
 
+This is very useful for debugging for expample, because you can actually see the collider.
+
 ## Hands-on
 
 ### With Wave Visual Editor
@@ -17,7 +19,11 @@ You just need create an empty new project in **Visual Wave Editor**, and switch 
 To activate the DebugLines mode you need to add this line of code:
 
 ```C#
-RenderManager.DebugLines = true;
+protected override void CreateScene()
+        {
+            RenderManager.DebugLines = true;
+            ....
+        }   
 ```
 
 ## Wrap-up
