@@ -34,17 +34,17 @@ Finally, click on Build or Simulate (![SimulateBuild](images/SimulateBuild.jpg))
 Previously to Wave Engine 2.0, both Visual Studio and Xamarin Studio had their own project templates. Since 2.0, Wave Engine projects are created within Wave Visual Editor, accessing to those through File, Open C# Solution.
 
 Open MyScene.cs class, and add this snippet to `CreateScene()`:
+Then press build and run and enjoy the magic!
 
 ```C#
 protected override void CreateScene()
 {
     this.Load(WaveContent.Scenes.MyScene);           
-
-    var cube = new Entity()
+     Entity box = new Entity()
         .AddComponent(new Transform3D())
-        .AddComponent(new MaterialsMap())
-        .AddComponent(Model.CreateCube())
-        .AddComponent(new ModelRenderer())
+        .AddComponent(new CubeMesh())
+        .AddComponent(new MaterialComponent())
+        .AddComponent(new MeshRenderer())
         .AddComponent(new Spinner()
         {
             AxisTotalIncreases = new Vector3(0, MathHelper.ToRadians(50), 0)
