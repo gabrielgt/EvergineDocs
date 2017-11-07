@@ -8,7 +8,7 @@ Getting Started with Wave Engine on Mac OS X:
 
 ## IDE
 
-You need to install [Visual Studio for Mac](https://xamarin.com/studio) to develop with Wave Engine on Mac OS X. _Xamarin Studio comes with Xamarin_, which can be downloaded [here](https://xamarin.com/download).
+You need to install [Visual Studio for Mac](https://xamarin.com/studio) to develop with Wave Engine on Mac OS X.
 
 # Install Wave Engine
 
