@@ -49,3 +49,8 @@ animation3DComponent.PlayAnimation("Run");
 ## Wrap-up
 
 We have learned how to reproduce the different animations an FBX model bundles.
+
+
+>[!Note]
+> Take a look at this sample:
+> [Animated Model](https://github.com/WaveEngine/Samples/tree/master/Graphics3D/AnimatedModel)

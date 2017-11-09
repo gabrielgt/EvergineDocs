@@ -51,3 +51,7 @@ In the end, we are adding the same entity hierarchy Wave Visual Editor creates w
 ## Wrap-up
 
 This recipe has guided us through what is an FBX file and how it can be loaded into Wave Engine, both visually and through source code.
+
+>[!Note]
+> Take a look at this sample:
+> [Isis Temple](https://github.com/WaveEngine/Samples/tree/master/Graphics3D/IsisTemple)

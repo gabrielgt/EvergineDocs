@@ -26,7 +26,7 @@ Also, you can achieve the same through [DefaultMaterialPath](xref:WaveEngine.Com
 
 ![](images/ApplyMaterialToAModel/SetDefaultMaterialPath.png)
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 From Wave Visual Editor, click on File > Open C# Solution...; and rebuild it just to update `WaveContent.cs`. It will contain the paths to the assets you have previously added in the Editor.
 
@@ -84,3 +84,6 @@ this.EntityManager.Add(model);
 ## Wrap-up
 
 You have learned the difference between textures and materials, and how to add those both visually and through source code.
+
+>[!Note]
+>Take a look to all the [Materials Samples](https://github.com/WaveEngine/Samples/tree/master/Materials) they show a lot of functionality about materials.
