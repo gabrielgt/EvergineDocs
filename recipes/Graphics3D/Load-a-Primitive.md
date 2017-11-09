@@ -14,7 +14,7 @@ Just click on one of those, and the primitive will appear at the Viewport.
 
 ![](images/LoadAPrimitive/ViewportRenderingCubeScreenshot.png)
 
-### With Visual Studio
+### With Visual Studio (for Windows or Mac)
 
 Every 3D primitive which can be added visually following above instructions, is available as well in source code. [Model](xref:WaveEngine.Components.Graphics3D.Model) factory makes it really simple to add a cube, for instance. Within the dessired `Scene`, inside `CreateScene()` method, add the following lines:
 

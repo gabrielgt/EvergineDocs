@@ -18,9 +18,9 @@ Once Wave Visual Editor has loaded the model, simply drag and drop the item into
 
 ![](images/LoadModelFromFile/DragIsisModel.jpg)
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
-Open the project from Visual Studio or Xamarin Studio, and rebuild the solution just to update `WaveContent.cs` -a helper to easily reference the paths to the assets you have added in Wave Visual Editor.
+Open the project from Visual Studio for Windows or Mac, and rebuild the solution just to update `WaveContent.cs` -a helper to easily reference the paths to the assets you have added in Wave Visual Editor.
 
 There are a few pieces -components actually- needed to handle an .fbx model (appart from those needed to place an entity in a 3D world):
 * [SkinnedModel](xref:WaveEngine.Components.Graphics3D.SkinnedModel): in charge of loading the .fbx file, also reads the animations such file has.
