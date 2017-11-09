@@ -2,7 +2,7 @@
 
 *Please, it is a prerequisite to go through [Load FBX Model](Load-an-FBX-Model.md) first.*
 
-As we have already learned, loading an FBX model into Wave Engine is incredible easy. What we have not covered already, is how to reproduce the animations bundled into the FBX. Isis model used in [[Load an FBX Model]], which will be reused here, contains different animations, and we will learn how to configure those for playing on demand.
+As we have already learned, loading an FBX model into Wave Engine is incredible easy. What we have not covered already, is how to reproduce the animations bundled into the FBX. Isis model used in [Load FBX Model](Load-an-FBX-Model.md), which will be reused here, contains different animations, and we will learn how to configure those for playing on demand.
 
 ## Hands-on
 
@@ -32,7 +32,7 @@ Have a look to the Entities Hierarchy panel and select the "model" one. Notice h
 
 Finally, run the project and you will see Isis running, as it was expected.
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 In the same way as above, please, follow the steps within "With Visual Studio/Xamarin Studio" section at [Load FBX Model](Load-an-FBX-Model.md). Starting from such existing code, we will just call [Animation3D](xref:WaveEngine.Components.Animation.Animation3D)'s [PlayAnimation()](xref:WaveEngine.Components.Animation.Animation3D.PlayAnimation(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Boolean,System.Boolean)) method to enable automatic playback:
 
