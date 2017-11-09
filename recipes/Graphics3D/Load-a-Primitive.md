@@ -14,22 +14,23 @@ Just click on one of those, and the primitive will appear at the Viewport.
 
 ![](images/LoadAPrimitive/ViewportRenderingCubeScreenshot.png)
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio
 
 Every 3D primitive which can be added visually following above instructions, is available as well in source code. [Model](xref:WaveEngine.Components.Graphics3D.Model) factory makes it really simple to add a cube, for instance. Within the dessired `Scene`, inside `CreateScene()` method, add the following lines:
 
 ```c#
-var primitive = new Entity()
-	.AddComponent(Model.CreateCube())
-	.AddComponent(new ModelRenderer())
-	.AddComponent(new MaterialsMap())
-	.AddComponent(new Transform3D());
-this.EntityManager.Add(primitive);
+ var primitive = new Entity("Primitive")
+				.AddComponent(new Transform3D())                       
+				.AddComponent(new CubeMesh())
+				.AddComponent(new MeshRenderer())
+				.AddComponent(new MaterialComponent() { Material = new StandardMaterial() });
+			
+ this.EntityManager.Add(primitive);
 ```
 
 ![](images/LoadAPrimitive/PrimitiveAddedManuallyScreenshot.png)
 
-You can see the whole list of available primitives [here](xref:WaveEngine.Components.Graphics3D.Model#methods), all those following the `Create`* pattern.
+You can see the whole list of available primitive meshes in [WaveEngine.Components.Graphics3D](xref:WaveEngine.Components.Graphics3D) namespace. 
 
 ## Wrap-up
 
