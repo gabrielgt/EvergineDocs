@@ -9,7 +9,7 @@ Within this recipe you will learn how to create and manage timers in WaveEngine 
 
 ## Hands-on
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 There are some ways to **create** a timer:
 

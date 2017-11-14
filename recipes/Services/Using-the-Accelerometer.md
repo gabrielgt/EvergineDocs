@@ -4,9 +4,10 @@ Within this recipe you will learn how to use the device accelerometer in your ga
 
 ## Hands-on
 
-_Note_: The accelerometer cannot currently be handled from Wave Visual Editor, so we will concentrate on the IDEs
+>[!Warning]
+>The accelerometer cannot currently be handled from Wave Visual Editor, so we will concentrate on the IDEs
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 You must start with this code to make Wave Engine works with the hardware accelerometer:
 

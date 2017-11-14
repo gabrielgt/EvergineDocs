@@ -17,7 +17,7 @@ A double click on the MP3 file will launch OS by-default player. However, doing 
 
 The rest of steps are done in code, so please continue with below section.
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 Once the sound and music files are added through Wave Visual Editor, open the associated C# solution (remember: File > Open C# Solution…)
 
@@ -53,3 +53,6 @@ Both sound and music player services contain multiple methods which allow common
 
 
 We have learned how to play sound effects and songs. Adding those files to our project is done through Wave Visual Editor, while the playback is handled by code.
+
+>[!Note]
+>Take a look at the [Media Samples](https://github.com/WaveEngine/Samples/tree/master/Media) on github.

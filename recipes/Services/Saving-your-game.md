@@ -4,7 +4,7 @@ Within this recipe you will learn how to save your game state to persistent stor
 
 ## Hands-on
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 WaveEngine comes with an storage service out of the box. This service manages the serialization and persistence, allowing us, for example, to store the game state. The service is based on the [DataContract](https://msdn.microsoft.com/es-es/library/system.runtime.serialization.datacontractserializer(v=vs.110).aspx) model of .Net Framework.
 

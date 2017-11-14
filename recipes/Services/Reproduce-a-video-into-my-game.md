@@ -4,7 +4,7 @@ Within this recipe you will learn how to reproduce a video file and using it as 
 
 ## Hands-on
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 WaveEngine comes with a video player service out of the box. This service allows us to reproduce a video and get the texture to be used as we need. 
 
@@ -35,3 +35,6 @@ Take a look of the `VideoTexture` interesting property. We can use this texture 
 ## Wrap-up
 
 We have seen how to reproduce a video in our game. 
+
+>[!Note]
+>Take a look at the [Video player sample](https://github.com/WaveEngine/Samples/tree/master/Media/VideoPlayer) on github.

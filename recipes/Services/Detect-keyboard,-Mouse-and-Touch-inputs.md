@@ -4,8 +4,8 @@ Within this recipe you will learn how to detect keyboard, mouse and touch inputs
 These are basic interaction devices for any game you create, particularly the touch manager.
  
 ## Hands-on 
- 
-### With Visual Studio/Xamarin Studio 
+
+### With Visual Studio (for Windows or Mac)
  
 It's time to coding, open a WaveEngine C# solution and add a new SceneBehavior.
 
@@ -36,7 +36,7 @@ if (mouseState.IsConnected)
 	
 ```
 
-First of all, We'll inspect the output in Visual Studio/Xamarin Studio.
+First of all, We'll inspect the output in Visual Studio.
 
 ![](images/Detect-keyboard-Mouse-and-Touch-inputs/Capture1.png)
 
@@ -92,3 +92,6 @@ Don't forget that WaveEngine also provides other input sources for your game, as
 ## Wrap-up
 
 We have seen how the `Input` service could be used to retrieve the state of the mouse, keyboard and mobile touchPanel.
+
+>[!Note]
+>Take a look at the [Input Samples](https://github.com/WaveEngine/Samples/tree/master/Input) on github.

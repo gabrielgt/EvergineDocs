@@ -19,7 +19,7 @@ In *Entities Hierarchy* panel, select the *plane* entity that you have previousl
 Now, open the solution with Visual Studio or Xamarin Studio with the *File > Open C# Solution ...* menu, and continue reading the next section.
 
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 You need to copy the content from [here](https://github.com/WaveEngine/Samples/tree/master/Media/CameraCapture/Libraries) and create the same folder side by side to your solution file.
 Add this post-build event to launcher project:
@@ -51,3 +51,6 @@ If you build and run your project, you will see a plane with what the camera is 
 ## Wrap-up
 
 You have learned how to capture a web cam input and use it as a texture in your games.
+
+>[!Note]
+>Take a look at the [Camera capture sample](https://github.com/WaveEngine/Samples/tree/master/Media/CameraCapture) on github.

@@ -4,7 +4,7 @@ Within this recipe you will learn how to use the microphone WaveEngine service t
 
 ## Hands-on
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 A microphone is a peripheral that could be attached or not, so you **need to check if it's connected** prior to use it:
 
@@ -70,3 +70,6 @@ private void Microphone_DataAvailable(object sender, WaveEngine.Common.Media.Mic
 ## Wrap-up
 
 Within this recipe we have manage the microphone peripheral from device. 
+
+>[!Note]
+>Take a look at the [Microphone sample](https://github.com/WaveEngine/Samples/tree/master/Media/Microphone) on github.
