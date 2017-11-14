@@ -20,19 +20,19 @@ Once you have a project opened, simply generate a new entity from top menu optio
 
 ![](images/ApplyPhysicToMyModel/physicCubeEditor.jpg)
  
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 Within the Shared Project, create a new `Entity` containing a cube:
 
 ```c#
 var cube = new Entity("cube")
-     .AddComponent(new Transform3D())
-     .AddComponent(Model.CreateCube())
-     .AddComponent(new ModelRenderer())
-     .AddComponent(new MaterialsMap())
-     .AddComponent(new BoxCollider3D())
-     .AddComponent(new RigidBody3D());
-this.EntityManager.Add(cube);
+                      .AddComponent(new Transform3D())
+                      .AddComponent(new CubeMesh())
+                      .AddComponent(new MeshRenderer())
+                      .AddComponent(new MaterialComponent() { Material = new StandardMaterial() })
+                      .AddComponent(new BoxCollider3D())
+                      .AddComponent(new RigidBody3D());
+            this.EntityManager.Add(cube);
 ```
 
 The resulting execution will show a cube, which immediately falls down being accelerated by the gravity.
@@ -40,3 +40,6 @@ The resulting execution will show a cube, which immediately falls down being acc
 ## Wrap-up
 
 We have learned where the 3D physic API is located inside Wave Engine. We have also introduced the `RigidBody3D` component, and some of the most used properties. Finally, we have created an `Entity` with this which behaves like a physic object.
+
+>[!Note]
+>Take a look at [Physics samples](https://github.com/WaveEngine/Samples/tree/master/Physics3D) on github.
