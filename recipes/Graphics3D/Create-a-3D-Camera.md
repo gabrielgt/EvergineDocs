@@ -6,7 +6,7 @@ Within this recipe you will learn how to add a 3D camera to your game both from 
 
 ## Hands-on
 
-Cameras can be found under `WaveEngine.Components.Cameras` namespace. The built-in 3D cameras in Wave Engine are:
+Cameras can be found under [WaveEngine.Components.Cameras](xref:WaveEngine.Components.Cameras) namespace. The built-in 3D cameras in Wave Engine are:
   * [FixedCamera3D](xref:WaveEngine.Components.Cameras.FixedCamera3D): This camera does not have any built-in behavior, it is static.
   * [FreeCamera3D](xref:WaveEngine.Components.Cameras.FreeCamera3D): This camera can be moved using the mouse, touch or keyboard.
   * [ViewCamera3D](xref:WaveEngine.Components.Cameras.ViewCamera3D): This camera can be moved using the mouse, touch or keyboard while respecting the look-at point. 
@@ -29,7 +29,7 @@ The result can be viewed in the "Viewport" view when the camera is selected:
 
 ![](images/Camera3D/Viewport.png)
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 In Wave Visual Editor go to File, Open C# Solution... Within the Shared Project, open an existing [Scene](xref:WaveEngine.Framework.Scene) class. Usually, the camera is added at the beginning of the `Scene.CreateScene()` method. For example, the following snippet creates a `FreeCamera3D` and adds it to the `EntityManager`. An important key is the `BackgroundColor` property, which allows to choose which `Color` is used to clear the screen on each draw call.
 

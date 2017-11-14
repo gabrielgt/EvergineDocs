@@ -35,7 +35,7 @@ Selecting each one of those, it will be automatically added to the current scene
 
 ![](images/CreateLights/CreateLightsSpotSample.jpg)
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 Knowing how each light react visually, those can be added with just two lines of code:
 

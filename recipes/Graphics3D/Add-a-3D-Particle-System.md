@@ -38,7 +38,7 @@ For instance, here we have tried to mimic the snow falling from a cloudy and dar
 
 ![](images/CreateParticle/Particle3DEditor.jpg)
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 Add the following lines to your `Scene` class -where you can find above the description for all of [ParticleSystem3D](xref:WaveEngine.Components.Particles.ParticleSystem3D) properties:
 
