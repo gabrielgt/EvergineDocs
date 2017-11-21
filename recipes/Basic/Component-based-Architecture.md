@@ -16,7 +16,7 @@ Those components are added to an [Entity](xref:WaveEngine.Framework.Entity) thro
 
 ```c#
 var sprite = new Entity("Sprite") 
-	.AddComponent(new Sprite("Content/Texture.wpk")) 
+	.AddComponent(new Sprite(WaveContent.Assets.Texture_png)) 
 	.AddComponent(new SpriteRenderer(DefaultLayers.Alpha)) 
 	.AddComponent(new Transform2D()); 
 ```
@@ -39,11 +39,11 @@ Coming up next, rename it, and add Components by using the Entity Details panel.
 
 ![](images/Based-component-architecture/Capture2.PNG)
 
-Using the '+' button from the Entity Details panel, add a "Sprite" Component, and a "SpriteRenderer" one.
+Using the '+' button from the Entity Details panel, add a [Sprite](xref:WaveEngine.Components.Graphics2D.Sprite) Component, and a [SpriteRenderer](xref:WaveEngine.Components.Graphics2D.SpriteRenderer) one.
 
 ![](images/Based-component-architecture/Capture3.PNG)
 
-Last, but not least, set a DefaultTexture to the Sprite within the Components panel, and double check the SpriteRenderer's LayerType property is set to Alpha.
+Last, but not least, set a [TexturePath](xref:WaveEngine.Components.Graphics2D.Sprite.TexturePath) to the Sprite within the Components panel, and double check the SpriteRenderer's [LayerId](xref:WaveEngine.Components.Graphics2D.SpriteRenderer.LayerId) property is set to Alpha.
 
 ![](images/Based-component-architecture/Capture4.PNG)
 ![](images/Based-component-architecture/Capture5.PNG)
