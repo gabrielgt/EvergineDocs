@@ -129,3 +129,9 @@ Once you add that namespace, you can use the following set of predefined actions
 ## Wrap-up
 
 You have learned how to use GameActions in WaveEngine to define a flow of actions without having to worry about synchronizations with the game loop.
+
+
+<div class="NOTE">
+  <h5>NOTE</h5>
+  <p>Please seee Animation sample [link_text](xref:https://github.com/WaveEngine/Samples/blob/19b2d516170730181a7cc2ca86f753f617ae6a17/Graphics3D/AnimationSequence/SharedSource/Main/Scene2.cs) </p>
+</div>
