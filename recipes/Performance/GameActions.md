@@ -129,3 +129,7 @@ Once you add that namespace, you can use the following set of predefined actions
 ## Wrap-up
 
 You have learned how to use GameActions in WaveEngine to define a flow of actions without having to worry about synchronizations with the game loop.
+
+
+> [!Note] 
+> Please seee [AnimationSequence](https://github.com/WaveEngine/Samples/blob/19b2d516170730181a7cc2ca86f753f617ae6a17/Graphics3D/AnimationSequence/SharedSource/Main/Scene2.cs) for more details
