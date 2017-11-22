@@ -12,7 +12,7 @@ Once you have a project in Wave Visual Editor, look for the Asset Details panel:
 
 ![](images/CreateScene/AssetsDetails.jpg)
 
-Double click on Scenes folder. Such contains all those serialized as .wscene -XML actually-, which are later referenced from source code.
+Double click on Scenes folder. Such contains all those serialized as .wscene, which are later referenced from source code.
 
 In a similar way as the white area behaves when right-clicking on it, at Windows Explorer or Mac OS X Finder, act in the same way within Asset Details, and choose Create Scene.
 
@@ -42,7 +42,7 @@ Such inherits [Scene](xref:WaveEngine.Framework.Scene), and forces the parent to
 Please, note this scene is absolutely empty, with no entities nor components inside. It is worth mentioning the main difference with an scene created from Wave Visual Editor, which just adds the line
 
 ```c#
-this.Load(WaveContent.Scenes.MyScene);
+this.Load(WaveContent.Scenes.SecondScene);
 ```
 
 within `Scene.CreateScene()`, to deserialize the .wscene file and set everything inside up.
