@@ -4,16 +4,16 @@ An screen transition is an action which moves the app from the current screen to
 
 [![Screen transitions in Wave Engine](http://img.youtube.com/vi/mzny7KsJhRA/0.jpg)](https://youtu.be/mzny7KsJhRA)
 
-As you can see above, Wave Engine includes a comprehensive set of screen transitions (sample source code can be found [here](https://github.com/WaveEngine/Samples/tree/master/Core/TransitionSample)).
+As you can see above, Wave Engine includes a comprehensive set of screen transitions (sample source code can be found [here](https://github.com/WaveEngine/Samples/tree/master/Basic/Transitions)).
 
 ## Hands-on
 
 > [!Note] 
 > Screen transitions cannot currently be handled from Wave Visual Editor, so we will concentrate on the IDEs.
 
-Transitions are managed by [ScreenContext](xref:WaveEngine.Framework.Services.ScreenContext) class. It is a way of easily grouping scenes, i.e. it makes send to have a "view" made of two different scenes: an animated 3D background and a 2D menu on top of it. You need to create a new `ScreenContext` to navigate to, and apply the `ScreenTransition` that Wave Engine offers (click [here](xref:WaveEngine.Framework.Services.ScreenTransition) to see those built in).
+Transitions are managed by [ScreenContext](xref:WaveEngine.Framework.Services.ScreenContext) class. It is a way of easily grouping scenes, i.e. it makes sense to have a "view" made of two different scenes: an animated 3D background and a 2D menu on top of it. You need to create a new `ScreenContext` to navigate to, and apply the `ScreenTransition` that Wave Engine offers (click [here](xref:WaveEngine.Framework.Services.ScreenTransition) to see those built in).
 
-The following piece of code shows up how to navigate to a `SecondScene` on a [ColorFadeTransition](xref:WaveEngine.Components.Transitions.ColorFadeTransition), which needs the background color to fade through, and the duration it will take:
+The following piece of code shows how to navigate to a `SecondScene` using a [ColorFadeTransition](xref:WaveEngine.Components.Transitions.ColorFadeTransition), which needs the background color to fade through, and the duration it will have:
 
 ```C#
 // Create a new screen context with the target scene
