@@ -26,6 +26,8 @@ Finally, double clicking on it, the Entities Hierarchy panel will be populated w
 
 ### With Visual Studio/Xamarin Studio
 
+![](images/CreateScene/OpenCSharpSolution.jpg)
+
 After openning the C# solution, add a new class to the Shared Project (actually, the one ending with "Source"):
 
 ```c#
