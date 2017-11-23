@@ -22,7 +22,7 @@ Once Wave Visual Editor has loaded the new material, simply drag the item from t
 
 ![](images/ApplyMaterialToAModel/DragMaterialModel.PNG)
 
-Also, you can achieve the same through [DefaultMaterialPath](xref:WaveEngine.Components.Graphics3D.MaterialsMap.MaterialsPath) property, from entity's [MaterialsMap](xref:WaveEngine.Components.Graphics3D.MaterialsMap) component:
+Also, you can achieve the same through [MaterialPath](xref:WaveEngine.Components.Graphics3D.MaterialComponent.MaterialPath) property, from entity's [MaterialComponent](xref:WaveEngine.Components.Graphics3D.MaterialComponent) component:
 
 ![](images/ApplyMaterialToAModel/SetDefaultMaterialPath.png)
 
