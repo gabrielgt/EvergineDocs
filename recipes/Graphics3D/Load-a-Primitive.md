@@ -8,11 +8,11 @@ You will be guided through the steps needed to add a 3D primitive to an scene. S
 
 At Entities Hierarchy panel, right at the top right corner, you will find a "+" icon. Doing click on it, a context menu will display all the available predefined entities, whose contain Primitives 3D.
 
-![](images/LoadAPrimitive/AddingPrimitive3DScreenshot.png)
+![](images/LoadAPrimitive/AddingPrimitive3DScreenshot.jpg)
 
 Just click on one of those, and the primitive will appear at the Viewport.
 
-![](images/LoadAPrimitive/ViewportRenderingCubeScreenshot.png)
+![](images/LoadAPrimitive/ViewportRenderingCubeScreenshot.jpg)
 
 ### With Visual Studio (for Windows or Mac)
 
@@ -28,7 +28,7 @@ Every 3D primitive which can be added visually following above instructions, is 
  this.EntityManager.Add(primitive);
 ```
 
-![](images/LoadAPrimitive/PrimitiveAddedManuallyScreenshot.png)
+![](images/LoadAPrimitive/PrimitiveAddedManuallyScreenshot.jpg)
 
 You can see the whole list of available primitive meshes in [WaveEngine.Components.Graphics3D](xref:WaveEngine.Components.Graphics3D) namespace. 
 
