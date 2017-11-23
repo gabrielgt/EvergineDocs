@@ -43,7 +43,7 @@ Using the '+' button from the Entity Details panel, add a [Sprite](xref:WaveEngi
 
 ![](images/Based-component-architecture/Capture3.PNG)
 
-Last, but not least, set a [TexturePath](xref:WaveEngine.Components.Graphics2D.Sprite.TexturePath) to the Sprite within the Components panel, and double check the SpriteRenderer's [LayerId](xref:WaveEngine.Components.Graphics2D.SpriteRenderer.LayerId) property is set to Alpha.
+Last, but not least, set a [TexturePath](xref:WaveEngine.Components.Graphics2D.Sprite.TexturePath) to the Sprite within the Components panel, and double check the SpriteRenderer's [LayerId](xref:WaveEngine.Framework.Graphics.Drawable2D.LayerId) property is set to Alpha.
 
 ![](images/Based-component-architecture/Capture4.PNG)
 ![](images/Based-component-architecture/Capture5.PNG)
