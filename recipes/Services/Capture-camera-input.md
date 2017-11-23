@@ -12,7 +12,7 @@ On an empty project, add a plane to the scene:
 
 In *Asset Details* panel, create a Standard Material with default values and name it *CameraMaterial*
 
-In *Entities Hierarchy* panel, select the *plane* entity that you have previously added, and assign the *CameraMaterial* in the "DefaultMaterialPath" property from **MaterialsMap**
+In *Entities Hierarchy* panel, select the *plane* entity that you have previously added, and assign the *CameraMaterial* in the "MaterialPath" property from **MaterialsComponent**
 
 ![](images/Capture-Camera-Input/PlaneMaterialsMap.jpg)
 
