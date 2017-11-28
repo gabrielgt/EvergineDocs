@@ -12,7 +12,7 @@ On the editor you can enable this mode by checking the *Diagnostic* button on th
 
 ![](images/DebugLineMode/DebugLineMode.jpg)
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 You just need create an empty new project in **Visual Wave Editor**, and switch to **Visual Studio** or **Xamarin Studio** by clicking on File > Open C# Solution...
 
