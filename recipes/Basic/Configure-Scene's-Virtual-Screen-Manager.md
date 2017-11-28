@@ -24,7 +24,7 @@ One important property is [Stretch](xref:WaveEngine.Framework.Managers.StretchMo
 
 In that section you can configure all the VirtualScreen properties, then click OK. This information will be stored in your scene file (.wscene).
 
-### With Visual Studio / Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 To setup the [VirtualScreenManager](xref:WaveEngine.Framework.Managers.VirtualScreenManager) just call its [Activate()](xref:WaveEngine.Framework.Managers.VirtualScreenManager.Activate(System.Single,System.Single,WaveEngine.Framework.Managers.StretchMode,System.Boolean)) method anytime. For example, you can write this code into your `Scene.CreateScene()` method:
 

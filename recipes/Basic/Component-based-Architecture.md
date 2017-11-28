@@ -6,7 +6,7 @@ We will learn which types of components are available, and how those can be adde
 
 ## Hands-on
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 [Component](xref:WaveEngine.Framework.Component) class is the base one of every component at Wave Engine. Its goal is to store pure data (for example, which is the current health of an enemy). There are two derived classes which are broadly used along the engine, appart from on games and apps done with it. Such are:
 * [Behavior](xref:WaveEngine.Framework.Behavior): it is thought to add logic to the parent entity. It provides an [Update()](xref:WaveEngine.Framework.Behavior.Update(System.TimeSpan)) abstract method which is executed on each game loop.

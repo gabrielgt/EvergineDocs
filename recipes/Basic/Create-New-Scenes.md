@@ -24,7 +24,7 @@ Finally, double clicking on it, the Entities Hierarchy panel will be populated w
 
 ![](images/CreateScene/EntitiesHierarchy.jpg)
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 ![](images/CreateScene/OpenCSharpSolution.jpg)
 
