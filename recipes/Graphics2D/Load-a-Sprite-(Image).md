@@ -26,7 +26,7 @@ Switch to 2D mode in the Editor and, as last step, drag and drop the asset from 
 
 Have a look at the Entity Details panel: just by dragging and dropping we got a new [Entity](xref:WaveEngine.Framework.Entity) with its name set to "sprite" and the components [Transform2D](xref:WaveEngine.Framework.Graphics.Transform2D), [Sprite](xref:WaveEngine.Components.Graphics2D.Sprite) and [SpriteRenderer](xref:WaveEngine.Components.Graphics2D.SpriteRenderer) initialized. Magic, isn't it? :-)
   
-### With Visual Studio/Xamarin Studio 
+### With Visual Studio (for Windows or Mac)
  
 Directly open MyScene.cs file. In order to reproduce what Wave Visual Editor does when you drag and drop the sprite, we need to create an empty `Entity` and add three components, as you would guess: `Transform2D`, `Sprite` and `SpriteRenderer`.
 

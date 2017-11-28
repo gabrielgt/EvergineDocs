@@ -37,7 +37,7 @@ In order to render a single sprite from the sheet, assure first the 2D mode is s
 
 ![](images/LoadASpriteSheet/SpriteSheetAddedToScene.png)
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 The sprite sheet creation is done with the same exact steps as above, as the Wave Visual Editor is now in charge of handling this procedure. Once the sprite sheet is ready, click on File > Open C# Solution...
 

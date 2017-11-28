@@ -16,7 +16,7 @@ Then, just select your brand new [Camera2D](xref:WaveEngine.Framework.Graphics.C
 
 ![](images/Create-a-camera-2D/CaptureDefaultCamera2D.PNG)
 
-### With Visual Studio/Xamarin Studio 
+### With Visual Studio (for Windows or Mac)
 
 Let us move now to our beloved code: open the C# Solution associated to your project and add a [FixedCamera2D](xref:WaveEngine.Components.Cameras.FixedCamera2D) to the scene:
 

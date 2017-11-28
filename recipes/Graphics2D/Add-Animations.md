@@ -16,7 +16,7 @@ Add an [AnimationUI](xref:WaveEngine.Framework.Animation.AnimationUI) component 
 
 This is all you can do with Wave Visual Editor for now. In order to follow applying animations, please continue reading below.
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 Add an [AnimationUI](xref:WaveEngine.Framework.Animation.AnimationUI) component to the entity you have defined:
 
