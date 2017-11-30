@@ -39,7 +39,7 @@ Finally try to install again.
 
 Finally, after the installation ends, you will find WaveEditor within Applications directory:
 
-![Wave Editor Short cut Mac](images/WaveEditorShortcut.jpg)
+![Wave Editor Short cut Mac](images/WaveEditorShortcutMac.jpg)
 
 # Create a Wave Engine Account
 The first time you open Wave Visual Editor you will be asked for an user account.
