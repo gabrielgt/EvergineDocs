@@ -36,7 +36,7 @@ Select the new entity and set the Skeletal properties to use the desired Spine m
 
 ![](images/Spine/SprineResult.jpg)
 
-### Using Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 Open or create a WaveEngine project in Wave Visual Editor and import the exported Spine assets (see past chapter: "Using Wave Visual Editor and Visual Studio/Xamarin Studio" from this recipe):
 

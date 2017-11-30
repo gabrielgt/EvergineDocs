@@ -18,17 +18,17 @@ Wave Engine's 2D physics are based on [Farseer Physics Engine](https://farseerph
 
 You can see [Load a Sprite recipe](Load-a-Sprite-(Image).md) from this web as starting point.
 
-Select the Sprite Entity and use the ![](../Graphics3D/images/ApplyPhysicToMyModel/Physics3DPlusIcon.jpg) icon from Entity Details section to add a RectangleCollider2D and RigidBody2D Components (in that order cause RigidBody requires a Collider):
+Select the Sprite Entity and use the ![](images/ApplyPhysicToMyModel/Physics2DPlusIcon.jpg) icon from Entity Details section to add a RectangleCollider2D and RigidBody2D Components (in that order cause RigidBody requires a Collider):
 
-![](../Graphics3D/images/ApplyPhysicToMyModel/Physics3DEntityDetails.jpg)
+![](images/ApplyPhysicToMyModel/Physics2DEntityDetails.jpg)
 
-Set the physic properties from Cube Entity's RigidBody3D:
+Set the physic properties for our RigidBody2D component:
 
-![](../Graphics3D/images/ApplyPhysicToMyModel/Physics3DEntityDetailsRigidBody2D.jpg)
+![](images/ApplyPhysicToMyModel/Physics3DEntityDetailsRigidBody2D.jpg)
 
 And let them fall!
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 We'll use the [Load a Sprite recipe](Load-a-Sprite-(Image).md) from this web as starting point.
 

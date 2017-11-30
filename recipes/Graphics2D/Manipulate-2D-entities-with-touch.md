@@ -14,7 +14,7 @@ If you modify the EnabledGestures property from _TouchGesture_ component you can
 
 ![](images/TouchGestures/TouchGesturesOptions.jpg)
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 In your favorite code editor you can add both _Collider_ and _TouchGestures_ components with the code:
 

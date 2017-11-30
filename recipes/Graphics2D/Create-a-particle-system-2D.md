@@ -18,6 +18,7 @@ Open the Create menu and select the Particle System 2D:
 
 ![](images/Particles2D/Particles2DMenu.jpg)
 
+Import the asset you want to use as particle. In this sample we have used the dinoparticle.png asset from the [Particles2D Sample](https://github.com/WaveEngine/Samples/blob/master/Particles/ParticleSystem2D/Content/Assets/dinoParticle.png)
 Create a Material to the particles and set it at the Particle Entity Material.
 > [!IMPORTANT]
 > Set the Material 'LightingEnabled' Property to false and set the Material 'LayerType' Property to AlphaLayer.
@@ -51,7 +52,7 @@ Now you can configure the ParticleSystem2D Component from the Entity:
 
 ![](images/Particles2D/Particles2DResult.jpg)
 
-### Using Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 Open or create a WaveEngine project in Wave Visual Editor, import the particle asset and create the material to particles:
 

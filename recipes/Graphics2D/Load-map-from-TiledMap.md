@@ -29,7 +29,7 @@ Finally, the entity must be look like this:
 
 ![](images/TiledMap/FinalResult.png)
 
-### Using Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 Open or create a WaveEngine project in Wave Visual Editor and import the Tiled assets (see past chapter: "Using Wave Visual Editor" from this recipe):
 

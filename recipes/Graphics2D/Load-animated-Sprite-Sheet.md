@@ -29,8 +29,6 @@ Then you could reproduce it in the central preview panel and adjust animation pa
 
 Awesome, isn't it? 
 
-![](images/AnimatedSpriteSheet/preview.gif)
-
 When we finished customizing animation parameters and get our Sprite Sheet done, we need to use it in a Wave scene.
 
 We also need an `Animation2D` with the `CurrentAnimation` properly set.
@@ -39,7 +37,7 @@ We also need an `Animation2D` with the `CurrentAnimation` properly set.
 
 That's all.
  
-### With Visual Studio/Xamarin Studio 
+### With Visual Studio (for Windows or Mac)
  
  
 For this recipe we will back on the corresponding sample, [PlatformGameDemo](https://github.com/WaveEngine/Samples/tree/master/Graphics2D/PlatformGameDemo).

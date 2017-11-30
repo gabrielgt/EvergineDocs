@@ -5,9 +5,10 @@ To know when two different entities collide between them is posible through thes
 ## Hands-on
 
 `WaveEngine.Framework.Physics3D.Collider2D` is the base abstract class for the following built-in colliders:
-* CircleCollider2D
-* PerPixelCollider2D
-* RectangleCollider2D
+* [CircleCollider2D](xref:WaveEngine.Framework.Physics2D.CircleCollider2D)
+* [PolygonCollider2D](xref:WaveEngine.Framework.Physics2D.PolygonCollider2D)
+* [RectangleCollider2D](xref:WaveEngine.Framework.Physics2D.RectangleCollider2D)
+* [EdgeCollider2D](xref:WaveEngine.Framework.Physics2D.EdgeCollider2D)
 
 Every `Collider2D` requires a `Transform2D` `Component` on the `Entity`, which handles the position in the 2D world, among other things.
 
@@ -17,7 +18,7 @@ Using Wave Visual Editor we can add the RectangleCollider2D behavior using the a
 
 ![](images/Collider2D/AddCollider.png)
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 The `Entity` would be built in the following way:
 
