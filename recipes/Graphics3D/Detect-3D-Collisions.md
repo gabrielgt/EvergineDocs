@@ -1,24 +1,27 @@
 ## Goal
 
-To know when two different 3D entities collide between them, Wave Engine offers collision components. Colliders, as they are named, are available also in 2D (within Wave Engine are used, for instance, for the tap behavior on UI controls).
-
-However, we will concentrate here on how to add such functionality within 3D.
+To know when two entities collide they need a Rigid Body component to be physical and a Collider component.
 
 ## Hands-on
 
-[Collider3D](xref:WaveEngine.Framework.Physics3D.Collider3D) is the base abstract class for the following built-in colliders:
+Rigid bodies can be:
+* [RigidBody3D](xref:WaveEngine.Framework.Physics3D.RigidBody3D) 
+* [StaticBody3D](xref:WaveEngine.Framework.Physics3D.StaticBody3D)
+
+To be able to collide a [Collider3D](xref:WaveEngine.Framework.Physics3D.Collider3D) component must be added too, but there are various types of colliders: 
+
 * [BoxCollider3D](xref:WaveEngine.Framework.Physics3D.BoxCollider3D)
 * [CapsuleCollider3D](xref:WaveEngine.Framework.Physics3D.CapsuleCollider3D)
-* [MeshCollider3D](xref:WaveEngine.Framework.Physics3D.MeshCollider3D)
+* [ConeCollider3D](xref:WaveEngine.Framework.Physics3D.ConeCollider3D)
+* [CylinderCollider3D] (xref:WaveEngine.Framework.Physics3D.CylinderCollider3D)
 * [SphereCollider3D](xref:WaveEngine.Framework.Physics3D.SphereCollider3D)
+* [MeshCollider3D](xref:WaveEngine.Framework.Physics3D.MeshCollider3D)
 
-Every `Collider3D` requires the following components in the entity:
-* a [Model](xref:WaveEngine.Components.Graphics3D.Model), which contains the mesh for the 3D object; and
-* a [Transform3D](xref:WaveEngine.Framework.Graphics.Transform3D), which handles the position in the 3D world, among other things
+Every `Collider3D` requires a [Transform3D](xref:WaveEngine.Framework.Graphics.Transform3D), which handles the position in the 3D world, among other things
 
-### With Wave Visual Editor
+### With Visual Studio (for Windows or Mac)
 
-Simply add the [BoxCollider3D](xref:WaveEngine.Framework.Physics3D.BoxCollider3D) behavior using the Add Component button in the Entity Details panel:
+Simply add a [RigidBody3D](xref:WaveEngine.Framework.Physics3D.RigidBody3D) component and the [BoxCollider3D](xref:WaveEngine.Framework.Physics3D.BoxCollider3D) component using the Add Component button in the Entity Details panel:
 
 ![](images/Collider3D/AddComponent.png)
 
@@ -27,16 +30,20 @@ Simply add the [BoxCollider3D](xref:WaveEngine.Framework.Physics3D.BoxCollider3D
 The entity would be built in the following way:
 
 ```c#
-var cube = new Entity("Cube") 
-    .AddComponent(new Transform3D()) 
-    .AddComponent(new BoxCollider3D()) 
-    .AddComponent(Model.CreateCube()) 
-    .AddComponent(new MaterialsMap( [...] ))
-    .AddComponent(new ModelRenderer());
+var cube = new Entity("cube")
+            .AddComponent(new Transform3D())
+            .AddComponent(new MaterialComponent())
+            .AddComponent(new CubeMesh())
+            .AddComponent(new MeshRenderer()) 
+			.AddComponent(new RigidBody3D())
+            .AddComponent(new BoxCollider3D());
 ```
 
-Later on, in order to check for intersections, we would simply call each specific `Collider3D.Intersects()` method.
+Later on, in order to check for intersections, we would simply subscribe to the RigidBody events:
+* [BeginCollision](xref:WaveEngine.Framework.Physics3D.PhysicBody3D.BeginCollision)
+* [EndCollision](xref:WaveEngine.Framework.Physics3D.PhysicBody3D.EndCollision)
+* [UpdateCollision](xref:WaveEngine.Framework.Physics3D.PhysicBody3D.UpdateCollision)
 
 ## Wrap-up
 
-This recipe shows how a `Collider3D` component can be easily added to entities, in order to detect collisions between them.
+This recipe shows how a [Collider3D](xref:WaveEngine.Framework.Physics3D.Collider3D)  component can be easily added to entities, in order to detect collisions between them.
