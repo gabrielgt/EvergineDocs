@@ -2,7 +2,7 @@
 
 Nowadays a lot of apps includes in-app purchase to extend the functionality or provide exclusive content to their users.
 
-WaveEngine have an out of the box `InAppPurchase` service, which allows us to use the common functionality across all mobile platforms supported by WaveEngine.
+WaveEngine have an out of the box [InAppPurchase](xref:WaveEngine.Framework.Services.InAppPurchase) service, which allows us to use the common functionality across all mobile platforms supported by WaveEngine.
 
 ## Hands-on
 
@@ -14,7 +14,7 @@ You must take into account that the `Initialize` method must be called before us
 await WaveServices.InAppPurchase.Initialize(inAppPurchaseProperties);
 ```
 
-The `inAppPurchaseProperties` parameter is a Dictionary<string, string> that contains the necessary initialization properties.
+The [inAppPurchaseProperties](xref:WaveEngine.Framework.Services.InAppPurchase) parameter is a Dictionary<string, string> that contains the necessary initialization properties.
 
 No properties are needed for iOS and Windows Phone, so you can call it with a null value.
 
@@ -61,4 +61,4 @@ this.SetSimulatedProducts(new List<Product>
 
 ## Wrap-up
 
-We have learned how to use the `InAppPurchase` service included in WaveEngine. Allowing us to monetize our application and offering more quality content to our users.
+We have learned how to use the [InAppPurchase](xref:WaveEngine.Framework.Services.InAppPurchase) service included in WaveEngine. Allowing us to monetize our application and offering more quality content to our users.
