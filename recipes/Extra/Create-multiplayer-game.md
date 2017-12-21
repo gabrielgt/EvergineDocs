@@ -9,7 +9,7 @@ This behavior is synchronized in all others connected applications.
 Create a new WaveEngine project using Wave Visual Editor. You can remove the 3D camera and the default light added to the scene.
 Add a png image with the name `logo.png` to the project assets.
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
 Add a reference to **WaveEngine.Networking** package from NuGet.
 
@@ -20,15 +20,16 @@ Register the `NetworkService` in the `Initialize` method of Game.cs file:
 	{
 		base.Initialize(application);
 
+		this.Load(WaveContent.GameInfo);
+		
 		WaveServices.RegisterService(new NetworkService());
 
 		ScreenContext screenContext = new ScreenContext(new MyScene());    
 		WaveServices.ScreenContextManager.To(screenContext);
-
 	}
 ```
 
-Add the [TapAppearBehavior](https://gist.github.com/danielcaceresm/2809c9d98bbff82144b4) to your project.
+Add the [TapAppearBehavior](images/\CreateMultiplayerGame/TapBehavior.cs) to your project.
 
 Create a new class with the name `SyncMyEntityComponent` and extends from `NetworkSyncComponent`:
 
@@ -72,7 +73,7 @@ When its `NeedSendSyncData` method return true, the entity is synchronized using
 If a `SyncMyEntityComponent` is owned by an entity created by other instance, the `ReadSyncData` is called whenever is needed to refresh the entity properties.
 
 Now we will implement the scene logic.
-Add the following field to the class:
+Add the following fields to the MyScene class:
 
 ```C#
         private const string ApplicationId = "MyGame";
@@ -81,8 +82,6 @@ Add the following field to the class:
 
         private NetworkManager networkManager;
         private NetworkService networkService;
-
-        private Entity myEntity;
 ```
 
 In the scene constructor, assign the `NetworkService` field:
@@ -94,26 +93,15 @@ In the scene constructor, assign the `NetworkService` field:
         }
 ```
 
-When the scene is created, create the entity and add it to the EntityManager:
+When the scene is created center the `Camera2D`
 
 ```C#
-        protected override void CreateScene()
-        {
-            this.Load(WaveContent.Scenes.MyScene);
-
-            this.EntityManager.Find("defaultCamera2D").FindComponent<Camera2D>().CenterScreen();
-
-            this.myEntity = new Entity("Entity-Sync-" + networkService.ClientIdentifier)
-                .AddComponent(new Transform2D() { Origin = new Vector2(0.5f) })
-                .AddComponent(new Sprite(WaveContent.Assets.logo_png))
-                .AddComponent(new SpriteRenderer())
-                .AddComponent(new SyncMyEntityComponent())
-                .AddComponent(new NetworkBehavior())
-                .AddComponent(new TapAppearBehavior());
-
-            this.EntityManager.Add(this.myEntity);
-        }
-}     
+	protected override void CreateScene()        
+	{		
+		this.Load(WaveContent.Scenes.MyScene);		
+			
+		this.EntityManager.Find("defaultCamera2D").FindComponent<Camera2D>().CenterScreen();		
+	}
 ```
 
 Finally in the `Start` method we need to implement the logic to connect to the server:
@@ -143,39 +131,62 @@ The `InitializeNetworkConnection` method, tries to discover an existing host in 
             await this.networkService.ConnectAsync(discoveredHost);
         }
 
-        private Host InitializeHost()
+        private NetworkEndpoint InitializeHost()
         {
             this.networkService.InitializeHost(ApplicationId, Port);
-            var host = new Host() { Address = "127.0.0.1", Port = Port };
+            var host = new NetworkEndpoint() { Address = "127.0.0.1", Port = Port };
             return host;
         }
 
-        private async Task<Host> WaitForDiscoverHostAsync(TimeSpan timeOut)
+        private async Task<NetworkEndpoint> WaitForDiscoverHostAsync(TimeSpan timeOut)
         {
-            Host discoveredHost = null;
+            NetworkEndpoint discoveredHost = null;
             HostDiscovered hostDisceveredHandler = (sender, host) =>
             {
                 discoveredHost = host;
             };
-
+        
             this.networkService.HostDiscovered += hostDisceveredHandler;
             this.networkService.DiscoveryHosts(ApplicationId, Port);
             await Task.Delay(timeOut);
             this.networkService.HostDiscovered -= hostDisceveredHandler;
-
+        
             return discoveredHost;
         }
 ```
 
-When the connection is ready, the `InitializeNetworkManager` method register the scene and the entity:
+When the connection is ready, the `InitializeNetworkManager` method register the scene and the entities to be synchronized:
 
 ```C#
         private void InitializeNetworkManager()
         {
             this.networkManager = this.networkService.RegisterScene(this, SceneIdentifier);
-            this.networkManager.AddEntity(this.myEntity);
+            this.networkManager.AddFactory("myFactory", this.Create);
+            this.networkManager.AddEntity("myFactory");
+		}
+``` 
+
+The `Create` method, will create the entity but will only adds the TapAppearBehavior to the local entity, not the remote one:
+
+```C#
+	private Entity Create(string clientIdentifier, string fromNetworkBehaviorId)
+    {
+        var myEntity = new Entity("Entity-Sync-" + clientIdentifier)
+            .AddComponent(new Transform2D() { Origin = new Vector2(0.5f) })
+            .AddComponent(new Sprite(WaveContent.Assets.logo_png))
+            .AddComponent(new SpriteRenderer())
+            .AddComponent(new SyncMyEntityComponent())
+            .AddComponent(new NetworkBehavior());
+    
+        if(this.networkService.ClientIdentifier == clientIdentifier)
+        {
+            myEntity.AddComponent(new TapAppearBehavior());
         }
+    
+        return myEntity;
+    }
 ```
+
 
 Now the entity position and opacity will be synchronized between all the connected applications.
 
