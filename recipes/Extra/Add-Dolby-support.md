@@ -15,7 +15,7 @@ Pick your favorite music file (.mp3) from disk and drag it in Assets Folder of t
 
 ![](images/Dolby/ImageAssetsFolder.png)
 
-### In Visual Studio/Xamarin Studio 
+### With Visual Studio (for Windows or Mac)
 
 Open Manage NuGet packages tab from project and install WaveEngine.Dolby extension:
 ![](images/Dolby/ImageNugetDolby.png)
@@ -35,3 +35,5 @@ Just build and Run to start music play using Dolby capabilities where is availab
 ## Wrap-up
 
 We have learned how to play music using Dolby features on Dolby capable devices.
+
+Take look at the [Media samples](https://github.com/WaveEngine/Samples/tree/master/Media) on github to see this in action.

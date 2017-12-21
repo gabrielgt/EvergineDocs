@@ -4,7 +4,7 @@ Within this recipe you will learn how to integrate your game with Google Play an
 WaveEngine.Social extension provides you a cross-platform Wave service to consult, upload and boast about player achievements and new scores.
  
 ## Hands-on 
-### With Visual Studio/Xamarin Studio 
+### With Visual Studio (for Windows or Mac) 
 
 We will be using the [SocialService sample](https://github.com/WaveEngine/Samples/tree/master/Extensions/SocialService) as a starting point to discover how to use it.  
 
