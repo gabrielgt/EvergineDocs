@@ -6,26 +6,32 @@ Within this recipe you will learn to add buttons to your games. Note that all UI
 
 ### With Wave Visual Editor
 
-From an empty project, open the solution with **Visual Studio** or **Xamarin Studio**
+> [!Note]
+> At the time of writing this recipe, Wave Visual Editor does not support adding UI components, so continue reading please.
 
-Note: At the time of writing this recipe, Wave Visual Editor does not support adding UI components, so continue reading please.
+### With Visual Studio (for Windows or Mac)
 
-### With Visual Studio/Xamarin Studio
+Edit the `MyScene` class, adding these two using directives:
 
-Edit *CreateScene* method from *MyScene* class with the code that will add a button to the scene:
+```C#
+using WaveEngine.Framework.UI;
+using WaveEngine.Components.UI;
+```
+
+Edit `CreateScene` method with the code that will add a button to the scene:
 
 ```C#
 Button button = new Button("Hello World")
 {
-    HorizontalAlignment = HorizontalAlignment.Center,## Wrap-up
+    HorizontalAlignment = HorizontalAlignment.Center,
     VerticalAlignment = VerticalAlignment.Center,
 };
 
-EntityManager.Add(button.Entity);
+this.EntityManager.Add(button.Entity);
 ```
 
-*Button* class and every component in *WaveEngine.Components.UI* namespace have very useful properties to play with, please feel free to tree them out.
+`Button` class and every component in `WaveEngine.Components.UI` namespace have very useful properties to play with. Please feel free to try them out.
 
 ## Wrap-up
 
-You have learned how to add an UI component to your scenes.
+You have learned how to add a UI component to your scenes.

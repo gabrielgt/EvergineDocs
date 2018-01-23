@@ -1,8 +1,8 @@
 ## Goal
 
-It is a common pattern to begin a game though a menu: new game, load game, options, etc. Such elements are built by composition of UI controls, like buttons and labels. Wave Engine ships with a list of [predefined controls](xref:Wave​Engine.​Components.​UI), along with layer types, which can solve multiple situations in your games.
+It is a common pattern to begin a game through a menu: new game, load game, options, etc. Such elements are built by composition of UI controls, like buttons and labels. Wave Engine ships with a list of [predefined controls](xref:Wave​Engine.​Components.​UI), along with layer types, which can solve multiple situations in your games.
 
-However, what happens if you need an specific UI element which does not exist? This recipe gives a quick hint to cover this question, providing a simple pattern to build a typical alert box, with accept and cancel buttons.
+However, what happens if you need a specific UI element which does not exist? This recipe gives a quick hint to cover this question, providing a simple pattern to build a typical alert box, with accept and cancel buttons.
 
 ## Hands-on
 
@@ -10,11 +10,11 @@ However, what happens if you need an specific UI element which does not exist? T
 
 This recipe cannot be done just by using the Editor, although it is needed to create the initial project, and choose the 2D camera (UIs work in 2D mode), by cliking on the 3D toggle button from the icons bar. You will notice it switches to 2D, and the Viewport follows accordingly by switching to the default 2D camera.
 
-In order to continue, please keep reading below section.
+In order to continue, please keep reading the following section.
 
-### With Visual Studio/Xamarin Studio
+### With Visual Studio (for Windows or Mac)
 
-Once the project is correctly set-up following above instructions, open the C# solution through the File menu.
+Once the project is correctly set-up following the instructions above, open the C# solution through the File menu.
 
 Our alert control will be added like any other `Entity`, and will have a `Show()` method with the following signature:
 
@@ -22,30 +22,34 @@ Our alert control will be added like any other `Entity`, and will have a `Show()
 void Show(string message, Action okAction, Action cancelAction)
 ```
 
-, where 'message' will be the alert's title, and the two following `Action` the specific logic to execute upon clicking on accept and cancel buttons, respectively.
+Here, *message* will be the alert's title, and the two following `Action` are the specific logic to execute upon clicking on accept and cancel buttons, respectively.
 
-The `Alert` control will inherit [Grid](xref:Wave​Engine.​Components.​UI.Grid), as it fits perfectly to align the internal controls: a [TextBlock](xref:Wave​Engine.​Components.​UI.TextBlock), and two [Button](xref:Wave​Engine.​Components.​UI.Button). The firts step it to configure such `Grid` to handle such:
+The `Alert` control will inherit [Grid](xref:Wave​Engine.​Components.​UI.Grid), as it fits perfectly to align the internal controls: a [TextBlock](xref:Wave​Engine.​Components.​UI.TextBlock), and two [Button](xref:Wave​Engine.​Components.​UI.Button). The first step is to configure the `Grid`:
 
 ```c#
 public class Alert : Grid
 {
-	public Alert()
-		: base()
-	{
-		this.SetUpGrid();
-		
-		[…]
+    private TextBlock headerTextBlock;
+    private Action okAction;
+    private Action cancelAction;
 
+	public Alert() : base()
+	{
+		this.SetupGrid();
+        
+        this.CreateHeader();
+        this.CreateOKButton();
+        this.CreateCancelButton();
+            
 		this.IsVisible = false;
 	}
-	
-	[…]
+}
 ```
 
-By default, the control will be hidden upon creating it, and `Show()` will "wake" it up on demand when needed.
+By default, the control will be hidden upon creating it, and `Show()` will show it up on demand when needed.
 
 ```c#
-private void SetUpGrid()
+private void SetupGrid()
 {
 	this.Width = 320;
 	this.Height = 240;
@@ -85,7 +89,7 @@ private void CreateHeader()
 }
 ```
 
-`CreateHeader()` must be called within `Alert` ctor. In the same way, the other two buttons:
+In the same way, the other two buttons:
 
 ```c#
 private void CreateCancelButton()
@@ -158,6 +162,8 @@ public void Show(string message, Action okAction, Action cancelAction)
 Within a sample use scenario, this would be the final result:
 
 ```c#
+private Alert alert;
+
 protected override void CreateScene()
 {
 	this.Load(WaveContent.Scenes.MyScene);
