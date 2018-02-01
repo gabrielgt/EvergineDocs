@@ -6,11 +6,12 @@ Wave Engine comes with sime nice **features** system which makes those tasks par
 
 ## Hands-on
 
-There are three available features in this moment:
+There are four available features in this moment:
 
 - **Battery**: check battery status of device, get remaining percentage and other nice features.
 - **Connectivity**: check connectivity of device.
 - **Vibration**: simple way to trigger the vibration on a device in your Wave Engine projects.
+- **GPS**: 
 
 ### Battery
 
@@ -47,3 +48,18 @@ The use of the vibration feature is extremely simple.
 	vibrate.StartVibrate(750);
 
 We use the StartVibrate method to trigger the vibration on the device during 750 ms.
+
+## GPS
+
+The use of the gps feature is extremely simple.
+
+    IGPS gps = WaveServices.Platform.Features.GPS;
+	this.gps.PositionChanged += Gps_PositionChanged;
+    this.gps.StartListeningAsync(TimeSpan.FromSeconds(0.1), 0.1);
+
+    private void Gps_PositionChanged(object sender, PositionEventArgs e)
+    {
+        ...
+    }
+
+The `PositionChanged` event will be fired everty time the gps location changes.
