@@ -12,14 +12,14 @@ You need to install [Visual Studio for Mac](https://visualstudio.microsoft.com/v
 
 # Install Wave Engine
 
-Visit the official [Wave Engine](https://waveengine.net/) web-site, click on Download Wave Engine button (it will redirect to the [Download](http://waveengine.net/Download) page) and finally Download Installer one. Please assure the platform below is Mac OS.
+Visit the official [Wave Engine](https://waveengine.net/) web-site, click on Download Wave Engine button (it will redirect to the [Download](https://waveengine.net/Downloads) page) and finally Download Installer one. Please assure the platform below is Mac OS.
 
 ![Download Wave Mac](images/DownloadWaveIntallerMacOS.jpg)
 
 Open the downloaded file, and a friendly setup process will handle the installation. 
 
 >[!Warning] 
->If you are unable to install the WaveEngine, you might see the following message "_This app can't  be opened because it is from an unidentified developer_" Then you need to allow install apps in your system download outside from apple store.
+>If you are unable to install the WaveEngine, you might see the following message "_This app can't be opened because it is from an unidentified developer_" Then you need to allow install apps in your system download outside from apple store.
 
 ![Alert](images/AlertMsg.png)
 
