@@ -47,11 +47,11 @@ Visit the official [Wave Engine](https://waveengine.net/) web-site, click on Dow
 
 Double click on it if you are on Ubuntu, and a friendly setup process will handle the installation. If you are running a different Linux distribution, please refer to the on-line documentation on how to proceed with a .deb file.
 
-![Wave Installer Linux](images/WaveInstaller.jpg)
+![Wave Installer Linux](images/WaveInstallerLinux.jpg)
 
 Finally, after the installation ends, you will find Wave Editor application right there on the list:
 
-![Wave Editor Short cut linux](images/WaveEditorShortcut.jpg)
+![Wave Editor Short cut linux](images/WaveEditorShortcutLinux.jpg)
 
 # Create a Wave Engine Account
 

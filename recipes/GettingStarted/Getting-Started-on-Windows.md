@@ -29,11 +29,11 @@ Visit the official [Wave Engine](https://waveengine.net/) web-site, click on Dow
 
 Launch the setup file, it will firstly install the prerequisites followed by a common setup process at Windows.
 
-![Wave Installer](images/WaveInstaller.PNG)
+![Wave Installer](images/WaveInstallerWin.png)
 
 Once the setup ends, you will find a Wave Visual Editor shortcut on your Desktop, which you can open through a double-click on it.
 
-![Wave Editor Short cut](images/WaveEditorShortCut.PNG)
+![Wave Editor Short cut](images/WaveEditorShortcutWin.png)
 
 # Create a Wave Engine Account
 The first time you open Wave Visual Editor you will be asked for an user account.

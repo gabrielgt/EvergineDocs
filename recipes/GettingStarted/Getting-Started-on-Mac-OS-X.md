@@ -1,14 +1,14 @@
 # Quick Start Video
 
-Getting Started with Wave Engine on Mac OS X:
+Getting Started with Wave Engine on MacOS:
 
-[![Getting Started with Wave Engine in MonoDevelop](http://img.youtube.com/vi/ViwL-VTlX_4/0.jpg)](https://www.youtube.com/watch?v=ViwL-VTlX_4)
+[![Getting Started with Wave Engine on MacOS](http://img.youtube.com/vi/ViwL-VTlX_4/0.jpg)](https://www.youtube.com/watch?v=ViwL-VTlX_4)
 
 # Prerequisites
 
 ## IDE
 
-You need to install [Xamarin Studio](https://xamarin.com/studio) to develop with Wave Engine on Mac OS X. _Xamarin Studio comes with Xamarin_, which can be downloaded [here](https://xamarin.com/download).
+You need to install [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/) to develop with Wave Engine on MacOS.
 
 # Install Wave Engine
 
