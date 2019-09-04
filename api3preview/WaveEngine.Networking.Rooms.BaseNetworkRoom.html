@@ -239,45 +239,59 @@
     <tbody>
       <tr>
         <td><a href="#WaveEngine_Networking_Rooms_BaseNetworkRoom_AllPlayers">AllPlayers</a></td>
-        <td></td>
+        <td><p>Gets the &quot;list&quot; of all the players who are in that room (including the local player). Only updated while inside a Room.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Networking_Rooms_BaseNetworkRoom_CustomProperties">CustomProperties</a></td>
-        <td></td>
+        <td><p>Gets the custom properties of the room.
+Those properties are synchronized by the server automatically.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Networking_Rooms_BaseNetworkRoom_IsFull">IsFull</a></td>
-        <td></td>
+        <td><p>Gets a value indicating whether the room is full and therefore, no more players can join it.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Networking_Rooms_BaseNetworkRoom_IsVisible">IsVisible</a></td>
-        <td></td>
+        <td><p>Gets a value indicating whether the room is listed in its lobby.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Networking_Rooms_BaseNetworkRoom_MasterClientId">MasterClientId</a></td>
-        <td></td>
+        <td><p>Gets the Id of the player who&apos;s the master of this Room.
+Note: This changes when the current master leaves the room.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Networking_Rooms_BaseNetworkRoom_MaxPlayers">MaxPlayers</a></td>
-        <td></td>
+        <td><p>Gets the limit of players for this room. This property is shown in lobby, too.
+If the room is full (players count == maxplayers), joining this room will fail.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Networking_Rooms_BaseNetworkRoom_Name">Name</a></td>
-        <td></td>
+        <td><p>Gets the name of a room. Unique identifier for a room/match (per AppId + game-Version).</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Networking_Rooms_BaseNetworkRoom_PlayerCount">PlayerCount</a></td>
-        <td></td>
+        <td><p>Gets the count of players currently in room.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Networking_Rooms_BaseNetworkRoom_PropertiesListedInLobby">PropertiesListedInLobby</a></td>
-        <td></td>
+        <td><p>Gets a set of string properties that are in the RoomInfo of the Lobby.
+This list is defined when creating the room and can&apos;t be changed afterwards.</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   <h4 id="WaveEngine_Networking_Rooms_BaseNetworkRoom_AllPlayers" data-uid="WaveEngine.Networking.Rooms.BaseNetworkRoom.AllPlayers">AllPlayers</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the &quot;list&quot; of all the players who are in that room (including the local player). Only updated while inside a Room.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -300,8 +314,16 @@
   </table>
   
   <h4 id="WaveEngine_Networking_Rooms_BaseNetworkRoom_CustomProperties" data-uid="WaveEngine.Networking.Rooms.BaseNetworkRoom.CustomProperties">CustomProperties</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the custom properties of the room.
+Those properties are synchronized by the server automatically.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Networking_Rooms_BaseNetworkRoom_CustomProperties_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>All players inside the room can change these properties.
+Setting properties in this table updates the server and other players.</p>
+<p>Keys in the table are bytes to reduce network traffic. It is recommended
+to use a custom enumerator for better clarity.</p>
+</div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public NetworkPropertiesTable CustomProperties { get; }</code></pre>
@@ -323,7 +345,8 @@
   </table>
   
   <h4 id="WaveEngine_Networking_Rooms_BaseNetworkRoom_IsFull" data-uid="WaveEngine.Networking.Rooms.BaseNetworkRoom.IsFull">IsFull</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the room is full and therefore, no more players can join it.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -346,8 +369,12 @@
   </table>
   
   <h4 id="WaveEngine_Networking_Rooms_BaseNetworkRoom_IsVisible" data-uid="WaveEngine.Networking.Rooms.BaseNetworkRoom.IsVisible">IsVisible</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the room is listed in its lobby.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Networking_Rooms_BaseNetworkRoom_IsVisible_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Rooms can be created invisible, or changed to invisible.</p>
+</div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual bool IsVisible { get; set; }</code></pre>
@@ -369,7 +396,9 @@
   </table>
   
   <h4 id="WaveEngine_Networking_Rooms_BaseNetworkRoom_MasterClientId" data-uid="WaveEngine.Networking.Rooms.BaseNetworkRoom.MasterClientId">MasterClientId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the Id of the player who&apos;s the master of this Room.
+Note: This changes when the current master leaves the room.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -392,8 +421,13 @@
   </table>
   
   <h4 id="WaveEngine_Networking_Rooms_BaseNetworkRoom_MaxPlayers" data-uid="WaveEngine.Networking.Rooms.BaseNetworkRoom.MaxPlayers">MaxPlayers</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the limit of players for this room. This property is shown in lobby, too.
+If the room is full (players count == maxplayers), joining this room will fail.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Networking_Rooms_BaseNetworkRoom_MaxPlayers_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the player has joined the room, the setter will update the server and all clients.</p>
+</div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual byte MaxPlayers { get; set; }</code></pre>
@@ -415,8 +449,12 @@
   </table>
   
   <h4 id="WaveEngine_Networking_Rooms_BaseNetworkRoom_Name" data-uid="WaveEngine.Networking.Rooms.BaseNetworkRoom.Name">Name</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the name of a room. Unique identifier for a room/match (per AppId + game-Version).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Networking_Rooms_BaseNetworkRoom_Name_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The name can&apos;t be changed once it&apos;s set by the matchmaking server.</p>
+</div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
@@ -438,7 +476,8 @@
   </table>
   
   <h4 id="WaveEngine_Networking_Rooms_BaseNetworkRoom_PlayerCount" data-uid="WaveEngine.Networking.Rooms.BaseNetworkRoom.PlayerCount">PlayerCount</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the count of players currently in room.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -461,8 +500,13 @@
   </table>
   
   <h4 id="WaveEngine_Networking_Rooms_BaseNetworkRoom_PropertiesListedInLobby" data-uid="WaveEngine.Networking.Rooms.BaseNetworkRoom.PropertiesListedInLobby">PropertiesListedInLobby</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a set of string properties that are in the RoomInfo of the Lobby.
+This list is defined when creating the room and can&apos;t be changed afterwards.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Networking_Rooms_BaseNetworkRoom_PropertiesListedInLobby_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You could name properties that are not set from the beginning. Those will be synchronized with the lobby when added later on.</p>
+</div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public HashSet&lt;string&gt; PropertiesListedInLobby { get; }</code></pre>

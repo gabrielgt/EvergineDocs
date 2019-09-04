@@ -154,42 +154,60 @@
     <tbody>
       <tr>
         <td><a href="#WaveEngine_Networking_Players_BaseNetworkPlayer_CustomProperties">CustomProperties</a></td>
-        <td></td>
+        <td><p>Gets the custom properties of the player.
+Those properties are synchronized by the server automatically.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Networking_Players_BaseNetworkPlayer_Id">Id</a></td>
-        <td></td>
+        <td><p>Gets an identifier of this player in current room. It&apos;s -1 outside of rooms.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Networking_Players_BaseNetworkPlayer_IsInLobby">IsInLobby</a></td>
-        <td></td>
+        <td><p>Gets a value indicating whether this player is in the lobby (not in a room).</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Networking_Players_BaseNetworkPlayer_IsLocalPlayer">IsLocalPlayer</a></td>
-        <td></td>
+        <td><p>Gets a value indicating whether this player is the local player.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Networking_Players_BaseNetworkPlayer_IsMasterClient">IsMasterClient</a></td>
-        <td></td>
+        <td><p>Gets a value indicating whether this player is the Master Client of the current room or not.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Networking_Players_BaseNetworkPlayer_Nickname">Nickname</a></td>
-        <td></td>
+        <td><p>Gets a non-unique nickname of this player. Synced automatically in a room.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Networking_Players_BaseNetworkPlayer_Room">Room</a></td>
-        <td></td>
+        <td><p>Gets the room where is the player. It is null if the player is in the lobby.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Networking_Players_BaseNetworkPlayer_TagObject">TagObject</a></td>
-        <td></td>
+        <td><p>Gets or sets an object that can be used to store a reference that&apos;s useful to know &quot;by player&quot;.
+This property is not sync by the server.</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   <h4 id="WaveEngine_Networking_Players_BaseNetworkPlayer_CustomProperties" data-uid="WaveEngine.Networking.Players.BaseNetworkPlayer.CustomProperties">CustomProperties</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the custom properties of the player.
+Those properties are synchronized by the server automatically.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Networking_Players_BaseNetworkPlayer_CustomProperties_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Only the local player might change his own custom properties in a room.
+Setting properties in this table updates the server and other players.</p>
+<p>Keys in the table are bytes to reduce network traffic. It is recommended
+to use a custom enumerator for better clarity.</p>
+</div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public NetworkPropertiesTable CustomProperties { get; }</code></pre>
@@ -211,8 +229,13 @@
   </table>
   
   <h4 id="WaveEngine_Networking_Players_BaseNetworkPlayer_Id" data-uid="WaveEngine.Networking.Players.BaseNetworkPlayer.Id">Id</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets an identifier of this player in current room. It&apos;s -1 outside of rooms.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Networking_Players_BaseNetworkPlayer_Id_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Id is assigned per room and only valid in that context. It will change even on leave and re-join.
+Ids are never re-used per room.</p>
+</div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int Id { get; }</code></pre>
@@ -234,7 +257,8 @@
   </table>
   
   <h4 id="WaveEngine_Networking_Players_BaseNetworkPlayer_IsInLobby" data-uid="WaveEngine.Networking.Players.BaseNetworkPlayer.IsInLobby">IsInLobby</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this player is in the lobby (not in a room).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -257,7 +281,8 @@
   </table>
   
   <h4 id="WaveEngine_Networking_Players_BaseNetworkPlayer_IsLocalPlayer" data-uid="WaveEngine.Networking.Players.BaseNetworkPlayer.IsLocalPlayer">IsLocalPlayer</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this player is the local player.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -280,8 +305,15 @@
   </table>
   
   <h4 id="WaveEngine_Networking_Players_BaseNetworkPlayer_IsMasterClient" data-uid="WaveEngine.Networking.Players.BaseNetworkPlayer.IsMasterClient">IsMasterClient</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this player is the Master Client of the current room or not.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Networking_Players_BaseNetworkPlayer_IsMasterClient_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Can be used as &quot;authoritative&quot; client/player to make decisions, run AI or other.
+If the current Master Client leaves the room (leave/disconnect), the server will quickly assign someone else.
+If the current Master Client times out (closed app, lost connection, etc), messages sent to this client are
+effectively lost for the others!.</p>
+</div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool IsMasterClient { get; }</code></pre>
@@ -303,8 +335,13 @@
   </table>
   
   <h4 id="WaveEngine_Networking_Players_BaseNetworkPlayer_Nickname" data-uid="WaveEngine.Networking.Players.BaseNetworkPlayer.Nickname">Nickname</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a non-unique nickname of this player. Synced automatically in a room.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Networking_Players_BaseNetworkPlayer_Nickname_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A player might change his own nickname in a room.
+Setting this value updates the server and other players.</p>
+</div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Nickname { get; protected set; }</code></pre>
@@ -326,7 +363,8 @@
   </table>
   
   <h4 id="WaveEngine_Networking_Players_BaseNetworkPlayer_Room" data-uid="WaveEngine.Networking.Players.BaseNetworkPlayer.Room">Room</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the room where is the player. It is null if the player is in the lobby.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -349,8 +387,13 @@
   </table>
   
   <h4 id="WaveEngine_Networking_Players_BaseNetworkPlayer_TagObject" data-uid="WaveEngine.Networking.Players.BaseNetworkPlayer.TagObject">TagObject</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets an object that can be used to store a reference that&apos;s useful to know &quot;by player&quot;.
+This property is not sync by the server.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Networking_Players_BaseNetworkPlayer_TagObject_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Example: Set a player&apos;s character as Tag by assigning its Entity or EntityPath.</p>
+</div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public object TagObject { get; set; }</code></pre>
@@ -434,17 +477,20 @@
     <tbody>
       <tr>
         <td><a href="#WaveEngine_Networking_Players_BaseNetworkPlayer_OnCustomPropertiesChanged">OnCustomPropertiesChanged</a></td>
-        <td></td>
+        <td><p>Event raised when the server updates custom properties.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Networking_Players_BaseNetworkPlayer_OnNicknameChanged">OnNicknameChanged</a></td>
-        <td></td>
+        <td><p>Event raised when the server updates the player nickname.</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   <h4 id="WaveEngine_Networking_Players_BaseNetworkPlayer_OnCustomPropertiesChanged" data-uid="WaveEngine.Networking.Players.BaseNetworkPlayer.OnCustomPropertiesChanged">OnCustomPropertiesChanged</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Event raised when the server updates custom properties.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -467,7 +513,8 @@
   </table>
   
   <h4 id="WaveEngine_Networking_Players_BaseNetworkPlayer_OnNicknameChanged" data-uid="WaveEngine.Networking.Players.BaseNetworkPlayer.OnNicknameChanged">OnNicknameChanged</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Event raised when the server updates the player nickname.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
