@@ -1,0 +1,1436 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RigidBody2D
+   | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RigidBody2D
+   | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D">
+  
+  
+  <h1 id="WaveEngine_Framework_Physics2D_RigidBody2D" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D" class="xk-margin-default">Class RigidBody2D
+  </h1>
+  <div class="markdown level0 summary"><p>Rigidbody2D enable your entities to act under the control of physics. The Rigidbody can receive forces and torque
+to make your objects move in a realistic way.
+Any entity must contain a Rigidbody to be influenced by gravity, act under added forces or interact with other objects
+through physics engine.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+      <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level1"><a class="xref" href="WaveEngine.Common.IO.SerializableObject.html">SerializableObject</a></div>
+      <div class="level2"><a class="xref" href="WaveEngine.Framework.DependencyObject.html">DependencyObject</a></div>
+      <div class="level3"><a class="xref" href="WaveEngine.Framework.Component.html">Component</a></div>
+      <div class="level4"><a class="xref" href="WaveEngine.Framework.Behavior.html">Behavior</a></div>
+      <div class="level"><span class="xref"></span></div>
+  </div>
+  <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataContract(Namespace = &quot;WaveEngine.Framework.Physics2D&quot;)]
+public sealed class RigidBody2D : Behavior, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <h4 id="constructors-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D__ctor">RigidBody2D()</a></td>
+        <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Physics2D.RigidBody2D.html">RigidBody2D</a> class.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D__ctor" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.#ctor">RigidBody2D()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Physics2D.RigidBody2D.html">RigidBody2D</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RigidBody2D()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="fields-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_Transform2D">Transform2D</a></td>
+        <td><p>The transform 2D</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_Transform2D" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.Transform2D">Transform2D</h4>
+  <div class="markdown level1 summary"><p>The transform 2D</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RequiredComponent]
+public Transform2D Transform2D</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.Transform2D.html">Transform2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <h4 id="properties-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_AllowSleep">AllowSleep</a></td>
+        <td><p>Gets or sets a value indicating whether this body is allowed to sleep, if false it will ignore the Awake property value so it&apos;s always awaken</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_AngularDamping">AngularDamping</a></td>
+        <td><p>Gets or sets the angular Damping.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_AngularVelocity">AngularVelocity</a></td>
+        <td><p>Gets or sets the angular velocity of the physics entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_Awake">Awake</a></td>
+        <td><p>Gets or sets a value indicating whether this <a class="xref" href="WaveEngine.Framework.Physics2D.RigidBody2D.html">RigidBody2D</a> is awake.
+Bodies sleep thru few seconds of inactivity, you can query or set the awake state from this property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_FixedRotation">FixedRotation</a></td>
+        <td><p>Gets or sets a value indicating whether [fixed rotation].</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_GravityScale">GravityScale</a></td>
+        <td><p>Gets or sets the gravity scale applied to this body.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_Inertia">Inertia</a></td>
+        <td><p>Gets the rotational inertia of the body about the local origin, usually in kg-m^2.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_IsBullet">IsBullet</a></td>
+        <td><p>Gets or sets a value indicating whether is a bullet.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_LinearDamping">LinearDamping</a></td>
+        <td><p>Gets or sets the linear damping.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_LinearVelocity">LinearVelocity</a></td>
+        <td><p>Gets or sets the linear velocity of the physics entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_Mass">Mass</a></td>
+        <td><p>Gets the total mass of the body, usually in kg-m^2.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_MassData">MassData</a></td>
+        <td><p>Gets or sets the mass data of the body.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_PhysicBodyType">PhysicBodyType</a></td>
+        <td><p>Gets or sets the type of the physic body.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_RigidBody">RigidBody</a></td>
+        <td><p>Gets the internal RigidBody 2D object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_AllowSleep" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.AllowSleep">AllowSleep</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this body is allowed to sleep, if false it will ignore the Awake property value so it&apos;s always awaken</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[RenderProperty(Tooltip = &quot;Set this flag to false if this body should never fall asleep. Note that this increases CPU usage.&quot;)]
+public bool AllowSleep { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if [allow sleep]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_AngularDamping" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.AngularDamping">AngularDamping</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the angular Damping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Physics2D_RigidBody2D_AngularDamping_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Angular damping is use to reduce the angular velocity. The damping parameter can be larger than 1.0f but the damping effect becomes sensitive to the time step when the damping parameter is large.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[RenderProperty(Tooltip = &quot;Angular damping is use to reduce the angular velocity. The damping parameter can be larger than 1.0f but the damping effect becomes sensitive to the time step when the damping parameter is large.&quot;)]
+public float AngularDamping { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The angular damping.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_AngularVelocity" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.AngularVelocity">AngularVelocity</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the angular velocity of the physics entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[RenderProperty(Tooltip = &quot;The angular velocity of the body.&quot;)]
+public float AngularVelocity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The angular velocity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_Awake" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.Awake">Awake</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this <a class="xref" href="WaveEngine.Framework.Physics2D.RigidBody2D.html">RigidBody2D</a> is awake.
+Bodies sleep thru few seconds of inactivity, you can query or set the awake state from this property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[RenderProperty(Tooltip = &quot;Bodies sleep thru few seconds of inactivity, you can query or set the awake state from this property.&quot;)]
+public bool Awake { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if awake; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_FixedRotation" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.FixedRotation">FixedRotation</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether [fixed rotation].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[RenderProperty(Tooltip = &quot;Should this body be prevented from rotating? Useful for characters.&quot;)]
+public bool FixedRotation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if [fixed rotation]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_GravityScale" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.GravityScale">GravityScale</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the gravity scale applied to this body.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[RenderProperty(Tooltip = &quot;Scale the gravity applied to this body.&quot;)]
+public float GravityScale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_Inertia" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.Inertia">Inertia</h4>
+  <div class="markdown level1 summary"><p>Gets the rotational inertia of the body about the local origin, usually in kg-m^2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Inertia { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_IsBullet" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.IsBullet">IsBullet</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether is a bullet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Physics2D_RigidBody2D_IsBullet_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Whether isBullet is false fast-moving entities, such as bullets or falling objects, can pass right through a wall or floor.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[RenderProperty(Tooltip = &quot;Whether IsBullet is false fast-moving entities, such as bullets or falling objects, can pass right through a wall or floor.&quot;)]
+public bool IsBullet { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if is a bullet; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_LinearDamping" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.LinearDamping">LinearDamping</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the linear damping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Physics2D_RigidBody2D_LinearDamping_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Linear damping is use to reduce the linear velocity. The damping parameter can be larger than 1.0f but the damping effect becomes sensitive to the time step when the damping parameter is large.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[RenderProperty(Tooltip = &quot;Linear damping is use to reduce the linear velocity. The damping parameter can be larger than 1.0f but the damping effect becomes sensitive to the time step when the damping parameter is large.&quot;)]
+public float LinearDamping { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The linear damping.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_LinearVelocity" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.LinearVelocity">LinearVelocity</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the linear velocity of the physics entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[RenderProperty(Tooltip = &quot;The linear velocity of the body's origin in world co-ordinates.&quot;)]
+public Vector2 LinearVelocity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><p>The linear velocity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_Mass" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.Mass">Mass</h4>
+  <div class="markdown level1 summary"><p>Gets the total mass of the body, usually in kg-m^2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Mass { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_MassData" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.MassData">MassData</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the mass data of the body.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RigidBodyMassData2D MassData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Physics2D.RigidBodyMassData2D.html">RigidBodyMassData2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_PhysicBodyType" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.PhysicBodyType">PhysicBodyType</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the type of the physic body.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[RenderProperty(Tooltip = &quot;The body type: static, kinematic, or dynamic. Note: if a dynamic body would have zero mass, the mass is set to one.&quot;)]
+public RigidBodyType2D PhysicBodyType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Physics2D.RigidBodyType2D.html">RigidBodyType2D</a></td>
+        <td><p>The type of the physic body.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_RigidBody" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.RigidBody">RigidBody</h4>
+  <div class="markdown level1 summary"><p>Gets the internal RigidBody 2D object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRigidBody2D RigidBody { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Physics2D.IRigidBody2D.html">IRigidBody2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <h4 id="methods-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_ActiveNotification_System_Boolean_">ActiveNotification(Boolean)</a></td>
+        <td><p>Actives the notification.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_ApplyForce_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_System_Boolean_">ApplyForce(Vector2, Vector2, Boolean)</a></td>
+        <td><p>Apply a force at a world point. If the force is not applied at the center of mass, it will generate a torque and affect the angular velocity. This wakes up the body.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_ApplyForceToCenter_WaveEngine_Common_Math_Vector2_System_Boolean_">ApplyForceToCenter(Vector2, Boolean)</a></td>
+        <td><p>Apply a force to the center of mass. This wakes up the body.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_ApplyLinearImpulse_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_System_Boolean_">ApplyLinearImpulse(Vector2, Vector2, Boolean)</a></td>
+        <td><p>Apply an impulse at a point. This immediately modifies the velocity. It also modifies the angular velocity if the point of application is not at the center of mass. This wakes up the body.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_ApplyTorque_System_Single_System_Boolean_">ApplyTorque(Single, Boolean)</a></td>
+        <td><p>Apply a torque. This affects the angular velocity without affecting the linear velocity of the center of mass. This wakes up the body.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_DefaultValues">DefaultValues()</a></td>
+        <td><p>This methods is used to set default values by the default constructor of our classes.
+This is called too when an entity is deserializing.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_DeleteDependencies">DeleteDependencies()</a></td>
+        <td><p>Delete dependencies</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_Dispose">Dispose()</a></td>
+        <td><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_GetLinearVelocityFromLocalPoint_WaveEngine_Common_Math_Vector2_">GetLinearVelocityFromLocalPoint(Vector2)</a></td>
+        <td><p>Get the world velocity of a local point.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_GetLinearVelocityFromWorldPoint_WaveEngine_Common_Math_Vector2_">GetLinearVelocityFromWorldPoint(Vector2)</a></td>
+        <td><p>Get the world linear velocity of a world point attached to this body..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_GetLocalPoint_WaveEngine_Common_Math_Vector2_">GetLocalPoint(Vector2)</a></td>
+        <td><p>Gets a local point relative to the body&apos;s origin given a world point</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_GetLocalVector_WaveEngine_Common_Math_Vector2_">GetLocalVector(Vector2)</a></td>
+        <td><p>Gets a local vector given a world vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_GetWorldPoint_WaveEngine_Common_Math_Vector2_">GetWorldPoint(Vector2)</a></td>
+        <td><p>Get the world coordinates of a point given the local coordinates.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_GetWorldVector_WaveEngine_Common_Math_Vector2_">GetWorldVector(Vector2)</a></td>
+        <td><p>Get the world coordinates of a vector given the local coordinates.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_Initialize">Initialize()</a></td>
+        <td><p>Initialice this instance</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_Removed">Removed()</a></td>
+        <td><p>Called when the component is removed from the entity</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_ResetMassData">ResetMassData()</a></td>
+        <td><p>This resets the mass properties to the sum of the mass properties of the fixtures.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_ResetPosition_WaveEngine_Common_Math_Vector2_System_Single_">ResetPosition(Vector2, Single)</a></td>
+        <td><p>Reset the position of the body&apos;s origin and rotation. This breaks any contacts and wakes the other bodies. Manipulating a body&apos;s transform may cause non-physical behavior.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_ResolveDependencies">ResolveDependencies()</a></td>
+        <td><p>Resolve dependencies</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_SetTransform_WaveEngine_Common_Math_Vector2_System_Single_">SetTransform(Vector2, Single)</a></td>
+        <td><p>Set the position of the body&apos;s origin and rotation. This breaks any contacts and wakes the other bodies. Manipulating a body&apos;s transform may cause non-physical behavior.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_Update_System_TimeSpan_">Update(TimeSpan)</a></td>
+        <td><p>Allows this instance to execute custom logic during its <code>Update</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_ActiveNotification_System_Boolean_" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.ActiveNotification(System.Boolean)">ActiveNotification(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Actives the notification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ActiveNotification(bool active)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>active</em></td>
+        <td><p>if set to <code>true</code> [active].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_ApplyForce_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_System_Boolean_" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.ApplyForce(WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2,System.Boolean)">ApplyForce(Vector2, Vector2, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Apply a force at a world point. If the force is not applied at the center of mass, it will generate a torque and affect the angular velocity. This wakes up the body.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyForce(Vector2 force, Vector2 point, bool wake = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>force</em></td>
+        <td><p>The world force vector, usually in Newtons (N).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point</em></td>
+        <td><p>The world position of the point of application.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>wake</em></td>
+        <td><p>Also wake up the body</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_ApplyForceToCenter_WaveEngine_Common_Math_Vector2_System_Boolean_" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.ApplyForceToCenter(WaveEngine.Common.Math.Vector2,System.Boolean)">ApplyForceToCenter(Vector2, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Apply a force to the center of mass. This wakes up the body.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyForceToCenter(Vector2 force, bool wake = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>force</em></td>
+        <td><p>The world force vector, usually in Newtons (N).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>wake</em></td>
+        <td><p>Also wake up the body</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_ApplyLinearImpulse_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_System_Boolean_" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.ApplyLinearImpulse(WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2,System.Boolean)">ApplyLinearImpulse(Vector2, Vector2, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Apply an impulse at a point. This immediately modifies the velocity. It also modifies the angular velocity if the point of application is not at the center of mass. This wakes up the body.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyLinearImpulse(Vector2 impulse, Vector2 point, bool wake = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>impulse</em></td>
+        <td><p>The world impulse vector, usually in N-seconds or kg-m/s.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point</em></td>
+        <td><p>The world position of the point of application.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>wake</em></td>
+        <td><p>Also wake up the body</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_ApplyTorque_System_Single_System_Boolean_" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.ApplyTorque(System.Single,System.Boolean)">ApplyTorque(Single, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Apply a torque. This affects the angular velocity without affecting the linear velocity of the center of mass. This wakes up the body.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyTorque(float torque, bool wake = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><em>torque</em></td>
+        <td><p>About the z-axis (out of the screen), usually in N-m.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>wake</em></td>
+        <td><p>Also wake up the body</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_DefaultValues" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.DefaultValues">DefaultValues()</h4>
+  <div class="markdown level1 summary"><p>This methods is used to set default values by the default constructor of our classes.
+This is called too when an entity is deserializing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DefaultValues()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_DeleteDependencies" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.DeleteDependencies">DeleteDependencies()</h4>
+  <div class="markdown level1 summary"><p>Delete dependencies</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DeleteDependencies()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_Dispose" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_GetLinearVelocityFromLocalPoint_WaveEngine_Common_Math_Vector2_" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.GetLinearVelocityFromLocalPoint(WaveEngine.Common.Math.Vector2)">GetLinearVelocityFromLocalPoint(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Get the world velocity of a local point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 GetLinearVelocityFromLocalPoint(Vector2 localPoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>localPoint</em></td>
+        <td><p>Point in local coordinates</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><p>The world velocity of a point.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_GetLinearVelocityFromWorldPoint_WaveEngine_Common_Math_Vector2_" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.GetLinearVelocityFromWorldPoint(WaveEngine.Common.Math.Vector2)">GetLinearVelocityFromWorldPoint(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Get the world linear velocity of a world point attached to this body..</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 GetLinearVelocityFromWorldPoint(Vector2 worldPoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>worldPoint</em></td>
+        <td><p>Point in world coordinates</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><p>The world velocity of a point.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_GetLocalPoint_WaveEngine_Common_Math_Vector2_" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.GetLocalPoint(WaveEngine.Common.Math.Vector2)">GetLocalPoint(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Gets a local point relative to the body&apos;s origin given a world point</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 GetLocalPoint(Vector2 worldPoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>worldPoint</em></td>
+        <td><p>Point in world coordinates</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><p>The corresponding local point relative to the body&apos;s origin.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_GetLocalVector_WaveEngine_Common_Math_Vector2_" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.GetLocalVector(WaveEngine.Common.Math.Vector2)">GetLocalVector(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Gets a local vector given a world vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 GetLocalVector(Vector2 worldVector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>worldVector</em></td>
+        <td><p>Vector in world coordinates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><p>The corresponding local vector</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_GetWorldPoint_WaveEngine_Common_Math_Vector2_" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.GetWorldPoint(WaveEngine.Common.Math.Vector2)">GetWorldPoint(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Get the world coordinates of a point given the local coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 GetWorldPoint(Vector2 localPoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>localPoint</em></td>
+        <td><p>A point on the body measured relative the the body&apos;s origin.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><p>The same point expressed in world coordinates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_GetWorldVector_WaveEngine_Common_Math_Vector2_" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.GetWorldVector(WaveEngine.Common.Math.Vector2)">GetWorldVector(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Get the world coordinates of a vector given the local coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 GetWorldVector(Vector2 localVector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>localVector</em></td>
+        <td><p>A vector fixed in the body.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><p>The same vector expressed in world coordinates</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_Initialize" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"><p>Initialice this instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Initialize()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_Removed" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.Removed">Removed()</h4>
+  <div class="markdown level1 summary"><p>Called when the component is removed from the entity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Removed()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_ResetMassData" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.ResetMassData">ResetMassData()</h4>
+  <div class="markdown level1 summary"><p>This resets the mass properties to the sum of the mass properties of the fixtures.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Physics2D_RigidBody2D_ResetMassData_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This normally does not need to be called unless you called SetMassData to override the mass and you later want to reset the mass.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetMassData()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_ResetPosition_WaveEngine_Common_Math_Vector2_System_Single_" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.ResetPosition(WaveEngine.Common.Math.Vector2,System.Single)">ResetPosition(Vector2, Single)</h4>
+  <div class="markdown level1 summary"><p>Reset the position of the body&apos;s origin and rotation. This breaks any contacts and wakes the other bodies. Manipulating a body&apos;s transform may cause non-physical behavior.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetPosition(Vector2 worldPosition, float angle = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>worldPosition</em></td>
+        <td><p>the world position of the body&apos;s local origin.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><em>angle</em></td>
+        <td><p>the world rotation in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_ResolveDependencies" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.ResolveDependencies">ResolveDependencies()</h4>
+  <div class="markdown level1 summary"><p>Resolve dependencies</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ResolveDependencies()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_SetTransform_WaveEngine_Common_Math_Vector2_System_Single_" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.SetTransform(WaveEngine.Common.Math.Vector2,System.Single)">SetTransform(Vector2, Single)</h4>
+  <div class="markdown level1 summary"><p>Set the position of the body&apos;s origin and rotation. This breaks any contacts and wakes the other bodies. Manipulating a body&apos;s transform may cause non-physical behavior.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTransform(Vector2 worldPosition, float angle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>worldPosition</em></td>
+        <td><p>the world position of the body&apos;s local origin.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><em>angle</em></td>
+        <td><p>the world rotation in radians.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_Update_System_TimeSpan_" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.Update(System.TimeSpan)">Update(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Allows this instance to execute custom logic during its <code>Update</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Physics2D_RigidBody2D_Update_System_TimeSpan__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method will not be executed if the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a>, or the <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>
+owning it are not <code>Active</code>.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Update(TimeSpan gameTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><em>gameTime</em></td>
+        <td><p>The game time.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <h4 id="events-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_RigidBody2D_OnSetTransform">OnSetTransform</a></td>
+        <td><p>Event fired when the SetTransform is called</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_RigidBody2D_OnSetTransform" data-uid="WaveEngine.Framework.Physics2D.RigidBody2D.OnSetTransform">OnSetTransform</h4>
+  <div class="markdown level1 summary"><p>Event fired when the SetTransform is called</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler OnSetTransform</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

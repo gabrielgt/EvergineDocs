@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Goal | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Goal | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="goal">Goal</h2>
+
+<p>Particles allow us to give dynamism to a game by creating good-looking effects. The well-know example of <a href="http://braid-game.com/">Braid</a> does a heavy use of 2D particles, where even the backgrounds were done using this technique. We will learn how to create a 2D particle system with Wave Engine, and how to customize it looking to fit our effect needs.</p>
+<h2 id="hands-on">Hands-on</h2>
+<p>Creating a particle system involves two different tasks:</p>
+<ul>
+<li>the particle system definition it-self: how the particles will behave</li>
+<li>the <code>Entity</code> which renders the above particle system on a position on screen</li>
+</ul>
+<h3 id="using-wave-visual-editor">Using Wave Visual Editor</h3>
+<p>Open or create a WaveEngine project in Wave Visual Editor:</p>
+<p>Set the Editor in 2D mode in the icon <img src="images/Particles2D/Particles2DViewportIcon.jpg" alt="">.</p>
+<p>Open the Create menu and select the Particle System 2D:</p>
+<p><img src="images/Particles2D/Particles2DMenu.jpg" alt=""></p>
+<p>Import the asset you want to use as particle. In this sample we have used the dinoparticle.png asset from the <a href="https://github.com/WaveEngine/Samples/blob/master/Particles/ParticleSystem2D/Content/Assets/dinoParticle.png">Particles2D Sample</a>
+Create a Material to the particles and set it at the Particle Entity Material.</p>
+<div class="IMPORTANT"><h5>Important</h5><p>Set the Material &#39;LightingEnabled&#39; Property to false and set the Material &#39;LayerType&#39; Property to AlphaLayer.</p>
+</div>
+<p><img src="images/Particles2D/Particles2DMaterial.jpg" alt=""></p>
+<p>Now you can configure the ParticleSystem2D Component from the Entity:</p>
+<ul>
+<li><strong>Emit</strong>: True to emmit particles.</li>
+<li><strong>NumParticles</strong>: Max particles at same time.</li>
+<li><strong>EmmiterShape</strong>: [Rectangle|FillRectangle|Circle|FillCircle] The shape that the emitter will have.</li>
+<li><strong>EmitRate</strong>: Particles per second.</li>
+<li><strong>SortEnabled</strong>: Enable sorting.</li>
+<li><strong>LocalVelocity</strong>: particle global velocity</li>
+<li><strong>RandomVelocity</strong>: velocity variation (different every particle).</li>
+<li><strong>Gravity</strong>: global acceleration.</li>
+<li><strong>InitialAngle</strong>: Angle for a particle (initial).</li>
+<li><strong>InitialAngleVariation</strong>: Angle variation for every particle (initial).</li>
+<li><strong>MinRotateSpeed/MaxRotateSpeed</strong>: Modifies rotation speed by particle.</li>
+<li><strong>MinSize/MaxSize</strong>: Modifies size by particle.</li>
+<li><strong>EndDeltaScale</strong>: Scale value on the end of the particle live.</li>
+<li><strong>MinLife/MaxLife</strong>: Time to live of every particle.</li>
+<li><strong>LinearColorEnabled</strong>: Change the particle color in the particle&#39;s live.</li>
+<li><strong>MinColor/MaxColor</strong>: Color selection.</li>
+<li><strong>AlphaEnabled</strong>: True for allow transparency in particles.</li>
+<li><strong>CollisionType</strong>: [None|Bottom|Top|Left|Right] Enables particle collision in a rectangle defined by CollisionMin/CollisionMax properties.</li>
+<li><strong>CollisionMin/CollisionMax</strong>: Defines a Rectangle to collision.</li>
+<li><strong>CollisionSpread</strong>: Defines the particle spread in the collision.</li>
+<li><strong>CollisionBehavior</strong>: [Die|Bounce] Selected what happend on collision.</li>
+<li><strong>Bouncines</strong>: When CollisionBehavior is Bounce this property defines the bounciness of the particle.</li>
+</ul>
+<p><img src="images/Particles2D/Particles2DResult.jpg" alt=""></p>
+<h3 id="with-visual-studio-for-windows-or-mac">With Visual Studio (for Windows or Mac)</h3>
+<p>Open or create a WaveEngine project in Wave Visual Editor, import the particle asset and create the material to particles:</p>
+<p>Import the namespace in scene class:</p>
+<pre><code class="lang-c#">using WaveEngine.Components.Particles;
+</code></pre><p>Building the entity:</p>
+<pre><code class="lang-c#">var entity = new Entity()
+    .AddComponent(new Transform2D())
+    // ParticleSyste2D Requires a MaterialsMap
+    .AddComponent(new MaterialsMap(new StandardMaterial()
+    {
+        DiffusePath = WaveContent.Assets.dinoParticle_png,
+        LightingEnabled = false,
+        LayerType = DefaultLayers.Alpha
+    }))
+    // Set some particle properties
+    .AddComponent(new ParticleSystem2D()
+    {
+        // Amount of particles drawn on a game loop
+        NumParticles = 200,
+        // Amount of particles emited per second
+        EmitRate = 1500,
+        // Minimum time a particle will be alive
+        MinLife = 1,
+        // Maximum time a particle will be alive
+        MaxLife = 3,
+        // 2D vector containing the local velocity a particle will take
+        LocalVelocity = new Vector2(0.4f, -2f),
+        // 2D vector containing a random velocity applied to the local one
+        RandomVelocity = new Vector2(2f, 1.5f),
+        // Minimum size of the particle
+        MinSize = 15,
+        // Maximum size of the particle
+        MaxSize = 40,
+        // Minimum rotation speed for a particle
+        MinRotateSpeed = 0.03f,
+        // Maximum rotation speed for a particle
+        MaxRotateSpeed = -0.03f,
+        // Delta scale applied during the particle&#39;s life
+        EndDeltaScale = 0f,
+        // Size the emitter will fit in during execution
+        EmitterSize = new Vector3(30),
+        // Gravity applied to each particle
+        Gravity = new Vector2(0, 0.03f),
+        // Shape the emitter will form during execution
+        EmitterShape = ParticleSystem2D.Shape.FillCircle
+        // You can set here every property you need
+    })
+    .AddComponent(new ParticleSystemRenderer2D());
+
+    this.EntityManager.Add(entity);
+</code></pre><h2 id="wrap-up">Wrap-up</h2>
+<p>Within this recipe we have created an effect through 2D particles.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,692 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ISocial
+   | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ISocial
+   | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WaveEngine.Social.ISocial">
+  
+  
+  <h1 id="WaveEngine_Social_ISocial" data-uid="WaveEngine.Social.ISocial" class="xk-margin-default">Interface ISocial
+  </h1>
+  <div class="markdown level0 summary"><p>Platform specific Social Service interface</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>:WaveEngine.Social.dll</h6>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ISocial</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <h4 id="properties-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Social_ISocial_IsAuthenticated">IsAuthenticated</a></td>
+        <td><p>Gets a value indicating whether the local user is authenticated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Social_ISocial_IsAuthenticated" data-uid="WaveEngine.Social.ISocial.IsAuthenticated">IsAuthenticated</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the local user is authenticated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsAuthenticated { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the local user is authenticated; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <h4 id="methods-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Social_ISocial_AddNewScore_System_String_System_Int64_">AddNewScore(String, Int64)</a></td>
+        <td><p>Adds a new leaderboard score.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Social_ISocial_GetAchievements">GetAchievements()</a></td>
+        <td><p>Gets the achievements.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Social_ISocial_GetPlayerCenteredScores_System_String_System_Int32_System_Boolean_System_Boolean_">GetPlayerCenteredScores(String, Int32, Boolean, Boolean)</a></td>
+        <td><p>Gets the the player-centered page of scores for a given leaderboard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Social_ISocial_GetTopScores_System_String_System_Int32_System_Boolean_System_Boolean_">GetTopScores(String, Int32, Boolean, Boolean)</a></td>
+        <td><p>Gets the top page of scores for a given leaderboard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Social_ISocial_IncrementAchievement_System_String_System_Int32_">IncrementAchievement(String, Int32)</a></td>
+        <td><p>Increments the achievement progress.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Social_ISocial_Init">Init()</a></td>
+        <td><p>Initializes this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Social_ISocial_Login">Login()</a></td>
+        <td><p>Logins local user.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Social_ISocial_Logout">Logout()</a></td>
+        <td><p>Logouts local user.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Social_ISocial_ShowAchievements">ShowAchievements()</a></td>
+        <td><p>Shows a default/system view of the games achievements.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Social_ISocial_ShowAllLeaderboards">ShowAllLeaderboards()</a></td>
+        <td><p>Shows a default/system view of the games leaderboards.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Social_ISocial_ShowLeaderboard_System_String_">ShowLeaderboard(String)</a></td>
+        <td><p>Shows a default/system view of the given game leaderboard.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Social_ISocial_UnlockAchievement_System_String_">UnlockAchievement(String)</a></td>
+        <td><p>Unlocks the achievement.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Social_ISocial_AddNewScore_System_String_System_Int64_" data-uid="WaveEngine.Social.ISocial.AddNewScore(System.String,System.Int64)">AddNewScore(String, Int64)</h4>
+  <div class="markdown level1 summary"><p>Adds a new leaderboard score.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; AddNewScore(string leaderboardCode, long score)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>leaderboardCode</em></td>
+        <td><p>The leaderboard code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><em>score</em></td>
+        <td><p>The score.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p><code>true</code> if the score has been added; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Social_ISocial_GetAchievements" data-uid="WaveEngine.Social.ISocial.GetAchievements">GetAchievements()</h4>
+  <div class="markdown level1 summary"><p>Gets the achievements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;Achievement&gt;&gt; GetAchievements()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Social.Achievement.html">Achievement</a>&gt;&gt;</td>
+        <td><p>The achievements.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Social_ISocial_GetPlayerCenteredScores_System_String_System_Int32_System_Boolean_System_Boolean_" data-uid="WaveEngine.Social.ISocial.GetPlayerCenteredScores(System.String,System.Int32,System.Boolean,System.Boolean)">GetPlayerCenteredScores(String, Int32, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the the player-centered page of scores for a given leaderboard.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;LeaderboardScore&gt;&gt; GetPlayerCenteredScores(string leaderboardCode, int count, bool socialOnly, bool forceReload)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>leaderboardCode</em></td>
+        <td><p>The leaderboard code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>count</em></td>
+        <td><p>The maximum number of scores. Must be between 1 and 25.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>socialOnly</em></td>
+        <td><p>If <code>true</code>, the result will only contain the scores of players in the viewing player&apos;s circles.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>forceReload</em></td>
+        <td><p>If <code>true</code>, this call will clear any locally cached data and attempt to fetch the latest data from the server. This would commonly be used for something like a user-initiated refresh. Normally, this should be set to false to gain advantages of data caching.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Social.LeaderboardScore.html">LeaderboardScore</a>&gt;&gt;</td>
+        <td><p>The scores.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Social_ISocial_GetTopScores_System_String_System_Int32_System_Boolean_System_Boolean_" data-uid="WaveEngine.Social.ISocial.GetTopScores(System.String,System.Int32,System.Boolean,System.Boolean)">GetTopScores(String, Int32, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the top page of scores for a given leaderboard.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;LeaderboardScore&gt;&gt; GetTopScores(string leaderboardCode, int count, bool socialOnly, bool forceReload)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>leaderboardCode</em></td>
+        <td><p>The leaderboard code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>count</em></td>
+        <td><p>The maximum number of scores. Must be between 1 and 25.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>socialOnly</em></td>
+        <td><p>If <code>true</code>, the result will only contain the scores of players in the viewing player&apos;s circles.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>forceReload</em></td>
+        <td><p>If <code>true</code>, this call will clear any locally cached data and attempt to fetch the latest data from the server. This would commonly be used for something like a user-initiated refresh. Normally, this should be set to false to gain advantages of data caching.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Social.LeaderboardScore.html">LeaderboardScore</a>&gt;&gt;</td>
+        <td><p>The scores.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Social_ISocial_IncrementAchievement_System_String_System_Int32_" data-uid="WaveEngine.Social.ISocial.IncrementAchievement(System.String,System.Int32)">IncrementAchievement(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Increments the achievement progress.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; IncrementAchievement(string achievementCode, int progress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>achievementCode</em></td>
+        <td><p>The achievement code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>progress</em></td>
+        <td><p>The progress.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p><code>true</code> if the achievement has been incremented; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Social_ISocial_Init" data-uid="WaveEngine.Social.ISocial.Init">Init()</h4>
+  <div class="markdown level1 summary"><p>Initializes this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Init()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Social_ISocial_Login" data-uid="WaveEngine.Social.ISocial.Login">Login()</h4>
+  <div class="markdown level1 summary"><p>Logins local user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Player&gt; Login()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="WaveEngine.Social.Player.html">Player</a>&gt;</td>
+        <td><p>The logged in user.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Social_ISocial_Logout" data-uid="WaveEngine.Social.ISocial.Logout">Logout()</h4>
+  <div class="markdown level1 summary"><p>Logouts local user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; Logout()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p><code>true</code> if logout was successful; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Social_ISocial_ShowAchievements" data-uid="WaveEngine.Social.ISocial.ShowAchievements">ShowAchievements()</h4>
+  <div class="markdown level1 summary"><p>Shows a default/system view of the games achievements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; ShowAchievements()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p><code>true</code> if the view has been shown; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Social_ISocial_ShowAllLeaderboards" data-uid="WaveEngine.Social.ISocial.ShowAllLeaderboards">ShowAllLeaderboards()</h4>
+  <div class="markdown level1 summary"><p>Shows a default/system view of the games leaderboards.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; ShowAllLeaderboards()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p><code>true</code> if the view has been shown; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Social_ISocial_ShowLeaderboard_System_String_" data-uid="WaveEngine.Social.ISocial.ShowLeaderboard(System.String)">ShowLeaderboard(String)</h4>
+  <div class="markdown level1 summary"><p>Shows a default/system view of the given game leaderboard.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; ShowLeaderboard(string leaderboardCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>leaderboardCode</em></td>
+        <td><p>The leaderboard code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p><code>true</code> if the view has been shown; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Social_ISocial_UnlockAchievement_System_String_" data-uid="WaveEngine.Social.ISocial.UnlockAchievement(System.String)">UnlockAchievement(String)</h4>
+  <div class="markdown level1 summary"><p>Unlocks the achievement.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; UnlockAchievement(string achievementCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>achievementCode</em></td>
+        <td><p>The achievement code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p><code>true</code> if the achievement has been unlocked; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

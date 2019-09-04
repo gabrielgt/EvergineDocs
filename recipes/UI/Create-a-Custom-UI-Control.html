@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Goal | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Goal | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="goal">Goal</h2>
+
+<p>It is a common pattern to begin a game through a menu: new game, load game, options, etc. Such elements are built by composition of UI controls, like buttons and labels. Wave Engine ships with a list of <a href="xref:Wave​Engine.​Components.​UI">predefined controls</a>, along with layer types, which can solve multiple situations in your games.</p>
+<p>However, what happens if you need a specific UI element which does not exist? This recipe gives a quick hint to cover this question, providing a simple pattern to build a typical alert box, with accept and cancel buttons.</p>
+<h2 id="hands-on">Hands-on</h2>
+<h3 id="with-wave-visual-editor">With Wave Visual Editor</h3>
+<p>This recipe cannot be done just by using the Editor, although it is needed to create the initial project, and choose the 2D camera (UIs work in 2D mode), by cliking on the 3D toggle button from the icons bar. You will notice it switches to 2D, and the Viewport follows accordingly by switching to the default 2D camera.</p>
+<p>In order to continue, please keep reading the following section.</p>
+<h3 id="with-visual-studio-for-windows-or-mac">With Visual Studio (for Windows or Mac)</h3>
+<p>Once the project is correctly set-up following the instructions above, open the C# solution through the File menu.</p>
+<p>Our alert control will be added like any other <code>Entity</code>, and will have a <code>Show()</code> method with the following signature:</p>
+<pre><code class="lang-c#">void Show(string message, Action okAction, Action cancelAction)
+</code></pre><p>Here, <em>message</em> will be the alert&#39;s title, and the two following <code>Action</code> are the specific logic to execute upon clicking on accept and cancel buttons, respectively.</p>
+<p>The <code>Alert</code> control will inherit <a href="xref:Wave​Engine.​Components.​UI.Grid">Grid</a>, as it fits perfectly to align the internal controls: a <a href="xref:Wave​Engine.​Components.​UI.TextBlock">TextBlock</a>, and two <a href="xref:Wave​Engine.​Components.​UI.Button">Button</a>. The first step is to configure the <code>Grid</code>:</p>
+<pre><code class="lang-c#">public class Alert : Grid
+{
+    private TextBlock headerTextBlock;
+    private Action okAction;
+    private Action cancelAction;
+
+    public Alert() : base()
+    {
+        this.SetupGrid();
+
+        this.CreateHeader();
+        this.CreateOKButton();
+        this.CreateCancelButton();
+
+        this.IsVisible = false;
+    }
+}
+</code></pre><p>By default, the control will be hidden upon creating it, and <code>Show()</code> will show it up on demand when needed.</p>
+<pre><code class="lang-c#">private void SetupGrid()
+{
+    this.Width = 320;
+    this.Height = 240;
+
+    this.IsBorder = true;
+
+    this.HorizontalAlignment = HorizontalAlignment.Center;
+    this.VerticalAlignment = VerticalAlignment.Center;
+
+    this.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(2, GridUnitType.Proportional) });
+    this.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(1, GridUnitType.Proportional) });
+    this.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(1, GridUnitType.Proportional) });
+    this.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(1, GridUnitType.Proportional) });
+}
+</code></pre><p>As it can be appreciated, the latest lines configure the <code>Grid</code> rows and columns, which will later allow us to place the rest of controls:</p>
+<pre><code class="lang-c#">private void CreateHeader()
+{
+    this.headerTextBlock = new TextBlock
+    {
+        Width = this.Width,
+        Height = this.Height / 3,
+        Text = &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&quot;,
+        TextWrapping = true,
+        TextAlignment = TextAlignment.Center,
+        VerticalAlignment = VerticalAlignment.Center
+    };
+
+    this.headerTextBlock.SetValue(GridControl.RowProperty, 0);
+    this.headerTextBlock.SetValue(GridControl.ColumnProperty, 0);
+    this.headerTextBlock.SetValue(GridControl.ColumnSpanProperty, 2);
+
+    this.Add(this.headerTextBlock);
+}
+</code></pre><p>In the same way, the other two buttons:</p>
+<pre><code class="lang-c#">private void CreateCancelButton()
+{
+    var cancelButton = new Button()
+    {
+        Text = &quot;Cancel&quot;,
+        HorizontalAlignment = HorizontalAlignment.Center,
+        VerticalAlignment = VerticalAlignment.Center
+    };
+
+    cancelButton.Click += (sender, args) =&gt;
+    {
+        this.IsVisible = false;
+
+        if (this.cancelAction != null)
+        {
+            this.cancelAction();
+        }
+    };
+
+    cancelButton.SetValue(GridControl.RowProperty, 1);
+    cancelButton.SetValue(GridControl.ColumnProperty, 0);
+
+    this.Add(cancelButton);
+}
+
+private void CreateOKButton()
+{
+    var okButton = new Button
+    {
+        Text = &quot;OK&quot;,
+        HorizontalAlignment = HorizontalAlignment.Center,
+        VerticalAlignment = VerticalAlignment.Center
+    };
+
+    okButton.Click += (sender, args) =&gt;
+    {
+        this.IsVisible = false;
+
+        if (this.okAction != null)
+        {
+            this.okAction();
+        }
+    };
+
+    okButton.SetValue(GridControl.RowProperty, 1);
+    okButton.SetValue(GridControl.ColumnProperty, 1);
+
+    this.Add(okButton);
+}
+</code></pre><p>The code is almost the same on both cases, but are placed on different spaces within the main <code>Grid</code>.</p>
+<p>Finally, <code>Show()</code> will make the control visible again, triggering the specific <code>Action</code> when the user interacts with it:</p>
+<pre><code class="lang-c#">public void Show(string message, Action okAction, Action cancelAction)
+{
+    this.headerTextBlock.Text = message;
+
+    this.okAction = okAction;
+    this.cancelAction = cancelAction;
+
+    this.IsVisible = true;
+}
+</code></pre><p>Within a sample use scenario, this would be the final result:</p>
+<pre><code class="lang-c#">private Alert alert;
+
+protected override void CreateScene()
+{
+    this.Load(WaveContent.Scenes.MyScene);
+
+    this.alert = new Alert();
+    this.EntityManager.Add(this.alert);
+}
+
+protected override void Start()
+{
+    base.Start();
+
+    this.alert.Show(&quot;Would you like to download the game assets?&quot;,
+        () =&gt; Debug.WriteLine(&quot;Yes&quot;),
+        () =&gt; Debug.WriteLine(&quot;No&quot;));
+}
+</code></pre><p><img src="images/CreateACustomUIControl/AlertScreenshot.PNG" alt=""></p>
+<h2 id="wrap-up">Wrap-up</h2>
+<p>You have learned how to extend the existing UI, through composition, to build a new alert control.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

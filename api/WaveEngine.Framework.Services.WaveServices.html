@@ -1,0 +1,1115 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class WaveServices
+   | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class WaveServices
+   | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WaveEngine.Framework.Services.WaveServices">
+  
+  
+  <h1 id="WaveEngine_Framework_Services_WaveServices" data-uid="WaveEngine.Framework.Services.WaveServices" class="xk-margin-default">Class WaveServices
+  </h1>
+  <div class="markdown level0 summary"><p>Manages <a class="xref" href="WaveEngine.Common.Service.html">Service</a> instances and allows the user to access them.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+      <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level"><span class="xref"></span></div>
+  </div>
+  <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class WaveServices</code></pre>
+  </div>
+  <strong id="WaveEngine_Framework_Services_WaveServices_remarks">Remarks</strong>
+  <div class="markdown level1 remarks"><p>Registered <a class="xref" href="WaveEngine.Common.Service.html">Service</a> instances that inherit from <a class="xref" href="WaveEngine.Common.UpdatableService.html">UpdatableService</a>
+will be updated automatically by this instance. This update order depends on the order in which
+<a class="xref" href="WaveEngine.Common.Service.html">Service</a> instances where registered (first registered, first to be updated and so on).</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <h4 id="properties-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_Assets">Assets</a></td>
+        <td><p>Gets access to the global <a class="xref" href="WaveEngine.Framework.Services.Assets.html">Assets</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_CameraCapture">CameraCapture</a></td>
+        <td><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_CameraCapture">CameraCapture</a> service instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_Clock">Clock</a></td>
+        <td><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_Clock">Clock</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_ErrorHandler">ErrorHandler</a></td>
+        <td><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_ErrorHandler">ErrorHandler</a> service instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_FastRandom">FastRandom</a></td>
+        <td><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_FastRandom">FastRandom</a> service instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_GameActionScheduler">GameActionScheduler</a></td>
+        <td><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_GameActionScheduler">GameActionScheduler</a> service instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_GraphicsDevice">GraphicsDevice</a></td>
+        <td><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_GraphicsDevice">GraphicsDevice</a> service instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_InAppPurchase">InAppPurchase</a></td>
+        <td><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_InAppPurchase">InAppPurchase</a> service instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_Input">Input</a></td>
+        <td><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_Input">Input</a> service instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_Layout">Layout</a></td>
+        <td><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_Layout">Layout</a> service instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_Microphone">Microphone</a></td>
+        <td><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_Microphone">Microphone</a> service instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_MusicPlayer">MusicPlayer</a></td>
+        <td><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_MusicPlayer">MusicPlayer</a> service instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_Platform">Platform</a></td>
+        <td><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_Platform">Platform</a> service instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_Random">Random</a></td>
+        <td><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_Random">Random</a> service instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_RegisteredServices">RegisteredServices</a></td>
+        <td><p>Gets the services of the registered services</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_ScreenContextManager">ScreenContextManager</a></td>
+        <td><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_ScreenContextManager">ScreenContextManager</a> service instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_SoundPlayer">SoundPlayer</a></td>
+        <td><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_SoundPlayer">SoundPlayer</a> service instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_Storage">Storage</a></td>
+        <td><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_Storage">Storage</a> service instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_TimerFactory">TimerFactory</a></td>
+        <td><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_TimerFactory">TimerFactory</a> service instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_TouchPanel">TouchPanel</a></td>
+        <td><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_TouchPanel">TouchPanel</a> service instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_VideoPlayer">VideoPlayer</a></td>
+        <td><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_VideoPlayer">VideoPlayer</a> service instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_Assets" data-uid="WaveEngine.Framework.Services.WaveServices.Assets">Assets</h4>
+  <div class="markdown level1 summary"><p>Gets access to the global <a class="xref" href="WaveEngine.Framework.Services.Assets.html">Assets</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Assets Assets { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.Assets.html">Assets</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_CameraCapture" data-uid="WaveEngine.Framework.Services.WaveServices.CameraCapture">CameraCapture</h4>
+  <div class="markdown level1 summary"><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_CameraCapture">CameraCapture</a> service instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CameraCapture CameraCapture { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.CameraCapture.html">CameraCapture</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_Clock" data-uid="WaveEngine.Framework.Services.WaveServices.Clock">Clock</h4>
+  <div class="markdown level1 summary"><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_Clock">Clock</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Clock Clock { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.Clock.html">Clock</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_ErrorHandler" data-uid="WaveEngine.Framework.Services.WaveServices.ErrorHandler">ErrorHandler</h4>
+  <div class="markdown level1 summary"><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_ErrorHandler">ErrorHandler</a> service instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ErrorHandler ErrorHandler { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.ErrorHandler.html">ErrorHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_FastRandom" data-uid="WaveEngine.Framework.Services.WaveServices.FastRandom">FastRandom</h4>
+  <div class="markdown level1 summary"><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_FastRandom">FastRandom</a> service instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FastRandom FastRandom { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.FastRandom.html">FastRandom</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_GameActionScheduler" data-uid="WaveEngine.Framework.Services.WaveServices.GameActionScheduler">GameActionScheduler</h4>
+  <div class="markdown level1 summary"><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_GameActionScheduler">GameActionScheduler</a> service instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameActionScheduler GameActionScheduler { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.GameActionScheduler.html">GameActionScheduler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_GraphicsDevice" data-uid="WaveEngine.Framework.Services.WaveServices.GraphicsDevice">GraphicsDevice</h4>
+  <div class="markdown level1 summary"><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_GraphicsDevice">GraphicsDevice</a> service instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GraphicsDevice GraphicsDevice { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.GraphicsDevice.html">GraphicsDevice</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_InAppPurchase" data-uid="WaveEngine.Framework.Services.WaveServices.InAppPurchase">InAppPurchase</h4>
+  <div class="markdown level1 summary"><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_InAppPurchase">InAppPurchase</a> service instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InAppPurchase InAppPurchase { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.InAppPurchase.html">InAppPurchase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_Input" data-uid="WaveEngine.Framework.Services.WaveServices.Input">Input</h4>
+  <div class="markdown level1 summary"><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_Input">Input</a> service instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Input Input { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.Input.html">Input</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_Layout" data-uid="WaveEngine.Framework.Services.WaveServices.Layout">Layout</h4>
+  <div class="markdown level1 summary"><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_Layout">Layout</a> service instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Layout Layout { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.Layout.html">Layout</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_Microphone" data-uid="WaveEngine.Framework.Services.WaveServices.Microphone">Microphone</h4>
+  <div class="markdown level1 summary"><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_Microphone">Microphone</a> service instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microphone Microphone { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.Microphone.html">Microphone</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_MusicPlayer" data-uid="WaveEngine.Framework.Services.WaveServices.MusicPlayer">MusicPlayer</h4>
+  <div class="markdown level1 summary"><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_MusicPlayer">MusicPlayer</a> service instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MusicPlayer MusicPlayer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.MusicPlayer.html">MusicPlayer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_Platform" data-uid="WaveEngine.Framework.Services.WaveServices.Platform">Platform</h4>
+  <div class="markdown level1 summary"><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_Platform">Platform</a> service instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Platform Platform { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.Platform.html">Platform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_Random" data-uid="WaveEngine.Framework.Services.WaveServices.Random">Random</h4>
+  <div class="markdown level1 summary"><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_Random">Random</a> service instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Random Random { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.Random.html">Random</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_RegisteredServices" data-uid="WaveEngine.Framework.Services.WaveServices.RegisteredServices">RegisteredServices</h4>
+  <div class="markdown level1 summary"><p>Gets the services of the registered services</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Service&gt; RegisteredServices { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Common.Service.html">Service</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_ScreenContextManager" data-uid="WaveEngine.Framework.Services.WaveServices.ScreenContextManager">ScreenContextManager</h4>
+  <div class="markdown level1 summary"><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_ScreenContextManager">ScreenContextManager</a> service instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ScreenContextManager ScreenContextManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.ScreenContextManager.html">ScreenContextManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_SoundPlayer" data-uid="WaveEngine.Framework.Services.WaveServices.SoundPlayer">SoundPlayer</h4>
+  <div class="markdown level1 summary"><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_SoundPlayer">SoundPlayer</a> service instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SoundPlayer SoundPlayer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.SoundPlayer.html">SoundPlayer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_Storage" data-uid="WaveEngine.Framework.Services.WaveServices.Storage">Storage</h4>
+  <div class="markdown level1 summary"><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_Storage">Storage</a> service instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Storage Storage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.Storage.html">Storage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_TimerFactory" data-uid="WaveEngine.Framework.Services.WaveServices.TimerFactory">TimerFactory</h4>
+  <div class="markdown level1 summary"><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_TimerFactory">TimerFactory</a> service instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TimerFactory TimerFactory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.TimerFactory.html">TimerFactory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_TouchPanel" data-uid="WaveEngine.Framework.Services.WaveServices.TouchPanel">TouchPanel</h4>
+  <div class="markdown level1 summary"><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_TouchPanel">TouchPanel</a> service instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TouchPanel TouchPanel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.TouchPanel.html">TouchPanel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_VideoPlayer" data-uid="WaveEngine.Framework.Services.WaveServices.VideoPlayer">VideoPlayer</h4>
+  <div class="markdown level1 summary"><p>Gets access to the <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html#WaveEngine_Framework_Services_WaveServices_VideoPlayer">VideoPlayer</a> service instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VideoPlayer VideoPlayer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.VideoPlayer.html">VideoPlayer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <h4 id="methods-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_GetService_System_Type_System_Boolean_">GetService(Type, Boolean)</a></td>
+        <td><p>Gets a <a class="xref" href="WaveEngine.Common.Service.html">Service</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_GetService__1_System_Boolean_">GetService&lt;T&gt;(Boolean)</a></td>
+        <td><p>Gets a <a class="xref" href="WaveEngine.Common.Service.html">Service</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_InitializeServices">InitializeServices()</a></td>
+        <td><p>Initializes the registered services.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_RegisterService_WaveEngine_Common_Service_">RegisterService(Service)</a></td>
+        <td><p>Registers a <a class="xref" href="WaveEngine.Common.Service.html">Service</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_RegisterService__1___0_">RegisterService&lt;T&gt;(T)</a></td>
+        <td><p>Registers a <a class="xref" href="WaveEngine.Common.Service.html">Service</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_UnregisterService_WaveEngine_Common_Service_">UnregisterService(Service)</a></td>
+        <td><p>Unregisters a <a class="xref" href="WaveEngine.Common.Service.html">Service</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_WaveServices_UnregisterService__1">UnregisterService&lt;T&gt;()</a></td>
+        <td><p>Unregisters a <a class="xref" href="WaveEngine.Common.Service.html">Service</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_GetService_System_Type_System_Boolean_" data-uid="WaveEngine.Framework.Services.WaveServices.GetService(System.Type,System.Boolean)">GetService(Type, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="WaveEngine.Common.Service.html">Service</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Service GetService(Type serviceType, bool isExactType = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>serviceType</em></td>
+        <td><p>Type of the service to get.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>isExactType</em></td>
+        <td><p>Whether to match the exact type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Service.html">Service</a></td>
+        <td><p>The <a class="xref" href="WaveEngine.Common.Service.html">Service</a> instance found, or null if there was not a <a class="xref" href="WaveEngine.Common.Service.html">Service</a>
+with the selected type registered.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_GetService__1_System_Boolean_" data-uid="WaveEngine.Framework.Services.WaveServices.GetService``1(System.Boolean)">GetService&lt;T&gt;(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="WaveEngine.Common.Service.html">Service</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T GetService&lt;T&gt;(bool isExactType = true)
+
+    where T : Service</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>isExactType</em></td>
+        <td><p>Whether to match the exact type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The <a class="xref" href="WaveEngine.Common.Service.html">Service</a> instance searched, or null if there was not a <a class="xref" href="WaveEngine.Common.Service.html">Service</a>
+with the selected type registered.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Type of the <a class="xref" href="WaveEngine.Common.Service.html">Service</a> to get.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_InitializeServices" data-uid="WaveEngine.Framework.Services.WaveServices.InitializeServices">InitializeServices()</h4>
+  <div class="markdown level1 summary"><p>Initializes the registered services.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Services_WaveServices_InitializeServices_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method initilize only new services, not initialized yet.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InitializeServices()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_RegisterService_WaveEngine_Common_Service_" data-uid="WaveEngine.Framework.Services.WaveServices.RegisterService(WaveEngine.Common.Service)">RegisterService(Service)</h4>
+  <div class="markdown level1 summary"><p>Registers a <a class="xref" href="WaveEngine.Common.Service.html">Service</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Services_WaveServices_RegisterService_WaveEngine_Common_Service__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the instance to register inherits from <a class="xref" href="WaveEngine.Common.UpdatableService.html">UpdatableService</a> this class
+will handle the update automatically.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterService(Service service)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Service.html">Service</a></td>
+        <td><em>service</em></td>
+        <td><p>The instance to register.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If service is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>If a <a class="xref" href="WaveEngine.Common.Service.html">Service</a> with the same type was already registered.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_RegisterService__1___0_" data-uid="WaveEngine.Framework.Services.WaveServices.RegisterService``1(``0)">RegisterService&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Registers a <a class="xref" href="WaveEngine.Common.Service.html">Service</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Services_WaveServices_RegisterService__1___0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the instance to register inherits from <a class="xref" href="WaveEngine.Common.UpdatableService.html">UpdatableService</a> this class
+will handle the update automatically.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterService&lt;T&gt;(T service)
+
+    where T : Service</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><em>service</em></td>
+        <td><p>The instance to register.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Type of the <a class="xref" href="WaveEngine.Common.Service.html">Service</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If service is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>If a <a class="xref" href="WaveEngine.Common.Service.html">Service</a> with the same type was already registered.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_UnregisterService_WaveEngine_Common_Service_" data-uid="WaveEngine.Framework.Services.WaveServices.UnregisterService(WaveEngine.Common.Service)">UnregisterService(Service)</h4>
+  <div class="markdown level1 summary"><p>Unregisters a <a class="xref" href="WaveEngine.Common.Service.html">Service</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Services_WaveServices_UnregisterService_WaveEngine_Common_Service__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The unregistered <a class="xref" href="WaveEngine.Common.Service.html">Service</a> will be disposed.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnregisterService(Service service)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Service.html">Service</a></td>
+        <td><em>service</em></td>
+        <td><p>The service to unregister</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_WaveServices_UnregisterService__1" data-uid="WaveEngine.Framework.Services.WaveServices.UnregisterService``1">UnregisterService&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Unregisters a <a class="xref" href="WaveEngine.Common.Service.html">Service</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Services_WaveServices_UnregisterService__1_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The unregistered <a class="xref" href="WaveEngine.Common.Service.html">Service</a> will be disposed.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnregisterService&lt;T&gt;()
+
+    where T : Service</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Type of the <a class="xref" href="WaveEngine.Common.Service.html">Service</a> to unregister.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

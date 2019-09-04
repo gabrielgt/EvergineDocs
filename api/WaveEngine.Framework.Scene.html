@@ -1,0 +1,1297 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Scene
+   | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Scene
+   | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WaveEngine.Framework.Scene">
+  
+  
+  <h1 id="WaveEngine_Framework_Scene" data-uid="WaveEngine.Framework.Scene" class="xk-margin-default">Class Scene
+  </h1>
+  <div class="markdown level0 summary"><p>A <a class="xref" href="WaveEngine.Framework.Scene.html">Scene</a> is a collection of different manager classes that will handle the
+maintenance of the different <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> and <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> instances
+that are associated with a given <a class="xref" href="WaveEngine.Framework.Scene.html">Scene</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+      <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level"><span class="xref"></span></div>
+  </div>
+  <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class Scene : IDisposable</code></pre>
+  </div>
+  <strong id="WaveEngine_Framework_Scene_remarks">Remarks</strong>
+  <div class="markdown level1 remarks"><p><p><strong>Scene managers</strong></p><ul><li><a class="xref" href="WaveEngine.Framework.Scene.html#WaveEngine_Framework_Scene_EntityManager">EntityManager</a> handles the adding or removal of <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> instances.</li><li><a class="xref" href="WaveEngine.Framework.Scene.html#WaveEngine_Framework_Scene_BehaviorManager">BehaviorManager</a> handles the update of <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> instances.</li><li><a class="xref" href="WaveEngine.Framework.Scene.html#WaveEngine_Framework_Scene_RenderManager">RenderManager</a> handles the drawing of <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> instances.</li><li><a class="xref" href="WaveEngine.Framework.Services.AssetsContainer.html">AssetsContainer</a> handles the loading of resources needed by <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> instances.</li></ul>
+<example><p>
+<h4 id="recipes-and-samples">Recipes and samples</h4>
+<p><ul><li><a href="../recipes/Basic/Create-New-Scenes.md">Add Scene recipe</a></li><li><a href="../recipes/Basic/Navigate-Between-Scenes.md">Navigate Between Scenes recipe</a></li><li><a href="https://github.com/WaveEngine/Samples/tree/master/Basic/NavigationFlow">Navigation Flow sample</a></li></ul>
+</example></p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <h4 id="constructors-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene__ctor">Scene()</a></td>
+        <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Scene.html">Scene</a> class.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene__ctor" data-uid="WaveEngine.Framework.Scene.#ctor">Scene()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Scene.html">Scene</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Scene()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="fields-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_Name">Name</a></td>
+        <td><p>The name of the scene.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_Name" data-uid="WaveEngine.Framework.Scene.Name">Name</h4>
+  <div class="markdown level1 summary"><p>The name of the scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <h4 id="properties-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_Assets">Assets</a></td>
+        <td><p>Gets this instance&apos;s <a class="xref" href="WaveEngine.Framework.Services.AssetsContainer.html">AssetsContainer</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_BehaviorManager">BehaviorManager</a></td>
+        <td><p>Gets this instance&apos;s <a class="xref" href="WaveEngine.Framework.Scene.html#WaveEngine_Framework_Scene_BehaviorManager">BehaviorManager</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_EntityManager">EntityManager</a></td>
+        <td><p>Gets this instance&apos;s <a class="xref" href="WaveEngine.Framework.Scene.html#WaveEngine_Framework_Scene_EntityManager">EntityManager</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_IsDisposed">IsDisposed</a></td>
+        <td><p>Gets a value indicating whether this instance is disposed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_IsFinished">IsFinished</a></td>
+        <td><p>Gets a value indicating whether this instance is finished.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_IsInitialized">IsInitialized</a></td>
+        <td><p>Gets a value indicating whether this instance has been initialized.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_IsPaused">IsPaused</a></td>
+        <td><p>Gets a value indicating whether this instance is paused.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_IsStarted">IsStarted</a></td>
+        <td><p>Gets a value indicating whether this instance has been started.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_IsVisible">IsVisible</a></td>
+        <td><p>Gets or sets a value indicating whether this instance is visible.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_PhysicsManager">PhysicsManager</a></td>
+        <td><p>Gets this instance&apos;s <a class="xref" href="WaveEngine.Framework.Scene.html#WaveEngine_Framework_Scene_PhysicsManager">PhysicsManager</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_RenderManager">RenderManager</a></td>
+        <td><p>Gets this instance&apos;s <a class="xref" href="WaveEngine.Framework.Scene.html#WaveEngine_Framework_Scene_RenderManager">RenderManager</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_Speed">Speed</a></td>
+        <td><p>Gets or sets the speed factor at which this instance is updated.
+Its values are included in [0, infinity].
+For example, a value of 2 will make the scene to run at 2x times.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_SupportedBehavior">SupportedBehavior</a></td>
+        <td><p>Gets or sets the family of supported behaviors</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_VirtualScreenManager">VirtualScreenManager</a></td>
+        <td><p>Gets the virtual screen manager.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_Assets" data-uid="WaveEngine.Framework.Scene.Assets">Assets</h4>
+  <div class="markdown level1 summary"><p>Gets this instance&apos;s <a class="xref" href="WaveEngine.Framework.Services.AssetsContainer.html">AssetsContainer</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssetsContainer Assets { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.AssetsContainer.html">AssetsContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_BehaviorManager" data-uid="WaveEngine.Framework.Scene.BehaviorManager">BehaviorManager</h4>
+  <div class="markdown level1 summary"><p>Gets this instance&apos;s <a class="xref" href="WaveEngine.Framework.Scene.html#WaveEngine_Framework_Scene_BehaviorManager">BehaviorManager</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BehaviorManager BehaviorManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Managers.BehaviorManager.html">BehaviorManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_EntityManager" data-uid="WaveEngine.Framework.Scene.EntityManager">EntityManager</h4>
+  <div class="markdown level1 summary"><p>Gets this instance&apos;s <a class="xref" href="WaveEngine.Framework.Scene.html#WaveEngine_Framework_Scene_EntityManager">EntityManager</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityManager EntityManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Managers.EntityManager.html">EntityManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_IsDisposed" data-uid="WaveEngine.Framework.Scene.IsDisposed">IsDisposed</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance is disposed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDisposed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance is disposed; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_IsFinished" data-uid="WaveEngine.Framework.Scene.IsFinished">IsFinished</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance is finished.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFinished { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance is finished; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_IsInitialized" data-uid="WaveEngine.Framework.Scene.IsInitialized">IsInitialized</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance has been initialized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInitialized { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance has been initialized; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_IsPaused" data-uid="WaveEngine.Framework.Scene.IsPaused">IsPaused</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance is paused.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPaused { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance is paused; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_IsStarted" data-uid="WaveEngine.Framework.Scene.IsStarted">IsStarted</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance has been started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStarted { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance has been started; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_IsVisible" data-uid="WaveEngine.Framework.Scene.IsVisible">IsVisible</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this instance is visible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVisible { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance is visible; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_PhysicsManager" data-uid="WaveEngine.Framework.Scene.PhysicsManager">PhysicsManager</h4>
+  <div class="markdown level1 summary"><p>Gets this instance&apos;s <a class="xref" href="WaveEngine.Framework.Scene.html#WaveEngine_Framework_Scene_PhysicsManager">PhysicsManager</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PhysicsManager PhysicsManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Managers.PhysicsManager.html">PhysicsManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_RenderManager" data-uid="WaveEngine.Framework.Scene.RenderManager">RenderManager</h4>
+  <div class="markdown level1 summary"><p>Gets this instance&apos;s <a class="xref" href="WaveEngine.Framework.Scene.html#WaveEngine_Framework_Scene_RenderManager">RenderManager</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderManager RenderManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Managers.RenderManager.html">RenderManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_Speed" data-uid="WaveEngine.Framework.Scene.Speed">Speed</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the speed factor at which this instance is updated.
+Its values are included in [0, infinity].
+For example, a value of 2 will make the scene to run at 2x times.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Scene_Speed_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value can be used to create fast forward or bullet time effects.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Speed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The speed factor at which this instance is updated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_SupportedBehavior" data-uid="WaveEngine.Framework.Scene.SupportedBehavior">SupportedBehavior</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the family of supported behaviors</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected FamilyType SupportedBehavior { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.FamilyType.html">FamilyType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_VirtualScreenManager" data-uid="WaveEngine.Framework.Scene.VirtualScreenManager">VirtualScreenManager</h4>
+  <div class="markdown level1 summary"><p>Gets the virtual screen manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VirtualScreenManager VirtualScreenManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Managers.VirtualScreenManager.html">VirtualScreenManager</a></td>
+        <td><p>The virtual screen manager.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <h4 id="methods-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_AddSceneBehavior_WaveEngine_Framework_SceneBehavior_WaveEngine_Framework_SceneBehavior_Order_">AddSceneBehavior(SceneBehavior, SceneBehavior.Order)</a></td>
+        <td><p>Adds the scene behavior.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_CreateScene">CreateScene()</a></td>
+        <td><p>Creates the scene.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_Dispose">Dispose()</a></td>
+        <td><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_Dispose_System_Boolean_">Dispose(Boolean)</a></td>
+        <td><p>Releases unmanaged and - optionally - managed resources</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_End">End()</a></td>
+        <td><p>Ends this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_Finalize">Finalize()</a></td>
+        <td><p>Finalizes an instance of the <a class="xref" href="WaveEngine.Framework.Scene.html">Scene</a> class.
+<a class="xref" href="WaveEngine.Framework.Scene.html">Scene</a> is reclaimed by garbage collection.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_Initialize_WaveEngine_Framework_Services_GraphicsDevice_">Initialize(GraphicsDevice)</a></td>
+        <td><p>Initializes this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_Load_System_String_">Load(String)</a></td>
+        <td><p>Loads the scene from a XML file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_NextStep_System_TimeSpan_">NextStep(TimeSpan)</a></td>
+        <td><p>Update the scene one cycle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_Pause">Pause()</a></td>
+        <td><p>Pauses this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_RefreshEntityPointers_System_Collections_Generic_List_WaveEngine_Framework_Models_Entities_EntityPointer__">RefreshEntityPointers(List&lt;EntityPointer&gt;)</a></td>
+        <td><p>Refreshes the entiti links</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_RemoveSceneBehavior_WaveEngine_Framework_SceneBehavior_">RemoveSceneBehavior(SceneBehavior)</a></td>
+        <td><p>Removes the scene behavior.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_Resume">Resume()</a></td>
+        <td><p>Resumes this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_Start">Start()</a></td>
+        <td><p>Allows to perform custom code when this instance is started.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_AddSceneBehavior_WaveEngine_Framework_SceneBehavior_WaveEngine_Framework_SceneBehavior_Order_" data-uid="WaveEngine.Framework.Scene.AddSceneBehavior(WaveEngine.Framework.SceneBehavior,WaveEngine.Framework.SceneBehavior.Order)">AddSceneBehavior(SceneBehavior, SceneBehavior.Order)</h4>
+  <div class="markdown level1 summary"><p>Adds the scene behavior.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSceneBehavior(SceneBehavior sceneBehavior, SceneBehavior.Order order)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.SceneBehavior.html">SceneBehavior</a></td>
+        <td><em>sceneBehavior</em></td>
+        <td><p>The scene behavior.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.SceneBehavior.Order.html">SceneBehavior.Order</a></td>
+        <td><em>order</em></td>
+        <td><p>The order.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If <a class="xref" href="WaveEngine.Framework.SceneBehavior.html">SceneBehavior</a> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>If this instance has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_CreateScene" data-uid="WaveEngine.Framework.Scene.CreateScene">CreateScene()</h4>
+  <div class="markdown level1 summary"><p>Creates the scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Scene_CreateScene_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is called before all <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> instances in this instance are initialized.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void CreateScene()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Scene_Dispose" data-uid="WaveEngine.Framework.Scene.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Scene_Dispose_System_Boolean_" data-uid="WaveEngine.Framework.Scene.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Releases unmanaged and - optionally - managed resources</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>disposing</em></td>
+        <td><p><code>true</code> to release both managed and unmanaged resources; <code>false</code> to release only unmanaged resources.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_End" data-uid="WaveEngine.Framework.Scene.End">End()</h4>
+  <div class="markdown level1 summary"><p>Ends this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void End()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Scene_Finalize" data-uid="WaveEngine.Framework.Scene.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>Finalizes an instance of the <a class="xref" href="WaveEngine.Framework.Scene.html">Scene</a> class.
+<a class="xref" href="WaveEngine.Framework.Scene.html">Scene</a> is reclaimed by garbage collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Scene_Initialize_WaveEngine_Framework_Services_GraphicsDevice_" data-uid="WaveEngine.Framework.Scene.Initialize(WaveEngine.Framework.Services.GraphicsDevice)">Initialize(GraphicsDevice)</h4>
+  <div class="markdown level1 summary"><p>Initializes this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(GraphicsDevice graphicsDevice)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.GraphicsDevice.html">GraphicsDevice</a></td>
+        <td><em>graphicsDevice</em></td>
+        <td><p>The specific <a class="xref" href="WaveEngine.Framework.Services.GraphicsDevice.html">GraphicsDevice</a> that the application is using.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If graphicsDevice is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>If this instance has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_Load_System_String_" data-uid="WaveEngine.Framework.Scene.Load(System.String)">Load(String)</h4>
+  <div class="markdown level1 summary"><p>Loads the scene from a XML file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Load(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>path</em></td>
+        <td><p>Path of the scene file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_NextStep_System_TimeSpan_" data-uid="WaveEngine.Framework.Scene.NextStep(System.TimeSpan)">NextStep(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Update the scene one cycle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void NextStep(TimeSpan gameTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><em>gameTime</em></td>
+        <td><p>The elapsed game time since the last update.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>If this instance has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_Pause" data-uid="WaveEngine.Framework.Scene.Pause">Pause()</h4>
+  <div class="markdown level1 summary"><p>Pauses this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Pause()</code></pre>
+  </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>If this instance has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_RefreshEntityPointers_System_Collections_Generic_List_WaveEngine_Framework_Models_Entities_EntityPointer__" data-uid="WaveEngine.Framework.Scene.RefreshEntityPointers(System.Collections.Generic.List{WaveEngine.Framework.Models.Entities.EntityPointer})">RefreshEntityPointers(List&lt;EntityPointer&gt;)</h4>
+  <div class="markdown level1 summary"><p>Refreshes the entiti links</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshEntityPointers(List&lt;EntityPointer&gt; entityLinks)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="WaveEngine.Framework.Models.Entities.EntityPointer.html">EntityPointer</a>&gt;</td>
+        <td><em>entityLinks</em></td>
+        <td><p>The entity link list</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_RemoveSceneBehavior_WaveEngine_Framework_SceneBehavior_" data-uid="WaveEngine.Framework.Scene.RemoveSceneBehavior(WaveEngine.Framework.SceneBehavior)">RemoveSceneBehavior(SceneBehavior)</h4>
+  <div class="markdown level1 summary"><p>Removes the scene behavior.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveSceneBehavior(SceneBehavior sceneBehavior)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.SceneBehavior.html">SceneBehavior</a></td>
+        <td><em>sceneBehavior</em></td>
+        <td><p>The scene behavior.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If <a class="xref" href="WaveEngine.Framework.SceneBehavior.html">SceneBehavior</a> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>If this instance has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_Resume" data-uid="WaveEngine.Framework.Scene.Resume">Resume()</h4>
+  <div class="markdown level1 summary"><p>Resumes this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Resume()</code></pre>
+  </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>If this instance has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_Start" data-uid="WaveEngine.Framework.Scene.Start">Start()</h4>
+  <div class="markdown level1 summary"><p>Allows to perform custom code when this instance is started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Scene_Start_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This base method perfoms a layout pass.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Start()</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  <h4 id="events-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_Closed">Closed</a></td>
+        <td><p>Occurs when this instance has been closed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_Paused">Paused</a></td>
+        <td><p>Occurs when this instance has been paused.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_Resumed">Resumed</a></td>
+        <td><p>Occurs when this instance has been resumed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Scene_Started">Started</a></td>
+        <td><p>Occurs when this instance has been Started.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_Closed" data-uid="WaveEngine.Framework.Scene.Closed">Closed</h4>
+  <div class="markdown level1 summary"><p>Occurs when this instance has been closed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler Closed</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_Paused" data-uid="WaveEngine.Framework.Scene.Paused">Paused</h4>
+  <div class="markdown level1 summary"><p>Occurs when this instance has been paused.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler Paused</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_Resumed" data-uid="WaveEngine.Framework.Scene.Resumed">Resumed</h4>
+  <div class="markdown level1 summary"><p>Occurs when this instance has been resumed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler Resumed</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Scene_Started" data-uid="WaveEngine.Framework.Scene.Started">Started</h4>
+  <div class="markdown level1 summary"><p>Occurs when this instance has been Started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler Started</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.GameActions.GameActionFactory.html#WaveEngine_Components_GameActions_GameActionFactory_CreateEmptyGameAction_WaveEngine_Framework_Scene_">GameActionFactory.CreateEmptyGameAction(Scene)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.GameActions.GameActionFactory.html#WaveEngine_Components_GameActions_GameActionFactory_CreateDelayGameAction_WaveEngine_Framework_Scene_System_TimeSpan_">GameActionFactory.CreateDelayGameAction(Scene, TimeSpan)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.GameActions.GameActionFactory.html#WaveEngine_Components_GameActions_GameActionFactory_CreateGameActionFromAction_WaveEngine_Framework_Scene_System_Action_">GameActionFactory.CreateGameActionFromAction(Scene, Action)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.GameActions.GameActionFactory.html#WaveEngine_Components_GameActions_GameActionFactory_CreateWaitGameAction_WaveEngine_Framework_Scene_System_TimeSpan_">GameActionFactory.CreateWaitGameAction(Scene, TimeSpan)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.GameActions.GameActionFactory.html#WaveEngine_Components_GameActions_GameActionFactory_CreateGameAction_WaveEngine_Framework_Scene_System_Func_WaveEngine_Framework_Services_IGameAction__">GameActionFactory.CreateGameAction(Scene, Func&lt;IGameAction&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.GameActions.GameActionFactory.html#WaveEngine_Components_GameActions_GameActionFactory_CreateGameAction_WaveEngine_Framework_Scene_WaveEngine_Framework_Services_IGameAction_">GameActionFactory.CreateGameAction(Scene, IGameAction)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.GameActions.GameActionFactory.html#WaveEngine_Components_GameActions_GameActionFactory_CreateWaitConditionGameAction_WaveEngine_Framework_Scene_System_Func_System_Boolean__System_Int32_">GameActionFactory.CreateWaitConditionGameAction(Scene, Func&lt;Boolean&gt;, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.GameActions.GameActionFactory.html#WaveEngine_Components_GameActions_GameActionFactory_CreateSingleAnimationGameAction_WaveEngine_Framework_Scene_WaveEngine_Framework_Animation_SingleAnimation_WaveEngine_Framework_Animation_AnimationUI_WaveEngine_Framework_DependencyProperty_">GameActionFactory.CreateSingleAnimationGameAction(Scene, SingleAnimation, AnimationUI, DependencyProperty)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.GameActions.GameActionFactory.html#WaveEngine_Components_GameActions_GameActionFactory_CreatePlayMusicGameAction_WaveEngine_Framework_Scene_WaveEngine_Common_Media_MusicInfo_">GameActionFactory.CreatePlayMusicGameAction(Scene, MusicInfo)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.GameActions.GameActionFactory.html#WaveEngine_Components_GameActions_GameActionFactory_CreatePlaySoundGameAction_WaveEngine_Framework_Scene_WaveEngine_Framework_Sound_SoundInfo_System_Single_System_Boolean_">GameActionFactory.CreatePlaySoundGameAction(Scene, SoundInfo, Single, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.GameActions.GameActionFactory.html#WaveEngine_Components_GameActions_GameActionFactory_CreatePlayVideoGameAction_WaveEngine_Framework_Scene_WaveEngine_Common_Media_VideoInfo_">GameActionFactory.CreatePlayVideoGameAction(Scene, VideoInfo)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.GameActions.GameActionFactory.html#WaveEngine_Components_GameActions_GameActionFactory_CreateWaitTapGameAction_WaveEngine_Framework_Scene_WaveEngine_Components_Gestures_TouchGestures_">GameActionFactory.CreateWaitTapGameAction(Scene, TouchGestures)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.GameActions.GameActionFactory.html#WaveEngine_Components_GameActions_GameActionFactory_CreateParallelGameActions_WaveEngine_Framework_Scene_System_Collections_Generic_IEnumerable_System_Func_WaveEngine_Framework_Services_IGameAction___">GameActionFactory.CreateParallelGameActions(Scene, IEnumerable&lt;Func&lt;IGameAction&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.GameActions.GameActionFactory.html#WaveEngine_Components_GameActions_GameActionFactory_CreateParallelGameActions_WaveEngine_Framework_Scene_System_Collections_Generic_IEnumerable_WaveEngine_Framework_Services_IGameAction__">GameActionFactory.CreateParallelGameActions(Scene, IEnumerable&lt;IGameAction&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.GameActions.GameActionFactory.html#WaveEngine_Components_GameActions_GameActionFactory_CreateParallelGameActions_WaveEngine_Framework_Scene_System_Func_WaveEngine_Framework_Services_IGameAction____">GameActionFactory.CreateParallelGameActions(Scene, Func&lt;IGameAction&gt;[])</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.GameActions.GameActionFactory.html#WaveEngine_Components_GameActions_GameActionFactory_CreateParallelGameActions_WaveEngine_Framework_Scene_WaveEngine_Framework_Services_IGameAction___">GameActionFactory.CreateParallelGameActions(Scene, IGameAction[])</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.GameActions.GameActionFactory.html#WaveEngine_Components_GameActions_GameActionFactory_CreateLoopGameActionUntil_WaveEngine_Framework_Scene_System_Func_WaveEngine_Framework_Services_IGameAction__System_Func_System_Boolean__">GameActionFactory.CreateLoopGameActionUntil(Scene, Func&lt;IGameAction&gt;, Func&lt;Boolean&gt;)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

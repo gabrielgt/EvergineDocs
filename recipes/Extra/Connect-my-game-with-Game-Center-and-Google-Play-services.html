@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Goal | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Goal | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="goal">Goal</h2>
+
+<p>Within this recipe you will learn how to integrate your game with Google Play and Game Center.
+WaveEngine.Social extension provides you a cross-platform Wave service to consult, upload and boast about player achievements and new scores.</p>
+<h2 id="hands-on">Hands-on</h2>
+<h3 id="with-visual-studio-for-windows-or-mac">With Visual Studio (for Windows or Mac)</h3>
+<p>We will be using the <a href="https://github.com/WaveEngine/Samples/tree/master/Extensions/SocialService">SocialService sample</a> as a starting point to discover how to use it.  </p>
+<p>First things first, download the previous sample and run the Windows solution.
+You will see a windows show up with this cute design.</p>
+<p><img src="images/Social/Social.png" alt=""></p>
+<p>This game exposes a UI which lets you interact and run some of the supported actions that <code>SocialService</code> provides, as Log in or Show all leaderboards.</p>
+<p>In order to use <code>SocialService</code> programatically we need to add a reference to <a href="https://www.nuget.org/packages/WaveEngine.Social/">WaveEngine.Social</a> nuget package.</p>
+<p>Register the <code>SocialService</code> in the <code>Initialize</code> method of Game.cs file:</p>
+<pre><code class="lang-C#">WaveServices.RegisterService(new SocialService());
+</code></pre><p><code>SocialService</code> works across all WaveEngine supported platfoms in simulation mode.
+For Android and iOS, with the SimulationMode property disabled, social service will get connected to Google Play and Game Center services respectively. It&#39;s that easy!</p>
+<pre><code class="lang-c#">var socialService = new WaveEngine.Framework.Services.SocialService
+{
+    SimulationMode = true
+};
+</code></pre><p>SocialService provides wrapping objects for Google Play and Game Center leaderboards, achivements and scores, so you first need to register all your game leaderboards and achivements in your app Panel.</p>
+<p>Once you finish, you will have all your leaderboard and achievements codes available to be used with <code>SocialService</code>.</p>
+<p><img src="images/Social/Panel.png" alt=""></p>
+<p>Let&#39;s have a look at the prototype of the <code>SocialService</code>:</p>
+<pre><code class="lang-c#">public class SocialService : Service
+{
+    public SocialService();
+
+    public bool SimulationMode { get; set; }
+
+    public void Initialize(Dictionary&lt;string, string&gt; properties);
+    public Task&lt;bool&gt; Login();
+    public Task&lt;bool&gt; Logout();
+
+    public Task&lt;List&lt;Achievement&gt;&gt; GetAchievements();
+    public Task&lt;Dictionary&lt;string, List&lt;LeaderboardScore&gt;&gt;&gt; GetTopScoresFromLeaderboard(string leaderboardCode);
+
+    public Task&lt;bool&gt; AddNewScore(string leaderboardCode, long score);
+    public Task&lt;bool&gt; IncrementAchievement(string achievementCode, int progress);
+    public Task&lt;bool&gt; UnlockAchievement(string achievementCode);
+
+    public Task&lt;bool&gt; ShowAchievements();
+    public Task&lt;bool&gt; ShowAllLeaderboards();
+    public Task&lt;bool&gt; ShowLeaderboard(string leaderboardCode);
+
+    protected override void Initialize();
+    protected override void Terminate();
+}
+</code></pre><p>I hope that just by reading it you could imagine every property and method is responsible for.</p>
+<p>To start working with SocialService we need to <code>Initialize</code> it and them call <code>Login</code>. If you invoke the <code>Login</code> method on an iOS app you will this screen appears requesting your Game Center credentials.</p>
+<p><img src="images/Social/Login.png" alt=""></p>
+<p>Once the user finish with the login, you could call other social actions, for example <code>AddNewScore</code>, providing the leaderboardCode you registered previously on you app Panel.</p>
+<p>Beware all methods comes in a Async fashion.</p>
+<h2 id="wrap-up">Wrap-up</h2>
+<p>We have seen how the Social service could be used to send new achievements, scores and update leaderboards.
+A simple Social service sample was shown in which developers could test and familiarize with it.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

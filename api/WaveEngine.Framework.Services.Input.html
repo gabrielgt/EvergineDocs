@@ -1,0 +1,779 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Input
+   | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Input
+   | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WaveEngine.Framework.Services.Input">
+  
+  
+  <h1 id="WaveEngine_Framework_Services_Input" data-uid="WaveEngine.Framework.Services.Input" class="xk-margin-default">Class Input
+  </h1>
+  <div class="markdown level0 summary"><p>Allows the user to pool for the state of different input devices.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+      <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level1"><a class="xref" href="WaveEngine.Common.IO.SerializableObject.html">SerializableObject</a></div>
+      <div class="level2"><a class="xref" href="WaveEngine.Common.Service.html">Service</a></div>
+      <div class="level3"><a class="xref" href="WaveEngine.Common.UpdatableService.html">UpdatableService</a></div>
+      <div class="level"><span class="xref"></span></div>
+  </div>
+  <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Input : UpdatableService, IDisposable</code></pre>
+  </div>
+  <strong id="WaveEngine_Framework_Services_Input_remarks">Remarks</strong>
+  <div class="markdown level1 remarks"><p>At the same time, this class pools the system where the application is running for specific input information.
+Non supported devices on the platform will be marked as not connected.</p>
+</div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="fields-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_AccelerometerState">AccelerometerState</a></td>
+        <td><p>The accelerometer state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_CompassState">CompassState</a></td>
+        <td><p>The compasss state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_GamePadState">GamePadState</a></td>
+        <td><p>The gamepad state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_GyroscopeState">GyroscopeState</a></td>
+        <td><p>The gyroscope state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_IsEnabled">IsEnabled</a></td>
+        <td><p>If the inputs are updated every frame.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_KeyboardState">KeyboardState</a></td>
+        <td><p>The keyboard state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_MotionState">MotionState</a></td>
+        <td><p>The motion state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_MouseState">MouseState</a></td>
+        <td><p>The mouse state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_TouchPanelState">TouchPanelState</a></td>
+        <td><p>The touch panel state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_AccelerometerState" data-uid="WaveEngine.Framework.Services.Input.AccelerometerState">AccelerometerState</h4>
+  <div class="markdown level1 summary"><p>The accelerometer state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccelerometerState AccelerometerState</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Input.AccelerometerState.html">AccelerometerState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_CompassState" data-uid="WaveEngine.Framework.Services.Input.CompassState">CompassState</h4>
+  <div class="markdown level1 summary"><p>The compasss state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompassState CompassState</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Input.CompassState.html">CompassState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_GamePadState" data-uid="WaveEngine.Framework.Services.Input.GamePadState">GamePadState</h4>
+  <div class="markdown level1 summary"><p>The gamepad state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GamePadState GamePadState</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Input.GamePadState.html">GamePadState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_GyroscopeState" data-uid="WaveEngine.Framework.Services.Input.GyroscopeState">GyroscopeState</h4>
+  <div class="markdown level1 summary"><p>The gyroscope state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GyroscopeState GyroscopeState</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Input.GyroscopeState.html">GyroscopeState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_IsEnabled" data-uid="WaveEngine.Framework.Services.Input.IsEnabled">IsEnabled</h4>
+  <div class="markdown level1 summary"><p>If the inputs are updated every frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEnabled</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_KeyboardState" data-uid="WaveEngine.Framework.Services.Input.KeyboardState">KeyboardState</h4>
+  <div class="markdown level1 summary"><p>The keyboard state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KeyboardState KeyboardState</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Input.KeyboardState.html">KeyboardState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_MotionState" data-uid="WaveEngine.Framework.Services.Input.MotionState">MotionState</h4>
+  <div class="markdown level1 summary"><p>The motion state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MotionState MotionState</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Input.MotionState.html">MotionState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_MouseState" data-uid="WaveEngine.Framework.Services.Input.MouseState">MouseState</h4>
+  <div class="markdown level1 summary"><p>The mouse state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MouseState MouseState</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Input.MouseState.html">MouseState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_TouchPanelState" data-uid="WaveEngine.Framework.Services.Input.TouchPanelState">TouchPanelState</h4>
+  <div class="markdown level1 summary"><p>The touch panel state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TouchPanelState TouchPanelState</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Input.TouchPanelState.html">TouchPanelState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <h4 id="methods-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_Dispose">Dispose()</a></td>
+        <td><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_Dispose_System_Boolean_">Dispose(Boolean)</a></td>
+        <td><p>Releases unmanaged and - optionally - managed resources.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_GamePadGetState_WaveEngine_Common_Input_PlayerIndex_">GamePadGetState(PlayerIndex)</a></td>
+        <td><p>Get the gamepad state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_Initialize">Initialize()</a></td>
+        <td><p>Allows to execute custom logic during the initialization of this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_SetGamePadGetVibration_WaveEngine_Common_Input_PlayerIndex_System_Single_System_Single_System_Single_System_Single_">SetGamePadGetVibration(PlayerIndex, Single, Single, Single, Single)</a></td>
+        <td><p>Set the speed of the gamepads available vibration motors.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_StartAccelerometer">StartAccelerometer()</a></td>
+        <td><p>Starts the accelerometer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_StartCompass">StartCompass()</a></td>
+        <td><p>Starts the compass.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_StartGyroscope">StartGyroscope()</a></td>
+        <td><p>Starts the gyroscope.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_StartMotion">StartMotion()</a></td>
+        <td><p>Starts the motion sensor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_StopAccelerometer">StopAccelerometer()</a></td>
+        <td><p>Stops the accelerometer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_StopCompass">StopCompass()</a></td>
+        <td><p>Stops the compass.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_StopGyroscope">StopGyroscope()</a></td>
+        <td><p>Stops the gyroscope.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_StopMotion">StopMotion()</a></td>
+        <td><p>Stops the motion sensor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_Terminate">Terminate()</a></td>
+        <td><p>Allow to execute custom logic during the finalization of this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_Input_Update_System_TimeSpan_">Update(TimeSpan)</a></td>
+        <td><p>Loops for every input system asking for the new state,
+always such is connected or started.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_Dispose" data-uid="WaveEngine.Framework.Services.Input.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_Dispose_System_Boolean_" data-uid="WaveEngine.Framework.Services.Input.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Releases unmanaged and - optionally - managed resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>disposing</em></td>
+        <td><p><code>true</code> to release both managed and unmanaged resources; <code>false</code> to release only unmanaged resources.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_GamePadGetState_WaveEngine_Common_Input_PlayerIndex_" data-uid="WaveEngine.Framework.Services.Input.GamePadGetState(WaveEngine.Common.Input.PlayerIndex)">GamePadGetState(PlayerIndex)</h4>
+  <div class="markdown level1 summary"><p>Get the gamepad state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GamePadState GamePadGetState(PlayerIndex playerIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Input.PlayerIndex.html">PlayerIndex</a></td>
+        <td><em>playerIndex</em></td>
+        <td><p>Index of the player.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Input.GamePadState.html">GamePadState</a></td>
+        <td><p>Game pad state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_Initialize" data-uid="WaveEngine.Framework.Services.Input.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"><p>Allows to execute custom logic during the initialization of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Initialize()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_SetGamePadGetVibration_WaveEngine_Common_Input_PlayerIndex_System_Single_System_Single_System_Single_System_Single_" data-uid="WaveEngine.Framework.Services.Input.SetGamePadGetVibration(WaveEngine.Common.Input.PlayerIndex,System.Single,System.Single,System.Single,System.Single)">SetGamePadGetVibration(PlayerIndex, Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Set the speed of the gamepads available vibration motors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetGamePadGetVibration(PlayerIndex playerIndex, float leftMotor, float leftTrigger, float rightMotor, float rightTrigger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Input.PlayerIndex.html">PlayerIndex</a></td>
+        <td><em>playerIndex</em></td>
+        <td><p>Index of the player.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><em>leftMotor</em></td>
+        <td><p>The level of the left vibration motor, within the range [0, 1].</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><em>leftTrigger</em></td>
+        <td><p>The level of the left trigger vibration motor, within the range [0, 1].</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><em>rightMotor</em></td>
+        <td><p>The level of the right vibration motor, within the range [0, 1].</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><em>rightTrigger</em></td>
+        <td><p>The level of the right trigger vibration motor, within the range [0, 1].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True is everything Ok, false if doesn&apos;t exist the player index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_StartAccelerometer" data-uid="WaveEngine.Framework.Services.Input.StartAccelerometer">StartAccelerometer()</h4>
+  <div class="markdown level1 summary"><p>Starts the accelerometer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartAccelerometer()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_StartCompass" data-uid="WaveEngine.Framework.Services.Input.StartCompass">StartCompass()</h4>
+  <div class="markdown level1 summary"><p>Starts the compass.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartCompass()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_StartGyroscope" data-uid="WaveEngine.Framework.Services.Input.StartGyroscope">StartGyroscope()</h4>
+  <div class="markdown level1 summary"><p>Starts the gyroscope.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartGyroscope()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_StartMotion" data-uid="WaveEngine.Framework.Services.Input.StartMotion">StartMotion()</h4>
+  <div class="markdown level1 summary"><p>Starts the motion sensor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartMotion()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_StopAccelerometer" data-uid="WaveEngine.Framework.Services.Input.StopAccelerometer">StopAccelerometer()</h4>
+  <div class="markdown level1 summary"><p>Stops the accelerometer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopAccelerometer()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_StopCompass" data-uid="WaveEngine.Framework.Services.Input.StopCompass">StopCompass()</h4>
+  <div class="markdown level1 summary"><p>Stops the compass.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopCompass()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_StopGyroscope" data-uid="WaveEngine.Framework.Services.Input.StopGyroscope">StopGyroscope()</h4>
+  <div class="markdown level1 summary"><p>Stops the gyroscope.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopGyroscope()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_StopMotion" data-uid="WaveEngine.Framework.Services.Input.StopMotion">StopMotion()</h4>
+  <div class="markdown level1 summary"><p>Stops the motion sensor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopMotion()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_Terminate" data-uid="WaveEngine.Framework.Services.Input.Terminate">Terminate()</h4>
+  <div class="markdown level1 summary"><p>Allow to execute custom logic during the finalization of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Terminate()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Services_Input_Update_System_TimeSpan_" data-uid="WaveEngine.Framework.Services.Input.Update(System.TimeSpan)">Update(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Loops for every input system asking for the new state,
+always such is connected or started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update(TimeSpan gameTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><em>gameTime</em></td>
+        <td><p>The elapsed game time since the last update.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

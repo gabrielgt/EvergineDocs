@@ -1,0 +1,827 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SoundPlayer
+   | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SoundPlayer
+   | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WaveEngine.Framework.Services.SoundPlayer">
+  
+  
+  <h1 id="WaveEngine_Framework_Services_SoundPlayer" data-uid="WaveEngine.Framework.Services.SoundPlayer" class="xk-margin-default">Class SoundPlayer
+  </h1>
+  <div class="markdown level0 summary"><p>This class allows to play sounds and manages the active sounds.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+      <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level1"><a class="xref" href="WaveEngine.Common.IO.SerializableObject.html">SerializableObject</a></div>
+      <div class="level2"><a class="xref" href="WaveEngine.Common.Service.html">Service</a></div>
+      <div class="level3"><a class="xref" href="WaveEngine.Common.UpdatableService.html">UpdatableService</a></div>
+      <div class="level"><span class="xref"></span></div>
+  </div>
+  <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class SoundPlayer : UpdatableService, IDisposable</code></pre>
+  </div>
+  <strong id="WaveEngine_Framework_Services_SoundPlayer_remarks">Remarks</strong>
+  <div class="markdown level1 remarks"><p>In Android, a SoundPool is used internally. This has a file size limit of 1MB for WAV sounds. Compressed files (MP3, OGG) are converted to
+PCM before playing, so they are affected by this limitation too.</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <h4 id="properties-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_SoundPlayer_IsPaused">IsPaused</a></td>
+        <td><p>Gets or sets a value indicating whether this instance is paused.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_SoundPlayer_Sounds">Sounds</a></td>
+        <td><p>Gets a manager to perform low level sound related operations.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_SoundPlayer_IsPaused" data-uid="WaveEngine.Framework.Services.SoundPlayer.IsPaused">IsPaused</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this instance is paused.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPaused { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance is paused; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_SoundPlayer_Sounds" data-uid="WaveEngine.Framework.Services.SoundPlayer.Sounds">Sounds</h4>
+  <div class="markdown level1 summary"><p>Gets a manager to perform low level sound related operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoundPlayer.SoundManager Sounds { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.SoundPlayer.SoundManager.html">SoundPlayer.SoundManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <h4 id="methods-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_SoundPlayer_Dispose">Dispose()</a></td>
+        <td><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_SoundPlayer_Finalize">Finalize()</a></td>
+        <td><p>Finalizes an instance of the <a class="xref" href="WaveEngine.Framework.Services.SoundPlayer.html">SoundPlayer</a> class.
+<a class="xref" href="WaveEngine.Framework.Services.SoundPlayer.html">SoundPlayer</a> is reclaimed by garbage collection.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_SoundPlayer_GetSceneSoundBank_WaveEngine_Framework_Scene_">GetSceneSoundBank(Scene)</a></td>
+        <td><p>Get scene sound bank</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_SoundPlayer_GetSceneSoundListener3D_WaveEngine_Framework_Scene_">GetSceneSoundListener3D(Scene)</a></td>
+        <td><p>Get the current active listener 3D associated to a scene</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_SoundPlayer_Initialize">Initialize()</a></td>
+        <td><p>Allows to execute custom logic during the initialization of this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_SoundPlayer_PauseAllSounds">PauseAllSounds()</a></td>
+        <td><p>Pauses all sounds.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_SoundPlayer_PauseSceneSounds_WaveEngine_Framework_Scene_">PauseSceneSounds(Scene)</a></td>
+        <td><p>Pauses all sounds of a scene.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_SoundPlayer_Play_WaveEngine_Framework_Sound_SoundInfo_">Play(SoundInfo)</a></td>
+        <td><p>Plays the specified <a class="xref" href="WaveEngine.Framework.Sound.SoundInfo.html">SoundInfo</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_SoundPlayer_Play_WaveEngine_Framework_Sound_SoundInfo_System_Single_">Play(SoundInfo, Single)</a></td>
+        <td><p>Plays the specified <a class="xref" href="WaveEngine.Framework.Sound.SoundInfo.html">SoundInfo</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_SoundPlayer_Play_WaveEngine_Framework_Sound_SoundInfo_System_Single_System_Boolean_">Play(SoundInfo, Single, Boolean)</a></td>
+        <td><p>Plays the specified <a class="xref" href="WaveEngine.Framework.Sound.SoundInfo.html">SoundInfo</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_SoundPlayer_RegisterSoundBank_WaveEngine_Framework_Sound_SoundBank_">RegisterSoundBank(SoundBank)</a></td>
+        <td><p>Registers a <a class="xref" href="WaveEngine.Framework.Sound.SoundBank.html">SoundBank</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_SoundPlayer_ResumeAllSounds">ResumeAllSounds()</a></td>
+        <td><p>Resumes all sounds.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_SoundPlayer_ResumeSceneSounds_WaveEngine_Framework_Scene_">ResumeSceneSounds(Scene)</a></td>
+        <td><p>Resume all sounds of a scene.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_SoundPlayer_StopAllSounds">StopAllSounds()</a></td>
+        <td><p>Stops all currently playing sounds.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_SoundPlayer_StopSceneSounds_WaveEngine_Framework_Scene_">StopSceneSounds(Scene)</a></td>
+        <td><p>Stop all sounds of a scene.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_SoundPlayer_Terminate">Terminate()</a></td>
+        <td><p>Allow to execute custom logic during the finalization of this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Services_SoundPlayer_Update_System_TimeSpan_">Update(TimeSpan)</a></td>
+        <td><p>Updates this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_SoundPlayer_Dispose" data-uid="WaveEngine.Framework.Services.SoundPlayer.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Services_SoundPlayer_Finalize" data-uid="WaveEngine.Framework.Services.SoundPlayer.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>Finalizes an instance of the <a class="xref" href="WaveEngine.Framework.Services.SoundPlayer.html">SoundPlayer</a> class.
+<a class="xref" href="WaveEngine.Framework.Services.SoundPlayer.html">SoundPlayer</a> is reclaimed by garbage collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Services_SoundPlayer_GetSceneSoundBank_WaveEngine_Framework_Scene_" data-uid="WaveEngine.Framework.Services.SoundPlayer.GetSceneSoundBank(WaveEngine.Framework.Scene)">GetSceneSoundBank(Scene)</h4>
+  <div class="markdown level1 summary"><p>Get scene sound bank</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoundBank GetSceneSoundBank(Scene scene)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Scene.html">Scene</a></td>
+        <td><em>scene</em></td>
+        <td><p>The scene</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Sound.SoundBank.html">SoundBank</a></td>
+        <td><p>The associated sound bank</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_SoundPlayer_GetSceneSoundListener3D_WaveEngine_Framework_Scene_" data-uid="WaveEngine.Framework.Services.SoundPlayer.GetSceneSoundListener3D(WaveEngine.Framework.Scene)">GetSceneSoundListener3D(Scene)</h4>
+  <div class="markdown level1 summary"><p>Get the current active listener 3D associated to a scene</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoundListener3D GetSceneSoundListener3D(Scene scene)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Scene.html">Scene</a></td>
+        <td><em>scene</em></td>
+        <td><p>The scene.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Sound.SoundListener3D.html">SoundListener3D</a></td>
+        <td><p>The active listener.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_SoundPlayer_Initialize" data-uid="WaveEngine.Framework.Services.SoundPlayer.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"><p>Allows to execute custom logic during the initialization of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Initialize()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Services_SoundPlayer_PauseAllSounds" data-uid="WaveEngine.Framework.Services.SoundPlayer.PauseAllSounds">PauseAllSounds()</h4>
+  <div class="markdown level1 summary"><p>Pauses all sounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PauseAllSounds()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Services_SoundPlayer_PauseSceneSounds_WaveEngine_Framework_Scene_" data-uid="WaveEngine.Framework.Services.SoundPlayer.PauseSceneSounds(WaveEngine.Framework.Scene)">PauseSceneSounds(Scene)</h4>
+  <div class="markdown level1 summary"><p>Pauses all sounds of a scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PauseSceneSounds(Scene scene)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Scene.html">Scene</a></td>
+        <td><em>scene</em></td>
+        <td><p>The scene</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_SoundPlayer_Play_WaveEngine_Framework_Sound_SoundInfo_" data-uid="WaveEngine.Framework.Services.SoundPlayer.Play(WaveEngine.Framework.Sound.SoundInfo)">Play(SoundInfo)</h4>
+  <div class="markdown level1 summary"><p>Plays the specified <a class="xref" href="WaveEngine.Framework.Sound.SoundInfo.html">SoundInfo</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoundInstance Play(SoundInfo sound)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Sound.SoundInfo.html">SoundInfo</a></td>
+        <td><em>sound</em></td>
+        <td><p>The instance to play.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Media.SoundInstance.html">SoundInstance</a></td>
+        <td><p>Sound instanace</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If sound is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_SoundPlayer_Play_WaveEngine_Framework_Sound_SoundInfo_System_Single_" data-uid="WaveEngine.Framework.Services.SoundPlayer.Play(WaveEngine.Framework.Sound.SoundInfo,System.Single)">Play(SoundInfo, Single)</h4>
+  <div class="markdown level1 summary"><p>Plays the specified <a class="xref" href="WaveEngine.Framework.Sound.SoundInfo.html">SoundInfo</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoundInstance Play(SoundInfo sound, float volume)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Sound.SoundInfo.html">SoundInfo</a></td>
+        <td><em>sound</em></td>
+        <td><p>The instance to play.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><em>volume</em></td>
+        <td><p>The volume at what the instance will be played.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Media.SoundInstance.html">SoundInstance</a></td>
+        <td><p>Sound instanace</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If sound is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_SoundPlayer_Play_WaveEngine_Framework_Sound_SoundInfo_System_Single_System_Boolean_" data-uid="WaveEngine.Framework.Services.SoundPlayer.Play(WaveEngine.Framework.Sound.SoundInfo,System.Single,System.Boolean)">Play(SoundInfo, Single, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Plays the specified <a class="xref" href="WaveEngine.Framework.Sound.SoundInfo.html">SoundInfo</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoundInstance Play(SoundInfo sound, float volume, bool loop)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Sound.SoundInfo.html">SoundInfo</a></td>
+        <td><em>sound</em></td>
+        <td><p>The instance to play.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><em>volume</em></td>
+        <td><p>The volume at what the instance will be played.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>loop</em></td>
+        <td><p>Sound loop.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Media.SoundInstance.html">SoundInstance</a></td>
+        <td><p>Sound instanace</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If sound is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_SoundPlayer_RegisterSoundBank_WaveEngine_Framework_Sound_SoundBank_" data-uid="WaveEngine.Framework.Services.SoundPlayer.RegisterSoundBank(WaveEngine.Framework.Sound.SoundBank)">RegisterSoundBank(SoundBank)</h4>
+  <div class="markdown level1 summary"><p>Registers a <a class="xref" href="WaveEngine.Framework.Sound.SoundBank.html">SoundBank</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterSoundBank(SoundBank soundBank)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Sound.SoundBank.html">SoundBank</a></td>
+        <td><em>soundBank</em></td>
+        <td><p>The instance to register.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If soundBank is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>If a soundBank with the same <code>Id</code> is already registered.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_SoundPlayer_ResumeAllSounds" data-uid="WaveEngine.Framework.Services.SoundPlayer.ResumeAllSounds">ResumeAllSounds()</h4>
+  <div class="markdown level1 summary"><p>Resumes all sounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResumeAllSounds()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Services_SoundPlayer_ResumeSceneSounds_WaveEngine_Framework_Scene_" data-uid="WaveEngine.Framework.Services.SoundPlayer.ResumeSceneSounds(WaveEngine.Framework.Scene)">ResumeSceneSounds(Scene)</h4>
+  <div class="markdown level1 summary"><p>Resume all sounds of a scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResumeSceneSounds(Scene scene)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Scene.html">Scene</a></td>
+        <td><em>scene</em></td>
+        <td><p>The scene</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_SoundPlayer_StopAllSounds" data-uid="WaveEngine.Framework.Services.SoundPlayer.StopAllSounds">StopAllSounds()</h4>
+  <div class="markdown level1 summary"><p>Stops all currently playing sounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopAllSounds()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Services_SoundPlayer_StopSceneSounds_WaveEngine_Framework_Scene_" data-uid="WaveEngine.Framework.Services.SoundPlayer.StopSceneSounds(WaveEngine.Framework.Scene)">StopSceneSounds(Scene)</h4>
+  <div class="markdown level1 summary"><p>Stop all sounds of a scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopSceneSounds(Scene scene)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Scene.html">Scene</a></td>
+        <td><em>scene</em></td>
+        <td><p>The scene</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Services_SoundPlayer_Terminate" data-uid="WaveEngine.Framework.Services.SoundPlayer.Terminate">Terminate()</h4>
+  <div class="markdown level1 summary"><p>Allow to execute custom logic during the finalization of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Terminate()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Services_SoundPlayer_Update_System_TimeSpan_" data-uid="WaveEngine.Framework.Services.SoundPlayer.Update(System.TimeSpan)">Update(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Updates this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Services_SoundPlayer_Update_System_TimeSpan__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method should not be called directly, <a class="xref" href="WaveEngine.Framework.Services.WaveServices.html">WaveServices</a> will call it automatically.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update(TimeSpan gameTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><em>gameTime</em></td>
+        <td><p>The game time.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

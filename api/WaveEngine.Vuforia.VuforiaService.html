@@ -1,0 +1,883 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class VuforiaService
+   | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class VuforiaService
+   | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WaveEngine.Vuforia.VuforiaService">
+  
+  
+  <h1 id="WaveEngine_Vuforia_VuforiaService" data-uid="WaveEngine.Vuforia.VuforiaService" class="xk-margin-default">Class VuforiaService
+  </h1>
+  <div class="markdown level0 summary"><p>Vuforia integration service</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+      <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level1"><a class="xref" href="WaveEngine.Common.IO.SerializableObject.html">SerializableObject</a></div>
+      <div class="level2"><a class="xref" href="WaveEngine.Common.Service.html">Service</a></div>
+      <div class="level3"><a class="xref" href="WaveEngine.Common.UpdatableService.html">UpdatableService</a></div>
+      <div class="level"><span class="xref"></span></div>
+  </div>
+  <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>:WaveEngine.Vuforia.dll</h6>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataContract(Namespace = &quot;WaveEngine.Vuforia&quot;)]
+public class VuforiaService : UpdatableService</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <h4 id="properties-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_ActiveCamera">ActiveCamera</a></td>
+        <td><p>Gets the active AR camera.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_BackgroundCameraMaterial">BackgroundCameraMaterial</a></td>
+        <td><p>Gets the material for the background camera</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_BackgroundCameraMesh">BackgroundCameraMesh</a></td>
+        <td><p>Gets the mesh for the background camera</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_CameraProjection">CameraProjection</a></td>
+        <td><p>Gets the camera projection matrix</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_CameraTransform">CameraTransform</a></td>
+        <td><p>Gets the camera transform matrix</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_Dataset">Dataset</a></td>
+        <td><p>Gets the dataset in use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_DataSetPath">DataSetPath</a></td>
+        <td><p>Gets or sets the active dataSet path. Only one dataSet can be loaded and active at a time.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_ExtendedTracking">ExtendedTracking</a></td>
+        <td><p>Gets or sets a value indicating whether extended tracking feature is enabled for all dataSet trackables.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_IsSupported">IsSupported</a></td>
+        <td><p>Gets a value indicating whether Vuforia integration is supportede</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_LicenseKey">LicenseKey</a></td>
+        <td><p>Gets or sets the Vuforia license key that is used for this app.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_MaxSimultaneousImageTargets">MaxSimultaneousImageTargets</a></td>
+        <td><p>Gets or sets how many image targets to detect and track at the same time</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_MaxSimultaneousObjectTargets">MaxSimultaneousObjectTargets</a></td>
+        <td><p>Gets or sets how many object targets to detect and track at the same time</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_State">State</a></td>
+        <td><p>Gets the Vuforia service state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_TrackableResults">TrackableResults</a></td>
+        <td><p>Gets the Trackable objects currently being tracked.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_WorldCenterMode">WorldCenterMode</a></td>
+        <td><p>Gets or sets defines how the relative transformation that is returned by the service is applied.
+Either the camera is moved in the scene with respect to a &quot;world center&quot; or all the targets are moved with respect to the camera.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_WorldCenterResult">WorldCenterResult</a></td>
+        <td><p>Gets the world center result if it is detected.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_WorldCenterTrackable">WorldCenterTrackable</a></td>
+        <td><p>Gets or sets world center setting on the ARCamera</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_ActiveCamera" data-uid="WaveEngine.Vuforia.VuforiaService.ActiveCamera">ActiveCamera</h4>
+  <div class="markdown level1 summary"><p>Gets the active AR camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Camera3D ActiveCamera { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.Camera3D.html">Camera3D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_BackgroundCameraMaterial" data-uid="WaveEngine.Vuforia.VuforiaService.BackgroundCameraMaterial">BackgroundCameraMaterial</h4>
+  <div class="markdown level1 summary"><p>Gets the material for the background camera</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Material BackgroundCameraMaterial { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.Material.html">Material</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_BackgroundCameraMesh" data-uid="WaveEngine.Vuforia.VuforiaService.BackgroundCameraMesh">BackgroundCameraMesh</h4>
+  <div class="markdown level1 summary"><p>Gets the mesh for the background camera</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mesh BackgroundCameraMesh { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Mesh.html">Mesh</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_CameraProjection" data-uid="WaveEngine.Vuforia.VuforiaService.CameraProjection">CameraProjection</h4>
+  <div class="markdown level1 summary"><p>Gets the camera projection matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix CameraProjection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Matrix.html">Matrix</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_CameraTransform" data-uid="WaveEngine.Vuforia.VuforiaService.CameraTransform">CameraTransform</h4>
+  <div class="markdown level1 summary"><p>Gets the camera transform matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix? CameraTransform { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="WaveEngine.Common.Math.Matrix.html">Matrix</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_Dataset" data-uid="WaveEngine.Vuforia.VuforiaService.Dataset">Dataset</h4>
+  <div class="markdown level1 summary"><p>Gets the dataset in use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataSet Dataset { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Vuforia.DataSet.html">DataSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_DataSetPath" data-uid="WaveEngine.Vuforia.VuforiaService.DataSetPath">DataSetPath</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the active dataSet path. Only one dataSet can be loaded and active at a time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RenderPropertyAsAsset(AssetType.Unknown, &quot;.xml&quot;, 0, CustomPropertyName = &quot;DataSet Path&quot;, Tooltip = &quot;The active dataSet path. Only one dataSet can be loaded and active at a time&quot;)]
+public string DataSetPath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_ExtendedTracking" data-uid="WaveEngine.Vuforia.VuforiaService.ExtendedTracking">ExtendedTracking</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether extended tracking feature is enabled for all dataSet trackables.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Extended Tracking&quot;, Tooltip = &quot;Indicates whether extended tracking feature is enabled for all dataSet trackables&quot;)]
+public bool ExtendedTracking { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if extended tracking feature is enabled for all dataSet trackables; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_IsSupported" data-uid="WaveEngine.Vuforia.VuforiaService.IsSupported">IsSupported</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether Vuforia integration is supportede</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSupported { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_LicenseKey" data-uid="WaveEngine.Vuforia.VuforiaService.LicenseKey">LicenseKey</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the Vuforia license key that is used for this app.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;License Key&quot;, Tooltip = &quot;The Vuforia license key that is used for this app&quot;)]
+public string LicenseKey { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>License key cannot be changed while Vuforia tracking is active</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_MaxSimultaneousImageTargets" data-uid="WaveEngine.Vuforia.VuforiaService.MaxSimultaneousImageTargets">MaxSimultaneousImageTargets</h4>
+  <div class="markdown level1 summary"><p>Gets or sets how many image targets to detect and track at the same time</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Vuforia_VuforiaService_MaxSimultaneousImageTargets_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Tells the tracker how many image shall be processed
+at most at the same time.E.g. if an app will never require
+tracking more than two targets, this value should be set to 2.
+Default is: 1.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Max. Image Targets&quot;, Tooltip = &quot;How many image targets to detect and track at the same time&quot;)]
+public int MaxSimultaneousImageTargets { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_MaxSimultaneousObjectTargets" data-uid="WaveEngine.Vuforia.VuforiaService.MaxSimultaneousObjectTargets">MaxSimultaneousObjectTargets</h4>
+  <div class="markdown level1 summary"><p>Gets or sets how many object targets to detect and track at the same time</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Vuforia_VuforiaService_MaxSimultaneousObjectTargets_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Tells the tracker how many 3D objects shall be processed
+at most at the same time.E.g. if an app will never require
+tracking more than 1 target, this value should be set to 1.
+Default is: 1.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Max. Object Targets&quot;, Tooltip = &quot;How many object targets to detect and track at the same time&quot;)]
+public int MaxSimultaneousObjectTargets { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_State" data-uid="WaveEngine.Vuforia.VuforiaService.State">State</h4>
+  <div class="markdown level1 summary"><p>Gets the Vuforia service state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ARState State { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Vuforia.ARState.html">ARState</a></td>
+        <td><p>The Vuforia service state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_TrackableResults" data-uid="WaveEngine.Vuforia.VuforiaService.TrackableResults">TrackableResults</h4>
+  <div class="markdown level1 summary"><p>Gets the Trackable objects currently being tracked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;TrackableResult&gt; TrackableResults { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Vuforia.TrackableResult.html">TrackableResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_WorldCenterMode" data-uid="WaveEngine.Vuforia.VuforiaService.WorldCenterMode">WorldCenterMode</h4>
+  <div class="markdown level1 summary"><p>Gets or sets defines how the relative transformation that is returned by the service is applied.
+Either the camera is moved in the scene with respect to a &quot;world center&quot; or all the targets are moved with respect to the camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldCenterMode WorldCenterMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Vuforia.WorldCenterMode.html">WorldCenterMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_WorldCenterResult" data-uid="WaveEngine.Vuforia.VuforiaService.WorldCenterResult">WorldCenterResult</h4>
+  <div class="markdown level1 summary"><p>Gets the world center result if it is detected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TrackableResult WorldCenterResult { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Vuforia.TrackableResult.html">TrackableResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_WorldCenterTrackable" data-uid="WaveEngine.Vuforia.VuforiaService.WorldCenterTrackable">WorldCenterTrackable</h4>
+  <div class="markdown level1 summary"><p>Gets or sets world center setting on the ARCamera</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ARTrackableBehavior WorldCenterTrackable { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Vuforia.ARTrackableBehavior.html">ARTrackableBehavior</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <h4 id="methods-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_DefaultValues">DefaultValues()</a></td>
+        <td><p>The default values</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_Initialize">Initialize()</a></td>
+        <td><p>Initializes the Vuforia service</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_ShutDown">ShutDown()</a></td>
+        <td><p>ShutDown Vuforia Service</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_StartTracking_System_Boolean_">StartTracking(Boolean)</a></td>
+        <td><p>Starts the Vuforia target tracking.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_StopTracking">StopTracking()</a></td>
+        <td><p>Stops the Vuforia target tracking.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_Terminate">Terminate()</a></td>
+        <td><p>Terminate the service</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vuforia_VuforiaService_Update_System_TimeSpan_">Update(TimeSpan)</a></td>
+        <td><p>Update the service</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_DefaultValues" data-uid="WaveEngine.Vuforia.VuforiaService.DefaultValues">DefaultValues()</h4>
+  <div class="markdown level1 summary"><p>The default values</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DefaultValues()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_Initialize" data-uid="WaveEngine.Vuforia.VuforiaService.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"><p>Initializes the Vuforia service</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Initialize()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_ShutDown" data-uid="WaveEngine.Vuforia.VuforiaService.ShutDown">ShutDown()</h4>
+  <div class="markdown level1 summary"><p>ShutDown Vuforia Service</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShutDown()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code>, if down was shut, <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_StartTracking_System_Boolean_" data-uid="WaveEngine.Vuforia.VuforiaService.StartTracking(System.Boolean)">StartTracking(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Starts the Vuforia target tracking.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; StartTracking(bool retrieveCameraTexture)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>retrieveCameraTexture</em></td>
+        <td><p>if set to <code>true</code>, the service will update the camera video texture.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p><code>true</code>, if tracking was started, <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_StopTracking" data-uid="WaveEngine.Vuforia.VuforiaService.StopTracking">StopTracking()</h4>
+  <div class="markdown level1 summary"><p>Stops the Vuforia target tracking.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StopTracking()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code>, if tracking was stopped, <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_Terminate" data-uid="WaveEngine.Vuforia.VuforiaService.Terminate">Terminate()</h4>
+  <div class="markdown level1 summary"><p>Terminate the service</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Terminate()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Vuforia_VuforiaService_Update_System_TimeSpan_" data-uid="WaveEngine.Vuforia.VuforiaService.Update(System.TimeSpan)">Update(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Update the service</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update(TimeSpan gameTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><em>gameTime</em></td>
+        <td><p>The game timestan elapsed from the latest update</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

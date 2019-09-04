@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Goal | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Goal | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="goal">Goal</h2>
+
+<p>A common 3D game uses to have models (3D also) created by designers/modellers on software like <a href="http://www.autodesk.es/products/3ds-max/overview">3DS Max</a> or <a href="https://www.blender.org/">Blender</a>. Models are exported in known formats so can be read from game engines. One of those formats is <a href="https://en.wikipedia.org/wiki/FBX">FBX</a>, an standard within games industry.</p>
+<p>In the following paragraphs, you will learn to load an .fbx model and add it into an scene.</p>
+<h2 id="hands-on">Hands-on</h2>
+<h3 id="with-wave-visual-editor">With Wave Visual Editor</h3>
+<p>Create a new project with Wave Visual Editor. On the Asset Details panel, double click on Assets folder:</p>
+<p><img src="images/LoadModelFromFile/AssetsDetailPane.jpg" alt=""></p>
+<p>Right click on its empty space and select Import Asset. We will add <a href="https://github.com/WaveEngine/Samples/blob/master/Graphics3D/IsisTemple/Content/Assets/Models/isis.fbx">isis.fbx</a> file, which is part of the <a href="https://github.com/WaveEngine/Samples/tree/master/Graphics3D/IsisTemple/Content/Assets/Models">IsisTemple sample</a>.</p>
+<p>Once Wave Visual Editor has loaded the model, simply drag and drop the item into the Viewport:</p>
+<p><img src="images/LoadModelFromFile/DragIsisModel.jpg" alt=""></p>
+<h3 id="with-visual-studio-for-windows-or-mac">With Visual Studio (for Windows or Mac)</h3>
+<p>Open the project from Visual Studio for Windows or Mac, and rebuild the solution just to update <code>WaveContent.cs</code> -a helper to easily reference the paths to the assets you have added in Wave Visual Editor.</p>
+<p>There are a few pieces -components actually- needed to handle an .fbx model (appart from those needed to place an entity in a 3D world):</p>
+<ul>
+<li><a href="xref:WaveEngine.Components.Graphics3D.SkinnedModel">SkinnedModel</a>: in charge of loading the .fbx file, also reads the animations such file has.</li>
+<li><a href="xref:WaveEngine.Components.Graphics3D.SkinnedModelRenderer">SkinnedModelRenderer</a>: makes the final render.</li>
+<li><a href="xref:WaveEngine.Components.Animation.Animation3D">Animation3D</a>: since our model is &quot;skinned&quot;, it implies we want to handle its animations to trigger those in any moment of the game. This functionality is specifically covered <a href="Play-an-Animated-FBX-Model.html">here</a>.</li>
+</ul>
+<p>Modify your <code>Scene.CreateScene()</code> method in this way (notice how <code>isis.fbx</code> is referenced through <code>WaveContent</code>):</p>
+<pre><code class="lang-C#">protected override void CreateScene()
+{
+    this.Load(WaveContent.Scenes.MyScene);
+
+    var isis = new Entity()
+        .AddComponent(new Transform3D())
+        .AddComponent(new MaterialsMap())
+        .AddComponent(new SkinnedModel(WaveContent.Assets.isis_fbx))
+        .AddComponent(new Animation3D())
+        .AddComponent(new SkinnedModelRenderer());
+
+    this.EntityManager.Add(isis);
+}
+</code></pre><p>In the end, we are adding the same entity hierarchy Wave Visual Editor creates when we drag and drop the model to the scene:</p>
+<p><img src="images/LoadModelFromFile/EntityDetails.jpg" alt=""></p>
+<h2 id="wrap-up">Wrap-up</h2>
+<p>This recipe has guided us through what is an FBX file and how it can be loaded into Wave Engine, both visually and through source code.</p>
+<div class="NOTE"><h5>Note</h5><p>Take a look at this sample:
+<a href="https://github.com/WaveEngine/Samples/tree/master/Graphics3D/IsisTemple">Isis Temple</a></p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

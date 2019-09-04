@@ -1,0 +1,704 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RenderLayer
+   | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RenderLayer
+   | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WaveEngine.Framework.Graphics.RenderLayer">
+  
+  
+  <h1 id="WaveEngine_Framework_Graphics_RenderLayer" data-uid="WaveEngine.Framework.Graphics.RenderLayer" class="xk-margin-default">Class RenderLayer
+  </h1>
+  <div class="markdown level0 summary"><p>Logical group which englobes every <a class="xref" href="WaveEngine.Framework.Drawable.html">Drawable</a> component
+which shares a same feature/s.
+It stablishes a drawing order, where every component from a same layer
+is rendered within the same batch.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+      <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level1"><a class="xref" href="WaveEngine.Common.IO.SerializableObject.html">SerializableObject</a></div>
+      <div class="level"><span class="xref"></span></div>
+  </div>
+  <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataContract(Namespace = &quot;WaveEngine.Framework.Graphics&quot;)]
+public sealed class RenderLayer : SerializableObject, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <h4 id="constructors-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderLayer__ctor_System_String_">RenderLayer(String)</a></td>
+        <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Graphics.RenderLayer.html">RenderLayer</a> class.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderLayer__ctor_WaveEngine_Common_Graphics_RenderLayerDescription_">RenderLayer(RenderLayerDescription)</a></td>
+        <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Graphics.RenderLayer.html">RenderLayer</a> class.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_RenderLayer__ctor_System_String_" data-uid="WaveEngine.Framework.Graphics.RenderLayer.#ctor(System.String)">RenderLayer(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Graphics.RenderLayer.html">RenderLayer</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderLayer(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>name</em></td>
+        <td><p>The name of the layer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_RenderLayer__ctor_WaveEngine_Common_Graphics_RenderLayerDescription_" data-uid="WaveEngine.Framework.Graphics.RenderLayer.#ctor(WaveEngine.Common.Graphics.RenderLayerDescription)">RenderLayer(RenderLayerDescription)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Graphics.RenderLayer.html">RenderLayer</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderLayer(RenderLayerDescription renderLayer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.RenderLayerDescription.html">RenderLayerDescription</a></td>
+        <td><em>renderLayer</em></td>
+        <td><p>The render state description of the layer</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="fields-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderLayer_billboardBatch">billboardBatch</a></td>
+        <td><p>The <a class="xref" href="WaveEngine.Framework.Graphics.RenderLayer.html#WaveEngine_Framework_Graphics_RenderLayer_BillboardBatch">BillboardBatch</a> used by this instance to render billboards.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderLayer_Id">Id</a></td>
+        <td><p>The layer&apos;s id</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderLayer_IsGUILayer">IsGUILayer</a></td>
+        <td><p>Gets a value indicating whether this layer is GUI layer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderLayer_RenderState">RenderState</a></td>
+        <td><p>The Render Layer description</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_RenderLayer_billboardBatch" data-uid="WaveEngine.Framework.Graphics.RenderLayer.billboardBatch">billboardBatch</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="WaveEngine.Framework.Graphics.RenderLayer.html#WaveEngine_Framework_Graphics_RenderLayer_BillboardBatch">BillboardBatch</a> used by this instance to render billboards.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BillboardBatch billboardBatch</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.BillboardBatch.html">BillboardBatch</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_RenderLayer_Id" data-uid="WaveEngine.Framework.Graphics.RenderLayer.Id">Id</h4>
+  <div class="markdown level1 summary"><p>The layer&apos;s id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Id</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_RenderLayer_IsGUILayer" data-uid="WaveEngine.Framework.Graphics.RenderLayer.IsGUILayer">IsGUILayer</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this layer is GUI layer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGUILayer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_RenderLayer_RenderState" data-uid="WaveEngine.Framework.Graphics.RenderLayer.RenderState">RenderState</h4>
+  <div class="markdown level1 summary"><p>The Render Layer description</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderStateDescription RenderState</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.RenderStateDescription.html">RenderStateDescription</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <h4 id="properties-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderLayer_BillboardBatch">BillboardBatch</a></td>
+        <td><p>Gets the <a class="xref" href="WaveEngine.Framework.Graphics.RenderLayer.html#WaveEngine_Framework_Graphics_RenderLayer_BillboardBatch">BillboardBatch</a> used by this instance to render billboards.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderLayer_IsBatchingEnabled">IsBatchingEnabled</a></td>
+        <td><p>Gets or sets a value indicating whether the bacthing is enabled</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderLayer_IsVisible">IsVisible</a></td>
+        <td><p>Gets or sets a value indicating whether this layer is visible or not.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderLayer_LayerIndex">LayerIndex</a></td>
+        <td><p>Gets the Layer Indice inside the RenderManager layer list</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderLayer_LayerMaskDefaultValue">LayerMaskDefaultValue</a></td>
+        <td><p>Gets or sets a value indicating whether this layer is drawn by the cameras by default.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderLayer_LineBatch2D">LineBatch2D</a></td>
+        <td><p>Gets the <a class="xref" href="WaveEngine.Framework.Graphics.RenderLayer.html#WaveEngine_Framework_Graphics_RenderLayer_LineBatch2D">LineBatch2D</a> used by this instance to render 2D lines.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderLayer_LineBatch3D">LineBatch3D</a></td>
+        <td><p>Gets the <a class="xref" href="WaveEngine.Framework.Graphics.RenderLayer.html#WaveEngine_Framework_Graphics_RenderLayer_LineBatch3D">LineBatch3D</a> used by this instance to render 2D lines.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderLayer_Name">Name</a></td>
+        <td><p>Gets or sets the layer&apos;s name</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderLayer_SpriteBatch">SpriteBatch</a></td>
+        <td><p>Gets the <a class="xref" href="WaveEngine.Framework.Graphics.RenderLayer.html#WaveEngine_Framework_Graphics_RenderLayer_SpriteBatch">SpriteBatch</a> used by this instance to render 2D elements.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_RenderLayer_BillboardBatch" data-uid="WaveEngine.Framework.Graphics.RenderLayer.BillboardBatch">BillboardBatch</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="WaveEngine.Framework.Graphics.RenderLayer.html#WaveEngine_Framework_Graphics_RenderLayer_BillboardBatch">BillboardBatch</a> used by this instance to render billboards.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BillboardBatch BillboardBatch { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.BillboardBatch.html">BillboardBatch</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_RenderLayer_IsBatchingEnabled" data-uid="WaveEngine.Framework.Graphics.RenderLayer.IsBatchingEnabled">IsBatchingEnabled</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the bacthing is enabled</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBatchingEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_RenderLayer_IsVisible" data-uid="WaveEngine.Framework.Graphics.RenderLayer.IsVisible">IsVisible</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this layer is visible or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+public bool IsVisible { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_RenderLayer_LayerIndex" data-uid="WaveEngine.Framework.Graphics.RenderLayer.LayerIndex">LayerIndex</h4>
+  <div class="markdown level1 summary"><p>Gets the Layer Indice inside the RenderManager layer list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LayerIndex { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_RenderLayer_LayerMaskDefaultValue" data-uid="WaveEngine.Framework.Graphics.RenderLayer.LayerMaskDefaultValue">LayerMaskDefaultValue</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this layer is drawn by the cameras by default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LayerMaskDefaultValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_RenderLayer_LineBatch2D" data-uid="WaveEngine.Framework.Graphics.RenderLayer.LineBatch2D">LineBatch2D</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="WaveEngine.Framework.Graphics.RenderLayer.html#WaveEngine_Framework_Graphics_RenderLayer_LineBatch2D">LineBatch2D</a> used by this instance to render 2D lines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LineBatch2D LineBatch2D { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.LineBatch2D.html">LineBatch2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_RenderLayer_LineBatch3D" data-uid="WaveEngine.Framework.Graphics.RenderLayer.LineBatch3D">LineBatch3D</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="WaveEngine.Framework.Graphics.RenderLayer.html#WaveEngine_Framework_Graphics_RenderLayer_LineBatch3D">LineBatch3D</a> used by this instance to render 2D lines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LineBatch3D LineBatch3D { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.LineBatch3D.html">LineBatch3D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_RenderLayer_Name" data-uid="WaveEngine.Framework.Graphics.RenderLayer.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the layer&apos;s name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_RenderLayer_SpriteBatch" data-uid="WaveEngine.Framework.Graphics.RenderLayer.SpriteBatch">SpriteBatch</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="WaveEngine.Framework.Graphics.RenderLayer.html#WaveEngine_Framework_Graphics_RenderLayer_SpriteBatch">SpriteBatch</a> used by this instance to render 2D elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpriteBatch SpriteBatch { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.SpriteBatch.html">SpriteBatch</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <h4 id="methods-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderLayer_AddRenderCommand_WaveEngine_Framework_Graphics_RenderCommand__">AddRenderCommand(ref RenderCommand)</a></td>
+        <td><p>Add a new Render</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderLayer_Dispose">Dispose()</a></td>
+        <td><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderLayer_Finalize">Finalize()</a></td>
+        <td><p>Finalizes an instance of the <a class="xref" href="WaveEngine.Framework.Graphics.RenderLayer.html">RenderLayer</a> class.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_RenderLayer_AddRenderCommand_WaveEngine_Framework_Graphics_RenderCommand__" data-uid="WaveEngine.Framework.Graphics.RenderLayer.AddRenderCommand(WaveEngine.Framework.Graphics.RenderCommand@)">AddRenderCommand(ref RenderCommand)</h4>
+  <div class="markdown level1 summary"><p>Add a new Render</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddRenderCommand(ref RenderCommand renderCommand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.RenderCommand.html">RenderCommand</a></td>
+        <td><em>renderCommand</em></td>
+        <td><p>The render command passed as reference</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_RenderLayer_Dispose" data-uid="WaveEngine.Framework.Graphics.RenderLayer.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Graphics_RenderLayer_Finalize" data-uid="WaveEngine.Framework.Graphics.RenderLayer.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>Finalizes an instance of the <a class="xref" href="WaveEngine.Framework.Graphics.RenderLayer.html">RenderLayer</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

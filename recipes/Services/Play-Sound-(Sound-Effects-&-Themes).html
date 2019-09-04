@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Goal | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Goal | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="goal">Goal</h2>
+
+<p>Games without music and sound effects is like a whole day without bread. It is well knows by everyone Tetris’ background music, while the blocks are falling; or the sound effect of Mario Bros. jumping, even taking a coin. Wave Engine makes it super easy to add those to your games, you will learn how to achieve such with just a few steps.</p>
+<p>Note: Wave Engine also supports 3D sounds, which is not covered on this recipe.</p>
+<h2 id="hands-on">Hands-on</h2>
+<h3 id="with-wave-visual-editor">With Wave Visual Editor</h3>
+<p>Start by importing both a sound file (WAV format, for example) and a music one (i.e., MP3). Enter on the Assets folder, at Asset Details panel, right-click button, Import Asset.</p>
+<p>A double click on the MP3 file will launch OS by-default player. However, doing the same on the WAV one will open the Asset Viewer window, with a live preview of the sound, and some characteristics which can be tweaked:</p>
+<ul>
+<li>ZipCompress: whether the intermediate file generated is also zipped (default), reducing on-disk memory. The first time a compressed asset is loaded into a game, it is uncompressed for future access.</li>
+<li>ChannelFormat: Stereo (default) or Mono. Note: in order to add the sound to be used in 3D, you must change this value to mono.</li>
+<li>AudioQuality: Low, Medium or High (default).</li>
+</ul>
+<p>The rest of steps are done in code, so please continue with below section.</p>
+<h3 id="with-visual-studio-for-windows-or-mac">With Visual Studio (for Windows or Mac)</h3>
+<p>Once the sound and music files are added through Wave Visual Editor, open the associated C# solution (remember: File &gt; Open C# Solution…)</p>
+<h4 id="playing-sound">Playing Sound</h4>
+<p>There are two pieces which &quot;play&quot; together to reproduce sounds in Wave Engine: <a href="xref:WaveEngine.Framework.Sound.SoundBank">SoundBank</a> and <a href="xref:Wave​Engine.​Framework.​Services.SoundPlayer">SoundPlayer</a> service. <code>SoundBank</code> allows us to associate every sound to be played, with the option to define an <a href="xref:Wave​Engine.​Framework.​Services.AssetsContainer">AssetsContainer</a> (this will assure, for instance, to be unloaded when an <code>Scene</code> ends, if used this last one&#39;s container). <code>SoundPlayer</code> is the service in charge of registering the previous bank, plus playing sounds contained within it.</p>
+<pre><code class="lang-c#">var soundBank = new SoundBank(Assets);
+// Sound.wav was added through Wave Visual Editor
+var sound = new SoundInfo(WaveContent.Assets.Sound_wav);
+
+soundBank.Add(sound);
+
+WaveServices.SoundPlayer.RegisterSoundBank(soundBank);
+WaveServices.SoundPlayer.Play(sound);
+</code></pre><h4 id="playing-music">Playing Music</h4>
+<p>Music follows a similar pattern, without the need to work with a bank, just the <a href="xref:Wave​Engine.​Framework.​Services.MusicPlayer">MusicPlayer</a>.</p>
+<pre><code class="lang-c#">// Song.mp3 was added through Wave Visual Editor
+var music = new MusicInfo(WaveContent.Assets.Song_mp3);
+
+WaveServices.MusicPlayer.Play(music);
+</code></pre><p>Both sound and music player services contain multiple methods which allow common use cases like stopping, pausing, etc. Please refer to their <a href="xref:WaveEngine">API</a> to see a full description of those.</p>
+<h2 id="wrap-up">Wrap-up</h2>
+<p>We have learned how to play sound effects and songs. Adding those files to our project is done through Wave Visual Editor, while the playback is handled by code.</p>
+<div class="NOTE"><h5>Note</h5><p>Take a look at the <a href="https://github.com/WaveEngine/Samples/tree/master/Media">Media Samples</a> on github.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

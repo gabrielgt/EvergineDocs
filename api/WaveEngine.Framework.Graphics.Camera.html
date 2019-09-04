@@ -1,0 +1,2942 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Camera
+   | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Camera
+   | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WaveEngine.Framework.Graphics.Camera">
+  
+  
+  <h1 id="WaveEngine_Framework_Graphics_Camera" data-uid="WaveEngine.Framework.Graphics.Camera" class="xk-margin-default">Class Camera
+  </h1>
+  <div class="markdown level0 summary"><p>This class represent a camera in a 3D world.
+Cameras are the devices that capture and display the world to the player.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+      <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level1"><a class="xref" href="WaveEngine.Common.IO.SerializableObject.html">SerializableObject</a></div>
+      <div class="level2"><a class="xref" href="WaveEngine.Framework.DependencyObject.html">DependencyObject</a></div>
+      <div class="level3"><a class="xref" href="WaveEngine.Framework.Component.html">Component</a></div>
+      <div class="level"><span class="xref"></span></div>
+  </div>
+  <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataContract(Namespace = &quot;WaveEngine.Framework.Graphics&quot;)]
+public abstract class Camera : Component, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <h4 id="constructors-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera__ctor">Camera()</a></td>
+        <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Graphics.Camera.html">Camera</a> class.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera__ctor" data-uid="WaveEngine.Framework.Graphics.Camera.#ctor">Camera()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Graphics.Camera.html">Camera</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Camera()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="fields-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_aspectRatio">aspectRatio</a></td>
+        <td><p>The aspect ratio</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_backgroundColor">backgroundColor</a></td>
+        <td><p><a class="xref" href="WaveEngine.Common.Graphics.Color.html">Color</a> used to clean the background.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_boundingFrustum">boundingFrustum</a></td>
+        <td><p>The bounding frustum</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_cachedPosition">cachedPosition</a></td>
+        <td><p>Cached position</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_clearDepth">clearDepth</a></td>
+        <td><p>Clear the depth buffer with this value. This value will be clamped between 0 and 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_clearFlags">clearFlags</a></td>
+        <td><p>The clear flags</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_clearStencil">clearStencil</a></td>
+        <td><p>Clear the stencil buffer with this value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_customProjection">customProjection</a></td>
+        <td><p>Custom projection specified by the user</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_DepthRange">DepthRange</a></td>
+        <td><p>Gets or sets the camera depth range.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_dirtyPosition">dirtyPosition</a></td>
+        <td><p>Flag that indicate if the position must be refreshed</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_dirtyProjection">dirtyProjection</a></td>
+        <td><p>Flag that indicate if the projection matrix must be refreshed</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_dirtyView">dirtyView</a></td>
+        <td><p>Flag that indicate if the view matrix must be refreshed</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_dirtyViewProjection">dirtyViewProjection</a></td>
+        <td><p>Flag that indicate if the viewProj matrix must be refreshed</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_disposed">disposed</a></td>
+        <td><p>Wether this instance has been disposed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_farPlane">farPlane</a></td>
+        <td><p>The far plane</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_fieldOfView">fieldOfView</a></td>
+        <td><p>The field of view</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_GBufferDepthBuffer">GBufferDepthBuffer</a></td>
+        <td><p>Depth texture used in GBuffer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_GBufferRT0">GBufferRT0</a></td>
+        <td><p>The gbuffer RT</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_GBufferRT1">GBufferRT1</a></td>
+        <td><p>The gbuffer RT 1, used to store Depth in MRT</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_height">height</a></td>
+        <td><p>The height</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_Lenses">Lenses</a></td>
+        <td><p>The lens list</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_LightingRT">LightingRT</a></td>
+        <td><p>The lighting RT</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_maxZ">maxZ</a></td>
+        <td><p>The max Z</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_minZ">minZ</a></td>
+        <td><p>The min Z</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_nearPlane">nearPlane</a></td>
+        <td><p>The near plane</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_platformService">platformService</a></td>
+        <td><p>Cached platform service</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_projection">projection</a></td>
+        <td><p>The projection</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_projectionRenderTarget">projectionRenderTarget</a></td>
+        <td><p>The projection when the device is in a RenderTarget</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_renderTarget">renderTarget</a></td>
+        <td><p>The render target</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_screenViewport">screenViewport</a></td>
+        <td><p>The camera viewport</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_upVector">upVector</a></td>
+        <td><p>Up vector</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_view">view</a></td>
+        <td><p>The view</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_viewport">viewport</a></td>
+        <td><p>The camera viewport</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_viewportFactor">viewportFactor</a></td>
+        <td><p>The viewport/physical scale factor</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_viewportHeight">viewportHeight</a></td>
+        <td><p>The viewport height</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_viewportWidth">viewportWidth</a></td>
+        <td><p>The viewport width</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_viewProjection">viewProjection</a></td>
+        <td><p>The view projection</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_viewProjectionInverse">viewProjectionInverse</a></td>
+        <td><p>The inverse of view projection</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_viewProjectionInverseRenderTarget">viewProjectionInverseRenderTarget</a></td>
+        <td><p>The inverse of view projection when the device is in a RenderTarget</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_viewProjectionRenderTarget">viewProjectionRenderTarget</a></td>
+        <td><p>The view projection when the device is in a RenderTarget</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_width">width</a></td>
+        <td><p>The width</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_aspectRatio" data-uid="WaveEngine.Framework.Graphics.Camera.aspectRatio">aspectRatio</h4>
+  <div class="markdown level1 summary"><p>The aspect ratio</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float aspectRatio</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_backgroundColor" data-uid="WaveEngine.Framework.Graphics.Camera.backgroundColor">backgroundColor</h4>
+  <div class="markdown level1 summary"><p><a class="xref" href="WaveEngine.Common.Graphics.Color.html">Color</a> used to clean the background.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Color backgroundColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_boundingFrustum" data-uid="WaveEngine.Framework.Graphics.Camera.boundingFrustum">boundingFrustum</h4>
+  <div class="markdown level1 summary"><p>The bounding frustum</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BoundingFrustum boundingFrustum</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.BoundingFrustum.html">BoundingFrustum</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_cachedPosition" data-uid="WaveEngine.Framework.Graphics.Camera.cachedPosition">cachedPosition</h4>
+  <div class="markdown level1 summary"><p>Cached position</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector3 cachedPosition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_clearDepth" data-uid="WaveEngine.Framework.Graphics.Camera.clearDepth">clearDepth</h4>
+  <div class="markdown level1 summary"><p>Clear the depth buffer with this value. This value will be clamped between 0 and 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float clearDepth</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_clearFlags" data-uid="WaveEngine.Framework.Graphics.Camera.clearFlags">clearFlags</h4>
+  <div class="markdown level1 summary"><p>The clear flags</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ClearFlags clearFlags</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.ClearFlags.html">ClearFlags</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_clearStencil" data-uid="WaveEngine.Framework.Graphics.Camera.clearStencil">clearStencil</h4>
+  <div class="markdown level1 summary"><p>Clear the stencil buffer with this value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected byte clearStencil</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_customProjection" data-uid="WaveEngine.Framework.Graphics.Camera.customProjection">customProjection</h4>
+  <div class="markdown level1 summary"><p>Custom projection specified by the user</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Matrix? customProjection</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="WaveEngine.Common.Math.Matrix.html">Matrix</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_DepthRange" data-uid="WaveEngine.Framework.Graphics.Camera.DepthRange">DepthRange</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the camera depth range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+public DepthRange DepthRange</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.DepthRange.html">DepthRange</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_dirtyPosition" data-uid="WaveEngine.Framework.Graphics.Camera.dirtyPosition">dirtyPosition</h4>
+  <div class="markdown level1 summary"><p>Flag that indicate if the position must be refreshed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool dirtyPosition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_dirtyProjection" data-uid="WaveEngine.Framework.Graphics.Camera.dirtyProjection">dirtyProjection</h4>
+  <div class="markdown level1 summary"><p>Flag that indicate if the projection matrix must be refreshed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool dirtyProjection</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_dirtyView" data-uid="WaveEngine.Framework.Graphics.Camera.dirtyView">dirtyView</h4>
+  <div class="markdown level1 summary"><p>Flag that indicate if the view matrix must be refreshed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool dirtyView</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_dirtyViewProjection" data-uid="WaveEngine.Framework.Graphics.Camera.dirtyViewProjection">dirtyViewProjection</h4>
+  <div class="markdown level1 summary"><p>Flag that indicate if the viewProj matrix must be refreshed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool dirtyViewProjection</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_disposed" data-uid="WaveEngine.Framework.Graphics.Camera.disposed">disposed</h4>
+  <div class="markdown level1 summary"><p>Wether this instance has been disposed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool disposed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_farPlane" data-uid="WaveEngine.Framework.Graphics.Camera.farPlane">farPlane</h4>
+  <div class="markdown level1 summary"><p>The far plane</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float farPlane</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_fieldOfView" data-uid="WaveEngine.Framework.Graphics.Camera.fieldOfView">fieldOfView</h4>
+  <div class="markdown level1 summary"><p>The field of view</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float fieldOfView</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_GBufferDepthBuffer" data-uid="WaveEngine.Framework.Graphics.Camera.GBufferDepthBuffer">GBufferDepthBuffer</h4>
+  <div class="markdown level1 summary"><p>Depth texture used in GBuffer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DepthTexture GBufferDepthBuffer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.DepthTexture.html">DepthTexture</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_GBufferRT0" data-uid="WaveEngine.Framework.Graphics.Camera.GBufferRT0">GBufferRT0</h4>
+  <div class="markdown level1 summary"><p>The gbuffer RT</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderTarget GBufferRT0</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.RenderTarget.html">RenderTarget</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_GBufferRT1" data-uid="WaveEngine.Framework.Graphics.Camera.GBufferRT1">GBufferRT1</h4>
+  <div class="markdown level1 summary"><p>The gbuffer RT 1, used to store Depth in MRT</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderTarget GBufferRT1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.RenderTarget.html">RenderTarget</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_height" data-uid="WaveEngine.Framework.Graphics.Camera.height">height</h4>
+  <div class="markdown level1 summary"><p>The height</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float height</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_Lenses" data-uid="WaveEngine.Framework.Graphics.Camera.Lenses">Lenses</h4>
+  <div class="markdown level1 summary"><p>The lens list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;Lens&gt; Lenses</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="WaveEngine.Framework.Graphics.Lens.html">Lens</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_LightingRT" data-uid="WaveEngine.Framework.Graphics.Camera.LightingRT">LightingRT</h4>
+  <div class="markdown level1 summary"><p>The lighting RT</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderTarget LightingRT</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.RenderTarget.html">RenderTarget</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_maxZ" data-uid="WaveEngine.Framework.Graphics.Camera.maxZ">maxZ</h4>
+  <div class="markdown level1 summary"><p>The max Z</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float maxZ</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_minZ" data-uid="WaveEngine.Framework.Graphics.Camera.minZ">minZ</h4>
+  <div class="markdown level1 summary"><p>The min Z</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float minZ</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_nearPlane" data-uid="WaveEngine.Framework.Graphics.Camera.nearPlane">nearPlane</h4>
+  <div class="markdown level1 summary"><p>The near plane</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float nearPlane</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_platformService" data-uid="WaveEngine.Framework.Graphics.Camera.platformService">platformService</h4>
+  <div class="markdown level1 summary"><p>Cached platform service</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static Platform platformService</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Services.Platform.html">Platform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_projection" data-uid="WaveEngine.Framework.Graphics.Camera.projection">projection</h4>
+  <div class="markdown level1 summary"><p>The projection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Matrix projection</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Matrix.html">Matrix</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_projectionRenderTarget" data-uid="WaveEngine.Framework.Graphics.Camera.projectionRenderTarget">projectionRenderTarget</h4>
+  <div class="markdown level1 summary"><p>The projection when the device is in a RenderTarget</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Matrix projectionRenderTarget</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Matrix.html">Matrix</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_renderTarget" data-uid="WaveEngine.Framework.Graphics.Camera.renderTarget">renderTarget</h4>
+  <div class="markdown level1 summary"><p>The render target</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RenderTarget renderTarget</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.RenderTarget.html">RenderTarget</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_screenViewport" data-uid="WaveEngine.Framework.Graphics.Camera.screenViewport">screenViewport</h4>
+  <div class="markdown level1 summary"><p>The camera viewport</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Viewport screenViewport</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Viewport.html">Viewport</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_upVector" data-uid="WaveEngine.Framework.Graphics.Camera.upVector">upVector</h4>
+  <div class="markdown level1 summary"><p>Up vector</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector3 upVector</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_view" data-uid="WaveEngine.Framework.Graphics.Camera.view">view</h4>
+  <div class="markdown level1 summary"><p>The view</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Matrix view</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Matrix.html">Matrix</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_viewport" data-uid="WaveEngine.Framework.Graphics.Camera.viewport">viewport</h4>
+  <div class="markdown level1 summary"><p>The camera viewport</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Viewport viewport</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Viewport.html">Viewport</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_viewportFactor" data-uid="WaveEngine.Framework.Graphics.Camera.viewportFactor">viewportFactor</h4>
+  <div class="markdown level1 summary"><p>The viewport/physical scale factor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector2 viewportFactor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_viewportHeight" data-uid="WaveEngine.Framework.Graphics.Camera.viewportHeight">viewportHeight</h4>
+  <div class="markdown level1 summary"><p>The viewport height</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float viewportHeight</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_viewportWidth" data-uid="WaveEngine.Framework.Graphics.Camera.viewportWidth">viewportWidth</h4>
+  <div class="markdown level1 summary"><p>The viewport width</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float viewportWidth</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_viewProjection" data-uid="WaveEngine.Framework.Graphics.Camera.viewProjection">viewProjection</h4>
+  <div class="markdown level1 summary"><p>The view projection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Matrix viewProjection</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Matrix.html">Matrix</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_viewProjectionInverse" data-uid="WaveEngine.Framework.Graphics.Camera.viewProjectionInverse">viewProjectionInverse</h4>
+  <div class="markdown level1 summary"><p>The inverse of view projection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Matrix viewProjectionInverse</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Matrix.html">Matrix</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_viewProjectionInverseRenderTarget" data-uid="WaveEngine.Framework.Graphics.Camera.viewProjectionInverseRenderTarget">viewProjectionInverseRenderTarget</h4>
+  <div class="markdown level1 summary"><p>The inverse of view projection when the device is in a RenderTarget</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Matrix viewProjectionInverseRenderTarget</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Matrix.html">Matrix</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_viewProjectionRenderTarget" data-uid="WaveEngine.Framework.Graphics.Camera.viewProjectionRenderTarget">viewProjectionRenderTarget</h4>
+  <div class="markdown level1 summary"><p>The view projection when the device is in a RenderTarget</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Matrix viewProjectionRenderTarget</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Matrix.html">Matrix</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_width" data-uid="WaveEngine.Framework.Graphics.Camera.width">width</h4>
+  <div class="markdown level1 summary"><p>The width</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float width</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <h4 id="properties-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_BackgroundColor">BackgroundColor</a></td>
+        <td><p>Gets or sets the color of the background.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_BoundingFrustum">BoundingFrustum</a></td>
+        <td><p>Gets the camera bounding frustum</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_CameraOrder">CameraOrder</a></td>
+        <td><p>Gets or sets the camera order. Cameras with a larger value will be drawn on top of cameras with a smaller value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_ClearDepth">ClearDepth</a></td>
+        <td><p>Gets or sets the clear depth buffer value. This value will be clamped between 0 and 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_ClearFlags">ClearFlags</a></td>
+        <td><p>Gets or sets Clear flags used for clean FrameBuffer, stencilbuffer and Zbuffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_ClearStencil">ClearStencil</a></td>
+        <td><p>Gets or sets the clear stencil buffer value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_CustomProjection">CustomProjection</a></td>
+        <td><p>Gets or sets a custom Camera Projection</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_FarPlane">FarPlane</a></td>
+        <td><p>Gets or sets the far plane.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_FieldOfView">FieldOfView</a></td>
+        <td><p>Gets or sets the field of view.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_FrustumCullingEnabled">FrustumCullingEnabled</a></td>
+        <td><p>Gets or sets a value indicating whether frustum culling is enabled.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_IsActive">IsActive</a></td>
+        <td><p>Gets or sets a value indicating whether this camera is active. An active camera will be rendered.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_LayerMask">LayerMask</a></td>
+        <td><p>Gets visible layers dictionary. This dictionary indicates when a layer is visible for that camera.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_LayerMaskDefaultValue">LayerMaskDefaultValue</a></td>
+        <td><p>Gets or sets a value indicating whether the layers are drawn by the camera by default.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_LPPDownsampleFactor">LPPDownsampleFactor</a></td>
+        <td><p>Gets or sets the LightPrePass downsample factor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_NearPlane">NearPlane</a></td>
+        <td><p>Gets or sets the near plane.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_Position">Position</a></td>
+        <td><p>Gets the camera position in world space</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_Projection">Projection</a></td>
+        <td><p>Gets the projection matrix.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_RenderTarget">RenderTarget</a></td>
+        <td><p>Gets or sets the RenderTarget associated to the camera.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_Transform">Transform</a></td>
+        <td><p>Gets the camera Transform3D</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_UpVector">UpVector</a></td>
+        <td><p>Gets or sets the vector</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_View">View</a></td>
+        <td><p>Gets the Camera View matrix</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_Viewport">Viewport</a></td>
+        <td><p>Gets or sets the camera viewport.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_ViewProjection">ViewProjection</a></td>
+        <td><p>Gets the view projection</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_ViewProjectionInverse">ViewProjectionInverse</a></td>
+        <td><p>Gets the inverse transform of view projection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_BackgroundColor" data-uid="WaveEngine.Framework.Graphics.Camera.BackgroundColor">BackgroundColor</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the color of the background.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+public Color BackgroundColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Color.html">Color</a></td>
+        <td><p>The background color of the camera if it was setted, or the RenderManager default background color.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_BoundingFrustum" data-uid="WaveEngine.Framework.Graphics.Camera.BoundingFrustum">BoundingFrustum</h4>
+  <div class="markdown level1 summary"><p>Gets the camera bounding frustum</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BoundingFrustum BoundingFrustum { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.BoundingFrustum.html">BoundingFrustum</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_CameraOrder" data-uid="WaveEngine.Framework.Graphics.Camera.CameraOrder">CameraOrder</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the camera order. Cameras with a larger value will be drawn on top of cameras with a smaller value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+public float CameraOrder { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_ClearDepth" data-uid="WaveEngine.Framework.Graphics.Camera.ClearDepth">ClearDepth</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the clear depth buffer value. This value will be clamped between 0 and 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+public float ClearDepth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_ClearFlags" data-uid="WaveEngine.Framework.Graphics.Camera.ClearFlags">ClearFlags</h4>
+  <div class="markdown level1 summary"><p>Gets or sets Clear flags used for clean FrameBuffer, stencilbuffer and Zbuffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+public ClearFlags ClearFlags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.ClearFlags.html">ClearFlags</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_ClearStencil" data-uid="WaveEngine.Framework.Graphics.Camera.ClearStencil">ClearStencil</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the clear stencil buffer value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+public byte ClearStencil { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_CustomProjection" data-uid="WaveEngine.Framework.Graphics.Camera.CustomProjection">CustomProjection</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a custom Camera Projection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix? CustomProjection { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="WaveEngine.Common.Math.Matrix.html">Matrix</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_FarPlane" data-uid="WaveEngine.Framework.Graphics.Camera.FarPlane">FarPlane</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the far plane.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+public virtual float FarPlane { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The far plane.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_FieldOfView" data-uid="WaveEngine.Framework.Graphics.Camera.FieldOfView">FieldOfView</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the field of view.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RenderPropertyAsSlider(0.017F, 3.141F, 0.01F)]
+[DataMember]
+public virtual float FieldOfView { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The field of view.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_FrustumCullingEnabled" data-uid="WaveEngine.Framework.Graphics.Camera.FrustumCullingEnabled">FrustumCullingEnabled</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether frustum culling is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+public bool FrustumCullingEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if frustum culling is enabled; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_IsActive" data-uid="WaveEngine.Framework.Graphics.Camera.IsActive">IsActive</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this camera is active. An active camera will be rendered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+public bool IsActive { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_LayerMask" data-uid="WaveEngine.Framework.Graphics.Camera.LayerMask">LayerMask</h4>
+  <div class="markdown level1 summary"><p>Gets visible layers dictionary. This dictionary indicates when a layer is visible for that camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDictionary&lt;int, bool&gt; LayerMask { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>The layers dictionary.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_LayerMaskDefaultValue" data-uid="WaveEngine.Framework.Graphics.Camera.LayerMaskDefaultValue">LayerMaskDefaultValue</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the layers are drawn by the camera by default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+public bool LayerMaskDefaultValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_LPPDownsampleFactor" data-uid="WaveEngine.Framework.Graphics.Camera.LPPDownsampleFactor">LPPDownsampleFactor</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the LightPrePass downsample factor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LPPDownsampleFactor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_NearPlane" data-uid="WaveEngine.Framework.Graphics.Camera.NearPlane">NearPlane</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the near plane.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+public virtual float NearPlane { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The near plane.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_Position" data-uid="WaveEngine.Framework.Graphics.Camera.Position">Position</h4>
+  <div class="markdown level1 summary"><p>Gets the camera position in world space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 Position { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_Projection" data-uid="WaveEngine.Framework.Graphics.Camera.Projection">Projection</h4>
+  <div class="markdown level1 summary"><p>Gets the projection matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix Projection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Matrix.html">Matrix</a></td>
+        <td><p>The projection matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_RenderTarget" data-uid="WaveEngine.Framework.Graphics.Camera.RenderTarget">RenderTarget</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the RenderTarget associated to the camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RenderTarget RenderTarget { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.RenderTarget.html">RenderTarget</a></td>
+        <td><p>The render target.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_Transform" data-uid="WaveEngine.Framework.Graphics.Camera.Transform">Transform</h4>
+  <div class="markdown level1 summary"><p>Gets the camera Transform3D</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform3D Transform { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.Transform3D.html">Transform3D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_UpVector" data-uid="WaveEngine.Framework.Graphics.Camera.UpVector">UpVector</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the vector</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+public Vector3 UpVector { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_View" data-uid="WaveEngine.Framework.Graphics.Camera.View">View</h4>
+  <div class="markdown level1 summary"><p>Gets the Camera View matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix View { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Matrix.html">Matrix</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_Viewport" data-uid="WaveEngine.Framework.Graphics.Camera.Viewport">Viewport</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the camera viewport.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+public Viewport Viewport { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Viewport.html">Viewport</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_ViewProjection" data-uid="WaveEngine.Framework.Graphics.Camera.ViewProjection">ViewProjection</h4>
+  <div class="markdown level1 summary"><p>Gets the view projection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix ViewProjection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Matrix.html">Matrix</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_ViewProjectionInverse" data-uid="WaveEngine.Framework.Graphics.Camera.ViewProjectionInverse">ViewProjectionInverse</h4>
+  <div class="markdown level1 summary"><p>Gets the inverse transform of view projection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix ViewProjectionInverse { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Matrix.html">Matrix</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <h4 id="methods-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_AllowLayer_WaveEngine_Framework_Graphics_DeferredLightingPass_WaveEngine_Framework_Graphics_RenderLayer_">AllowLayer(DeferredLightingPass, RenderLayer)</a></td>
+        <td><p>Check if the layer is allowed to be rendered in the deferred pass</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_CalculateRay_WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Ray__">CalculateRay(ref Vector2, out Ray)</a></td>
+        <td><p>Calculate a Ray of a camera from a givent 2D screen position</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_DefaultValues">DefaultValues()</a></td>
+        <td><p>Sets the default values</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_Dispose">Dispose()</a></td>
+        <td><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_Dispose_System_Boolean_">Dispose(Boolean)</a></td>
+        <td><p>Releases unmanaged and - optionally - managed resources</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_Initialize">Initialize()</a></td>
+        <td><p>Initialization of the Camera</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_Project_WaveEngine_Common_Math_Vector3__">Project(ref Vector3)</a></td>
+        <td><p>Projects the specified source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_Project_WaveEngine_Common_Math_Vector3__WaveEngine_Common_Math_Matrix__WaveEngine_Common_Math_Matrix__WaveEngine_Common_Math_Matrix__">Project(ref Vector3, ref Matrix, ref Matrix, ref Matrix)</a></td>
+        <td><p>Projects the specified source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_Project_WaveEngine_Common_Math_Vector3__WaveEngine_Common_Math_Vector3__">Project(ref Vector3, out Vector3)</a></td>
+        <td><p>Projects the specified source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_RefreshAspectRatio">RefreshAspectRatio()</a></td>
+        <td><p>Refreshes the aspect ratio.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_RefreshDimensions">RefreshDimensions()</a></td>
+        <td><p>Refresh the with and height of the camera</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_RefreshProjection">RefreshProjection()</a></td>
+        <td><p>Refresh the projection matrix</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_RefreshView">RefreshView()</a></td>
+        <td><p>Refresh the view matrix</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_RefreshViewProjection">RefreshViewProjection()</a></td>
+        <td><p>Refrest the ViewProjection matrix</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_Render_System_TimeSpan_">Render(TimeSpan)</a></td>
+        <td><p>Renders this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_RenderLayers">RenderLayers()</a></td>
+        <td><p>Render all layers</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_ResetCustomProjection">ResetCustomProjection()</a></td>
+        <td><p>Reset the custom projection.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_SetCustomProjection_WaveEngine_Common_Math_Matrix_">SetCustomProjection(Matrix)</a></td>
+        <td><p>Specify a custom proyection to that camera. This methods override the default projection</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_SetCustomProjection_WaveEngine_Common_Math_Matrix__">SetCustomProjection(ref Matrix)</a></td>
+        <td><p>Specify a custom proyection to that camera. This methods override the default projection</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_Unproject_WaveEngine_Common_Math_Vector3__">Unproject(ref Vector3)</a></td>
+        <td><p>Unprojects the specified source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_Unproject_WaveEngine_Common_Math_Vector3__WaveEngine_Common_Math_Matrix__WaveEngine_Common_Math_Matrix__WaveEngine_Common_Math_Matrix__">Unproject(ref Vector3, ref Matrix, ref Matrix, ref Matrix)</a></td>
+        <td><p>Unprojects the specified source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_Unproject_WaveEngine_Common_Math_Vector3__WaveEngine_Common_Math_Vector3__">Unproject(ref Vector3, out Vector3)</a></td>
+        <td><p>Unprojects the specified source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_WithinEpsilon_System_Single_System_Single_">WithinEpsilon(Single, Single)</a></td>
+        <td><p>Withins the epsilon.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_AllowLayer_WaveEngine_Framework_Graphics_DeferredLightingPass_WaveEngine_Framework_Graphics_RenderLayer_" data-uid="WaveEngine.Framework.Graphics.Camera.AllowLayer(WaveEngine.Framework.Graphics.DeferredLightingPass,WaveEngine.Framework.Graphics.RenderLayer)">AllowLayer(DeferredLightingPass, RenderLayer)</h4>
+  <div class="markdown level1 summary"><p>Check if the layer is allowed to be rendered in the deferred pass</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool AllowLayer(DeferredLightingPass deferredPass, RenderLayer layer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.DeferredLightingPass.html">DeferredLightingPass</a></td>
+        <td><em>deferredPass</em></td>
+        <td><p>The deferred pass.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.RenderLayer.html">RenderLayer</a></td>
+        <td><em>layer</em></td>
+        <td><p>The layer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the layer can be rendered</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_CalculateRay_WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Ray__" data-uid="WaveEngine.Framework.Graphics.Camera.CalculateRay(WaveEngine.Common.Math.Vector2@,WaveEngine.Common.Math.Ray@)">CalculateRay(ref Vector2, out Ray)</h4>
+  <div class="markdown level1 summary"><p>Calculate a Ray of a camera from a givent 2D screen position</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CalculateRay(ref Vector2 screenPosition, out Ray ray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>screenPosition</em></td>
+        <td><p>2D screen position</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Ray.html">Ray</a></td>
+        <td><em>ray</em></td>
+        <td><p>The ray position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_DefaultValues" data-uid="WaveEngine.Framework.Graphics.Camera.DefaultValues">DefaultValues()</h4>
+  <div class="markdown level1 summary"><p>Sets the default values</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DefaultValues()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_Dispose" data-uid="WaveEngine.Framework.Graphics.Camera.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_Dispose_System_Boolean_" data-uid="WaveEngine.Framework.Graphics.Camera.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Releases unmanaged and - optionally - managed resources</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>disposing</em></td>
+        <td><p><code>true</code> to release both managed and unmanaged resources; <code>false</code> to release only unmanaged resources.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_Initialize" data-uid="WaveEngine.Framework.Graphics.Camera.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"><p>Initialization of the Camera</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Initialize()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_Project_WaveEngine_Common_Math_Vector3__" data-uid="WaveEngine.Framework.Graphics.Camera.Project(WaveEngine.Common.Math.Vector3@)">Project(ref Vector3)</h4>
+  <div class="markdown level1 summary"><p>Projects the specified source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 Project(ref Vector3 source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector3.html">Vector3</a></td>
+        <td><em>source</em></td>
+        <td><p>The source vector in 3D space.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector3.html">Vector3</a></td>
+        <td><p>Proyected position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_Project_WaveEngine_Common_Math_Vector3__WaveEngine_Common_Math_Matrix__WaveEngine_Common_Math_Matrix__WaveEngine_Common_Math_Matrix__" data-uid="WaveEngine.Framework.Graphics.Camera.Project(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Matrix@,WaveEngine.Common.Math.Matrix@,WaveEngine.Common.Math.Matrix@)">Project(ref Vector3, ref Matrix, ref Matrix, ref Matrix)</h4>
+  <div class="markdown level1 summary"><p>Projects the specified source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 Project(ref Vector3 source, ref Matrix view, ref Matrix projection, ref Matrix world)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector3.html">Vector3</a></td>
+        <td><em>source</em></td>
+        <td><p>The source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Matrix.html">Matrix</a></td>
+        <td><em>view</em></td>
+        <td><p>The view.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Matrix.html">Matrix</a></td>
+        <td><em>projection</em></td>
+        <td><p>The projection.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Matrix.html">Matrix</a></td>
+        <td><em>world</em></td>
+        <td><p>The world.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector3.html">Vector3</a></td>
+        <td><p>Proyected position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_Project_WaveEngine_Common_Math_Vector3__WaveEngine_Common_Math_Vector3__" data-uid="WaveEngine.Framework.Graphics.Camera.Project(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@)">Project(ref Vector3, out Vector3)</h4>
+  <div class="markdown level1 summary"><p>Projects the specified source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Project(ref Vector3 source, out Vector3 result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector3.html">Vector3</a></td>
+        <td><em>source</em></td>
+        <td><p>The source vector in 3D space.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector3.html">Vector3</a></td>
+        <td><em>result</em></td>
+        <td><p>The projected position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_RefreshAspectRatio" data-uid="WaveEngine.Framework.Graphics.Camera.RefreshAspectRatio">RefreshAspectRatio()</h4>
+  <div class="markdown level1 summary"><p>Refreshes the aspect ratio.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void RefreshAspectRatio()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_RefreshDimensions" data-uid="WaveEngine.Framework.Graphics.Camera.RefreshDimensions">RefreshDimensions()</h4>
+  <div class="markdown level1 summary"><p>Refresh the with and height of the camera</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void RefreshDimensions()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_RefreshProjection" data-uid="WaveEngine.Framework.Graphics.Camera.RefreshProjection">RefreshProjection()</h4>
+  <div class="markdown level1 summary"><p>Refresh the projection matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void RefreshProjection()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_RefreshView" data-uid="WaveEngine.Framework.Graphics.Camera.RefreshView">RefreshView()</h4>
+  <div class="markdown level1 summary"><p>Refresh the view matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void RefreshView()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_RefreshViewProjection" data-uid="WaveEngine.Framework.Graphics.Camera.RefreshViewProjection">RefreshViewProjection()</h4>
+  <div class="markdown level1 summary"><p>Refrest the ViewProjection matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RefreshViewProjection()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_Render_System_TimeSpan_" data-uid="WaveEngine.Framework.Graphics.Camera.Render(System.TimeSpan)">Render(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Renders this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void Render(TimeSpan gameTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><em>gameTime</em></td>
+        <td><p>The game time.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_RenderLayers" data-uid="WaveEngine.Framework.Graphics.Camera.RenderLayers">RenderLayers()</h4>
+  <div class="markdown level1 summary"><p>Render all layers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RenderLayers()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_ResetCustomProjection" data-uid="WaveEngine.Framework.Graphics.Camera.ResetCustomProjection">ResetCustomProjection()</h4>
+  <div class="markdown level1 summary"><p>Reset the custom projection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetCustomProjection()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_SetCustomProjection_WaveEngine_Common_Math_Matrix_" data-uid="WaveEngine.Framework.Graphics.Camera.SetCustomProjection(WaveEngine.Common.Math.Matrix)">SetCustomProjection(Matrix)</h4>
+  <div class="markdown level1 summary"><p>Specify a custom proyection to that camera. This methods override the default projection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCustomProjection(Matrix customProjection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Matrix.html">Matrix</a></td>
+        <td><em>customProjection</em></td>
+        <td><p>The new custom projection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_SetCustomProjection_WaveEngine_Common_Math_Matrix__" data-uid="WaveEngine.Framework.Graphics.Camera.SetCustomProjection(WaveEngine.Common.Math.Matrix@)">SetCustomProjection(ref Matrix)</h4>
+  <div class="markdown level1 summary"><p>Specify a custom proyection to that camera. This methods override the default projection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCustomProjection(ref Matrix customProjection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Matrix.html">Matrix</a></td>
+        <td><em>customProjection</em></td>
+        <td><p>The new custom projection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_Unproject_WaveEngine_Common_Math_Vector3__" data-uid="WaveEngine.Framework.Graphics.Camera.Unproject(WaveEngine.Common.Math.Vector3@)">Unproject(ref Vector3)</h4>
+  <div class="markdown level1 summary"><p>Unprojects the specified source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 Unproject(ref Vector3 source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector3.html">Vector3</a></td>
+        <td><em>source</em></td>
+        <td><p>The source.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector3.html">Vector3</a></td>
+        <td><p>Unprojected position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_Unproject_WaveEngine_Common_Math_Vector3__WaveEngine_Common_Math_Matrix__WaveEngine_Common_Math_Matrix__WaveEngine_Common_Math_Matrix__" data-uid="WaveEngine.Framework.Graphics.Camera.Unproject(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Matrix@,WaveEngine.Common.Math.Matrix@,WaveEngine.Common.Math.Matrix@)">Unproject(ref Vector3, ref Matrix, ref Matrix, ref Matrix)</h4>
+  <div class="markdown level1 summary"><p>Unprojects the specified source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 Unproject(ref Vector3 source, ref Matrix view, ref Matrix projection, ref Matrix world)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector3.html">Vector3</a></td>
+        <td><em>source</em></td>
+        <td><p>The source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Matrix.html">Matrix</a></td>
+        <td><em>view</em></td>
+        <td><p>The view.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Matrix.html">Matrix</a></td>
+        <td><em>projection</em></td>
+        <td><p>The projection.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Matrix.html">Matrix</a></td>
+        <td><em>world</em></td>
+        <td><p>The world.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector3.html">Vector3</a></td>
+        <td><p>Unprojected position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_Unproject_WaveEngine_Common_Math_Vector3__WaveEngine_Common_Math_Vector3__" data-uid="WaveEngine.Framework.Graphics.Camera.Unproject(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@)">Unproject(ref Vector3, out Vector3)</h4>
+  <div class="markdown level1 summary"><p>Unprojects the specified source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Unproject(ref Vector3 source, out Vector3 result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector3.html">Vector3</a></td>
+        <td><em>source</em></td>
+        <td><p>The source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector3.html">Vector3</a></td>
+        <td><em>result</em></td>
+        <td><p>Unprojected position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_WithinEpsilon_System_Single_System_Single_" data-uid="WaveEngine.Framework.Graphics.Camera.WithinEpsilon(System.Single,System.Single)">WithinEpsilon(Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Withins the epsilon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool WithinEpsilon(float a, float b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><em>a</em></td>
+        <td><p>First value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><em>b</em></td>
+        <td><p>Second value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <h4 id="events-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_OnPostRender">OnPostRender</a></td>
+        <td><p>OnPostRender is called after a camera finished rendering the scene.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_OnPreImageEffects">OnPreImageEffects</a></td>
+        <td><p>OnPreImageEffects is called before the image effect are exectutes..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_OnPreRender">OnPreRender</a></td>
+        <td><p>OnPreRender is called before a camera starts rendering the scene.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_OnPostRender" data-uid="WaveEngine.Framework.Graphics.Camera.OnPostRender">OnPostRender</h4>
+  <div class="markdown level1 summary"><p>OnPostRender is called after a camera finished rendering the scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;RenderEventArgs&gt; OnPostRender</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Graphics.RenderEventArgs.html">RenderEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_OnPreImageEffects" data-uid="WaveEngine.Framework.Graphics.Camera.OnPreImageEffects">OnPreImageEffects</h4>
+  <div class="markdown level1 summary"><p>OnPreImageEffects is called before the image effect are exectutes..</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;RenderEventArgs&gt; OnPreImageEffects</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Graphics.RenderEventArgs.html">RenderEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Graphics_Camera_OnPreRender" data-uid="WaveEngine.Framework.Graphics.Camera.OnPreRender">OnPreRender</h4>
+  <div class="markdown level1 summary"><p>OnPreRender is called before a camera starts rendering the scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;RenderEventArgs&gt; OnPreRender</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Graphics.RenderEventArgs.html">RenderEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

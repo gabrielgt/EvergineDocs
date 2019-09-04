@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Goal | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Goal | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="goal">Goal</h2>
+
+<p>Within this recipe we will learn how to consume a tile map exported with <a href="http://www.mapeditor.org">Tiled Map Editor</a>.</p>
+<h2 id="hands-on">Hands-on</h2>
+<p>Tiled is a great tool to create maps for your games using tiles distributed in a grid. It is very useful and popular in 2D games to design game levels. You can get more information <a href="https://github.com/bjorn/tiled/wiki">here</a>.</p>
+<p><img src="images/TiledMap/TiledMapScreenshot.png" alt="">
+<em>The terrain tool screenshot.</em></p>
+<p>In order to use its outputs with Wave Engine, we must add the <a href="http://doc.mapeditor.org/reference/tmx-map-format">TMX</a> file to the Wave Project from Wave Visual Editor, along with the tilesets images.</p>
+<p>NOTE: Within this recipe we are taking the assets from <a href="https://github.com/WaveEngine/Samples/tree/master/Extensions/TiledMap">this sample</a>, more exactly from <a href="https://github.com/WaveEngine/Samples/tree/master/Extensions/TiledMap/Content/Assets">here</a>.</p>
+<h3 id="using-wave-visual-editor">Using Wave Visual Editor</h3>
+<p>Open or create a WaveEngine project in Wave Visual Editor and import, using the same directory hierarchy, all Tiled files:</p>
+<p><img src="images/TiledMap/TiledAssets.png" alt=""></p>
+<p>Wave Engine contains a component called <code>TiledMap</code> which makes really easy to include Tiled maps. Once it points to the TMX file, a new entity hierarchy is automatically generated to represent the different layers in the map.</p>
+<p>Create a new Entity and insert a <code>Transform2D</code> and a <code>TiledMap</code> components. Select this entity and update the <code>TmxPath</code> property to point the desired TMX file.</p>
+<p><img src="images/TiledMap/TiledComponents.png" alt=""></p>
+<p>Finally, the entity must be look like this:</p>
+<p><img src="images/TiledMap/FinalResult.png" alt=""></p>
+<h3 id="with-visual-studio-for-windows-or-mac">With Visual Studio (for Windows or Mac)</h3>
+<p>Open or create a WaveEngine project in Wave Visual Editor and import the Tiled assets (see past chapter: &quot;Using Wave Visual Editor&quot; from this recipe):</p>
+<p><strong>First we need to add the Nuget <a href="https://www.nuget.org/packages/WaveEngine.TiledMap">WaveEngine.TiledMap</a> reference.</strong></p>
+<p>Building an entity:</p>
+<pre><code class="lang-c#">var map = new Entity()
+    .AddComponent(new Transform2D())
+    .AddComponent(new TiledMap(WaveContent.Assets.map_tmx));
+
+EntityManager.Add(map);
+</code></pre><h2 id="wrap-up">Wrap-up</h2>
+<p>We have learned how to import a map generated with Tiled Map Editor in Wave Engine.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

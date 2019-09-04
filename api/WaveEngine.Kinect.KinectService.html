@@ -1,0 +1,667 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class KinectService
+   | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class KinectService
+   | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WaveEngine.Kinect.KinectService">
+  
+  
+  <h1 id="WaveEngine_Kinect_KinectService" data-uid="WaveEngine.Kinect.KinectService" class="xk-margin-default">Class KinectService
+  </h1>
+  <div class="markdown level0 summary"><p>Kinect Integration Service</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+      <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level1"><a class="xref" href="WaveEngine.Common.IO.SerializableObject.html">SerializableObject</a></div>
+      <div class="level2"><a class="xref" href="WaveEngine.Common.Service.html">Service</a></div>
+      <div class="level3"><a class="xref" href="WaveEngine.Common.UpdatableService.html">UpdatableService</a></div>
+      <div class="level"><span class="xref"></span></div>
+  </div>
+  <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>:WaveEngine.Kinect.dll</h6>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataContract(Namespace = &quot;WaveEngine.Kinect&quot;)]
+public class KinectService : UpdatableService</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <h4 id="properties-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Kinect_KinectService_Bodies">Bodies</a></td>
+        <td><p>Gets or sets the bodies.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Kinect_KinectService_BodyCount">BodyCount</a></td>
+        <td><p>Gets the body count.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Kinect_KinectService_ColorTexture">ColorTexture</a></td>
+        <td><p>Gets the color texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Kinect_KinectService_CurrentSource">CurrentSource</a></td>
+        <td><p>Gets the current source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Kinect_KinectService_DepthTexture">DepthTexture</a></td>
+        <td><p>Gets the depth texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Kinect_KinectService_FaceFrameResults">FaceFrameResults</a></td>
+        <td><p>Gets the face frame results.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Kinect_KinectService_FaceFrameSources">FaceFrameSources</a></td>
+        <td><p>Gets the face frame sources.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Kinect_KinectService_InfraredTexture">InfraredTexture</a></td>
+        <td><p>Gets the infrared texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Kinect_KinectService_IsAvailable">IsAvailable</a></td>
+        <td><p>Gets a value indicating whether this instance is available.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Kinect_KinectService_IsPaused">IsPaused</a></td>
+        <td><p>Gets a value indicating whether this instance is paused.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Kinect_KinectService_Mapper">Mapper</a></td>
+        <td><p>Gets or sets the mapper.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Kinect_KinectService_UseDepthMaxReliableDistance">UseDepthMaxReliableDistance</a></td>
+        <td><p>Gets or sets a value indicating whether [use depth maximum reliable distance].</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Kinect_KinectService_UseDepthMinReliableDistance">UseDepthMinReliableDistance</a></td>
+        <td><p>Gets or sets a value indicating whether [use depth minimum reliable distance].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Kinect_KinectService_Bodies" data-uid="WaveEngine.Kinect.KinectService.Bodies">Bodies</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the bodies.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Body[] Bodies { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Kinect.Body</span>[]</td>
+        <td><p>The bodies.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Kinect_KinectService_BodyCount" data-uid="WaveEngine.Kinect.KinectService.BodyCount">BodyCount</h4>
+  <div class="markdown level1 summary"><p>Gets the body count.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BodyCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The body count.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Kinect_KinectService_ColorTexture" data-uid="WaveEngine.Kinect.KinectService.ColorTexture">ColorTexture</h4>
+  <div class="markdown level1 summary"><p>Gets the color texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D ColorTexture { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.Texture2D.html">Texture2D</a></td>
+        <td><p>The color texture.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Kinect_KinectService_CurrentSource" data-uid="WaveEngine.Kinect.KinectService.CurrentSource">CurrentSource</h4>
+  <div class="markdown level1 summary"><p>Gets the current source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KinectSources CurrentSource { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Kinect.Enums.KinectSources.html">KinectSources</a></td>
+        <td><p>The current source.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Kinect_KinectService_DepthTexture" data-uid="WaveEngine.Kinect.KinectService.DepthTexture">DepthTexture</h4>
+  <div class="markdown level1 summary"><p>Gets the depth texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D DepthTexture { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.Texture2D.html">Texture2D</a></td>
+        <td><p>The depth texture.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Kinect_KinectService_FaceFrameResults" data-uid="WaveEngine.Kinect.KinectService.FaceFrameResults">FaceFrameResults</h4>
+  <div class="markdown level1 summary"><p>Gets the face frame results.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FaceFrameResult[] FaceFrameResults { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Kinect.Face.FaceFrameResult</span>[]</td>
+        <td><p>The face frame results.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Kinect_KinectService_FaceFrameSources" data-uid="WaveEngine.Kinect.KinectService.FaceFrameSources">FaceFrameSources</h4>
+  <div class="markdown level1 summary"><p>Gets the face frame sources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FaceFrameSource[] FaceFrameSources { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Kinect.Face.FaceFrameSource</span>[]</td>
+        <td><p>The face frame sources.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Kinect_KinectService_InfraredTexture" data-uid="WaveEngine.Kinect.KinectService.InfraredTexture">InfraredTexture</h4>
+  <div class="markdown level1 summary"><p>Gets the infrared texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D InfraredTexture { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.Texture2D.html">Texture2D</a></td>
+        <td><p>The infrared texture.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Kinect_KinectService_IsAvailable" data-uid="WaveEngine.Kinect.KinectService.IsAvailable">IsAvailable</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance is available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAvailable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance is available; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Kinect_KinectService_IsPaused" data-uid="WaveEngine.Kinect.KinectService.IsPaused">IsPaused</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance is paused.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPaused { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance is paused; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Kinect_KinectService_Mapper" data-uid="WaveEngine.Kinect.KinectService.Mapper">Mapper</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the mapper.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CoordinateMapper Mapper { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Kinect.CoordinateMapper</span></td>
+        <td><p>The mapper.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Kinect_KinectService_UseDepthMaxReliableDistance" data-uid="WaveEngine.Kinect.KinectService.UseDepthMaxReliableDistance">UseDepthMaxReliableDistance</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether [use depth maximum reliable distance].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseDepthMaxReliableDistance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if [use depth maximum reliable distance]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Kinect_KinectService_UseDepthMinReliableDistance" data-uid="WaveEngine.Kinect.KinectService.UseDepthMinReliableDistance">UseDepthMinReliableDistance</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether [use depth minimum reliable distance].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseDepthMinReliableDistance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if [use depth minimum reliable distance]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <h4 id="methods-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Kinect_KinectService_Initialize">Initialize()</a></td>
+        <td><p>Allows to execute custom logic during the initialization of this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Kinect_KinectService_StartSensor_WaveEngine_Kinect_Enums_KinectSources_">StartSensor(KinectSources)</a></td>
+        <td><p>Starts the sensor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Kinect_KinectService_StopSensor">StopSensor()</a></td>
+        <td><p>Stops the sensor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Kinect_KinectService_Terminate">Terminate()</a></td>
+        <td><p>Allow to execute custom logic during the finalization of this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Kinect_KinectService_Update_System_TimeSpan_">Update(TimeSpan)</a></td>
+        <td><p>Updates this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Kinect_KinectService_Initialize" data-uid="WaveEngine.Kinect.KinectService.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"><p>Allows to execute custom logic during the initialization of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Initialize()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Kinect_KinectService_StartSensor_WaveEngine_Kinect_Enums_KinectSources_" data-uid="WaveEngine.Kinect.KinectService.StartSensor(WaveEngine.Kinect.Enums.KinectSources)">StartSensor(KinectSources)</h4>
+  <div class="markdown level1 summary"><p>Starts the sensor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartSensor(KinectSources sources)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Kinect.Enums.KinectSources.html">KinectSources</a></td>
+        <td><em>sources</em></td>
+        <td><p>The sources. (flags)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Kinect_KinectService_StopSensor" data-uid="WaveEngine.Kinect.KinectService.StopSensor">StopSensor()</h4>
+  <div class="markdown level1 summary"><p>Stops the sensor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopSensor()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Kinect_KinectService_Terminate" data-uid="WaveEngine.Kinect.KinectService.Terminate">Terminate()</h4>
+  <div class="markdown level1 summary"><p>Allow to execute custom logic during the finalization of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Terminate()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Kinect_KinectService_Update_System_TimeSpan_" data-uid="WaveEngine.Kinect.KinectService.Update(System.TimeSpan)">Update(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Updates this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update(TimeSpan gameTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><em>gameTime</em></td>
+        <td><p>The elapsed game time since the last update.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

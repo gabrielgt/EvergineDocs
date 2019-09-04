@@ -1,0 +1,841 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LineTools
+   | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LineTools
+   | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WaveEngine.Box2D.Utils.LineTools">
+  
+  
+  <h1 id="WaveEngine_Box2D_Utils_LineTools" data-uid="WaveEngine.Box2D.Utils.LineTools" class="xk-margin-default">Class LineTools
+  </h1>
+  <div class="markdown level0 summary"><p>Collection of helper methods for misc collisions.
+Does float tolerance and line collisions with lines and AABBs.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+      <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level"><span class="xref"></span></div>
+  </div>
+  <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>:WaveEngine.Box2D.dll</h6>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class LineTools</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <h4 id="methods-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Box2D_Utils_LineTools_DistanceBetweenPointAndLineSegment_WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Vector2__">DistanceBetweenPointAndLineSegment(ref Vector2, ref Vector2, ref Vector2)</a></td>
+        <td><p>Distance between point and segment</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Box2D_Utils_LineTools_DistanceBetweenPointAndPoint_WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Vector2__">DistanceBetweenPointAndPoint(ref Vector2, ref Vector2)</a></td>
+        <td><p>Distance between point and line segment</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Box2D_Utils_LineTools_LineIntersect_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_">LineIntersect(Vector2, Vector2, Vector2, Vector2)</a></td>
+        <td><p>Line intersect. From Mark Bayazit&apos;s convex decomposition algorithm</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Box2D_Utils_LineTools_LineIntersect_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_System_Boolean_System_Boolean_WaveEngine_Common_Math_Vector2__">LineIntersect(Vector2, Vector2, Vector2, Vector2, Boolean, Boolean, out Vector2)</a></td>
+        <td><p>This method detects if two line segments (or lines) intersect,
+and, if so, the point of intersection. Use the <code data-dev-comment-type="paramref" class="paramref">firstIsSegment</code> and
+<code data-dev-comment-type="paramref" class="paramref">secondIsSegment</code> parameters to set whether the intersection point
+must be on the first and second line segments. Setting these
+both to true means you are doing a line-segment to line-segment
+intersection. Setting one of them to true means you are doing a
+line to line-segment intersection test, and so on.
+Note: If two line segments are coincident, then
+no intersection is detected (there are actually
+infinite intersection points).
+Author: Jeremy Bell</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Box2D_Utils_LineTools_LineIntersect_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2__">LineIntersect(Vector2, Vector2, Vector2, Vector2, out Vector2)</a></td>
+        <td><p>This method detects if two line segments intersect,
+and, if so, the point of intersection.
+Note: If two line segments are coincident, then
+no intersection is detected (there are actually
+infinite intersection points).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Box2D_Utils_LineTools_LineIntersect_WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Vector2__System_Boolean_System_Boolean_WaveEngine_Common_Math_Vector2__">LineIntersect(ref Vector2, ref Vector2, ref Vector2, ref Vector2, Boolean, Boolean, out Vector2)</a></td>
+        <td><p>This method detects if two line segments (or lines) intersect,
+and, if so, the point of intersection. Use the <code data-dev-comment-type="paramref" class="paramref">firstIsSegment</code> and
+<code data-dev-comment-type="paramref" class="paramref">secondIsSegment</code> parameters to set whether the intersection point
+must be on the first and second line segments. Setting these
+both to true means you are doing a line-segment to line-segment
+intersection. Setting one of them to true means you are doing a
+line to line-segment intersection test, and so on.
+Note: If two line segments are coincident, then
+no intersection is detected (there are actually
+infinite intersection points).
+Author: Jeremy Bell</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Box2D_Utils_LineTools_LineIntersect_WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Vector2__">LineIntersect(ref Vector2, ref Vector2, ref Vector2, ref Vector2, out Vector2)</a></td>
+        <td><p>This method detects if two line segments intersect,
+and, if so, the point of intersection.
+Note: If two line segments are coincident, then
+no intersection is detected (there are actually
+infinite intersection points).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Box2D_Utils_LineTools_LineIntersect2_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2__">LineIntersect2(Vector2, Vector2, Vector2, Vector2, out Vector2)</a></td>
+        <td><p>Check if the lines a0-&gt;a1 and b0-&gt;b1 cross.
+If they do, intersectionPoint will be filled
+with the point of crossing.
+Grazing lines should not return true.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Box2D_Utils_LineTools_LineSegmentVerticesIntersect_WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Vector2__WaveEngine_Box2D_Utils_Vertices_System_Collections_Generic_List_WaveEngine_Common_Math_Vector2___">LineSegmentVerticesIntersect(ref Vector2, ref Vector2, Vertices, ref List&lt;Vector2&gt;)</a></td>
+        <td><p>Get all intersections between a line segment and a list of vertices
+representing a polygon. The vertices reuse adjacent points, so for example
+edges one and two are between the first and second vertices and between the
+second and third vertices. The last edge is between vertex vertices.Count - 1
+and verts0. (ie, vertices from a Geometry or AABB)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Box2D_Utils_LineTools_DistanceBetweenPointAndLineSegment_WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Vector2__" data-uid="WaveEngine.Box2D.Utils.LineTools.DistanceBetweenPointAndLineSegment(WaveEngine.Common.Math.Vector2@,WaveEngine.Common.Math.Vector2@,WaveEngine.Common.Math.Vector2@)">DistanceBetweenPointAndLineSegment(ref Vector2, ref Vector2, ref Vector2)</h4>
+  <div class="markdown level1 summary"><p>Distance between point and segment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float DistanceBetweenPointAndLineSegment(ref Vector2 point, ref Vector2 lineEndPoint1, ref Vector2 lineEndPoint2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point</em></td>
+        <td><p>The point</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>lineEndPoint1</em></td>
+        <td><p>The start of the segment</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>lineEndPoint2</em></td>
+        <td><p>The end of the segment</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The distance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Box2D_Utils_LineTools_DistanceBetweenPointAndPoint_WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Vector2__" data-uid="WaveEngine.Box2D.Utils.LineTools.DistanceBetweenPointAndPoint(WaveEngine.Common.Math.Vector2@,WaveEngine.Common.Math.Vector2@)">DistanceBetweenPointAndPoint(ref Vector2, ref Vector2)</h4>
+  <div class="markdown level1 summary"><p>Distance between point and line segment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float DistanceBetweenPointAndPoint(ref Vector2 point1, ref Vector2 point2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point1</em></td>
+        <td><p>The point 1</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point2</em></td>
+        <td><p>The point 2</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The distance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Box2D_Utils_LineTools_LineIntersect_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_" data-uid="WaveEngine.Box2D.Utils.LineTools.LineIntersect(WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2)">LineIntersect(Vector2, Vector2, Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Line intersect. From Mark Bayazit&apos;s convex decomposition algorithm</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 LineIntersect(Vector2 p1, Vector2 p2, Vector2 q1, Vector2 q2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>p1</em></td>
+        <td><p>The p1</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>p2</em></td>
+        <td><p>The p2</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>q1</em></td>
+        <td><p>The q1</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>q2</em></td>
+        <td><p>The q2</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><p>The distance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Box2D_Utils_LineTools_LineIntersect_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_System_Boolean_System_Boolean_WaveEngine_Common_Math_Vector2__" data-uid="WaveEngine.Box2D.Utils.LineTools.LineIntersect(WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2,System.Boolean,System.Boolean,WaveEngine.Common.Math.Vector2@)">LineIntersect(Vector2, Vector2, Vector2, Vector2, Boolean, Boolean, out Vector2)</h4>
+  <div class="markdown level1 summary"><p>This method detects if two line segments (or lines) intersect,
+and, if so, the point of intersection. Use the <code data-dev-comment-type="paramref" class="paramref">firstIsSegment</code> and
+<code data-dev-comment-type="paramref" class="paramref">secondIsSegment</code> parameters to set whether the intersection point
+must be on the first and second line segments. Setting these
+both to true means you are doing a line-segment to line-segment
+intersection. Setting one of them to true means you are doing a
+line to line-segment intersection test, and so on.
+Note: If two line segments are coincident, then
+no intersection is detected (there are actually
+infinite intersection points).
+Author: Jeremy Bell</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool LineIntersect(Vector2 point1, Vector2 point2, Vector2 point3, Vector2 point4, bool firstIsSegment, bool secondIsSegment, out Vector2 intersectionPoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point1</em></td>
+        <td><p>The first point of the first line segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point2</em></td>
+        <td><p>The second point of the first line segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point3</em></td>
+        <td><p>The first point of the second line segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point4</em></td>
+        <td><p>The second point of the second line segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>firstIsSegment</em></td>
+        <td><p>Set this to true to require that the
+intersection point be on the first line segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>secondIsSegment</em></td>
+        <td><p>Set this to true to require that the
+intersection point be on the second line segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>intersectionPoint</em></td>
+        <td><p>This is set to the intersection
+point if an intersection is detected.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if an intersection is detected, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Box2D_Utils_LineTools_LineIntersect_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2__" data-uid="WaveEngine.Box2D.Utils.LineTools.LineIntersect(WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2@)">LineIntersect(Vector2, Vector2, Vector2, Vector2, out Vector2)</h4>
+  <div class="markdown level1 summary"><p>This method detects if two line segments intersect,
+and, if so, the point of intersection.
+Note: If two line segments are coincident, then
+no intersection is detected (there are actually
+infinite intersection points).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool LineIntersect(Vector2 point1, Vector2 point2, Vector2 point3, Vector2 point4, out Vector2 intersectionPoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point1</em></td>
+        <td><p>The first point of the first line segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point2</em></td>
+        <td><p>The second point of the first line segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point3</em></td>
+        <td><p>The first point of the second line segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point4</em></td>
+        <td><p>The second point of the second line segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>intersectionPoint</em></td>
+        <td><p>This is set to the intersection
+point if an intersection is detected.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if an intersection is detected, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Box2D_Utils_LineTools_LineIntersect_WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Vector2__System_Boolean_System_Boolean_WaveEngine_Common_Math_Vector2__" data-uid="WaveEngine.Box2D.Utils.LineTools.LineIntersect(WaveEngine.Common.Math.Vector2@,WaveEngine.Common.Math.Vector2@,WaveEngine.Common.Math.Vector2@,WaveEngine.Common.Math.Vector2@,System.Boolean,System.Boolean,WaveEngine.Common.Math.Vector2@)">LineIntersect(ref Vector2, ref Vector2, ref Vector2, ref Vector2, Boolean, Boolean, out Vector2)</h4>
+  <div class="markdown level1 summary"><p>This method detects if two line segments (or lines) intersect,
+and, if so, the point of intersection. Use the <code data-dev-comment-type="paramref" class="paramref">firstIsSegment</code> and
+<code data-dev-comment-type="paramref" class="paramref">secondIsSegment</code> parameters to set whether the intersection point
+must be on the first and second line segments. Setting these
+both to true means you are doing a line-segment to line-segment
+intersection. Setting one of them to true means you are doing a
+line to line-segment intersection test, and so on.
+Note: If two line segments are coincident, then
+no intersection is detected (there are actually
+infinite intersection points).
+Author: Jeremy Bell</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool LineIntersect(ref Vector2 point1, ref Vector2 point2, ref Vector2 point3, ref Vector2 point4, bool firstIsSegment, bool secondIsSegment, out Vector2 point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point1</em></td>
+        <td><p>The first point of the first line segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point2</em></td>
+        <td><p>The second point of the first line segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point3</em></td>
+        <td><p>The first point of the second line segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point4</em></td>
+        <td><p>The second point of the second line segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>firstIsSegment</em></td>
+        <td><p>Set this to true to require that the
+intersection point be on the first line segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>secondIsSegment</em></td>
+        <td><p>Set this to true to require that the
+intersection point be on the second line segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point</em></td>
+        <td><p>This is set to the intersection
+point if an intersection is detected.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if an intersection is detected, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Box2D_Utils_LineTools_LineIntersect_WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Vector2__" data-uid="WaveEngine.Box2D.Utils.LineTools.LineIntersect(WaveEngine.Common.Math.Vector2@,WaveEngine.Common.Math.Vector2@,WaveEngine.Common.Math.Vector2@,WaveEngine.Common.Math.Vector2@,WaveEngine.Common.Math.Vector2@)">LineIntersect(ref Vector2, ref Vector2, ref Vector2, ref Vector2, out Vector2)</h4>
+  <div class="markdown level1 summary"><p>This method detects if two line segments intersect,
+and, if so, the point of intersection.
+Note: If two line segments are coincident, then
+no intersection is detected (there are actually
+infinite intersection points).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool LineIntersect(ref Vector2 point1, ref Vector2 point2, ref Vector2 point3, ref Vector2 point4, out Vector2 intersectionPoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point1</em></td>
+        <td><p>The first point of the first line segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point2</em></td>
+        <td><p>The second point of the first line segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point3</em></td>
+        <td><p>The first point of the second line segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point4</em></td>
+        <td><p>The second point of the second line segment.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>intersectionPoint</em></td>
+        <td><p>This is set to the intersection
+point if an intersection is detected.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if an intersection is detected, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Box2D_Utils_LineTools_LineIntersect2_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2_WaveEngine_Common_Math_Vector2__" data-uid="WaveEngine.Box2D.Utils.LineTools.LineIntersect2(WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2@)">LineIntersect2(Vector2, Vector2, Vector2, Vector2, out Vector2)</h4>
+  <div class="markdown level1 summary"><p>Check if the lines a0-&gt;a1 and b0-&gt;b1 cross.
+If they do, intersectionPoint will be filled
+with the point of crossing.
+Grazing lines should not return true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool LineIntersect2(Vector2 a0, Vector2 a1, Vector2 b0, Vector2 b1, out Vector2 intersectionPoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>a0</em></td>
+        <td><p>The a0</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>a1</em></td>
+        <td><p>The a1</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>b0</em></td>
+        <td><p>The b0</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>b1</em></td>
+        <td><p>The b1</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>intersectionPoint</em></td>
+        <td><p>The intersection point</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>The result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Box2D_Utils_LineTools_LineSegmentVerticesIntersect_WaveEngine_Common_Math_Vector2__WaveEngine_Common_Math_Vector2__WaveEngine_Box2D_Utils_Vertices_System_Collections_Generic_List_WaveEngine_Common_Math_Vector2___" data-uid="WaveEngine.Box2D.Utils.LineTools.LineSegmentVerticesIntersect(WaveEngine.Common.Math.Vector2@,WaveEngine.Common.Math.Vector2@,WaveEngine.Box2D.Utils.Vertices,System.Collections.Generic.List{WaveEngine.Common.Math.Vector2}@)">LineSegmentVerticesIntersect(ref Vector2, ref Vector2, Vertices, ref List&lt;Vector2&gt;)</h4>
+  <div class="markdown level1 summary"><p>Get all intersections between a line segment and a list of vertices
+representing a polygon. The vertices reuse adjacent points, so for example
+edges one and two are between the first and second vertices and between the
+second and third vertices. The last edge is between vertex vertices.Count - 1
+and verts0. (ie, vertices from a Geometry or AABB)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LineSegmentVerticesIntersect(ref Vector2 point1, ref Vector2 point2, Vertices vertices, ref List&lt;Vector2&gt; intersectionPoints)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point1</em></td>
+        <td><p>The first point of the line segment to test</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td><em>point2</em></td>
+        <td><p>The second point of the line segment to test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Box2D.Utils.Vertices.html">Vertices</a></td>
+        <td><em>vertices</em></td>
+        <td><p>The vertices, as described above</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a>&gt;</td>
+        <td><em>intersectionPoints</em></td>
+        <td><p>An list of intersection points. Any intersection points
+found will be added to this list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

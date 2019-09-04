@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Goal | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Goal | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="goal">Goal</h2>
+
+<p>The screen manager is in charge of translating how a scene is drawn &quot;logically&quot; (or virtually) to actually into your physical screen. For example, a scene can have a definition of 1080x1920 px for a mobile device with the same resolution; however, you may want to have a pixel aesthetic so your scene is virtually drawn into 270x480 px (1/4 from the original) and escalated to Full HD in the final device.</p>
+<p>Since Wave Engine 2.0.5 the screen manager is configured at scene level, instead of the whole game, i.e. each scene can set its screen properties independently. If you have an existing project made with Wave Engine previous to 2.0.5, you may want to read <a href="https://geeks.ms/waveengineteam/2016/02/01/whats-new-in-wave-2-0-5/">this guide</a> on how to move to 2.0.5 or upper.</p>
+<p>In this guide you will learn how to customize a scene&#39;s virtual screen manager, both visually and through code.</p>
+<h2 id="hands-on">Hands-on</h2>
+<h3 id="with-wave-visual-editor">With Wave Visual Editor</h3>
+<p>Click on Edit, Scene Properties on the main menu.</p>
+<p><img src="images/VirtualScreenManager/PJ8H1V5.png" alt=""></p>
+<p>Then, in the Scene Properties dialog, click on the VirtualScreen section.</p>
+<p><img src="images/VirtualScreenManager/XUx8Ush.png" alt=""></p>
+<p>One important property is <a href="xref:WaveEngine.Framework.Managers.StretchMode">Stretch</a>. Such configures how the scene will be rendered regarding the actual screen:</p>
+<p><img src="images/VirtualScreenManager/Stretch.png" alt=""></p>
+<p>In that section you can configure all the VirtualScreen properties, then click OK. This information will be stored in your scene file (.wscene).</p>
+<h3 id="with-visual-studio-for-windows-or-mac">With Visual Studio (for Windows or Mac)</h3>
+<p>To setup the <a href="xref:WaveEngine.Framework.Managers.VirtualScreenManager">VirtualScreenManager</a> just call its <a href="xref:WaveEngine.Framework.Managers.VirtualScreenManager.Activate(System.Single,System.Single,WaveEngine.Framework.Managers.StretchMode,System.Boolean)">Activate()</a> method anytime. For example, you can write this code into your <code>Scene.CreateScene()</code> method:</p>
+<pre><code class="lang-c#">this.Scene.VirtualScreenManager.Activate(1280, 720, StretchMode.Uniform);
+</code></pre><p>In addition, you can change any of its values in real time (now they have <a href="xref:WaveEngine.Framework.Managers.VirtualScreenManager#properties">setters</a>)</p>
+<pre><code class="lang-c#">this.VirtualScreenManager.Stretch = StretchMode.Fill;
+</code></pre><h2 id="wrap-up">Wrap-up</h2>
+<p>You have learned how to configure the virtual screen manager per scene, which is the new behavior since Wave Engine 2.0.5. Previously, it was configured at game level.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

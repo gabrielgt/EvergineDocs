@@ -1,0 +1,912 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Joint2D&lt;T, K&gt;
+   | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Joint2D&lt;T, K&gt;
+   | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2">
+  
+  
+  <h1 id="WaveEngine_Framework_Physics2D_Joint2D_2" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2" class="xk-margin-default">Class Joint2D&lt;T, K&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>This class represent a 2D physics joint and connects two entities together.
+All Joints restrict some degrees of freedom, seeking a specific configuration.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+      <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level1"><a class="xref" href="WaveEngine.Common.IO.SerializableObject.html">SerializableObject</a></div>
+      <div class="level2"><a class="xref" href="WaveEngine.Framework.DependencyObject.html">DependencyObject</a></div>
+      <div class="level3"><a class="xref" href="WaveEngine.Framework.Component.html">Component</a></div>
+      <div class="level"><span class="xref"></span></div>
+  </div>
+  <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataContract(Namespace = &quot;WaveEngine.Framework.Physics2D&quot;)]
+public abstract class Joint2D&lt;T, K&gt; : Component where T : IJoint2D where K : JointDef2D&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>The associated joint interface</p>
+</td>
+      </tr>
+      <tr>
+        <td><em>K</em></td>
+        <td><p>The associated joint definition</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <h4 id="constructors-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2__ctor">Joint2D()</a></td>
+        <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Physics2D.Joint2D-2.html">Joint2D&lt;T, K&gt;</a> class.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2__ctor" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.#ctor">Joint2D()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Physics2D.Joint2D-2.html">Joint2D&lt;T, K&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Joint2D()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="fields-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2_anchor">anchor</a></td>
+        <td><p>The anchor in relation to rigid body</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2_breakpoint">breakpoint</a></td>
+        <td><p>Joint Breakpoint</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2_connectedAnchor">connectedAnchor</a></td>
+        <td><p>The anchor of the connected body</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2_connectedBody">connectedBody</a></td>
+        <td><p>The connected rigid body</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2_isActive">isActive</a></td>
+        <td><p>If the joint is active</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2_joint">joint</a></td>
+        <td><p>The physic joint</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2_rigidBody">rigidBody</a></td>
+        <td><p>The associated body</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2_anchor" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.anchor">anchor</h4>
+  <div class="markdown level1 summary"><p>The anchor in relation to rigid body</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+protected Vector2 anchor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2_breakpoint" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.breakpoint">breakpoint</h4>
+  <div class="markdown level1 summary"><p>Joint Breakpoint</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+protected float breakpoint</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2_connectedAnchor" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.connectedAnchor">connectedAnchor</h4>
+  <div class="markdown level1 summary"><p>The anchor of the connected body</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+protected Vector2 connectedAnchor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2_connectedBody" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.connectedBody">connectedBody</h4>
+  <div class="markdown level1 summary"><p>The connected rigid body</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RigidBody2D connectedBody</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Physics2D.RigidBody2D.html">RigidBody2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2_isActive" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.isActive">isActive</h4>
+  <div class="markdown level1 summary"><p>If the joint is active</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+protected bool isActive</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2_joint" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.joint">joint</h4>
+  <div class="markdown level1 summary"><p>The physic joint</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected T joint</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2_rigidBody" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.rigidBody">rigidBody</h4>
+  <div class="markdown level1 summary"><p>The associated body</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RequiredComponent]
+protected RigidBody2D rigidBody</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Physics2D.RigidBody2D.html">RigidBody2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <h4 id="properties-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2_Anchor">Anchor</a></td>
+        <td><p>Gets or sets the local anchor point relative to the body</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2_BreakPoint">BreakPoint</a></td>
+        <td><p>Gets or sets joint Breakpoint Property. MaxValue by default</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2_CollideConnected">CollideConnected</a></td>
+        <td><p>Gets or sets a value indicating whether the attached bodies should collide themselves.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2_ConnectedAnchor">ConnectedAnchor</a></td>
+        <td><p>Gets or sets the local anchor point relative to connected body</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2_ConnectedEntityPath">ConnectedEntityPath</a></td>
+        <td><p>Gets or sets the connected entity path</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2_IsActive">IsActive</a></td>
+        <td><p>Gets or sets a value indicating whether the joint is active</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2_RigiBody">RigiBody</a></td>
+        <td><p>Gets the rigidbody</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2_Anchor" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.Anchor">Anchor</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the local anchor point relative to the body</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tooltip = &quot;The local anchor point relative to the body.&quot;)]
+public Vector2 Anchor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2_BreakPoint" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.BreakPoint">BreakPoint</h4>
+  <div class="markdown level1 summary"><p>Gets or sets joint Breakpoint Property. MaxValue by default</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tooltip = &quot;Joint Breakpoint Property. MaxValue by default&quot;)]
+public float BreakPoint { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2_CollideConnected" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.CollideConnected">CollideConnected</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the attached bodies should collide themselves.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tooltip = &quot;Indicating whether the attached bodies should collide themselves.&quot;)]
+public bool CollideConnected { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2_ConnectedAnchor" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.ConnectedAnchor">ConnectedAnchor</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the local anchor point relative to connected body</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tooltip = &quot;The local anchor point relative to connected body.&quot;)]
+public Vector2 ConnectedAnchor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Math.Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2_ConnectedEntityPath" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.ConnectedEntityPath">ConnectedEntityPath</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the connected entity path</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RenderPropertyAsEntity(ComponentsFilter = new string[]{&quot;WaveEngine.Framework.Physics2D.RigidBody2D&quot;})]
+public virtual string ConnectedEntityPath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2_IsActive" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.IsActive">IsActive</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the joint is active</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tooltip = &quot;Indicating whether the joint is active.&quot;)]
+public bool IsActive { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2_RigiBody" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.RigiBody">RigiBody</h4>
+  <div class="markdown level1 summary"><p>Gets the rigidbody</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RigidBody2D RigiBody { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Physics2D.RigidBody2D.html">RigidBody2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <h4 id="methods-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2_CreateJoint__1_">CreateJoint(K)</a></td>
+        <td><p>Creates the joint</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2_DefaultValues">DefaultValues()</a></td>
+        <td><p>Sets the default values</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2_DeleteDependencies">DeleteDependencies()</a></td>
+        <td><p>Delete the dependencies</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2_FillJointDef__1_">FillJointDef(K)</a></td>
+        <td><p>Fill the joint definition</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2_Initialize">Initialize()</a></td>
+        <td><p>Initializes the entity</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2_RefreshConnectedEntity">RefreshConnectedEntity()</a></td>
+        <td><p>Refresh the connected entity</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2_RefreshJoint">RefreshJoint()</a></td>
+        <td><p>Refresh the joint</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2_RefreshJointValue__1___0____0_">RefreshJointValue&lt;V&gt;(ref V, V)</a></td>
+        <td><p>Update a joint value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2_CreateJoint__1_" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.CreateJoint(`1)">CreateJoint(K)</h4>
+  <div class="markdown level1 summary"><p>Creates the joint</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual T CreateJoint(K jointDef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><em>jointDef</em></td>
+        <td><p>The joint def</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The physic joint</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2_DefaultValues" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.DefaultValues">DefaultValues()</h4>
+  <div class="markdown level1 summary"><p>Sets the default values</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DefaultValues()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2_DeleteDependencies" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.DeleteDependencies">DeleteDependencies()</h4>
+  <div class="markdown level1 summary"><p>Delete the dependencies</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DeleteDependencies()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2_FillJointDef__1_" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.FillJointDef(`1)">FillJointDef(K)</h4>
+  <div class="markdown level1 summary"><p>Fill the joint definition</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool FillJointDef(K jointDef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><em>jointDef</em></td>
+        <td><p>The joint definition</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if all is OK</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2_Initialize" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"><p>Initializes the entity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Initialize()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2_RefreshConnectedEntity" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.RefreshConnectedEntity">RefreshConnectedEntity()</h4>
+  <div class="markdown level1 summary"><p>Refresh the connected entity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void RefreshConnectedEntity()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2_RefreshJoint" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.RefreshJoint">RefreshJoint()</h4>
+  <div class="markdown level1 summary"><p>Refresh the joint</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void RefreshJoint()</code></pre>
+  </div>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2_RefreshJointValue__1___0____0_" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.RefreshJointValue``1(``0@,``0)">RefreshJointValue&lt;V&gt;(ref V, V)</h4>
+  <div class="markdown level1 summary"><p>Update a joint value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void RefreshJointValue&lt;V&gt;(ref V variable, V newValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">V</span></td>
+        <td><em>variable</em></td>
+        <td><p>The variable to change</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">V</span></td>
+        <td><em>newValue</em></td>
+        <td><p>The new value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>V</em></td>
+        <td><p>The variable type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <h4 id="events-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics2D_Joint2D_2_OnBroke">OnBroke</a></td>
+        <td><p>Physic 2D Joint Broke Event</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Framework_Physics2D_Joint2D_2_OnBroke" data-uid="WaveEngine.Framework.Physics2D.Joint2D`2.OnBroke">OnBroke</h4>
+  <div class="markdown level1 summary"><p>Physic 2D Joint Broke Event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Joint2D&lt;T, K&gt;.OnBrokeEventHandler OnBroke</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Physics2D.Joint2D-2.OnBrokeEventHandler.html">Joint2D.OnBrokeEventHandler</a>&lt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,977 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class VKExtensionsMethods
+   | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class VKExtensionsMethods
+   | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WaveEngine.Vulkan.VKExtensionsMethods">
+  
+  
+  <h1 id="WaveEngine_Vulkan_VKExtensionsMethods" data-uid="WaveEngine.Vulkan.VKExtensionsMethods" class="xk-margin-default">Class VKExtensionsMethods
+  </h1>
+  <div class="markdown level0 summary"><p>Extensions methods used to convert values from wave to DirectX.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+      <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level"><span class="xref"></span></div>
+  </div>
+  <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>:WaveEngine.Vulkan.dll</h6>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class VKExtensionsMethods</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <h4 id="methods-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Vulkan_VKExtensionsMethods_FromVulkan_Vulkan_VkFormat_">FromVulkan(VkFormat)</a></td>
+        <td><p>Converts to WaveEngine pixel format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_Blend_">ToVulkan(Blend)</a></td>
+        <td><p>Converts to Vulkan blendfactor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_BlendOperation_">ToVulkan(BlendOperation)</a></td>
+        <td><p>Converts to Vulkan blend operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_ColorWriteChannels_">ToVulkan(ColorWriteChannels)</a></td>
+        <td><p>Converts to Vulkan ColorComponentFlags.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_ComparisonFunction_">ToVulkan(ComparisonFunction)</a></td>
+        <td><p>Converts to Vulkan compareFunction.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_CullMode_">ToVulkan(CullMode)</a></td>
+        <td><p>Converts to native CullMode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_ElementFormat_">ToVulkan(ElementFormat)</a></td>
+        <td><p>Converts to Vulkan vertexformat.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_FillMode_">ToVulkan(FillMode)</a></td>
+        <td><p>Converts to native PolygonMode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_PixelFormat_System_Boolean_">ToVulkan(PixelFormat, Boolean)</a></td>
+        <td><p>Converts to native pixel format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_PrimitiveTopology_">ToVulkan(PrimitiveTopology)</a></td>
+        <td><p>Converts to Vulkan primitive topology.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_ResourceType_System_Boolean_">ToVulkan(ResourceType, Boolean)</a></td>
+        <td><p>Converts to native DescriptorType.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_SamplerBorderColor_">ToVulkan(SamplerBorderColor)</a></td>
+        <td><p>Converts to native bordercolor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_ShaderStages_">ToVulkan(ShaderStages)</a></td>
+        <td><p>Converts to native shaderStage.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_StencilOperation_">ToVulkan(StencilOperation)</a></td>
+        <td><p>Converts to Vulkan stencil operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_TextureAddressMode_">ToVulkan(TextureAddressMode)</a></td>
+        <td><p>Converts to Vulkan sampler address mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_TextureFilter_Vulkan_VkFilter__Vulkan_VkFilter__Vulkan_VkSamplerMipmapMode__">ToVulkan(TextureFilter, out VkFilter, out VkFilter, out VkSamplerMipmapMode)</a></td>
+        <td><p>Converts to native Vulkan minFilter, MagFilter and SamplerMipmapMode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_TextureSampleCount_">ToVulkan(TextureSampleCount)</a></td>
+        <td><p>Converts to native Samplecount.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vulkan_VKExtensionsMethods_FromVulkan_Vulkan_VkFormat_" data-uid="WaveEngine.Vulkan.VKExtensionsMethods.FromVulkan(Vulkan.VkFormat)">FromVulkan(VkFormat)</h4>
+  <div class="markdown level1 summary"><p>Converts to WaveEngine pixel format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PixelFormat FromVulkan(this VkFormat format)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vulkan.VkFormat</span></td>
+        <td><em>format</em></td>
+        <td><p>The format to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.PixelFormat.html">PixelFormat</a></td>
+        <td><p>The WaveEngine format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_Blend_" data-uid="WaveEngine.Vulkan.VKExtensionsMethods.ToVulkan(WaveEngine.Common.Graphics.Blend)">ToVulkan(Blend)</h4>
+  <div class="markdown level1 summary"><p>Converts to Vulkan blendfactor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VkBlendFactor ToVulkan(this Blend blend)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Blend.html">Blend</a></td>
+        <td><em>blend</em></td>
+        <td><p>The value to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vulkan.VkBlendFactor</span></td>
+        <td><p>The native value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_BlendOperation_" data-uid="WaveEngine.Vulkan.VKExtensionsMethods.ToVulkan(WaveEngine.Common.Graphics.BlendOperation)">ToVulkan(BlendOperation)</h4>
+  <div class="markdown level1 summary"><p>Converts to Vulkan blend operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VkBlendOp ToVulkan(this BlendOperation operation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.BlendOperation.html">BlendOperation</a></td>
+        <td><em>operation</em></td>
+        <td><p>The value to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vulkan.VkBlendOp</span></td>
+        <td><p>The native value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_ColorWriteChannels_" data-uid="WaveEngine.Vulkan.VKExtensionsMethods.ToVulkan(WaveEngine.Common.Graphics.ColorWriteChannels)">ToVulkan(ColorWriteChannels)</h4>
+  <div class="markdown level1 summary"><p>Converts to Vulkan ColorComponentFlags.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VkColorComponentFlags ToVulkan(this ColorWriteChannels channels)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.ColorWriteChannels.html">ColorWriteChannels</a></td>
+        <td><em>channels</em></td>
+        <td><p>The value to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vulkan.VkColorComponentFlags</span></td>
+        <td><p>The native value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_ComparisonFunction_" data-uid="WaveEngine.Vulkan.VKExtensionsMethods.ToVulkan(WaveEngine.Common.Graphics.ComparisonFunction)">ToVulkan(ComparisonFunction)</h4>
+  <div class="markdown level1 summary"><p>Converts to Vulkan compareFunction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VkCompareOp ToVulkan(this ComparisonFunction function)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.ComparisonFunction.html">ComparisonFunction</a></td>
+        <td><em>function</em></td>
+        <td><p>The value to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vulkan.VkCompareOp</span></td>
+        <td><p>The native value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_CullMode_" data-uid="WaveEngine.Vulkan.VKExtensionsMethods.ToVulkan(WaveEngine.Common.Graphics.CullMode)">ToVulkan(CullMode)</h4>
+  <div class="markdown level1 summary"><p>Converts to native CullMode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VkCullModeFlags ToVulkan(this CullMode cullMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.CullMode.html">CullMode</a></td>
+        <td><em>cullMode</em></td>
+        <td><p>The value to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vulkan.VkCullModeFlags</span></td>
+        <td><p>The native value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_ElementFormat_" data-uid="WaveEngine.Vulkan.VKExtensionsMethods.ToVulkan(WaveEngine.Common.Graphics.ElementFormat)">ToVulkan(ElementFormat)</h4>
+  <div class="markdown level1 summary"><p>Converts to Vulkan vertexformat.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VkFormat ToVulkan(this ElementFormat format)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.ElementFormat.html">ElementFormat</a></td>
+        <td><em>format</em></td>
+        <td><p>The value to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vulkan.VkFormat</span></td>
+        <td><p>The native value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_FillMode_" data-uid="WaveEngine.Vulkan.VKExtensionsMethods.ToVulkan(WaveEngine.Common.Graphics.FillMode)">ToVulkan(FillMode)</h4>
+  <div class="markdown level1 summary"><p>Converts to native PolygonMode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VkPolygonMode ToVulkan(this FillMode fillMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.FillMode.html">FillMode</a></td>
+        <td><em>fillMode</em></td>
+        <td><p>The value to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vulkan.VkPolygonMode</span></td>
+        <td><p>The native value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_PixelFormat_System_Boolean_" data-uid="WaveEngine.Vulkan.VKExtensionsMethods.ToVulkan(WaveEngine.Common.Graphics.PixelFormat,System.Boolean)">ToVulkan(PixelFormat, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Converts to native pixel format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VkFormat ToVulkan(this PixelFormat format, bool depthFormat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.PixelFormat.html">PixelFormat</a></td>
+        <td><em>format</em></td>
+        <td><p>The format to convert.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>depthFormat</em></td>
+        <td><p>Whether is a depth texture.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vulkan.VkFormat</span></td>
+        <td><p>The native vulkan format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_PrimitiveTopology_" data-uid="WaveEngine.Vulkan.VKExtensionsMethods.ToVulkan(WaveEngine.Common.Graphics.PrimitiveTopology)">ToVulkan(PrimitiveTopology)</h4>
+  <div class="markdown level1 summary"><p>Converts to Vulkan primitive topology.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VkPrimitiveTopology ToVulkan(this PrimitiveTopology topology)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.PrimitiveTopology.html">PrimitiveTopology</a></td>
+        <td><em>topology</em></td>
+        <td><p>The value to converts.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vulkan.VkPrimitiveTopology</span></td>
+        <td><p>The native value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_ResourceType_System_Boolean_" data-uid="WaveEngine.Vulkan.VKExtensionsMethods.ToVulkan(WaveEngine.Common.Graphics.ResourceType,System.Boolean)">ToVulkan(ResourceType, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Converts to native DescriptorType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VkDescriptorType ToVulkan(this ResourceType type, bool allowDynamicOffset = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.ResourceType.html">ResourceType</a></td>
+        <td><em>type</em></td>
+        <td><p>The resource type value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>allowDynamicOffset</em></td>
+        <td><p>Allow dynamic offset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vulkan.VkDescriptorType</span></td>
+        <td><p>The native resourceType.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_SamplerBorderColor_" data-uid="WaveEngine.Vulkan.VKExtensionsMethods.ToVulkan(WaveEngine.Common.Graphics.SamplerBorderColor)">ToVulkan(SamplerBorderColor)</h4>
+  <div class="markdown level1 summary"><p>Converts to native bordercolor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VkBorderColor ToVulkan(this SamplerBorderColor borderColor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.SamplerBorderColor.html">SamplerBorderColor</a></td>
+        <td><em>borderColor</em></td>
+        <td><p>The value to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vulkan.VkBorderColor</span></td>
+        <td><p>The MTLSamplerBorderColor value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_ShaderStages_" data-uid="WaveEngine.Vulkan.VKExtensionsMethods.ToVulkan(WaveEngine.Common.Graphics.ShaderStages)">ToVulkan(ShaderStages)</h4>
+  <div class="markdown level1 summary"><p>Converts to native shaderStage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VkShaderStageFlags ToVulkan(this ShaderStages stage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.ShaderStages.html">ShaderStages</a></td>
+        <td><em>stage</em></td>
+        <td><p>The stage value to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vulkan.VkShaderStageFlags</span></td>
+        <td><p>The native shaderStage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_StencilOperation_" data-uid="WaveEngine.Vulkan.VKExtensionsMethods.ToVulkan(WaveEngine.Common.Graphics.StencilOperation)">ToVulkan(StencilOperation)</h4>
+  <div class="markdown level1 summary"><p>Converts to Vulkan stencil operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VkStencilOp ToVulkan(this StencilOperation operation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.StencilOperation.html">StencilOperation</a></td>
+        <td><em>operation</em></td>
+        <td><p>The value to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vulkan.VkStencilOp</span></td>
+        <td><p>The native value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_TextureAddressMode_" data-uid="WaveEngine.Vulkan.VKExtensionsMethods.ToVulkan(WaveEngine.Common.Graphics.TextureAddressMode)">ToVulkan(TextureAddressMode)</h4>
+  <div class="markdown level1 summary"><p>Converts to Vulkan sampler address mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VkSamplerAddressMode ToVulkan(this TextureAddressMode addressMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.TextureAddressMode.html">TextureAddressMode</a></td>
+        <td><em>addressMode</em></td>
+        <td><p>The address mode to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vulkan.VkSamplerAddressMode</span></td>
+        <td><p>The native addressMode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_TextureFilter_Vulkan_VkFilter__Vulkan_VkFilter__Vulkan_VkSamplerMipmapMode__" data-uid="WaveEngine.Vulkan.VKExtensionsMethods.ToVulkan(WaveEngine.Common.Graphics.TextureFilter,Vulkan.VkFilter@,Vulkan.VkFilter@,Vulkan.VkSamplerMipmapMode@)">ToVulkan(TextureFilter, out VkFilter, out VkFilter, out VkSamplerMipmapMode)</h4>
+  <div class="markdown level1 summary"><p>Converts to native Vulkan minFilter, MagFilter and SamplerMipmapMode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ToVulkan(this TextureFilter filter, out VkFilter minFilter, out VkFilter magFilter, out VkSamplerMipmapMode mipmapMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.TextureFilter.html">TextureFilter</a></td>
+        <td><em>filter</em></td>
+        <td><p>The texture filter to convert.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vulkan.VkFilter</span></td>
+        <td><em>minFilter</em></td>
+        <td><p>The native minFilter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vulkan.VkFilter</span></td>
+        <td><em>magFilter</em></td>
+        <td><p>The native magFilter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vulkan.VkSamplerMipmapMode</span></td>
+        <td><em>mipmapMode</em></td>
+        <td><p>The native mipmapMode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h4 id="WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_TextureSampleCount_" data-uid="WaveEngine.Vulkan.VKExtensionsMethods.ToVulkan(WaveEngine.Common.Graphics.TextureSampleCount)">ToVulkan(TextureSampleCount)</h4>
+  <div class="markdown level1 summary"><p>Converts to native Samplecount.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VkSampleCountFlags ToVulkan(this TextureSampleCount sampleCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.TextureSampleCount.html">TextureSampleCount</a></td>
+        <td><em>sampleCount</em></td>
+        <td><p>The samplecount value to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vulkan.VkSampleCountFlags</span></td>
+        <td><p>The native samplecount.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Goal | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Goal | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="goal">Goal</h2>
+
+<p>Have you ever wondered how to add a material to an existing model? A material comprises the details of what an object should look like (for example: its color and whether it is dull or shiny). However, a texture is just an image which is dumped into the model&#39;s mesh.</p>
+<p>Wave Engine allows textures to influence materials in various ways, such as altering their colors. Multiple textures can interact with each other to produce interesting effects.</p>
+<p>Note that textures have to be attached to materials to affect models, you cannot apply a texture to a model without a material.</p>
+<h2 id="hands-on">Hands-on</h2>
+<h3 id="with-wave-visual-editor">With Wave Visual Editor</h3>
+<p>On the Asset Details panel, double click on Assets folder:</p>
+<p><img src="images/ApplyMaterialToAModel/AssetsDetailPane.jpg" alt=""></p>
+<p>Right click on the pane and select Create Material option. Material Editor window will be opened to specify material properties. You can modify these properties as you need and see the changes in the left preview detail.</p>
+<p><img src="images/ApplyMaterialToAModel/MaterialEditorDetail.png" alt=""></p>
+<p>Once Wave Visual Editor has loaded the new material, simply drag the item from the Asset Details panel and drop it in the Viewport, just on top of the existing model.</p>
+<p><img src="images/ApplyMaterialToAModel/DragMaterialModel.PNG" alt=""></p>
+<p>Also, you can achieve the same through <a href="xref:WaveEngine.Components.Graphics3D.MaterialComponent.MaterialPath">MaterialPath</a> property, from entity&#39;s <a href="xref:WaveEngine.Components.Graphics3D.MaterialComponent">MaterialComponent</a> component:</p>
+<p><img src="images/ApplyMaterialToAModel/SetDefaultMaterialPath.png" alt=""></p>
+<h3 id="with-visual-studio-for-windows-or-mac">With Visual Studio (for Windows or Mac)</h3>
+<p>From Wave Visual Editor, click on File &gt; Open C# Solution...; and rebuild it just to update <code>WaveContent.cs</code>. It will contain the paths to the assets you have previously added in the Editor.</p>
+<p>Modify <a href="xref:WaveEngine.Framework.Scene.CreateScene">CreateScene()</a> method from your scene to instantiate a new <a href="xref:WaveEngine.Materials.StandardMaterial">StandardMaterial</a>:</p>
+<pre><code class="lang-C#">protected override void CreateScene()
+{
+    this.Load(WaveContent.Scenes.MyScene);
+
+    var material = new StandardMaterial()
+    {
+         SpecularPower = 116.4f,
+         DiffuseColor = Color.AntiqueWhite,
+         EmissiveColor = Color.MediumTurquoise,
+         DiffusePath = WaveContent.Assets.Textures.column1_png,
+         NormalPath = WaveContent.Assets.Textures.column1_normal_png,
+         SpecularPath = WaveContent.Assets.Textures.column1_spec_png,
+         EmissivePath = WaveContent.Assets.Textures.column1_emissive_png
+    };
+}
+</code></pre><p>You can add this material now to any model setting the <a href="xref:WaveEngine.Components.Graphics3D.MaterialsMap.DefaultMaterial">MaterialsMap.DefaultMaterial</a> property:</p>
+<pre><code class="lang-C#">var model = new Entity()
+    .AddComponent(new Transform3D())
+    .AddComponent(new MaterialsMap()
+    {
+        DefaultMaterial = material
+    })
+    .AddComponent(new Model(WaveContent.Assets.Models.column1_fbx))
+    .AddComponent(new ModelRenderer());
+
+this.EntityManager.Add(model);
+</code></pre><p>Even further, a material created visually from the Editor can be set through <a href="xref:WaveEngine.Components.Graphics3D.MaterialsMap.DefaultMaterialPath">DefaultMaterialPath</a> property:</p>
+<pre><code class="lang-C#">var model = new Entity()
+    .AddComponent(new Transform3D())
+    .AddComponent(new MaterialsMap()
+    {
+        // Notice here the difference regarding previous snippet
+        DefaultMaterialPath = WaveContent.Assets.MyMaterial
+    })
+    .AddComponent(new Model(WaveContent.Assets.Models.column1_fbx))
+    .AddComponent(new ModelRenderer());
+
+this.EntityManager.Add(model);
+</code></pre><h2 id="wrap-up">Wrap-up</h2>
+<p>You have learned the difference between textures and materials, and how to add those both visually and through source code.</p>
+<div class="NOTE"><h5>Note</h5><p>Take a look to all the <a href="https://github.com/WaveEngine/Samples/tree/master/Materials">Materials Samples</a> they show a lot of functionality about materials.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

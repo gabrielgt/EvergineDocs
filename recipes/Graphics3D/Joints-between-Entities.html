@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Goal | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Goal | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="goal">Goal</h2>
+
+<p>A joint in physics is a relationship between two different objects. Such is a base behaviour when working with physics, and <a href="http://waveengine.net">Wave Engine</a> supports multiple types of 3D joints.</p>
+<p>This recipe will briefly summarise all of the available 3D joints, showing how are handled in code in general aspects.</p>
+<h2 id="hands-on">Hands-on</h2>
+<p>Every 3D joint inherits from abstract class <a href="xref:WaveEngine.Framework.Physics3D.Joint3D`2">WaveEngine.Framework.Physics3D.Joint3D</a>. Wave Engine supplies currently the following implementations:</p>
+<p><img src="images/Joint/AddJoint.png" alt=""></p>
+<ul>
+<li><a href="xref:WaveEngine.Framework.Physics3D.FixedJoint3D">FixedJoint3D</a>: restricts all the degrees of freedom. Each entity has an axis attached and the constraint attempts to prevent any relative twisting motion around the axes.</li>
+<li><a href="xref:WaveEngine.Framework.Physics3D.HingeJoint3D">HingeJoint3D</a>: allows one angular degree of freedom between two entities. Hinge Joints are commonly used for door hinges, elbows, and axis joints. </li>
+<li><a href="xref:WaveEngine.Framework.Physics3D.SliderJoint3D">SliderJoint3D</a>: allows a body to rotate around one axis and translate alogn this axis.</li>
+<li><a href="xref:WaveEngine.Framework.Physics3D.ConeTwistJoint3D">ConeTwistJoint3D</a>: adds a cone and a twist axis limits.</li>
+<li><a href="xref:WaveEngine.Framework.Physics3D.GearJoint3D">GearJoint3D</a></li>
+<li><a href="xref:WaveEngine.Framework.Physics3D.Generic6DofJoint3D">Generic6DofJoint3D</a>: allows to configure each of the 6 degrees of freedom</li>
+<li><a href="xref:WaveEngine.Framework.Physics3D.PointToPointJoint3D">PointToPointJoint3D</a>: limits the translation around a pivot point</li>
+<li><a href="xref:WaveEngine.Framework.Physics3D.SpringJoint3D">SpringJoint3D</a></li>
+</ul>
+<h3 id="with-wave-visual-editor">With Wave Visual Editor</h3>
+<p>In order to demo how a 3D joint can be added within Wave Visual Editor, we will focus on <code>FixedJoint3D</code> one, although the same steps apply to other ones from above list. Also, we will start with an existing sample: <a href="https://github.com/WaveEngine/Samples/tree/master/Physics3D/FixedJoint">FixedJoint</a> one, where two boxes are joined through a <code>FixedJoint</code>.</p>
+<p>In the scene where we have the two box entities, select the one on top and add a <a href="xref:WaveEngine.Framework.Physics3D.FixedJoint3D">FixedJoint3D</a> component, using the Add component button in the Entity Details panel. In the properties list you will find a new one called FixedJoint3D. </p>
+<p><img src="images/Joint/FixedJointProperties.jpg" alt=""></p>
+<p>With the <code>ConnectedEntitityPath</code> property, you can define with which other entity the joint is connected. It will only shows those entities that has a RigidBody Component.</p>
+<h3 id="with-visual-studio-for-windows-or-mac">With Visual Studio (for Windows or Mac)</h3>
+<p>To recreate the previous sample using code, it is supposed we have already created the two boxes. Finally, simply add a <code>JointMap3D</code> component to one of them, establishing a link/join with the other:</p>
+<pre><code class="lang-c#">var boxA = CreateBoxA(); // This method returns the boxA entity
+var boxB = CreateBoxB(); // This method returns the boxB entity
+
+boxA.AddComponent(new FixedJoint3D());
+</code></pre><h2 id="wrap-up">Wrap-up</h2>
+<p>This recipe has showed us which are the available <a href="xref:WaveEngine.Framework.Physics3D.FixedJoint3D">FixedJoint3D</a> in Wave Engine, how those are briefly used and, more specifically, how the <code>FixedJoint</code> works on one of our samples.</p>
+<p>Take a look at the Physics samples that plays with joints on <a href="https://github.com/WaveEngine/Samples/tree/master/Physics3D">github</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
