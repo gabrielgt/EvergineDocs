@@ -80,7 +80,7 @@
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="WaveEngine.Common.Graphics.DataBox">
   
-  
+  <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Common/Graphics/DataBox.cs&amp;version=GBdevelop&amp;line=11" class="btn btn-primary pull-right mobile-hide">View Source</a>
   <h1 id="WaveEngine_Common_Graphics_DataBox" data-uid="WaveEngine.Common.Graphics.DataBox" class="xk-margin-default">Struct DataBox
   </h1>
   <div class="markdown level0 summary"><p>Provides access to data organized in 3D.</p>
@@ -103,25 +103,27 @@
     </thead>
     <tbody>
       <tr>
+        <td><a href="#WaveEngine_Common_Graphics_DataBox__ctor_IntPtr_System_UInt32_System_UInt32_">DataBox(IntPtr, UInt32, UInt32)</a></td>
+        <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.DataBox.html">DataBox</a> struct from a IntPtr.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_Common_Graphics_DataBox__ctor_System_Byte___System_UInt32_System_UInt32_">DataBox(Byte[], UInt32, UInt32)</a></td>
         <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.DataBox.html">DataBox</a> struct from a byte array.</p>
 </td>
       </tr>
-      <tr>
-        <td><a href="#WaveEngine_Common_Graphics_DataBox__ctor_System_IntPtr_System_UInt32_System_UInt32_">DataBox(IntPtr, UInt32, UInt32)</a></td>
-        <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.DataBox.html">DataBox</a> struct from a IntPtr.</p>
-</td>
-      </tr>
     </tbody>
   </table>
-  
-  <h4 id="WaveEngine_Common_Graphics_DataBox__ctor_System_Byte___System_UInt32_System_UInt32_" data-uid="WaveEngine.Common.Graphics.DataBox.#ctor(System.Byte[],System.UInt32,System.UInt32)">DataBox(Byte[], UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.DataBox.html">DataBox</a> struct from a byte array.</p>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Common/Graphics/DataBox.cs&amp;version=GBdevelop&amp;line=52">View Source</a>
+  </span>
+  <h4 id="WaveEngine_Common_Graphics_DataBox__ctor_IntPtr_System_UInt32_System_UInt32_" data-uid="WaveEngine.Common.Graphics.DataBox.#ctor(IntPtr,System.UInt32,System.UInt32)">DataBox(IntPtr, UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.DataBox.html">DataBox</a> struct from a IntPtr.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DataBox(byte[] data, uint rowPitch = 0U, uint slicePitch = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">public DataBox(IntPtr datapointer, uint rowPitch = null, uint slicePitch = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -134,9 +136,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Byte</span>[]</td>
-        <td><em>data</em></td>
-        <td><p>The data as byte array.</p>
+        <td><span class="xref">IntPtr</span></td>
+        <td><em>datapointer</em></td>
+        <td><p>The datapointer.</p>
 </td>
       </tr>
       <tr>
@@ -153,14 +155,16 @@
       </tr>
     </tbody>
   </table>
-  
-  <h4 id="WaveEngine_Common_Graphics_DataBox__ctor_System_IntPtr_System_UInt32_System_UInt32_" data-uid="WaveEngine.Common.Graphics.DataBox.#ctor(System.IntPtr,System.UInt32,System.UInt32)">DataBox(IntPtr, UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.DataBox.html">DataBox</a> struct from a IntPtr.</p>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Common/Graphics/DataBox.cs&amp;version=GBdevelop&amp;line=66">View Source</a>
+  </span>
+  <h4 id="WaveEngine_Common_Graphics_DataBox__ctor_System_Byte___System_UInt32_System_UInt32_" data-uid="WaveEngine.Common.Graphics.DataBox.#ctor(System.Byte[],System.UInt32,System.UInt32)">DataBox(Byte[], UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.DataBox.html">DataBox</a> struct from a byte array.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DataBox(IntPtr datapointer, uint rowPitch = 0U, uint slicePitch = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">public DataBox(byte[] data, uint rowPitch = null, uint slicePitch = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -173,9 +177,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
-        <td><em>datapointer</em></td>
-        <td><p>The datapointer.</p>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><em>data</em></td>
+        <td><p>The data as byte array.</p>
 </td>
       </tr>
       <tr>
@@ -220,7 +224,9 @@
       </tr>
     </tbody>
   </table>
-  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Common/Graphics/DataBox.cs&amp;version=GBdevelop&amp;line=22">View Source</a>
+  </span>
   <h4 id="WaveEngine_Common_Graphics_DataBox_DataPointer" data-uid="WaveEngine.Common.Graphics.DataBox.DataPointer">DataPointer</h4>
   <div class="markdown level1 summary"><p>Pointer to the data.</p>
 </div>
@@ -239,12 +245,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Common/Graphics/DataBox.cs&amp;version=GBdevelop&amp;line=27">View Source</a>
+  </span>
   <h4 id="WaveEngine_Common_Graphics_DataBox_RowPitch" data-uid="WaveEngine.Common.Graphics.DataBox.RowPitch">RowPitch</h4>
   <div class="markdown level1 summary"><p>Gets the number of bytes per row.</p>
 </div>
@@ -268,7 +276,9 @@
       </tr>
     </tbody>
   </table>
-  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Common/Graphics/DataBox.cs&amp;version=GBdevelop&amp;line=32">View Source</a>
+  </span>
   <h4 id="WaveEngine_Common_Graphics_DataBox_SlicePitch" data-uid="WaveEngine.Common.Graphics.DataBox.SlicePitch">SlicePitch</h4>
   <div class="markdown level1 summary"><p>Gets the number of bytes per slice (for a 3D texture, a slice is a 2D image).</p>
 </div>
@@ -310,7 +320,9 @@
       </tr>
     </tbody>
   </table>
-  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Common/Graphics/DataBox.cs&amp;version=GBdevelop&amp;line=38">View Source</a>
+  </span>
   <h4 id="WaveEngine_Common_Graphics_DataBox_IsEmpty" data-uid="WaveEngine.Common.Graphics.DataBox.IsEmpty">IsEmpty</h4>
   <div class="markdown level1 summary"><p>Gets a value indicating whether this instance is empty.</p>
 </div>
@@ -353,7 +365,9 @@
       </tr>
     </tbody>
   </table>
-  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Common/Graphics/DataBox.cs&amp;version=GBdevelop&amp;line=79">View Source</a>
+  </span>
   <h4 id="WaveEngine_Common_Graphics_DataBox_Dispose" data-uid="WaveEngine.Common.Graphics.DataBox.Dispose">Dispose()</h4>
   <div class="markdown level1 summary"><p>Dispose databox.</p>
 </div>
@@ -364,14 +378,7 @@
   </div>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">System.IDisposable</span>
-  </div>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
-  </div>
-  <div>
-      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+      <span class="xref">IDisposable</span>
   </div>
 </article>
           </div>
@@ -380,6 +387,12 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/WaveEngine/Documentation/new/develop/apiSpec/new?filename=WaveEngine_Common_Graphics_DataBox.md&amp;value=---%0Auid%3A%20WaveEngine.Common.Graphics.DataBox%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Common/Graphics/DataBox.cs&amp;version=GBdevelop&amp;line=11" class="contribution-link">View Source</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

@@ -80,7 +80,7 @@
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="WaveEngine.Framework.Managers.AssetSceneManager">
   
-  
+  <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Framework/Managers/AssetSceneManager.cs&amp;version=GBdevelop&amp;line=15" class="btn btn-primary pull-right mobile-hide">View Source</a>
   <h1 id="WaveEngine_Framework_Managers_AssetSceneManager" data-uid="WaveEngine.Framework.Managers.AssetSceneManager" class="xk-margin-default">Class AssetSceneManager
   </h1>
   <div class="markdown level0 summary"><p>Asset Scene Manager class.</p>
@@ -100,6 +100,35 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class AssetSceneManager : SceneManager, IDependencyObject</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <h4 id="constructors-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Managers_AssetSceneManager__ctor">AssetSceneManager()</a></td>
+        <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Managers.AssetSceneManager.html">AssetSceneManager</a> class.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Framework/Managers/AssetSceneManager.cs&amp;version=GBdevelop&amp;line=31">View Source</a>
+  </span>
+  <h4 id="WaveEngine_Framework_Managers_AssetSceneManager__ctor" data-uid="WaveEngine.Framework.Managers.AssetSceneManager.#ctor">AssetSceneManager()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Managers.AssetSceneManager.html">AssetSceneManager</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssetSceneManager()</code></pre>
+  </div>
   <h3 id="fields">Fields
   </h3>
   <h4 id="fields-summary">Summary</h4>
@@ -118,15 +147,16 @@
       </tr>
     </tbody>
   </table>
-  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Framework/Managers/AssetSceneManager.cs&amp;version=GBdevelop&amp;line=21">View Source</a>
+  </span>
   <h4 id="WaveEngine_Framework_Managers_AssetSceneManager_assetService" data-uid="WaveEngine.Framework.Managers.AssetSceneManager.assetService">assetService</h4>
   <div class="markdown level1 summary"><p>The asset service.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[BindService(true)]
-protected AssetsService assetService</code></pre>
+    <pre><code class="lang-csharp hljs">protected AssetsService assetService</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -155,18 +185,23 @@ protected AssetsService assetService</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Framework_Managers_AssetSceneManager_Load__1_System_Guid_System_Boolean_">Load&lt;T&gt;(Guid, Boolean)</a></td>
+        <td><a href="#WaveEngine_Framework_Managers_AssetSceneManager_AddReference_Guid_System_Int32_">AddReference(Guid, Int32)</a></td>
+        <td><p>Adds an asset reference to the dictionary.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Managers_AssetSceneManager_Load__1_Guid_System_Boolean_">Load&lt;T&gt;(Guid, Boolean)</a></td>
         <td><p>Load an asset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Managers_AssetSceneManager_Load__1_System_String_Stream_System_Boolean_">Load&lt;T&gt;(String, Stream, Boolean)</a></td>
+        <td><p>Loads an asset.</p>
 </td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Managers_AssetSceneManager_Load__1_System_String_System_Boolean_">Load&lt;T&gt;(String, Boolean)</a></td>
         <td><p>Load an asset.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a href="#WaveEngine_Framework_Managers_AssetSceneManager_Load__1_System_String_System_IO_Stream_System_Boolean_">Load&lt;T&gt;(String, Stream, Boolean)</a></td>
-        <td><p>Loads an asset.</p>
 </td>
       </tr>
       <tr>
@@ -180,12 +215,7 @@ protected AssetsService assetService</code></pre>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Managers_AssetSceneManager_OnLoaded">OnLoaded()</a></td>
-        <td><p>Invoked when the object is loaded.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a href="#WaveEngine_Framework_Managers_AssetSceneManager_Unload_System_Guid_">Unload(Guid)</a></td>
+        <td><a href="#WaveEngine_Framework_Managers_AssetSceneManager_Unload_Guid_">Unload(Guid)</a></td>
         <td><p>Unload scene asset by Guid.</p>
 </td>
       </tr>
@@ -196,8 +226,45 @@ protected AssetsService assetService</code></pre>
       </tr>
     </tbody>
   </table>
-  
-  <h4 id="WaveEngine_Framework_Managers_AssetSceneManager_Load__1_System_Guid_System_Boolean_" data-uid="WaveEngine.Framework.Managers.AssetSceneManager.Load``1(System.Guid,System.Boolean)">Load&lt;T&gt;(Guid, Boolean)</h4>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Framework/Managers/AssetSceneManager.cs&amp;version=GBdevelop&amp;line=240">View Source</a>
+  </span>
+  <h4 id="WaveEngine_Framework_Managers_AssetSceneManager_AddReference_Guid_System_Int32_" data-uid="WaveEngine.Framework.Managers.AssetSceneManager.AddReference(Guid,System.Int32)">AddReference(Guid, Int32)</h4>
+  <div class="markdown level1 summary"><p>Adds an asset reference to the dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AddReference(Guid id, int value = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Guid</span></td>
+        <td><em>id</em></td>
+        <td><p>The asset&apos;s id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>value</em></td>
+        <td><p>The value of the reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Framework/Managers/AssetSceneManager.cs&amp;version=GBdevelop&amp;line=61">View Source</a>
+  </span>
+  <h4 id="WaveEngine_Framework_Managers_AssetSceneManager_Load__1_Guid_System_Boolean_" data-uid="WaveEngine.Framework.Managers.AssetSceneManager.Load``1(Guid,System.Boolean)">Load&lt;T&gt;(Guid, Boolean)</h4>
   <div class="markdown level1 summary"><p>Load an asset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -217,7 +284,7 @@ protected AssetsService assetService</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Guid</span></td>
+        <td><span class="xref">Guid</span></td>
         <td><em>id</em></td>
         <td><p>The asset id to load.</p>
 </td>
@@ -262,7 +329,83 @@ protected AssetsService assetService</code></pre>
       </tr>
     </tbody>
   </table>
-  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Framework/Managers/AssetSceneManager.cs&amp;version=GBdevelop&amp;line=96">View Source</a>
+  </span>
+  <h4 id="WaveEngine_Framework_Managers_AssetSceneManager_Load__1_System_String_Stream_System_Boolean_" data-uid="WaveEngine.Framework.Managers.AssetSceneManager.Load``1(System.String,Stream,System.Boolean)">Load&lt;T&gt;(String, Stream, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Loads an asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Load&lt;T&gt;(string name, Stream stream, bool forceNewInstance = false)
+    where T : ILoadable</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>name</em></td>
+        <td><p>The name of the asset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Stream</span></td>
+        <td><em>stream</em></td>
+        <td><p>The stream of the asset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>forceNewInstance</em></td>
+        <td><p>True to force a new instance of the asset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The loaded asset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Type of the asset to load.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Framework/Managers/AssetSceneManager.cs&amp;version=GBdevelop&amp;line=126">View Source</a>
+  </span>
   <h4 id="WaveEngine_Framework_Managers_AssetSceneManager_Load__1_System_String_System_Boolean_" data-uid="WaveEngine.Framework.Managers.AssetSceneManager.Load``1(System.String,System.Boolean)">Load&lt;T&gt;(String, Boolean)</h4>
   <div class="markdown level1 summary"><p>Load an asset.</p>
 </div>
@@ -328,100 +471,9 @@ protected AssetsService assetService</code></pre>
       </tr>
     </tbody>
   </table>
-  
-  <h4 id="WaveEngine_Framework_Managers_AssetSceneManager_Load__1_System_String_System_IO_Stream_System_Boolean_" data-uid="WaveEngine.Framework.Managers.AssetSceneManager.Load``1(System.String,System.IO.Stream,System.Boolean)">Load&lt;T&gt;(String, Stream, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Loads an asset.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T Load&lt;T&gt;(string name, Stream stream, bool forceNewInstance = false)
-    where T : ILoadable</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><em>name</em></td>
-        <td><p>The name of the asset.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.IO.Stream</span></td>
-        <td><em>stream</em></td>
-        <td><p>The stream of the asset.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><em>forceNewInstance</em></td>
-        <td><p>True to force a new instance of the asset.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><p>The loaded asset.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><em>T</em></td>
-        <td><p>Type of the asset to load.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>Stream is null.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>Asset name is null or empty.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Framework/Managers/AssetSceneManager.cs&amp;version=GBdevelop&amp;line=215">View Source</a>
+  </span>
   <h4 id="WaveEngine_Framework_Managers_AssetSceneManager_OnAttached" data-uid="WaveEngine.Framework.Managers.AssetSceneManager.OnAttached">OnAttached()</h4>
   <div class="markdown level1 summary"><p>Invoked when the object is attached to the system.</p>
 </div>
@@ -446,7 +498,9 @@ protected AssetsService assetService</code></pre>
       </tr>
     </tbody>
   </table>
-  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Framework/Managers/AssetSceneManager.cs&amp;version=GBdevelop&amp;line=223">View Source</a>
+  </span>
   <h4 id="WaveEngine_Framework_Managers_AssetSceneManager_OnDestroy" data-uid="WaveEngine.Framework.Managers.AssetSceneManager.OnDestroy">OnDestroy()</h4>
   <div class="markdown level1 summary"><p>Invoked when the object is going to be disposed.</p>
 </div>
@@ -455,17 +509,10 @@ protected AssetsService assetService</code></pre>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnDestroy()</code></pre>
   </div>
-  
-  <h4 id="WaveEngine_Framework_Managers_AssetSceneManager_OnLoaded" data-uid="WaveEngine.Framework.Managers.AssetSceneManager.OnLoaded">OnLoaded()</h4>
-  <div class="markdown level1 summary"><p>Invoked when the object is loaded.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void OnLoaded()</code></pre>
-  </div>
-  
-  <h4 id="WaveEngine_Framework_Managers_AssetSceneManager_Unload_System_Guid_" data-uid="WaveEngine.Framework.Managers.AssetSceneManager.Unload(System.Guid)">Unload(Guid)</h4>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Framework/Managers/AssetSceneManager.cs&amp;version=GBdevelop&amp;line=163">View Source</a>
+  </span>
+  <h4 id="WaveEngine_Framework_Managers_AssetSceneManager_Unload_Guid_" data-uid="WaveEngine.Framework.Managers.AssetSceneManager.Unload(Guid)">Unload(Guid)</h4>
   <div class="markdown level1 summary"><p>Unload scene asset by Guid.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -484,14 +531,16 @@ protected AssetsService assetService</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Guid</span></td>
+        <td><span class="xref">Guid</span></td>
         <td><em>id</em></td>
         <td><p>Asset guid.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Framework/Managers/AssetSceneManager.cs&amp;version=GBdevelop&amp;line=184">View Source</a>
+  </span>
   <h4 id="WaveEngine_Framework_Managers_AssetSceneManager_Unload_System_String_" data-uid="WaveEngine.Framework.Managers.AssetSceneManager.Unload(System.String)">Unload(String)</h4>
   <div class="markdown level1 summary"><p>Unload scene asset.</p>
 </div>
@@ -536,6 +585,12 @@ protected AssetsService assetService</code></pre>
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/WaveEngine/Documentation/new/develop/apiSpec/new?filename=WaveEngine_Framework_Managers_AssetSceneManager.md&amp;value=---%0Auid%3A%20WaveEngine.Framework.Managers.AssetSceneManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Framework/Managers/AssetSceneManager.cs&amp;version=GBdevelop&amp;line=15" class="contribution-link">View Source</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

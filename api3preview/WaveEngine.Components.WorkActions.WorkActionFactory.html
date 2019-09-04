@@ -80,7 +80,7 @@
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory">
   
-  
+  <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=16" class="btn btn-primary pull-right mobile-hide">View Source</a>
   <h1 id="WaveEngine_Components_WorkActions_WorkActionFactory" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory" class="xk-margin-default">Class WorkActionFactory
   </h1>
   <div class="markdown level0 summary"><p>Extension methods for WorkAction class.</p>
@@ -94,7 +94,7 @@
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.Components.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class WorkActionFactory</code></pre>
+    <pre><code class="lang-csharp hljs">public static class WorkActionFactory : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -108,7 +108,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_AndWaitCondition_WaveEngine_Framework_Services_IWorkAction_System_Func_System_Boolean__System_Int32_">AndWaitCondition(IWorkAction, Func&lt;Boolean&gt;, Int32)</a></td>
+        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_AndWaitCondition_WaveEngine_Framework_Services_IWorkAction_Func_System_Boolean__System_Int32_">AndWaitCondition(IWorkAction, Func&lt;Boolean&gt;, Int32)</a></td>
         <td><p>Ands the wait condition.</p>
 </td>
       </tr>
@@ -118,17 +118,17 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWith_WaveEngine_Framework_Services_IWorkAction_System_Collections_Generic_IEnumerable_WaveEngine_Framework_Services_IWorkAction__">ContinueWith(IWorkAction, IEnumerable&lt;IWorkAction&gt;)</a></td>
+        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWith_WaveEngine_Framework_Services_IWorkAction_Func_WaveEngine_Framework_Services_IWorkAction__">ContinueWith(IWorkAction, Func&lt;IWorkAction&gt;)</a></td>
         <td><p>Continue with another action.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWith_WaveEngine_Framework_Services_IWorkAction_System_Func_WaveEngine_Framework_Services_IWorkAction__">ContinueWith(IWorkAction, Func&lt;IWorkAction&gt;)</a></td>
+        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWith_WaveEngine_Framework_Services_IWorkAction_Func_WaveEngine_Framework_Services_IWorkAction____">ContinueWith(IWorkAction, Func&lt;IWorkAction&gt;[])</a></td>
         <td><p>Continue with another action.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWith_WaveEngine_Framework_Services_IWorkAction_System_Func_WaveEngine_Framework_Services_IWorkAction____">ContinueWith(IWorkAction, Func&lt;IWorkAction&gt;[])</a></td>
+        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWith_WaveEngine_Framework_Services_IWorkAction_IEnumerable_WaveEngine_Framework_Services_IWorkAction__">ContinueWith(IWorkAction, IEnumerable&lt;IWorkAction&gt;)</a></td>
         <td><p>Continue with another action.</p>
 </td>
       </tr>
@@ -143,12 +143,12 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWithAction_WaveEngine_Framework_Services_IWorkAction_System_Action_">ContinueWithAction(IWorkAction, Action)</a></td>
+        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWithAction_WaveEngine_Framework_Services_IWorkAction_Action_">ContinueWithAction(IWorkAction, Action)</a></td>
         <td><p>Continue with another an action function.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_CreateDelayWorkAction_WaveEngine_Framework_Scene_System_TimeSpan_">CreateDelayWorkAction(Scene, TimeSpan)</a></td>
+        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_CreateDelayWorkAction_WaveEngine_Framework_Scene_TimeSpan_">CreateDelayWorkAction(Scene, TimeSpan)</a></td>
         <td><p>Creates a delay action.</p>
 </td>
       </tr>
@@ -158,22 +158,22 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_CreateLoopWorkActionUntil_WaveEngine_Framework_Scene_System_Func_WaveEngine_Framework_Services_IWorkAction__System_Func_System_Boolean__">CreateLoopWorkActionUntil(Scene, Func&lt;IWorkAction&gt;, Func&lt;Boolean&gt;)</a></td>
+        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_CreateLoopWorkActionUntil_WaveEngine_Framework_Scene_Func_WaveEngine_Framework_Services_IWorkAction__Func_System_Boolean__">CreateLoopWorkActionUntil(Scene, Func&lt;IWorkAction&gt;, Func&lt;Boolean&gt;)</a></td>
         <td><p>Creates the repeat task until.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_WaveEngine_Framework_Scene_System_Collections_Generic_IEnumerable_System_Func_WaveEngine_Framework_Services_IWorkAction___">CreateParallelWorkActions(Scene, IEnumerable&lt;Func&lt;IWorkAction&gt;&gt;)</a></td>
+        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_WaveEngine_Framework_Scene_Func_WaveEngine_Framework_Services_IWorkAction____">CreateParallelWorkActions(Scene, Func&lt;IWorkAction&gt;[])</a></td>
         <td><p>Create parallel actions.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_WaveEngine_Framework_Scene_System_Collections_Generic_IEnumerable_WaveEngine_Framework_Services_IWorkAction__">CreateParallelWorkActions(Scene, IEnumerable&lt;IWorkAction&gt;)</a></td>
+        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_WaveEngine_Framework_Scene_IEnumerable_Func_WaveEngine_Framework_Services_IWorkAction___">CreateParallelWorkActions(Scene, IEnumerable&lt;Func&lt;IWorkAction&gt;&gt;)</a></td>
         <td><p>Create parallel actions.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_WaveEngine_Framework_Scene_System_Func_WaveEngine_Framework_Services_IWorkAction____">CreateParallelWorkActions(Scene, Func&lt;IWorkAction&gt;[])</a></td>
+        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_WaveEngine_Framework_Scene_IEnumerable_WaveEngine_Framework_Services_IWorkAction__">CreateParallelWorkActions(Scene, IEnumerable&lt;IWorkAction&gt;)</a></td>
         <td><p>Create parallel actions.</p>
 </td>
       </tr>
@@ -183,22 +183,22 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_WaveEngine_Framework_Services_IWorkAction_System_Collections_Generic_IEnumerable_WaveEngine_Framework_Services_IWorkAction__">CreateParallelWorkActions(IWorkAction, IEnumerable&lt;IWorkAction&gt;)</a></td>
+        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_WaveEngine_Framework_Services_IWorkAction_IEnumerable_WaveEngine_Framework_Services_IWorkAction__">CreateParallelWorkActions(IWorkAction, IEnumerable&lt;IWorkAction&gt;)</a></td>
         <td><p>Continue with another action.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_CreateWaitConditionWorkAction_WaveEngine_Framework_Scene_System_Func_System_Boolean__System_Int32_">CreateWaitConditionWorkAction(Scene, Func&lt;Boolean&gt;, Int32)</a></td>
+        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_CreateWaitConditionWorkAction_WaveEngine_Framework_Scene_Func_System_Boolean__System_Int32_">CreateWaitConditionWorkAction(Scene, Func&lt;Boolean&gt;, Int32)</a></td>
         <td><p>Create a wait condition action.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_CreateWaitWorkAction_WaveEngine_Framework_Scene_System_TimeSpan_">CreateWaitWorkAction(Scene, TimeSpan)</a></td>
+        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_CreateWaitWorkAction_WaveEngine_Framework_Scene_TimeSpan_">CreateWaitWorkAction(Scene, TimeSpan)</a></td>
         <td><p>Creates the wait action.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_CreateWorkAction_WaveEngine_Framework_Scene_System_Func_WaveEngine_Framework_Services_IWorkAction__">CreateWorkAction(Scene, Func&lt;IWorkAction&gt;)</a></td>
+        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_CreateWorkAction_WaveEngine_Framework_Scene_Func_WaveEngine_Framework_Services_IWorkAction__">CreateWorkAction(Scene, Func&lt;IWorkAction&gt;)</a></td>
         <td><p>Creates a work action.</p>
 </td>
       </tr>
@@ -208,19 +208,21 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_CreateWorkActionFromAction_WaveEngine_Framework_Scene_System_Action_">CreateWorkActionFromAction(Scene, Action)</a></td>
+        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_CreateWorkActionFromAction_WaveEngine_Framework_Scene_Action_">CreateWorkActionFromAction(Scene, Action)</a></td>
         <td><p>Creates an empty work action.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_Delay_WaveEngine_Framework_Services_IWorkAction_System_TimeSpan_">Delay(IWorkAction, TimeSpan)</a></td>
+        <td><a href="#WaveEngine_Components_WorkActions_WorkActionFactory_Delay_WaveEngine_Framework_Services_IWorkAction_TimeSpan_">Delay(IWorkAction, TimeSpan)</a></td>
         <td><p>Add a delay action.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_AndWaitCondition_WaveEngine_Framework_Services_IWorkAction_System_Func_System_Boolean__System_Int32_" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.AndWaitCondition(WaveEngine.Framework.Services.IWorkAction,System.Func{System.Boolean},System.Int32)">AndWaitCondition(IWorkAction, Func&lt;Boolean&gt;, Int32)</h4>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=125">View Source</a>
+  </span>
+  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_AndWaitCondition_WaveEngine_Framework_Services_IWorkAction_Func_System_Boolean__System_Int32_" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.AndWaitCondition(WaveEngine.Framework.Services.IWorkAction,Func{System.Boolean},System.Int32)">AndWaitCondition(IWorkAction, Func&lt;Boolean&gt;, Int32)</h4>
   <div class="markdown level1 summary"><p>Ands the wait condition.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -245,7 +247,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><em>breakPredicate</em></td>
         <td><p>The predicate.</p>
 </td>
@@ -274,7 +276,9 @@
       </tr>
     </tbody>
   </table>
-  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=384">View Source</a>
+  </span>
   <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_AsSkippableWorkAction_WaveEngine_Framework_Services_IWorkAction_" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.AsSkippableWorkAction(WaveEngine.Framework.Services.IWorkAction)">AsSkippableWorkAction(IWorkAction)</h4>
   <div class="markdown level1 summary"><p>Return the same action as skippable.</p>
 </div>
@@ -317,73 +321,10 @@
       </tr>
     </tbody>
   </table>
-  
-  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWith_WaveEngine_Framework_Services_IWorkAction_System_Collections_Generic_IEnumerable_WaveEngine_Framework_Services_IWorkAction__" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.ContinueWith(WaveEngine.Framework.Services.IWorkAction,System.Collections.Generic.IEnumerable{WaveEngine.Framework.Services.IWorkAction})">ContinueWith(IWorkAction, IEnumerable&lt;IWorkAction&gt;)</h4>
-  <div class="markdown level1 summary"><p>Continue with another action.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IWorkActionSet ContinueWith(this IWorkAction parent, IEnumerable&lt;IWorkAction&gt; childTasks)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a></td>
-        <td><em>parent</em></td>
-        <td><p>The parent action.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
-        <td><em>childTasks</em></td>
-        <td><p>The child tasks.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="WaveEngine.Components.WorkActions.IWorkActionSet.html">IWorkActionSet</a></td>
-        <td><p>An action that continue with the next action when the parent is completed.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.NotSupportedException</span></td>
-        <td><p>It is not possible to continue with, aborted or finished task. Defer the run command to a posterior stage.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWith_WaveEngine_Framework_Services_IWorkAction_System_Func_WaveEngine_Framework_Services_IWorkAction__" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.ContinueWith(WaveEngine.Framework.Services.IWorkAction,System.Func{WaveEngine.Framework.Services.IWorkAction})">ContinueWith(IWorkAction, Func&lt;IWorkAction&gt;)</h4>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=43">View Source</a>
+  </span>
+  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWith_WaveEngine_Framework_Services_IWorkAction_Func_WaveEngine_Framework_Services_IWorkAction__" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.ContinueWith(WaveEngine.Framework.Services.IWorkAction,Func{WaveEngine.Framework.Services.IWorkAction})">ContinueWith(IWorkAction, Func&lt;IWorkAction&gt;)</h4>
   <div class="markdown level1 summary"><p>Continue with another action.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -408,7 +349,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
         <td><em>nextActionGenerator</em></td>
         <td><p>The next action generator.</p>
 </td>
@@ -431,24 +372,10 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.NotSupportedException</span></td>
-        <td><p>It is not possible to continue with, aborted or finished task. Defer the run command to a posterior stage.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWith_WaveEngine_Framework_Services_IWorkAction_System_Func_WaveEngine_Framework_Services_IWorkAction____" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.ContinueWith(WaveEngine.Framework.Services.IWorkAction,System.Func{WaveEngine.Framework.Services.IWorkAction}[])">ContinueWith(IWorkAction, Func&lt;IWorkAction&gt;[])</h4>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=91">View Source</a>
+  </span>
+  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWith_WaveEngine_Framework_Services_IWorkAction_Func_WaveEngine_Framework_Services_IWorkAction____" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.ContinueWith(WaveEngine.Framework.Services.IWorkAction,Func{WaveEngine.Framework.Services.IWorkAction}[])">ContinueWith(IWorkAction, Func&lt;IWorkAction&gt;[])</h4>
   <div class="markdown level1 summary"><p>Continue with another action.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -473,7 +400,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;[]</td>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;[]</td>
         <td><em>childTaskGenerators</em></td>
         <td><p>The child task generators.</p>
 </td>
@@ -496,23 +423,60 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=79">View Source</a>
+  </span>
+  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWith_WaveEngine_Framework_Services_IWorkAction_IEnumerable_WaveEngine_Framework_Services_IWorkAction__" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.ContinueWith(WaveEngine.Framework.Services.IWorkAction,IEnumerable{WaveEngine.Framework.Services.IWorkAction})">ContinueWith(IWorkAction, IEnumerable&lt;IWorkAction&gt;)</h4>
+  <div class="markdown level1 summary"><p>Continue with another action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IWorkActionSet ContinueWith(this IWorkAction parent, IEnumerable&lt;IWorkAction&gt; childTasks)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Condition</th>
+        <th>Name</th>
+        <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.NotSupportedException</span></td>
-        <td><p>It is not possible to continue with, aborted or finished task. Defer the run command to a posterior stage.</p>
+        <td><a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a></td>
+        <td><em>parent</em></td>
+        <td><p>The parent action.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
+        <td><em>childTasks</em></td>
+        <td><p>The child tasks.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Components.WorkActions.IWorkActionSet.html">IWorkActionSet</a></td>
+        <td><p>An action that continue with the next action when the parent is completed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=25">View Source</a>
+  </span>
   <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWith_WaveEngine_Framework_Services_IWorkAction_WaveEngine_Framework_Services_IWorkAction_" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.ContinueWith(WaveEngine.Framework.Services.IWorkAction,WaveEngine.Framework.Services.IWorkAction)">ContinueWith(IWorkAction, IWorkAction)</h4>
   <div class="markdown level1 summary"><p>Continue with another action.</p>
 </div>
@@ -561,23 +525,9 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.NotSupportedException</span></td>
-        <td><p>It is not possible to continue with, aborted or finished task. Defer the run command to a posterior stage.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=67">View Source</a>
+  </span>
   <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWith_WaveEngine_Framework_Services_IWorkAction_WaveEngine_Framework_Services_IWorkAction___" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.ContinueWith(WaveEngine.Framework.Services.IWorkAction,WaveEngine.Framework.Services.IWorkAction[])">ContinueWith(IWorkAction, IWorkAction[])</h4>
   <div class="markdown level1 summary"><p>Continue with another action.</p>
 </div>
@@ -626,24 +576,10 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.NotSupportedException</span></td>
-        <td><p>It is not possible to continue with, aborted or finished task. Defer the run command to a posterior stage.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWithAction_WaveEngine_Framework_Services_IWorkAction_System_Action_" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.ContinueWithAction(WaveEngine.Framework.Services.IWorkAction,System.Action)">ContinueWithAction(IWorkAction, Action)</h4>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=55">View Source</a>
+  </span>
+  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWithAction_WaveEngine_Framework_Services_IWorkAction_Action_" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.ContinueWithAction(WaveEngine.Framework.Services.IWorkAction,Action)">ContinueWithAction(IWorkAction, Action)</h4>
   <div class="markdown level1 summary"><p>Continue with another an action function.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -668,7 +604,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span></td>
+        <td><span class="xref">Action</span></td>
         <td><em>action</em></td>
         <td><p>The next action.</p>
 </td>
@@ -691,24 +627,10 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.NotSupportedException</span></td>
-        <td><p>It is not possible to continue with, aborted or finished task. Defer the run command to a posterior stage.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_CreateDelayWorkAction_WaveEngine_Framework_Scene_System_TimeSpan_" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.CreateDelayWorkAction(WaveEngine.Framework.Scene,System.TimeSpan)">CreateDelayWorkAction(Scene, TimeSpan)</h4>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=194">View Source</a>
+  </span>
+  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_CreateDelayWorkAction_WaveEngine_Framework_Scene_TimeSpan_" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.CreateDelayWorkAction(WaveEngine.Framework.Scene,TimeSpan)">CreateDelayWorkAction(Scene, TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Creates a delay action.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -733,7 +655,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="xref">TimeSpan</span></td>
         <td><em>time</em></td>
         <td><p>The time.</p>
 </td>
@@ -756,7 +678,9 @@
       </tr>
     </tbody>
   </table>
-  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=183">View Source</a>
+  </span>
   <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_CreateEmptyWorkAction_WaveEngine_Framework_Scene_" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.CreateEmptyWorkAction(WaveEngine.Framework.Scene)">CreateEmptyWorkAction(Scene)</h4>
   <div class="markdown level1 summary"><p>Creates an empty work action.</p>
 </div>
@@ -799,8 +723,10 @@
       </tr>
     </tbody>
   </table>
-  
-  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_CreateLoopWorkActionUntil_WaveEngine_Framework_Scene_System_Func_WaveEngine_Framework_Services_IWorkAction__System_Func_System_Boolean__" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.CreateLoopWorkActionUntil(WaveEngine.Framework.Scene,System.Func{WaveEngine.Framework.Services.IWorkAction},System.Func{System.Boolean})">CreateLoopWorkActionUntil(Scene, Func&lt;IWorkAction&gt;, Func&lt;Boolean&gt;)</h4>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=364">View Source</a>
+  </span>
+  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_CreateLoopWorkActionUntil_WaveEngine_Framework_Scene_Func_WaveEngine_Framework_Services_IWorkAction__Func_System_Boolean__" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.CreateLoopWorkActionUntil(WaveEngine.Framework.Scene,Func{WaveEngine.Framework.Services.IWorkAction},Func{System.Boolean})">CreateLoopWorkActionUntil(Scene, Func&lt;IWorkAction&gt;, Func&lt;Boolean&gt;)</h4>
   <div class="markdown level1 summary"><p>Creates the repeat task until.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -825,13 +751,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
         <td><em>actionGenerator</em></td>
         <td><p>The action generator.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><em>stopCondition</em></td>
         <td><p>The until predicate.</p>
 </td>
@@ -854,106 +780,10 @@
       </tr>
     </tbody>
   </table>
-  
-  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_WaveEngine_Framework_Scene_System_Collections_Generic_IEnumerable_System_Func_WaveEngine_Framework_Services_IWorkAction___" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.CreateParallelWorkActions(WaveEngine.Framework.Scene,System.Collections.Generic.IEnumerable{System.Func{WaveEngine.Framework.Services.IWorkAction}})">CreateParallelWorkActions(Scene, IEnumerable&lt;Func&lt;IWorkAction&gt;&gt;)</h4>
-  <div class="markdown level1 summary"><p>Create parallel actions.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IWorkActionSet CreateParallelWorkActions(this Scene scene, IEnumerable&lt;Func&lt;IWorkAction&gt;&gt; actionGenerators)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="WaveEngine.Framework.Scene.html">Scene</a></td>
-        <td><em>scene</em></td>
-        <td><p>The scene.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Func</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;&gt;</td>
-        <td><em>actionGenerators</em></td>
-        <td><p>The action generators.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="WaveEngine.Components.WorkActions.IWorkActionSet.html">IWorkActionSet</a></td>
-        <td><p>The action.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_WaveEngine_Framework_Scene_System_Collections_Generic_IEnumerable_WaveEngine_Framework_Services_IWorkAction__" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.CreateParallelWorkActions(WaveEngine.Framework.Scene,System.Collections.Generic.IEnumerable{WaveEngine.Framework.Services.IWorkAction})">CreateParallelWorkActions(Scene, IEnumerable&lt;IWorkAction&gt;)</h4>
-  <div class="markdown level1 summary"><p>Create parallel actions.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IWorkActionSet CreateParallelWorkActions(this Scene scene, IEnumerable&lt;IWorkAction&gt; actions)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="WaveEngine.Framework.Scene.html">Scene</a></td>
-        <td><em>scene</em></td>
-        <td><p>The scene.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
-        <td><em>actions</em></td>
-        <td><p>The actions.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="WaveEngine.Components.WorkActions.IWorkActionSet.html">IWorkActionSet</a></td>
-        <td><p>The action.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_WaveEngine_Framework_Scene_System_Func_WaveEngine_Framework_Services_IWorkAction____" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.CreateParallelWorkActions(WaveEngine.Framework.Scene,System.Func{WaveEngine.Framework.Services.IWorkAction}[])">CreateParallelWorkActions(Scene, Func&lt;IWorkAction&gt;[])</h4>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=329">View Source</a>
+  </span>
+  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_WaveEngine_Framework_Scene_Func_WaveEngine_Framework_Services_IWorkAction____" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.CreateParallelWorkActions(WaveEngine.Framework.Scene,Func{WaveEngine.Framework.Services.IWorkAction}[])">CreateParallelWorkActions(Scene, Func&lt;IWorkAction&gt;[])</h4>
   <div class="markdown level1 summary"><p>Create parallel actions.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -978,7 +808,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;[]</td>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;[]</td>
         <td><em>actionGenerators</em></td>
         <td><p>The action generators.</p>
 </td>
@@ -1001,7 +831,111 @@
       </tr>
     </tbody>
   </table>
-  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=307">View Source</a>
+  </span>
+  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_WaveEngine_Framework_Scene_IEnumerable_Func_WaveEngine_Framework_Services_IWorkAction___" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.CreateParallelWorkActions(WaveEngine.Framework.Scene,IEnumerable{Func{WaveEngine.Framework.Services.IWorkAction}})">CreateParallelWorkActions(Scene, IEnumerable&lt;Func&lt;IWorkAction&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Create parallel actions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IWorkActionSet CreateParallelWorkActions(this Scene scene, IEnumerable&lt;Func&lt;IWorkAction&gt;&gt; actionGenerators)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Scene.html">Scene</a></td>
+        <td><em>scene</em></td>
+        <td><p>The scene.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Func</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;&gt;</td>
+        <td><em>actionGenerators</em></td>
+        <td><p>The action generators.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Components.WorkActions.IWorkActionSet.html">IWorkActionSet</a></td>
+        <td><p>The action.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=318">View Source</a>
+  </span>
+  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_WaveEngine_Framework_Scene_IEnumerable_WaveEngine_Framework_Services_IWorkAction__" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.CreateParallelWorkActions(WaveEngine.Framework.Scene,IEnumerable{WaveEngine.Framework.Services.IWorkAction})">CreateParallelWorkActions(Scene, IEnumerable&lt;IWorkAction&gt;)</h4>
+  <div class="markdown level1 summary"><p>Create parallel actions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IWorkActionSet CreateParallelWorkActions(this Scene scene, IEnumerable&lt;IWorkAction&gt; actions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Scene.html">Scene</a></td>
+        <td><em>scene</em></td>
+        <td><p>The scene.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
+        <td><em>actions</em></td>
+        <td><p>The actions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Components.WorkActions.IWorkActionSet.html">IWorkActionSet</a></td>
+        <td><p>The action.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=340">View Source</a>
+  </span>
   <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_WaveEngine_Framework_Scene_WaveEngine_Framework_Services_IWorkAction___" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.CreateParallelWorkActions(WaveEngine.Framework.Scene,WaveEngine.Framework.Services.IWorkAction[])">CreateParallelWorkActions(Scene, IWorkAction[])</h4>
   <div class="markdown level1 summary"><p>Create parallel actions.</p>
 </div>
@@ -1050,8 +984,10 @@
       </tr>
     </tbody>
   </table>
-  
-  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_WaveEngine_Framework_Services_IWorkAction_System_Collections_Generic_IEnumerable_WaveEngine_Framework_Services_IWorkAction__" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.CreateParallelWorkActions(WaveEngine.Framework.Services.IWorkAction,System.Collections.Generic.IEnumerable{WaveEngine.Framework.Services.IWorkAction})">CreateParallelWorkActions(IWorkAction, IEnumerable&lt;IWorkAction&gt;)</h4>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=352">View Source</a>
+  </span>
+  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_WaveEngine_Framework_Services_IWorkAction_IEnumerable_WaveEngine_Framework_Services_IWorkAction__" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.CreateParallelWorkActions(WaveEngine.Framework.Services.IWorkAction,IEnumerable{WaveEngine.Framework.Services.IWorkAction})">CreateParallelWorkActions(IWorkAction, IEnumerable&lt;IWorkAction&gt;)</h4>
   <div class="markdown level1 summary"><p>Continue with another action.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1076,7 +1012,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
         <td><em>childTasks</em></td>
         <td><p>The child tasks.</p>
 </td>
@@ -1099,24 +1035,10 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.NotSupportedException</span></td>
-        <td><p>It is not possible to continue with, aborted or finished task. Defer the run command to a posterior stage.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_CreateWaitConditionWorkAction_WaveEngine_Framework_Scene_System_Func_System_Boolean__System_Int32_" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.CreateWaitConditionWorkAction(WaveEngine.Framework.Scene,System.Func{System.Boolean},System.Int32)">CreateWaitConditionWorkAction(Scene, Func&lt;Boolean&gt;, Int32)</h4>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=250">View Source</a>
+  </span>
+  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_CreateWaitConditionWorkAction_WaveEngine_Framework_Scene_Func_System_Boolean__System_Int32_" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.CreateWaitConditionWorkAction(WaveEngine.Framework.Scene,Func{System.Boolean},System.Int32)">CreateWaitConditionWorkAction(Scene, Func&lt;Boolean&gt;, Int32)</h4>
   <div class="markdown level1 summary"><p>Create a wait condition action.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1141,7 +1063,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><em>breakPredicate</em></td>
         <td><p>The predicate.</p>
 </td>
@@ -1170,8 +1092,10 @@
       </tr>
     </tbody>
   </table>
-  
-  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_CreateWaitWorkAction_WaveEngine_Framework_Scene_System_TimeSpan_" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.CreateWaitWorkAction(WaveEngine.Framework.Scene,System.TimeSpan)">CreateWaitWorkAction(Scene, TimeSpan)</h4>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=216">View Source</a>
+  </span>
+  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_CreateWaitWorkAction_WaveEngine_Framework_Scene_TimeSpan_" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.CreateWaitWorkAction(WaveEngine.Framework.Scene,TimeSpan)">CreateWaitWorkAction(Scene, TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Creates the wait action.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1196,7 +1120,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="xref">TimeSpan</span></td>
         <td><em>timeSpan</em></td>
         <td><p>The time span.</p>
 </td>
@@ -1219,8 +1143,10 @@
       </tr>
     </tbody>
   </table>
-  
-  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_CreateWorkAction_WaveEngine_Framework_Scene_System_Func_WaveEngine_Framework_Services_IWorkAction__" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.CreateWorkAction(WaveEngine.Framework.Scene,System.Func{WaveEngine.Framework.Services.IWorkAction})">CreateWorkAction(Scene, Func&lt;IWorkAction&gt;)</h4>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=227">View Source</a>
+  </span>
+  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_CreateWorkAction_WaveEngine_Framework_Scene_Func_WaveEngine_Framework_Services_IWorkAction__" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.CreateWorkAction(WaveEngine.Framework.Scene,Func{WaveEngine.Framework.Services.IWorkAction})">CreateWorkAction(Scene, Func&lt;IWorkAction&gt;)</h4>
   <div class="markdown level1 summary"><p>Creates a work action.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1245,7 +1171,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
         <td><em>actionGenerator</em></td>
         <td><p>The action generator method.</p>
 </td>
@@ -1268,7 +1194,9 @@
       </tr>
     </tbody>
   </table>
-  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=238">View Source</a>
+  </span>
   <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_CreateWorkAction_WaveEngine_Framework_Scene_WaveEngine_Framework_Services_IWorkAction_" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.CreateWorkAction(WaveEngine.Framework.Scene,WaveEngine.Framework.Services.IWorkAction)">CreateWorkAction(Scene, IWorkAction)</h4>
   <div class="markdown level1 summary"><p>Creates a work action.</p>
 </div>
@@ -1317,8 +1245,10 @@
       </tr>
     </tbody>
   </table>
-  
-  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_CreateWorkActionFromAction_WaveEngine_Framework_Scene_System_Action_" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.CreateWorkActionFromAction(WaveEngine.Framework.Scene,System.Action)">CreateWorkActionFromAction(Scene, Action)</h4>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=205">View Source</a>
+  </span>
+  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_CreateWorkActionFromAction_WaveEngine_Framework_Scene_Action_" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.CreateWorkActionFromAction(WaveEngine.Framework.Scene,Action)">CreateWorkActionFromAction(Scene, Action)</h4>
   <div class="markdown level1 summary"><p>Creates an empty work action.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1343,7 +1273,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span></td>
+        <td><span class="xref">Action</span></td>
         <td><em>action</em></td>
         <td><p>simple code to be executed.</p>
 </td>
@@ -1366,8 +1296,10 @@
       </tr>
     </tbody>
   </table>
-  
-  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_Delay_WaveEngine_Framework_Services_IWorkAction_System_TimeSpan_" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.Delay(WaveEngine.Framework.Services.IWorkAction,System.TimeSpan)">Delay(IWorkAction, TimeSpan)</h4>
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=102">View Source</a>
+  </span>
+  <h4 id="WaveEngine_Components_WorkActions_WorkActionFactory_Delay_WaveEngine_Framework_Services_IWorkAction_TimeSpan_" data-uid="WaveEngine.Components.WorkActions.WorkActionFactory.Delay(WaveEngine.Framework.Services.IWorkAction,TimeSpan)">Delay(IWorkAction, TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Add a delay action.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1392,7 +1324,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="xref">TimeSpan</span></td>
         <td><em>time</em></td>
         <td><p>The time.</p>
 </td>
@@ -1422,6 +1354,12 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/WaveEngine/Documentation/new/develop/apiSpec/new?filename=WaveEngine_Components_WorkActions_WorkActionFactory.md&amp;value=---%0Auid%3A%20WaveEngine.Components.WorkActions.WorkActionFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://dev.azure.com/waveengineteam/Wave.Engine/_git/WaveEngine?path=src/Engine/Common/WaveEngine.Components/GameActions/WorkActionFactory.cs&amp;version=GBdevelop&amp;line=16" class="contribution-link">View Source</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
