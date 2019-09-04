@@ -1,0 +1,1082 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Common.Graphics.DepthRange
+  commentId: T:WaveEngine.Common.Graphics.DepthRange
+  id: DepthRange
+  parent: WaveEngine.Common.Graphics
+  children:
+  - WaveEngine.Common.Graphics.DepthRange.#ctor(System.Single,System.Single)
+  - WaveEngine.Common.Graphics.DepthRange.ComputeDepthRange(WaveEngine.Common.Graphics.DepthRange@,WaveEngine.Common.Graphics.DepthRange@)
+  - WaveEngine.Common.Graphics.DepthRange.Default
+  - WaveEngine.Common.Graphics.DepthRange.Equals(System.Object)
+  - WaveEngine.Common.Graphics.DepthRange.Equals(WaveEngine.Common.Graphics.DepthRange)
+  - WaveEngine.Common.Graphics.DepthRange.GetHashCode
+  - WaveEngine.Common.Graphics.DepthRange.MaxDepth
+  - WaveEngine.Common.Graphics.DepthRange.MinDepth
+  - WaveEngine.Common.Graphics.DepthRange.op_Equality(WaveEngine.Common.Graphics.DepthRange,WaveEngine.Common.Graphics.DepthRange)
+  - WaveEngine.Common.Graphics.DepthRange.op_Inequality(WaveEngine.Common.Graphics.DepthRange,WaveEngine.Common.Graphics.DepthRange)
+  langs:
+  - csharp
+  - vb
+  name: DepthRange
+  nameWithType: DepthRange
+  fullName: WaveEngine.Common.Graphics.DepthRange
+  type: Struct
+  source:
+    id: DepthRange
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\DepthRange.cs
+    startLine: 15
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nAbstracts a viewport used for defining rendering regions.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract(Namespace = "WaveEngine.Common.Graphics")]
+
+      public struct DepthRange : IEquatable<DepthRange>
+    content.vb: >-
+      <DataContract(Namespace:="WaveEngine.Common.Graphics")>
+
+      Public Structure DepthRange
+
+          Implements IEquatable(Of DepthRange)
+  implements:
+  - System.IEquatable{WaveEngine.Common.Graphics.DepthRange}
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Namespace
+      type: System.String
+      value: WaveEngine.Common.Graphics
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: WaveEngine.Common.Graphics.DepthRange.Default
+  commentId: F:WaveEngine.Common.Graphics.DepthRange.Default
+  id: Default
+  parent: WaveEngine.Common.Graphics.DepthRange
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: DepthRange.Default
+  fullName: WaveEngine.Common.Graphics.DepthRange.Default
+  type: Field
+  source:
+    id: Default
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\DepthRange.cs
+    startLine: 21
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nEmpty value for an undefined viewport.\n"
+  example: []
+  syntax:
+    content: public static readonly DepthRange Default
+    return:
+      type: WaveEngine.Common.Graphics.DepthRange
+    content.vb: Public Shared ReadOnly Default As DepthRange
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: WaveEngine.Common.Graphics.DepthRange.MinDepth
+  commentId: F:WaveEngine.Common.Graphics.DepthRange.MinDepth
+  id: MinDepth
+  parent: WaveEngine.Common.Graphics.DepthRange
+  langs:
+  - csharp
+  - vb
+  name: MinDepth
+  nameWithType: DepthRange.MinDepth
+  fullName: WaveEngine.Common.Graphics.DepthRange.MinDepth
+  type: Field
+  source:
+    id: MinDepth
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\DepthRange.cs
+    startLine: 27
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nGets or sets the minimum Z (depth) value of the viewport.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public float MinDepth
+    return:
+      type: System.Single
+    content.vb: >-
+      <DataMember>
+
+      Public MinDepth As Single
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.DepthRange.MaxDepth
+  commentId: F:WaveEngine.Common.Graphics.DepthRange.MaxDepth
+  id: MaxDepth
+  parent: WaveEngine.Common.Graphics.DepthRange
+  langs:
+  - csharp
+  - vb
+  name: MaxDepth
+  nameWithType: DepthRange.MaxDepth
+  fullName: WaveEngine.Common.Graphics.DepthRange.MaxDepth
+  type: Field
+  source:
+    id: MaxDepth
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\DepthRange.cs
+    startLine: 33
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nGets or sets the maximum Z (depth) value of the viewport.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public float MaxDepth
+    return:
+      type: System.Single
+    content.vb: >-
+      <DataMember>
+
+      Public MaxDepth As Single
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.DepthRange.#ctor(System.Single,System.Single)
+  commentId: M:WaveEngine.Common.Graphics.DepthRange.#ctor(System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single)'
+  parent: WaveEngine.Common.Graphics.DepthRange
+  langs:
+  - csharp
+  - vb
+  name: DepthRange(Single, Single)
+  nameWithType: DepthRange.DepthRange(Single, Single)
+  fullName: WaveEngine.Common.Graphics.DepthRange.DepthRange(System.Single, System.Single)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\DepthRange.cs
+    startLine: 48
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Common.Graphics.DepthRange\" data-throw-if-not-resolved=\"false\"></xref> struct.\n"
+  example: []
+  syntax:
+    content: public DepthRange(float minDepth = 0F, float maxDepth = 1F)
+    parameters:
+    - id: minDepth
+      type: System.Single
+      description: The min depth range.
+    - id: maxDepth
+      type: System.Single
+      description: The max depth range.
+    content.vb: Public Sub New(minDepth As Single = 0F, maxDepth As Single = 1F)
+  overload: WaveEngine.Common.Graphics.DepthRange.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.DepthRange.ComputeDepthRange(WaveEngine.Common.Graphics.DepthRange@,WaveEngine.Common.Graphics.DepthRange@)
+  commentId: M:WaveEngine.Common.Graphics.DepthRange.ComputeDepthRange(WaveEngine.Common.Graphics.DepthRange@,WaveEngine.Common.Graphics.DepthRange@)
+  id: ComputeDepthRange(WaveEngine.Common.Graphics.DepthRange@,WaveEngine.Common.Graphics.DepthRange@)
+  parent: WaveEngine.Common.Graphics.DepthRange
+  langs:
+  - csharp
+  - vb
+  name: ComputeDepthRange(ref DepthRange, ref DepthRange)
+  nameWithType: DepthRange.ComputeDepthRange(ref DepthRange, ref DepthRange)
+  fullName: WaveEngine.Common.Graphics.DepthRange.ComputeDepthRange(ref WaveEngine.Common.Graphics.DepthRange, ref WaveEngine.Common.Graphics.DepthRange)
+  type: Method
+  source:
+    id: ComputeDepthRange
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\DepthRange.cs
+    startLine: 60
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nComputes the depth range applying it to a global depth range.\n"
+  example: []
+  syntax:
+    content: public static DepthRange ComputeDepthRange(ref DepthRange globalDepthRange, ref DepthRange depthRange)
+    parameters:
+    - id: globalDepthRange
+      type: WaveEngine.Common.Graphics.DepthRange
+      description: The global depth range
+    - id: depthRange
+      type: WaveEngine.Common.Graphics.DepthRange
+      description: The depth range to be applied
+    return:
+      type: WaveEngine.Common.Graphics.DepthRange
+      description: The computed depth range
+    content.vb: Public Shared Function ComputeDepthRange(ByRef globalDepthRange As DepthRange, ByRef depthRange As DepthRange) As DepthRange
+  overload: WaveEngine.Common.Graphics.DepthRange.ComputeDepthRange*
+  nameWithType.vb: DepthRange.ComputeDepthRange(ByRef DepthRange, ByRef DepthRange)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WaveEngine.Common.Graphics.DepthRange.ComputeDepthRange(ByRef WaveEngine.Common.Graphics.DepthRange, ByRef WaveEngine.Common.Graphics.DepthRange)
+  name.vb: ComputeDepthRange(ByRef DepthRange, ByRef DepthRange)
+- uid: WaveEngine.Common.Graphics.DepthRange.Equals(WaveEngine.Common.Graphics.DepthRange)
+  commentId: M:WaveEngine.Common.Graphics.DepthRange.Equals(WaveEngine.Common.Graphics.DepthRange)
+  id: Equals(WaveEngine.Common.Graphics.DepthRange)
+  parent: WaveEngine.Common.Graphics.DepthRange
+  langs:
+  - csharp
+  - vb
+  name: Equals(DepthRange)
+  nameWithType: DepthRange.Equals(DepthRange)
+  fullName: WaveEngine.Common.Graphics.DepthRange.Equals(WaveEngine.Common.Graphics.DepthRange)
+  type: Method
+  source:
+    id: Equals
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\DepthRange.cs
+    startLine: 88
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nReturns a hash code for this instance.\n"
+  example: []
+  syntax:
+    content: public bool Equals(DepthRange other)
+    parameters:
+    - id: other
+      type: WaveEngine.Common.Graphics.DepthRange
+      description: Other used to compare.
+    return:
+      type: System.Boolean
+      description: "\nA hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.\n"
+    content.vb: Public Function Equals(other As DepthRange) As Boolean
+  overload: WaveEngine.Common.Graphics.DepthRange.Equals*
+  implements:
+  - System.IEquatable{WaveEngine.Common.Graphics.DepthRange}.Equals(WaveEngine.Common.Graphics.DepthRange)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.DepthRange.Equals(System.Object)
+  commentId: M:WaveEngine.Common.Graphics.DepthRange.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: WaveEngine.Common.Graphics.DepthRange
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: DepthRange.Equals(Object)
+  fullName: WaveEngine.Common.Graphics.DepthRange.Equals(System.Object)
+  type: Method
+  source:
+    id: Equals
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\DepthRange.cs
+    startLine: 105
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nDetermines whether the specified <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> is equal to this instance.\n"
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The <xref href="System.Object" data-throw-if-not-resolved="false"></xref> to compare with this instance.
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if the specified <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> is equal to this instance; otherwise, <code>false</code>.\n"
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: WaveEngine.Common.Graphics.DepthRange.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: WaveEngine.Common.Graphics.DepthRange.GetHashCode
+  commentId: M:WaveEngine.Common.Graphics.DepthRange.GetHashCode
+  id: GetHashCode
+  parent: WaveEngine.Common.Graphics.DepthRange
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: DepthRange.GetHashCode()
+  fullName: WaveEngine.Common.Graphics.DepthRange.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\DepthRange.cs
+    startLine: 121
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nReturns a hash code for this instance.\n"
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: "\nA hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.\n"
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: WaveEngine.Common.Graphics.DepthRange.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: WaveEngine.Common.Graphics.DepthRange.op_Equality(WaveEngine.Common.Graphics.DepthRange,WaveEngine.Common.Graphics.DepthRange)
+  commentId: M:WaveEngine.Common.Graphics.DepthRange.op_Equality(WaveEngine.Common.Graphics.DepthRange,WaveEngine.Common.Graphics.DepthRange)
+  id: op_Equality(WaveEngine.Common.Graphics.DepthRange,WaveEngine.Common.Graphics.DepthRange)
+  parent: WaveEngine.Common.Graphics.DepthRange
+  langs:
+  - csharp
+  - vb
+  name: Equality(DepthRange, DepthRange)
+  nameWithType: DepthRange.Equality(DepthRange, DepthRange)
+  fullName: WaveEngine.Common.Graphics.DepthRange.Equality(WaveEngine.Common.Graphics.DepthRange, WaveEngine.Common.Graphics.DepthRange)
+  type: Operator
+  source:
+    id: op_Equality
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\DepthRange.cs
+    startLine: 140
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nImplements the operator ==.\n"
+  example: []
+  syntax:
+    content: public static bool operator ==(DepthRange value1, DepthRange value2)
+    parameters:
+    - id: value1
+      type: WaveEngine.Common.Graphics.DepthRange
+      description: The value1.
+    - id: value2
+      type: WaveEngine.Common.Graphics.DepthRange
+      description: The value2.
+    return:
+      type: System.Boolean
+      description: "\nThe result of the operator.\n"
+    content.vb: Public Shared Operator =(value1 As DepthRange, value2 As DepthRange) As Boolean
+  overload: WaveEngine.Common.Graphics.DepthRange.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Common.Graphics.DepthRange.op_Inequality(WaveEngine.Common.Graphics.DepthRange,WaveEngine.Common.Graphics.DepthRange)
+  commentId: M:WaveEngine.Common.Graphics.DepthRange.op_Inequality(WaveEngine.Common.Graphics.DepthRange,WaveEngine.Common.Graphics.DepthRange)
+  id: op_Inequality(WaveEngine.Common.Graphics.DepthRange,WaveEngine.Common.Graphics.DepthRange)
+  parent: WaveEngine.Common.Graphics.DepthRange
+  langs:
+  - csharp
+  - vb
+  name: Inequality(DepthRange, DepthRange)
+  nameWithType: DepthRange.Inequality(DepthRange, DepthRange)
+  fullName: WaveEngine.Common.Graphics.DepthRange.Inequality(WaveEngine.Common.Graphics.DepthRange, WaveEngine.Common.Graphics.DepthRange)
+  type: Operator
+  source:
+    id: op_Inequality
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\DepthRange.cs
+    startLine: 153
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nImplements the operator ==.\n"
+  example: []
+  syntax:
+    content: public static bool operator !=(DepthRange value1, DepthRange value2)
+    parameters:
+    - id: value1
+      type: WaveEngine.Common.Graphics.DepthRange
+      description: The value1.
+    - id: value2
+      type: WaveEngine.Common.Graphics.DepthRange
+      description: The value2.
+    return:
+      type: System.Boolean
+      description: "\nThe result of the operator.\n"
+    content.vb: Public Shared Operator <>(value1 As DepthRange, value2 As DepthRange) As Boolean
+  overload: WaveEngine.Common.Graphics.DepthRange.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: WaveEngine.Common.Graphics
+  commentId: N:WaveEngine.Common.Graphics
+  name: WaveEngine.Common.Graphics
+  nameWithType: WaveEngine.Common.Graphics
+  fullName: WaveEngine.Common.Graphics
+- uid: System.IEquatable{WaveEngine.Common.Graphics.DepthRange}
+  commentId: T:System.IEquatable{WaveEngine.Common.Graphics.DepthRange}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<DepthRange>
+  nameWithType: IEquatable<DepthRange>
+  fullName: System.IEquatable<WaveEngine.Common.Graphics.DepthRange>
+  nameWithType.vb: IEquatable(Of DepthRange)
+  fullName.vb: System.IEquatable(Of WaveEngine.Common.Graphics.DepthRange)
+  name.vb: IEquatable(Of DepthRange)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Common.Graphics.DepthRange
+    name: DepthRange
+    nameWithType: DepthRange
+    fullName: WaveEngine.Common.Graphics.DepthRange
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Common.Graphics.DepthRange
+    name: DepthRange
+    nameWithType: DepthRange
+    fullName: WaveEngine.Common.Graphics.DepthRange
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Common.Graphics.DepthRange
+  commentId: T:WaveEngine.Common.Graphics.DepthRange
+  parent: WaveEngine.Common.Graphics
+  name: DepthRange
+  nameWithType: DepthRange
+  fullName: WaveEngine.Common.Graphics.DepthRange
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Common.Graphics.DepthRange.#ctor*
+  commentId: Overload:WaveEngine.Common.Graphics.DepthRange.#ctor
+  name: DepthRange
+  nameWithType: DepthRange.DepthRange
+  fullName: WaveEngine.Common.Graphics.DepthRange.DepthRange
+- uid: WaveEngine.Common.Graphics.DepthRange.ComputeDepthRange*
+  commentId: Overload:WaveEngine.Common.Graphics.DepthRange.ComputeDepthRange
+  name: ComputeDepthRange
+  nameWithType: DepthRange.ComputeDepthRange
+  fullName: WaveEngine.Common.Graphics.DepthRange.ComputeDepthRange
+- uid: WaveEngine.Common.Graphics.DepthRange.Equals*
+  commentId: Overload:WaveEngine.Common.Graphics.DepthRange.Equals
+  name: Equals
+  nameWithType: DepthRange.Equals
+  fullName: WaveEngine.Common.Graphics.DepthRange.Equals
+- uid: System.IEquatable{WaveEngine.Common.Graphics.DepthRange}.Equals(WaveEngine.Common.Graphics.DepthRange)
+  commentId: M:System.IEquatable{WaveEngine.Common.Graphics.DepthRange}.Equals(WaveEngine.Common.Graphics.DepthRange)
+  parent: System.IEquatable{WaveEngine.Common.Graphics.DepthRange}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(DepthRange)
+  nameWithType: IEquatable<DepthRange>.Equals(DepthRange)
+  fullName: System.IEquatable<WaveEngine.Common.Graphics.DepthRange>.Equals(WaveEngine.Common.Graphics.DepthRange)
+  nameWithType.vb: IEquatable(Of DepthRange).Equals(DepthRange)
+  fullName.vb: System.IEquatable(Of WaveEngine.Common.Graphics.DepthRange).Equals(WaveEngine.Common.Graphics.DepthRange)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<DepthRange>.Equals
+    fullName: System.IEquatable<WaveEngine.Common.Graphics.DepthRange>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Graphics.DepthRange
+    name: DepthRange
+    nameWithType: DepthRange
+    fullName: WaveEngine.Common.Graphics.DepthRange
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of DepthRange).Equals
+    fullName: System.IEquatable(Of WaveEngine.Common.Graphics.DepthRange).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Graphics.DepthRange
+    name: DepthRange
+    nameWithType: DepthRange
+    fullName: WaveEngine.Common.Graphics.DepthRange
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Graphics.DepthRange.GetHashCode*
+  commentId: Overload:WaveEngine.Common.Graphics.DepthRange.GetHashCode
+  name: GetHashCode
+  nameWithType: DepthRange.GetHashCode
+  fullName: WaveEngine.Common.Graphics.DepthRange.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: WaveEngine.Common.Graphics.DepthRange.op_Equality*
+  commentId: Overload:WaveEngine.Common.Graphics.DepthRange.op_Equality
+  name: Equality
+  nameWithType: DepthRange.Equality
+  fullName: WaveEngine.Common.Graphics.DepthRange.Equality
+- uid: WaveEngine.Common.Graphics.DepthRange.op_Inequality*
+  commentId: Overload:WaveEngine.Common.Graphics.DepthRange.op_Inequality
+  name: Inequality
+  nameWithType: DepthRange.Inequality
+  fullName: WaveEngine.Common.Graphics.DepthRange.Inequality

@@ -1,0 +1,1145 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Common.BinaryReaderExtensions
+  commentId: T:WaveEngine.Common.BinaryReaderExtensions
+  id: BinaryReaderExtensions
+  parent: WaveEngine.Common
+  children:
+  - WaveEngine.Common.BinaryReaderExtensions.ReadByte4(System.IO.BinaryReader)
+  - WaveEngine.Common.BinaryReaderExtensions.ReadMatrix(System.IO.BinaryReader)
+  - WaveEngine.Common.BinaryReaderExtensions.ReadMatrix(System.IO.BinaryReader,System.Byte[],System.Int32,WaveEngine.Common.Math.Matrix@)
+  - WaveEngine.Common.BinaryReaderExtensions.ReadMatrix(System.IO.BinaryReader,WaveEngine.Common.Math.Matrix@)
+  - WaveEngine.Common.BinaryReaderExtensions.ReadPoint(System.IO.BinaryReader)
+  - WaveEngine.Common.BinaryReaderExtensions.ReadQuaternion(System.IO.BinaryReader)
+  - WaveEngine.Common.BinaryReaderExtensions.ReadQuaternion(System.IO.BinaryReader,WaveEngine.Common.Math.Quaternion@)
+  - WaveEngine.Common.BinaryReaderExtensions.ReadRectangle(System.IO.BinaryReader)
+  - WaveEngine.Common.BinaryReaderExtensions.ReadRectangleF(System.IO.BinaryReader)
+  - WaveEngine.Common.BinaryReaderExtensions.ReadVector2(System.IO.BinaryReader)
+  - WaveEngine.Common.BinaryReaderExtensions.ReadVector2(System.IO.BinaryReader,WaveEngine.Common.Math.Vector2@)
+  - WaveEngine.Common.BinaryReaderExtensions.ReadVector3(System.IO.BinaryReader)
+  - WaveEngine.Common.BinaryReaderExtensions.ReadVector3(System.IO.BinaryReader,WaveEngine.Common.Math.Vector3@)
+  - WaveEngine.Common.BinaryReaderExtensions.ReadVector4(System.IO.BinaryReader)
+  - WaveEngine.Common.BinaryReaderExtensions.ReadVector4(System.IO.BinaryReader,WaveEngine.Common.Math.Vector4@)
+  langs:
+  - csharp
+  - vb
+  name: BinaryReaderExtensions
+  nameWithType: BinaryReaderExtensions
+  fullName: WaveEngine.Common.BinaryReaderExtensions
+  type: Class
+  source:
+    id: BinaryReaderExtensions
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\BinaryReaderExtensions.cs
+    startLine: 13
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common
+  summary: "\nExtension functions for reading WaveEngine data types with a BinaryReader.\n"
+  example: []
+  syntax:
+    content: public static class BinaryReaderExtensions
+    content.vb: Public Module BinaryReaderExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadMatrix(System.IO.BinaryReader)
+  commentId: M:WaveEngine.Common.BinaryReaderExtensions.ReadMatrix(System.IO.BinaryReader)
+  id: ReadMatrix(System.IO.BinaryReader)
+  isExtensionMethod: true
+  parent: WaveEngine.Common.BinaryReaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadMatrix(BinaryReader)
+  nameWithType: BinaryReaderExtensions.ReadMatrix(BinaryReader)
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadMatrix(System.IO.BinaryReader)
+  type: Method
+  source:
+    id: ReadMatrix
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\BinaryReaderExtensions.cs
+    startLine: 22
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common
+  summary: "\nReads the matrix.\n"
+  example: []
+  syntax:
+    content: public static Matrix ReadMatrix(this BinaryReader reader)
+    parameters:
+    - id: reader
+      type: System.IO.BinaryReader
+      description: The reader.
+    return:
+      type: WaveEngine.Common.Math.Matrix
+      description: The result.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReadMatrix(reader As BinaryReader) As Matrix
+  overload: WaveEngine.Common.BinaryReaderExtensions.ReadMatrix*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadMatrix(System.IO.BinaryReader,WaveEngine.Common.Math.Matrix@)
+  commentId: M:WaveEngine.Common.BinaryReaderExtensions.ReadMatrix(System.IO.BinaryReader,WaveEngine.Common.Math.Matrix@)
+  id: ReadMatrix(System.IO.BinaryReader,WaveEngine.Common.Math.Matrix@)
+  isExtensionMethod: true
+  parent: WaveEngine.Common.BinaryReaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadMatrix(BinaryReader, out Matrix)
+  nameWithType: BinaryReaderExtensions.ReadMatrix(BinaryReader, out Matrix)
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadMatrix(System.IO.BinaryReader, out WaveEngine.Common.Math.Matrix)
+  type: Method
+  source:
+    id: ReadMatrix
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\BinaryReaderExtensions.cs
+    startLine: 53
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common
+  summary: "\nReads the matrix.\n"
+  example: []
+  syntax:
+    content: public static void ReadMatrix(this BinaryReader reader, out Matrix m)
+    parameters:
+    - id: reader
+      type: System.IO.BinaryReader
+      description: The reader.
+    - id: m
+      type: WaveEngine.Common.Math.Matrix
+      description: The m.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub ReadMatrix(reader As BinaryReader, ByRef m As Matrix)
+  overload: WaveEngine.Common.BinaryReaderExtensions.ReadMatrix*
+  nameWithType.vb: BinaryReaderExtensions.ReadMatrix(BinaryReader, ByRef Matrix)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WaveEngine.Common.BinaryReaderExtensions.ReadMatrix(System.IO.BinaryReader, ByRef WaveEngine.Common.Math.Matrix)
+  name.vb: ReadMatrix(BinaryReader, ByRef Matrix)
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadMatrix(System.IO.BinaryReader,System.Byte[],System.Int32,WaveEngine.Common.Math.Matrix@)
+  commentId: M:WaveEngine.Common.BinaryReaderExtensions.ReadMatrix(System.IO.BinaryReader,System.Byte[],System.Int32,WaveEngine.Common.Math.Matrix@)
+  id: ReadMatrix(System.IO.BinaryReader,System.Byte[],System.Int32,WaveEngine.Common.Math.Matrix@)
+  isExtensionMethod: true
+  parent: WaveEngine.Common.BinaryReaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadMatrix(BinaryReader, Byte[], Int32, out Matrix)
+  nameWithType: BinaryReaderExtensions.ReadMatrix(BinaryReader, Byte[], Int32, out Matrix)
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadMatrix(System.IO.BinaryReader, System.Byte[], System.Int32, out WaveEngine.Common.Math.Matrix)
+  type: Method
+  source:
+    id: ReadMatrix
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\BinaryReaderExtensions.cs
+    startLine: 82
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common
+  summary: "\nReads the matrix.\n"
+  example: []
+  syntax:
+    content: public static void ReadMatrix(this BinaryReader reader, byte[] data, int startIndex, out Matrix m)
+    parameters:
+    - id: reader
+      type: System.IO.BinaryReader
+      description: The reader.
+    - id: data
+      type: System.Byte[]
+      description: The data.
+    - id: startIndex
+      type: System.Int32
+      description: The start index.
+    - id: m
+      type: WaveEngine.Common.Math.Matrix
+      description: The m.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub ReadMatrix(reader As BinaryReader, data As Byte(), startIndex As Integer, ByRef m As Matrix)
+  overload: WaveEngine.Common.BinaryReaderExtensions.ReadMatrix*
+  nameWithType.vb: BinaryReaderExtensions.ReadMatrix(BinaryReader, Byte(), Int32, ByRef Matrix)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WaveEngine.Common.BinaryReaderExtensions.ReadMatrix(System.IO.BinaryReader, System.Byte(), System.Int32, ByRef WaveEngine.Common.Math.Matrix)
+  name.vb: ReadMatrix(BinaryReader, Byte(), Int32, ByRef Matrix)
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadPoint(System.IO.BinaryReader)
+  commentId: M:WaveEngine.Common.BinaryReaderExtensions.ReadPoint(System.IO.BinaryReader)
+  id: ReadPoint(System.IO.BinaryReader)
+  isExtensionMethod: true
+  parent: WaveEngine.Common.BinaryReaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadPoint(BinaryReader)
+  nameWithType: BinaryReaderExtensions.ReadPoint(BinaryReader)
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadPoint(System.IO.BinaryReader)
+  type: Method
+  source:
+    id: ReadPoint
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\BinaryReaderExtensions.cs
+    startLine: 107
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common
+  summary: "\nReads the Point.\n"
+  example: []
+  syntax:
+    content: public static Point ReadPoint(this BinaryReader reader)
+    parameters:
+    - id: reader
+      type: System.IO.BinaryReader
+      description: The reader.
+    return:
+      type: WaveEngine.Common.Math.Point
+      description: The result.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReadPoint(reader As BinaryReader) As Point
+  overload: WaveEngine.Common.BinaryReaderExtensions.ReadPoint*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadVector2(System.IO.BinaryReader)
+  commentId: M:WaveEngine.Common.BinaryReaderExtensions.ReadVector2(System.IO.BinaryReader)
+  id: ReadVector2(System.IO.BinaryReader)
+  isExtensionMethod: true
+  parent: WaveEngine.Common.BinaryReaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadVector2(BinaryReader)
+  nameWithType: BinaryReaderExtensions.ReadVector2(BinaryReader)
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadVector2(System.IO.BinaryReader)
+  type: Method
+  source:
+    id: ReadVector2
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\BinaryReaderExtensions.cs
+    startLine: 123
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common
+  summary: "\nReads the vector2.\n"
+  example: []
+  syntax:
+    content: public static Vector2 ReadVector2(this BinaryReader reader)
+    parameters:
+    - id: reader
+      type: System.IO.BinaryReader
+      description: The reader.
+    return:
+      type: WaveEngine.Common.Math.Vector2
+      description: The result.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReadVector2(reader As BinaryReader) As Vector2
+  overload: WaveEngine.Common.BinaryReaderExtensions.ReadVector2*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadVector2(System.IO.BinaryReader,WaveEngine.Common.Math.Vector2@)
+  commentId: M:WaveEngine.Common.BinaryReaderExtensions.ReadVector2(System.IO.BinaryReader,WaveEngine.Common.Math.Vector2@)
+  id: ReadVector2(System.IO.BinaryReader,WaveEngine.Common.Math.Vector2@)
+  isExtensionMethod: true
+  parent: WaveEngine.Common.BinaryReaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadVector2(BinaryReader, out Vector2)
+  nameWithType: BinaryReaderExtensions.ReadVector2(BinaryReader, out Vector2)
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadVector2(System.IO.BinaryReader, out WaveEngine.Common.Math.Vector2)
+  type: Method
+  source:
+    id: ReadVector2
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\BinaryReaderExtensions.cs
+    startLine: 139
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common
+  summary: "\nReads the quaternion.\n"
+  example: []
+  syntax:
+    content: public static void ReadVector2(this BinaryReader reader, out Vector2 v)
+    parameters:
+    - id: reader
+      type: System.IO.BinaryReader
+      description: The reader.
+    - id: v
+      type: WaveEngine.Common.Math.Vector2
+      description: The output quaternion
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub ReadVector2(reader As BinaryReader, ByRef v As Vector2)
+  overload: WaveEngine.Common.BinaryReaderExtensions.ReadVector2*
+  nameWithType.vb: BinaryReaderExtensions.ReadVector2(BinaryReader, ByRef Vector2)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WaveEngine.Common.BinaryReaderExtensions.ReadVector2(System.IO.BinaryReader, ByRef WaveEngine.Common.Math.Vector2)
+  name.vb: ReadVector2(BinaryReader, ByRef Vector2)
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadVector3(System.IO.BinaryReader)
+  commentId: M:WaveEngine.Common.BinaryReaderExtensions.ReadVector3(System.IO.BinaryReader)
+  id: ReadVector3(System.IO.BinaryReader)
+  isExtensionMethod: true
+  parent: WaveEngine.Common.BinaryReaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadVector3(BinaryReader)
+  nameWithType: BinaryReaderExtensions.ReadVector3(BinaryReader)
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadVector3(System.IO.BinaryReader)
+  type: Method
+  source:
+    id: ReadVector3
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\BinaryReaderExtensions.cs
+    startLine: 151
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common
+  summary: "\nReads the vector3.\n"
+  example: []
+  syntax:
+    content: public static Vector3 ReadVector3(this BinaryReader reader)
+    parameters:
+    - id: reader
+      type: System.IO.BinaryReader
+      description: The reader.
+    return:
+      type: WaveEngine.Common.Math.Vector3
+      description: The result.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReadVector3(reader As BinaryReader) As Vector3
+  overload: WaveEngine.Common.BinaryReaderExtensions.ReadVector3*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadVector3(System.IO.BinaryReader,WaveEngine.Common.Math.Vector3@)
+  commentId: M:WaveEngine.Common.BinaryReaderExtensions.ReadVector3(System.IO.BinaryReader,WaveEngine.Common.Math.Vector3@)
+  id: ReadVector3(System.IO.BinaryReader,WaveEngine.Common.Math.Vector3@)
+  isExtensionMethod: true
+  parent: WaveEngine.Common.BinaryReaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadVector3(BinaryReader, out Vector3)
+  nameWithType: BinaryReaderExtensions.ReadVector3(BinaryReader, out Vector3)
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadVector3(System.IO.BinaryReader, out WaveEngine.Common.Math.Vector3)
+  type: Method
+  source:
+    id: ReadVector3
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\BinaryReaderExtensions.cs
+    startLine: 168
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common
+  summary: "\nReads the quaternion.\n"
+  example: []
+  syntax:
+    content: public static void ReadVector3(this BinaryReader reader, out Vector3 v)
+    parameters:
+    - id: reader
+      type: System.IO.BinaryReader
+      description: The reader.
+    - id: v
+      type: WaveEngine.Common.Math.Vector3
+      description: The output quaternion
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub ReadVector3(reader As BinaryReader, ByRef v As Vector3)
+  overload: WaveEngine.Common.BinaryReaderExtensions.ReadVector3*
+  nameWithType.vb: BinaryReaderExtensions.ReadVector3(BinaryReader, ByRef Vector3)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WaveEngine.Common.BinaryReaderExtensions.ReadVector3(System.IO.BinaryReader, ByRef WaveEngine.Common.Math.Vector3)
+  name.vb: ReadVector3(BinaryReader, ByRef Vector3)
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadVector4(System.IO.BinaryReader)
+  commentId: M:WaveEngine.Common.BinaryReaderExtensions.ReadVector4(System.IO.BinaryReader)
+  id: ReadVector4(System.IO.BinaryReader)
+  isExtensionMethod: true
+  parent: WaveEngine.Common.BinaryReaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadVector4(BinaryReader)
+  nameWithType: BinaryReaderExtensions.ReadVector4(BinaryReader)
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadVector4(System.IO.BinaryReader)
+  type: Method
+  source:
+    id: ReadVector4
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\BinaryReaderExtensions.cs
+    startLine: 181
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common
+  summary: "\nReads the vector4.\n"
+  example: []
+  syntax:
+    content: public static Vector4 ReadVector4(this BinaryReader reader)
+    parameters:
+    - id: reader
+      type: System.IO.BinaryReader
+      description: The reader.
+    return:
+      type: WaveEngine.Common.Math.Vector4
+      description: The result.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReadVector4(reader As BinaryReader) As Vector4
+  overload: WaveEngine.Common.BinaryReaderExtensions.ReadVector4*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadVector4(System.IO.BinaryReader,WaveEngine.Common.Math.Vector4@)
+  commentId: M:WaveEngine.Common.BinaryReaderExtensions.ReadVector4(System.IO.BinaryReader,WaveEngine.Common.Math.Vector4@)
+  id: ReadVector4(System.IO.BinaryReader,WaveEngine.Common.Math.Vector4@)
+  isExtensionMethod: true
+  parent: WaveEngine.Common.BinaryReaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadVector4(BinaryReader, out Vector4)
+  nameWithType: BinaryReaderExtensions.ReadVector4(BinaryReader, out Vector4)
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadVector4(System.IO.BinaryReader, out WaveEngine.Common.Math.Vector4)
+  type: Method
+  source:
+    id: ReadVector4
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\BinaryReaderExtensions.cs
+    startLine: 199
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common
+  summary: "\nReads the quaternion.\n"
+  example: []
+  syntax:
+    content: public static void ReadVector4(this BinaryReader reader, out Vector4 v)
+    parameters:
+    - id: reader
+      type: System.IO.BinaryReader
+      description: The reader.
+    - id: v
+      type: WaveEngine.Common.Math.Vector4
+      description: The output quaternion
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub ReadVector4(reader As BinaryReader, ByRef v As Vector4)
+  overload: WaveEngine.Common.BinaryReaderExtensions.ReadVector4*
+  nameWithType.vb: BinaryReaderExtensions.ReadVector4(BinaryReader, ByRef Vector4)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WaveEngine.Common.BinaryReaderExtensions.ReadVector4(System.IO.BinaryReader, ByRef WaveEngine.Common.Math.Vector4)
+  name.vb: ReadVector4(BinaryReader, ByRef Vector4)
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadQuaternion(System.IO.BinaryReader)
+  commentId: M:WaveEngine.Common.BinaryReaderExtensions.ReadQuaternion(System.IO.BinaryReader)
+  id: ReadQuaternion(System.IO.BinaryReader)
+  isExtensionMethod: true
+  parent: WaveEngine.Common.BinaryReaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadQuaternion(BinaryReader)
+  nameWithType: BinaryReaderExtensions.ReadQuaternion(BinaryReader)
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadQuaternion(System.IO.BinaryReader)
+  type: Method
+  source:
+    id: ReadQuaternion
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\BinaryReaderExtensions.cs
+    startLine: 213
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common
+  summary: "\nReads the quaternion.\n"
+  example: []
+  syntax:
+    content: public static Quaternion ReadQuaternion(this BinaryReader reader)
+    parameters:
+    - id: reader
+      type: System.IO.BinaryReader
+      description: The reader.
+    return:
+      type: WaveEngine.Common.Math.Quaternion
+      description: The result.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReadQuaternion(reader As BinaryReader) As Quaternion
+  overload: WaveEngine.Common.BinaryReaderExtensions.ReadQuaternion*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadQuaternion(System.IO.BinaryReader,WaveEngine.Common.Math.Quaternion@)
+  commentId: M:WaveEngine.Common.BinaryReaderExtensions.ReadQuaternion(System.IO.BinaryReader,WaveEngine.Common.Math.Quaternion@)
+  id: ReadQuaternion(System.IO.BinaryReader,WaveEngine.Common.Math.Quaternion@)
+  isExtensionMethod: true
+  parent: WaveEngine.Common.BinaryReaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadQuaternion(BinaryReader, out Quaternion)
+  nameWithType: BinaryReaderExtensions.ReadQuaternion(BinaryReader, out Quaternion)
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadQuaternion(System.IO.BinaryReader, out WaveEngine.Common.Math.Quaternion)
+  type: Method
+  source:
+    id: ReadQuaternion
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\BinaryReaderExtensions.cs
+    startLine: 231
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common
+  summary: "\nReads the quaternion.\n"
+  example: []
+  syntax:
+    content: public static void ReadQuaternion(this BinaryReader reader, out Quaternion q)
+    parameters:
+    - id: reader
+      type: System.IO.BinaryReader
+      description: The reader.
+    - id: q
+      type: WaveEngine.Common.Math.Quaternion
+      description: The output quaternion
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub ReadQuaternion(reader As BinaryReader, ByRef q As Quaternion)
+  overload: WaveEngine.Common.BinaryReaderExtensions.ReadQuaternion*
+  nameWithType.vb: BinaryReaderExtensions.ReadQuaternion(BinaryReader, ByRef Quaternion)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WaveEngine.Common.BinaryReaderExtensions.ReadQuaternion(System.IO.BinaryReader, ByRef WaveEngine.Common.Math.Quaternion)
+  name.vb: ReadQuaternion(BinaryReader, ByRef Quaternion)
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadRectangle(System.IO.BinaryReader)
+  commentId: M:WaveEngine.Common.BinaryReaderExtensions.ReadRectangle(System.IO.BinaryReader)
+  id: ReadRectangle(System.IO.BinaryReader)
+  isExtensionMethod: true
+  parent: WaveEngine.Common.BinaryReaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadRectangle(BinaryReader)
+  nameWithType: BinaryReaderExtensions.ReadRectangle(BinaryReader)
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadRectangle(System.IO.BinaryReader)
+  type: Method
+  source:
+    id: ReadRectangle
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\BinaryReaderExtensions.cs
+    startLine: 245
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common
+  summary: "\nReads the rectangle.\n"
+  example: []
+  syntax:
+    content: public static Rectangle ReadRectangle(this BinaryReader reader)
+    parameters:
+    - id: reader
+      type: System.IO.BinaryReader
+      description: The reader.
+    return:
+      type: WaveEngine.Common.Math.Rectangle
+      description: The result.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReadRectangle(reader As BinaryReader) As Rectangle
+  overload: WaveEngine.Common.BinaryReaderExtensions.ReadRectangle*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadRectangleF(System.IO.BinaryReader)
+  commentId: M:WaveEngine.Common.BinaryReaderExtensions.ReadRectangleF(System.IO.BinaryReader)
+  id: ReadRectangleF(System.IO.BinaryReader)
+  isExtensionMethod: true
+  parent: WaveEngine.Common.BinaryReaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadRectangleF(BinaryReader)
+  nameWithType: BinaryReaderExtensions.ReadRectangleF(BinaryReader)
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadRectangleF(System.IO.BinaryReader)
+  type: Method
+  source:
+    id: ReadRectangleF
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\BinaryReaderExtensions.cs
+    startLine: 263
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common
+  summary: "\nReads the rectangle.\n"
+  example: []
+  syntax:
+    content: public static RectangleF ReadRectangleF(this BinaryReader reader)
+    parameters:
+    - id: reader
+      type: System.IO.BinaryReader
+      description: The reader.
+    return:
+      type: WaveEngine.Common.Math.RectangleF
+      description: The result.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReadRectangleF(reader As BinaryReader) As RectangleF
+  overload: WaveEngine.Common.BinaryReaderExtensions.ReadRectangleF*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadByte4(System.IO.BinaryReader)
+  commentId: M:WaveEngine.Common.BinaryReaderExtensions.ReadByte4(System.IO.BinaryReader)
+  id: ReadByte4(System.IO.BinaryReader)
+  isExtensionMethod: true
+  parent: WaveEngine.Common.BinaryReaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadByte4(BinaryReader)
+  nameWithType: BinaryReaderExtensions.ReadByte4(BinaryReader)
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadByte4(System.IO.BinaryReader)
+  type: Method
+  source:
+    id: ReadByte4
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\BinaryReaderExtensions.cs
+    startLine: 281
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common
+  summary: "\nReads the byte4.\n"
+  example: []
+  syntax:
+    content: public static Byte4 ReadByte4(this BinaryReader reader)
+    parameters:
+    - id: reader
+      type: System.IO.BinaryReader
+      description: The reader.
+    return:
+      type: WaveEngine.Common.Math.Byte4
+      description: The result.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReadByte4(reader As BinaryReader) As Byte4
+  overload: WaveEngine.Common.BinaryReaderExtensions.ReadByte4*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: WaveEngine.Common
+  commentId: N:WaveEngine.Common
+  name: WaveEngine.Common
+  nameWithType: WaveEngine.Common
+  fullName: WaveEngine.Common
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadMatrix*
+  commentId: Overload:WaveEngine.Common.BinaryReaderExtensions.ReadMatrix
+  name: ReadMatrix
+  nameWithType: BinaryReaderExtensions.ReadMatrix
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadMatrix
+- uid: System.IO.BinaryReader
+  commentId: T:System.IO.BinaryReader
+  parent: System.IO
+  isExternal: true
+  name: BinaryReader
+  nameWithType: BinaryReader
+  fullName: System.IO.BinaryReader
+- uid: WaveEngine.Common.Math.Matrix
+  commentId: T:WaveEngine.Common.Math.Matrix
+  parent: WaveEngine.Common.Math
+  name: Matrix
+  nameWithType: Matrix
+  fullName: WaveEngine.Common.Math.Matrix
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: WaveEngine.Common.Math
+  commentId: N:WaveEngine.Common.Math
+  name: WaveEngine.Common.Math
+  nameWithType: WaveEngine.Common.Math
+  fullName: WaveEngine.Common.Math
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadPoint*
+  commentId: Overload:WaveEngine.Common.BinaryReaderExtensions.ReadPoint
+  name: ReadPoint
+  nameWithType: BinaryReaderExtensions.ReadPoint
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadPoint
+- uid: WaveEngine.Common.Math.Point
+  commentId: T:WaveEngine.Common.Math.Point
+  parent: WaveEngine.Common.Math
+  name: Point
+  nameWithType: Point
+  fullName: WaveEngine.Common.Math.Point
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadVector2*
+  commentId: Overload:WaveEngine.Common.BinaryReaderExtensions.ReadVector2
+  name: ReadVector2
+  nameWithType: BinaryReaderExtensions.ReadVector2
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadVector2
+- uid: WaveEngine.Common.Math.Vector2
+  commentId: T:WaveEngine.Common.Math.Vector2
+  parent: WaveEngine.Common.Math
+  name: Vector2
+  nameWithType: Vector2
+  fullName: WaveEngine.Common.Math.Vector2
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadVector3*
+  commentId: Overload:WaveEngine.Common.BinaryReaderExtensions.ReadVector3
+  name: ReadVector3
+  nameWithType: BinaryReaderExtensions.ReadVector3
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadVector3
+- uid: WaveEngine.Common.Math.Vector3
+  commentId: T:WaveEngine.Common.Math.Vector3
+  parent: WaveEngine.Common.Math
+  name: Vector3
+  nameWithType: Vector3
+  fullName: WaveEngine.Common.Math.Vector3
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadVector4*
+  commentId: Overload:WaveEngine.Common.BinaryReaderExtensions.ReadVector4
+  name: ReadVector4
+  nameWithType: BinaryReaderExtensions.ReadVector4
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadVector4
+- uid: WaveEngine.Common.Math.Vector4
+  commentId: T:WaveEngine.Common.Math.Vector4
+  parent: WaveEngine.Common.Math
+  name: Vector4
+  nameWithType: Vector4
+  fullName: WaveEngine.Common.Math.Vector4
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadQuaternion*
+  commentId: Overload:WaveEngine.Common.BinaryReaderExtensions.ReadQuaternion
+  name: ReadQuaternion
+  nameWithType: BinaryReaderExtensions.ReadQuaternion
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadQuaternion
+- uid: WaveEngine.Common.Math.Quaternion
+  commentId: T:WaveEngine.Common.Math.Quaternion
+  parent: WaveEngine.Common.Math
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: WaveEngine.Common.Math.Quaternion
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadRectangle*
+  commentId: Overload:WaveEngine.Common.BinaryReaderExtensions.ReadRectangle
+  name: ReadRectangle
+  nameWithType: BinaryReaderExtensions.ReadRectangle
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadRectangle
+- uid: WaveEngine.Common.Math.Rectangle
+  commentId: T:WaveEngine.Common.Math.Rectangle
+  parent: WaveEngine.Common.Math
+  name: Rectangle
+  nameWithType: Rectangle
+  fullName: WaveEngine.Common.Math.Rectangle
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadRectangleF*
+  commentId: Overload:WaveEngine.Common.BinaryReaderExtensions.ReadRectangleF
+  name: ReadRectangleF
+  nameWithType: BinaryReaderExtensions.ReadRectangleF
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadRectangleF
+- uid: WaveEngine.Common.Math.RectangleF
+  commentId: T:WaveEngine.Common.Math.RectangleF
+  parent: WaveEngine.Common.Math
+  name: RectangleF
+  nameWithType: RectangleF
+  fullName: WaveEngine.Common.Math.RectangleF
+- uid: WaveEngine.Common.BinaryReaderExtensions.ReadByte4*
+  commentId: Overload:WaveEngine.Common.BinaryReaderExtensions.ReadByte4
+  name: ReadByte4
+  nameWithType: BinaryReaderExtensions.ReadByte4
+  fullName: WaveEngine.Common.BinaryReaderExtensions.ReadByte4
+- uid: WaveEngine.Common.Math.Byte4
+  commentId: T:WaveEngine.Common.Math.Byte4
+  parent: WaveEngine.Common.Math
+  name: Byte4
+  nameWithType: Byte4
+  fullName: WaveEngine.Common.Math.Byte4

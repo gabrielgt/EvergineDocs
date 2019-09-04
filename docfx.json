@@ -3,12 +3,11 @@
     {
       "src": [
         {
-          "files": [    
+          "files": [
             "src/Engine/Common/WaveEngine.Common/WaveEngine.Common.csproj",
             "src/Engine/Rendering/WaveEngine.OpenGL/WaveEngine.OpenGL.csproj",
             "src/Engine/Rendering/WaveEngine.OpenGLES/WaveEngine.OpenGLES.csproj",
             "src/Engine/WindowSystems/WaveEngine.SDL/WaveEngine.SDL.csproj",
-            "src/VisualTests/AVisualTestCommon/AVisualTestCommon.csproj",
             "src/Engine/Rendering/WaveEngine.DirectX11/WaveEngine.DirectX11.csproj",
             "src/Engine/WindowSystems/WaveEngine.Forms/WaveEngine.Forms.csproj",
             "src/Engine/WindowSystems/WaveEngine.WPF/WaveEngine.WPF.csproj",
@@ -16,7 +15,6 @@
             "src/Engine/WindowSystems/WaveEngine.GTK/WaveEngine.GTK.csproj",
             "src/Engine/Common/WaveEngine.Framework/WaveEngine.Framework.csproj",
             "src/Engine/Physics/WaveEngine.Bullet/WaveEngine.Bullet.csproj",
-            "src/Engine/Physics/BulletSharpPInvoke/BulletSharpPInvoke.csproj",
             "src/Engine/Platform/WaveEngine.Platform.csproj",
             "src/Engine/Rendering/WaveEngine.DirectX12/WaveEngine.DirectX12.csproj",
             "src/Engine/Rendering/WaveEngine.Vulkan/WaveEngine.Vulkan.csproj",
@@ -27,18 +25,18 @@
             "src/Tools/WaveEngine.HLSLEverywhere/WaveEngine.HLSLEverywhere.csproj",
             "src/Engine/Common/WaveEngine.Components/WaveEngine.Components.csproj",
             "src/Tools/WaveEngine.Converter/WaveEngine.Converter.csproj",
-            "src/Benchmarks/MathAPI/MathAPI.csproj", 
-            "src/Extensions/WaveEngine.OpenVR/WaveEngine.OpenVR.csproj", 
+            "src/Extensions/WaveEngine.OpenVR/WaveEngine.OpenVR.csproj",
             "src/Engine/Rendering/WaveEngine.WebGL/WaveEngine.WebGL.csproj",
-            "src/Extensions/WaveEngine.NoesisGUI/WaveEngine.NoesisGUI.csproj", 
-            "src/Extensions/WaveEngine.Vuforia/WaveEngine.Vuforia/WaveEngine.Vuforia.csproj", 
-            "src/Extensions/WaveEngine.Vuforia/VuforiaSharp/VuforiaSharp.csproj", 
+            "src/Extensions/WaveEngine.NoesisGUI/WaveEngine.NoesisGUI.csproj",
+            "src/Extensions/WaveEngine.Vuforia/WaveEngine.Vuforia/WaveEngine.Vuforia.csproj",
+            "src/Extensions/WaveEngine.Vuforia/VuforiaSharp/VuforiaSharp.csproj",
             "src/Extensions/WaveEngine.Networking/WaveEngine.Networking.csproj"
-			    ],
-		  "src":"../"
+          ],
+          "src": "../"
         }
       ],
-      "dest": "api"
+      "dest": "api3preview",
+      "filter": "filterConfig.yml"
     }
   ],
   "build": {
@@ -46,8 +44,16 @@
       {
         "files": [
           "api/**.yml",
-          "api/index.md"		  
-        ]
+          "api/index.md"
+        ],
+        "version": "v2.5"
+      },
+      {
+        "files": [
+          "api3preview/**.yml",
+          "api3preview/index.md"
+        ],
+        "version": "v3.0"
       },
       {
         "files": [
@@ -77,24 +83,24 @@
     "overwrite": [
       {
         "files": [
-          "apidoc/**.md",
-		  "api/**"
-		  ],
+          "api/**",
+          "api3preview/**"
+        ],
         "exclude": [
           "obj/**",
           "_site/**"
         ]
       }
     ],
-    "dest": "../DocOnline",    
-	"globalMetadata":{
-		"_appTitle": "Wave Engine API Doc",
-		"_enableSearch": "true",
-		"_gitContribute": {
-			"repo":"https://github.com/WaveEngine/Documentation.git",
-			"branch": "develop"
-		}
-      },
+    "dest": "../DocOnline",
+    "globalMetadata": {
+      "_appTitle": "Wave Engine API Doc",
+      "_enableSearch": "true",
+      "_gitContribute": {
+        "repo": "https://github.com/WaveEngine/Documentation.git",
+        "branch": "develop"
+      }
+    },
     "fileMetadataFiles": [],
     "template": [     "default","template"
     ],

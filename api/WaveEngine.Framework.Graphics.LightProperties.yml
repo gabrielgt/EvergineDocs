@@ -1,0 +1,1655 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Framework.Graphics.LightProperties
+  commentId: T:WaveEngine.Framework.Graphics.LightProperties
+  id: LightProperties
+  parent: WaveEngine.Framework.Graphics
+  children:
+  - WaveEngine.Framework.Graphics.LightProperties.#ctor
+  - WaveEngine.Framework.Graphics.LightProperties.CameraFrustumIntersection(WaveEngine.Framework.Graphics.Camera)
+  - WaveEngine.Framework.Graphics.LightProperties.color
+  - WaveEngine.Framework.Graphics.LightProperties.Color
+  - WaveEngine.Framework.Graphics.LightProperties.colorVector
+  - WaveEngine.Framework.Graphics.LightProperties.DefaultValues
+  - WaveEngine.Framework.Graphics.LightProperties.Draw
+  - WaveEngine.Framework.Graphics.LightProperties.Initialize
+  - WaveEngine.Framework.Graphics.LightProperties.Intensity
+  - WaveEngine.Framework.Graphics.LightProperties.IsLightEnabled
+  - WaveEngine.Framework.Graphics.LightProperties.lightMaterial
+  - WaveEngine.Framework.Graphics.LightProperties.LightMaterial
+  - WaveEngine.Framework.Graphics.LightProperties.MeshVolume
+  - WaveEngine.Framework.Graphics.LightProperties.transform
+  langs:
+  - csharp
+  - vb
+  name: LightProperties
+  nameWithType: LightProperties
+  fullName: WaveEngine.Framework.Graphics.LightProperties
+  type: Class
+  source:
+    id: LightProperties
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Lighting\LightProperties.cs
+    startLine: 15
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nThis class represent all properties for a light.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract(Namespace = "WaveEngine.Framework.Graphics")]
+
+      public abstract class LightProperties : Component
+    content.vb: >-
+      <DataContract(Namespace:="WaveEngine.Framework.Graphics")>
+
+      Public MustInherit Class LightProperties
+
+          Inherits Component
+  inheritance:
+  - System.Object
+  - WaveEngine.Common.IO.SerializableObject
+  - WaveEngine.Framework.DependencyObject
+  - WaveEngine.Framework.Component
+  derivedClasses:
+  - WaveEngine.Framework.Graphics.DirectionalLightProperties
+  - WaveEngine.Framework.Graphics.PointLightProperties
+  - WaveEngine.Framework.Graphics.SpotLightProperties
+  inheritedMembers:
+  - WaveEngine.Framework.Component.isInitialized
+  - WaveEngine.Framework.Component.OnComponentInitialized
+  - WaveEngine.Framework.Component.OnComponentRemoved
+  - WaveEngine.Framework.Component.Name
+  - WaveEngine.Framework.Component.Owner
+  - WaveEngine.Framework.Component.Assets
+  - WaveEngine.Framework.Component.EntityManager
+  - WaveEngine.Framework.Component.BehaviorManager
+  - WaveEngine.Framework.Component.RenderManager
+  - WaveEngine.Framework.Component.Clone
+  - WaveEngine.Framework.Component.ToString
+  - WaveEngine.Framework.Component.ResolveDependencies
+  - WaveEngine.Framework.Component.Removed
+  - WaveEngine.Framework.Component.DeleteDependencies
+  - WaveEngine.Framework.DependencyObject.PropertyChanged
+  - WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  - WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  - WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  - WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Namespace
+      type: System.String
+      value: WaveEngine.Framework.Graphics
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: WaveEngine.Framework.Graphics.LightProperties.IsLightEnabled
+  commentId: P:WaveEngine.Framework.Graphics.LightProperties.IsLightEnabled
+  id: IsLightEnabled
+  parent: WaveEngine.Framework.Graphics.LightProperties
+  langs:
+  - csharp
+  - vb
+  name: IsLightEnabled
+  nameWithType: LightProperties.IsLightEnabled
+  fullName: WaveEngine.Framework.Graphics.LightProperties.IsLightEnabled
+  type: Property
+  source:
+    id: IsLightEnabled
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Lighting\LightProperties.cs
+    startLine: 32
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets a value indicating whether the light is enabled\n"
+  example: []
+  syntax:
+    content: public bool IsLightEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsLightEnabled As Boolean
+  overload: WaveEngine.Framework.Graphics.LightProperties.IsLightEnabled*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.LightProperties.Intensity
+  commentId: P:WaveEngine.Framework.Graphics.LightProperties.Intensity
+  id: Intensity
+  parent: WaveEngine.Framework.Graphics.LightProperties
+  langs:
+  - csharp
+  - vb
+  name: Intensity
+  nameWithType: LightProperties.Intensity
+  fullName: WaveEngine.Framework.Graphics.LightProperties.Intensity
+  type: Property
+  source:
+    id: Intensity
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Lighting\LightProperties.cs
+    startLine: 48
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the light intensity.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderPropertyAsSlider(0F, 10F, 0.01F)]
+
+      public float Intensity { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: >-
+      <DataMember>
+
+      <RenderPropertyAsSlider(0F, 10F, 0.01F)>
+
+      Public Property Intensity As Single
+  overload: WaveEngine.Framework.Graphics.LightProperties.Intensity*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderPropertyAsSlider
+    ctor: WaveEngine.Common.Attributes.RenderPropertyAsSlider.#ctor(System.Single,System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 10
+    - type: System.Single
+      value: 0.0099999997799999994
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.LightProperties.transform
+  commentId: F:WaveEngine.Framework.Graphics.LightProperties.transform
+  id: transform
+  parent: WaveEngine.Framework.Graphics.LightProperties
+  langs:
+  - csharp
+  - vb
+  name: transform
+  nameWithType: LightProperties.transform
+  fullName: WaveEngine.Framework.Graphics.LightProperties.transform
+  type: Field
+  source:
+    id: transform
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Lighting\LightProperties.cs
+    startLine: 56
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nTransform 2D or 3D\n"
+  example: []
+  syntax:
+    content: >-
+      [RequiredComponent(false)]
+
+      protected Transform3D transform
+    return:
+      type: WaveEngine.Framework.Graphics.Transform3D
+    content.vb: >-
+      <RequiredComponent(False)>
+
+      Protected transform As Transform3D
+  attributes:
+  - type: WaveEngine.Framework.RequiredComponent
+    ctor: WaveEngine.Framework.RequiredComponent.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WaveEngine.Framework.Graphics.LightProperties.lightMaterial
+  commentId: F:WaveEngine.Framework.Graphics.LightProperties.lightMaterial
+  id: lightMaterial
+  parent: WaveEngine.Framework.Graphics.LightProperties
+  langs:
+  - csharp
+  - vb
+  name: lightMaterial
+  nameWithType: LightProperties.lightMaterial
+  fullName: WaveEngine.Framework.Graphics.LightProperties.lightMaterial
+  type: Field
+  source:
+    id: lightMaterial
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Lighting\LightProperties.cs
+    startLine: 61
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nThe material\n"
+  example: []
+  syntax:
+    content: protected LPPLightingMaterial lightMaterial
+    return:
+      type: WaveEngine.Framework.Graphics.LPPLightingMaterial
+    content.vb: Protected lightMaterial As LPPLightingMaterial
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WaveEngine.Framework.Graphics.LightProperties.color
+  commentId: F:WaveEngine.Framework.Graphics.LightProperties.color
+  id: color
+  parent: WaveEngine.Framework.Graphics.LightProperties
+  langs:
+  - csharp
+  - vb
+  name: color
+  nameWithType: LightProperties.color
+  fullName: WaveEngine.Framework.Graphics.LightProperties.color
+  type: Field
+  source:
+    id: color
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Lighting\LightProperties.cs
+    startLine: 66
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nThe color\n"
+  example: []
+  syntax:
+    content: protected Color color
+    return:
+      type: WaveEngine.Common.Graphics.Color
+    content.vb: Protected color As Color
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WaveEngine.Framework.Graphics.LightProperties.colorVector
+  commentId: F:WaveEngine.Framework.Graphics.LightProperties.colorVector
+  id: colorVector
+  parent: WaveEngine.Framework.Graphics.LightProperties
+  langs:
+  - csharp
+  - vb
+  name: colorVector
+  nameWithType: LightProperties.colorVector
+  fullName: WaveEngine.Framework.Graphics.LightProperties.colorVector
+  type: Field
+  source:
+    id: colorVector
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Lighting\LightProperties.cs
+    startLine: 71
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nThe color vector\n"
+  example: []
+  syntax:
+    content: protected Vector3 colorVector
+    return:
+      type: WaveEngine.Common.Math.Vector3
+    content.vb: Protected colorVector As Vector3
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WaveEngine.Framework.Graphics.LightProperties.LightMaterial
+  commentId: P:WaveEngine.Framework.Graphics.LightProperties.LightMaterial
+  id: LightMaterial
+  parent: WaveEngine.Framework.Graphics.LightProperties
+  langs:
+  - csharp
+  - vb
+  name: LightMaterial
+  nameWithType: LightProperties.LightMaterial
+  fullName: WaveEngine.Framework.Graphics.LightProperties.LightMaterial
+  type: Property
+  source:
+    id: LightMaterial
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Lighting\LightProperties.cs
+    startLine: 78
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets Light volumen mesh.\n"
+  example: []
+  syntax:
+    content: protected LPPLightingMaterial LightMaterial { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Graphics.LPPLightingMaterial
+    content.vb: Protected ReadOnly Property LightMaterial As LPPLightingMaterial
+  overload: WaveEngine.Framework.Graphics.LightProperties.LightMaterial*
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.LightProperties.MeshVolume
+  commentId: P:WaveEngine.Framework.Graphics.LightProperties.MeshVolume
+  id: MeshVolume
+  parent: WaveEngine.Framework.Graphics.LightProperties
+  langs:
+  - csharp
+  - vb
+  name: MeshVolume
+  nameWithType: LightProperties.MeshVolume
+  fullName: WaveEngine.Framework.Graphics.LightProperties.MeshVolume
+  type: Property
+  source:
+    id: MeshVolume
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Lighting\LightProperties.cs
+    startLine: 89
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets Light volumen mesh.\n"
+  example: []
+  syntax:
+    content: protected abstract Mesh MeshVolume { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Graphics.Mesh
+    content.vb: Protected MustOverride ReadOnly Property MeshVolume As Mesh
+  overload: WaveEngine.Framework.Graphics.LightProperties.MeshVolume*
+  modifiers.csharp:
+  - protected
+  - abstract
+  - get
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.LightProperties.Color
+  commentId: P:WaveEngine.Framework.Graphics.LightProperties.Color
+  id: Color
+  parent: WaveEngine.Framework.Graphics.LightProperties
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: LightProperties.Color
+  fullName: WaveEngine.Framework.Graphics.LightProperties.Color
+  type: Property
+  source:
+    id: Color
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Lighting\LightProperties.cs
+    startLine: 100
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the color of the diffuse.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public Color Color { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Graphics.Color
+      description: "\nThe color of the diffuse.\n"
+    content.vb: >-
+      <DataMember>
+
+      Public Property Color As Color
+  overload: WaveEngine.Framework.Graphics.LightProperties.Color*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.LightProperties.#ctor
+  commentId: M:WaveEngine.Framework.Graphics.LightProperties.#ctor
+  id: '#ctor'
+  parent: WaveEngine.Framework.Graphics.LightProperties
+  langs:
+  - csharp
+  - vb
+  name: LightProperties()
+  nameWithType: LightProperties.LightProperties()
+  fullName: WaveEngine.Framework.Graphics.LightProperties.LightProperties()
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Lighting\LightProperties.cs
+    startLine: 122
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Framework.Graphics.LightProperties\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public LightProperties()
+    content.vb: Public Sub New
+  overload: WaveEngine.Framework.Graphics.LightProperties.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.LightProperties.DefaultValues
+  commentId: M:WaveEngine.Framework.Graphics.LightProperties.DefaultValues
+  id: DefaultValues
+  parent: WaveEngine.Framework.Graphics.LightProperties
+  langs:
+  - csharp
+  - vb
+  name: DefaultValues()
+  nameWithType: LightProperties.DefaultValues()
+  fullName: WaveEngine.Framework.Graphics.LightProperties.DefaultValues()
+  type: Method
+  source:
+    id: DefaultValues
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Lighting\LightProperties.cs
+    startLine: 130
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nSets default values\n"
+  example: []
+  syntax:
+    content: protected override void DefaultValues()
+    content.vb: Protected Overrides Sub DefaultValues
+  overridden: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  overload: WaveEngine.Framework.Graphics.LightProperties.DefaultValues*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Graphics.LightProperties.Initialize
+  commentId: M:WaveEngine.Framework.Graphics.LightProperties.Initialize
+  id: Initialize
+  parent: WaveEngine.Framework.Graphics.LightProperties
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: LightProperties.Initialize()
+  fullName: WaveEngine.Framework.Graphics.LightProperties.Initialize()
+  type: Method
+  source:
+    id: Initialize
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Lighting\LightProperties.cs
+    startLine: 144
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nInitialize this instances\n"
+  example: []
+  syntax:
+    content: protected override void Initialize()
+    content.vb: Protected Overrides Sub Initialize
+  overridden: WaveEngine.Framework.Component.Initialize
+  overload: WaveEngine.Framework.Graphics.LightProperties.Initialize*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Graphics.LightProperties.CameraFrustumIntersection(WaveEngine.Framework.Graphics.Camera)
+  commentId: M:WaveEngine.Framework.Graphics.LightProperties.CameraFrustumIntersection(WaveEngine.Framework.Graphics.Camera)
+  id: CameraFrustumIntersection(WaveEngine.Framework.Graphics.Camera)
+  parent: WaveEngine.Framework.Graphics.LightProperties
+  langs:
+  - csharp
+  - vb
+  name: CameraFrustumIntersection(Camera)
+  nameWithType: LightProperties.CameraFrustumIntersection(Camera)
+  fullName: WaveEngine.Framework.Graphics.LightProperties.CameraFrustumIntersection(WaveEngine.Framework.Graphics.Camera)
+  type: Method
+  source:
+    id: CameraFrustumIntersection
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Lighting\LightProperties.cs
+    startLine: 157
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nCheck if the current light is inside the camera frustum.\n"
+  example: []
+  syntax:
+    content: public abstract bool CameraFrustumIntersection(Camera camera)
+    parameters:
+    - id: camera
+      type: WaveEngine.Framework.Graphics.Camera
+      description: The current camera.
+    return:
+      type: System.Boolean
+      description: Whether the light is inside the camera view.
+    content.vb: Public MustOverride Function CameraFrustumIntersection(camera As Camera) As Boolean
+  overload: WaveEngine.Framework.Graphics.LightProperties.CameraFrustumIntersection*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: WaveEngine.Framework.Graphics.LightProperties.Draw
+  commentId: M:WaveEngine.Framework.Graphics.LightProperties.Draw
+  id: Draw
+  parent: WaveEngine.Framework.Graphics.LightProperties
+  langs:
+  - csharp
+  - vb
+  name: Draw()
+  nameWithType: LightProperties.Draw()
+  fullName: WaveEngine.Framework.Graphics.LightProperties.Draw()
+  type: Method
+  source:
+    id: Draw
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Lighting\LightProperties.cs
+    startLine: 162
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nDraw the light volumen.\n"
+  example: []
+  syntax:
+    content: public abstract void Draw()
+    content.vb: Public MustOverride Sub Draw
+  overload: WaveEngine.Framework.Graphics.LightProperties.Draw*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+references:
+- uid: WaveEngine.Framework.Graphics
+  commentId: N:WaveEngine.Framework.Graphics
+  name: WaveEngine.Framework.Graphics
+  nameWithType: WaveEngine.Framework.Graphics
+  fullName: WaveEngine.Framework.Graphics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.IO.SerializableObject
+  commentId: T:WaveEngine.Common.IO.SerializableObject
+  parent: WaveEngine.Common.IO
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: WaveEngine.Common.IO.SerializableObject
+- uid: WaveEngine.Framework.DependencyObject
+  commentId: T:WaveEngine.Framework.DependencyObject
+  parent: WaveEngine.Framework
+  name: DependencyObject
+  nameWithType: DependencyObject
+  fullName: WaveEngine.Framework.DependencyObject
+- uid: WaveEngine.Framework.Component
+  commentId: T:WaveEngine.Framework.Component
+  parent: WaveEngine.Framework
+  name: Component
+  nameWithType: Component
+  fullName: WaveEngine.Framework.Component
+- uid: WaveEngine.Framework.Component.isInitialized
+  commentId: F:WaveEngine.Framework.Component.isInitialized
+  parent: WaveEngine.Framework.Component
+  name: isInitialized
+  nameWithType: Component.isInitialized
+  fullName: WaveEngine.Framework.Component.isInitialized
+- uid: WaveEngine.Framework.Component.OnComponentInitialized
+  commentId: E:WaveEngine.Framework.Component.OnComponentInitialized
+  parent: WaveEngine.Framework.Component
+  name: OnComponentInitialized
+  nameWithType: Component.OnComponentInitialized
+  fullName: WaveEngine.Framework.Component.OnComponentInitialized
+- uid: WaveEngine.Framework.Component.OnComponentRemoved
+  commentId: E:WaveEngine.Framework.Component.OnComponentRemoved
+  parent: WaveEngine.Framework.Component
+  name: OnComponentRemoved
+  nameWithType: Component.OnComponentRemoved
+  fullName: WaveEngine.Framework.Component.OnComponentRemoved
+- uid: WaveEngine.Framework.Component.Name
+  commentId: P:WaveEngine.Framework.Component.Name
+  parent: WaveEngine.Framework.Component
+  name: Name
+  nameWithType: Component.Name
+  fullName: WaveEngine.Framework.Component.Name
+- uid: WaveEngine.Framework.Component.Owner
+  commentId: P:WaveEngine.Framework.Component.Owner
+  parent: WaveEngine.Framework.Component
+  name: Owner
+  nameWithType: Component.Owner
+  fullName: WaveEngine.Framework.Component.Owner
+- uid: WaveEngine.Framework.Component.Assets
+  commentId: P:WaveEngine.Framework.Component.Assets
+  parent: WaveEngine.Framework.Component
+  name: Assets
+  nameWithType: Component.Assets
+  fullName: WaveEngine.Framework.Component.Assets
+- uid: WaveEngine.Framework.Component.EntityManager
+  commentId: P:WaveEngine.Framework.Component.EntityManager
+  parent: WaveEngine.Framework.Component
+  name: EntityManager
+  nameWithType: Component.EntityManager
+  fullName: WaveEngine.Framework.Component.EntityManager
+- uid: WaveEngine.Framework.Component.BehaviorManager
+  commentId: P:WaveEngine.Framework.Component.BehaviorManager
+  parent: WaveEngine.Framework.Component
+  name: BehaviorManager
+  nameWithType: Component.BehaviorManager
+  fullName: WaveEngine.Framework.Component.BehaviorManager
+- uid: WaveEngine.Framework.Component.RenderManager
+  commentId: P:WaveEngine.Framework.Component.RenderManager
+  parent: WaveEngine.Framework.Component
+  name: RenderManager
+  nameWithType: Component.RenderManager
+  fullName: WaveEngine.Framework.Component.RenderManager
+- uid: WaveEngine.Framework.Component.Clone
+  commentId: M:WaveEngine.Framework.Component.Clone
+  parent: WaveEngine.Framework.Component
+  name: Clone()
+  nameWithType: Component.Clone()
+  fullName: WaveEngine.Framework.Component.Clone()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Clone
+    name: Clone
+    nameWithType: Component.Clone
+    fullName: WaveEngine.Framework.Component.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Clone
+    name: Clone
+    nameWithType: Component.Clone
+    fullName: WaveEngine.Framework.Component.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.ToString
+  commentId: M:WaveEngine.Framework.Component.ToString
+  parent: WaveEngine.Framework.Component
+  name: ToString()
+  nameWithType: Component.ToString()
+  fullName: WaveEngine.Framework.Component.ToString()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: WaveEngine.Framework.Component.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: WaveEngine.Framework.Component.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.ResolveDependencies
+  commentId: M:WaveEngine.Framework.Component.ResolveDependencies
+  parent: WaveEngine.Framework.Component
+  name: ResolveDependencies()
+  nameWithType: Component.ResolveDependencies()
+  fullName: WaveEngine.Framework.Component.ResolveDependencies()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.ResolveDependencies
+    name: ResolveDependencies
+    nameWithType: Component.ResolveDependencies
+    fullName: WaveEngine.Framework.Component.ResolveDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.ResolveDependencies
+    name: ResolveDependencies
+    nameWithType: Component.ResolveDependencies
+    fullName: WaveEngine.Framework.Component.ResolveDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.Removed
+  commentId: M:WaveEngine.Framework.Component.Removed
+  parent: WaveEngine.Framework.Component
+  name: Removed()
+  nameWithType: Component.Removed()
+  fullName: WaveEngine.Framework.Component.Removed()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Removed
+    name: Removed
+    nameWithType: Component.Removed
+    fullName: WaveEngine.Framework.Component.Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Removed
+    name: Removed
+    nameWithType: Component.Removed
+    fullName: WaveEngine.Framework.Component.Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.DeleteDependencies
+  commentId: M:WaveEngine.Framework.Component.DeleteDependencies
+  parent: WaveEngine.Framework.Component
+  name: DeleteDependencies()
+  nameWithType: Component.DeleteDependencies()
+  fullName: WaveEngine.Framework.Component.DeleteDependencies()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Component.DeleteDependencies
+    fullName: WaveEngine.Framework.Component.DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Component.DeleteDependencies
+    fullName: WaveEngine.Framework.Component.DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.PropertyChanged
+  commentId: E:WaveEngine.Framework.DependencyObject.PropertyChanged
+  parent: WaveEngine.Framework.DependencyObject
+  name: PropertyChanged
+  nameWithType: DependencyObject.PropertyChanged
+  fullName: WaveEngine.Framework.DependencyObject.PropertyChanged
+- uid: WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  commentId: P:WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  parent: WaveEngine.Framework.DependencyObject
+  name: ParentDependencyObject
+  nameWithType: DependencyObject.ParentDependencyObject
+  fullName: WaveEngine.Framework.DependencyObject.ParentDependencyObject
+- uid: WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  commentId: P:WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  parent: WaveEngine.Framework.DependencyObject
+  name: EnableDiagnosticCallback
+  nameWithType: DependencyObject.EnableDiagnosticCallback
+  fullName: WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+- uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  commentId: M:WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  parent: WaveEngine.Framework.DependencyObject
+  isExternal: true
+  name: SetValue(DependencyProperty, Object)
+  nameWithType: DependencyObject.SetValue(DependencyProperty, Object)
+  fullName: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty, System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+    name: SetValue
+    nameWithType: DependencyObject.SetValue
+    fullName: WaveEngine.Framework.DependencyObject.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+    name: SetValue
+    nameWithType: DependencyObject.SetValue
+    fullName: WaveEngine.Framework.DependencyObject.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: GetValue(DependencyProperty)
+  nameWithType: DependencyObject.GetValue(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+    name: GetValue
+    nameWithType: DependencyObject.GetValue
+    fullName: WaveEngine.Framework.DependencyObject.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+    name: GetValue
+    nameWithType: DependencyObject.GetValue
+    fullName: WaveEngine.Framework.DependencyObject.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: GetAbsoluteValue<T>(DependencyProperty)
+  nameWithType: DependencyObject.GetAbsoluteValue<T>(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue<T>(WaveEngine.Framework.DependencyProperty)
+  nameWithType.vb: DependencyObject.GetAbsoluteValue(Of T)(DependencyProperty)
+  fullName.vb: WaveEngine.Framework.DependencyObject.GetAbsoluteValue(Of T)(WaveEngine.Framework.DependencyProperty)
+  name.vb: GetAbsoluteValue(Of T)(DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+    name: GetAbsoluteValue<T>
+    nameWithType: DependencyObject.GetAbsoluteValue<T>
+    fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+    name: GetAbsoluteValue(Of T)
+    nameWithType: DependencyObject.GetAbsoluteValue(Of T)
+    fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: ClearValue(DependencyProperty)
+  nameWithType: DependencyObject.ClearValue(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+    name: ClearValue
+    nameWithType: DependencyObject.ClearValue
+    fullName: WaveEngine.Framework.DependencyObject.ClearValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+    name: ClearValue
+    nameWithType: DependencyObject.ClearValue
+    fullName: WaveEngine.Framework.DependencyObject.ClearValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: IsValueSet(DependencyProperty)
+  nameWithType: DependencyObject.IsValueSet(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+    name: IsValueSet
+    nameWithType: DependencyObject.IsValueSet
+    fullName: WaveEngine.Framework.DependencyObject.IsValueSet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+    name: IsValueSet
+    nameWithType: DependencyObject.IsValueSet
+    fullName: WaveEngine.Framework.DependencyObject.IsValueSet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  commentId: M:WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  parent: WaveEngine.Common.IO.SerializableObject
+  isExternal: true
+  name: OnDeserializing(StreamingContext)
+  nameWithType: SerializableObject.OnDeserializing(StreamingContext)
+  fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.IO
+  commentId: N:WaveEngine.Common.IO
+  name: WaveEngine.Common.IO
+  nameWithType: WaveEngine.Common.IO
+  fullName: WaveEngine.Common.IO
+- uid: WaveEngine.Framework
+  commentId: N:WaveEngine.Framework
+  name: WaveEngine.Framework
+  nameWithType: WaveEngine.Framework
+  fullName: WaveEngine.Framework
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Framework.Graphics.LightProperties.IsLightEnabled*
+  commentId: Overload:WaveEngine.Framework.Graphics.LightProperties.IsLightEnabled
+  name: IsLightEnabled
+  nameWithType: LightProperties.IsLightEnabled
+  fullName: WaveEngine.Framework.Graphics.LightProperties.IsLightEnabled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Framework.Graphics.LightProperties.Intensity*
+  commentId: Overload:WaveEngine.Framework.Graphics.LightProperties.Intensity
+  name: Intensity
+  nameWithType: LightProperties.Intensity
+  fullName: WaveEngine.Framework.Graphics.LightProperties.Intensity
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Framework.Graphics.Transform3D
+  commentId: T:WaveEngine.Framework.Graphics.Transform3D
+  parent: WaveEngine.Framework.Graphics
+  name: Transform3D
+  nameWithType: Transform3D
+  fullName: WaveEngine.Framework.Graphics.Transform3D
+- uid: WaveEngine.Framework.Graphics.LPPLightingMaterial
+  commentId: T:WaveEngine.Framework.Graphics.LPPLightingMaterial
+  parent: WaveEngine.Framework.Graphics
+  name: LPPLightingMaterial
+  nameWithType: LPPLightingMaterial
+  fullName: WaveEngine.Framework.Graphics.LPPLightingMaterial
+- uid: WaveEngine.Common.Graphics.Color
+  commentId: T:WaveEngine.Common.Graphics.Color
+  parent: WaveEngine.Common.Graphics
+  name: Color
+  nameWithType: Color
+  fullName: WaveEngine.Common.Graphics.Color
+- uid: WaveEngine.Common.Graphics
+  commentId: N:WaveEngine.Common.Graphics
+  name: WaveEngine.Common.Graphics
+  nameWithType: WaveEngine.Common.Graphics
+  fullName: WaveEngine.Common.Graphics
+- uid: WaveEngine.Common.Math.Vector3
+  commentId: T:WaveEngine.Common.Math.Vector3
+  parent: WaveEngine.Common.Math
+  name: Vector3
+  nameWithType: Vector3
+  fullName: WaveEngine.Common.Math.Vector3
+- uid: WaveEngine.Common.Math
+  commentId: N:WaveEngine.Common.Math
+  name: WaveEngine.Common.Math
+  nameWithType: WaveEngine.Common.Math
+  fullName: WaveEngine.Common.Math
+- uid: WaveEngine.Framework.Graphics.LightProperties.LightMaterial*
+  commentId: Overload:WaveEngine.Framework.Graphics.LightProperties.LightMaterial
+  name: LightMaterial
+  nameWithType: LightProperties.LightMaterial
+  fullName: WaveEngine.Framework.Graphics.LightProperties.LightMaterial
+- uid: WaveEngine.Framework.Graphics.LightProperties.MeshVolume*
+  commentId: Overload:WaveEngine.Framework.Graphics.LightProperties.MeshVolume
+  name: MeshVolume
+  nameWithType: LightProperties.MeshVolume
+  fullName: WaveEngine.Framework.Graphics.LightProperties.MeshVolume
+- uid: WaveEngine.Common.Graphics.Mesh
+  commentId: T:WaveEngine.Common.Graphics.Mesh
+  parent: WaveEngine.Common.Graphics
+  name: Mesh
+  nameWithType: Mesh
+  fullName: WaveEngine.Common.Graphics.Mesh
+- uid: WaveEngine.Framework.Graphics.LightProperties.Color*
+  commentId: Overload:WaveEngine.Framework.Graphics.LightProperties.Color
+  name: Color
+  nameWithType: LightProperties.Color
+  fullName: WaveEngine.Framework.Graphics.LightProperties.Color
+- uid: WaveEngine.Framework.Graphics.LightProperties
+  commentId: T:WaveEngine.Framework.Graphics.LightProperties
+  parent: WaveEngine.Framework.Graphics
+  name: LightProperties
+  nameWithType: LightProperties
+  fullName: WaveEngine.Framework.Graphics.LightProperties
+- uid: WaveEngine.Framework.Graphics.LightProperties.#ctor*
+  commentId: Overload:WaveEngine.Framework.Graphics.LightProperties.#ctor
+  name: LightProperties
+  nameWithType: LightProperties.LightProperties
+  fullName: WaveEngine.Framework.Graphics.LightProperties.LightProperties
+- uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  commentId: M:WaveEngine.Common.IO.SerializableObject.DefaultValues
+  parent: WaveEngine.Common.IO.SerializableObject
+  name: DefaultValues()
+  nameWithType: SerializableObject.DefaultValues()
+  fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues()
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+    name: DefaultValues
+    nameWithType: SerializableObject.DefaultValues
+    fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+    name: DefaultValues
+    nameWithType: SerializableObject.DefaultValues
+    fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.LightProperties.DefaultValues*
+  commentId: Overload:WaveEngine.Framework.Graphics.LightProperties.DefaultValues
+  name: DefaultValues
+  nameWithType: LightProperties.DefaultValues
+  fullName: WaveEngine.Framework.Graphics.LightProperties.DefaultValues
+- uid: WaveEngine.Framework.Component.Initialize
+  commentId: M:WaveEngine.Framework.Component.Initialize
+  parent: WaveEngine.Framework.Component
+  name: Initialize()
+  nameWithType: Component.Initialize()
+  fullName: WaveEngine.Framework.Component.Initialize()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Initialize
+    name: Initialize
+    nameWithType: Component.Initialize
+    fullName: WaveEngine.Framework.Component.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Initialize
+    name: Initialize
+    nameWithType: Component.Initialize
+    fullName: WaveEngine.Framework.Component.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.LightProperties.Initialize*
+  commentId: Overload:WaveEngine.Framework.Graphics.LightProperties.Initialize
+  name: Initialize
+  nameWithType: LightProperties.Initialize
+  fullName: WaveEngine.Framework.Graphics.LightProperties.Initialize
+- uid: WaveEngine.Framework.Graphics.LightProperties.CameraFrustumIntersection*
+  commentId: Overload:WaveEngine.Framework.Graphics.LightProperties.CameraFrustumIntersection
+  name: CameraFrustumIntersection
+  nameWithType: LightProperties.CameraFrustumIntersection
+  fullName: WaveEngine.Framework.Graphics.LightProperties.CameraFrustumIntersection
+- uid: WaveEngine.Framework.Graphics.Camera
+  commentId: T:WaveEngine.Framework.Graphics.Camera
+  parent: WaveEngine.Framework.Graphics
+  name: Camera
+  nameWithType: Camera
+  fullName: WaveEngine.Framework.Graphics.Camera
+- uid: WaveEngine.Framework.Graphics.LightProperties.Draw*
+  commentId: Overload:WaveEngine.Framework.Graphics.LightProperties.Draw
+  name: Draw
+  nameWithType: LightProperties.Draw
+  fullName: WaveEngine.Framework.Graphics.LightProperties.Draw

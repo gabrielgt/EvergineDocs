@@ -1,0 +1,1446 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Framework.Models.Entities.EntityModel
+  commentId: T:WaveEngine.Framework.Models.Entities.EntityModel
+  id: EntityModel
+  parent: WaveEngine.Framework.Models.Entities
+  children:
+  - WaveEngine.Framework.Models.Entities.EntityModel.#ctor
+  - WaveEngine.Framework.Models.Entities.EntityModel.#ctor(WaveEngine.Framework.Entity)
+  - WaveEngine.Framework.Models.Entities.EntityModel.Children
+  - WaveEngine.Framework.Models.Entities.EntityModel.Components
+  - WaveEngine.Framework.Models.Entities.EntityModel.RecreateEntity
+  - WaveEngine.Framework.Models.Entities.EntityModel.SerializeComponents
+  langs:
+  - csharp
+  - vb
+  name: EntityModel
+  nameWithType: EntityModel
+  fullName: WaveEngine.Framework.Models.Entities.EntityModel
+  type: Class
+  source:
+    id: EntityModel
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Entities\EntityModel.cs
+    startLine: 13
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Entities
+  summary: "\nEntity Model class.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract(Namespace = "WaveEngine.Framework.Models.Entities", Name = "EntityModel")]
+
+      public class EntityModel : BaseEntityModel
+    content.vb: >-
+      <DataContract(Namespace:="WaveEngine.Framework.Models.Entities", Name:="EntityModel")>
+
+      Public Class EntityModel
+
+          Inherits BaseEntityModel
+  inheritance:
+  - System.Object
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel
+  inheritedMembers:
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.PropertySeparator
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.name
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.isDisabled
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.isVisible
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.isStatic
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.tag
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.isSerializable
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.entity
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.Recreated
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.Entity
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.Name
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.IsVisible
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.IsActive
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.IsStatic
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.EntityPath
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.Tag
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.IsSerializable
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.SerializationOrder
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.IsDisposed
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.SerializeChildrens
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.AddComponent(WaveEngine.Framework.Component)
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.Refresh
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.RemoveComponent(WaveEngine.Framework.Component)
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.AddChild(WaveEngine.Framework.Models.Entities.BaseEntityModel,System.Int32)
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.DetachChild(System.String)
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.DefaultValues
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.FindChildByRelativePath(System.String)
+  - WaveEngine.Framework.Models.Entities.BaseEntityModel.SetMemberByPath(System.String,System.Object)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Namespace
+      type: System.String
+      value: WaveEngine.Framework.Models.Entities
+    - name: Name
+      type: System.String
+      value: EntityModel
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WaveEngine.Framework.Models.Entities.EntityModel.SerializeComponents
+  commentId: P:WaveEngine.Framework.Models.Entities.EntityModel.SerializeComponents
+  id: SerializeComponents
+  parent: WaveEngine.Framework.Models.Entities.EntityModel
+  langs:
+  - csharp
+  - vb
+  name: SerializeComponents
+  nameWithType: EntityModel.SerializeComponents
+  fullName: WaveEngine.Framework.Models.Entities.EntityModel.SerializeComponents
+  type: Property
+  source:
+    id: SerializeComponents
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Entities\EntityModel.cs
+    startLine: 19
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Entities
+  summary: "\nGets or sets the <xref href=\"WaveEngine.Framework.Models.Entities.EntityModel.SerializeComponents\" data-throw-if-not-resolved=\"false\"></xref> collection for serialization.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public List<Component> SerializeComponents { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{WaveEngine.Framework.Component}
+    content.vb: >-
+      <DataMember>
+
+      Public Property SerializeComponents As List(Of Component)
+  overload: WaveEngine.Framework.Models.Entities.EntityModel.SerializeComponents*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Entities.EntityModel.Components
+  commentId: P:WaveEngine.Framework.Models.Entities.EntityModel.Components
+  id: Components
+  parent: WaveEngine.Framework.Models.Entities.EntityModel
+  langs:
+  - csharp
+  - vb
+  name: Components
+  nameWithType: EntityModel.Components
+  fullName: WaveEngine.Framework.Models.Entities.EntityModel.Components
+  type: Property
+  source:
+    id: Components
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Entities\EntityModel.cs
+    startLine: 50
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Entities
+  summary: "\nGets or sets gets the components list.\n"
+  example: []
+  syntax:
+    content: public override List<Component> Components { get; protected set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{WaveEngine.Framework.Component}
+    content.vb: Public Overrides Property Components As List(Of Component)
+  overridden: WaveEngine.Framework.Models.Entities.BaseEntityModel.Components
+  overload: WaveEngine.Framework.Models.Entities.EntityModel.Components*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Overrides
+  - Get
+  - Protected Set
+- uid: WaveEngine.Framework.Models.Entities.EntityModel.Children
+  commentId: P:WaveEngine.Framework.Models.Entities.EntityModel.Children
+  id: Children
+  parent: WaveEngine.Framework.Models.Entities.EntityModel
+  langs:
+  - csharp
+  - vb
+  name: Children
+  nameWithType: EntityModel.Children
+  fullName: WaveEngine.Framework.Models.Entities.EntityModel.Children
+  type: Property
+  source:
+    id: Children
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Entities\EntityModel.cs
+    startLine: 55
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Entities
+  summary: "\nGets or sets gets th children list.\n"
+  example: []
+  syntax:
+    content: public override List<BaseEntityModel> Children { get; protected set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{WaveEngine.Framework.Models.Entities.BaseEntityModel}
+    content.vb: Public Overrides Property Children As List(Of BaseEntityModel)
+  overridden: WaveEngine.Framework.Models.Entities.BaseEntityModel.Children
+  overload: WaveEngine.Framework.Models.Entities.EntityModel.Children*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Overrides
+  - Get
+  - Protected Set
+- uid: WaveEngine.Framework.Models.Entities.EntityModel.#ctor
+  commentId: M:WaveEngine.Framework.Models.Entities.EntityModel.#ctor
+  id: '#ctor'
+  parent: WaveEngine.Framework.Models.Entities.EntityModel
+  langs:
+  - csharp
+  - vb
+  name: EntityModel()
+  nameWithType: EntityModel.EntityModel()
+  fullName: WaveEngine.Framework.Models.Entities.EntityModel.EntityModel()
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Entities\EntityModel.cs
+    startLine: 60
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Entities
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Framework.Models.Entities.EntityModel\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public EntityModel()
+    content.vb: Public Sub New
+  overload: WaveEngine.Framework.Models.Entities.EntityModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Entities.EntityModel.#ctor(WaveEngine.Framework.Entity)
+  commentId: M:WaveEngine.Framework.Models.Entities.EntityModel.#ctor(WaveEngine.Framework.Entity)
+  id: '#ctor(WaveEngine.Framework.Entity)'
+  parent: WaveEngine.Framework.Models.Entities.EntityModel
+  langs:
+  - csharp
+  - vb
+  name: EntityModel(Entity)
+  nameWithType: EntityModel.EntityModel(Entity)
+  fullName: WaveEngine.Framework.Models.Entities.EntityModel.EntityModel(WaveEngine.Framework.Entity)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Entities\EntityModel.cs
+    startLine: 68
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Entities
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Framework.Models.Entities.EntityModel\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public EntityModel(Entity entity)
+    parameters:
+    - id: entity
+      type: WaveEngine.Framework.Entity
+      description: the entity
+    content.vb: Public Sub New(entity As Entity)
+  overload: WaveEngine.Framework.Models.Entities.EntityModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Entities.EntityModel.RecreateEntity
+  commentId: M:WaveEngine.Framework.Models.Entities.EntityModel.RecreateEntity
+  id: RecreateEntity
+  parent: WaveEngine.Framework.Models.Entities.EntityModel
+  langs:
+  - csharp
+  - vb
+  name: RecreateEntity()
+  nameWithType: EntityModel.RecreateEntity()
+  fullName: WaveEngine.Framework.Models.Entities.EntityModel.RecreateEntity()
+  type: Method
+  source:
+    id: RecreateEntity
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Entities\EntityModel.cs
+    startLine: 105
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Entities
+  summary: "\nRecreates the underlying entity\n"
+  example: []
+  syntax:
+    content: public override void RecreateEntity()
+    content.vb: Public Overrides Sub RecreateEntity
+  overridden: WaveEngine.Framework.Models.Entities.BaseEntityModel.RecreateEntity
+  overload: WaveEngine.Framework.Models.Entities.EntityModel.RecreateEntity*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: WaveEngine.Framework.Models.Entities
+  commentId: N:WaveEngine.Framework.Models.Entities
+  name: WaveEngine.Framework.Models.Entities
+  nameWithType: WaveEngine.Framework.Models.Entities
+  fullName: WaveEngine.Framework.Models.Entities
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  commentId: T:WaveEngine.Framework.Models.Entities.BaseEntityModel
+  parent: WaveEngine.Framework.Models.Entities
+  name: BaseEntityModel
+  nameWithType: BaseEntityModel
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.PropertySeparator
+  commentId: F:WaveEngine.Framework.Models.Entities.BaseEntityModel.PropertySeparator
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: PropertySeparator
+  nameWithType: BaseEntityModel.PropertySeparator
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.PropertySeparator
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.name
+  commentId: F:WaveEngine.Framework.Models.Entities.BaseEntityModel.name
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: name
+  nameWithType: BaseEntityModel.name
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.name
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.isDisabled
+  commentId: F:WaveEngine.Framework.Models.Entities.BaseEntityModel.isDisabled
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: isDisabled
+  nameWithType: BaseEntityModel.isDisabled
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.isDisabled
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.isVisible
+  commentId: F:WaveEngine.Framework.Models.Entities.BaseEntityModel.isVisible
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: isVisible
+  nameWithType: BaseEntityModel.isVisible
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.isVisible
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.isStatic
+  commentId: F:WaveEngine.Framework.Models.Entities.BaseEntityModel.isStatic
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: isStatic
+  nameWithType: BaseEntityModel.isStatic
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.isStatic
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.tag
+  commentId: F:WaveEngine.Framework.Models.Entities.BaseEntityModel.tag
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: tag
+  nameWithType: BaseEntityModel.tag
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.tag
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.isSerializable
+  commentId: F:WaveEngine.Framework.Models.Entities.BaseEntityModel.isSerializable
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: isSerializable
+  nameWithType: BaseEntityModel.isSerializable
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.isSerializable
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.entity
+  commentId: F:WaveEngine.Framework.Models.Entities.BaseEntityModel.entity
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: entity
+  nameWithType: BaseEntityModel.entity
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.entity
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.Recreated
+  commentId: E:WaveEngine.Framework.Models.Entities.BaseEntityModel.Recreated
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: Recreated
+  nameWithType: BaseEntityModel.Recreated
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.Recreated
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.Entity
+  commentId: P:WaveEngine.Framework.Models.Entities.BaseEntityModel.Entity
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: Entity
+  nameWithType: BaseEntityModel.Entity
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.Entity
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.Name
+  commentId: P:WaveEngine.Framework.Models.Entities.BaseEntityModel.Name
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: Name
+  nameWithType: BaseEntityModel.Name
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.Name
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.IsVisible
+  commentId: P:WaveEngine.Framework.Models.Entities.BaseEntityModel.IsVisible
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: IsVisible
+  nameWithType: BaseEntityModel.IsVisible
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.IsVisible
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.IsActive
+  commentId: P:WaveEngine.Framework.Models.Entities.BaseEntityModel.IsActive
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: IsActive
+  nameWithType: BaseEntityModel.IsActive
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.IsActive
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.IsStatic
+  commentId: P:WaveEngine.Framework.Models.Entities.BaseEntityModel.IsStatic
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: IsStatic
+  nameWithType: BaseEntityModel.IsStatic
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.IsStatic
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.EntityPath
+  commentId: P:WaveEngine.Framework.Models.Entities.BaseEntityModel.EntityPath
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: EntityPath
+  nameWithType: BaseEntityModel.EntityPath
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.EntityPath
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.Tag
+  commentId: P:WaveEngine.Framework.Models.Entities.BaseEntityModel.Tag
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: Tag
+  nameWithType: BaseEntityModel.Tag
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.Tag
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.IsSerializable
+  commentId: P:WaveEngine.Framework.Models.Entities.BaseEntityModel.IsSerializable
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: IsSerializable
+  nameWithType: BaseEntityModel.IsSerializable
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.IsSerializable
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.SerializationOrder
+  commentId: P:WaveEngine.Framework.Models.Entities.BaseEntityModel.SerializationOrder
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: SerializationOrder
+  nameWithType: BaseEntityModel.SerializationOrder
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.SerializationOrder
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.IsDisposed
+  commentId: P:WaveEngine.Framework.Models.Entities.BaseEntityModel.IsDisposed
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: IsDisposed
+  nameWithType: BaseEntityModel.IsDisposed
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.IsDisposed
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.SerializeChildrens
+  commentId: P:WaveEngine.Framework.Models.Entities.BaseEntityModel.SerializeChildrens
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: SerializeChildrens
+  nameWithType: BaseEntityModel.SerializeChildrens
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.SerializeChildrens
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.AddComponent(WaveEngine.Framework.Component)
+  commentId: M:WaveEngine.Framework.Models.Entities.BaseEntityModel.AddComponent(WaveEngine.Framework.Component)
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: AddComponent(Component)
+  nameWithType: BaseEntityModel.AddComponent(Component)
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.AddComponent(WaveEngine.Framework.Component)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.AddComponent(WaveEngine.Framework.Component)
+    name: AddComponent
+    nameWithType: BaseEntityModel.AddComponent
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.AddComponent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Component
+    name: Component
+    nameWithType: Component
+    fullName: WaveEngine.Framework.Component
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.AddComponent(WaveEngine.Framework.Component)
+    name: AddComponent
+    nameWithType: BaseEntityModel.AddComponent
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.AddComponent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Component
+    name: Component
+    nameWithType: Component
+    fullName: WaveEngine.Framework.Component
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.Refresh
+  commentId: M:WaveEngine.Framework.Models.Entities.BaseEntityModel.Refresh
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: Refresh()
+  nameWithType: BaseEntityModel.Refresh()
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.Refresh()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.Refresh
+    name: Refresh
+    nameWithType: BaseEntityModel.Refresh
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.Refresh
+    name: Refresh
+    nameWithType: BaseEntityModel.Refresh
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.Refresh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.RemoveComponent(WaveEngine.Framework.Component)
+  commentId: M:WaveEngine.Framework.Models.Entities.BaseEntityModel.RemoveComponent(WaveEngine.Framework.Component)
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: RemoveComponent(Component)
+  nameWithType: BaseEntityModel.RemoveComponent(Component)
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.RemoveComponent(WaveEngine.Framework.Component)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.RemoveComponent(WaveEngine.Framework.Component)
+    name: RemoveComponent
+    nameWithType: BaseEntityModel.RemoveComponent
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.RemoveComponent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Component
+    name: Component
+    nameWithType: Component
+    fullName: WaveEngine.Framework.Component
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.RemoveComponent(WaveEngine.Framework.Component)
+    name: RemoveComponent
+    nameWithType: BaseEntityModel.RemoveComponent
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.RemoveComponent
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Component
+    name: Component
+    nameWithType: Component
+    fullName: WaveEngine.Framework.Component
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.AddChild(WaveEngine.Framework.Models.Entities.BaseEntityModel,System.Int32)
+  commentId: M:WaveEngine.Framework.Models.Entities.BaseEntityModel.AddChild(WaveEngine.Framework.Models.Entities.BaseEntityModel,System.Int32)
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  isExternal: true
+  name: AddChild(BaseEntityModel, Int32)
+  nameWithType: BaseEntityModel.AddChild(BaseEntityModel, Int32)
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.AddChild(WaveEngine.Framework.Models.Entities.BaseEntityModel, System.Int32)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.AddChild(WaveEngine.Framework.Models.Entities.BaseEntityModel,System.Int32)
+    name: AddChild
+    nameWithType: BaseEntityModel.AddChild
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.AddChild
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel
+    name: BaseEntityModel
+    nameWithType: BaseEntityModel
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.AddChild(WaveEngine.Framework.Models.Entities.BaseEntityModel,System.Int32)
+    name: AddChild
+    nameWithType: BaseEntityModel.AddChild
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.AddChild
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel
+    name: BaseEntityModel
+    nameWithType: BaseEntityModel
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.DetachChild(System.String)
+  commentId: M:WaveEngine.Framework.Models.Entities.BaseEntityModel.DetachChild(System.String)
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  isExternal: true
+  name: DetachChild(String)
+  nameWithType: BaseEntityModel.DetachChild(String)
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.DetachChild(System.String)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.DetachChild(System.String)
+    name: DetachChild
+    nameWithType: BaseEntityModel.DetachChild
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.DetachChild
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.DetachChild(System.String)
+    name: DetachChild
+    nameWithType: BaseEntityModel.DetachChild
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.DetachChild
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  commentId: M:WaveEngine.Framework.Models.Entities.BaseEntityModel.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  isExternal: true
+  name: OnDeserializing(StreamingContext)
+  nameWithType: BaseEntityModel.OnDeserializing(StreamingContext)
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: BaseEntityModel.OnDeserializing
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: BaseEntityModel.OnDeserializing
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.DefaultValues
+  commentId: M:WaveEngine.Framework.Models.Entities.BaseEntityModel.DefaultValues
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: DefaultValues()
+  nameWithType: BaseEntityModel.DefaultValues()
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.DefaultValues()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.DefaultValues
+    name: DefaultValues
+    nameWithType: BaseEntityModel.DefaultValues
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.DefaultValues
+    name: DefaultValues
+    nameWithType: BaseEntityModel.DefaultValues
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.FindChildByRelativePath(System.String)
+  commentId: M:WaveEngine.Framework.Models.Entities.BaseEntityModel.FindChildByRelativePath(System.String)
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  isExternal: true
+  name: FindChildByRelativePath(String)
+  nameWithType: BaseEntityModel.FindChildByRelativePath(String)
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.FindChildByRelativePath(System.String)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.FindChildByRelativePath(System.String)
+    name: FindChildByRelativePath
+    nameWithType: BaseEntityModel.FindChildByRelativePath
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.FindChildByRelativePath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.FindChildByRelativePath(System.String)
+    name: FindChildByRelativePath
+    nameWithType: BaseEntityModel.FindChildByRelativePath
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.FindChildByRelativePath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.SetMemberByPath(System.String,System.Object)
+  commentId: M:WaveEngine.Framework.Models.Entities.BaseEntityModel.SetMemberByPath(System.String,System.Object)
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  isExternal: true
+  name: SetMemberByPath(String, Object)
+  nameWithType: BaseEntityModel.SetMemberByPath(String, Object)
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.SetMemberByPath(System.String, System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.SetMemberByPath(System.String,System.Object)
+    name: SetMemberByPath
+    nameWithType: BaseEntityModel.SetMemberByPath
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.SetMemberByPath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.SetMemberByPath(System.String,System.Object)
+    name: SetMemberByPath
+    nameWithType: BaseEntityModel.SetMemberByPath
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.SetMemberByPath
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Framework.Models.Entities.EntityModel.SerializeComponents
+  commentId: P:WaveEngine.Framework.Models.Entities.EntityModel.SerializeComponents
+  isExternal: true
+- uid: WaveEngine.Framework.Models.Entities.EntityModel.SerializeComponents*
+  commentId: Overload:WaveEngine.Framework.Models.Entities.EntityModel.SerializeComponents
+  name: SerializeComponents
+  nameWithType: EntityModel.SerializeComponents
+  fullName: WaveEngine.Framework.Models.Entities.EntityModel.SerializeComponents
+- uid: System.Collections.Generic.List{WaveEngine.Framework.Component}
+  commentId: T:System.Collections.Generic.List{WaveEngine.Framework.Component}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Component>
+  nameWithType: List<Component>
+  fullName: System.Collections.Generic.List<WaveEngine.Framework.Component>
+  nameWithType.vb: List(Of Component)
+  fullName.vb: System.Collections.Generic.List(Of WaveEngine.Framework.Component)
+  name.vb: List(Of Component)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Framework.Component
+    name: Component
+    nameWithType: Component
+    fullName: WaveEngine.Framework.Component
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Framework.Component
+    name: Component
+    nameWithType: Component
+    fullName: WaveEngine.Framework.Component
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.Components
+  commentId: P:WaveEngine.Framework.Models.Entities.BaseEntityModel.Components
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: Components
+  nameWithType: BaseEntityModel.Components
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.Components
+- uid: WaveEngine.Framework.Models.Entities.EntityModel.Components*
+  commentId: Overload:WaveEngine.Framework.Models.Entities.EntityModel.Components
+  name: Components
+  nameWithType: EntityModel.Components
+  fullName: WaveEngine.Framework.Models.Entities.EntityModel.Components
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.Children
+  commentId: P:WaveEngine.Framework.Models.Entities.BaseEntityModel.Children
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: Children
+  nameWithType: BaseEntityModel.Children
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.Children
+- uid: WaveEngine.Framework.Models.Entities.EntityModel.Children*
+  commentId: Overload:WaveEngine.Framework.Models.Entities.EntityModel.Children
+  name: Children
+  nameWithType: EntityModel.Children
+  fullName: WaveEngine.Framework.Models.Entities.EntityModel.Children
+- uid: System.Collections.Generic.List{WaveEngine.Framework.Models.Entities.BaseEntityModel}
+  commentId: T:System.Collections.Generic.List{WaveEngine.Framework.Models.Entities.BaseEntityModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<BaseEntityModel>
+  nameWithType: List<BaseEntityModel>
+  fullName: System.Collections.Generic.List<WaveEngine.Framework.Models.Entities.BaseEntityModel>
+  nameWithType.vb: List(Of BaseEntityModel)
+  fullName.vb: System.Collections.Generic.List(Of WaveEngine.Framework.Models.Entities.BaseEntityModel)
+  name.vb: List(Of BaseEntityModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel
+    name: BaseEntityModel
+    nameWithType: BaseEntityModel
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel
+    name: BaseEntityModel
+    nameWithType: BaseEntityModel
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Models.Entities.EntityModel
+  commentId: T:WaveEngine.Framework.Models.Entities.EntityModel
+  parent: WaveEngine.Framework.Models.Entities
+  name: EntityModel
+  nameWithType: EntityModel
+  fullName: WaveEngine.Framework.Models.Entities.EntityModel
+- uid: WaveEngine.Framework.Models.Entities.EntityModel.#ctor*
+  commentId: Overload:WaveEngine.Framework.Models.Entities.EntityModel.#ctor
+  name: EntityModel
+  nameWithType: EntityModel.EntityModel
+  fullName: WaveEngine.Framework.Models.Entities.EntityModel.EntityModel
+- uid: WaveEngine.Framework.Entity
+  commentId: T:WaveEngine.Framework.Entity
+  parent: WaveEngine.Framework
+  name: Entity
+  nameWithType: Entity
+  fullName: WaveEngine.Framework.Entity
+- uid: WaveEngine.Framework
+  commentId: N:WaveEngine.Framework
+  name: WaveEngine.Framework
+  nameWithType: WaveEngine.Framework
+  fullName: WaveEngine.Framework
+- uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.RecreateEntity
+  commentId: M:WaveEngine.Framework.Models.Entities.BaseEntityModel.RecreateEntity
+  parent: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  name: RecreateEntity()
+  nameWithType: BaseEntityModel.RecreateEntity()
+  fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.RecreateEntity()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.RecreateEntity
+    name: RecreateEntity
+    nameWithType: BaseEntityModel.RecreateEntity
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.RecreateEntity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel.RecreateEntity
+    name: RecreateEntity
+    nameWithType: BaseEntityModel.RecreateEntity
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel.RecreateEntity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Models.Entities.EntityModel.RecreateEntity*
+  commentId: Overload:WaveEngine.Framework.Models.Entities.EntityModel.RecreateEntity
+  name: RecreateEntity
+  nameWithType: EntityModel.RecreateEntity
+  fullName: WaveEngine.Framework.Models.Entities.EntityModel.RecreateEntity

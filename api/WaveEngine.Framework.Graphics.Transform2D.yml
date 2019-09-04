@@ -1,0 +1,3737 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Framework.Graphics.Transform2D
+  commentId: T:WaveEngine.Framework.Graphics.Transform2D
+  id: Transform2D
+  parent: WaveEngine.Framework.Graphics
+  children:
+  - WaveEngine.Framework.Graphics.Transform2D.#ctor
+  - WaveEngine.Framework.Graphics.Transform2D.#ctor(System.String)
+  - WaveEngine.Framework.Graphics.Transform2D.DefaultValues
+  - WaveEngine.Framework.Graphics.Transform2D.DrawOrder
+  - WaveEngine.Framework.Graphics.Transform2D.DrawOrderProperty
+  - WaveEngine.Framework.Graphics.Transform2D.Effect
+  - WaveEngine.Framework.Graphics.Transform2D.EffectChanged
+  - WaveEngine.Framework.Graphics.Transform2D.GlobalOpacity
+  - WaveEngine.Framework.Graphics.Transform2D.Initialize
+  - WaveEngine.Framework.Graphics.Transform2D.LocalDrawOrder
+  - WaveEngine.Framework.Graphics.Transform2D.LocalDrawOrderProperty
+  - WaveEngine.Framework.Graphics.Transform2D.LocalPosition
+  - WaveEngine.Framework.Graphics.Transform2D.LocalRollProperty
+  - WaveEngine.Framework.Graphics.Transform2D.LocalRotation
+  - WaveEngine.Framework.Graphics.Transform2D.LocalScale
+  - WaveEngine.Framework.Graphics.Transform2D.LocalX
+  - WaveEngine.Framework.Graphics.Transform2D.LocalXProperty
+  - WaveEngine.Framework.Graphics.Transform2D.LocalXScale
+  - WaveEngine.Framework.Graphics.Transform2D.LocalXScaleProperty
+  - WaveEngine.Framework.Graphics.Transform2D.LocalY
+  - WaveEngine.Framework.Graphics.Transform2D.LocalYProperty
+  - WaveEngine.Framework.Graphics.Transform2D.LocalYScale
+  - WaveEngine.Framework.Graphics.Transform2D.LocalYScaleProperty
+  - WaveEngine.Framework.Graphics.Transform2D.ObtainParentTransform
+  - WaveEngine.Framework.Graphics.Transform2D.Opacity
+  - WaveEngine.Framework.Graphics.Transform2D.OpacityProperty
+  - WaveEngine.Framework.Graphics.Transform2D.Origin
+  - WaveEngine.Framework.Graphics.Transform2D.OriginChanged
+  - WaveEngine.Framework.Graphics.Transform2D.Position
+  - WaveEngine.Framework.Graphics.Transform2D.Rectangle
+  - WaveEngine.Framework.Graphics.Transform2D.RectangleChanged
+  - WaveEngine.Framework.Graphics.Transform2D.ResetDirtyFlags
+  - WaveEngine.Framework.Graphics.Transform2D.RollProperty
+  - WaveEngine.Framework.Graphics.Transform2D.Rotation
+  - WaveEngine.Framework.Graphics.Transform2D.Scale
+  - WaveEngine.Framework.Graphics.Transform2D.ScreenPosition
+  - WaveEngine.Framework.Graphics.Transform2D.TranformMode
+  - WaveEngine.Framework.Graphics.Transform2D.Transform3D
+  - WaveEngine.Framework.Graphics.Transform2D.X
+  - WaveEngine.Framework.Graphics.Transform2D.XProperty
+  - WaveEngine.Framework.Graphics.Transform2D.XScale
+  - WaveEngine.Framework.Graphics.Transform2D.XScaleProperty
+  - WaveEngine.Framework.Graphics.Transform2D.Y
+  - WaveEngine.Framework.Graphics.Transform2D.YProperty
+  - WaveEngine.Framework.Graphics.Transform2D.YScale
+  - WaveEngine.Framework.Graphics.Transform2D.YScaleProperty
+  langs:
+  - csharp
+  - vb
+  name: Transform2D
+  nameWithType: Transform2D
+  fullName: WaveEngine.Framework.Graphics.Transform2D
+  type: Class
+  source:
+    id: Transform2D
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 18
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nEvery 2D entity must have a Transform2D component.\nIt&apos;s used to store and manipulate the position, rotation and scale of the entity.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract(Namespace = "WaveEngine.Framework.Graphics")]
+
+      public sealed class Transform2D : Transform3D, IDisposable
+    content.vb: >-
+      <DataContract(Namespace:="WaveEngine.Framework.Graphics")>
+
+      Public NotInheritable Class Transform2D
+
+          Inherits Transform3D
+
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - WaveEngine.Common.IO.SerializableObject
+  - WaveEngine.Framework.DependencyObject
+  - WaveEngine.Framework.Component
+  - WaveEngine.Framework.Graphics.Transform3D
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - WaveEngine.Framework.Graphics.Transform3D.localPosition
+  - WaveEngine.Framework.Graphics.Transform3D.localScale
+  - WaveEngine.Framework.Graphics.Transform3D.localOrientation
+  - WaveEngine.Framework.Graphics.Transform3D.UpdateCounter
+  - WaveEngine.Framework.Graphics.Transform3D.PositionChanged
+  - WaveEngine.Framework.Graphics.Transform3D.OrientationChanged
+  - WaveEngine.Framework.Graphics.Transform3D.ScaleChanged
+  - WaveEngine.Framework.Graphics.Transform3D.TransformChanged
+  - WaveEngine.Framework.Graphics.Transform3D.LocalPositionChanged
+  - WaveEngine.Framework.Graphics.Transform3D.LocalOrientationChanged
+  - WaveEngine.Framework.Graphics.Transform3D.LocalScaleChanged
+  - WaveEngine.Framework.Graphics.Transform3D.LocalTransformChanged
+  - WaveEngine.Framework.Graphics.Transform3D.ParentTransform
+  - WaveEngine.Framework.Graphics.Transform3D.ChildrenTransform
+  - WaveEngine.Framework.Graphics.Transform3D.LocalOrientation
+  - WaveEngine.Framework.Graphics.Transform3D.Orientation
+  - WaveEngine.Framework.Graphics.Transform3D.LocalTransform
+  - WaveEngine.Framework.Graphics.Transform3D.WorldTransform
+  - WaveEngine.Framework.Graphics.Transform3D.WorldInverseTransform
+  - WaveEngine.Framework.Graphics.Transform3D.WorldToLocalTransform
+  - WaveEngine.Framework.Graphics.Transform3D.LookAt(WaveEngine.Common.Math.Vector3)
+  - WaveEngine.Framework.Graphics.Transform3D.LookAt(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3)
+  - WaveEngine.Framework.Graphics.Transform3D.LocalLookAt(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3)
+  - WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Quaternion)
+  - WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Quaternion@)
+  - WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3,System.Single)
+  - WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,System.Single)
+  - WaveEngine.Framework.Graphics.Transform3D.SetLocalTransform(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Quaternion@,WaveEngine.Common.Math.Vector3@)
+  - WaveEngine.Framework.Graphics.Transform3D.SetLocalTransform(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Quaternion,WaveEngine.Common.Math.Vector3)
+  - WaveEngine.Framework.Graphics.Transform3D.Dispose
+  - WaveEngine.Framework.Component.isInitialized
+  - WaveEngine.Framework.Component.OnComponentInitialized
+  - WaveEngine.Framework.Component.OnComponentRemoved
+  - WaveEngine.Framework.Component.Name
+  - WaveEngine.Framework.Component.Owner
+  - WaveEngine.Framework.Component.Assets
+  - WaveEngine.Framework.Component.EntityManager
+  - WaveEngine.Framework.Component.BehaviorManager
+  - WaveEngine.Framework.Component.RenderManager
+  - WaveEngine.Framework.Component.Clone
+  - WaveEngine.Framework.Component.ToString
+  - WaveEngine.Framework.Component.ResolveDependencies
+  - WaveEngine.Framework.Component.Removed
+  - WaveEngine.Framework.Component.DeleteDependencies
+  - WaveEngine.Framework.DependencyObject.PropertyChanged
+  - WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  - WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  - WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  - WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Namespace
+      type: System.String
+      value: WaveEngine.Framework.Graphics
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: WaveEngine.Framework.Graphics.Transform2D.OpacityProperty
+  commentId: F:WaveEngine.Framework.Graphics.Transform2D.OpacityProperty
+  id: OpacityProperty
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: OpacityProperty
+  nameWithType: Transform2D.OpacityProperty
+  fullName: WaveEngine.Framework.Graphics.Transform2D.OpacityProperty
+  type: Field
+  source:
+    id: OpacityProperty
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 96
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nLocal Opacity dependency property.\n"
+  example: []
+  syntax:
+    content: public static readonly DependencyProperty OpacityProperty
+    return:
+      type: WaveEngine.Framework.DependencyProperty
+    content.vb: Public Shared ReadOnly OpacityProperty As DependencyProperty
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.Transform2D.LocalDrawOrderProperty
+  commentId: F:WaveEngine.Framework.Graphics.Transform2D.LocalDrawOrderProperty
+  id: LocalDrawOrderProperty
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: LocalDrawOrderProperty
+  nameWithType: Transform2D.LocalDrawOrderProperty
+  fullName: WaveEngine.Framework.Graphics.Transform2D.LocalDrawOrderProperty
+  type: Field
+  source:
+    id: LocalDrawOrderProperty
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 108
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nLocal DrawOrder dependency property.\n"
+  example: []
+  syntax:
+    content: public static readonly DependencyProperty LocalDrawOrderProperty
+    return:
+      type: WaveEngine.Framework.DependencyProperty
+    content.vb: Public Shared ReadOnly LocalDrawOrderProperty As DependencyProperty
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.Transform2D.DrawOrderProperty
+  commentId: F:WaveEngine.Framework.Graphics.Transform2D.DrawOrderProperty
+  id: DrawOrderProperty
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: DrawOrderProperty
+  nameWithType: Transform2D.DrawOrderProperty
+  fullName: WaveEngine.Framework.Graphics.Transform2D.DrawOrderProperty
+  type: Field
+  source:
+    id: DrawOrderProperty
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 120
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nDrawOrder dependency property.\n"
+  example: []
+  syntax:
+    content: public static readonly DependencyProperty DrawOrderProperty
+    return:
+      type: WaveEngine.Framework.DependencyProperty
+    content.vb: Public Shared ReadOnly DrawOrderProperty As DependencyProperty
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.Transform2D.XScaleProperty
+  commentId: F:WaveEngine.Framework.Graphics.Transform2D.XScaleProperty
+  id: XScaleProperty
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: XScaleProperty
+  nameWithType: Transform2D.XScaleProperty
+  fullName: WaveEngine.Framework.Graphics.Transform2D.XScaleProperty
+  type: Field
+  source:
+    id: XScaleProperty
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 132
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nX axis scale dependency property.\n"
+  example: []
+  syntax:
+    content: public static readonly DependencyProperty XScaleProperty
+    return:
+      type: WaveEngine.Framework.DependencyProperty
+    content.vb: Public Shared ReadOnly XScaleProperty As DependencyProperty
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.Transform2D.YScaleProperty
+  commentId: F:WaveEngine.Framework.Graphics.Transform2D.YScaleProperty
+  id: YScaleProperty
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: YScaleProperty
+  nameWithType: Transform2D.YScaleProperty
+  fullName: WaveEngine.Framework.Graphics.Transform2D.YScaleProperty
+  type: Field
+  source:
+    id: YScaleProperty
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 144
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nY axis scale dependency property.\n"
+  example: []
+  syntax:
+    content: public static readonly DependencyProperty YScaleProperty
+    return:
+      type: WaveEngine.Framework.DependencyProperty
+    content.vb: Public Shared ReadOnly YScaleProperty As DependencyProperty
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.Transform2D.LocalXScaleProperty
+  commentId: F:WaveEngine.Framework.Graphics.Transform2D.LocalXScaleProperty
+  id: LocalXScaleProperty
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: LocalXScaleProperty
+  nameWithType: Transform2D.LocalXScaleProperty
+  fullName: WaveEngine.Framework.Graphics.Transform2D.LocalXScaleProperty
+  type: Field
+  source:
+    id: LocalXScaleProperty
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 156
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nLocal X axis scale dependency property.\n"
+  example: []
+  syntax:
+    content: public static readonly DependencyProperty LocalXScaleProperty
+    return:
+      type: WaveEngine.Framework.DependencyProperty
+    content.vb: Public Shared ReadOnly LocalXScaleProperty As DependencyProperty
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.Transform2D.LocalYScaleProperty
+  commentId: F:WaveEngine.Framework.Graphics.Transform2D.LocalYScaleProperty
+  id: LocalYScaleProperty
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: LocalYScaleProperty
+  nameWithType: Transform2D.LocalYScaleProperty
+  fullName: WaveEngine.Framework.Graphics.Transform2D.LocalYScaleProperty
+  type: Field
+  source:
+    id: LocalYScaleProperty
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 168
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nLocal Y axis scale dependency property.\n"
+  example: []
+  syntax:
+    content: public static readonly DependencyProperty LocalYScaleProperty
+    return:
+      type: WaveEngine.Framework.DependencyProperty
+    content.vb: Public Shared ReadOnly LocalYScaleProperty As DependencyProperty
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.Transform2D.RollProperty
+  commentId: F:WaveEngine.Framework.Graphics.Transform2D.RollProperty
+  id: RollProperty
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: RollProperty
+  nameWithType: Transform2D.RollProperty
+  fullName: WaveEngine.Framework.Graphics.Transform2D.RollProperty
+  type: Field
+  source:
+    id: RollProperty
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 180
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nRotation dependency property.\n"
+  example: []
+  syntax:
+    content: public static readonly DependencyProperty RollProperty
+    return:
+      type: WaveEngine.Framework.DependencyProperty
+    content.vb: Public Shared ReadOnly RollProperty As DependencyProperty
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.Transform2D.LocalRollProperty
+  commentId: F:WaveEngine.Framework.Graphics.Transform2D.LocalRollProperty
+  id: LocalRollProperty
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: LocalRollProperty
+  nameWithType: Transform2D.LocalRollProperty
+  fullName: WaveEngine.Framework.Graphics.Transform2D.LocalRollProperty
+  type: Field
+  source:
+    id: LocalRollProperty
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 192
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nLocal Rotation dependency property.\n"
+  example: []
+  syntax:
+    content: public static readonly DependencyProperty LocalRollProperty
+    return:
+      type: WaveEngine.Framework.DependencyProperty
+    content.vb: Public Shared ReadOnly LocalRollProperty As DependencyProperty
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.Transform2D.YProperty
+  commentId: F:WaveEngine.Framework.Graphics.Transform2D.YProperty
+  id: YProperty
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: YProperty
+  nameWithType: Transform2D.YProperty
+  fullName: WaveEngine.Framework.Graphics.Transform2D.YProperty
+  type: Field
+  source:
+    id: YProperty
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 204
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nY axis position dependency property.\n"
+  example: []
+  syntax:
+    content: public static readonly DependencyProperty YProperty
+    return:
+      type: WaveEngine.Framework.DependencyProperty
+    content.vb: Public Shared ReadOnly YProperty As DependencyProperty
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.Transform2D.XProperty
+  commentId: F:WaveEngine.Framework.Graphics.Transform2D.XProperty
+  id: XProperty
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: XProperty
+  nameWithType: Transform2D.XProperty
+  fullName: WaveEngine.Framework.Graphics.Transform2D.XProperty
+  type: Field
+  source:
+    id: XProperty
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 216
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nX axis position dependency property.\n"
+  example: []
+  syntax:
+    content: public static readonly DependencyProperty XProperty
+    return:
+      type: WaveEngine.Framework.DependencyProperty
+    content.vb: Public Shared ReadOnly XProperty As DependencyProperty
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.Transform2D.LocalYProperty
+  commentId: F:WaveEngine.Framework.Graphics.Transform2D.LocalYProperty
+  id: LocalYProperty
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: LocalYProperty
+  nameWithType: Transform2D.LocalYProperty
+  fullName: WaveEngine.Framework.Graphics.Transform2D.LocalYProperty
+  type: Field
+  source:
+    id: LocalYProperty
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 228
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nLocal Y axis position dependency property.\n"
+  example: []
+  syntax:
+    content: public static readonly DependencyProperty LocalYProperty
+    return:
+      type: WaveEngine.Framework.DependencyProperty
+    content.vb: Public Shared ReadOnly LocalYProperty As DependencyProperty
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.Transform2D.LocalXProperty
+  commentId: F:WaveEngine.Framework.Graphics.Transform2D.LocalXProperty
+  id: LocalXProperty
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: LocalXProperty
+  nameWithType: Transform2D.LocalXProperty
+  fullName: WaveEngine.Framework.Graphics.Transform2D.LocalXProperty
+  type: Field
+  source:
+    id: LocalXProperty
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 240
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nLocal X axis position dependency property.\n"
+  example: []
+  syntax:
+    content: public static readonly DependencyProperty LocalXProperty
+    return:
+      type: WaveEngine.Framework.DependencyProperty
+    content.vb: Public Shared ReadOnly LocalXProperty As DependencyProperty
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.Transform2D.RectangleChanged
+  commentId: E:WaveEngine.Framework.Graphics.Transform2D.RectangleChanged
+  id: RectangleChanged
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: RectangleChanged
+  nameWithType: Transform2D.RectangleChanged
+  fullName: WaveEngine.Framework.Graphics.Transform2D.RectangleChanged
+  type: Event
+  source:
+    id: RectangleChanged
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 253
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nEvent fired when this transform rectangle is changed\n"
+  example: []
+  syntax:
+    content: public event EventHandler RectangleChanged
+    return:
+      type: System.EventHandler
+    content.vb: Public Event RectangleChanged As EventHandler
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.OriginChanged
+  commentId: E:WaveEngine.Framework.Graphics.Transform2D.OriginChanged
+  id: OriginChanged
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: OriginChanged
+  nameWithType: Transform2D.OriginChanged
+  fullName: WaveEngine.Framework.Graphics.Transform2D.OriginChanged
+  type: Event
+  source:
+    id: OriginChanged
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 258
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nEvent fired when this transform origin is changed\n"
+  example: []
+  syntax:
+    content: public event EventHandler OriginChanged
+    return:
+      type: System.EventHandler
+    content.vb: Public Event OriginChanged As EventHandler
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.EffectChanged
+  commentId: E:WaveEngine.Framework.Graphics.Transform2D.EffectChanged
+  id: EffectChanged
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: EffectChanged
+  nameWithType: Transform2D.EffectChanged
+  fullName: WaveEngine.Framework.Graphics.Transform2D.EffectChanged
+  type: Event
+  source:
+    id: EffectChanged
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 263
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nEvent fired when this transform effect is changed\n"
+  example: []
+  syntax:
+    content: public event EventHandler EffectChanged
+    return:
+      type: System.EventHandler
+    content.vb: Public Event EffectChanged As EventHandler
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.TranformMode
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.TranformMode
+  id: TranformMode
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: TranformMode
+  nameWithType: Transform2D.TranformMode
+  fullName: WaveEngine.Framework.Graphics.Transform2D.TranformMode
+  type: Property
+  source:
+    id: TranformMode
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 273
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the tranform mode.\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(Tag = 1, CustomPropertyName = "Transform Mode", Tooltip = "Select between Standard or Screen mode")]
+
+      public Transform2D.TransformMode TranformMode { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Graphics.Transform2D.TransformMode
+      description: "\nThe tranform mode.\n"
+    content.vb: >-
+      <RenderProperty(Tag:=1, CustomPropertyName:="Transform Mode", Tooltip:="Select between Standard or Screen mode")>
+
+      Public Property TranformMode As Transform2D.TransformMode
+  overload: WaveEngine.Framework.Graphics.Transform2D.TranformMode*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: Tag
+      type: System.Int32
+      value: 1
+    - name: CustomPropertyName
+      type: System.String
+      value: Transform Mode
+    - name: Tooltip
+      type: System.String
+      value: Select between Standard or Screen mode
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.LocalPosition
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.LocalPosition
+  id: LocalPosition
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: LocalPosition
+  nameWithType: Transform2D.LocalPosition
+  fullName: WaveEngine.Framework.Graphics.Transform2D.LocalPosition
+  type: Property
+  source:
+    id: LocalPosition
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 330
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the entity position in local space\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(AttatchToTag = 1, AttachToValue = Transform2D.TransformMode.Standard, CustomPropertyName = "Local Position", Tooltip = "The entity position in local space")]
+
+      public Vector2 LocalPosition { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Math.Vector2
+    content.vb: >-
+      <RenderProperty(AttatchToTag:=1, AttachToValue:=Transform2D.TransformMode.Standard, CustomPropertyName:="Local Position", Tooltip:="The entity position in local space")>
+
+      Public Property LocalPosition As Vector2
+  overload: WaveEngine.Framework.Graphics.Transform2D.LocalPosition*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: AttatchToTag
+      type: System.Int32
+      value: 1
+    - name: AttachToValue
+      type: WaveEngine.Framework.Graphics.Transform2D.TransformMode
+      value: 0
+    - name: CustomPropertyName
+      type: System.String
+      value: Local Position
+    - name: Tooltip
+      type: System.String
+      value: The entity position in local space
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.ScreenPosition
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.ScreenPosition
+  id: ScreenPosition
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: ScreenPosition
+  nameWithType: Transform2D.ScreenPosition
+  fullName: WaveEngine.Framework.Graphics.Transform2D.ScreenPosition
+  type: Property
+  source:
+    id: ScreenPosition
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 354
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the screen position.\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(AttatchToTag = 1, AttachToValue = Transform2D.TransformMode.Screen, CustomPropertyName = "Screen Position", Tooltip = "The screen position.")]
+
+      public Vector2 ScreenPosition { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Math.Vector2
+      description: "\nThe screen position.\n"
+    content.vb: >-
+      <RenderProperty(AttatchToTag:=1, AttachToValue:=Transform2D.TransformMode.Screen, CustomPropertyName:="Screen Position", Tooltip:="The screen position.")>
+
+      Public Property ScreenPosition As Vector2
+  overload: WaveEngine.Framework.Graphics.Transform2D.ScreenPosition*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: AttatchToTag
+      type: System.Int32
+      value: 1
+    - name: AttachToValue
+      type: WaveEngine.Framework.Graphics.Transform2D.TransformMode
+      value: 1
+    - name: CustomPropertyName
+      type: System.String
+      value: Screen Position
+    - name: Tooltip
+      type: System.String
+      value: The screen position.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.LocalRotation
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.LocalRotation
+  id: LocalRotation
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: LocalRotation
+  nameWithType: Transform2D.LocalRotation
+  fullName: WaveEngine.Framework.Graphics.Transform2D.LocalRotation
+  type: Property
+  source:
+    id: LocalRotation
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 376
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the local rotation expressed in its Roll euler angle.\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(typeof(FloatRadianToDegreeConverter), CustomPropertyName = "Local Rotation", Tooltip = "The local rotation expressed in its Roll euler angle.")]
+
+      public float LocalRotation { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: >-
+      <RenderProperty(GetType(FloatRadianToDegreeConverter), CustomPropertyName:="Local Rotation", Tooltip:="The local rotation expressed in its Roll euler angle.")>
+
+      Public Property LocalRotation As Single
+  overload: WaveEngine.Framework.Graphics.Transform2D.LocalRotation*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: WaveEngine.Common.Attributes.Converters.FloatRadianToDegreeConverter
+    namedArguments:
+    - name: CustomPropertyName
+      type: System.String
+      value: Local Rotation
+    - name: Tooltip
+      type: System.String
+      value: The local rotation expressed in its Roll euler angle.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.LocalScale
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.LocalScale
+  id: LocalScale
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: LocalScale
+  nameWithType: Transform2D.LocalScale
+  fullName: WaveEngine.Framework.Graphics.Transform2D.LocalScale
+  type: Property
+  source:
+    id: LocalScale
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 398
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the entity scale in local space\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(CustomPropertyName = "Local Scale", Tooltip = "The entity scale in local space")]
+
+      public Vector2 LocalScale { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Math.Vector2
+    content.vb: >-
+      <RenderProperty(CustomPropertyName:="Local Scale", Tooltip:="The entity scale in local space")>
+
+      Public Property LocalScale As Vector2
+  overload: WaveEngine.Framework.Graphics.Transform2D.LocalScale*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: CustomPropertyName
+      type: System.String
+      value: Local Scale
+    - name: Tooltip
+      type: System.String
+      value: The entity scale in local space
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.Transform3D
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.Transform3D
+  id: Transform3D
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: Transform3D
+  nameWithType: Transform2D.Transform3D
+  fullName: WaveEngine.Framework.Graphics.Transform2D.Transform3D
+  type: Property
+  source:
+    id: Transform3D
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 418
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets the currnet Transform instance casted to Transform3D, to access all 3D properties.\n"
+  example: []
+  syntax:
+    content: public Transform3D Transform3D { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Graphics.Transform3D
+    content.vb: Public ReadOnly Property Transform3D As Transform3D
+  overload: WaveEngine.Framework.Graphics.Transform2D.Transform3D*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.Transform2D.Opacity
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.Opacity
+  id: Opacity
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: Opacity
+  nameWithType: Transform2D.Opacity
+  fullName: WaveEngine.Framework.Graphics.Transform2D.Opacity
+  type: Property
+  source:
+    id: Opacity
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 434
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the opacity. It&apos;s included in [0, 1] where 0 means fully transparent and\n1 fully opaque.\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderPropertyAsSlider(0F, 1F, 0.1F, Tooltip = "It's included in [0, 1] where 0 means fully transparent and 1 fully opaque.")]
+
+      [DataMember]
+
+      public float Opacity { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe opacity.\n"
+    content.vb: >-
+      <RenderPropertyAsSlider(0F, 1F, 0.1F, Tooltip:="It's included in [0, 1] where 0 means fully transparent and 1 fully opaque.")>
+
+      <DataMember>
+
+      Public Property Opacity As Single
+  overload: WaveEngine.Framework.Graphics.Transform2D.Opacity*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderPropertyAsSlider
+    ctor: WaveEngine.Common.Attributes.RenderPropertyAsSlider.#ctor(System.Single,System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 1
+    - type: System.Single
+      value: 0.10000000100000001
+    namedArguments:
+    - name: Tooltip
+      type: System.String
+      value: It's included in [0, 1] where 0 means fully transparent and 1 fully opaque.
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.Origin
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.Origin
+  id: Origin
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: Origin
+  nameWithType: Transform2D.Origin
+  fullName: WaveEngine.Framework.Graphics.Transform2D.Origin
+  type: Property
+  source:
+    id: Origin
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 460
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the origin (also known as pivot) from where the entity scales, rotates and translates.\nIts values are included in [0, 1] where (0, 0) indicates the top left corner.\nSuch values are percentages where 1 means the 100% of the rectangle&apos;s width/height.\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(Tooltip = "The origin (also known as pivot) from where the entity scales, rotates and translates. Its values are included in [0, 1] where (0, 0) indicates the top left corner. Such values are percentages where 1 means the 100% of the rectangle's width/height.")]
+
+      public Vector2 Origin { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Math.Vector2
+    content.vb: >-
+      <RenderProperty(Tooltip:="The origin (also known as pivot) from where the entity scales, rotates and translates. Its values are included in [0, 1] where (0, 0) indicates the top left corner. Such values are percentages where 1 means the 100% of the rectangle's width/height.")>
+
+      Public Property Origin As Vector2
+  overload: WaveEngine.Framework.Graphics.Transform2D.Origin*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: Tooltip
+      type: System.String
+      value: The origin (also known as pivot) from where the entity scales, rotates and translates. Its values are included in [0, 1] where (0, 0) indicates the top left corner. Such values are percentages where 1 means the 100% of the rectangle's width/height.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.Rectangle
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.Rectangle
+  id: Rectangle
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: Rectangle
+  nameWithType: Transform2D.Rectangle
+  fullName: WaveEngine.Framework.Graphics.Transform2D.Rectangle
+  type: Property
+  source:
+    id: Rectangle
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 486
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the rectangle where the owner entity is placed.\n<remarks>\nSuch rectangle is modified by other components in scenarios like animated sprites,\nwhere its value depend on the sprite to be rendered on each moment.\nIt then can be used to limit the area of the texture to be drawn.\n</remarks>\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public RectangleF Rectangle { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Math.RectangleF
+    content.vb: >-
+      <DataMember>
+
+      Public Property Rectangle As RectangleF
+  overload: WaveEngine.Framework.Graphics.Transform2D.Rectangle*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.LocalDrawOrder
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.LocalDrawOrder
+  id: LocalDrawOrder
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: LocalDrawOrder
+  nameWithType: Transform2D.LocalDrawOrder
+  fullName: WaveEngine.Framework.Graphics.Transform2D.LocalDrawOrder
+  type: Property
+  source:
+    id: LocalDrawOrder
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 510
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the draw order (%) in local space. It&apos;s included in [0, 1] where 0 represents the closest position\nto the camera, and 1 the farthest. The draw order is also &quot;contained&quot; in layers, so the order\non these last ones act prior to this value (i.e. an instance with draw order 1 in GUI layer will be\nalways drawn closer than another one with draw order 0 in Alpha, as GUI layer is before than Alpha one).\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(CustomPropertyName = "Local Draw Order", Tooltip = "It's included in [0, 1] where 0 represents the closest position \nto the camera, and 1 the farthest. The draw order is also 'contained' in layers, so the order \non these last ones act prior to this value (i.e. an instance with draw order 1 in GUI layer will be \n always drawn closer than another one with draw order 0 in Alpha, as GUI layer is before than Alpha one).")]
+
+      public float LocalDrawOrder { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe draw order (%).\n"
+    content.vb: >-
+      <RenderProperty(CustomPropertyName:="Local Draw Order", Tooltip:="It's included in [0, 1] where 0 represents the closest position " & vbLf & "to the camera, and 1 the farthest. The draw order is also 'contained' in layers, so the order " & vbLf & "on these last ones act prior to this value (i.e. an instance with draw order 1 in GUI layer will be " & vbLf & " always drawn closer than another one with draw order 0 in Alpha, as GUI layer is before than Alpha one).")>
+
+      Public Property LocalDrawOrder As Single
+  overload: WaveEngine.Framework.Graphics.Transform2D.LocalDrawOrder*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: CustomPropertyName
+      type: System.String
+      value: Local Draw Order
+    - name: Tooltip
+      type: System.String
+      value: "It's included in [0, 1] where 0 represents the closest position \nto the camera, and 1 the farthest. The draw order is also 'contained' in layers, so the order \non these last ones act prior to this value (i.e. an instance with draw order 1 in GUI layer will be \n always drawn closer than another one with draw order 0 in Alpha, as GUI layer is before than Alpha one)."
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.Effect
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.Effect
+  id: Effect
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: Effect
+  nameWithType: Transform2D.Effect
+  fullName: WaveEngine.Framework.Graphics.Transform2D.Effect
+  type: Property
+  source:
+    id: Effect
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 534
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the sprite effect.\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(Tooltip = "Set effects (FlipHorizontally, FlipVertically, FontSprite)")]
+
+      public SpriteEffects Effect { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Graphics.SpriteEffects
+      description: "\nThe sprite effect.\n"
+    content.vb: >-
+      <RenderProperty(Tooltip:="Set effects (FlipHorizontally, FlipVertically, FontSprite)")>
+
+      Public Property Effect As SpriteEffects
+  overload: WaveEngine.Framework.Graphics.Transform2D.Effect*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: Tooltip
+      type: System.String
+      value: Set effects (FlipHorizontally, FlipVertically, FontSprite)
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.GlobalOpacity
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.GlobalOpacity
+  id: GlobalOpacity
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: GlobalOpacity
+  nameWithType: Transform2D.GlobalOpacity
+  fullName: WaveEngine.Framework.Graphics.Transform2D.GlobalOpacity
+  type: Property
+  source:
+    id: GlobalOpacity
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 559
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets the global opacity. It&apos;s included in [0, 1] where 0 means fully transparent and\n1 fully opaque.\n"
+  example: []
+  syntax:
+    content: public float GlobalOpacity { get; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe opacity.\n"
+    content.vb: Public ReadOnly Property GlobalOpacity As Single
+  overload: WaveEngine.Framework.Graphics.Transform2D.GlobalOpacity*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.Transform2D.Position
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.Position
+  id: Position
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: Transform2D.Position
+  fullName: WaveEngine.Framework.Graphics.Transform2D.Position
+  type: Property
+  source:
+    id: Position
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 572
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the entity position in world space\n"
+  example: []
+  syntax:
+    content: public Vector2 Position { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Math.Vector2
+    content.vb: Public Property Position As Vector2
+  overload: WaveEngine.Framework.Graphics.Transform2D.Position*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.X
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.X
+  id: X
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: Transform2D.X
+  fullName: WaveEngine.Framework.Graphics.Transform2D.X
+  type: Property
+  source:
+    id: X
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 593
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the world X position (px). 0 is considered to be at the left side of the screen,\ngrowing to the right as it increases.\n"
+  example: []
+  syntax:
+    content: public float X { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe X (px).\n"
+    content.vb: Public Property X As Single
+  overload: WaveEngine.Framework.Graphics.Transform2D.X*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.Y
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.Y
+  id: Y
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: Transform2D.Y
+  fullName: WaveEngine.Framework.Graphics.Transform2D.Y
+  type: Property
+  source:
+    id: Y
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 616
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the world Y position in world space. 0 is considered to be at the top side of the screen,\ngrowing to down as it increases.\n"
+  example: []
+  syntax:
+    content: public float Y { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe Y (px).\n"
+    content.vb: Public Property Y As Single
+  overload: WaveEngine.Framework.Graphics.Transform2D.Y*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.LocalX
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.LocalX
+  id: LocalX
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: LocalX
+  nameWithType: Transform2D.LocalX
+  fullName: WaveEngine.Framework.Graphics.Transform2D.LocalX
+  type: Property
+  source:
+    id: LocalX
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 639
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the local space X position (px). 0 is considered to be at the left side of the screen,\ngrowing to the right as it increases.\n"
+  example: []
+  syntax:
+    content: public float LocalX { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe X (px).\n"
+    content.vb: Public Property LocalX As Single
+  overload: WaveEngine.Framework.Graphics.Transform2D.LocalX*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.LocalY
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.LocalY
+  id: LocalY
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: LocalY
+  nameWithType: Transform2D.LocalY
+  fullName: WaveEngine.Framework.Graphics.Transform2D.LocalY
+  type: Property
+  source:
+    id: LocalY
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 662
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the local space Y position (px). 0 is considered to be at the top side of the screen,\ngrowing to down as it increases.\n"
+  example: []
+  syntax:
+    content: public float LocalY { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe Y (px).\n"
+    content.vb: Public Property LocalY As Single
+  overload: WaveEngine.Framework.Graphics.Transform2D.LocalY*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.Scale
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.Scale
+  id: Scale
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: Scale
+  nameWithType: Transform2D.Scale
+  fullName: WaveEngine.Framework.Graphics.Transform2D.Scale
+  type: Property
+  source:
+    id: Scale
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 681
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the entity scale in world space\n"
+  example: []
+  syntax:
+    content: public Vector2 Scale { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Math.Vector2
+    content.vb: Public Property Scale As Vector2
+  overload: WaveEngine.Framework.Graphics.Transform2D.Scale*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.XScale
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.XScale
+  id: XScale
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: XScale
+  nameWithType: Transform2D.XScale
+  fullName: WaveEngine.Framework.Graphics.Transform2D.XScale
+  type: Property
+  source:
+    id: XScale
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 702
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the X scale in world space. It&apos;s included in [0, infinity] where 1 represents the original size.\n"
+  example: []
+  syntax:
+    content: public float XScale { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe X scale (%).\n"
+    content.vb: Public Property XScale As Single
+  overload: WaveEngine.Framework.Graphics.Transform2D.XScale*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.YScale
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.YScale
+  id: YScale
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: YScale
+  nameWithType: Transform2D.YScale
+  fullName: WaveEngine.Framework.Graphics.Transform2D.YScale
+  type: Property
+  source:
+    id: YScale
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 724
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the Y scale in world space. It&apos;s included in [0, infinity] where 1 represents the original size.\n"
+  example: []
+  syntax:
+    content: public float YScale { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe Y scale (%).\n"
+    content.vb: Public Property YScale As Single
+  overload: WaveEngine.Framework.Graphics.Transform2D.YScale*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.LocalXScale
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.LocalXScale
+  id: LocalXScale
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: LocalXScale
+  nameWithType: Transform2D.LocalXScale
+  fullName: WaveEngine.Framework.Graphics.Transform2D.LocalXScale
+  type: Property
+  source:
+    id: LocalXScale
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 746
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the X scale in local space. It&apos;s included in [0, infinity] where 1 represents the original size.\n"
+  example: []
+  syntax:
+    content: public float LocalXScale { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe X scale (%).\n"
+    content.vb: Public Property LocalXScale As Single
+  overload: WaveEngine.Framework.Graphics.Transform2D.LocalXScale*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.LocalYScale
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.LocalYScale
+  id: LocalYScale
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: LocalYScale
+  nameWithType: Transform2D.LocalYScale
+  fullName: WaveEngine.Framework.Graphics.Transform2D.LocalYScale
+  type: Property
+  source:
+    id: LocalYScale
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 768
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the Y scale in local space. It&apos;s included in [0, infinity] where 1 represents the original size.\n"
+  example: []
+  syntax:
+    content: public float LocalYScale { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe Y scale (%).\n"
+    content.vb: Public Property LocalYScale As Single
+  overload: WaveEngine.Framework.Graphics.Transform2D.LocalYScale*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.Rotation
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.Rotation
+  id: Rotation
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: Rotation
+  nameWithType: Transform2D.Rotation
+  fullName: WaveEngine.Framework.Graphics.Transform2D.Rotation
+  type: Property
+  source:
+    id: Rotation
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 787
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the global rotation expressed in its Roll euler angle.\n"
+  example: []
+  syntax:
+    content: public float Rotation { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Rotation As Single
+  overload: WaveEngine.Framework.Graphics.Transform2D.Rotation*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.DrawOrder
+  commentId: P:WaveEngine.Framework.Graphics.Transform2D.DrawOrder
+  id: DrawOrder
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: DrawOrder
+  nameWithType: Transform2D.DrawOrder
+  fullName: WaveEngine.Framework.Graphics.Transform2D.DrawOrder
+  type: Property
+  source:
+    id: DrawOrder
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 812
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the draw order (%) in world space. It&apos;s included in [0, 1] where 0 represents the closest position\nto the camera, and 1 the farthest. The draw order is also &quot;contained&quot; in layers, so the order\non these last ones act prior to this value (i.e. an instance with draw order 1 in GUI layer will be\nalways drawn closer than another one with draw order 0 in Alpha, as GUI layer is before than Alpha one).\n"
+  example: []
+  syntax:
+    content: public float DrawOrder { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe draw order (%).\n"
+    content.vb: Public Property DrawOrder As Single
+  overload: WaveEngine.Framework.Graphics.Transform2D.DrawOrder*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.#ctor
+  commentId: M:WaveEngine.Framework.Graphics.Transform2D.#ctor
+  id: '#ctor'
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: Transform2D()
+  nameWithType: Transform2D.Transform2D()
+  fullName: WaveEngine.Framework.Graphics.Transform2D.Transform2D()
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 836
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Framework.Graphics.Transform2D\" data-throw-if-not-resolved=\"false\"></xref> class.\nBy default, there&apos;s no sprite effect and the origin is set at (0, 0) (top-left corner).\n"
+  example: []
+  syntax:
+    content: public Transform2D()
+    content.vb: Public Sub New
+  overload: WaveEngine.Framework.Graphics.Transform2D.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.#ctor(System.String)
+  commentId: M:WaveEngine.Framework.Graphics.Transform2D.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: Transform2D(String)
+  nameWithType: Transform2D.Transform2D(String)
+  fullName: WaveEngine.Framework.Graphics.Transform2D.Transform2D(System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 845
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Framework.Graphics.Transform2D\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public Transform2D(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: Component name.
+    content.vb: Public Sub New(name As String)
+  overload: WaveEngine.Framework.Graphics.Transform2D.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.Transform2D.DefaultValues
+  commentId: M:WaveEngine.Framework.Graphics.Transform2D.DefaultValues
+  id: DefaultValues
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: DefaultValues()
+  nameWithType: Transform2D.DefaultValues()
+  fullName: WaveEngine.Framework.Graphics.Transform2D.DefaultValues()
+  type: Method
+  source:
+    id: DefaultValues
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 856
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nSets the default values\n"
+  example: []
+  syntax:
+    content: protected override void DefaultValues()
+    content.vb: Protected Overrides Sub DefaultValues
+  overridden: WaveEngine.Framework.Graphics.Transform3D.DefaultValues
+  overload: WaveEngine.Framework.Graphics.Transform2D.DefaultValues*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Graphics.Transform2D.ResetDirtyFlags
+  commentId: M:WaveEngine.Framework.Graphics.Transform2D.ResetDirtyFlags
+  id: ResetDirtyFlags
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: ResetDirtyFlags()
+  nameWithType: Transform2D.ResetDirtyFlags()
+  fullName: WaveEngine.Framework.Graphics.Transform2D.ResetDirtyFlags()
+  type: Method
+  source:
+    id: ResetDirtyFlags
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 868
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nReset dirty flags\n"
+  example: []
+  syntax:
+    content: protected override void ResetDirtyFlags()
+    content.vb: Protected Overrides Sub ResetDirtyFlags
+  overridden: WaveEngine.Framework.Graphics.Transform3D.ResetDirtyFlags
+  overload: WaveEngine.Framework.Graphics.Transform2D.ResetDirtyFlags*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Graphics.Transform2D.ObtainParentTransform
+  commentId: M:WaveEngine.Framework.Graphics.Transform2D.ObtainParentTransform
+  id: ObtainParentTransform
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: ObtainParentTransform()
+  nameWithType: Transform2D.ObtainParentTransform()
+  fullName: WaveEngine.Framework.Graphics.Transform2D.ObtainParentTransform()
+  type: Method
+  source:
+    id: ObtainParentTransform
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 879
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nObtain parent transform\n"
+  example: []
+  syntax:
+    content: protected override Transform3D ObtainParentTransform()
+    return:
+      type: WaveEngine.Framework.Graphics.Transform3D
+      description: The parent transform
+    content.vb: Protected Overrides Function ObtainParentTransform As Transform3D
+  overridden: WaveEngine.Framework.Graphics.Transform3D.ObtainParentTransform
+  overload: WaveEngine.Framework.Graphics.Transform2D.ObtainParentTransform*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Graphics.Transform2D.Initialize
+  commentId: M:WaveEngine.Framework.Graphics.Transform2D.Initialize
+  id: Initialize
+  parent: WaveEngine.Framework.Graphics.Transform2D
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: Transform2D.Initialize()
+  fullName: WaveEngine.Framework.Graphics.Transform2D.Initialize()
+  type: Method
+  source:
+    id: Initialize
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\Transform2D.cs
+    startLine: 940
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nInitializes this instance.\n"
+  example: []
+  syntax:
+    content: protected override void Initialize()
+    content.vb: Protected Overrides Sub Initialize
+  overridden: WaveEngine.Framework.Graphics.Transform3D.Initialize
+  overload: WaveEngine.Framework.Graphics.Transform2D.Initialize*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: WaveEngine.Framework.Graphics
+  commentId: N:WaveEngine.Framework.Graphics
+  name: WaveEngine.Framework.Graphics
+  nameWithType: WaveEngine.Framework.Graphics
+  fullName: WaveEngine.Framework.Graphics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.IO.SerializableObject
+  commentId: T:WaveEngine.Common.IO.SerializableObject
+  parent: WaveEngine.Common.IO
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: WaveEngine.Common.IO.SerializableObject
+- uid: WaveEngine.Framework.DependencyObject
+  commentId: T:WaveEngine.Framework.DependencyObject
+  parent: WaveEngine.Framework
+  name: DependencyObject
+  nameWithType: DependencyObject
+  fullName: WaveEngine.Framework.DependencyObject
+- uid: WaveEngine.Framework.Component
+  commentId: T:WaveEngine.Framework.Component
+  parent: WaveEngine.Framework
+  name: Component
+  nameWithType: Component
+  fullName: WaveEngine.Framework.Component
+- uid: WaveEngine.Framework.Graphics.Transform3D
+  commentId: T:WaveEngine.Framework.Graphics.Transform3D
+  parent: WaveEngine.Framework.Graphics
+  name: Transform3D
+  nameWithType: Transform3D
+  fullName: WaveEngine.Framework.Graphics.Transform3D
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: WaveEngine.Framework.Graphics.Transform3D.localPosition
+  commentId: F:WaveEngine.Framework.Graphics.Transform3D.localPosition
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: localPosition
+  nameWithType: Transform3D.localPosition
+  fullName: WaveEngine.Framework.Graphics.Transform3D.localPosition
+- uid: WaveEngine.Framework.Graphics.Transform3D.localScale
+  commentId: F:WaveEngine.Framework.Graphics.Transform3D.localScale
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: localScale
+  nameWithType: Transform3D.localScale
+  fullName: WaveEngine.Framework.Graphics.Transform3D.localScale
+- uid: WaveEngine.Framework.Graphics.Transform3D.localOrientation
+  commentId: F:WaveEngine.Framework.Graphics.Transform3D.localOrientation
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: localOrientation
+  nameWithType: Transform3D.localOrientation
+  fullName: WaveEngine.Framework.Graphics.Transform3D.localOrientation
+- uid: WaveEngine.Framework.Graphics.Transform3D.UpdateCounter
+  commentId: F:WaveEngine.Framework.Graphics.Transform3D.UpdateCounter
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: UpdateCounter
+  nameWithType: Transform3D.UpdateCounter
+  fullName: WaveEngine.Framework.Graphics.Transform3D.UpdateCounter
+- uid: WaveEngine.Framework.Graphics.Transform3D.PositionChanged
+  commentId: E:WaveEngine.Framework.Graphics.Transform3D.PositionChanged
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: PositionChanged
+  nameWithType: Transform3D.PositionChanged
+  fullName: WaveEngine.Framework.Graphics.Transform3D.PositionChanged
+- uid: WaveEngine.Framework.Graphics.Transform3D.OrientationChanged
+  commentId: E:WaveEngine.Framework.Graphics.Transform3D.OrientationChanged
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: OrientationChanged
+  nameWithType: Transform3D.OrientationChanged
+  fullName: WaveEngine.Framework.Graphics.Transform3D.OrientationChanged
+- uid: WaveEngine.Framework.Graphics.Transform3D.ScaleChanged
+  commentId: E:WaveEngine.Framework.Graphics.Transform3D.ScaleChanged
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: ScaleChanged
+  nameWithType: Transform3D.ScaleChanged
+  fullName: WaveEngine.Framework.Graphics.Transform3D.ScaleChanged
+- uid: WaveEngine.Framework.Graphics.Transform3D.TransformChanged
+  commentId: E:WaveEngine.Framework.Graphics.Transform3D.TransformChanged
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: TransformChanged
+  nameWithType: Transform3D.TransformChanged
+  fullName: WaveEngine.Framework.Graphics.Transform3D.TransformChanged
+- uid: WaveEngine.Framework.Graphics.Transform3D.LocalPositionChanged
+  commentId: E:WaveEngine.Framework.Graphics.Transform3D.LocalPositionChanged
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: LocalPositionChanged
+  nameWithType: Transform3D.LocalPositionChanged
+  fullName: WaveEngine.Framework.Graphics.Transform3D.LocalPositionChanged
+- uid: WaveEngine.Framework.Graphics.Transform3D.LocalOrientationChanged
+  commentId: E:WaveEngine.Framework.Graphics.Transform3D.LocalOrientationChanged
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: LocalOrientationChanged
+  nameWithType: Transform3D.LocalOrientationChanged
+  fullName: WaveEngine.Framework.Graphics.Transform3D.LocalOrientationChanged
+- uid: WaveEngine.Framework.Graphics.Transform3D.LocalScaleChanged
+  commentId: E:WaveEngine.Framework.Graphics.Transform3D.LocalScaleChanged
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: LocalScaleChanged
+  nameWithType: Transform3D.LocalScaleChanged
+  fullName: WaveEngine.Framework.Graphics.Transform3D.LocalScaleChanged
+- uid: WaveEngine.Framework.Graphics.Transform3D.LocalTransformChanged
+  commentId: E:WaveEngine.Framework.Graphics.Transform3D.LocalTransformChanged
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: LocalTransformChanged
+  nameWithType: Transform3D.LocalTransformChanged
+  fullName: WaveEngine.Framework.Graphics.Transform3D.LocalTransformChanged
+- uid: WaveEngine.Framework.Graphics.Transform3D.ParentTransform
+  commentId: F:WaveEngine.Framework.Graphics.Transform3D.ParentTransform
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: ParentTransform
+  nameWithType: Transform3D.ParentTransform
+  fullName: WaveEngine.Framework.Graphics.Transform3D.ParentTransform
+- uid: WaveEngine.Framework.Graphics.Transform3D.ChildrenTransform
+  commentId: F:WaveEngine.Framework.Graphics.Transform3D.ChildrenTransform
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: ChildrenTransform
+  nameWithType: Transform3D.ChildrenTransform
+  fullName: WaveEngine.Framework.Graphics.Transform3D.ChildrenTransform
+- uid: WaveEngine.Framework.Graphics.Transform3D.LocalOrientation
+  commentId: P:WaveEngine.Framework.Graphics.Transform3D.LocalOrientation
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: LocalOrientation
+  nameWithType: Transform3D.LocalOrientation
+  fullName: WaveEngine.Framework.Graphics.Transform3D.LocalOrientation
+- uid: WaveEngine.Framework.Graphics.Transform3D.Orientation
+  commentId: P:WaveEngine.Framework.Graphics.Transform3D.Orientation
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: Orientation
+  nameWithType: Transform3D.Orientation
+  fullName: WaveEngine.Framework.Graphics.Transform3D.Orientation
+- uid: WaveEngine.Framework.Graphics.Transform3D.LocalTransform
+  commentId: P:WaveEngine.Framework.Graphics.Transform3D.LocalTransform
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: LocalTransform
+  nameWithType: Transform3D.LocalTransform
+  fullName: WaveEngine.Framework.Graphics.Transform3D.LocalTransform
+- uid: WaveEngine.Framework.Graphics.Transform3D.WorldTransform
+  commentId: P:WaveEngine.Framework.Graphics.Transform3D.WorldTransform
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: WorldTransform
+  nameWithType: Transform3D.WorldTransform
+  fullName: WaveEngine.Framework.Graphics.Transform3D.WorldTransform
+- uid: WaveEngine.Framework.Graphics.Transform3D.WorldInverseTransform
+  commentId: P:WaveEngine.Framework.Graphics.Transform3D.WorldInverseTransform
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: WorldInverseTransform
+  nameWithType: Transform3D.WorldInverseTransform
+  fullName: WaveEngine.Framework.Graphics.Transform3D.WorldInverseTransform
+- uid: WaveEngine.Framework.Graphics.Transform3D.WorldToLocalTransform
+  commentId: P:WaveEngine.Framework.Graphics.Transform3D.WorldToLocalTransform
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: WorldToLocalTransform
+  nameWithType: Transform3D.WorldToLocalTransform
+  fullName: WaveEngine.Framework.Graphics.Transform3D.WorldToLocalTransform
+- uid: WaveEngine.Framework.Graphics.Transform3D.LookAt(WaveEngine.Common.Math.Vector3)
+  commentId: M:WaveEngine.Framework.Graphics.Transform3D.LookAt(WaveEngine.Common.Math.Vector3)
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: LookAt(Vector3)
+  nameWithType: Transform3D.LookAt(Vector3)
+  fullName: WaveEngine.Framework.Graphics.Transform3D.LookAt(WaveEngine.Common.Math.Vector3)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.LookAt(WaveEngine.Common.Math.Vector3)
+    name: LookAt
+    nameWithType: Transform3D.LookAt
+    fullName: WaveEngine.Framework.Graphics.Transform3D.LookAt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.LookAt(WaveEngine.Common.Math.Vector3)
+    name: LookAt
+    nameWithType: Transform3D.LookAt
+    fullName: WaveEngine.Framework.Graphics.Transform3D.LookAt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.Transform3D.LookAt(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3)
+  commentId: M:WaveEngine.Framework.Graphics.Transform3D.LookAt(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3)
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: LookAt(Vector3, Vector3)
+  nameWithType: Transform3D.LookAt(Vector3, Vector3)
+  fullName: WaveEngine.Framework.Graphics.Transform3D.LookAt(WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.LookAt(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3)
+    name: LookAt
+    nameWithType: Transform3D.LookAt
+    fullName: WaveEngine.Framework.Graphics.Transform3D.LookAt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.LookAt(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3)
+    name: LookAt
+    nameWithType: Transform3D.LookAt
+    fullName: WaveEngine.Framework.Graphics.Transform3D.LookAt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.Transform3D.LocalLookAt(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3)
+  commentId: M:WaveEngine.Framework.Graphics.Transform3D.LocalLookAt(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3)
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: LocalLookAt(Vector3, Vector3)
+  nameWithType: Transform3D.LocalLookAt(Vector3, Vector3)
+  fullName: WaveEngine.Framework.Graphics.Transform3D.LocalLookAt(WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.LocalLookAt(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3)
+    name: LocalLookAt
+    nameWithType: Transform3D.LocalLookAt
+    fullName: WaveEngine.Framework.Graphics.Transform3D.LocalLookAt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.LocalLookAt(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3)
+    name: LocalLookAt
+    nameWithType: Transform3D.LocalLookAt
+    fullName: WaveEngine.Framework.Graphics.Transform3D.LocalLookAt
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Quaternion)
+  commentId: M:WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Quaternion)
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: RotateAround(Vector3, Quaternion)
+  nameWithType: Transform3D.RotateAround(Vector3, Quaternion)
+  fullName: WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Quaternion)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Quaternion)
+    name: RotateAround
+    nameWithType: Transform3D.RotateAround
+    fullName: WaveEngine.Framework.Graphics.Transform3D.RotateAround
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: WaveEngine.Common.Math.Quaternion
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Quaternion)
+    name: RotateAround
+    nameWithType: Transform3D.RotateAround
+    fullName: WaveEngine.Framework.Graphics.Transform3D.RotateAround
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: WaveEngine.Common.Math.Quaternion
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Quaternion@)
+  commentId: M:WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Quaternion@)
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: RotateAround(Vector3, Quaternion)
+  nameWithType: Transform3D.RotateAround(Vector3, Quaternion)
+  fullName: WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Quaternion)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Quaternion@)
+    name: RotateAround
+    nameWithType: Transform3D.RotateAround
+    fullName: WaveEngine.Framework.Graphics.Transform3D.RotateAround
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: WaveEngine.Common.Math.Quaternion
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Quaternion@)
+    name: RotateAround
+    nameWithType: Transform3D.RotateAround
+    fullName: WaveEngine.Framework.Graphics.Transform3D.RotateAround
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: WaveEngine.Common.Math.Quaternion
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3,System.Single)
+  commentId: M:WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3,System.Single)
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  isExternal: true
+  name: RotateAround(Vector3, Vector3, Single)
+  nameWithType: Transform3D.RotateAround(Vector3, Vector3, Single)
+  fullName: WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3, System.Single)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3,System.Single)
+    name: RotateAround
+    nameWithType: Transform3D.RotateAround
+    fullName: WaveEngine.Framework.Graphics.Transform3D.RotateAround
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3,System.Single)
+    name: RotateAround
+    nameWithType: Transform3D.RotateAround
+    fullName: WaveEngine.Framework.Graphics.Transform3D.RotateAround
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,System.Single)
+  commentId: M:WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,System.Single)
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  isExternal: true
+  name: RotateAround(Vector3, Vector3, Single)
+  nameWithType: Transform3D.RotateAround(Vector3, Vector3, Single)
+  fullName: WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3, System.Single)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,System.Single)
+    name: RotateAround
+    nameWithType: Transform3D.RotateAround
+    fullName: WaveEngine.Framework.Graphics.Transform3D.RotateAround
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,System.Single)
+    name: RotateAround
+    nameWithType: Transform3D.RotateAround
+    fullName: WaveEngine.Framework.Graphics.Transform3D.RotateAround
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.Transform3D.SetLocalTransform(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Quaternion@,WaveEngine.Common.Math.Vector3@)
+  commentId: M:WaveEngine.Framework.Graphics.Transform3D.SetLocalTransform(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Quaternion@,WaveEngine.Common.Math.Vector3@)
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: SetLocalTransform(Vector3, Quaternion, Vector3)
+  nameWithType: Transform3D.SetLocalTransform(Vector3, Quaternion, Vector3)
+  fullName: WaveEngine.Framework.Graphics.Transform3D.SetLocalTransform(WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Quaternion, WaveEngine.Common.Math.Vector3)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.SetLocalTransform(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Quaternion@,WaveEngine.Common.Math.Vector3@)
+    name: SetLocalTransform
+    nameWithType: Transform3D.SetLocalTransform
+    fullName: WaveEngine.Framework.Graphics.Transform3D.SetLocalTransform
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: WaveEngine.Common.Math.Quaternion
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.SetLocalTransform(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Quaternion@,WaveEngine.Common.Math.Vector3@)
+    name: SetLocalTransform
+    nameWithType: Transform3D.SetLocalTransform
+    fullName: WaveEngine.Framework.Graphics.Transform3D.SetLocalTransform
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: WaveEngine.Common.Math.Quaternion
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.Transform3D.SetLocalTransform(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Quaternion,WaveEngine.Common.Math.Vector3)
+  commentId: M:WaveEngine.Framework.Graphics.Transform3D.SetLocalTransform(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Quaternion,WaveEngine.Common.Math.Vector3)
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: SetLocalTransform(Vector3, Quaternion, Vector3)
+  nameWithType: Transform3D.SetLocalTransform(Vector3, Quaternion, Vector3)
+  fullName: WaveEngine.Framework.Graphics.Transform3D.SetLocalTransform(WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Quaternion, WaveEngine.Common.Math.Vector3)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.SetLocalTransform(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Quaternion,WaveEngine.Common.Math.Vector3)
+    name: SetLocalTransform
+    nameWithType: Transform3D.SetLocalTransform
+    fullName: WaveEngine.Framework.Graphics.Transform3D.SetLocalTransform
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: WaveEngine.Common.Math.Quaternion
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.SetLocalTransform(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Quaternion,WaveEngine.Common.Math.Vector3)
+    name: SetLocalTransform
+    nameWithType: Transform3D.SetLocalTransform
+    fullName: WaveEngine.Framework.Graphics.Transform3D.SetLocalTransform
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: WaveEngine.Common.Math.Quaternion
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.Transform3D.Dispose
+  commentId: M:WaveEngine.Framework.Graphics.Transform3D.Dispose
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: Dispose()
+  nameWithType: Transform3D.Dispose()
+  fullName: WaveEngine.Framework.Graphics.Transform3D.Dispose()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.Dispose
+    name: Dispose
+    nameWithType: Transform3D.Dispose
+    fullName: WaveEngine.Framework.Graphics.Transform3D.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.Dispose
+    name: Dispose
+    nameWithType: Transform3D.Dispose
+    fullName: WaveEngine.Framework.Graphics.Transform3D.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.isInitialized
+  commentId: F:WaveEngine.Framework.Component.isInitialized
+  parent: WaveEngine.Framework.Component
+  name: isInitialized
+  nameWithType: Component.isInitialized
+  fullName: WaveEngine.Framework.Component.isInitialized
+- uid: WaveEngine.Framework.Component.OnComponentInitialized
+  commentId: E:WaveEngine.Framework.Component.OnComponentInitialized
+  parent: WaveEngine.Framework.Component
+  name: OnComponentInitialized
+  nameWithType: Component.OnComponentInitialized
+  fullName: WaveEngine.Framework.Component.OnComponentInitialized
+- uid: WaveEngine.Framework.Component.OnComponentRemoved
+  commentId: E:WaveEngine.Framework.Component.OnComponentRemoved
+  parent: WaveEngine.Framework.Component
+  name: OnComponentRemoved
+  nameWithType: Component.OnComponentRemoved
+  fullName: WaveEngine.Framework.Component.OnComponentRemoved
+- uid: WaveEngine.Framework.Component.Name
+  commentId: P:WaveEngine.Framework.Component.Name
+  parent: WaveEngine.Framework.Component
+  name: Name
+  nameWithType: Component.Name
+  fullName: WaveEngine.Framework.Component.Name
+- uid: WaveEngine.Framework.Component.Owner
+  commentId: P:WaveEngine.Framework.Component.Owner
+  parent: WaveEngine.Framework.Component
+  name: Owner
+  nameWithType: Component.Owner
+  fullName: WaveEngine.Framework.Component.Owner
+- uid: WaveEngine.Framework.Component.Assets
+  commentId: P:WaveEngine.Framework.Component.Assets
+  parent: WaveEngine.Framework.Component
+  name: Assets
+  nameWithType: Component.Assets
+  fullName: WaveEngine.Framework.Component.Assets
+- uid: WaveEngine.Framework.Component.EntityManager
+  commentId: P:WaveEngine.Framework.Component.EntityManager
+  parent: WaveEngine.Framework.Component
+  name: EntityManager
+  nameWithType: Component.EntityManager
+  fullName: WaveEngine.Framework.Component.EntityManager
+- uid: WaveEngine.Framework.Component.BehaviorManager
+  commentId: P:WaveEngine.Framework.Component.BehaviorManager
+  parent: WaveEngine.Framework.Component
+  name: BehaviorManager
+  nameWithType: Component.BehaviorManager
+  fullName: WaveEngine.Framework.Component.BehaviorManager
+- uid: WaveEngine.Framework.Component.RenderManager
+  commentId: P:WaveEngine.Framework.Component.RenderManager
+  parent: WaveEngine.Framework.Component
+  name: RenderManager
+  nameWithType: Component.RenderManager
+  fullName: WaveEngine.Framework.Component.RenderManager
+- uid: WaveEngine.Framework.Component.Clone
+  commentId: M:WaveEngine.Framework.Component.Clone
+  parent: WaveEngine.Framework.Component
+  name: Clone()
+  nameWithType: Component.Clone()
+  fullName: WaveEngine.Framework.Component.Clone()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Clone
+    name: Clone
+    nameWithType: Component.Clone
+    fullName: WaveEngine.Framework.Component.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Clone
+    name: Clone
+    nameWithType: Component.Clone
+    fullName: WaveEngine.Framework.Component.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.ToString
+  commentId: M:WaveEngine.Framework.Component.ToString
+  parent: WaveEngine.Framework.Component
+  name: ToString()
+  nameWithType: Component.ToString()
+  fullName: WaveEngine.Framework.Component.ToString()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: WaveEngine.Framework.Component.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: WaveEngine.Framework.Component.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.ResolveDependencies
+  commentId: M:WaveEngine.Framework.Component.ResolveDependencies
+  parent: WaveEngine.Framework.Component
+  name: ResolveDependencies()
+  nameWithType: Component.ResolveDependencies()
+  fullName: WaveEngine.Framework.Component.ResolveDependencies()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.ResolveDependencies
+    name: ResolveDependencies
+    nameWithType: Component.ResolveDependencies
+    fullName: WaveEngine.Framework.Component.ResolveDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.ResolveDependencies
+    name: ResolveDependencies
+    nameWithType: Component.ResolveDependencies
+    fullName: WaveEngine.Framework.Component.ResolveDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.Removed
+  commentId: M:WaveEngine.Framework.Component.Removed
+  parent: WaveEngine.Framework.Component
+  name: Removed()
+  nameWithType: Component.Removed()
+  fullName: WaveEngine.Framework.Component.Removed()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Removed
+    name: Removed
+    nameWithType: Component.Removed
+    fullName: WaveEngine.Framework.Component.Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Removed
+    name: Removed
+    nameWithType: Component.Removed
+    fullName: WaveEngine.Framework.Component.Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.DeleteDependencies
+  commentId: M:WaveEngine.Framework.Component.DeleteDependencies
+  parent: WaveEngine.Framework.Component
+  name: DeleteDependencies()
+  nameWithType: Component.DeleteDependencies()
+  fullName: WaveEngine.Framework.Component.DeleteDependencies()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Component.DeleteDependencies
+    fullName: WaveEngine.Framework.Component.DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Component.DeleteDependencies
+    fullName: WaveEngine.Framework.Component.DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.PropertyChanged
+  commentId: E:WaveEngine.Framework.DependencyObject.PropertyChanged
+  parent: WaveEngine.Framework.DependencyObject
+  name: PropertyChanged
+  nameWithType: DependencyObject.PropertyChanged
+  fullName: WaveEngine.Framework.DependencyObject.PropertyChanged
+- uid: WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  commentId: P:WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  parent: WaveEngine.Framework.DependencyObject
+  name: ParentDependencyObject
+  nameWithType: DependencyObject.ParentDependencyObject
+  fullName: WaveEngine.Framework.DependencyObject.ParentDependencyObject
+- uid: WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  commentId: P:WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  parent: WaveEngine.Framework.DependencyObject
+  name: EnableDiagnosticCallback
+  nameWithType: DependencyObject.EnableDiagnosticCallback
+  fullName: WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+- uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  commentId: M:WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  parent: WaveEngine.Framework.DependencyObject
+  isExternal: true
+  name: SetValue(DependencyProperty, Object)
+  nameWithType: DependencyObject.SetValue(DependencyProperty, Object)
+  fullName: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty, System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+    name: SetValue
+    nameWithType: DependencyObject.SetValue
+    fullName: WaveEngine.Framework.DependencyObject.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+    name: SetValue
+    nameWithType: DependencyObject.SetValue
+    fullName: WaveEngine.Framework.DependencyObject.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: GetValue(DependencyProperty)
+  nameWithType: DependencyObject.GetValue(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+    name: GetValue
+    nameWithType: DependencyObject.GetValue
+    fullName: WaveEngine.Framework.DependencyObject.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+    name: GetValue
+    nameWithType: DependencyObject.GetValue
+    fullName: WaveEngine.Framework.DependencyObject.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: GetAbsoluteValue<T>(DependencyProperty)
+  nameWithType: DependencyObject.GetAbsoluteValue<T>(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue<T>(WaveEngine.Framework.DependencyProperty)
+  nameWithType.vb: DependencyObject.GetAbsoluteValue(Of T)(DependencyProperty)
+  fullName.vb: WaveEngine.Framework.DependencyObject.GetAbsoluteValue(Of T)(WaveEngine.Framework.DependencyProperty)
+  name.vb: GetAbsoluteValue(Of T)(DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+    name: GetAbsoluteValue<T>
+    nameWithType: DependencyObject.GetAbsoluteValue<T>
+    fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+    name: GetAbsoluteValue(Of T)
+    nameWithType: DependencyObject.GetAbsoluteValue(Of T)
+    fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: ClearValue(DependencyProperty)
+  nameWithType: DependencyObject.ClearValue(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+    name: ClearValue
+    nameWithType: DependencyObject.ClearValue
+    fullName: WaveEngine.Framework.DependencyObject.ClearValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+    name: ClearValue
+    nameWithType: DependencyObject.ClearValue
+    fullName: WaveEngine.Framework.DependencyObject.ClearValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: IsValueSet(DependencyProperty)
+  nameWithType: DependencyObject.IsValueSet(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+    name: IsValueSet
+    nameWithType: DependencyObject.IsValueSet
+    fullName: WaveEngine.Framework.DependencyObject.IsValueSet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+    name: IsValueSet
+    nameWithType: DependencyObject.IsValueSet
+    fullName: WaveEngine.Framework.DependencyObject.IsValueSet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  commentId: M:WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  parent: WaveEngine.Common.IO.SerializableObject
+  isExternal: true
+  name: OnDeserializing(StreamingContext)
+  nameWithType: SerializableObject.OnDeserializing(StreamingContext)
+  fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.IO
+  commentId: N:WaveEngine.Common.IO
+  name: WaveEngine.Common.IO
+  nameWithType: WaveEngine.Common.IO
+  fullName: WaveEngine.Common.IO
+- uid: WaveEngine.Framework
+  commentId: N:WaveEngine.Framework
+  name: WaveEngine.Framework
+  nameWithType: WaveEngine.Framework
+  fullName: WaveEngine.Framework
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Framework.DependencyProperty
+  commentId: T:WaveEngine.Framework.DependencyProperty
+  parent: WaveEngine.Framework
+  name: DependencyProperty
+  nameWithType: DependencyProperty
+  fullName: WaveEngine.Framework.DependencyProperty
+- uid: System.EventHandler
+  commentId: T:System.EventHandler
+  parent: System
+  isExternal: true
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
+- uid: WaveEngine.Framework.Graphics.Transform2D.TranformMode*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.TranformMode
+  name: TranformMode
+  nameWithType: Transform2D.TranformMode
+  fullName: WaveEngine.Framework.Graphics.Transform2D.TranformMode
+- uid: WaveEngine.Framework.Graphics.Transform2D.TransformMode
+  commentId: T:WaveEngine.Framework.Graphics.Transform2D.TransformMode
+  parent: WaveEngine.Framework.Graphics
+  name: Transform2D.TransformMode
+  nameWithType: Transform2D.TransformMode
+  fullName: WaveEngine.Framework.Graphics.Transform2D.TransformMode
+- uid: WaveEngine.Framework.Graphics.Transform2D.LocalPosition*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.LocalPosition
+  name: LocalPosition
+  nameWithType: Transform2D.LocalPosition
+  fullName: WaveEngine.Framework.Graphics.Transform2D.LocalPosition
+- uid: WaveEngine.Common.Math.Vector2
+  commentId: T:WaveEngine.Common.Math.Vector2
+  parent: WaveEngine.Common.Math
+  name: Vector2
+  nameWithType: Vector2
+  fullName: WaveEngine.Common.Math.Vector2
+- uid: WaveEngine.Common.Math
+  commentId: N:WaveEngine.Common.Math
+  name: WaveEngine.Common.Math
+  nameWithType: WaveEngine.Common.Math
+  fullName: WaveEngine.Common.Math
+- uid: WaveEngine.Framework.Graphics.Transform2D.ScreenPosition*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.ScreenPosition
+  name: ScreenPosition
+  nameWithType: Transform2D.ScreenPosition
+  fullName: WaveEngine.Framework.Graphics.Transform2D.ScreenPosition
+- uid: WaveEngine.Framework.Graphics.Transform2D.LocalRotation*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.LocalRotation
+  name: LocalRotation
+  nameWithType: Transform2D.LocalRotation
+  fullName: WaveEngine.Framework.Graphics.Transform2D.LocalRotation
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Framework.Graphics.Transform2D.LocalScale*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.LocalScale
+  name: LocalScale
+  nameWithType: Transform2D.LocalScale
+  fullName: WaveEngine.Framework.Graphics.Transform2D.LocalScale
+- uid: WaveEngine.Framework.Graphics.Transform2D.Transform3D*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.Transform3D
+  name: Transform3D
+  nameWithType: Transform2D.Transform3D
+  fullName: WaveEngine.Framework.Graphics.Transform2D.Transform3D
+- uid: WaveEngine.Framework.Graphics.Transform2D.Opacity*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.Opacity
+  name: Opacity
+  nameWithType: Transform2D.Opacity
+  fullName: WaveEngine.Framework.Graphics.Transform2D.Opacity
+- uid: WaveEngine.Framework.Graphics.Transform2D.Origin*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.Origin
+  name: Origin
+  nameWithType: Transform2D.Origin
+  fullName: WaveEngine.Framework.Graphics.Transform2D.Origin
+- uid: WaveEngine.Framework.Graphics.Transform2D.Rectangle*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.Rectangle
+  name: Rectangle
+  nameWithType: Transform2D.Rectangle
+  fullName: WaveEngine.Framework.Graphics.Transform2D.Rectangle
+- uid: WaveEngine.Common.Math.RectangleF
+  commentId: T:WaveEngine.Common.Math.RectangleF
+  parent: WaveEngine.Common.Math
+  name: RectangleF
+  nameWithType: RectangleF
+  fullName: WaveEngine.Common.Math.RectangleF
+- uid: WaveEngine.Framework.Graphics.Transform2D.LocalDrawOrder*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.LocalDrawOrder
+  name: LocalDrawOrder
+  nameWithType: Transform2D.LocalDrawOrder
+  fullName: WaveEngine.Framework.Graphics.Transform2D.LocalDrawOrder
+- uid: WaveEngine.Framework.Graphics.Transform2D.Effect*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.Effect
+  name: Effect
+  nameWithType: Transform2D.Effect
+  fullName: WaveEngine.Framework.Graphics.Transform2D.Effect
+- uid: WaveEngine.Common.Graphics.SpriteEffects
+  commentId: T:WaveEngine.Common.Graphics.SpriteEffects
+  parent: WaveEngine.Common.Graphics
+  name: SpriteEffects
+  nameWithType: SpriteEffects
+  fullName: WaveEngine.Common.Graphics.SpriteEffects
+- uid: WaveEngine.Common.Graphics
+  commentId: N:WaveEngine.Common.Graphics
+  name: WaveEngine.Common.Graphics
+  nameWithType: WaveEngine.Common.Graphics
+  fullName: WaveEngine.Common.Graphics
+- uid: WaveEngine.Framework.Graphics.Transform2D.GlobalOpacity*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.GlobalOpacity
+  name: GlobalOpacity
+  nameWithType: Transform2D.GlobalOpacity
+  fullName: WaveEngine.Framework.Graphics.Transform2D.GlobalOpacity
+- uid: WaveEngine.Framework.Graphics.Transform2D.Position*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.Position
+  name: Position
+  nameWithType: Transform2D.Position
+  fullName: WaveEngine.Framework.Graphics.Transform2D.Position
+- uid: WaveEngine.Framework.Graphics.Transform2D.X*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.X
+  name: X
+  nameWithType: Transform2D.X
+  fullName: WaveEngine.Framework.Graphics.Transform2D.X
+- uid: WaveEngine.Framework.Graphics.Transform2D.Y*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.Y
+  name: Y
+  nameWithType: Transform2D.Y
+  fullName: WaveEngine.Framework.Graphics.Transform2D.Y
+- uid: WaveEngine.Framework.Graphics.Transform2D.LocalX*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.LocalX
+  name: LocalX
+  nameWithType: Transform2D.LocalX
+  fullName: WaveEngine.Framework.Graphics.Transform2D.LocalX
+- uid: WaveEngine.Framework.Graphics.Transform2D.LocalY*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.LocalY
+  name: LocalY
+  nameWithType: Transform2D.LocalY
+  fullName: WaveEngine.Framework.Graphics.Transform2D.LocalY
+- uid: WaveEngine.Framework.Graphics.Transform2D.Scale*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.Scale
+  name: Scale
+  nameWithType: Transform2D.Scale
+  fullName: WaveEngine.Framework.Graphics.Transform2D.Scale
+- uid: WaveEngine.Framework.Graphics.Transform2D.XScale*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.XScale
+  name: XScale
+  nameWithType: Transform2D.XScale
+  fullName: WaveEngine.Framework.Graphics.Transform2D.XScale
+- uid: WaveEngine.Framework.Graphics.Transform2D.YScale*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.YScale
+  name: YScale
+  nameWithType: Transform2D.YScale
+  fullName: WaveEngine.Framework.Graphics.Transform2D.YScale
+- uid: WaveEngine.Framework.Graphics.Transform2D.LocalXScale*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.LocalXScale
+  name: LocalXScale
+  nameWithType: Transform2D.LocalXScale
+  fullName: WaveEngine.Framework.Graphics.Transform2D.LocalXScale
+- uid: WaveEngine.Framework.Graphics.Transform2D.LocalYScale*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.LocalYScale
+  name: LocalYScale
+  nameWithType: Transform2D.LocalYScale
+  fullName: WaveEngine.Framework.Graphics.Transform2D.LocalYScale
+- uid: WaveEngine.Framework.Graphics.Transform2D.Rotation*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.Rotation
+  name: Rotation
+  nameWithType: Transform2D.Rotation
+  fullName: WaveEngine.Framework.Graphics.Transform2D.Rotation
+- uid: WaveEngine.Framework.Graphics.Transform2D.DrawOrder*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.DrawOrder
+  name: DrawOrder
+  nameWithType: Transform2D.DrawOrder
+  fullName: WaveEngine.Framework.Graphics.Transform2D.DrawOrder
+- uid: WaveEngine.Framework.Graphics.Transform2D
+  commentId: T:WaveEngine.Framework.Graphics.Transform2D
+  parent: WaveEngine.Framework.Graphics
+  name: Transform2D
+  nameWithType: Transform2D
+  fullName: WaveEngine.Framework.Graphics.Transform2D
+- uid: WaveEngine.Framework.Graphics.Transform2D.#ctor*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.#ctor
+  name: Transform2D
+  nameWithType: Transform2D.Transform2D
+  fullName: WaveEngine.Framework.Graphics.Transform2D.Transform2D
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: WaveEngine.Framework.Graphics.Transform3D.DefaultValues
+  commentId: M:WaveEngine.Framework.Graphics.Transform3D.DefaultValues
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: DefaultValues()
+  nameWithType: Transform3D.DefaultValues()
+  fullName: WaveEngine.Framework.Graphics.Transform3D.DefaultValues()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.DefaultValues
+    name: DefaultValues
+    nameWithType: Transform3D.DefaultValues
+    fullName: WaveEngine.Framework.Graphics.Transform3D.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.DefaultValues
+    name: DefaultValues
+    nameWithType: Transform3D.DefaultValues
+    fullName: WaveEngine.Framework.Graphics.Transform3D.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.Transform2D.DefaultValues*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.DefaultValues
+  name: DefaultValues
+  nameWithType: Transform2D.DefaultValues
+  fullName: WaveEngine.Framework.Graphics.Transform2D.DefaultValues
+- uid: WaveEngine.Framework.Graphics.Transform3D.ResetDirtyFlags
+  commentId: M:WaveEngine.Framework.Graphics.Transform3D.ResetDirtyFlags
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: ResetDirtyFlags()
+  nameWithType: Transform3D.ResetDirtyFlags()
+  fullName: WaveEngine.Framework.Graphics.Transform3D.ResetDirtyFlags()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.ResetDirtyFlags
+    name: ResetDirtyFlags
+    nameWithType: Transform3D.ResetDirtyFlags
+    fullName: WaveEngine.Framework.Graphics.Transform3D.ResetDirtyFlags
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.ResetDirtyFlags
+    name: ResetDirtyFlags
+    nameWithType: Transform3D.ResetDirtyFlags
+    fullName: WaveEngine.Framework.Graphics.Transform3D.ResetDirtyFlags
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.Transform2D.ResetDirtyFlags*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.ResetDirtyFlags
+  name: ResetDirtyFlags
+  nameWithType: Transform2D.ResetDirtyFlags
+  fullName: WaveEngine.Framework.Graphics.Transform2D.ResetDirtyFlags
+- uid: WaveEngine.Framework.Graphics.Transform3D.ObtainParentTransform
+  commentId: M:WaveEngine.Framework.Graphics.Transform3D.ObtainParentTransform
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: ObtainParentTransform()
+  nameWithType: Transform3D.ObtainParentTransform()
+  fullName: WaveEngine.Framework.Graphics.Transform3D.ObtainParentTransform()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.ObtainParentTransform
+    name: ObtainParentTransform
+    nameWithType: Transform3D.ObtainParentTransform
+    fullName: WaveEngine.Framework.Graphics.Transform3D.ObtainParentTransform
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.ObtainParentTransform
+    name: ObtainParentTransform
+    nameWithType: Transform3D.ObtainParentTransform
+    fullName: WaveEngine.Framework.Graphics.Transform3D.ObtainParentTransform
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.Transform2D.ObtainParentTransform*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.ObtainParentTransform
+  name: ObtainParentTransform
+  nameWithType: Transform2D.ObtainParentTransform
+  fullName: WaveEngine.Framework.Graphics.Transform2D.ObtainParentTransform
+- uid: WaveEngine.Framework.Graphics.Transform3D.Initialize
+  commentId: M:WaveEngine.Framework.Graphics.Transform3D.Initialize
+  parent: WaveEngine.Framework.Graphics.Transform3D
+  name: Initialize()
+  nameWithType: Transform3D.Initialize()
+  fullName: WaveEngine.Framework.Graphics.Transform3D.Initialize()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.Initialize
+    name: Initialize
+    nameWithType: Transform3D.Initialize
+    fullName: WaveEngine.Framework.Graphics.Transform3D.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Transform3D.Initialize
+    name: Initialize
+    nameWithType: Transform3D.Initialize
+    fullName: WaveEngine.Framework.Graphics.Transform3D.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.Transform2D.Initialize*
+  commentId: Overload:WaveEngine.Framework.Graphics.Transform2D.Initialize
+  name: Initialize
+  nameWithType: Transform2D.Initialize
+  fullName: WaveEngine.Framework.Graphics.Transform2D.Initialize

@@ -1,0 +1,828 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Common.Guide.IInAppPurchase
+  commentId: T:WaveEngine.Common.Guide.IInAppPurchase
+  id: IInAppPurchase
+  parent: WaveEngine.Common.Guide
+  children:
+  - WaveEngine.Common.Guide.IInAppPurchase.Initialize(System.Collections.Generic.Dictionary{System.String,System.String})
+  - WaveEngine.Common.Guide.IInAppPurchase.ReportConsumablePurchased(System.String)
+  - WaveEngine.Common.Guide.IInAppPurchase.RequestProductPurchaseAsync(System.String)
+  - WaveEngine.Common.Guide.IInAppPurchase.RequestProductsAsync(System.Collections.Generic.IEnumerable{System.String})
+  - WaveEngine.Common.Guide.IInAppPurchase.RequestReceiptAsync(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IInAppPurchase
+  nameWithType: IInAppPurchase
+  fullName: WaveEngine.Common.Guide.IInAppPurchase
+  type: Interface
+  source:
+    id: IInAppPurchase
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Guide\IInAppPurchase.cs
+    startLine: 15
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Guide
+  summary: "\nIn App purchase service interface\n"
+  example: []
+  syntax:
+    content: 'public interface IInAppPurchase : IDisposable'
+    content.vb: >-
+      Public Interface IInAppPurchase
+
+          Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: WaveEngine.Common.Guide.IInAppPurchase.Initialize(System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:WaveEngine.Common.Guide.IInAppPurchase.Initialize(System.Collections.Generic.Dictionary{System.String,System.String})
+  id: Initialize(System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: WaveEngine.Common.Guide.IInAppPurchase
+  langs:
+  - csharp
+  - vb
+  name: Initialize(Dictionary<String, String>)
+  nameWithType: IInAppPurchase.Initialize(Dictionary<String, String>)
+  fullName: WaveEngine.Common.Guide.IInAppPurchase.Initialize(System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    id: Initialize
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Guide\IInAppPurchase.cs
+    startLine: 24
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Guide
+  summary: "\nInitialize the store with the given properties\n"
+  example: []
+  syntax:
+    content: Task<bool> Initialize(Dictionary<string, string> properties)
+    parameters:
+    - id: properties
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Store properties
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: "\n<code>true</code> if the initialization has been done correctly; otherwise, <code>false</code>.\n"
+    content.vb: Function Initialize(properties As Dictionary(Of String, String)) As Task(Of Boolean)
+  overload: WaveEngine.Common.Guide.IInAppPurchase.Initialize*
+  nameWithType.vb: IInAppPurchase.Initialize(Dictionary(Of String, String))
+  fullName.vb: WaveEngine.Common.Guide.IInAppPurchase.Initialize(System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: Initialize(Dictionary(Of String, String))
+- uid: WaveEngine.Common.Guide.IInAppPurchase.RequestProductsAsync(System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:WaveEngine.Common.Guide.IInAppPurchase.RequestProductsAsync(System.Collections.Generic.IEnumerable{System.String})
+  id: RequestProductsAsync(System.Collections.Generic.IEnumerable{System.String})
+  parent: WaveEngine.Common.Guide.IInAppPurchase
+  langs:
+  - csharp
+  - vb
+  name: RequestProductsAsync(IEnumerable<String>)
+  nameWithType: IInAppPurchase.RequestProductsAsync(IEnumerable<String>)
+  fullName: WaveEngine.Common.Guide.IInAppPurchase.RequestProductsAsync(System.Collections.Generic.IEnumerable<System.String>)
+  type: Method
+  source:
+    id: RequestProductsAsync
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Guide\IInAppPurchase.cs
+    startLine: 33
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Guide
+  summary: "\nRequests to store the products async.\n"
+  example: []
+  syntax:
+    content: Task<IEnumerable<Product>> RequestProductsAsync(IEnumerable<string> productIds)
+    parameters:
+    - id: productIds
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: Enumerable of products to obtain the details
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{WaveEngine.Common.Guide.Product}}
+      description: "\nDetailed product list\n"
+    content.vb: Function RequestProductsAsync(productIds As IEnumerable(Of String)) As Task(Of IEnumerable(Of Product))
+  overload: WaveEngine.Common.Guide.IInAppPurchase.RequestProductsAsync*
+  nameWithType.vb: IInAppPurchase.RequestProductsAsync(IEnumerable(Of String))
+  fullName.vb: WaveEngine.Common.Guide.IInAppPurchase.RequestProductsAsync(System.Collections.Generic.IEnumerable(Of System.String))
+  name.vb: RequestProductsAsync(IEnumerable(Of String))
+- uid: WaveEngine.Common.Guide.IInAppPurchase.RequestProductPurchaseAsync(System.String)
+  commentId: M:WaveEngine.Common.Guide.IInAppPurchase.RequestProductPurchaseAsync(System.String)
+  id: RequestProductPurchaseAsync(System.String)
+  parent: WaveEngine.Common.Guide.IInAppPurchase
+  langs:
+  - csharp
+  - vb
+  name: RequestProductPurchaseAsync(String)
+  nameWithType: IInAppPurchase.RequestProductPurchaseAsync(String)
+  fullName: WaveEngine.Common.Guide.IInAppPurchase.RequestProductPurchaseAsync(System.String)
+  type: Method
+  source:
+    id: RequestProductPurchaseAsync
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Guide\IInAppPurchase.cs
+    startLine: 42
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Guide
+  summary: "\nRequests to store the product purchase async.\n"
+  example: []
+  syntax:
+    content: Task<bool> RequestProductPurchaseAsync(string productId)
+    parameters:
+    - id: productId
+      type: System.String
+      description: The product id.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: "\n<code>true</code> if the product purchase has been accepted by user; otherwise, <code>false</code>.\n"
+    content.vb: Function RequestProductPurchaseAsync(productId As String) As Task(Of Boolean)
+  overload: WaveEngine.Common.Guide.IInAppPurchase.RequestProductPurchaseAsync*
+- uid: WaveEngine.Common.Guide.IInAppPurchase.RequestReceiptAsync(System.String)
+  commentId: M:WaveEngine.Common.Guide.IInAppPurchase.RequestReceiptAsync(System.String)
+  id: RequestReceiptAsync(System.String)
+  parent: WaveEngine.Common.Guide.IInAppPurchase
+  langs:
+  - csharp
+  - vb
+  name: RequestReceiptAsync(String)
+  nameWithType: IInAppPurchase.RequestReceiptAsync(String)
+  fullName: WaveEngine.Common.Guide.IInAppPurchase.RequestReceiptAsync(System.String)
+  type: Method
+  source:
+    id: RequestReceiptAsync
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Guide\IInAppPurchase.cs
+    startLine: 51
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Guide
+  summary: "\nRequests to store the receipt of a product async.\n"
+  example: []
+  syntax:
+    content: Task<Receipt> RequestReceiptAsync(string productId)
+    parameters:
+    - id: productId
+      type: System.String
+      description: The product id.
+    return:
+      type: System.Threading.Tasks.Task{WaveEngine.Common.Guide.Receipt}
+      description: "\nThe receipt\n"
+    content.vb: Function RequestReceiptAsync(productId As String) As Task(Of Receipt)
+  overload: WaveEngine.Common.Guide.IInAppPurchase.RequestReceiptAsync*
+- uid: WaveEngine.Common.Guide.IInAppPurchase.ReportConsumablePurchased(System.String)
+  commentId: M:WaveEngine.Common.Guide.IInAppPurchase.ReportConsumablePurchased(System.String)
+  id: ReportConsumablePurchased(System.String)
+  parent: WaveEngine.Common.Guide.IInAppPurchase
+  langs:
+  - csharp
+  - vb
+  name: ReportConsumablePurchased(String)
+  nameWithType: IInAppPurchase.ReportConsumablePurchased(String)
+  fullName: WaveEngine.Common.Guide.IInAppPurchase.ReportConsumablePurchased(System.String)
+  type: Method
+  source:
+    id: ReportConsumablePurchased
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Guide\IInAppPurchase.cs
+    startLine: 60
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Guide
+  summary: "\nReport to store after consumable product purchased\n"
+  example: []
+  syntax:
+    content: Task<bool> ReportConsumablePurchased(string productId)
+    parameters:
+    - id: productId
+      type: System.String
+      description: The product id.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: "\n<code>true</code> if the consumable product has been purchased; otherwise, <code>false</code>.\n"
+    content.vb: Function ReportConsumablePurchased(productId As String) As Task(Of Boolean)
+  overload: WaveEngine.Common.Guide.IInAppPurchase.ReportConsumablePurchased*
+references:
+- uid: WaveEngine.Common.Guide
+  commentId: N:WaveEngine.Common.Guide
+  name: WaveEngine.Common.Guide
+  nameWithType: WaveEngine.Common.Guide
+  fullName: WaveEngine.Common.Guide
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Common.Guide.IInAppPurchase.Initialize*
+  commentId: Overload:WaveEngine.Common.Guide.IInAppPurchase.Initialize
+  name: Initialize
+  nameWithType: IInAppPurchase.Initialize
+  fullName: WaveEngine.Common.Guide.IInAppPurchase.Initialize
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: WaveEngine.Common.Guide.IInAppPurchase.RequestProductsAsync*
+  commentId: Overload:WaveEngine.Common.Guide.IInAppPurchase.RequestProductsAsync
+  name: RequestProductsAsync
+  nameWithType: IInAppPurchase.RequestProductsAsync
+  fullName: WaveEngine.Common.Guide.IInAppPurchase.RequestProductsAsync
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{WaveEngine.Common.Guide.Product}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{WaveEngine.Common.Guide.Product}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IEnumerable<Product>>
+  nameWithType: Task<IEnumerable<Product>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<WaveEngine.Common.Guide.Product>>
+  nameWithType.vb: Task(Of IEnumerable(Of Product))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of WaveEngine.Common.Guide.Product))
+  name.vb: Task(Of IEnumerable(Of Product))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Common.Guide.Product
+    name: Product
+    nameWithType: Product
+    fullName: WaveEngine.Common.Guide.Product
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Common.Guide.Product
+    name: Product
+    nameWithType: Product
+    fullName: WaveEngine.Common.Guide.Product
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Guide.IInAppPurchase.RequestProductPurchaseAsync*
+  commentId: Overload:WaveEngine.Common.Guide.IInAppPurchase.RequestProductPurchaseAsync
+  name: RequestProductPurchaseAsync
+  nameWithType: IInAppPurchase.RequestProductPurchaseAsync
+  fullName: WaveEngine.Common.Guide.IInAppPurchase.RequestProductPurchaseAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: WaveEngine.Common.Guide.IInAppPurchase.RequestReceiptAsync*
+  commentId: Overload:WaveEngine.Common.Guide.IInAppPurchase.RequestReceiptAsync
+  name: RequestReceiptAsync
+  nameWithType: IInAppPurchase.RequestReceiptAsync
+  fullName: WaveEngine.Common.Guide.IInAppPurchase.RequestReceiptAsync
+- uid: System.Threading.Tasks.Task{WaveEngine.Common.Guide.Receipt}
+  commentId: T:System.Threading.Tasks.Task{WaveEngine.Common.Guide.Receipt}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Receipt>
+  nameWithType: Task<Receipt>
+  fullName: System.Threading.Tasks.Task<WaveEngine.Common.Guide.Receipt>
+  nameWithType.vb: Task(Of Receipt)
+  fullName.vb: System.Threading.Tasks.Task(Of WaveEngine.Common.Guide.Receipt)
+  name.vb: Task(Of Receipt)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Common.Guide.Receipt
+    name: Receipt
+    nameWithType: Receipt
+    fullName: WaveEngine.Common.Guide.Receipt
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Common.Guide.Receipt
+    name: Receipt
+    nameWithType: Receipt
+    fullName: WaveEngine.Common.Guide.Receipt
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Guide.IInAppPurchase.ReportConsumablePurchased*
+  commentId: Overload:WaveEngine.Common.Guide.IInAppPurchase.ReportConsumablePurchased
+  name: ReportConsumablePurchased
+  nameWithType: IInAppPurchase.ReportConsumablePurchased
+  fullName: WaveEngine.Common.Guide.IInAppPurchase.ReportConsumablePurchased

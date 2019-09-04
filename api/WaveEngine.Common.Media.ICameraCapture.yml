@@ -1,0 +1,555 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Common.Media.ICameraCapture
+  commentId: T:WaveEngine.Common.Media.ICameraCapture
+  id: ICameraCapture
+  parent: WaveEngine.Common.Media
+  children:
+  - WaveEngine.Common.Media.ICameraCapture.IsConnected
+  - WaveEngine.Common.Media.ICameraCapture.PreviewTexture
+  - WaveEngine.Common.Media.ICameraCapture.Start(WaveEngine.Common.Media.CameraCaptureType)
+  - WaveEngine.Common.Media.ICameraCapture.StartRecording(System.String)
+  - WaveEngine.Common.Media.ICameraCapture.State
+  - WaveEngine.Common.Media.ICameraCapture.Stop
+  - WaveEngine.Common.Media.ICameraCapture.StopRecording
+  - WaveEngine.Common.Media.ICameraCapture.Update(System.TimeSpan)
+  langs:
+  - csharp
+  - vb
+  name: ICameraCapture
+  nameWithType: ICameraCapture
+  fullName: WaveEngine.Common.Media.ICameraCapture
+  type: Interface
+  source:
+    id: ICameraCapture
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Media\ICameraCapture.cs
+    startLine: 30
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Media
+  summary: "\nCamera capture support\n"
+  example: []
+  syntax:
+    content: 'public interface ICameraCapture : IDisposable'
+    content.vb: >-
+      Public Interface ICameraCapture
+
+          Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: WaveEngine.Common.Media.ICameraCapture.PreviewTexture
+  commentId: P:WaveEngine.Common.Media.ICameraCapture.PreviewTexture
+  id: PreviewTexture
+  parent: WaveEngine.Common.Media.ICameraCapture
+  langs:
+  - csharp
+  - vb
+  name: PreviewTexture
+  nameWithType: ICameraCapture.PreviewTexture
+  fullName: WaveEngine.Common.Media.ICameraCapture.PreviewTexture
+  type: Property
+  source:
+    id: PreviewTexture
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Media\ICameraCapture.cs
+    startLine: 37
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Media
+  summary: "\nGets the camera previewtexture\n"
+  example: []
+  syntax:
+    content: VideoTexture PreviewTexture { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Graphics.VideoTexture
+    content.vb: ReadOnly Property PreviewTexture As VideoTexture
+  overload: WaveEngine.Common.Media.ICameraCapture.PreviewTexture*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: WaveEngine.Common.Media.ICameraCapture.State
+  commentId: P:WaveEngine.Common.Media.ICameraCapture.State
+  id: State
+  parent: WaveEngine.Common.Media.ICameraCapture
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: ICameraCapture.State
+  fullName: WaveEngine.Common.Media.ICameraCapture.State
+  type: Property
+  source:
+    id: State
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Media\ICameraCapture.cs
+    startLine: 42
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Media
+  summary: "\nGets a value indicating the camera capture state\n"
+  example: []
+  syntax:
+    content: CameraCaptureState State { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Media.CameraCaptureState
+    content.vb: ReadOnly Property State As CameraCaptureState
+  overload: WaveEngine.Common.Media.ICameraCapture.State*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: WaveEngine.Common.Media.ICameraCapture.IsConnected
+  commentId: P:WaveEngine.Common.Media.ICameraCapture.IsConnected
+  id: IsConnected
+  parent: WaveEngine.Common.Media.ICameraCapture
+  langs:
+  - csharp
+  - vb
+  name: IsConnected
+  nameWithType: ICameraCapture.IsConnected
+  fullName: WaveEngine.Common.Media.ICameraCapture.IsConnected
+  type: Property
+  source:
+    id: IsConnected
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Media\ICameraCapture.cs
+    startLine: 47
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Media
+  summary: "\nGets a value indicating whether there is a camera available.\n"
+  example: []
+  syntax:
+    content: bool IsConnected { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsConnected As Boolean
+  overload: WaveEngine.Common.Media.ICameraCapture.IsConnected*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: WaveEngine.Common.Media.ICameraCapture.Start(WaveEngine.Common.Media.CameraCaptureType)
+  commentId: M:WaveEngine.Common.Media.ICameraCapture.Start(WaveEngine.Common.Media.CameraCaptureType)
+  id: Start(WaveEngine.Common.Media.CameraCaptureType)
+  parent: WaveEngine.Common.Media.ICameraCapture
+  langs:
+  - csharp
+  - vb
+  name: Start(CameraCaptureType)
+  nameWithType: ICameraCapture.Start(CameraCaptureType)
+  fullName: WaveEngine.Common.Media.ICameraCapture.Start(WaveEngine.Common.Media.CameraCaptureType)
+  type: Method
+  source:
+    id: Start
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Media\ICameraCapture.cs
+    startLine: 56
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Media
+  summary: "\nStarts the camera capture.\n"
+  example: []
+  syntax:
+    content: void Start(CameraCaptureType cameraType)
+    parameters:
+    - id: cameraType
+      type: WaveEngine.Common.Media.CameraCaptureType
+      description: camera type
+    content.vb: Sub Start(cameraType As CameraCaptureType)
+  overload: WaveEngine.Common.Media.ICameraCapture.Start*
+- uid: WaveEngine.Common.Media.ICameraCapture.Stop
+  commentId: M:WaveEngine.Common.Media.ICameraCapture.Stop
+  id: Stop
+  parent: WaveEngine.Common.Media.ICameraCapture
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: ICameraCapture.Stop()
+  fullName: WaveEngine.Common.Media.ICameraCapture.Stop()
+  type: Method
+  source:
+    id: Stop
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Media\ICameraCapture.cs
+    startLine: 61
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Media
+  summary: "\nStops the camera capture.\n"
+  example: []
+  syntax:
+    content: void Stop()
+    content.vb: Sub Stop
+  overload: WaveEngine.Common.Media.ICameraCapture.Stop*
+- uid: WaveEngine.Common.Media.ICameraCapture.StartRecording(System.String)
+  commentId: M:WaveEngine.Common.Media.ICameraCapture.StartRecording(System.String)
+  id: StartRecording(System.String)
+  parent: WaveEngine.Common.Media.ICameraCapture
+  langs:
+  - csharp
+  - vb
+  name: StartRecording(String)
+  nameWithType: ICameraCapture.StartRecording(String)
+  fullName: WaveEngine.Common.Media.ICameraCapture.StartRecording(System.String)
+  type: Method
+  source:
+    id: StartRecording
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Media\ICameraCapture.cs
+    startLine: 67
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Media
+  summary: "\nStart Video recording.\n"
+  example: []
+  syntax:
+    content: void StartRecording(string videoFilePath)
+    parameters:
+    - id: videoFilePath
+      type: System.String
+      description: file path where the video was recorded.
+    content.vb: Sub StartRecording(videoFilePath As String)
+  overload: WaveEngine.Common.Media.ICameraCapture.StartRecording*
+- uid: WaveEngine.Common.Media.ICameraCapture.StopRecording
+  commentId: M:WaveEngine.Common.Media.ICameraCapture.StopRecording
+  id: StopRecording
+  parent: WaveEngine.Common.Media.ICameraCapture
+  langs:
+  - csharp
+  - vb
+  name: StopRecording()
+  nameWithType: ICameraCapture.StopRecording()
+  fullName: WaveEngine.Common.Media.ICameraCapture.StopRecording()
+  type: Method
+  source:
+    id: StopRecording
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Media\ICameraCapture.cs
+    startLine: 73
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Media
+  summary: "\nStop video recording\n"
+  example: []
+  syntax:
+    content: string StopRecording()
+    return:
+      type: System.String
+      description: stored video path
+    content.vb: Function StopRecording As String
+  overload: WaveEngine.Common.Media.ICameraCapture.StopRecording*
+- uid: WaveEngine.Common.Media.ICameraCapture.Update(System.TimeSpan)
+  commentId: M:WaveEngine.Common.Media.ICameraCapture.Update(System.TimeSpan)
+  id: Update(System.TimeSpan)
+  parent: WaveEngine.Common.Media.ICameraCapture
+  langs:
+  - csharp
+  - vb
+  name: Update(TimeSpan)
+  nameWithType: ICameraCapture.Update(TimeSpan)
+  fullName: WaveEngine.Common.Media.ICameraCapture.Update(System.TimeSpan)
+  type: Method
+  source:
+    id: Update
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Media\ICameraCapture.cs
+    startLine: 79
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Media
+  summary: "\nUpdate camera capture\n"
+  example: []
+  syntax:
+    content: void Update(TimeSpan gameTime)
+    parameters:
+    - id: gameTime
+      type: System.TimeSpan
+      description: game time interval.
+    content.vb: Sub Update(gameTime As TimeSpan)
+  overload: WaveEngine.Common.Media.ICameraCapture.Update*
+references:
+- uid: WaveEngine.Common.Media
+  commentId: N:WaveEngine.Common.Media
+  name: WaveEngine.Common.Media
+  nameWithType: WaveEngine.Common.Media
+  fullName: WaveEngine.Common.Media
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Common.Media.ICameraCapture.PreviewTexture*
+  commentId: Overload:WaveEngine.Common.Media.ICameraCapture.PreviewTexture
+  name: PreviewTexture
+  nameWithType: ICameraCapture.PreviewTexture
+  fullName: WaveEngine.Common.Media.ICameraCapture.PreviewTexture
+- uid: WaveEngine.Common.Graphics.VideoTexture
+  commentId: T:WaveEngine.Common.Graphics.VideoTexture
+  parent: WaveEngine.Common.Graphics
+  name: VideoTexture
+  nameWithType: VideoTexture
+  fullName: WaveEngine.Common.Graphics.VideoTexture
+- uid: WaveEngine.Common.Graphics
+  commentId: N:WaveEngine.Common.Graphics
+  name: WaveEngine.Common.Graphics
+  nameWithType: WaveEngine.Common.Graphics
+  fullName: WaveEngine.Common.Graphics
+- uid: WaveEngine.Common.Media.ICameraCapture.State*
+  commentId: Overload:WaveEngine.Common.Media.ICameraCapture.State
+  name: State
+  nameWithType: ICameraCapture.State
+  fullName: WaveEngine.Common.Media.ICameraCapture.State
+- uid: WaveEngine.Common.Media.CameraCaptureState
+  commentId: T:WaveEngine.Common.Media.CameraCaptureState
+  parent: WaveEngine.Common.Media
+  name: CameraCaptureState
+  nameWithType: CameraCaptureState
+  fullName: WaveEngine.Common.Media.CameraCaptureState
+- uid: WaveEngine.Common.Media.ICameraCapture.IsConnected*
+  commentId: Overload:WaveEngine.Common.Media.ICameraCapture.IsConnected
+  name: IsConnected
+  nameWithType: ICameraCapture.IsConnected
+  fullName: WaveEngine.Common.Media.ICameraCapture.IsConnected
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Common.Media.ICameraCapture.Start*
+  commentId: Overload:WaveEngine.Common.Media.ICameraCapture.Start
+  name: Start
+  nameWithType: ICameraCapture.Start
+  fullName: WaveEngine.Common.Media.ICameraCapture.Start
+- uid: WaveEngine.Common.Media.CameraCaptureType
+  commentId: T:WaveEngine.Common.Media.CameraCaptureType
+  parent: WaveEngine.Common.Media
+  name: CameraCaptureType
+  nameWithType: CameraCaptureType
+  fullName: WaveEngine.Common.Media.CameraCaptureType
+- uid: WaveEngine.Common.Media.ICameraCapture.Stop*
+  commentId: Overload:WaveEngine.Common.Media.ICameraCapture.Stop
+  name: Stop
+  nameWithType: ICameraCapture.Stop
+  fullName: WaveEngine.Common.Media.ICameraCapture.Stop
+- uid: WaveEngine.Common.Media.ICameraCapture.StartRecording*
+  commentId: Overload:WaveEngine.Common.Media.ICameraCapture.StartRecording
+  name: StartRecording
+  nameWithType: ICameraCapture.StartRecording
+  fullName: WaveEngine.Common.Media.ICameraCapture.StartRecording
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: WaveEngine.Common.Media.ICameraCapture.StopRecording*
+  commentId: Overload:WaveEngine.Common.Media.ICameraCapture.StopRecording
+  name: StopRecording
+  nameWithType: ICameraCapture.StopRecording
+  fullName: WaveEngine.Common.Media.ICameraCapture.StopRecording
+- uid: WaveEngine.Common.Media.ICameraCapture.Update*
+  commentId: Overload:WaveEngine.Common.Media.ICameraCapture.Update
+  name: Update
+  nameWithType: ICameraCapture.Update
+  fullName: WaveEngine.Common.Media.ICameraCapture.Update
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan

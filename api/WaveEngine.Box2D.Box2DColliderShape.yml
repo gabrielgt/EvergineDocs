@@ -1,0 +1,1330 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Box2D.Box2DColliderShape
+  commentId: T:WaveEngine.Box2D.Box2DColliderShape
+  id: Box2DColliderShape
+  parent: WaveEngine.Box2D
+  children:
+  - WaveEngine.Box2D.Box2DColliderShape.#ctor(WaveEngine.Box2D.Box2DSimulation)
+  - WaveEngine.Box2D.Box2DColliderShape.BaseRefreshShape
+  - WaveEngine.Box2D.Box2DColliderShape.ChildCount
+  - WaveEngine.Box2D.Box2DColliderShape.Dispose
+  - WaveEngine.Box2D.Box2DColliderShape.InternalShape
+  - WaveEngine.Box2D.Box2DColliderShape.Radius
+  - WaveEngine.Box2D.Box2DColliderShape.RefreshShape
+  - WaveEngine.Box2D.Box2DColliderShape.simulation
+  - WaveEngine.Box2D.Box2DColliderShape.TestPoint(WaveEngine.Common.Math.Vector2@,WaveEngine.Common.Math.Vector2@,System.Single)
+  - WaveEngine.Box2D.Box2DColliderShape.TestRectangle(WaveEngine.Common.Math.RectangleF@,WaveEngine.Common.Math.Vector2@,System.Single)
+  - WaveEngine.Box2D.Box2DColliderShape.TestShape(WaveEngine.Common.Math.Vector2,System.Single,WaveEngine.Common.Physics2D.IColliderShape2D,WaveEngine.Common.Math.Vector2,System.Single)
+  - WaveEngine.Box2D.Box2DColliderShape.Type
+  langs:
+  - csharp
+  - vb
+  name: Box2DColliderShape
+  nameWithType: Box2DColliderShape
+  fullName: WaveEngine.Box2D.Box2DColliderShape
+  type: Class
+  source:
+    id: Box2DColliderShape
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Box2D\Shared\Colliders\Box2DColliderShape.cs
+    startLine: 16
+  assemblies:
+  - WaveEngine.Box2D
+  namespace: WaveEngine.Box2D
+  summary: "\nThe Box2DColliderShape implements Box2D collider shape\n"
+  example: []
+  syntax:
+    content: 'public abstract class Box2DColliderShape : IColliderShape2D'
+    content.vb: >-
+      Public MustInherit Class Box2DColliderShape
+
+          Implements IColliderShape2D
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - WaveEngine.Box2D.Box2DColliderShape`1
+  implements:
+  - WaveEngine.Common.Physics2D.IColliderShape2D
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: WaveEngine.Box2D.Box2DColliderShape.simulation
+  commentId: F:WaveEngine.Box2D.Box2DColliderShape.simulation
+  id: simulation
+  parent: WaveEngine.Box2D.Box2DColliderShape
+  langs:
+  - csharp
+  - vb
+  name: simulation
+  nameWithType: Box2DColliderShape.simulation
+  fullName: WaveEngine.Box2D.Box2DColliderShape.simulation
+  type: Field
+  source:
+    id: simulation
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Box2D\Shared\Colliders\Box2DColliderShape.cs
+    startLine: 21
+  assemblies:
+  - WaveEngine.Box2D
+  namespace: WaveEngine.Box2D
+  summary: "\nThe box2D Simulation\n"
+  example: []
+  syntax:
+    content: protected Box2DSimulation simulation
+    return:
+      type: WaveEngine.Box2D.Box2DSimulation
+    content.vb: Protected simulation As Box2DSimulation
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WaveEngine.Box2D.Box2DColliderShape.Type
+  commentId: P:WaveEngine.Box2D.Box2DColliderShape.Type
+  id: Type
+  parent: WaveEngine.Box2D.Box2DColliderShape
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: Box2DColliderShape.Type
+  fullName: WaveEngine.Box2D.Box2DColliderShape.Type
+  type: Property
+  source:
+    id: Type
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Box2D\Shared\Colliders\Box2DColliderShape.cs
+    startLine: 33
+  assemblies:
+  - WaveEngine.Box2D
+  namespace: WaveEngine.Box2D
+  summary: "\nGets collider shape type\n"
+  example: []
+  syntax:
+    content: public abstract ColliderShapeType2D Type { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Physics2D.ColliderShapeType2D
+    content.vb: Public MustOverride ReadOnly Property Type As ColliderShapeType2D
+  overload: WaveEngine.Box2D.Box2DColliderShape.Type*
+  implements:
+  - WaveEngine.Common.Physics2D.IColliderShape2D.Type
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+- uid: WaveEngine.Box2D.Box2DColliderShape.Radius
+  commentId: P:WaveEngine.Box2D.Box2DColliderShape.Radius
+  id: Radius
+  parent: WaveEngine.Box2D.Box2DColliderShape
+  langs:
+  - csharp
+  - vb
+  name: Radius
+  nameWithType: Box2DColliderShape.Radius
+  fullName: WaveEngine.Box2D.Box2DColliderShape.Radius
+  type: Property
+  source:
+    id: Radius
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Box2D\Shared\Colliders\Box2DColliderShape.cs
+    startLine: 41
+  assemblies:
+  - WaveEngine.Box2D
+  namespace: WaveEngine.Box2D
+  summary: "\nGets or sets the shape Radius\n"
+  example: []
+  syntax:
+    content: public abstract float Radius { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public MustOverride Property Radius As Single
+  overload: WaveEngine.Box2D.Box2DColliderShape.Radius*
+  implements:
+  - WaveEngine.Common.Physics2D.IColliderShape2D.Radius
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: WaveEngine.Box2D.Box2DColliderShape.ChildCount
+  commentId: P:WaveEngine.Box2D.Box2DColliderShape.ChildCount
+  id: ChildCount
+  parent: WaveEngine.Box2D.Box2DColliderShape
+  langs:
+  - csharp
+  - vb
+  name: ChildCount
+  nameWithType: Box2DColliderShape.ChildCount
+  fullName: WaveEngine.Box2D.Box2DColliderShape.ChildCount
+  type: Property
+  source:
+    id: ChildCount
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Box2D\Shared\Colliders\Box2DColliderShape.cs
+    startLine: 50
+  assemblies:
+  - WaveEngine.Box2D
+  namespace: WaveEngine.Box2D
+  summary: "\nGets the shape Child count\n"
+  example: []
+  syntax:
+    content: public abstract int ChildCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public MustOverride ReadOnly Property ChildCount As Integer
+  overload: WaveEngine.Box2D.Box2DColliderShape.ChildCount*
+  implements:
+  - WaveEngine.Common.Physics2D.IColliderShape2D.ChildCount
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+- uid: WaveEngine.Box2D.Box2DColliderShape.InternalShape
+  commentId: P:WaveEngine.Box2D.Box2DColliderShape.InternalShape
+  id: InternalShape
+  parent: WaveEngine.Box2D.Box2DColliderShape
+  langs:
+  - csharp
+  - vb
+  name: InternalShape
+  nameWithType: Box2DColliderShape.InternalShape
+  fullName: WaveEngine.Box2D.Box2DColliderShape.InternalShape
+  type: Property
+  source:
+    id: InternalShape
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Box2D\Shared\Colliders\Box2DColliderShape.cs
+    startLine: 58
+  assemblies:
+  - WaveEngine.Box2D
+  namespace: WaveEngine.Box2D
+  summary: "\nGets the Box2D internal shape\n"
+  example: []
+  syntax:
+    content: public abstract object InternalShape { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public MustOverride ReadOnly Property InternalShape As Object
+  overload: WaveEngine.Box2D.Box2DColliderShape.InternalShape*
+  implements:
+  - WaveEngine.Common.Physics2D.IColliderShape2D.InternalShape
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+- uid: WaveEngine.Box2D.Box2DColliderShape.#ctor(WaveEngine.Box2D.Box2DSimulation)
+  commentId: M:WaveEngine.Box2D.Box2DColliderShape.#ctor(WaveEngine.Box2D.Box2DSimulation)
+  id: '#ctor(WaveEngine.Box2D.Box2DSimulation)'
+  parent: WaveEngine.Box2D.Box2DColliderShape
+  langs:
+  - csharp
+  - vb
+  name: Box2DColliderShape(Box2DSimulation)
+  nameWithType: Box2DColliderShape.Box2DColliderShape(Box2DSimulation)
+  fullName: WaveEngine.Box2D.Box2DColliderShape.Box2DColliderShape(WaveEngine.Box2D.Box2DSimulation)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Box2D\Shared\Colliders\Box2DColliderShape.cs
+    startLine: 70
+  assemblies:
+  - WaveEngine.Box2D
+  namespace: WaveEngine.Box2D
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Box2D.Box2DColliderShape\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public Box2DColliderShape(Box2DSimulation simulation)
+    parameters:
+    - id: simulation
+      type: WaveEngine.Box2D.Box2DSimulation
+      description: The box2D simulation instance
+    content.vb: Public Sub New(simulation As Box2DSimulation)
+  overload: WaveEngine.Box2D.Box2DColliderShape.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Box2D.Box2DColliderShape.TestPoint(WaveEngine.Common.Math.Vector2@,WaveEngine.Common.Math.Vector2@,System.Single)
+  commentId: M:WaveEngine.Box2D.Box2DColliderShape.TestPoint(WaveEngine.Common.Math.Vector2@,WaveEngine.Common.Math.Vector2@,System.Single)
+  id: TestPoint(WaveEngine.Common.Math.Vector2@,WaveEngine.Common.Math.Vector2@,System.Single)
+  parent: WaveEngine.Box2D.Box2DColliderShape
+  langs:
+  - csharp
+  - vb
+  name: TestPoint(ref Vector2, ref Vector2, Single)
+  nameWithType: Box2DColliderShape.TestPoint(ref Vector2, ref Vector2, Single)
+  fullName: WaveEngine.Box2D.Box2DColliderShape.TestPoint(ref WaveEngine.Common.Math.Vector2, ref WaveEngine.Common.Math.Vector2, System.Single)
+  type: Method
+  source:
+    id: TestPoint
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Box2D\Shared\Colliders\Box2DColliderShape.cs
+    startLine: 85
+  assemblies:
+  - WaveEngine.Box2D
+  namespace: WaveEngine.Box2D
+  summary: "\nTest a point for containment in this shape. This only works for convex shapes.\n"
+  example: []
+  syntax:
+    content: public abstract bool TestPoint(ref Vector2 point, ref Vector2 shapePosition, float shapeAngle)
+    parameters:
+    - id: point
+      type: WaveEngine.Common.Math.Vector2
+      description: a point in world coordinates
+    - id: shapePosition
+      type: WaveEngine.Common.Math.Vector2
+      description: the shape world position
+    - id: shapeAngle
+      type: System.Single
+      description: the shape world angle
+    return:
+      type: System.Boolean
+      description: True if the point is contained in the shape
+    content.vb: Public MustOverride Function TestPoint(ByRef point As Vector2, ByRef shapePosition As Vector2, shapeAngle As Single) As Boolean
+  overload: WaveEngine.Box2D.Box2DColliderShape.TestPoint*
+  implements:
+  - WaveEngine.Common.Physics2D.IColliderShape2D.TestPoint(WaveEngine.Common.Math.Vector2@,WaveEngine.Common.Math.Vector2@,System.Single)
+  nameWithType.vb: Box2DColliderShape.TestPoint(ByRef Vector2, ByRef Vector2, Single)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: WaveEngine.Box2D.Box2DColliderShape.TestPoint(ByRef WaveEngine.Common.Math.Vector2, ByRef WaveEngine.Common.Math.Vector2, System.Single)
+  name.vb: TestPoint(ByRef Vector2, ByRef Vector2, Single)
+- uid: WaveEngine.Box2D.Box2DColliderShape.TestRectangle(WaveEngine.Common.Math.RectangleF@,WaveEngine.Common.Math.Vector2@,System.Single)
+  commentId: M:WaveEngine.Box2D.Box2DColliderShape.TestRectangle(WaveEngine.Common.Math.RectangleF@,WaveEngine.Common.Math.Vector2@,System.Single)
+  id: TestRectangle(WaveEngine.Common.Math.RectangleF@,WaveEngine.Common.Math.Vector2@,System.Single)
+  parent: WaveEngine.Box2D.Box2DColliderShape
+  langs:
+  - csharp
+  - vb
+  name: TestRectangle(ref RectangleF, ref Vector2, Single)
+  nameWithType: Box2DColliderShape.TestRectangle(ref RectangleF, ref Vector2, Single)
+  fullName: WaveEngine.Box2D.Box2DColliderShape.TestRectangle(ref WaveEngine.Common.Math.RectangleF, ref WaveEngine.Common.Math.Vector2, System.Single)
+  type: Method
+  source:
+    id: TestRectangle
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Box2D\Shared\Colliders\Box2DColliderShape.cs
+    startLine: 94
+  assemblies:
+  - WaveEngine.Box2D
+  namespace: WaveEngine.Box2D
+  summary: "\nTest a rectangle for containment in this shape.\n"
+  example: []
+  syntax:
+    content: public abstract bool TestRectangle(ref RectangleF rectangle, ref Vector2 shapePosition, float shapeAngle)
+    parameters:
+    - id: rectangle
+      type: WaveEngine.Common.Math.RectangleF
+      description: a rectangle in world coordinates
+    - id: shapePosition
+      type: WaveEngine.Common.Math.Vector2
+      description: the shape world position
+    - id: shapeAngle
+      type: System.Single
+      description: the shape world angle
+    return:
+      type: System.Boolean
+      description: True if the point is contained in the shape
+    content.vb: Public MustOverride Function TestRectangle(ByRef rectangle As RectangleF, ByRef shapePosition As Vector2, shapeAngle As Single) As Boolean
+  overload: WaveEngine.Box2D.Box2DColliderShape.TestRectangle*
+  implements:
+  - WaveEngine.Common.Physics2D.IColliderShape2D.TestRectangle(WaveEngine.Common.Math.RectangleF@,WaveEngine.Common.Math.Vector2@,System.Single)
+  nameWithType.vb: Box2DColliderShape.TestRectangle(ByRef RectangleF, ByRef Vector2, Single)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: WaveEngine.Box2D.Box2DColliderShape.TestRectangle(ByRef WaveEngine.Common.Math.RectangleF, ByRef WaveEngine.Common.Math.Vector2, System.Single)
+  name.vb: TestRectangle(ByRef RectangleF, ByRef Vector2, Single)
+- uid: WaveEngine.Box2D.Box2DColliderShape.TestShape(WaveEngine.Common.Math.Vector2,System.Single,WaveEngine.Common.Physics2D.IColliderShape2D,WaveEngine.Common.Math.Vector2,System.Single)
+  commentId: M:WaveEngine.Box2D.Box2DColliderShape.TestShape(WaveEngine.Common.Math.Vector2,System.Single,WaveEngine.Common.Physics2D.IColliderShape2D,WaveEngine.Common.Math.Vector2,System.Single)
+  id: TestShape(WaveEngine.Common.Math.Vector2,System.Single,WaveEngine.Common.Physics2D.IColliderShape2D,WaveEngine.Common.Math.Vector2,System.Single)
+  parent: WaveEngine.Box2D.Box2DColliderShape
+  langs:
+  - csharp
+  - vb
+  name: TestShape(Vector2, Single, IColliderShape2D, Vector2, Single)
+  nameWithType: Box2DColliderShape.TestShape(Vector2, Single, IColliderShape2D, Vector2, Single)
+  fullName: WaveEngine.Box2D.Box2DColliderShape.TestShape(WaveEngine.Common.Math.Vector2, System.Single, WaveEngine.Common.Physics2D.IColliderShape2D, WaveEngine.Common.Math.Vector2, System.Single)
+  type: Method
+  source:
+    id: TestShape
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Box2D\Shared\Colliders\Box2DColliderShape.cs
+    startLine: 105
+  assemblies:
+  - WaveEngine.Box2D
+  namespace: WaveEngine.Box2D
+  summary: "\nDetect interesection with other shape.\n"
+  example: []
+  syntax:
+    content: public abstract bool TestShape(Vector2 positionA, float angleA, IColliderShape2D shapeB, Vector2 positionB, float angleB)
+    parameters:
+    - id: positionA
+      type: WaveEngine.Common.Math.Vector2
+      description: The position of A shape
+    - id: angleA
+      type: System.Single
+      description: The angle of A shape
+    - id: shapeB
+      type: WaveEngine.Common.Physics2D.IColliderShape2D
+      description: The second shape
+    - id: positionB
+      type: WaveEngine.Common.Math.Vector2
+      description: The position of B shape
+    - id: angleB
+      type: System.Single
+      description: The angle of B shape
+    return:
+      type: System.Boolean
+      description: If the two shapes collides
+    content.vb: Public MustOverride Function TestShape(positionA As Vector2, angleA As Single, shapeB As IColliderShape2D, positionB As Vector2, angleB As Single) As Boolean
+  overload: WaveEngine.Box2D.Box2DColliderShape.TestShape*
+  implements:
+  - WaveEngine.Common.Physics2D.IColliderShape2D.TestShape(WaveEngine.Common.Math.Vector2,System.Single,WaveEngine.Common.Physics2D.IColliderShape2D,WaveEngine.Common.Math.Vector2,System.Single)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: WaveEngine.Box2D.Box2DColliderShape.Dispose
+  commentId: M:WaveEngine.Box2D.Box2DColliderShape.Dispose
+  id: Dispose
+  parent: WaveEngine.Box2D.Box2DColliderShape
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: Box2DColliderShape.Dispose()
+  fullName: WaveEngine.Box2D.Box2DColliderShape.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Box2D\Shared\Colliders\Box2DColliderShape.cs
+    startLine: 110
+  assemblies:
+  - WaveEngine.Box2D
+  namespace: WaveEngine.Box2D
+  summary: "\nPerforms application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.\n"
+  example: []
+  syntax:
+    content: public virtual void Dispose()
+    content.vb: Public Overridable Sub Dispose
+  overload: WaveEngine.Box2D.Box2DColliderShape.Dispose*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: WaveEngine.Box2D.Box2DColliderShape.BaseRefreshShape
+  commentId: M:WaveEngine.Box2D.Box2DColliderShape.BaseRefreshShape
+  id: BaseRefreshShape
+  parent: WaveEngine.Box2D.Box2DColliderShape
+  langs:
+  - csharp
+  - vb
+  name: BaseRefreshShape()
+  nameWithType: Box2DColliderShape.BaseRefreshShape()
+  fullName: WaveEngine.Box2D.Box2DColliderShape.BaseRefreshShape()
+  type: Method
+  source:
+    id: BaseRefreshShape
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Box2D\Shared\Colliders\Box2DColliderShape.cs
+    startLine: 117
+  assemblies:
+  - WaveEngine.Box2D
+  namespace: WaveEngine.Box2D
+  summary: "\nBase method that refresh the shape and raise the OnShapeChanged event\n"
+  example: []
+  syntax:
+    content: protected void BaseRefreshShape()
+    content.vb: Protected Sub BaseRefreshShape
+  overload: WaveEngine.Box2D.Box2DColliderShape.BaseRefreshShape*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WaveEngine.Box2D.Box2DColliderShape.RefreshShape
+  commentId: M:WaveEngine.Box2D.Box2DColliderShape.RefreshShape
+  id: RefreshShape
+  parent: WaveEngine.Box2D.Box2DColliderShape
+  langs:
+  - csharp
+  - vb
+  name: RefreshShape()
+  nameWithType: Box2DColliderShape.RefreshShape()
+  fullName: WaveEngine.Box2D.Box2DColliderShape.RefreshShape()
+  type: Method
+  source:
+    id: RefreshShape
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Box2D\Shared\Colliders\Box2DColliderShape.cs
+    startLine: 130
+  assemblies:
+  - WaveEngine.Box2D
+  namespace: WaveEngine.Box2D
+  summary: "\nRefresh the collider shape\n"
+  example: []
+  syntax:
+    content: protected abstract void RefreshShape()
+    content.vb: Protected MustOverride Sub RefreshShape
+  overload: WaveEngine.Box2D.Box2DColliderShape.RefreshShape*
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+references:
+- uid: WaveEngine.Box2D
+  commentId: N:WaveEngine.Box2D
+  name: WaveEngine.Box2D
+  nameWithType: WaveEngine.Box2D
+  fullName: WaveEngine.Box2D
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.Physics2D.IColliderShape2D
+  commentId: T:WaveEngine.Common.Physics2D.IColliderShape2D
+  parent: WaveEngine.Common.Physics2D
+  name: IColliderShape2D
+  nameWithType: IColliderShape2D
+  fullName: WaveEngine.Common.Physics2D.IColliderShape2D
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Physics2D
+  commentId: N:WaveEngine.Common.Physics2D
+  name: WaveEngine.Common.Physics2D
+  nameWithType: WaveEngine.Common.Physics2D
+  fullName: WaveEngine.Common.Physics2D
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Box2D.Box2DSimulation
+  commentId: T:WaveEngine.Box2D.Box2DSimulation
+  parent: WaveEngine.Box2D
+  name: Box2DSimulation
+  nameWithType: Box2DSimulation
+  fullName: WaveEngine.Box2D.Box2DSimulation
+- uid: WaveEngine.Box2D.Box2DColliderShape.Type*
+  commentId: Overload:WaveEngine.Box2D.Box2DColliderShape.Type
+  name: Type
+  nameWithType: Box2DColliderShape.Type
+  fullName: WaveEngine.Box2D.Box2DColliderShape.Type
+- uid: WaveEngine.Common.Physics2D.IColliderShape2D.Type
+  commentId: P:WaveEngine.Common.Physics2D.IColliderShape2D.Type
+  parent: WaveEngine.Common.Physics2D.IColliderShape2D
+  name: Type
+  nameWithType: IColliderShape2D.Type
+  fullName: WaveEngine.Common.Physics2D.IColliderShape2D.Type
+- uid: WaveEngine.Common.Physics2D.ColliderShapeType2D
+  commentId: T:WaveEngine.Common.Physics2D.ColliderShapeType2D
+  parent: WaveEngine.Common.Physics2D
+  name: ColliderShapeType2D
+  nameWithType: ColliderShapeType2D
+  fullName: WaveEngine.Common.Physics2D.ColliderShapeType2D
+- uid: WaveEngine.Box2D.Box2DColliderShape.Radius*
+  commentId: Overload:WaveEngine.Box2D.Box2DColliderShape.Radius
+  name: Radius
+  nameWithType: Box2DColliderShape.Radius
+  fullName: WaveEngine.Box2D.Box2DColliderShape.Radius
+- uid: WaveEngine.Common.Physics2D.IColliderShape2D.Radius
+  commentId: P:WaveEngine.Common.Physics2D.IColliderShape2D.Radius
+  parent: WaveEngine.Common.Physics2D.IColliderShape2D
+  name: Radius
+  nameWithType: IColliderShape2D.Radius
+  fullName: WaveEngine.Common.Physics2D.IColliderShape2D.Radius
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Box2D.Box2DColliderShape.ChildCount*
+  commentId: Overload:WaveEngine.Box2D.Box2DColliderShape.ChildCount
+  name: ChildCount
+  nameWithType: Box2DColliderShape.ChildCount
+  fullName: WaveEngine.Box2D.Box2DColliderShape.ChildCount
+- uid: WaveEngine.Common.Physics2D.IColliderShape2D.ChildCount
+  commentId: P:WaveEngine.Common.Physics2D.IColliderShape2D.ChildCount
+  parent: WaveEngine.Common.Physics2D.IColliderShape2D
+  name: ChildCount
+  nameWithType: IColliderShape2D.ChildCount
+  fullName: WaveEngine.Common.Physics2D.IColliderShape2D.ChildCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: WaveEngine.Box2D.Box2DColliderShape.InternalShape*
+  commentId: Overload:WaveEngine.Box2D.Box2DColliderShape.InternalShape
+  name: InternalShape
+  nameWithType: Box2DColliderShape.InternalShape
+  fullName: WaveEngine.Box2D.Box2DColliderShape.InternalShape
+- uid: WaveEngine.Common.Physics2D.IColliderShape2D.InternalShape
+  commentId: P:WaveEngine.Common.Physics2D.IColliderShape2D.InternalShape
+  parent: WaveEngine.Common.Physics2D.IColliderShape2D
+  name: InternalShape
+  nameWithType: IColliderShape2D.InternalShape
+  fullName: WaveEngine.Common.Physics2D.IColliderShape2D.InternalShape
+- uid: WaveEngine.Box2D.Box2DColliderShape
+  commentId: T:WaveEngine.Box2D.Box2DColliderShape
+  parent: WaveEngine.Box2D
+  name: Box2DColliderShape
+  nameWithType: Box2DColliderShape
+  fullName: WaveEngine.Box2D.Box2DColliderShape
+- uid: WaveEngine.Box2D.Box2DColliderShape.#ctor*
+  commentId: Overload:WaveEngine.Box2D.Box2DColliderShape.#ctor
+  name: Box2DColliderShape
+  nameWithType: Box2DColliderShape.Box2DColliderShape
+  fullName: WaveEngine.Box2D.Box2DColliderShape.Box2DColliderShape
+- uid: WaveEngine.Box2D.Box2DColliderShape.TestPoint*
+  commentId: Overload:WaveEngine.Box2D.Box2DColliderShape.TestPoint
+  name: TestPoint
+  nameWithType: Box2DColliderShape.TestPoint
+  fullName: WaveEngine.Box2D.Box2DColliderShape.TestPoint
+- uid: WaveEngine.Common.Physics2D.IColliderShape2D.TestPoint(WaveEngine.Common.Math.Vector2@,WaveEngine.Common.Math.Vector2@,System.Single)
+  commentId: M:WaveEngine.Common.Physics2D.IColliderShape2D.TestPoint(WaveEngine.Common.Math.Vector2@,WaveEngine.Common.Math.Vector2@,System.Single)
+  parent: WaveEngine.Common.Physics2D.IColliderShape2D
+  isExternal: true
+  name: TestPoint(Vector2, Vector2, Single)
+  nameWithType: IColliderShape2D.TestPoint(Vector2, Vector2, Single)
+  fullName: WaveEngine.Common.Physics2D.IColliderShape2D.TestPoint(WaveEngine.Common.Math.Vector2, WaveEngine.Common.Math.Vector2, System.Single)
+  spec.csharp:
+  - uid: WaveEngine.Common.Physics2D.IColliderShape2D.TestPoint(WaveEngine.Common.Math.Vector2@,WaveEngine.Common.Math.Vector2@,System.Single)
+    name: TestPoint
+    nameWithType: IColliderShape2D.TestPoint
+    fullName: WaveEngine.Common.Physics2D.IColliderShape2D.TestPoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector2
+    name: Vector2
+    nameWithType: Vector2
+    fullName: WaveEngine.Common.Math.Vector2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector2
+    name: Vector2
+    nameWithType: Vector2
+    fullName: WaveEngine.Common.Math.Vector2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Physics2D.IColliderShape2D.TestPoint(WaveEngine.Common.Math.Vector2@,WaveEngine.Common.Math.Vector2@,System.Single)
+    name: TestPoint
+    nameWithType: IColliderShape2D.TestPoint
+    fullName: WaveEngine.Common.Physics2D.IColliderShape2D.TestPoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector2
+    name: Vector2
+    nameWithType: Vector2
+    fullName: WaveEngine.Common.Math.Vector2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector2
+    name: Vector2
+    nameWithType: Vector2
+    fullName: WaveEngine.Common.Math.Vector2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Math.Vector2
+  commentId: T:WaveEngine.Common.Math.Vector2
+  parent: WaveEngine.Common.Math
+  name: Vector2
+  nameWithType: Vector2
+  fullName: WaveEngine.Common.Math.Vector2
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Common.Math
+  commentId: N:WaveEngine.Common.Math
+  name: WaveEngine.Common.Math
+  nameWithType: WaveEngine.Common.Math
+  fullName: WaveEngine.Common.Math
+- uid: WaveEngine.Box2D.Box2DColliderShape.TestRectangle*
+  commentId: Overload:WaveEngine.Box2D.Box2DColliderShape.TestRectangle
+  name: TestRectangle
+  nameWithType: Box2DColliderShape.TestRectangle
+  fullName: WaveEngine.Box2D.Box2DColliderShape.TestRectangle
+- uid: WaveEngine.Common.Physics2D.IColliderShape2D.TestRectangle(WaveEngine.Common.Math.RectangleF@,WaveEngine.Common.Math.Vector2@,System.Single)
+  commentId: M:WaveEngine.Common.Physics2D.IColliderShape2D.TestRectangle(WaveEngine.Common.Math.RectangleF@,WaveEngine.Common.Math.Vector2@,System.Single)
+  parent: WaveEngine.Common.Physics2D.IColliderShape2D
+  isExternal: true
+  name: TestRectangle(RectangleF, Vector2, Single)
+  nameWithType: IColliderShape2D.TestRectangle(RectangleF, Vector2, Single)
+  fullName: WaveEngine.Common.Physics2D.IColliderShape2D.TestRectangle(WaveEngine.Common.Math.RectangleF, WaveEngine.Common.Math.Vector2, System.Single)
+  spec.csharp:
+  - uid: WaveEngine.Common.Physics2D.IColliderShape2D.TestRectangle(WaveEngine.Common.Math.RectangleF@,WaveEngine.Common.Math.Vector2@,System.Single)
+    name: TestRectangle
+    nameWithType: IColliderShape2D.TestRectangle
+    fullName: WaveEngine.Common.Physics2D.IColliderShape2D.TestRectangle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.RectangleF
+    name: RectangleF
+    nameWithType: RectangleF
+    fullName: WaveEngine.Common.Math.RectangleF
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector2
+    name: Vector2
+    nameWithType: Vector2
+    fullName: WaveEngine.Common.Math.Vector2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Physics2D.IColliderShape2D.TestRectangle(WaveEngine.Common.Math.RectangleF@,WaveEngine.Common.Math.Vector2@,System.Single)
+    name: TestRectangle
+    nameWithType: IColliderShape2D.TestRectangle
+    fullName: WaveEngine.Common.Physics2D.IColliderShape2D.TestRectangle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.RectangleF
+    name: RectangleF
+    nameWithType: RectangleF
+    fullName: WaveEngine.Common.Math.RectangleF
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector2
+    name: Vector2
+    nameWithType: Vector2
+    fullName: WaveEngine.Common.Math.Vector2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Math.RectangleF
+  commentId: T:WaveEngine.Common.Math.RectangleF
+  parent: WaveEngine.Common.Math
+  name: RectangleF
+  nameWithType: RectangleF
+  fullName: WaveEngine.Common.Math.RectangleF
+- uid: WaveEngine.Box2D.Box2DColliderShape.TestShape*
+  commentId: Overload:WaveEngine.Box2D.Box2DColliderShape.TestShape
+  name: TestShape
+  nameWithType: Box2DColliderShape.TestShape
+  fullName: WaveEngine.Box2D.Box2DColliderShape.TestShape
+- uid: WaveEngine.Common.Physics2D.IColliderShape2D.TestShape(WaveEngine.Common.Math.Vector2,System.Single,WaveEngine.Common.Physics2D.IColliderShape2D,WaveEngine.Common.Math.Vector2,System.Single)
+  commentId: M:WaveEngine.Common.Physics2D.IColliderShape2D.TestShape(WaveEngine.Common.Math.Vector2,System.Single,WaveEngine.Common.Physics2D.IColliderShape2D,WaveEngine.Common.Math.Vector2,System.Single)
+  parent: WaveEngine.Common.Physics2D.IColliderShape2D
+  isExternal: true
+  name: TestShape(Vector2, Single, IColliderShape2D, Vector2, Single)
+  nameWithType: IColliderShape2D.TestShape(Vector2, Single, IColliderShape2D, Vector2, Single)
+  fullName: WaveEngine.Common.Physics2D.IColliderShape2D.TestShape(WaveEngine.Common.Math.Vector2, System.Single, WaveEngine.Common.Physics2D.IColliderShape2D, WaveEngine.Common.Math.Vector2, System.Single)
+  spec.csharp:
+  - uid: WaveEngine.Common.Physics2D.IColliderShape2D.TestShape(WaveEngine.Common.Math.Vector2,System.Single,WaveEngine.Common.Physics2D.IColliderShape2D,WaveEngine.Common.Math.Vector2,System.Single)
+    name: TestShape
+    nameWithType: IColliderShape2D.TestShape
+    fullName: WaveEngine.Common.Physics2D.IColliderShape2D.TestShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector2
+    name: Vector2
+    nameWithType: Vector2
+    fullName: WaveEngine.Common.Math.Vector2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Physics2D.IColliderShape2D
+    name: IColliderShape2D
+    nameWithType: IColliderShape2D
+    fullName: WaveEngine.Common.Physics2D.IColliderShape2D
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector2
+    name: Vector2
+    nameWithType: Vector2
+    fullName: WaveEngine.Common.Math.Vector2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Physics2D.IColliderShape2D.TestShape(WaveEngine.Common.Math.Vector2,System.Single,WaveEngine.Common.Physics2D.IColliderShape2D,WaveEngine.Common.Math.Vector2,System.Single)
+    name: TestShape
+    nameWithType: IColliderShape2D.TestShape
+    fullName: WaveEngine.Common.Physics2D.IColliderShape2D.TestShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector2
+    name: Vector2
+    nameWithType: Vector2
+    fullName: WaveEngine.Common.Math.Vector2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Physics2D.IColliderShape2D
+    name: IColliderShape2D
+    nameWithType: IColliderShape2D
+    fullName: WaveEngine.Common.Physics2D.IColliderShape2D
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector2
+    name: Vector2
+    nameWithType: Vector2
+    fullName: WaveEngine.Common.Math.Vector2
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Box2D.Box2DColliderShape.Dispose*
+  commentId: Overload:WaveEngine.Box2D.Box2DColliderShape.Dispose
+  name: Dispose
+  nameWithType: Box2DColliderShape.Dispose
+  fullName: WaveEngine.Box2D.Box2DColliderShape.Dispose
+- uid: WaveEngine.Box2D.Box2DColliderShape.BaseRefreshShape*
+  commentId: Overload:WaveEngine.Box2D.Box2DColliderShape.BaseRefreshShape
+  name: BaseRefreshShape
+  nameWithType: Box2DColliderShape.BaseRefreshShape
+  fullName: WaveEngine.Box2D.Box2DColliderShape.BaseRefreshShape
+- uid: WaveEngine.Box2D.Box2DColliderShape.RefreshShape*
+  commentId: Overload:WaveEngine.Box2D.Box2DColliderShape.RefreshShape
+  name: RefreshShape
+  nameWithType: Box2DColliderShape.RefreshShape
+  fullName: WaveEngine.Box2D.Box2DColliderShape.RefreshShape

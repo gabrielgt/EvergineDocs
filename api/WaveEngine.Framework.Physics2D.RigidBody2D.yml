@@ -1,0 +1,3014 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D
+  commentId: T:WaveEngine.Framework.Physics2D.RigidBody2D
+  id: RigidBody2D
+  parent: WaveEngine.Framework.Physics2D
+  children:
+  - WaveEngine.Framework.Physics2D.RigidBody2D.#ctor
+  - WaveEngine.Framework.Physics2D.RigidBody2D.ActiveNotification(System.Boolean)
+  - WaveEngine.Framework.Physics2D.RigidBody2D.AllowSleep
+  - WaveEngine.Framework.Physics2D.RigidBody2D.AngularDamping
+  - WaveEngine.Framework.Physics2D.RigidBody2D.AngularVelocity
+  - WaveEngine.Framework.Physics2D.RigidBody2D.ApplyForce(WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2,System.Boolean)
+  - WaveEngine.Framework.Physics2D.RigidBody2D.ApplyForceToCenter(WaveEngine.Common.Math.Vector2,System.Boolean)
+  - WaveEngine.Framework.Physics2D.RigidBody2D.ApplyLinearImpulse(WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2,System.Boolean)
+  - WaveEngine.Framework.Physics2D.RigidBody2D.ApplyTorque(System.Single,System.Boolean)
+  - WaveEngine.Framework.Physics2D.RigidBody2D.Awake
+  - WaveEngine.Framework.Physics2D.RigidBody2D.DefaultValues
+  - WaveEngine.Framework.Physics2D.RigidBody2D.DeleteDependencies
+  - WaveEngine.Framework.Physics2D.RigidBody2D.Dispose
+  - WaveEngine.Framework.Physics2D.RigidBody2D.FixedRotation
+  - WaveEngine.Framework.Physics2D.RigidBody2D.GetLinearVelocityFromLocalPoint(WaveEngine.Common.Math.Vector2)
+  - WaveEngine.Framework.Physics2D.RigidBody2D.GetLinearVelocityFromWorldPoint(WaveEngine.Common.Math.Vector2)
+  - WaveEngine.Framework.Physics2D.RigidBody2D.GetLocalPoint(WaveEngine.Common.Math.Vector2)
+  - WaveEngine.Framework.Physics2D.RigidBody2D.GetLocalVector(WaveEngine.Common.Math.Vector2)
+  - WaveEngine.Framework.Physics2D.RigidBody2D.GetWorldPoint(WaveEngine.Common.Math.Vector2)
+  - WaveEngine.Framework.Physics2D.RigidBody2D.GetWorldVector(WaveEngine.Common.Math.Vector2)
+  - WaveEngine.Framework.Physics2D.RigidBody2D.GravityScale
+  - WaveEngine.Framework.Physics2D.RigidBody2D.Inertia
+  - WaveEngine.Framework.Physics2D.RigidBody2D.Initialize
+  - WaveEngine.Framework.Physics2D.RigidBody2D.IsBullet
+  - WaveEngine.Framework.Physics2D.RigidBody2D.LinearDamping
+  - WaveEngine.Framework.Physics2D.RigidBody2D.LinearVelocity
+  - WaveEngine.Framework.Physics2D.RigidBody2D.Mass
+  - WaveEngine.Framework.Physics2D.RigidBody2D.MassData
+  - WaveEngine.Framework.Physics2D.RigidBody2D.OnSetTransform
+  - WaveEngine.Framework.Physics2D.RigidBody2D.PhysicBodyType
+  - WaveEngine.Framework.Physics2D.RigidBody2D.Removed
+  - WaveEngine.Framework.Physics2D.RigidBody2D.ResetMassData
+  - WaveEngine.Framework.Physics2D.RigidBody2D.ResetPosition(WaveEngine.Common.Math.Vector2,System.Single)
+  - WaveEngine.Framework.Physics2D.RigidBody2D.ResolveDependencies
+  - WaveEngine.Framework.Physics2D.RigidBody2D.RigidBody
+  - WaveEngine.Framework.Physics2D.RigidBody2D.SetTransform(WaveEngine.Common.Math.Vector2,System.Single)
+  - WaveEngine.Framework.Physics2D.RigidBody2D.Transform2D
+  - WaveEngine.Framework.Physics2D.RigidBody2D.Update(System.TimeSpan)
+  langs:
+  - csharp
+  - vb
+  name: RigidBody2D
+  nameWithType: RigidBody2D
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D
+  type: Class
+  source:
+    id: RigidBody2D
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 19
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nRigidbody2D enable your entities to act under the control of physics. The Rigidbody can receive forces and torque\nto make your objects move in a realistic way.\nAny entity must contain a Rigidbody to be influenced by gravity, act under added forces or interact with other objects\nthrough physics engine.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract(Namespace = "WaveEngine.Framework.Physics2D")]
+
+      public sealed class RigidBody2D : Behavior, IDisposable
+    content.vb: >-
+      <DataContract(Namespace:="WaveEngine.Framework.Physics2D")>
+
+      Public NotInheritable Class RigidBody2D
+
+          Inherits Behavior
+
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - WaveEngine.Common.IO.SerializableObject
+  - WaveEngine.Framework.DependencyObject
+  - WaveEngine.Framework.Component
+  - WaveEngine.Framework.Behavior
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - WaveEngine.Framework.Behavior.Family
+  - WaveEngine.Framework.Behavior.IsActive
+  - WaveEngine.Framework.Behavior.UpdateOrder
+  - WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+  - WaveEngine.Framework.Component.isInitialized
+  - WaveEngine.Framework.Component.OnComponentInitialized
+  - WaveEngine.Framework.Component.OnComponentRemoved
+  - WaveEngine.Framework.Component.Name
+  - WaveEngine.Framework.Component.Owner
+  - WaveEngine.Framework.Component.Assets
+  - WaveEngine.Framework.Component.EntityManager
+  - WaveEngine.Framework.Component.BehaviorManager
+  - WaveEngine.Framework.Component.RenderManager
+  - WaveEngine.Framework.Component.Clone
+  - WaveEngine.Framework.Component.ToString
+  - WaveEngine.Framework.DependencyObject.PropertyChanged
+  - WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  - WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  - WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  - WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Namespace
+      type: System.String
+      value: WaveEngine.Framework.Physics2D
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.Transform2D
+  commentId: F:WaveEngine.Framework.Physics2D.RigidBody2D.Transform2D
+  id: Transform2D
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: Transform2D
+  nameWithType: RigidBody2D.Transform2D
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.Transform2D
+  type: Field
+  source:
+    id: Transform2D
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 31
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nThe transform 2D\n"
+  example: []
+  syntax:
+    content: >-
+      [RequiredComponent]
+
+      public Transform2D Transform2D
+    return:
+      type: WaveEngine.Framework.Graphics.Transform2D
+    content.vb: >-
+      <RequiredComponent>
+
+      Public Transform2D As Transform2D
+  attributes:
+  - type: WaveEngine.Framework.RequiredComponent
+    ctor: WaveEngine.Framework.RequiredComponent.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.OnSetTransform
+  commentId: E:WaveEngine.Framework.Physics2D.RigidBody2D.OnSetTransform
+  id: OnSetTransform
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: OnSetTransform
+  nameWithType: RigidBody2D.OnSetTransform
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.OnSetTransform
+  type: Event
+  source:
+    id: OnSetTransform
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 70
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nEvent fired when the SetTransform is called\n"
+  example: []
+  syntax:
+    content: public event EventHandler OnSetTransform
+    return:
+      type: System.EventHandler
+    content.vb: Public Event OnSetTransform As EventHandler
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.RigidBody
+  commentId: P:WaveEngine.Framework.Physics2D.RigidBody2D.RigidBody
+  id: RigidBody
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: RigidBody
+  nameWithType: RigidBody2D.RigidBody
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.RigidBody
+  type: Property
+  source:
+    id: RigidBody
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 77
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nGets the internal RigidBody 2D object\n"
+  example: []
+  syntax:
+    content: public IRigidBody2D RigidBody { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Physics2D.IRigidBody2D
+    content.vb: Public ReadOnly Property RigidBody As IRigidBody2D
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.RigidBody*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.Awake
+  commentId: P:WaveEngine.Framework.Physics2D.RigidBody2D.Awake
+  id: Awake
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: Awake
+  nameWithType: RigidBody2D.Awake
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.Awake
+  type: Property
+  source:
+    id: Awake
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 92
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nGets or sets a value indicating whether this <xref href=\"WaveEngine.Framework.Physics2D.RigidBody2D\" data-throw-if-not-resolved=\"false\"></xref> is awake.\nBodies sleep thru few seconds of inactivity, you can query or set the awake state from this property.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderProperty(Tooltip = "Bodies sleep thru few seconds of inactivity, you can query or set the awake state from this property.")]
+
+      public bool Awake { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if awake; otherwise, <code>false</code>.\n"
+    content.vb: >-
+      <DataMember>
+
+      <RenderProperty(Tooltip:="Bodies sleep thru few seconds of inactivity, you can query or set the awake state from this property.")>
+
+      Public Property Awake As Boolean
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.Awake*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: Tooltip
+      type: System.String
+      value: Bodies sleep thru few seconds of inactivity, you can query or set the awake state from this property.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.AllowSleep
+  commentId: P:WaveEngine.Framework.Physics2D.RigidBody2D.AllowSleep
+  id: AllowSleep
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: AllowSleep
+  nameWithType: RigidBody2D.AllowSleep
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.AllowSleep
+  type: Property
+  source:
+    id: AllowSleep
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 124
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nGets or sets a value indicating whether this body is allowed to sleep, if false it will ignore the Awake property value so it&apos;s always awaken\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderProperty(Tooltip = "Set this flag to false if this body should never fall asleep. Note that this increases CPU usage.")]
+
+      public bool AllowSleep { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if [allow sleep]; otherwise, <code>false</code>.\n"
+    content.vb: >-
+      <DataMember>
+
+      <RenderProperty(Tooltip:="Set this flag to false if this body should never fall asleep. Note that this increases CPU usage.")>
+
+      Public Property AllowSleep As Boolean
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.AllowSleep*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: Tooltip
+      type: System.String
+      value: Set this flag to false if this body should never fall asleep. Note that this increases CPU usage.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.LinearVelocity
+  commentId: P:WaveEngine.Framework.Physics2D.RigidBody2D.LinearVelocity
+  id: LinearVelocity
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: LinearVelocity
+  nameWithType: RigidBody2D.LinearVelocity
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.LinearVelocity
+  type: Property
+  source:
+    id: LinearVelocity
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 156
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nGets or sets the linear velocity of the physics entity.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderProperty(Tooltip = "The linear velocity of the body's origin in world co-ordinates.")]
+
+      public Vector2 LinearVelocity { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Math.Vector2
+      description: "\nThe linear velocity.\n"
+    content.vb: >-
+      <DataMember>
+
+      <RenderProperty(Tooltip:="The linear velocity of the body's origin in world co-ordinates.")>
+
+      Public Property LinearVelocity As Vector2
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.LinearVelocity*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: Tooltip
+      type: System.String
+      value: The linear velocity of the body's origin in world co-ordinates.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.AngularVelocity
+  commentId: P:WaveEngine.Framework.Physics2D.RigidBody2D.AngularVelocity
+  id: AngularVelocity
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: AngularVelocity
+  nameWithType: RigidBody2D.AngularVelocity
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.AngularVelocity
+  type: Property
+  source:
+    id: AngularVelocity
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 188
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nGets or sets the angular velocity of the physics entity.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderProperty(Tooltip = "The angular velocity of the body.")]
+
+      public float AngularVelocity { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe angular velocity.\n"
+    content.vb: >-
+      <DataMember>
+
+      <RenderProperty(Tooltip:="The angular velocity of the body.")>
+
+      Public Property AngularVelocity As Single
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.AngularVelocity*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: Tooltip
+      type: System.String
+      value: The angular velocity of the body.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.FixedRotation
+  commentId: P:WaveEngine.Framework.Physics2D.RigidBody2D.FixedRotation
+  id: FixedRotation
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: FixedRotation
+  nameWithType: RigidBody2D.FixedRotation
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.FixedRotation
+  type: Property
+  source:
+    id: FixedRotation
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 220
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nGets or sets a value indicating whether [fixed rotation].\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderProperty(Tooltip = "Should this body be prevented from rotating? Useful for characters.")]
+
+      public bool FixedRotation { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if [fixed rotation]; otherwise, <code>false</code>.\n"
+    content.vb: >-
+      <DataMember>
+
+      <RenderProperty(Tooltip:="Should this body be prevented from rotating? Useful for characters.")>
+
+      Public Property FixedRotation As Boolean
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.FixedRotation*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: Tooltip
+      type: System.String
+      value: Should this body be prevented from rotating? Useful for characters.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.PhysicBodyType
+  commentId: P:WaveEngine.Framework.Physics2D.RigidBody2D.PhysicBodyType
+  id: PhysicBodyType
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: PhysicBodyType
+  nameWithType: RigidBody2D.PhysicBodyType
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.PhysicBodyType
+  type: Property
+  source:
+    id: PhysicBodyType
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 252
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nGets or sets the type of the physic body.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderProperty(Tooltip = "The body type: static, kinematic, or dynamic. Note: if a dynamic body would have zero mass, the mass is set to one.")]
+
+      public RigidBodyType2D PhysicBodyType { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Physics2D.RigidBodyType2D
+      description: "\nThe type of the physic body.\n"
+    content.vb: >-
+      <DataMember>
+
+      <RenderProperty(Tooltip:="The body type: static, kinematic, or dynamic. Note: if a dynamic body would have zero mass, the mass is set to one.")>
+
+      Public Property PhysicBodyType As RigidBodyType2D
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.PhysicBodyType*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: Tooltip
+      type: System.String
+      value: 'The body type: static, kinematic, or dynamic. Note: if a dynamic body would have zero mass, the mass is set to one.'
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.IsBullet
+  commentId: P:WaveEngine.Framework.Physics2D.RigidBody2D.IsBullet
+  id: IsBullet
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: IsBullet
+  nameWithType: RigidBody2D.IsBullet
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.IsBullet
+  type: Property
+  source:
+    id: IsBullet
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 281
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nGets or sets a value indicating whether is a bullet.\n"
+  remarks: "\nWhether isBullet is false fast-moving entities, such as bullets or falling objects, can pass right through a wall or floor.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderProperty(Tooltip = "Whether IsBullet is false fast-moving entities, such as bullets or falling objects, can pass right through a wall or floor.")]
+
+      public bool IsBullet { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if is a bullet; otherwise, <code>false</code>.\n"
+    content.vb: >-
+      <DataMember>
+
+      <RenderProperty(Tooltip:="Whether IsBullet is false fast-moving entities, such as bullets or falling objects, can pass right through a wall or floor.")>
+
+      Public Property IsBullet As Boolean
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.IsBullet*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: Tooltip
+      type: System.String
+      value: Whether IsBullet is false fast-moving entities, such as bullets or falling objects, can pass right through a wall or floor.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.GravityScale
+  commentId: P:WaveEngine.Framework.Physics2D.RigidBody2D.GravityScale
+  id: GravityScale
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: GravityScale
+  nameWithType: RigidBody2D.GravityScale
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.GravityScale
+  type: Property
+  source:
+    id: GravityScale
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 310
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nGets or sets the gravity scale applied to this body.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderProperty(Tooltip = "Scale the gravity applied to this body.")]
+
+      public float GravityScale { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: >-
+      <DataMember>
+
+      <RenderProperty(Tooltip:="Scale the gravity applied to this body.")>
+
+      Public Property GravityScale As Single
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.GravityScale*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: Tooltip
+      type: System.String
+      value: Scale the gravity applied to this body.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.Mass
+  commentId: P:WaveEngine.Framework.Physics2D.RigidBody2D.Mass
+  id: Mass
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: Mass
+  nameWithType: RigidBody2D.Mass
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.Mass
+  type: Property
+  source:
+    id: Mass
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 339
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nGets the total mass of the body, usually in kg-m^2.\n"
+  example: []
+  syntax:
+    content: public float Mass { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Mass As Single
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.Mass*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.Inertia
+  commentId: P:WaveEngine.Framework.Physics2D.RigidBody2D.Inertia
+  id: Inertia
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: Inertia
+  nameWithType: RigidBody2D.Inertia
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.Inertia
+  type: Property
+  source:
+    id: Inertia
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 355
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nGets the rotational inertia of the body about the local origin, usually in kg-m^2.\n"
+  example: []
+  syntax:
+    content: public float Inertia { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Inertia As Single
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.Inertia*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.MassData
+  commentId: P:WaveEngine.Framework.Physics2D.RigidBody2D.MassData
+  id: MassData
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: MassData
+  nameWithType: RigidBody2D.MassData
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.MassData
+  type: Property
+  source:
+    id: MassData
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 371
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nGets or sets the mass data of the body.\n"
+  example: []
+  syntax:
+    content: public RigidBodyMassData2D MassData { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Physics2D.RigidBodyMassData2D
+    content.vb: Public Property MassData As RigidBodyMassData2D
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.MassData*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.LinearDamping
+  commentId: P:WaveEngine.Framework.Physics2D.RigidBody2D.LinearDamping
+  id: LinearDamping
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: LinearDamping
+  nameWithType: RigidBody2D.LinearDamping
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.LinearDamping
+  type: Property
+  source:
+    id: LinearDamping
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 402
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nGets or sets the linear damping.\n"
+  remarks: "\nLinear damping is use to reduce the linear velocity. The damping parameter can be larger than 1.0f but the damping effect becomes sensitive to the time step when the damping parameter is large.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderProperty(Tooltip = "Linear damping is use to reduce the linear velocity. The damping parameter can be larger than 1.0f but the damping effect becomes sensitive to the time step when the damping parameter is large.")]
+
+      public float LinearDamping { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe linear damping.\n"
+    content.vb: >-
+      <DataMember>
+
+      <RenderProperty(Tooltip:="Linear damping is use to reduce the linear velocity. The damping parameter can be larger than 1.0f but the damping effect becomes sensitive to the time step when the damping parameter is large.")>
+
+      Public Property LinearDamping As Single
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.LinearDamping*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: Tooltip
+      type: System.String
+      value: Linear damping is use to reduce the linear velocity. The damping parameter can be larger than 1.0f but the damping effect becomes sensitive to the time step when the damping parameter is large.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.AngularDamping
+  commentId: P:WaveEngine.Framework.Physics2D.RigidBody2D.AngularDamping
+  id: AngularDamping
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: AngularDamping
+  nameWithType: RigidBody2D.AngularDamping
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.AngularDamping
+  type: Property
+  source:
+    id: AngularDamping
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 437
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nGets or sets the angular Damping.\n"
+  remarks: "\nThe Angular damping is use to reduce the angular velocity. The damping parameter can be larger than 1.0f but the damping effect becomes sensitive to the time step when the damping parameter is large.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderProperty(Tooltip = "Angular damping is use to reduce the angular velocity. The damping parameter can be larger than 1.0f but the damping effect becomes sensitive to the time step when the damping parameter is large.")]
+
+      public float AngularDamping { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe angular damping.\n"
+    content.vb: >-
+      <DataMember>
+
+      <RenderProperty(Tooltip:="Angular damping is use to reduce the angular velocity. The damping parameter can be larger than 1.0f but the damping effect becomes sensitive to the time step when the damping parameter is large.")>
+
+      Public Property AngularDamping As Single
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.AngularDamping*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: Tooltip
+      type: System.String
+      value: Angular damping is use to reduce the angular velocity. The damping parameter can be larger than 1.0f but the damping effect becomes sensitive to the time step when the damping parameter is large.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.#ctor
+  commentId: M:WaveEngine.Framework.Physics2D.RigidBody2D.#ctor
+  id: '#ctor'
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: RigidBody2D()
+  nameWithType: RigidBody2D.RigidBody2D()
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.RigidBody2D()
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 470
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Framework.Physics2D.RigidBody2D\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public RigidBody2D()
+    content.vb: Public Sub New
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.DefaultValues
+  commentId: M:WaveEngine.Framework.Physics2D.RigidBody2D.DefaultValues
+  id: DefaultValues
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: DefaultValues()
+  nameWithType: RigidBody2D.DefaultValues()
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.DefaultValues()
+  type: Method
+  source:
+    id: DefaultValues
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 479
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nThis methods is used to set default values by the default constructor of our classes.\nThis is called too when an entity is deserializing.\n"
+  example: []
+  syntax:
+    content: protected override void DefaultValues()
+    content.vb: Protected Overrides Sub DefaultValues
+  overridden: WaveEngine.Framework.Behavior.DefaultValues
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.DefaultValues*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.SetTransform(WaveEngine.Common.Math.Vector2,System.Single)
+  commentId: M:WaveEngine.Framework.Physics2D.RigidBody2D.SetTransform(WaveEngine.Common.Math.Vector2,System.Single)
+  id: SetTransform(WaveEngine.Common.Math.Vector2,System.Single)
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: SetTransform(Vector2, Single)
+  nameWithType: RigidBody2D.SetTransform(Vector2, Single)
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.SetTransform(WaveEngine.Common.Math.Vector2, System.Single)
+  type: Method
+  source:
+    id: SetTransform
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 501
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nSet the position of the body&apos;s origin and rotation. This breaks any contacts and wakes the other bodies. Manipulating a body&apos;s transform may cause non-physical behavior.\n"
+  example: []
+  syntax:
+    content: public void SetTransform(Vector2 worldPosition, float angle)
+    parameters:
+    - id: worldPosition
+      type: WaveEngine.Common.Math.Vector2
+      description: the world position of the body&apos;s local origin.
+    - id: angle
+      type: System.Single
+      description: the world rotation in radians.
+    content.vb: Public Sub SetTransform(worldPosition As Vector2, angle As Single)
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.SetTransform*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.ResetPosition(WaveEngine.Common.Math.Vector2,System.Single)
+  commentId: M:WaveEngine.Framework.Physics2D.RigidBody2D.ResetPosition(WaveEngine.Common.Math.Vector2,System.Single)
+  id: ResetPosition(WaveEngine.Common.Math.Vector2,System.Single)
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: ResetPosition(Vector2, Single)
+  nameWithType: RigidBody2D.ResetPosition(Vector2, Single)
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.ResetPosition(WaveEngine.Common.Math.Vector2, System.Single)
+  type: Method
+  source:
+    id: ResetPosition
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 516
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nReset the position of the body&apos;s origin and rotation. This breaks any contacts and wakes the other bodies. Manipulating a body&apos;s transform may cause non-physical behavior.\n"
+  example: []
+  syntax:
+    content: public void ResetPosition(Vector2 worldPosition, float angle = 0F)
+    parameters:
+    - id: worldPosition
+      type: WaveEngine.Common.Math.Vector2
+      description: the world position of the body&apos;s local origin.
+    - id: angle
+      type: System.Single
+      description: the world rotation in radians.
+    content.vb: Public Sub ResetPosition(worldPosition As Vector2, angle As Single = 0F)
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.ResetPosition*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.ApplyForce(WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2,System.Boolean)
+  commentId: M:WaveEngine.Framework.Physics2D.RigidBody2D.ApplyForce(WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2,System.Boolean)
+  id: ApplyForce(WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2,System.Boolean)
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: ApplyForce(Vector2, Vector2, Boolean)
+  nameWithType: RigidBody2D.ApplyForce(Vector2, Vector2, Boolean)
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.ApplyForce(WaveEngine.Common.Math.Vector2, WaveEngine.Common.Math.Vector2, System.Boolean)
+  type: Method
+  source:
+    id: ApplyForce
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 529
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nApply a force at a world point. If the force is not applied at the center of mass, it will generate a torque and affect the angular velocity. This wakes up the body.\n"
+  example: []
+  syntax:
+    content: public void ApplyForce(Vector2 force, Vector2 point, bool wake = true)
+    parameters:
+    - id: force
+      type: WaveEngine.Common.Math.Vector2
+      description: The world force vector, usually in Newtons (N).
+    - id: point
+      type: WaveEngine.Common.Math.Vector2
+      description: The world position of the point of application.
+    - id: wake
+      type: System.Boolean
+      description: Also wake up the body
+    content.vb: Public Sub ApplyForce(force As Vector2, point As Vector2, wake As Boolean = True)
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.ApplyForce*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.ApplyForceToCenter(WaveEngine.Common.Math.Vector2,System.Boolean)
+  commentId: M:WaveEngine.Framework.Physics2D.RigidBody2D.ApplyForceToCenter(WaveEngine.Common.Math.Vector2,System.Boolean)
+  id: ApplyForceToCenter(WaveEngine.Common.Math.Vector2,System.Boolean)
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: ApplyForceToCenter(Vector2, Boolean)
+  nameWithType: RigidBody2D.ApplyForceToCenter(Vector2, Boolean)
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.ApplyForceToCenter(WaveEngine.Common.Math.Vector2, System.Boolean)
+  type: Method
+  source:
+    id: ApplyForceToCenter
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 539
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nApply a force to the center of mass. This wakes up the body.\n"
+  example: []
+  syntax:
+    content: public void ApplyForceToCenter(Vector2 force, bool wake = true)
+    parameters:
+    - id: force
+      type: WaveEngine.Common.Math.Vector2
+      description: The world force vector, usually in Newtons (N).
+    - id: wake
+      type: System.Boolean
+      description: Also wake up the body
+    content.vb: Public Sub ApplyForceToCenter(force As Vector2, wake As Boolean = True)
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.ApplyForceToCenter*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.ApplyLinearImpulse(WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2,System.Boolean)
+  commentId: M:WaveEngine.Framework.Physics2D.RigidBody2D.ApplyLinearImpulse(WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2,System.Boolean)
+  id: ApplyLinearImpulse(WaveEngine.Common.Math.Vector2,WaveEngine.Common.Math.Vector2,System.Boolean)
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: ApplyLinearImpulse(Vector2, Vector2, Boolean)
+  nameWithType: RigidBody2D.ApplyLinearImpulse(Vector2, Vector2, Boolean)
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.ApplyLinearImpulse(WaveEngine.Common.Math.Vector2, WaveEngine.Common.Math.Vector2, System.Boolean)
+  type: Method
+  source:
+    id: ApplyLinearImpulse
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 550
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nApply an impulse at a point. This immediately modifies the velocity. It also modifies the angular velocity if the point of application is not at the center of mass. This wakes up the body.\n"
+  example: []
+  syntax:
+    content: public void ApplyLinearImpulse(Vector2 impulse, Vector2 point, bool wake = true)
+    parameters:
+    - id: impulse
+      type: WaveEngine.Common.Math.Vector2
+      description: The world impulse vector, usually in N-seconds or kg-m/s.
+    - id: point
+      type: WaveEngine.Common.Math.Vector2
+      description: The world position of the point of application.
+    - id: wake
+      type: System.Boolean
+      description: Also wake up the body
+    content.vb: Public Sub ApplyLinearImpulse(impulse As Vector2, point As Vector2, wake As Boolean = True)
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.ApplyLinearImpulse*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.ApplyTorque(System.Single,System.Boolean)
+  commentId: M:WaveEngine.Framework.Physics2D.RigidBody2D.ApplyTorque(System.Single,System.Boolean)
+  id: ApplyTorque(System.Single,System.Boolean)
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: ApplyTorque(Single, Boolean)
+  nameWithType: RigidBody2D.ApplyTorque(Single, Boolean)
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.ApplyTorque(System.Single, System.Boolean)
+  type: Method
+  source:
+    id: ApplyTorque
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 560
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nApply a torque. This affects the angular velocity without affecting the linear velocity of the center of mass. This wakes up the body.\n"
+  example: []
+  syntax:
+    content: public void ApplyTorque(float torque, bool wake = true)
+    parameters:
+    - id: torque
+      type: System.Single
+      description: About the z-axis (out of the screen), usually in N-m.
+    - id: wake
+      type: System.Boolean
+      description: Also wake up the body
+    content.vb: Public Sub ApplyTorque(torque As Single, wake As Boolean = True)
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.ApplyTorque*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.GetLinearVelocityFromLocalPoint(WaveEngine.Common.Math.Vector2)
+  commentId: M:WaveEngine.Framework.Physics2D.RigidBody2D.GetLinearVelocityFromLocalPoint(WaveEngine.Common.Math.Vector2)
+  id: GetLinearVelocityFromLocalPoint(WaveEngine.Common.Math.Vector2)
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: GetLinearVelocityFromLocalPoint(Vector2)
+  nameWithType: RigidBody2D.GetLinearVelocityFromLocalPoint(Vector2)
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.GetLinearVelocityFromLocalPoint(WaveEngine.Common.Math.Vector2)
+  type: Method
+  source:
+    id: GetLinearVelocityFromLocalPoint
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 570
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nGet the world velocity of a local point.\n"
+  example: []
+  syntax:
+    content: public Vector2 GetLinearVelocityFromLocalPoint(Vector2 localPoint)
+    parameters:
+    - id: localPoint
+      type: WaveEngine.Common.Math.Vector2
+      description: Point in local coordinates
+    return:
+      type: WaveEngine.Common.Math.Vector2
+      description: The world velocity of a point.
+    content.vb: Public Function GetLinearVelocityFromLocalPoint(localPoint As Vector2) As Vector2
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.GetLinearVelocityFromLocalPoint*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.GetLinearVelocityFromWorldPoint(WaveEngine.Common.Math.Vector2)
+  commentId: M:WaveEngine.Framework.Physics2D.RigidBody2D.GetLinearVelocityFromWorldPoint(WaveEngine.Common.Math.Vector2)
+  id: GetLinearVelocityFromWorldPoint(WaveEngine.Common.Math.Vector2)
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: GetLinearVelocityFromWorldPoint(Vector2)
+  nameWithType: RigidBody2D.GetLinearVelocityFromWorldPoint(Vector2)
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.GetLinearVelocityFromWorldPoint(WaveEngine.Common.Math.Vector2)
+  type: Method
+  source:
+    id: GetLinearVelocityFromWorldPoint
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 580
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nGet the world linear velocity of a world point attached to this body..\n"
+  example: []
+  syntax:
+    content: public Vector2 GetLinearVelocityFromWorldPoint(Vector2 worldPoint)
+    parameters:
+    - id: worldPoint
+      type: WaveEngine.Common.Math.Vector2
+      description: Point in world coordinates
+    return:
+      type: WaveEngine.Common.Math.Vector2
+      description: The world velocity of a point.
+    content.vb: Public Function GetLinearVelocityFromWorldPoint(worldPoint As Vector2) As Vector2
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.GetLinearVelocityFromWorldPoint*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.GetLocalPoint(WaveEngine.Common.Math.Vector2)
+  commentId: M:WaveEngine.Framework.Physics2D.RigidBody2D.GetLocalPoint(WaveEngine.Common.Math.Vector2)
+  id: GetLocalPoint(WaveEngine.Common.Math.Vector2)
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: GetLocalPoint(Vector2)
+  nameWithType: RigidBody2D.GetLocalPoint(Vector2)
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.GetLocalPoint(WaveEngine.Common.Math.Vector2)
+  type: Method
+  source:
+    id: GetLocalPoint
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 590
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nGets a local point relative to the body&apos;s origin given a world point\n"
+  example: []
+  syntax:
+    content: public Vector2 GetLocalPoint(Vector2 worldPoint)
+    parameters:
+    - id: worldPoint
+      type: WaveEngine.Common.Math.Vector2
+      description: Point in world coordinates
+    return:
+      type: WaveEngine.Common.Math.Vector2
+      description: The corresponding local point relative to the body&apos;s origin.
+    content.vb: Public Function GetLocalPoint(worldPoint As Vector2) As Vector2
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.GetLocalPoint*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.GetLocalVector(WaveEngine.Common.Math.Vector2)
+  commentId: M:WaveEngine.Framework.Physics2D.RigidBody2D.GetLocalVector(WaveEngine.Common.Math.Vector2)
+  id: GetLocalVector(WaveEngine.Common.Math.Vector2)
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: GetLocalVector(Vector2)
+  nameWithType: RigidBody2D.GetLocalVector(Vector2)
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.GetLocalVector(WaveEngine.Common.Math.Vector2)
+  type: Method
+  source:
+    id: GetLocalVector
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 600
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nGets a local vector given a world vector.\n"
+  example: []
+  syntax:
+    content: public Vector2 GetLocalVector(Vector2 worldVector)
+    parameters:
+    - id: worldVector
+      type: WaveEngine.Common.Math.Vector2
+      description: Vector in world coordinates.
+    return:
+      type: WaveEngine.Common.Math.Vector2
+      description: The corresponding local vector
+    content.vb: Public Function GetLocalVector(worldVector As Vector2) As Vector2
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.GetLocalVector*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.GetWorldPoint(WaveEngine.Common.Math.Vector2)
+  commentId: M:WaveEngine.Framework.Physics2D.RigidBody2D.GetWorldPoint(WaveEngine.Common.Math.Vector2)
+  id: GetWorldPoint(WaveEngine.Common.Math.Vector2)
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: GetWorldPoint(Vector2)
+  nameWithType: RigidBody2D.GetWorldPoint(Vector2)
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.GetWorldPoint(WaveEngine.Common.Math.Vector2)
+  type: Method
+  source:
+    id: GetWorldPoint
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 610
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nGet the world coordinates of a point given the local coordinates.\n"
+  example: []
+  syntax:
+    content: public Vector2 GetWorldPoint(Vector2 localPoint)
+    parameters:
+    - id: localPoint
+      type: WaveEngine.Common.Math.Vector2
+      description: A point on the body measured relative the the body&apos;s origin.
+    return:
+      type: WaveEngine.Common.Math.Vector2
+      description: The same point expressed in world coordinates.
+    content.vb: Public Function GetWorldPoint(localPoint As Vector2) As Vector2
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.GetWorldPoint*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.GetWorldVector(WaveEngine.Common.Math.Vector2)
+  commentId: M:WaveEngine.Framework.Physics2D.RigidBody2D.GetWorldVector(WaveEngine.Common.Math.Vector2)
+  id: GetWorldVector(WaveEngine.Common.Math.Vector2)
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: GetWorldVector(Vector2)
+  nameWithType: RigidBody2D.GetWorldVector(Vector2)
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.GetWorldVector(WaveEngine.Common.Math.Vector2)
+  type: Method
+  source:
+    id: GetWorldVector
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 620
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nGet the world coordinates of a vector given the local coordinates.\n"
+  example: []
+  syntax:
+    content: public Vector2 GetWorldVector(Vector2 localVector)
+    parameters:
+    - id: localVector
+      type: WaveEngine.Common.Math.Vector2
+      description: A vector fixed in the body.
+    return:
+      type: WaveEngine.Common.Math.Vector2
+      description: The same vector expressed in world coordinates
+    content.vb: Public Function GetWorldVector(localVector As Vector2) As Vector2
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.GetWorldVector*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.ActiveNotification(System.Boolean)
+  commentId: M:WaveEngine.Framework.Physics2D.RigidBody2D.ActiveNotification(System.Boolean)
+  id: ActiveNotification(System.Boolean)
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: ActiveNotification(Boolean)
+  nameWithType: RigidBody2D.ActiveNotification(Boolean)
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.ActiveNotification(System.Boolean)
+  type: Method
+  source:
+    id: ActiveNotification
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 629
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nActives the notification.\n"
+  example: []
+  syntax:
+    content: public override void ActiveNotification(bool active)
+    parameters:
+    - id: active
+      type: System.Boolean
+      description: if set to <code>true</code> [active].
+    content.vb: Public Overrides Sub ActiveNotification(active As Boolean)
+  overridden: WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.ActiveNotification*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.ResetMassData
+  commentId: M:WaveEngine.Framework.Physics2D.RigidBody2D.ResetMassData
+  id: ResetMassData
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: ResetMassData()
+  nameWithType: RigidBody2D.ResetMassData()
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.ResetMassData()
+  type: Method
+  source:
+    id: ResetMassData
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 642
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nThis resets the mass properties to the sum of the mass properties of the fixtures.\n"
+  remarks: "\nThis normally does not need to be called unless you called SetMassData to override the mass and you later want to reset the mass.\n"
+  example: []
+  syntax:
+    content: public void ResetMassData()
+    content.vb: Public Sub ResetMassData
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.ResetMassData*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.Dispose
+  commentId: M:WaveEngine.Framework.Physics2D.RigidBody2D.Dispose
+  id: Dispose
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: RigidBody2D.Dispose()
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 653
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nPerforms application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.ResolveDependencies
+  commentId: M:WaveEngine.Framework.Physics2D.RigidBody2D.ResolveDependencies
+  id: ResolveDependencies
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: ResolveDependencies()
+  nameWithType: RigidBody2D.ResolveDependencies()
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.ResolveDependencies()
+  type: Method
+  source:
+    id: ResolveDependencies
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 664
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nResolve dependencies\n"
+  example: []
+  syntax:
+    content: protected override void ResolveDependencies()
+    content.vb: Protected Overrides Sub ResolveDependencies
+  overridden: WaveEngine.Framework.Component.ResolveDependencies
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.ResolveDependencies*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.DeleteDependencies
+  commentId: M:WaveEngine.Framework.Physics2D.RigidBody2D.DeleteDependencies
+  id: DeleteDependencies
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: DeleteDependencies()
+  nameWithType: RigidBody2D.DeleteDependencies()
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.DeleteDependencies()
+  type: Method
+  source:
+    id: DeleteDependencies
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 680
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nDelete dependencies\n"
+  example: []
+  syntax:
+    content: protected override void DeleteDependencies()
+    content.vb: Protected Overrides Sub DeleteDependencies
+  overridden: WaveEngine.Framework.Component.DeleteDependencies
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.DeleteDependencies*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.Removed
+  commentId: M:WaveEngine.Framework.Physics2D.RigidBody2D.Removed
+  id: Removed
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: Removed()
+  nameWithType: RigidBody2D.Removed()
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.Removed()
+  type: Method
+  source:
+    id: Removed
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 690
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nCalled when the component is removed from the entity\n"
+  example: []
+  syntax:
+    content: protected override void Removed()
+    content.vb: Protected Overrides Sub Removed
+  overridden: WaveEngine.Framework.Component.Removed
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.Removed*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.Initialize
+  commentId: M:WaveEngine.Framework.Physics2D.RigidBody2D.Initialize
+  id: Initialize
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: RigidBody2D.Initialize()
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.Initialize()
+  type: Method
+  source:
+    id: Initialize
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 699
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nInitialice this instance\n"
+  example: []
+  syntax:
+    content: protected override void Initialize()
+    content.vb: Protected Overrides Sub Initialize
+  overridden: WaveEngine.Framework.Component.Initialize
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.Initialize*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.Update(System.TimeSpan)
+  commentId: M:WaveEngine.Framework.Physics2D.RigidBody2D.Update(System.TimeSpan)
+  id: Update(System.TimeSpan)
+  parent: WaveEngine.Framework.Physics2D.RigidBody2D
+  langs:
+  - csharp
+  - vb
+  name: Update(TimeSpan)
+  nameWithType: RigidBody2D.Update(TimeSpan)
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.Update(System.TimeSpan)
+  type: Method
+  source:
+    id: Update
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics2D\Body\RigidBody2D.cs
+    startLine: 750
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics2D
+  summary: "\nAllows this instance to execute custom logic during its <code>Update</code>.\n"
+  remarks: "\nThis method will not be executed if the <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref>, or the <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref>\nowning it are not <code>Active</code>.\n"
+  example: []
+  syntax:
+    content: protected override void Update(TimeSpan gameTime)
+    parameters:
+    - id: gameTime
+      type: System.TimeSpan
+      description: The game time.
+    content.vb: Protected Overrides Sub Update(gameTime As TimeSpan)
+  overridden: WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+  overload: WaveEngine.Framework.Physics2D.RigidBody2D.Update*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: WaveEngine.Framework.Physics2D
+  commentId: N:WaveEngine.Framework.Physics2D
+  name: WaveEngine.Framework.Physics2D
+  nameWithType: WaveEngine.Framework.Physics2D
+  fullName: WaveEngine.Framework.Physics2D
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.IO.SerializableObject
+  commentId: T:WaveEngine.Common.IO.SerializableObject
+  parent: WaveEngine.Common.IO
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: WaveEngine.Common.IO.SerializableObject
+- uid: WaveEngine.Framework.DependencyObject
+  commentId: T:WaveEngine.Framework.DependencyObject
+  parent: WaveEngine.Framework
+  name: DependencyObject
+  nameWithType: DependencyObject
+  fullName: WaveEngine.Framework.DependencyObject
+- uid: WaveEngine.Framework.Component
+  commentId: T:WaveEngine.Framework.Component
+  parent: WaveEngine.Framework
+  name: Component
+  nameWithType: Component
+  fullName: WaveEngine.Framework.Component
+- uid: WaveEngine.Framework.Behavior
+  commentId: T:WaveEngine.Framework.Behavior
+  parent: WaveEngine.Framework
+  name: Behavior
+  nameWithType: Behavior
+  fullName: WaveEngine.Framework.Behavior
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: WaveEngine.Framework.Behavior.Family
+  commentId: P:WaveEngine.Framework.Behavior.Family
+  parent: WaveEngine.Framework.Behavior
+  name: Family
+  nameWithType: Behavior.Family
+  fullName: WaveEngine.Framework.Behavior.Family
+- uid: WaveEngine.Framework.Behavior.IsActive
+  commentId: P:WaveEngine.Framework.Behavior.IsActive
+  parent: WaveEngine.Framework.Behavior
+  name: IsActive
+  nameWithType: Behavior.IsActive
+  fullName: WaveEngine.Framework.Behavior.IsActive
+- uid: WaveEngine.Framework.Behavior.UpdateOrder
+  commentId: P:WaveEngine.Framework.Behavior.UpdateOrder
+  parent: WaveEngine.Framework.Behavior
+  name: UpdateOrder
+  nameWithType: Behavior.UpdateOrder
+  fullName: WaveEngine.Framework.Behavior.UpdateOrder
+- uid: WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+  commentId: M:WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+  parent: WaveEngine.Framework.Behavior
+  isExternal: true
+  name: BaseActiveNotification(Boolean)
+  nameWithType: Behavior.BaseActiveNotification(Boolean)
+  fullName: WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+    name: BaseActiveNotification
+    nameWithType: Behavior.BaseActiveNotification
+    fullName: WaveEngine.Framework.Behavior.BaseActiveNotification
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+    name: BaseActiveNotification
+    nameWithType: Behavior.BaseActiveNotification
+    fullName: WaveEngine.Framework.Behavior.BaseActiveNotification
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.isInitialized
+  commentId: F:WaveEngine.Framework.Component.isInitialized
+  parent: WaveEngine.Framework.Component
+  name: isInitialized
+  nameWithType: Component.isInitialized
+  fullName: WaveEngine.Framework.Component.isInitialized
+- uid: WaveEngine.Framework.Component.OnComponentInitialized
+  commentId: E:WaveEngine.Framework.Component.OnComponentInitialized
+  parent: WaveEngine.Framework.Component
+  name: OnComponentInitialized
+  nameWithType: Component.OnComponentInitialized
+  fullName: WaveEngine.Framework.Component.OnComponentInitialized
+- uid: WaveEngine.Framework.Component.OnComponentRemoved
+  commentId: E:WaveEngine.Framework.Component.OnComponentRemoved
+  parent: WaveEngine.Framework.Component
+  name: OnComponentRemoved
+  nameWithType: Component.OnComponentRemoved
+  fullName: WaveEngine.Framework.Component.OnComponentRemoved
+- uid: WaveEngine.Framework.Component.Name
+  commentId: P:WaveEngine.Framework.Component.Name
+  parent: WaveEngine.Framework.Component
+  name: Name
+  nameWithType: Component.Name
+  fullName: WaveEngine.Framework.Component.Name
+- uid: WaveEngine.Framework.Component.Owner
+  commentId: P:WaveEngine.Framework.Component.Owner
+  parent: WaveEngine.Framework.Component
+  name: Owner
+  nameWithType: Component.Owner
+  fullName: WaveEngine.Framework.Component.Owner
+- uid: WaveEngine.Framework.Component.Assets
+  commentId: P:WaveEngine.Framework.Component.Assets
+  parent: WaveEngine.Framework.Component
+  name: Assets
+  nameWithType: Component.Assets
+  fullName: WaveEngine.Framework.Component.Assets
+- uid: WaveEngine.Framework.Component.EntityManager
+  commentId: P:WaveEngine.Framework.Component.EntityManager
+  parent: WaveEngine.Framework.Component
+  name: EntityManager
+  nameWithType: Component.EntityManager
+  fullName: WaveEngine.Framework.Component.EntityManager
+- uid: WaveEngine.Framework.Component.BehaviorManager
+  commentId: P:WaveEngine.Framework.Component.BehaviorManager
+  parent: WaveEngine.Framework.Component
+  name: BehaviorManager
+  nameWithType: Component.BehaviorManager
+  fullName: WaveEngine.Framework.Component.BehaviorManager
+- uid: WaveEngine.Framework.Component.RenderManager
+  commentId: P:WaveEngine.Framework.Component.RenderManager
+  parent: WaveEngine.Framework.Component
+  name: RenderManager
+  nameWithType: Component.RenderManager
+  fullName: WaveEngine.Framework.Component.RenderManager
+- uid: WaveEngine.Framework.Component.Clone
+  commentId: M:WaveEngine.Framework.Component.Clone
+  parent: WaveEngine.Framework.Component
+  name: Clone()
+  nameWithType: Component.Clone()
+  fullName: WaveEngine.Framework.Component.Clone()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Clone
+    name: Clone
+    nameWithType: Component.Clone
+    fullName: WaveEngine.Framework.Component.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Clone
+    name: Clone
+    nameWithType: Component.Clone
+    fullName: WaveEngine.Framework.Component.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.ToString
+  commentId: M:WaveEngine.Framework.Component.ToString
+  parent: WaveEngine.Framework.Component
+  name: ToString()
+  nameWithType: Component.ToString()
+  fullName: WaveEngine.Framework.Component.ToString()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: WaveEngine.Framework.Component.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: WaveEngine.Framework.Component.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.PropertyChanged
+  commentId: E:WaveEngine.Framework.DependencyObject.PropertyChanged
+  parent: WaveEngine.Framework.DependencyObject
+  name: PropertyChanged
+  nameWithType: DependencyObject.PropertyChanged
+  fullName: WaveEngine.Framework.DependencyObject.PropertyChanged
+- uid: WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  commentId: P:WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  parent: WaveEngine.Framework.DependencyObject
+  name: ParentDependencyObject
+  nameWithType: DependencyObject.ParentDependencyObject
+  fullName: WaveEngine.Framework.DependencyObject.ParentDependencyObject
+- uid: WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  commentId: P:WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  parent: WaveEngine.Framework.DependencyObject
+  name: EnableDiagnosticCallback
+  nameWithType: DependencyObject.EnableDiagnosticCallback
+  fullName: WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+- uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  commentId: M:WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  parent: WaveEngine.Framework.DependencyObject
+  isExternal: true
+  name: SetValue(DependencyProperty, Object)
+  nameWithType: DependencyObject.SetValue(DependencyProperty, Object)
+  fullName: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty, System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+    name: SetValue
+    nameWithType: DependencyObject.SetValue
+    fullName: WaveEngine.Framework.DependencyObject.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+    name: SetValue
+    nameWithType: DependencyObject.SetValue
+    fullName: WaveEngine.Framework.DependencyObject.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: GetValue(DependencyProperty)
+  nameWithType: DependencyObject.GetValue(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+    name: GetValue
+    nameWithType: DependencyObject.GetValue
+    fullName: WaveEngine.Framework.DependencyObject.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+    name: GetValue
+    nameWithType: DependencyObject.GetValue
+    fullName: WaveEngine.Framework.DependencyObject.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: GetAbsoluteValue<T>(DependencyProperty)
+  nameWithType: DependencyObject.GetAbsoluteValue<T>(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue<T>(WaveEngine.Framework.DependencyProperty)
+  nameWithType.vb: DependencyObject.GetAbsoluteValue(Of T)(DependencyProperty)
+  fullName.vb: WaveEngine.Framework.DependencyObject.GetAbsoluteValue(Of T)(WaveEngine.Framework.DependencyProperty)
+  name.vb: GetAbsoluteValue(Of T)(DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+    name: GetAbsoluteValue<T>
+    nameWithType: DependencyObject.GetAbsoluteValue<T>
+    fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+    name: GetAbsoluteValue(Of T)
+    nameWithType: DependencyObject.GetAbsoluteValue(Of T)
+    fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: ClearValue(DependencyProperty)
+  nameWithType: DependencyObject.ClearValue(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+    name: ClearValue
+    nameWithType: DependencyObject.ClearValue
+    fullName: WaveEngine.Framework.DependencyObject.ClearValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+    name: ClearValue
+    nameWithType: DependencyObject.ClearValue
+    fullName: WaveEngine.Framework.DependencyObject.ClearValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: IsValueSet(DependencyProperty)
+  nameWithType: DependencyObject.IsValueSet(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+    name: IsValueSet
+    nameWithType: DependencyObject.IsValueSet
+    fullName: WaveEngine.Framework.DependencyObject.IsValueSet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+    name: IsValueSet
+    nameWithType: DependencyObject.IsValueSet
+    fullName: WaveEngine.Framework.DependencyObject.IsValueSet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  commentId: M:WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  parent: WaveEngine.Common.IO.SerializableObject
+  isExternal: true
+  name: OnDeserializing(StreamingContext)
+  nameWithType: SerializableObject.OnDeserializing(StreamingContext)
+  fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.IO
+  commentId: N:WaveEngine.Common.IO
+  name: WaveEngine.Common.IO
+  nameWithType: WaveEngine.Common.IO
+  fullName: WaveEngine.Common.IO
+- uid: WaveEngine.Framework
+  commentId: N:WaveEngine.Framework
+  name: WaveEngine.Framework
+  nameWithType: WaveEngine.Framework
+  fullName: WaveEngine.Framework
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Framework.Graphics.Transform2D
+  commentId: T:WaveEngine.Framework.Graphics.Transform2D
+  parent: WaveEngine.Framework.Graphics
+  name: Transform2D
+  nameWithType: Transform2D
+  fullName: WaveEngine.Framework.Graphics.Transform2D
+- uid: WaveEngine.Framework.Graphics
+  commentId: N:WaveEngine.Framework.Graphics
+  name: WaveEngine.Framework.Graphics
+  nameWithType: WaveEngine.Framework.Graphics
+  fullName: WaveEngine.Framework.Graphics
+- uid: System.EventHandler
+  commentId: T:System.EventHandler
+  parent: System
+  isExternal: true
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.RigidBody*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.RigidBody
+  name: RigidBody
+  nameWithType: RigidBody2D.RigidBody
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.RigidBody
+- uid: WaveEngine.Common.Physics2D.IRigidBody2D
+  commentId: T:WaveEngine.Common.Physics2D.IRigidBody2D
+  parent: WaveEngine.Common.Physics2D
+  name: IRigidBody2D
+  nameWithType: IRigidBody2D
+  fullName: WaveEngine.Common.Physics2D.IRigidBody2D
+- uid: WaveEngine.Common.Physics2D
+  commentId: N:WaveEngine.Common.Physics2D
+  name: WaveEngine.Common.Physics2D
+  nameWithType: WaveEngine.Common.Physics2D
+  fullName: WaveEngine.Common.Physics2D
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D
+  commentId: T:WaveEngine.Framework.Physics2D.RigidBody2D
+  parent: WaveEngine.Framework.Physics2D
+  name: RigidBody2D
+  nameWithType: RigidBody2D
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.Awake*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.Awake
+  name: Awake
+  nameWithType: RigidBody2D.Awake
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.Awake
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.AllowSleep*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.AllowSleep
+  name: AllowSleep
+  nameWithType: RigidBody2D.AllowSleep
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.AllowSleep
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.LinearVelocity*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.LinearVelocity
+  name: LinearVelocity
+  nameWithType: RigidBody2D.LinearVelocity
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.LinearVelocity
+- uid: WaveEngine.Common.Math.Vector2
+  commentId: T:WaveEngine.Common.Math.Vector2
+  parent: WaveEngine.Common.Math
+  name: Vector2
+  nameWithType: Vector2
+  fullName: WaveEngine.Common.Math.Vector2
+- uid: WaveEngine.Common.Math
+  commentId: N:WaveEngine.Common.Math
+  name: WaveEngine.Common.Math
+  nameWithType: WaveEngine.Common.Math
+  fullName: WaveEngine.Common.Math
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.AngularVelocity*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.AngularVelocity
+  name: AngularVelocity
+  nameWithType: RigidBody2D.AngularVelocity
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.AngularVelocity
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.FixedRotation*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.FixedRotation
+  name: FixedRotation
+  nameWithType: RigidBody2D.FixedRotation
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.FixedRotation
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.PhysicBodyType*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.PhysicBodyType
+  name: PhysicBodyType
+  nameWithType: RigidBody2D.PhysicBodyType
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.PhysicBodyType
+- uid: WaveEngine.Common.Physics2D.RigidBodyType2D
+  commentId: T:WaveEngine.Common.Physics2D.RigidBodyType2D
+  parent: WaveEngine.Common.Physics2D
+  name: RigidBodyType2D
+  nameWithType: RigidBodyType2D
+  fullName: WaveEngine.Common.Physics2D.RigidBodyType2D
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.IsBullet*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.IsBullet
+  name: IsBullet
+  nameWithType: RigidBody2D.IsBullet
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.IsBullet
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.GravityScale*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.GravityScale
+  name: GravityScale
+  nameWithType: RigidBody2D.GravityScale
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.GravityScale
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.Mass*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.Mass
+  name: Mass
+  nameWithType: RigidBody2D.Mass
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.Mass
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.Inertia*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.Inertia
+  name: Inertia
+  nameWithType: RigidBody2D.Inertia
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.Inertia
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.MassData*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.MassData
+  name: MassData
+  nameWithType: RigidBody2D.MassData
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.MassData
+- uid: WaveEngine.Common.Physics2D.RigidBodyMassData2D
+  commentId: T:WaveEngine.Common.Physics2D.RigidBodyMassData2D
+  parent: WaveEngine.Common.Physics2D
+  name: RigidBodyMassData2D
+  nameWithType: RigidBodyMassData2D
+  fullName: WaveEngine.Common.Physics2D.RigidBodyMassData2D
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.LinearDamping*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.LinearDamping
+  name: LinearDamping
+  nameWithType: RigidBody2D.LinearDamping
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.LinearDamping
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.AngularDamping*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.AngularDamping
+  name: AngularDamping
+  nameWithType: RigidBody2D.AngularDamping
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.AngularDamping
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.#ctor*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.#ctor
+  name: RigidBody2D
+  nameWithType: RigidBody2D.RigidBody2D
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.RigidBody2D
+- uid: WaveEngine.Framework.Behavior.DefaultValues
+  commentId: M:WaveEngine.Framework.Behavior.DefaultValues
+  parent: WaveEngine.Framework.Behavior
+  name: DefaultValues()
+  nameWithType: Behavior.DefaultValues()
+  fullName: WaveEngine.Framework.Behavior.DefaultValues()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Behavior.DefaultValues
+    name: DefaultValues
+    nameWithType: Behavior.DefaultValues
+    fullName: WaveEngine.Framework.Behavior.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Behavior.DefaultValues
+    name: DefaultValues
+    nameWithType: Behavior.DefaultValues
+    fullName: WaveEngine.Framework.Behavior.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.DefaultValues*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.DefaultValues
+  name: DefaultValues
+  nameWithType: RigidBody2D.DefaultValues
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.DefaultValues
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.SetTransform*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.SetTransform
+  name: SetTransform
+  nameWithType: RigidBody2D.SetTransform
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.SetTransform
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.ResetPosition*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.ResetPosition
+  name: ResetPosition
+  nameWithType: RigidBody2D.ResetPosition
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.ResetPosition
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.ApplyForce*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.ApplyForce
+  name: ApplyForce
+  nameWithType: RigidBody2D.ApplyForce
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.ApplyForce
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.ApplyForceToCenter*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.ApplyForceToCenter
+  name: ApplyForceToCenter
+  nameWithType: RigidBody2D.ApplyForceToCenter
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.ApplyForceToCenter
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.ApplyLinearImpulse*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.ApplyLinearImpulse
+  name: ApplyLinearImpulse
+  nameWithType: RigidBody2D.ApplyLinearImpulse
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.ApplyLinearImpulse
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.ApplyTorque*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.ApplyTorque
+  name: ApplyTorque
+  nameWithType: RigidBody2D.ApplyTorque
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.ApplyTorque
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.GetLinearVelocityFromLocalPoint*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.GetLinearVelocityFromLocalPoint
+  name: GetLinearVelocityFromLocalPoint
+  nameWithType: RigidBody2D.GetLinearVelocityFromLocalPoint
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.GetLinearVelocityFromLocalPoint
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.GetLinearVelocityFromWorldPoint*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.GetLinearVelocityFromWorldPoint
+  name: GetLinearVelocityFromWorldPoint
+  nameWithType: RigidBody2D.GetLinearVelocityFromWorldPoint
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.GetLinearVelocityFromWorldPoint
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.GetLocalPoint*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.GetLocalPoint
+  name: GetLocalPoint
+  nameWithType: RigidBody2D.GetLocalPoint
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.GetLocalPoint
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.GetLocalVector*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.GetLocalVector
+  name: GetLocalVector
+  nameWithType: RigidBody2D.GetLocalVector
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.GetLocalVector
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.GetWorldPoint*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.GetWorldPoint
+  name: GetWorldPoint
+  nameWithType: RigidBody2D.GetWorldPoint
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.GetWorldPoint
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.GetWorldVector*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.GetWorldVector
+  name: GetWorldVector
+  nameWithType: RigidBody2D.GetWorldVector
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.GetWorldVector
+- uid: WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+  commentId: M:WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+  parent: WaveEngine.Framework.Behavior
+  isExternal: true
+  name: ActiveNotification(Boolean)
+  nameWithType: Behavior.ActiveNotification(Boolean)
+  fullName: WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+    name: ActiveNotification
+    nameWithType: Behavior.ActiveNotification
+    fullName: WaveEngine.Framework.Behavior.ActiveNotification
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+    name: ActiveNotification
+    nameWithType: Behavior.ActiveNotification
+    fullName: WaveEngine.Framework.Behavior.ActiveNotification
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.ActiveNotification*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.ActiveNotification
+  name: ActiveNotification
+  nameWithType: RigidBody2D.ActiveNotification
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.ActiveNotification
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.ResetMassData*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.ResetMassData
+  name: ResetMassData
+  nameWithType: RigidBody2D.ResetMassData
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.ResetMassData
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.Dispose*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.Dispose
+  name: Dispose
+  nameWithType: RigidBody2D.Dispose
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.ResolveDependencies
+  commentId: M:WaveEngine.Framework.Component.ResolveDependencies
+  parent: WaveEngine.Framework.Component
+  name: ResolveDependencies()
+  nameWithType: Component.ResolveDependencies()
+  fullName: WaveEngine.Framework.Component.ResolveDependencies()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.ResolveDependencies
+    name: ResolveDependencies
+    nameWithType: Component.ResolveDependencies
+    fullName: WaveEngine.Framework.Component.ResolveDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.ResolveDependencies
+    name: ResolveDependencies
+    nameWithType: Component.ResolveDependencies
+    fullName: WaveEngine.Framework.Component.ResolveDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.ResolveDependencies*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.ResolveDependencies
+  name: ResolveDependencies
+  nameWithType: RigidBody2D.ResolveDependencies
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.ResolveDependencies
+- uid: WaveEngine.Framework.Component.DeleteDependencies
+  commentId: M:WaveEngine.Framework.Component.DeleteDependencies
+  parent: WaveEngine.Framework.Component
+  name: DeleteDependencies()
+  nameWithType: Component.DeleteDependencies()
+  fullName: WaveEngine.Framework.Component.DeleteDependencies()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Component.DeleteDependencies
+    fullName: WaveEngine.Framework.Component.DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Component.DeleteDependencies
+    fullName: WaveEngine.Framework.Component.DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.DeleteDependencies*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.DeleteDependencies
+  name: DeleteDependencies
+  nameWithType: RigidBody2D.DeleteDependencies
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.DeleteDependencies
+- uid: WaveEngine.Framework.Component.Removed
+  commentId: M:WaveEngine.Framework.Component.Removed
+  parent: WaveEngine.Framework.Component
+  name: Removed()
+  nameWithType: Component.Removed()
+  fullName: WaveEngine.Framework.Component.Removed()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Removed
+    name: Removed
+    nameWithType: Component.Removed
+    fullName: WaveEngine.Framework.Component.Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Removed
+    name: Removed
+    nameWithType: Component.Removed
+    fullName: WaveEngine.Framework.Component.Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.Removed*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.Removed
+  name: Removed
+  nameWithType: RigidBody2D.Removed
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.Removed
+- uid: WaveEngine.Framework.Component.Initialize
+  commentId: M:WaveEngine.Framework.Component.Initialize
+  parent: WaveEngine.Framework.Component
+  name: Initialize()
+  nameWithType: Component.Initialize()
+  fullName: WaveEngine.Framework.Component.Initialize()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Initialize
+    name: Initialize
+    nameWithType: Component.Initialize
+    fullName: WaveEngine.Framework.Component.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Initialize
+    name: Initialize
+    nameWithType: Component.Initialize
+    fullName: WaveEngine.Framework.Component.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.Initialize*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.Initialize
+  name: Initialize
+  nameWithType: RigidBody2D.Initialize
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.Initialize
+- uid: WaveEngine.Framework.Entity
+  commentId: T:WaveEngine.Framework.Entity
+  parent: WaveEngine.Framework
+  name: Entity
+  nameWithType: Entity
+  fullName: WaveEngine.Framework.Entity
+- uid: WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+  commentId: M:WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+  parent: WaveEngine.Framework.Behavior
+  isExternal: true
+  name: Update(TimeSpan)
+  nameWithType: Behavior.Update(TimeSpan)
+  fullName: WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+    name: Update
+    nameWithType: Behavior.Update
+    fullName: WaveEngine.Framework.Behavior.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+    name: Update
+    nameWithType: Behavior.Update
+    fullName: WaveEngine.Framework.Behavior.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics2D.RigidBody2D.Update*
+  commentId: Overload:WaveEngine.Framework.Physics2D.RigidBody2D.Update
+  name: Update
+  nameWithType: RigidBody2D.Update
+  fullName: WaveEngine.Framework.Physics2D.RigidBody2D.Update
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan

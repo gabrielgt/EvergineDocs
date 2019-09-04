@@ -1,0 +1,367 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Common.Physics3D.ICollisionInfoStore3D
+  commentId: T:WaveEngine.Common.Physics3D.ICollisionInfoStore3D
+  id: ICollisionInfoStore3D
+  parent: WaveEngine.Common.Physics3D
+  children:
+  - WaveEngine.Common.Physics3D.ICollisionInfoStore3D.AddContact(WaveEngine.Common.Physics3D.IPhysicBody3D,WaveEngine.Common.Physics3D.IColliderShape3D,WaveEngine.Common.Physics3D.IPhysicBody3D,WaveEngine.Common.Physics3D.IColliderShape3D,WaveEngine.Common.Physics3D.InternalContactPoint3D@)
+  - WaveEngine.Common.Physics3D.ICollisionInfoStore3D.BeginContactProcess
+  - WaveEngine.Common.Physics3D.ICollisionInfoStore3D.EndContactProcess(System.Boolean)
+  - WaveEngine.Common.Physics3D.ICollisionInfoStore3D.ProcessCollision
+  langs:
+  - csharp
+  - vb
+  name: ICollisionInfoStore3D
+  nameWithType: ICollisionInfoStore3D
+  fullName: WaveEngine.Common.Physics3D.ICollisionInfoStore3D
+  type: Interface
+  source:
+    id: ICollisionInfoStore3D
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics3D\Contact\ICollisionInfoStore3D.cs
+    startLine: 15
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics3D
+  summary: "\nRepresent a collision info list\n"
+  example: []
+  syntax:
+    content: public interface ICollisionInfoStore3D
+    content.vb: Public Interface ICollisionInfoStore3D
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: WaveEngine.Common.Physics3D.ICollisionInfoStore3D.ProcessCollision
+  commentId: P:WaveEngine.Common.Physics3D.ICollisionInfoStore3D.ProcessCollision
+  id: ProcessCollision
+  parent: WaveEngine.Common.Physics3D.ICollisionInfoStore3D
+  langs:
+  - csharp
+  - vb
+  name: ProcessCollision
+  nameWithType: ICollisionInfoStore3D.ProcessCollision
+  fullName: WaveEngine.Common.Physics3D.ICollisionInfoStore3D.ProcessCollision
+  type: Property
+  source:
+    id: ProcessCollision
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics3D\Contact\ICollisionInfoStore3D.cs
+    startLine: 22
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics3D
+  summary: "\nGets a value indicating whether we need to process collision\n"
+  example: []
+  syntax:
+    content: bool ProcessCollision { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property ProcessCollision As Boolean
+  overload: WaveEngine.Common.Physics3D.ICollisionInfoStore3D.ProcessCollision*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: WaveEngine.Common.Physics3D.ICollisionInfoStore3D.AddContact(WaveEngine.Common.Physics3D.IPhysicBody3D,WaveEngine.Common.Physics3D.IColliderShape3D,WaveEngine.Common.Physics3D.IPhysicBody3D,WaveEngine.Common.Physics3D.IColliderShape3D,WaveEngine.Common.Physics3D.InternalContactPoint3D@)
+  commentId: M:WaveEngine.Common.Physics3D.ICollisionInfoStore3D.AddContact(WaveEngine.Common.Physics3D.IPhysicBody3D,WaveEngine.Common.Physics3D.IColliderShape3D,WaveEngine.Common.Physics3D.IPhysicBody3D,WaveEngine.Common.Physics3D.IColliderShape3D,WaveEngine.Common.Physics3D.InternalContactPoint3D@)
+  id: AddContact(WaveEngine.Common.Physics3D.IPhysicBody3D,WaveEngine.Common.Physics3D.IColliderShape3D,WaveEngine.Common.Physics3D.IPhysicBody3D,WaveEngine.Common.Physics3D.IColliderShape3D,WaveEngine.Common.Physics3D.InternalContactPoint3D@)
+  parent: WaveEngine.Common.Physics3D.ICollisionInfoStore3D
+  langs:
+  - csharp
+  - vb
+  name: AddContact(IPhysicBody3D, IColliderShape3D, IPhysicBody3D, IColliderShape3D, ref InternalContactPoint3D)
+  nameWithType: ICollisionInfoStore3D.AddContact(IPhysicBody3D, IColliderShape3D, IPhysicBody3D, IColliderShape3D, ref InternalContactPoint3D)
+  fullName: WaveEngine.Common.Physics3D.ICollisionInfoStore3D.AddContact(WaveEngine.Common.Physics3D.IPhysicBody3D, WaveEngine.Common.Physics3D.IColliderShape3D, WaveEngine.Common.Physics3D.IPhysicBody3D, WaveEngine.Common.Physics3D.IColliderShape3D, ref WaveEngine.Common.Physics3D.InternalContactPoint3D)
+  type: Method
+  source:
+    id: AddContact
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics3D\Contact\ICollisionInfoStore3D.cs
+    startLine: 38
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics3D
+  summary: "\nAdd collision info\n"
+  example: []
+  syntax:
+    content: void AddContact(IPhysicBody3D bodyA, IColliderShape3D colliderA, IPhysicBody3D bodyB, IColliderShape3D colliderB, ref InternalContactPoint3D contact)
+    parameters:
+    - id: bodyA
+      type: WaveEngine.Common.Physics3D.IPhysicBody3D
+      description: The first body
+    - id: colliderA
+      type: WaveEngine.Common.Physics3D.IColliderShape3D
+      description: The first collider
+    - id: bodyB
+      type: WaveEngine.Common.Physics3D.IPhysicBody3D
+      description: The second body
+    - id: colliderB
+      type: WaveEngine.Common.Physics3D.IColliderShape3D
+      description: The second collider
+    - id: contact
+      type: WaveEngine.Common.Physics3D.InternalContactPoint3D
+      description: The contact
+    content.vb: Sub AddContact(bodyA As IPhysicBody3D, colliderA As IColliderShape3D, bodyB As IPhysicBody3D, colliderB As IColliderShape3D, ByRef contact As InternalContactPoint3D)
+  overload: WaveEngine.Common.Physics3D.ICollisionInfoStore3D.AddContact*
+  nameWithType.vb: ICollisionInfoStore3D.AddContact(IPhysicBody3D, IColliderShape3D, IPhysicBody3D, IColliderShape3D, ByRef InternalContactPoint3D)
+  fullName.vb: WaveEngine.Common.Physics3D.ICollisionInfoStore3D.AddContact(WaveEngine.Common.Physics3D.IPhysicBody3D, WaveEngine.Common.Physics3D.IColliderShape3D, WaveEngine.Common.Physics3D.IPhysicBody3D, WaveEngine.Common.Physics3D.IColliderShape3D, ByRef WaveEngine.Common.Physics3D.InternalContactPoint3D)
+  name.vb: AddContact(IPhysicBody3D, IColliderShape3D, IPhysicBody3D, IColliderShape3D, ByRef InternalContactPoint3D)
+- uid: WaveEngine.Common.Physics3D.ICollisionInfoStore3D.BeginContactProcess
+  commentId: M:WaveEngine.Common.Physics3D.ICollisionInfoStore3D.BeginContactProcess
+  id: BeginContactProcess
+  parent: WaveEngine.Common.Physics3D.ICollisionInfoStore3D
+  langs:
+  - csharp
+  - vb
+  name: BeginContactProcess()
+  nameWithType: ICollisionInfoStore3D.BeginContactProcess()
+  fullName: WaveEngine.Common.Physics3D.ICollisionInfoStore3D.BeginContactProcess()
+  type: Method
+  source:
+    id: BeginContactProcess
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics3D\Contact\ICollisionInfoStore3D.cs
+    startLine: 43
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics3D
+  summary: "\nReset store\n"
+  example: []
+  syntax:
+    content: void BeginContactProcess()
+    content.vb: Sub BeginContactProcess
+  overload: WaveEngine.Common.Physics3D.ICollisionInfoStore3D.BeginContactProcess*
+- uid: WaveEngine.Common.Physics3D.ICollisionInfoStore3D.EndContactProcess(System.Boolean)
+  commentId: M:WaveEngine.Common.Physics3D.ICollisionInfoStore3D.EndContactProcess(System.Boolean)
+  id: EndContactProcess(System.Boolean)
+  parent: WaveEngine.Common.Physics3D.ICollisionInfoStore3D
+  langs:
+  - csharp
+  - vb
+  name: EndContactProcess(Boolean)
+  nameWithType: ICollisionInfoStore3D.EndContactProcess(Boolean)
+  fullName: WaveEngine.Common.Physics3D.ICollisionInfoStore3D.EndContactProcess(System.Boolean)
+  type: Method
+  source:
+    id: EndContactProcess
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics3D\Contact\ICollisionInfoStore3D.cs
+    startLine: 49
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics3D
+  summary: "\nEnd contact process\n"
+  example: []
+  syntax:
+    content: void EndContactProcess(bool fireEvents)
+    parameters:
+    - id: fireEvents
+      type: System.Boolean
+      description: Fire events
+    content.vb: Sub EndContactProcess(fireEvents As Boolean)
+  overload: WaveEngine.Common.Physics3D.ICollisionInfoStore3D.EndContactProcess*
+references:
+- uid: WaveEngine.Common.Physics3D
+  commentId: N:WaveEngine.Common.Physics3D
+  name: WaveEngine.Common.Physics3D
+  nameWithType: WaveEngine.Common.Physics3D
+  fullName: WaveEngine.Common.Physics3D
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Common.Physics3D.ICollisionInfoStore3D.ProcessCollision*
+  commentId: Overload:WaveEngine.Common.Physics3D.ICollisionInfoStore3D.ProcessCollision
+  name: ProcessCollision
+  nameWithType: ICollisionInfoStore3D.ProcessCollision
+  fullName: WaveEngine.Common.Physics3D.ICollisionInfoStore3D.ProcessCollision
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Physics3D.ICollisionInfoStore3D.AddContact*
+  commentId: Overload:WaveEngine.Common.Physics3D.ICollisionInfoStore3D.AddContact
+  name: AddContact
+  nameWithType: ICollisionInfoStore3D.AddContact
+  fullName: WaveEngine.Common.Physics3D.ICollisionInfoStore3D.AddContact
+- uid: WaveEngine.Common.Physics3D.IPhysicBody3D
+  commentId: T:WaveEngine.Common.Physics3D.IPhysicBody3D
+  parent: WaveEngine.Common.Physics3D
+  name: IPhysicBody3D
+  nameWithType: IPhysicBody3D
+  fullName: WaveEngine.Common.Physics3D.IPhysicBody3D
+- uid: WaveEngine.Common.Physics3D.IColliderShape3D
+  commentId: T:WaveEngine.Common.Physics3D.IColliderShape3D
+  parent: WaveEngine.Common.Physics3D
+  name: IColliderShape3D
+  nameWithType: IColliderShape3D
+  fullName: WaveEngine.Common.Physics3D.IColliderShape3D
+- uid: WaveEngine.Common.Physics3D.InternalContactPoint3D
+  commentId: T:WaveEngine.Common.Physics3D.InternalContactPoint3D
+  parent: WaveEngine.Common.Physics3D
+  name: InternalContactPoint3D
+  nameWithType: InternalContactPoint3D
+  fullName: WaveEngine.Common.Physics3D.InternalContactPoint3D
+- uid: WaveEngine.Common.Physics3D.ICollisionInfoStore3D.BeginContactProcess*
+  commentId: Overload:WaveEngine.Common.Physics3D.ICollisionInfoStore3D.BeginContactProcess
+  name: BeginContactProcess
+  nameWithType: ICollisionInfoStore3D.BeginContactProcess
+  fullName: WaveEngine.Common.Physics3D.ICollisionInfoStore3D.BeginContactProcess
+- uid: WaveEngine.Common.Physics3D.ICollisionInfoStore3D.EndContactProcess*
+  commentId: Overload:WaveEngine.Common.Physics3D.ICollisionInfoStore3D.EndContactProcess
+  name: EndContactProcess
+  nameWithType: ICollisionInfoStore3D.EndContactProcess
+  fullName: WaveEngine.Common.Physics3D.ICollisionInfoStore3D.EndContactProcess

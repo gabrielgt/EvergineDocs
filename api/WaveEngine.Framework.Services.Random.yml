@@ -1,0 +1,1567 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Framework.Services.Random
+  commentId: T:WaveEngine.Framework.Services.Random
+  id: Random
+  parent: WaveEngine.Framework.Services
+  children:
+  - WaveEngine.Framework.Services.Random.#ctor
+  - WaveEngine.Framework.Services.Random.#ctor(System.Int32)
+  - WaveEngine.Framework.Services.Random.CreateStrongRandomSeed
+  - WaveEngine.Framework.Services.Random.Initialize
+  - WaveEngine.Framework.Services.Random.InsideUnitCircle
+  - WaveEngine.Framework.Services.Random.InUnitSphere
+  - WaveEngine.Framework.Services.Random.Next
+  - WaveEngine.Framework.Services.Random.Next(System.Int32)
+  - WaveEngine.Framework.Services.Random.Next(System.Int32,System.Int32)
+  - WaveEngine.Framework.Services.Random.NextBool
+  - WaveEngine.Framework.Services.Random.NextBool(System.Single)
+  - WaveEngine.Framework.Services.Random.NextBytes(System.Byte[])
+  - WaveEngine.Framework.Services.Random.NextDouble
+  - WaveEngine.Framework.Services.Random.NextInt
+  - WaveEngine.Framework.Services.Random.NextRotation
+  - WaveEngine.Framework.Services.Random.NextUInt
+  - WaveEngine.Framework.Services.Random.OnUnitSphere
+  - WaveEngine.Framework.Services.Random.Seed
+  - WaveEngine.Framework.Services.Random.Terminate
+  langs:
+  - csharp
+  - vb
+  name: Random
+  nameWithType: Random
+  fullName: WaveEngine.Framework.Services.Random
+  type: Class
+  source:
+    id: Random
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Random.cs
+    startLine: 19
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nRandom number generator service.\n"
+  example: []
+  syntax:
+    content: 'public sealed class Random : Service'
+    content.vb: >-
+      Public NotInheritable Class Random
+
+          Inherits Service
+  inheritance:
+  - System.Object
+  - WaveEngine.Common.IO.SerializableObject
+  - WaveEngine.Common.Service
+  inheritedMembers:
+  - WaveEngine.Common.Service.IsInitialized
+  - WaveEngine.Common.Service.IsTerminated
+  - WaveEngine.Common.Service.BaseInitialize
+  - WaveEngine.Common.Service.BaseTerminate
+  - WaveEngine.Common.Service.OnActivated
+  - WaveEngine.Common.Service.OnDeactivated
+  - WaveEngine.Common.IO.SerializableObject.DefaultValues
+  - WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: WaveEngine.Framework.Services.Random.Seed
+  commentId: P:WaveEngine.Framework.Services.Random.Seed
+  id: Seed
+  parent: WaveEngine.Framework.Services.Random
+  langs:
+  - csharp
+  - vb
+  name: Seed
+  nameWithType: Random.Seed
+  fullName: WaveEngine.Framework.Services.Random.Seed
+  type: Property
+  source:
+    id: Seed
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Random.cs
+    startLine: 36
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGets or sets a value indicating whether the Seed\n"
+  example: []
+  syntax:
+    content: public int Seed { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Seed As Integer
+  overload: WaveEngine.Framework.Services.Random.Seed*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Random.#ctor
+  commentId: M:WaveEngine.Framework.Services.Random.#ctor
+  id: '#ctor'
+  parent: WaveEngine.Framework.Services.Random
+  langs:
+  - csharp
+  - vb
+  name: Random()
+  nameWithType: Random.Random()
+  fullName: WaveEngine.Framework.Services.Random.Random()
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Random.cs
+    startLine: 59
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Framework.Services.Random\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  remarks: "\nThe initial seed depends on the time.\n"
+  example: []
+  syntax:
+    content: public Random()
+    content.vb: Public Sub New
+  overload: WaveEngine.Framework.Services.Random.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Random.#ctor(System.Int32)
+  commentId: M:WaveEngine.Framework.Services.Random.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: WaveEngine.Framework.Services.Random
+  langs:
+  - csharp
+  - vb
+  name: Random(Int32)
+  nameWithType: Random.Random(Int32)
+  fullName: WaveEngine.Framework.Services.Random.Random(System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Random.cs
+    startLine: 72
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Framework.Services.Random\" data-throw-if-not-resolved=\"false\"></xref> class with a given seed.\n"
+  example: []
+  syntax:
+    content: public Random(int seed)
+    parameters:
+    - id: seed
+      type: System.Int32
+      description: The initial seed.
+    content.vb: Public Sub New(seed As Integer)
+  overload: WaveEngine.Framework.Services.Random.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Random.CreateStrongRandomSeed
+  commentId: M:WaveEngine.Framework.Services.Random.CreateStrongRandomSeed
+  id: CreateStrongRandomSeed
+  parent: WaveEngine.Framework.Services.Random
+  langs:
+  - csharp
+  - vb
+  name: CreateStrongRandomSeed()
+  nameWithType: Random.CreateStrongRandomSeed()
+  fullName: WaveEngine.Framework.Services.Random.CreateStrongRandomSeed()
+  type: Method
+  source:
+    id: CreateStrongRandomSeed
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Random.cs
+    startLine: 82
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nCreates a Strong Random to use as seed... do not use to get as integer random generator cause is slow, use with caution.\n"
+  example: []
+  syntax:
+    content: public int CreateStrongRandomSeed()
+    return:
+      type: System.Int32
+      description: A random integer to be used as seed
+    content.vb: Public Function CreateStrongRandomSeed As Integer
+  overload: WaveEngine.Framework.Services.Random.CreateStrongRandomSeed*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Random.Initialize
+  commentId: M:WaveEngine.Framework.Services.Random.Initialize
+  id: Initialize
+  parent: WaveEngine.Framework.Services.Random
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: Random.Initialize()
+  fullName: WaveEngine.Framework.Services.Random.Initialize()
+  type: Method
+  source:
+    id: Initialize
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Random.cs
+    startLine: 102
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nAllow to execute custom logic during the initialization of this instance.\n"
+  example: []
+  syntax:
+    content: protected override void Initialize()
+    content.vb: Protected Overrides Sub Initialize
+  overridden: WaveEngine.Common.Service.Initialize
+  overload: WaveEngine.Framework.Services.Random.Initialize*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Services.Random.Terminate
+  commentId: M:WaveEngine.Framework.Services.Random.Terminate
+  id: Terminate
+  parent: WaveEngine.Framework.Services.Random
+  langs:
+  - csharp
+  - vb
+  name: Terminate()
+  nameWithType: Random.Terminate()
+  fullName: WaveEngine.Framework.Services.Random.Terminate()
+  type: Method
+  source:
+    id: Terminate
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Random.cs
+    startLine: 109
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nAllow to execute custom logic during the finalization of this instance.\n"
+  example: []
+  syntax:
+    content: protected override void Terminate()
+    content.vb: Protected Overrides Sub Terminate
+  overridden: WaveEngine.Common.Service.Terminate
+  overload: WaveEngine.Framework.Services.Random.Terminate*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Services.Random.Next
+  commentId: M:WaveEngine.Framework.Services.Random.Next
+  id: Next
+  parent: WaveEngine.Framework.Services.Random
+  langs:
+  - csharp
+  - vb
+  name: Next()
+  nameWithType: Random.Next()
+  fullName: WaveEngine.Framework.Services.Random.Next()
+  type: Method
+  source:
+    id: Next
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Random.cs
+    startLine: 120
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGenerates a random int over the range 0 to int.MaxValue-1.\n"
+  example: []
+  syntax:
+    content: public int Next()
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer greater than or equal to zero and less than <xref href="System.Int32.MaxValue" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function Next As Integer
+  overload: WaveEngine.Framework.Services.Random.Next*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Random.Next(System.Int32)
+  commentId: M:WaveEngine.Framework.Services.Random.Next(System.Int32)
+  id: Next(System.Int32)
+  parent: WaveEngine.Framework.Services.Random
+  langs:
+  - csharp
+  - vb
+  name: Next(Int32)
+  nameWithType: Random.Next(Int32)
+  fullName: WaveEngine.Framework.Services.Random.Next(System.Int32)
+  type: Method
+  source:
+    id: Next
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Random.cs
+    startLine: 130
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGenerates a random int over the range 0 to upperBound-1, and not including upperBound.\n"
+  example: []
+  syntax:
+    content: public int Next(int upperBound)
+    parameters:
+    - id: upperBound
+      type: System.Int32
+      description: Non inclusive upper bound.
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer greater than or equal to zero and less than <code>upperBound</code>.
+    content.vb: Public Function Next(upperBound As Integer) As Integer
+  overload: WaveEngine.Framework.Services.Random.Next*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Random.Next(System.Int32,System.Int32)
+  commentId: M:WaveEngine.Framework.Services.Random.Next(System.Int32,System.Int32)
+  id: Next(System.Int32,System.Int32)
+  parent: WaveEngine.Framework.Services.Random
+  langs:
+  - csharp
+  - vb
+  name: Next(Int32, Int32)
+  nameWithType: Random.Next(Int32, Int32)
+  fullName: WaveEngine.Framework.Services.Random.Next(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: Next
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Random.cs
+    startLine: 142
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGenerates a random int over the range lowerBound to upperBound-1, and not including upperBound.\nupperBound must be >= lowerBound. lowerBound may be negative.\n"
+  example: []
+  syntax:
+    content: public int Next(int lowerBound, int upperBound)
+    parameters:
+    - id: lowerBound
+      type: System.Int32
+      description: The inclusive lower bound.
+    - id: upperBound
+      type: System.Int32
+      description: The non inclusive upper bound.
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer greater than or equal to <code>lowerBound</code> and less than <code>upperBound</code>.
+    content.vb: Public Function Next(lowerBound As Integer, upperBound As Integer) As Integer
+  overload: WaveEngine.Framework.Services.Random.Next*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Random.NextDouble
+  commentId: M:WaveEngine.Framework.Services.Random.NextDouble
+  id: NextDouble
+  parent: WaveEngine.Framework.Services.Random
+  langs:
+  - csharp
+  - vb
+  name: NextDouble()
+  nameWithType: Random.NextDouble()
+  fullName: WaveEngine.Framework.Services.Random.NextDouble()
+  type: Method
+  source:
+    id: NextDouble
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Random.cs
+    startLine: 151
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGenerates a random double between 0.0 and 1.0, not including 1.0.\n"
+  example: []
+  syntax:
+    content: public double NextDouble()
+    return:
+      type: System.Double
+      description: A double-precision floating point number greater than or equal to 0.0, and less than 1.0.
+    content.vb: Public Function NextDouble As Double
+  overload: WaveEngine.Framework.Services.Random.NextDouble*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Random.NextBytes(System.Byte[])
+  commentId: M:WaveEngine.Framework.Services.Random.NextBytes(System.Byte[])
+  id: NextBytes(System.Byte[])
+  parent: WaveEngine.Framework.Services.Random
+  langs:
+  - csharp
+  - vb
+  name: NextBytes(Byte[])
+  nameWithType: Random.NextBytes(Byte[])
+  fullName: WaveEngine.Framework.Services.Random.NextBytes(System.Byte[])
+  type: Method
+  source:
+    id: NextBytes
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Random.cs
+    startLine: 160
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nFills the provided byte array with random bytes.\n"
+  example: []
+  syntax:
+    content: public void NextBytes(byte[] buffer)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: 'An array of bytes to contain random numbers. '
+    content.vb: Public Sub NextBytes(buffer As Byte())
+  overload: WaveEngine.Framework.Services.Random.NextBytes*
+  nameWithType.vb: Random.NextBytes(Byte())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Framework.Services.Random.NextBytes(System.Byte())
+  name.vb: NextBytes(Byte())
+- uid: WaveEngine.Framework.Services.Random.NextUInt
+  commentId: M:WaveEngine.Framework.Services.Random.NextUInt
+  id: NextUInt
+  parent: WaveEngine.Framework.Services.Random
+  langs:
+  - csharp
+  - vb
+  name: NextUInt()
+  nameWithType: Random.NextUInt()
+  fullName: WaveEngine.Framework.Services.Random.NextUInt()
+  type: Method
+  source:
+    id: NextUInt
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Random.cs
+    startLine: 175
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGenerates a uint. Values returned are over the full range of a uint,\nuint.MinValue to uint.MaxValue, inclusive.\n"
+  remarks: "\nThis is the fastest method for generating a single random number because the underlying\nrandom number generator algorithm generates 32 random bits that can be cast directly to\na uint.\n"
+  example: []
+  syntax:
+    content: public uint NextUInt()
+    return:
+      type: System.UInt32
+      description: A 32-bit signed integer greater than or equal to zero and less or equal than <xref href="System.UInt32.MaxValue" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function NextUInt As UInteger
+  overload: WaveEngine.Framework.Services.Random.NextUInt*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Random.NextInt
+  commentId: M:WaveEngine.Framework.Services.Random.NextInt
+  id: NextInt
+  parent: WaveEngine.Framework.Services.Random
+  langs:
+  - csharp
+  - vb
+  name: NextInt()
+  nameWithType: Random.NextInt()
+  fullName: WaveEngine.Framework.Services.Random.NextInt()
+  type: Method
+  source:
+    id: NextInt
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Random.cs
+    startLine: 184
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGenerates a random int over the range 0 to int.MaxValue-1. Same as Next() method.\n"
+  example: []
+  syntax:
+    content: public int NextInt()
+    return:
+      type: System.Int32
+      description: A 32-bit signed integer greater than or equal to zero and less or equal than <xref href="System.Int32.MaxValue" data-throw-if-not-resolved="false"></xref> -1.
+    content.vb: Public Function NextInt As Integer
+  overload: WaveEngine.Framework.Services.Random.NextInt*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Random.NextBool
+  commentId: M:WaveEngine.Framework.Services.Random.NextBool
+  id: NextBool
+  parent: WaveEngine.Framework.Services.Random
+  langs:
+  - csharp
+  - vb
+  name: NextBool()
+  nameWithType: Random.NextBool()
+  fullName: WaveEngine.Framework.Services.Random.NextBool()
+  type: Method
+  source:
+    id: NextBool
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Random.cs
+    startLine: 198
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGenerates a single random bit.\n"
+  remarks: "\nThis method&apos;s performance is improved by generating 32 bits in one operation and storing them\nready for future calls.\n"
+  example: []
+  syntax:
+    content: public bool NextBool()
+    return:
+      type: System.Boolean
+      description: A boolean.
+    content.vb: Public Function NextBool As Boolean
+  overload: WaveEngine.Framework.Services.Random.NextBool*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Random.NextBool(System.Single)
+  commentId: M:WaveEngine.Framework.Services.Random.NextBool(System.Single)
+  id: NextBool(System.Single)
+  parent: WaveEngine.Framework.Services.Random
+  langs:
+  - csharp
+  - vb
+  name: NextBool(Single)
+  nameWithType: Random.NextBool(Single)
+  fullName: WaveEngine.Framework.Services.Random.NextBool(System.Single)
+  type: Method
+  source:
+    id: NextBool
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Random.cs
+    startLine: 208
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGenerates a single random bit with True value weight.\n"
+  example: []
+  syntax:
+    content: public bool NextBool(float trueWeight)
+    parameters:
+    - id: trueWeight
+      type: System.Single
+      description: The weight of the TRUE value
+    return:
+      type: System.Boolean
+      description: A boolean.
+    content.vb: Public Function NextBool(trueWeight As Single) As Boolean
+  overload: WaveEngine.Framework.Services.Random.NextBool*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Random.NextRotation
+  commentId: M:WaveEngine.Framework.Services.Random.NextRotation
+  id: NextRotation
+  parent: WaveEngine.Framework.Services.Random
+  langs:
+  - csharp
+  - vb
+  name: NextRotation()
+  nameWithType: Random.NextRotation()
+  fullName: WaveEngine.Framework.Services.Random.NextRotation()
+  type: Method
+  source:
+    id: NextRotation
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Random.cs
+    startLine: 218
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGenerates a single angle in randians [0-2*Pi).\n"
+  example: []
+  syntax:
+    content: public float NextRotation()
+    return:
+      type: System.Single
+      description: An angle.
+    content.vb: Public Function NextRotation As Single
+  overload: WaveEngine.Framework.Services.Random.NextRotation*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Random.InsideUnitCircle
+  commentId: M:WaveEngine.Framework.Services.Random.InsideUnitCircle
+  id: InsideUnitCircle
+  parent: WaveEngine.Framework.Services.Random
+  langs:
+  - csharp
+  - vb
+  name: InsideUnitCircle()
+  nameWithType: Random.InsideUnitCircle()
+  fullName: WaveEngine.Framework.Services.Random.InsideUnitCircle()
+  type: Method
+  source:
+    id: InsideUnitCircle
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Random.cs
+    startLine: 228
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGenerates a 2D vector inside an unit circle with uniform distribution.\n"
+  example: []
+  syntax:
+    content: public Vector2 InsideUnitCircle()
+    return:
+      type: WaveEngine.Common.Math.Vector2
+      description: A Vector2D.
+    content.vb: Public Function InsideUnitCircle As Vector2
+  overload: WaveEngine.Framework.Services.Random.InsideUnitCircle*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Random.OnUnitSphere
+  commentId: M:WaveEngine.Framework.Services.Random.OnUnitSphere
+  id: OnUnitSphere
+  parent: WaveEngine.Framework.Services.Random
+  langs:
+  - csharp
+  - vb
+  name: OnUnitSphere()
+  nameWithType: Random.OnUnitSphere()
+  fullName: WaveEngine.Framework.Services.Random.OnUnitSphere()
+  type: Method
+  source:
+    id: OnUnitSphere
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Random.cs
+    startLine: 246
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGenerates a 3D vector in a radius 1 sphere surface with uniform distribution.\n"
+  example: []
+  syntax:
+    content: public Vector3 OnUnitSphere()
+    return:
+      type: WaveEngine.Common.Math.Vector3
+      description: A Vector3D.
+    content.vb: Public Function OnUnitSphere As Vector3
+  overload: WaveEngine.Framework.Services.Random.OnUnitSphere*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Random.InUnitSphere
+  commentId: M:WaveEngine.Framework.Services.Random.InUnitSphere
+  id: InUnitSphere
+  parent: WaveEngine.Framework.Services.Random
+  langs:
+  - csharp
+  - vb
+  name: InUnitSphere()
+  nameWithType: Random.InUnitSphere()
+  fullName: WaveEngine.Framework.Services.Random.InUnitSphere()
+  type: Method
+  source:
+    id: InUnitSphere
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Random.cs
+    startLine: 267
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGenerates a 3D vector inside a radius 1 sphere with uniform distribution.\n"
+  example: []
+  syntax:
+    content: public Vector3 InUnitSphere()
+    return:
+      type: WaveEngine.Common.Math.Vector3
+      description: A Vector3D.
+    content.vb: Public Function InUnitSphere As Vector3
+  overload: WaveEngine.Framework.Services.Random.InUnitSphere*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: WaveEngine.Framework.Services
+  commentId: N:WaveEngine.Framework.Services
+  name: WaveEngine.Framework.Services
+  nameWithType: WaveEngine.Framework.Services
+  fullName: WaveEngine.Framework.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.IO.SerializableObject
+  commentId: T:WaveEngine.Common.IO.SerializableObject
+  parent: WaveEngine.Common.IO
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: WaveEngine.Common.IO.SerializableObject
+- uid: WaveEngine.Common.Service
+  commentId: T:WaveEngine.Common.Service
+  parent: WaveEngine.Common
+  name: Service
+  nameWithType: Service
+  fullName: WaveEngine.Common.Service
+- uid: WaveEngine.Common.Service.IsInitialized
+  commentId: P:WaveEngine.Common.Service.IsInitialized
+  parent: WaveEngine.Common.Service
+  name: IsInitialized
+  nameWithType: Service.IsInitialized
+  fullName: WaveEngine.Common.Service.IsInitialized
+- uid: WaveEngine.Common.Service.IsTerminated
+  commentId: P:WaveEngine.Common.Service.IsTerminated
+  parent: WaveEngine.Common.Service
+  name: IsTerminated
+  nameWithType: Service.IsTerminated
+  fullName: WaveEngine.Common.Service.IsTerminated
+- uid: WaveEngine.Common.Service.BaseInitialize
+  commentId: M:WaveEngine.Common.Service.BaseInitialize
+  parent: WaveEngine.Common.Service
+  name: BaseInitialize()
+  nameWithType: Service.BaseInitialize()
+  fullName: WaveEngine.Common.Service.BaseInitialize()
+  spec.csharp:
+  - uid: WaveEngine.Common.Service.BaseInitialize
+    name: BaseInitialize
+    nameWithType: Service.BaseInitialize
+    fullName: WaveEngine.Common.Service.BaseInitialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Service.BaseInitialize
+    name: BaseInitialize
+    nameWithType: Service.BaseInitialize
+    fullName: WaveEngine.Common.Service.BaseInitialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Service.BaseTerminate
+  commentId: M:WaveEngine.Common.Service.BaseTerminate
+  parent: WaveEngine.Common.Service
+  name: BaseTerminate()
+  nameWithType: Service.BaseTerminate()
+  fullName: WaveEngine.Common.Service.BaseTerminate()
+  spec.csharp:
+  - uid: WaveEngine.Common.Service.BaseTerminate
+    name: BaseTerminate
+    nameWithType: Service.BaseTerminate
+    fullName: WaveEngine.Common.Service.BaseTerminate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Service.BaseTerminate
+    name: BaseTerminate
+    nameWithType: Service.BaseTerminate
+    fullName: WaveEngine.Common.Service.BaseTerminate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Service.OnActivated
+  commentId: M:WaveEngine.Common.Service.OnActivated
+  parent: WaveEngine.Common.Service
+  name: OnActivated()
+  nameWithType: Service.OnActivated()
+  fullName: WaveEngine.Common.Service.OnActivated()
+  spec.csharp:
+  - uid: WaveEngine.Common.Service.OnActivated
+    name: OnActivated
+    nameWithType: Service.OnActivated
+    fullName: WaveEngine.Common.Service.OnActivated
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Service.OnActivated
+    name: OnActivated
+    nameWithType: Service.OnActivated
+    fullName: WaveEngine.Common.Service.OnActivated
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Service.OnDeactivated
+  commentId: M:WaveEngine.Common.Service.OnDeactivated
+  parent: WaveEngine.Common.Service
+  name: OnDeactivated()
+  nameWithType: Service.OnDeactivated()
+  fullName: WaveEngine.Common.Service.OnDeactivated()
+  spec.csharp:
+  - uid: WaveEngine.Common.Service.OnDeactivated
+    name: OnDeactivated
+    nameWithType: Service.OnDeactivated
+    fullName: WaveEngine.Common.Service.OnDeactivated
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Service.OnDeactivated
+    name: OnDeactivated
+    nameWithType: Service.OnDeactivated
+    fullName: WaveEngine.Common.Service.OnDeactivated
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  commentId: M:WaveEngine.Common.IO.SerializableObject.DefaultValues
+  parent: WaveEngine.Common.IO.SerializableObject
+  name: DefaultValues()
+  nameWithType: SerializableObject.DefaultValues()
+  fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues()
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+    name: DefaultValues
+    nameWithType: SerializableObject.DefaultValues
+    fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+    name: DefaultValues
+    nameWithType: SerializableObject.DefaultValues
+    fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  commentId: M:WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  parent: WaveEngine.Common.IO.SerializableObject
+  isExternal: true
+  name: OnDeserializing(StreamingContext)
+  nameWithType: SerializableObject.OnDeserializing(StreamingContext)
+  fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.IO
+  commentId: N:WaveEngine.Common.IO
+  name: WaveEngine.Common.IO
+  nameWithType: WaveEngine.Common.IO
+  fullName: WaveEngine.Common.IO
+- uid: WaveEngine.Common
+  commentId: N:WaveEngine.Common
+  name: WaveEngine.Common
+  nameWithType: WaveEngine.Common
+  fullName: WaveEngine.Common
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Framework.Services.Random.Seed*
+  commentId: Overload:WaveEngine.Framework.Services.Random.Seed
+  name: Seed
+  nameWithType: Random.Seed
+  fullName: WaveEngine.Framework.Services.Random.Seed
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: WaveEngine.Framework.Services.Random
+  commentId: T:WaveEngine.Framework.Services.Random
+  parent: WaveEngine.Framework.Services
+  name: Random
+  nameWithType: Random
+  fullName: WaveEngine.Framework.Services.Random
+- uid: WaveEngine.Framework.Services.Random.#ctor*
+  commentId: Overload:WaveEngine.Framework.Services.Random.#ctor
+  name: Random
+  nameWithType: Random.Random
+  fullName: WaveEngine.Framework.Services.Random.Random
+- uid: WaveEngine.Framework.Services.Random.CreateStrongRandomSeed*
+  commentId: Overload:WaveEngine.Framework.Services.Random.CreateStrongRandomSeed
+  name: CreateStrongRandomSeed
+  nameWithType: Random.CreateStrongRandomSeed
+  fullName: WaveEngine.Framework.Services.Random.CreateStrongRandomSeed
+- uid: WaveEngine.Common.Service.Initialize
+  commentId: M:WaveEngine.Common.Service.Initialize
+  parent: WaveEngine.Common.Service
+  name: Initialize()
+  nameWithType: Service.Initialize()
+  fullName: WaveEngine.Common.Service.Initialize()
+  spec.csharp:
+  - uid: WaveEngine.Common.Service.Initialize
+    name: Initialize
+    nameWithType: Service.Initialize
+    fullName: WaveEngine.Common.Service.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Service.Initialize
+    name: Initialize
+    nameWithType: Service.Initialize
+    fullName: WaveEngine.Common.Service.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Services.Random.Initialize*
+  commentId: Overload:WaveEngine.Framework.Services.Random.Initialize
+  name: Initialize
+  nameWithType: Random.Initialize
+  fullName: WaveEngine.Framework.Services.Random.Initialize
+- uid: WaveEngine.Common.Service.Terminate
+  commentId: M:WaveEngine.Common.Service.Terminate
+  parent: WaveEngine.Common.Service
+  name: Terminate()
+  nameWithType: Service.Terminate()
+  fullName: WaveEngine.Common.Service.Terminate()
+  spec.csharp:
+  - uid: WaveEngine.Common.Service.Terminate
+    name: Terminate
+    nameWithType: Service.Terminate
+    fullName: WaveEngine.Common.Service.Terminate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Service.Terminate
+    name: Terminate
+    nameWithType: Service.Terminate
+    fullName: WaveEngine.Common.Service.Terminate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Services.Random.Terminate*
+  commentId: Overload:WaveEngine.Framework.Services.Random.Terminate
+  name: Terminate
+  nameWithType: Random.Terminate
+  fullName: WaveEngine.Framework.Services.Random.Terminate
+- uid: System.Int32.MaxValue
+  commentId: F:System.Int32.MaxValue
+  isExternal: true
+- uid: WaveEngine.Framework.Services.Random.Next*
+  commentId: Overload:WaveEngine.Framework.Services.Random.Next
+  name: Next
+  nameWithType: Random.Next
+  fullName: WaveEngine.Framework.Services.Random.Next
+- uid: WaveEngine.Framework.Services.Random.NextDouble*
+  commentId: Overload:WaveEngine.Framework.Services.Random.NextDouble
+  name: NextDouble
+  nameWithType: Random.NextDouble
+  fullName: WaveEngine.Framework.Services.Random.NextDouble
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: WaveEngine.Framework.Services.Random.NextBytes*
+  commentId: Overload:WaveEngine.Framework.Services.Random.NextBytes
+  name: NextBytes
+  nameWithType: Random.NextBytes
+  fullName: WaveEngine.Framework.Services.Random.NextBytes
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.UInt32.MaxValue
+  commentId: F:System.UInt32.MaxValue
+  isExternal: true
+- uid: WaveEngine.Framework.Services.Random.NextUInt*
+  commentId: Overload:WaveEngine.Framework.Services.Random.NextUInt
+  name: NextUInt
+  nameWithType: Random.NextUInt
+  fullName: WaveEngine.Framework.Services.Random.NextUInt
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32
+- uid: WaveEngine.Framework.Services.Random.NextInt*
+  commentId: Overload:WaveEngine.Framework.Services.Random.NextInt
+  name: NextInt
+  nameWithType: Random.NextInt
+  fullName: WaveEngine.Framework.Services.Random.NextInt
+- uid: WaveEngine.Framework.Services.Random.NextBool*
+  commentId: Overload:WaveEngine.Framework.Services.Random.NextBool
+  name: NextBool
+  nameWithType: Random.NextBool
+  fullName: WaveEngine.Framework.Services.Random.NextBool
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Framework.Services.Random.NextRotation*
+  commentId: Overload:WaveEngine.Framework.Services.Random.NextRotation
+  name: NextRotation
+  nameWithType: Random.NextRotation
+  fullName: WaveEngine.Framework.Services.Random.NextRotation
+- uid: WaveEngine.Framework.Services.Random.InsideUnitCircle*
+  commentId: Overload:WaveEngine.Framework.Services.Random.InsideUnitCircle
+  name: InsideUnitCircle
+  nameWithType: Random.InsideUnitCircle
+  fullName: WaveEngine.Framework.Services.Random.InsideUnitCircle
+- uid: WaveEngine.Common.Math.Vector2
+  commentId: T:WaveEngine.Common.Math.Vector2
+  parent: WaveEngine.Common.Math
+  name: Vector2
+  nameWithType: Vector2
+  fullName: WaveEngine.Common.Math.Vector2
+- uid: WaveEngine.Common.Math
+  commentId: N:WaveEngine.Common.Math
+  name: WaveEngine.Common.Math
+  nameWithType: WaveEngine.Common.Math
+  fullName: WaveEngine.Common.Math
+- uid: WaveEngine.Framework.Services.Random.OnUnitSphere*
+  commentId: Overload:WaveEngine.Framework.Services.Random.OnUnitSphere
+  name: OnUnitSphere
+  nameWithType: Random.OnUnitSphere
+  fullName: WaveEngine.Framework.Services.Random.OnUnitSphere
+- uid: WaveEngine.Common.Math.Vector3
+  commentId: T:WaveEngine.Common.Math.Vector3
+  parent: WaveEngine.Common.Math
+  name: Vector3
+  nameWithType: Vector3
+  fullName: WaveEngine.Common.Math.Vector3
+- uid: WaveEngine.Framework.Services.Random.InUnitSphere*
+  commentId: Overload:WaveEngine.Framework.Services.Random.InUnitSphere
+  name: InUnitSphere
+  nameWithType: Random.InUnitSphere
+  fullName: WaveEngine.Framework.Services.Random.InUnitSphere

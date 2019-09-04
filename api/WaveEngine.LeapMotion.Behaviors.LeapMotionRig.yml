@@ -1,0 +1,1678 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig
+  commentId: T:WaveEngine.LeapMotion.Behaviors.LeapMotionRig
+  id: LeapMotionRig
+  parent: WaveEngine.LeapMotion.Behaviors
+  children:
+  - WaveEngine.LeapMotion.Behaviors.LeapMotionRig.DefaultValues
+  - WaveEngine.LeapMotion.Behaviors.LeapMotionRig.Initialize
+  - WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeapService
+  - WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandAnchor
+  - WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandRig
+  - WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandTransform
+  - WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandAnchor
+  - WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandRig
+  - WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandTransform
+  - WaveEngine.LeapMotion.Behaviors.LeapMotionRig.TrackingSpace
+  - WaveEngine.LeapMotion.Behaviors.LeapMotionRig.TrackingSpaceTransform
+  - WaveEngine.LeapMotion.Behaviors.LeapMotionRig.Update(System.TimeSpan)
+  langs:
+  - csharp
+  - vb
+  name: LeapMotionRig
+  nameWithType: LeapMotionRig
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig
+  type: Class
+  source:
+    id: LeapMotionRig
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.LeapMotion\Behaviors\LeapMotionRig.cs
+    startLine: 17
+  assemblies:
+  - WaveEngine.LeapMotion
+  namespace: WaveEngine.LeapMotion.Behaviors
+  summary: "\nHierachy of entities to represent a root entity with two hand entities.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract(Namespace = "WaveEngine.LeapMotion.Behaviors")]
+
+      public class LeapMotionRig : Behavior
+    content.vb: >-
+      <DataContract(Namespace:="WaveEngine.LeapMotion.Behaviors")>
+
+      Public Class LeapMotionRig
+
+          Inherits Behavior
+  inheritance:
+  - System.Object
+  - WaveEngine.Common.IO.SerializableObject
+  - WaveEngine.Framework.DependencyObject
+  - WaveEngine.Framework.Component
+  - WaveEngine.Framework.Behavior
+  inheritedMembers:
+  - WaveEngine.Framework.Behavior.Family
+  - WaveEngine.Framework.Behavior.IsActive
+  - WaveEngine.Framework.Behavior.UpdateOrder
+  - WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+  - WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+  - WaveEngine.Framework.Component.isInitialized
+  - WaveEngine.Framework.Component.OnComponentInitialized
+  - WaveEngine.Framework.Component.OnComponentRemoved
+  - WaveEngine.Framework.Component.Name
+  - WaveEngine.Framework.Component.Owner
+  - WaveEngine.Framework.Component.Assets
+  - WaveEngine.Framework.Component.EntityManager
+  - WaveEngine.Framework.Component.BehaviorManager
+  - WaveEngine.Framework.Component.RenderManager
+  - WaveEngine.Framework.Component.Clone
+  - WaveEngine.Framework.Component.ToString
+  - WaveEngine.Framework.Component.ResolveDependencies
+  - WaveEngine.Framework.Component.Removed
+  - WaveEngine.Framework.Component.DeleteDependencies
+  - WaveEngine.Framework.DependencyObject.PropertyChanged
+  - WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  - WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  - WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  - WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Namespace
+      type: System.String
+      value: WaveEngine.LeapMotion.Behaviors
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeapService
+  commentId: F:WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeapService
+  id: LeapService
+  parent: WaveEngine.LeapMotion.Behaviors.LeapMotionRig
+  langs:
+  - csharp
+  - vb
+  name: LeapService
+  nameWithType: LeapMotionRig.LeapService
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeapService
+  type: Field
+  source:
+    id: LeapService
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.LeapMotion\Behaviors\LeapMotionRig.cs
+    startLine: 23
+  assemblies:
+  - WaveEngine.LeapMotion
+  namespace: WaveEngine.LeapMotion.Behaviors
+  summary: "\nPointer to LeapMotion service.\n"
+  example: []
+  syntax:
+    content: public LeapMotionService LeapService
+    return:
+      type: WaveEngine.LeapMotion.LeapMotionService
+    content.vb: Public LeapService As LeapMotionService
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.TrackingSpace
+  commentId: P:WaveEngine.LeapMotion.Behaviors.LeapMotionRig.TrackingSpace
+  id: TrackingSpace
+  parent: WaveEngine.LeapMotion.Behaviors.LeapMotionRig
+  langs:
+  - csharp
+  - vb
+  name: TrackingSpace
+  nameWithType: LeapMotionRig.TrackingSpace
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.TrackingSpace
+  type: Property
+  source:
+    id: TrackingSpace
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.LeapMotion\Behaviors\LeapMotionRig.cs
+    startLine: 30
+  assemblies:
+  - WaveEngine.LeapMotion
+  namespace: WaveEngine.LeapMotion.Behaviors
+  summary: "\nGets the root entity of tracking space.\n"
+  example: []
+  syntax:
+    content: public Entity TrackingSpace { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Entity
+    content.vb: Public ReadOnly Property TrackingSpace As Entity
+  overload: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.TrackingSpace*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.TrackingSpaceTransform
+  commentId: P:WaveEngine.LeapMotion.Behaviors.LeapMotionRig.TrackingSpaceTransform
+  id: TrackingSpaceTransform
+  parent: WaveEngine.LeapMotion.Behaviors.LeapMotionRig
+  langs:
+  - csharp
+  - vb
+  name: TrackingSpaceTransform
+  nameWithType: LeapMotionRig.TrackingSpaceTransform
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.TrackingSpaceTransform
+  type: Property
+  source:
+    id: TrackingSpaceTransform
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.LeapMotion\Behaviors\LeapMotionRig.cs
+    startLine: 36
+  assemblies:
+  - WaveEngine.LeapMotion
+  namespace: WaveEngine.LeapMotion.Behaviors
+  summary: "\nGets the transform3D component of TrackingSpace entity.\n"
+  example: []
+  syntax:
+    content: public Transform3D TrackingSpaceTransform { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Graphics.Transform3D
+    content.vb: Public ReadOnly Property TrackingSpaceTransform As Transform3D
+  overload: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.TrackingSpaceTransform*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandAnchor
+  commentId: P:WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandAnchor
+  id: LeftHandAnchor
+  parent: WaveEngine.LeapMotion.Behaviors.LeapMotionRig
+  langs:
+  - csharp
+  - vb
+  name: LeftHandAnchor
+  nameWithType: LeapMotionRig.LeftHandAnchor
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandAnchor
+  type: Property
+  source:
+    id: LeftHandAnchor
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.LeapMotion\Behaviors\LeapMotionRig.cs
+    startLine: 42
+  assemblies:
+  - WaveEngine.LeapMotion
+  namespace: WaveEngine.LeapMotion.Behaviors
+  summary: "\nGets the entity that represent the left hand.\n"
+  example: []
+  syntax:
+    content: public Entity LeftHandAnchor { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Entity
+    content.vb: Public ReadOnly Property LeftHandAnchor As Entity
+  overload: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandAnchor*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandTransform
+  commentId: P:WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandTransform
+  id: LeftHandTransform
+  parent: WaveEngine.LeapMotion.Behaviors.LeapMotionRig
+  langs:
+  - csharp
+  - vb
+  name: LeftHandTransform
+  nameWithType: LeapMotionRig.LeftHandTransform
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandTransform
+  type: Property
+  source:
+    id: LeftHandTransform
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.LeapMotion\Behaviors\LeapMotionRig.cs
+    startLine: 48
+  assemblies:
+  - WaveEngine.LeapMotion
+  namespace: WaveEngine.LeapMotion.Behaviors
+  summary: "\nGets the transform3D of left Hand entity.\n"
+  example: []
+  syntax:
+    content: public Transform3D LeftHandTransform { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Graphics.Transform3D
+    content.vb: Public ReadOnly Property LeftHandTransform As Transform3D
+  overload: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandTransform*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandRig
+  commentId: P:WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandRig
+  id: LeftHandRig
+  parent: WaveEngine.LeapMotion.Behaviors.LeapMotionRig
+  langs:
+  - csharp
+  - vb
+  name: LeftHandRig
+  nameWithType: LeapMotionRig.LeftHandRig
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandRig
+  type: Property
+  source:
+    id: LeftHandRig
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.LeapMotion\Behaviors\LeapMotionRig.cs
+    startLine: 54
+  assemblies:
+  - WaveEngine.LeapMotion
+  namespace: WaveEngine.LeapMotion.Behaviors
+  summary: "\nGets the Left hand rig information.\n"
+  example: []
+  syntax:
+    content: public HandRig LeftHandRig { get; }
+    parameters: []
+    return:
+      type: WaveEngine.LeapMotion.Behaviors.HandRig
+    content.vb: Public ReadOnly Property LeftHandRig As HandRig
+  overload: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandRig*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandAnchor
+  commentId: P:WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandAnchor
+  id: RightHandAnchor
+  parent: WaveEngine.LeapMotion.Behaviors.LeapMotionRig
+  langs:
+  - csharp
+  - vb
+  name: RightHandAnchor
+  nameWithType: LeapMotionRig.RightHandAnchor
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandAnchor
+  type: Property
+  source:
+    id: RightHandAnchor
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.LeapMotion\Behaviors\LeapMotionRig.cs
+    startLine: 60
+  assemblies:
+  - WaveEngine.LeapMotion
+  namespace: WaveEngine.LeapMotion.Behaviors
+  summary: "\nGets the entity that represent the right hand.\n"
+  example: []
+  syntax:
+    content: public Entity RightHandAnchor { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Entity
+    content.vb: Public ReadOnly Property RightHandAnchor As Entity
+  overload: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandAnchor*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandTransform
+  commentId: P:WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandTransform
+  id: RightHandTransform
+  parent: WaveEngine.LeapMotion.Behaviors.LeapMotionRig
+  langs:
+  - csharp
+  - vb
+  name: RightHandTransform
+  nameWithType: LeapMotionRig.RightHandTransform
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandTransform
+  type: Property
+  source:
+    id: RightHandTransform
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.LeapMotion\Behaviors\LeapMotionRig.cs
+    startLine: 66
+  assemblies:
+  - WaveEngine.LeapMotion
+  namespace: WaveEngine.LeapMotion.Behaviors
+  summary: "\nGets the transform3D of right hand entity.\n"
+  example: []
+  syntax:
+    content: public Transform3D RightHandTransform { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Graphics.Transform3D
+    content.vb: Public ReadOnly Property RightHandTransform As Transform3D
+  overload: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandTransform*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandRig
+  commentId: P:WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandRig
+  id: RightHandRig
+  parent: WaveEngine.LeapMotion.Behaviors.LeapMotionRig
+  langs:
+  - csharp
+  - vb
+  name: RightHandRig
+  nameWithType: LeapMotionRig.RightHandRig
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandRig
+  type: Property
+  source:
+    id: RightHandRig
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.LeapMotion\Behaviors\LeapMotionRig.cs
+    startLine: 72
+  assemblies:
+  - WaveEngine.LeapMotion
+  namespace: WaveEngine.LeapMotion.Behaviors
+  summary: "\nGets the Right hand rig information.\n"
+  example: []
+  syntax:
+    content: public HandRig RightHandRig { get; }
+    parameters: []
+    return:
+      type: WaveEngine.LeapMotion.Behaviors.HandRig
+    content.vb: Public ReadOnly Property RightHandRig As HandRig
+  overload: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandRig*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.DefaultValues
+  commentId: M:WaveEngine.LeapMotion.Behaviors.LeapMotionRig.DefaultValues
+  id: DefaultValues
+  parent: WaveEngine.LeapMotion.Behaviors.LeapMotionRig
+  langs:
+  - csharp
+  - vb
+  name: DefaultValues()
+  nameWithType: LeapMotionRig.DefaultValues()
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.DefaultValues()
+  type: Method
+  source:
+    id: DefaultValues
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.LeapMotion\Behaviors\LeapMotionRig.cs
+    startLine: 82
+  assemblies:
+  - WaveEngine.LeapMotion
+  namespace: WaveEngine.LeapMotion.Behaviors
+  summary: "\nDefault values\n"
+  example: []
+  syntax:
+    content: protected override void DefaultValues()
+    content.vb: Protected Overrides Sub DefaultValues
+  overridden: WaveEngine.Framework.Behavior.DefaultValues
+  overload: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.DefaultValues*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.Initialize
+  commentId: M:WaveEngine.LeapMotion.Behaviors.LeapMotionRig.Initialize
+  id: Initialize
+  parent: WaveEngine.LeapMotion.Behaviors.LeapMotionRig
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: LeapMotionRig.Initialize()
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.Initialize()
+  type: Method
+  source:
+    id: Initialize
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.LeapMotion\Behaviors\LeapMotionRig.cs
+    startLine: 90
+  assemblies:
+  - WaveEngine.LeapMotion
+  namespace: WaveEngine.LeapMotion.Behaviors
+  summary: "\nInitialize the LeapMotionRig entity hierarchy.\n"
+  example: []
+  syntax:
+    content: protected override void Initialize()
+    content.vb: Protected Overrides Sub Initialize
+  overridden: WaveEngine.Framework.Component.Initialize
+  overload: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.Initialize*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.Update(System.TimeSpan)
+  commentId: M:WaveEngine.LeapMotion.Behaviors.LeapMotionRig.Update(System.TimeSpan)
+  id: Update(System.TimeSpan)
+  parent: WaveEngine.LeapMotion.Behaviors.LeapMotionRig
+  langs:
+  - csharp
+  - vb
+  name: Update(TimeSpan)
+  nameWithType: LeapMotionRig.Update(TimeSpan)
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.Update(System.TimeSpan)
+  type: Method
+  source:
+    id: Update
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.LeapMotion\Behaviors\LeapMotionRig.cs
+    startLine: 141
+  assemblies:
+  - WaveEngine.LeapMotion
+  namespace: WaveEngine.LeapMotion.Behaviors
+  summary: "\nRefresh all local positions.\n"
+  example: []
+  syntax:
+    content: protected override void Update(TimeSpan gameTime)
+    parameters:
+    - id: gameTime
+      type: System.TimeSpan
+      description: The current game time.
+    content.vb: Protected Overrides Sub Update(gameTime As TimeSpan)
+  overridden: WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+  overload: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.Update*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: WaveEngine.LeapMotion.Behaviors
+  commentId: N:WaveEngine.LeapMotion.Behaviors
+  name: WaveEngine.LeapMotion.Behaviors
+  nameWithType: WaveEngine.LeapMotion.Behaviors
+  fullName: WaveEngine.LeapMotion.Behaviors
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.IO.SerializableObject
+  commentId: T:WaveEngine.Common.IO.SerializableObject
+  parent: WaveEngine.Common.IO
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: WaveEngine.Common.IO.SerializableObject
+- uid: WaveEngine.Framework.DependencyObject
+  commentId: T:WaveEngine.Framework.DependencyObject
+  parent: WaveEngine.Framework
+  name: DependencyObject
+  nameWithType: DependencyObject
+  fullName: WaveEngine.Framework.DependencyObject
+- uid: WaveEngine.Framework.Component
+  commentId: T:WaveEngine.Framework.Component
+  parent: WaveEngine.Framework
+  name: Component
+  nameWithType: Component
+  fullName: WaveEngine.Framework.Component
+- uid: WaveEngine.Framework.Behavior
+  commentId: T:WaveEngine.Framework.Behavior
+  parent: WaveEngine.Framework
+  name: Behavior
+  nameWithType: Behavior
+  fullName: WaveEngine.Framework.Behavior
+- uid: WaveEngine.Framework.Behavior.Family
+  commentId: P:WaveEngine.Framework.Behavior.Family
+  parent: WaveEngine.Framework.Behavior
+  name: Family
+  nameWithType: Behavior.Family
+  fullName: WaveEngine.Framework.Behavior.Family
+- uid: WaveEngine.Framework.Behavior.IsActive
+  commentId: P:WaveEngine.Framework.Behavior.IsActive
+  parent: WaveEngine.Framework.Behavior
+  name: IsActive
+  nameWithType: Behavior.IsActive
+  fullName: WaveEngine.Framework.Behavior.IsActive
+- uid: WaveEngine.Framework.Behavior.UpdateOrder
+  commentId: P:WaveEngine.Framework.Behavior.UpdateOrder
+  parent: WaveEngine.Framework.Behavior
+  name: UpdateOrder
+  nameWithType: Behavior.UpdateOrder
+  fullName: WaveEngine.Framework.Behavior.UpdateOrder
+- uid: WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+  commentId: M:WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+  parent: WaveEngine.Framework.Behavior
+  isExternal: true
+  name: BaseActiveNotification(Boolean)
+  nameWithType: Behavior.BaseActiveNotification(Boolean)
+  fullName: WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+    name: BaseActiveNotification
+    nameWithType: Behavior.BaseActiveNotification
+    fullName: WaveEngine.Framework.Behavior.BaseActiveNotification
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+    name: BaseActiveNotification
+    nameWithType: Behavior.BaseActiveNotification
+    fullName: WaveEngine.Framework.Behavior.BaseActiveNotification
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+  commentId: M:WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+  parent: WaveEngine.Framework.Behavior
+  isExternal: true
+  name: ActiveNotification(Boolean)
+  nameWithType: Behavior.ActiveNotification(Boolean)
+  fullName: WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+    name: ActiveNotification
+    nameWithType: Behavior.ActiveNotification
+    fullName: WaveEngine.Framework.Behavior.ActiveNotification
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+    name: ActiveNotification
+    nameWithType: Behavior.ActiveNotification
+    fullName: WaveEngine.Framework.Behavior.ActiveNotification
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.isInitialized
+  commentId: F:WaveEngine.Framework.Component.isInitialized
+  parent: WaveEngine.Framework.Component
+  name: isInitialized
+  nameWithType: Component.isInitialized
+  fullName: WaveEngine.Framework.Component.isInitialized
+- uid: WaveEngine.Framework.Component.OnComponentInitialized
+  commentId: E:WaveEngine.Framework.Component.OnComponentInitialized
+  parent: WaveEngine.Framework.Component
+  name: OnComponentInitialized
+  nameWithType: Component.OnComponentInitialized
+  fullName: WaveEngine.Framework.Component.OnComponentInitialized
+- uid: WaveEngine.Framework.Component.OnComponentRemoved
+  commentId: E:WaveEngine.Framework.Component.OnComponentRemoved
+  parent: WaveEngine.Framework.Component
+  name: OnComponentRemoved
+  nameWithType: Component.OnComponentRemoved
+  fullName: WaveEngine.Framework.Component.OnComponentRemoved
+- uid: WaveEngine.Framework.Component.Name
+  commentId: P:WaveEngine.Framework.Component.Name
+  parent: WaveEngine.Framework.Component
+  name: Name
+  nameWithType: Component.Name
+  fullName: WaveEngine.Framework.Component.Name
+- uid: WaveEngine.Framework.Component.Owner
+  commentId: P:WaveEngine.Framework.Component.Owner
+  parent: WaveEngine.Framework.Component
+  name: Owner
+  nameWithType: Component.Owner
+  fullName: WaveEngine.Framework.Component.Owner
+- uid: WaveEngine.Framework.Component.Assets
+  commentId: P:WaveEngine.Framework.Component.Assets
+  parent: WaveEngine.Framework.Component
+  name: Assets
+  nameWithType: Component.Assets
+  fullName: WaveEngine.Framework.Component.Assets
+- uid: WaveEngine.Framework.Component.EntityManager
+  commentId: P:WaveEngine.Framework.Component.EntityManager
+  parent: WaveEngine.Framework.Component
+  name: EntityManager
+  nameWithType: Component.EntityManager
+  fullName: WaveEngine.Framework.Component.EntityManager
+- uid: WaveEngine.Framework.Component.BehaviorManager
+  commentId: P:WaveEngine.Framework.Component.BehaviorManager
+  parent: WaveEngine.Framework.Component
+  name: BehaviorManager
+  nameWithType: Component.BehaviorManager
+  fullName: WaveEngine.Framework.Component.BehaviorManager
+- uid: WaveEngine.Framework.Component.RenderManager
+  commentId: P:WaveEngine.Framework.Component.RenderManager
+  parent: WaveEngine.Framework.Component
+  name: RenderManager
+  nameWithType: Component.RenderManager
+  fullName: WaveEngine.Framework.Component.RenderManager
+- uid: WaveEngine.Framework.Component.Clone
+  commentId: M:WaveEngine.Framework.Component.Clone
+  parent: WaveEngine.Framework.Component
+  name: Clone()
+  nameWithType: Component.Clone()
+  fullName: WaveEngine.Framework.Component.Clone()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Clone
+    name: Clone
+    nameWithType: Component.Clone
+    fullName: WaveEngine.Framework.Component.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Clone
+    name: Clone
+    nameWithType: Component.Clone
+    fullName: WaveEngine.Framework.Component.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.ToString
+  commentId: M:WaveEngine.Framework.Component.ToString
+  parent: WaveEngine.Framework.Component
+  name: ToString()
+  nameWithType: Component.ToString()
+  fullName: WaveEngine.Framework.Component.ToString()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: WaveEngine.Framework.Component.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: WaveEngine.Framework.Component.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.ResolveDependencies
+  commentId: M:WaveEngine.Framework.Component.ResolveDependencies
+  parent: WaveEngine.Framework.Component
+  name: ResolveDependencies()
+  nameWithType: Component.ResolveDependencies()
+  fullName: WaveEngine.Framework.Component.ResolveDependencies()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.ResolveDependencies
+    name: ResolveDependencies
+    nameWithType: Component.ResolveDependencies
+    fullName: WaveEngine.Framework.Component.ResolveDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.ResolveDependencies
+    name: ResolveDependencies
+    nameWithType: Component.ResolveDependencies
+    fullName: WaveEngine.Framework.Component.ResolveDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.Removed
+  commentId: M:WaveEngine.Framework.Component.Removed
+  parent: WaveEngine.Framework.Component
+  name: Removed()
+  nameWithType: Component.Removed()
+  fullName: WaveEngine.Framework.Component.Removed()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Removed
+    name: Removed
+    nameWithType: Component.Removed
+    fullName: WaveEngine.Framework.Component.Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Removed
+    name: Removed
+    nameWithType: Component.Removed
+    fullName: WaveEngine.Framework.Component.Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.DeleteDependencies
+  commentId: M:WaveEngine.Framework.Component.DeleteDependencies
+  parent: WaveEngine.Framework.Component
+  name: DeleteDependencies()
+  nameWithType: Component.DeleteDependencies()
+  fullName: WaveEngine.Framework.Component.DeleteDependencies()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Component.DeleteDependencies
+    fullName: WaveEngine.Framework.Component.DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Component.DeleteDependencies
+    fullName: WaveEngine.Framework.Component.DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.PropertyChanged
+  commentId: E:WaveEngine.Framework.DependencyObject.PropertyChanged
+  parent: WaveEngine.Framework.DependencyObject
+  name: PropertyChanged
+  nameWithType: DependencyObject.PropertyChanged
+  fullName: WaveEngine.Framework.DependencyObject.PropertyChanged
+- uid: WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  commentId: P:WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  parent: WaveEngine.Framework.DependencyObject
+  name: ParentDependencyObject
+  nameWithType: DependencyObject.ParentDependencyObject
+  fullName: WaveEngine.Framework.DependencyObject.ParentDependencyObject
+- uid: WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  commentId: P:WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  parent: WaveEngine.Framework.DependencyObject
+  name: EnableDiagnosticCallback
+  nameWithType: DependencyObject.EnableDiagnosticCallback
+  fullName: WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+- uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  commentId: M:WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  parent: WaveEngine.Framework.DependencyObject
+  isExternal: true
+  name: SetValue(DependencyProperty, Object)
+  nameWithType: DependencyObject.SetValue(DependencyProperty, Object)
+  fullName: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty, System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+    name: SetValue
+    nameWithType: DependencyObject.SetValue
+    fullName: WaveEngine.Framework.DependencyObject.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+    name: SetValue
+    nameWithType: DependencyObject.SetValue
+    fullName: WaveEngine.Framework.DependencyObject.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: GetValue(DependencyProperty)
+  nameWithType: DependencyObject.GetValue(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+    name: GetValue
+    nameWithType: DependencyObject.GetValue
+    fullName: WaveEngine.Framework.DependencyObject.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+    name: GetValue
+    nameWithType: DependencyObject.GetValue
+    fullName: WaveEngine.Framework.DependencyObject.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: GetAbsoluteValue<T>(DependencyProperty)
+  nameWithType: DependencyObject.GetAbsoluteValue<T>(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue<T>(WaveEngine.Framework.DependencyProperty)
+  nameWithType.vb: DependencyObject.GetAbsoluteValue(Of T)(DependencyProperty)
+  fullName.vb: WaveEngine.Framework.DependencyObject.GetAbsoluteValue(Of T)(WaveEngine.Framework.DependencyProperty)
+  name.vb: GetAbsoluteValue(Of T)(DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+    name: GetAbsoluteValue<T>
+    nameWithType: DependencyObject.GetAbsoluteValue<T>
+    fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+    name: GetAbsoluteValue(Of T)
+    nameWithType: DependencyObject.GetAbsoluteValue(Of T)
+    fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: ClearValue(DependencyProperty)
+  nameWithType: DependencyObject.ClearValue(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+    name: ClearValue
+    nameWithType: DependencyObject.ClearValue
+    fullName: WaveEngine.Framework.DependencyObject.ClearValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+    name: ClearValue
+    nameWithType: DependencyObject.ClearValue
+    fullName: WaveEngine.Framework.DependencyObject.ClearValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: IsValueSet(DependencyProperty)
+  nameWithType: DependencyObject.IsValueSet(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+    name: IsValueSet
+    nameWithType: DependencyObject.IsValueSet
+    fullName: WaveEngine.Framework.DependencyObject.IsValueSet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+    name: IsValueSet
+    nameWithType: DependencyObject.IsValueSet
+    fullName: WaveEngine.Framework.DependencyObject.IsValueSet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  commentId: M:WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  parent: WaveEngine.Common.IO.SerializableObject
+  isExternal: true
+  name: OnDeserializing(StreamingContext)
+  nameWithType: SerializableObject.OnDeserializing(StreamingContext)
+  fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.IO
+  commentId: N:WaveEngine.Common.IO
+  name: WaveEngine.Common.IO
+  nameWithType: WaveEngine.Common.IO
+  fullName: WaveEngine.Common.IO
+- uid: WaveEngine.Framework
+  commentId: N:WaveEngine.Framework
+  name: WaveEngine.Framework
+  nameWithType: WaveEngine.Framework
+  fullName: WaveEngine.Framework
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.LeapMotion.LeapMotionService
+  commentId: T:WaveEngine.LeapMotion.LeapMotionService
+  parent: WaveEngine.LeapMotion
+  name: LeapMotionService
+  nameWithType: LeapMotionService
+  fullName: WaveEngine.LeapMotion.LeapMotionService
+- uid: WaveEngine.LeapMotion
+  commentId: N:WaveEngine.LeapMotion
+  name: WaveEngine.LeapMotion
+  nameWithType: WaveEngine.LeapMotion
+  fullName: WaveEngine.LeapMotion
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.TrackingSpace*
+  commentId: Overload:WaveEngine.LeapMotion.Behaviors.LeapMotionRig.TrackingSpace
+  name: TrackingSpace
+  nameWithType: LeapMotionRig.TrackingSpace
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.TrackingSpace
+- uid: WaveEngine.Framework.Entity
+  commentId: T:WaveEngine.Framework.Entity
+  parent: WaveEngine.Framework
+  name: Entity
+  nameWithType: Entity
+  fullName: WaveEngine.Framework.Entity
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.TrackingSpaceTransform*
+  commentId: Overload:WaveEngine.LeapMotion.Behaviors.LeapMotionRig.TrackingSpaceTransform
+  name: TrackingSpaceTransform
+  nameWithType: LeapMotionRig.TrackingSpaceTransform
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.TrackingSpaceTransform
+- uid: WaveEngine.Framework.Graphics.Transform3D
+  commentId: T:WaveEngine.Framework.Graphics.Transform3D
+  parent: WaveEngine.Framework.Graphics
+  name: Transform3D
+  nameWithType: Transform3D
+  fullName: WaveEngine.Framework.Graphics.Transform3D
+- uid: WaveEngine.Framework.Graphics
+  commentId: N:WaveEngine.Framework.Graphics
+  name: WaveEngine.Framework.Graphics
+  nameWithType: WaveEngine.Framework.Graphics
+  fullName: WaveEngine.Framework.Graphics
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandAnchor*
+  commentId: Overload:WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandAnchor
+  name: LeftHandAnchor
+  nameWithType: LeapMotionRig.LeftHandAnchor
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandAnchor
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandTransform*
+  commentId: Overload:WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandTransform
+  name: LeftHandTransform
+  nameWithType: LeapMotionRig.LeftHandTransform
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandTransform
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandRig*
+  commentId: Overload:WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandRig
+  name: LeftHandRig
+  nameWithType: LeapMotionRig.LeftHandRig
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.LeftHandRig
+- uid: WaveEngine.LeapMotion.Behaviors.HandRig
+  commentId: T:WaveEngine.LeapMotion.Behaviors.HandRig
+  parent: WaveEngine.LeapMotion.Behaviors
+  name: HandRig
+  nameWithType: HandRig
+  fullName: WaveEngine.LeapMotion.Behaviors.HandRig
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandAnchor*
+  commentId: Overload:WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandAnchor
+  name: RightHandAnchor
+  nameWithType: LeapMotionRig.RightHandAnchor
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandAnchor
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandTransform*
+  commentId: Overload:WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandTransform
+  name: RightHandTransform
+  nameWithType: LeapMotionRig.RightHandTransform
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandTransform
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandRig*
+  commentId: Overload:WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandRig
+  name: RightHandRig
+  nameWithType: LeapMotionRig.RightHandRig
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.RightHandRig
+- uid: WaveEngine.Framework.Behavior.DefaultValues
+  commentId: M:WaveEngine.Framework.Behavior.DefaultValues
+  parent: WaveEngine.Framework.Behavior
+  name: DefaultValues()
+  nameWithType: Behavior.DefaultValues()
+  fullName: WaveEngine.Framework.Behavior.DefaultValues()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Behavior.DefaultValues
+    name: DefaultValues
+    nameWithType: Behavior.DefaultValues
+    fullName: WaveEngine.Framework.Behavior.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Behavior.DefaultValues
+    name: DefaultValues
+    nameWithType: Behavior.DefaultValues
+    fullName: WaveEngine.Framework.Behavior.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.DefaultValues*
+  commentId: Overload:WaveEngine.LeapMotion.Behaviors.LeapMotionRig.DefaultValues
+  name: DefaultValues
+  nameWithType: LeapMotionRig.DefaultValues
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.DefaultValues
+- uid: WaveEngine.Framework.Component.Initialize
+  commentId: M:WaveEngine.Framework.Component.Initialize
+  parent: WaveEngine.Framework.Component
+  name: Initialize()
+  nameWithType: Component.Initialize()
+  fullName: WaveEngine.Framework.Component.Initialize()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Initialize
+    name: Initialize
+    nameWithType: Component.Initialize
+    fullName: WaveEngine.Framework.Component.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Initialize
+    name: Initialize
+    nameWithType: Component.Initialize
+    fullName: WaveEngine.Framework.Component.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.Initialize*
+  commentId: Overload:WaveEngine.LeapMotion.Behaviors.LeapMotionRig.Initialize
+  name: Initialize
+  nameWithType: LeapMotionRig.Initialize
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.Initialize
+- uid: WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+  commentId: M:WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+  parent: WaveEngine.Framework.Behavior
+  isExternal: true
+  name: Update(TimeSpan)
+  nameWithType: Behavior.Update(TimeSpan)
+  fullName: WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+    name: Update
+    nameWithType: Behavior.Update
+    fullName: WaveEngine.Framework.Behavior.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+    name: Update
+    nameWithType: Behavior.Update
+    fullName: WaveEngine.Framework.Behavior.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.Update*
+  commentId: Overload:WaveEngine.LeapMotion.Behaviors.LeapMotionRig.Update
+  name: Update
+  nameWithType: LeapMotionRig.Update
+  fullName: WaveEngine.LeapMotion.Behaviors.LeapMotionRig.Update
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan

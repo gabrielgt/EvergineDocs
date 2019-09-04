@@ -1,0 +1,791 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Networking.Connection.NetworkFactory
+  commentId: T:WaveEngine.Networking.Connection.NetworkFactory
+  id: NetworkFactory
+  parent: WaveEngine.Networking.Connection
+  children:
+  - WaveEngine.Networking.Connection.NetworkFactory.CreateNetworkClient(System.String,System.Single,System.Single)
+  - WaveEngine.Networking.Connection.NetworkFactory.CreateNetworkServer(System.String,System.Int32,System.Single,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: NetworkFactory
+  nameWithType: NetworkFactory
+  fullName: WaveEngine.Networking.Connection.NetworkFactory
+  type: Class
+  source:
+    id: NetworkFactory
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Connection\NetworkFactory.cs
+    startLine: 10
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Connection
+  summary: "\nFactory to main network components\n"
+  example: []
+  syntax:
+    content: 'public class NetworkFactory : INetworkFactory'
+    content.vb: >-
+      Public Class NetworkFactory
+
+          Implements INetworkFactory
+  inheritance:
+  - System.Object
+  implements:
+  - WaveEngine.Networking.Connection.INetworkFactory
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WaveEngine.Networking.Connection.NetworkFactory.CreateNetworkServer(System.String,System.Int32,System.Single,System.Single)
+  commentId: M:WaveEngine.Networking.Connection.NetworkFactory.CreateNetworkServer(System.String,System.Int32,System.Single,System.Single)
+  id: CreateNetworkServer(System.String,System.Int32,System.Single,System.Single)
+  parent: WaveEngine.Networking.Connection.NetworkFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateNetworkServer(String, Int32, Single, Single)
+  nameWithType: NetworkFactory.CreateNetworkServer(String, Int32, Single, Single)
+  fullName: WaveEngine.Networking.Connection.NetworkFactory.CreateNetworkServer(System.String, System.Int32, System.Single, System.Single)
+  type: Method
+  source:
+    id: CreateNetworkServer
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Connection\NetworkFactory.cs
+    startLine: 24
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Connection
+  summary: "\nCreates the network server.\n"
+  example: []
+  syntax:
+    content: public INetworkServer CreateNetworkServer(string applicationIdentifier, int port, float pingInterval, float connectionTimeout)
+    parameters:
+    - id: applicationIdentifier
+      type: System.String
+      description: The application identifier.
+    - id: port
+      type: System.Int32
+      description: The port.
+    - id: pingInterval
+      type: System.Single
+      description: Ping interval in seconds.
+    - id: connectionTimeout
+      type: System.Single
+      description: Connection timeout in seconds.
+    return:
+      type: WaveEngine.Networking.Connection.INetworkServer
+      description: "\nA new network server.\n"
+    content.vb: Public Function CreateNetworkServer(applicationIdentifier As String, port As Integer, pingInterval As Single, connectionTimeout As Single) As INetworkServer
+  overload: WaveEngine.Networking.Connection.NetworkFactory.CreateNetworkServer*
+  implements:
+  - WaveEngine.Networking.Connection.INetworkFactory.CreateNetworkServer(System.String,System.Int32,System.Single,System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Networking.Connection.NetworkFactory.CreateNetworkClient(System.String,System.Single,System.Single)
+  commentId: M:WaveEngine.Networking.Connection.NetworkFactory.CreateNetworkClient(System.String,System.Single,System.Single)
+  id: CreateNetworkClient(System.String,System.Single,System.Single)
+  parent: WaveEngine.Networking.Connection.NetworkFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateNetworkClient(String, Single, Single)
+  nameWithType: NetworkFactory.CreateNetworkClient(String, Single, Single)
+  fullName: WaveEngine.Networking.Connection.NetworkFactory.CreateNetworkClient(System.String, System.Single, System.Single)
+  type: Method
+  source:
+    id: CreateNetworkClient
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Connection\NetworkFactory.cs
+    startLine: 38
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Connection
+  summary: "\nCreates the network client.\n"
+  example: []
+  syntax:
+    content: public INetworkClient CreateNetworkClient(string applicationIdentifier, float pingInterval, float connectionTimeout)
+    parameters:
+    - id: applicationIdentifier
+      type: System.String
+      description: The application identifier.
+    - id: pingInterval
+      type: System.Single
+      description: Ping interval in seconds.
+    - id: connectionTimeout
+      type: System.Single
+      description: Connection timeout in seconds.
+    return:
+      type: WaveEngine.Networking.Connection.INetworkClient
+      description: "\nA new network client\n"
+    content.vb: Public Function CreateNetworkClient(applicationIdentifier As String, pingInterval As Single, connectionTimeout As Single) As INetworkClient
+  overload: WaveEngine.Networking.Connection.NetworkFactory.CreateNetworkClient*
+  implements:
+  - WaveEngine.Networking.Connection.INetworkFactory.CreateNetworkClient(System.String,System.Single,System.Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: WaveEngine.Networking.Connection
+  commentId: N:WaveEngine.Networking.Connection
+  name: WaveEngine.Networking.Connection
+  nameWithType: WaveEngine.Networking.Connection
+  fullName: WaveEngine.Networking.Connection
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Networking.Connection.INetworkFactory
+  commentId: T:WaveEngine.Networking.Connection.INetworkFactory
+  parent: WaveEngine.Networking.Connection
+  name: INetworkFactory
+  nameWithType: INetworkFactory
+  fullName: WaveEngine.Networking.Connection.INetworkFactory
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Networking.Connection.NetworkFactory.CreateNetworkServer*
+  commentId: Overload:WaveEngine.Networking.Connection.NetworkFactory.CreateNetworkServer
+  name: CreateNetworkServer
+  nameWithType: NetworkFactory.CreateNetworkServer
+  fullName: WaveEngine.Networking.Connection.NetworkFactory.CreateNetworkServer
+- uid: WaveEngine.Networking.Connection.INetworkFactory.CreateNetworkServer(System.String,System.Int32,System.Single,System.Single)
+  commentId: M:WaveEngine.Networking.Connection.INetworkFactory.CreateNetworkServer(System.String,System.Int32,System.Single,System.Single)
+  parent: WaveEngine.Networking.Connection.INetworkFactory
+  isExternal: true
+  name: CreateNetworkServer(String, Int32, Single, Single)
+  nameWithType: INetworkFactory.CreateNetworkServer(String, Int32, Single, Single)
+  fullName: WaveEngine.Networking.Connection.INetworkFactory.CreateNetworkServer(System.String, System.Int32, System.Single, System.Single)
+  spec.csharp:
+  - uid: WaveEngine.Networking.Connection.INetworkFactory.CreateNetworkServer(System.String,System.Int32,System.Single,System.Single)
+    name: CreateNetworkServer
+    nameWithType: INetworkFactory.CreateNetworkServer
+    fullName: WaveEngine.Networking.Connection.INetworkFactory.CreateNetworkServer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Networking.Connection.INetworkFactory.CreateNetworkServer(System.String,System.Int32,System.Single,System.Single)
+    name: CreateNetworkServer
+    nameWithType: INetworkFactory.CreateNetworkServer
+    fullName: WaveEngine.Networking.Connection.INetworkFactory.CreateNetworkServer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Networking.Connection.INetworkServer
+  commentId: T:WaveEngine.Networking.Connection.INetworkServer
+  parent: WaveEngine.Networking.Connection
+  name: INetworkServer
+  nameWithType: INetworkServer
+  fullName: WaveEngine.Networking.Connection.INetworkServer
+- uid: WaveEngine.Networking.Connection.NetworkFactory.CreateNetworkClient*
+  commentId: Overload:WaveEngine.Networking.Connection.NetworkFactory.CreateNetworkClient
+  name: CreateNetworkClient
+  nameWithType: NetworkFactory.CreateNetworkClient
+  fullName: WaveEngine.Networking.Connection.NetworkFactory.CreateNetworkClient
+- uid: WaveEngine.Networking.Connection.INetworkFactory.CreateNetworkClient(System.String,System.Single,System.Single)
+  commentId: M:WaveEngine.Networking.Connection.INetworkFactory.CreateNetworkClient(System.String,System.Single,System.Single)
+  parent: WaveEngine.Networking.Connection.INetworkFactory
+  isExternal: true
+  name: CreateNetworkClient(String, Single, Single)
+  nameWithType: INetworkFactory.CreateNetworkClient(String, Single, Single)
+  fullName: WaveEngine.Networking.Connection.INetworkFactory.CreateNetworkClient(System.String, System.Single, System.Single)
+  spec.csharp:
+  - uid: WaveEngine.Networking.Connection.INetworkFactory.CreateNetworkClient(System.String,System.Single,System.Single)
+    name: CreateNetworkClient
+    nameWithType: INetworkFactory.CreateNetworkClient
+    fullName: WaveEngine.Networking.Connection.INetworkFactory.CreateNetworkClient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Networking.Connection.INetworkFactory.CreateNetworkClient(System.String,System.Single,System.Single)
+    name: CreateNetworkClient
+    nameWithType: INetworkFactory.CreateNetworkClient
+    fullName: WaveEngine.Networking.Connection.INetworkFactory.CreateNetworkClient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Networking.Connection.INetworkClient
+  commentId: T:WaveEngine.Networking.Connection.INetworkClient
+  parent: WaveEngine.Networking.Connection
+  name: INetworkClient
+  nameWithType: INetworkClient
+  fullName: WaveEngine.Networking.Connection.INetworkClient

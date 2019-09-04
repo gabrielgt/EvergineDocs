@@ -1,0 +1,2515 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.TiledMap.TiledMap
+  commentId: T:WaveEngine.TiledMap.TiledMap
+  id: TiledMap
+  parent: WaveEngine.TiledMap
+  children:
+  - WaveEngine.TiledMap.TiledMap.#ctor
+  - WaveEngine.TiledMap.TiledMap.#ctor(System.IO.Stream,System.String)
+  - WaveEngine.TiledMap.TiledMap.#ctor(System.String)
+  - WaveEngine.TiledMap.TiledMap.BackgroundColor
+  - WaveEngine.TiledMap.TiledMap.DefaultValues
+  - WaveEngine.TiledMap.TiledMap.GetTileCoordinatesByWorldPosition(WaveEngine.Common.Math.Vector2,System.Int32@,System.Int32@)
+  - WaveEngine.TiledMap.TiledMap.GetTilesetByGid(System.Int32)
+  - WaveEngine.TiledMap.TiledMap.Height
+  - WaveEngine.TiledMap.TiledMap.HexSideLength
+  - WaveEngine.TiledMap.TiledMap.ImageLayers
+  - WaveEngine.TiledMap.TiledMap.Initialize
+  - WaveEngine.TiledMap.TiledMap.MaxLayerDrawOrder
+  - WaveEngine.TiledMap.TiledMap.MinLayerDrawOrder
+  - WaveEngine.TiledMap.TiledMap.ObjectLayers
+  - WaveEngine.TiledMap.TiledMap.Orientation
+  - WaveEngine.TiledMap.TiledMap.Properties
+  - WaveEngine.TiledMap.TiledMap.RenderOrder
+  - WaveEngine.TiledMap.TiledMap.StaggerAxis
+  - WaveEngine.TiledMap.TiledMap.StaggerIndex
+  - WaveEngine.TiledMap.TiledMap.TileHeight
+  - WaveEngine.TiledMap.TiledMap.TileLayers
+  - WaveEngine.TiledMap.TiledMap.Tilesets
+  - WaveEngine.TiledMap.TiledMap.TileWidth
+  - WaveEngine.TiledMap.TiledMap.TmxPath
+  - WaveEngine.TiledMap.TiledMap.Version
+  - WaveEngine.TiledMap.TiledMap.Width
+  langs:
+  - csharp
+  - vb
+  name: TiledMap
+  nameWithType: TiledMap
+  fullName: WaveEngine.TiledMap.TiledMap
+  type: Class
+  source:
+    id: TiledMap
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 28
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nLoad and store all information concerning Tiled Maps (.TMX) files. To create/edit .tmx files you need to use Tiled Map Editor (http://www.mapeditor.org/)\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      public class TiledMap : Component
+    content.vb: >-
+      <DataContract>
+
+      Public Class TiledMap
+
+          Inherits Component
+  inheritance:
+  - System.Object
+  - WaveEngine.Common.IO.SerializableObject
+  - WaveEngine.Framework.DependencyObject
+  - WaveEngine.Framework.Component
+  inheritedMembers:
+  - WaveEngine.Framework.Component.isInitialized
+  - WaveEngine.Framework.Component.OnComponentInitialized
+  - WaveEngine.Framework.Component.OnComponentRemoved
+  - WaveEngine.Framework.Component.Name
+  - WaveEngine.Framework.Component.Owner
+  - WaveEngine.Framework.Component.Assets
+  - WaveEngine.Framework.Component.EntityManager
+  - WaveEngine.Framework.Component.BehaviorManager
+  - WaveEngine.Framework.Component.RenderManager
+  - WaveEngine.Framework.Component.Clone
+  - WaveEngine.Framework.Component.ToString
+  - WaveEngine.Framework.Component.ResolveDependencies
+  - WaveEngine.Framework.Component.Removed
+  - WaveEngine.Framework.Component.DeleteDependencies
+  - WaveEngine.Framework.DependencyObject.PropertyChanged
+  - WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  - WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  - WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  - WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WaveEngine.TiledMap.TiledMap.TmxPath
+  commentId: P:WaveEngine.TiledMap.TiledMap.TmxPath
+  id: TmxPath
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: TmxPath
+  nameWithType: TiledMap.TmxPath
+  fullName: WaveEngine.TiledMap.TiledMap.TmxPath
+  type: Property
+  source:
+    id: TmxPath
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 99
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nGets or sets the Path of the Tiled Map TMX file\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderPropertyAsAsset(AssetType.Unknown, ".tmx", 0)]
+
+      public string TmxPath { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <RenderPropertyAsAsset(AssetType.Unknown, ".tmx", 0)>
+
+      Public Property TmxPath As String
+  overload: WaveEngine.TiledMap.TiledMap.TmxPath*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderPropertyAsAsset
+    ctor: WaveEngine.Common.Attributes.RenderPropertyAsAsset.#ctor(WaveEngine.Common.Attributes.AssetType,System.String,System.Int32)
+    arguments:
+    - type: WaveEngine.Common.Attributes.AssetType
+      value: 0
+    - type: System.String
+      value: .tmx
+    - type: System.Int32
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.TiledMap.TiledMap.Tilesets
+  commentId: P:WaveEngine.TiledMap.TiledMap.Tilesets
+  id: Tilesets
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: Tilesets
+  nameWithType: TiledMap.Tilesets
+  fullName: WaveEngine.TiledMap.TiledMap.Tilesets
+  type: Property
+  source:
+    id: Tilesets
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 122
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nGets the tileset list\n"
+  example: []
+  syntax:
+    content: public IEnumerable<Tileset> Tilesets { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{WaveEngine.TiledMap.Tileset}
+    content.vb: Public ReadOnly Property Tilesets As IEnumerable(Of Tileset)
+  overload: WaveEngine.TiledMap.TiledMap.Tilesets*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.TiledMap.TiledMap.MinLayerDrawOrder
+  commentId: P:WaveEngine.TiledMap.TiledMap.MinLayerDrawOrder
+  id: MinLayerDrawOrder
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: MinLayerDrawOrder
+  nameWithType: TiledMap.MinLayerDrawOrder
+  fullName: WaveEngine.TiledMap.TiledMap.MinLayerDrawOrder
+  type: Property
+  source:
+    id: MinLayerDrawOrder
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 130
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nGets or sets the draw order of the last layer.\n"
+  example: []
+  syntax:
+    content: public float MinLayerDrawOrder { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property MinLayerDrawOrder As Single
+  overload: WaveEngine.TiledMap.TiledMap.MinLayerDrawOrder*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.TiledMap.TiledMap.MaxLayerDrawOrder
+  commentId: P:WaveEngine.TiledMap.TiledMap.MaxLayerDrawOrder
+  id: MaxLayerDrawOrder
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: MaxLayerDrawOrder
+  nameWithType: TiledMap.MaxLayerDrawOrder
+  fullName: WaveEngine.TiledMap.TiledMap.MaxLayerDrawOrder
+  type: Property
+  source:
+    id: MaxLayerDrawOrder
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 147
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nGets or sets the draw order of the first layer.\n"
+  example: []
+  syntax:
+    content: public float MaxLayerDrawOrder { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property MaxLayerDrawOrder As Single
+  overload: WaveEngine.TiledMap.TiledMap.MaxLayerDrawOrder*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.TiledMap.TiledMap.TileLayers
+  commentId: P:WaveEngine.TiledMap.TiledMap.TileLayers
+  id: TileLayers
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: TileLayers
+  nameWithType: TiledMap.TileLayers
+  fullName: WaveEngine.TiledMap.TiledMap.TileLayers
+  type: Property
+  source:
+    id: TileLayers
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 164
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nGets the tile layer dictionary\n"
+  example: []
+  syntax:
+    content: public IReadOnlyDictionary<string, TiledMapLayer> TileLayers { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,WaveEngine.TiledMap.TiledMapLayer}
+    content.vb: Public ReadOnly Property TileLayers As IReadOnlyDictionary(Of String, TiledMapLayer)
+  overload: WaveEngine.TiledMap.TiledMap.TileLayers*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.TiledMap.TiledMap.ObjectLayers
+  commentId: P:WaveEngine.TiledMap.TiledMap.ObjectLayers
+  id: ObjectLayers
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: ObjectLayers
+  nameWithType: TiledMap.ObjectLayers
+  fullName: WaveEngine.TiledMap.TiledMap.ObjectLayers
+  type: Property
+  source:
+    id: ObjectLayers
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 175
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nGets the object layer dictionary\n"
+  example: []
+  syntax:
+    content: public IReadOnlyDictionary<string, TiledMapObjectLayer> ObjectLayers { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,WaveEngine.TiledMap.TiledMapObjectLayer}
+    content.vb: Public ReadOnly Property ObjectLayers As IReadOnlyDictionary(Of String, TiledMapObjectLayer)
+  overload: WaveEngine.TiledMap.TiledMap.ObjectLayers*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.TiledMap.TiledMap.ImageLayers
+  commentId: P:WaveEngine.TiledMap.TiledMap.ImageLayers
+  id: ImageLayers
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: ImageLayers
+  nameWithType: TiledMap.ImageLayers
+  fullName: WaveEngine.TiledMap.TiledMap.ImageLayers
+  type: Property
+  source:
+    id: ImageLayers
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 186
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nGets the image layer dictionary\n"
+  example: []
+  syntax:
+    content: public IReadOnlyDictionary<string, TiledMapImageLayer> ImageLayers { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,WaveEngine.TiledMap.TiledMapImageLayer}
+    content.vb: Public ReadOnly Property ImageLayers As IReadOnlyDictionary(Of String, TiledMapImageLayer)
+  overload: WaveEngine.TiledMap.TiledMap.ImageLayers*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.TiledMap.TiledMap.Properties
+  commentId: P:WaveEngine.TiledMap.TiledMap.Properties
+  id: Properties
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: TiledMap.Properties
+  fullName: WaveEngine.TiledMap.TiledMap.Properties
+  type: Property
+  source:
+    id: Properties
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 197
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nGets the map file properties.\n"
+  example: []
+  syntax:
+    content: public IReadOnlyDictionary<string, string> Properties { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+    content.vb: Public ReadOnly Property Properties As IReadOnlyDictionary(Of String, String)
+  overload: WaveEngine.TiledMap.TiledMap.Properties*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.TiledMap.TiledMap.Version
+  commentId: P:WaveEngine.TiledMap.TiledMap.Version
+  id: Version
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: TiledMap.Version
+  fullName: WaveEngine.TiledMap.TiledMap.Version
+  type: Property
+  source:
+    id: Version
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 208
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nGets the TMX format version, generally 1.0.\n"
+  example: []
+  syntax:
+    content: public string Version { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Version As String
+  overload: WaveEngine.TiledMap.TiledMap.Version*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.TiledMap.TiledMap.Orientation
+  commentId: P:WaveEngine.TiledMap.TiledMap.Orientation
+  id: Orientation
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: Orientation
+  nameWithType: TiledMap.Orientation
+  fullName: WaveEngine.TiledMap.TiledMap.Orientation
+  type: Property
+  source:
+    id: Orientation
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 213
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nGets map orientation. Tiled supports &quot;orthogonal&quot;, &quot;isometric&quot;, &quot;staggered&quot; and &quot;hexagonal&quot; (since 0.11.0) at the moment.\n"
+  example: []
+  syntax:
+    content: public TiledMapOrientationType Orientation { get; }
+    parameters: []
+    return:
+      type: WaveEngine.TiledMap.TiledMapOrientationType
+    content.vb: Public ReadOnly Property Orientation As TiledMapOrientationType
+  overload: WaveEngine.TiledMap.TiledMap.Orientation*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.TiledMap.TiledMap.RenderOrder
+  commentId: P:WaveEngine.TiledMap.TiledMap.RenderOrder
+  id: RenderOrder
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: RenderOrder
+  nameWithType: TiledMap.RenderOrder
+  fullName: WaveEngine.TiledMap.TiledMap.RenderOrder
+  type: Property
+  source:
+    id: RenderOrder
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 221
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nGets the order in which tiles on tile layers are rendered.\nValid values are right-down (the default), right-up, left-down and left-up.\nIn all cases, the map is drawn row-by-row.\n(since 0.10, but only supported for orthogonal maps at the moment)\n"
+  example: []
+  syntax:
+    content: public TiledMapRenderOrderType RenderOrder { get; }
+    parameters: []
+    return:
+      type: WaveEngine.TiledMap.TiledMapRenderOrderType
+    content.vb: Public ReadOnly Property RenderOrder As TiledMapRenderOrderType
+  overload: WaveEngine.TiledMap.TiledMap.RenderOrder*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.TiledMap.TiledMap.StaggerAxis
+  commentId: P:WaveEngine.TiledMap.TiledMap.StaggerAxis
+  id: StaggerAxis
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: StaggerAxis
+  nameWithType: TiledMap.StaggerAxis
+  fullName: WaveEngine.TiledMap.TiledMap.StaggerAxis
+  type: Property
+  source:
+    id: StaggerAxis
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 226
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nGets stagger Axis. For staggered maps, indicates if the tiles are ordered in X axis or Y axis.\n"
+  example: []
+  syntax:
+    content: public TiledMapStaggerAxisType StaggerAxis { get; }
+    parameters: []
+    return:
+      type: WaveEngine.TiledMap.TiledMapStaggerAxisType
+    content.vb: Public ReadOnly Property StaggerAxis As TiledMapStaggerAxisType
+  overload: WaveEngine.TiledMap.TiledMap.StaggerAxis*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.TiledMap.TiledMap.StaggerIndex
+  commentId: P:WaveEngine.TiledMap.TiledMap.StaggerIndex
+  id: StaggerIndex
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: StaggerIndex
+  nameWithType: TiledMap.StaggerIndex
+  fullName: WaveEngine.TiledMap.TiledMap.StaggerIndex
+  type: Property
+  source:
+    id: StaggerIndex
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 231
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nGets stagger Index. For staggered maps, indicates if the tiles index is odd or even.\n"
+  example: []
+  syntax:
+    content: public TiledMapStaggerIndexType StaggerIndex { get; }
+    parameters: []
+    return:
+      type: WaveEngine.TiledMap.TiledMapStaggerIndexType
+    content.vb: Public ReadOnly Property StaggerIndex As TiledMapStaggerIndexType
+  overload: WaveEngine.TiledMap.TiledMap.StaggerIndex*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.TiledMap.TiledMap.HexSideLength
+  commentId: P:WaveEngine.TiledMap.TiledMap.HexSideLength
+  id: HexSideLength
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: HexSideLength
+  nameWithType: TiledMap.HexSideLength
+  fullName: WaveEngine.TiledMap.TiledMap.HexSideLength
+  type: Property
+  source:
+    id: HexSideLength
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 236
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nGets the tile side length for hexagonal maps.\n"
+  example: []
+  syntax:
+    content: public int HexSideLength { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property HexSideLength As Integer
+  overload: WaveEngine.TiledMap.TiledMap.HexSideLength*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.TiledMap.TiledMap.Width
+  commentId: P:WaveEngine.TiledMap.TiledMap.Width
+  id: Width
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: TiledMap.Width
+  fullName: WaveEngine.TiledMap.TiledMap.Width
+  type: Property
+  source:
+    id: Width
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 241
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nGets the map width in tiles.\n"
+  example: []
+  syntax:
+    content: public int Width { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Width As Integer
+  overload: WaveEngine.TiledMap.TiledMap.Width*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.TiledMap.TiledMap.Height
+  commentId: P:WaveEngine.TiledMap.TiledMap.Height
+  id: Height
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: TiledMap.Height
+  fullName: WaveEngine.TiledMap.TiledMap.Height
+  type: Property
+  source:
+    id: Height
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 246
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nGets the map height in tiles.\n"
+  example: []
+  syntax:
+    content: public int Height { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Height As Integer
+  overload: WaveEngine.TiledMap.TiledMap.Height*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.TiledMap.TiledMap.TileWidth
+  commentId: P:WaveEngine.TiledMap.TiledMap.TileWidth
+  id: TileWidth
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: TileWidth
+  nameWithType: TiledMap.TileWidth
+  fullName: WaveEngine.TiledMap.TiledMap.TileWidth
+  type: Property
+  source:
+    id: TileWidth
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 251
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nGets the width of a tile.\n"
+  example: []
+  syntax:
+    content: public int TileWidth { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property TileWidth As Integer
+  overload: WaveEngine.TiledMap.TiledMap.TileWidth*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.TiledMap.TiledMap.TileHeight
+  commentId: P:WaveEngine.TiledMap.TiledMap.TileHeight
+  id: TileHeight
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: TileHeight
+  nameWithType: TiledMap.TileHeight
+  fullName: WaveEngine.TiledMap.TiledMap.TileHeight
+  type: Property
+  source:
+    id: TileHeight
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 256
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nGets the height of a tile.\n"
+  example: []
+  syntax:
+    content: public int TileHeight { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property TileHeight As Integer
+  overload: WaveEngine.TiledMap.TiledMap.TileHeight*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.TiledMap.TiledMap.BackgroundColor
+  commentId: P:WaveEngine.TiledMap.TiledMap.BackgroundColor
+  id: BackgroundColor
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: BackgroundColor
+  nameWithType: TiledMap.BackgroundColor
+  fullName: WaveEngine.TiledMap.TiledMap.BackgroundColor
+  type: Property
+  source:
+    id: BackgroundColor
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 261
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nGets the background color of the map. (since 0.9.0)\n"
+  example: []
+  syntax:
+    content: public Color BackgroundColor { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Graphics.Color
+    content.vb: Public ReadOnly Property BackgroundColor As Color
+  overload: WaveEngine.TiledMap.TiledMap.BackgroundColor*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.TiledMap.TiledMap.#ctor
+  commentId: M:WaveEngine.TiledMap.TiledMap.#ctor
+  id: '#ctor'
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: TiledMap()
+  nameWithType: TiledMap.TiledMap()
+  fullName: WaveEngine.TiledMap.TiledMap.TiledMap()
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 269
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.TiledMap.TiledMap\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public TiledMap()
+    content.vb: Public Sub New
+  overload: WaveEngine.TiledMap.TiledMap.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.TiledMap.TiledMap.#ctor(System.String)
+  commentId: M:WaveEngine.TiledMap.TiledMap.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: TiledMap(String)
+  nameWithType: TiledMap.TiledMap(String)
+  fullName: WaveEngine.TiledMap.TiledMap.TiledMap(System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 278
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.TiledMap.TiledMap\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public TiledMap(string tmxPath)
+    parameters:
+    - id: tmxPath
+      type: System.String
+      description: TMX file path.
+    content.vb: Public Sub New(tmxPath As String)
+  overload: WaveEngine.TiledMap.TiledMap.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.TiledMap.TiledMap.#ctor(System.IO.Stream,System.String)
+  commentId: M:WaveEngine.TiledMap.TiledMap.#ctor(System.IO.Stream,System.String)
+  id: '#ctor(System.IO.Stream,System.String)'
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: TiledMap(Stream, String)
+  nameWithType: TiledMap.TiledMap(Stream, String)
+  fullName: WaveEngine.TiledMap.TiledMap.TiledMap(System.IO.Stream, System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 293
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.TiledMap.TiledMap\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public TiledMap(Stream tmxStream, string tmxStreamAssetsPath = "Content\\Assets\\")
+    parameters:
+    - id: tmxStream
+      type: System.IO.Stream
+      description: TMX stream.
+    - id: tmxStreamAssetsPath
+      type: System.String
+      description: TMX stream assets path.
+    content.vb: Public Sub New(tmxStream As Stream, tmxStreamAssetsPath As String = "Content\Assets\")
+  overload: WaveEngine.TiledMap.TiledMap.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.TiledMap.TiledMap.DefaultValues
+  commentId: M:WaveEngine.TiledMap.TiledMap.DefaultValues
+  id: DefaultValues
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: DefaultValues()
+  nameWithType: TiledMap.DefaultValues()
+  fullName: WaveEngine.TiledMap.TiledMap.DefaultValues()
+  type: Method
+  source:
+    id: DefaultValues
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 312
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nSets default values\n"
+  example: []
+  syntax:
+    content: protected override void DefaultValues()
+    content.vb: Protected Overrides Sub DefaultValues
+  overridden: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  overload: WaveEngine.TiledMap.TiledMap.DefaultValues*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.TiledMap.TiledMap.GetTilesetByGid(System.Int32)
+  commentId: M:WaveEngine.TiledMap.TiledMap.GetTilesetByGid(System.Int32)
+  id: GetTilesetByGid(System.Int32)
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: GetTilesetByGid(Int32)
+  nameWithType: TiledMap.GetTilesetByGid(Int32)
+  fullName: WaveEngine.TiledMap.TiledMap.GetTilesetByGid(System.Int32)
+  type: Method
+  source:
+    id: GetTilesetByGid
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 333
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nGet a tileset by a Global ID\n"
+  example: []
+  syntax:
+    content: public Tileset GetTilesetByGid(int gid)
+    parameters:
+    - id: gid
+      type: System.Int32
+      description: Th Global ID.
+    return:
+      type: WaveEngine.TiledMap.Tileset
+      description: The associated tileset.
+    content.vb: Public Function GetTilesetByGid(gid As Integer) As Tileset
+  overload: WaveEngine.TiledMap.TiledMap.GetTilesetByGid*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.TiledMap.TiledMap.GetTileCoordinatesByWorldPosition(WaveEngine.Common.Math.Vector2,System.Int32@,System.Int32@)
+  commentId: M:WaveEngine.TiledMap.TiledMap.GetTileCoordinatesByWorldPosition(WaveEngine.Common.Math.Vector2,System.Int32@,System.Int32@)
+  id: GetTileCoordinatesByWorldPosition(WaveEngine.Common.Math.Vector2,System.Int32@,System.Int32@)
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: GetTileCoordinatesByWorldPosition(Vector2, out Int32, out Int32)
+  nameWithType: TiledMap.GetTileCoordinatesByWorldPosition(Vector2, out Int32, out Int32)
+  fullName: WaveEngine.TiledMap.TiledMap.GetTileCoordinatesByWorldPosition(WaveEngine.Common.Math.Vector2, out System.Int32, out System.Int32)
+  type: Method
+  source:
+    id: GetTileCoordinatesByWorldPosition
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 454
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nGet Tile coordinates (x, y) by world position\n"
+  example: []
+  syntax:
+    content: public void GetTileCoordinatesByWorldPosition(Vector2 position, out int tileX, out int tileY)
+    parameters:
+    - id: position
+      type: WaveEngine.Common.Math.Vector2
+      description: The world position
+    - id: tileX
+      type: System.Int32
+      description: Out tile X coordinate
+    - id: tileY
+      type: System.Int32
+      description: Out tile Y coordinate
+    content.vb: Public Sub GetTileCoordinatesByWorldPosition(position As Vector2, ByRef tileX As Integer, ByRef tileY As Integer)
+  overload: WaveEngine.TiledMap.TiledMap.GetTileCoordinatesByWorldPosition*
+  nameWithType.vb: TiledMap.GetTileCoordinatesByWorldPosition(Vector2, ByRef Int32, ByRef Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.TiledMap.TiledMap.GetTileCoordinatesByWorldPosition(WaveEngine.Common.Math.Vector2, ByRef System.Int32, ByRef System.Int32)
+  name.vb: GetTileCoordinatesByWorldPosition(Vector2, ByRef Int32, ByRef Int32)
+- uid: WaveEngine.TiledMap.TiledMap.Initialize
+  commentId: M:WaveEngine.TiledMap.TiledMap.Initialize
+  id: Initialize
+  parent: WaveEngine.TiledMap.TiledMap
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: TiledMap.Initialize()
+  fullName: WaveEngine.TiledMap.TiledMap.Initialize()
+  type: Method
+  source:
+    id: Initialize
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.TiledMap\Shared\TiledMap.cs
+    startLine: 683
+  assemblies:
+  - WaveEngine.TiledMap
+  namespace: WaveEngine.TiledMap
+  summary: "\nInitializes Tiled Map\n"
+  example: []
+  syntax:
+    content: protected override void Initialize()
+    content.vb: Protected Overrides Sub Initialize
+  overridden: WaveEngine.Framework.Component.Initialize
+  overload: WaveEngine.TiledMap.TiledMap.Initialize*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: WaveEngine.TiledMap
+  commentId: N:WaveEngine.TiledMap
+  name: WaveEngine.TiledMap
+  nameWithType: WaveEngine.TiledMap
+  fullName: WaveEngine.TiledMap
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.IO.SerializableObject
+  commentId: T:WaveEngine.Common.IO.SerializableObject
+  parent: WaveEngine.Common.IO
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: WaveEngine.Common.IO.SerializableObject
+- uid: WaveEngine.Framework.DependencyObject
+  commentId: T:WaveEngine.Framework.DependencyObject
+  parent: WaveEngine.Framework
+  name: DependencyObject
+  nameWithType: DependencyObject
+  fullName: WaveEngine.Framework.DependencyObject
+- uid: WaveEngine.Framework.Component
+  commentId: T:WaveEngine.Framework.Component
+  parent: WaveEngine.Framework
+  name: Component
+  nameWithType: Component
+  fullName: WaveEngine.Framework.Component
+- uid: WaveEngine.Framework.Component.isInitialized
+  commentId: F:WaveEngine.Framework.Component.isInitialized
+  parent: WaveEngine.Framework.Component
+  name: isInitialized
+  nameWithType: Component.isInitialized
+  fullName: WaveEngine.Framework.Component.isInitialized
+- uid: WaveEngine.Framework.Component.OnComponentInitialized
+  commentId: E:WaveEngine.Framework.Component.OnComponentInitialized
+  parent: WaveEngine.Framework.Component
+  name: OnComponentInitialized
+  nameWithType: Component.OnComponentInitialized
+  fullName: WaveEngine.Framework.Component.OnComponentInitialized
+- uid: WaveEngine.Framework.Component.OnComponentRemoved
+  commentId: E:WaveEngine.Framework.Component.OnComponentRemoved
+  parent: WaveEngine.Framework.Component
+  name: OnComponentRemoved
+  nameWithType: Component.OnComponentRemoved
+  fullName: WaveEngine.Framework.Component.OnComponentRemoved
+- uid: WaveEngine.Framework.Component.Name
+  commentId: P:WaveEngine.Framework.Component.Name
+  parent: WaveEngine.Framework.Component
+  name: Name
+  nameWithType: Component.Name
+  fullName: WaveEngine.Framework.Component.Name
+- uid: WaveEngine.Framework.Component.Owner
+  commentId: P:WaveEngine.Framework.Component.Owner
+  parent: WaveEngine.Framework.Component
+  name: Owner
+  nameWithType: Component.Owner
+  fullName: WaveEngine.Framework.Component.Owner
+- uid: WaveEngine.Framework.Component.Assets
+  commentId: P:WaveEngine.Framework.Component.Assets
+  parent: WaveEngine.Framework.Component
+  name: Assets
+  nameWithType: Component.Assets
+  fullName: WaveEngine.Framework.Component.Assets
+- uid: WaveEngine.Framework.Component.EntityManager
+  commentId: P:WaveEngine.Framework.Component.EntityManager
+  parent: WaveEngine.Framework.Component
+  name: EntityManager
+  nameWithType: Component.EntityManager
+  fullName: WaveEngine.Framework.Component.EntityManager
+- uid: WaveEngine.Framework.Component.BehaviorManager
+  commentId: P:WaveEngine.Framework.Component.BehaviorManager
+  parent: WaveEngine.Framework.Component
+  name: BehaviorManager
+  nameWithType: Component.BehaviorManager
+  fullName: WaveEngine.Framework.Component.BehaviorManager
+- uid: WaveEngine.Framework.Component.RenderManager
+  commentId: P:WaveEngine.Framework.Component.RenderManager
+  parent: WaveEngine.Framework.Component
+  name: RenderManager
+  nameWithType: Component.RenderManager
+  fullName: WaveEngine.Framework.Component.RenderManager
+- uid: WaveEngine.Framework.Component.Clone
+  commentId: M:WaveEngine.Framework.Component.Clone
+  parent: WaveEngine.Framework.Component
+  name: Clone()
+  nameWithType: Component.Clone()
+  fullName: WaveEngine.Framework.Component.Clone()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Clone
+    name: Clone
+    nameWithType: Component.Clone
+    fullName: WaveEngine.Framework.Component.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Clone
+    name: Clone
+    nameWithType: Component.Clone
+    fullName: WaveEngine.Framework.Component.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.ToString
+  commentId: M:WaveEngine.Framework.Component.ToString
+  parent: WaveEngine.Framework.Component
+  name: ToString()
+  nameWithType: Component.ToString()
+  fullName: WaveEngine.Framework.Component.ToString()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: WaveEngine.Framework.Component.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: WaveEngine.Framework.Component.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.ResolveDependencies
+  commentId: M:WaveEngine.Framework.Component.ResolveDependencies
+  parent: WaveEngine.Framework.Component
+  name: ResolveDependencies()
+  nameWithType: Component.ResolveDependencies()
+  fullName: WaveEngine.Framework.Component.ResolveDependencies()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.ResolveDependencies
+    name: ResolveDependencies
+    nameWithType: Component.ResolveDependencies
+    fullName: WaveEngine.Framework.Component.ResolveDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.ResolveDependencies
+    name: ResolveDependencies
+    nameWithType: Component.ResolveDependencies
+    fullName: WaveEngine.Framework.Component.ResolveDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.Removed
+  commentId: M:WaveEngine.Framework.Component.Removed
+  parent: WaveEngine.Framework.Component
+  name: Removed()
+  nameWithType: Component.Removed()
+  fullName: WaveEngine.Framework.Component.Removed()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Removed
+    name: Removed
+    nameWithType: Component.Removed
+    fullName: WaveEngine.Framework.Component.Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Removed
+    name: Removed
+    nameWithType: Component.Removed
+    fullName: WaveEngine.Framework.Component.Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.DeleteDependencies
+  commentId: M:WaveEngine.Framework.Component.DeleteDependencies
+  parent: WaveEngine.Framework.Component
+  name: DeleteDependencies()
+  nameWithType: Component.DeleteDependencies()
+  fullName: WaveEngine.Framework.Component.DeleteDependencies()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Component.DeleteDependencies
+    fullName: WaveEngine.Framework.Component.DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Component.DeleteDependencies
+    fullName: WaveEngine.Framework.Component.DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.PropertyChanged
+  commentId: E:WaveEngine.Framework.DependencyObject.PropertyChanged
+  parent: WaveEngine.Framework.DependencyObject
+  name: PropertyChanged
+  nameWithType: DependencyObject.PropertyChanged
+  fullName: WaveEngine.Framework.DependencyObject.PropertyChanged
+- uid: WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  commentId: P:WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  parent: WaveEngine.Framework.DependencyObject
+  name: ParentDependencyObject
+  nameWithType: DependencyObject.ParentDependencyObject
+  fullName: WaveEngine.Framework.DependencyObject.ParentDependencyObject
+- uid: WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  commentId: P:WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  parent: WaveEngine.Framework.DependencyObject
+  name: EnableDiagnosticCallback
+  nameWithType: DependencyObject.EnableDiagnosticCallback
+  fullName: WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+- uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  commentId: M:WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  parent: WaveEngine.Framework.DependencyObject
+  isExternal: true
+  name: SetValue(DependencyProperty, Object)
+  nameWithType: DependencyObject.SetValue(DependencyProperty, Object)
+  fullName: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty, System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+    name: SetValue
+    nameWithType: DependencyObject.SetValue
+    fullName: WaveEngine.Framework.DependencyObject.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+    name: SetValue
+    nameWithType: DependencyObject.SetValue
+    fullName: WaveEngine.Framework.DependencyObject.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: GetValue(DependencyProperty)
+  nameWithType: DependencyObject.GetValue(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+    name: GetValue
+    nameWithType: DependencyObject.GetValue
+    fullName: WaveEngine.Framework.DependencyObject.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+    name: GetValue
+    nameWithType: DependencyObject.GetValue
+    fullName: WaveEngine.Framework.DependencyObject.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: GetAbsoluteValue<T>(DependencyProperty)
+  nameWithType: DependencyObject.GetAbsoluteValue<T>(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue<T>(WaveEngine.Framework.DependencyProperty)
+  nameWithType.vb: DependencyObject.GetAbsoluteValue(Of T)(DependencyProperty)
+  fullName.vb: WaveEngine.Framework.DependencyObject.GetAbsoluteValue(Of T)(WaveEngine.Framework.DependencyProperty)
+  name.vb: GetAbsoluteValue(Of T)(DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+    name: GetAbsoluteValue<T>
+    nameWithType: DependencyObject.GetAbsoluteValue<T>
+    fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+    name: GetAbsoluteValue(Of T)
+    nameWithType: DependencyObject.GetAbsoluteValue(Of T)
+    fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: ClearValue(DependencyProperty)
+  nameWithType: DependencyObject.ClearValue(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+    name: ClearValue
+    nameWithType: DependencyObject.ClearValue
+    fullName: WaveEngine.Framework.DependencyObject.ClearValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+    name: ClearValue
+    nameWithType: DependencyObject.ClearValue
+    fullName: WaveEngine.Framework.DependencyObject.ClearValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: IsValueSet(DependencyProperty)
+  nameWithType: DependencyObject.IsValueSet(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+    name: IsValueSet
+    nameWithType: DependencyObject.IsValueSet
+    fullName: WaveEngine.Framework.DependencyObject.IsValueSet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+    name: IsValueSet
+    nameWithType: DependencyObject.IsValueSet
+    fullName: WaveEngine.Framework.DependencyObject.IsValueSet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  commentId: M:WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  parent: WaveEngine.Common.IO.SerializableObject
+  isExternal: true
+  name: OnDeserializing(StreamingContext)
+  nameWithType: SerializableObject.OnDeserializing(StreamingContext)
+  fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.IO
+  commentId: N:WaveEngine.Common.IO
+  name: WaveEngine.Common.IO
+  nameWithType: WaveEngine.Common.IO
+  fullName: WaveEngine.Common.IO
+- uid: WaveEngine.Framework
+  commentId: N:WaveEngine.Framework
+  name: WaveEngine.Framework
+  nameWithType: WaveEngine.Framework
+  fullName: WaveEngine.Framework
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.TiledMap.TiledMap.TmxPath*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.TmxPath
+  name: TmxPath
+  nameWithType: TiledMap.TmxPath
+  fullName: WaveEngine.TiledMap.TiledMap.TmxPath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: WaveEngine.TiledMap.TiledMap.Tilesets*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.Tilesets
+  name: Tilesets
+  nameWithType: TiledMap.Tilesets
+  fullName: WaveEngine.TiledMap.TiledMap.Tilesets
+- uid: System.Collections.Generic.IEnumerable{WaveEngine.TiledMap.Tileset}
+  commentId: T:System.Collections.Generic.IEnumerable{WaveEngine.TiledMap.Tileset}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Tileset>
+  nameWithType: IEnumerable<Tileset>
+  fullName: System.Collections.Generic.IEnumerable<WaveEngine.TiledMap.Tileset>
+  nameWithType.vb: IEnumerable(Of Tileset)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of WaveEngine.TiledMap.Tileset)
+  name.vb: IEnumerable(Of Tileset)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.TiledMap.Tileset
+    name: Tileset
+    nameWithType: Tileset
+    fullName: WaveEngine.TiledMap.Tileset
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.TiledMap.Tileset
+    name: Tileset
+    nameWithType: Tileset
+    fullName: WaveEngine.TiledMap.Tileset
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: WaveEngine.TiledMap.TiledMap.MinLayerDrawOrder*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.MinLayerDrawOrder
+  name: MinLayerDrawOrder
+  nameWithType: TiledMap.MinLayerDrawOrder
+  fullName: WaveEngine.TiledMap.TiledMap.MinLayerDrawOrder
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.TiledMap.TiledMap.MaxLayerDrawOrder*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.MaxLayerDrawOrder
+  name: MaxLayerDrawOrder
+  nameWithType: TiledMap.MaxLayerDrawOrder
+  fullName: WaveEngine.TiledMap.TiledMap.MaxLayerDrawOrder
+- uid: WaveEngine.TiledMap.TiledMap.TileLayers*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.TileLayers
+  name: TileLayers
+  nameWithType: TiledMap.TileLayers
+  fullName: WaveEngine.TiledMap.TiledMap.TileLayers
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,WaveEngine.TiledMap.TiledMapLayer}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,WaveEngine.TiledMap.TiledMapLayer}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  name: IReadOnlyDictionary<String, TiledMapLayer>
+  nameWithType: IReadOnlyDictionary<String, TiledMapLayer>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<System.String, WaveEngine.TiledMap.TiledMapLayer>
+  nameWithType.vb: IReadOnlyDictionary(Of String, TiledMapLayer)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of System.String, WaveEngine.TiledMap.TiledMapLayer)
+  name.vb: IReadOnlyDictionary(Of String, TiledMapLayer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    nameWithType: IReadOnlyDictionary
+    fullName: System.Collections.Generic.IReadOnlyDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.TiledMap.TiledMapLayer
+    name: TiledMapLayer
+    nameWithType: TiledMapLayer
+    fullName: WaveEngine.TiledMap.TiledMapLayer
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    nameWithType: IReadOnlyDictionary
+    fullName: System.Collections.Generic.IReadOnlyDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.TiledMap.TiledMapLayer
+    name: TiledMapLayer
+    nameWithType: TiledMapLayer
+    fullName: WaveEngine.TiledMap.TiledMapLayer
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    nameWithType: IReadOnlyDictionary
+    fullName: System.Collections.Generic.IReadOnlyDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    nameWithType: IReadOnlyDictionary
+    fullName: System.Collections.Generic.IReadOnlyDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.TiledMap.TiledMap.ObjectLayers*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.ObjectLayers
+  name: ObjectLayers
+  nameWithType: TiledMap.ObjectLayers
+  fullName: WaveEngine.TiledMap.TiledMap.ObjectLayers
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,WaveEngine.TiledMap.TiledMapObjectLayer}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,WaveEngine.TiledMap.TiledMapObjectLayer}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  name: IReadOnlyDictionary<String, TiledMapObjectLayer>
+  nameWithType: IReadOnlyDictionary<String, TiledMapObjectLayer>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<System.String, WaveEngine.TiledMap.TiledMapObjectLayer>
+  nameWithType.vb: IReadOnlyDictionary(Of String, TiledMapObjectLayer)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of System.String, WaveEngine.TiledMap.TiledMapObjectLayer)
+  name.vb: IReadOnlyDictionary(Of String, TiledMapObjectLayer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    nameWithType: IReadOnlyDictionary
+    fullName: System.Collections.Generic.IReadOnlyDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.TiledMap.TiledMapObjectLayer
+    name: TiledMapObjectLayer
+    nameWithType: TiledMapObjectLayer
+    fullName: WaveEngine.TiledMap.TiledMapObjectLayer
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    nameWithType: IReadOnlyDictionary
+    fullName: System.Collections.Generic.IReadOnlyDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.TiledMap.TiledMapObjectLayer
+    name: TiledMapObjectLayer
+    nameWithType: TiledMapObjectLayer
+    fullName: WaveEngine.TiledMap.TiledMapObjectLayer
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.TiledMap.TiledMap.ImageLayers*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.ImageLayers
+  name: ImageLayers
+  nameWithType: TiledMap.ImageLayers
+  fullName: WaveEngine.TiledMap.TiledMap.ImageLayers
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,WaveEngine.TiledMap.TiledMapImageLayer}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,WaveEngine.TiledMap.TiledMapImageLayer}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  name: IReadOnlyDictionary<String, TiledMapImageLayer>
+  nameWithType: IReadOnlyDictionary<String, TiledMapImageLayer>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<System.String, WaveEngine.TiledMap.TiledMapImageLayer>
+  nameWithType.vb: IReadOnlyDictionary(Of String, TiledMapImageLayer)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of System.String, WaveEngine.TiledMap.TiledMapImageLayer)
+  name.vb: IReadOnlyDictionary(Of String, TiledMapImageLayer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    nameWithType: IReadOnlyDictionary
+    fullName: System.Collections.Generic.IReadOnlyDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.TiledMap.TiledMapImageLayer
+    name: TiledMapImageLayer
+    nameWithType: TiledMapImageLayer
+    fullName: WaveEngine.TiledMap.TiledMapImageLayer
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    nameWithType: IReadOnlyDictionary
+    fullName: System.Collections.Generic.IReadOnlyDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.TiledMap.TiledMapImageLayer
+    name: TiledMapImageLayer
+    nameWithType: TiledMapImageLayer
+    fullName: WaveEngine.TiledMap.TiledMapImageLayer
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.TiledMap.TiledMap.Properties*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.Properties
+  name: Properties
+  nameWithType: TiledMap.Properties
+  fullName: WaveEngine.TiledMap.TiledMap.Properties
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  name: IReadOnlyDictionary<String, String>
+  nameWithType: IReadOnlyDictionary<String, String>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<System.String, System.String>
+  nameWithType.vb: IReadOnlyDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of System.String, System.String)
+  name.vb: IReadOnlyDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    nameWithType: IReadOnlyDictionary
+    fullName: System.Collections.Generic.IReadOnlyDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    nameWithType: IReadOnlyDictionary
+    fullName: System.Collections.Generic.IReadOnlyDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.TiledMap.TiledMap.Version*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.Version
+  name: Version
+  nameWithType: TiledMap.Version
+  fullName: WaveEngine.TiledMap.TiledMap.Version
+- uid: WaveEngine.TiledMap.TiledMap.Orientation*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.Orientation
+  name: Orientation
+  nameWithType: TiledMap.Orientation
+  fullName: WaveEngine.TiledMap.TiledMap.Orientation
+- uid: WaveEngine.TiledMap.TiledMapOrientationType
+  commentId: T:WaveEngine.TiledMap.TiledMapOrientationType
+  parent: WaveEngine.TiledMap
+  name: TiledMapOrientationType
+  nameWithType: TiledMapOrientationType
+  fullName: WaveEngine.TiledMap.TiledMapOrientationType
+- uid: WaveEngine.TiledMap.TiledMap.RenderOrder*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.RenderOrder
+  name: RenderOrder
+  nameWithType: TiledMap.RenderOrder
+  fullName: WaveEngine.TiledMap.TiledMap.RenderOrder
+- uid: WaveEngine.TiledMap.TiledMapRenderOrderType
+  commentId: T:WaveEngine.TiledMap.TiledMapRenderOrderType
+  parent: WaveEngine.TiledMap
+  name: TiledMapRenderOrderType
+  nameWithType: TiledMapRenderOrderType
+  fullName: WaveEngine.TiledMap.TiledMapRenderOrderType
+- uid: WaveEngine.TiledMap.TiledMap.StaggerAxis*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.StaggerAxis
+  name: StaggerAxis
+  nameWithType: TiledMap.StaggerAxis
+  fullName: WaveEngine.TiledMap.TiledMap.StaggerAxis
+- uid: WaveEngine.TiledMap.TiledMapStaggerAxisType
+  commentId: T:WaveEngine.TiledMap.TiledMapStaggerAxisType
+  parent: WaveEngine.TiledMap
+  name: TiledMapStaggerAxisType
+  nameWithType: TiledMapStaggerAxisType
+  fullName: WaveEngine.TiledMap.TiledMapStaggerAxisType
+- uid: WaveEngine.TiledMap.TiledMap.StaggerIndex*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.StaggerIndex
+  name: StaggerIndex
+  nameWithType: TiledMap.StaggerIndex
+  fullName: WaveEngine.TiledMap.TiledMap.StaggerIndex
+- uid: WaveEngine.TiledMap.TiledMapStaggerIndexType
+  commentId: T:WaveEngine.TiledMap.TiledMapStaggerIndexType
+  parent: WaveEngine.TiledMap
+  name: TiledMapStaggerIndexType
+  nameWithType: TiledMapStaggerIndexType
+  fullName: WaveEngine.TiledMap.TiledMapStaggerIndexType
+- uid: WaveEngine.TiledMap.TiledMap.HexSideLength*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.HexSideLength
+  name: HexSideLength
+  nameWithType: TiledMap.HexSideLength
+  fullName: WaveEngine.TiledMap.TiledMap.HexSideLength
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: WaveEngine.TiledMap.TiledMap.Width*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.Width
+  name: Width
+  nameWithType: TiledMap.Width
+  fullName: WaveEngine.TiledMap.TiledMap.Width
+- uid: WaveEngine.TiledMap.TiledMap.Height*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.Height
+  name: Height
+  nameWithType: TiledMap.Height
+  fullName: WaveEngine.TiledMap.TiledMap.Height
+- uid: WaveEngine.TiledMap.TiledMap.TileWidth*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.TileWidth
+  name: TileWidth
+  nameWithType: TiledMap.TileWidth
+  fullName: WaveEngine.TiledMap.TiledMap.TileWidth
+- uid: WaveEngine.TiledMap.TiledMap.TileHeight*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.TileHeight
+  name: TileHeight
+  nameWithType: TiledMap.TileHeight
+  fullName: WaveEngine.TiledMap.TiledMap.TileHeight
+- uid: WaveEngine.TiledMap.TiledMap.BackgroundColor*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.BackgroundColor
+  name: BackgroundColor
+  nameWithType: TiledMap.BackgroundColor
+  fullName: WaveEngine.TiledMap.TiledMap.BackgroundColor
+- uid: WaveEngine.Common.Graphics.Color
+  commentId: T:WaveEngine.Common.Graphics.Color
+  parent: WaveEngine.Common.Graphics
+  name: Color
+  nameWithType: Color
+  fullName: WaveEngine.Common.Graphics.Color
+- uid: WaveEngine.Common.Graphics
+  commentId: N:WaveEngine.Common.Graphics
+  name: WaveEngine.Common.Graphics
+  nameWithType: WaveEngine.Common.Graphics
+  fullName: WaveEngine.Common.Graphics
+- uid: WaveEngine.TiledMap.TiledMap
+  commentId: T:WaveEngine.TiledMap.TiledMap
+  parent: WaveEngine.TiledMap
+  name: TiledMap
+  nameWithType: TiledMap
+  fullName: WaveEngine.TiledMap.TiledMap
+- uid: WaveEngine.TiledMap.TiledMap.#ctor*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.#ctor
+  name: TiledMap
+  nameWithType: TiledMap.TiledMap
+  fullName: WaveEngine.TiledMap.TiledMap.TiledMap
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  commentId: M:WaveEngine.Common.IO.SerializableObject.DefaultValues
+  parent: WaveEngine.Common.IO.SerializableObject
+  name: DefaultValues()
+  nameWithType: SerializableObject.DefaultValues()
+  fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues()
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+    name: DefaultValues
+    nameWithType: SerializableObject.DefaultValues
+    fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+    name: DefaultValues
+    nameWithType: SerializableObject.DefaultValues
+    fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.TiledMap.TiledMap.DefaultValues*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.DefaultValues
+  name: DefaultValues
+  nameWithType: TiledMap.DefaultValues
+  fullName: WaveEngine.TiledMap.TiledMap.DefaultValues
+- uid: WaveEngine.TiledMap.TiledMap.GetTilesetByGid*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.GetTilesetByGid
+  name: GetTilesetByGid
+  nameWithType: TiledMap.GetTilesetByGid
+  fullName: WaveEngine.TiledMap.TiledMap.GetTilesetByGid
+- uid: WaveEngine.TiledMap.Tileset
+  commentId: T:WaveEngine.TiledMap.Tileset
+  parent: WaveEngine.TiledMap
+  name: Tileset
+  nameWithType: Tileset
+  fullName: WaveEngine.TiledMap.Tileset
+- uid: WaveEngine.TiledMap.TiledMap.GetTileCoordinatesByWorldPosition*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.GetTileCoordinatesByWorldPosition
+  name: GetTileCoordinatesByWorldPosition
+  nameWithType: TiledMap.GetTileCoordinatesByWorldPosition
+  fullName: WaveEngine.TiledMap.TiledMap.GetTileCoordinatesByWorldPosition
+- uid: WaveEngine.Common.Math.Vector2
+  commentId: T:WaveEngine.Common.Math.Vector2
+  parent: WaveEngine.Common.Math
+  name: Vector2
+  nameWithType: Vector2
+  fullName: WaveEngine.Common.Math.Vector2
+- uid: WaveEngine.Common.Math
+  commentId: N:WaveEngine.Common.Math
+  name: WaveEngine.Common.Math
+  nameWithType: WaveEngine.Common.Math
+  fullName: WaveEngine.Common.Math
+- uid: WaveEngine.Framework.Component.Initialize
+  commentId: M:WaveEngine.Framework.Component.Initialize
+  parent: WaveEngine.Framework.Component
+  name: Initialize()
+  nameWithType: Component.Initialize()
+  fullName: WaveEngine.Framework.Component.Initialize()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Initialize
+    name: Initialize
+    nameWithType: Component.Initialize
+    fullName: WaveEngine.Framework.Component.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Initialize
+    name: Initialize
+    nameWithType: Component.Initialize
+    fullName: WaveEngine.Framework.Component.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.TiledMap.TiledMap.Initialize*
+  commentId: Overload:WaveEngine.TiledMap.TiledMap.Initialize
+  name: Initialize
+  nameWithType: TiledMap.Initialize
+  fullName: WaveEngine.TiledMap.TiledMap.Initialize

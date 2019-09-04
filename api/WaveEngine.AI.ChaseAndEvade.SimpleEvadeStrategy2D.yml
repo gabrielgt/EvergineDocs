@@ -1,0 +1,1511 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D
+  commentId: T:WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D
+  id: SimpleEvadeStrategy2D
+  parent: WaveEngine.AI.ChaseAndEvade
+  children:
+  - WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.#ctor
+  - WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.#ctor(WaveEngine.Framework.Entity,System.Int32,System.Single)
+  - WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.Distance
+  - WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.Evade(System.TimeSpan)
+  - WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.EvadeFromEntity
+  - WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.EvadeVelocity
+  - WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.NeedToEvade(System.TimeSpan)
+  - WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.ResolveDependencies
+  - WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.Transform
+  langs:
+  - csharp
+  - vb
+  name: SimpleEvadeStrategy2D
+  nameWithType: SimpleEvadeStrategy2D
+  fullName: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D
+  type: Class
+  source:
+    id: SimpleEvadeStrategy2D
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.AI\Shared\ChaseAndEvade\SimpleEvadeStrategy2D.cs
+    startLine: 18
+  assemblies:
+  - WaveEngine.AI
+  namespace: WaveEngine.AI.ChaseAndEvade
+  summary: "\nSimple Chase Strategy implementation for 3D\n"
+  example: []
+  syntax:
+    content: 'public class SimpleEvadeStrategy2D : EvadeStrategy'
+    content.vb: >-
+      Public Class SimpleEvadeStrategy2D
+
+          Inherits EvadeStrategy
+  inheritance:
+  - System.Object
+  - WaveEngine.Common.IO.SerializableObject
+  - WaveEngine.Framework.DependencyObject
+  - WaveEngine.Framework.Component
+  - WaveEngine.AI.ChaseAndEvade.EvadeStrategy
+  inheritedMembers:
+  - WaveEngine.Framework.Component.isInitialized
+  - WaveEngine.Framework.Component.OnComponentInitialized
+  - WaveEngine.Framework.Component.OnComponentRemoved
+  - WaveEngine.Framework.Component.Name
+  - WaveEngine.Framework.Component.Owner
+  - WaveEngine.Framework.Component.Assets
+  - WaveEngine.Framework.Component.EntityManager
+  - WaveEngine.Framework.Component.BehaviorManager
+  - WaveEngine.Framework.Component.RenderManager
+  - WaveEngine.Framework.Component.Clone
+  - WaveEngine.Framework.Component.ToString
+  - WaveEngine.Framework.Component.Initialize
+  - WaveEngine.Framework.Component.Removed
+  - WaveEngine.Framework.Component.DeleteDependencies
+  - WaveEngine.Framework.DependencyObject.PropertyChanged
+  - WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  - WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  - WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  - WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Common.IO.SerializableObject.DefaultValues
+  - WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.Transform
+  commentId: F:WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.Transform
+  id: Transform
+  parent: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D
+  langs:
+  - csharp
+  - vb
+  name: Transform
+  nameWithType: SimpleEvadeStrategy2D.Transform
+  fullName: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.Transform
+  type: Field
+  source:
+    id: Transform
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.AI\Shared\ChaseAndEvade\SimpleEvadeStrategy2D.cs
+    startLine: 24
+  assemblies:
+  - WaveEngine.AI
+  namespace: WaveEngine.AI.ChaseAndEvade
+  summary: "\nThe transform\n"
+  example: []
+  syntax:
+    content: >-
+      [RequiredComponent]
+
+      public Transform2D Transform
+    return:
+      type: WaveEngine.Framework.Graphics.Transform2D
+    content.vb: >-
+      <RequiredComponent>
+
+      Public Transform As Transform2D
+  attributes:
+  - type: WaveEngine.Framework.RequiredComponent
+    ctor: WaveEngine.Framework.RequiredComponent.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.EvadeVelocity
+  commentId: P:WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.EvadeVelocity
+  id: EvadeVelocity
+  parent: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D
+  langs:
+  - csharp
+  - vb
+  name: EvadeVelocity
+  nameWithType: SimpleEvadeStrategy2D.EvadeVelocity
+  fullName: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.EvadeVelocity
+  type: Property
+  source:
+    id: EvadeVelocity
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.AI\Shared\ChaseAndEvade\SimpleEvadeStrategy2D.cs
+    startLine: 64
+  assemblies:
+  - WaveEngine.AI
+  namespace: WaveEngine.AI.ChaseAndEvade
+  summary: "\nGets or sets the evade velocity.\n"
+  example: []
+  syntax:
+    content: public float EvadeVelocity { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe evade velocity.\n"
+    content.vb: Public Property EvadeVelocity As Single
+  overload: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.EvadeVelocity*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.Distance
+  commentId: P:WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.Distance
+  id: Distance
+  parent: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D
+  langs:
+  - csharp
+  - vb
+  name: Distance
+  nameWithType: SimpleEvadeStrategy2D.Distance
+  fullName: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.Distance
+  type: Property
+  source:
+    id: Distance
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.AI\Shared\ChaseAndEvade\SimpleEvadeStrategy2D.cs
+    startLine: 76
+  assemblies:
+  - WaveEngine.AI
+  namespace: WaveEngine.AI.ChaseAndEvade
+  summary: "\nGets or sets the distance.\n"
+  example: []
+  syntax:
+    content: public int Distance { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\nThe distance.\n"
+    content.vb: Public Property Distance As Integer
+  overload: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.Distance*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.EvadeFromEntity
+  commentId: P:WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.EvadeFromEntity
+  id: EvadeFromEntity
+  parent: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D
+  langs:
+  - csharp
+  - vb
+  name: EvadeFromEntity
+  nameWithType: SimpleEvadeStrategy2D.EvadeFromEntity
+  fullName: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.EvadeFromEntity
+  type: Property
+  source:
+    id: EvadeFromEntity
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.AI\Shared\ChaseAndEvade\SimpleEvadeStrategy2D.cs
+    startLine: 88
+  assemblies:
+  - WaveEngine.AI
+  namespace: WaveEngine.AI.ChaseAndEvade
+  summary: "\nGets or sets the evade from entity.\n"
+  example: []
+  syntax:
+    content: public Entity EvadeFromEntity { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Entity
+      description: "\nThe evade from entity.\n"
+    content.vb: Public Property EvadeFromEntity As Entity
+  overload: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.EvadeFromEntity*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.#ctor
+  commentId: M:WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.#ctor
+  id: '#ctor'
+  parent: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D
+  langs:
+  - csharp
+  - vb
+  name: SimpleEvadeStrategy2D()
+  nameWithType: SimpleEvadeStrategy2D.SimpleEvadeStrategy2D()
+  fullName: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.SimpleEvadeStrategy2D()
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.AI\Shared\ChaseAndEvade\SimpleEvadeStrategy2D.cs
+    startLine: 105
+  assemblies:
+  - WaveEngine.AI
+  namespace: WaveEngine.AI.ChaseAndEvade
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public SimpleEvadeStrategy2D()
+    content.vb: Public Sub New
+  overload: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.#ctor(WaveEngine.Framework.Entity,System.Int32,System.Single)
+  commentId: M:WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.#ctor(WaveEngine.Framework.Entity,System.Int32,System.Single)
+  id: '#ctor(WaveEngine.Framework.Entity,System.Int32,System.Single)'
+  parent: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D
+  langs:
+  - csharp
+  - vb
+  name: SimpleEvadeStrategy2D(Entity, Int32, Single)
+  nameWithType: SimpleEvadeStrategy2D.SimpleEvadeStrategy2D(Entity, Int32, Single)
+  fullName: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.SimpleEvadeStrategy2D(WaveEngine.Framework.Entity, System.Int32, System.Single)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.AI\Shared\ChaseAndEvade\SimpleEvadeStrategy2D.cs
+    startLine: 116
+  assemblies:
+  - WaveEngine.AI
+  namespace: WaveEngine.AI.ChaseAndEvade
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public SimpleEvadeStrategy2D(Entity evadeFrom, int distance, float evadeVelocity)
+    parameters:
+    - id: evadeFrom
+      type: WaveEngine.Framework.Entity
+      description: The evade from.
+    - id: distance
+      type: System.Int32
+      description: The distance.
+    - id: evadeVelocity
+      type: System.Single
+      description: The evade velocity.
+    content.vb: Public Sub New(evadeFrom As Entity, distance As Integer, evadeVelocity As Single)
+  overload: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.ResolveDependencies
+  commentId: M:WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.ResolveDependencies
+  id: ResolveDependencies
+  parent: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D
+  langs:
+  - csharp
+  - vb
+  name: ResolveDependencies()
+  nameWithType: SimpleEvadeStrategy2D.ResolveDependencies()
+  fullName: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.ResolveDependencies()
+  type: Method
+  source:
+    id: ResolveDependencies
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.AI\Shared\ChaseAndEvade\SimpleEvadeStrategy2D.cs
+    startLine: 126
+  assemblies:
+  - WaveEngine.AI
+  namespace: WaveEngine.AI.ChaseAndEvade
+  summary: "\nResolves the dependencies.\n"
+  example: []
+  syntax:
+    content: protected override void ResolveDependencies()
+    content.vb: Protected Overrides Sub ResolveDependencies
+  overridden: WaveEngine.Framework.Component.ResolveDependencies
+  overload: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.ResolveDependencies*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.Evade(System.TimeSpan)
+  commentId: M:WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.Evade(System.TimeSpan)
+  id: Evade(System.TimeSpan)
+  parent: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D
+  langs:
+  - csharp
+  - vb
+  name: Evade(TimeSpan)
+  nameWithType: SimpleEvadeStrategy2D.Evade(TimeSpan)
+  fullName: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.Evade(System.TimeSpan)
+  type: Method
+  source:
+    id: Evade
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.AI\Shared\ChaseAndEvade\SimpleEvadeStrategy2D.cs
+    startLine: 152
+  assemblies:
+  - WaveEngine.AI
+  namespace: WaveEngine.AI.ChaseAndEvade
+  summary: "\nExecutes the evade strategy.\n"
+  example: []
+  syntax:
+    content: public override void Evade(TimeSpan gameTime)
+    parameters:
+    - id: gameTime
+      type: System.TimeSpan
+      description: The game time.
+    content.vb: Public Overrides Sub Evade(gameTime As TimeSpan)
+  overridden: WaveEngine.AI.ChaseAndEvade.EvadeStrategy.Evade(System.TimeSpan)
+  overload: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.Evade*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.NeedToEvade(System.TimeSpan)
+  commentId: M:WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.NeedToEvade(System.TimeSpan)
+  id: NeedToEvade(System.TimeSpan)
+  parent: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D
+  langs:
+  - csharp
+  - vb
+  name: NeedToEvade(TimeSpan)
+  nameWithType: SimpleEvadeStrategy2D.NeedToEvade(TimeSpan)
+  fullName: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.NeedToEvade(System.TimeSpan)
+  type: Method
+  source:
+    id: NeedToEvade
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.AI\Shared\ChaseAndEvade\SimpleEvadeStrategy2D.cs
+    startLine: 173
+  assemblies:
+  - WaveEngine.AI
+  namespace: WaveEngine.AI.ChaseAndEvade
+  summary: "\nContains the logic that decide to evade.\n"
+  example: []
+  syntax:
+    content: public override bool NeedToEvade(TimeSpan gameTime)
+    parameters:
+    - id: gameTime
+      type: System.TimeSpan
+      description: The game time.
+    return:
+      type: System.Boolean
+      description: True if evasion is needed, false in other case
+    content.vb: Public Overrides Function NeedToEvade(gameTime As TimeSpan) As Boolean
+  overridden: WaveEngine.AI.ChaseAndEvade.EvadeStrategy.NeedToEvade(System.TimeSpan)
+  overload: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.NeedToEvade*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: WaveEngine.AI.ChaseAndEvade
+  commentId: N:WaveEngine.AI.ChaseAndEvade
+  name: WaveEngine.AI.ChaseAndEvade
+  nameWithType: WaveEngine.AI.ChaseAndEvade
+  fullName: WaveEngine.AI.ChaseAndEvade
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.IO.SerializableObject
+  commentId: T:WaveEngine.Common.IO.SerializableObject
+  parent: WaveEngine.Common.IO
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: WaveEngine.Common.IO.SerializableObject
+- uid: WaveEngine.Framework.DependencyObject
+  commentId: T:WaveEngine.Framework.DependencyObject
+  parent: WaveEngine.Framework
+  name: DependencyObject
+  nameWithType: DependencyObject
+  fullName: WaveEngine.Framework.DependencyObject
+- uid: WaveEngine.Framework.Component
+  commentId: T:WaveEngine.Framework.Component
+  parent: WaveEngine.Framework
+  name: Component
+  nameWithType: Component
+  fullName: WaveEngine.Framework.Component
+- uid: WaveEngine.AI.ChaseAndEvade.EvadeStrategy
+  commentId: T:WaveEngine.AI.ChaseAndEvade.EvadeStrategy
+  parent: WaveEngine.AI.ChaseAndEvade
+  name: EvadeStrategy
+  nameWithType: EvadeStrategy
+  fullName: WaveEngine.AI.ChaseAndEvade.EvadeStrategy
+- uid: WaveEngine.Framework.Component.isInitialized
+  commentId: F:WaveEngine.Framework.Component.isInitialized
+  parent: WaveEngine.Framework.Component
+  name: isInitialized
+  nameWithType: Component.isInitialized
+  fullName: WaveEngine.Framework.Component.isInitialized
+- uid: WaveEngine.Framework.Component.OnComponentInitialized
+  commentId: E:WaveEngine.Framework.Component.OnComponentInitialized
+  parent: WaveEngine.Framework.Component
+  name: OnComponentInitialized
+  nameWithType: Component.OnComponentInitialized
+  fullName: WaveEngine.Framework.Component.OnComponentInitialized
+- uid: WaveEngine.Framework.Component.OnComponentRemoved
+  commentId: E:WaveEngine.Framework.Component.OnComponentRemoved
+  parent: WaveEngine.Framework.Component
+  name: OnComponentRemoved
+  nameWithType: Component.OnComponentRemoved
+  fullName: WaveEngine.Framework.Component.OnComponentRemoved
+- uid: WaveEngine.Framework.Component.Name
+  commentId: P:WaveEngine.Framework.Component.Name
+  parent: WaveEngine.Framework.Component
+  name: Name
+  nameWithType: Component.Name
+  fullName: WaveEngine.Framework.Component.Name
+- uid: WaveEngine.Framework.Component.Owner
+  commentId: P:WaveEngine.Framework.Component.Owner
+  parent: WaveEngine.Framework.Component
+  name: Owner
+  nameWithType: Component.Owner
+  fullName: WaveEngine.Framework.Component.Owner
+- uid: WaveEngine.Framework.Component.Assets
+  commentId: P:WaveEngine.Framework.Component.Assets
+  parent: WaveEngine.Framework.Component
+  name: Assets
+  nameWithType: Component.Assets
+  fullName: WaveEngine.Framework.Component.Assets
+- uid: WaveEngine.Framework.Component.EntityManager
+  commentId: P:WaveEngine.Framework.Component.EntityManager
+  parent: WaveEngine.Framework.Component
+  name: EntityManager
+  nameWithType: Component.EntityManager
+  fullName: WaveEngine.Framework.Component.EntityManager
+- uid: WaveEngine.Framework.Component.BehaviorManager
+  commentId: P:WaveEngine.Framework.Component.BehaviorManager
+  parent: WaveEngine.Framework.Component
+  name: BehaviorManager
+  nameWithType: Component.BehaviorManager
+  fullName: WaveEngine.Framework.Component.BehaviorManager
+- uid: WaveEngine.Framework.Component.RenderManager
+  commentId: P:WaveEngine.Framework.Component.RenderManager
+  parent: WaveEngine.Framework.Component
+  name: RenderManager
+  nameWithType: Component.RenderManager
+  fullName: WaveEngine.Framework.Component.RenderManager
+- uid: WaveEngine.Framework.Component.Clone
+  commentId: M:WaveEngine.Framework.Component.Clone
+  parent: WaveEngine.Framework.Component
+  name: Clone()
+  nameWithType: Component.Clone()
+  fullName: WaveEngine.Framework.Component.Clone()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Clone
+    name: Clone
+    nameWithType: Component.Clone
+    fullName: WaveEngine.Framework.Component.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Clone
+    name: Clone
+    nameWithType: Component.Clone
+    fullName: WaveEngine.Framework.Component.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.ToString
+  commentId: M:WaveEngine.Framework.Component.ToString
+  parent: WaveEngine.Framework.Component
+  name: ToString()
+  nameWithType: Component.ToString()
+  fullName: WaveEngine.Framework.Component.ToString()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: WaveEngine.Framework.Component.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: WaveEngine.Framework.Component.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.Initialize
+  commentId: M:WaveEngine.Framework.Component.Initialize
+  parent: WaveEngine.Framework.Component
+  name: Initialize()
+  nameWithType: Component.Initialize()
+  fullName: WaveEngine.Framework.Component.Initialize()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Initialize
+    name: Initialize
+    nameWithType: Component.Initialize
+    fullName: WaveEngine.Framework.Component.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Initialize
+    name: Initialize
+    nameWithType: Component.Initialize
+    fullName: WaveEngine.Framework.Component.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.Removed
+  commentId: M:WaveEngine.Framework.Component.Removed
+  parent: WaveEngine.Framework.Component
+  name: Removed()
+  nameWithType: Component.Removed()
+  fullName: WaveEngine.Framework.Component.Removed()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Removed
+    name: Removed
+    nameWithType: Component.Removed
+    fullName: WaveEngine.Framework.Component.Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Removed
+    name: Removed
+    nameWithType: Component.Removed
+    fullName: WaveEngine.Framework.Component.Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.DeleteDependencies
+  commentId: M:WaveEngine.Framework.Component.DeleteDependencies
+  parent: WaveEngine.Framework.Component
+  name: DeleteDependencies()
+  nameWithType: Component.DeleteDependencies()
+  fullName: WaveEngine.Framework.Component.DeleteDependencies()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Component.DeleteDependencies
+    fullName: WaveEngine.Framework.Component.DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Component.DeleteDependencies
+    fullName: WaveEngine.Framework.Component.DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.PropertyChanged
+  commentId: E:WaveEngine.Framework.DependencyObject.PropertyChanged
+  parent: WaveEngine.Framework.DependencyObject
+  name: PropertyChanged
+  nameWithType: DependencyObject.PropertyChanged
+  fullName: WaveEngine.Framework.DependencyObject.PropertyChanged
+- uid: WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  commentId: P:WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  parent: WaveEngine.Framework.DependencyObject
+  name: ParentDependencyObject
+  nameWithType: DependencyObject.ParentDependencyObject
+  fullName: WaveEngine.Framework.DependencyObject.ParentDependencyObject
+- uid: WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  commentId: P:WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  parent: WaveEngine.Framework.DependencyObject
+  name: EnableDiagnosticCallback
+  nameWithType: DependencyObject.EnableDiagnosticCallback
+  fullName: WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+- uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  commentId: M:WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  parent: WaveEngine.Framework.DependencyObject
+  isExternal: true
+  name: SetValue(DependencyProperty, Object)
+  nameWithType: DependencyObject.SetValue(DependencyProperty, Object)
+  fullName: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty, System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+    name: SetValue
+    nameWithType: DependencyObject.SetValue
+    fullName: WaveEngine.Framework.DependencyObject.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+    name: SetValue
+    nameWithType: DependencyObject.SetValue
+    fullName: WaveEngine.Framework.DependencyObject.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: GetValue(DependencyProperty)
+  nameWithType: DependencyObject.GetValue(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+    name: GetValue
+    nameWithType: DependencyObject.GetValue
+    fullName: WaveEngine.Framework.DependencyObject.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+    name: GetValue
+    nameWithType: DependencyObject.GetValue
+    fullName: WaveEngine.Framework.DependencyObject.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: GetAbsoluteValue<T>(DependencyProperty)
+  nameWithType: DependencyObject.GetAbsoluteValue<T>(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue<T>(WaveEngine.Framework.DependencyProperty)
+  nameWithType.vb: DependencyObject.GetAbsoluteValue(Of T)(DependencyProperty)
+  fullName.vb: WaveEngine.Framework.DependencyObject.GetAbsoluteValue(Of T)(WaveEngine.Framework.DependencyProperty)
+  name.vb: GetAbsoluteValue(Of T)(DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+    name: GetAbsoluteValue<T>
+    nameWithType: DependencyObject.GetAbsoluteValue<T>
+    fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+    name: GetAbsoluteValue(Of T)
+    nameWithType: DependencyObject.GetAbsoluteValue(Of T)
+    fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: ClearValue(DependencyProperty)
+  nameWithType: DependencyObject.ClearValue(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+    name: ClearValue
+    nameWithType: DependencyObject.ClearValue
+    fullName: WaveEngine.Framework.DependencyObject.ClearValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+    name: ClearValue
+    nameWithType: DependencyObject.ClearValue
+    fullName: WaveEngine.Framework.DependencyObject.ClearValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: IsValueSet(DependencyProperty)
+  nameWithType: DependencyObject.IsValueSet(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+    name: IsValueSet
+    nameWithType: DependencyObject.IsValueSet
+    fullName: WaveEngine.Framework.DependencyObject.IsValueSet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+    name: IsValueSet
+    nameWithType: DependencyObject.IsValueSet
+    fullName: WaveEngine.Framework.DependencyObject.IsValueSet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  commentId: M:WaveEngine.Common.IO.SerializableObject.DefaultValues
+  parent: WaveEngine.Common.IO.SerializableObject
+  name: DefaultValues()
+  nameWithType: SerializableObject.DefaultValues()
+  fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues()
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+    name: DefaultValues
+    nameWithType: SerializableObject.DefaultValues
+    fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+    name: DefaultValues
+    nameWithType: SerializableObject.DefaultValues
+    fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  commentId: M:WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  parent: WaveEngine.Common.IO.SerializableObject
+  isExternal: true
+  name: OnDeserializing(StreamingContext)
+  nameWithType: SerializableObject.OnDeserializing(StreamingContext)
+  fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.IO
+  commentId: N:WaveEngine.Common.IO
+  name: WaveEngine.Common.IO
+  nameWithType: WaveEngine.Common.IO
+  fullName: WaveEngine.Common.IO
+- uid: WaveEngine.Framework
+  commentId: N:WaveEngine.Framework
+  name: WaveEngine.Framework
+  nameWithType: WaveEngine.Framework
+  fullName: WaveEngine.Framework
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Framework.Graphics.Transform2D
+  commentId: T:WaveEngine.Framework.Graphics.Transform2D
+  parent: WaveEngine.Framework.Graphics
+  name: Transform2D
+  nameWithType: Transform2D
+  fullName: WaveEngine.Framework.Graphics.Transform2D
+- uid: WaveEngine.Framework.Graphics
+  commentId: N:WaveEngine.Framework.Graphics
+  name: WaveEngine.Framework.Graphics
+  nameWithType: WaveEngine.Framework.Graphics
+  fullName: WaveEngine.Framework.Graphics
+- uid: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.EvadeVelocity*
+  commentId: Overload:WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.EvadeVelocity
+  name: EvadeVelocity
+  nameWithType: SimpleEvadeStrategy2D.EvadeVelocity
+  fullName: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.EvadeVelocity
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.Distance*
+  commentId: Overload:WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.Distance
+  name: Distance
+  nameWithType: SimpleEvadeStrategy2D.Distance
+  fullName: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.Distance
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.EvadeFromEntity*
+  commentId: Overload:WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.EvadeFromEntity
+  name: EvadeFromEntity
+  nameWithType: SimpleEvadeStrategy2D.EvadeFromEntity
+  fullName: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.EvadeFromEntity
+- uid: WaveEngine.Framework.Entity
+  commentId: T:WaveEngine.Framework.Entity
+  parent: WaveEngine.Framework
+  name: Entity
+  nameWithType: Entity
+  fullName: WaveEngine.Framework.Entity
+- uid: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D
+  commentId: T:WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D
+  name: SimpleEvadeStrategy2D
+  nameWithType: SimpleEvadeStrategy2D
+  fullName: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D
+- uid: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.#ctor*
+  commentId: Overload:WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.#ctor
+  name: SimpleEvadeStrategy2D
+  nameWithType: SimpleEvadeStrategy2D.SimpleEvadeStrategy2D
+  fullName: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.SimpleEvadeStrategy2D
+- uid: WaveEngine.Framework.Component.ResolveDependencies
+  commentId: M:WaveEngine.Framework.Component.ResolveDependencies
+  parent: WaveEngine.Framework.Component
+  name: ResolveDependencies()
+  nameWithType: Component.ResolveDependencies()
+  fullName: WaveEngine.Framework.Component.ResolveDependencies()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.ResolveDependencies
+    name: ResolveDependencies
+    nameWithType: Component.ResolveDependencies
+    fullName: WaveEngine.Framework.Component.ResolveDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.ResolveDependencies
+    name: ResolveDependencies
+    nameWithType: Component.ResolveDependencies
+    fullName: WaveEngine.Framework.Component.ResolveDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.ResolveDependencies*
+  commentId: Overload:WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.ResolveDependencies
+  name: ResolveDependencies
+  nameWithType: SimpleEvadeStrategy2D.ResolveDependencies
+  fullName: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.ResolveDependencies
+- uid: WaveEngine.AI.ChaseAndEvade.EvadeStrategy.Evade(System.TimeSpan)
+  commentId: M:WaveEngine.AI.ChaseAndEvade.EvadeStrategy.Evade(System.TimeSpan)
+  parent: WaveEngine.AI.ChaseAndEvade.EvadeStrategy
+  isExternal: true
+  name: Evade(TimeSpan)
+  nameWithType: EvadeStrategy.Evade(TimeSpan)
+  fullName: WaveEngine.AI.ChaseAndEvade.EvadeStrategy.Evade(System.TimeSpan)
+  spec.csharp:
+  - uid: WaveEngine.AI.ChaseAndEvade.EvadeStrategy.Evade(System.TimeSpan)
+    name: Evade
+    nameWithType: EvadeStrategy.Evade
+    fullName: WaveEngine.AI.ChaseAndEvade.EvadeStrategy.Evade
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.AI.ChaseAndEvade.EvadeStrategy.Evade(System.TimeSpan)
+    name: Evade
+    nameWithType: EvadeStrategy.Evade
+    fullName: WaveEngine.AI.ChaseAndEvade.EvadeStrategy.Evade
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.Evade*
+  commentId: Overload:WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.Evade
+  name: Evade
+  nameWithType: SimpleEvadeStrategy2D.Evade
+  fullName: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.Evade
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: WaveEngine.AI.ChaseAndEvade.EvadeStrategy.NeedToEvade(System.TimeSpan)
+  commentId: M:WaveEngine.AI.ChaseAndEvade.EvadeStrategy.NeedToEvade(System.TimeSpan)
+  parent: WaveEngine.AI.ChaseAndEvade.EvadeStrategy
+  isExternal: true
+  name: NeedToEvade(TimeSpan)
+  nameWithType: EvadeStrategy.NeedToEvade(TimeSpan)
+  fullName: WaveEngine.AI.ChaseAndEvade.EvadeStrategy.NeedToEvade(System.TimeSpan)
+  spec.csharp:
+  - uid: WaveEngine.AI.ChaseAndEvade.EvadeStrategy.NeedToEvade(System.TimeSpan)
+    name: NeedToEvade
+    nameWithType: EvadeStrategy.NeedToEvade
+    fullName: WaveEngine.AI.ChaseAndEvade.EvadeStrategy.NeedToEvade
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.AI.ChaseAndEvade.EvadeStrategy.NeedToEvade(System.TimeSpan)
+    name: NeedToEvade
+    nameWithType: EvadeStrategy.NeedToEvade
+    fullName: WaveEngine.AI.ChaseAndEvade.EvadeStrategy.NeedToEvade
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.NeedToEvade*
+  commentId: Overload:WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.NeedToEvade
+  name: NeedToEvade
+  nameWithType: SimpleEvadeStrategy2D.NeedToEvade
+  fullName: WaveEngine.AI.ChaseAndEvade.SimpleEvadeStrategy2D.NeedToEvade
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

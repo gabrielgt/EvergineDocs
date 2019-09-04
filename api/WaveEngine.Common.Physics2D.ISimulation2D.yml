@@ -1,0 +1,1266 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Common.Physics2D.ISimulation2D
+  commentId: T:WaveEngine.Common.Physics2D.ISimulation2D
+  id: ISimulation2D
+  parent: WaveEngine.Common.Physics2D
+  children:
+  - WaveEngine.Common.Physics2D.ISimulation2D.AllowSleeping
+  - WaveEngine.Common.Physics2D.ISimulation2D.BeginCollision
+  - WaveEngine.Common.Physics2D.ISimulation2D.CollisionList
+  - WaveEngine.Common.Physics2D.ISimulation2D.CreateColliderShape``1
+  - WaveEngine.Common.Physics2D.ISimulation2D.CreateJoint``2(``1)
+  - WaveEngine.Common.Physics2D.ISimulation2D.CreateRigidBody(WaveEngine.Common.Physics2D.RigidBodyDef2D)
+  - WaveEngine.Common.Physics2D.ISimulation2D.DebugDraw
+  - WaveEngine.Common.Physics2D.ISimulation2D.DrawFlags
+  - WaveEngine.Common.Physics2D.ISimulation2D.EndCollision
+  - WaveEngine.Common.Physics2D.ISimulation2D.Gravity
+  - WaveEngine.Common.Physics2D.ISimulation2D.InternWorld
+  - WaveEngine.Common.Physics2D.ISimulation2D.IsLocked
+  - WaveEngine.Common.Physics2D.ISimulation2D.OnPhysicStep
+  - WaveEngine.Common.Physics2D.ISimulation2D.PositionIterations
+  - WaveEngine.Common.Physics2D.ISimulation2D.RemoveJoint(WaveEngine.Common.Physics2D.IJoint2D)
+  - WaveEngine.Common.Physics2D.ISimulation2D.RemoveRigidBody(WaveEngine.Common.Physics2D.IRigidBody2D)
+  - WaveEngine.Common.Physics2D.ISimulation2D.SetDebugDraw(WaveEngine.Common.Physics2D.ISimulationDebugDraw2D)
+  - WaveEngine.Common.Physics2D.ISimulation2D.Step(System.TimeSpan)
+  - WaveEngine.Common.Physics2D.ISimulation2D.VelocityIterations
+  - WaveEngine.Common.Physics2D.ISimulation2D.WorldScale
+  - WaveEngine.Common.Physics2D.ISimulation2D.WorldStaticBody
+  langs:
+  - csharp
+  - vb
+  name: ISimulation2D
+  nameWithType: ISimulation2D
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D
+  type: Interface
+  source:
+    id: ISimulation2D
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics2D\ISimulation2D.cs
+    startLine: 15
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics2D
+  summary: "\nInterface for Simulation2D.\n"
+  example: []
+  syntax:
+    content: 'public interface ISimulation2D : IPausable, IDisposable'
+    content.vb: >-
+      Public Interface ISimulation2D
+
+          Inherits IPausable, IDisposable
+  inheritedMembers:
+  - WaveEngine.Common.Helpers.IPausable.State
+  - WaveEngine.Common.Helpers.IPausable.Initialize
+  - WaveEngine.Common.Helpers.IPausable.Pause
+  - WaveEngine.Common.Helpers.IPausable.Resume
+  - System.IDisposable.Dispose
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.IsLocked
+  commentId: P:WaveEngine.Common.Physics2D.ISimulation2D.IsLocked
+  id: IsLocked
+  parent: WaveEngine.Common.Physics2D.ISimulation2D
+  langs:
+  - csharp
+  - vb
+  name: IsLocked
+  nameWithType: ISimulation2D.IsLocked
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.IsLocked
+  type: Property
+  source:
+    id: IsLocked
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics2D\ISimulation2D.cs
+    startLine: 22
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics2D
+  summary: "\nGets a value indicating whether the world is locked (in the middle of a time step).\n"
+  example: []
+  syntax:
+    content: bool IsLocked { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsLocked As Boolean
+  overload: WaveEngine.Common.Physics2D.ISimulation2D.IsLocked*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.Gravity
+  commentId: P:WaveEngine.Common.Physics2D.ISimulation2D.Gravity
+  id: Gravity
+  parent: WaveEngine.Common.Physics2D.ISimulation2D
+  langs:
+  - csharp
+  - vb
+  name: Gravity
+  nameWithType: ISimulation2D.Gravity
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.Gravity
+  type: Property
+  source:
+    id: Gravity
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics2D\ISimulation2D.cs
+    startLine: 27
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics2D
+  summary: "\nGets or sets the global gravity vector\n"
+  example: []
+  syntax:
+    content: Vector2 Gravity { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Math.Vector2
+    content.vb: Property Gravity As Vector2
+  overload: WaveEngine.Common.Physics2D.ISimulation2D.Gravity*
+  modifiers.csharp:
+  - get
+  - set
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.AllowSleeping
+  commentId: P:WaveEngine.Common.Physics2D.ISimulation2D.AllowSleeping
+  id: AllowSleeping
+  parent: WaveEngine.Common.Physics2D.ISimulation2D
+  langs:
+  - csharp
+  - vb
+  name: AllowSleeping
+  nameWithType: ISimulation2D.AllowSleeping
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.AllowSleeping
+  type: Property
+  source:
+    id: AllowSleeping
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics2D\ISimulation2D.cs
+    startLine: 32
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics2D
+  summary: "\nGets or sets a value indicating whether allow sleeping\n"
+  example: []
+  syntax:
+    content: bool AllowSleeping { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property AllowSleeping As Boolean
+  overload: WaveEngine.Common.Physics2D.ISimulation2D.AllowSleeping*
+  modifiers.csharp:
+  - get
+  - set
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.WorldScale
+  commentId: P:WaveEngine.Common.Physics2D.ISimulation2D.WorldScale
+  id: WorldScale
+  parent: WaveEngine.Common.Physics2D.ISimulation2D
+  langs:
+  - csharp
+  - vb
+  name: WorldScale
+  nameWithType: ISimulation2D.WorldScale
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.WorldScale
+  type: Property
+  source:
+    id: WorldScale
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics2D\ISimulation2D.cs
+    startLine: 40
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics2D
+  summary: "\nGets or sets the world scale\n<remarks>\nBy default, the scale of the world is 1unit = 1meter.\n</remarks>\n"
+  example: []
+  syntax:
+    content: float WorldScale { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Property WorldScale As Single
+  overload: WaveEngine.Common.Physics2D.ISimulation2D.WorldScale*
+  modifiers.csharp:
+  - get
+  - set
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.VelocityIterations
+  commentId: P:WaveEngine.Common.Physics2D.ISimulation2D.VelocityIterations
+  id: VelocityIterations
+  parent: WaveEngine.Common.Physics2D.ISimulation2D
+  langs:
+  - csharp
+  - vb
+  name: VelocityIterations
+  nameWithType: ISimulation2D.VelocityIterations
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.VelocityIterations
+  type: Property
+  source:
+    id: VelocityIterations
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics2D\ISimulation2D.cs
+    startLine: 45
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics2D
+  summary: "\nGets or sets the velocity iterations.\n"
+  example: []
+  syntax:
+    content: int VelocityIterations { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property VelocityIterations As Integer
+  overload: WaveEngine.Common.Physics2D.ISimulation2D.VelocityIterations*
+  modifiers.csharp:
+  - get
+  - set
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.PositionIterations
+  commentId: P:WaveEngine.Common.Physics2D.ISimulation2D.PositionIterations
+  id: PositionIterations
+  parent: WaveEngine.Common.Physics2D.ISimulation2D
+  langs:
+  - csharp
+  - vb
+  name: PositionIterations
+  nameWithType: ISimulation2D.PositionIterations
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.PositionIterations
+  type: Property
+  source:
+    id: PositionIterations
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics2D\ISimulation2D.cs
+    startLine: 50
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics2D
+  summary: "\nGets or sets the position iterations.\n"
+  example: []
+  syntax:
+    content: int PositionIterations { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property PositionIterations As Integer
+  overload: WaveEngine.Common.Physics2D.ISimulation2D.PositionIterations*
+  modifiers.csharp:
+  - get
+  - set
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.InternWorld
+  commentId: P:WaveEngine.Common.Physics2D.ISimulation2D.InternWorld
+  id: InternWorld
+  parent: WaveEngine.Common.Physics2D.ISimulation2D
+  langs:
+  - csharp
+  - vb
+  name: InternWorld
+  nameWithType: ISimulation2D.InternWorld
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.InternWorld
+  type: Property
+  source:
+    id: InternWorld
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics2D\ISimulation2D.cs
+    startLine: 55
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics2D
+  summary: "\nGets the internal native world instance.\n"
+  example: []
+  syntax:
+    content: object InternWorld { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: ReadOnly Property InternWorld As Object
+  overload: WaveEngine.Common.Physics2D.ISimulation2D.InternWorld*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.DrawFlags
+  commentId: P:WaveEngine.Common.Physics2D.ISimulation2D.DrawFlags
+  id: DrawFlags
+  parent: WaveEngine.Common.Physics2D.ISimulation2D
+  langs:
+  - csharp
+  - vb
+  name: DrawFlags
+  nameWithType: ISimulation2D.DrawFlags
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.DrawFlags
+  type: Property
+  source:
+    id: DrawFlags
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics2D\ISimulation2D.cs
+    startLine: 60
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics2D
+  summary: "\nGets or sets the debug draw flags\n"
+  example: []
+  syntax:
+    content: DebugDrawFlags DrawFlags { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Physics2D.DebugDrawFlags
+    content.vb: Property DrawFlags As DebugDrawFlags
+  overload: WaveEngine.Common.Physics2D.ISimulation2D.DrawFlags*
+  modifiers.csharp:
+  - get
+  - set
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.BeginCollision
+  commentId: E:WaveEngine.Common.Physics2D.ISimulation2D.BeginCollision
+  id: BeginCollision
+  parent: WaveEngine.Common.Physics2D.ISimulation2D
+  langs:
+  - csharp
+  - vb
+  name: BeginCollision
+  nameWithType: ISimulation2D.BeginCollision
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.BeginCollision
+  type: Event
+  source:
+    id: BeginCollision
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics2D\ISimulation2D.cs
+    startLine: 65
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics2D
+  summary: "\nCalled when two fixtures begin to touch.\n"
+  example: []
+  syntax:
+    content: event ContactDelegate BeginCollision
+    return:
+      type: WaveEngine.Common.Physics2D.ContactDelegate
+    content.vb: Event BeginCollision As ContactDelegate
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.EndCollision
+  commentId: E:WaveEngine.Common.Physics2D.ISimulation2D.EndCollision
+  id: EndCollision
+  parent: WaveEngine.Common.Physics2D.ISimulation2D
+  langs:
+  - csharp
+  - vb
+  name: EndCollision
+  nameWithType: ISimulation2D.EndCollision
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.EndCollision
+  type: Event
+  source:
+    id: EndCollision
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics2D\ISimulation2D.cs
+    startLine: 70
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics2D
+  summary: "\nCalled when two fixtures cease to touch.\n"
+  example: []
+  syntax:
+    content: event ContactDelegate EndCollision
+    return:
+      type: WaveEngine.Common.Physics2D.ContactDelegate
+    content.vb: Event EndCollision As ContactDelegate
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.CollisionList
+  commentId: P:WaveEngine.Common.Physics2D.ISimulation2D.CollisionList
+  id: CollisionList
+  parent: WaveEngine.Common.Physics2D.ISimulation2D
+  langs:
+  - csharp
+  - vb
+  name: CollisionList
+  nameWithType: ISimulation2D.CollisionList
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.CollisionList
+  type: Property
+  source:
+    id: CollisionList
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics2D\ISimulation2D.cs
+    startLine: 75
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics2D
+  summary: "\nGets the colllision list\n"
+  example: []
+  syntax:
+    content: IEnumerable<ICollisionInfo2D> CollisionList { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{WaveEngine.Common.Physics2D.ICollisionInfo2D}
+    content.vb: ReadOnly Property CollisionList As IEnumerable(Of ICollisionInfo2D)
+  overload: WaveEngine.Common.Physics2D.ISimulation2D.CollisionList*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.WorldStaticBody
+  commentId: P:WaveEngine.Common.Physics2D.ISimulation2D.WorldStaticBody
+  id: WorldStaticBody
+  parent: WaveEngine.Common.Physics2D.ISimulation2D
+  langs:
+  - csharp
+  - vb
+  name: WorldStaticBody
+  nameWithType: ISimulation2D.WorldStaticBody
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.WorldStaticBody
+  type: Property
+  source:
+    id: WorldStaticBody
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics2D\ISimulation2D.cs
+    startLine: 80
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics2D
+  summary: "\nGets the world static body\n"
+  example: []
+  syntax:
+    content: IRigidBody2D WorldStaticBody { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Physics2D.IRigidBody2D
+    content.vb: ReadOnly Property WorldStaticBody As IRigidBody2D
+  overload: WaveEngine.Common.Physics2D.ISimulation2D.WorldStaticBody*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.OnPhysicStep
+  commentId: E:WaveEngine.Common.Physics2D.ISimulation2D.OnPhysicStep
+  id: OnPhysicStep
+  parent: WaveEngine.Common.Physics2D.ISimulation2D
+  langs:
+  - csharp
+  - vb
+  name: OnPhysicStep
+  nameWithType: ISimulation2D.OnPhysicStep
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.OnPhysicStep
+  type: Event
+  source:
+    id: OnPhysicStep
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics2D\ISimulation2D.cs
+    startLine: 88
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics2D
+  summary: "\nEvent fired when the physics will do an step\n"
+  example: []
+  syntax:
+    content: event EventHandler OnPhysicStep
+    return:
+      type: System.EventHandler
+    content.vb: Event OnPhysicStep As EventHandler
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.CreateRigidBody(WaveEngine.Common.Physics2D.RigidBodyDef2D)
+  commentId: M:WaveEngine.Common.Physics2D.ISimulation2D.CreateRigidBody(WaveEngine.Common.Physics2D.RigidBodyDef2D)
+  id: CreateRigidBody(WaveEngine.Common.Physics2D.RigidBodyDef2D)
+  parent: WaveEngine.Common.Physics2D.ISimulation2D
+  langs:
+  - csharp
+  - vb
+  name: CreateRigidBody(RigidBodyDef2D)
+  nameWithType: ISimulation2D.CreateRigidBody(RigidBodyDef2D)
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.CreateRigidBody(WaveEngine.Common.Physics2D.RigidBodyDef2D)
+  type: Method
+  source:
+    id: CreateRigidBody
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics2D\ISimulation2D.cs
+    startLine: 95
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics2D
+  summary: "\nCreates a RigidBody 2D\n"
+  example: []
+  syntax:
+    content: IRigidBody2D CreateRigidBody(RigidBodyDef2D bodyDef)
+    parameters:
+    - id: bodyDef
+      type: WaveEngine.Common.Physics2D.RigidBodyDef2D
+      description: Body definition
+    return:
+      type: WaveEngine.Common.Physics2D.IRigidBody2D
+      description: The rigid body instance
+    content.vb: Function CreateRigidBody(bodyDef As RigidBodyDef2D) As IRigidBody2D
+  overload: WaveEngine.Common.Physics2D.ISimulation2D.CreateRigidBody*
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.RemoveRigidBody(WaveEngine.Common.Physics2D.IRigidBody2D)
+  commentId: M:WaveEngine.Common.Physics2D.ISimulation2D.RemoveRigidBody(WaveEngine.Common.Physics2D.IRigidBody2D)
+  id: RemoveRigidBody(WaveEngine.Common.Physics2D.IRigidBody2D)
+  parent: WaveEngine.Common.Physics2D.ISimulation2D
+  langs:
+  - csharp
+  - vb
+  name: RemoveRigidBody(IRigidBody2D)
+  nameWithType: ISimulation2D.RemoveRigidBody(IRigidBody2D)
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.RemoveRigidBody(WaveEngine.Common.Physics2D.IRigidBody2D)
+  type: Method
+  source:
+    id: RemoveRigidBody
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics2D\ISimulation2D.cs
+    startLine: 101
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics2D
+  summary: "\nRemoves a RigidBody 2D from the world\n"
+  example: []
+  syntax:
+    content: void RemoveRigidBody(IRigidBody2D body)
+    parameters:
+    - id: body
+      type: WaveEngine.Common.Physics2D.IRigidBody2D
+      description: The body to remove
+    content.vb: Sub RemoveRigidBody(body As IRigidBody2D)
+  overload: WaveEngine.Common.Physics2D.ISimulation2D.RemoveRigidBody*
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.CreateColliderShape``1
+  commentId: M:WaveEngine.Common.Physics2D.ISimulation2D.CreateColliderShape``1
+  id: CreateColliderShape``1
+  parent: WaveEngine.Common.Physics2D.ISimulation2D
+  langs:
+  - csharp
+  - vb
+  name: CreateColliderShape<T>()
+  nameWithType: ISimulation2D.CreateColliderShape<T>()
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.CreateColliderShape<T>()
+  type: Method
+  source:
+    id: CreateColliderShape
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics2D\ISimulation2D.cs
+    startLine: 108
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics2D
+  summary: "\nInstantiate a new Collider shape\n"
+  example: []
+  syntax:
+    content: >-
+      T CreateColliderShape<T>()
+
+          where T : IColliderShape2D
+    typeParameters:
+    - id: T
+      description: The ColliderShape type
+    return:
+      type: '{T}'
+      description: The new collider shape
+    content.vb: Function CreateColliderShape(Of T As IColliderShape2D) As T
+  overload: WaveEngine.Common.Physics2D.ISimulation2D.CreateColliderShape*
+  nameWithType.vb: ISimulation2D.CreateColliderShape(Of T)()
+  fullName.vb: WaveEngine.Common.Physics2D.ISimulation2D.CreateColliderShape(Of T)()
+  name.vb: CreateColliderShape(Of T)()
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.CreateJoint``2(``1)
+  commentId: M:WaveEngine.Common.Physics2D.ISimulation2D.CreateJoint``2(``1)
+  id: CreateJoint``2(``1)
+  parent: WaveEngine.Common.Physics2D.ISimulation2D
+  langs:
+  - csharp
+  - vb
+  name: CreateJoint<T, J>(J)
+  nameWithType: ISimulation2D.CreateJoint<T, J>(J)
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.CreateJoint<T, J>(J)
+  type: Method
+  source:
+    id: CreateJoint
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics2D\ISimulation2D.cs
+    startLine: 118
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics2D
+  summary: "\nCreates a Joint\n"
+  example: []
+  syntax:
+    content: >-
+      T CreateJoint<T, J>(J jointDef)
+
+          where T : IJoint2D where J : JointDef2D<T>
+    parameters:
+    - id: jointDef
+      type: '{J}'
+      description: The joint definition instance
+    typeParameters:
+    - id: T
+      description: The Joint type
+    - id: J
+      description: The Joint definition type
+    return:
+      type: '{T}'
+      description: The new joint instance
+    content.vb: Function CreateJoint(Of T As IJoint2D, J As JointDef2D(Of T))(jointDef As J) As T
+  overload: WaveEngine.Common.Physics2D.ISimulation2D.CreateJoint*
+  nameWithType.vb: ISimulation2D.CreateJoint(Of T, J)(J)
+  fullName.vb: WaveEngine.Common.Physics2D.ISimulation2D.CreateJoint(Of T, J)(J)
+  name.vb: CreateJoint(Of T, J)(J)
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.RemoveJoint(WaveEngine.Common.Physics2D.IJoint2D)
+  commentId: M:WaveEngine.Common.Physics2D.ISimulation2D.RemoveJoint(WaveEngine.Common.Physics2D.IJoint2D)
+  id: RemoveJoint(WaveEngine.Common.Physics2D.IJoint2D)
+  parent: WaveEngine.Common.Physics2D.ISimulation2D
+  langs:
+  - csharp
+  - vb
+  name: RemoveJoint(IJoint2D)
+  nameWithType: ISimulation2D.RemoveJoint(IJoint2D)
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.RemoveJoint(WaveEngine.Common.Physics2D.IJoint2D)
+  type: Method
+  source:
+    id: RemoveJoint
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics2D\ISimulation2D.cs
+    startLine: 126
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics2D
+  summary: "\nRemove the joint from the physic world\n"
+  example: []
+  syntax:
+    content: void RemoveJoint(IJoint2D joint)
+    parameters:
+    - id: joint
+      type: WaveEngine.Common.Physics2D.IJoint2D
+      description: The joint to remove
+    content.vb: Sub RemoveJoint(joint As IJoint2D)
+  overload: WaveEngine.Common.Physics2D.ISimulation2D.RemoveJoint*
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.Step(System.TimeSpan)
+  commentId: M:WaveEngine.Common.Physics2D.ISimulation2D.Step(System.TimeSpan)
+  id: Step(System.TimeSpan)
+  parent: WaveEngine.Common.Physics2D.ISimulation2D
+  langs:
+  - csharp
+  - vb
+  name: Step(TimeSpan)
+  nameWithType: ISimulation2D.Step(TimeSpan)
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.Step(System.TimeSpan)
+  type: Method
+  source:
+    id: Step
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics2D\ISimulation2D.cs
+    startLine: 132
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics2D
+  summary: "\nTake a time step. This performs collision detection, integration, and constraint solution.\n"
+  example: []
+  syntax:
+    content: void Step(TimeSpan gameTime)
+    parameters:
+    - id: gameTime
+      type: System.TimeSpan
+      description: the amount of time to simulate, this should not vary
+    content.vb: Sub Step(gameTime As TimeSpan)
+  overload: WaveEngine.Common.Physics2D.ISimulation2D.Step*
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.SetDebugDraw(WaveEngine.Common.Physics2D.ISimulationDebugDraw2D)
+  commentId: M:WaveEngine.Common.Physics2D.ISimulation2D.SetDebugDraw(WaveEngine.Common.Physics2D.ISimulationDebugDraw2D)
+  id: SetDebugDraw(WaveEngine.Common.Physics2D.ISimulationDebugDraw2D)
+  parent: WaveEngine.Common.Physics2D.ISimulation2D
+  langs:
+  - csharp
+  - vb
+  name: SetDebugDraw(ISimulationDebugDraw2D)
+  nameWithType: ISimulation2D.SetDebugDraw(ISimulationDebugDraw2D)
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.SetDebugDraw(WaveEngine.Common.Physics2D.ISimulationDebugDraw2D)
+  type: Method
+  source:
+    id: SetDebugDraw
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics2D\ISimulation2D.cs
+    startLine: 138
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics2D
+  summary: "\nSets the debug draw of Simulation 2D\n"
+  example: []
+  syntax:
+    content: void SetDebugDraw(ISimulationDebugDraw2D debugDraw)
+    parameters:
+    - id: debugDraw
+      type: WaveEngine.Common.Physics2D.ISimulationDebugDraw2D
+      description: The deubg draw instance
+    content.vb: Sub SetDebugDraw(debugDraw As ISimulationDebugDraw2D)
+  overload: WaveEngine.Common.Physics2D.ISimulation2D.SetDebugDraw*
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.DebugDraw
+  commentId: M:WaveEngine.Common.Physics2D.ISimulation2D.DebugDraw
+  id: DebugDraw
+  parent: WaveEngine.Common.Physics2D.ISimulation2D
+  langs:
+  - csharp
+  - vb
+  name: DebugDraw()
+  nameWithType: ISimulation2D.DebugDraw()
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.DebugDraw()
+  type: Method
+  source:
+    id: DebugDraw
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics2D\ISimulation2D.cs
+    startLine: 143
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics2D
+  summary: "\nDraw the debug information\n"
+  example: []
+  syntax:
+    content: void DebugDraw()
+    content.vb: Sub DebugDraw
+  overload: WaveEngine.Common.Physics2D.ISimulation2D.DebugDraw*
+references:
+- uid: WaveEngine.Common.Physics2D
+  commentId: N:WaveEngine.Common.Physics2D
+  name: WaveEngine.Common.Physics2D
+  nameWithType: WaveEngine.Common.Physics2D
+  fullName: WaveEngine.Common.Physics2D
+- uid: WaveEngine.Common.Helpers.IPausable.State
+  commentId: P:WaveEngine.Common.Helpers.IPausable.State
+  parent: WaveEngine.Common.Helpers.IPausable
+  name: State
+  nameWithType: IPausable.State
+  fullName: WaveEngine.Common.Helpers.IPausable.State
+- uid: WaveEngine.Common.Helpers.IPausable.Initialize
+  commentId: M:WaveEngine.Common.Helpers.IPausable.Initialize
+  parent: WaveEngine.Common.Helpers.IPausable
+  name: Initialize()
+  nameWithType: IPausable.Initialize()
+  fullName: WaveEngine.Common.Helpers.IPausable.Initialize()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.IPausable.Initialize
+    name: Initialize
+    nameWithType: IPausable.Initialize
+    fullName: WaveEngine.Common.Helpers.IPausable.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.IPausable.Initialize
+    name: Initialize
+    nameWithType: IPausable.Initialize
+    fullName: WaveEngine.Common.Helpers.IPausable.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.IPausable.Pause
+  commentId: M:WaveEngine.Common.Helpers.IPausable.Pause
+  parent: WaveEngine.Common.Helpers.IPausable
+  name: Pause()
+  nameWithType: IPausable.Pause()
+  fullName: WaveEngine.Common.Helpers.IPausable.Pause()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.IPausable.Pause
+    name: Pause
+    nameWithType: IPausable.Pause
+    fullName: WaveEngine.Common.Helpers.IPausable.Pause
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.IPausable.Pause
+    name: Pause
+    nameWithType: IPausable.Pause
+    fullName: WaveEngine.Common.Helpers.IPausable.Pause
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.IPausable.Resume
+  commentId: M:WaveEngine.Common.Helpers.IPausable.Resume
+  parent: WaveEngine.Common.Helpers.IPausable
+  name: Resume()
+  nameWithType: IPausable.Resume()
+  fullName: WaveEngine.Common.Helpers.IPausable.Resume()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.IPausable.Resume
+    name: Resume
+    nameWithType: IPausable.Resume
+    fullName: WaveEngine.Common.Helpers.IPausable.Resume
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.IPausable.Resume
+    name: Resume
+    nameWithType: IPausable.Resume
+    fullName: WaveEngine.Common.Helpers.IPausable.Resume
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.IPausable
+  commentId: T:WaveEngine.Common.Helpers.IPausable
+  parent: WaveEngine.Common.Helpers
+  name: IPausable
+  nameWithType: IPausable
+  fullName: WaveEngine.Common.Helpers.IPausable
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.IsLocked*
+  commentId: Overload:WaveEngine.Common.Physics2D.ISimulation2D.IsLocked
+  name: IsLocked
+  nameWithType: ISimulation2D.IsLocked
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.IsLocked
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.Gravity*
+  commentId: Overload:WaveEngine.Common.Physics2D.ISimulation2D.Gravity
+  name: Gravity
+  nameWithType: ISimulation2D.Gravity
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.Gravity
+- uid: WaveEngine.Common.Math.Vector2
+  commentId: T:WaveEngine.Common.Math.Vector2
+  parent: WaveEngine.Common.Math
+  name: Vector2
+  nameWithType: Vector2
+  fullName: WaveEngine.Common.Math.Vector2
+- uid: WaveEngine.Common.Math
+  commentId: N:WaveEngine.Common.Math
+  name: WaveEngine.Common.Math
+  nameWithType: WaveEngine.Common.Math
+  fullName: WaveEngine.Common.Math
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.AllowSleeping*
+  commentId: Overload:WaveEngine.Common.Physics2D.ISimulation2D.AllowSleeping
+  name: AllowSleeping
+  nameWithType: ISimulation2D.AllowSleeping
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.AllowSleeping
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.WorldScale*
+  commentId: Overload:WaveEngine.Common.Physics2D.ISimulation2D.WorldScale
+  name: WorldScale
+  nameWithType: ISimulation2D.WorldScale
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.WorldScale
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.VelocityIterations*
+  commentId: Overload:WaveEngine.Common.Physics2D.ISimulation2D.VelocityIterations
+  name: VelocityIterations
+  nameWithType: ISimulation2D.VelocityIterations
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.VelocityIterations
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.PositionIterations*
+  commentId: Overload:WaveEngine.Common.Physics2D.ISimulation2D.PositionIterations
+  name: PositionIterations
+  nameWithType: ISimulation2D.PositionIterations
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.PositionIterations
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.InternWorld*
+  commentId: Overload:WaveEngine.Common.Physics2D.ISimulation2D.InternWorld
+  name: InternWorld
+  nameWithType: ISimulation2D.InternWorld
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.InternWorld
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.DrawFlags*
+  commentId: Overload:WaveEngine.Common.Physics2D.ISimulation2D.DrawFlags
+  name: DrawFlags
+  nameWithType: ISimulation2D.DrawFlags
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.DrawFlags
+- uid: WaveEngine.Common.Physics2D.DebugDrawFlags
+  commentId: T:WaveEngine.Common.Physics2D.DebugDrawFlags
+  parent: WaveEngine.Common.Physics2D
+  name: DebugDrawFlags
+  nameWithType: DebugDrawFlags
+  fullName: WaveEngine.Common.Physics2D.DebugDrawFlags
+- uid: WaveEngine.Common.Physics2D.ContactDelegate
+  commentId: T:WaveEngine.Common.Physics2D.ContactDelegate
+  parent: WaveEngine.Common.Physics2D
+  name: ContactDelegate
+  nameWithType: ContactDelegate
+  fullName: WaveEngine.Common.Physics2D.ContactDelegate
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.CollisionList*
+  commentId: Overload:WaveEngine.Common.Physics2D.ISimulation2D.CollisionList
+  name: CollisionList
+  nameWithType: ISimulation2D.CollisionList
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.CollisionList
+- uid: System.Collections.Generic.IEnumerable{WaveEngine.Common.Physics2D.ICollisionInfo2D}
+  commentId: T:System.Collections.Generic.IEnumerable{WaveEngine.Common.Physics2D.ICollisionInfo2D}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<ICollisionInfo2D>
+  nameWithType: IEnumerable<ICollisionInfo2D>
+  fullName: System.Collections.Generic.IEnumerable<WaveEngine.Common.Physics2D.ICollisionInfo2D>
+  nameWithType.vb: IEnumerable(Of ICollisionInfo2D)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of WaveEngine.Common.Physics2D.ICollisionInfo2D)
+  name.vb: IEnumerable(Of ICollisionInfo2D)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Common.Physics2D.ICollisionInfo2D
+    name: ICollisionInfo2D
+    nameWithType: ICollisionInfo2D
+    fullName: WaveEngine.Common.Physics2D.ICollisionInfo2D
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Common.Physics2D.ICollisionInfo2D
+    name: ICollisionInfo2D
+    nameWithType: ICollisionInfo2D
+    fullName: WaveEngine.Common.Physics2D.ICollisionInfo2D
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.WorldStaticBody*
+  commentId: Overload:WaveEngine.Common.Physics2D.ISimulation2D.WorldStaticBody
+  name: WorldStaticBody
+  nameWithType: ISimulation2D.WorldStaticBody
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.WorldStaticBody
+- uid: WaveEngine.Common.Physics2D.IRigidBody2D
+  commentId: T:WaveEngine.Common.Physics2D.IRigidBody2D
+  parent: WaveEngine.Common.Physics2D
+  name: IRigidBody2D
+  nameWithType: IRigidBody2D
+  fullName: WaveEngine.Common.Physics2D.IRigidBody2D
+- uid: System.EventHandler
+  commentId: T:System.EventHandler
+  parent: System
+  isExternal: true
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.CreateRigidBody*
+  commentId: Overload:WaveEngine.Common.Physics2D.ISimulation2D.CreateRigidBody
+  name: CreateRigidBody
+  nameWithType: ISimulation2D.CreateRigidBody
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.CreateRigidBody
+- uid: WaveEngine.Common.Physics2D.RigidBodyDef2D
+  commentId: T:WaveEngine.Common.Physics2D.RigidBodyDef2D
+  parent: WaveEngine.Common.Physics2D
+  name: RigidBodyDef2D
+  nameWithType: RigidBodyDef2D
+  fullName: WaveEngine.Common.Physics2D.RigidBodyDef2D
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.RemoveRigidBody*
+  commentId: Overload:WaveEngine.Common.Physics2D.ISimulation2D.RemoveRigidBody
+  name: RemoveRigidBody
+  nameWithType: ISimulation2D.RemoveRigidBody
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.RemoveRigidBody
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.CreateColliderShape*
+  commentId: Overload:WaveEngine.Common.Physics2D.ISimulation2D.CreateColliderShape
+  name: CreateColliderShape
+  nameWithType: ISimulation2D.CreateColliderShape
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.CreateColliderShape
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.CreateJoint*
+  commentId: Overload:WaveEngine.Common.Physics2D.ISimulation2D.CreateJoint
+  name: CreateJoint
+  nameWithType: ISimulation2D.CreateJoint
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.CreateJoint
+- uid: '{J}'
+  commentId: '!:J'
+  definition: J
+  name: J
+  nameWithType: J
+  fullName: J
+- uid: J
+  name: J
+  nameWithType: J
+  fullName: J
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.RemoveJoint*
+  commentId: Overload:WaveEngine.Common.Physics2D.ISimulation2D.RemoveJoint
+  name: RemoveJoint
+  nameWithType: ISimulation2D.RemoveJoint
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.RemoveJoint
+- uid: WaveEngine.Common.Physics2D.IJoint2D
+  commentId: T:WaveEngine.Common.Physics2D.IJoint2D
+  parent: WaveEngine.Common.Physics2D
+  name: IJoint2D
+  nameWithType: IJoint2D
+  fullName: WaveEngine.Common.Physics2D.IJoint2D
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.Step*
+  commentId: Overload:WaveEngine.Common.Physics2D.ISimulation2D.Step
+  name: Step
+  nameWithType: ISimulation2D.Step
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.Step
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.SetDebugDraw*
+  commentId: Overload:WaveEngine.Common.Physics2D.ISimulation2D.SetDebugDraw
+  name: SetDebugDraw
+  nameWithType: ISimulation2D.SetDebugDraw
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.SetDebugDraw
+- uid: WaveEngine.Common.Physics2D.ISimulationDebugDraw2D
+  commentId: T:WaveEngine.Common.Physics2D.ISimulationDebugDraw2D
+  parent: WaveEngine.Common.Physics2D
+  name: ISimulationDebugDraw2D
+  nameWithType: ISimulationDebugDraw2D
+  fullName: WaveEngine.Common.Physics2D.ISimulationDebugDraw2D
+- uid: WaveEngine.Common.Physics2D.ISimulation2D.DebugDraw*
+  commentId: Overload:WaveEngine.Common.Physics2D.ISimulation2D.DebugDraw
+  name: DebugDraw
+  nameWithType: ISimulation2D.DebugDraw
+  fullName: WaveEngine.Common.Physics2D.ISimulation2D.DebugDraw

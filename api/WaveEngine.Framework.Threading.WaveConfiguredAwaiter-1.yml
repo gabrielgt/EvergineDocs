@@ -1,0 +1,943 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1
+  commentId: T:WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1
+  id: WaveConfiguredAwaiter`1
+  parent: WaveEngine.Framework.Threading
+  children:
+  - WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.#ctor(System.Threading.Tasks.Task{`0},WaveEngine.Framework.Threading.WaveTaskContinueOn)
+  - WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.GetAwaiter
+  - WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.GetResult
+  - WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.IsCompleted
+  - WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.OnCompleted(System.Action)
+  langs:
+  - csharp
+  - vb
+  name: WaveConfiguredAwaiter<T>
+  nameWithType: WaveConfiguredAwaiter<T>
+  fullName: WaveEngine.Framework.Threading.WaveConfiguredAwaiter<T>
+  type: Struct
+  source:
+    id: WaveConfiguredAwaiter
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Threading\WaveConfiguredAwaiter.cs
+    startLine: 113
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Threading
+  summary: "\nProvides an awaitable object that allows for configured awaits on <xref href=\"System.Threading.Tasks.Task%601\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  remarks: "\nThis type is intended for compiler use only.\n"
+  example: []
+  syntax:
+    content: 'public struct WaveConfiguredAwaiter<T> : INotifyCompletion'
+    typeParameters:
+    - id: T
+      description: The type of Task result.
+    content.vb: >-
+      Public Structure WaveConfiguredAwaiter(Of T)
+
+          Implements INotifyCompletion
+  implements:
+  - System.Runtime.CompilerServices.INotifyCompletion
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  nameWithType.vb: WaveConfiguredAwaiter(Of T)
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+  fullName.vb: WaveEngine.Framework.Threading.WaveConfiguredAwaiter(Of T)
+  name.vb: WaveConfiguredAwaiter(Of T)
+- uid: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.#ctor(System.Threading.Tasks.Task{`0},WaveEngine.Framework.Threading.WaveTaskContinueOn)
+  commentId: M:WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.#ctor(System.Threading.Tasks.Task{`0},WaveEngine.Framework.Threading.WaveTaskContinueOn)
+  id: '#ctor(System.Threading.Tasks.Task{`0},WaveEngine.Framework.Threading.WaveTaskContinueOn)'
+  parent: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1
+  langs:
+  - csharp
+  - vb
+  name: WaveConfiguredAwaiter(Task<T>, WaveTaskContinueOn)
+  nameWithType: WaveConfiguredAwaiter<T>.WaveConfiguredAwaiter(Task<T>, WaveTaskContinueOn)
+  fullName: WaveEngine.Framework.Threading.WaveConfiguredAwaiter<T>.WaveConfiguredAwaiter(System.Threading.Tasks.Task<T>, WaveEngine.Framework.Threading.WaveTaskContinueOn)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Threading\WaveConfiguredAwaiter.cs
+    startLine: 130
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Threading
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Framework.Threading.WaveConfiguredAwaiter%601\" data-throw-if-not-resolved=\"false\"></xref> struct.\n"
+  example: []
+  syntax:
+    content: public WaveConfiguredAwaiter(Task<T> task, WaveTaskContinueOn continueOn)
+    parameters:
+    - id: task
+      type: System.Threading.Tasks.Task{{T}}
+      description: The awaitable <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref>.
+    - id: continueOn
+      type: WaveEngine.Framework.Threading.WaveTaskContinueOn
+      description: The desired continuation behavior.
+    content.vb: Public Sub New(task As Task(Of T), continueOn As WaveTaskContinueOn)
+  overload: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.#ctor*
+  nameWithType.vb: WaveConfiguredAwaiter(Of T).WaveConfiguredAwaiter(Task(Of T), WaveTaskContinueOn)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Framework.Threading.WaveConfiguredAwaiter(Of T).WaveConfiguredAwaiter(System.Threading.Tasks.Task(Of T), WaveEngine.Framework.Threading.WaveTaskContinueOn)
+  name.vb: WaveConfiguredAwaiter(Task(Of T), WaveTaskContinueOn)
+- uid: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.GetAwaiter
+  commentId: M:WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.GetAwaiter
+  id: GetAwaiter
+  parent: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1
+  langs:
+  - csharp
+  - vb
+  name: GetAwaiter()
+  nameWithType: WaveConfiguredAwaiter<T>.GetAwaiter()
+  fullName: WaveEngine.Framework.Threading.WaveConfiguredAwaiter<T>.GetAwaiter()
+  type: Method
+  source:
+    id: GetAwaiter
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Threading\WaveConfiguredAwaiter.cs
+    startLine: 140
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Threading
+  summary: "\nGets an awaiter for this awaitable.\n"
+  example: []
+  syntax:
+    content: public WaveConfiguredAwaiter<T> GetAwaiter()
+    return:
+      type: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1
+      description: The awaiter.
+    content.vb: Public Function GetAwaiter As WaveConfiguredAwaiter(Of T)
+  overload: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.GetAwaiter*
+  nameWithType.vb: WaveConfiguredAwaiter(Of T).GetAwaiter()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Framework.Threading.WaveConfiguredAwaiter(Of T).GetAwaiter()
+- uid: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.IsCompleted
+  commentId: P:WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.IsCompleted
+  id: IsCompleted
+  parent: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1
+  langs:
+  - csharp
+  - vb
+  name: IsCompleted
+  nameWithType: WaveConfiguredAwaiter<T>.IsCompleted
+  fullName: WaveEngine.Framework.Threading.WaveConfiguredAwaiter<T>.IsCompleted
+  type: Property
+  source:
+    id: IsCompleted
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Threading\WaveConfiguredAwaiter.cs
+    startLine: 152
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Threading
+  summary: "\nGets a value indicating whether the task being awaited is completed.\n"
+  remarks: "\nThis property is intended for compiler user rather than use directly in code.\n"
+  example: []
+  syntax:
+    content: public bool IsCompleted { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsCompleted As Boolean
+  overload: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.IsCompleted*
+  exceptions:
+  - type: System.NullReferenceException
+    commentId: T:System.NullReferenceException
+    description: The awaiter was not properly initialized.
+  nameWithType.vb: WaveConfiguredAwaiter(Of T).IsCompleted
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: WaveEngine.Framework.Threading.WaveConfiguredAwaiter(Of T).IsCompleted
+- uid: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.GetResult
+  commentId: M:WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.GetResult
+  id: GetResult
+  parent: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1
+  langs:
+  - csharp
+  - vb
+  name: GetResult()
+  nameWithType: WaveConfiguredAwaiter<T>.GetResult()
+  fullName: WaveEngine.Framework.Threading.WaveConfiguredAwaiter<T>.GetResult()
+  type: Method
+  source:
+    id: GetResult
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Threading\WaveConfiguredAwaiter.cs
+    startLine: 169
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Threading
+  summary: "\nEnds the await on the completed <xref href=\"System.Threading.Tasks.Task%601\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public T GetResult()
+    return:
+      type: '{T}'
+      description: "\nThe result of the completed <xref href=\"System.Threading.Tasks.Task%601\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+    content.vb: Public Function GetResult As T
+  overload: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.GetResult*
+  exceptions:
+  - type: System.NullReferenceException
+    commentId: T:System.NullReferenceException
+    description: The awaiter was not properly initialized.
+  - type: System.Threading.Tasks.TaskCanceledException
+    commentId: T:System.Threading.Tasks.TaskCanceledException
+    description: The task was canceled.
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: The task completed in a Faulted state.
+  nameWithType.vb: WaveConfiguredAwaiter(Of T).GetResult()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Framework.Threading.WaveConfiguredAwaiter(Of T).GetResult()
+- uid: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.OnCompleted(System.Action)
+  commentId: M:WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.OnCompleted(System.Action)
+  id: OnCompleted(System.Action)
+  parent: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1
+  langs:
+  - csharp
+  - vb
+  name: OnCompleted(Action)
+  nameWithType: WaveConfiguredAwaiter<T>.OnCompleted(Action)
+  fullName: WaveEngine.Framework.Threading.WaveConfiguredAwaiter<T>.OnCompleted(System.Action)
+  type: Method
+  source:
+    id: OnCompleted
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Threading\WaveConfiguredAwaiter.cs
+    startLine: 183
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Threading
+  summary: "\nSchedules the continuation onto the <xref href=\"System.Threading.Tasks.Task\" data-throw-if-not-resolved=\"false\"></xref> associated with this <xref href=\"System.Runtime.CompilerServices.TaskAwaiter\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  remarks: "\nThis method is intended for compiler user rather than use directly in code.\n"
+  example: []
+  syntax:
+    content: public void OnCompleted(Action continuation)
+    parameters:
+    - id: continuation
+      type: System.Action
+      description: The action to invoke when the await operation completes.
+    content.vb: Public Sub OnCompleted(continuation As Action)
+  overload: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.OnCompleted*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The <code data-dev-comment-type="paramref" class="paramref">continuation</code> argument is null (Nothing in Visual Basic).
+  - type: System.NullReferenceException
+    commentId: T:System.NullReferenceException
+    description: The awaiter was not properly initialized.
+  implements:
+  - System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)
+  nameWithType.vb: WaveConfiguredAwaiter(Of T).OnCompleted(Action)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Framework.Threading.WaveConfiguredAwaiter(Of T).OnCompleted(System.Action)
+references:
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Threading
+  commentId: N:WaveEngine.Framework.Threading
+  name: WaveEngine.Framework.Threading
+  nameWithType: WaveEngine.Framework.Threading
+  fullName: WaveEngine.Framework.Threading
+- uid: System.Runtime.CompilerServices.INotifyCompletion
+  commentId: T:System.Runtime.CompilerServices.INotifyCompletion
+  parent: System.Runtime.CompilerServices
+  isExternal: true
+  name: INotifyCompletion
+  nameWithType: INotifyCompletion
+  fullName: System.Runtime.CompilerServices.INotifyCompletion
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Runtime.CompilerServices
+  commentId: N:System.Runtime.CompilerServices
+  isExternal: true
+  name: System.Runtime.CompilerServices
+  nameWithType: System.Runtime.CompilerServices
+  fullName: System.Runtime.CompilerServices
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1
+  commentId: T:WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1
+  parent: WaveEngine.Framework.Threading
+  name: WaveConfiguredAwaiter<T>
+  nameWithType: WaveConfiguredAwaiter<T>
+  fullName: WaveEngine.Framework.Threading.WaveConfiguredAwaiter<T>
+  nameWithType.vb: WaveConfiguredAwaiter(Of T)
+  fullName.vb: WaveEngine.Framework.Threading.WaveConfiguredAwaiter(Of T)
+  name.vb: WaveConfiguredAwaiter(Of T)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1
+    name: WaveConfiguredAwaiter
+    nameWithType: WaveConfiguredAwaiter
+    fullName: WaveEngine.Framework.Threading.WaveConfiguredAwaiter
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1
+    name: WaveConfiguredAwaiter
+    nameWithType: WaveConfiguredAwaiter
+    fullName: WaveEngine.Framework.Threading.WaveConfiguredAwaiter
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.#ctor*
+  commentId: Overload:WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.#ctor
+  name: WaveConfiguredAwaiter
+  nameWithType: WaveConfiguredAwaiter<T>.WaveConfiguredAwaiter
+  fullName: WaveEngine.Framework.Threading.WaveConfiguredAwaiter<T>.WaveConfiguredAwaiter
+  nameWithType.vb: WaveConfiguredAwaiter(Of T).WaveConfiguredAwaiter
+  fullName.vb: WaveEngine.Framework.Threading.WaveConfiguredAwaiter(Of T).WaveConfiguredAwaiter
+- uid: System.Threading.Tasks.Task{{T}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: System.Threading.Tasks.Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Threading.WaveTaskContinueOn
+  commentId: T:WaveEngine.Framework.Threading.WaveTaskContinueOn
+  parent: WaveEngine.Framework.Threading
+  name: WaveTaskContinueOn
+  nameWithType: WaveTaskContinueOn
+  fullName: WaveEngine.Framework.Threading.WaveTaskContinueOn
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.GetAwaiter*
+  commentId: Overload:WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.GetAwaiter
+  name: GetAwaiter
+  nameWithType: WaveConfiguredAwaiter<T>.GetAwaiter
+  fullName: WaveEngine.Framework.Threading.WaveConfiguredAwaiter<T>.GetAwaiter
+  nameWithType.vb: WaveConfiguredAwaiter(Of T).GetAwaiter
+  fullName.vb: WaveEngine.Framework.Threading.WaveConfiguredAwaiter(Of T).GetAwaiter
+- uid: System.NullReferenceException
+  commentId: T:System.NullReferenceException
+  isExternal: true
+- uid: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.IsCompleted*
+  commentId: Overload:WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.IsCompleted
+  name: IsCompleted
+  nameWithType: WaveConfiguredAwaiter<T>.IsCompleted
+  fullName: WaveEngine.Framework.Threading.WaveConfiguredAwaiter<T>.IsCompleted
+  nameWithType.vb: WaveConfiguredAwaiter(Of T).IsCompleted
+  fullName.vb: WaveEngine.Framework.Threading.WaveConfiguredAwaiter(Of T).IsCompleted
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Threading.Tasks.TaskCanceledException
+  commentId: T:System.Threading.Tasks.TaskCanceledException
+  isExternal: true
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.GetResult*
+  commentId: Overload:WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.GetResult
+  name: GetResult
+  nameWithType: WaveConfiguredAwaiter<T>.GetResult
+  fullName: WaveEngine.Framework.Threading.WaveConfiguredAwaiter<T>.GetResult
+  nameWithType.vb: WaveConfiguredAwaiter(Of T).GetResult
+  fullName.vb: WaveEngine.Framework.Threading.WaveConfiguredAwaiter(Of T).GetResult
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Runtime.CompilerServices.TaskAwaiter
+  commentId: T:System.Runtime.CompilerServices.TaskAwaiter
+  isExternal: true
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+- uid: WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.OnCompleted*
+  commentId: Overload:WaveEngine.Framework.Threading.WaveConfiguredAwaiter`1.OnCompleted
+  name: OnCompleted
+  nameWithType: WaveConfiguredAwaiter<T>.OnCompleted
+  fullName: WaveEngine.Framework.Threading.WaveConfiguredAwaiter<T>.OnCompleted
+  nameWithType.vb: WaveConfiguredAwaiter(Of T).OnCompleted
+  fullName.vb: WaveEngine.Framework.Threading.WaveConfiguredAwaiter(Of T).OnCompleted
+- uid: System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)
+  commentId: M:System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)
+  parent: System.Runtime.CompilerServices.INotifyCompletion
+  isExternal: true
+  name: OnCompleted(Action)
+  nameWithType: INotifyCompletion.OnCompleted(Action)
+  fullName: System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)
+    name: OnCompleted
+    nameWithType: INotifyCompletion.OnCompleted
+    fullName: System.Runtime.CompilerServices.INotifyCompletion.OnCompleted
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)
+    name: OnCompleted
+    nameWithType: INotifyCompletion.OnCompleted
+    fullName: System.Runtime.CompilerServices.INotifyCompletion.OnCompleted
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action

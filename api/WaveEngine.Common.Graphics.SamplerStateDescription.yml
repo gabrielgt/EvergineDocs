@@ -1,0 +1,1443 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription
+  commentId: T:WaveEngine.Common.Graphics.SamplerStateDescription
+  id: SamplerStateDescription
+  parent: WaveEngine.Common.Graphics
+  children:
+  - WaveEngine.Common.Graphics.SamplerStateDescription.AddressU
+  - WaveEngine.Common.Graphics.SamplerStateDescription.AddressV
+  - WaveEngine.Common.Graphics.SamplerStateDescription.AddressW
+  - WaveEngine.Common.Graphics.SamplerStateDescription.BorderColor
+  - WaveEngine.Common.Graphics.SamplerStateDescription.BorderColorVector
+  - WaveEngine.Common.Graphics.SamplerStateDescription.ComparisonFunc
+  - WaveEngine.Common.Graphics.SamplerStateDescription.Default
+  - WaveEngine.Common.Graphics.SamplerStateDescription.Equals(System.Object)
+  - WaveEngine.Common.Graphics.SamplerStateDescription.Equals(WaveEngine.Common.Graphics.SamplerStateDescription)
+  - WaveEngine.Common.Graphics.SamplerStateDescription.Filter
+  - WaveEngine.Common.Graphics.SamplerStateDescription.GetHashCode
+  - WaveEngine.Common.Graphics.SamplerStateDescription.MaxAnisotropy
+  - WaveEngine.Common.Graphics.SamplerStateDescription.MaxLOD
+  - WaveEngine.Common.Graphics.SamplerStateDescription.MinLOD
+  - WaveEngine.Common.Graphics.SamplerStateDescription.MipLODBias
+  - WaveEngine.Common.Graphics.SamplerStateDescription.op_Equality(WaveEngine.Common.Graphics.SamplerStateDescription,WaveEngine.Common.Graphics.SamplerStateDescription)
+  - WaveEngine.Common.Graphics.SamplerStateDescription.op_Inequality(WaveEngine.Common.Graphics.SamplerStateDescription,WaveEngine.Common.Graphics.SamplerStateDescription)
+  - WaveEngine.Common.Graphics.SamplerStateDescription.SetDefault
+  langs:
+  - csharp
+  - vb
+  name: SamplerStateDescription
+  nameWithType: SamplerStateDescription
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription
+  type: Struct
+  source:
+    id: SamplerStateDescription
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\SamplerStateDescription.cs
+    startLine: 14
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nDescribes a sampler state.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract(Namespace = "WaveEngine.Common.Graphics")]
+
+      public struct SamplerStateDescription : IEquatable<SamplerStateDescription>
+    content.vb: >-
+      <DataContract(Namespace:="WaveEngine.Common.Graphics")>
+
+      Public Structure SamplerStateDescription
+
+          Implements IEquatable(Of SamplerStateDescription)
+  implements:
+  - System.IEquatable{WaveEngine.Common.Graphics.SamplerStateDescription}
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Namespace
+      type: System.String
+      value: WaveEngine.Common.Graphics
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.Filter
+  commentId: F:WaveEngine.Common.Graphics.SamplerStateDescription.Filter
+  id: Filter
+  parent: WaveEngine.Common.Graphics.SamplerStateDescription
+  langs:
+  - csharp
+  - vb
+  name: Filter
+  nameWithType: SamplerStateDescription.Filter
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.Filter
+  type: Field
+  source:
+    id: Filter
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\SamplerStateDescription.cs
+    startLine: 21
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nFiltering method to use when sampling a texture.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public TextureFilter Filter
+    return:
+      type: WaveEngine.Common.Graphics.TextureFilter
+    content.vb: >-
+      <DataMember>
+
+      Public Filter As TextureFilter
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.AddressU
+  commentId: F:WaveEngine.Common.Graphics.SamplerStateDescription.AddressU
+  id: AddressU
+  parent: WaveEngine.Common.Graphics.SamplerStateDescription
+  langs:
+  - csharp
+  - vb
+  name: AddressU
+  nameWithType: SamplerStateDescription.AddressU
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.AddressU
+  type: Field
+  source:
+    id: AddressU
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\SamplerStateDescription.cs
+    startLine: 27
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nMethod to use for resolving a u texture coordinate that is outside the 0 to 1 range.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(IsRequired = true)]
+
+      public TextureAddressMode AddressU
+    return:
+      type: WaveEngine.Common.Graphics.TextureAddressMode
+    content.vb: >-
+      <DataMember(IsRequired:=True)>
+
+      Public AddressU As TextureAddressMode
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.AddressV
+  commentId: F:WaveEngine.Common.Graphics.SamplerStateDescription.AddressV
+  id: AddressV
+  parent: WaveEngine.Common.Graphics.SamplerStateDescription
+  langs:
+  - csharp
+  - vb
+  name: AddressV
+  nameWithType: SamplerStateDescription.AddressV
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.AddressV
+  type: Field
+  source:
+    id: AddressV
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\SamplerStateDescription.cs
+    startLine: 33
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nMethod to use for resolving a v texture coordinate that is outside the 0 to 1 range.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(IsRequired = true)]
+
+      public TextureAddressMode AddressV
+    return:
+      type: WaveEngine.Common.Graphics.TextureAddressMode
+    content.vb: >-
+      <DataMember(IsRequired:=True)>
+
+      Public AddressV As TextureAddressMode
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.AddressW
+  commentId: F:WaveEngine.Common.Graphics.SamplerStateDescription.AddressW
+  id: AddressW
+  parent: WaveEngine.Common.Graphics.SamplerStateDescription
+  langs:
+  - csharp
+  - vb
+  name: AddressW
+  nameWithType: SamplerStateDescription.AddressW
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.AddressW
+  type: Field
+  source:
+    id: AddressW
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\SamplerStateDescription.cs
+    startLine: 39
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nMethod to use for resolving a w texture coordinate that is outside the 0 to 1 range.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(IsRequired = true)]
+
+      public TextureAddressMode AddressW
+    return:
+      type: WaveEngine.Common.Graphics.TextureAddressMode
+    content.vb: >-
+      <DataMember(IsRequired:=True)>
+
+      Public AddressW As TextureAddressMode
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.MipLODBias
+  commentId: F:WaveEngine.Common.Graphics.SamplerStateDescription.MipLODBias
+  id: MipLODBias
+  parent: WaveEngine.Common.Graphics.SamplerStateDescription
+  langs:
+  - csharp
+  - vb
+  name: MipLODBias
+  nameWithType: SamplerStateDescription.MipLODBias
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.MipLODBias
+  type: Field
+  source:
+    id: MipLODBias
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\SamplerStateDescription.cs
+    startLine: 46
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nOffset from the calculated mipmap level. For example, if Direct3D calculates that a\ntexture should be sampled at mipmap level 3 and MipLODBias is 2, then the texture will be sampled at mipmap level 5.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public float MipLODBias
+    return:
+      type: System.Single
+    content.vb: >-
+      <DataMember>
+
+      Public MipLODBias As Single
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.MaxAnisotropy
+  commentId: F:WaveEngine.Common.Graphics.SamplerStateDescription.MaxAnisotropy
+  id: MaxAnisotropy
+  parent: WaveEngine.Common.Graphics.SamplerStateDescription
+  langs:
+  - csharp
+  - vb
+  name: MaxAnisotropy
+  nameWithType: SamplerStateDescription.MaxAnisotropy
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.MaxAnisotropy
+  type: Field
+  source:
+    id: MaxAnisotropy
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\SamplerStateDescription.cs
+    startLine: 53
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nClamping value used if D3D11_FILTER_ANISOTROPIC or D3D11_FILTER_COMPARISON_ANISOTROPIC is\nspecified in Filter. Valid values are between 1 and 16.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public int MaxAnisotropy
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember>
+
+      Public MaxAnisotropy As Integer
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.ComparisonFunc
+  commentId: F:WaveEngine.Common.Graphics.SamplerStateDescription.ComparisonFunc
+  id: ComparisonFunc
+  parent: WaveEngine.Common.Graphics.SamplerStateDescription
+  langs:
+  - csharp
+  - vb
+  name: ComparisonFunc
+  nameWithType: SamplerStateDescription.ComparisonFunc
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.ComparisonFunc
+  type: Field
+  source:
+    id: ComparisonFunc
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\SamplerStateDescription.cs
+    startLine: 59
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nA function that compares sampled data against existing sampled data.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(IsRequired = true)]
+
+      public ComparisonFunction ComparisonFunc
+    return:
+      type: WaveEngine.Common.Graphics.ComparisonFunction
+    content.vb: >-
+      <DataMember(IsRequired:=True)>
+
+      Public ComparisonFunc As ComparisonFunction
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.BorderColorVector
+  commentId: F:WaveEngine.Common.Graphics.SamplerStateDescription.BorderColorVector
+  id: BorderColorVector
+  parent: WaveEngine.Common.Graphics.SamplerStateDescription
+  langs:
+  - csharp
+  - vb
+  name: BorderColorVector
+  nameWithType: SamplerStateDescription.BorderColorVector
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.BorderColorVector
+  type: Field
+  source:
+    id: BorderColorVector
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\SamplerStateDescription.cs
+    startLine: 67
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nBorder color to use if D3D11_TEXTURE_ADDRESS_BORDER is specified for AddressU, AddressV, or AddressW.\nRange must be between 0.0 and 1.0 inclusive.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public Vector4 BorderColorVector
+    return:
+      type: WaveEngine.Common.Math.Vector4
+    content.vb: >-
+      <DataMember>
+
+      Public BorderColorVector As Vector4
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.BorderColor
+  commentId: P:WaveEngine.Common.Graphics.SamplerStateDescription.BorderColor
+  id: BorderColor
+  parent: WaveEngine.Common.Graphics.SamplerStateDescription
+  langs:
+  - csharp
+  - vb
+  name: BorderColor
+  nameWithType: SamplerStateDescription.BorderColor
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.BorderColor
+  type: Property
+  source:
+    id: BorderColor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\SamplerStateDescription.cs
+    startLine: 73
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nGets or sets Border color to use if D3D11_TEXTURE_ADDRESS_BORDER is specified for AddressU, AddressV, or AddressW.\nRange must be between 0.0 and 1.0 inclusive.\n"
+  example: []
+  syntax:
+    content: public Color BorderColor { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Graphics.Color
+    content.vb: Public Property BorderColor As Color
+  overload: WaveEngine.Common.Graphics.SamplerStateDescription.BorderColor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.MinLOD
+  commentId: F:WaveEngine.Common.Graphics.SamplerStateDescription.MinLOD
+  id: MinLOD
+  parent: WaveEngine.Common.Graphics.SamplerStateDescription
+  langs:
+  - csharp
+  - vb
+  name: MinLOD
+  nameWithType: SamplerStateDescription.MinLOD
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.MinLOD
+  type: Field
+  source:
+    id: MinLOD
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\SamplerStateDescription.cs
+    startLine: 91
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nLower end of the mipmap range to clamp access to, where 0 is the largest and most detailed mipmap level\nand any level higher than that is less detailed.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public float MinLOD
+    return:
+      type: System.Single
+    content.vb: >-
+      <DataMember>
+
+      Public MinLOD As Single
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.MaxLOD
+  commentId: F:WaveEngine.Common.Graphics.SamplerStateDescription.MaxLOD
+  id: MaxLOD
+  parent: WaveEngine.Common.Graphics.SamplerStateDescription
+  langs:
+  - csharp
+  - vb
+  name: MaxLOD
+  nameWithType: SamplerStateDescription.MaxLOD
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.MaxLOD
+  type: Field
+  source:
+    id: MaxLOD
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\SamplerStateDescription.cs
+    startLine: 98
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nUpper end of the mipmap range to clamp access to, where 0 is the largest and most detailed mipmap level and any level\nhigher than that is less detailed. This value must be greater than or equal to MinLOD.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public float MaxLOD
+    return:
+      type: System.Single
+    content.vb: >-
+      <DataMember>
+
+      Public MaxLOD As Single
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.Default
+  commentId: P:WaveEngine.Common.Graphics.SamplerStateDescription.Default
+  id: Default
+  parent: WaveEngine.Common.Graphics.SamplerStateDescription
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: SamplerStateDescription.Default
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.Default
+  type: Property
+  source:
+    id: Default
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\SamplerStateDescription.cs
+    startLine: 103
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nGets default values for SamplerStateDescription.\n"
+  example: []
+  syntax:
+    content: public static SamplerStateDescription Default { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Graphics.SamplerStateDescription
+    content.vb: Public Shared ReadOnly Property Default As SamplerStateDescription
+  overload: WaveEngine.Common.Graphics.SamplerStateDescription.Default*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.SetDefault
+  commentId: M:WaveEngine.Common.Graphics.SamplerStateDescription.SetDefault
+  id: SetDefault
+  parent: WaveEngine.Common.Graphics.SamplerStateDescription
+  langs:
+  - csharp
+  - vb
+  name: SetDefault()
+  nameWithType: SamplerStateDescription.SetDefault()
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.SetDefault()
+  type: Method
+  source:
+    id: SetDefault
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\SamplerStateDescription.cs
+    startLine: 116
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nDefault SamplerStateDescription values.\n"
+  example: []
+  syntax:
+    content: public void SetDefault()
+    content.vb: Public Sub SetDefault
+  overload: WaveEngine.Common.Graphics.SamplerStateDescription.SetDefault*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.Equals(WaveEngine.Common.Graphics.SamplerStateDescription)
+  commentId: M:WaveEngine.Common.Graphics.SamplerStateDescription.Equals(WaveEngine.Common.Graphics.SamplerStateDescription)
+  id: Equals(WaveEngine.Common.Graphics.SamplerStateDescription)
+  parent: WaveEngine.Common.Graphics.SamplerStateDescription
+  langs:
+  - csharp
+  - vb
+  name: Equals(SamplerStateDescription)
+  nameWithType: SamplerStateDescription.Equals(SamplerStateDescription)
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.Equals(WaveEngine.Common.Graphics.SamplerStateDescription)
+  type: Method
+  source:
+    id: Equals
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\SamplerStateDescription.cs
+    startLine: 137
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nReturns a hash code for this instance.\n"
+  example: []
+  syntax:
+    content: public bool Equals(SamplerStateDescription other)
+    parameters:
+    - id: other
+      type: WaveEngine.Common.Graphics.SamplerStateDescription
+      description: Other used to compare.
+    return:
+      type: System.Boolean
+      description: "\nA hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.\n"
+    content.vb: Public Function Equals(other As SamplerStateDescription) As Boolean
+  overload: WaveEngine.Common.Graphics.SamplerStateDescription.Equals*
+  implements:
+  - System.IEquatable{WaveEngine.Common.Graphics.SamplerStateDescription}.Equals(WaveEngine.Common.Graphics.SamplerStateDescription)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.Equals(System.Object)
+  commentId: M:WaveEngine.Common.Graphics.SamplerStateDescription.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: WaveEngine.Common.Graphics.SamplerStateDescription
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: SamplerStateDescription.Equals(Object)
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.Equals(System.Object)
+  type: Method
+  source:
+    id: Equals
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\SamplerStateDescription.cs
+    startLine: 158
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nDetermines whether the specified <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> is equal to this instance.\n"
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The <xref href="System.Object" data-throw-if-not-resolved="false"></xref> to compare with this instance.
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if the specified <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> is equal to this instance; otherwise, <code>false</code>.\n"
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: WaveEngine.Common.Graphics.SamplerStateDescription.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.GetHashCode
+  commentId: M:WaveEngine.Common.Graphics.SamplerStateDescription.GetHashCode
+  id: GetHashCode
+  parent: WaveEngine.Common.Graphics.SamplerStateDescription
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: SamplerStateDescription.GetHashCode()
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\SamplerStateDescription.cs
+    startLine: 174
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nReturns a hash code for this instance.\n"
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: "\nA hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.\n"
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: WaveEngine.Common.Graphics.SamplerStateDescription.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.op_Equality(WaveEngine.Common.Graphics.SamplerStateDescription,WaveEngine.Common.Graphics.SamplerStateDescription)
+  commentId: M:WaveEngine.Common.Graphics.SamplerStateDescription.op_Equality(WaveEngine.Common.Graphics.SamplerStateDescription,WaveEngine.Common.Graphics.SamplerStateDescription)
+  id: op_Equality(WaveEngine.Common.Graphics.SamplerStateDescription,WaveEngine.Common.Graphics.SamplerStateDescription)
+  parent: WaveEngine.Common.Graphics.SamplerStateDescription
+  langs:
+  - csharp
+  - vb
+  name: Equality(SamplerStateDescription, SamplerStateDescription)
+  nameWithType: SamplerStateDescription.Equality(SamplerStateDescription, SamplerStateDescription)
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.Equality(WaveEngine.Common.Graphics.SamplerStateDescription, WaveEngine.Common.Graphics.SamplerStateDescription)
+  type: Operator
+  source:
+    id: op_Equality
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\SamplerStateDescription.cs
+    startLine: 201
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nImplements the operator ==.\n"
+  example: []
+  syntax:
+    content: public static bool operator ==(SamplerStateDescription value1, SamplerStateDescription value2)
+    parameters:
+    - id: value1
+      type: WaveEngine.Common.Graphics.SamplerStateDescription
+      description: The value1.
+    - id: value2
+      type: WaveEngine.Common.Graphics.SamplerStateDescription
+      description: The value2.
+    return:
+      type: System.Boolean
+      description: "\nThe result of the operator.\n"
+    content.vb: Public Shared Operator =(value1 As SamplerStateDescription, value2 As SamplerStateDescription) As Boolean
+  overload: WaveEngine.Common.Graphics.SamplerStateDescription.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.op_Inequality(WaveEngine.Common.Graphics.SamplerStateDescription,WaveEngine.Common.Graphics.SamplerStateDescription)
+  commentId: M:WaveEngine.Common.Graphics.SamplerStateDescription.op_Inequality(WaveEngine.Common.Graphics.SamplerStateDescription,WaveEngine.Common.Graphics.SamplerStateDescription)
+  id: op_Inequality(WaveEngine.Common.Graphics.SamplerStateDescription,WaveEngine.Common.Graphics.SamplerStateDescription)
+  parent: WaveEngine.Common.Graphics.SamplerStateDescription
+  langs:
+  - csharp
+  - vb
+  name: Inequality(SamplerStateDescription, SamplerStateDescription)
+  nameWithType: SamplerStateDescription.Inequality(SamplerStateDescription, SamplerStateDescription)
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.Inequality(WaveEngine.Common.Graphics.SamplerStateDescription, WaveEngine.Common.Graphics.SamplerStateDescription)
+  type: Operator
+  source:
+    id: op_Inequality
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\SamplerStateDescription.cs
+    startLine: 214
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nImplements the operator ==.\n"
+  example: []
+  syntax:
+    content: public static bool operator !=(SamplerStateDescription value1, SamplerStateDescription value2)
+    parameters:
+    - id: value1
+      type: WaveEngine.Common.Graphics.SamplerStateDescription
+      description: The value1.
+    - id: value2
+      type: WaveEngine.Common.Graphics.SamplerStateDescription
+      description: The value2.
+    return:
+      type: System.Boolean
+      description: "\nThe result of the operator.\n"
+    content.vb: Public Shared Operator <>(value1 As SamplerStateDescription, value2 As SamplerStateDescription) As Boolean
+  overload: WaveEngine.Common.Graphics.SamplerStateDescription.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: WaveEngine.Common.Graphics
+  commentId: N:WaveEngine.Common.Graphics
+  name: WaveEngine.Common.Graphics
+  nameWithType: WaveEngine.Common.Graphics
+  fullName: WaveEngine.Common.Graphics
+- uid: System.IEquatable{WaveEngine.Common.Graphics.SamplerStateDescription}
+  commentId: T:System.IEquatable{WaveEngine.Common.Graphics.SamplerStateDescription}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<SamplerStateDescription>
+  nameWithType: IEquatable<SamplerStateDescription>
+  fullName: System.IEquatable<WaveEngine.Common.Graphics.SamplerStateDescription>
+  nameWithType.vb: IEquatable(Of SamplerStateDescription)
+  fullName.vb: System.IEquatable(Of WaveEngine.Common.Graphics.SamplerStateDescription)
+  name.vb: IEquatable(Of SamplerStateDescription)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Common.Graphics.SamplerStateDescription
+    name: SamplerStateDescription
+    nameWithType: SamplerStateDescription
+    fullName: WaveEngine.Common.Graphics.SamplerStateDescription
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Common.Graphics.SamplerStateDescription
+    name: SamplerStateDescription
+    nameWithType: SamplerStateDescription
+    fullName: WaveEngine.Common.Graphics.SamplerStateDescription
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Common.Graphics.TextureFilter
+  commentId: T:WaveEngine.Common.Graphics.TextureFilter
+  parent: WaveEngine.Common.Graphics
+  name: TextureFilter
+  nameWithType: TextureFilter
+  fullName: WaveEngine.Common.Graphics.TextureFilter
+- uid: WaveEngine.Common.Graphics.TextureAddressMode
+  commentId: T:WaveEngine.Common.Graphics.TextureAddressMode
+  parent: WaveEngine.Common.Graphics
+  name: TextureAddressMode
+  nameWithType: TextureAddressMode
+  fullName: WaveEngine.Common.Graphics.TextureAddressMode
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: WaveEngine.Common.Graphics.ComparisonFunction
+  commentId: T:WaveEngine.Common.Graphics.ComparisonFunction
+  parent: WaveEngine.Common.Graphics
+  name: ComparisonFunction
+  nameWithType: ComparisonFunction
+  fullName: WaveEngine.Common.Graphics.ComparisonFunction
+- uid: WaveEngine.Common.Math.Vector4
+  commentId: T:WaveEngine.Common.Math.Vector4
+  parent: WaveEngine.Common.Math
+  name: Vector4
+  nameWithType: Vector4
+  fullName: WaveEngine.Common.Math.Vector4
+- uid: WaveEngine.Common.Math
+  commentId: N:WaveEngine.Common.Math
+  name: WaveEngine.Common.Math
+  nameWithType: WaveEngine.Common.Math
+  fullName: WaveEngine.Common.Math
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.BorderColor*
+  commentId: Overload:WaveEngine.Common.Graphics.SamplerStateDescription.BorderColor
+  name: BorderColor
+  nameWithType: SamplerStateDescription.BorderColor
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.BorderColor
+- uid: WaveEngine.Common.Graphics.Color
+  commentId: T:WaveEngine.Common.Graphics.Color
+  parent: WaveEngine.Common.Graphics
+  name: Color
+  nameWithType: Color
+  fullName: WaveEngine.Common.Graphics.Color
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.Default*
+  commentId: Overload:WaveEngine.Common.Graphics.SamplerStateDescription.Default
+  name: Default
+  nameWithType: SamplerStateDescription.Default
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.Default
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription
+  commentId: T:WaveEngine.Common.Graphics.SamplerStateDescription
+  parent: WaveEngine.Common.Graphics
+  name: SamplerStateDescription
+  nameWithType: SamplerStateDescription
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.SetDefault*
+  commentId: Overload:WaveEngine.Common.Graphics.SamplerStateDescription.SetDefault
+  name: SetDefault
+  nameWithType: SamplerStateDescription.SetDefault
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.SetDefault
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.Equals*
+  commentId: Overload:WaveEngine.Common.Graphics.SamplerStateDescription.Equals
+  name: Equals
+  nameWithType: SamplerStateDescription.Equals
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.Equals
+- uid: System.IEquatable{WaveEngine.Common.Graphics.SamplerStateDescription}.Equals(WaveEngine.Common.Graphics.SamplerStateDescription)
+  commentId: M:System.IEquatable{WaveEngine.Common.Graphics.SamplerStateDescription}.Equals(WaveEngine.Common.Graphics.SamplerStateDescription)
+  parent: System.IEquatable{WaveEngine.Common.Graphics.SamplerStateDescription}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(SamplerStateDescription)
+  nameWithType: IEquatable<SamplerStateDescription>.Equals(SamplerStateDescription)
+  fullName: System.IEquatable<WaveEngine.Common.Graphics.SamplerStateDescription>.Equals(WaveEngine.Common.Graphics.SamplerStateDescription)
+  nameWithType.vb: IEquatable(Of SamplerStateDescription).Equals(SamplerStateDescription)
+  fullName.vb: System.IEquatable(Of WaveEngine.Common.Graphics.SamplerStateDescription).Equals(WaveEngine.Common.Graphics.SamplerStateDescription)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<SamplerStateDescription>.Equals
+    fullName: System.IEquatable<WaveEngine.Common.Graphics.SamplerStateDescription>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Graphics.SamplerStateDescription
+    name: SamplerStateDescription
+    nameWithType: SamplerStateDescription
+    fullName: WaveEngine.Common.Graphics.SamplerStateDescription
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of SamplerStateDescription).Equals
+    fullName: System.IEquatable(Of WaveEngine.Common.Graphics.SamplerStateDescription).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Graphics.SamplerStateDescription
+    name: SamplerStateDescription
+    nameWithType: SamplerStateDescription
+    fullName: WaveEngine.Common.Graphics.SamplerStateDescription
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.GetHashCode*
+  commentId: Overload:WaveEngine.Common.Graphics.SamplerStateDescription.GetHashCode
+  name: GetHashCode
+  nameWithType: SamplerStateDescription.GetHashCode
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.GetHashCode
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.op_Equality*
+  commentId: Overload:WaveEngine.Common.Graphics.SamplerStateDescription.op_Equality
+  name: Equality
+  nameWithType: SamplerStateDescription.Equality
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.Equality
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription.op_Inequality*
+  commentId: Overload:WaveEngine.Common.Graphics.SamplerStateDescription.op_Inequality
+  name: Inequality
+  nameWithType: SamplerStateDescription.Inequality
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription.Inequality

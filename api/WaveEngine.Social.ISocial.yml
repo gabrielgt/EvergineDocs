@@ -1,0 +1,958 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Social.ISocial
+  commentId: T:WaveEngine.Social.ISocial
+  id: ISocial
+  parent: WaveEngine.Social
+  children:
+  - WaveEngine.Social.ISocial.AddNewScore(System.String,System.Int64)
+  - WaveEngine.Social.ISocial.GetAchievements
+  - WaveEngine.Social.ISocial.GetPlayerCenteredScores(System.String,System.Int32,System.Boolean,System.Boolean)
+  - WaveEngine.Social.ISocial.GetTopScores(System.String,System.Int32,System.Boolean,System.Boolean)
+  - WaveEngine.Social.ISocial.IncrementAchievement(System.String,System.Int32)
+  - WaveEngine.Social.ISocial.Init
+  - WaveEngine.Social.ISocial.IsAuthenticated
+  - WaveEngine.Social.ISocial.Login
+  - WaveEngine.Social.ISocial.Logout
+  - WaveEngine.Social.ISocial.ShowAchievements
+  - WaveEngine.Social.ISocial.ShowAllLeaderboards
+  - WaveEngine.Social.ISocial.ShowLeaderboard(System.String)
+  - WaveEngine.Social.ISocial.UnlockAchievement(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ISocial
+  nameWithType: ISocial
+  fullName: WaveEngine.Social.ISocial
+  type: Interface
+  source:
+    id: ISocial
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Social\Shared\Social\ISocial.cs
+    startLine: 12
+  assemblies:
+  - WaveEngine.Social
+  namespace: WaveEngine.Social
+  summary: "\nPlatform specific Social Service interface\n"
+  example: []
+  syntax:
+    content: public interface ISocial
+    content.vb: Public Interface ISocial
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: WaveEngine.Social.ISocial.IsAuthenticated
+  commentId: P:WaveEngine.Social.ISocial.IsAuthenticated
+  id: IsAuthenticated
+  parent: WaveEngine.Social.ISocial
+  langs:
+  - csharp
+  - vb
+  name: IsAuthenticated
+  nameWithType: ISocial.IsAuthenticated
+  fullName: WaveEngine.Social.ISocial.IsAuthenticated
+  type: Property
+  source:
+    id: IsAuthenticated
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Social\Shared\Social\ISocial.cs
+    startLine: 20
+  assemblies:
+  - WaveEngine.Social
+  namespace: WaveEngine.Social
+  summary: "\nGets a value indicating whether the local user is authenticated.\n"
+  example: []
+  syntax:
+    content: bool IsAuthenticated { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if the local user is authenticated; otherwise, <code>false</code>.\n"
+    content.vb: ReadOnly Property IsAuthenticated As Boolean
+  overload: WaveEngine.Social.ISocial.IsAuthenticated*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: WaveEngine.Social.ISocial.Init
+  commentId: M:WaveEngine.Social.ISocial.Init
+  id: Init
+  parent: WaveEngine.Social.ISocial
+  langs:
+  - csharp
+  - vb
+  name: Init()
+  nameWithType: ISocial.Init()
+  fullName: WaveEngine.Social.ISocial.Init()
+  type: Method
+  source:
+    id: Init
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Social\Shared\Social\ISocial.cs
+    startLine: 25
+  assemblies:
+  - WaveEngine.Social
+  namespace: WaveEngine.Social
+  summary: "\nInitializes this instance.\n"
+  example: []
+  syntax:
+    content: void Init()
+    content.vb: Sub Init
+  overload: WaveEngine.Social.ISocial.Init*
+- uid: WaveEngine.Social.ISocial.Login
+  commentId: M:WaveEngine.Social.ISocial.Login
+  id: Login
+  parent: WaveEngine.Social.ISocial
+  langs:
+  - csharp
+  - vb
+  name: Login()
+  nameWithType: ISocial.Login()
+  fullName: WaveEngine.Social.ISocial.Login()
+  type: Method
+  source:
+    id: Login
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Social\Shared\Social\ISocial.cs
+    startLine: 33
+  assemblies:
+  - WaveEngine.Social
+  namespace: WaveEngine.Social
+  summary: "\nLogins local user.\n"
+  example: []
+  syntax:
+    content: Task<Player> Login()
+    return:
+      type: System.Threading.Tasks.Task{WaveEngine.Social.Player}
+      description: "\nThe logged in user.\n"
+    content.vb: Function Login As Task(Of Player)
+  overload: WaveEngine.Social.ISocial.Login*
+- uid: WaveEngine.Social.ISocial.Logout
+  commentId: M:WaveEngine.Social.ISocial.Logout
+  id: Logout
+  parent: WaveEngine.Social.ISocial
+  langs:
+  - csharp
+  - vb
+  name: Logout()
+  nameWithType: ISocial.Logout()
+  fullName: WaveEngine.Social.ISocial.Logout()
+  type: Method
+  source:
+    id: Logout
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Social\Shared\Social\ISocial.cs
+    startLine: 41
+  assemblies:
+  - WaveEngine.Social
+  namespace: WaveEngine.Social
+  summary: "\nLogouts local user.\n"
+  example: []
+  syntax:
+    content: Task<bool> Logout()
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: "\n<code>true</code> if logout was successful; otherwise, <code>false</code>.\n"
+    content.vb: Function Logout As Task(Of Boolean)
+  overload: WaveEngine.Social.ISocial.Logout*
+- uid: WaveEngine.Social.ISocial.ShowAllLeaderboards
+  commentId: M:WaveEngine.Social.ISocial.ShowAllLeaderboards
+  id: ShowAllLeaderboards
+  parent: WaveEngine.Social.ISocial
+  langs:
+  - csharp
+  - vb
+  name: ShowAllLeaderboards()
+  nameWithType: ISocial.ShowAllLeaderboards()
+  fullName: WaveEngine.Social.ISocial.ShowAllLeaderboards()
+  type: Method
+  source:
+    id: ShowAllLeaderboards
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Social\Shared\Social\ISocial.cs
+    startLine: 49
+  assemblies:
+  - WaveEngine.Social
+  namespace: WaveEngine.Social
+  summary: "\nShows a default/system view of the games leaderboards.\n"
+  example: []
+  syntax:
+    content: Task<bool> ShowAllLeaderboards()
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: "\n<code>true</code> if the view has been shown; otherwise, <code>false</code>.\n"
+    content.vb: Function ShowAllLeaderboards As Task(Of Boolean)
+  overload: WaveEngine.Social.ISocial.ShowAllLeaderboards*
+- uid: WaveEngine.Social.ISocial.ShowLeaderboard(System.String)
+  commentId: M:WaveEngine.Social.ISocial.ShowLeaderboard(System.String)
+  id: ShowLeaderboard(System.String)
+  parent: WaveEngine.Social.ISocial
+  langs:
+  - csharp
+  - vb
+  name: ShowLeaderboard(String)
+  nameWithType: ISocial.ShowLeaderboard(String)
+  fullName: WaveEngine.Social.ISocial.ShowLeaderboard(System.String)
+  type: Method
+  source:
+    id: ShowLeaderboard
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Social\Shared\Social\ISocial.cs
+    startLine: 58
+  assemblies:
+  - WaveEngine.Social
+  namespace: WaveEngine.Social
+  summary: "\nShows a default/system view of the given game leaderboard.\n"
+  example: []
+  syntax:
+    content: Task<bool> ShowLeaderboard(string leaderboardCode)
+    parameters:
+    - id: leaderboardCode
+      type: System.String
+      description: The leaderboard code.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: "\n<code>true</code> if the view has been shown; otherwise, <code>false</code>.\n"
+    content.vb: Function ShowLeaderboard(leaderboardCode As String) As Task(Of Boolean)
+  overload: WaveEngine.Social.ISocial.ShowLeaderboard*
+- uid: WaveEngine.Social.ISocial.AddNewScore(System.String,System.Int64)
+  commentId: M:WaveEngine.Social.ISocial.AddNewScore(System.String,System.Int64)
+  id: AddNewScore(System.String,System.Int64)
+  parent: WaveEngine.Social.ISocial
+  langs:
+  - csharp
+  - vb
+  name: AddNewScore(String, Int64)
+  nameWithType: ISocial.AddNewScore(String, Int64)
+  fullName: WaveEngine.Social.ISocial.AddNewScore(System.String, System.Int64)
+  type: Method
+  source:
+    id: AddNewScore
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Social\Shared\Social\ISocial.cs
+    startLine: 68
+  assemblies:
+  - WaveEngine.Social
+  namespace: WaveEngine.Social
+  summary: "\nAdds a new leaderboard score.\n"
+  example: []
+  syntax:
+    content: Task<bool> AddNewScore(string leaderboardCode, long score)
+    parameters:
+    - id: leaderboardCode
+      type: System.String
+      description: The leaderboard code.
+    - id: score
+      type: System.Int64
+      description: The score.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: "\n<code>true</code> if the score has been added; otherwise, <code>false</code>.\n"
+    content.vb: Function AddNewScore(leaderboardCode As String, score As Long) As Task(Of Boolean)
+  overload: WaveEngine.Social.ISocial.AddNewScore*
+- uid: WaveEngine.Social.ISocial.GetTopScores(System.String,System.Int32,System.Boolean,System.Boolean)
+  commentId: M:WaveEngine.Social.ISocial.GetTopScores(System.String,System.Int32,System.Boolean,System.Boolean)
+  id: GetTopScores(System.String,System.Int32,System.Boolean,System.Boolean)
+  parent: WaveEngine.Social.ISocial
+  langs:
+  - csharp
+  - vb
+  name: GetTopScores(String, Int32, Boolean, Boolean)
+  nameWithType: ISocial.GetTopScores(String, Int32, Boolean, Boolean)
+  fullName: WaveEngine.Social.ISocial.GetTopScores(System.String, System.Int32, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    id: GetTopScores
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Social\Shared\Social\ISocial.cs
+    startLine: 80
+  assemblies:
+  - WaveEngine.Social
+  namespace: WaveEngine.Social
+  summary: "\nGets the top page of scores for a given leaderboard.\n"
+  example: []
+  syntax:
+    content: Task<IEnumerable<LeaderboardScore>> GetTopScores(string leaderboardCode, int count, bool socialOnly, bool forceReload)
+    parameters:
+    - id: leaderboardCode
+      type: System.String
+      description: The leaderboard code.
+    - id: count
+      type: System.Int32
+      description: The maximum number of scores. Must be between 1 and 25.
+    - id: socialOnly
+      type: System.Boolean
+      description: If <code>true</code>, the result will only contain the scores of players in the viewing player&apos;s circles.
+    - id: forceReload
+      type: System.Boolean
+      description: If <code>true</code>, this call will clear any locally cached data and attempt to fetch the latest data from the server. This would commonly be used for something like a user-initiated refresh. Normally, this should be set to false to gain advantages of data caching.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{WaveEngine.Social.LeaderboardScore}}
+      description: "\nThe scores.\n"
+    content.vb: Function GetTopScores(leaderboardCode As String, count As Integer, socialOnly As Boolean, forceReload As Boolean) As Task(Of IEnumerable(Of LeaderboardScore))
+  overload: WaveEngine.Social.ISocial.GetTopScores*
+- uid: WaveEngine.Social.ISocial.GetPlayerCenteredScores(System.String,System.Int32,System.Boolean,System.Boolean)
+  commentId: M:WaveEngine.Social.ISocial.GetPlayerCenteredScores(System.String,System.Int32,System.Boolean,System.Boolean)
+  id: GetPlayerCenteredScores(System.String,System.Int32,System.Boolean,System.Boolean)
+  parent: WaveEngine.Social.ISocial
+  langs:
+  - csharp
+  - vb
+  name: GetPlayerCenteredScores(String, Int32, Boolean, Boolean)
+  nameWithType: ISocial.GetPlayerCenteredScores(String, Int32, Boolean, Boolean)
+  fullName: WaveEngine.Social.ISocial.GetPlayerCenteredScores(System.String, System.Int32, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    id: GetPlayerCenteredScores
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Social\Shared\Social\ISocial.cs
+    startLine: 92
+  assemblies:
+  - WaveEngine.Social
+  namespace: WaveEngine.Social
+  summary: "\nGets the the player-centered page of scores for a given leaderboard.\n"
+  example: []
+  syntax:
+    content: Task<IEnumerable<LeaderboardScore>> GetPlayerCenteredScores(string leaderboardCode, int count, bool socialOnly, bool forceReload)
+    parameters:
+    - id: leaderboardCode
+      type: System.String
+      description: The leaderboard code.
+    - id: count
+      type: System.Int32
+      description: The maximum number of scores. Must be between 1 and 25.
+    - id: socialOnly
+      type: System.Boolean
+      description: If <code>true</code>, the result will only contain the scores of players in the viewing player&apos;s circles.
+    - id: forceReload
+      type: System.Boolean
+      description: If <code>true</code>, this call will clear any locally cached data and attempt to fetch the latest data from the server. This would commonly be used for something like a user-initiated refresh. Normally, this should be set to false to gain advantages of data caching.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{WaveEngine.Social.LeaderboardScore}}
+      description: "\nThe scores.\n"
+    content.vb: Function GetPlayerCenteredScores(leaderboardCode As String, count As Integer, socialOnly As Boolean, forceReload As Boolean) As Task(Of IEnumerable(Of LeaderboardScore))
+  overload: WaveEngine.Social.ISocial.GetPlayerCenteredScores*
+- uid: WaveEngine.Social.ISocial.ShowAchievements
+  commentId: M:WaveEngine.Social.ISocial.ShowAchievements
+  id: ShowAchievements
+  parent: WaveEngine.Social.ISocial
+  langs:
+  - csharp
+  - vb
+  name: ShowAchievements()
+  nameWithType: ISocial.ShowAchievements()
+  fullName: WaveEngine.Social.ISocial.ShowAchievements()
+  type: Method
+  source:
+    id: ShowAchievements
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Social\Shared\Social\ISocial.cs
+    startLine: 100
+  assemblies:
+  - WaveEngine.Social
+  namespace: WaveEngine.Social
+  summary: "\nShows a default/system view of the games achievements.\n"
+  example: []
+  syntax:
+    content: Task<bool> ShowAchievements()
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: "\n<code>true</code> if the view has been shown; otherwise, <code>false</code>.\n"
+    content.vb: Function ShowAchievements As Task(Of Boolean)
+  overload: WaveEngine.Social.ISocial.ShowAchievements*
+- uid: WaveEngine.Social.ISocial.UnlockAchievement(System.String)
+  commentId: M:WaveEngine.Social.ISocial.UnlockAchievement(System.String)
+  id: UnlockAchievement(System.String)
+  parent: WaveEngine.Social.ISocial
+  langs:
+  - csharp
+  - vb
+  name: UnlockAchievement(String)
+  nameWithType: ISocial.UnlockAchievement(String)
+  fullName: WaveEngine.Social.ISocial.UnlockAchievement(System.String)
+  type: Method
+  source:
+    id: UnlockAchievement
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Social\Shared\Social\ISocial.cs
+    startLine: 109
+  assemblies:
+  - WaveEngine.Social
+  namespace: WaveEngine.Social
+  summary: "\nUnlocks the achievement.\n"
+  example: []
+  syntax:
+    content: Task<bool> UnlockAchievement(string achievementCode)
+    parameters:
+    - id: achievementCode
+      type: System.String
+      description: The achievement code.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: "\n<code>true</code> if the achievement has been unlocked; otherwise, <code>false</code>.\n"
+    content.vb: Function UnlockAchievement(achievementCode As String) As Task(Of Boolean)
+  overload: WaveEngine.Social.ISocial.UnlockAchievement*
+- uid: WaveEngine.Social.ISocial.IncrementAchievement(System.String,System.Int32)
+  commentId: M:WaveEngine.Social.ISocial.IncrementAchievement(System.String,System.Int32)
+  id: IncrementAchievement(System.String,System.Int32)
+  parent: WaveEngine.Social.ISocial
+  langs:
+  - csharp
+  - vb
+  name: IncrementAchievement(String, Int32)
+  nameWithType: ISocial.IncrementAchievement(String, Int32)
+  fullName: WaveEngine.Social.ISocial.IncrementAchievement(System.String, System.Int32)
+  type: Method
+  source:
+    id: IncrementAchievement
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Social\Shared\Social\ISocial.cs
+    startLine: 119
+  assemblies:
+  - WaveEngine.Social
+  namespace: WaveEngine.Social
+  summary: "\nIncrements the achievement progress.\n"
+  example: []
+  syntax:
+    content: Task<bool> IncrementAchievement(string achievementCode, int progress)
+    parameters:
+    - id: achievementCode
+      type: System.String
+      description: The achievement code.
+    - id: progress
+      type: System.Int32
+      description: The progress.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: "\n<code>true</code> if the achievement has been incremented; otherwise, <code>false</code>.\n"
+    content.vb: Function IncrementAchievement(achievementCode As String, progress As Integer) As Task(Of Boolean)
+  overload: WaveEngine.Social.ISocial.IncrementAchievement*
+- uid: WaveEngine.Social.ISocial.GetAchievements
+  commentId: M:WaveEngine.Social.ISocial.GetAchievements
+  id: GetAchievements
+  parent: WaveEngine.Social.ISocial
+  langs:
+  - csharp
+  - vb
+  name: GetAchievements()
+  nameWithType: ISocial.GetAchievements()
+  fullName: WaveEngine.Social.ISocial.GetAchievements()
+  type: Method
+  source:
+    id: GetAchievements
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Social\Shared\Social\ISocial.cs
+    startLine: 127
+  assemblies:
+  - WaveEngine.Social
+  namespace: WaveEngine.Social
+  summary: "\nGets the achievements.\n"
+  example: []
+  syntax:
+    content: Task<IEnumerable<Achievement>> GetAchievements()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{WaveEngine.Social.Achievement}}
+      description: "\nThe achievements.\n"
+    content.vb: Function GetAchievements As Task(Of IEnumerable(Of Achievement))
+  overload: WaveEngine.Social.ISocial.GetAchievements*
+references:
+- uid: WaveEngine.Social
+  commentId: N:WaveEngine.Social
+  name: WaveEngine.Social
+  nameWithType: WaveEngine.Social
+  fullName: WaveEngine.Social
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Social.ISocial.IsAuthenticated*
+  commentId: Overload:WaveEngine.Social.ISocial.IsAuthenticated
+  name: IsAuthenticated
+  nameWithType: ISocial.IsAuthenticated
+  fullName: WaveEngine.Social.ISocial.IsAuthenticated
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Social.ISocial.Init*
+  commentId: Overload:WaveEngine.Social.ISocial.Init
+  name: Init
+  nameWithType: ISocial.Init
+  fullName: WaveEngine.Social.ISocial.Init
+- uid: WaveEngine.Social.ISocial.Login*
+  commentId: Overload:WaveEngine.Social.ISocial.Login
+  name: Login
+  nameWithType: ISocial.Login
+  fullName: WaveEngine.Social.ISocial.Login
+- uid: System.Threading.Tasks.Task{WaveEngine.Social.Player}
+  commentId: T:System.Threading.Tasks.Task{WaveEngine.Social.Player}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Player>
+  nameWithType: Task<Player>
+  fullName: System.Threading.Tasks.Task<WaveEngine.Social.Player>
+  nameWithType.vb: Task(Of Player)
+  fullName.vb: System.Threading.Tasks.Task(Of WaveEngine.Social.Player)
+  name.vb: Task(Of Player)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Social.Player
+    name: Player
+    nameWithType: Player
+    fullName: WaveEngine.Social.Player
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Social.Player
+    name: Player
+    nameWithType: Player
+    fullName: WaveEngine.Social.Player
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: WaveEngine.Social.ISocial.Logout*
+  commentId: Overload:WaveEngine.Social.ISocial.Logout
+  name: Logout
+  nameWithType: ISocial.Logout
+  fullName: WaveEngine.Social.ISocial.Logout
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Social.ISocial.ShowAllLeaderboards*
+  commentId: Overload:WaveEngine.Social.ISocial.ShowAllLeaderboards
+  name: ShowAllLeaderboards
+  nameWithType: ISocial.ShowAllLeaderboards
+  fullName: WaveEngine.Social.ISocial.ShowAllLeaderboards
+- uid: WaveEngine.Social.ISocial.ShowLeaderboard*
+  commentId: Overload:WaveEngine.Social.ISocial.ShowLeaderboard
+  name: ShowLeaderboard
+  nameWithType: ISocial.ShowLeaderboard
+  fullName: WaveEngine.Social.ISocial.ShowLeaderboard
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: WaveEngine.Social.ISocial.AddNewScore*
+  commentId: Overload:WaveEngine.Social.ISocial.AddNewScore
+  name: AddNewScore
+  nameWithType: ISocial.AddNewScore
+  fullName: WaveEngine.Social.ISocial.AddNewScore
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: WaveEngine.Social.ISocial.GetTopScores*
+  commentId: Overload:WaveEngine.Social.ISocial.GetTopScores
+  name: GetTopScores
+  nameWithType: ISocial.GetTopScores
+  fullName: WaveEngine.Social.ISocial.GetTopScores
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{WaveEngine.Social.LeaderboardScore}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{WaveEngine.Social.LeaderboardScore}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IEnumerable<LeaderboardScore>>
+  nameWithType: Task<IEnumerable<LeaderboardScore>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<WaveEngine.Social.LeaderboardScore>>
+  nameWithType.vb: Task(Of IEnumerable(Of LeaderboardScore))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of WaveEngine.Social.LeaderboardScore))
+  name.vb: Task(Of IEnumerable(Of LeaderboardScore))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Social.LeaderboardScore
+    name: LeaderboardScore
+    nameWithType: LeaderboardScore
+    fullName: WaveEngine.Social.LeaderboardScore
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Social.LeaderboardScore
+    name: LeaderboardScore
+    nameWithType: LeaderboardScore
+    fullName: WaveEngine.Social.LeaderboardScore
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Social.ISocial.GetPlayerCenteredScores*
+  commentId: Overload:WaveEngine.Social.ISocial.GetPlayerCenteredScores
+  name: GetPlayerCenteredScores
+  nameWithType: ISocial.GetPlayerCenteredScores
+  fullName: WaveEngine.Social.ISocial.GetPlayerCenteredScores
+- uid: WaveEngine.Social.ISocial.ShowAchievements*
+  commentId: Overload:WaveEngine.Social.ISocial.ShowAchievements
+  name: ShowAchievements
+  nameWithType: ISocial.ShowAchievements
+  fullName: WaveEngine.Social.ISocial.ShowAchievements
+- uid: WaveEngine.Social.ISocial.UnlockAchievement*
+  commentId: Overload:WaveEngine.Social.ISocial.UnlockAchievement
+  name: UnlockAchievement
+  nameWithType: ISocial.UnlockAchievement
+  fullName: WaveEngine.Social.ISocial.UnlockAchievement
+- uid: WaveEngine.Social.ISocial.IncrementAchievement*
+  commentId: Overload:WaveEngine.Social.ISocial.IncrementAchievement
+  name: IncrementAchievement
+  nameWithType: ISocial.IncrementAchievement
+  fullName: WaveEngine.Social.ISocial.IncrementAchievement
+- uid: WaveEngine.Social.ISocial.GetAchievements*
+  commentId: Overload:WaveEngine.Social.ISocial.GetAchievements
+  name: GetAchievements
+  nameWithType: ISocial.GetAchievements
+  fullName: WaveEngine.Social.ISocial.GetAchievements
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{WaveEngine.Social.Achievement}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{WaveEngine.Social.Achievement}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IEnumerable<Achievement>>
+  nameWithType: Task<IEnumerable<Achievement>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<WaveEngine.Social.Achievement>>
+  nameWithType.vb: Task(Of IEnumerable(Of Achievement))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of WaveEngine.Social.Achievement))
+  name.vb: Task(Of IEnumerable(Of Achievement))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Social.Achievement
+    name: Achievement
+    nameWithType: Achievement
+    fullName: WaveEngine.Social.Achievement
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Social.Achievement
+    name: Achievement
+    nameWithType: Achievement
+    fullName: WaveEngine.Social.Achievement
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )

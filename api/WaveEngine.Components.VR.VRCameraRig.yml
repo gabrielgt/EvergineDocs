@@ -1,0 +1,2647 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Components.VR.VRCameraRig
+  commentId: T:WaveEngine.Components.VR.VRCameraRig
+  id: VRCameraRig
+  parent: WaveEngine.Components.VR
+  children:
+  - WaveEngine.Components.VR.VRCameraRig.AttachedCamera
+  - WaveEngine.Components.VR.VRCameraRig.BackgroundColor
+  - WaveEngine.Components.VR.VRCameraRig.CenterEyeAnchor
+  - WaveEngine.Components.VR.VRCameraRig.CenterEyeAnchorTransform
+  - WaveEngine.Components.VR.VRCameraRig.ClearFlags
+  - WaveEngine.Components.VR.VRCameraRig.Controllers
+  - WaveEngine.Components.VR.VRCameraRig.DefaultValues
+  - WaveEngine.Components.VR.VRCameraRig.Disable
+  - WaveEngine.Components.VR.VRCameraRig.FarPlane
+  - WaveEngine.Components.VR.VRCameraRig.Initialize
+  - WaveEngine.Components.VR.VRCameraRig.LeftController
+  - WaveEngine.Components.VR.VRCameraRig.LeftControllerAnchor
+  - WaveEngine.Components.VR.VRCameraRig.LeftControllerAnchorTransform
+  - WaveEngine.Components.VR.VRCameraRig.LeftEyeAnchor
+  - WaveEngine.Components.VR.VRCameraRig.LeftEyeAnchorTransform
+  - WaveEngine.Components.VR.VRCameraRig.LeftEyeCamera
+  - WaveEngine.Components.VR.VRCameraRig.Monoscopic
+  - WaveEngine.Components.VR.VRCameraRig.NearPlane
+  - WaveEngine.Components.VR.VRCameraRig.RightController
+  - WaveEngine.Components.VR.VRCameraRig.RightControllerAnchor
+  - WaveEngine.Components.VR.VRCameraRig.RightControllerAnchorTransform
+  - WaveEngine.Components.VR.VRCameraRig.RightEyeAnchor
+  - WaveEngine.Components.VR.VRCameraRig.RightEyeAnchorTransform
+  - WaveEngine.Components.VR.VRCameraRig.RightEyeCamera
+  - WaveEngine.Components.VR.VRCameraRig.TrackerAnchor
+  - WaveEngine.Components.VR.VRCameraRig.TrackerAnchorTransform
+  - WaveEngine.Components.VR.VRCameraRig.TrackingSpace
+  - WaveEngine.Components.VR.VRCameraRig.TrackingSpaceTransform
+  - WaveEngine.Components.VR.VRCameraRig.Update(System.TimeSpan)
+  - WaveEngine.Components.VR.VRCameraRig.UpdatedAnchors
+  - WaveEngine.Components.VR.VRCameraRig.VRMode
+  langs:
+  - csharp
+  - vb
+  name: VRCameraRig
+  nameWithType: VRCameraRig
+  fullName: WaveEngine.Components.VR.VRCameraRig
+  type: Class
+  source:
+    id: VRCameraRig
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 21
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nOculus Rift manager\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      [RefreshEntityRequired]
+
+      public class VRCameraRig : Behavior
+    content.vb: >-
+      <DataContract>
+
+      <RefreshEntityRequired>
+
+      Public Class VRCameraRig
+
+          Inherits Behavior
+  inheritance:
+  - System.Object
+  - WaveEngine.Common.IO.SerializableObject
+  - WaveEngine.Framework.DependencyObject
+  - WaveEngine.Framework.Component
+  - WaveEngine.Framework.Behavior
+  inheritedMembers:
+  - WaveEngine.Framework.Behavior.Family
+  - WaveEngine.Framework.Behavior.IsActive
+  - WaveEngine.Framework.Behavior.UpdateOrder
+  - WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+  - WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+  - WaveEngine.Framework.Component.isInitialized
+  - WaveEngine.Framework.Component.OnComponentInitialized
+  - WaveEngine.Framework.Component.OnComponentRemoved
+  - WaveEngine.Framework.Component.Name
+  - WaveEngine.Framework.Component.Owner
+  - WaveEngine.Framework.Component.Assets
+  - WaveEngine.Framework.Component.EntityManager
+  - WaveEngine.Framework.Component.BehaviorManager
+  - WaveEngine.Framework.Component.RenderManager
+  - WaveEngine.Framework.Component.Clone
+  - WaveEngine.Framework.Component.ToString
+  - WaveEngine.Framework.Component.ResolveDependencies
+  - WaveEngine.Framework.Component.Removed
+  - WaveEngine.Framework.Component.DeleteDependencies
+  - WaveEngine.Framework.DependencyObject.PropertyChanged
+  - WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  - WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  - WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  - WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RefreshEntityRequired
+    ctor: WaveEngine.Common.Attributes.RefreshEntityRequired.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WaveEngine.Components.VR.VRCameraRig.UpdatedAnchors
+  commentId: E:WaveEngine.Components.VR.VRCameraRig.UpdatedAnchors
+  id: UpdatedAnchors
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: UpdatedAnchors
+  nameWithType: VRCameraRig.UpdatedAnchors
+  fullName: WaveEngine.Components.VR.VRCameraRig.UpdatedAnchors
+  type: Event
+  source:
+    id: UpdatedAnchors
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 53
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nOccurs when the eye pose anchors have been set.\n"
+  example: []
+  syntax:
+    content: public event Action<VRCameraRig> UpdatedAnchors
+    return:
+      type: System.Action{WaveEngine.Components.VR.VRCameraRig}
+    content.vb: Public Event UpdatedAnchors As Action(Of VRCameraRig)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.VR.VRCameraRig.Monoscopic
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.Monoscopic
+  id: Monoscopic
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: Monoscopic
+  nameWithType: VRCameraRig.Monoscopic
+  fullName: WaveEngine.Components.VR.VRCameraRig.Monoscopic
+  type: Property
+  source:
+    id: Monoscopic
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 100
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets or sets a value indicating whether the the eyes see the same image, which is rendered only by the left camera.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public bool Monoscopic { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <DataMember>
+
+      Public Property Monoscopic As Boolean
+  overload: WaveEngine.Components.VR.VRCameraRig.Monoscopic*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.VR.VRCameraRig.VRMode
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.VRMode
+  id: VRMode
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: VRMode
+  nameWithType: VRCameraRig.VRMode
+  fullName: WaveEngine.Components.VR.VRCameraRig.VRMode
+  type: Property
+  source:
+    id: VRMode
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 110
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets or sets th VR rendering mode.\n"
+  example: []
+  syntax:
+    content: public VRMode VRMode { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.VR.VRMode
+    content.vb: Public Property VRMode As VRMode
+  overload: WaveEngine.Components.VR.VRCameraRig.VRMode*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.VR.VRCameraRig.Disable
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.Disable
+  id: Disable
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: Disable
+  nameWithType: VRCameraRig.Disable
+  fullName: WaveEngine.Components.VR.VRCameraRig.Disable
+  type: Property
+  source:
+    id: Disable
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 130
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets or sets a value indicating whether the the eyes see the same image, which is rendered only by the left camera.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public bool Disable { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <DataMember>
+
+      Public Property Disable As Boolean
+  overload: WaveEngine.Components.VR.VRCameraRig.Disable*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.VR.VRCameraRig.LeftEyeCamera
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.LeftEyeCamera
+  id: LeftEyeCamera
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: LeftEyeCamera
+  nameWithType: VRCameraRig.LeftEyeCamera
+  fullName: WaveEngine.Components.VR.VRCameraRig.LeftEyeCamera
+  type: Property
+  source:
+    id: LeftEyeCamera
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 140
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets the left eye camera.\n"
+  example: []
+  syntax:
+    content: public Camera3D LeftEyeCamera { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Graphics.Camera3D
+    content.vb: Public ReadOnly Property LeftEyeCamera As Camera3D
+  overload: WaveEngine.Components.VR.VRCameraRig.LeftEyeCamera*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.VR.VRCameraRig.RightEyeCamera
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.RightEyeCamera
+  id: RightEyeCamera
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: RightEyeCamera
+  nameWithType: VRCameraRig.RightEyeCamera
+  fullName: WaveEngine.Components.VR.VRCameraRig.RightEyeCamera
+  type: Property
+  source:
+    id: RightEyeCamera
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 150
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets the right eye camera.\n"
+  example: []
+  syntax:
+    content: public Camera3D RightEyeCamera { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Graphics.Camera3D
+    content.vb: Public ReadOnly Property RightEyeCamera As Camera3D
+  overload: WaveEngine.Components.VR.VRCameraRig.RightEyeCamera*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.VR.VRCameraRig.AttachedCamera
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.AttachedCamera
+  id: AttachedCamera
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: AttachedCamera
+  nameWithType: VRCameraRig.AttachedCamera
+  fullName: WaveEngine.Components.VR.VRCameraRig.AttachedCamera
+  type: Property
+  source:
+    id: AttachedCamera
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 160
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets the attached camera. This camera is mounted in the Central Eye anchor\n"
+  example: []
+  syntax:
+    content: public Camera3D AttachedCamera { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Graphics.Camera3D
+    content.vb: Public ReadOnly Property AttachedCamera As Camera3D
+  overload: WaveEngine.Components.VR.VRCameraRig.AttachedCamera*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.VR.VRCameraRig.TrackingSpace
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.TrackingSpace
+  id: TrackingSpace
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: TrackingSpace
+  nameWithType: VRCameraRig.TrackingSpace
+  fullName: WaveEngine.Components.VR.VRCameraRig.TrackingSpace
+  type: Property
+  source:
+    id: TrackingSpace
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 170
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets the root entity for all anchors in tracking space.\n"
+  example: []
+  syntax:
+    content: public Entity TrackingSpace { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Entity
+    content.vb: Public ReadOnly Property TrackingSpace As Entity
+  overload: WaveEngine.Components.VR.VRCameraRig.TrackingSpace*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.VR.VRCameraRig.LeftEyeAnchor
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.LeftEyeAnchor
+  id: LeftEyeAnchor
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: LeftEyeAnchor
+  nameWithType: VRCameraRig.LeftEyeAnchor
+  fullName: WaveEngine.Components.VR.VRCameraRig.LeftEyeAnchor
+  type: Property
+  source:
+    id: LeftEyeAnchor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 180
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets the root entity that always coincides with the pose of the left eye.\n"
+  example: []
+  syntax:
+    content: public Entity LeftEyeAnchor { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Entity
+    content.vb: Public ReadOnly Property LeftEyeAnchor As Entity
+  overload: WaveEngine.Components.VR.VRCameraRig.LeftEyeAnchor*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.VR.VRCameraRig.RightEyeAnchor
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.RightEyeAnchor
+  id: RightEyeAnchor
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: RightEyeAnchor
+  nameWithType: VRCameraRig.RightEyeAnchor
+  fullName: WaveEngine.Components.VR.VRCameraRig.RightEyeAnchor
+  type: Property
+  source:
+    id: RightEyeAnchor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 190
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets the root entity that always coincides with the pose of the right eye.\n"
+  example: []
+  syntax:
+    content: public Entity RightEyeAnchor { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Entity
+    content.vb: Public ReadOnly Property RightEyeAnchor As Entity
+  overload: WaveEngine.Components.VR.VRCameraRig.RightEyeAnchor*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.VR.VRCameraRig.CenterEyeAnchor
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.CenterEyeAnchor
+  id: CenterEyeAnchor
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: CenterEyeAnchor
+  nameWithType: VRCameraRig.CenterEyeAnchor
+  fullName: WaveEngine.Components.VR.VRCameraRig.CenterEyeAnchor
+  type: Property
+  source:
+    id: CenterEyeAnchor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 200
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets the root entity that always coincides with average of the left and right eye poses.\n"
+  example: []
+  syntax:
+    content: public Entity CenterEyeAnchor { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Entity
+    content.vb: Public ReadOnly Property CenterEyeAnchor As Entity
+  overload: WaveEngine.Components.VR.VRCameraRig.CenterEyeAnchor*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.VR.VRCameraRig.TrackerAnchor
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.TrackerAnchor
+  id: TrackerAnchor
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: TrackerAnchor
+  nameWithType: VRCameraRig.TrackerAnchor
+  fullName: WaveEngine.Components.VR.VRCameraRig.TrackerAnchor
+  type: Property
+  source:
+    id: TrackerAnchor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 210
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets the root entity that always coincides with the pose of the tracker.\n"
+  example: []
+  syntax:
+    content: public Entity TrackerAnchor { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Entity
+    content.vb: Public ReadOnly Property TrackerAnchor As Entity
+  overload: WaveEngine.Components.VR.VRCameraRig.TrackerAnchor*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.VR.VRCameraRig.LeftControllerAnchor
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.LeftControllerAnchor
+  id: LeftControllerAnchor
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: LeftControllerAnchor
+  nameWithType: VRCameraRig.LeftControllerAnchor
+  fullName: WaveEngine.Components.VR.VRCameraRig.LeftControllerAnchor
+  type: Property
+  source:
+    id: LeftControllerAnchor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 220
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets the root entity that always coincides with the pose of the left controller.\n"
+  example: []
+  syntax:
+    content: public Entity LeftControllerAnchor { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Entity
+    content.vb: Public ReadOnly Property LeftControllerAnchor As Entity
+  overload: WaveEngine.Components.VR.VRCameraRig.LeftControllerAnchor*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.VR.VRCameraRig.RightControllerAnchor
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.RightControllerAnchor
+  id: RightControllerAnchor
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: RightControllerAnchor
+  nameWithType: VRCameraRig.RightControllerAnchor
+  fullName: WaveEngine.Components.VR.VRCameraRig.RightControllerAnchor
+  type: Property
+  source:
+    id: RightControllerAnchor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 230
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets the root entity that always coincides with the pose of the right controller.\n"
+  example: []
+  syntax:
+    content: public Entity RightControllerAnchor { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Entity
+    content.vb: Public ReadOnly Property RightControllerAnchor As Entity
+  overload: WaveEngine.Components.VR.VRCameraRig.RightControllerAnchor*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.VR.VRCameraRig.TrackingSpaceTransform
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.TrackingSpaceTransform
+  id: TrackingSpaceTransform
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: TrackingSpaceTransform
+  nameWithType: VRCameraRig.TrackingSpaceTransform
+  fullName: WaveEngine.Components.VR.VRCameraRig.TrackingSpaceTransform
+  type: Property
+  source:
+    id: TrackingSpaceTransform
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 240
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets the root transform for all anchors in tracking space.\n"
+  example: []
+  syntax:
+    content: public Transform3D TrackingSpaceTransform { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Graphics.Transform3D
+    content.vb: Public ReadOnly Property TrackingSpaceTransform As Transform3D
+  overload: WaveEngine.Components.VR.VRCameraRig.TrackingSpaceTransform*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.VR.VRCameraRig.LeftEyeAnchorTransform
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.LeftEyeAnchorTransform
+  id: LeftEyeAnchorTransform
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: LeftEyeAnchorTransform
+  nameWithType: VRCameraRig.LeftEyeAnchorTransform
+  fullName: WaveEngine.Components.VR.VRCameraRig.LeftEyeAnchorTransform
+  type: Property
+  source:
+    id: LeftEyeAnchorTransform
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 250
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets the root transform that always coincides with the pose of the left eye.\n"
+  example: []
+  syntax:
+    content: public Transform3D LeftEyeAnchorTransform { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Graphics.Transform3D
+    content.vb: Public ReadOnly Property LeftEyeAnchorTransform As Transform3D
+  overload: WaveEngine.Components.VR.VRCameraRig.LeftEyeAnchorTransform*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.VR.VRCameraRig.RightEyeAnchorTransform
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.RightEyeAnchorTransform
+  id: RightEyeAnchorTransform
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: RightEyeAnchorTransform
+  nameWithType: VRCameraRig.RightEyeAnchorTransform
+  fullName: WaveEngine.Components.VR.VRCameraRig.RightEyeAnchorTransform
+  type: Property
+  source:
+    id: RightEyeAnchorTransform
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 260
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets the root transform that always coincides with the pose of the right eye.\n"
+  example: []
+  syntax:
+    content: public Transform3D RightEyeAnchorTransform { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Graphics.Transform3D
+    content.vb: Public ReadOnly Property RightEyeAnchorTransform As Transform3D
+  overload: WaveEngine.Components.VR.VRCameraRig.RightEyeAnchorTransform*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.VR.VRCameraRig.LeftController
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.LeftController
+  id: LeftController
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: LeftController
+  nameWithType: VRCameraRig.LeftController
+  fullName: WaveEngine.Components.VR.VRCameraRig.LeftController
+  type: Property
+  source:
+    id: LeftController
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 270
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets the VRController instance associated to the left controller.\n"
+  example: []
+  syntax:
+    content: public VRController LeftController { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Components.VR.VRController
+    content.vb: Public ReadOnly Property LeftController As VRController
+  overload: WaveEngine.Components.VR.VRCameraRig.LeftController*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.VR.VRCameraRig.RightController
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.RightController
+  id: RightController
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: RightController
+  nameWithType: VRCameraRig.RightController
+  fullName: WaveEngine.Components.VR.VRCameraRig.RightController
+  type: Property
+  source:
+    id: RightController
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 280
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets the VRController instance associated to the roght controller.\n"
+  example: []
+  syntax:
+    content: public VRController RightController { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Components.VR.VRController
+    content.vb: Public ReadOnly Property RightController As VRController
+  overload: WaveEngine.Components.VR.VRCameraRig.RightController*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.VR.VRCameraRig.Controllers
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.Controllers
+  id: Controllers
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: Controllers
+  nameWithType: VRCameraRig.Controllers
+  fullName: WaveEngine.Components.VR.VRCameraRig.Controllers
+  type: Property
+  source:
+    id: Controllers
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 290
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets the controller list\n"
+  example: []
+  syntax:
+    content: public IEnumerable<VRController> Controllers { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{WaveEngine.Components.VR.VRController}
+    content.vb: Public ReadOnly Property Controllers As IEnumerable(Of VRController)
+  overload: WaveEngine.Components.VR.VRCameraRig.Controllers*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.VR.VRCameraRig.CenterEyeAnchorTransform
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.CenterEyeAnchorTransform
+  id: CenterEyeAnchorTransform
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: CenterEyeAnchorTransform
+  nameWithType: VRCameraRig.CenterEyeAnchorTransform
+  fullName: WaveEngine.Components.VR.VRCameraRig.CenterEyeAnchorTransform
+  type: Property
+  source:
+    id: CenterEyeAnchorTransform
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 301
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets the root transform that always coincides with average of the left and right eye poses.\n"
+  example: []
+  syntax:
+    content: public Transform3D CenterEyeAnchorTransform { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Graphics.Transform3D
+    content.vb: Public ReadOnly Property CenterEyeAnchorTransform As Transform3D
+  overload: WaveEngine.Components.VR.VRCameraRig.CenterEyeAnchorTransform*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.VR.VRCameraRig.TrackerAnchorTransform
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.TrackerAnchorTransform
+  id: TrackerAnchorTransform
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: TrackerAnchorTransform
+  nameWithType: VRCameraRig.TrackerAnchorTransform
+  fullName: WaveEngine.Components.VR.VRCameraRig.TrackerAnchorTransform
+  type: Property
+  source:
+    id: TrackerAnchorTransform
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 311
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets the root transform that always coincides with the pose of the tracker.\n"
+  example: []
+  syntax:
+    content: public Transform3D TrackerAnchorTransform { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Graphics.Transform3D
+    content.vb: Public ReadOnly Property TrackerAnchorTransform As Transform3D
+  overload: WaveEngine.Components.VR.VRCameraRig.TrackerAnchorTransform*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.VR.VRCameraRig.LeftControllerAnchorTransform
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.LeftControllerAnchorTransform
+  id: LeftControllerAnchorTransform
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: LeftControllerAnchorTransform
+  nameWithType: VRCameraRig.LeftControllerAnchorTransform
+  fullName: WaveEngine.Components.VR.VRCameraRig.LeftControllerAnchorTransform
+  type: Property
+  source:
+    id: LeftControllerAnchorTransform
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 321
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets the root transform that always coincides with the pose of the left controller.\n"
+  example: []
+  syntax:
+    content: public Transform3D LeftControllerAnchorTransform { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Graphics.Transform3D
+    content.vb: Public ReadOnly Property LeftControllerAnchorTransform As Transform3D
+  overload: WaveEngine.Components.VR.VRCameraRig.LeftControllerAnchorTransform*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.VR.VRCameraRig.RightControllerAnchorTransform
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.RightControllerAnchorTransform
+  id: RightControllerAnchorTransform
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: RightControllerAnchorTransform
+  nameWithType: VRCameraRig.RightControllerAnchorTransform
+  fullName: WaveEngine.Components.VR.VRCameraRig.RightControllerAnchorTransform
+  type: Property
+  source:
+    id: RightControllerAnchorTransform
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 331
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets the root transform that always coincides with the pose of the right controller.\n"
+  example: []
+  syntax:
+    content: public Transform3D RightControllerAnchorTransform { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Graphics.Transform3D
+    content.vb: Public ReadOnly Property RightControllerAnchorTransform As Transform3D
+  overload: WaveEngine.Components.VR.VRCameraRig.RightControllerAnchorTransform*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.VR.VRCameraRig.NearPlane
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.NearPlane
+  id: NearPlane
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: NearPlane
+  nameWithType: VRCameraRig.NearPlane
+  fullName: WaveEngine.Components.VR.VRCameraRig.NearPlane
+  type: Property
+  source:
+    id: NearPlane
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 341
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets or sets the Near plane of the camera\n"
+  example: []
+  syntax:
+    content: public float NearPlane { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property NearPlane As Single
+  overload: WaveEngine.Components.VR.VRCameraRig.NearPlane*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.VR.VRCameraRig.FarPlane
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.FarPlane
+  id: FarPlane
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: FarPlane
+  nameWithType: VRCameraRig.FarPlane
+  fullName: WaveEngine.Components.VR.VRCameraRig.FarPlane
+  type: Property
+  source:
+    id: FarPlane
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 358
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets or sets the Far plane of the camera\n"
+  example: []
+  syntax:
+    content: public float FarPlane { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property FarPlane As Single
+  overload: WaveEngine.Components.VR.VRCameraRig.FarPlane*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.VR.VRCameraRig.BackgroundColor
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.BackgroundColor
+  id: BackgroundColor
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: BackgroundColor
+  nameWithType: VRCameraRig.BackgroundColor
+  fullName: WaveEngine.Components.VR.VRCameraRig.BackgroundColor
+  type: Property
+  source:
+    id: BackgroundColor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 375
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets or sets the background color of the camera\n"
+  example: []
+  syntax:
+    content: public Color BackgroundColor { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Graphics.Color
+    content.vb: Public Property BackgroundColor As Color
+  overload: WaveEngine.Components.VR.VRCameraRig.BackgroundColor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.VR.VRCameraRig.ClearFlags
+  commentId: P:WaveEngine.Components.VR.VRCameraRig.ClearFlags
+  id: ClearFlags
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: ClearFlags
+  nameWithType: VRCameraRig.ClearFlags
+  fullName: WaveEngine.Components.VR.VRCameraRig.ClearFlags
+  type: Property
+  source:
+    id: ClearFlags
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 392
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nGets or sets the clear flags of the camera\n"
+  example: []
+  syntax:
+    content: public ClearFlags ClearFlags { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Graphics.ClearFlags
+    content.vb: Public Property ClearFlags As ClearFlags
+  overload: WaveEngine.Components.VR.VRCameraRig.ClearFlags*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.VR.VRCameraRig.DefaultValues
+  commentId: M:WaveEngine.Components.VR.VRCameraRig.DefaultValues
+  id: DefaultValues
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: DefaultValues()
+  nameWithType: VRCameraRig.DefaultValues()
+  fullName: WaveEngine.Components.VR.VRCameraRig.DefaultValues()
+  type: Method
+  source:
+    id: DefaultValues
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 412
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nDefault values\n"
+  example: []
+  syntax:
+    content: protected override void DefaultValues()
+    content.vb: Protected Overrides Sub DefaultValues
+  overridden: WaveEngine.Framework.Behavior.DefaultValues
+  overload: WaveEngine.Components.VR.VRCameraRig.DefaultValues*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Components.VR.VRCameraRig.Initialize
+  commentId: M:WaveEngine.Components.VR.VRCameraRig.Initialize
+  id: Initialize
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: VRCameraRig.Initialize()
+  fullName: WaveEngine.Components.VR.VRCameraRig.Initialize()
+  type: Method
+  source:
+    id: Initialize
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 429
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nInitializes the OVR entities\n"
+  example: []
+  syntax:
+    content: protected override void Initialize()
+    content.vb: Protected Overrides Sub Initialize
+  overridden: WaveEngine.Framework.Component.Initialize
+  overload: WaveEngine.Components.VR.VRCameraRig.Initialize*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Components.VR.VRCameraRig.Update(System.TimeSpan)
+  commentId: M:WaveEngine.Components.VR.VRCameraRig.Update(System.TimeSpan)
+  id: Update(System.TimeSpan)
+  parent: WaveEngine.Components.VR.VRCameraRig
+  langs:
+  - csharp
+  - vb
+  name: Update(TimeSpan)
+  nameWithType: VRCameraRig.Update(TimeSpan)
+  fullName: WaveEngine.Components.VR.VRCameraRig.Update(System.TimeSpan)
+  type: Method
+  source:
+    id: Update
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\VR\VRCameraRig.cs
+    startLine: 439
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.VR
+  summary: "\nUpdate the behavior\n"
+  example: []
+  syntax:
+    content: protected override void Update(TimeSpan gameTime)
+    parameters:
+    - id: gameTime
+      type: System.TimeSpan
+      description: The current game time.
+    content.vb: Protected Overrides Sub Update(gameTime As TimeSpan)
+  overridden: WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+  overload: WaveEngine.Components.VR.VRCameraRig.Update*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: WaveEngine.Components.VR
+  commentId: N:WaveEngine.Components.VR
+  name: WaveEngine.Components.VR
+  nameWithType: WaveEngine.Components.VR
+  fullName: WaveEngine.Components.VR
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.IO.SerializableObject
+  commentId: T:WaveEngine.Common.IO.SerializableObject
+  parent: WaveEngine.Common.IO
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: WaveEngine.Common.IO.SerializableObject
+- uid: WaveEngine.Framework.DependencyObject
+  commentId: T:WaveEngine.Framework.DependencyObject
+  parent: WaveEngine.Framework
+  name: DependencyObject
+  nameWithType: DependencyObject
+  fullName: WaveEngine.Framework.DependencyObject
+- uid: WaveEngine.Framework.Component
+  commentId: T:WaveEngine.Framework.Component
+  parent: WaveEngine.Framework
+  name: Component
+  nameWithType: Component
+  fullName: WaveEngine.Framework.Component
+- uid: WaveEngine.Framework.Behavior
+  commentId: T:WaveEngine.Framework.Behavior
+  parent: WaveEngine.Framework
+  name: Behavior
+  nameWithType: Behavior
+  fullName: WaveEngine.Framework.Behavior
+- uid: WaveEngine.Framework.Behavior.Family
+  commentId: P:WaveEngine.Framework.Behavior.Family
+  parent: WaveEngine.Framework.Behavior
+  name: Family
+  nameWithType: Behavior.Family
+  fullName: WaveEngine.Framework.Behavior.Family
+- uid: WaveEngine.Framework.Behavior.IsActive
+  commentId: P:WaveEngine.Framework.Behavior.IsActive
+  parent: WaveEngine.Framework.Behavior
+  name: IsActive
+  nameWithType: Behavior.IsActive
+  fullName: WaveEngine.Framework.Behavior.IsActive
+- uid: WaveEngine.Framework.Behavior.UpdateOrder
+  commentId: P:WaveEngine.Framework.Behavior.UpdateOrder
+  parent: WaveEngine.Framework.Behavior
+  name: UpdateOrder
+  nameWithType: Behavior.UpdateOrder
+  fullName: WaveEngine.Framework.Behavior.UpdateOrder
+- uid: WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+  commentId: M:WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+  parent: WaveEngine.Framework.Behavior
+  isExternal: true
+  name: BaseActiveNotification(Boolean)
+  nameWithType: Behavior.BaseActiveNotification(Boolean)
+  fullName: WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+    name: BaseActiveNotification
+    nameWithType: Behavior.BaseActiveNotification
+    fullName: WaveEngine.Framework.Behavior.BaseActiveNotification
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+    name: BaseActiveNotification
+    nameWithType: Behavior.BaseActiveNotification
+    fullName: WaveEngine.Framework.Behavior.BaseActiveNotification
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+  commentId: M:WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+  parent: WaveEngine.Framework.Behavior
+  isExternal: true
+  name: ActiveNotification(Boolean)
+  nameWithType: Behavior.ActiveNotification(Boolean)
+  fullName: WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+    name: ActiveNotification
+    nameWithType: Behavior.ActiveNotification
+    fullName: WaveEngine.Framework.Behavior.ActiveNotification
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+    name: ActiveNotification
+    nameWithType: Behavior.ActiveNotification
+    fullName: WaveEngine.Framework.Behavior.ActiveNotification
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.isInitialized
+  commentId: F:WaveEngine.Framework.Component.isInitialized
+  parent: WaveEngine.Framework.Component
+  name: isInitialized
+  nameWithType: Component.isInitialized
+  fullName: WaveEngine.Framework.Component.isInitialized
+- uid: WaveEngine.Framework.Component.OnComponentInitialized
+  commentId: E:WaveEngine.Framework.Component.OnComponentInitialized
+  parent: WaveEngine.Framework.Component
+  name: OnComponentInitialized
+  nameWithType: Component.OnComponentInitialized
+  fullName: WaveEngine.Framework.Component.OnComponentInitialized
+- uid: WaveEngine.Framework.Component.OnComponentRemoved
+  commentId: E:WaveEngine.Framework.Component.OnComponentRemoved
+  parent: WaveEngine.Framework.Component
+  name: OnComponentRemoved
+  nameWithType: Component.OnComponentRemoved
+  fullName: WaveEngine.Framework.Component.OnComponentRemoved
+- uid: WaveEngine.Framework.Component.Name
+  commentId: P:WaveEngine.Framework.Component.Name
+  parent: WaveEngine.Framework.Component
+  name: Name
+  nameWithType: Component.Name
+  fullName: WaveEngine.Framework.Component.Name
+- uid: WaveEngine.Framework.Component.Owner
+  commentId: P:WaveEngine.Framework.Component.Owner
+  parent: WaveEngine.Framework.Component
+  name: Owner
+  nameWithType: Component.Owner
+  fullName: WaveEngine.Framework.Component.Owner
+- uid: WaveEngine.Framework.Component.Assets
+  commentId: P:WaveEngine.Framework.Component.Assets
+  parent: WaveEngine.Framework.Component
+  name: Assets
+  nameWithType: Component.Assets
+  fullName: WaveEngine.Framework.Component.Assets
+- uid: WaveEngine.Framework.Component.EntityManager
+  commentId: P:WaveEngine.Framework.Component.EntityManager
+  parent: WaveEngine.Framework.Component
+  name: EntityManager
+  nameWithType: Component.EntityManager
+  fullName: WaveEngine.Framework.Component.EntityManager
+- uid: WaveEngine.Framework.Component.BehaviorManager
+  commentId: P:WaveEngine.Framework.Component.BehaviorManager
+  parent: WaveEngine.Framework.Component
+  name: BehaviorManager
+  nameWithType: Component.BehaviorManager
+  fullName: WaveEngine.Framework.Component.BehaviorManager
+- uid: WaveEngine.Framework.Component.RenderManager
+  commentId: P:WaveEngine.Framework.Component.RenderManager
+  parent: WaveEngine.Framework.Component
+  name: RenderManager
+  nameWithType: Component.RenderManager
+  fullName: WaveEngine.Framework.Component.RenderManager
+- uid: WaveEngine.Framework.Component.Clone
+  commentId: M:WaveEngine.Framework.Component.Clone
+  parent: WaveEngine.Framework.Component
+  name: Clone()
+  nameWithType: Component.Clone()
+  fullName: WaveEngine.Framework.Component.Clone()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Clone
+    name: Clone
+    nameWithType: Component.Clone
+    fullName: WaveEngine.Framework.Component.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Clone
+    name: Clone
+    nameWithType: Component.Clone
+    fullName: WaveEngine.Framework.Component.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.ToString
+  commentId: M:WaveEngine.Framework.Component.ToString
+  parent: WaveEngine.Framework.Component
+  name: ToString()
+  nameWithType: Component.ToString()
+  fullName: WaveEngine.Framework.Component.ToString()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: WaveEngine.Framework.Component.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: WaveEngine.Framework.Component.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.ResolveDependencies
+  commentId: M:WaveEngine.Framework.Component.ResolveDependencies
+  parent: WaveEngine.Framework.Component
+  name: ResolveDependencies()
+  nameWithType: Component.ResolveDependencies()
+  fullName: WaveEngine.Framework.Component.ResolveDependencies()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.ResolveDependencies
+    name: ResolveDependencies
+    nameWithType: Component.ResolveDependencies
+    fullName: WaveEngine.Framework.Component.ResolveDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.ResolveDependencies
+    name: ResolveDependencies
+    nameWithType: Component.ResolveDependencies
+    fullName: WaveEngine.Framework.Component.ResolveDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.Removed
+  commentId: M:WaveEngine.Framework.Component.Removed
+  parent: WaveEngine.Framework.Component
+  name: Removed()
+  nameWithType: Component.Removed()
+  fullName: WaveEngine.Framework.Component.Removed()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Removed
+    name: Removed
+    nameWithType: Component.Removed
+    fullName: WaveEngine.Framework.Component.Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Removed
+    name: Removed
+    nameWithType: Component.Removed
+    fullName: WaveEngine.Framework.Component.Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.DeleteDependencies
+  commentId: M:WaveEngine.Framework.Component.DeleteDependencies
+  parent: WaveEngine.Framework.Component
+  name: DeleteDependencies()
+  nameWithType: Component.DeleteDependencies()
+  fullName: WaveEngine.Framework.Component.DeleteDependencies()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Component.DeleteDependencies
+    fullName: WaveEngine.Framework.Component.DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Component.DeleteDependencies
+    fullName: WaveEngine.Framework.Component.DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.PropertyChanged
+  commentId: E:WaveEngine.Framework.DependencyObject.PropertyChanged
+  parent: WaveEngine.Framework.DependencyObject
+  name: PropertyChanged
+  nameWithType: DependencyObject.PropertyChanged
+  fullName: WaveEngine.Framework.DependencyObject.PropertyChanged
+- uid: WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  commentId: P:WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  parent: WaveEngine.Framework.DependencyObject
+  name: ParentDependencyObject
+  nameWithType: DependencyObject.ParentDependencyObject
+  fullName: WaveEngine.Framework.DependencyObject.ParentDependencyObject
+- uid: WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  commentId: P:WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  parent: WaveEngine.Framework.DependencyObject
+  name: EnableDiagnosticCallback
+  nameWithType: DependencyObject.EnableDiagnosticCallback
+  fullName: WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+- uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  commentId: M:WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  parent: WaveEngine.Framework.DependencyObject
+  isExternal: true
+  name: SetValue(DependencyProperty, Object)
+  nameWithType: DependencyObject.SetValue(DependencyProperty, Object)
+  fullName: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty, System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+    name: SetValue
+    nameWithType: DependencyObject.SetValue
+    fullName: WaveEngine.Framework.DependencyObject.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+    name: SetValue
+    nameWithType: DependencyObject.SetValue
+    fullName: WaveEngine.Framework.DependencyObject.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: GetValue(DependencyProperty)
+  nameWithType: DependencyObject.GetValue(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+    name: GetValue
+    nameWithType: DependencyObject.GetValue
+    fullName: WaveEngine.Framework.DependencyObject.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+    name: GetValue
+    nameWithType: DependencyObject.GetValue
+    fullName: WaveEngine.Framework.DependencyObject.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: GetAbsoluteValue<T>(DependencyProperty)
+  nameWithType: DependencyObject.GetAbsoluteValue<T>(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue<T>(WaveEngine.Framework.DependencyProperty)
+  nameWithType.vb: DependencyObject.GetAbsoluteValue(Of T)(DependencyProperty)
+  fullName.vb: WaveEngine.Framework.DependencyObject.GetAbsoluteValue(Of T)(WaveEngine.Framework.DependencyProperty)
+  name.vb: GetAbsoluteValue(Of T)(DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+    name: GetAbsoluteValue<T>
+    nameWithType: DependencyObject.GetAbsoluteValue<T>
+    fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+    name: GetAbsoluteValue(Of T)
+    nameWithType: DependencyObject.GetAbsoluteValue(Of T)
+    fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: ClearValue(DependencyProperty)
+  nameWithType: DependencyObject.ClearValue(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+    name: ClearValue
+    nameWithType: DependencyObject.ClearValue
+    fullName: WaveEngine.Framework.DependencyObject.ClearValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+    name: ClearValue
+    nameWithType: DependencyObject.ClearValue
+    fullName: WaveEngine.Framework.DependencyObject.ClearValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: IsValueSet(DependencyProperty)
+  nameWithType: DependencyObject.IsValueSet(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+    name: IsValueSet
+    nameWithType: DependencyObject.IsValueSet
+    fullName: WaveEngine.Framework.DependencyObject.IsValueSet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+    name: IsValueSet
+    nameWithType: DependencyObject.IsValueSet
+    fullName: WaveEngine.Framework.DependencyObject.IsValueSet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  commentId: M:WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  parent: WaveEngine.Common.IO.SerializableObject
+  isExternal: true
+  name: OnDeserializing(StreamingContext)
+  nameWithType: SerializableObject.OnDeserializing(StreamingContext)
+  fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.IO
+  commentId: N:WaveEngine.Common.IO
+  name: WaveEngine.Common.IO
+  nameWithType: WaveEngine.Common.IO
+  fullName: WaveEngine.Common.IO
+- uid: WaveEngine.Framework
+  commentId: N:WaveEngine.Framework
+  name: WaveEngine.Framework
+  nameWithType: WaveEngine.Framework
+  fullName: WaveEngine.Framework
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: System.Action{WaveEngine.Components.VR.VRCameraRig}
+  commentId: T:System.Action{WaveEngine.Components.VR.VRCameraRig}
+  parent: System
+  definition: System.Action`1
+  name: Action<VRCameraRig>
+  nameWithType: Action<VRCameraRig>
+  fullName: System.Action<WaveEngine.Components.VR.VRCameraRig>
+  nameWithType.vb: Action(Of VRCameraRig)
+  fullName.vb: System.Action(Of WaveEngine.Components.VR.VRCameraRig)
+  name.vb: Action(Of VRCameraRig)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Components.VR.VRCameraRig
+    name: VRCameraRig
+    nameWithType: VRCameraRig
+    fullName: WaveEngine.Components.VR.VRCameraRig
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Components.VR.VRCameraRig
+    name: VRCameraRig
+    nameWithType: VRCameraRig
+    fullName: WaveEngine.Components.VR.VRCameraRig
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Components.VR.VRCameraRig.Monoscopic*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.Monoscopic
+  name: Monoscopic
+  nameWithType: VRCameraRig.Monoscopic
+  fullName: WaveEngine.Components.VR.VRCameraRig.Monoscopic
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Components.VR.VRCameraRig.VRMode*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.VRMode
+  name: VRMode
+  nameWithType: VRCameraRig.VRMode
+  fullName: WaveEngine.Components.VR.VRCameraRig.VRMode
+- uid: WaveEngine.Common.VR.VRMode
+  commentId: T:WaveEngine.Common.VR.VRMode
+  parent: WaveEngine.Common.VR
+  name: VRMode
+  nameWithType: VRMode
+  fullName: WaveEngine.Common.VR.VRMode
+- uid: WaveEngine.Common.VR
+  commentId: N:WaveEngine.Common.VR
+  name: WaveEngine.Common.VR
+  nameWithType: WaveEngine.Common.VR
+  fullName: WaveEngine.Common.VR
+- uid: WaveEngine.Components.VR.VRCameraRig.Disable*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.Disable
+  name: Disable
+  nameWithType: VRCameraRig.Disable
+  fullName: WaveEngine.Components.VR.VRCameraRig.Disable
+- uid: WaveEngine.Components.VR.VRCameraRig.LeftEyeCamera*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.LeftEyeCamera
+  name: LeftEyeCamera
+  nameWithType: VRCameraRig.LeftEyeCamera
+  fullName: WaveEngine.Components.VR.VRCameraRig.LeftEyeCamera
+- uid: WaveEngine.Framework.Graphics.Camera3D
+  commentId: T:WaveEngine.Framework.Graphics.Camera3D
+  parent: WaveEngine.Framework.Graphics
+  name: Camera3D
+  nameWithType: Camera3D
+  fullName: WaveEngine.Framework.Graphics.Camera3D
+- uid: WaveEngine.Framework.Graphics
+  commentId: N:WaveEngine.Framework.Graphics
+  name: WaveEngine.Framework.Graphics
+  nameWithType: WaveEngine.Framework.Graphics
+  fullName: WaveEngine.Framework.Graphics
+- uid: WaveEngine.Components.VR.VRCameraRig.RightEyeCamera*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.RightEyeCamera
+  name: RightEyeCamera
+  nameWithType: VRCameraRig.RightEyeCamera
+  fullName: WaveEngine.Components.VR.VRCameraRig.RightEyeCamera
+- uid: WaveEngine.Components.VR.VRCameraRig.AttachedCamera*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.AttachedCamera
+  name: AttachedCamera
+  nameWithType: VRCameraRig.AttachedCamera
+  fullName: WaveEngine.Components.VR.VRCameraRig.AttachedCamera
+- uid: WaveEngine.Components.VR.VRCameraRig.TrackingSpace*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.TrackingSpace
+  name: TrackingSpace
+  nameWithType: VRCameraRig.TrackingSpace
+  fullName: WaveEngine.Components.VR.VRCameraRig.TrackingSpace
+- uid: WaveEngine.Framework.Entity
+  commentId: T:WaveEngine.Framework.Entity
+  parent: WaveEngine.Framework
+  name: Entity
+  nameWithType: Entity
+  fullName: WaveEngine.Framework.Entity
+- uid: WaveEngine.Components.VR.VRCameraRig.LeftEyeAnchor*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.LeftEyeAnchor
+  name: LeftEyeAnchor
+  nameWithType: VRCameraRig.LeftEyeAnchor
+  fullName: WaveEngine.Components.VR.VRCameraRig.LeftEyeAnchor
+- uid: WaveEngine.Components.VR.VRCameraRig.RightEyeAnchor*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.RightEyeAnchor
+  name: RightEyeAnchor
+  nameWithType: VRCameraRig.RightEyeAnchor
+  fullName: WaveEngine.Components.VR.VRCameraRig.RightEyeAnchor
+- uid: WaveEngine.Components.VR.VRCameraRig.CenterEyeAnchor*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.CenterEyeAnchor
+  name: CenterEyeAnchor
+  nameWithType: VRCameraRig.CenterEyeAnchor
+  fullName: WaveEngine.Components.VR.VRCameraRig.CenterEyeAnchor
+- uid: WaveEngine.Components.VR.VRCameraRig.TrackerAnchor*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.TrackerAnchor
+  name: TrackerAnchor
+  nameWithType: VRCameraRig.TrackerAnchor
+  fullName: WaveEngine.Components.VR.VRCameraRig.TrackerAnchor
+- uid: WaveEngine.Components.VR.VRCameraRig.LeftControllerAnchor*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.LeftControllerAnchor
+  name: LeftControllerAnchor
+  nameWithType: VRCameraRig.LeftControllerAnchor
+  fullName: WaveEngine.Components.VR.VRCameraRig.LeftControllerAnchor
+- uid: WaveEngine.Components.VR.VRCameraRig.RightControllerAnchor*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.RightControllerAnchor
+  name: RightControllerAnchor
+  nameWithType: VRCameraRig.RightControllerAnchor
+  fullName: WaveEngine.Components.VR.VRCameraRig.RightControllerAnchor
+- uid: WaveEngine.Components.VR.VRCameraRig.TrackingSpaceTransform*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.TrackingSpaceTransform
+  name: TrackingSpaceTransform
+  nameWithType: VRCameraRig.TrackingSpaceTransform
+  fullName: WaveEngine.Components.VR.VRCameraRig.TrackingSpaceTransform
+- uid: WaveEngine.Framework.Graphics.Transform3D
+  commentId: T:WaveEngine.Framework.Graphics.Transform3D
+  parent: WaveEngine.Framework.Graphics
+  name: Transform3D
+  nameWithType: Transform3D
+  fullName: WaveEngine.Framework.Graphics.Transform3D
+- uid: WaveEngine.Components.VR.VRCameraRig.LeftEyeAnchorTransform*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.LeftEyeAnchorTransform
+  name: LeftEyeAnchorTransform
+  nameWithType: VRCameraRig.LeftEyeAnchorTransform
+  fullName: WaveEngine.Components.VR.VRCameraRig.LeftEyeAnchorTransform
+- uid: WaveEngine.Components.VR.VRCameraRig.RightEyeAnchorTransform*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.RightEyeAnchorTransform
+  name: RightEyeAnchorTransform
+  nameWithType: VRCameraRig.RightEyeAnchorTransform
+  fullName: WaveEngine.Components.VR.VRCameraRig.RightEyeAnchorTransform
+- uid: WaveEngine.Components.VR.VRCameraRig.LeftController*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.LeftController
+  name: LeftController
+  nameWithType: VRCameraRig.LeftController
+  fullName: WaveEngine.Components.VR.VRCameraRig.LeftController
+- uid: WaveEngine.Components.VR.VRController
+  commentId: T:WaveEngine.Components.VR.VRController
+  parent: WaveEngine.Components.VR
+  name: VRController
+  nameWithType: VRController
+  fullName: WaveEngine.Components.VR.VRController
+- uid: WaveEngine.Components.VR.VRCameraRig.RightController*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.RightController
+  name: RightController
+  nameWithType: VRCameraRig.RightController
+  fullName: WaveEngine.Components.VR.VRCameraRig.RightController
+- uid: WaveEngine.Components.VR.VRCameraRig.Controllers*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.Controllers
+  name: Controllers
+  nameWithType: VRCameraRig.Controllers
+  fullName: WaveEngine.Components.VR.VRCameraRig.Controllers
+- uid: System.Collections.Generic.IEnumerable{WaveEngine.Components.VR.VRController}
+  commentId: T:System.Collections.Generic.IEnumerable{WaveEngine.Components.VR.VRController}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<VRController>
+  nameWithType: IEnumerable<VRController>
+  fullName: System.Collections.Generic.IEnumerable<WaveEngine.Components.VR.VRController>
+  nameWithType.vb: IEnumerable(Of VRController)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of WaveEngine.Components.VR.VRController)
+  name.vb: IEnumerable(Of VRController)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Components.VR.VRController
+    name: VRController
+    nameWithType: VRController
+    fullName: WaveEngine.Components.VR.VRController
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Components.VR.VRController
+    name: VRController
+    nameWithType: VRController
+    fullName: WaveEngine.Components.VR.VRController
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: WaveEngine.Components.VR.VRCameraRig.CenterEyeAnchorTransform*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.CenterEyeAnchorTransform
+  name: CenterEyeAnchorTransform
+  nameWithType: VRCameraRig.CenterEyeAnchorTransform
+  fullName: WaveEngine.Components.VR.VRCameraRig.CenterEyeAnchorTransform
+- uid: WaveEngine.Components.VR.VRCameraRig.TrackerAnchorTransform*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.TrackerAnchorTransform
+  name: TrackerAnchorTransform
+  nameWithType: VRCameraRig.TrackerAnchorTransform
+  fullName: WaveEngine.Components.VR.VRCameraRig.TrackerAnchorTransform
+- uid: WaveEngine.Components.VR.VRCameraRig.LeftControllerAnchorTransform*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.LeftControllerAnchorTransform
+  name: LeftControllerAnchorTransform
+  nameWithType: VRCameraRig.LeftControllerAnchorTransform
+  fullName: WaveEngine.Components.VR.VRCameraRig.LeftControllerAnchorTransform
+- uid: WaveEngine.Components.VR.VRCameraRig.RightControllerAnchorTransform*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.RightControllerAnchorTransform
+  name: RightControllerAnchorTransform
+  nameWithType: VRCameraRig.RightControllerAnchorTransform
+  fullName: WaveEngine.Components.VR.VRCameraRig.RightControllerAnchorTransform
+- uid: WaveEngine.Components.VR.VRCameraRig.NearPlane*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.NearPlane
+  name: NearPlane
+  nameWithType: VRCameraRig.NearPlane
+  fullName: WaveEngine.Components.VR.VRCameraRig.NearPlane
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Components.VR.VRCameraRig.FarPlane*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.FarPlane
+  name: FarPlane
+  nameWithType: VRCameraRig.FarPlane
+  fullName: WaveEngine.Components.VR.VRCameraRig.FarPlane
+- uid: WaveEngine.Components.VR.VRCameraRig.BackgroundColor*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.BackgroundColor
+  name: BackgroundColor
+  nameWithType: VRCameraRig.BackgroundColor
+  fullName: WaveEngine.Components.VR.VRCameraRig.BackgroundColor
+- uid: WaveEngine.Common.Graphics.Color
+  commentId: T:WaveEngine.Common.Graphics.Color
+  parent: WaveEngine.Common.Graphics
+  name: Color
+  nameWithType: Color
+  fullName: WaveEngine.Common.Graphics.Color
+- uid: WaveEngine.Common.Graphics
+  commentId: N:WaveEngine.Common.Graphics
+  name: WaveEngine.Common.Graphics
+  nameWithType: WaveEngine.Common.Graphics
+  fullName: WaveEngine.Common.Graphics
+- uid: WaveEngine.Components.VR.VRCameraRig.ClearFlags*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.ClearFlags
+  name: ClearFlags
+  nameWithType: VRCameraRig.ClearFlags
+  fullName: WaveEngine.Components.VR.VRCameraRig.ClearFlags
+- uid: WaveEngine.Common.Graphics.ClearFlags
+  commentId: T:WaveEngine.Common.Graphics.ClearFlags
+  parent: WaveEngine.Common.Graphics
+  name: ClearFlags
+  nameWithType: ClearFlags
+  fullName: WaveEngine.Common.Graphics.ClearFlags
+- uid: WaveEngine.Framework.Behavior.DefaultValues
+  commentId: M:WaveEngine.Framework.Behavior.DefaultValues
+  parent: WaveEngine.Framework.Behavior
+  name: DefaultValues()
+  nameWithType: Behavior.DefaultValues()
+  fullName: WaveEngine.Framework.Behavior.DefaultValues()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Behavior.DefaultValues
+    name: DefaultValues
+    nameWithType: Behavior.DefaultValues
+    fullName: WaveEngine.Framework.Behavior.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Behavior.DefaultValues
+    name: DefaultValues
+    nameWithType: Behavior.DefaultValues
+    fullName: WaveEngine.Framework.Behavior.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Components.VR.VRCameraRig.DefaultValues*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.DefaultValues
+  name: DefaultValues
+  nameWithType: VRCameraRig.DefaultValues
+  fullName: WaveEngine.Components.VR.VRCameraRig.DefaultValues
+- uid: WaveEngine.Framework.Component.Initialize
+  commentId: M:WaveEngine.Framework.Component.Initialize
+  parent: WaveEngine.Framework.Component
+  name: Initialize()
+  nameWithType: Component.Initialize()
+  fullName: WaveEngine.Framework.Component.Initialize()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Initialize
+    name: Initialize
+    nameWithType: Component.Initialize
+    fullName: WaveEngine.Framework.Component.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Initialize
+    name: Initialize
+    nameWithType: Component.Initialize
+    fullName: WaveEngine.Framework.Component.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Components.VR.VRCameraRig.Initialize*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.Initialize
+  name: Initialize
+  nameWithType: VRCameraRig.Initialize
+  fullName: WaveEngine.Components.VR.VRCameraRig.Initialize
+- uid: WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+  commentId: M:WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+  parent: WaveEngine.Framework.Behavior
+  isExternal: true
+  name: Update(TimeSpan)
+  nameWithType: Behavior.Update(TimeSpan)
+  fullName: WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+    name: Update
+    nameWithType: Behavior.Update
+    fullName: WaveEngine.Framework.Behavior.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+    name: Update
+    nameWithType: Behavior.Update
+    fullName: WaveEngine.Framework.Behavior.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Components.VR.VRCameraRig.Update*
+  commentId: Overload:WaveEngine.Components.VR.VRCameraRig.Update
+  name: Update
+  nameWithType: VRCameraRig.Update
+  fullName: WaveEngine.Components.VR.VRCameraRig.Update
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan

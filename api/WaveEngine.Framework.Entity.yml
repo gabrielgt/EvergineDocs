@@ -1,0 +1,3473 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Framework.Entity
+  commentId: T:WaveEngine.Framework.Entity
+  id: Entity
+  parent: WaveEngine.Framework
+  children:
+  - WaveEngine.Framework.Entity.#ctor
+  - WaveEngine.Framework.Entity.#ctor(System.String)
+  - WaveEngine.Framework.Entity.AddChild(WaveEngine.Framework.Entity)
+  - WaveEngine.Framework.Entity.AddComponent(WaveEngine.Framework.Component)
+  - WaveEngine.Framework.Entity.CheckValidName
+  - WaveEngine.Framework.Entity.ChildEntities
+  - WaveEngine.Framework.Entity.Clone(System.String)
+  - WaveEngine.Framework.Entity.Components
+  - WaveEngine.Framework.Entity.DetachChild(System.String)
+  - WaveEngine.Framework.Entity.DetachChild(WaveEngine.Framework.Entity)
+  - WaveEngine.Framework.Entity.Dispose
+  - WaveEngine.Framework.Entity.Enabled
+  - WaveEngine.Framework.Entity.EntityInitialized
+  - WaveEngine.Framework.Entity.EntityPath
+  - WaveEngine.Framework.Entity.Finalize
+  - WaveEngine.Framework.Entity.Find(System.String)
+  - WaveEngine.Framework.Entity.FindChild(System.String,System.Boolean)
+  - WaveEngine.Framework.Entity.FindChildrenByTag(System.String,System.Boolean)
+  - WaveEngine.Framework.Entity.FindComponent(System.Type,System.Boolean)
+  - WaveEngine.Framework.Entity.FindComponent``1(System.Boolean)
+  - WaveEngine.Framework.Entity.FindComponentInChildren(System.Type,System.Boolean)
+  - WaveEngine.Framework.Entity.FindComponentInChildren``1(System.Boolean)
+  - WaveEngine.Framework.Entity.FindComponentInParents(System.Type,System.Boolean)
+  - WaveEngine.Framework.Entity.FindComponentInParents``1(System.Boolean)
+  - WaveEngine.Framework.Entity.FindComponents(System.Type,System.Boolean)
+  - WaveEngine.Framework.Entity.FindComponents``1(System.Boolean)
+  - WaveEngine.Framework.Entity.FindComponentsInChildren(System.Type,System.Boolean)
+  - WaveEngine.Framework.Entity.FindComponentsInChildren``1(System.Boolean)
+  - WaveEngine.Framework.Entity.FindComponentsInParents(System.Type,System.Boolean)
+  - WaveEngine.Framework.Entity.FindComponentsInParents``1(System.Boolean)
+  - WaveEngine.Framework.Entity.IsActive
+  - WaveEngine.Framework.Entity.IsDisposed
+  - WaveEngine.Framework.Entity.IsFinalStatic
+  - WaveEngine.Framework.Entity.IsHierarchyActive
+  - WaveEngine.Framework.Entity.IsHierarchyVisible
+  - WaveEngine.Framework.Entity.IsInitialized
+  - WaveEngine.Framework.Entity.IsSerializable
+  - WaveEngine.Framework.Entity.IsStatic
+  - WaveEngine.Framework.Entity.IsValidName(System.String)
+  - WaveEngine.Framework.Entity.IsVisible
+  - WaveEngine.Framework.Entity.Name
+  - WaveEngine.Framework.Entity.NameChanged
+  - WaveEngine.Framework.Entity.NextDefaultName
+  - WaveEngine.Framework.Entity.NumChildren
+  - WaveEngine.Framework.Entity.Parent
+  - WaveEngine.Framework.Entity.PathParent
+  - WaveEngine.Framework.Entity.PathSelf
+  - WaveEngine.Framework.Entity.PathSeparatorChar
+  - WaveEngine.Framework.Entity.PathSeparatorString
+  - WaveEngine.Framework.Entity.RefreshDependencies
+  - WaveEngine.Framework.Entity.RemoveAllComponentsOfType(System.Type,System.Boolean)
+  - WaveEngine.Framework.Entity.RemoveAllComponentsOfType``1(System.Boolean)
+  - WaveEngine.Framework.Entity.RemoveChild(System.String)
+  - WaveEngine.Framework.Entity.RemoveChild(WaveEngine.Framework.Entity)
+  - WaveEngine.Framework.Entity.RemoveComponent(System.Type,System.Boolean)
+  - WaveEngine.Framework.Entity.RemoveComponent(WaveEngine.Framework.Component)
+  - WaveEngine.Framework.Entity.RemoveComponent``1(System.Boolean)
+  - WaveEngine.Framework.Entity.Scene
+  - WaveEngine.Framework.Entity.Tag
+  - WaveEngine.Framework.Entity.ToString
+  langs:
+  - csharp
+  - vb
+  name: Entity
+  nameWithType: Entity
+  fullName: WaveEngine.Framework.Entity
+  type: Class
+  source:
+    id: Entity
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 47
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nThis class represents a game entity, which is basically a container of <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> types,\nwhich are the ones that provide the actual game logic.\n<xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref> types are contained in <xref href=\"WaveEngine.Framework.Entity.Scene\" data-throw-if-not-resolved=\"false\"></xref> ones, which handle how\nto update and draw them.\n"
+  remarks: "\n<xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref> types can be organized in trees, with an entity containing others and so on.\nNo <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref> can contain the same type of <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> two times, nor\ncontain two child <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref> with the same name.\n"
+  example:
+  - "\nThis is an example on how to create an <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref>.\nTake into account that the *AddComponent()* and *RemoveComponent()* methods are designed to allow method chaining,\nso this type of code can be written when creating or configuring an <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref>:\n<pre><code>    var primitive = new Entity(&quot;Primitive&quot;)\n                        .AddComponent(new Transform3D())\n                        .AddComponent(new Spinner() { AxisTotalIncreases = new Vector3(0.01f, 0.02f, 0.01f) })\n                        .AddComponent(new CubeMesh())\n                        .AddComponent(new MeshRenderer())\n                        .AddComponent(new MaterialComponent() { Material = new StandardMaterial() });</code></pre>\n #### Recipes and samples\n<ul><li>[Component based Architecture recipe](../recipes/Basic/Component-based-Architecture.md)</li></ul>\n"
+  syntax:
+    content: 'public sealed class Entity : IDisposable'
+    content.vb: >-
+      Public NotInheritable Class Entity
+
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: WaveEngine.Framework.Entity.PathSeparatorChar
+  commentId: F:WaveEngine.Framework.Entity.PathSeparatorChar
+  id: PathSeparatorChar
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: PathSeparatorChar
+  nameWithType: Entity.PathSeparatorChar
+  fullName: WaveEngine.Framework.Entity.PathSeparatorChar
+  type: Field
+  source:
+    id: PathSeparatorChar
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 52
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nThe separator char used in EntityPath property\n"
+  example: []
+  syntax:
+    content: public static readonly char PathSeparatorChar
+    return:
+      type: System.Char
+    content.vb: Public Shared ReadOnly PathSeparatorChar As Char
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: WaveEngine.Framework.Entity.PathSelf
+  commentId: F:WaveEngine.Framework.Entity.PathSelf
+  id: PathSelf
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: PathSelf
+  nameWithType: Entity.PathSelf
+  fullName: WaveEngine.Framework.Entity.PathSelf
+  type: Field
+  source:
+    id: PathSelf
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 57
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nThe separator string\n"
+  example: []
+  syntax:
+    content: public static readonly string PathSelf
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly PathSelf As String
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: WaveEngine.Framework.Entity.PathParent
+  commentId: F:WaveEngine.Framework.Entity.PathParent
+  id: PathParent
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: PathParent
+  nameWithType: Entity.PathParent
+  fullName: WaveEngine.Framework.Entity.PathParent
+  type: Field
+  source:
+    id: PathParent
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 62
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nThe separator string\n"
+  example: []
+  syntax:
+    content: public static readonly string PathParent
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly PathParent As String
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: WaveEngine.Framework.Entity.PathSeparatorString
+  commentId: F:WaveEngine.Framework.Entity.PathSeparatorString
+  id: PathSeparatorString
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: PathSeparatorString
+  nameWithType: Entity.PathSeparatorString
+  fullName: WaveEngine.Framework.Entity.PathSeparatorString
+  type: Field
+  source:
+    id: PathSeparatorString
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 67
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nThe separator string\n"
+  example: []
+  syntax:
+    content: public static readonly string PathSeparatorString
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly PathSeparatorString As String
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: WaveEngine.Framework.Entity.EntityInitialized
+  commentId: E:WaveEngine.Framework.Entity.EntityInitialized
+  id: EntityInitialized
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: EntityInitialized
+  nameWithType: Entity.EntityInitialized
+  fullName: WaveEngine.Framework.Entity.EntityInitialized
+  type: Event
+  source:
+    id: EntityInitialized
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 144
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nOccurs when an <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref> and all its children are initialized.\n"
+  example: []
+  syntax:
+    content: public event EventHandler EntityInitialized
+    return:
+      type: System.EventHandler
+    content.vb: Public Event EntityInitialized As EventHandler
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.CheckValidName
+  commentId: E:WaveEngine.Framework.Entity.CheckValidName
+  id: CheckValidName
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: CheckValidName
+  nameWithType: Entity.CheckValidName
+  fullName: WaveEngine.Framework.Entity.CheckValidName
+  type: Event
+  source:
+    id: CheckValidName
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 154
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nOccurs when a valid name is set to an entity.\n"
+  example: []
+  syntax:
+    content: public event EventHandler<ValidNameEventArgs> CheckValidName
+    return:
+      type: System.EventHandler{WaveEngine.Framework.Helpers.ValidNameEventArgs}
+    content.vb: Public Event CheckValidName As EventHandler(Of ValidNameEventArgs)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.NameChanged
+  commentId: E:WaveEngine.Framework.Entity.NameChanged
+  id: NameChanged
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: NameChanged
+  nameWithType: Entity.NameChanged
+  fullName: WaveEngine.Framework.Entity.NameChanged
+  type: Event
+  source:
+    id: NameChanged
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 159
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nOccurs when the entity&apos;s name changes.\n"
+  example: []
+  syntax:
+    content: public event EventHandler<NameEventArgs> NameChanged
+    return:
+      type: System.EventHandler{WaveEngine.Framework.Helpers.NameEventArgs}
+    content.vb: Public Event NameChanged As EventHandler(Of NameEventArgs)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.IsDisposed
+  commentId: P:WaveEngine.Framework.Entity.IsDisposed
+  id: IsDisposed
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: IsDisposed
+  nameWithType: Entity.IsDisposed
+  fullName: WaveEngine.Framework.Entity.IsDisposed
+  type: Property
+  source:
+    id: IsDisposed
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 169
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nGets a value indicating whether this <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref> is disposed.\n"
+  example: []
+  syntax:
+    content: public bool IsDisposed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if disposed; otherwise, <code>false</code>.\n"
+    content.vb: Public ReadOnly Property IsDisposed As Boolean
+  overload: WaveEngine.Framework.Entity.IsDisposed*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Entity.EntityPath
+  commentId: P:WaveEngine.Framework.Entity.EntityPath
+  id: EntityPath
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: EntityPath
+  nameWithType: Entity.EntityPath
+  fullName: WaveEngine.Framework.Entity.EntityPath
+  type: Property
+  source:
+    id: EntityPath
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 178
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nGets the Entity path. The entity path is a string\nthat conform the path in the EntityManager to obtain the instance.\n"
+  example: []
+  syntax:
+    content: public string EntityPath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property EntityPath As String
+  overload: WaveEngine.Framework.Entity.EntityPath*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Entity.Name
+  commentId: P:WaveEngine.Framework.Entity.Name
+  id: Name
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Entity.Name
+  fullName: WaveEngine.Framework.Entity.Name
+  type: Property
+  source:
+    id: Name
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 194
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nGets or sets the name of the instance.\n"
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: WaveEngine.Framework.Entity.Name*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.Parent
+  commentId: P:WaveEngine.Framework.Entity.Parent
+  id: Parent
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: Parent
+  nameWithType: Entity.Parent
+  fullName: WaveEngine.Framework.Entity.Parent
+  type: Property
+  source:
+    id: Parent
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 249
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nGets or sets the parent <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public Entity Parent { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Entity
+    content.vb: Public Property Parent As Entity
+  overload: WaveEngine.Framework.Entity.Parent*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Entity have been disposed.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.Scene
+  commentId: P:WaveEngine.Framework.Entity.Scene
+  id: Scene
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: Scene
+  nameWithType: Entity.Scene
+  fullName: WaveEngine.Framework.Entity.Scene
+  type: Property
+  source:
+    id: Scene
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 295
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nGets the <xref href=\"WaveEngine.Framework.Entity.Scene\" data-throw-if-not-resolved=\"false\"></xref> that contains this instance.\n"
+  example: []
+  syntax:
+    content: public Scene Scene { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Scene
+    content.vb: Public ReadOnly Property Scene As Scene
+  overload: WaveEngine.Framework.Entity.Scene*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Entity has been disposed.
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Entity.IsActive
+  commentId: P:WaveEngine.Framework.Entity.IsActive
+  id: IsActive
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: IsActive
+  nameWithType: Entity.IsActive
+  fullName: WaveEngine.Framework.Entity.IsActive
+  type: Property
+  source:
+    id: IsActive
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 320
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nGets or sets a value indicating whether this instance is active.\n"
+  example: []
+  syntax:
+    content: public bool IsActive { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if this instance is active; otherwise, <code>false</code>.\n"
+    content.vb: Public Property IsActive As Boolean
+  overload: WaveEngine.Framework.Entity.IsActive*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Entity have been disposed.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.IsVisible
+  commentId: P:WaveEngine.Framework.Entity.IsVisible
+  id: IsVisible
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: IsVisible
+  nameWithType: Entity.IsVisible
+  fullName: WaveEngine.Framework.Entity.IsVisible
+  type: Property
+  source:
+    id: IsVisible
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 362
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nGets or sets a value indicating whether this instance is visible.\n"
+  example: []
+  syntax:
+    content: public bool IsVisible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if this instance is visible; otherwise, <code>false</code>.\n"
+    content.vb: Public Property IsVisible As Boolean
+  overload: WaveEngine.Framework.Entity.IsVisible*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.IsHierarchyVisible
+  commentId: P:WaveEngine.Framework.Entity.IsHierarchyVisible
+  id: IsHierarchyVisible
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: IsHierarchyVisible
+  nameWithType: Entity.IsHierarchyVisible
+  fullName: WaveEngine.Framework.Entity.IsHierarchyVisible
+  type: Property
+  source:
+    id: IsHierarchyVisible
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 393
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nGets a value indicating whether this instance and its entire hierarchy is visible .\n"
+  example: []
+  syntax:
+    content: public bool IsHierarchyVisible { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if this instance is visible; otherwise, <code>false</code>.\n"
+    content.vb: Public ReadOnly Property IsHierarchyVisible As Boolean
+  overload: WaveEngine.Framework.Entity.IsHierarchyVisible*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Entity.IsHierarchyActive
+  commentId: P:WaveEngine.Framework.Entity.IsHierarchyActive
+  id: IsHierarchyActive
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: IsHierarchyActive
+  nameWithType: Entity.IsHierarchyActive
+  fullName: WaveEngine.Framework.Entity.IsHierarchyActive
+  type: Property
+  source:
+    id: IsHierarchyActive
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 412
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nGets a value indicating whether this instance and its entire hierarchy is active.\n"
+  example: []
+  syntax:
+    content: public bool IsHierarchyActive { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if this instance is active; otherwise, <code>false</code>.\n"
+    content.vb: Public ReadOnly Property IsHierarchyActive As Boolean
+  overload: WaveEngine.Framework.Entity.IsHierarchyActive*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Entity.Enabled
+  commentId: P:WaveEngine.Framework.Entity.Enabled
+  id: Enabled
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: Enabled
+  nameWithType: Entity.Enabled
+  fullName: WaveEngine.Framework.Entity.Enabled
+  type: Property
+  source:
+    id: Enabled
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 432
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nGets or sets a value indicating whether this <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref> is enabled.\n"
+  remarks: Indicating whether this instance is visible and active.
+  example: []
+  syntax:
+    content: public bool Enabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if enabled; otherwise, <code>false</code>.\n"
+    content.vb: Public Property Enabled As Boolean
+  overload: WaveEngine.Framework.Entity.Enabled*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.IsStatic
+  commentId: P:WaveEngine.Framework.Entity.IsStatic
+  id: IsStatic
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: IsStatic
+  nameWithType: Entity.IsStatic
+  fullName: WaveEngine.Framework.Entity.IsStatic
+  type: Property
+  source:
+    id: IsStatic
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 452
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nGets or sets a value indicating whether this instance is static. Once an entity is initialized, this cannot be displaced, rotated or scalated\n"
+  example: []
+  syntax:
+    content: public bool IsStatic { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if this instance is static; otherwise, <code>false</code>.\n"
+    content.vb: Public Property IsStatic As Boolean
+  overload: WaveEngine.Framework.Entity.IsStatic*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.IsFinalStatic
+  commentId: P:WaveEngine.Framework.Entity.IsFinalStatic
+  id: IsFinalStatic
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: IsFinalStatic
+  nameWithType: Entity.IsFinalStatic
+  fullName: WaveEngine.Framework.Entity.IsFinalStatic
+  type: Property
+  source:
+    id: IsFinalStatic
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 471
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nGets a value indicating whether this instance should be treated as a static entity.\n"
+  example: []
+  syntax:
+    content: public bool IsFinalStatic { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if this instance is static; otherwise, <code>false</code>.\n"
+    content.vb: Public ReadOnly Property IsFinalStatic As Boolean
+  overload: WaveEngine.Framework.Entity.IsFinalStatic*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Entity.Components
+  commentId: P:WaveEngine.Framework.Entity.Components
+  id: Components
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: Components
+  nameWithType: Entity.Components
+  fullName: WaveEngine.Framework.Entity.Components
+  type: Property
+  source:
+    id: Components
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 489
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nGets the <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> collection of this instance.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<Component> Components { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{WaveEngine.Framework.Component}
+    content.vb: Public ReadOnly Property Components As IEnumerable(Of Component)
+  overload: WaveEngine.Framework.Entity.Components*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Entity.ChildEntities
+  commentId: P:WaveEngine.Framework.Entity.ChildEntities
+  id: ChildEntities
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: ChildEntities
+  nameWithType: Entity.ChildEntities
+  fullName: WaveEngine.Framework.Entity.ChildEntities
+  type: Property
+  source:
+    id: ChildEntities
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 535
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nGets the children <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref> of this instance.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<Entity> ChildEntities { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{WaveEngine.Framework.Entity}
+    content.vb: Public ReadOnly Property ChildEntities As IEnumerable(Of Entity)
+  overload: WaveEngine.Framework.Entity.ChildEntities*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Entity.NumChildren
+  commentId: P:WaveEngine.Framework.Entity.NumChildren
+  id: NumChildren
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: NumChildren
+  nameWithType: Entity.NumChildren
+  fullName: WaveEngine.Framework.Entity.NumChildren
+  type: Property
+  source:
+    id: NumChildren
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 554
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nGets the number of children <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref> actually contained in this instance.\n"
+  example: []
+  syntax:
+    content: public int NumChildren { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property NumChildren As Integer
+  overload: WaveEngine.Framework.Entity.NumChildren*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Entity.IsInitialized
+  commentId: P:WaveEngine.Framework.Entity.IsInitialized
+  id: IsInitialized
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: IsInitialized
+  nameWithType: Entity.IsInitialized
+  fullName: WaveEngine.Framework.Entity.IsInitialized
+  type: Property
+  source:
+    id: IsInitialized
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 568
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nGets a value indicating whether this instance is initialized.\n"
+  example: []
+  syntax:
+    content: public bool IsInitialized { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if this instance is initialized; otherwise, <code>false</code>.\n"
+    content.vb: Public ReadOnly Property IsInitialized As Boolean
+  overload: WaveEngine.Framework.Entity.IsInitialized*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Entity.Tag
+  commentId: P:WaveEngine.Framework.Entity.Tag
+  id: Tag
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: Tag
+  nameWithType: Entity.Tag
+  fullName: WaveEngine.Framework.Entity.Tag
+  type: Property
+  source:
+    id: Tag
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 584
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nGets or sets the tag of the instance\n"
+  example: []
+  syntax:
+    content: public string Tag { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Tag As String
+  overload: WaveEngine.Framework.Entity.Tag*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.IsSerializable
+  commentId: P:WaveEngine.Framework.Entity.IsSerializable
+  id: IsSerializable
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: IsSerializable
+  nameWithType: Entity.IsSerializable
+  fullName: WaveEngine.Framework.Entity.IsSerializable
+  type: Property
+  source:
+    id: IsSerializable
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 589
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nGets or sets a value indicating whether this instance is serializable.\n"
+  example: []
+  syntax:
+    content: public bool IsSerializable { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsSerializable As Boolean
+  overload: WaveEngine.Framework.Entity.IsSerializable*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.#ctor
+  commentId: M:WaveEngine.Framework.Entity.#ctor
+  id: '#ctor'
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: Entity()
+  nameWithType: Entity.Entity()
+  fullName: WaveEngine.Framework.Entity.Entity()
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 599
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref> class.\nBy default, the <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref> is visible and active.\n"
+  example: []
+  syntax:
+    content: public Entity()
+    content.vb: Public Sub New
+  overload: WaveEngine.Framework.Entity.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.#ctor(System.String)
+  commentId: M:WaveEngine.Framework.Entity.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: Entity(String)
+  nameWithType: Entity.Entity(String)
+  fullName: WaveEngine.Framework.Entity.Entity(System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 610
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref> class.\nBy default, the <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref> is visible and active.\n"
+  example: []
+  syntax:
+    content: public Entity(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the entity.
+    content.vb: Public Sub New(name As String)
+  overload: WaveEngine.Framework.Entity.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If name is null or empty.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.Finalize
+  commentId: M:WaveEngine.Framework.Entity.Finalize
+  id: Finalize
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: Finalize()
+  nameWithType: Entity.Finalize()
+  fullName: WaveEngine.Framework.Entity.Finalize()
+  type: Method
+  source:
+    id: Finalize
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 630
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nFinalizes an instance of the <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: protected void Finalize()
+    content.vb: Protected Sub Finalize
+  overload: WaveEngine.Framework.Entity.Finalize*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WaveEngine.Framework.Entity.NextDefaultName
+  commentId: M:WaveEngine.Framework.Entity.NextDefaultName
+  id: NextDefaultName
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: NextDefaultName()
+  nameWithType: Entity.NextDefaultName()
+  fullName: WaveEngine.Framework.Entity.NextDefaultName()
+  type: Method
+  source:
+    id: NextDefaultName
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 659
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nReturn a default entity name\n"
+  example: []
+  syntax:
+    content: public static string NextDefaultName()
+    return:
+      type: System.String
+      description: The entity name
+    content.vb: Public Shared Function NextDefaultName As String
+  overload: WaveEngine.Framework.Entity.NextDefaultName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Framework.Entity.RefreshDependencies
+  commentId: M:WaveEngine.Framework.Entity.RefreshDependencies
+  id: RefreshDependencies
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: RefreshDependencies()
+  nameWithType: Entity.RefreshDependencies()
+  fullName: WaveEngine.Framework.Entity.RefreshDependencies()
+  type: Method
+  source:
+    id: RefreshDependencies
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 672
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nRefreshes the dependencies of the <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> types of this instance\nand the <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> types of its children (recursive).\n"
+  remarks: "\nDuring game play a <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> may be swapped. If other <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> types\ndepended on it, we need to call this method to re-wire all those dependencies.\n"
+  example: []
+  syntax:
+    content: public void RefreshDependencies()
+    content.vb: Public Sub RefreshDependencies
+  overload: WaveEngine.Framework.Entity.RefreshDependencies*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.AddChild(WaveEngine.Framework.Entity)
+  commentId: M:WaveEngine.Framework.Entity.AddChild(WaveEngine.Framework.Entity)
+  id: AddChild(WaveEngine.Framework.Entity)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: AddChild(Entity)
+  nameWithType: Entity.AddChild(Entity)
+  fullName: WaveEngine.Framework.Entity.AddChild(WaveEngine.Framework.Entity)
+  type: Method
+  source:
+    id: AddChild
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 709
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nAdds a child <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref> to this instance.\n"
+  remarks: "\nThe method returns this instance. It can be used\nwith method chaining, so performing consecutive operations\nover the same instance is simpler.\n"
+  example: []
+  syntax:
+    content: public Entity AddChild(Entity entity)
+    parameters:
+    - id: entity
+      type: WaveEngine.Framework.Entity
+      description: The <xref href="WaveEngine.Framework.Entity" data-throw-if-not-resolved="false"></xref> to add.
+    return:
+      type: WaveEngine.Framework.Entity
+      description: This instance.
+    content.vb: Public Function AddChild(entity As Entity) As Entity
+  overload: WaveEngine.Framework.Entity.AddChild*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If entity is null.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: If entity was added to itself.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: If entity was already added to another <xref href="WaveEngine.Framework.Entity" data-throw-if-not-resolved="false"></xref>.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\nIf there already was an <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref> with the same name as entity added to this instance.\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.RemoveChild(System.String)
+  commentId: M:WaveEngine.Framework.Entity.RemoveChild(System.String)
+  id: RemoveChild(System.String)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: RemoveChild(String)
+  nameWithType: Entity.RemoveChild(String)
+  fullName: WaveEngine.Framework.Entity.RemoveChild(System.String)
+  type: Method
+  source:
+    id: RemoveChild
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 769
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nRemoves a child <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref> from this instance.\n"
+  remarks: "\nThe method returns this instance. It can be used\nwith method chaining, so performing consecutive operations\nover the same instance is simpler.\n"
+  example: []
+  syntax:
+    content: public Entity RemoveChild(string entityName)
+    parameters:
+    - id: entityName
+      type: System.String
+      description: Name of the child <xref href="WaveEngine.Framework.Entity" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: WaveEngine.Framework.Entity
+      description: This instance.
+    content.vb: Public Function RemoveChild(entityName As String) As Entity
+  overload: WaveEngine.Framework.Entity.RemoveChild*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If entityName is null or empty.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.RemoveChild(WaveEngine.Framework.Entity)
+  commentId: M:WaveEngine.Framework.Entity.RemoveChild(WaveEngine.Framework.Entity)
+  id: RemoveChild(WaveEngine.Framework.Entity)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: RemoveChild(Entity)
+  nameWithType: Entity.RemoveChild(Entity)
+  fullName: WaveEngine.Framework.Entity.RemoveChild(WaveEngine.Framework.Entity)
+  type: Method
+  source:
+    id: RemoveChild
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 801
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nRemoves a child <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref> from this instance.\n"
+  remarks: "\nThe method returns this instance. It can be used\nwith method chaining, so performing consecutive operations\nover the same instance is simpler.\n"
+  example: []
+  syntax:
+    content: public Entity RemoveChild(Entity entity)
+    parameters:
+    - id: entity
+      type: WaveEngine.Framework.Entity
+      description: The <xref href="WaveEngine.Framework.Entity" data-throw-if-not-resolved="false"></xref> to remove.
+    return:
+      type: WaveEngine.Framework.Entity
+      description: This instance.
+    content.vb: Public Function RemoveChild(entity As Entity) As Entity
+  overload: WaveEngine.Framework.Entity.RemoveChild*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If entity is null.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.DetachChild(System.String)
+  commentId: M:WaveEngine.Framework.Entity.DetachChild(System.String)
+  id: DetachChild(System.String)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: DetachChild(String)
+  nameWithType: Entity.DetachChild(String)
+  fullName: WaveEngine.Framework.Entity.DetachChild(System.String)
+  type: Method
+  source:
+    id: DetachChild
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 827
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nDetaches the child <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public Entity DetachChild(string entityName)
+    parameters:
+    - id: entityName
+      type: System.String
+      description: Name of the entity.
+    return:
+      type: WaveEngine.Framework.Entity
+      description: The entity detached or null otherwise.
+    content.vb: Public Function DetachChild(entityName As String) As Entity
+  overload: WaveEngine.Framework.Entity.DetachChild*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If entityName is null or empty.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.DetachChild(WaveEngine.Framework.Entity)
+  commentId: M:WaveEngine.Framework.Entity.DetachChild(WaveEngine.Framework.Entity)
+  id: DetachChild(WaveEngine.Framework.Entity)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: DetachChild(Entity)
+  nameWithType: Entity.DetachChild(Entity)
+  fullName: WaveEngine.Framework.Entity.DetachChild(WaveEngine.Framework.Entity)
+  type: Method
+  source:
+    id: DetachChild
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 855
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nDetaches the child <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public Entity DetachChild(Entity entity)
+    parameters:
+    - id: entity
+      type: WaveEngine.Framework.Entity
+      description: Name of the entity.
+    return:
+      type: WaveEngine.Framework.Entity
+      description: The entity detached or null otherwise.
+    content.vb: Public Function DetachChild(entity As Entity) As Entity
+  overload: WaveEngine.Framework.Entity.DetachChild*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If entity is null or empty.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.Find(System.String)
+  commentId: M:WaveEngine.Framework.Entity.Find(System.String)
+  id: Find(System.String)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: Find(String)
+  nameWithType: Entity.Find(String)
+  fullName: WaveEngine.Framework.Entity.Find(System.String)
+  type: Method
+  source:
+    id: Find
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 881
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nGets an entity from a path (relative or not)\n"
+  example: []
+  syntax:
+    content: public Entity Find(string entityPath)
+    parameters:
+    - id: entityPath
+      type: System.String
+      description: The path to the entity
+    return:
+      type: WaveEngine.Framework.Entity
+      description: The entity of the path
+    content.vb: Public Function Find(entityPath As String) As Entity
+  overload: WaveEngine.Framework.Entity.Find*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.FindChild(System.String,System.Boolean)
+  commentId: M:WaveEngine.Framework.Entity.FindChild(System.String,System.Boolean)
+  id: FindChild(System.String,System.Boolean)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: FindChild(String, Boolean)
+  nameWithType: Entity.FindChild(String, Boolean)
+  fullName: WaveEngine.Framework.Entity.FindChild(System.String, System.Boolean)
+  type: Method
+  source:
+    id: FindChild
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 903
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nFinds a child <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref> in this instance with a given name.\n"
+  example: []
+  syntax:
+    content: public Entity FindChild(string entityName, bool isRecursive = false)
+    parameters:
+    - id: entityName
+      type: System.String
+      description: Name of the child <xref href="WaveEngine.Framework.Entity" data-throw-if-not-resolved="false"></xref>.
+    - id: isRecursive
+      type: System.Boolean
+      description: If set to <code>true</code> the search will include all descendants of the hierarchy; otherwise, the search will only include the direct descendants.
+    return:
+      type: WaveEngine.Framework.Entity
+      description: The searched child <xref href="WaveEngine.Framework.Entity" data-throw-if-not-resolved="false"></xref>, or null if no matching child was found.
+    content.vb: Public Function FindChild(entityName As String, isRecursive As Boolean = False) As Entity
+  overload: WaveEngine.Framework.Entity.FindChild*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If entityName is null or empty.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.FindChildrenByTag(System.String,System.Boolean)
+  commentId: M:WaveEngine.Framework.Entity.FindChildrenByTag(System.String,System.Boolean)
+  id: FindChildrenByTag(System.String,System.Boolean)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: FindChildrenByTag(String, Boolean)
+  nameWithType: Entity.FindChildrenByTag(String, Boolean)
+  fullName: WaveEngine.Framework.Entity.FindChildrenByTag(System.String, System.Boolean)
+  type: Method
+  source:
+    id: FindChildrenByTag
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 944
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nFind children <xref href=\"WaveEngine.Framework.Entity\" data-throw-if-not-resolved=\"false\"></xref> in this instance by Tag.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<Entity> FindChildrenByTag(string tag, bool isRecursive = false)
+    parameters:
+    - id: tag
+      type: System.String
+      description: The tag to filter.
+    - id: isRecursive
+      type: System.Boolean
+      description: If set to <code>true</code> the search will include all descendants of the hierarchy; otherwise, the search will only include the direct descendants.
+    return:
+      type: System.Collections.Generic.IEnumerable{WaveEngine.Framework.Entity}
+      description: A collection of <xref href="WaveEngine.Framework.Entity" data-throw-if-not-resolved="false"></xref>, with all children that match the specified Tag.
+    content.vb: Public Function FindChildrenByTag(tag As String, isRecursive As Boolean = False) As IEnumerable(Of Entity)
+  overload: WaveEngine.Framework.Entity.FindChildrenByTag*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If tag is null or empty.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.AddComponent(WaveEngine.Framework.Component)
+  commentId: M:WaveEngine.Framework.Entity.AddComponent(WaveEngine.Framework.Component)
+  id: AddComponent(WaveEngine.Framework.Component)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: AddComponent(Component)
+  nameWithType: Entity.AddComponent(Component)
+  fullName: WaveEngine.Framework.Entity.AddComponent(WaveEngine.Framework.Component)
+  type: Method
+  source:
+    id: AddComponent
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 1004
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nAdds a <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> to this instance.\n"
+  remarks: "\nThe method returns this instance. It can be used\nwith method chaining, so performing consecutive operations\nover the same instance is simpler.\n"
+  example: []
+  syntax:
+    content: public Entity AddComponent(Component component)
+    parameters:
+    - id: component
+      type: WaveEngine.Framework.Component
+      description: The <xref href="WaveEngine.Framework.Component" data-throw-if-not-resolved="false"></xref> to add.
+    return:
+      type: WaveEngine.Framework.Entity
+      description: This instance.
+    content.vb: Public Function AddComponent(component As Component) As Entity
+  overload: WaveEngine.Framework.Entity.AddComponent*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: If component is null.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: If component was already added to another <xref href="WaveEngine.Framework.Entity" data-throw-if-not-resolved="false"></xref>.
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\nIf there already was a <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> of the same type as component added to this instance.\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.RemoveComponent``1(System.Boolean)
+  commentId: M:WaveEngine.Framework.Entity.RemoveComponent``1(System.Boolean)
+  id: RemoveComponent``1(System.Boolean)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: RemoveComponent<T>(Boolean)
+  nameWithType: Entity.RemoveComponent<T>(Boolean)
+  fullName: WaveEngine.Framework.Entity.RemoveComponent<T>(System.Boolean)
+  type: Method
+  source:
+    id: RemoveComponent
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 1062
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nRemoves a <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> from this instance.\n"
+  remarks: "\nThe method returns this instance. It can be used\nwith method chaining, so performing consecutive operations\nover the same instance is simpler.\n"
+  example: []
+  syntax:
+    content: >-
+      public Entity RemoveComponent<T>(bool isExactType = true)
+
+          where T : Component
+    parameters:
+    - id: isExactType
+      type: System.Boolean
+      description: if set to<code>true</code> [is exact type].
+    typeParameters:
+    - id: T
+      description: Type of the <xref href="WaveEngine.Framework.Component" data-throw-if-not-resolved="false"></xref> to remove.
+    return:
+      type: WaveEngine.Framework.Entity
+      description: This instance.
+    content.vb: Public Function RemoveComponent(Of T As Component)(isExactType As Boolean = True) As Entity
+  overload: WaveEngine.Framework.Entity.RemoveComponent*
+  nameWithType.vb: Entity.RemoveComponent(Of T)(Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Framework.Entity.RemoveComponent(Of T)(System.Boolean)
+  name.vb: RemoveComponent(Of T)(Boolean)
+- uid: WaveEngine.Framework.Entity.RemoveComponent(System.Type,System.Boolean)
+  commentId: M:WaveEngine.Framework.Entity.RemoveComponent(System.Type,System.Boolean)
+  id: RemoveComponent(System.Type,System.Boolean)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: RemoveComponent(Type, Boolean)
+  nameWithType: Entity.RemoveComponent(Type, Boolean)
+  fullName: WaveEngine.Framework.Entity.RemoveComponent(System.Type, System.Boolean)
+  type: Method
+  source:
+    id: RemoveComponent
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 1085
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nRemoves a <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> from this instance.\n"
+  remarks: "\nThe method returns this instance. It can be used\nwith method chaining, so performing consecutive operations\nover the same instance is simpler.\n"
+  example: []
+  syntax:
+    content: public Entity RemoveComponent(Type componentType, bool isExactType = true)
+    parameters:
+    - id: componentType
+      type: System.Type
+      description: Type of the component.
+    - id: isExactType
+      type: System.Boolean
+      description: if set to <code>true</code> [is exact type].
+    return:
+      type: WaveEngine.Framework.Entity
+      description: "\nThis instance.\n"
+    content.vb: Public Function RemoveComponent(componentType As Type, isExactType As Boolean = True) As Entity
+  overload: WaveEngine.Framework.Entity.RemoveComponent*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The entity is disposed
+  - type: System.NullReferenceException
+    commentId: T:System.NullReferenceException
+    description: >-
+      componentType
+
+      or
+
+      componentType
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.RemoveComponent(WaveEngine.Framework.Component)
+  commentId: M:WaveEngine.Framework.Entity.RemoveComponent(WaveEngine.Framework.Component)
+  id: RemoveComponent(WaveEngine.Framework.Component)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: RemoveComponent(Component)
+  nameWithType: Entity.RemoveComponent(Component)
+  fullName: WaveEngine.Framework.Entity.RemoveComponent(WaveEngine.Framework.Component)
+  type: Method
+  source:
+    id: RemoveComponent
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 1161
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nRemoves a <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> from this instance.\n"
+  remarks: "\nThe method returns this instance. It can be used\nwith method chaining, so performing consecutive operations\nover the same instance is simpler.\n"
+  example: []
+  syntax:
+    content: public Entity RemoveComponent(Component component)
+    parameters:
+    - id: component
+      type: WaveEngine.Framework.Component
+      description: The component to remove.
+    return:
+      type: WaveEngine.Framework.Entity
+      description: "\nThis instance.\n"
+    content.vb: Public Function RemoveComponent(component As Component) As Entity
+  overload: WaveEngine.Framework.Entity.RemoveComponent*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The entity is disposed
+  - type: System.NullReferenceException
+    commentId: T:System.NullReferenceException
+    description: >-
+      componentType
+
+      or
+
+      componentType
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.RemoveAllComponentsOfType``1(System.Boolean)
+  commentId: M:WaveEngine.Framework.Entity.RemoveAllComponentsOfType``1(System.Boolean)
+  id: RemoveAllComponentsOfType``1(System.Boolean)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: RemoveAllComponentsOfType<T>(Boolean)
+  nameWithType: Entity.RemoveAllComponentsOfType<T>(Boolean)
+  fullName: WaveEngine.Framework.Entity.RemoveAllComponentsOfType<T>(System.Boolean)
+  type: Method
+  source:
+    id: RemoveAllComponentsOfType
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 1223
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nRemoves all components of specified type from this instance.\n"
+  remarks: "\nThe method returns this instance. It can be used\nwith method chaining, so performing consecutive operations\nover the same instance is simpler.\n"
+  example: []
+  syntax:
+    content: >-
+      public Entity RemoveAllComponentsOfType<T>(bool isExactType = true)
+
+          where T : Component
+    parameters:
+    - id: isExactType
+      type: System.Boolean
+      description: if set to <code>true</code> [is exact type].
+    typeParameters:
+    - id: T
+      description: The exact type of the <xref href="WaveEngine.Framework.Component" data-throw-if-not-resolved="false"></xref> to find.
+    return:
+      type: WaveEngine.Framework.Entity
+      description: "\nThis instance.\n"
+    content.vb: Public Function RemoveAllComponentsOfType(Of T As Component)(isExactType As Boolean = True) As Entity
+  overload: WaveEngine.Framework.Entity.RemoveAllComponentsOfType*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The entity is disposed
+  - type: System.NullReferenceException
+    commentId: T:System.NullReferenceException
+    description: >-
+      componentType
+
+      or
+
+      componentType
+  nameWithType.vb: Entity.RemoveAllComponentsOfType(Of T)(Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Framework.Entity.RemoveAllComponentsOfType(Of T)(System.Boolean)
+  name.vb: RemoveAllComponentsOfType(Of T)(Boolean)
+- uid: WaveEngine.Framework.Entity.RemoveAllComponentsOfType(System.Type,System.Boolean)
+  commentId: M:WaveEngine.Framework.Entity.RemoveAllComponentsOfType(System.Type,System.Boolean)
+  id: RemoveAllComponentsOfType(System.Type,System.Boolean)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: RemoveAllComponentsOfType(Type, Boolean)
+  nameWithType: Entity.RemoveAllComponentsOfType(Type, Boolean)
+  fullName: WaveEngine.Framework.Entity.RemoveAllComponentsOfType(System.Type, System.Boolean)
+  type: Method
+  source:
+    id: RemoveAllComponentsOfType
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 1246
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nRemoves all components of specified type from this instance.\n"
+  remarks: "\nThe method returns this instance. It can be used\nwith method chaining, so performing consecutive operations\nover the same instance is simpler.\n"
+  example: []
+  syntax:
+    content: public Entity RemoveAllComponentsOfType(Type componentType, bool isExactType = true)
+    parameters:
+    - id: componentType
+      type: System.Type
+      description: Type of the component.
+    - id: isExactType
+      type: System.Boolean
+      description: if set to <code>true</code> [is exact type].
+    return:
+      type: WaveEngine.Framework.Entity
+      description: "\nThis instance.\n"
+    content.vb: Public Function RemoveAllComponentsOfType(componentType As Type, isExactType As Boolean = True) As Entity
+  overload: WaveEngine.Framework.Entity.RemoveAllComponentsOfType*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: The entity is disposed
+  - type: System.NullReferenceException
+    commentId: T:System.NullReferenceException
+    description: >-
+      componentType
+
+      or
+
+      componentType
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.Clone(System.String)
+  commentId: M:WaveEngine.Framework.Entity.Clone(System.String)
+  id: Clone(System.String)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: Clone(String)
+  nameWithType: Entity.Clone(String)
+  fullName: WaveEngine.Framework.Entity.Clone(System.String)
+  type: Method
+  source:
+    id: Clone
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 1329
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nCreates a new object that is a copy of the current instance.\n"
+  remarks: "\nPerforms a deep copy of the instance.\n"
+  example: []
+  syntax:
+    content: public Entity Clone(string entityName)
+    parameters:
+    - id: entityName
+      type: System.String
+      description: Name of the entity.
+    return:
+      type: WaveEngine.Framework.Entity
+      description: "\nA new object that is a copy of this instance.\n"
+    content.vb: Public Function Clone(entityName As String) As Entity
+  overload: WaveEngine.Framework.Entity.Clone*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Instance is already disposed.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.Dispose
+  commentId: M:WaveEngine.Framework.Entity.Dispose
+  id: Dispose
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: Entity.Dispose()
+  fullName: WaveEngine.Framework.Entity.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 1342
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nPerforms application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: WaveEngine.Framework.Entity.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.ToString
+  commentId: M:WaveEngine.Framework.Entity.ToString
+  id: ToString
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Entity.ToString()
+  fullName: WaveEngine.Framework.Entity.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 1354
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nReturns a <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> that represents this instance (its name).\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: "\nA <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> that represents this instance (its name).\n"
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: WaveEngine.Framework.Entity.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: WaveEngine.Framework.Entity.FindComponent``1(System.Boolean)
+  commentId: M:WaveEngine.Framework.Entity.FindComponent``1(System.Boolean)
+  id: FindComponent``1(System.Boolean)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: FindComponent<T>(Boolean)
+  nameWithType: Entity.FindComponent<T>(Boolean)
+  fullName: WaveEngine.Framework.Entity.FindComponent<T>(System.Boolean)
+  type: Method
+  source:
+    id: FindComponent
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 1452
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nFinds a <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> in this instance with the specified type.\n"
+  example: []
+  syntax:
+    content: >-
+      public T FindComponent<T>(bool isExactType = true)
+
+          where T : Component
+    parameters:
+    - id: isExactType
+      type: System.Boolean
+      description: Whether to match the exact type.
+    typeParameters:
+    - id: T
+      description: The type of the <xref href="WaveEngine.Framework.Component" data-throw-if-not-resolved="false"></xref> to find.
+    return:
+      type: '{T}'
+      description: "\nThe <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> or null if no <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> with the specified type was found.\n"
+    content.vb: Public Function FindComponent(Of T As Component)(isExactType As Boolean = True) As T
+  overload: WaveEngine.Framework.Entity.FindComponent*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Entity has been disposed.
+  nameWithType.vb: Entity.FindComponent(Of T)(Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Framework.Entity.FindComponent(Of T)(System.Boolean)
+  name.vb: FindComponent(Of T)(Boolean)
+- uid: WaveEngine.Framework.Entity.FindComponent(System.Type,System.Boolean)
+  commentId: M:WaveEngine.Framework.Entity.FindComponent(System.Type,System.Boolean)
+  id: FindComponent(System.Type,System.Boolean)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: FindComponent(Type, Boolean)
+  nameWithType: Entity.FindComponent(Type, Boolean)
+  fullName: WaveEngine.Framework.Entity.FindComponent(System.Type, System.Boolean)
+  type: Method
+  source:
+    id: FindComponent
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 1467
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nFinds a <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> in this instance with the specified type.\n"
+  example: []
+  syntax:
+    content: public Component FindComponent(Type type, bool isExactType = true)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of the <xref href="WaveEngine.Framework.Component" data-throw-if-not-resolved="false"></xref> to find.
+    - id: isExactType
+      type: System.Boolean
+      description: Whether to match the exact type.
+    return:
+      type: WaveEngine.Framework.Component
+      description: "\nThe <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> or null if no <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> with the specified type was found.\n"
+    content.vb: Public Function FindComponent(type As Type, isExactType As Boolean = True) As Component
+  overload: WaveEngine.Framework.Entity.FindComponent*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Entity has been disposed.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.FindComponentInChildren``1(System.Boolean)
+  commentId: M:WaveEngine.Framework.Entity.FindComponentInChildren``1(System.Boolean)
+  id: FindComponentInChildren``1(System.Boolean)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: FindComponentInChildren<T>(Boolean)
+  nameWithType: Entity.FindComponentInChildren<T>(Boolean)
+  fullName: WaveEngine.Framework.Entity.FindComponentInChildren<T>(System.Boolean)
+  type: Method
+  source:
+    id: FindComponentInChildren
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 1505
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nFinds a <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> in this instance or any of its children with the specified type using depth first search.\n"
+  example: []
+  syntax:
+    content: >-
+      public T FindComponentInChildren<T>(bool isExactType = true)
+
+          where T : Component
+    parameters:
+    - id: isExactType
+      type: System.Boolean
+      description: Whether to match the exact type.
+    typeParameters:
+    - id: T
+      description: The type of the <xref href="WaveEngine.Framework.Component" data-throw-if-not-resolved="false"></xref> to find.
+    return:
+      type: '{T}'
+      description: "\nThe <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> or null if no <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> with the specified type was found.\n"
+    content.vb: Public Function FindComponentInChildren(Of T As Component)(isExactType As Boolean = True) As T
+  overload: WaveEngine.Framework.Entity.FindComponentInChildren*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Entity has been disposed.
+  nameWithType.vb: Entity.FindComponentInChildren(Of T)(Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Framework.Entity.FindComponentInChildren(Of T)(System.Boolean)
+  name.vb: FindComponentInChildren(Of T)(Boolean)
+- uid: WaveEngine.Framework.Entity.FindComponentInChildren(System.Type,System.Boolean)
+  commentId: M:WaveEngine.Framework.Entity.FindComponentInChildren(System.Type,System.Boolean)
+  id: FindComponentInChildren(System.Type,System.Boolean)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: FindComponentInChildren(Type, Boolean)
+  nameWithType: Entity.FindComponentInChildren(Type, Boolean)
+  fullName: WaveEngine.Framework.Entity.FindComponentInChildren(System.Type, System.Boolean)
+  type: Method
+  source:
+    id: FindComponentInChildren
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 1520
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nFinds a <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> in this instance or any of its children with the specified type using depth first search.\n"
+  example: []
+  syntax:
+    content: public Component FindComponentInChildren(Type type, bool isExactType = true)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of the <xref href="WaveEngine.Framework.Component" data-throw-if-not-resolved="false"></xref> to find.
+    - id: isExactType
+      type: System.Boolean
+      description: Whether to match the exact type.
+    return:
+      type: WaveEngine.Framework.Component
+      description: "\nThe <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> or null if no <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> with the specified type was found.\n"
+    content.vb: Public Function FindComponentInChildren(type As Type, isExactType As Boolean = True) As Component
+  overload: WaveEngine.Framework.Entity.FindComponentInChildren*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Entity has been disposed.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.FindComponentInParents``1(System.Boolean)
+  commentId: M:WaveEngine.Framework.Entity.FindComponentInParents``1(System.Boolean)
+  id: FindComponentInParents``1(System.Boolean)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: FindComponentInParents<T>(Boolean)
+  nameWithType: Entity.FindComponentInParents<T>(Boolean)
+  fullName: WaveEngine.Framework.Entity.FindComponentInParents<T>(System.Boolean)
+  type: Method
+  source:
+    id: FindComponentInParents
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 1534
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nFinds a <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> in this instance or any of its parents with the specified type using depth first search.\n"
+  example: []
+  syntax:
+    content: >-
+      public T FindComponentInParents<T>(bool isExactType = true)
+
+          where T : Component
+    parameters:
+    - id: isExactType
+      type: System.Boolean
+      description: Whether to match the exact type.
+    typeParameters:
+    - id: T
+      description: The type of the <xref href="WaveEngine.Framework.Component" data-throw-if-not-resolved="false"></xref> to find.
+    return:
+      type: '{T}'
+      description: "\nThe <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> or null if no <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> with the specified type was found.\n"
+    content.vb: Public Function FindComponentInParents(Of T As Component)(isExactType As Boolean = True) As T
+  overload: WaveEngine.Framework.Entity.FindComponentInParents*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Entity has been disposed.
+  nameWithType.vb: Entity.FindComponentInParents(Of T)(Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Framework.Entity.FindComponentInParents(Of T)(System.Boolean)
+  name.vb: FindComponentInParents(Of T)(Boolean)
+- uid: WaveEngine.Framework.Entity.FindComponentInParents(System.Type,System.Boolean)
+  commentId: M:WaveEngine.Framework.Entity.FindComponentInParents(System.Type,System.Boolean)
+  id: FindComponentInParents(System.Type,System.Boolean)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: FindComponentInParents(Type, Boolean)
+  nameWithType: Entity.FindComponentInParents(Type, Boolean)
+  fullName: WaveEngine.Framework.Entity.FindComponentInParents(System.Type, System.Boolean)
+  type: Method
+  source:
+    id: FindComponentInParents
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 1549
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nFinds a <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> in this instance or any of its parents with the specified type using depth first search.\n"
+  example: []
+  syntax:
+    content: public Component FindComponentInParents(Type type, bool isExactType = true)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of the <xref href="WaveEngine.Framework.Component" data-throw-if-not-resolved="false"></xref> to find.
+    - id: isExactType
+      type: System.Boolean
+      description: Whether to match the exact type.
+    return:
+      type: WaveEngine.Framework.Component
+      description: "\nThe <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> or null if no <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> with the specified type was found.\n"
+    content.vb: Public Function FindComponentInParents(type As Type, isExactType As Boolean = True) As Component
+  overload: WaveEngine.Framework.Entity.FindComponentInParents*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Entity has been disposed.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.FindComponents``1(System.Boolean)
+  commentId: M:WaveEngine.Framework.Entity.FindComponents``1(System.Boolean)
+  id: FindComponents``1(System.Boolean)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: FindComponents<T>(Boolean)
+  nameWithType: Entity.FindComponents<T>(Boolean)
+  fullName: WaveEngine.Framework.Entity.FindComponents<T>(System.Boolean)
+  type: Method
+  source:
+    id: FindComponents
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 1563
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nFinds a <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> collection in this instance with the specified type.\n"
+  example: []
+  syntax:
+    content: >-
+      public IEnumerable<T> FindComponents<T>(bool isExactType = true)
+
+          where T : Component
+    parameters:
+    - id: isExactType
+      type: System.Boolean
+      description: Whether to match the exact type.
+    typeParameters:
+    - id: T
+      description: The type of the <xref href="WaveEngine.Framework.Component" data-throw-if-not-resolved="false"></xref> to find.
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: "\nThe <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> or null if no <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> with the specified type was found.\n"
+    content.vb: Public Function FindComponents(Of T As Component)(isExactType As Boolean = True) As IEnumerable(Of T)
+  overload: WaveEngine.Framework.Entity.FindComponents*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Entity has been disposed.
+  nameWithType.vb: Entity.FindComponents(Of T)(Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Framework.Entity.FindComponents(Of T)(System.Boolean)
+  name.vb: FindComponents(Of T)(Boolean)
+- uid: WaveEngine.Framework.Entity.FindComponents(System.Type,System.Boolean)
+  commentId: M:WaveEngine.Framework.Entity.FindComponents(System.Type,System.Boolean)
+  id: FindComponents(System.Type,System.Boolean)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: FindComponents(Type, Boolean)
+  nameWithType: Entity.FindComponents(Type, Boolean)
+  fullName: WaveEngine.Framework.Entity.FindComponents(System.Type, System.Boolean)
+  type: Method
+  source:
+    id: FindComponents
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 1593
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nFinds a <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> collection in this instance with the specified type.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<Component> FindComponents(Type type, bool isExactType = true)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of the <xref href="WaveEngine.Framework.Component" data-throw-if-not-resolved="false"></xref> to find.
+    - id: isExactType
+      type: System.Boolean
+      description: Whether to match the exact type.
+    return:
+      type: System.Collections.Generic.IEnumerable{WaveEngine.Framework.Component}
+      description: "\nThe <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> or null if no <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> with the specified type was found.\n"
+    content.vb: Public Function FindComponents(type As Type, isExactType As Boolean = True) As IEnumerable(Of Component)
+  overload: WaveEngine.Framework.Entity.FindComponents*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Entity has been disposed.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.FindComponentsInChildren``1(System.Boolean)
+  commentId: M:WaveEngine.Framework.Entity.FindComponentsInChildren``1(System.Boolean)
+  id: FindComponentsInChildren``1(System.Boolean)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: FindComponentsInChildren<T>(Boolean)
+  nameWithType: Entity.FindComponentsInChildren<T>(Boolean)
+  fullName: WaveEngine.Framework.Entity.FindComponentsInChildren<T>(System.Boolean)
+  type: Method
+  source:
+    id: FindComponentsInChildren
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 1621
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nFinds a <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> collection in this instance or any of its children with the specified type.\n"
+  example: []
+  syntax:
+    content: >-
+      public IEnumerable<T> FindComponentsInChildren<T>(bool isExactType = true)
+
+          where T : Component
+    parameters:
+    - id: isExactType
+      type: System.Boolean
+      description: Whether to match the exact type.
+    typeParameters:
+    - id: T
+      description: The type of the <xref href="WaveEngine.Framework.Component" data-throw-if-not-resolved="false"></xref> to find.
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: "\nThe <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> or null if no <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> with the specified type was found.\n"
+    content.vb: Public Function FindComponentsInChildren(Of T As Component)(isExactType As Boolean = True) As IEnumerable(Of T)
+  overload: WaveEngine.Framework.Entity.FindComponentsInChildren*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Entity has been disposed.
+  nameWithType.vb: Entity.FindComponentsInChildren(Of T)(Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Framework.Entity.FindComponentsInChildren(Of T)(System.Boolean)
+  name.vb: FindComponentsInChildren(Of T)(Boolean)
+- uid: WaveEngine.Framework.Entity.FindComponentsInChildren(System.Type,System.Boolean)
+  commentId: M:WaveEngine.Framework.Entity.FindComponentsInChildren(System.Type,System.Boolean)
+  id: FindComponentsInChildren(System.Type,System.Boolean)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: FindComponentsInChildren(Type, Boolean)
+  nameWithType: Entity.FindComponentsInChildren(Type, Boolean)
+  fullName: WaveEngine.Framework.Entity.FindComponentsInChildren(System.Type, System.Boolean)
+  type: Method
+  source:
+    id: FindComponentsInChildren
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 1638
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nFinds a <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> collection in this instance or any of its children with the specified type.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<Component> FindComponentsInChildren(Type type, bool isExactType = true)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of the <xref href="WaveEngine.Framework.Component" data-throw-if-not-resolved="false"></xref> to find.
+    - id: isExactType
+      type: System.Boolean
+      description: Whether to match the exact type.
+    return:
+      type: System.Collections.Generic.IEnumerable{WaveEngine.Framework.Component}
+      description: "\nThe <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> or null if no <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> with the specified type was found.\n"
+    content.vb: Public Function FindComponentsInChildren(type As Type, isExactType As Boolean = True) As IEnumerable(Of Component)
+  overload: WaveEngine.Framework.Entity.FindComponentsInChildren*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Entity has been disposed.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.FindComponentsInParents``1(System.Boolean)
+  commentId: M:WaveEngine.Framework.Entity.FindComponentsInParents``1(System.Boolean)
+  id: FindComponentsInParents``1(System.Boolean)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: FindComponentsInParents<T>(Boolean)
+  nameWithType: Entity.FindComponentsInParents<T>(Boolean)
+  fullName: WaveEngine.Framework.Entity.FindComponentsInParents<T>(System.Boolean)
+  type: Method
+  source:
+    id: FindComponentsInParents
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 1654
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nFinds a <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> collection in this instance or any of its parents with the specified type.\n"
+  example: []
+  syntax:
+    content: >-
+      public IEnumerable<T> FindComponentsInParents<T>(bool isExactType = true)
+
+          where T : Component
+    parameters:
+    - id: isExactType
+      type: System.Boolean
+      description: Whether to match the exact type.
+    typeParameters:
+    - id: T
+      description: The type of the <xref href="WaveEngine.Framework.Component" data-throw-if-not-resolved="false"></xref> to find.
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: "\nThe <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> or null if no <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> with the specified type was found.\n"
+    content.vb: Public Function FindComponentsInParents(Of T As Component)(isExactType As Boolean = True) As IEnumerable(Of T)
+  overload: WaveEngine.Framework.Entity.FindComponentsInParents*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Entity has been disposed.
+  nameWithType.vb: Entity.FindComponentsInParents(Of T)(Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Framework.Entity.FindComponentsInParents(Of T)(System.Boolean)
+  name.vb: FindComponentsInParents(Of T)(Boolean)
+- uid: WaveEngine.Framework.Entity.FindComponentsInParents(System.Type,System.Boolean)
+  commentId: M:WaveEngine.Framework.Entity.FindComponentsInParents(System.Type,System.Boolean)
+  id: FindComponentsInParents(System.Type,System.Boolean)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: FindComponentsInParents(Type, Boolean)
+  nameWithType: Entity.FindComponentsInParents(Type, Boolean)
+  fullName: WaveEngine.Framework.Entity.FindComponentsInParents(System.Type, System.Boolean)
+  type: Method
+  source:
+    id: FindComponentsInParents
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 1676
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nFinds a <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> collection in this instance or any of its parents with the specified type.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<Component> FindComponentsInParents(Type type, bool isExactType = true)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of the <xref href="WaveEngine.Framework.Component" data-throw-if-not-resolved="false"></xref> to find.
+    - id: isExactType
+      type: System.Boolean
+      description: Whether to match the exact type.
+    return:
+      type: System.Collections.Generic.IEnumerable{WaveEngine.Framework.Component}
+      description: "\nThe <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> or null if no <xref href=\"WaveEngine.Framework.Component\" data-throw-if-not-resolved=\"false\"></xref> with the specified type was found.\n"
+    content.vb: Public Function FindComponentsInParents(type As Type, isExactType As Boolean = True) As IEnumerable(Of Component)
+  overload: WaveEngine.Framework.Entity.FindComponentsInParents*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Entity has been disposed.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Entity.IsValidName(System.String)
+  commentId: M:WaveEngine.Framework.Entity.IsValidName(System.String)
+  id: IsValidName(System.String)
+  parent: WaveEngine.Framework.Entity
+  langs:
+  - csharp
+  - vb
+  name: IsValidName(String)
+  nameWithType: Entity.IsValidName(String)
+  fullName: WaveEngine.Framework.Entity.IsValidName(System.String)
+  type: Method
+  source:
+    id: IsValidName
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Entity.cs
+    startLine: 1693
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework
+  summary: "\nCheck an entity name\n"
+  example: []
+  syntax:
+    content: public static bool IsValidName(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The entity name
+    return:
+      type: System.Boolean
+      description: If it&apos;s valid or not
+    content.vb: Public Shared Function IsValidName(name As String) As Boolean
+  overload: WaveEngine.Framework.Entity.IsValidName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: WaveEngine.Framework.Component
+  commentId: T:WaveEngine.Framework.Component
+  parent: WaveEngine.Framework
+  name: Component
+  nameWithType: Component
+  fullName: WaveEngine.Framework.Component
+- uid: WaveEngine.Framework.Entity
+  commentId: T:WaveEngine.Framework.Entity
+  parent: WaveEngine.Framework
+  name: Entity
+  nameWithType: Entity
+  fullName: WaveEngine.Framework.Entity
+- uid: WaveEngine.Framework.Entity.Scene
+  commentId: P:WaveEngine.Framework.Entity.Scene
+  isExternal: true
+- uid: WaveEngine.Framework
+  commentId: N:WaveEngine.Framework
+  name: WaveEngine.Framework
+  nameWithType: WaveEngine.Framework
+  fullName: WaveEngine.Framework
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  nameWithType: Char
+  fullName: System.Char
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.EventHandler
+  commentId: T:System.EventHandler
+  parent: System
+  isExternal: true
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
+- uid: System.EventHandler{WaveEngine.Framework.Helpers.ValidNameEventArgs}
+  commentId: T:System.EventHandler{WaveEngine.Framework.Helpers.ValidNameEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<ValidNameEventArgs>
+  nameWithType: EventHandler<ValidNameEventArgs>
+  fullName: System.EventHandler<WaveEngine.Framework.Helpers.ValidNameEventArgs>
+  nameWithType.vb: EventHandler(Of ValidNameEventArgs)
+  fullName.vb: System.EventHandler(Of WaveEngine.Framework.Helpers.ValidNameEventArgs)
+  name.vb: EventHandler(Of ValidNameEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Framework.Helpers.ValidNameEventArgs
+    name: ValidNameEventArgs
+    nameWithType: ValidNameEventArgs
+    fullName: WaveEngine.Framework.Helpers.ValidNameEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Framework.Helpers.ValidNameEventArgs
+    name: ValidNameEventArgs
+    nameWithType: ValidNameEventArgs
+    fullName: WaveEngine.Framework.Helpers.ValidNameEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler{WaveEngine.Framework.Helpers.NameEventArgs}
+  commentId: T:System.EventHandler{WaveEngine.Framework.Helpers.NameEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<NameEventArgs>
+  nameWithType: EventHandler<NameEventArgs>
+  fullName: System.EventHandler<WaveEngine.Framework.Helpers.NameEventArgs>
+  nameWithType.vb: EventHandler(Of NameEventArgs)
+  fullName.vb: System.EventHandler(Of WaveEngine.Framework.Helpers.NameEventArgs)
+  name.vb: EventHandler(Of NameEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Framework.Helpers.NameEventArgs
+    name: NameEventArgs
+    nameWithType: NameEventArgs
+    fullName: WaveEngine.Framework.Helpers.NameEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Framework.Helpers.NameEventArgs
+    name: NameEventArgs
+    nameWithType: NameEventArgs
+    fullName: WaveEngine.Framework.Helpers.NameEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Entity.IsDisposed*
+  commentId: Overload:WaveEngine.Framework.Entity.IsDisposed
+  name: IsDisposed
+  nameWithType: Entity.IsDisposed
+  fullName: WaveEngine.Framework.Entity.IsDisposed
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Framework.Entity.EntityPath*
+  commentId: Overload:WaveEngine.Framework.Entity.EntityPath
+  name: EntityPath
+  nameWithType: Entity.EntityPath
+  fullName: WaveEngine.Framework.Entity.EntityPath
+- uid: WaveEngine.Framework.Entity.Name*
+  commentId: Overload:WaveEngine.Framework.Entity.Name
+  name: Name
+  nameWithType: Entity.Name
+  fullName: WaveEngine.Framework.Entity.Name
+- uid: System.ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+  isExternal: true
+- uid: WaveEngine.Framework.Entity.Parent*
+  commentId: Overload:WaveEngine.Framework.Entity.Parent
+  name: Parent
+  nameWithType: Entity.Parent
+  fullName: WaveEngine.Framework.Entity.Parent
+- uid: WaveEngine.Framework.Entity.Scene*
+  commentId: Overload:WaveEngine.Framework.Entity.Scene
+  name: Scene
+  nameWithType: Entity.Scene
+  fullName: WaveEngine.Framework.Entity.Scene
+- uid: WaveEngine.Framework.Scene
+  commentId: T:WaveEngine.Framework.Scene
+  parent: WaveEngine.Framework
+  name: Scene
+  nameWithType: Scene
+  fullName: WaveEngine.Framework.Scene
+- uid: WaveEngine.Framework.Entity.IsActive*
+  commentId: Overload:WaveEngine.Framework.Entity.IsActive
+  name: IsActive
+  nameWithType: Entity.IsActive
+  fullName: WaveEngine.Framework.Entity.IsActive
+- uid: WaveEngine.Framework.Entity.IsVisible*
+  commentId: Overload:WaveEngine.Framework.Entity.IsVisible
+  name: IsVisible
+  nameWithType: Entity.IsVisible
+  fullName: WaveEngine.Framework.Entity.IsVisible
+- uid: WaveEngine.Framework.Entity.IsHierarchyVisible*
+  commentId: Overload:WaveEngine.Framework.Entity.IsHierarchyVisible
+  name: IsHierarchyVisible
+  nameWithType: Entity.IsHierarchyVisible
+  fullName: WaveEngine.Framework.Entity.IsHierarchyVisible
+- uid: WaveEngine.Framework.Entity.IsHierarchyActive*
+  commentId: Overload:WaveEngine.Framework.Entity.IsHierarchyActive
+  name: IsHierarchyActive
+  nameWithType: Entity.IsHierarchyActive
+  fullName: WaveEngine.Framework.Entity.IsHierarchyActive
+- uid: WaveEngine.Framework.Entity.Enabled*
+  commentId: Overload:WaveEngine.Framework.Entity.Enabled
+  name: Enabled
+  nameWithType: Entity.Enabled
+  fullName: WaveEngine.Framework.Entity.Enabled
+- uid: WaveEngine.Framework.Entity.IsStatic*
+  commentId: Overload:WaveEngine.Framework.Entity.IsStatic
+  name: IsStatic
+  nameWithType: Entity.IsStatic
+  fullName: WaveEngine.Framework.Entity.IsStatic
+- uid: WaveEngine.Framework.Entity.IsFinalStatic*
+  commentId: Overload:WaveEngine.Framework.Entity.IsFinalStatic
+  name: IsFinalStatic
+  nameWithType: Entity.IsFinalStatic
+  fullName: WaveEngine.Framework.Entity.IsFinalStatic
+- uid: WaveEngine.Framework.Entity.Components*
+  commentId: Overload:WaveEngine.Framework.Entity.Components
+  name: Components
+  nameWithType: Entity.Components
+  fullName: WaveEngine.Framework.Entity.Components
+- uid: System.Collections.Generic.IEnumerable{WaveEngine.Framework.Component}
+  commentId: T:System.Collections.Generic.IEnumerable{WaveEngine.Framework.Component}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Component>
+  nameWithType: IEnumerable<Component>
+  fullName: System.Collections.Generic.IEnumerable<WaveEngine.Framework.Component>
+  nameWithType.vb: IEnumerable(Of Component)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of WaveEngine.Framework.Component)
+  name.vb: IEnumerable(Of Component)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Framework.Component
+    name: Component
+    nameWithType: Component
+    fullName: WaveEngine.Framework.Component
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Framework.Component
+    name: Component
+    nameWithType: Component
+    fullName: WaveEngine.Framework.Component
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: WaveEngine.Framework.Entity.ChildEntities*
+  commentId: Overload:WaveEngine.Framework.Entity.ChildEntities
+  name: ChildEntities
+  nameWithType: Entity.ChildEntities
+  fullName: WaveEngine.Framework.Entity.ChildEntities
+- uid: System.Collections.Generic.IEnumerable{WaveEngine.Framework.Entity}
+  commentId: T:System.Collections.Generic.IEnumerable{WaveEngine.Framework.Entity}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Entity>
+  nameWithType: IEnumerable<Entity>
+  fullName: System.Collections.Generic.IEnumerable<WaveEngine.Framework.Entity>
+  nameWithType.vb: IEnumerable(Of Entity)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of WaveEngine.Framework.Entity)
+  name.vb: IEnumerable(Of Entity)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Framework.Entity
+    name: Entity
+    nameWithType: Entity
+    fullName: WaveEngine.Framework.Entity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Framework.Entity
+    name: Entity
+    nameWithType: Entity
+    fullName: WaveEngine.Framework.Entity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Entity.NumChildren*
+  commentId: Overload:WaveEngine.Framework.Entity.NumChildren
+  name: NumChildren
+  nameWithType: Entity.NumChildren
+  fullName: WaveEngine.Framework.Entity.NumChildren
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: WaveEngine.Framework.Entity.IsInitialized*
+  commentId: Overload:WaveEngine.Framework.Entity.IsInitialized
+  name: IsInitialized
+  nameWithType: Entity.IsInitialized
+  fullName: WaveEngine.Framework.Entity.IsInitialized
+- uid: WaveEngine.Framework.Entity.Tag*
+  commentId: Overload:WaveEngine.Framework.Entity.Tag
+  name: Tag
+  nameWithType: Entity.Tag
+  fullName: WaveEngine.Framework.Entity.Tag
+- uid: WaveEngine.Framework.Entity.IsSerializable*
+  commentId: Overload:WaveEngine.Framework.Entity.IsSerializable
+  name: IsSerializable
+  nameWithType: Entity.IsSerializable
+  fullName: WaveEngine.Framework.Entity.IsSerializable
+- uid: WaveEngine.Framework.Entity.#ctor*
+  commentId: Overload:WaveEngine.Framework.Entity.#ctor
+  name: Entity
+  nameWithType: Entity.Entity
+  fullName: WaveEngine.Framework.Entity.Entity
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+- uid: WaveEngine.Framework.Entity.Finalize*
+  commentId: Overload:WaveEngine.Framework.Entity.Finalize
+  name: Finalize
+  nameWithType: Entity.Finalize
+  fullName: WaveEngine.Framework.Entity.Finalize
+- uid: WaveEngine.Framework.Entity.NextDefaultName*
+  commentId: Overload:WaveEngine.Framework.Entity.NextDefaultName
+  name: NextDefaultName
+  nameWithType: Entity.NextDefaultName
+  fullName: WaveEngine.Framework.Entity.NextDefaultName
+- uid: WaveEngine.Framework.Entity.RefreshDependencies*
+  commentId: Overload:WaveEngine.Framework.Entity.RefreshDependencies
+  name: RefreshDependencies
+  nameWithType: Entity.RefreshDependencies
+  fullName: WaveEngine.Framework.Entity.RefreshDependencies
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+- uid: WaveEngine.Framework.Entity.AddChild*
+  commentId: Overload:WaveEngine.Framework.Entity.AddChild
+  name: AddChild
+  nameWithType: Entity.AddChild
+  fullName: WaveEngine.Framework.Entity.AddChild
+- uid: WaveEngine.Framework.Entity.RemoveChild*
+  commentId: Overload:WaveEngine.Framework.Entity.RemoveChild
+  name: RemoveChild
+  nameWithType: Entity.RemoveChild
+  fullName: WaveEngine.Framework.Entity.RemoveChild
+- uid: WaveEngine.Framework.Entity.DetachChild*
+  commentId: Overload:WaveEngine.Framework.Entity.DetachChild
+  name: DetachChild
+  nameWithType: Entity.DetachChild
+  fullName: WaveEngine.Framework.Entity.DetachChild
+- uid: WaveEngine.Framework.Entity.Find*
+  commentId: Overload:WaveEngine.Framework.Entity.Find
+  name: Find
+  nameWithType: Entity.Find
+  fullName: WaveEngine.Framework.Entity.Find
+- uid: WaveEngine.Framework.Entity.FindChild*
+  commentId: Overload:WaveEngine.Framework.Entity.FindChild
+  name: FindChild
+  nameWithType: Entity.FindChild
+  fullName: WaveEngine.Framework.Entity.FindChild
+- uid: WaveEngine.Framework.Entity.FindChildrenByTag*
+  commentId: Overload:WaveEngine.Framework.Entity.FindChildrenByTag
+  name: FindChildrenByTag
+  nameWithType: Entity.FindChildrenByTag
+  fullName: WaveEngine.Framework.Entity.FindChildrenByTag
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+- uid: WaveEngine.Framework.Entity.AddComponent*
+  commentId: Overload:WaveEngine.Framework.Entity.AddComponent
+  name: AddComponent
+  nameWithType: Entity.AddComponent
+  fullName: WaveEngine.Framework.Entity.AddComponent
+- uid: WaveEngine.Framework.Entity.RemoveComponent*
+  commentId: Overload:WaveEngine.Framework.Entity.RemoveComponent
+  name: RemoveComponent
+  nameWithType: Entity.RemoveComponent
+  fullName: WaveEngine.Framework.Entity.RemoveComponent
+- uid: System.NullReferenceException
+  commentId: T:System.NullReferenceException
+  isExternal: true
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: WaveEngine.Framework.Entity.RemoveAllComponentsOfType*
+  commentId: Overload:WaveEngine.Framework.Entity.RemoveAllComponentsOfType
+  name: RemoveAllComponentsOfType
+  nameWithType: Entity.RemoveAllComponentsOfType
+  fullName: WaveEngine.Framework.Entity.RemoveAllComponentsOfType
+- uid: WaveEngine.Framework.Entity.Clone*
+  commentId: Overload:WaveEngine.Framework.Entity.Clone
+  name: Clone
+  nameWithType: Entity.Clone
+  fullName: WaveEngine.Framework.Entity.Clone
+- uid: WaveEngine.Framework.Entity.Dispose*
+  commentId: Overload:WaveEngine.Framework.Entity.Dispose
+  name: Dispose
+  nameWithType: Entity.Dispose
+  fullName: WaveEngine.Framework.Entity.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Entity.ToString*
+  commentId: Overload:WaveEngine.Framework.Entity.ToString
+  name: ToString
+  nameWithType: Entity.ToString
+  fullName: WaveEngine.Framework.Entity.ToString
+- uid: WaveEngine.Framework.Entity.FindComponent*
+  commentId: Overload:WaveEngine.Framework.Entity.FindComponent
+  name: FindComponent
+  nameWithType: Entity.FindComponent
+  fullName: WaveEngine.Framework.Entity.FindComponent
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: WaveEngine.Framework.Entity.FindComponentInChildren*
+  commentId: Overload:WaveEngine.Framework.Entity.FindComponentInChildren
+  name: FindComponentInChildren
+  nameWithType: Entity.FindComponentInChildren
+  fullName: WaveEngine.Framework.Entity.FindComponentInChildren
+- uid: WaveEngine.Framework.Entity.FindComponentInParents*
+  commentId: Overload:WaveEngine.Framework.Entity.FindComponentInParents
+  name: FindComponentInParents
+  nameWithType: Entity.FindComponentInParents
+  fullName: WaveEngine.Framework.Entity.FindComponentInParents
+- uid: WaveEngine.Framework.Entity.FindComponents*
+  commentId: Overload:WaveEngine.Framework.Entity.FindComponents
+  name: FindComponents
+  nameWithType: Entity.FindComponents
+  fullName: WaveEngine.Framework.Entity.FindComponents
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Entity.FindComponentsInChildren*
+  commentId: Overload:WaveEngine.Framework.Entity.FindComponentsInChildren
+  name: FindComponentsInChildren
+  nameWithType: Entity.FindComponentsInChildren
+  fullName: WaveEngine.Framework.Entity.FindComponentsInChildren
+- uid: WaveEngine.Framework.Entity.FindComponentsInParents*
+  commentId: Overload:WaveEngine.Framework.Entity.FindComponentsInParents
+  name: FindComponentsInParents
+  nameWithType: Entity.FindComponentsInParents
+  fullName: WaveEngine.Framework.Entity.FindComponentsInParents
+- uid: WaveEngine.Framework.Entity.IsValidName*
+  commentId: Overload:WaveEngine.Framework.Entity.IsValidName
+  name: IsValidName
+  nameWithType: Entity.IsValidName
+  fullName: WaveEngine.Framework.Entity.IsValidName

@@ -1,0 +1,2846 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Components.Animation.Animation3D
+  commentId: T:WaveEngine.Components.Animation.Animation3D
+  id: Animation3D
+  parent: WaveEngine.Components.Animation
+  children:
+  - WaveEngine.Components.Animation.Animation3D.#ctor
+  - WaveEngine.Components.Animation.Animation3D.#ctor(System.String)
+  - WaveEngine.Components.Animation.Animation3D.#ctor(System.String,System.String)
+  - WaveEngine.Components.Animation.Animation3D.AnimationNames
+  - WaveEngine.Components.Animation.Animation3D.AnimationUpdated
+  - WaveEngine.Components.Animation.Animation3D.ApplyRootMotion
+  - WaveEngine.Components.Animation.Animation3D.BoundingBoxRefreshed
+  - WaveEngine.Components.Animation.Animation3D.Clip
+  - WaveEngine.Components.Animation.Animation3D.CurrentAnimation
+  - WaveEngine.Components.Animation.Animation3D.CurrentAnimationTrack
+  - WaveEngine.Components.Animation.Animation3D.DefaultValues
+  - WaveEngine.Components.Animation.Animation3D.Duration
+  - WaveEngine.Components.Animation.Animation3D.EndAnimationTime
+  - WaveEngine.Components.Animation.Animation3D.Frame
+  - WaveEngine.Components.Animation.Animation3D.GetDuration(System.String)
+  - WaveEngine.Components.Animation.Animation3D.Initialize
+  - WaveEngine.Components.Animation.Animation3D.InternalModel
+  - WaveEngine.Components.Animation.Animation3D.Loop
+  - WaveEngine.Components.Animation.Animation3D.ModelPath
+  - WaveEngine.Components.Animation.Animation3D.OnKeyFrameEvent
+  - WaveEngine.Components.Animation.Animation3D.PlayAnimation(System.String,System.Boolean,System.Single,System.Single,System.Nullable{System.Single},System.Nullable{System.Single})
+  - WaveEngine.Components.Animation.Animation3D.PlayAnimation(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Boolean,System.Single)
+  - WaveEngine.Components.Animation.Animation3D.PlayAnimation(WaveEngine.Components.Animation.AnimationBlendClip,System.Single)
+  - WaveEngine.Components.Animation.Animation3D.PlayAutomatically
+  - WaveEngine.Components.Animation.Animation3D.PlaybackRate
+  - WaveEngine.Components.Animation.Animation3D.PlayTime
+  - WaveEngine.Components.Animation.Animation3D.ResumeAnimation
+  - WaveEngine.Components.Animation.Animation3D.StartAnimationTime
+  - WaveEngine.Components.Animation.Animation3D.State
+  - WaveEngine.Components.Animation.Animation3D.StopAnimation
+  - WaveEngine.Components.Animation.Animation3D.Update(System.TimeSpan)
+  langs:
+  - csharp
+  - vb
+  name: Animation3D
+  nameWithType: Animation3D
+  fullName: WaveEngine.Components.Animation.Animation3D
+  type: Class
+  source:
+    id: Animation3D
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 26
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nBehavior to controls the animations of a 3D model.\n"
+  remarks: "\nIdeally this class should be used to hold all the animations related to a given 3D model.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract(Namespace = "WaveEngine.Components.Animation")]
+
+      public class Animation3D : Behavior
+    content.vb: >-
+      <DataContract(Namespace:="WaveEngine.Components.Animation")>
+
+      Public Class Animation3D
+
+          Inherits Behavior
+  inheritance:
+  - System.Object
+  - WaveEngine.Common.IO.SerializableObject
+  - WaveEngine.Framework.DependencyObject
+  - WaveEngine.Framework.Component
+  - WaveEngine.Framework.Behavior
+  inheritedMembers:
+  - WaveEngine.Framework.Behavior.Family
+  - WaveEngine.Framework.Behavior.IsActive
+  - WaveEngine.Framework.Behavior.UpdateOrder
+  - WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+  - WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+  - WaveEngine.Framework.Component.isInitialized
+  - WaveEngine.Framework.Component.OnComponentInitialized
+  - WaveEngine.Framework.Component.OnComponentRemoved
+  - WaveEngine.Framework.Component.Name
+  - WaveEngine.Framework.Component.Owner
+  - WaveEngine.Framework.Component.Assets
+  - WaveEngine.Framework.Component.EntityManager
+  - WaveEngine.Framework.Component.BehaviorManager
+  - WaveEngine.Framework.Component.RenderManager
+  - WaveEngine.Framework.Component.Clone
+  - WaveEngine.Framework.Component.ToString
+  - WaveEngine.Framework.Component.ResolveDependencies
+  - WaveEngine.Framework.Component.Removed
+  - WaveEngine.Framework.Component.DeleteDependencies
+  - WaveEngine.Framework.DependencyObject.PropertyChanged
+  - WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  - WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  - WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  - WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Namespace
+      type: System.String
+      value: WaveEngine.Components.Animation
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WaveEngine.Components.Animation.Animation3D.AnimationUpdated
+  commentId: E:WaveEngine.Components.Animation.Animation3D.AnimationUpdated
+  id: AnimationUpdated
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: AnimationUpdated
+  nameWithType: Animation3D.AnimationUpdated
+  fullName: WaveEngine.Components.Animation.Animation3D.AnimationUpdated
+  type: Event
+  source:
+    id: AnimationUpdated
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 85
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nAn event fired when the animation is updated\n"
+  example: []
+  syntax:
+    content: public event EventHandler<AnimationSample> AnimationUpdated
+    return:
+      type: System.EventHandler{WaveEngine.Framework.Animation.AnimationSample}
+    content.vb: Public Event AnimationUpdated As EventHandler(Of AnimationSample)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.Animation.Animation3D.OnKeyFrameEvent
+  commentId: E:WaveEngine.Components.Animation.Animation3D.OnKeyFrameEvent
+  id: OnKeyFrameEvent
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: OnKeyFrameEvent
+  nameWithType: Animation3D.OnKeyFrameEvent
+  fullName: WaveEngine.Components.Animation.Animation3D.OnKeyFrameEvent
+  type: Event
+  source:
+    id: OnKeyFrameEvent
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 90
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nRaised when a certain frame of an animation is played.\n"
+  example: []
+  syntax:
+    content: public event EventHandler<AnimationKeyframeEvent> OnKeyFrameEvent
+    return:
+      type: System.EventHandler{WaveEngine.Framework.Animation.AnimationKeyframeEvent}
+    content.vb: Public Event OnKeyFrameEvent As EventHandler(Of AnimationKeyframeEvent)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.Animation.Animation3D.ModelPath
+  commentId: P:WaveEngine.Components.Animation.Animation3D.ModelPath
+  id: ModelPath
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: ModelPath
+  nameWithType: Animation3D.ModelPath
+  fullName: WaveEngine.Components.Animation.Animation3D.ModelPath
+  type: Property
+  source:
+    id: ModelPath
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 102
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nGets or sets the animation file path\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderPropertyAsAsset(AssetType.Model, null, 0)]
+
+      public string ModelPath { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <RenderPropertyAsAsset(AssetType.Model, Nothing, 0)>
+
+      Public Property ModelPath As String
+  overload: WaveEngine.Components.Animation.Animation3D.ModelPath*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderPropertyAsAsset
+    ctor: WaveEngine.Common.Attributes.RenderPropertyAsAsset.#ctor(WaveEngine.Common.Attributes.AssetType,System.String,System.Int32)
+    arguments:
+    - type: WaveEngine.Common.Attributes.AssetType
+      value: 1
+    - type: System.String
+    - type: System.Int32
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.Animation.Animation3D.AnimationNames
+  commentId: P:WaveEngine.Components.Animation.Animation3D.AnimationNames
+  id: AnimationNames
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: AnimationNames
+  nameWithType: Animation3D.AnimationNames
+  fullName: WaveEngine.Components.Animation.Animation3D.AnimationNames
+  type: Property
+  source:
+    id: AnimationNames
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 127
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nGets the animation names.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<string> AnimationNames { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: "\nThe animation names.\n"
+    content.vb: Public ReadOnly Property AnimationNames As IEnumerable(Of String)
+  overload: WaveEngine.Components.Animation.Animation3D.AnimationNames*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.Animation.Animation3D.Clip
+  commentId: P:WaveEngine.Components.Animation.Animation3D.Clip
+  id: Clip
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: Clip
+  nameWithType: Animation3D.Clip
+  fullName: WaveEngine.Components.Animation.Animation3D.Clip
+  type: Property
+  source:
+    id: Clip
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 144
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nGets the current animation clip\n"
+  example: []
+  syntax:
+    content: public AnimationBlendClip Clip { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Components.Animation.AnimationBlendClip
+    content.vb: Public ReadOnly Property Clip As AnimationBlendClip
+  overload: WaveEngine.Components.Animation.Animation3D.Clip*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.Animation.Animation3D.BoundingBoxRefreshed
+  commentId: P:WaveEngine.Components.Animation.Animation3D.BoundingBoxRefreshed
+  id: BoundingBoxRefreshed
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: BoundingBoxRefreshed
+  nameWithType: Animation3D.BoundingBoxRefreshed
+  fullName: WaveEngine.Components.Animation.Animation3D.BoundingBoxRefreshed
+  type: Property
+  source:
+    id: BoundingBoxRefreshed
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 152
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nGets or sets a value indicating whether the bounding box was refreshed.\n"
+  example: []
+  syntax:
+    content: public bool BoundingBoxRefreshed { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if the bounding box was refreshed; otherwise, <code>false</code>.\n"
+    content.vb: Public Property BoundingBoxRefreshed As Boolean
+  overload: WaveEngine.Components.Animation.Animation3D.BoundingBoxRefreshed*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.Animation.Animation3D.CurrentAnimation
+  commentId: P:WaveEngine.Components.Animation.Animation3D.CurrentAnimation
+  id: CurrentAnimation
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: CurrentAnimation
+  nameWithType: Animation3D.CurrentAnimation
+  fullName: WaveEngine.Components.Animation.Animation3D.CurrentAnimation
+  type: Property
+  source:
+    id: CurrentAnimation
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 161
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nGets or sets the current active animation.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderPropertyAsSelector("AnimationNames")]
+
+      public string CurrentAnimation { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe current animation.\n"
+    content.vb: >-
+      <DataMember>
+
+      <RenderPropertyAsSelector("AnimationNames")>
+
+      Public Property CurrentAnimation As String
+  overload: WaveEngine.Components.Animation.Animation3D.CurrentAnimation*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderPropertyAsSelector
+    ctor: WaveEngine.Common.Attributes.RenderPropertyAsSelector.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: AnimationNames
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.Animation.Animation3D.Loop
+  commentId: P:WaveEngine.Components.Animation.Animation3D.Loop
+  id: Loop
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: Loop
+  nameWithType: Animation3D.Loop
+  fullName: WaveEngine.Components.Animation.Animation3D.Loop
+  type: Property
+  source:
+    id: Loop
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 190
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nGets or sets a value indicating whether current active animation is looping.\n"
+  example: []
+  syntax:
+    content: public bool Loop { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if the animation is looping; otherwise, <code>false</code>.\n"
+    content.vb: Public Property Loop As Boolean
+  overload: WaveEngine.Components.Animation.Animation3D.Loop*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.Animation.Animation3D.State
+  commentId: P:WaveEngine.Components.Animation.Animation3D.State
+  id: State
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: Animation3D.State
+  fullName: WaveEngine.Components.Animation.Animation3D.State
+  type: Property
+  source:
+    id: State
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 215
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nGets or sets the state of the current active animation.\n"
+  example: []
+  syntax:
+    content: public AnimationState State { get; protected set; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Animation.AnimationState
+    content.vb: Public Property State As AnimationState
+  overload: WaveEngine.Components.Animation.Animation3D.State*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: WaveEngine.Components.Animation.Animation3D.CurrentAnimationTrack
+  commentId: P:WaveEngine.Components.Animation.Animation3D.CurrentAnimationTrack
+  id: CurrentAnimationTrack
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: CurrentAnimationTrack
+  nameWithType: Animation3D.CurrentAnimationTrack
+  fullName: WaveEngine.Components.Animation.Animation3D.CurrentAnimationTrack
+  type: Property
+  source:
+    id: CurrentAnimationTrack
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 221
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nGets the current animation track\n"
+  example: []
+  syntax:
+    content: public AnimationClip CurrentAnimationTrack { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Animation.AnimationClip
+    content.vb: Public ReadOnly Property CurrentAnimationTrack As AnimationClip
+  overload: WaveEngine.Components.Animation.Animation3D.CurrentAnimationTrack*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.Animation.Animation3D.Frame
+  commentId: P:WaveEngine.Components.Animation.Animation3D.Frame
+  id: Frame
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: Frame
+  nameWithType: Animation3D.Frame
+  fullName: WaveEngine.Components.Animation.Animation3D.Frame
+  type: Property
+  source:
+    id: Frame
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 226
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nGets or sets the current frame of the animation.\n"
+  example: []
+  syntax:
+    content: public float Frame { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Frame As Single
+  overload: WaveEngine.Components.Animation.Animation3D.Frame*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.Animation.Animation3D.PlayTime
+  commentId: P:WaveEngine.Components.Animation.Animation3D.PlayTime
+  id: PlayTime
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: PlayTime
+  nameWithType: Animation3D.PlayTime
+  fullName: WaveEngine.Components.Animation.Animation3D.PlayTime
+  type: Property
+  source:
+    id: PlayTime
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 269
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nGets or sets the current animation time.\n"
+  example: []
+  syntax:
+    content: public float PlayTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PlayTime As Single
+  overload: WaveEngine.Components.Animation.Animation3D.PlayTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.Animation.Animation3D.StartAnimationTime
+  commentId: P:WaveEngine.Components.Animation.Animation3D.StartAnimationTime
+  id: StartAnimationTime
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: StartAnimationTime
+  nameWithType: Animation3D.StartAnimationTime
+  fullName: WaveEngine.Components.Animation.Animation3D.StartAnimationTime
+  type: Property
+  source:
+    id: StartAnimationTime
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 290
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nGets the start animation time.\n"
+  example: []
+  syntax:
+    content: public float StartAnimationTime { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property StartAnimationTime As Single
+  overload: WaveEngine.Components.Animation.Animation3D.StartAnimationTime*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.Animation.Animation3D.EndAnimationTime
+  commentId: P:WaveEngine.Components.Animation.Animation3D.EndAnimationTime
+  id: EndAnimationTime
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: EndAnimationTime
+  nameWithType: Animation3D.EndAnimationTime
+  fullName: WaveEngine.Components.Animation.Animation3D.EndAnimationTime
+  type: Property
+  source:
+    id: EndAnimationTime
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 302
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nGets the end animation time.\n"
+  example: []
+  syntax:
+    content: public float EndAnimationTime { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property EndAnimationTime As Single
+  overload: WaveEngine.Components.Animation.Animation3D.EndAnimationTime*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.Animation.Animation3D.Duration
+  commentId: P:WaveEngine.Components.Animation.Animation3D.Duration
+  id: Duration
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: Animation3D.Duration
+  fullName: WaveEngine.Components.Animation.Animation3D.Duration
+  type: Property
+  source:
+    id: Duration
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 314
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nGets the duration time.\n"
+  example: []
+  syntax:
+    content: public float Duration { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Duration As Single
+  overload: WaveEngine.Components.Animation.Animation3D.Duration*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.Animation.Animation3D.PlaybackRate
+  commentId: P:WaveEngine.Components.Animation.Animation3D.PlaybackRate
+  id: PlaybackRate
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: PlaybackRate
+  nameWithType: Animation3D.PlaybackRate
+  fullName: WaveEngine.Components.Animation.Animation3D.PlaybackRate
+  type: Property
+  source:
+    id: PlaybackRate
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 322
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nGets or sets the playback rate.\n"
+  example: []
+  syntax:
+    content: public float PlaybackRate { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe speed of the animation.\n"
+    content.vb: Public Property PlaybackRate As Single
+  overload: WaveEngine.Components.Animation.Animation3D.PlaybackRate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.Animation.Animation3D.PlayAutomatically
+  commentId: P:WaveEngine.Components.Animation.Animation3D.PlayAutomatically
+  id: PlayAutomatically
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: PlayAutomatically
+  nameWithType: Animation3D.PlayAutomatically
+  fullName: WaveEngine.Components.Animation.Animation3D.PlayAutomatically
+  type: Property
+  source:
+    id: PlayAutomatically
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 345
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nGets or sets a value indicating whether the animation is played automatically when the CurrentAnimation\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public bool PlayAutomatically { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if [play automatically]; otherwise, <code>false</code>.\n"
+    content.vb: >-
+      <DataMember>
+
+      Public Property PlayAutomatically As Boolean
+  overload: WaveEngine.Components.Animation.Animation3D.PlayAutomatically*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.Animation.Animation3D.InternalModel
+  commentId: P:WaveEngine.Components.Animation.Animation3D.InternalModel
+  id: InternalModel
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: InternalModel
+  nameWithType: Animation3D.InternalModel
+  fullName: WaveEngine.Components.Animation.Animation3D.InternalModel
+  type: Property
+  source:
+    id: InternalModel
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 351
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nGets the animation data.\n"
+  example: []
+  syntax:
+    content: public InternalModel InternalModel { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Components.Graphics3D.InternalModel
+    content.vb: Public ReadOnly Property InternalModel As InternalModel
+  overload: WaveEngine.Components.Animation.Animation3D.InternalModel*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Components.Animation.Animation3D.ApplyRootMotion
+  commentId: P:WaveEngine.Components.Animation.Animation3D.ApplyRootMotion
+  id: ApplyRootMotion
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: ApplyRootMotion
+  nameWithType: Animation3D.ApplyRootMotion
+  fullName: WaveEngine.Components.Animation.Animation3D.ApplyRootMotion
+  type: Property
+  source:
+    id: ApplyRootMotion
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 357
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nGets or sets a value indicating whether the root motion will be applied to this entity.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public bool ApplyRootMotion { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <DataMember>
+
+      Public Property ApplyRootMotion As Boolean
+  overload: WaveEngine.Components.Animation.Animation3D.ApplyRootMotion*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.Animation.Animation3D.#ctor
+  commentId: M:WaveEngine.Components.Animation.Animation3D.#ctor
+  id: '#ctor'
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: Animation3D()
+  nameWithType: Animation3D.Animation3D()
+  fullName: WaveEngine.Components.Animation.Animation3D.Animation3D()
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 366
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Components.Animation.Animation3D\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public Animation3D()
+    content.vb: Public Sub New
+  overload: WaveEngine.Components.Animation.Animation3D.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.Animation.Animation3D.#ctor(System.String)
+  commentId: M:WaveEngine.Components.Animation.Animation3D.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: Animation3D(String)
+  nameWithType: Animation3D.Animation3D(String)
+  fullName: WaveEngine.Components.Animation.Animation3D.Animation3D(System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 377
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Components.Animation.Animation3D\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public Animation3D(string animationPath)
+    parameters:
+    - id: animationPath
+      type: System.String
+      description: "\nThe path to the animation data.\n"
+    content.vb: Public Sub New(animationPath As String)
+  overload: WaveEngine.Components.Animation.Animation3D.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.Animation.Animation3D.#ctor(System.String,System.String)
+  commentId: M:WaveEngine.Components.Animation.Animation3D.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: Animation3D(String, String)
+  nameWithType: Animation3D.Animation3D(String, String)
+  fullName: WaveEngine.Components.Animation.Animation3D.Animation3D(System.String, System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 391
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Components.Animation.Animation3D\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public Animation3D(string name, string animationPath)
+    parameters:
+    - id: name
+      type: System.String
+      description: "\nThe name of this behavior.\n"
+    - id: animationPath
+      type: System.String
+      description: "\nThe path to the animation data.\n"
+    content.vb: Public Sub New(name As String, animationPath As String)
+  overload: WaveEngine.Components.Animation.Animation3D.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.Animation.Animation3D.DefaultValues
+  commentId: M:WaveEngine.Components.Animation.Animation3D.DefaultValues
+  id: DefaultValues
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: DefaultValues()
+  nameWithType: Animation3D.DefaultValues()
+  fullName: WaveEngine.Components.Animation.Animation3D.DefaultValues()
+  type: Method
+  source:
+    id: DefaultValues
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 405
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nThe default values\n"
+  example: []
+  syntax:
+    content: protected override void DefaultValues()
+    content.vb: Protected Overrides Sub DefaultValues
+  overridden: WaveEngine.Framework.Behavior.DefaultValues
+  overload: WaveEngine.Components.Animation.Animation3D.DefaultValues*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Components.Animation.Animation3D.GetDuration(System.String)
+  commentId: M:WaveEngine.Components.Animation.Animation3D.GetDuration(System.String)
+  id: GetDuration(System.String)
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: GetDuration(String)
+  nameWithType: Animation3D.GetDuration(String)
+  fullName: WaveEngine.Components.Animation.Animation3D.GetDuration(System.String)
+  type: Method
+  source:
+    id: GetDuration
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 429
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nGets the duration of an animation.\n"
+  example: []
+  syntax:
+    content: public double GetDuration(string animation)
+    parameters:
+    - id: animation
+      type: System.String
+      description: "\nThe animation name.\n"
+    return:
+      type: System.Double
+      description: "\nThe duration of the animation\n"
+    content.vb: Public Function GetDuration(animation As String) As Double
+  overload: WaveEngine.Components.Animation.Animation3D.GetDuration*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.Animation.Animation3D.PlayAnimation(System.String,System.Boolean,System.Single,System.Single,System.Nullable{System.Single},System.Nullable{System.Single})
+  commentId: M:WaveEngine.Components.Animation.Animation3D.PlayAnimation(System.String,System.Boolean,System.Single,System.Single,System.Nullable{System.Single},System.Nullable{System.Single})
+  id: PlayAnimation(System.String,System.Boolean,System.Single,System.Single,System.Nullable{System.Single},System.Nullable{System.Single})
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: PlayAnimation(String, Boolean, Single, Single, Nullable<Single>, Nullable<Single>)
+  nameWithType: Animation3D.PlayAnimation(String, Boolean, Single, Single, Nullable<Single>, Nullable<Single>)
+  fullName: WaveEngine.Components.Animation.Animation3D.PlayAnimation(System.String, System.Boolean, System.Single, System.Single, System.Nullable<System.Single>, System.Nullable<System.Single>)
+  type: Method
+  source:
+    id: PlayAnimation
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 451
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nPlays the animation between the specified frames.\n"
+  example: []
+  syntax:
+    content: public void PlayAnimation(string name, bool loop = true, float transitionTime = 0F, float playbackRate = 1F, float? startTime = default(float? ), float? endTime = default(float? ))
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the animation.
+    - id: loop
+      type: System.Boolean
+      description: Looping animation
+    - id: transitionTime
+      type: System.Single
+      description: The transition time
+    - id: playbackRate
+      type: System.Single
+      description: The playback rate
+    - id: startTime
+      type: System.Nullable{System.Single}
+      description: The frame where the animation starts playing.
+    - id: endTime
+      type: System.Nullable{System.Single}
+      description: The last frame of the animation to play.
+    content.vb: Public Sub PlayAnimation(name As String, loop As Boolean = True, transitionTime As Single = 0F, playbackRate As Single = 1F, startTime As Single? = Nothing, endTime As Single? = Nothing)
+  overload: WaveEngine.Components.Animation.Animation3D.PlayAnimation*
+  nameWithType.vb: Animation3D.PlayAnimation(String, Boolean, Single, Single, Nullable(Of Single), Nullable(Of Single))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Components.Animation.Animation3D.PlayAnimation(System.String, System.Boolean, System.Single, System.Single, System.Nullable(Of System.Single), System.Nullable(Of System.Single))
+  name.vb: PlayAnimation(String, Boolean, Single, Single, Nullable(Of Single), Nullable(Of Single))
+- uid: WaveEngine.Components.Animation.Animation3D.PlayAnimation(WaveEngine.Components.Animation.AnimationBlendClip,System.Single)
+  commentId: M:WaveEngine.Components.Animation.Animation3D.PlayAnimation(WaveEngine.Components.Animation.AnimationBlendClip,System.Single)
+  id: PlayAnimation(WaveEngine.Components.Animation.AnimationBlendClip,System.Single)
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: PlayAnimation(AnimationBlendClip, Single)
+  nameWithType: Animation3D.PlayAnimation(AnimationBlendClip, Single)
+  fullName: WaveEngine.Components.Animation.Animation3D.PlayAnimation(WaveEngine.Components.Animation.AnimationBlendClip, System.Single)
+  type: Method
+  source:
+    id: PlayAnimation
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 480
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nPlays the animation between the specified frames.\n"
+  example: []
+  syntax:
+    content: public void PlayAnimation(AnimationBlendClip clip, float transitionTime = 0F)
+    parameters:
+    - id: clip
+      type: WaveEngine.Components.Animation.AnimationBlendClip
+      description: The animation clip
+    - id: transitionTime
+      type: System.Single
+      description: The transition time
+    content.vb: Public Sub PlayAnimation(clip As AnimationBlendClip, transitionTime As Single = 0F)
+  overload: WaveEngine.Components.Animation.Animation3D.PlayAnimation*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.Animation.Animation3D.PlayAnimation(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Boolean,System.Single)
+  commentId: M:WaveEngine.Components.Animation.Animation3D.PlayAnimation(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Boolean,System.Single)
+  id: PlayAnimation(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Boolean,System.Single)
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: PlayAnimation(String, Nullable<Int32>, Nullable<Int32>, Boolean, Single)
+  nameWithType: Animation3D.PlayAnimation(String, Nullable<Int32>, Nullable<Int32>, Boolean, Single)
+  fullName: WaveEngine.Components.Animation.Animation3D.PlayAnimation(System.String, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Boolean, System.Single)
+  type: Method
+  source:
+    id: PlayAnimation
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 517
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nPlays the animation between the specified frames.\n"
+  example: []
+  syntax:
+    content: public void PlayAnimation(string name, int? startTime, int? endTime, bool loop = true, float playbackRate = 1F)
+    parameters:
+    - id: name
+      type: System.String
+      description: "\nThe name of the animation.\n"
+    - id: startTime
+      type: System.Nullable{System.Int32}
+      description: "\nThe frame where the animation starts playing.\n"
+    - id: endTime
+      type: System.Nullable{System.Int32}
+      description: "\nThe last frame of the animation to play.\n"
+    - id: loop
+      type: System.Boolean
+      description: "\nif set to <code>true</code> loop the animation.\n"
+    - id: playbackRate
+      type: System.Single
+      description: "\nthe playback rate.\n"
+    content.vb: Public Sub PlayAnimation(name As String, startTime As Integer?, endTime As Integer?, loop As Boolean = True, playbackRate As Single = 1F)
+  overload: WaveEngine.Components.Animation.Animation3D.PlayAnimation*
+  nameWithType.vb: Animation3D.PlayAnimation(String, Nullable(Of Int32), Nullable(Of Int32), Boolean, Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Components.Animation.Animation3D.PlayAnimation(System.String, System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Boolean, System.Single)
+  name.vb: PlayAnimation(String, Nullable(Of Int32), Nullable(Of Int32), Boolean, Single)
+- uid: WaveEngine.Components.Animation.Animation3D.ResumeAnimation
+  commentId: M:WaveEngine.Components.Animation.Animation3D.ResumeAnimation
+  id: ResumeAnimation
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: ResumeAnimation()
+  nameWithType: Animation3D.ResumeAnimation()
+  fullName: WaveEngine.Components.Animation.Animation3D.ResumeAnimation()
+  type: Method
+  source:
+    id: ResumeAnimation
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 582
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nResume the animation.\n"
+  example: []
+  syntax:
+    content: public void ResumeAnimation()
+    content.vb: Public Sub ResumeAnimation
+  overload: WaveEngine.Components.Animation.Animation3D.ResumeAnimation*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.Animation.Animation3D.StopAnimation
+  commentId: M:WaveEngine.Components.Animation.Animation3D.StopAnimation
+  id: StopAnimation
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: StopAnimation()
+  nameWithType: Animation3D.StopAnimation()
+  fullName: WaveEngine.Components.Animation.Animation3D.StopAnimation()
+  type: Method
+  source:
+    id: StopAnimation
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 590
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nStops the animation.\n"
+  example: []
+  syntax:
+    content: public void StopAnimation()
+    content.vb: Public Sub StopAnimation
+  overload: WaveEngine.Components.Animation.Animation3D.StopAnimation*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.Animation.Animation3D.Initialize
+  commentId: M:WaveEngine.Components.Animation.Animation3D.Initialize
+  id: Initialize
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: Animation3D.Initialize()
+  fullName: WaveEngine.Components.Animation.Animation3D.Initialize()
+  type: Method
+  source:
+    id: Initialize
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 602
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nPerforms further custom initialization for this instance.\n"
+  example: []
+  syntax:
+    content: protected override void Initialize()
+    content.vb: Protected Overrides Sub Initialize
+  overridden: WaveEngine.Framework.Component.Initialize
+  overload: WaveEngine.Components.Animation.Animation3D.Initialize*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Components.Animation.Animation3D.Update(System.TimeSpan)
+  commentId: M:WaveEngine.Components.Animation.Animation3D.Update(System.TimeSpan)
+  id: Update(System.TimeSpan)
+  parent: WaveEngine.Components.Animation.Animation3D
+  langs:
+  - csharp
+  - vb
+  name: Update(TimeSpan)
+  nameWithType: Animation3D.Update(TimeSpan)
+  fullName: WaveEngine.Components.Animation.Animation3D.Update(System.TimeSpan)
+  type: Method
+  source:
+    id: Update
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Animation\Animation3D.cs
+    startLine: 648
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Animation
+  summary: "\nUpdates the animation.\n"
+  example: []
+  syntax:
+    content: protected override void Update(TimeSpan gameTime)
+    parameters:
+    - id: gameTime
+      type: System.TimeSpan
+      description: "\nThe game time.\n"
+    content.vb: Protected Overrides Sub Update(gameTime As TimeSpan)
+  overridden: WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+  overload: WaveEngine.Components.Animation.Animation3D.Update*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: WaveEngine.Components.Animation
+  commentId: N:WaveEngine.Components.Animation
+  name: WaveEngine.Components.Animation
+  nameWithType: WaveEngine.Components.Animation
+  fullName: WaveEngine.Components.Animation
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.IO.SerializableObject
+  commentId: T:WaveEngine.Common.IO.SerializableObject
+  parent: WaveEngine.Common.IO
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: WaveEngine.Common.IO.SerializableObject
+- uid: WaveEngine.Framework.DependencyObject
+  commentId: T:WaveEngine.Framework.DependencyObject
+  parent: WaveEngine.Framework
+  name: DependencyObject
+  nameWithType: DependencyObject
+  fullName: WaveEngine.Framework.DependencyObject
+- uid: WaveEngine.Framework.Component
+  commentId: T:WaveEngine.Framework.Component
+  parent: WaveEngine.Framework
+  name: Component
+  nameWithType: Component
+  fullName: WaveEngine.Framework.Component
+- uid: WaveEngine.Framework.Behavior
+  commentId: T:WaveEngine.Framework.Behavior
+  parent: WaveEngine.Framework
+  name: Behavior
+  nameWithType: Behavior
+  fullName: WaveEngine.Framework.Behavior
+- uid: WaveEngine.Framework.Behavior.Family
+  commentId: P:WaveEngine.Framework.Behavior.Family
+  parent: WaveEngine.Framework.Behavior
+  name: Family
+  nameWithType: Behavior.Family
+  fullName: WaveEngine.Framework.Behavior.Family
+- uid: WaveEngine.Framework.Behavior.IsActive
+  commentId: P:WaveEngine.Framework.Behavior.IsActive
+  parent: WaveEngine.Framework.Behavior
+  name: IsActive
+  nameWithType: Behavior.IsActive
+  fullName: WaveEngine.Framework.Behavior.IsActive
+- uid: WaveEngine.Framework.Behavior.UpdateOrder
+  commentId: P:WaveEngine.Framework.Behavior.UpdateOrder
+  parent: WaveEngine.Framework.Behavior
+  name: UpdateOrder
+  nameWithType: Behavior.UpdateOrder
+  fullName: WaveEngine.Framework.Behavior.UpdateOrder
+- uid: WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+  commentId: M:WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+  parent: WaveEngine.Framework.Behavior
+  isExternal: true
+  name: BaseActiveNotification(Boolean)
+  nameWithType: Behavior.BaseActiveNotification(Boolean)
+  fullName: WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+    name: BaseActiveNotification
+    nameWithType: Behavior.BaseActiveNotification
+    fullName: WaveEngine.Framework.Behavior.BaseActiveNotification
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Behavior.BaseActiveNotification(System.Boolean)
+    name: BaseActiveNotification
+    nameWithType: Behavior.BaseActiveNotification
+    fullName: WaveEngine.Framework.Behavior.BaseActiveNotification
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+  commentId: M:WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+  parent: WaveEngine.Framework.Behavior
+  isExternal: true
+  name: ActiveNotification(Boolean)
+  nameWithType: Behavior.ActiveNotification(Boolean)
+  fullName: WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+    name: ActiveNotification
+    nameWithType: Behavior.ActiveNotification
+    fullName: WaveEngine.Framework.Behavior.ActiveNotification
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Behavior.ActiveNotification(System.Boolean)
+    name: ActiveNotification
+    nameWithType: Behavior.ActiveNotification
+    fullName: WaveEngine.Framework.Behavior.ActiveNotification
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.isInitialized
+  commentId: F:WaveEngine.Framework.Component.isInitialized
+  parent: WaveEngine.Framework.Component
+  name: isInitialized
+  nameWithType: Component.isInitialized
+  fullName: WaveEngine.Framework.Component.isInitialized
+- uid: WaveEngine.Framework.Component.OnComponentInitialized
+  commentId: E:WaveEngine.Framework.Component.OnComponentInitialized
+  parent: WaveEngine.Framework.Component
+  name: OnComponentInitialized
+  nameWithType: Component.OnComponentInitialized
+  fullName: WaveEngine.Framework.Component.OnComponentInitialized
+- uid: WaveEngine.Framework.Component.OnComponentRemoved
+  commentId: E:WaveEngine.Framework.Component.OnComponentRemoved
+  parent: WaveEngine.Framework.Component
+  name: OnComponentRemoved
+  nameWithType: Component.OnComponentRemoved
+  fullName: WaveEngine.Framework.Component.OnComponentRemoved
+- uid: WaveEngine.Framework.Component.Name
+  commentId: P:WaveEngine.Framework.Component.Name
+  parent: WaveEngine.Framework.Component
+  name: Name
+  nameWithType: Component.Name
+  fullName: WaveEngine.Framework.Component.Name
+- uid: WaveEngine.Framework.Component.Owner
+  commentId: P:WaveEngine.Framework.Component.Owner
+  parent: WaveEngine.Framework.Component
+  name: Owner
+  nameWithType: Component.Owner
+  fullName: WaveEngine.Framework.Component.Owner
+- uid: WaveEngine.Framework.Component.Assets
+  commentId: P:WaveEngine.Framework.Component.Assets
+  parent: WaveEngine.Framework.Component
+  name: Assets
+  nameWithType: Component.Assets
+  fullName: WaveEngine.Framework.Component.Assets
+- uid: WaveEngine.Framework.Component.EntityManager
+  commentId: P:WaveEngine.Framework.Component.EntityManager
+  parent: WaveEngine.Framework.Component
+  name: EntityManager
+  nameWithType: Component.EntityManager
+  fullName: WaveEngine.Framework.Component.EntityManager
+- uid: WaveEngine.Framework.Component.BehaviorManager
+  commentId: P:WaveEngine.Framework.Component.BehaviorManager
+  parent: WaveEngine.Framework.Component
+  name: BehaviorManager
+  nameWithType: Component.BehaviorManager
+  fullName: WaveEngine.Framework.Component.BehaviorManager
+- uid: WaveEngine.Framework.Component.RenderManager
+  commentId: P:WaveEngine.Framework.Component.RenderManager
+  parent: WaveEngine.Framework.Component
+  name: RenderManager
+  nameWithType: Component.RenderManager
+  fullName: WaveEngine.Framework.Component.RenderManager
+- uid: WaveEngine.Framework.Component.Clone
+  commentId: M:WaveEngine.Framework.Component.Clone
+  parent: WaveEngine.Framework.Component
+  name: Clone()
+  nameWithType: Component.Clone()
+  fullName: WaveEngine.Framework.Component.Clone()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Clone
+    name: Clone
+    nameWithType: Component.Clone
+    fullName: WaveEngine.Framework.Component.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Clone
+    name: Clone
+    nameWithType: Component.Clone
+    fullName: WaveEngine.Framework.Component.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.ToString
+  commentId: M:WaveEngine.Framework.Component.ToString
+  parent: WaveEngine.Framework.Component
+  name: ToString()
+  nameWithType: Component.ToString()
+  fullName: WaveEngine.Framework.Component.ToString()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: WaveEngine.Framework.Component.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: WaveEngine.Framework.Component.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.ResolveDependencies
+  commentId: M:WaveEngine.Framework.Component.ResolveDependencies
+  parent: WaveEngine.Framework.Component
+  name: ResolveDependencies()
+  nameWithType: Component.ResolveDependencies()
+  fullName: WaveEngine.Framework.Component.ResolveDependencies()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.ResolveDependencies
+    name: ResolveDependencies
+    nameWithType: Component.ResolveDependencies
+    fullName: WaveEngine.Framework.Component.ResolveDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.ResolveDependencies
+    name: ResolveDependencies
+    nameWithType: Component.ResolveDependencies
+    fullName: WaveEngine.Framework.Component.ResolveDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.Removed
+  commentId: M:WaveEngine.Framework.Component.Removed
+  parent: WaveEngine.Framework.Component
+  name: Removed()
+  nameWithType: Component.Removed()
+  fullName: WaveEngine.Framework.Component.Removed()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Removed
+    name: Removed
+    nameWithType: Component.Removed
+    fullName: WaveEngine.Framework.Component.Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Removed
+    name: Removed
+    nameWithType: Component.Removed
+    fullName: WaveEngine.Framework.Component.Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.DeleteDependencies
+  commentId: M:WaveEngine.Framework.Component.DeleteDependencies
+  parent: WaveEngine.Framework.Component
+  name: DeleteDependencies()
+  nameWithType: Component.DeleteDependencies()
+  fullName: WaveEngine.Framework.Component.DeleteDependencies()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Component.DeleteDependencies
+    fullName: WaveEngine.Framework.Component.DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Component.DeleteDependencies
+    fullName: WaveEngine.Framework.Component.DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.PropertyChanged
+  commentId: E:WaveEngine.Framework.DependencyObject.PropertyChanged
+  parent: WaveEngine.Framework.DependencyObject
+  name: PropertyChanged
+  nameWithType: DependencyObject.PropertyChanged
+  fullName: WaveEngine.Framework.DependencyObject.PropertyChanged
+- uid: WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  commentId: P:WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  parent: WaveEngine.Framework.DependencyObject
+  name: ParentDependencyObject
+  nameWithType: DependencyObject.ParentDependencyObject
+  fullName: WaveEngine.Framework.DependencyObject.ParentDependencyObject
+- uid: WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  commentId: P:WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  parent: WaveEngine.Framework.DependencyObject
+  name: EnableDiagnosticCallback
+  nameWithType: DependencyObject.EnableDiagnosticCallback
+  fullName: WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+- uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  commentId: M:WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  parent: WaveEngine.Framework.DependencyObject
+  isExternal: true
+  name: SetValue(DependencyProperty, Object)
+  nameWithType: DependencyObject.SetValue(DependencyProperty, Object)
+  fullName: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty, System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+    name: SetValue
+    nameWithType: DependencyObject.SetValue
+    fullName: WaveEngine.Framework.DependencyObject.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+    name: SetValue
+    nameWithType: DependencyObject.SetValue
+    fullName: WaveEngine.Framework.DependencyObject.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: GetValue(DependencyProperty)
+  nameWithType: DependencyObject.GetValue(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+    name: GetValue
+    nameWithType: DependencyObject.GetValue
+    fullName: WaveEngine.Framework.DependencyObject.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+    name: GetValue
+    nameWithType: DependencyObject.GetValue
+    fullName: WaveEngine.Framework.DependencyObject.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: GetAbsoluteValue<T>(DependencyProperty)
+  nameWithType: DependencyObject.GetAbsoluteValue<T>(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue<T>(WaveEngine.Framework.DependencyProperty)
+  nameWithType.vb: DependencyObject.GetAbsoluteValue(Of T)(DependencyProperty)
+  fullName.vb: WaveEngine.Framework.DependencyObject.GetAbsoluteValue(Of T)(WaveEngine.Framework.DependencyProperty)
+  name.vb: GetAbsoluteValue(Of T)(DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+    name: GetAbsoluteValue<T>
+    nameWithType: DependencyObject.GetAbsoluteValue<T>
+    fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+    name: GetAbsoluteValue(Of T)
+    nameWithType: DependencyObject.GetAbsoluteValue(Of T)
+    fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: ClearValue(DependencyProperty)
+  nameWithType: DependencyObject.ClearValue(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+    name: ClearValue
+    nameWithType: DependencyObject.ClearValue
+    fullName: WaveEngine.Framework.DependencyObject.ClearValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+    name: ClearValue
+    nameWithType: DependencyObject.ClearValue
+    fullName: WaveEngine.Framework.DependencyObject.ClearValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: IsValueSet(DependencyProperty)
+  nameWithType: DependencyObject.IsValueSet(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+    name: IsValueSet
+    nameWithType: DependencyObject.IsValueSet
+    fullName: WaveEngine.Framework.DependencyObject.IsValueSet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+    name: IsValueSet
+    nameWithType: DependencyObject.IsValueSet
+    fullName: WaveEngine.Framework.DependencyObject.IsValueSet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  commentId: M:WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  parent: WaveEngine.Common.IO.SerializableObject
+  isExternal: true
+  name: OnDeserializing(StreamingContext)
+  nameWithType: SerializableObject.OnDeserializing(StreamingContext)
+  fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.IO
+  commentId: N:WaveEngine.Common.IO
+  name: WaveEngine.Common.IO
+  nameWithType: WaveEngine.Common.IO
+  fullName: WaveEngine.Common.IO
+- uid: WaveEngine.Framework
+  commentId: N:WaveEngine.Framework
+  name: WaveEngine.Framework
+  nameWithType: WaveEngine.Framework
+  fullName: WaveEngine.Framework
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: System.EventHandler{WaveEngine.Framework.Animation.AnimationSample}
+  commentId: T:System.EventHandler{WaveEngine.Framework.Animation.AnimationSample}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<AnimationSample>
+  nameWithType: EventHandler<AnimationSample>
+  fullName: System.EventHandler<WaveEngine.Framework.Animation.AnimationSample>
+  nameWithType.vb: EventHandler(Of AnimationSample)
+  fullName.vb: System.EventHandler(Of WaveEngine.Framework.Animation.AnimationSample)
+  name.vb: EventHandler(Of AnimationSample)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Framework.Animation.AnimationSample
+    name: AnimationSample
+    nameWithType: AnimationSample
+    fullName: WaveEngine.Framework.Animation.AnimationSample
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Framework.Animation.AnimationSample
+    name: AnimationSample
+    nameWithType: AnimationSample
+    fullName: WaveEngine.Framework.Animation.AnimationSample
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler{WaveEngine.Framework.Animation.AnimationKeyframeEvent}
+  commentId: T:System.EventHandler{WaveEngine.Framework.Animation.AnimationKeyframeEvent}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<AnimationKeyframeEvent>
+  nameWithType: EventHandler<AnimationKeyframeEvent>
+  fullName: System.EventHandler<WaveEngine.Framework.Animation.AnimationKeyframeEvent>
+  nameWithType.vb: EventHandler(Of AnimationKeyframeEvent)
+  fullName.vb: System.EventHandler(Of WaveEngine.Framework.Animation.AnimationKeyframeEvent)
+  name.vb: EventHandler(Of AnimationKeyframeEvent)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Framework.Animation.AnimationKeyframeEvent
+    name: AnimationKeyframeEvent
+    nameWithType: AnimationKeyframeEvent
+    fullName: WaveEngine.Framework.Animation.AnimationKeyframeEvent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Framework.Animation.AnimationKeyframeEvent
+    name: AnimationKeyframeEvent
+    nameWithType: AnimationKeyframeEvent
+    fullName: WaveEngine.Framework.Animation.AnimationKeyframeEvent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Components.Animation.Animation3D.ModelPath*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.ModelPath
+  name: ModelPath
+  nameWithType: Animation3D.ModelPath
+  fullName: WaveEngine.Components.Animation.Animation3D.ModelPath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: WaveEngine.Components.Animation.Animation3D.AnimationNames*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.AnimationNames
+  name: AnimationNames
+  nameWithType: Animation3D.AnimationNames
+  fullName: WaveEngine.Components.Animation.Animation3D.AnimationNames
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: WaveEngine.Components.Animation.Animation3D.Clip*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.Clip
+  name: Clip
+  nameWithType: Animation3D.Clip
+  fullName: WaveEngine.Components.Animation.Animation3D.Clip
+- uid: WaveEngine.Components.Animation.AnimationBlendClip
+  commentId: T:WaveEngine.Components.Animation.AnimationBlendClip
+  parent: WaveEngine.Components.Animation
+  name: AnimationBlendClip
+  nameWithType: AnimationBlendClip
+  fullName: WaveEngine.Components.Animation.AnimationBlendClip
+- uid: WaveEngine.Components.Animation.Animation3D.BoundingBoxRefreshed*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.BoundingBoxRefreshed
+  name: BoundingBoxRefreshed
+  nameWithType: Animation3D.BoundingBoxRefreshed
+  fullName: WaveEngine.Components.Animation.Animation3D.BoundingBoxRefreshed
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Components.Animation.Animation3D.CurrentAnimation*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.CurrentAnimation
+  name: CurrentAnimation
+  nameWithType: Animation3D.CurrentAnimation
+  fullName: WaveEngine.Components.Animation.Animation3D.CurrentAnimation
+- uid: WaveEngine.Components.Animation.Animation3D.Loop*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.Loop
+  name: Loop
+  nameWithType: Animation3D.Loop
+  fullName: WaveEngine.Components.Animation.Animation3D.Loop
+- uid: WaveEngine.Components.Animation.Animation3D.State*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.State
+  name: State
+  nameWithType: Animation3D.State
+  fullName: WaveEngine.Components.Animation.Animation3D.State
+- uid: WaveEngine.Framework.Animation.AnimationState
+  commentId: T:WaveEngine.Framework.Animation.AnimationState
+  parent: WaveEngine.Framework.Animation
+  name: AnimationState
+  nameWithType: AnimationState
+  fullName: WaveEngine.Framework.Animation.AnimationState
+- uid: WaveEngine.Framework.Animation
+  commentId: N:WaveEngine.Framework.Animation
+  name: WaveEngine.Framework.Animation
+  nameWithType: WaveEngine.Framework.Animation
+  fullName: WaveEngine.Framework.Animation
+- uid: WaveEngine.Components.Animation.Animation3D.CurrentAnimationTrack*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.CurrentAnimationTrack
+  name: CurrentAnimationTrack
+  nameWithType: Animation3D.CurrentAnimationTrack
+  fullName: WaveEngine.Components.Animation.Animation3D.CurrentAnimationTrack
+- uid: WaveEngine.Framework.Animation.AnimationClip
+  commentId: T:WaveEngine.Framework.Animation.AnimationClip
+  parent: WaveEngine.Framework.Animation
+  name: AnimationClip
+  nameWithType: AnimationClip
+  fullName: WaveEngine.Framework.Animation.AnimationClip
+- uid: WaveEngine.Components.Animation.Animation3D.Frame*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.Frame
+  name: Frame
+  nameWithType: Animation3D.Frame
+  fullName: WaveEngine.Components.Animation.Animation3D.Frame
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Components.Animation.Animation3D.PlayTime*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.PlayTime
+  name: PlayTime
+  nameWithType: Animation3D.PlayTime
+  fullName: WaveEngine.Components.Animation.Animation3D.PlayTime
+- uid: WaveEngine.Components.Animation.Animation3D.StartAnimationTime*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.StartAnimationTime
+  name: StartAnimationTime
+  nameWithType: Animation3D.StartAnimationTime
+  fullName: WaveEngine.Components.Animation.Animation3D.StartAnimationTime
+- uid: WaveEngine.Components.Animation.Animation3D.EndAnimationTime*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.EndAnimationTime
+  name: EndAnimationTime
+  nameWithType: Animation3D.EndAnimationTime
+  fullName: WaveEngine.Components.Animation.Animation3D.EndAnimationTime
+- uid: WaveEngine.Components.Animation.Animation3D.Duration*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.Duration
+  name: Duration
+  nameWithType: Animation3D.Duration
+  fullName: WaveEngine.Components.Animation.Animation3D.Duration
+- uid: WaveEngine.Components.Animation.Animation3D.PlaybackRate*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.PlaybackRate
+  name: PlaybackRate
+  nameWithType: Animation3D.PlaybackRate
+  fullName: WaveEngine.Components.Animation.Animation3D.PlaybackRate
+- uid: WaveEngine.Components.Animation.Animation3D.PlayAutomatically*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.PlayAutomatically
+  name: PlayAutomatically
+  nameWithType: Animation3D.PlayAutomatically
+  fullName: WaveEngine.Components.Animation.Animation3D.PlayAutomatically
+- uid: WaveEngine.Components.Animation.Animation3D.InternalModel*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.InternalModel
+  name: InternalModel
+  nameWithType: Animation3D.InternalModel
+  fullName: WaveEngine.Components.Animation.Animation3D.InternalModel
+- uid: WaveEngine.Components.Graphics3D.InternalModel
+  commentId: T:WaveEngine.Components.Graphics3D.InternalModel
+  parent: WaveEngine.Components.Graphics3D
+  name: InternalModel
+  nameWithType: InternalModel
+  fullName: WaveEngine.Components.Graphics3D.InternalModel
+- uid: WaveEngine.Components.Graphics3D
+  commentId: N:WaveEngine.Components.Graphics3D
+  name: WaveEngine.Components.Graphics3D
+  nameWithType: WaveEngine.Components.Graphics3D
+  fullName: WaveEngine.Components.Graphics3D
+- uid: WaveEngine.Components.Animation.Animation3D.ApplyRootMotion*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.ApplyRootMotion
+  name: ApplyRootMotion
+  nameWithType: Animation3D.ApplyRootMotion
+  fullName: WaveEngine.Components.Animation.Animation3D.ApplyRootMotion
+- uid: WaveEngine.Components.Animation.Animation3D
+  commentId: T:WaveEngine.Components.Animation.Animation3D
+  name: Animation3D
+  nameWithType: Animation3D
+  fullName: WaveEngine.Components.Animation.Animation3D
+- uid: WaveEngine.Components.Animation.Animation3D.#ctor*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.#ctor
+  name: Animation3D
+  nameWithType: Animation3D.Animation3D
+  fullName: WaveEngine.Components.Animation.Animation3D.Animation3D
+- uid: WaveEngine.Framework.Behavior.DefaultValues
+  commentId: M:WaveEngine.Framework.Behavior.DefaultValues
+  parent: WaveEngine.Framework.Behavior
+  name: DefaultValues()
+  nameWithType: Behavior.DefaultValues()
+  fullName: WaveEngine.Framework.Behavior.DefaultValues()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Behavior.DefaultValues
+    name: DefaultValues
+    nameWithType: Behavior.DefaultValues
+    fullName: WaveEngine.Framework.Behavior.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Behavior.DefaultValues
+    name: DefaultValues
+    nameWithType: Behavior.DefaultValues
+    fullName: WaveEngine.Framework.Behavior.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Components.Animation.Animation3D.DefaultValues*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.DefaultValues
+  name: DefaultValues
+  nameWithType: Animation3D.DefaultValues
+  fullName: WaveEngine.Components.Animation.Animation3D.DefaultValues
+- uid: WaveEngine.Components.Animation.Animation3D.GetDuration*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.GetDuration
+  name: GetDuration
+  nameWithType: Animation3D.GetDuration
+  fullName: WaveEngine.Components.Animation.Animation3D.GetDuration
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: WaveEngine.Components.Animation.Animation3D.PlayAnimation*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.PlayAnimation
+  name: PlayAnimation
+  nameWithType: Animation3D.PlayAnimation
+  fullName: WaveEngine.Components.Animation.Animation3D.PlayAnimation
+- uid: System.Nullable{System.Single}
+  commentId: T:System.Nullable{System.Single}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Single>
+  nameWithType: Nullable<Single>
+  fullName: System.Nullable<System.Single>
+  nameWithType.vb: Nullable(Of Single)
+  fullName.vb: System.Nullable(Of System.Single)
+  name.vb: Nullable(Of Single)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Components.Animation.Animation3D.ResumeAnimation*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.ResumeAnimation
+  name: ResumeAnimation
+  nameWithType: Animation3D.ResumeAnimation
+  fullName: WaveEngine.Components.Animation.Animation3D.ResumeAnimation
+- uid: WaveEngine.Components.Animation.Animation3D.StopAnimation*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.StopAnimation
+  name: StopAnimation
+  nameWithType: Animation3D.StopAnimation
+  fullName: WaveEngine.Components.Animation.Animation3D.StopAnimation
+- uid: WaveEngine.Framework.Component.Initialize
+  commentId: M:WaveEngine.Framework.Component.Initialize
+  parent: WaveEngine.Framework.Component
+  name: Initialize()
+  nameWithType: Component.Initialize()
+  fullName: WaveEngine.Framework.Component.Initialize()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Initialize
+    name: Initialize
+    nameWithType: Component.Initialize
+    fullName: WaveEngine.Framework.Component.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Initialize
+    name: Initialize
+    nameWithType: Component.Initialize
+    fullName: WaveEngine.Framework.Component.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Components.Animation.Animation3D.Initialize*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.Initialize
+  name: Initialize
+  nameWithType: Animation3D.Initialize
+  fullName: WaveEngine.Components.Animation.Animation3D.Initialize
+- uid: WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+  commentId: M:WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+  parent: WaveEngine.Framework.Behavior
+  isExternal: true
+  name: Update(TimeSpan)
+  nameWithType: Behavior.Update(TimeSpan)
+  fullName: WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+    name: Update
+    nameWithType: Behavior.Update
+    fullName: WaveEngine.Framework.Behavior.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Behavior.Update(System.TimeSpan)
+    name: Update
+    nameWithType: Behavior.Update
+    fullName: WaveEngine.Framework.Behavior.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Components.Animation.Animation3D.Update*
+  commentId: Overload:WaveEngine.Components.Animation.Animation3D.Update
+  name: Update
+  nameWithType: Animation3D.Update
+  fullName: WaveEngine.Components.Animation.Animation3D.Update
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan

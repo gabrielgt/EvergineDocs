@@ -1,0 +1,1970 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  commentId: T:WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  id: AnimationClipModel
+  parent: WaveEngine.Framework.Models.Profiles
+  children:
+  - WaveEngine.Framework.Models.Profiles.AnimationClipModel.AdditiveReferenceFrame
+  - WaveEngine.Framework.Models.Profiles.AnimationClipModel.AdditiveReferenceSourceTrack
+  - WaveEngine.Framework.Models.Profiles.AnimationClipModel.DefaultValues
+  - WaveEngine.Framework.Models.Profiles.AnimationClipModel.EndFrame
+  - WaveEngine.Framework.Models.Profiles.AnimationClipModel.EndTime
+  - WaveEngine.Framework.Models.Profiles.AnimationClipModel.Events
+  - WaveEngine.Framework.Models.Profiles.AnimationClipModel.Framerate
+  - WaveEngine.Framework.Models.Profiles.AnimationClipModel.InPlaceMode
+  - WaveEngine.Framework.Models.Profiles.AnimationClipModel.IsAditiveClip
+  - WaveEngine.Framework.Models.Profiles.AnimationClipModel.ModelAsset
+  - WaveEngine.Framework.Models.Profiles.AnimationClipModel.Name
+  - WaveEngine.Framework.Models.Profiles.AnimationClipModel.NodeNames
+  - WaveEngine.Framework.Models.Profiles.AnimationClipModel.RootMotion
+  - WaveEngine.Framework.Models.Profiles.AnimationClipModel.RootMotionNode
+  - WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTra
+  - WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrack
+  - WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrackLength
+  - WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrackNames
+  - WaveEngine.Framework.Models.Profiles.AnimationClipModel.StartFrame
+  - WaveEngine.Framework.Models.Profiles.AnimationClipModel.StartTime
+  - WaveEngine.Framework.Models.Profiles.AnimationClipModel.TimeLine
+  - WaveEngine.Framework.Models.Profiles.AnimationClipModel.ToString
+  - WaveEngine.Framework.Models.Profiles.AnimationClipModel.Type
+  langs:
+  - csharp
+  - vb
+  name: AnimationClipModel
+  nameWithType: AnimationClipModel
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  type: Class
+  source:
+    id: AnimationClipModel
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 33
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nAnimation definition class\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract(Namespace = "WaveEngine.Framework.Models.Profiles", Name = "Animation")]
+
+      public class AnimationClipModel : SerializableObject
+    content.vb: >-
+      <DataContract(Namespace:="WaveEngine.Framework.Models.Profiles", Name:="Animation")>
+
+      Public Class AnimationClipModel
+
+          Inherits SerializableObject
+  inheritance:
+  - System.Object
+  - WaveEngine.Common.IO.SerializableObject
+  inheritedMembers:
+  - WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Namespace
+      type: System.String
+      value: WaveEngine.Framework.Models.Profiles
+    - name: Name
+      type: System.String
+      value: Animation
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.TimeLine
+  commentId: F:WaveEngine.Framework.Models.Profiles.AnimationClipModel.TimeLine
+  id: TimeLine
+  parent: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  langs:
+  - csharp
+  - vb
+  name: TimeLine
+  nameWithType: AnimationClipModel.TimeLine
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.TimeLine
+  type: Field
+  source:
+    id: TimeLine
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 46
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nThe timeline\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderPropertyAsTimeline("StartFrame", "EndFrame", "Framerate", "SourceTrackLength", true, RenderPosition = RenderPosition.Start)]
+
+      public int TimeLine
+    return:
+      type: System.Int32
+    content.vb: >-
+      <RenderPropertyAsTimeline("StartFrame", "EndFrame", "Framerate", "SourceTrackLength", True, RenderPosition:=RenderPosition.Start)>
+
+      Public TimeLine As Integer
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderPropertyAsTimeline
+    ctor: WaveEngine.Common.Attributes.RenderPropertyAsTimeline.#ctor(System.String,System.String,System.String,System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: StartFrame
+    - type: System.String
+      value: EndFrame
+    - type: System.String
+      value: Framerate
+    - type: System.String
+      value: SourceTrackLength
+    - type: System.Boolean
+      value: true
+    namedArguments:
+    - name: RenderPosition
+      type: WaveEngine.Common.Attributes.RenderPosition
+      value: 1
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.Name
+  commentId: P:WaveEngine.Framework.Models.Profiles.AnimationClipModel.Name
+  id: Name
+  parent: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: AnimationClipModel.Name
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.Name
+  type: Property
+  source:
+    id: Name
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 60
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets or sets the name.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe name.\n"
+    content.vb: >-
+      <DataMember>
+
+      Public Property Name As String
+  overload: WaveEngine.Framework.Models.Profiles.AnimationClipModel.Name*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrackNames
+  commentId: P:WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrackNames
+  id: SourceTrackNames
+  parent: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  langs:
+  - csharp
+  - vb
+  name: SourceTrackNames
+  nameWithType: AnimationClipModel.SourceTrackNames
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrackNames
+  type: Property
+  source:
+    id: SourceTrackNames
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 66
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets the source track names\n"
+  example: []
+  syntax:
+    content: public IEnumerable<string> SourceTrackNames { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: Public ReadOnly Property SourceTrackNames As IEnumerable(Of String)
+  overload: WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrackNames*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrackLength
+  commentId: P:WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrackLength
+  id: SourceTrackLength
+  parent: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  langs:
+  - csharp
+  - vb
+  name: SourceTrackLength
+  nameWithType: AnimationClipModel.SourceTrackLength
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrackLength
+  type: Property
+  source:
+    id: SourceTrackLength
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 77
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets the source track length\n"
+  example: []
+  syntax:
+    content: public float SourceTrackLength { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property SourceTrackLength As Single
+  overload: WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrackLength*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTra
+  commentId: P:WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTra
+  id: SourceTra
+  parent: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  langs:
+  - csharp
+  - vb
+  name: SourceTra
+  nameWithType: AnimationClipModel.SourceTra
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTra
+  type: Property
+  source:
+    id: SourceTra
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 97
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets the source track names\n"
+  example: []
+  syntax:
+    content: public IEnumerable<string> SourceTra { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: Public ReadOnly Property SourceTra As IEnumerable(Of String)
+  overload: WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTra*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.NodeNames
+  commentId: P:WaveEngine.Framework.Models.Profiles.AnimationClipModel.NodeNames
+  id: NodeNames
+  parent: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  langs:
+  - csharp
+  - vb
+  name: NodeNames
+  nameWithType: AnimationClipModel.NodeNames
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.NodeNames
+  type: Property
+  source:
+    id: NodeNames
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 108
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets the source track names\n"
+  example: []
+  syntax:
+    content: public IEnumerable<string> NodeNames { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: Public ReadOnly Property NodeNames As IEnumerable(Of String)
+  overload: WaveEngine.Framework.Models.Profiles.AnimationClipModel.NodeNames*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrack
+  commentId: P:WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrack
+  id: SourceTrack
+  parent: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  langs:
+  - csharp
+  - vb
+  name: SourceTrack
+  nameWithType: AnimationClipModel.SourceTrack
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrack
+  type: Property
+  source:
+    id: SourceTrack
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 119
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets or sets the source track name\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderPropertyAsSelector("SourceTrackNames")]
+
+      [DataMember]
+
+      public string SourceTrack { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <RenderPropertyAsSelector("SourceTrackNames")>
+
+      <DataMember>
+
+      Public Property SourceTrack As String
+  overload: WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrack*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderPropertyAsSelector
+    ctor: WaveEngine.Common.Attributes.RenderPropertyAsSelector.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: SourceTrackNames
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.StartTime
+  commentId: P:WaveEngine.Framework.Models.Profiles.AnimationClipModel.StartTime
+  id: StartTime
+  parent: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  langs:
+  - csharp
+  - vb
+  name: StartTime
+  nameWithType: AnimationClipModel.StartTime
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.StartTime
+  type: Property
+  source:
+    id: StartTime
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 152
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets or sets the start time.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "Start")]
+
+      public float StartTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe start frame.\n"
+    content.vb: >-
+      <DataMember(Name:="Start")>
+
+      Public Property StartTime As Single
+  overload: WaveEngine.Framework.Models.Profiles.AnimationClipModel.StartTime*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: Start
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.EndTime
+  commentId: P:WaveEngine.Framework.Models.Profiles.AnimationClipModel.EndTime
+  id: EndTime
+  parent: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  langs:
+  - csharp
+  - vb
+  name: EndTime
+  nameWithType: AnimationClipModel.EndTime
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.EndTime
+  type: Property
+  source:
+    id: EndTime
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 162
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets or sets the end time.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "End")]
+
+      public float EndTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe end frame.\n"
+    content.vb: >-
+      <DataMember(Name:="End")>
+
+      Public Property EndTime As Single
+  overload: WaveEngine.Framework.Models.Profiles.AnimationClipModel.EndTime*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: End
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.StartFrame
+  commentId: P:WaveEngine.Framework.Models.Profiles.AnimationClipModel.StartFrame
+  id: StartFrame
+  parent: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  langs:
+  - csharp
+  - vb
+  name: StartFrame
+  nameWithType: AnimationClipModel.StartFrame
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.StartFrame
+  type: Property
+  source:
+    id: StartFrame
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 172
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets or sets the start frame.\n"
+  example: []
+  syntax:
+    content: public float StartFrame { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe start frame.\n"
+    content.vb: Public Property StartFrame As Single
+  overload: WaveEngine.Framework.Models.Profiles.AnimationClipModel.StartFrame*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.EndFrame
+  commentId: P:WaveEngine.Framework.Models.Profiles.AnimationClipModel.EndFrame
+  id: EndFrame
+  parent: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  langs:
+  - csharp
+  - vb
+  name: EndFrame
+  nameWithType: AnimationClipModel.EndFrame
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.EndFrame
+  type: Property
+  source:
+    id: EndFrame
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 192
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets or sets the end time.\n"
+  example: []
+  syntax:
+    content: public float EndFrame { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe end frame.\n"
+    content.vb: Public Property EndFrame As Single
+  overload: WaveEngine.Framework.Models.Profiles.AnimationClipModel.EndFrame*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.IsAditiveClip
+  commentId: P:WaveEngine.Framework.Models.Profiles.AnimationClipModel.IsAditiveClip
+  id: IsAditiveClip
+  parent: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  langs:
+  - csharp
+  - vb
+  name: IsAditiveClip
+  nameWithType: AnimationClipModel.IsAditiveClip
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.IsAditiveClip
+  type: Property
+  source:
+    id: IsAditiveClip
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 209
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets or sets a value indicating whether tthis clip is  an aditive animation\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderProperty(Tag = 1)]
+
+      public bool IsAditiveClip { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <DataMember>
+
+      <RenderProperty(Tag:=1)>
+
+      Public Property IsAditiveClip As Boolean
+  overload: WaveEngine.Framework.Models.Profiles.AnimationClipModel.IsAditiveClip*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: Tag
+      type: System.Int32
+      value: 1
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.AdditiveReferenceFrame
+  commentId: P:WaveEngine.Framework.Models.Profiles.AnimationClipModel.AdditiveReferenceFrame
+  id: AdditiveReferenceFrame
+  parent: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  langs:
+  - csharp
+  - vb
+  name: AdditiveReferenceFrame
+  nameWithType: AnimationClipModel.AdditiveReferenceFrame
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.AdditiveReferenceFrame
+  type: Property
+  source:
+    id: AdditiveReferenceFrame
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 216
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets or sets the substracted animation frame\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderProperty(AttatchToTag = 1, AttachToValue = true)]
+
+      public int AdditiveReferenceFrame { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember>
+
+      <RenderProperty(AttatchToTag:=1, AttachToValue:=True)>
+
+      Public Property AdditiveReferenceFrame As Integer
+  overload: WaveEngine.Framework.Models.Profiles.AnimationClipModel.AdditiveReferenceFrame*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: AttatchToTag
+      type: System.Int32
+      value: 1
+    - name: AttachToValue
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.AdditiveReferenceSourceTrack
+  commentId: P:WaveEngine.Framework.Models.Profiles.AnimationClipModel.AdditiveReferenceSourceTrack
+  id: AdditiveReferenceSourceTrack
+  parent: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  langs:
+  - csharp
+  - vb
+  name: AdditiveReferenceSourceTrack
+  nameWithType: AnimationClipModel.AdditiveReferenceSourceTrack
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.AdditiveReferenceSourceTrack
+  type: Property
+  source:
+    id: AdditiveReferenceSourceTrack
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 223
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets or sets the source track name\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderPropertyAsSelector("SourceTrackNames", AttatchToTag = 1, AttachToValue = true)]
+
+      [DataMember]
+
+      public string AdditiveReferenceSourceTrack { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <RenderPropertyAsSelector("SourceTrackNames", AttatchToTag:=1, AttachToValue:=True)>
+
+      <DataMember>
+
+      Public Property AdditiveReferenceSourceTrack As String
+  overload: WaveEngine.Framework.Models.Profiles.AnimationClipModel.AdditiveReferenceSourceTrack*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderPropertyAsSelector
+    ctor: WaveEngine.Common.Attributes.RenderPropertyAsSelector.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: SourceTrackNames
+    namedArguments:
+    - name: AttatchToTag
+      type: System.Int32
+      value: 1
+    - name: AttachToValue
+      type: System.Boolean
+      value: true
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.RootMotion
+  commentId: P:WaveEngine.Framework.Models.Profiles.AnimationClipModel.RootMotion
+  id: RootMotion
+  parent: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  langs:
+  - csharp
+  - vb
+  name: RootMotion
+  nameWithType: AnimationClipModel.RootMotion
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.RootMotion
+  type: Property
+  source:
+    id: RootMotion
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 230
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets or sets a value indicating whether the root motion is applied\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderProperty(Tag = 2)]
+
+      public bool RootMotion { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <DataMember>
+
+      <RenderProperty(Tag:=2)>
+
+      Public Property RootMotion As Boolean
+  overload: WaveEngine.Framework.Models.Profiles.AnimationClipModel.RootMotion*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: Tag
+      type: System.Int32
+      value: 2
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.RootMotionNode
+  commentId: P:WaveEngine.Framework.Models.Profiles.AnimationClipModel.RootMotionNode
+  id: RootMotionNode
+  parent: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  langs:
+  - csharp
+  - vb
+  name: RootMotionNode
+  nameWithType: AnimationClipModel.RootMotionNode
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.RootMotionNode
+  type: Property
+  source:
+    id: RootMotionNode
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 237
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets or sets a value indicating whether the root motion is applied\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderPropertyAsSelector("NodeNames", AttatchToTag = 2, AttachToValue = true)]
+
+      public string RootMotionNode { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <RenderPropertyAsSelector("NodeNames", AttatchToTag:=2, AttachToValue:=True)>
+
+      Public Property RootMotionNode As String
+  overload: WaveEngine.Framework.Models.Profiles.AnimationClipModel.RootMotionNode*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderPropertyAsSelector
+    ctor: WaveEngine.Common.Attributes.RenderPropertyAsSelector.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: NodeNames
+    namedArguments:
+    - name: AttatchToTag
+      type: System.Int32
+      value: 2
+    - name: AttachToValue
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.InPlaceMode
+  commentId: P:WaveEngine.Framework.Models.Profiles.AnimationClipModel.InPlaceMode
+  id: InPlaceMode
+  parent: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  langs:
+  - csharp
+  - vb
+  name: InPlaceMode
+  nameWithType: AnimationClipModel.InPlaceMode
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.InPlaceMode
+  type: Property
+  source:
+    id: InPlaceMode
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 244
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets or sets the in place mode\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderProperty(AttatchToTag = 2, AttachToValue = true)]
+
+      public AnimationInPlaceMode InPlaceMode { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Animation.AnimationInPlaceMode
+    content.vb: >-
+      <DataMember>
+
+      <RenderProperty(AttatchToTag:=2, AttachToValue:=True)>
+
+      Public Property InPlaceMode As AnimationInPlaceMode
+  overload: WaveEngine.Framework.Models.Profiles.AnimationClipModel.InPlaceMode*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: AttatchToTag
+      type: System.Int32
+      value: 2
+    - name: AttachToValue
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.Framerate
+  commentId: P:WaveEngine.Framework.Models.Profiles.AnimationClipModel.Framerate
+  id: Framerate
+  parent: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  langs:
+  - csharp
+  - vb
+  name: Framerate
+  nameWithType: AnimationClipModel.Framerate
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.Framerate
+  type: Property
+  source:
+    id: Framerate
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 251
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets or sets the animation framerate\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public float Framerate { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: >-
+      <DataMember>
+
+      Public Property Framerate As Single
+  overload: WaveEngine.Framework.Models.Profiles.AnimationClipModel.Framerate*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.ModelAsset
+  commentId: P:WaveEngine.Framework.Models.Profiles.AnimationClipModel.ModelAsset
+  id: ModelAsset
+  parent: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  langs:
+  - csharp
+  - vb
+  name: ModelAsset
+  nameWithType: AnimationClipModel.ModelAsset
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.ModelAsset
+  type: Property
+  source:
+    id: ModelAsset
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 257
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets or sets the model asset\n"
+  example: []
+  syntax:
+    content: public ModelAssetModel ModelAsset { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Models.Assets.ModelAssetModel
+    content.vb: Public Property ModelAsset As ModelAssetModel
+  overload: WaveEngine.Framework.Models.Profiles.AnimationClipModel.ModelAsset*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.Type
+  commentId: P:WaveEngine.Framework.Models.Profiles.AnimationClipModel.Type
+  id: Type
+  parent: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: AnimationClipModel.Type
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.Type
+  type: Property
+  source:
+    id: Type
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 263
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets the animation type\n"
+  example: []
+  syntax:
+    content: public AnimationClipType Type { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Models.Profiles.AnimationClipType
+    content.vb: Public ReadOnly Property Type As AnimationClipType
+  overload: WaveEngine.Framework.Models.Profiles.AnimationClipModel.Type*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.Events
+  commentId: P:WaveEngine.Framework.Models.Profiles.AnimationClipModel.Events
+  id: Events
+  parent: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  langs:
+  - csharp
+  - vb
+  name: Events
+  nameWithType: AnimationClipModel.Events
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.Events
+  type: Property
+  source:
+    id: Events
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 274
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets or sets the keyframe events\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderPropertyAsList(true, false, false, false, null, null, null, null, null, null, null, null)]
+
+      public List<AnimationKeyframeEvent> Events { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{WaveEngine.Framework.Animation.AnimationKeyframeEvent}
+    content.vb: >-
+      <DataMember>
+
+      <RenderPropertyAsList(True, False, False, False, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing)>
+
+      Public Property Events As List(Of AnimationKeyframeEvent)
+  overload: WaveEngine.Framework.Models.Profiles.AnimationClipModel.Events*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderPropertyAsList
+    ctor: WaveEngine.Common.Attributes.RenderPropertyAsList.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
+    arguments:
+    - type: System.Boolean
+      value: true
+    - type: System.Boolean
+      value: false
+    - type: System.Boolean
+      value: false
+    - type: System.Boolean
+      value: false
+    - type: System.String
+    - type: System.String
+    - type: System.String
+    - type: System.String
+    - type: System.String
+    - type: System.String
+    - type: System.String
+    - type: System.String
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.DefaultValues
+  commentId: M:WaveEngine.Framework.Models.Profiles.AnimationClipModel.DefaultValues
+  id: DefaultValues
+  parent: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  langs:
+  - csharp
+  - vb
+  name: DefaultValues()
+  nameWithType: AnimationClipModel.DefaultValues()
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.DefaultValues()
+  type: Method
+  source:
+    id: DefaultValues
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 281
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nSets the default values\n"
+  example: []
+  syntax:
+    content: protected override void DefaultValues()
+    content.vb: Protected Overrides Sub DefaultValues
+  overridden: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  overload: WaveEngine.Framework.Models.Profiles.AnimationClipModel.DefaultValues*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.ToString
+  commentId: M:WaveEngine.Framework.Models.Profiles.AnimationClipModel.ToString
+  id: ToString
+  parent: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: AnimationClipModel.ToString()
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\AnimationClipModel.cs
+    startLine: 291
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nSets the string that represents this object\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: The string
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: WaveEngine.Framework.Models.Profiles.AnimationClipModel.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: WaveEngine.Framework.Models.Profiles
+  commentId: N:WaveEngine.Framework.Models.Profiles
+  name: WaveEngine.Framework.Models.Profiles
+  nameWithType: WaveEngine.Framework.Models.Profiles
+  fullName: WaveEngine.Framework.Models.Profiles
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.IO.SerializableObject
+  commentId: T:WaveEngine.Common.IO.SerializableObject
+  parent: WaveEngine.Common.IO
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: WaveEngine.Common.IO.SerializableObject
+- uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  commentId: M:WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  parent: WaveEngine.Common.IO.SerializableObject
+  isExternal: true
+  name: OnDeserializing(StreamingContext)
+  nameWithType: SerializableObject.OnDeserializing(StreamingContext)
+  fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.IO
+  commentId: N:WaveEngine.Common.IO
+  name: WaveEngine.Common.IO
+  nameWithType: WaveEngine.Common.IO
+  fullName: WaveEngine.Common.IO
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.Name*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.AnimationClipModel.Name
+  name: Name
+  nameWithType: AnimationClipModel.Name
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrackNames*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrackNames
+  name: SourceTrackNames
+  nameWithType: AnimationClipModel.SourceTrackNames
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrackNames
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrackLength*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrackLength
+  name: SourceTrackLength
+  nameWithType: AnimationClipModel.SourceTrackLength
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrackLength
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTra*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTra
+  name: SourceTra
+  nameWithType: AnimationClipModel.SourceTra
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTra
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.NodeNames*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.AnimationClipModel.NodeNames
+  name: NodeNames
+  nameWithType: AnimationClipModel.NodeNames
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.NodeNames
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrack*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrack
+  name: SourceTrack
+  nameWithType: AnimationClipModel.SourceTrack
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.SourceTrack
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.StartTime*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.AnimationClipModel.StartTime
+  name: StartTime
+  nameWithType: AnimationClipModel.StartTime
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.StartTime
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.EndTime*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.AnimationClipModel.EndTime
+  name: EndTime
+  nameWithType: AnimationClipModel.EndTime
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.EndTime
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.StartFrame*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.AnimationClipModel.StartFrame
+  name: StartFrame
+  nameWithType: AnimationClipModel.StartFrame
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.StartFrame
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.EndFrame*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.AnimationClipModel.EndFrame
+  name: EndFrame
+  nameWithType: AnimationClipModel.EndFrame
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.EndFrame
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.IsAditiveClip*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.AnimationClipModel.IsAditiveClip
+  name: IsAditiveClip
+  nameWithType: AnimationClipModel.IsAditiveClip
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.IsAditiveClip
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.AdditiveReferenceFrame*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.AnimationClipModel.AdditiveReferenceFrame
+  name: AdditiveReferenceFrame
+  nameWithType: AnimationClipModel.AdditiveReferenceFrame
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.AdditiveReferenceFrame
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.AdditiveReferenceSourceTrack*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.AnimationClipModel.AdditiveReferenceSourceTrack
+  name: AdditiveReferenceSourceTrack
+  nameWithType: AnimationClipModel.AdditiveReferenceSourceTrack
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.AdditiveReferenceSourceTrack
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.RootMotion*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.AnimationClipModel.RootMotion
+  name: RootMotion
+  nameWithType: AnimationClipModel.RootMotion
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.RootMotion
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.RootMotionNode*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.AnimationClipModel.RootMotionNode
+  name: RootMotionNode
+  nameWithType: AnimationClipModel.RootMotionNode
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.RootMotionNode
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.InPlaceMode*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.AnimationClipModel.InPlaceMode
+  name: InPlaceMode
+  nameWithType: AnimationClipModel.InPlaceMode
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.InPlaceMode
+- uid: WaveEngine.Framework.Animation.AnimationInPlaceMode
+  commentId: T:WaveEngine.Framework.Animation.AnimationInPlaceMode
+  parent: WaveEngine.Framework.Animation
+  name: AnimationInPlaceMode
+  nameWithType: AnimationInPlaceMode
+  fullName: WaveEngine.Framework.Animation.AnimationInPlaceMode
+- uid: WaveEngine.Framework.Animation
+  commentId: N:WaveEngine.Framework.Animation
+  name: WaveEngine.Framework.Animation
+  nameWithType: WaveEngine.Framework.Animation
+  fullName: WaveEngine.Framework.Animation
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.Framerate*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.AnimationClipModel.Framerate
+  name: Framerate
+  nameWithType: AnimationClipModel.Framerate
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.Framerate
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.ModelAsset*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.AnimationClipModel.ModelAsset
+  name: ModelAsset
+  nameWithType: AnimationClipModel.ModelAsset
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.ModelAsset
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel
+  commentId: T:WaveEngine.Framework.Models.Assets.ModelAssetModel
+  parent: WaveEngine.Framework.Models.Assets
+  name: ModelAssetModel
+  nameWithType: ModelAssetModel
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel
+- uid: WaveEngine.Framework.Models.Assets
+  commentId: N:WaveEngine.Framework.Models.Assets
+  name: WaveEngine.Framework.Models.Assets
+  nameWithType: WaveEngine.Framework.Models.Assets
+  fullName: WaveEngine.Framework.Models.Assets
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.Type*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.AnimationClipModel.Type
+  name: Type
+  nameWithType: AnimationClipModel.Type
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.Type
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipType
+  commentId: T:WaveEngine.Framework.Models.Profiles.AnimationClipType
+  parent: WaveEngine.Framework.Models.Profiles
+  name: AnimationClipType
+  nameWithType: AnimationClipType
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipType
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.Events*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.AnimationClipModel.Events
+  name: Events
+  nameWithType: AnimationClipModel.Events
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.Events
+- uid: System.Collections.Generic.List{WaveEngine.Framework.Animation.AnimationKeyframeEvent}
+  commentId: T:System.Collections.Generic.List{WaveEngine.Framework.Animation.AnimationKeyframeEvent}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<AnimationKeyframeEvent>
+  nameWithType: List<AnimationKeyframeEvent>
+  fullName: System.Collections.Generic.List<WaveEngine.Framework.Animation.AnimationKeyframeEvent>
+  nameWithType.vb: List(Of AnimationKeyframeEvent)
+  fullName.vb: System.Collections.Generic.List(Of WaveEngine.Framework.Animation.AnimationKeyframeEvent)
+  name.vb: List(Of AnimationKeyframeEvent)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Framework.Animation.AnimationKeyframeEvent
+    name: AnimationKeyframeEvent
+    nameWithType: AnimationKeyframeEvent
+    fullName: WaveEngine.Framework.Animation.AnimationKeyframeEvent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Framework.Animation.AnimationKeyframeEvent
+    name: AnimationKeyframeEvent
+    nameWithType: AnimationKeyframeEvent
+    fullName: WaveEngine.Framework.Animation.AnimationKeyframeEvent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  commentId: M:WaveEngine.Common.IO.SerializableObject.DefaultValues
+  parent: WaveEngine.Common.IO.SerializableObject
+  name: DefaultValues()
+  nameWithType: SerializableObject.DefaultValues()
+  fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues()
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+    name: DefaultValues
+    nameWithType: SerializableObject.DefaultValues
+    fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+    name: DefaultValues
+    nameWithType: SerializableObject.DefaultValues
+    fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.DefaultValues*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.AnimationClipModel.DefaultValues
+  name: DefaultValues
+  nameWithType: AnimationClipModel.DefaultValues
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.DefaultValues
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel.ToString*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.AnimationClipModel.ToString
+  name: ToString
+  nameWithType: AnimationClipModel.ToString
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel.ToString

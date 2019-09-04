@@ -1,0 +1,838 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D
+  commentId: T:WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D
+  id: IGeneric6DofSpringJoint3D
+  parent: WaveEngine.Common.Physics3D
+  children:
+  - WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.EnableSpring(WaveEngine.Common.Physics3D.DOFType,System.Boolean)
+  - WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetDamping(WaveEngine.Common.Physics3D.DOFType,System.Single)
+  - WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetEquilibriumPoint(WaveEngine.Common.Physics3D.DOFType,System.Single)
+  - WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetStiffness(WaveEngine.Common.Physics3D.DOFType,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: IGeneric6DofSpringJoint3D
+  nameWithType: IGeneric6DofSpringJoint3D
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D
+  type: Interface
+  source:
+    id: IGeneric6DofSpringJoint3D
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics3D\Joints\IGeneric6DofSpringJoint3D.cs
+    startLine: 14
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics3D
+  summary: "\nInterface for a 6 Dof 3D joint physics.\n"
+  example: []
+  syntax:
+    content: 'public interface IGeneric6DofSpringJoint3D : IGeneric6DofJoint3D, IJoint3D, IDisposable'
+    content.vb: >-
+      Public Interface IGeneric6DofSpringJoint3D
+
+          Inherits IGeneric6DofJoint3D
+  inheritedMembers:
+  - WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.AngularLowerLimit
+  - WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.AngularUpperLimit
+  - WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.LinearLowerLimit
+  - WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.LinearUpperLimit
+  - WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.FrameOffsetA
+  - WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.FrameOffsetB
+  - WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.Flags
+  - WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.UseFrameOffset
+  - WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.UseLinearReferenceFrameA
+  - WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetAxis(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3)
+  - WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetFrames(WaveEngine.Common.Math.Matrix,WaveEngine.Common.Math.Matrix)
+  - WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetLimit(WaveEngine.Common.Physics3D.DOFType,System.Single,System.Single)
+  - WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.GetAngle(WaveEngine.Common.Physics3D.DOFType)
+  - WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.GetAxis(WaveEngine.Common.Physics3D.DOFType)
+  - WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.IsLimited(WaveEngine.Common.Physics3D.DOFType)
+  - WaveEngine.Common.Physics3D.IJoint3D.OnBroke
+  - WaveEngine.Common.Physics3D.IJoint3D.InternalJoint
+  - WaveEngine.Common.Physics3D.IJoint3D.BodyA
+  - WaveEngine.Common.Physics3D.IJoint3D.BodyB
+  - WaveEngine.Common.Physics3D.IJoint3D.AppliedImpulse
+  - WaveEngine.Common.Physics3D.IJoint3D.DebugDrawSize
+  - WaveEngine.Common.Physics3D.IJoint3D.NeedsFeedback
+  - WaveEngine.Common.Physics3D.IJoint3D.JointFeedback
+  - WaveEngine.Common.Physics3D.IJoint3D.OverrideNumSolverIterations
+  - WaveEngine.Common.Physics3D.IJoint3D.IsEnabled
+  - WaveEngine.Common.Physics3D.IJoint3D.BreakingImpulseThreshold
+  - System.IDisposable.Dispose
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.EnableSpring(WaveEngine.Common.Physics3D.DOFType,System.Boolean)
+  commentId: M:WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.EnableSpring(WaveEngine.Common.Physics3D.DOFType,System.Boolean)
+  id: EnableSpring(WaveEngine.Common.Physics3D.DOFType,System.Boolean)
+  parent: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D
+  langs:
+  - csharp
+  - vb
+  name: EnableSpring(DOFType, Boolean)
+  nameWithType: IGeneric6DofSpringJoint3D.EnableSpring(DOFType, Boolean)
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.EnableSpring(WaveEngine.Common.Physics3D.DOFType, System.Boolean)
+  type: Method
+  source:
+    id: EnableSpring
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics3D\Joints\IGeneric6DofSpringJoint3D.cs
+    startLine: 26
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics3D
+  summary: "\nEnable or disable the spring\n"
+  example: []
+  syntax:
+    content: void EnableSpring(DOFType index, bool isEnabled)
+    parameters:
+    - id: index
+      type: WaveEngine.Common.Physics3D.DOFType
+      description: DOF index
+    - id: isEnabled
+      type: System.Boolean
+      description: Is enabled or not the spring
+    content.vb: Sub EnableSpring(index As DOFType, isEnabled As Boolean)
+  overload: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.EnableSpring*
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetStiffness(WaveEngine.Common.Physics3D.DOFType,System.Single)
+  commentId: M:WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetStiffness(WaveEngine.Common.Physics3D.DOFType,System.Single)
+  id: SetStiffness(WaveEngine.Common.Physics3D.DOFType,System.Single)
+  parent: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D
+  langs:
+  - csharp
+  - vb
+  name: SetStiffness(DOFType, Single)
+  nameWithType: IGeneric6DofSpringJoint3D.SetStiffness(DOFType, Single)
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetStiffness(WaveEngine.Common.Physics3D.DOFType, System.Single)
+  type: Method
+  source:
+    id: SetStiffness
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics3D\Joints\IGeneric6DofSpringJoint3D.cs
+    startLine: 33
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics3D
+  summary: "\nSetsa the spring stiffness\n"
+  example: []
+  syntax:
+    content: void SetStiffness(DOFType index, float stiffness)
+    parameters:
+    - id: index
+      type: WaveEngine.Common.Physics3D.DOFType
+      description: DOF index
+    - id: stiffness
+      type: System.Single
+      description: The stiffness
+    content.vb: Sub SetStiffness(index As DOFType, stiffness As Single)
+  overload: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetStiffness*
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetDamping(WaveEngine.Common.Physics3D.DOFType,System.Single)
+  commentId: M:WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetDamping(WaveEngine.Common.Physics3D.DOFType,System.Single)
+  id: SetDamping(WaveEngine.Common.Physics3D.DOFType,System.Single)
+  parent: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D
+  langs:
+  - csharp
+  - vb
+  name: SetDamping(DOFType, Single)
+  nameWithType: IGeneric6DofSpringJoint3D.SetDamping(DOFType, Single)
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetDamping(WaveEngine.Common.Physics3D.DOFType, System.Single)
+  type: Method
+  source:
+    id: SetDamping
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics3D\Joints\IGeneric6DofSpringJoint3D.cs
+    startLine: 40
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics3D
+  summary: "\nSets the spring damping\n"
+  example: []
+  syntax:
+    content: void SetDamping(DOFType index, float damping)
+    parameters:
+    - id: index
+      type: WaveEngine.Common.Physics3D.DOFType
+      description: DOF index
+    - id: damping
+      type: System.Single
+      description: The damping
+    content.vb: Sub SetDamping(index As DOFType, damping As Single)
+  overload: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetDamping*
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetEquilibriumPoint(WaveEngine.Common.Physics3D.DOFType,System.Single)
+  commentId: M:WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetEquilibriumPoint(WaveEngine.Common.Physics3D.DOFType,System.Single)
+  id: SetEquilibriumPoint(WaveEngine.Common.Physics3D.DOFType,System.Single)
+  parent: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D
+  langs:
+  - csharp
+  - vb
+  name: SetEquilibriumPoint(DOFType, Single)
+  nameWithType: IGeneric6DofSpringJoint3D.SetEquilibriumPoint(DOFType, Single)
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetEquilibriumPoint(WaveEngine.Common.Physics3D.DOFType, System.Single)
+  type: Method
+  source:
+    id: SetEquilibriumPoint
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Physics3D\Joints\IGeneric6DofSpringJoint3D.cs
+    startLine: 47
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Physics3D
+  summary: "\nSets the spring equilibrium point\n"
+  example: []
+  syntax:
+    content: void SetEquilibriumPoint(DOFType index, float equilibriumPoint)
+    parameters:
+    - id: index
+      type: WaveEngine.Common.Physics3D.DOFType
+      description: DOF index
+    - id: equilibriumPoint
+      type: System.Single
+      description: The equilibriumPoint
+    content.vb: Sub SetEquilibriumPoint(index As DOFType, equilibriumPoint As Single)
+  overload: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetEquilibriumPoint*
+references:
+- uid: WaveEngine.Common.Physics3D
+  commentId: N:WaveEngine.Common.Physics3D
+  name: WaveEngine.Common.Physics3D
+  nameWithType: WaveEngine.Common.Physics3D
+  fullName: WaveEngine.Common.Physics3D
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.AngularLowerLimit
+  commentId: P:WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.AngularLowerLimit
+  parent: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D
+  name: AngularLowerLimit
+  nameWithType: IGeneric6DofJoint3D.AngularLowerLimit
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.AngularLowerLimit
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.AngularUpperLimit
+  commentId: P:WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.AngularUpperLimit
+  parent: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D
+  name: AngularUpperLimit
+  nameWithType: IGeneric6DofJoint3D.AngularUpperLimit
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.AngularUpperLimit
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.LinearLowerLimit
+  commentId: P:WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.LinearLowerLimit
+  parent: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D
+  name: LinearLowerLimit
+  nameWithType: IGeneric6DofJoint3D.LinearLowerLimit
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.LinearLowerLimit
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.LinearUpperLimit
+  commentId: P:WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.LinearUpperLimit
+  parent: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D
+  name: LinearUpperLimit
+  nameWithType: IGeneric6DofJoint3D.LinearUpperLimit
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.LinearUpperLimit
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.FrameOffsetA
+  commentId: P:WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.FrameOffsetA
+  parent: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D
+  name: FrameOffsetA
+  nameWithType: IGeneric6DofJoint3D.FrameOffsetA
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.FrameOffsetA
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.FrameOffsetB
+  commentId: P:WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.FrameOffsetB
+  parent: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D
+  name: FrameOffsetB
+  nameWithType: IGeneric6DofJoint3D.FrameOffsetB
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.FrameOffsetB
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.Flags
+  commentId: P:WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.Flags
+  parent: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D
+  name: Flags
+  nameWithType: IGeneric6DofJoint3D.Flags
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.Flags
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.UseFrameOffset
+  commentId: P:WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.UseFrameOffset
+  parent: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D
+  name: UseFrameOffset
+  nameWithType: IGeneric6DofJoint3D.UseFrameOffset
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.UseFrameOffset
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.UseLinearReferenceFrameA
+  commentId: P:WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.UseLinearReferenceFrameA
+  parent: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D
+  name: UseLinearReferenceFrameA
+  nameWithType: IGeneric6DofJoint3D.UseLinearReferenceFrameA
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.UseLinearReferenceFrameA
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetAxis(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3)
+  commentId: M:WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetAxis(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3)
+  parent: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D
+  name: SetAxis(Vector3, Vector3)
+  nameWithType: IGeneric6DofJoint3D.SetAxis(Vector3, Vector3)
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetAxis(WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3)
+  spec.csharp:
+  - uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetAxis(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3)
+    name: SetAxis
+    nameWithType: IGeneric6DofJoint3D.SetAxis
+    fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetAxis(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3)
+    name: SetAxis
+    nameWithType: IGeneric6DofJoint3D.SetAxis
+    fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetFrames(WaveEngine.Common.Math.Matrix,WaveEngine.Common.Math.Matrix)
+  commentId: M:WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetFrames(WaveEngine.Common.Math.Matrix,WaveEngine.Common.Math.Matrix)
+  parent: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D
+  name: SetFrames(Matrix, Matrix)
+  nameWithType: IGeneric6DofJoint3D.SetFrames(Matrix, Matrix)
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetFrames(WaveEngine.Common.Math.Matrix, WaveEngine.Common.Math.Matrix)
+  spec.csharp:
+  - uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetFrames(WaveEngine.Common.Math.Matrix,WaveEngine.Common.Math.Matrix)
+    name: SetFrames
+    nameWithType: IGeneric6DofJoint3D.SetFrames
+    fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetFrames
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Matrix
+    name: Matrix
+    nameWithType: Matrix
+    fullName: WaveEngine.Common.Math.Matrix
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Matrix
+    name: Matrix
+    nameWithType: Matrix
+    fullName: WaveEngine.Common.Math.Matrix
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetFrames(WaveEngine.Common.Math.Matrix,WaveEngine.Common.Math.Matrix)
+    name: SetFrames
+    nameWithType: IGeneric6DofJoint3D.SetFrames
+    fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetFrames
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Matrix
+    name: Matrix
+    nameWithType: Matrix
+    fullName: WaveEngine.Common.Math.Matrix
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Matrix
+    name: Matrix
+    nameWithType: Matrix
+    fullName: WaveEngine.Common.Math.Matrix
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetLimit(WaveEngine.Common.Physics3D.DOFType,System.Single,System.Single)
+  commentId: M:WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetLimit(WaveEngine.Common.Physics3D.DOFType,System.Single,System.Single)
+  parent: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D
+  isExternal: true
+  name: SetLimit(DOFType, Single, Single)
+  nameWithType: IGeneric6DofJoint3D.SetLimit(DOFType, Single, Single)
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetLimit(WaveEngine.Common.Physics3D.DOFType, System.Single, System.Single)
+  spec.csharp:
+  - uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetLimit(WaveEngine.Common.Physics3D.DOFType,System.Single,System.Single)
+    name: SetLimit
+    nameWithType: IGeneric6DofJoint3D.SetLimit
+    fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetLimit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Physics3D.DOFType
+    name: DOFType
+    nameWithType: DOFType
+    fullName: WaveEngine.Common.Physics3D.DOFType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetLimit(WaveEngine.Common.Physics3D.DOFType,System.Single,System.Single)
+    name: SetLimit
+    nameWithType: IGeneric6DofJoint3D.SetLimit
+    fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.SetLimit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Physics3D.DOFType
+    name: DOFType
+    nameWithType: DOFType
+    fullName: WaveEngine.Common.Physics3D.DOFType
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.GetAngle(WaveEngine.Common.Physics3D.DOFType)
+  commentId: M:WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.GetAngle(WaveEngine.Common.Physics3D.DOFType)
+  parent: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D
+  name: GetAngle(DOFType)
+  nameWithType: IGeneric6DofJoint3D.GetAngle(DOFType)
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.GetAngle(WaveEngine.Common.Physics3D.DOFType)
+  spec.csharp:
+  - uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.GetAngle(WaveEngine.Common.Physics3D.DOFType)
+    name: GetAngle
+    nameWithType: IGeneric6DofJoint3D.GetAngle
+    fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.GetAngle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Physics3D.DOFType
+    name: DOFType
+    nameWithType: DOFType
+    fullName: WaveEngine.Common.Physics3D.DOFType
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.GetAngle(WaveEngine.Common.Physics3D.DOFType)
+    name: GetAngle
+    nameWithType: IGeneric6DofJoint3D.GetAngle
+    fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.GetAngle
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Physics3D.DOFType
+    name: DOFType
+    nameWithType: DOFType
+    fullName: WaveEngine.Common.Physics3D.DOFType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.GetAxis(WaveEngine.Common.Physics3D.DOFType)
+  commentId: M:WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.GetAxis(WaveEngine.Common.Physics3D.DOFType)
+  parent: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D
+  name: GetAxis(DOFType)
+  nameWithType: IGeneric6DofJoint3D.GetAxis(DOFType)
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.GetAxis(WaveEngine.Common.Physics3D.DOFType)
+  spec.csharp:
+  - uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.GetAxis(WaveEngine.Common.Physics3D.DOFType)
+    name: GetAxis
+    nameWithType: IGeneric6DofJoint3D.GetAxis
+    fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.GetAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Physics3D.DOFType
+    name: DOFType
+    nameWithType: DOFType
+    fullName: WaveEngine.Common.Physics3D.DOFType
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.GetAxis(WaveEngine.Common.Physics3D.DOFType)
+    name: GetAxis
+    nameWithType: IGeneric6DofJoint3D.GetAxis
+    fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.GetAxis
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Physics3D.DOFType
+    name: DOFType
+    nameWithType: DOFType
+    fullName: WaveEngine.Common.Physics3D.DOFType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.IsLimited(WaveEngine.Common.Physics3D.DOFType)
+  commentId: M:WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.IsLimited(WaveEngine.Common.Physics3D.DOFType)
+  parent: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D
+  name: IsLimited(DOFType)
+  nameWithType: IGeneric6DofJoint3D.IsLimited(DOFType)
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.IsLimited(WaveEngine.Common.Physics3D.DOFType)
+  spec.csharp:
+  - uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.IsLimited(WaveEngine.Common.Physics3D.DOFType)
+    name: IsLimited
+    nameWithType: IGeneric6DofJoint3D.IsLimited
+    fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.IsLimited
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Physics3D.DOFType
+    name: DOFType
+    nameWithType: DOFType
+    fullName: WaveEngine.Common.Physics3D.DOFType
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.IsLimited(WaveEngine.Common.Physics3D.DOFType)
+    name: IsLimited
+    nameWithType: IGeneric6DofJoint3D.IsLimited
+    fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D.IsLimited
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Physics3D.DOFType
+    name: DOFType
+    nameWithType: DOFType
+    fullName: WaveEngine.Common.Physics3D.DOFType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Physics3D.IJoint3D.OnBroke
+  commentId: E:WaveEngine.Common.Physics3D.IJoint3D.OnBroke
+  parent: WaveEngine.Common.Physics3D.IJoint3D
+  name: OnBroke
+  nameWithType: IJoint3D.OnBroke
+  fullName: WaveEngine.Common.Physics3D.IJoint3D.OnBroke
+- uid: WaveEngine.Common.Physics3D.IJoint3D.InternalJoint
+  commentId: P:WaveEngine.Common.Physics3D.IJoint3D.InternalJoint
+  parent: WaveEngine.Common.Physics3D.IJoint3D
+  name: InternalJoint
+  nameWithType: IJoint3D.InternalJoint
+  fullName: WaveEngine.Common.Physics3D.IJoint3D.InternalJoint
+- uid: WaveEngine.Common.Physics3D.IJoint3D.BodyA
+  commentId: P:WaveEngine.Common.Physics3D.IJoint3D.BodyA
+  parent: WaveEngine.Common.Physics3D.IJoint3D
+  name: BodyA
+  nameWithType: IJoint3D.BodyA
+  fullName: WaveEngine.Common.Physics3D.IJoint3D.BodyA
+- uid: WaveEngine.Common.Physics3D.IJoint3D.BodyB
+  commentId: P:WaveEngine.Common.Physics3D.IJoint3D.BodyB
+  parent: WaveEngine.Common.Physics3D.IJoint3D
+  name: BodyB
+  nameWithType: IJoint3D.BodyB
+  fullName: WaveEngine.Common.Physics3D.IJoint3D.BodyB
+- uid: WaveEngine.Common.Physics3D.IJoint3D.AppliedImpulse
+  commentId: P:WaveEngine.Common.Physics3D.IJoint3D.AppliedImpulse
+  parent: WaveEngine.Common.Physics3D.IJoint3D
+  name: AppliedImpulse
+  nameWithType: IJoint3D.AppliedImpulse
+  fullName: WaveEngine.Common.Physics3D.IJoint3D.AppliedImpulse
+- uid: WaveEngine.Common.Physics3D.IJoint3D.DebugDrawSize
+  commentId: P:WaveEngine.Common.Physics3D.IJoint3D.DebugDrawSize
+  parent: WaveEngine.Common.Physics3D.IJoint3D
+  name: DebugDrawSize
+  nameWithType: IJoint3D.DebugDrawSize
+  fullName: WaveEngine.Common.Physics3D.IJoint3D.DebugDrawSize
+- uid: WaveEngine.Common.Physics3D.IJoint3D.NeedsFeedback
+  commentId: P:WaveEngine.Common.Physics3D.IJoint3D.NeedsFeedback
+  parent: WaveEngine.Common.Physics3D.IJoint3D
+  name: NeedsFeedback
+  nameWithType: IJoint3D.NeedsFeedback
+  fullName: WaveEngine.Common.Physics3D.IJoint3D.NeedsFeedback
+- uid: WaveEngine.Common.Physics3D.IJoint3D.JointFeedback
+  commentId: P:WaveEngine.Common.Physics3D.IJoint3D.JointFeedback
+  parent: WaveEngine.Common.Physics3D.IJoint3D
+  name: JointFeedback
+  nameWithType: IJoint3D.JointFeedback
+  fullName: WaveEngine.Common.Physics3D.IJoint3D.JointFeedback
+- uid: WaveEngine.Common.Physics3D.IJoint3D.OverrideNumSolverIterations
+  commentId: P:WaveEngine.Common.Physics3D.IJoint3D.OverrideNumSolverIterations
+  parent: WaveEngine.Common.Physics3D.IJoint3D
+  name: OverrideNumSolverIterations
+  nameWithType: IJoint3D.OverrideNumSolverIterations
+  fullName: WaveEngine.Common.Physics3D.IJoint3D.OverrideNumSolverIterations
+- uid: WaveEngine.Common.Physics3D.IJoint3D.IsEnabled
+  commentId: P:WaveEngine.Common.Physics3D.IJoint3D.IsEnabled
+  parent: WaveEngine.Common.Physics3D.IJoint3D
+  name: IsEnabled
+  nameWithType: IJoint3D.IsEnabled
+  fullName: WaveEngine.Common.Physics3D.IJoint3D.IsEnabled
+- uid: WaveEngine.Common.Physics3D.IJoint3D.BreakingImpulseThreshold
+  commentId: P:WaveEngine.Common.Physics3D.IJoint3D.BreakingImpulseThreshold
+  parent: WaveEngine.Common.Physics3D.IJoint3D
+  name: BreakingImpulseThreshold
+  nameWithType: IJoint3D.BreakingImpulseThreshold
+  fullName: WaveEngine.Common.Physics3D.IJoint3D.BreakingImpulseThreshold
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D
+  commentId: T:WaveEngine.Common.Physics3D.IGeneric6DofJoint3D
+  parent: WaveEngine.Common.Physics3D
+  name: IGeneric6DofJoint3D
+  nameWithType: IGeneric6DofJoint3D
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofJoint3D
+- uid: WaveEngine.Common.Physics3D.IJoint3D
+  commentId: T:WaveEngine.Common.Physics3D.IJoint3D
+  parent: WaveEngine.Common.Physics3D
+  name: IJoint3D
+  nameWithType: IJoint3D
+  fullName: WaveEngine.Common.Physics3D.IJoint3D
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.EnableSpring*
+  commentId: Overload:WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.EnableSpring
+  name: EnableSpring
+  nameWithType: IGeneric6DofSpringJoint3D.EnableSpring
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.EnableSpring
+- uid: WaveEngine.Common.Physics3D.DOFType
+  commentId: T:WaveEngine.Common.Physics3D.DOFType
+  parent: WaveEngine.Common.Physics3D
+  name: DOFType
+  nameWithType: DOFType
+  fullName: WaveEngine.Common.Physics3D.DOFType
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetStiffness*
+  commentId: Overload:WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetStiffness
+  name: SetStiffness
+  nameWithType: IGeneric6DofSpringJoint3D.SetStiffness
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetStiffness
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetDamping*
+  commentId: Overload:WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetDamping
+  name: SetDamping
+  nameWithType: IGeneric6DofSpringJoint3D.SetDamping
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetDamping
+- uid: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetEquilibriumPoint*
+  commentId: Overload:WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetEquilibriumPoint
+  name: SetEquilibriumPoint
+  nameWithType: IGeneric6DofSpringJoint3D.SetEquilibriumPoint
+  fullName: WaveEngine.Common.Physics3D.IGeneric6DofSpringJoint3D.SetEquilibriumPoint

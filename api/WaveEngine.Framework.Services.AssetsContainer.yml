@@ -1,0 +1,1132 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Framework.Services.AssetsContainer
+  commentId: T:WaveEngine.Framework.Services.AssetsContainer
+  id: AssetsContainer
+  parent: WaveEngine.Framework.Services
+  children:
+  - WaveEngine.Framework.Services.AssetsContainer.#ctor(WaveEngine.Common.IO.IIOManager)
+  - WaveEngine.Framework.Services.AssetsContainer.Dispose
+  - WaveEngine.Framework.Services.AssetsContainer.IsDisposed
+  - WaveEngine.Framework.Services.AssetsContainer.LoadAsset``1(System.String)
+  - WaveEngine.Framework.Services.AssetsContainer.LoadAsset``1(System.String,System.IO.Stream)
+  - WaveEngine.Framework.Services.AssetsContainer.LoadModel``1(System.String,System.Boolean)
+  - WaveEngine.Framework.Services.AssetsContainer.OnDisposed
+  - WaveEngine.Framework.Services.AssetsContainer.RefreshAsset``1(System.String)
+  - WaveEngine.Framework.Services.AssetsContainer.RefreshModel``1(System.String)
+  - WaveEngine.Framework.Services.AssetsContainer.RenameModel(System.String,System.String)
+  - WaveEngine.Framework.Services.AssetsContainer.UnloadAsset(System.String)
+  - WaveEngine.Framework.Services.AssetsContainer.UnloadModel(System.String)
+  langs:
+  - csharp
+  - vb
+  name: AssetsContainer
+  nameWithType: AssetsContainer
+  fullName: WaveEngine.Framework.Services.AssetsContainer
+  type: Class
+  source:
+    id: AssetsContainer
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\AssetsContainer.cs
+    startLine: 20
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nThis class is used to load and unload all the scene assets (music, sound, textures,...).\n"
+  example: []
+  syntax:
+    content: 'public sealed class AssetsContainer : IDisposable'
+    content.vb: >-
+      Public NotInheritable Class AssetsContainer
+
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: WaveEngine.Framework.Services.AssetsContainer.OnDisposed
+  commentId: E:WaveEngine.Framework.Services.AssetsContainer.OnDisposed
+  id: OnDisposed
+  parent: WaveEngine.Framework.Services.AssetsContainer
+  langs:
+  - csharp
+  - vb
+  name: OnDisposed
+  nameWithType: AssetsContainer.OnDisposed
+  fullName: WaveEngine.Framework.Services.AssetsContainer.OnDisposed
+  type: Event
+  source:
+    id: OnDisposed
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\AssetsContainer.cs
+    startLine: 86
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nOccurs when this instance all the resources handled by it are disposed.\n"
+  example: []
+  syntax:
+    content: public event EventHandler OnDisposed
+    return:
+      type: System.EventHandler
+    content.vb: Public Event OnDisposed As EventHandler
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.AssetsContainer.IsDisposed
+  commentId: P:WaveEngine.Framework.Services.AssetsContainer.IsDisposed
+  id: IsDisposed
+  parent: WaveEngine.Framework.Services.AssetsContainer
+  langs:
+  - csharp
+  - vb
+  name: IsDisposed
+  nameWithType: AssetsContainer.IsDisposed
+  fullName: WaveEngine.Framework.Services.AssetsContainer.IsDisposed
+  type: Property
+  source:
+    id: IsDisposed
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\AssetsContainer.cs
+    startLine: 94
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGets a value indicating whether this <xref href=\"WaveEngine.Framework.Services.AssetsContainer\" data-throw-if-not-resolved=\"false\"></xref> is disposed.\n"
+  example: []
+  syntax:
+    content: public bool IsDisposed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if disposed; otherwise, <code>false</code>.\n"
+    content.vb: Public ReadOnly Property IsDisposed As Boolean
+  overload: WaveEngine.Framework.Services.AssetsContainer.IsDisposed*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Services.AssetsContainer.#ctor(WaveEngine.Common.IO.IIOManager)
+  commentId: M:WaveEngine.Framework.Services.AssetsContainer.#ctor(WaveEngine.Common.IO.IIOManager)
+  id: '#ctor(WaveEngine.Common.IO.IIOManager)'
+  parent: WaveEngine.Framework.Services.AssetsContainer
+  langs:
+  - csharp
+  - vb
+  name: AssetsContainer(IIOManager)
+  nameWithType: AssetsContainer.AssetsContainer(IIOManager)
+  fullName: WaveEngine.Framework.Services.AssetsContainer.AssetsContainer(WaveEngine.Common.IO.IIOManager)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\AssetsContainer.cs
+    startLine: 105
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Framework.Services.AssetsContainer\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public AssetsContainer(IIOManager ioManager)
+    parameters:
+    - id: ioManager
+      type: WaveEngine.Common.IO.IIOManager
+      description: The io manager.
+    content.vb: Public Sub New(ioManager As IIOManager)
+  overload: WaveEngine.Framework.Services.AssetsContainer.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.AssetsContainer.LoadModel``1(System.String,System.Boolean)
+  commentId: M:WaveEngine.Framework.Services.AssetsContainer.LoadModel``1(System.String,System.Boolean)
+  id: LoadModel``1(System.String,System.Boolean)
+  parent: WaveEngine.Framework.Services.AssetsContainer
+  langs:
+  - csharp
+  - vb
+  name: LoadModel<T>(String, Boolean)
+  nameWithType: AssetsContainer.LoadModel<T>(String, Boolean)
+  fullName: WaveEngine.Framework.Services.AssetsContainer.LoadModel<T>(System.String, System.Boolean)
+  type: Method
+  source:
+    id: LoadModel
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\AssetsContainer.cs
+    startLine: 127
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nLoads a model from file.\n"
+  example: []
+  syntax:
+    content: >-
+      public T LoadModel<T>(string name, bool sharedInstance = true)
+
+          where T : FileModel, new()
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the model.
+    - id: sharedInstance
+      type: System.Boolean
+      description: if set to <code>true</code> the instance will be shared.
+    typeParameters:
+    - id: T
+      description: Type of the model to load.
+    return:
+      type: '{T}'
+      description: "\nThe loaded model.\n"
+    content.vb: Public Function LoadModel(Of T As {FileModel, New})(name As String, sharedInstance As Boolean = True) As T
+  overload: WaveEngine.Framework.Services.AssetsContainer.LoadModel*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: AssetContainer has been disposed
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If name is null or empty.
+  nameWithType.vb: AssetsContainer.LoadModel(Of T)(String, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Framework.Services.AssetsContainer.LoadModel(Of T)(System.String, System.Boolean)
+  name.vb: LoadModel(Of T)(String, Boolean)
+- uid: WaveEngine.Framework.Services.AssetsContainer.RefreshModel``1(System.String)
+  commentId: M:WaveEngine.Framework.Services.AssetsContainer.RefreshModel``1(System.String)
+  id: RefreshModel``1(System.String)
+  parent: WaveEngine.Framework.Services.AssetsContainer
+  langs:
+  - csharp
+  - vb
+  name: RefreshModel<T>(String)
+  nameWithType: AssetsContainer.RefreshModel<T>(String)
+  fullName: WaveEngine.Framework.Services.AssetsContainer.RefreshModel<T>(System.String)
+  type: Method
+  source:
+    id: RefreshModel
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\AssetsContainer.cs
+    startLine: 169
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nRefresh the model.\n"
+  example: []
+  syntax:
+    content: >-
+      public void RefreshModel<T>(string name)
+
+          where T : FileModel, new()
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the model.
+    typeParameters:
+    - id: T
+      description: Type of the asset to load.
+    content.vb: Public Sub RefreshModel(Of T As {FileModel, New})(name As String)
+  overload: WaveEngine.Framework.Services.AssetsContainer.RefreshModel*
+  nameWithType.vb: AssetsContainer.RefreshModel(Of T)(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Framework.Services.AssetsContainer.RefreshModel(Of T)(System.String)
+  name.vb: RefreshModel(Of T)(String)
+- uid: WaveEngine.Framework.Services.AssetsContainer.RenameModel(System.String,System.String)
+  commentId: M:WaveEngine.Framework.Services.AssetsContainer.RenameModel(System.String,System.String)
+  id: RenameModel(System.String,System.String)
+  parent: WaveEngine.Framework.Services.AssetsContainer
+  langs:
+  - csharp
+  - vb
+  name: RenameModel(String, String)
+  nameWithType: AssetsContainer.RenameModel(String, String)
+  fullName: WaveEngine.Framework.Services.AssetsContainer.RenameModel(System.String, System.String)
+  type: Method
+  source:
+    id: RenameModel
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\AssetsContainer.cs
+    startLine: 201
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nRenames the model\n"
+  example: []
+  syntax:
+    content: public void RenameModel(string oldName, string newName)
+    parameters:
+    - id: oldName
+      type: System.String
+      description: The old name of the model
+    - id: newName
+      type: System.String
+      description: The new name of the model
+    content.vb: Public Sub RenameModel(oldName As String, newName As String)
+  overload: WaveEngine.Framework.Services.AssetsContainer.RenameModel*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.AssetsContainer.UnloadModel(System.String)
+  commentId: M:WaveEngine.Framework.Services.AssetsContainer.UnloadModel(System.String)
+  id: UnloadModel(System.String)
+  parent: WaveEngine.Framework.Services.AssetsContainer
+  langs:
+  - csharp
+  - vb
+  name: UnloadModel(String)
+  nameWithType: AssetsContainer.UnloadModel(String)
+  fullName: WaveEngine.Framework.Services.AssetsContainer.UnloadModel(System.String)
+  type: Method
+  source:
+    id: UnloadModel
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\AssetsContainer.cs
+    startLine: 229
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nUnloads an asset.\n"
+  example: []
+  syntax:
+    content: public void UnloadModel(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: Name of the model to unload.
+    content.vb: Public Sub UnloadModel(name As String)
+  overload: WaveEngine.Framework.Services.AssetsContainer.UnloadModel*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If name is null or empty.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.AssetsContainer.LoadAsset``1(System.String)
+  commentId: M:WaveEngine.Framework.Services.AssetsContainer.LoadAsset``1(System.String)
+  id: LoadAsset``1(System.String)
+  parent: WaveEngine.Framework.Services.AssetsContainer
+  langs:
+  - csharp
+  - vb
+  name: LoadAsset<T>(String)
+  nameWithType: AssetsContainer.LoadAsset<T>(String)
+  fullName: WaveEngine.Framework.Services.AssetsContainer.LoadAsset<T>(System.String)
+  type: Method
+  source:
+    id: LoadAsset
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\AssetsContainer.cs
+    startLine: 257
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nLoads an asset.\n"
+  example: []
+  syntax:
+    content: >-
+      public T LoadAsset<T>(string name)
+
+          where T : ILoadable, new()
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the asset.
+    typeParameters:
+    - id: T
+      description: Type of the asset to load.
+    return:
+      type: '{T}'
+      description: The loaded asset.
+    content.vb: Public Function LoadAsset(Of T As {ILoadable, New})(name As String) As T
+  overload: WaveEngine.Framework.Services.AssetsContainer.LoadAsset*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If name is null or empty.
+  nameWithType.vb: AssetsContainer.LoadAsset(Of T)(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Framework.Services.AssetsContainer.LoadAsset(Of T)(System.String)
+  name.vb: LoadAsset(Of T)(String)
+- uid: WaveEngine.Framework.Services.AssetsContainer.LoadAsset``1(System.String,System.IO.Stream)
+  commentId: M:WaveEngine.Framework.Services.AssetsContainer.LoadAsset``1(System.String,System.IO.Stream)
+  id: LoadAsset``1(System.String,System.IO.Stream)
+  parent: WaveEngine.Framework.Services.AssetsContainer
+  langs:
+  - csharp
+  - vb
+  name: LoadAsset<T>(String, Stream)
+  nameWithType: AssetsContainer.LoadAsset<T>(String, Stream)
+  fullName: WaveEngine.Framework.Services.AssetsContainer.LoadAsset<T>(System.String, System.IO.Stream)
+  type: Method
+  source:
+    id: LoadAsset
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\AssetsContainer.cs
+    startLine: 297
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nLoads an asset.\n"
+  example: []
+  syntax:
+    content: >-
+      public T LoadAsset<T>(string name, Stream stream)
+
+          where T : ILoadable, new()
+    parameters:
+    - id: name
+      type: System.String
+      description: Name of the asset.
+    - id: stream
+      type: System.IO.Stream
+      description: The name of the asset.
+    typeParameters:
+    - id: T
+      description: Type of the asset to load.
+    return:
+      type: '{T}'
+      description: "\nThe loaded asset.\n"
+    content.vb: Public Function LoadAsset(Of T As {ILoadable, New})(name As String, stream As Stream) As T
+  overload: WaveEngine.Framework.Services.AssetsContainer.LoadAsset*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Stream is null.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Asset name is null or empty.
+  nameWithType.vb: AssetsContainer.LoadAsset(Of T)(String, Stream)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Framework.Services.AssetsContainer.LoadAsset(Of T)(System.String, System.IO.Stream)
+  name.vb: LoadAsset(Of T)(String, Stream)
+- uid: WaveEngine.Framework.Services.AssetsContainer.RefreshAsset``1(System.String)
+  commentId: M:WaveEngine.Framework.Services.AssetsContainer.RefreshAsset``1(System.String)
+  id: RefreshAsset``1(System.String)
+  parent: WaveEngine.Framework.Services.AssetsContainer
+  langs:
+  - csharp
+  - vb
+  name: RefreshAsset<T>(String)
+  nameWithType: AssetsContainer.RefreshAsset<T>(String)
+  fullName: WaveEngine.Framework.Services.AssetsContainer.RefreshAsset<T>(System.String)
+  type: Method
+  source:
+    id: RefreshAsset
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\AssetsContainer.cs
+    startLine: 343
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nRefresh the asset.\n"
+  example: []
+  syntax:
+    content: >-
+      public void RefreshAsset<T>(string name)
+
+          where T : ILoadable, new()
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the asset.
+    typeParameters:
+    - id: T
+      description: Type of the asset to load.
+    content.vb: Public Sub RefreshAsset(Of T As {ILoadable, New})(name As String)
+  overload: WaveEngine.Framework.Services.AssetsContainer.RefreshAsset*
+  nameWithType.vb: AssetsContainer.RefreshAsset(Of T)(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Framework.Services.AssetsContainer.RefreshAsset(Of T)(System.String)
+  name.vb: RefreshAsset(Of T)(String)
+- uid: WaveEngine.Framework.Services.AssetsContainer.UnloadAsset(System.String)
+  commentId: M:WaveEngine.Framework.Services.AssetsContainer.UnloadAsset(System.String)
+  id: UnloadAsset(System.String)
+  parent: WaveEngine.Framework.Services.AssetsContainer
+  langs:
+  - csharp
+  - vb
+  name: UnloadAsset(String)
+  nameWithType: AssetsContainer.UnloadAsset(String)
+  fullName: WaveEngine.Framework.Services.AssetsContainer.UnloadAsset(System.String)
+  type: Method
+  source:
+    id: UnloadAsset
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\AssetsContainer.cs
+    startLine: 378
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nUnloads an asset.\n"
+  example: []
+  syntax:
+    content: public void UnloadAsset(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: Name of the asset to unload.
+    content.vb: Public Sub UnloadAsset(name As String)
+  overload: WaveEngine.Framework.Services.AssetsContainer.UnloadAsset*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If name is null or empty.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.AssetsContainer.Dispose
+  commentId: M:WaveEngine.Framework.Services.AssetsContainer.Dispose
+  id: Dispose
+  parent: WaveEngine.Framework.Services.AssetsContainer
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: AssetsContainer.Dispose()
+  fullName: WaveEngine.Framework.Services.AssetsContainer.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\AssetsContainer.cs
+    startLine: 396
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nPerforms application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: WaveEngine.Framework.Services.AssetsContainer.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: WaveEngine.Framework.Services
+  commentId: N:WaveEngine.Framework.Services
+  name: WaveEngine.Framework.Services
+  nameWithType: WaveEngine.Framework.Services
+  fullName: WaveEngine.Framework.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: System.EventHandler
+  commentId: T:System.EventHandler
+  parent: System
+  isExternal: true
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
+- uid: WaveEngine.Framework.Services.AssetsContainer
+  commentId: T:WaveEngine.Framework.Services.AssetsContainer
+  parent: WaveEngine.Framework.Services
+  name: AssetsContainer
+  nameWithType: AssetsContainer
+  fullName: WaveEngine.Framework.Services.AssetsContainer
+- uid: WaveEngine.Framework.Services.AssetsContainer.IsDisposed*
+  commentId: Overload:WaveEngine.Framework.Services.AssetsContainer.IsDisposed
+  name: IsDisposed
+  nameWithType: AssetsContainer.IsDisposed
+  fullName: WaveEngine.Framework.Services.AssetsContainer.IsDisposed
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Framework.Services.AssetsContainer.#ctor*
+  commentId: Overload:WaveEngine.Framework.Services.AssetsContainer.#ctor
+  name: AssetsContainer
+  nameWithType: AssetsContainer.AssetsContainer
+  fullName: WaveEngine.Framework.Services.AssetsContainer.AssetsContainer
+- uid: WaveEngine.Common.IO.IIOManager
+  commentId: T:WaveEngine.Common.IO.IIOManager
+  parent: WaveEngine.Common.IO
+  name: IIOManager
+  nameWithType: IIOManager
+  fullName: WaveEngine.Common.IO.IIOManager
+- uid: WaveEngine.Common.IO
+  commentId: N:WaveEngine.Common.IO
+  name: WaveEngine.Common.IO
+  nameWithType: WaveEngine.Common.IO
+  fullName: WaveEngine.Common.IO
+- uid: System.ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+  isExternal: true
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+- uid: WaveEngine.Framework.Services.AssetsContainer.LoadModel*
+  commentId: Overload:WaveEngine.Framework.Services.AssetsContainer.LoadModel
+  name: LoadModel
+  nameWithType: AssetsContainer.LoadModel
+  fullName: WaveEngine.Framework.Services.AssetsContainer.LoadModel
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: WaveEngine.Framework.Services.AssetsContainer.RefreshModel*
+  commentId: Overload:WaveEngine.Framework.Services.AssetsContainer.RefreshModel
+  name: RefreshModel
+  nameWithType: AssetsContainer.RefreshModel
+  fullName: WaveEngine.Framework.Services.AssetsContainer.RefreshModel
+- uid: WaveEngine.Framework.Services.AssetsContainer.RenameModel*
+  commentId: Overload:WaveEngine.Framework.Services.AssetsContainer.RenameModel
+  name: RenameModel
+  nameWithType: AssetsContainer.RenameModel
+  fullName: WaveEngine.Framework.Services.AssetsContainer.RenameModel
+- uid: WaveEngine.Framework.Services.AssetsContainer.UnloadModel*
+  commentId: Overload:WaveEngine.Framework.Services.AssetsContainer.UnloadModel
+  name: UnloadModel
+  nameWithType: AssetsContainer.UnloadModel
+  fullName: WaveEngine.Framework.Services.AssetsContainer.UnloadModel
+- uid: WaveEngine.Framework.Services.AssetsContainer.LoadAsset*
+  commentId: Overload:WaveEngine.Framework.Services.AssetsContainer.LoadAsset
+  name: LoadAsset
+  nameWithType: AssetsContainer.LoadAsset
+  fullName: WaveEngine.Framework.Services.AssetsContainer.LoadAsset
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: WaveEngine.Framework.Services.AssetsContainer.RefreshAsset*
+  commentId: Overload:WaveEngine.Framework.Services.AssetsContainer.RefreshAsset
+  name: RefreshAsset
+  nameWithType: AssetsContainer.RefreshAsset
+  fullName: WaveEngine.Framework.Services.AssetsContainer.RefreshAsset
+- uid: WaveEngine.Framework.Services.AssetsContainer.UnloadAsset*
+  commentId: Overload:WaveEngine.Framework.Services.AssetsContainer.UnloadAsset
+  name: UnloadAsset
+  nameWithType: AssetsContainer.UnloadAsset
+  fullName: WaveEngine.Framework.Services.AssetsContainer.UnloadAsset
+- uid: WaveEngine.Framework.Services.AssetsContainer.Dispose*
+  commentId: Overload:WaveEngine.Framework.Services.AssetsContainer.Dispose
+  name: Dispose
+  nameWithType: AssetsContainer.Dispose
+  fullName: WaveEngine.Framework.Services.AssetsContainer.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

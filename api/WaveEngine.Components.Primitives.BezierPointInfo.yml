@@ -1,0 +1,798 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Components.Primitives.BezierPointInfo
+  commentId: T:WaveEngine.Components.Primitives.BezierPointInfo
+  id: BezierPointInfo
+  parent: WaveEngine.Components.Primitives
+  children:
+  - WaveEngine.Components.Primitives.BezierPointInfo.Color
+  - WaveEngine.Components.Primitives.BezierPointInfo.InboundHandle
+  - WaveEngine.Components.Primitives.BezierPointInfo.OutboundHandle
+  - WaveEngine.Components.Primitives.BezierPointInfo.Position
+  - WaveEngine.Components.Primitives.BezierPointInfo.Thickness
+  - WaveEngine.Components.Primitives.BezierPointInfo.ToString
+  langs:
+  - csharp
+  - vb
+  name: BezierPointInfo
+  nameWithType: BezierPointInfo
+  fullName: WaveEngine.Components.Primitives.BezierPointInfo
+  type: Class
+  source:
+    id: BezierPointInfo
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Primitives\LinePrimitives\BezierPointInfo.cs
+    startLine: 12
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Primitives
+  summary: "\nA class that contains the information of each point of a <xref href=\"WaveEngine.Components.Primitives.LineBezierMesh\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      public class BezierPointInfo
+    content.vb: >-
+      <DataContract>
+
+      Public Class BezierPointInfo
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WaveEngine.Components.Primitives.BezierPointInfo.Position
+  commentId: F:WaveEngine.Components.Primitives.BezierPointInfo.Position
+  id: Position
+  parent: WaveEngine.Components.Primitives.BezierPointInfo
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: BezierPointInfo.Position
+  fullName: WaveEngine.Components.Primitives.BezierPointInfo.Position
+  type: Field
+  source:
+    id: Position
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Primitives\LinePrimitives\BezierPointInfo.cs
+    startLine: 34
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Primitives
+  summary: "\nThe position of the point.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public Vector3 Position
+    return:
+      type: WaveEngine.Common.Math.Vector3
+    content.vb: >-
+      <DataMember>
+
+      Public Position As Vector3
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.Primitives.BezierPointInfo.InboundHandle
+  commentId: F:WaveEngine.Components.Primitives.BezierPointInfo.InboundHandle
+  id: InboundHandle
+  parent: WaveEngine.Components.Primitives.BezierPointInfo
+  langs:
+  - csharp
+  - vb
+  name: InboundHandle
+  nameWithType: BezierPointInfo.InboundHandle
+  fullName: WaveEngine.Components.Primitives.BezierPointInfo.InboundHandle
+  type: Field
+  source:
+    id: InboundHandle
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Primitives\LinePrimitives\BezierPointInfo.cs
+    startLine: 41
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Primitives
+  summary: "\nThe relative position of the inbound handle.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderProperty(ShowConditionFunction = "HasInboundHandleVisible")]
+
+      public Vector3 InboundHandle
+    return:
+      type: WaveEngine.Common.Math.Vector3
+    content.vb: >-
+      <DataMember>
+
+      <RenderProperty(ShowConditionFunction:="HasInboundHandleVisible")>
+
+      Public InboundHandle As Vector3
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: ShowConditionFunction
+      type: System.String
+      value: HasInboundHandleVisible
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.Primitives.BezierPointInfo.OutboundHandle
+  commentId: F:WaveEngine.Components.Primitives.BezierPointInfo.OutboundHandle
+  id: OutboundHandle
+  parent: WaveEngine.Components.Primitives.BezierPointInfo
+  langs:
+  - csharp
+  - vb
+  name: OutboundHandle
+  nameWithType: BezierPointInfo.OutboundHandle
+  fullName: WaveEngine.Components.Primitives.BezierPointInfo.OutboundHandle
+  type: Field
+  source:
+    id: OutboundHandle
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Primitives\LinePrimitives\BezierPointInfo.cs
+    startLine: 48
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Primitives
+  summary: "\nThe relative position of the outbound handle.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderProperty(ShowConditionFunction = "HasOutboundHandleVisible")]
+
+      public Vector3 OutboundHandle
+    return:
+      type: WaveEngine.Common.Math.Vector3
+    content.vb: >-
+      <DataMember>
+
+      <RenderProperty(ShowConditionFunction:="HasOutboundHandleVisible")>
+
+      Public OutboundHandle As Vector3
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: ShowConditionFunction
+      type: System.String
+      value: HasOutboundHandleVisible
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.Primitives.BezierPointInfo.Thickness
+  commentId: F:WaveEngine.Components.Primitives.BezierPointInfo.Thickness
+  id: Thickness
+  parent: WaveEngine.Components.Primitives.BezierPointInfo
+  langs:
+  - csharp
+  - vb
+  name: Thickness
+  nameWithType: BezierPointInfo.Thickness
+  fullName: WaveEngine.Components.Primitives.BezierPointInfo.Thickness
+  type: Field
+  source:
+    id: Thickness
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Primitives\LinePrimitives\BezierPointInfo.cs
+    startLine: 54
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Primitives
+  summary: "\nThe thickness of the line at this point.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public float Thickness
+    return:
+      type: System.Single
+    content.vb: >-
+      <DataMember>
+
+      Public Thickness As Single
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.Primitives.BezierPointInfo.Color
+  commentId: F:WaveEngine.Components.Primitives.BezierPointInfo.Color
+  id: Color
+  parent: WaveEngine.Components.Primitives.BezierPointInfo
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: BezierPointInfo.Color
+  fullName: WaveEngine.Components.Primitives.BezierPointInfo.Color
+  type: Field
+  source:
+    id: Color
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Primitives\LinePrimitives\BezierPointInfo.cs
+    startLine: 60
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Primitives
+  summary: "\nThe color of the line at this point.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public Color Color
+    return:
+      type: WaveEngine.Common.Graphics.Color
+    content.vb: >-
+      <DataMember>
+
+      Public Color As Color
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Components.Primitives.BezierPointInfo.ToString
+  commentId: M:WaveEngine.Components.Primitives.BezierPointInfo.ToString
+  id: ToString
+  parent: WaveEngine.Components.Primitives.BezierPointInfo
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: BezierPointInfo.ToString()
+  fullName: WaveEngine.Components.Primitives.BezierPointInfo.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\Primitives\LinePrimitives\BezierPointInfo.cs
+    startLine: 81
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.Primitives
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: WaveEngine.Components.Primitives.BezierPointInfo.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: WaveEngine.Components.Primitives.LineBezierMesh
+  commentId: T:WaveEngine.Components.Primitives.LineBezierMesh
+  name: LineBezierMesh
+  nameWithType: LineBezierMesh
+  fullName: WaveEngine.Components.Primitives.LineBezierMesh
+- uid: WaveEngine.Components.Primitives
+  commentId: N:WaveEngine.Components.Primitives
+  name: WaveEngine.Components.Primitives
+  nameWithType: WaveEngine.Components.Primitives
+  fullName: WaveEngine.Components.Primitives
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Common.Math.Vector3
+  commentId: T:WaveEngine.Common.Math.Vector3
+  parent: WaveEngine.Common.Math
+  name: Vector3
+  nameWithType: Vector3
+  fullName: WaveEngine.Common.Math.Vector3
+- uid: WaveEngine.Common.Math
+  commentId: N:WaveEngine.Common.Math
+  name: WaveEngine.Common.Math
+  nameWithType: WaveEngine.Common.Math
+  fullName: WaveEngine.Common.Math
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Common.Graphics.Color
+  commentId: T:WaveEngine.Common.Graphics.Color
+  parent: WaveEngine.Common.Graphics
+  name: Color
+  nameWithType: Color
+  fullName: WaveEngine.Common.Graphics.Color
+- uid: WaveEngine.Common.Graphics
+  commentId: N:WaveEngine.Common.Graphics
+  name: WaveEngine.Common.Graphics
+  nameWithType: WaveEngine.Common.Graphics
+  fullName: WaveEngine.Common.Graphics
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Components.Primitives.BezierPointInfo.ToString*
+  commentId: Overload:WaveEngine.Components.Primitives.BezierPointInfo.ToString
+  name: ToString
+  nameWithType: BezierPointInfo.ToString
+  fullName: WaveEngine.Components.Primitives.BezierPointInfo.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

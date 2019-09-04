@@ -1,0 +1,1192 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1
+  commentId: T:WaveEngine.Framework.Animation.AnimationCurveEvaluator`1
+  id: AnimationCurveEvaluator`1
+  parent: WaveEngine.Framework.Animation
+  children:
+  - WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.Add(`0@,`0@,`0@)
+  - WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.Add(`0@,`0@,System.Single,`0@)
+  - WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.EvaluatedType
+  - WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.InverseValue(`0)
+  - WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.Lerp(`0@,`0@,System.Single,`0@)
+  - WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.ReadValue(System.IO.BinaryReader,`0@)
+  - WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.WriteValue(`0@,System.IO.BinaryWriter)
+  langs:
+  - csharp
+  - vb
+  name: AnimationCurveEvaluator<T>
+  nameWithType: AnimationCurveEvaluator<T>
+  fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator<T>
+  type: Class
+  source:
+    id: AnimationCurveEvaluator
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Animation\Clips\CurveEvaluators\AnimationCurveEvaluator`1.cs
+    startLine: 13
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Animation
+  summary: "\nEvaluate the values of a curve\n"
+  example: []
+  syntax:
+    content: 'public abstract class AnimationCurveEvaluator<T> : AnimationCurveEvaluator'
+    typeParameters:
+    - id: T
+      description: The curve value type
+    content.vb: >-
+      Public MustInherit Class AnimationCurveEvaluator(Of T)
+
+          Inherits AnimationCurveEvaluator
+  inheritance:
+  - System.Object
+  - WaveEngine.Framework.Animation.AnimationCurveEvaluator
+  derivedClasses:
+  - WaveEngine.Framework.Animation.AnimationCurveEvaluatorFloat
+  - WaveEngine.Framework.Animation.AnimationCurveEvaluatorFloatArray
+  - WaveEngine.Framework.Animation.AnimationCurveEvaluatorQuaternion
+  - WaveEngine.Framework.Animation.AnimationCurveEvaluatorVector2
+  - WaveEngine.Framework.Animation.AnimationCurveEvaluatorVector3
+  - WaveEngine.Framework.Animation.AnimationCurveEvaluatorVector4
+  inheritedMembers:
+  - WaveEngine.Framework.Animation.AnimationCurveEvaluator.Add(System.Object@,System.Object@,System.Object@)
+  - WaveEngine.Framework.Animation.AnimationCurveEvaluator.Add(System.Object@,System.Object@,System.Single,System.Object@)
+  - WaveEngine.Framework.Animation.AnimationCurveEvaluator.Lerp(System.Object@,System.Object@,System.Single,System.Object@)
+  - WaveEngine.Framework.Animation.AnimationCurveEvaluator.InverseValue(System.Object)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  nameWithType.vb: AnimationCurveEvaluator(Of T)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: WaveEngine.Framework.Animation.AnimationCurveEvaluator(Of T)
+  name.vb: AnimationCurveEvaluator(Of T)
+- uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.EvaluatedType
+  commentId: P:WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.EvaluatedType
+  id: EvaluatedType
+  parent: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1
+  langs:
+  - csharp
+  - vb
+  name: EvaluatedType
+  nameWithType: AnimationCurveEvaluator<T>.EvaluatedType
+  fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator<T>.EvaluatedType
+  type: Property
+  source:
+    id: EvaluatedType
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Animation\Clips\CurveEvaluators\AnimationCurveEvaluator`1.cs
+    startLine: 18
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Animation
+  summary: "\nGets the type that is evaluated\n"
+  example: []
+  syntax:
+    content: public override Type EvaluatedType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public Overrides ReadOnly Property EvaluatedType As Type
+  overridden: WaveEngine.Framework.Animation.AnimationCurveEvaluator.EvaluatedType
+  overload: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.EvaluatedType*
+  nameWithType.vb: AnimationCurveEvaluator(Of T).EvaluatedType
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+  fullName.vb: WaveEngine.Framework.Animation.AnimationCurveEvaluator(Of T).EvaluatedType
+- uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.Add(`0@,`0@,`0@)
+  commentId: M:WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.Add(`0@,`0@,`0@)
+  id: Add(`0@,`0@,`0@)
+  parent: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1
+  langs:
+  - csharp
+  - vb
+  name: Add(ref T, ref T, ref T)
+  nameWithType: AnimationCurveEvaluator<T>.Add(ref T, ref T, ref T)
+  fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator<T>.Add(ref T, ref T, ref T)
+  type: Method
+  source:
+    id: Add
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Animation\Clips\CurveEvaluators\AnimationCurveEvaluator`1.cs
+    startLine: 32
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Animation
+  summary: "\nLerps the specified value1.\n"
+  example: []
+  syntax:
+    content: public abstract void Add(ref T a, ref T b, ref T result)
+    parameters:
+    - id: a
+      type: '{T}'
+      description: The value1.
+    - id: b
+      type: '{T}'
+      description: The value2.
+    - id: result
+      type: '{T}'
+      description: The result.
+    content.vb: Public MustOverride Sub Add(ByRef a As T, ByRef b As T, ByRef result As T)
+  overload: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.Add*
+  nameWithType.vb: AnimationCurveEvaluator(Of T).Add(ByRef T, ByRef T, ByRef T)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: WaveEngine.Framework.Animation.AnimationCurveEvaluator(Of T).Add(ByRef T, ByRef T, ByRef T)
+  name.vb: Add(ByRef T, ByRef T, ByRef T)
+- uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.Add(`0@,`0@,System.Single,`0@)
+  commentId: M:WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.Add(`0@,`0@,System.Single,`0@)
+  id: Add(`0@,`0@,System.Single,`0@)
+  parent: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1
+  langs:
+  - csharp
+  - vb
+  name: Add(ref T, ref T, Single, ref T)
+  nameWithType: AnimationCurveEvaluator<T>.Add(ref T, ref T, Single, ref T)
+  fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator<T>.Add(ref T, ref T, System.Single, ref T)
+  type: Method
+  source:
+    id: Add
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Animation\Clips\CurveEvaluators\AnimationCurveEvaluator`1.cs
+    startLine: 41
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Animation
+  summary: "\nLerps the specified value1.\n"
+  example: []
+  syntax:
+    content: public abstract void Add(ref T a, ref T b, float amount, ref T result)
+    parameters:
+    - id: a
+      type: '{T}'
+      description: The value1.
+    - id: b
+      type: '{T}'
+      description: The value2.
+    - id: amount
+      type: System.Single
+      description: The amount.
+    - id: result
+      type: '{T}'
+      description: The result.
+    content.vb: Public MustOverride Sub Add(ByRef a As T, ByRef b As T, amount As Single, ByRef result As T)
+  overload: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.Add*
+  nameWithType.vb: AnimationCurveEvaluator(Of T).Add(ByRef T, ByRef T, Single, ByRef T)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: WaveEngine.Framework.Animation.AnimationCurveEvaluator(Of T).Add(ByRef T, ByRef T, System.Single, ByRef T)
+  name.vb: Add(ByRef T, ByRef T, Single, ByRef T)
+- uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.Lerp(`0@,`0@,System.Single,`0@)
+  commentId: M:WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.Lerp(`0@,`0@,System.Single,`0@)
+  id: Lerp(`0@,`0@,System.Single,`0@)
+  parent: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1
+  langs:
+  - csharp
+  - vb
+  name: Lerp(ref T, ref T, Single, ref T)
+  nameWithType: AnimationCurveEvaluator<T>.Lerp(ref T, ref T, Single, ref T)
+  fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator<T>.Lerp(ref T, ref T, System.Single, ref T)
+  type: Method
+  source:
+    id: Lerp
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Animation\Clips\CurveEvaluators\AnimationCurveEvaluator`1.cs
+    startLine: 50
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Animation
+  summary: "\nLerps the specified value1.\n"
+  example: []
+  syntax:
+    content: public abstract void Lerp(ref T a, ref T b, float amount, ref T result)
+    parameters:
+    - id: a
+      type: '{T}'
+      description: The value1.
+    - id: b
+      type: '{T}'
+      description: The value2.
+    - id: amount
+      type: System.Single
+      description: The amount.
+    - id: result
+      type: '{T}'
+      description: The result.
+    content.vb: Public MustOverride Sub Lerp(ByRef a As T, ByRef b As T, amount As Single, ByRef result As T)
+  overload: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.Lerp*
+  nameWithType.vb: AnimationCurveEvaluator(Of T).Lerp(ByRef T, ByRef T, Single, ByRef T)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: WaveEngine.Framework.Animation.AnimationCurveEvaluator(Of T).Lerp(ByRef T, ByRef T, System.Single, ByRef T)
+  name.vb: Lerp(ByRef T, ByRef T, Single, ByRef T)
+- uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.InverseValue(`0)
+  commentId: M:WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.InverseValue(`0)
+  id: InverseValue(`0)
+  parent: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1
+  langs:
+  - csharp
+  - vb
+  name: InverseValue(T)
+  nameWithType: AnimationCurveEvaluator<T>.InverseValue(T)
+  fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator<T>.InverseValue(T)
+  type: Method
+  source:
+    id: InverseValue
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Animation\Clips\CurveEvaluators\AnimationCurveEvaluator`1.cs
+    startLine: 57
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Animation
+  summary: "\nIntert a value\n"
+  example: []
+  syntax:
+    content: public abstract T InverseValue(T value)
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The value
+    return:
+      type: '{T}'
+      description: The inverted value
+    content.vb: Public MustOverride Function InverseValue(value As T) As T
+  overload: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.InverseValue*
+  nameWithType.vb: AnimationCurveEvaluator(Of T).InverseValue(T)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: WaveEngine.Framework.Animation.AnimationCurveEvaluator(Of T).InverseValue(T)
+- uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.WriteValue(`0@,System.IO.BinaryWriter)
+  commentId: M:WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.WriteValue(`0@,System.IO.BinaryWriter)
+  id: WriteValue(`0@,System.IO.BinaryWriter)
+  parent: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1
+  langs:
+  - csharp
+  - vb
+  name: WriteValue(ref T, BinaryWriter)
+  nameWithType: AnimationCurveEvaluator<T>.WriteValue(ref T, BinaryWriter)
+  fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator<T>.WriteValue(ref T, System.IO.BinaryWriter)
+  type: Method
+  source:
+    id: WriteValue
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Animation\Clips\CurveEvaluators\AnimationCurveEvaluator`1.cs
+    startLine: 64
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Animation
+  summary: "\nRead the value\n"
+  example: []
+  syntax:
+    content: public abstract void WriteValue(ref T value, BinaryWriter writer)
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The value.
+    - id: writer
+      type: System.IO.BinaryWriter
+      description: The writer.
+    content.vb: Public MustOverride Sub WriteValue(ByRef value As T, writer As BinaryWriter)
+  overload: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.WriteValue*
+  nameWithType.vb: AnimationCurveEvaluator(Of T).WriteValue(ByRef T, BinaryWriter)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: WaveEngine.Framework.Animation.AnimationCurveEvaluator(Of T).WriteValue(ByRef T, System.IO.BinaryWriter)
+  name.vb: WriteValue(ByRef T, BinaryWriter)
+- uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.ReadValue(System.IO.BinaryReader,`0@)
+  commentId: M:WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.ReadValue(System.IO.BinaryReader,`0@)
+  id: ReadValue(System.IO.BinaryReader,`0@)
+  parent: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1
+  langs:
+  - csharp
+  - vb
+  name: ReadValue(BinaryReader, out T)
+  nameWithType: AnimationCurveEvaluator<T>.ReadValue(BinaryReader, out T)
+  fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator<T>.ReadValue(System.IO.BinaryReader, out T)
+  type: Method
+  source:
+    id: ReadValue
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Animation\Clips\CurveEvaluators\AnimationCurveEvaluator`1.cs
+    startLine: 71
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Animation
+  summary: "\nRead the value\n"
+  example: []
+  syntax:
+    content: public abstract void ReadValue(BinaryReader reader, out T value)
+    parameters:
+    - id: reader
+      type: System.IO.BinaryReader
+      description: The binary reader
+    - id: value
+      type: '{T}'
+      description: The readed value
+    content.vb: Public MustOverride Sub ReadValue(reader As BinaryReader, ByRef value As T)
+  overload: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.ReadValue*
+  nameWithType.vb: AnimationCurveEvaluator(Of T).ReadValue(BinaryReader, ByRef T)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: WaveEngine.Framework.Animation.AnimationCurveEvaluator(Of T).ReadValue(System.IO.BinaryReader, ByRef T)
+  name.vb: ReadValue(BinaryReader, ByRef T)
+references:
+- uid: WaveEngine.Framework.Animation
+  commentId: N:WaveEngine.Framework.Animation
+  name: WaveEngine.Framework.Animation
+  nameWithType: WaveEngine.Framework.Animation
+  fullName: WaveEngine.Framework.Animation
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator
+  commentId: T:WaveEngine.Framework.Animation.AnimationCurveEvaluator
+  parent: WaveEngine.Framework.Animation
+  name: AnimationCurveEvaluator
+  nameWithType: AnimationCurveEvaluator
+  fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator
+- uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator.Add(System.Object@,System.Object@,System.Object@)
+  commentId: M:WaveEngine.Framework.Animation.AnimationCurveEvaluator.Add(System.Object@,System.Object@,System.Object@)
+  parent: WaveEngine.Framework.Animation.AnimationCurveEvaluator
+  isExternal: true
+  name: Add(Object, Object, Object)
+  nameWithType: AnimationCurveEvaluator.Add(Object, Object, Object)
+  fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator.Add(System.Object, System.Object, System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator.Add(System.Object@,System.Object@,System.Object@)
+    name: Add
+    nameWithType: AnimationCurveEvaluator.Add
+    fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator.Add
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator.Add(System.Object@,System.Object@,System.Object@)
+    name: Add
+    nameWithType: AnimationCurveEvaluator.Add
+    fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator.Add
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator.Add(System.Object@,System.Object@,System.Single,System.Object@)
+  commentId: M:WaveEngine.Framework.Animation.AnimationCurveEvaluator.Add(System.Object@,System.Object@,System.Single,System.Object@)
+  parent: WaveEngine.Framework.Animation.AnimationCurveEvaluator
+  isExternal: true
+  name: Add(Object, Object, Single, Object)
+  nameWithType: AnimationCurveEvaluator.Add(Object, Object, Single, Object)
+  fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator.Add(System.Object, System.Object, System.Single, System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator.Add(System.Object@,System.Object@,System.Single,System.Object@)
+    name: Add
+    nameWithType: AnimationCurveEvaluator.Add
+    fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator.Add
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator.Add(System.Object@,System.Object@,System.Single,System.Object@)
+    name: Add
+    nameWithType: AnimationCurveEvaluator.Add
+    fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator.Add
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator.Lerp(System.Object@,System.Object@,System.Single,System.Object@)
+  commentId: M:WaveEngine.Framework.Animation.AnimationCurveEvaluator.Lerp(System.Object@,System.Object@,System.Single,System.Object@)
+  parent: WaveEngine.Framework.Animation.AnimationCurveEvaluator
+  isExternal: true
+  name: Lerp(Object, Object, Single, Object)
+  nameWithType: AnimationCurveEvaluator.Lerp(Object, Object, Single, Object)
+  fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator.Lerp(System.Object, System.Object, System.Single, System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator.Lerp(System.Object@,System.Object@,System.Single,System.Object@)
+    name: Lerp
+    nameWithType: AnimationCurveEvaluator.Lerp
+    fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator.Lerp
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator.Lerp(System.Object@,System.Object@,System.Single,System.Object@)
+    name: Lerp
+    nameWithType: AnimationCurveEvaluator.Lerp
+    fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator.Lerp
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator.InverseValue(System.Object)
+  commentId: M:WaveEngine.Framework.Animation.AnimationCurveEvaluator.InverseValue(System.Object)
+  parent: WaveEngine.Framework.Animation.AnimationCurveEvaluator
+  isExternal: true
+  name: InverseValue(Object)
+  nameWithType: AnimationCurveEvaluator.InverseValue(Object)
+  fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator.InverseValue(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator.InverseValue(System.Object)
+    name: InverseValue
+    nameWithType: AnimationCurveEvaluator.InverseValue
+    fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator.InverseValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator.InverseValue(System.Object)
+    name: InverseValue
+    nameWithType: AnimationCurveEvaluator.InverseValue
+    fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator.InverseValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator.EvaluatedType
+  commentId: P:WaveEngine.Framework.Animation.AnimationCurveEvaluator.EvaluatedType
+  parent: WaveEngine.Framework.Animation.AnimationCurveEvaluator
+  name: EvaluatedType
+  nameWithType: AnimationCurveEvaluator.EvaluatedType
+  fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator.EvaluatedType
+- uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.EvaluatedType*
+  commentId: Overload:WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.EvaluatedType
+  name: EvaluatedType
+  nameWithType: AnimationCurveEvaluator<T>.EvaluatedType
+  fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator<T>.EvaluatedType
+  nameWithType.vb: AnimationCurveEvaluator(Of T).EvaluatedType
+  fullName.vb: WaveEngine.Framework.Animation.AnimationCurveEvaluator(Of T).EvaluatedType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.Add*
+  commentId: Overload:WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.Add
+  name: Add
+  nameWithType: AnimationCurveEvaluator<T>.Add
+  fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator<T>.Add
+  nameWithType.vb: AnimationCurveEvaluator(Of T).Add
+  fullName.vb: WaveEngine.Framework.Animation.AnimationCurveEvaluator(Of T).Add
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.Lerp*
+  commentId: Overload:WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.Lerp
+  name: Lerp
+  nameWithType: AnimationCurveEvaluator<T>.Lerp
+  fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator<T>.Lerp
+  nameWithType.vb: AnimationCurveEvaluator(Of T).Lerp
+  fullName.vb: WaveEngine.Framework.Animation.AnimationCurveEvaluator(Of T).Lerp
+- uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.InverseValue*
+  commentId: Overload:WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.InverseValue
+  name: InverseValue
+  nameWithType: AnimationCurveEvaluator<T>.InverseValue
+  fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator<T>.InverseValue
+  nameWithType.vb: AnimationCurveEvaluator(Of T).InverseValue
+  fullName.vb: WaveEngine.Framework.Animation.AnimationCurveEvaluator(Of T).InverseValue
+- uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.WriteValue*
+  commentId: Overload:WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.WriteValue
+  name: WriteValue
+  nameWithType: AnimationCurveEvaluator<T>.WriteValue
+  fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator<T>.WriteValue
+  nameWithType.vb: AnimationCurveEvaluator(Of T).WriteValue
+  fullName.vb: WaveEngine.Framework.Animation.AnimationCurveEvaluator(Of T).WriteValue
+- uid: System.IO.BinaryWriter
+  commentId: T:System.IO.BinaryWriter
+  parent: System.IO
+  isExternal: true
+  name: BinaryWriter
+  nameWithType: BinaryWriter
+  fullName: System.IO.BinaryWriter
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.ReadValue*
+  commentId: Overload:WaveEngine.Framework.Animation.AnimationCurveEvaluator`1.ReadValue
+  name: ReadValue
+  nameWithType: AnimationCurveEvaluator<T>.ReadValue
+  fullName: WaveEngine.Framework.Animation.AnimationCurveEvaluator<T>.ReadValue
+  nameWithType.vb: AnimationCurveEvaluator(Of T).ReadValue
+  fullName.vb: WaveEngine.Framework.Animation.AnimationCurveEvaluator(Of T).ReadValue
+- uid: System.IO.BinaryReader
+  commentId: T:System.IO.BinaryReader
+  parent: System.IO
+  isExternal: true
+  name: BinaryReader
+  nameWithType: BinaryReader
+  fullName: System.IO.BinaryReader

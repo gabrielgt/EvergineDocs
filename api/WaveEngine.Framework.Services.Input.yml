@@ -1,0 +1,1761 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Framework.Services.Input
+  commentId: T:WaveEngine.Framework.Services.Input
+  id: Input
+  parent: WaveEngine.Framework.Services
+  children:
+  - WaveEngine.Framework.Services.Input.AccelerometerState
+  - WaveEngine.Framework.Services.Input.CompassState
+  - WaveEngine.Framework.Services.Input.Dispose
+  - WaveEngine.Framework.Services.Input.Dispose(System.Boolean)
+  - WaveEngine.Framework.Services.Input.GamePadGetState(WaveEngine.Common.Input.PlayerIndex)
+  - WaveEngine.Framework.Services.Input.GamePadState
+  - WaveEngine.Framework.Services.Input.GyroscopeState
+  - WaveEngine.Framework.Services.Input.Initialize
+  - WaveEngine.Framework.Services.Input.IsEnabled
+  - WaveEngine.Framework.Services.Input.KeyboardState
+  - WaveEngine.Framework.Services.Input.MotionState
+  - WaveEngine.Framework.Services.Input.MouseState
+  - WaveEngine.Framework.Services.Input.SetGamePadGetVibration(WaveEngine.Common.Input.PlayerIndex,System.Single,System.Single,System.Single,System.Single)
+  - WaveEngine.Framework.Services.Input.StartAccelerometer
+  - WaveEngine.Framework.Services.Input.StartCompass
+  - WaveEngine.Framework.Services.Input.StartGyroscope
+  - WaveEngine.Framework.Services.Input.StartMotion
+  - WaveEngine.Framework.Services.Input.StopAccelerometer
+  - WaveEngine.Framework.Services.Input.StopCompass
+  - WaveEngine.Framework.Services.Input.StopGyroscope
+  - WaveEngine.Framework.Services.Input.StopMotion
+  - WaveEngine.Framework.Services.Input.Terminate
+  - WaveEngine.Framework.Services.Input.TouchPanelState
+  - WaveEngine.Framework.Services.Input.Update(System.TimeSpan)
+  langs:
+  - csharp
+  - vb
+  name: Input
+  nameWithType: Input
+  fullName: WaveEngine.Framework.Services.Input
+  type: Class
+  source:
+    id: Input
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 17
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nAllows the user to pool for the state of different input devices.\n"
+  remarks: "\nAt the same time, this class pools the system where the application is running for specific input information.\nNon supported devices on the platform will be marked as not connected.\n"
+  example: []
+  syntax:
+    content: 'public class Input : UpdatableService, IDisposable'
+    content.vb: >-
+      Public Class Input
+
+          Inherits UpdatableService
+
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - WaveEngine.Common.IO.SerializableObject
+  - WaveEngine.Common.Service
+  - WaveEngine.Common.UpdatableService
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - WaveEngine.Common.Service.IsInitialized
+  - WaveEngine.Common.Service.IsTerminated
+  - WaveEngine.Common.Service.BaseInitialize
+  - WaveEngine.Common.Service.BaseTerminate
+  - WaveEngine.Common.Service.OnActivated
+  - WaveEngine.Common.Service.OnDeactivated
+  - WaveEngine.Common.IO.SerializableObject.DefaultValues
+  - WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WaveEngine.Framework.Services.Input.KeyboardState
+  commentId: F:WaveEngine.Framework.Services.Input.KeyboardState
+  id: KeyboardState
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: KeyboardState
+  nameWithType: Input.KeyboardState
+  fullName: WaveEngine.Framework.Services.Input.KeyboardState
+  type: Field
+  source:
+    id: KeyboardState
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 22
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nThe keyboard state.\n"
+  example: []
+  syntax:
+    content: public KeyboardState KeyboardState
+    return:
+      type: WaveEngine.Common.Input.KeyboardState
+    content.vb: Public KeyboardState As KeyboardState
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Input.MouseState
+  commentId: F:WaveEngine.Framework.Services.Input.MouseState
+  id: MouseState
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: MouseState
+  nameWithType: Input.MouseState
+  fullName: WaveEngine.Framework.Services.Input.MouseState
+  type: Field
+  source:
+    id: MouseState
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 27
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nThe mouse state.\n"
+  example: []
+  syntax:
+    content: public MouseState MouseState
+    return:
+      type: WaveEngine.Common.Input.MouseState
+    content.vb: Public MouseState As MouseState
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Input.GamePadState
+  commentId: F:WaveEngine.Framework.Services.Input.GamePadState
+  id: GamePadState
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: GamePadState
+  nameWithType: Input.GamePadState
+  fullName: WaveEngine.Framework.Services.Input.GamePadState
+  type: Field
+  source:
+    id: GamePadState
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 32
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nThe gamepad state.\n"
+  example: []
+  syntax:
+    content: public GamePadState GamePadState
+    return:
+      type: WaveEngine.Common.Input.GamePadState
+    content.vb: Public GamePadState As GamePadState
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Input.TouchPanelState
+  commentId: F:WaveEngine.Framework.Services.Input.TouchPanelState
+  id: TouchPanelState
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: TouchPanelState
+  nameWithType: Input.TouchPanelState
+  fullName: WaveEngine.Framework.Services.Input.TouchPanelState
+  type: Field
+  source:
+    id: TouchPanelState
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 37
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nThe touch panel state.\n"
+  example: []
+  syntax:
+    content: public TouchPanelState TouchPanelState
+    return:
+      type: WaveEngine.Common.Input.TouchPanelState
+    content.vb: Public TouchPanelState As TouchPanelState
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Input.AccelerometerState
+  commentId: F:WaveEngine.Framework.Services.Input.AccelerometerState
+  id: AccelerometerState
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: AccelerometerState
+  nameWithType: Input.AccelerometerState
+  fullName: WaveEngine.Framework.Services.Input.AccelerometerState
+  type: Field
+  source:
+    id: AccelerometerState
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 42
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nThe accelerometer state.\n"
+  example: []
+  syntax:
+    content: public AccelerometerState AccelerometerState
+    return:
+      type: WaveEngine.Common.Input.AccelerometerState
+    content.vb: Public AccelerometerState As AccelerometerState
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Input.CompassState
+  commentId: F:WaveEngine.Framework.Services.Input.CompassState
+  id: CompassState
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: CompassState
+  nameWithType: Input.CompassState
+  fullName: WaveEngine.Framework.Services.Input.CompassState
+  type: Field
+  source:
+    id: CompassState
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 52
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nThe compasss state.\n"
+  example: []
+  syntax:
+    content: public CompassState CompassState
+    return:
+      type: WaveEngine.Common.Input.CompassState
+    content.vb: Public CompassState As CompassState
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Input.MotionState
+  commentId: F:WaveEngine.Framework.Services.Input.MotionState
+  id: MotionState
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: MotionState
+  nameWithType: Input.MotionState
+  fullName: WaveEngine.Framework.Services.Input.MotionState
+  type: Field
+  source:
+    id: MotionState
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 57
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nThe motion state.\n"
+  example: []
+  syntax:
+    content: public MotionState MotionState
+    return:
+      type: WaveEngine.Common.Input.MotionState
+    content.vb: Public MotionState As MotionState
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Input.GyroscopeState
+  commentId: F:WaveEngine.Framework.Services.Input.GyroscopeState
+  id: GyroscopeState
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: GyroscopeState
+  nameWithType: Input.GyroscopeState
+  fullName: WaveEngine.Framework.Services.Input.GyroscopeState
+  type: Field
+  source:
+    id: GyroscopeState
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 62
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nThe gyroscope state.\n"
+  example: []
+  syntax:
+    content: public GyroscopeState GyroscopeState
+    return:
+      type: WaveEngine.Common.Input.GyroscopeState
+    content.vb: Public GyroscopeState As GyroscopeState
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Input.IsEnabled
+  commentId: F:WaveEngine.Framework.Services.Input.IsEnabled
+  id: IsEnabled
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: IsEnabled
+  nameWithType: Input.IsEnabled
+  fullName: WaveEngine.Framework.Services.Input.IsEnabled
+  type: Field
+  source:
+    id: IsEnabled
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 72
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nIf the inputs are updated every frame.\n"
+  example: []
+  syntax:
+    content: public bool IsEnabled
+    return:
+      type: System.Boolean
+    content.vb: Public IsEnabled As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Input.Initialize
+  commentId: M:WaveEngine.Framework.Services.Input.Initialize
+  id: Initialize
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: Input.Initialize()
+  fullName: WaveEngine.Framework.Services.Input.Initialize()
+  type: Method
+  source:
+    id: Initialize
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 136
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nAllows to execute custom logic during the initialization of this instance.\n"
+  example: []
+  syntax:
+    content: protected override void Initialize()
+    content.vb: Protected Overrides Sub Initialize
+  overridden: WaveEngine.Common.Service.Initialize
+  overload: WaveEngine.Framework.Services.Input.Initialize*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Services.Input.Terminate
+  commentId: M:WaveEngine.Framework.Services.Input.Terminate
+  id: Terminate
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: Terminate()
+  nameWithType: Input.Terminate()
+  fullName: WaveEngine.Framework.Services.Input.Terminate()
+  type: Method
+  source:
+    id: Terminate
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 182
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nAllow to execute custom logic during the finalization of this instance.\n"
+  example: []
+  syntax:
+    content: protected override void Terminate()
+    content.vb: Protected Overrides Sub Terminate
+  overridden: WaveEngine.Common.Service.Terminate
+  overload: WaveEngine.Framework.Services.Input.Terminate*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Services.Input.Update(System.TimeSpan)
+  commentId: M:WaveEngine.Framework.Services.Input.Update(System.TimeSpan)
+  id: Update(System.TimeSpan)
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: Update(TimeSpan)
+  nameWithType: Input.Update(TimeSpan)
+  fullName: WaveEngine.Framework.Services.Input.Update(System.TimeSpan)
+  type: Method
+  source:
+    id: Update
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 221
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nLoops for every input system asking for the new state,\nalways such is connected or started.\n"
+  example: []
+  syntax:
+    content: public override void Update(TimeSpan gameTime)
+    parameters:
+    - id: gameTime
+      type: System.TimeSpan
+      description: The elapsed game time since the last update.
+    content.vb: Public Overrides Sub Update(gameTime As TimeSpan)
+  overridden: WaveEngine.Common.UpdatableService.Update(System.TimeSpan)
+  overload: WaveEngine.Framework.Services.Input.Update*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: WaveEngine.Framework.Services.Input.GamePadGetState(WaveEngine.Common.Input.PlayerIndex)
+  commentId: M:WaveEngine.Framework.Services.Input.GamePadGetState(WaveEngine.Common.Input.PlayerIndex)
+  id: GamePadGetState(WaveEngine.Common.Input.PlayerIndex)
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: GamePadGetState(PlayerIndex)
+  nameWithType: Input.GamePadGetState(PlayerIndex)
+  fullName: WaveEngine.Framework.Services.Input.GamePadGetState(WaveEngine.Common.Input.PlayerIndex)
+  type: Method
+  source:
+    id: GamePadGetState
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 290
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGet the gamepad state.\n"
+  example: []
+  syntax:
+    content: public GamePadState GamePadGetState(PlayerIndex playerIndex)
+    parameters:
+    - id: playerIndex
+      type: WaveEngine.Common.Input.PlayerIndex
+      description: Index of the player.
+    return:
+      type: WaveEngine.Common.Input.GamePadState
+      description: Game pad state.
+    content.vb: Public Function GamePadGetState(playerIndex As PlayerIndex) As GamePadState
+  overload: WaveEngine.Framework.Services.Input.GamePadGetState*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Input.SetGamePadGetVibration(WaveEngine.Common.Input.PlayerIndex,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:WaveEngine.Framework.Services.Input.SetGamePadGetVibration(WaveEngine.Common.Input.PlayerIndex,System.Single,System.Single,System.Single,System.Single)
+  id: SetGamePadGetVibration(WaveEngine.Common.Input.PlayerIndex,System.Single,System.Single,System.Single,System.Single)
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: SetGamePadGetVibration(PlayerIndex, Single, Single, Single, Single)
+  nameWithType: Input.SetGamePadGetVibration(PlayerIndex, Single, Single, Single, Single)
+  fullName: WaveEngine.Framework.Services.Input.SetGamePadGetVibration(WaveEngine.Common.Input.PlayerIndex, System.Single, System.Single, System.Single, System.Single)
+  type: Method
+  source:
+    id: SetGamePadGetVibration
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 304
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nSet the speed of the gamepads available vibration motors.\n"
+  example: []
+  syntax:
+    content: public bool SetGamePadGetVibration(PlayerIndex playerIndex, float leftMotor, float leftTrigger, float rightMotor, float rightTrigger)
+    parameters:
+    - id: playerIndex
+      type: WaveEngine.Common.Input.PlayerIndex
+      description: Index of the player.
+    - id: leftMotor
+      type: System.Single
+      description: The level of the left vibration motor, within the range [0, 1].
+    - id: leftTrigger
+      type: System.Single
+      description: The level of the left trigger vibration motor, within the range [0, 1].
+    - id: rightMotor
+      type: System.Single
+      description: The level of the right vibration motor, within the range [0, 1].
+    - id: rightTrigger
+      type: System.Single
+      description: The level of the right trigger vibration motor, within the range [0, 1].
+    return:
+      type: System.Boolean
+      description: True is everything Ok, false if doesn&apos;t exist the player index.
+    content.vb: Public Function SetGamePadGetVibration(playerIndex As PlayerIndex, leftMotor As Single, leftTrigger As Single, rightMotor As Single, rightTrigger As Single) As Boolean
+  overload: WaveEngine.Framework.Services.Input.SetGamePadGetVibration*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Input.StartAccelerometer
+  commentId: M:WaveEngine.Framework.Services.Input.StartAccelerometer
+  id: StartAccelerometer
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: StartAccelerometer()
+  nameWithType: Input.StartAccelerometer()
+  fullName: WaveEngine.Framework.Services.Input.StartAccelerometer()
+  type: Method
+  source:
+    id: StartAccelerometer
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 312
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nStarts the accelerometer.\n"
+  example: []
+  syntax:
+    content: public void StartAccelerometer()
+    content.vb: Public Sub StartAccelerometer
+  overload: WaveEngine.Framework.Services.Input.StartAccelerometer*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Input.StopAccelerometer
+  commentId: M:WaveEngine.Framework.Services.Input.StopAccelerometer
+  id: StopAccelerometer
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: StopAccelerometer()
+  nameWithType: Input.StopAccelerometer()
+  fullName: WaveEngine.Framework.Services.Input.StopAccelerometer()
+  type: Method
+  source:
+    id: StopAccelerometer
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 325
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nStops the accelerometer.\n"
+  example: []
+  syntax:
+    content: public void StopAccelerometer()
+    content.vb: Public Sub StopAccelerometer
+  overload: WaveEngine.Framework.Services.Input.StopAccelerometer*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Input.StartGyroscope
+  commentId: M:WaveEngine.Framework.Services.Input.StartGyroscope
+  id: StartGyroscope
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: StartGyroscope()
+  nameWithType: Input.StartGyroscope()
+  fullName: WaveEngine.Framework.Services.Input.StartGyroscope()
+  type: Method
+  source:
+    id: StartGyroscope
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 333
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nStarts the gyroscope.\n"
+  example: []
+  syntax:
+    content: public void StartGyroscope()
+    content.vb: Public Sub StartGyroscope
+  overload: WaveEngine.Framework.Services.Input.StartGyroscope*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Input.StopGyroscope
+  commentId: M:WaveEngine.Framework.Services.Input.StopGyroscope
+  id: StopGyroscope
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: StopGyroscope()
+  nameWithType: Input.StopGyroscope()
+  fullName: WaveEngine.Framework.Services.Input.StopGyroscope()
+  type: Method
+  source:
+    id: StopGyroscope
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 346
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nStops the gyroscope.\n"
+  example: []
+  syntax:
+    content: public void StopGyroscope()
+    content.vb: Public Sub StopGyroscope
+  overload: WaveEngine.Framework.Services.Input.StopGyroscope*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Input.StartCompass
+  commentId: M:WaveEngine.Framework.Services.Input.StartCompass
+  id: StartCompass
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: StartCompass()
+  nameWithType: Input.StartCompass()
+  fullName: WaveEngine.Framework.Services.Input.StartCompass()
+  type: Method
+  source:
+    id: StartCompass
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 354
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nStarts the compass.\n"
+  example: []
+  syntax:
+    content: public void StartCompass()
+    content.vb: Public Sub StartCompass
+  overload: WaveEngine.Framework.Services.Input.StartCompass*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Input.StopCompass
+  commentId: M:WaveEngine.Framework.Services.Input.StopCompass
+  id: StopCompass
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: StopCompass()
+  nameWithType: Input.StopCompass()
+  fullName: WaveEngine.Framework.Services.Input.StopCompass()
+  type: Method
+  source:
+    id: StopCompass
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 367
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nStops the compass.\n"
+  example: []
+  syntax:
+    content: public void StopCompass()
+    content.vb: Public Sub StopCompass
+  overload: WaveEngine.Framework.Services.Input.StopCompass*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Input.StartMotion
+  commentId: M:WaveEngine.Framework.Services.Input.StartMotion
+  id: StartMotion
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: StartMotion()
+  nameWithType: Input.StartMotion()
+  fullName: WaveEngine.Framework.Services.Input.StartMotion()
+  type: Method
+  source:
+    id: StartMotion
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 375
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nStarts the motion sensor.\n"
+  example: []
+  syntax:
+    content: public void StartMotion()
+    content.vb: Public Sub StartMotion
+  overload: WaveEngine.Framework.Services.Input.StartMotion*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Input.StopMotion
+  commentId: M:WaveEngine.Framework.Services.Input.StopMotion
+  id: StopMotion
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: StopMotion()
+  nameWithType: Input.StopMotion()
+  fullName: WaveEngine.Framework.Services.Input.StopMotion()
+  type: Method
+  source:
+    id: StopMotion
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 388
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nStops the motion sensor.\n"
+  example: []
+  syntax:
+    content: public void StopMotion()
+    content.vb: Public Sub StopMotion
+  overload: WaveEngine.Framework.Services.Input.StopMotion*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Input.Dispose
+  commentId: M:WaveEngine.Framework.Services.Input.Dispose
+  id: Dispose
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: Input.Dispose()
+  fullName: WaveEngine.Framework.Services.Input.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 397
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nPerforms application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: WaveEngine.Framework.Services.Input.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.Input.Dispose(System.Boolean)
+  commentId: M:WaveEngine.Framework.Services.Input.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: WaveEngine.Framework.Services.Input
+  langs:
+  - csharp
+  - vb
+  name: Dispose(Boolean)
+  nameWithType: Input.Dispose(Boolean)
+  fullName: WaveEngine.Framework.Services.Input.Dispose(System.Boolean)
+  type: Method
+  source:
+    id: Dispose
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\Input.cs
+    startLine: 407
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nReleases unmanaged and - optionally - managed resources.\n"
+  example: []
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: <code>true</code> to release both managed and unmanaged resources; <code>false</code> to release only unmanaged resources.
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: WaveEngine.Framework.Services.Input.Dispose*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: WaveEngine.Framework.Services
+  commentId: N:WaveEngine.Framework.Services
+  name: WaveEngine.Framework.Services
+  nameWithType: WaveEngine.Framework.Services
+  fullName: WaveEngine.Framework.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.IO.SerializableObject
+  commentId: T:WaveEngine.Common.IO.SerializableObject
+  parent: WaveEngine.Common.IO
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: WaveEngine.Common.IO.SerializableObject
+- uid: WaveEngine.Common.Service
+  commentId: T:WaveEngine.Common.Service
+  parent: WaveEngine.Common
+  name: Service
+  nameWithType: Service
+  fullName: WaveEngine.Common.Service
+- uid: WaveEngine.Common.UpdatableService
+  commentId: T:WaveEngine.Common.UpdatableService
+  parent: WaveEngine.Common
+  name: UpdatableService
+  nameWithType: UpdatableService
+  fullName: WaveEngine.Common.UpdatableService
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: WaveEngine.Common.Service.IsInitialized
+  commentId: P:WaveEngine.Common.Service.IsInitialized
+  parent: WaveEngine.Common.Service
+  name: IsInitialized
+  nameWithType: Service.IsInitialized
+  fullName: WaveEngine.Common.Service.IsInitialized
+- uid: WaveEngine.Common.Service.IsTerminated
+  commentId: P:WaveEngine.Common.Service.IsTerminated
+  parent: WaveEngine.Common.Service
+  name: IsTerminated
+  nameWithType: Service.IsTerminated
+  fullName: WaveEngine.Common.Service.IsTerminated
+- uid: WaveEngine.Common.Service.BaseInitialize
+  commentId: M:WaveEngine.Common.Service.BaseInitialize
+  parent: WaveEngine.Common.Service
+  name: BaseInitialize()
+  nameWithType: Service.BaseInitialize()
+  fullName: WaveEngine.Common.Service.BaseInitialize()
+  spec.csharp:
+  - uid: WaveEngine.Common.Service.BaseInitialize
+    name: BaseInitialize
+    nameWithType: Service.BaseInitialize
+    fullName: WaveEngine.Common.Service.BaseInitialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Service.BaseInitialize
+    name: BaseInitialize
+    nameWithType: Service.BaseInitialize
+    fullName: WaveEngine.Common.Service.BaseInitialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Service.BaseTerminate
+  commentId: M:WaveEngine.Common.Service.BaseTerminate
+  parent: WaveEngine.Common.Service
+  name: BaseTerminate()
+  nameWithType: Service.BaseTerminate()
+  fullName: WaveEngine.Common.Service.BaseTerminate()
+  spec.csharp:
+  - uid: WaveEngine.Common.Service.BaseTerminate
+    name: BaseTerminate
+    nameWithType: Service.BaseTerminate
+    fullName: WaveEngine.Common.Service.BaseTerminate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Service.BaseTerminate
+    name: BaseTerminate
+    nameWithType: Service.BaseTerminate
+    fullName: WaveEngine.Common.Service.BaseTerminate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Service.OnActivated
+  commentId: M:WaveEngine.Common.Service.OnActivated
+  parent: WaveEngine.Common.Service
+  name: OnActivated()
+  nameWithType: Service.OnActivated()
+  fullName: WaveEngine.Common.Service.OnActivated()
+  spec.csharp:
+  - uid: WaveEngine.Common.Service.OnActivated
+    name: OnActivated
+    nameWithType: Service.OnActivated
+    fullName: WaveEngine.Common.Service.OnActivated
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Service.OnActivated
+    name: OnActivated
+    nameWithType: Service.OnActivated
+    fullName: WaveEngine.Common.Service.OnActivated
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Service.OnDeactivated
+  commentId: M:WaveEngine.Common.Service.OnDeactivated
+  parent: WaveEngine.Common.Service
+  name: OnDeactivated()
+  nameWithType: Service.OnDeactivated()
+  fullName: WaveEngine.Common.Service.OnDeactivated()
+  spec.csharp:
+  - uid: WaveEngine.Common.Service.OnDeactivated
+    name: OnDeactivated
+    nameWithType: Service.OnDeactivated
+    fullName: WaveEngine.Common.Service.OnDeactivated
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Service.OnDeactivated
+    name: OnDeactivated
+    nameWithType: Service.OnDeactivated
+    fullName: WaveEngine.Common.Service.OnDeactivated
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  commentId: M:WaveEngine.Common.IO.SerializableObject.DefaultValues
+  parent: WaveEngine.Common.IO.SerializableObject
+  name: DefaultValues()
+  nameWithType: SerializableObject.DefaultValues()
+  fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues()
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+    name: DefaultValues
+    nameWithType: SerializableObject.DefaultValues
+    fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+    name: DefaultValues
+    nameWithType: SerializableObject.DefaultValues
+    fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  commentId: M:WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  parent: WaveEngine.Common.IO.SerializableObject
+  isExternal: true
+  name: OnDeserializing(StreamingContext)
+  nameWithType: SerializableObject.OnDeserializing(StreamingContext)
+  fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.IO
+  commentId: N:WaveEngine.Common.IO
+  name: WaveEngine.Common.IO
+  nameWithType: WaveEngine.Common.IO
+  fullName: WaveEngine.Common.IO
+- uid: WaveEngine.Common
+  commentId: N:WaveEngine.Common
+  name: WaveEngine.Common
+  nameWithType: WaveEngine.Common
+  fullName: WaveEngine.Common
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Common.Input.KeyboardState
+  commentId: T:WaveEngine.Common.Input.KeyboardState
+  parent: WaveEngine.Common.Input
+  name: KeyboardState
+  nameWithType: KeyboardState
+  fullName: WaveEngine.Common.Input.KeyboardState
+- uid: WaveEngine.Common.Input
+  commentId: N:WaveEngine.Common.Input
+  name: WaveEngine.Common.Input
+  nameWithType: WaveEngine.Common.Input
+  fullName: WaveEngine.Common.Input
+- uid: WaveEngine.Common.Input.MouseState
+  commentId: T:WaveEngine.Common.Input.MouseState
+  parent: WaveEngine.Common.Input
+  name: MouseState
+  nameWithType: MouseState
+  fullName: WaveEngine.Common.Input.MouseState
+- uid: WaveEngine.Common.Input.GamePadState
+  commentId: T:WaveEngine.Common.Input.GamePadState
+  parent: WaveEngine.Common.Input
+  name: GamePadState
+  nameWithType: GamePadState
+  fullName: WaveEngine.Common.Input.GamePadState
+- uid: WaveEngine.Common.Input.TouchPanelState
+  commentId: T:WaveEngine.Common.Input.TouchPanelState
+  parent: WaveEngine.Common.Input
+  name: TouchPanelState
+  nameWithType: TouchPanelState
+  fullName: WaveEngine.Common.Input.TouchPanelState
+- uid: WaveEngine.Common.Input.AccelerometerState
+  commentId: T:WaveEngine.Common.Input.AccelerometerState
+  parent: WaveEngine.Common.Input
+  name: AccelerometerState
+  nameWithType: AccelerometerState
+  fullName: WaveEngine.Common.Input.AccelerometerState
+- uid: WaveEngine.Common.Input.CompassState
+  commentId: T:WaveEngine.Common.Input.CompassState
+  parent: WaveEngine.Common.Input
+  name: CompassState
+  nameWithType: CompassState
+  fullName: WaveEngine.Common.Input.CompassState
+- uid: WaveEngine.Common.Input.MotionState
+  commentId: T:WaveEngine.Common.Input.MotionState
+  parent: WaveEngine.Common.Input
+  name: MotionState
+  nameWithType: MotionState
+  fullName: WaveEngine.Common.Input.MotionState
+- uid: WaveEngine.Common.Input.GyroscopeState
+  commentId: T:WaveEngine.Common.Input.GyroscopeState
+  parent: WaveEngine.Common.Input
+  name: GyroscopeState
+  nameWithType: GyroscopeState
+  fullName: WaveEngine.Common.Input.GyroscopeState
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Common.Service.Initialize
+  commentId: M:WaveEngine.Common.Service.Initialize
+  parent: WaveEngine.Common.Service
+  name: Initialize()
+  nameWithType: Service.Initialize()
+  fullName: WaveEngine.Common.Service.Initialize()
+  spec.csharp:
+  - uid: WaveEngine.Common.Service.Initialize
+    name: Initialize
+    nameWithType: Service.Initialize
+    fullName: WaveEngine.Common.Service.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Service.Initialize
+    name: Initialize
+    nameWithType: Service.Initialize
+    fullName: WaveEngine.Common.Service.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Services.Input.Initialize*
+  commentId: Overload:WaveEngine.Framework.Services.Input.Initialize
+  name: Initialize
+  nameWithType: Input.Initialize
+  fullName: WaveEngine.Framework.Services.Input.Initialize
+- uid: WaveEngine.Common.Service.Terminate
+  commentId: M:WaveEngine.Common.Service.Terminate
+  parent: WaveEngine.Common.Service
+  name: Terminate()
+  nameWithType: Service.Terminate()
+  fullName: WaveEngine.Common.Service.Terminate()
+  spec.csharp:
+  - uid: WaveEngine.Common.Service.Terminate
+    name: Terminate
+    nameWithType: Service.Terminate
+    fullName: WaveEngine.Common.Service.Terminate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Service.Terminate
+    name: Terminate
+    nameWithType: Service.Terminate
+    fullName: WaveEngine.Common.Service.Terminate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Services.Input.Terminate*
+  commentId: Overload:WaveEngine.Framework.Services.Input.Terminate
+  name: Terminate
+  nameWithType: Input.Terminate
+  fullName: WaveEngine.Framework.Services.Input.Terminate
+- uid: WaveEngine.Common.UpdatableService.Update(System.TimeSpan)
+  commentId: M:WaveEngine.Common.UpdatableService.Update(System.TimeSpan)
+  parent: WaveEngine.Common.UpdatableService
+  isExternal: true
+  name: Update(TimeSpan)
+  nameWithType: UpdatableService.Update(TimeSpan)
+  fullName: WaveEngine.Common.UpdatableService.Update(System.TimeSpan)
+  spec.csharp:
+  - uid: WaveEngine.Common.UpdatableService.Update(System.TimeSpan)
+    name: Update
+    nameWithType: UpdatableService.Update
+    fullName: WaveEngine.Common.UpdatableService.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.UpdatableService.Update(System.TimeSpan)
+    name: Update
+    nameWithType: UpdatableService.Update
+    fullName: WaveEngine.Common.UpdatableService.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Services.Input.Update*
+  commentId: Overload:WaveEngine.Framework.Services.Input.Update
+  name: Update
+  nameWithType: Input.Update
+  fullName: WaveEngine.Framework.Services.Input.Update
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: WaveEngine.Framework.Services.Input.GamePadGetState*
+  commentId: Overload:WaveEngine.Framework.Services.Input.GamePadGetState
+  name: GamePadGetState
+  nameWithType: Input.GamePadGetState
+  fullName: WaveEngine.Framework.Services.Input.GamePadGetState
+- uid: WaveEngine.Common.Input.PlayerIndex
+  commentId: T:WaveEngine.Common.Input.PlayerIndex
+  parent: WaveEngine.Common.Input
+  name: PlayerIndex
+  nameWithType: PlayerIndex
+  fullName: WaveEngine.Common.Input.PlayerIndex
+- uid: WaveEngine.Framework.Services.Input.SetGamePadGetVibration*
+  commentId: Overload:WaveEngine.Framework.Services.Input.SetGamePadGetVibration
+  name: SetGamePadGetVibration
+  nameWithType: Input.SetGamePadGetVibration
+  fullName: WaveEngine.Framework.Services.Input.SetGamePadGetVibration
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Framework.Services.Input.StartAccelerometer*
+  commentId: Overload:WaveEngine.Framework.Services.Input.StartAccelerometer
+  name: StartAccelerometer
+  nameWithType: Input.StartAccelerometer
+  fullName: WaveEngine.Framework.Services.Input.StartAccelerometer
+- uid: WaveEngine.Framework.Services.Input.StopAccelerometer*
+  commentId: Overload:WaveEngine.Framework.Services.Input.StopAccelerometer
+  name: StopAccelerometer
+  nameWithType: Input.StopAccelerometer
+  fullName: WaveEngine.Framework.Services.Input.StopAccelerometer
+- uid: WaveEngine.Framework.Services.Input.StartGyroscope*
+  commentId: Overload:WaveEngine.Framework.Services.Input.StartGyroscope
+  name: StartGyroscope
+  nameWithType: Input.StartGyroscope
+  fullName: WaveEngine.Framework.Services.Input.StartGyroscope
+- uid: WaveEngine.Framework.Services.Input.StopGyroscope*
+  commentId: Overload:WaveEngine.Framework.Services.Input.StopGyroscope
+  name: StopGyroscope
+  nameWithType: Input.StopGyroscope
+  fullName: WaveEngine.Framework.Services.Input.StopGyroscope
+- uid: WaveEngine.Framework.Services.Input.StartCompass*
+  commentId: Overload:WaveEngine.Framework.Services.Input.StartCompass
+  name: StartCompass
+  nameWithType: Input.StartCompass
+  fullName: WaveEngine.Framework.Services.Input.StartCompass
+- uid: WaveEngine.Framework.Services.Input.StopCompass*
+  commentId: Overload:WaveEngine.Framework.Services.Input.StopCompass
+  name: StopCompass
+  nameWithType: Input.StopCompass
+  fullName: WaveEngine.Framework.Services.Input.StopCompass
+- uid: WaveEngine.Framework.Services.Input.StartMotion*
+  commentId: Overload:WaveEngine.Framework.Services.Input.StartMotion
+  name: StartMotion
+  nameWithType: Input.StartMotion
+  fullName: WaveEngine.Framework.Services.Input.StartMotion
+- uid: WaveEngine.Framework.Services.Input.StopMotion*
+  commentId: Overload:WaveEngine.Framework.Services.Input.StopMotion
+  name: StopMotion
+  nameWithType: Input.StopMotion
+  fullName: WaveEngine.Framework.Services.Input.StopMotion
+- uid: WaveEngine.Framework.Services.Input.Dispose*
+  commentId: Overload:WaveEngine.Framework.Services.Input.Dispose
+  name: Dispose
+  nameWithType: Input.Dispose
+  fullName: WaveEngine.Framework.Services.Input.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

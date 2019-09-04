@@ -1,0 +1,2024 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Networking.Connection.NetworkServer
+  commentId: T:WaveEngine.Networking.Connection.NetworkServer
+  id: NetworkServer
+  parent: WaveEngine.Networking.Connection
+  children:
+  - WaveEngine.Networking.Connection.NetworkServer.#ctor(System.String,System.Int32,System.Single,System.Single)
+  - WaveEngine.Networking.Connection.NetworkServer.ClientConnected
+  - WaveEngine.Networking.Connection.NetworkServer.ClientConnecting
+  - WaveEngine.Networking.Connection.NetworkServer.ClientDisconnected
+  - WaveEngine.Networking.Connection.NetworkServer.CreateMessage(WaveEngine.Networking.Connection.Messages.MessageType)
+  - WaveEngine.Networking.Connection.NetworkServer.MessageReceived
+  - WaveEngine.Networking.Connection.NetworkServer.OnClientConnected(WaveEngine.Networking.NetworkEndpoint,WaveEngine.Networking.Connection.Messages.IncomingMessage)
+  - WaveEngine.Networking.Connection.NetworkServer.OnClientDisconnected(WaveEngine.Networking.NetworkEndpoint)
+  - WaveEngine.Networking.Connection.NetworkServer.OnMessageReceived(WaveEngine.Networking.NetworkEndpoint,WaveEngine.Networking.Connection.Messages.IncomingMessage)
+  - WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod)
+  - WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod,System.Collections.Generic.IEnumerable{WaveEngine.Networking.NetworkEndpoint})
+  - WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod,WaveEngine.Networking.NetworkEndpoint)
+  - WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod)
+  - WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod,System.Collections.Generic.IEnumerable{WaveEngine.Networking.NetworkEndpoint})
+  - WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod,WaveEngine.Networking.NetworkEndpoint)
+  - WaveEngine.Networking.Connection.NetworkServer.Shutdown
+  - WaveEngine.Networking.Connection.NetworkServer.Start
+  langs:
+  - csharp
+  - vb
+  name: NetworkServer
+  nameWithType: NetworkServer
+  fullName: WaveEngine.Networking.Connection.NetworkServer
+  type: Class
+  source:
+    id: NetworkServer
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Connection\NetworkServer.cs
+    startLine: 18
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Connection
+  summary: "\nThe network server\n"
+  example: []
+  syntax:
+    content: 'public class NetworkServer : INetworkServer'
+    content.vb: >-
+      Public Class NetworkServer
+
+          Implements INetworkServer
+  inheritance:
+  - System.Object
+  implements:
+  - WaveEngine.Networking.Connection.INetworkServer
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WaveEngine.Networking.Connection.NetworkServer.ClientConnecting
+  commentId: E:WaveEngine.Networking.Connection.NetworkServer.ClientConnecting
+  id: ClientConnecting
+  parent: WaveEngine.Networking.Connection.NetworkServer
+  langs:
+  - csharp
+  - vb
+  name: ClientConnecting
+  nameWithType: NetworkServer.ClientConnecting
+  fullName: WaveEngine.Networking.Connection.NetworkServer.ClientConnecting
+  type: Event
+  source:
+    id: ClientConnecting
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Connection\NetworkServer.cs
+    startLine: 41
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Connection
+  example: []
+  syntax:
+    content: public event EventHandler<ClientConnectingEventArgs> ClientConnecting
+    return:
+      type: System.EventHandler{WaveEngine.Networking.Connection.ClientConnectingEventArgs}
+    content.vb: Public Event ClientConnecting As EventHandler(Of ClientConnectingEventArgs)
+  implements:
+  - WaveEngine.Networking.Connection.INetworkServer.ClientConnecting
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Networking.Connection.NetworkServer.ClientConnected
+  commentId: E:WaveEngine.Networking.Connection.NetworkServer.ClientConnected
+  id: ClientConnected
+  parent: WaveEngine.Networking.Connection.NetworkServer
+  langs:
+  - csharp
+  - vb
+  name: ClientConnected
+  nameWithType: NetworkServer.ClientConnected
+  fullName: WaveEngine.Networking.Connection.NetworkServer.ClientConnected
+  type: Event
+  source:
+    id: ClientConnected
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Connection\NetworkServer.cs
+    startLine: 44
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Connection
+  example: []
+  syntax:
+    content: public event EventHandler<ClientConnectedEventArgs> ClientConnected
+    return:
+      type: System.EventHandler{WaveEngine.Networking.Connection.ClientConnectedEventArgs}
+    content.vb: Public Event ClientConnected As EventHandler(Of ClientConnectedEventArgs)
+  implements:
+  - WaveEngine.Networking.Connection.INetworkServer.ClientConnected
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Networking.Connection.NetworkServer.ClientDisconnected
+  commentId: E:WaveEngine.Networking.Connection.NetworkServer.ClientDisconnected
+  id: ClientDisconnected
+  parent: WaveEngine.Networking.Connection.NetworkServer
+  langs:
+  - csharp
+  - vb
+  name: ClientDisconnected
+  nameWithType: NetworkServer.ClientDisconnected
+  fullName: WaveEngine.Networking.Connection.NetworkServer.ClientDisconnected
+  type: Event
+  source:
+    id: ClientDisconnected
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Connection\NetworkServer.cs
+    startLine: 47
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Connection
+  example: []
+  syntax:
+    content: public event EventHandler<ClientDisconnectedEventArgs> ClientDisconnected
+    return:
+      type: System.EventHandler{WaveEngine.Networking.Connection.ClientDisconnectedEventArgs}
+    content.vb: Public Event ClientDisconnected As EventHandler(Of ClientDisconnectedEventArgs)
+  implements:
+  - WaveEngine.Networking.Connection.INetworkServer.ClientDisconnected
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Networking.Connection.NetworkServer.MessageReceived
+  commentId: E:WaveEngine.Networking.Connection.NetworkServer.MessageReceived
+  id: MessageReceived
+  parent: WaveEngine.Networking.Connection.NetworkServer
+  langs:
+  - csharp
+  - vb
+  name: MessageReceived
+  nameWithType: NetworkServer.MessageReceived
+  fullName: WaveEngine.Networking.Connection.NetworkServer.MessageReceived
+  type: Event
+  source:
+    id: MessageReceived
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Connection\NetworkServer.cs
+    startLine: 50
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Connection
+  example: []
+  syntax:
+    content: public event EventHandler<MessageReceivedEventArgs> MessageReceived
+    return:
+      type: System.EventHandler{WaveEngine.Networking.Connection.MessageReceivedEventArgs}
+    content.vb: Public Event MessageReceived As EventHandler(Of MessageReceivedEventArgs)
+  implements:
+  - WaveEngine.Networking.Connection.INetworkServer.MessageReceived
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Networking.Connection.NetworkServer.#ctor(System.String,System.Int32,System.Single,System.Single)
+  commentId: M:WaveEngine.Networking.Connection.NetworkServer.#ctor(System.String,System.Int32,System.Single,System.Single)
+  id: '#ctor(System.String,System.Int32,System.Single,System.Single)'
+  parent: WaveEngine.Networking.Connection.NetworkServer
+  langs:
+  - csharp
+  - vb
+  name: NetworkServer(String, Int32, Single, Single)
+  nameWithType: NetworkServer.NetworkServer(String, Int32, Single, Single)
+  fullName: WaveEngine.Networking.Connection.NetworkServer.NetworkServer(System.String, System.Int32, System.Single, System.Single)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Connection\NetworkServer.cs
+    startLine: 63
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Connection
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Networking.Connection.NetworkServer\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public NetworkServer(string applicationIdentifier, int port, float pingInterval, float connectionTimeout)
+    parameters:
+    - id: applicationIdentifier
+      type: System.String
+      description: The application identifier.
+    - id: port
+      type: System.Int32
+      description: The port.
+    - id: pingInterval
+      type: System.Single
+      description: Ping interval in seconds.
+    - id: connectionTimeout
+      type: System.Single
+      description: Connection timeout in seconds.
+    content.vb: Public Sub New(applicationIdentifier As String, port As Integer, pingInterval As Single, connectionTimeout As Single)
+  overload: WaveEngine.Networking.Connection.NetworkServer.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Networking.Connection.NetworkServer.Start
+  commentId: M:WaveEngine.Networking.Connection.NetworkServer.Start
+  id: Start
+  parent: WaveEngine.Networking.Connection.NetworkServer
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: NetworkServer.Start()
+  fullName: WaveEngine.Networking.Connection.NetworkServer.Start()
+  type: Method
+  source:
+    id: Start
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Connection\NetworkServer.cs
+    startLine: 81
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Connection
+  example: []
+  syntax:
+    content: public void Start()
+    content.vb: Public Sub Start
+  overload: WaveEngine.Networking.Connection.NetworkServer.Start*
+  implements:
+  - WaveEngine.Networking.Connection.INetworkServer.Start
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Networking.Connection.NetworkServer.Shutdown
+  commentId: M:WaveEngine.Networking.Connection.NetworkServer.Shutdown
+  id: Shutdown
+  parent: WaveEngine.Networking.Connection.NetworkServer
+  langs:
+  - csharp
+  - vb
+  name: Shutdown()
+  nameWithType: NetworkServer.Shutdown()
+  fullName: WaveEngine.Networking.Connection.NetworkServer.Shutdown()
+  type: Method
+  source:
+    id: Shutdown
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Connection\NetworkServer.cs
+    startLine: 88
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Connection
+  example: []
+  syntax:
+    content: public void Shutdown()
+    content.vb: Public Sub Shutdown
+  overload: WaveEngine.Networking.Connection.NetworkServer.Shutdown*
+  implements:
+  - WaveEngine.Networking.Connection.INetworkServer.Shutdown
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod)
+  commentId: M:WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod)
+  id: Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod)
+  parent: WaveEngine.Networking.Connection.NetworkServer
+  langs:
+  - csharp
+  - vb
+  name: Send(OutgoingMessage, DeliveryMethod)
+  nameWithType: NetworkServer.Send(OutgoingMessage, DeliveryMethod)
+  fullName: WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage, WaveEngine.Networking.Messages.DeliveryMethod)
+  type: Method
+  source:
+    id: Send
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Connection\NetworkServer.cs
+    startLine: 96
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Connection
+  example: []
+  syntax:
+    content: public void Send(OutgoingMessage toSendMessage, DeliveryMethod deliveryMethod)
+    parameters:
+    - id: toSendMessage
+      type: WaveEngine.Networking.Connection.Messages.OutgoingMessage
+    - id: deliveryMethod
+      type: WaveEngine.Networking.Messages.DeliveryMethod
+    content.vb: Public Sub Send(toSendMessage As OutgoingMessage, deliveryMethod As DeliveryMethod)
+  overload: WaveEngine.Networking.Connection.NetworkServer.Send*
+  implements:
+  - WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod,WaveEngine.Networking.NetworkEndpoint)
+  commentId: M:WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod,WaveEngine.Networking.NetworkEndpoint)
+  id: Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod,WaveEngine.Networking.NetworkEndpoint)
+  parent: WaveEngine.Networking.Connection.NetworkServer
+  langs:
+  - csharp
+  - vb
+  name: Send(OutgoingMessage, DeliveryMethod, NetworkEndpoint)
+  nameWithType: NetworkServer.Send(OutgoingMessage, DeliveryMethod, NetworkEndpoint)
+  fullName: WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage, WaveEngine.Networking.Messages.DeliveryMethod, WaveEngine.Networking.NetworkEndpoint)
+  type: Method
+  source:
+    id: Send
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Connection\NetworkServer.cs
+    startLine: 105
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Connection
+  example: []
+  syntax:
+    content: public void Send(OutgoingMessage toSendMessage, DeliveryMethod deliveryMethod, NetworkEndpoint destinationClient)
+    parameters:
+    - id: toSendMessage
+      type: WaveEngine.Networking.Connection.Messages.OutgoingMessage
+    - id: deliveryMethod
+      type: WaveEngine.Networking.Messages.DeliveryMethod
+    - id: destinationClient
+      type: WaveEngine.Networking.NetworkEndpoint
+    content.vb: Public Sub Send(toSendMessage As OutgoingMessage, deliveryMethod As DeliveryMethod, destinationClient As NetworkEndpoint)
+  overload: WaveEngine.Networking.Connection.NetworkServer.Send*
+  implements:
+  - WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod,WaveEngine.Networking.NetworkEndpoint)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod,System.Collections.Generic.IEnumerable{WaveEngine.Networking.NetworkEndpoint})
+  commentId: M:WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod,System.Collections.Generic.IEnumerable{WaveEngine.Networking.NetworkEndpoint})
+  id: Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod,System.Collections.Generic.IEnumerable{WaveEngine.Networking.NetworkEndpoint})
+  parent: WaveEngine.Networking.Connection.NetworkServer
+  langs:
+  - csharp
+  - vb
+  name: Send(OutgoingMessage, DeliveryMethod, IEnumerable<NetworkEndpoint>)
+  nameWithType: NetworkServer.Send(OutgoingMessage, DeliveryMethod, IEnumerable<NetworkEndpoint>)
+  fullName: WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage, WaveEngine.Networking.Messages.DeliveryMethod, System.Collections.Generic.IEnumerable<WaveEngine.Networking.NetworkEndpoint>)
+  type: Method
+  source:
+    id: Send
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Connection\NetworkServer.cs
+    startLine: 120
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Connection
+  example: []
+  syntax:
+    content: public void Send(OutgoingMessage toSendMessage, DeliveryMethod deliveryMethod, IEnumerable<NetworkEndpoint> destinationClients)
+    parameters:
+    - id: toSendMessage
+      type: WaveEngine.Networking.Connection.Messages.OutgoingMessage
+    - id: deliveryMethod
+      type: WaveEngine.Networking.Messages.DeliveryMethod
+    - id: destinationClients
+      type: System.Collections.Generic.IEnumerable{WaveEngine.Networking.NetworkEndpoint}
+    content.vb: Public Sub Send(toSendMessage As OutgoingMessage, deliveryMethod As DeliveryMethod, destinationClients As IEnumerable(Of NetworkEndpoint))
+  overload: WaveEngine.Networking.Connection.NetworkServer.Send*
+  implements:
+  - WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod,System.Collections.Generic.IEnumerable{WaveEngine.Networking.NetworkEndpoint})
+  nameWithType.vb: NetworkServer.Send(OutgoingMessage, DeliveryMethod, IEnumerable(Of NetworkEndpoint))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage, WaveEngine.Networking.Messages.DeliveryMethod, System.Collections.Generic.IEnumerable(Of WaveEngine.Networking.NetworkEndpoint))
+  name.vb: Send(OutgoingMessage, DeliveryMethod, IEnumerable(Of NetworkEndpoint))
+- uid: WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod)
+  commentId: M:WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod)
+  id: Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod)
+  parent: WaveEngine.Networking.Connection.NetworkServer
+  langs:
+  - csharp
+  - vb
+  name: Send(IncomingMessage, DeliveryMethod)
+  nameWithType: NetworkServer.Send(IncomingMessage, DeliveryMethod)
+  fullName: WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage, WaveEngine.Networking.Messages.DeliveryMethod)
+  type: Method
+  source:
+    id: Send
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Connection\NetworkServer.cs
+    startLine: 134
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Connection
+  example: []
+  syntax:
+    content: public void Send(IncomingMessage incomingMessage, DeliveryMethod deliveryMethod)
+    parameters:
+    - id: incomingMessage
+      type: WaveEngine.Networking.Connection.Messages.IncomingMessage
+    - id: deliveryMethod
+      type: WaveEngine.Networking.Messages.DeliveryMethod
+    content.vb: Public Sub Send(incomingMessage As IncomingMessage, deliveryMethod As DeliveryMethod)
+  overload: WaveEngine.Networking.Connection.NetworkServer.Send*
+  implements:
+  - WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod,WaveEngine.Networking.NetworkEndpoint)
+  commentId: M:WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod,WaveEngine.Networking.NetworkEndpoint)
+  id: Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod,WaveEngine.Networking.NetworkEndpoint)
+  parent: WaveEngine.Networking.Connection.NetworkServer
+  langs:
+  - csharp
+  - vb
+  name: Send(IncomingMessage, DeliveryMethod, NetworkEndpoint)
+  nameWithType: NetworkServer.Send(IncomingMessage, DeliveryMethod, NetworkEndpoint)
+  fullName: WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage, WaveEngine.Networking.Messages.DeliveryMethod, WaveEngine.Networking.NetworkEndpoint)
+  type: Method
+  source:
+    id: Send
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Connection\NetworkServer.cs
+    startLine: 147
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Connection
+  example: []
+  syntax:
+    content: public void Send(IncomingMessage toSendMessage, DeliveryMethod deliveryMethod, NetworkEndpoint destinationClient)
+    parameters:
+    - id: toSendMessage
+      type: WaveEngine.Networking.Connection.Messages.IncomingMessage
+    - id: deliveryMethod
+      type: WaveEngine.Networking.Messages.DeliveryMethod
+    - id: destinationClient
+      type: WaveEngine.Networking.NetworkEndpoint
+    content.vb: Public Sub Send(toSendMessage As IncomingMessage, deliveryMethod As DeliveryMethod, destinationClient As NetworkEndpoint)
+  overload: WaveEngine.Networking.Connection.NetworkServer.Send*
+  implements:
+  - WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod,WaveEngine.Networking.NetworkEndpoint)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod,System.Collections.Generic.IEnumerable{WaveEngine.Networking.NetworkEndpoint})
+  commentId: M:WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod,System.Collections.Generic.IEnumerable{WaveEngine.Networking.NetworkEndpoint})
+  id: Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod,System.Collections.Generic.IEnumerable{WaveEngine.Networking.NetworkEndpoint})
+  parent: WaveEngine.Networking.Connection.NetworkServer
+  langs:
+  - csharp
+  - vb
+  name: Send(IncomingMessage, DeliveryMethod, IEnumerable<NetworkEndpoint>)
+  nameWithType: NetworkServer.Send(IncomingMessage, DeliveryMethod, IEnumerable<NetworkEndpoint>)
+  fullName: WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage, WaveEngine.Networking.Messages.DeliveryMethod, System.Collections.Generic.IEnumerable<WaveEngine.Networking.NetworkEndpoint>)
+  type: Method
+  source:
+    id: Send
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Connection\NetworkServer.cs
+    startLine: 162
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Connection
+  example: []
+  syntax:
+    content: public void Send(IncomingMessage toSendMessage, DeliveryMethod deliveryMethod, IEnumerable<NetworkEndpoint> destinationClients)
+    parameters:
+    - id: toSendMessage
+      type: WaveEngine.Networking.Connection.Messages.IncomingMessage
+    - id: deliveryMethod
+      type: WaveEngine.Networking.Messages.DeliveryMethod
+    - id: destinationClients
+      type: System.Collections.Generic.IEnumerable{WaveEngine.Networking.NetworkEndpoint}
+    content.vb: Public Sub Send(toSendMessage As IncomingMessage, deliveryMethod As DeliveryMethod, destinationClients As IEnumerable(Of NetworkEndpoint))
+  overload: WaveEngine.Networking.Connection.NetworkServer.Send*
+  implements:
+  - WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod,System.Collections.Generic.IEnumerable{WaveEngine.Networking.NetworkEndpoint})
+  nameWithType.vb: NetworkServer.Send(IncomingMessage, DeliveryMethod, IEnumerable(Of NetworkEndpoint))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Networking.Connection.NetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage, WaveEngine.Networking.Messages.DeliveryMethod, System.Collections.Generic.IEnumerable(Of WaveEngine.Networking.NetworkEndpoint))
+  name.vb: Send(IncomingMessage, DeliveryMethod, IEnumerable(Of NetworkEndpoint))
+- uid: WaveEngine.Networking.Connection.NetworkServer.CreateMessage(WaveEngine.Networking.Connection.Messages.MessageType)
+  commentId: M:WaveEngine.Networking.Connection.NetworkServer.CreateMessage(WaveEngine.Networking.Connection.Messages.MessageType)
+  id: CreateMessage(WaveEngine.Networking.Connection.Messages.MessageType)
+  parent: WaveEngine.Networking.Connection.NetworkServer
+  langs:
+  - csharp
+  - vb
+  name: CreateMessage(MessageType)
+  nameWithType: NetworkServer.CreateMessage(MessageType)
+  fullName: WaveEngine.Networking.Connection.NetworkServer.CreateMessage(WaveEngine.Networking.Connection.Messages.MessageType)
+  type: Method
+  source:
+    id: CreateMessage
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Connection\NetworkServer.cs
+    startLine: 176
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Connection
+  example: []
+  syntax:
+    content: public OutgoingMessage CreateMessage(MessageType type = MessageType.Data)
+    parameters:
+    - id: type
+      type: WaveEngine.Networking.Connection.Messages.MessageType
+    return:
+      type: WaveEngine.Networking.Connection.Messages.OutgoingMessage
+    content.vb: Public Function CreateMessage(type As MessageType = MessageType.Data) As OutgoingMessage
+  overload: WaveEngine.Networking.Connection.NetworkServer.CreateMessage*
+  implements:
+  - WaveEngine.Networking.Connection.INetworkServer.CreateMessage(WaveEngine.Networking.Connection.Messages.MessageType)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Networking.Connection.NetworkServer.OnClientConnected(WaveEngine.Networking.NetworkEndpoint,WaveEngine.Networking.Connection.Messages.IncomingMessage)
+  commentId: M:WaveEngine.Networking.Connection.NetworkServer.OnClientConnected(WaveEngine.Networking.NetworkEndpoint,WaveEngine.Networking.Connection.Messages.IncomingMessage)
+  id: OnClientConnected(WaveEngine.Networking.NetworkEndpoint,WaveEngine.Networking.Connection.Messages.IncomingMessage)
+  parent: WaveEngine.Networking.Connection.NetworkServer
+  langs:
+  - csharp
+  - vb
+  name: OnClientConnected(NetworkEndpoint, IncomingMessage)
+  nameWithType: NetworkServer.OnClientConnected(NetworkEndpoint, IncomingMessage)
+  fullName: WaveEngine.Networking.Connection.NetworkServer.OnClientConnected(WaveEngine.Networking.NetworkEndpoint, WaveEngine.Networking.Connection.Messages.IncomingMessage)
+  type: Method
+  source:
+    id: OnClientConnected
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Connection\NetworkServer.cs
+    startLine: 283
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Connection
+  summary: "\nCalled when [client connected].\n"
+  example: []
+  syntax:
+    content: protected virtual void OnClientConnected(NetworkEndpoint client, IncomingMessage hailMessage)
+    parameters:
+    - id: client
+      type: WaveEngine.Networking.NetworkEndpoint
+      description: The client endpoint.
+    - id: hailMessage
+      type: WaveEngine.Networking.Connection.Messages.IncomingMessage
+      description: The hail message received from the client
+    content.vb: Protected Overridable Sub OnClientConnected(client As NetworkEndpoint, hailMessage As IncomingMessage)
+  overload: WaveEngine.Networking.Connection.NetworkServer.OnClientConnected*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: WaveEngine.Networking.Connection.NetworkServer.OnClientDisconnected(WaveEngine.Networking.NetworkEndpoint)
+  commentId: M:WaveEngine.Networking.Connection.NetworkServer.OnClientDisconnected(WaveEngine.Networking.NetworkEndpoint)
+  id: OnClientDisconnected(WaveEngine.Networking.NetworkEndpoint)
+  parent: WaveEngine.Networking.Connection.NetworkServer
+  langs:
+  - csharp
+  - vb
+  name: OnClientDisconnected(NetworkEndpoint)
+  nameWithType: NetworkServer.OnClientDisconnected(NetworkEndpoint)
+  fullName: WaveEngine.Networking.Connection.NetworkServer.OnClientDisconnected(WaveEngine.Networking.NetworkEndpoint)
+  type: Method
+  source:
+    id: OnClientDisconnected
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Connection\NetworkServer.cs
+    startLine: 292
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Connection
+  summary: "\nCalled when [client disconnected].\n"
+  example: []
+  syntax:
+    content: protected virtual void OnClientDisconnected(NetworkEndpoint client)
+    parameters:
+    - id: client
+      type: WaveEngine.Networking.NetworkEndpoint
+      description: The client endpoint.
+    content.vb: Protected Overridable Sub OnClientDisconnected(client As NetworkEndpoint)
+  overload: WaveEngine.Networking.Connection.NetworkServer.OnClientDisconnected*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: WaveEngine.Networking.Connection.NetworkServer.OnMessageReceived(WaveEngine.Networking.NetworkEndpoint,WaveEngine.Networking.Connection.Messages.IncomingMessage)
+  commentId: M:WaveEngine.Networking.Connection.NetworkServer.OnMessageReceived(WaveEngine.Networking.NetworkEndpoint,WaveEngine.Networking.Connection.Messages.IncomingMessage)
+  id: OnMessageReceived(WaveEngine.Networking.NetworkEndpoint,WaveEngine.Networking.Connection.Messages.IncomingMessage)
+  parent: WaveEngine.Networking.Connection.NetworkServer
+  langs:
+  - csharp
+  - vb
+  name: OnMessageReceived(NetworkEndpoint, IncomingMessage)
+  nameWithType: NetworkServer.OnMessageReceived(NetworkEndpoint, IncomingMessage)
+  fullName: WaveEngine.Networking.Connection.NetworkServer.OnMessageReceived(WaveEngine.Networking.NetworkEndpoint, WaveEngine.Networking.Connection.Messages.IncomingMessage)
+  type: Method
+  source:
+    id: OnMessageReceived
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Connection\NetworkServer.cs
+    startLine: 302
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Connection
+  summary: "\nCalled when a message is received by the server.\n"
+  example: []
+  syntax:
+    content: protected virtual void OnMessageReceived(NetworkEndpoint client, IncomingMessage receivedMessage)
+    parameters:
+    - id: client
+      type: WaveEngine.Networking.NetworkEndpoint
+      description: The client endpoint that sent the message.
+    - id: receivedMessage
+      type: WaveEngine.Networking.Connection.Messages.IncomingMessage
+      description: The received message.
+    content.vb: Protected Overridable Sub OnMessageReceived(client As NetworkEndpoint, receivedMessage As IncomingMessage)
+  overload: WaveEngine.Networking.Connection.NetworkServer.OnMessageReceived*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+references:
+- uid: WaveEngine.Networking.Connection
+  commentId: N:WaveEngine.Networking.Connection
+  name: WaveEngine.Networking.Connection
+  nameWithType: WaveEngine.Networking.Connection
+  fullName: WaveEngine.Networking.Connection
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Networking.Connection.INetworkServer
+  commentId: T:WaveEngine.Networking.Connection.INetworkServer
+  parent: WaveEngine.Networking.Connection
+  name: INetworkServer
+  nameWithType: INetworkServer
+  fullName: WaveEngine.Networking.Connection.INetworkServer
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Networking.Connection.INetworkServer.ClientConnecting
+  commentId: E:WaveEngine.Networking.Connection.INetworkServer.ClientConnecting
+  parent: WaveEngine.Networking.Connection.INetworkServer
+  name: ClientConnecting
+  nameWithType: INetworkServer.ClientConnecting
+  fullName: WaveEngine.Networking.Connection.INetworkServer.ClientConnecting
+- uid: System.EventHandler{WaveEngine.Networking.Connection.ClientConnectingEventArgs}
+  commentId: T:System.EventHandler{WaveEngine.Networking.Connection.ClientConnectingEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<ClientConnectingEventArgs>
+  nameWithType: EventHandler<ClientConnectingEventArgs>
+  fullName: System.EventHandler<WaveEngine.Networking.Connection.ClientConnectingEventArgs>
+  nameWithType.vb: EventHandler(Of ClientConnectingEventArgs)
+  fullName.vb: System.EventHandler(Of WaveEngine.Networking.Connection.ClientConnectingEventArgs)
+  name.vb: EventHandler(Of ClientConnectingEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Networking.Connection.ClientConnectingEventArgs
+    name: ClientConnectingEventArgs
+    nameWithType: ClientConnectingEventArgs
+    fullName: WaveEngine.Networking.Connection.ClientConnectingEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Networking.Connection.ClientConnectingEventArgs
+    name: ClientConnectingEventArgs
+    nameWithType: ClientConnectingEventArgs
+    fullName: WaveEngine.Networking.Connection.ClientConnectingEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Networking.Connection.INetworkServer.ClientConnected
+  commentId: E:WaveEngine.Networking.Connection.INetworkServer.ClientConnected
+  parent: WaveEngine.Networking.Connection.INetworkServer
+  name: ClientConnected
+  nameWithType: INetworkServer.ClientConnected
+  fullName: WaveEngine.Networking.Connection.INetworkServer.ClientConnected
+- uid: System.EventHandler{WaveEngine.Networking.Connection.ClientConnectedEventArgs}
+  commentId: T:System.EventHandler{WaveEngine.Networking.Connection.ClientConnectedEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<ClientConnectedEventArgs>
+  nameWithType: EventHandler<ClientConnectedEventArgs>
+  fullName: System.EventHandler<WaveEngine.Networking.Connection.ClientConnectedEventArgs>
+  nameWithType.vb: EventHandler(Of ClientConnectedEventArgs)
+  fullName.vb: System.EventHandler(Of WaveEngine.Networking.Connection.ClientConnectedEventArgs)
+  name.vb: EventHandler(Of ClientConnectedEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Networking.Connection.ClientConnectedEventArgs
+    name: ClientConnectedEventArgs
+    nameWithType: ClientConnectedEventArgs
+    fullName: WaveEngine.Networking.Connection.ClientConnectedEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Networking.Connection.ClientConnectedEventArgs
+    name: ClientConnectedEventArgs
+    nameWithType: ClientConnectedEventArgs
+    fullName: WaveEngine.Networking.Connection.ClientConnectedEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Networking.Connection.INetworkServer.ClientDisconnected
+  commentId: E:WaveEngine.Networking.Connection.INetworkServer.ClientDisconnected
+  parent: WaveEngine.Networking.Connection.INetworkServer
+  name: ClientDisconnected
+  nameWithType: INetworkServer.ClientDisconnected
+  fullName: WaveEngine.Networking.Connection.INetworkServer.ClientDisconnected
+- uid: System.EventHandler{WaveEngine.Networking.Connection.ClientDisconnectedEventArgs}
+  commentId: T:System.EventHandler{WaveEngine.Networking.Connection.ClientDisconnectedEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<ClientDisconnectedEventArgs>
+  nameWithType: EventHandler<ClientDisconnectedEventArgs>
+  fullName: System.EventHandler<WaveEngine.Networking.Connection.ClientDisconnectedEventArgs>
+  nameWithType.vb: EventHandler(Of ClientDisconnectedEventArgs)
+  fullName.vb: System.EventHandler(Of WaveEngine.Networking.Connection.ClientDisconnectedEventArgs)
+  name.vb: EventHandler(Of ClientDisconnectedEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Networking.Connection.ClientDisconnectedEventArgs
+    name: ClientDisconnectedEventArgs
+    nameWithType: ClientDisconnectedEventArgs
+    fullName: WaveEngine.Networking.Connection.ClientDisconnectedEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Networking.Connection.ClientDisconnectedEventArgs
+    name: ClientDisconnectedEventArgs
+    nameWithType: ClientDisconnectedEventArgs
+    fullName: WaveEngine.Networking.Connection.ClientDisconnectedEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Networking.Connection.INetworkServer.MessageReceived
+  commentId: E:WaveEngine.Networking.Connection.INetworkServer.MessageReceived
+  parent: WaveEngine.Networking.Connection.INetworkServer
+  name: MessageReceived
+  nameWithType: INetworkServer.MessageReceived
+  fullName: WaveEngine.Networking.Connection.INetworkServer.MessageReceived
+- uid: System.EventHandler{WaveEngine.Networking.Connection.MessageReceivedEventArgs}
+  commentId: T:System.EventHandler{WaveEngine.Networking.Connection.MessageReceivedEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<MessageReceivedEventArgs>
+  nameWithType: EventHandler<MessageReceivedEventArgs>
+  fullName: System.EventHandler<WaveEngine.Networking.Connection.MessageReceivedEventArgs>
+  nameWithType.vb: EventHandler(Of MessageReceivedEventArgs)
+  fullName.vb: System.EventHandler(Of WaveEngine.Networking.Connection.MessageReceivedEventArgs)
+  name.vb: EventHandler(Of MessageReceivedEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Networking.Connection.MessageReceivedEventArgs
+    name: MessageReceivedEventArgs
+    nameWithType: MessageReceivedEventArgs
+    fullName: WaveEngine.Networking.Connection.MessageReceivedEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Networking.Connection.MessageReceivedEventArgs
+    name: MessageReceivedEventArgs
+    nameWithType: MessageReceivedEventArgs
+    fullName: WaveEngine.Networking.Connection.MessageReceivedEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Networking.Connection.NetworkServer
+  commentId: T:WaveEngine.Networking.Connection.NetworkServer
+  name: NetworkServer
+  nameWithType: NetworkServer
+  fullName: WaveEngine.Networking.Connection.NetworkServer
+- uid: WaveEngine.Networking.Connection.NetworkServer.#ctor*
+  commentId: Overload:WaveEngine.Networking.Connection.NetworkServer.#ctor
+  name: NetworkServer
+  nameWithType: NetworkServer.NetworkServer
+  fullName: WaveEngine.Networking.Connection.NetworkServer.NetworkServer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Networking.Connection.NetworkServer.Start*
+  commentId: Overload:WaveEngine.Networking.Connection.NetworkServer.Start
+  name: Start
+  nameWithType: NetworkServer.Start
+  fullName: WaveEngine.Networking.Connection.NetworkServer.Start
+- uid: WaveEngine.Networking.Connection.INetworkServer.Start
+  commentId: M:WaveEngine.Networking.Connection.INetworkServer.Start
+  parent: WaveEngine.Networking.Connection.INetworkServer
+  name: Start()
+  nameWithType: INetworkServer.Start()
+  fullName: WaveEngine.Networking.Connection.INetworkServer.Start()
+  spec.csharp:
+  - uid: WaveEngine.Networking.Connection.INetworkServer.Start
+    name: Start
+    nameWithType: INetworkServer.Start
+    fullName: WaveEngine.Networking.Connection.INetworkServer.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Networking.Connection.INetworkServer.Start
+    name: Start
+    nameWithType: INetworkServer.Start
+    fullName: WaveEngine.Networking.Connection.INetworkServer.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Networking.Connection.NetworkServer.Shutdown*
+  commentId: Overload:WaveEngine.Networking.Connection.NetworkServer.Shutdown
+  name: Shutdown
+  nameWithType: NetworkServer.Shutdown
+  fullName: WaveEngine.Networking.Connection.NetworkServer.Shutdown
+- uid: WaveEngine.Networking.Connection.INetworkServer.Shutdown
+  commentId: M:WaveEngine.Networking.Connection.INetworkServer.Shutdown
+  parent: WaveEngine.Networking.Connection.INetworkServer
+  name: Shutdown()
+  nameWithType: INetworkServer.Shutdown()
+  fullName: WaveEngine.Networking.Connection.INetworkServer.Shutdown()
+  spec.csharp:
+  - uid: WaveEngine.Networking.Connection.INetworkServer.Shutdown
+    name: Shutdown
+    nameWithType: INetworkServer.Shutdown
+    fullName: WaveEngine.Networking.Connection.INetworkServer.Shutdown
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Networking.Connection.INetworkServer.Shutdown
+    name: Shutdown
+    nameWithType: INetworkServer.Shutdown
+    fullName: WaveEngine.Networking.Connection.INetworkServer.Shutdown
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Networking.Connection.NetworkServer.Send*
+  commentId: Overload:WaveEngine.Networking.Connection.NetworkServer.Send
+  name: Send
+  nameWithType: NetworkServer.Send
+  fullName: WaveEngine.Networking.Connection.NetworkServer.Send
+- uid: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod)
+  commentId: M:WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod)
+  parent: WaveEngine.Networking.Connection.INetworkServer
+  name: Send(OutgoingMessage, DeliveryMethod)
+  nameWithType: INetworkServer.Send(OutgoingMessage, DeliveryMethod)
+  fullName: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage, WaveEngine.Networking.Messages.DeliveryMethod)
+  spec.csharp:
+  - uid: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod)
+    name: Send
+    nameWithType: INetworkServer.Send
+    fullName: WaveEngine.Networking.Connection.INetworkServer.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Networking.Connection.Messages.OutgoingMessage
+    name: OutgoingMessage
+    nameWithType: OutgoingMessage
+    fullName: WaveEngine.Networking.Connection.Messages.OutgoingMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Networking.Messages.DeliveryMethod
+    name: DeliveryMethod
+    nameWithType: DeliveryMethod
+    fullName: WaveEngine.Networking.Messages.DeliveryMethod
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod)
+    name: Send
+    nameWithType: INetworkServer.Send
+    fullName: WaveEngine.Networking.Connection.INetworkServer.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Networking.Connection.Messages.OutgoingMessage
+    name: OutgoingMessage
+    nameWithType: OutgoingMessage
+    fullName: WaveEngine.Networking.Connection.Messages.OutgoingMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Networking.Messages.DeliveryMethod
+    name: DeliveryMethod
+    nameWithType: DeliveryMethod
+    fullName: WaveEngine.Networking.Messages.DeliveryMethod
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Networking.Connection.Messages.OutgoingMessage
+  commentId: T:WaveEngine.Networking.Connection.Messages.OutgoingMessage
+  parent: WaveEngine.Networking.Connection.Messages
+  name: OutgoingMessage
+  nameWithType: OutgoingMessage
+  fullName: WaveEngine.Networking.Connection.Messages.OutgoingMessage
+- uid: WaveEngine.Networking.Messages.DeliveryMethod
+  commentId: T:WaveEngine.Networking.Messages.DeliveryMethod
+  parent: WaveEngine.Networking.Messages
+  name: DeliveryMethod
+  nameWithType: DeliveryMethod
+  fullName: WaveEngine.Networking.Messages.DeliveryMethod
+- uid: WaveEngine.Networking.Connection.Messages
+  commentId: N:WaveEngine.Networking.Connection.Messages
+  name: WaveEngine.Networking.Connection.Messages
+  nameWithType: WaveEngine.Networking.Connection.Messages
+  fullName: WaveEngine.Networking.Connection.Messages
+- uid: WaveEngine.Networking.Messages
+  commentId: N:WaveEngine.Networking.Messages
+  name: WaveEngine.Networking.Messages
+  nameWithType: WaveEngine.Networking.Messages
+  fullName: WaveEngine.Networking.Messages
+- uid: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod,WaveEngine.Networking.NetworkEndpoint)
+  commentId: M:WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod,WaveEngine.Networking.NetworkEndpoint)
+  parent: WaveEngine.Networking.Connection.INetworkServer
+  name: Send(OutgoingMessage, DeliveryMethod, NetworkEndpoint)
+  nameWithType: INetworkServer.Send(OutgoingMessage, DeliveryMethod, NetworkEndpoint)
+  fullName: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage, WaveEngine.Networking.Messages.DeliveryMethod, WaveEngine.Networking.NetworkEndpoint)
+  spec.csharp:
+  - uid: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod,WaveEngine.Networking.NetworkEndpoint)
+    name: Send
+    nameWithType: INetworkServer.Send
+    fullName: WaveEngine.Networking.Connection.INetworkServer.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Networking.Connection.Messages.OutgoingMessage
+    name: OutgoingMessage
+    nameWithType: OutgoingMessage
+    fullName: WaveEngine.Networking.Connection.Messages.OutgoingMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Networking.Messages.DeliveryMethod
+    name: DeliveryMethod
+    nameWithType: DeliveryMethod
+    fullName: WaveEngine.Networking.Messages.DeliveryMethod
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Networking.NetworkEndpoint
+    name: NetworkEndpoint
+    nameWithType: NetworkEndpoint
+    fullName: WaveEngine.Networking.NetworkEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod,WaveEngine.Networking.NetworkEndpoint)
+    name: Send
+    nameWithType: INetworkServer.Send
+    fullName: WaveEngine.Networking.Connection.INetworkServer.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Networking.Connection.Messages.OutgoingMessage
+    name: OutgoingMessage
+    nameWithType: OutgoingMessage
+    fullName: WaveEngine.Networking.Connection.Messages.OutgoingMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Networking.Messages.DeliveryMethod
+    name: DeliveryMethod
+    nameWithType: DeliveryMethod
+    fullName: WaveEngine.Networking.Messages.DeliveryMethod
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Networking.NetworkEndpoint
+    name: NetworkEndpoint
+    nameWithType: NetworkEndpoint
+    fullName: WaveEngine.Networking.NetworkEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Networking.NetworkEndpoint
+  commentId: T:WaveEngine.Networking.NetworkEndpoint
+  parent: WaveEngine.Networking
+  name: NetworkEndpoint
+  nameWithType: NetworkEndpoint
+  fullName: WaveEngine.Networking.NetworkEndpoint
+- uid: WaveEngine.Networking
+  commentId: N:WaveEngine.Networking
+  name: WaveEngine.Networking
+  nameWithType: WaveEngine.Networking
+  fullName: WaveEngine.Networking
+- uid: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod,System.Collections.Generic.IEnumerable{WaveEngine.Networking.NetworkEndpoint})
+  commentId: M:WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod,System.Collections.Generic.IEnumerable{WaveEngine.Networking.NetworkEndpoint})
+  parent: WaveEngine.Networking.Connection.INetworkServer
+  isExternal: true
+  name: Send(OutgoingMessage, DeliveryMethod, IEnumerable<NetworkEndpoint>)
+  nameWithType: INetworkServer.Send(OutgoingMessage, DeliveryMethod, IEnumerable<NetworkEndpoint>)
+  fullName: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage, WaveEngine.Networking.Messages.DeliveryMethod, System.Collections.Generic.IEnumerable<WaveEngine.Networking.NetworkEndpoint>)
+  nameWithType.vb: INetworkServer.Send(OutgoingMessage, DeliveryMethod, IEnumerable(Of NetworkEndpoint))
+  fullName.vb: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage, WaveEngine.Networking.Messages.DeliveryMethod, System.Collections.Generic.IEnumerable(Of WaveEngine.Networking.NetworkEndpoint))
+  name.vb: Send(OutgoingMessage, DeliveryMethod, IEnumerable(Of NetworkEndpoint))
+  spec.csharp:
+  - uid: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod,System.Collections.Generic.IEnumerable{WaveEngine.Networking.NetworkEndpoint})
+    name: Send
+    nameWithType: INetworkServer.Send
+    fullName: WaveEngine.Networking.Connection.INetworkServer.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Networking.Connection.Messages.OutgoingMessage
+    name: OutgoingMessage
+    nameWithType: OutgoingMessage
+    fullName: WaveEngine.Networking.Connection.Messages.OutgoingMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Networking.Messages.DeliveryMethod
+    name: DeliveryMethod
+    nameWithType: DeliveryMethod
+    fullName: WaveEngine.Networking.Messages.DeliveryMethod
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Networking.NetworkEndpoint
+    name: NetworkEndpoint
+    nameWithType: NetworkEndpoint
+    fullName: WaveEngine.Networking.NetworkEndpoint
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Messages.DeliveryMethod,System.Collections.Generic.IEnumerable{WaveEngine.Networking.NetworkEndpoint})
+    name: Send
+    nameWithType: INetworkServer.Send
+    fullName: WaveEngine.Networking.Connection.INetworkServer.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Networking.Connection.Messages.OutgoingMessage
+    name: OutgoingMessage
+    nameWithType: OutgoingMessage
+    fullName: WaveEngine.Networking.Connection.Messages.OutgoingMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Networking.Messages.DeliveryMethod
+    name: DeliveryMethod
+    nameWithType: DeliveryMethod
+    fullName: WaveEngine.Networking.Messages.DeliveryMethod
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Networking.NetworkEndpoint
+    name: NetworkEndpoint
+    nameWithType: NetworkEndpoint
+    fullName: WaveEngine.Networking.NetworkEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{WaveEngine.Networking.NetworkEndpoint}
+  commentId: T:System.Collections.Generic.IEnumerable{WaveEngine.Networking.NetworkEndpoint}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<NetworkEndpoint>
+  nameWithType: IEnumerable<NetworkEndpoint>
+  fullName: System.Collections.Generic.IEnumerable<WaveEngine.Networking.NetworkEndpoint>
+  nameWithType.vb: IEnumerable(Of NetworkEndpoint)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of WaveEngine.Networking.NetworkEndpoint)
+  name.vb: IEnumerable(Of NetworkEndpoint)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Networking.NetworkEndpoint
+    name: NetworkEndpoint
+    nameWithType: NetworkEndpoint
+    fullName: WaveEngine.Networking.NetworkEndpoint
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Networking.NetworkEndpoint
+    name: NetworkEndpoint
+    nameWithType: NetworkEndpoint
+    fullName: WaveEngine.Networking.NetworkEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod)
+  commentId: M:WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod)
+  parent: WaveEngine.Networking.Connection.INetworkServer
+  name: Send(IncomingMessage, DeliveryMethod)
+  nameWithType: INetworkServer.Send(IncomingMessage, DeliveryMethod)
+  fullName: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage, WaveEngine.Networking.Messages.DeliveryMethod)
+  spec.csharp:
+  - uid: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod)
+    name: Send
+    nameWithType: INetworkServer.Send
+    fullName: WaveEngine.Networking.Connection.INetworkServer.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Networking.Connection.Messages.IncomingMessage
+    name: IncomingMessage
+    nameWithType: IncomingMessage
+    fullName: WaveEngine.Networking.Connection.Messages.IncomingMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Networking.Messages.DeliveryMethod
+    name: DeliveryMethod
+    nameWithType: DeliveryMethod
+    fullName: WaveEngine.Networking.Messages.DeliveryMethod
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod)
+    name: Send
+    nameWithType: INetworkServer.Send
+    fullName: WaveEngine.Networking.Connection.INetworkServer.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Networking.Connection.Messages.IncomingMessage
+    name: IncomingMessage
+    nameWithType: IncomingMessage
+    fullName: WaveEngine.Networking.Connection.Messages.IncomingMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Networking.Messages.DeliveryMethod
+    name: DeliveryMethod
+    nameWithType: DeliveryMethod
+    fullName: WaveEngine.Networking.Messages.DeliveryMethod
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Networking.Connection.Messages.IncomingMessage
+  commentId: T:WaveEngine.Networking.Connection.Messages.IncomingMessage
+  parent: WaveEngine.Networking.Connection.Messages
+  name: IncomingMessage
+  nameWithType: IncomingMessage
+  fullName: WaveEngine.Networking.Connection.Messages.IncomingMessage
+- uid: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod,WaveEngine.Networking.NetworkEndpoint)
+  commentId: M:WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod,WaveEngine.Networking.NetworkEndpoint)
+  parent: WaveEngine.Networking.Connection.INetworkServer
+  name: Send(IncomingMessage, DeliveryMethod, NetworkEndpoint)
+  nameWithType: INetworkServer.Send(IncomingMessage, DeliveryMethod, NetworkEndpoint)
+  fullName: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage, WaveEngine.Networking.Messages.DeliveryMethod, WaveEngine.Networking.NetworkEndpoint)
+  spec.csharp:
+  - uid: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod,WaveEngine.Networking.NetworkEndpoint)
+    name: Send
+    nameWithType: INetworkServer.Send
+    fullName: WaveEngine.Networking.Connection.INetworkServer.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Networking.Connection.Messages.IncomingMessage
+    name: IncomingMessage
+    nameWithType: IncomingMessage
+    fullName: WaveEngine.Networking.Connection.Messages.IncomingMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Networking.Messages.DeliveryMethod
+    name: DeliveryMethod
+    nameWithType: DeliveryMethod
+    fullName: WaveEngine.Networking.Messages.DeliveryMethod
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Networking.NetworkEndpoint
+    name: NetworkEndpoint
+    nameWithType: NetworkEndpoint
+    fullName: WaveEngine.Networking.NetworkEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod,WaveEngine.Networking.NetworkEndpoint)
+    name: Send
+    nameWithType: INetworkServer.Send
+    fullName: WaveEngine.Networking.Connection.INetworkServer.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Networking.Connection.Messages.IncomingMessage
+    name: IncomingMessage
+    nameWithType: IncomingMessage
+    fullName: WaveEngine.Networking.Connection.Messages.IncomingMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Networking.Messages.DeliveryMethod
+    name: DeliveryMethod
+    nameWithType: DeliveryMethod
+    fullName: WaveEngine.Networking.Messages.DeliveryMethod
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Networking.NetworkEndpoint
+    name: NetworkEndpoint
+    nameWithType: NetworkEndpoint
+    fullName: WaveEngine.Networking.NetworkEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod,System.Collections.Generic.IEnumerable{WaveEngine.Networking.NetworkEndpoint})
+  commentId: M:WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod,System.Collections.Generic.IEnumerable{WaveEngine.Networking.NetworkEndpoint})
+  parent: WaveEngine.Networking.Connection.INetworkServer
+  isExternal: true
+  name: Send(IncomingMessage, DeliveryMethod, IEnumerable<NetworkEndpoint>)
+  nameWithType: INetworkServer.Send(IncomingMessage, DeliveryMethod, IEnumerable<NetworkEndpoint>)
+  fullName: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage, WaveEngine.Networking.Messages.DeliveryMethod, System.Collections.Generic.IEnumerable<WaveEngine.Networking.NetworkEndpoint>)
+  nameWithType.vb: INetworkServer.Send(IncomingMessage, DeliveryMethod, IEnumerable(Of NetworkEndpoint))
+  fullName.vb: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage, WaveEngine.Networking.Messages.DeliveryMethod, System.Collections.Generic.IEnumerable(Of WaveEngine.Networking.NetworkEndpoint))
+  name.vb: Send(IncomingMessage, DeliveryMethod, IEnumerable(Of NetworkEndpoint))
+  spec.csharp:
+  - uid: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod,System.Collections.Generic.IEnumerable{WaveEngine.Networking.NetworkEndpoint})
+    name: Send
+    nameWithType: INetworkServer.Send
+    fullName: WaveEngine.Networking.Connection.INetworkServer.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Networking.Connection.Messages.IncomingMessage
+    name: IncomingMessage
+    nameWithType: IncomingMessage
+    fullName: WaveEngine.Networking.Connection.Messages.IncomingMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Networking.Messages.DeliveryMethod
+    name: DeliveryMethod
+    nameWithType: DeliveryMethod
+    fullName: WaveEngine.Networking.Messages.DeliveryMethod
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Networking.NetworkEndpoint
+    name: NetworkEndpoint
+    nameWithType: NetworkEndpoint
+    fullName: WaveEngine.Networking.NetworkEndpoint
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Networking.Connection.INetworkServer.Send(WaveEngine.Networking.Connection.Messages.IncomingMessage,WaveEngine.Networking.Messages.DeliveryMethod,System.Collections.Generic.IEnumerable{WaveEngine.Networking.NetworkEndpoint})
+    name: Send
+    nameWithType: INetworkServer.Send
+    fullName: WaveEngine.Networking.Connection.INetworkServer.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Networking.Connection.Messages.IncomingMessage
+    name: IncomingMessage
+    nameWithType: IncomingMessage
+    fullName: WaveEngine.Networking.Connection.Messages.IncomingMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Networking.Messages.DeliveryMethod
+    name: DeliveryMethod
+    nameWithType: DeliveryMethod
+    fullName: WaveEngine.Networking.Messages.DeliveryMethod
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Networking.NetworkEndpoint
+    name: NetworkEndpoint
+    nameWithType: NetworkEndpoint
+    fullName: WaveEngine.Networking.NetworkEndpoint
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Networking.Connection.NetworkServer.CreateMessage*
+  commentId: Overload:WaveEngine.Networking.Connection.NetworkServer.CreateMessage
+  name: CreateMessage
+  nameWithType: NetworkServer.CreateMessage
+  fullName: WaveEngine.Networking.Connection.NetworkServer.CreateMessage
+- uid: WaveEngine.Networking.Connection.INetworkServer.CreateMessage(WaveEngine.Networking.Connection.Messages.MessageType)
+  commentId: M:WaveEngine.Networking.Connection.INetworkServer.CreateMessage(WaveEngine.Networking.Connection.Messages.MessageType)
+  parent: WaveEngine.Networking.Connection.INetworkServer
+  name: CreateMessage(MessageType)
+  nameWithType: INetworkServer.CreateMessage(MessageType)
+  fullName: WaveEngine.Networking.Connection.INetworkServer.CreateMessage(WaveEngine.Networking.Connection.Messages.MessageType)
+  spec.csharp:
+  - uid: WaveEngine.Networking.Connection.INetworkServer.CreateMessage(WaveEngine.Networking.Connection.Messages.MessageType)
+    name: CreateMessage
+    nameWithType: INetworkServer.CreateMessage
+    fullName: WaveEngine.Networking.Connection.INetworkServer.CreateMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Networking.Connection.Messages.MessageType
+    name: MessageType
+    nameWithType: MessageType
+    fullName: WaveEngine.Networking.Connection.Messages.MessageType
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Networking.Connection.INetworkServer.CreateMessage(WaveEngine.Networking.Connection.Messages.MessageType)
+    name: CreateMessage
+    nameWithType: INetworkServer.CreateMessage
+    fullName: WaveEngine.Networking.Connection.INetworkServer.CreateMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Networking.Connection.Messages.MessageType
+    name: MessageType
+    nameWithType: MessageType
+    fullName: WaveEngine.Networking.Connection.Messages.MessageType
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Networking.Connection.Messages.MessageType
+  commentId: T:WaveEngine.Networking.Connection.Messages.MessageType
+  parent: WaveEngine.Networking.Connection.Messages
+  name: MessageType
+  nameWithType: MessageType
+  fullName: WaveEngine.Networking.Connection.Messages.MessageType
+- uid: WaveEngine.Networking.Connection.NetworkServer.OnClientConnected*
+  commentId: Overload:WaveEngine.Networking.Connection.NetworkServer.OnClientConnected
+  name: OnClientConnected
+  nameWithType: NetworkServer.OnClientConnected
+  fullName: WaveEngine.Networking.Connection.NetworkServer.OnClientConnected
+- uid: WaveEngine.Networking.Connection.NetworkServer.OnClientDisconnected*
+  commentId: Overload:WaveEngine.Networking.Connection.NetworkServer.OnClientDisconnected
+  name: OnClientDisconnected
+  nameWithType: NetworkServer.OnClientDisconnected
+  fullName: WaveEngine.Networking.Connection.NetworkServer.OnClientDisconnected
+- uid: WaveEngine.Networking.Connection.NetworkServer.OnMessageReceived*
+  commentId: Overload:WaveEngine.Networking.Connection.NetworkServer.OnMessageReceived
+  name: OnMessageReceived
+  nameWithType: NetworkServer.OnMessageReceived
+  fullName: WaveEngine.Networking.Connection.NetworkServer.OnMessageReceived

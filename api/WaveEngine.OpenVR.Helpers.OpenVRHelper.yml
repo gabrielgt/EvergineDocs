@@ -1,0 +1,856 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.OpenVR.Helpers.OpenVRHelper
+  commentId: T:WaveEngine.OpenVR.Helpers.OpenVRHelper
+  id: OpenVRHelper
+  parent: WaveEngine.OpenVR.Helpers
+  children:
+  - WaveEngine.OpenVR.Helpers.OpenVRHelper.GetButtonPressed(Valve.VR.VRControllerState_t,Valve.VR.EVRButtonId)
+  - WaveEngine.OpenVR.Helpers.OpenVRHelper.GetButtonTouched(Valve.VR.VRControllerState_t,Valve.VR.EVRButtonId)
+  - WaveEngine.OpenVR.Helpers.OpenVRHelper.ReportCompositeError(Valve.VR.EVRCompositorError)
+  - WaveEngine.OpenVR.Helpers.OpenVRHelper.ReportInitError(Valve.VR.EVRInitError)
+  - WaveEngine.OpenVR.Helpers.OpenVRHelper.ToButtonState(System.Boolean)
+  - WaveEngine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.HmdMatrix34_t,WaveEngine.Common.Math.Matrix@)
+  - WaveEngine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.HmdMatrix44_t,WaveEngine.Common.Math.Matrix@)
+  - WaveEngine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.TrackedDevicePose_t,WaveEngine.Common.Math.Matrix@)
+  - WaveEngine.OpenVR.Helpers.OpenVRHelper.ToVRPose(Valve.VR.TrackedDevicePose_t,WaveEngine.Common.VR.VRPose@)
+  - WaveEngine.OpenVR.Helpers.OpenVRHelper.ToVRPose(WaveEngine.Common.Math.Matrix,WaveEngine.Common.VR.VRPose@)
+  langs:
+  - csharp
+  - vb
+  name: OpenVRHelper
+  nameWithType: OpenVRHelper
+  fullName: WaveEngine.OpenVR.Helpers.OpenVRHelper
+  type: Class
+  source:
+    id: OpenVRHelper
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.OpenVR\Shared\Helpers\OpenVRHelper.cs
+    startLine: 15
+  assemblies:
+  - WaveEngine.OpenVR
+  namespace: WaveEngine.OpenVR.Helpers
+  syntax:
+    content: public static class OpenVRHelper
+    content.vb: Public Module OpenVRHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.HmdMatrix34_t,WaveEngine.Common.Math.Matrix@)
+  commentId: M:WaveEngine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.HmdMatrix34_t,WaveEngine.Common.Math.Matrix@)
+  id: ToMatrix(Valve.VR.HmdMatrix34_t,WaveEngine.Common.Math.Matrix@)
+  isExtensionMethod: true
+  parent: WaveEngine.OpenVR.Helpers.OpenVRHelper
+  langs:
+  - csharp
+  - vb
+  name: ToMatrix(HmdMatrix34_t, out Matrix)
+  nameWithType: OpenVRHelper.ToMatrix(HmdMatrix34_t, out Matrix)
+  fullName: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.HmdMatrix34_t, out WaveEngine.Common.Math.Matrix)
+  type: Method
+  source:
+    id: ToMatrix
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.OpenVR\Shared\Helpers\OpenVRHelper.cs
+    startLine: 22
+  assemblies:
+  - WaveEngine.OpenVR
+  namespace: WaveEngine.OpenVR.Helpers
+  summary: "\nConvert an ovrMatrix34f to a Wave Matrix.\n"
+  example: []
+  syntax:
+    content: public static void ToMatrix(this HmdMatrix34_t ovrMatrix34f, out Matrix matrix)
+    parameters:
+    - id: ovrMatrix34f
+      type: Valve.VR.HmdMatrix34_t
+      description: ovrMatrix34f to convert to a Wave Matrix.
+    - id: matrix
+      type: WaveEngine.Common.Math.Matrix
+      description: Wave Matrix, based on the ovrMatrix4f.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub ToMatrix(ovrMatrix34f As HmdMatrix34_t, ByRef matrix As Matrix)
+  overload: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToMatrix*
+  nameWithType.vb: OpenVRHelper.ToMatrix(HmdMatrix34_t, ByRef Matrix)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.HmdMatrix34_t, ByRef WaveEngine.Common.Math.Matrix)
+  name.vb: ToMatrix(HmdMatrix34_t, ByRef Matrix)
+- uid: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.HmdMatrix44_t,WaveEngine.Common.Math.Matrix@)
+  commentId: M:WaveEngine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.HmdMatrix44_t,WaveEngine.Common.Math.Matrix@)
+  id: ToMatrix(Valve.VR.HmdMatrix44_t,WaveEngine.Common.Math.Matrix@)
+  isExtensionMethod: true
+  parent: WaveEngine.OpenVR.Helpers.OpenVRHelper
+  langs:
+  - csharp
+  - vb
+  name: ToMatrix(HmdMatrix44_t, out Matrix)
+  nameWithType: OpenVRHelper.ToMatrix(HmdMatrix44_t, out Matrix)
+  fullName: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.HmdMatrix44_t, out WaveEngine.Common.Math.Matrix)
+  type: Method
+  source:
+    id: ToMatrix
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.OpenVR\Shared\Helpers\OpenVRHelper.cs
+    startLine: 50
+  assemblies:
+  - WaveEngine.OpenVR
+  namespace: WaveEngine.OpenVR.Helpers
+  summary: "\nConvert an ovrMatrix44f to a Wave Matrix.\n"
+  example: []
+  syntax:
+    content: public static void ToMatrix(this HmdMatrix44_t ovrMatrix34f, out Matrix matrix)
+    parameters:
+    - id: ovrMatrix34f
+      type: Valve.VR.HmdMatrix44_t
+      description: ovrMatrix44f to convert to a Wave Matrix.
+    - id: matrix
+      type: WaveEngine.Common.Math.Matrix
+      description: Wave Matrix, based on the ovrMatrix4f.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub ToMatrix(ovrMatrix34f As HmdMatrix44_t, ByRef matrix As Matrix)
+  overload: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToMatrix*
+  nameWithType.vb: OpenVRHelper.ToMatrix(HmdMatrix44_t, ByRef Matrix)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.HmdMatrix44_t, ByRef WaveEngine.Common.Math.Matrix)
+  name.vb: ToMatrix(HmdMatrix44_t, ByRef Matrix)
+- uid: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.TrackedDevicePose_t,WaveEngine.Common.Math.Matrix@)
+  commentId: M:WaveEngine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.TrackedDevicePose_t,WaveEngine.Common.Math.Matrix@)
+  id: ToMatrix(Valve.VR.TrackedDevicePose_t,WaveEngine.Common.Math.Matrix@)
+  isExtensionMethod: true
+  parent: WaveEngine.OpenVR.Helpers.OpenVRHelper
+  langs:
+  - csharp
+  - vb
+  name: ToMatrix(TrackedDevicePose_t, out Matrix)
+  nameWithType: OpenVRHelper.ToMatrix(TrackedDevicePose_t, out Matrix)
+  fullName: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.TrackedDevicePose_t, out WaveEngine.Common.Math.Matrix)
+  type: Method
+  source:
+    id: ToMatrix
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.OpenVR\Shared\Helpers\OpenVRHelper.cs
+    startLine: 73
+  assemblies:
+  - WaveEngine.OpenVR
+  namespace: WaveEngine.OpenVR.Helpers
+  syntax:
+    content: public static void ToMatrix(this TrackedDevicePose_t trackedPose, out Matrix matrix)
+    parameters:
+    - id: trackedPose
+      type: Valve.VR.TrackedDevicePose_t
+    - id: matrix
+      type: WaveEngine.Common.Math.Matrix
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub ToMatrix(trackedPose As TrackedDevicePose_t, ByRef matrix As Matrix)
+  overload: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToMatrix*
+  nameWithType.vb: OpenVRHelper.ToMatrix(TrackedDevicePose_t, ByRef Matrix)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToMatrix(Valve.VR.TrackedDevicePose_t, ByRef WaveEngine.Common.Math.Matrix)
+  name.vb: ToMatrix(TrackedDevicePose_t, ByRef Matrix)
+- uid: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToVRPose(WaveEngine.Common.Math.Matrix,WaveEngine.Common.VR.VRPose@)
+  commentId: M:WaveEngine.OpenVR.Helpers.OpenVRHelper.ToVRPose(WaveEngine.Common.Math.Matrix,WaveEngine.Common.VR.VRPose@)
+  id: ToVRPose(WaveEngine.Common.Math.Matrix,WaveEngine.Common.VR.VRPose@)
+  isExtensionMethod: true
+  parent: WaveEngine.OpenVR.Helpers.OpenVRHelper
+  langs:
+  - csharp
+  - vb
+  name: ToVRPose(Matrix, out VRPose)
+  nameWithType: OpenVRHelper.ToVRPose(Matrix, out VRPose)
+  fullName: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToVRPose(WaveEngine.Common.Math.Matrix, out WaveEngine.Common.VR.VRPose)
+  type: Method
+  source:
+    id: ToVRPose
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.OpenVR\Shared\Helpers\OpenVRHelper.cs
+    startLine: 78
+  assemblies:
+  - WaveEngine.OpenVR
+  namespace: WaveEngine.OpenVR.Helpers
+  syntax:
+    content: public static void ToVRPose(this Matrix matrix, out VRPose pose)
+    parameters:
+    - id: matrix
+      type: WaveEngine.Common.Math.Matrix
+    - id: pose
+      type: WaveEngine.Common.VR.VRPose
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub ToVRPose(matrix As Matrix, ByRef pose As VRPose)
+  overload: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToVRPose*
+  nameWithType.vb: OpenVRHelper.ToVRPose(Matrix, ByRef VRPose)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToVRPose(WaveEngine.Common.Math.Matrix, ByRef WaveEngine.Common.VR.VRPose)
+  name.vb: ToVRPose(Matrix, ByRef VRPose)
+- uid: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToVRPose(Valve.VR.TrackedDevicePose_t,WaveEngine.Common.VR.VRPose@)
+  commentId: M:WaveEngine.OpenVR.Helpers.OpenVRHelper.ToVRPose(Valve.VR.TrackedDevicePose_t,WaveEngine.Common.VR.VRPose@)
+  id: ToVRPose(Valve.VR.TrackedDevicePose_t,WaveEngine.Common.VR.VRPose@)
+  isExtensionMethod: true
+  parent: WaveEngine.OpenVR.Helpers.OpenVRHelper
+  langs:
+  - csharp
+  - vb
+  name: ToVRPose(TrackedDevicePose_t, out VRPose)
+  nameWithType: OpenVRHelper.ToVRPose(TrackedDevicePose_t, out VRPose)
+  fullName: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToVRPose(Valve.VR.TrackedDevicePose_t, out WaveEngine.Common.VR.VRPose)
+  type: Method
+  source:
+    id: ToVRPose
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.OpenVR\Shared\Helpers\OpenVRHelper.cs
+    startLine: 84
+  assemblies:
+  - WaveEngine.OpenVR
+  namespace: WaveEngine.OpenVR.Helpers
+  syntax:
+    content: public static void ToVRPose(this TrackedDevicePose_t trackedPose, out VRPose pose)
+    parameters:
+    - id: trackedPose
+      type: Valve.VR.TrackedDevicePose_t
+    - id: pose
+      type: WaveEngine.Common.VR.VRPose
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub ToVRPose(trackedPose As TrackedDevicePose_t, ByRef pose As VRPose)
+  overload: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToVRPose*
+  nameWithType.vb: OpenVRHelper.ToVRPose(TrackedDevicePose_t, ByRef VRPose)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToVRPose(Valve.VR.TrackedDevicePose_t, ByRef WaveEngine.Common.VR.VRPose)
+  name.vb: ToVRPose(TrackedDevicePose_t, ByRef VRPose)
+- uid: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToButtonState(System.Boolean)
+  commentId: M:WaveEngine.OpenVR.Helpers.OpenVRHelper.ToButtonState(System.Boolean)
+  id: ToButtonState(System.Boolean)
+  isExtensionMethod: true
+  parent: WaveEngine.OpenVR.Helpers.OpenVRHelper
+  langs:
+  - csharp
+  - vb
+  name: ToButtonState(Boolean)
+  nameWithType: OpenVRHelper.ToButtonState(Boolean)
+  fullName: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToButtonState(System.Boolean)
+  type: Method
+  source:
+    id: ToButtonState
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.OpenVR\Shared\Helpers\OpenVRHelper.cs
+    startLine: 93
+  assemblies:
+  - WaveEngine.OpenVR
+  namespace: WaveEngine.OpenVR.Helpers
+  syntax:
+    content: public static ButtonState ToButtonState(this bool b)
+    parameters:
+    - id: b
+      type: System.Boolean
+    return:
+      type: WaveEngine.Common.Input.ButtonState
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToButtonState(b As Boolean) As ButtonState
+  overload: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToButtonState*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.OpenVR.Helpers.OpenVRHelper.GetButtonPressed(Valve.VR.VRControllerState_t,Valve.VR.EVRButtonId)
+  commentId: M:WaveEngine.OpenVR.Helpers.OpenVRHelper.GetButtonPressed(Valve.VR.VRControllerState_t,Valve.VR.EVRButtonId)
+  id: GetButtonPressed(Valve.VR.VRControllerState_t,Valve.VR.EVRButtonId)
+  isExtensionMethod: true
+  parent: WaveEngine.OpenVR.Helpers.OpenVRHelper
+  langs:
+  - csharp
+  - vb
+  name: GetButtonPressed(VRControllerState_t, EVRButtonId)
+  nameWithType: OpenVRHelper.GetButtonPressed(VRControllerState_t, EVRButtonId)
+  fullName: WaveEngine.OpenVR.Helpers.OpenVRHelper.GetButtonPressed(Valve.VR.VRControllerState_t, Valve.VR.EVRButtonId)
+  type: Method
+  source:
+    id: GetButtonPressed
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.OpenVR\Shared\Helpers\OpenVRHelper.cs
+    startLine: 99
+  assemblies:
+  - WaveEngine.OpenVR
+  namespace: WaveEngine.OpenVR.Helpers
+  syntax:
+    content: public static bool GetButtonPressed(this VRControllerState_t state, EVRButtonId buttonId)
+    parameters:
+    - id: state
+      type: Valve.VR.VRControllerState_t
+    - id: buttonId
+      type: Valve.VR.EVRButtonId
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetButtonPressed(state As VRControllerState_t, buttonId As EVRButtonId) As Boolean
+  overload: WaveEngine.OpenVR.Helpers.OpenVRHelper.GetButtonPressed*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.OpenVR.Helpers.OpenVRHelper.GetButtonTouched(Valve.VR.VRControllerState_t,Valve.VR.EVRButtonId)
+  commentId: M:WaveEngine.OpenVR.Helpers.OpenVRHelper.GetButtonTouched(Valve.VR.VRControllerState_t,Valve.VR.EVRButtonId)
+  id: GetButtonTouched(Valve.VR.VRControllerState_t,Valve.VR.EVRButtonId)
+  isExtensionMethod: true
+  parent: WaveEngine.OpenVR.Helpers.OpenVRHelper
+  langs:
+  - csharp
+  - vb
+  name: GetButtonTouched(VRControllerState_t, EVRButtonId)
+  nameWithType: OpenVRHelper.GetButtonTouched(VRControllerState_t, EVRButtonId)
+  fullName: WaveEngine.OpenVR.Helpers.OpenVRHelper.GetButtonTouched(Valve.VR.VRControllerState_t, Valve.VR.EVRButtonId)
+  type: Method
+  source:
+    id: GetButtonTouched
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.OpenVR\Shared\Helpers\OpenVRHelper.cs
+    startLine: 104
+  assemblies:
+  - WaveEngine.OpenVR
+  namespace: WaveEngine.OpenVR.Helpers
+  syntax:
+    content: public static bool GetButtonTouched(this VRControllerState_t state, EVRButtonId buttonId)
+    parameters:
+    - id: state
+      type: Valve.VR.VRControllerState_t
+    - id: buttonId
+      type: Valve.VR.EVRButtonId
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetButtonTouched(state As VRControllerState_t, buttonId As EVRButtonId) As Boolean
+  overload: WaveEngine.OpenVR.Helpers.OpenVRHelper.GetButtonTouched*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.OpenVR.Helpers.OpenVRHelper.ReportInitError(Valve.VR.EVRInitError)
+  commentId: M:WaveEngine.OpenVR.Helpers.OpenVRHelper.ReportInitError(Valve.VR.EVRInitError)
+  id: ReportInitError(Valve.VR.EVRInitError)
+  parent: WaveEngine.OpenVR.Helpers.OpenVRHelper
+  langs:
+  - csharp
+  - vb
+  name: ReportInitError(EVRInitError)
+  nameWithType: OpenVRHelper.ReportInitError(EVRInitError)
+  fullName: WaveEngine.OpenVR.Helpers.OpenVRHelper.ReportInitError(Valve.VR.EVRInitError)
+  type: Method
+  source:
+    id: ReportInitError
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.OpenVR\Shared\Helpers\OpenVRHelper.cs
+    startLine: 109
+  assemblies:
+  - WaveEngine.OpenVR
+  namespace: WaveEngine.OpenVR.Helpers
+  syntax:
+    content: public static void ReportInitError(EVRInitError error)
+    parameters:
+    - id: error
+      type: Valve.VR.EVRInitError
+    content.vb: Public Shared Sub ReportInitError(error As EVRInitError)
+  overload: WaveEngine.OpenVR.Helpers.OpenVRHelper.ReportInitError*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.OpenVR.Helpers.OpenVRHelper.ReportCompositeError(Valve.VR.EVRCompositorError)
+  commentId: M:WaveEngine.OpenVR.Helpers.OpenVRHelper.ReportCompositeError(Valve.VR.EVRCompositorError)
+  id: ReportCompositeError(Valve.VR.EVRCompositorError)
+  parent: WaveEngine.OpenVR.Helpers.OpenVRHelper
+  langs:
+  - csharp
+  - vb
+  name: ReportCompositeError(EVRCompositorError)
+  nameWithType: OpenVRHelper.ReportCompositeError(EVRCompositorError)
+  fullName: WaveEngine.OpenVR.Helpers.OpenVRHelper.ReportCompositeError(Valve.VR.EVRCompositorError)
+  type: Method
+  source:
+    id: ReportCompositeError
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.OpenVR\Shared\Helpers\OpenVRHelper.cs
+    startLine: 130
+  assemblies:
+  - WaveEngine.OpenVR
+  namespace: WaveEngine.OpenVR.Helpers
+  syntax:
+    content: public static void ReportCompositeError(EVRCompositorError error)
+    parameters:
+    - id: error
+      type: Valve.VR.EVRCompositorError
+    content.vb: Public Shared Sub ReportCompositeError(error As EVRCompositorError)
+  overload: WaveEngine.OpenVR.Helpers.OpenVRHelper.ReportCompositeError*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: WaveEngine.OpenVR.Helpers
+  commentId: N:WaveEngine.OpenVR.Helpers
+  name: WaveEngine.OpenVR.Helpers
+  nameWithType: WaveEngine.OpenVR.Helpers
+  fullName: WaveEngine.OpenVR.Helpers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToMatrix*
+  commentId: Overload:WaveEngine.OpenVR.Helpers.OpenVRHelper.ToMatrix
+  name: ToMatrix
+  nameWithType: OpenVRHelper.ToMatrix
+  fullName: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToMatrix
+- uid: Valve.VR.HmdMatrix34_t
+  commentId: T:Valve.VR.HmdMatrix34_t
+  parent: Valve.VR
+  name: HmdMatrix34_t
+  nameWithType: HmdMatrix34_t
+  fullName: Valve.VR.HmdMatrix34_t
+- uid: WaveEngine.Common.Math.Matrix
+  commentId: T:WaveEngine.Common.Math.Matrix
+  parent: WaveEngine.Common.Math
+  name: Matrix
+  nameWithType: Matrix
+  fullName: WaveEngine.Common.Math.Matrix
+- uid: Valve.VR
+  commentId: N:Valve.VR
+  name: Valve.VR
+  nameWithType: Valve.VR
+  fullName: Valve.VR
+- uid: WaveEngine.Common.Math
+  commentId: N:WaveEngine.Common.Math
+  name: WaveEngine.Common.Math
+  nameWithType: WaveEngine.Common.Math
+  fullName: WaveEngine.Common.Math
+- uid: Valve.VR.HmdMatrix44_t
+  commentId: T:Valve.VR.HmdMatrix44_t
+  parent: Valve.VR
+  name: HmdMatrix44_t
+  nameWithType: HmdMatrix44_t
+  fullName: Valve.VR.HmdMatrix44_t
+- uid: Valve.VR.TrackedDevicePose_t
+  commentId: T:Valve.VR.TrackedDevicePose_t
+  parent: Valve.VR
+  name: TrackedDevicePose_t
+  nameWithType: TrackedDevicePose_t
+  fullName: Valve.VR.TrackedDevicePose_t
+- uid: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToVRPose*
+  commentId: Overload:WaveEngine.OpenVR.Helpers.OpenVRHelper.ToVRPose
+  name: ToVRPose
+  nameWithType: OpenVRHelper.ToVRPose
+  fullName: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToVRPose
+- uid: WaveEngine.Common.VR.VRPose
+  commentId: T:WaveEngine.Common.VR.VRPose
+  parent: WaveEngine.Common.VR
+  name: VRPose
+  nameWithType: VRPose
+  fullName: WaveEngine.Common.VR.VRPose
+- uid: WaveEngine.Common.VR
+  commentId: N:WaveEngine.Common.VR
+  name: WaveEngine.Common.VR
+  nameWithType: WaveEngine.Common.VR
+  fullName: WaveEngine.Common.VR
+- uid: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToButtonState*
+  commentId: Overload:WaveEngine.OpenVR.Helpers.OpenVRHelper.ToButtonState
+  name: ToButtonState
+  nameWithType: OpenVRHelper.ToButtonState
+  fullName: WaveEngine.OpenVR.Helpers.OpenVRHelper.ToButtonState
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Common.Input.ButtonState
+  commentId: T:WaveEngine.Common.Input.ButtonState
+  parent: WaveEngine.Common.Input
+  name: ButtonState
+  nameWithType: ButtonState
+  fullName: WaveEngine.Common.Input.ButtonState
+- uid: WaveEngine.Common.Input
+  commentId: N:WaveEngine.Common.Input
+  name: WaveEngine.Common.Input
+  nameWithType: WaveEngine.Common.Input
+  fullName: WaveEngine.Common.Input
+- uid: WaveEngine.OpenVR.Helpers.OpenVRHelper.GetButtonPressed*
+  commentId: Overload:WaveEngine.OpenVR.Helpers.OpenVRHelper.GetButtonPressed
+  name: GetButtonPressed
+  nameWithType: OpenVRHelper.GetButtonPressed
+  fullName: WaveEngine.OpenVR.Helpers.OpenVRHelper.GetButtonPressed
+- uid: Valve.VR.VRControllerState_t
+  commentId: T:Valve.VR.VRControllerState_t
+  parent: Valve.VR
+  name: VRControllerState_t
+  nameWithType: VRControllerState_t
+  fullName: Valve.VR.VRControllerState_t
+- uid: Valve.VR.EVRButtonId
+  commentId: T:Valve.VR.EVRButtonId
+  parent: Valve.VR
+  name: EVRButtonId
+  nameWithType: EVRButtonId
+  fullName: Valve.VR.EVRButtonId
+- uid: WaveEngine.OpenVR.Helpers.OpenVRHelper.GetButtonTouched*
+  commentId: Overload:WaveEngine.OpenVR.Helpers.OpenVRHelper.GetButtonTouched
+  name: GetButtonTouched
+  nameWithType: OpenVRHelper.GetButtonTouched
+  fullName: WaveEngine.OpenVR.Helpers.OpenVRHelper.GetButtonTouched
+- uid: WaveEngine.OpenVR.Helpers.OpenVRHelper.ReportInitError*
+  commentId: Overload:WaveEngine.OpenVR.Helpers.OpenVRHelper.ReportInitError
+  name: ReportInitError
+  nameWithType: OpenVRHelper.ReportInitError
+  fullName: WaveEngine.OpenVR.Helpers.OpenVRHelper.ReportInitError
+- uid: Valve.VR.EVRInitError
+  commentId: T:Valve.VR.EVRInitError
+  parent: Valve.VR
+  name: EVRInitError
+  nameWithType: EVRInitError
+  fullName: Valve.VR.EVRInitError
+- uid: WaveEngine.OpenVR.Helpers.OpenVRHelper.ReportCompositeError*
+  commentId: Overload:WaveEngine.OpenVR.Helpers.OpenVRHelper.ReportCompositeError
+  name: ReportCompositeError
+  nameWithType: OpenVRHelper.ReportCompositeError
+  fullName: WaveEngine.OpenVR.Helpers.OpenVRHelper.ReportCompositeError
+- uid: Valve.VR.EVRCompositorError
+  commentId: T:Valve.VR.EVRCompositorError
+  parent: Valve.VR
+  name: EVRCompositorError
+  nameWithType: EVRCompositorError
+  fullName: Valve.VR.EVRCompositorError

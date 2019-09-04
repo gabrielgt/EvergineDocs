@@ -1,0 +1,1646 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Framework.Services.VideoPlayer
+  commentId: T:WaveEngine.Framework.Services.VideoPlayer
+  id: VideoPlayer
+  parent: WaveEngine.Framework.Services
+  children:
+  - WaveEngine.Framework.Services.VideoPlayer.#ctor(WaveEngine.Common.Media.IVideoPlayer)
+  - WaveEngine.Framework.Services.VideoPlayer.Initialize
+  - WaveEngine.Framework.Services.VideoPlayer.IsLooped
+  - WaveEngine.Framework.Services.VideoPlayer.IsMuted
+  - WaveEngine.Framework.Services.VideoPlayer.IsVideoSupported
+  - WaveEngine.Framework.Services.VideoPlayer.OnComplete
+  - WaveEngine.Framework.Services.VideoPlayer.OnError
+  - WaveEngine.Framework.Services.VideoPlayer.OnVideoTexture
+  - WaveEngine.Framework.Services.VideoPlayer.Pause
+  - WaveEngine.Framework.Services.VideoPlayer.Play(WaveEngine.Common.Media.VideoInfo)
+  - WaveEngine.Framework.Services.VideoPlayer.PlayPosition
+  - WaveEngine.Framework.Services.VideoPlayer.Resume
+  - WaveEngine.Framework.Services.VideoPlayer.State
+  - WaveEngine.Framework.Services.VideoPlayer.Stop
+  - WaveEngine.Framework.Services.VideoPlayer.Terminate
+  - WaveEngine.Framework.Services.VideoPlayer.Update(System.TimeSpan)
+  - WaveEngine.Framework.Services.VideoPlayer.Video
+  - WaveEngine.Framework.Services.VideoPlayer.VideoInfoFromPath(System.String)
+  - WaveEngine.Framework.Services.VideoPlayer.VideoTexture
+  - WaveEngine.Framework.Services.VideoPlayer.Volume
+  langs:
+  - csharp
+  - vb
+  name: VideoPlayer
+  nameWithType: VideoPlayer
+  fullName: WaveEngine.Framework.Services.VideoPlayer
+  type: Class
+  source:
+    id: VideoPlayer
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\VideoPlayer.cs
+    startLine: 14
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nClass used to play videos.\n"
+  example: []
+  syntax:
+    content: 'public sealed class VideoPlayer : UpdatableService'
+    content.vb: >-
+      Public NotInheritable Class VideoPlayer
+
+          Inherits UpdatableService
+  inheritance:
+  - System.Object
+  - WaveEngine.Common.IO.SerializableObject
+  - WaveEngine.Common.Service
+  - WaveEngine.Common.UpdatableService
+  inheritedMembers:
+  - WaveEngine.Common.Service.IsInitialized
+  - WaveEngine.Common.Service.IsTerminated
+  - WaveEngine.Common.Service.BaseInitialize
+  - WaveEngine.Common.Service.BaseTerminate
+  - WaveEngine.Common.Service.OnActivated
+  - WaveEngine.Common.Service.OnDeactivated
+  - WaveEngine.Common.IO.SerializableObject.DefaultValues
+  - WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: WaveEngine.Framework.Services.VideoPlayer.IsLooped
+  commentId: P:WaveEngine.Framework.Services.VideoPlayer.IsLooped
+  id: IsLooped
+  parent: WaveEngine.Framework.Services.VideoPlayer
+  langs:
+  - csharp
+  - vb
+  name: IsLooped
+  nameWithType: VideoPlayer.IsLooped
+  fullName: WaveEngine.Framework.Services.VideoPlayer.IsLooped
+  type: Property
+  source:
+    id: IsLooped
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\VideoPlayer.cs
+    startLine: 31
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGets or sets a value indicating whether the player is playing a video in a loop.\n"
+  example: []
+  syntax:
+    content: public bool IsLooped { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsLooped As Boolean
+  overload: WaveEngine.Framework.Services.VideoPlayer.IsLooped*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.VideoPlayer.IsMuted
+  commentId: P:WaveEngine.Framework.Services.VideoPlayer.IsMuted
+  id: IsMuted
+  parent: WaveEngine.Framework.Services.VideoPlayer
+  langs:
+  - csharp
+  - vb
+  name: IsMuted
+  nameWithType: VideoPlayer.IsMuted
+  fullName: WaveEngine.Framework.Services.VideoPlayer.IsMuted
+  type: Property
+  source:
+    id: IsMuted
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\VideoPlayer.cs
+    startLine: 49
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGets or sets a value indicating whether the video player is muted.\n"
+  example: []
+  syntax:
+    content: public bool IsMuted { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsMuted As Boolean
+  overload: WaveEngine.Framework.Services.VideoPlayer.IsMuted*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.VideoPlayer.Volume
+  commentId: P:WaveEngine.Framework.Services.VideoPlayer.Volume
+  id: Volume
+  parent: WaveEngine.Framework.Services.VideoPlayer
+  langs:
+  - csharp
+  - vb
+  name: Volume
+  nameWithType: VideoPlayer.Volume
+  fullName: WaveEngine.Framework.Services.VideoPlayer.Volume
+  type: Property
+  source:
+    id: Volume
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\VideoPlayer.cs
+    startLine: 67
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGets or sets a value indicating the video player volume.\n"
+  example: []
+  syntax:
+    content: public float Volume { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Volume As Single
+  overload: WaveEngine.Framework.Services.VideoPlayer.Volume*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.VideoPlayer.PlayPosition
+  commentId: P:WaveEngine.Framework.Services.VideoPlayer.PlayPosition
+  id: PlayPosition
+  parent: WaveEngine.Framework.Services.VideoPlayer
+  langs:
+  - csharp
+  - vb
+  name: PlayPosition
+  nameWithType: VideoPlayer.PlayPosition
+  fullName: WaveEngine.Framework.Services.VideoPlayer.PlayPosition
+  type: Property
+  source:
+    id: PlayPosition
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\VideoPlayer.cs
+    startLine: 85
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGets or sets the play position within the currently playing video.\n"
+  example: []
+  syntax:
+    content: public TimeSpan PlayPosition { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property PlayPosition As TimeSpan
+  overload: WaveEngine.Framework.Services.VideoPlayer.PlayPosition*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.VideoPlayer.Video
+  commentId: P:WaveEngine.Framework.Services.VideoPlayer.Video
+  id: Video
+  parent: WaveEngine.Framework.Services.VideoPlayer
+  langs:
+  - csharp
+  - vb
+  name: Video
+  nameWithType: VideoPlayer.Video
+  fullName: WaveEngine.Framework.Services.VideoPlayer.Video
+  type: Property
+  source:
+    id: Video
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\VideoPlayer.cs
+    startLine: 103
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGets the video that is currently playing.\n"
+  example: []
+  syntax:
+    content: public VideoInfo Video { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Media.VideoInfo
+    content.vb: Public ReadOnly Property Video As VideoInfo
+  overload: WaveEngine.Framework.Services.VideoPlayer.Video*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Services.VideoPlayer.State
+  commentId: P:WaveEngine.Framework.Services.VideoPlayer.State
+  id: State
+  parent: WaveEngine.Framework.Services.VideoPlayer
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: VideoPlayer.State
+  fullName: WaveEngine.Framework.Services.VideoPlayer.State
+  type: Property
+  source:
+    id: State
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\VideoPlayer.cs
+    startLine: 122
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGets the state.\n"
+  example: []
+  syntax:
+    content: public VideoState State { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Media.VideoState
+    content.vb: Public ReadOnly Property State As VideoState
+  overload: WaveEngine.Framework.Services.VideoPlayer.State*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Services.VideoPlayer.VideoTexture
+  commentId: P:WaveEngine.Framework.Services.VideoPlayer.VideoTexture
+  id: VideoTexture
+  parent: WaveEngine.Framework.Services.VideoPlayer
+  langs:
+  - csharp
+  - vb
+  name: VideoTexture
+  nameWithType: VideoPlayer.VideoTexture
+  fullName: WaveEngine.Framework.Services.VideoPlayer.VideoTexture
+  type: Property
+  source:
+    id: VideoTexture
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\VideoPlayer.cs
+    startLine: 134
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGets a Texture containing the frame of video being played;\n"
+  example: []
+  syntax:
+    content: public VideoTexture VideoTexture { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Graphics.VideoTexture
+    content.vb: Public ReadOnly Property VideoTexture As VideoTexture
+  overload: WaveEngine.Framework.Services.VideoPlayer.VideoTexture*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Services.VideoPlayer.IsVideoSupported
+  commentId: P:WaveEngine.Framework.Services.VideoPlayer.IsVideoSupported
+  id: IsVideoSupported
+  parent: WaveEngine.Framework.Services.VideoPlayer
+  langs:
+  - csharp
+  - vb
+  name: IsVideoSupported
+  nameWithType: VideoPlayer.IsVideoSupported
+  fullName: WaveEngine.Framework.Services.VideoPlayer.IsVideoSupported
+  type: Property
+  source:
+    id: IsVideoSupported
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\VideoPlayer.cs
+    startLine: 146
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGets a value indicating whether Video texture is supported on this device\n"
+  example: []
+  syntax:
+    content: public bool IsVideoSupported { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsVideoSupported As Boolean
+  overload: WaveEngine.Framework.Services.VideoPlayer.IsVideoSupported*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Services.VideoPlayer.OnComplete
+  commentId: E:WaveEngine.Framework.Services.VideoPlayer.OnComplete
+  id: OnComplete
+  parent: WaveEngine.Framework.Services.VideoPlayer
+  langs:
+  - csharp
+  - vb
+  name: OnComplete
+  nameWithType: VideoPlayer.OnComplete
+  fullName: WaveEngine.Framework.Services.VideoPlayer.OnComplete
+  type: Event
+  source:
+    id: OnComplete
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\VideoPlayer.cs
+    startLine: 160
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nEvent fired when the video play is completed\n"
+  example: []
+  syntax:
+    content: public event EventHandler OnComplete
+    return:
+      type: System.EventHandler
+    content.vb: Public Event OnComplete As EventHandler
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.VideoPlayer.OnError
+  commentId: E:WaveEngine.Framework.Services.VideoPlayer.OnError
+  id: OnError
+  parent: WaveEngine.Framework.Services.VideoPlayer
+  langs:
+  - csharp
+  - vb
+  name: OnError
+  nameWithType: VideoPlayer.OnError
+  fullName: WaveEngine.Framework.Services.VideoPlayer.OnError
+  type: Event
+  source:
+    id: OnError
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\VideoPlayer.cs
+    startLine: 169
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nEvent fired when the video play has errors\n"
+  example: []
+  syntax:
+    content: public event EventHandler OnError
+    return:
+      type: System.EventHandler
+    content.vb: Public Event OnError As EventHandler
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.VideoPlayer.OnVideoTexture
+  commentId: E:WaveEngine.Framework.Services.VideoPlayer.OnVideoTexture
+  id: OnVideoTexture
+  parent: WaveEngine.Framework.Services.VideoPlayer
+  langs:
+  - csharp
+  - vb
+  name: OnVideoTexture
+  nameWithType: VideoPlayer.OnVideoTexture
+  fullName: WaveEngine.Framework.Services.VideoPlayer.OnVideoTexture
+  type: Event
+  source:
+    id: OnVideoTexture
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\VideoPlayer.cs
+    startLine: 178
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nEvent fired when the video texture is updated\n"
+  example: []
+  syntax:
+    content: public event EventHandler OnVideoTexture
+    return:
+      type: System.EventHandler
+    content.vb: Public Event OnVideoTexture As EventHandler
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.VideoPlayer.#ctor(WaveEngine.Common.Media.IVideoPlayer)
+  commentId: M:WaveEngine.Framework.Services.VideoPlayer.#ctor(WaveEngine.Common.Media.IVideoPlayer)
+  id: '#ctor(WaveEngine.Common.Media.IVideoPlayer)'
+  parent: WaveEngine.Framework.Services.VideoPlayer
+  langs:
+  - csharp
+  - vb
+  name: VideoPlayer(IVideoPlayer)
+  nameWithType: VideoPlayer.VideoPlayer(IVideoPlayer)
+  fullName: WaveEngine.Framework.Services.VideoPlayer.VideoPlayer(WaveEngine.Common.Media.IVideoPlayer)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\VideoPlayer.cs
+    startLine: 192
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Framework.Services.VideoPlayer\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public VideoPlayer(IVideoPlayer videoPlayer)
+    parameters:
+    - id: videoPlayer
+      type: WaveEngine.Common.Media.IVideoPlayer
+      description: The specific <xref href="WaveEngine.Common.Media.IMusicPlayer" data-throw-if-not-resolved="false"></xref> the application is using.
+    content.vb: Public Sub New(videoPlayer As IVideoPlayer)
+  overload: WaveEngine.Framework.Services.VideoPlayer.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If videoPlayer is null.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.VideoPlayer.Initialize
+  commentId: M:WaveEngine.Framework.Services.VideoPlayer.Initialize
+  id: Initialize
+  parent: WaveEngine.Framework.Services.VideoPlayer
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: VideoPlayer.Initialize()
+  fullName: WaveEngine.Framework.Services.VideoPlayer.Initialize()
+  type: Method
+  source:
+    id: Initialize
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\VideoPlayer.cs
+    startLine: 200
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nAllows to execute custom logic during the initialization of this instance.\n"
+  example: []
+  syntax:
+    content: protected override void Initialize()
+    content.vb: Protected Overrides Sub Initialize
+  overridden: WaveEngine.Common.Service.Initialize
+  overload: WaveEngine.Framework.Services.VideoPlayer.Initialize*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Services.VideoPlayer.Terminate
+  commentId: M:WaveEngine.Framework.Services.VideoPlayer.Terminate
+  id: Terminate
+  parent: WaveEngine.Framework.Services.VideoPlayer
+  langs:
+  - csharp
+  - vb
+  name: Terminate()
+  nameWithType: VideoPlayer.Terminate()
+  fullName: WaveEngine.Framework.Services.VideoPlayer.Terminate()
+  type: Method
+  source:
+    id: Terminate
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\VideoPlayer.cs
+    startLine: 207
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nAllow to execute custom logic during the finalization of this instance.\n"
+  example: []
+  syntax:
+    content: protected override void Terminate()
+    content.vb: Protected Overrides Sub Terminate
+  overridden: WaveEngine.Common.Service.Terminate
+  overload: WaveEngine.Framework.Services.VideoPlayer.Terminate*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Services.VideoPlayer.Play(WaveEngine.Common.Media.VideoInfo)
+  commentId: M:WaveEngine.Framework.Services.VideoPlayer.Play(WaveEngine.Common.Media.VideoInfo)
+  id: Play(WaveEngine.Common.Media.VideoInfo)
+  parent: WaveEngine.Framework.Services.VideoPlayer
+  langs:
+  - csharp
+  - vb
+  name: Play(VideoInfo)
+  nameWithType: VideoPlayer.Play(VideoInfo)
+  fullName: WaveEngine.Framework.Services.VideoPlayer.Play(WaveEngine.Common.Media.VideoInfo)
+  type: Method
+  source:
+    id: Play
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\VideoPlayer.cs
+    startLine: 219
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nPlays a video.\n"
+  example: []
+  syntax:
+    content: public void Play(VideoInfo video)
+    parameters:
+    - id: video
+      type: WaveEngine.Common.Media.VideoInfo
+      description: The video to play.
+    content.vb: Public Sub Play(video As VideoInfo)
+  overload: WaveEngine.Framework.Services.VideoPlayer.Play*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: If path is null or empty.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.VideoPlayer.Pause
+  commentId: M:WaveEngine.Framework.Services.VideoPlayer.Pause
+  id: Pause
+  parent: WaveEngine.Framework.Services.VideoPlayer
+  langs:
+  - csharp
+  - vb
+  name: Pause()
+  nameWithType: VideoPlayer.Pause()
+  fullName: WaveEngine.Framework.Services.VideoPlayer.Pause()
+  type: Method
+  source:
+    id: Pause
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\VideoPlayer.cs
+    startLine: 235
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nPauses a video.\n"
+  example: []
+  syntax:
+    content: public void Pause()
+    content.vb: Public Sub Pause
+  overload: WaveEngine.Framework.Services.VideoPlayer.Pause*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.VideoPlayer.Resume
+  commentId: M:WaveEngine.Framework.Services.VideoPlayer.Resume
+  id: Resume
+  parent: WaveEngine.Framework.Services.VideoPlayer
+  langs:
+  - csharp
+  - vb
+  name: Resume()
+  nameWithType: VideoPlayer.Resume()
+  fullName: WaveEngine.Framework.Services.VideoPlayer.Resume()
+  type: Method
+  source:
+    id: Resume
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\VideoPlayer.cs
+    startLine: 244
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nResumes a video.\n"
+  example: []
+  syntax:
+    content: public void Resume()
+    content.vb: Public Sub Resume
+  overload: WaveEngine.Framework.Services.VideoPlayer.Resume*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.VideoPlayer.Stop
+  commentId: M:WaveEngine.Framework.Services.VideoPlayer.Stop
+  id: Stop
+  parent: WaveEngine.Framework.Services.VideoPlayer
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: VideoPlayer.Stop()
+  fullName: WaveEngine.Framework.Services.VideoPlayer.Stop()
+  type: Method
+  source:
+    id: Stop
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\VideoPlayer.cs
+    startLine: 253
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nStop a video.\n"
+  example: []
+  syntax:
+    content: public void Stop()
+    content.vb: Public Sub Stop
+  overload: WaveEngine.Framework.Services.VideoPlayer.Stop*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.VideoPlayer.VideoInfoFromPath(System.String)
+  commentId: M:WaveEngine.Framework.Services.VideoPlayer.VideoInfoFromPath(System.String)
+  id: VideoInfoFromPath(System.String)
+  parent: WaveEngine.Framework.Services.VideoPlayer
+  langs:
+  - csharp
+  - vb
+  name: VideoInfoFromPath(String)
+  nameWithType: VideoPlayer.VideoInfoFromPath(String)
+  fullName: WaveEngine.Framework.Services.VideoPlayer.VideoInfoFromPath(System.String)
+  type: Method
+  source:
+    id: VideoInfoFromPath
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\VideoPlayer.cs
+    startLine: 264
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGets video info from path\n"
+  example: []
+  syntax:
+    content: public VideoInfo VideoInfoFromPath(string path)
+    parameters:
+    - id: path
+      type: System.String
+      description: video path
+    return:
+      type: WaveEngine.Common.Media.VideoInfo
+      description: Video info instance
+    content.vb: Public Function VideoInfoFromPath(path As String) As VideoInfo
+  overload: WaveEngine.Framework.Services.VideoPlayer.VideoInfoFromPath*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.VideoPlayer.Update(System.TimeSpan)
+  commentId: M:WaveEngine.Framework.Services.VideoPlayer.Update(System.TimeSpan)
+  id: Update(System.TimeSpan)
+  parent: WaveEngine.Framework.Services.VideoPlayer
+  langs:
+  - csharp
+  - vb
+  name: Update(TimeSpan)
+  nameWithType: VideoPlayer.Update(TimeSpan)
+  fullName: WaveEngine.Framework.Services.VideoPlayer.Update(System.TimeSpan)
+  type: Method
+  source:
+    id: Update
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\VideoPlayer.cs
+    startLine: 275
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nUpdate video player\n"
+  example: []
+  syntax:
+    content: public override void Update(TimeSpan gameTime)
+    parameters:
+    - id: gameTime
+      type: System.TimeSpan
+      description: game time
+    content.vb: Public Overrides Sub Update(gameTime As TimeSpan)
+  overridden: WaveEngine.Common.UpdatableService.Update(System.TimeSpan)
+  overload: WaveEngine.Framework.Services.VideoPlayer.Update*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: WaveEngine.Framework.Services
+  commentId: N:WaveEngine.Framework.Services
+  name: WaveEngine.Framework.Services
+  nameWithType: WaveEngine.Framework.Services
+  fullName: WaveEngine.Framework.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.IO.SerializableObject
+  commentId: T:WaveEngine.Common.IO.SerializableObject
+  parent: WaveEngine.Common.IO
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: WaveEngine.Common.IO.SerializableObject
+- uid: WaveEngine.Common.Service
+  commentId: T:WaveEngine.Common.Service
+  parent: WaveEngine.Common
+  name: Service
+  nameWithType: Service
+  fullName: WaveEngine.Common.Service
+- uid: WaveEngine.Common.UpdatableService
+  commentId: T:WaveEngine.Common.UpdatableService
+  parent: WaveEngine.Common
+  name: UpdatableService
+  nameWithType: UpdatableService
+  fullName: WaveEngine.Common.UpdatableService
+- uid: WaveEngine.Common.Service.IsInitialized
+  commentId: P:WaveEngine.Common.Service.IsInitialized
+  parent: WaveEngine.Common.Service
+  name: IsInitialized
+  nameWithType: Service.IsInitialized
+  fullName: WaveEngine.Common.Service.IsInitialized
+- uid: WaveEngine.Common.Service.IsTerminated
+  commentId: P:WaveEngine.Common.Service.IsTerminated
+  parent: WaveEngine.Common.Service
+  name: IsTerminated
+  nameWithType: Service.IsTerminated
+  fullName: WaveEngine.Common.Service.IsTerminated
+- uid: WaveEngine.Common.Service.BaseInitialize
+  commentId: M:WaveEngine.Common.Service.BaseInitialize
+  parent: WaveEngine.Common.Service
+  name: BaseInitialize()
+  nameWithType: Service.BaseInitialize()
+  fullName: WaveEngine.Common.Service.BaseInitialize()
+  spec.csharp:
+  - uid: WaveEngine.Common.Service.BaseInitialize
+    name: BaseInitialize
+    nameWithType: Service.BaseInitialize
+    fullName: WaveEngine.Common.Service.BaseInitialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Service.BaseInitialize
+    name: BaseInitialize
+    nameWithType: Service.BaseInitialize
+    fullName: WaveEngine.Common.Service.BaseInitialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Service.BaseTerminate
+  commentId: M:WaveEngine.Common.Service.BaseTerminate
+  parent: WaveEngine.Common.Service
+  name: BaseTerminate()
+  nameWithType: Service.BaseTerminate()
+  fullName: WaveEngine.Common.Service.BaseTerminate()
+  spec.csharp:
+  - uid: WaveEngine.Common.Service.BaseTerminate
+    name: BaseTerminate
+    nameWithType: Service.BaseTerminate
+    fullName: WaveEngine.Common.Service.BaseTerminate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Service.BaseTerminate
+    name: BaseTerminate
+    nameWithType: Service.BaseTerminate
+    fullName: WaveEngine.Common.Service.BaseTerminate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Service.OnActivated
+  commentId: M:WaveEngine.Common.Service.OnActivated
+  parent: WaveEngine.Common.Service
+  name: OnActivated()
+  nameWithType: Service.OnActivated()
+  fullName: WaveEngine.Common.Service.OnActivated()
+  spec.csharp:
+  - uid: WaveEngine.Common.Service.OnActivated
+    name: OnActivated
+    nameWithType: Service.OnActivated
+    fullName: WaveEngine.Common.Service.OnActivated
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Service.OnActivated
+    name: OnActivated
+    nameWithType: Service.OnActivated
+    fullName: WaveEngine.Common.Service.OnActivated
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Service.OnDeactivated
+  commentId: M:WaveEngine.Common.Service.OnDeactivated
+  parent: WaveEngine.Common.Service
+  name: OnDeactivated()
+  nameWithType: Service.OnDeactivated()
+  fullName: WaveEngine.Common.Service.OnDeactivated()
+  spec.csharp:
+  - uid: WaveEngine.Common.Service.OnDeactivated
+    name: OnDeactivated
+    nameWithType: Service.OnDeactivated
+    fullName: WaveEngine.Common.Service.OnDeactivated
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Service.OnDeactivated
+    name: OnDeactivated
+    nameWithType: Service.OnDeactivated
+    fullName: WaveEngine.Common.Service.OnDeactivated
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  commentId: M:WaveEngine.Common.IO.SerializableObject.DefaultValues
+  parent: WaveEngine.Common.IO.SerializableObject
+  name: DefaultValues()
+  nameWithType: SerializableObject.DefaultValues()
+  fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues()
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+    name: DefaultValues
+    nameWithType: SerializableObject.DefaultValues
+    fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+    name: DefaultValues
+    nameWithType: SerializableObject.DefaultValues
+    fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  commentId: M:WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  parent: WaveEngine.Common.IO.SerializableObject
+  isExternal: true
+  name: OnDeserializing(StreamingContext)
+  nameWithType: SerializableObject.OnDeserializing(StreamingContext)
+  fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.IO
+  commentId: N:WaveEngine.Common.IO
+  name: WaveEngine.Common.IO
+  nameWithType: WaveEngine.Common.IO
+  fullName: WaveEngine.Common.IO
+- uid: WaveEngine.Common
+  commentId: N:WaveEngine.Common
+  name: WaveEngine.Common
+  nameWithType: WaveEngine.Common
+  fullName: WaveEngine.Common
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Framework.Services.VideoPlayer.IsLooped*
+  commentId: Overload:WaveEngine.Framework.Services.VideoPlayer.IsLooped
+  name: IsLooped
+  nameWithType: VideoPlayer.IsLooped
+  fullName: WaveEngine.Framework.Services.VideoPlayer.IsLooped
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Framework.Services.VideoPlayer.IsMuted*
+  commentId: Overload:WaveEngine.Framework.Services.VideoPlayer.IsMuted
+  name: IsMuted
+  nameWithType: VideoPlayer.IsMuted
+  fullName: WaveEngine.Framework.Services.VideoPlayer.IsMuted
+- uid: WaveEngine.Framework.Services.VideoPlayer.Volume*
+  commentId: Overload:WaveEngine.Framework.Services.VideoPlayer.Volume
+  name: Volume
+  nameWithType: VideoPlayer.Volume
+  fullName: WaveEngine.Framework.Services.VideoPlayer.Volume
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Framework.Services.VideoPlayer.PlayPosition*
+  commentId: Overload:WaveEngine.Framework.Services.VideoPlayer.PlayPosition
+  name: PlayPosition
+  nameWithType: VideoPlayer.PlayPosition
+  fullName: WaveEngine.Framework.Services.VideoPlayer.PlayPosition
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: WaveEngine.Framework.Services.VideoPlayer.Video*
+  commentId: Overload:WaveEngine.Framework.Services.VideoPlayer.Video
+  name: Video
+  nameWithType: VideoPlayer.Video
+  fullName: WaveEngine.Framework.Services.VideoPlayer.Video
+- uid: WaveEngine.Common.Media.VideoInfo
+  commentId: T:WaveEngine.Common.Media.VideoInfo
+  parent: WaveEngine.Common.Media
+  name: VideoInfo
+  nameWithType: VideoInfo
+  fullName: WaveEngine.Common.Media.VideoInfo
+- uid: WaveEngine.Common.Media
+  commentId: N:WaveEngine.Common.Media
+  name: WaveEngine.Common.Media
+  nameWithType: WaveEngine.Common.Media
+  fullName: WaveEngine.Common.Media
+- uid: WaveEngine.Framework.Services.VideoPlayer.State*
+  commentId: Overload:WaveEngine.Framework.Services.VideoPlayer.State
+  name: State
+  nameWithType: VideoPlayer.State
+  fullName: WaveEngine.Framework.Services.VideoPlayer.State
+- uid: WaveEngine.Common.Media.VideoState
+  commentId: T:WaveEngine.Common.Media.VideoState
+  parent: WaveEngine.Common.Media
+  name: VideoState
+  nameWithType: VideoState
+  fullName: WaveEngine.Common.Media.VideoState
+- uid: WaveEngine.Framework.Services.VideoPlayer.VideoTexture*
+  commentId: Overload:WaveEngine.Framework.Services.VideoPlayer.VideoTexture
+  name: VideoTexture
+  nameWithType: VideoPlayer.VideoTexture
+  fullName: WaveEngine.Framework.Services.VideoPlayer.VideoTexture
+- uid: WaveEngine.Common.Graphics.VideoTexture
+  commentId: T:WaveEngine.Common.Graphics.VideoTexture
+  parent: WaveEngine.Common.Graphics
+  name: VideoTexture
+  nameWithType: VideoTexture
+  fullName: WaveEngine.Common.Graphics.VideoTexture
+- uid: WaveEngine.Common.Graphics
+  commentId: N:WaveEngine.Common.Graphics
+  name: WaveEngine.Common.Graphics
+  nameWithType: WaveEngine.Common.Graphics
+  fullName: WaveEngine.Common.Graphics
+- uid: WaveEngine.Framework.Services.VideoPlayer.IsVideoSupported*
+  commentId: Overload:WaveEngine.Framework.Services.VideoPlayer.IsVideoSupported
+  name: IsVideoSupported
+  nameWithType: VideoPlayer.IsVideoSupported
+  fullName: WaveEngine.Framework.Services.VideoPlayer.IsVideoSupported
+- uid: System.EventHandler
+  commentId: T:System.EventHandler
+  parent: System
+  isExternal: true
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
+- uid: WaveEngine.Framework.Services.VideoPlayer
+  commentId: T:WaveEngine.Framework.Services.VideoPlayer
+  parent: WaveEngine.Framework.Services
+  name: VideoPlayer
+  nameWithType: VideoPlayer
+  fullName: WaveEngine.Framework.Services.VideoPlayer
+- uid: WaveEngine.Common.Media.IMusicPlayer
+  commentId: T:WaveEngine.Common.Media.IMusicPlayer
+  parent: WaveEngine.Common.Media
+  name: IMusicPlayer
+  nameWithType: IMusicPlayer
+  fullName: WaveEngine.Common.Media.IMusicPlayer
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+- uid: WaveEngine.Framework.Services.VideoPlayer.#ctor*
+  commentId: Overload:WaveEngine.Framework.Services.VideoPlayer.#ctor
+  name: VideoPlayer
+  nameWithType: VideoPlayer.VideoPlayer
+  fullName: WaveEngine.Framework.Services.VideoPlayer.VideoPlayer
+- uid: WaveEngine.Common.Media.IVideoPlayer
+  commentId: T:WaveEngine.Common.Media.IVideoPlayer
+  parent: WaveEngine.Common.Media
+  name: IVideoPlayer
+  nameWithType: IVideoPlayer
+  fullName: WaveEngine.Common.Media.IVideoPlayer
+- uid: WaveEngine.Common.Service.Initialize
+  commentId: M:WaveEngine.Common.Service.Initialize
+  parent: WaveEngine.Common.Service
+  name: Initialize()
+  nameWithType: Service.Initialize()
+  fullName: WaveEngine.Common.Service.Initialize()
+  spec.csharp:
+  - uid: WaveEngine.Common.Service.Initialize
+    name: Initialize
+    nameWithType: Service.Initialize
+    fullName: WaveEngine.Common.Service.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Service.Initialize
+    name: Initialize
+    nameWithType: Service.Initialize
+    fullName: WaveEngine.Common.Service.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Services.VideoPlayer.Initialize*
+  commentId: Overload:WaveEngine.Framework.Services.VideoPlayer.Initialize
+  name: Initialize
+  nameWithType: VideoPlayer.Initialize
+  fullName: WaveEngine.Framework.Services.VideoPlayer.Initialize
+- uid: WaveEngine.Common.Service.Terminate
+  commentId: M:WaveEngine.Common.Service.Terminate
+  parent: WaveEngine.Common.Service
+  name: Terminate()
+  nameWithType: Service.Terminate()
+  fullName: WaveEngine.Common.Service.Terminate()
+  spec.csharp:
+  - uid: WaveEngine.Common.Service.Terminate
+    name: Terminate
+    nameWithType: Service.Terminate
+    fullName: WaveEngine.Common.Service.Terminate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Service.Terminate
+    name: Terminate
+    nameWithType: Service.Terminate
+    fullName: WaveEngine.Common.Service.Terminate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Services.VideoPlayer.Terminate*
+  commentId: Overload:WaveEngine.Framework.Services.VideoPlayer.Terminate
+  name: Terminate
+  nameWithType: VideoPlayer.Terminate
+  fullName: WaveEngine.Framework.Services.VideoPlayer.Terminate
+- uid: WaveEngine.Framework.Services.VideoPlayer.Play*
+  commentId: Overload:WaveEngine.Framework.Services.VideoPlayer.Play
+  name: Play
+  nameWithType: VideoPlayer.Play
+  fullName: WaveEngine.Framework.Services.VideoPlayer.Play
+- uid: WaveEngine.Framework.Services.VideoPlayer.Pause*
+  commentId: Overload:WaveEngine.Framework.Services.VideoPlayer.Pause
+  name: Pause
+  nameWithType: VideoPlayer.Pause
+  fullName: WaveEngine.Framework.Services.VideoPlayer.Pause
+- uid: WaveEngine.Framework.Services.VideoPlayer.Resume*
+  commentId: Overload:WaveEngine.Framework.Services.VideoPlayer.Resume
+  name: Resume
+  nameWithType: VideoPlayer.Resume
+  fullName: WaveEngine.Framework.Services.VideoPlayer.Resume
+- uid: WaveEngine.Framework.Services.VideoPlayer.Stop*
+  commentId: Overload:WaveEngine.Framework.Services.VideoPlayer.Stop
+  name: Stop
+  nameWithType: VideoPlayer.Stop
+  fullName: WaveEngine.Framework.Services.VideoPlayer.Stop
+- uid: WaveEngine.Framework.Services.VideoPlayer.VideoInfoFromPath*
+  commentId: Overload:WaveEngine.Framework.Services.VideoPlayer.VideoInfoFromPath
+  name: VideoInfoFromPath
+  nameWithType: VideoPlayer.VideoInfoFromPath
+  fullName: WaveEngine.Framework.Services.VideoPlayer.VideoInfoFromPath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: WaveEngine.Common.UpdatableService.Update(System.TimeSpan)
+  commentId: M:WaveEngine.Common.UpdatableService.Update(System.TimeSpan)
+  parent: WaveEngine.Common.UpdatableService
+  isExternal: true
+  name: Update(TimeSpan)
+  nameWithType: UpdatableService.Update(TimeSpan)
+  fullName: WaveEngine.Common.UpdatableService.Update(System.TimeSpan)
+  spec.csharp:
+  - uid: WaveEngine.Common.UpdatableService.Update(System.TimeSpan)
+    name: Update
+    nameWithType: UpdatableService.Update
+    fullName: WaveEngine.Common.UpdatableService.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.UpdatableService.Update(System.TimeSpan)
+    name: Update
+    nameWithType: UpdatableService.Update
+    fullName: WaveEngine.Common.UpdatableService.Update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Services.VideoPlayer.Update*
+  commentId: Overload:WaveEngine.Framework.Services.VideoPlayer.Update
+  name: Update
+  nameWithType: VideoPlayer.Update
+  fullName: WaveEngine.Framework.Services.VideoPlayer.Update

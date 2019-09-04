@@ -1,0 +1,656 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Common.Graphics.IShaderManager
+  commentId: T:WaveEngine.Common.Graphics.IShaderManager
+  id: IShaderManager
+  parent: WaveEngine.Common.Graphics
+  children:
+  - WaveEngine.Common.Graphics.IShaderManager.ApplyEffect(WaveEngine.Common.Graphics.Effect)
+  - WaveEngine.Common.Graphics.IShaderManager.CreateTechnique(WaveEngine.Common.Graphics.Effect,System.String,System.Byte[],System.Byte[],System.Byte[],WaveEngine.Common.Graphics.VertexBufferFormat,System.String[],System.String[],System.String[])
+  - WaveEngine.Common.Graphics.IShaderManager.CreateTechnique(WaveEngine.Common.Graphics.Effect,System.String,System.Byte[],System.Byte[],WaveEngine.Common.Graphics.VertexBufferFormat,System.String[],System.String[])
+  - WaveEngine.Common.Graphics.IShaderManager.CreateTechnique(WaveEngine.Common.Graphics.Effect,System.String,System.String,System.String,WaveEngine.Common.Graphics.VertexBufferFormat,System.String[],System.String[])
+  - WaveEngine.Common.Graphics.IShaderManager.GetShaderTechniqueFormat(WaveEngine.Common.Graphics.Effect,System.String)
+  - WaveEngine.Common.Graphics.IShaderManager.SetTexture(WaveEngine.Common.Graphics.Texture,System.Int32,WaveEngine.Common.Graphics.SamplerStateDescription,WaveEngine.Common.Graphics.TextureSlotUsage)
+  - WaveEngine.Common.Graphics.IShaderManager.TechniqueExists(WaveEngine.Common.Graphics.Effect,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IShaderManager
+  nameWithType: IShaderManager
+  fullName: WaveEngine.Common.Graphics.IShaderManager
+  type: Interface
+  source:
+    id: IShaderManager
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\IShaderManager.cs
+    startLine: 13
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nInterface for shader managers.\n"
+  example: []
+  syntax:
+    content: 'public interface IShaderManager : IDisposable'
+    content.vb: >-
+      Public Interface IShaderManager
+
+          Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: WaveEngine.Common.Graphics.IShaderManager.CreateTechnique(WaveEngine.Common.Graphics.Effect,System.String,System.Byte[],System.Byte[],WaveEngine.Common.Graphics.VertexBufferFormat,System.String[],System.String[])
+  commentId: M:WaveEngine.Common.Graphics.IShaderManager.CreateTechnique(WaveEngine.Common.Graphics.Effect,System.String,System.Byte[],System.Byte[],WaveEngine.Common.Graphics.VertexBufferFormat,System.String[],System.String[])
+  id: CreateTechnique(WaveEngine.Common.Graphics.Effect,System.String,System.Byte[],System.Byte[],WaveEngine.Common.Graphics.VertexBufferFormat,System.String[],System.String[])
+  parent: WaveEngine.Common.Graphics.IShaderManager
+  langs:
+  - csharp
+  - vb
+  name: CreateTechnique(Effect, String, Byte[], Byte[], VertexBufferFormat, String[], String[])
+  nameWithType: IShaderManager.CreateTechnique(Effect, String, Byte[], Byte[], VertexBufferFormat, String[], String[])
+  fullName: WaveEngine.Common.Graphics.IShaderManager.CreateTechnique(WaveEngine.Common.Graphics.Effect, System.String, System.Byte[], System.Byte[], WaveEngine.Common.Graphics.VertexBufferFormat, System.String[], System.String[])
+  type: Method
+  source:
+    id: CreateTechnique
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\IShaderManager.cs
+    startLine: 27
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nCreates the technique.\n"
+  example: []
+  syntax:
+    content: void CreateTechnique(Effect parentEffect, string techniqueName, byte[] vsSource, byte[] psSource, VertexBufferFormat vbLayout, string[] vertexShaderSymbols = null, string[] pixelShaderSymbols = null)
+    parameters:
+    - id: parentEffect
+      type: WaveEngine.Common.Graphics.Effect
+      description: The parent effect.
+    - id: techniqueName
+      type: System.String
+      description: Name of the technique.
+    - id: vsSource
+      type: System.Byte[]
+      description: The vs source.
+    - id: psSource
+      type: System.Byte[]
+      description: The ps source.
+    - id: vbLayout
+      type: WaveEngine.Common.Graphics.VertexBufferFormat
+      description: The vb layout.
+    - id: vertexShaderSymbols
+      type: System.String[]
+      description: The technique preprocessor symbols
+    - id: pixelShaderSymbols
+      type: System.String[]
+      description: The pixel shader technique preprocessor symbols
+    content.vb: Sub CreateTechnique(parentEffect As Effect, techniqueName As String, vsSource As Byte(), psSource As Byte(), vbLayout As VertexBufferFormat, vertexShaderSymbols As String() = Nothing, pixelShaderSymbols As String() = Nothing)
+  overload: WaveEngine.Common.Graphics.IShaderManager.CreateTechnique*
+  nameWithType.vb: IShaderManager.CreateTechnique(Effect, String, Byte(), Byte(), VertexBufferFormat, String(), String())
+  fullName.vb: WaveEngine.Common.Graphics.IShaderManager.CreateTechnique(WaveEngine.Common.Graphics.Effect, System.String, System.Byte(), System.Byte(), WaveEngine.Common.Graphics.VertexBufferFormat, System.String(), System.String())
+  name.vb: CreateTechnique(Effect, String, Byte(), Byte(), VertexBufferFormat, String(), String())
+- uid: WaveEngine.Common.Graphics.IShaderManager.CreateTechnique(WaveEngine.Common.Graphics.Effect,System.String,System.Byte[],System.Byte[],System.Byte[],WaveEngine.Common.Graphics.VertexBufferFormat,System.String[],System.String[],System.String[])
+  commentId: M:WaveEngine.Common.Graphics.IShaderManager.CreateTechnique(WaveEngine.Common.Graphics.Effect,System.String,System.Byte[],System.Byte[],System.Byte[],WaveEngine.Common.Graphics.VertexBufferFormat,System.String[],System.String[],System.String[])
+  id: CreateTechnique(WaveEngine.Common.Graphics.Effect,System.String,System.Byte[],System.Byte[],System.Byte[],WaveEngine.Common.Graphics.VertexBufferFormat,System.String[],System.String[],System.String[])
+  parent: WaveEngine.Common.Graphics.IShaderManager
+  langs:
+  - csharp
+  - vb
+  name: CreateTechnique(Effect, String, Byte[], Byte[], Byte[], VertexBufferFormat, String[], String[], String[])
+  nameWithType: IShaderManager.CreateTechnique(Effect, String, Byte[], Byte[], Byte[], VertexBufferFormat, String[], String[], String[])
+  fullName: WaveEngine.Common.Graphics.IShaderManager.CreateTechnique(WaveEngine.Common.Graphics.Effect, System.String, System.Byte[], System.Byte[], System.Byte[], WaveEngine.Common.Graphics.VertexBufferFormat, System.String[], System.String[], System.String[])
+  type: Method
+  source:
+    id: CreateTechnique
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\IShaderManager.cs
+    startLine: 41
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nCreates the technique.\n"
+  example: []
+  syntax:
+    content: void CreateTechnique(Effect parentEffect, string techniqueName, byte[] vsSource, byte[] psSource, byte[] gsSource, VertexBufferFormat vbLayout, string[] vertexShaderSymbols = null, string[] pixelShaderSymbols = null, string[] geometryShaderSymbols = null)
+    parameters:
+    - id: parentEffect
+      type: WaveEngine.Common.Graphics.Effect
+      description: The parent effect.
+    - id: techniqueName
+      type: System.String
+      description: Name of the technique.
+    - id: vsSource
+      type: System.Byte[]
+      description: The vs source.
+    - id: psSource
+      type: System.Byte[]
+      description: The ps source.
+    - id: gsSource
+      type: System.Byte[]
+      description: The gs source.
+    - id: vbLayout
+      type: WaveEngine.Common.Graphics.VertexBufferFormat
+      description: The vb layout.
+    - id: vertexShaderSymbols
+      type: System.String[]
+      description: The technique preprocessor symbols
+    - id: pixelShaderSymbols
+      type: System.String[]
+      description: The pixel shader technique preprocessor symbols
+    - id: geometryShaderSymbols
+      type: System.String[]
+      description: The geometry shader technique preprocessor symbols
+    content.vb: Sub CreateTechnique(parentEffect As Effect, techniqueName As String, vsSource As Byte(), psSource As Byte(), gsSource As Byte(), vbLayout As VertexBufferFormat, vertexShaderSymbols As String() = Nothing, pixelShaderSymbols As String() = Nothing, geometryShaderSymbols As String() = Nothing)
+  overload: WaveEngine.Common.Graphics.IShaderManager.CreateTechnique*
+  nameWithType.vb: IShaderManager.CreateTechnique(Effect, String, Byte(), Byte(), Byte(), VertexBufferFormat, String(), String(), String())
+  fullName.vb: WaveEngine.Common.Graphics.IShaderManager.CreateTechnique(WaveEngine.Common.Graphics.Effect, System.String, System.Byte(), System.Byte(), System.Byte(), WaveEngine.Common.Graphics.VertexBufferFormat, System.String(), System.String(), System.String())
+  name.vb: CreateTechnique(Effect, String, Byte(), Byte(), Byte(), VertexBufferFormat, String(), String(), String())
+- uid: WaveEngine.Common.Graphics.IShaderManager.CreateTechnique(WaveEngine.Common.Graphics.Effect,System.String,System.String,System.String,WaveEngine.Common.Graphics.VertexBufferFormat,System.String[],System.String[])
+  commentId: M:WaveEngine.Common.Graphics.IShaderManager.CreateTechnique(WaveEngine.Common.Graphics.Effect,System.String,System.String,System.String,WaveEngine.Common.Graphics.VertexBufferFormat,System.String[],System.String[])
+  id: CreateTechnique(WaveEngine.Common.Graphics.Effect,System.String,System.String,System.String,WaveEngine.Common.Graphics.VertexBufferFormat,System.String[],System.String[])
+  parent: WaveEngine.Common.Graphics.IShaderManager
+  langs:
+  - csharp
+  - vb
+  name: CreateTechnique(Effect, String, String, String, VertexBufferFormat, String[], String[])
+  nameWithType: IShaderManager.CreateTechnique(Effect, String, String, String, VertexBufferFormat, String[], String[])
+  fullName: WaveEngine.Common.Graphics.IShaderManager.CreateTechnique(WaveEngine.Common.Graphics.Effect, System.String, System.String, System.String, WaveEngine.Common.Graphics.VertexBufferFormat, System.String[], System.String[])
+  type: Method
+  source:
+    id: CreateTechnique
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\IShaderManager.cs
+    startLine: 53
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nCreates the technique.\n"
+  example: []
+  syntax:
+    content: void CreateTechnique(Effect parentEffect, string techniqueName, string vsSource, string psSource, VertexBufferFormat vbLayout, string[] vertexShaderSymbols = null, string[] pixelShaderSymbols = null)
+    parameters:
+    - id: parentEffect
+      type: WaveEngine.Common.Graphics.Effect
+      description: The parent effect.
+    - id: techniqueName
+      type: System.String
+      description: Name of the technique.
+    - id: vsSource
+      type: System.String
+      description: The vs source.
+    - id: psSource
+      type: System.String
+      description: The ps source.
+    - id: vbLayout
+      type: WaveEngine.Common.Graphics.VertexBufferFormat
+      description: The vb layout.
+    - id: vertexShaderSymbols
+      type: System.String[]
+      description: The technique preprocessor symbols
+    - id: pixelShaderSymbols
+      type: System.String[]
+      description: The pixel shader technique preprocessor symbols
+    content.vb: Sub CreateTechnique(parentEffect As Effect, techniqueName As String, vsSource As String, psSource As String, vbLayout As VertexBufferFormat, vertexShaderSymbols As String() = Nothing, pixelShaderSymbols As String() = Nothing)
+  overload: WaveEngine.Common.Graphics.IShaderManager.CreateTechnique*
+  nameWithType.vb: IShaderManager.CreateTechnique(Effect, String, String, String, VertexBufferFormat, String(), String())
+  fullName.vb: WaveEngine.Common.Graphics.IShaderManager.CreateTechnique(WaveEngine.Common.Graphics.Effect, System.String, System.String, System.String, WaveEngine.Common.Graphics.VertexBufferFormat, System.String(), System.String())
+  name.vb: CreateTechnique(Effect, String, String, String, VertexBufferFormat, String(), String())
+- uid: WaveEngine.Common.Graphics.IShaderManager.TechniqueExists(WaveEngine.Common.Graphics.Effect,System.String)
+  commentId: M:WaveEngine.Common.Graphics.IShaderManager.TechniqueExists(WaveEngine.Common.Graphics.Effect,System.String)
+  id: TechniqueExists(WaveEngine.Common.Graphics.Effect,System.String)
+  parent: WaveEngine.Common.Graphics.IShaderManager
+  langs:
+  - csharp
+  - vb
+  name: TechniqueExists(Effect, String)
+  nameWithType: IShaderManager.TechniqueExists(Effect, String)
+  fullName: WaveEngine.Common.Graphics.IShaderManager.TechniqueExists(WaveEngine.Common.Graphics.Effect, System.String)
+  type: Method
+  source:
+    id: TechniqueExists
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\IShaderManager.cs
+    startLine: 61
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nTechniques the exists.\n"
+  example: []
+  syntax:
+    content: bool TechniqueExists(Effect effect, string techniqueName)
+    parameters:
+    - id: effect
+      type: WaveEngine.Common.Graphics.Effect
+      description: The effect.
+    - id: techniqueName
+      type: System.String
+      description: Name of the technique.
+    return:
+      type: System.Boolean
+      description: true if the technique exists.
+    content.vb: Function TechniqueExists(effect As Effect, techniqueName As String) As Boolean
+  overload: WaveEngine.Common.Graphics.IShaderManager.TechniqueExists*
+- uid: WaveEngine.Common.Graphics.IShaderManager.GetShaderTechniqueFormat(WaveEngine.Common.Graphics.Effect,System.String)
+  commentId: M:WaveEngine.Common.Graphics.IShaderManager.GetShaderTechniqueFormat(WaveEngine.Common.Graphics.Effect,System.String)
+  id: GetShaderTechniqueFormat(WaveEngine.Common.Graphics.Effect,System.String)
+  parent: WaveEngine.Common.Graphics.IShaderManager
+  langs:
+  - csharp
+  - vb
+  name: GetShaderTechniqueFormat(Effect, String)
+  nameWithType: IShaderManager.GetShaderTechniqueFormat(Effect, String)
+  fullName: WaveEngine.Common.Graphics.IShaderManager.GetShaderTechniqueFormat(WaveEngine.Common.Graphics.Effect, System.String)
+  type: Method
+  source:
+    id: GetShaderTechniqueFormat
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\IShaderManager.cs
+    startLine: 69
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nReturn the shaderTechnique.\n"
+  example: []
+  syntax:
+    content: VertexBufferFormat GetShaderTechniqueFormat(Effect effect, string techniqueName)
+    parameters:
+    - id: effect
+      type: WaveEngine.Common.Graphics.Effect
+      description: The effect.
+    - id: techniqueName
+      type: System.String
+      description: Name of the technique.
+    return:
+      type: WaveEngine.Common.Graphics.VertexBufferFormat
+      description: The vertex format associated to the technique.
+    content.vb: Function GetShaderTechniqueFormat(effect As Effect, techniqueName As String) As VertexBufferFormat
+  overload: WaveEngine.Common.Graphics.IShaderManager.GetShaderTechniqueFormat*
+- uid: WaveEngine.Common.Graphics.IShaderManager.ApplyEffect(WaveEngine.Common.Graphics.Effect)
+  commentId: M:WaveEngine.Common.Graphics.IShaderManager.ApplyEffect(WaveEngine.Common.Graphics.Effect)
+  id: ApplyEffect(WaveEngine.Common.Graphics.Effect)
+  parent: WaveEngine.Common.Graphics.IShaderManager
+  langs:
+  - csharp
+  - vb
+  name: ApplyEffect(Effect)
+  nameWithType: IShaderManager.ApplyEffect(Effect)
+  fullName: WaveEngine.Common.Graphics.IShaderManager.ApplyEffect(WaveEngine.Common.Graphics.Effect)
+  type: Method
+  source:
+    id: ApplyEffect
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\IShaderManager.cs
+    startLine: 75
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nApplies the pass.\n"
+  example: []
+  syntax:
+    content: void ApplyEffect(Effect shader)
+    parameters:
+    - id: shader
+      type: WaveEngine.Common.Graphics.Effect
+      description: The shader.
+    content.vb: Sub ApplyEffect(shader As Effect)
+  overload: WaveEngine.Common.Graphics.IShaderManager.ApplyEffect*
+- uid: WaveEngine.Common.Graphics.IShaderManager.SetTexture(WaveEngine.Common.Graphics.Texture,System.Int32,WaveEngine.Common.Graphics.SamplerStateDescription,WaveEngine.Common.Graphics.TextureSlotUsage)
+  commentId: M:WaveEngine.Common.Graphics.IShaderManager.SetTexture(WaveEngine.Common.Graphics.Texture,System.Int32,WaveEngine.Common.Graphics.SamplerStateDescription,WaveEngine.Common.Graphics.TextureSlotUsage)
+  id: SetTexture(WaveEngine.Common.Graphics.Texture,System.Int32,WaveEngine.Common.Graphics.SamplerStateDescription,WaveEngine.Common.Graphics.TextureSlotUsage)
+  parent: WaveEngine.Common.Graphics.IShaderManager
+  langs:
+  - csharp
+  - vb
+  name: SetTexture(Texture, Int32, SamplerStateDescription, TextureSlotUsage)
+  nameWithType: IShaderManager.SetTexture(Texture, Int32, SamplerStateDescription, TextureSlotUsage)
+  fullName: WaveEngine.Common.Graphics.IShaderManager.SetTexture(WaveEngine.Common.Graphics.Texture, System.Int32, WaveEngine.Common.Graphics.SamplerStateDescription, WaveEngine.Common.Graphics.TextureSlotUsage)
+  type: Method
+  source:
+    id: SetTexture
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\IShaderManager.cs
+    startLine: 84
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nSets the texture.\n"
+  example: []
+  syntax:
+    content: void SetTexture(Texture texture, int slot, SamplerStateDescription samplerState, TextureSlotUsage textureUsage)
+    parameters:
+    - id: texture
+      type: WaveEngine.Common.Graphics.Texture
+      description: The texture.
+    - id: slot
+      type: System.Int32
+      description: The slot.
+    - id: samplerState
+      type: WaveEngine.Common.Graphics.SamplerStateDescription
+      description: The sampler state used to this texture.
+    - id: textureUsage
+      type: WaveEngine.Common.Graphics.TextureSlotUsage
+      description: The texture usage
+    content.vb: Sub SetTexture(texture As Texture, slot As Integer, samplerState As SamplerStateDescription, textureUsage As TextureSlotUsage)
+  overload: WaveEngine.Common.Graphics.IShaderManager.SetTexture*
+references:
+- uid: WaveEngine.Common.Graphics
+  commentId: N:WaveEngine.Common.Graphics
+  name: WaveEngine.Common.Graphics
+  nameWithType: WaveEngine.Common.Graphics
+  fullName: WaveEngine.Common.Graphics
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Common.Graphics.IShaderManager.CreateTechnique*
+  commentId: Overload:WaveEngine.Common.Graphics.IShaderManager.CreateTechnique
+  name: CreateTechnique
+  nameWithType: IShaderManager.CreateTechnique
+  fullName: WaveEngine.Common.Graphics.IShaderManager.CreateTechnique
+- uid: WaveEngine.Common.Graphics.Effect
+  commentId: T:WaveEngine.Common.Graphics.Effect
+  parent: WaveEngine.Common.Graphics
+  name: Effect
+  nameWithType: Effect
+  fullName: WaveEngine.Common.Graphics.Effect
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: WaveEngine.Common.Graphics.VertexBufferFormat
+  commentId: T:WaveEngine.Common.Graphics.VertexBufferFormat
+  parent: WaveEngine.Common.Graphics
+  name: VertexBufferFormat
+  nameWithType: VertexBufferFormat
+  fullName: WaveEngine.Common.Graphics.VertexBufferFormat
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: WaveEngine.Common.Graphics.IShaderManager.TechniqueExists*
+  commentId: Overload:WaveEngine.Common.Graphics.IShaderManager.TechniqueExists
+  name: TechniqueExists
+  nameWithType: IShaderManager.TechniqueExists
+  fullName: WaveEngine.Common.Graphics.IShaderManager.TechniqueExists
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Common.Graphics.IShaderManager.GetShaderTechniqueFormat*
+  commentId: Overload:WaveEngine.Common.Graphics.IShaderManager.GetShaderTechniqueFormat
+  name: GetShaderTechniqueFormat
+  nameWithType: IShaderManager.GetShaderTechniqueFormat
+  fullName: WaveEngine.Common.Graphics.IShaderManager.GetShaderTechniqueFormat
+- uid: WaveEngine.Common.Graphics.IShaderManager.ApplyEffect*
+  commentId: Overload:WaveEngine.Common.Graphics.IShaderManager.ApplyEffect
+  name: ApplyEffect
+  nameWithType: IShaderManager.ApplyEffect
+  fullName: WaveEngine.Common.Graphics.IShaderManager.ApplyEffect
+- uid: WaveEngine.Common.Graphics.IShaderManager.SetTexture*
+  commentId: Overload:WaveEngine.Common.Graphics.IShaderManager.SetTexture
+  name: SetTexture
+  nameWithType: IShaderManager.SetTexture
+  fullName: WaveEngine.Common.Graphics.IShaderManager.SetTexture
+- uid: WaveEngine.Common.Graphics.Texture
+  commentId: T:WaveEngine.Common.Graphics.Texture
+  parent: WaveEngine.Common.Graphics
+  name: Texture
+  nameWithType: Texture
+  fullName: WaveEngine.Common.Graphics.Texture
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: WaveEngine.Common.Graphics.SamplerStateDescription
+  commentId: T:WaveEngine.Common.Graphics.SamplerStateDescription
+  parent: WaveEngine.Common.Graphics
+  name: SamplerStateDescription
+  nameWithType: SamplerStateDescription
+  fullName: WaveEngine.Common.Graphics.SamplerStateDescription
+- uid: WaveEngine.Common.Graphics.TextureSlotUsage
+  commentId: T:WaveEngine.Common.Graphics.TextureSlotUsage
+  parent: WaveEngine.Common.Graphics
+  name: TextureSlotUsage
+  nameWithType: TextureSlotUsage
+  fullName: WaveEngine.Common.Graphics.TextureSlotUsage

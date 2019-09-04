@@ -1,0 +1,2445 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D
+  commentId: T:WaveEngine.Framework.Physics3D.MeshCollider3D
+  id: MeshCollider3D
+  parent: WaveEngine.Framework.Physics3D
+  children:
+  - WaveEngine.Framework.Physics3D.MeshCollider3D.AddShapeToRigidBody
+  - WaveEngine.Framework.Physics3D.MeshCollider3D.BaseCreateColliderShape
+  - WaveEngine.Framework.Physics3D.MeshCollider3D.CreateColliderShape3D_T
+  - WaveEngine.Framework.Physics3D.MeshCollider3D.DefaultValues
+  - WaveEngine.Framework.Physics3D.MeshCollider3D.Dispose
+  - WaveEngine.Framework.Physics3D.MeshCollider3D.Initialize
+  - WaveEngine.Framework.Physics3D.MeshCollider3D.IsConvex
+  - WaveEngine.Framework.Physics3D.MeshCollider3D.OnModelRefreshed
+  - WaveEngine.Framework.Physics3D.MeshCollider3D.OrientationOffset
+  - WaveEngine.Framework.Physics3D.MeshCollider3D.RefreshHierarchyTransform
+  - WaveEngine.Framework.Physics3D.MeshCollider3D.RefreshShapeDimensions
+  - WaveEngine.Framework.Physics3D.MeshCollider3D.RotationOffset
+  - WaveEngine.Framework.Physics3D.MeshCollider3D.Size
+  langs:
+  - csharp
+  - vb
+  name: MeshCollider3D
+  nameWithType: MeshCollider3D
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D
+  type: Class
+  source:
+    id: MeshCollider3D
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Colliders\MeshCollider3D.cs
+    startLine: 22
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nRigidBody3D enable your entities to act under the control of physics. The Rigidbody can receive forces and torque\nto make your objects move in a realistic way.\nAny entity must contain a Rigidbody to be influenced by gravity, act under added forces or interact with other objects\nthrough physics engine.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract(Namespace = "WaveEngine.Framework.Physics3D")]
+
+      public class MeshCollider3D : Collider3D<IMeshColliderShape3D>, IDisposable
+    content.vb: >-
+      <DataContract(Namespace:="WaveEngine.Framework.Physics3D")>
+
+      Public Class MeshCollider3D
+
+          Inherits Collider3D(Of IMeshColliderShape3D)
+
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - WaveEngine.Common.IO.SerializableObject
+  - WaveEngine.Framework.DependencyObject
+  - WaveEngine.Framework.Component
+  - WaveEngine.Framework.Physics3D.Collider3D
+  - WaveEngine.Framework.Physics3D.Collider3D{WaveEngine.Common.Physics3D.IMeshColliderShape3D}
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - WaveEngine.Framework.Physics3D.Collider3D{WaveEngine.Common.Physics3D.IMeshColliderShape3D}.physicColliderShape
+  - WaveEngine.Framework.Physics3D.Collider3D{WaveEngine.Common.Physics3D.IMeshColliderShape3D}.InternalColliderShape
+  - WaveEngine.Framework.Physics3D.Collider3D{WaveEngine.Common.Physics3D.IMeshColliderShape3D}.CreateColliderShape3D
+  - WaveEngine.Framework.Physics3D.Collider3D.MinSize
+  - WaveEngine.Framework.Physics3D.Collider3D.physicBody
+  - WaveEngine.Framework.Physics3D.Collider3D.offset
+  - WaveEngine.Framework.Physics3D.Collider3D.transform3D
+  - WaveEngine.Framework.Physics3D.Collider3D.usedTransform
+  - WaveEngine.Framework.Physics3D.Collider3D.model
+  - WaveEngine.Framework.Physics3D.Collider3D.margin
+  - WaveEngine.Framework.Physics3D.Collider3D.PhysicBody
+  - WaveEngine.Framework.Physics3D.Collider3D.Margin
+  - WaveEngine.Framework.Physics3D.Collider3D.Offset
+  - WaveEngine.Framework.Physics3D.Collider3D.OffsetTransform
+  - WaveEngine.Framework.Physics3D.Collider3D.PointTest(WaveEngine.Common.Math.Vector3)
+  - WaveEngine.Framework.Physics3D.Collider3D.ResolveDependencies
+  - WaveEngine.Framework.Physics3D.Collider3D.DeleteDependencies
+  - WaveEngine.Framework.Physics3D.Collider3D.SweepTest(WaveEngine.Common.Math.Vector3,System.Single,WaveEngine.Common.Physics3D.CollisionCategory3D)
+  - WaveEngine.Framework.Physics3D.Collider3D.SweepTestAll(WaveEngine.Common.Math.Vector3,System.Single,System.Collections.Generic.IList{WaveEngine.Common.Physics3D.HitResult3D},WaveEngine.Common.Physics3D.CollisionCategory3D)
+  - WaveEngine.Framework.Physics3D.Collider3D.RemoveCollider
+  - WaveEngine.Framework.Physics3D.Collider3D.RefreshOffsetTransform(WaveEngine.Common.Math.Vector3)
+  - WaveEngine.Framework.Physics3D.Collider3D.RefreshOffsetTransform(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Quaternion,System.Boolean)
+  - WaveEngine.Framework.Component.isInitialized
+  - WaveEngine.Framework.Component.OnComponentInitialized
+  - WaveEngine.Framework.Component.OnComponentRemoved
+  - WaveEngine.Framework.Component.Name
+  - WaveEngine.Framework.Component.Owner
+  - WaveEngine.Framework.Component.Assets
+  - WaveEngine.Framework.Component.EntityManager
+  - WaveEngine.Framework.Component.BehaviorManager
+  - WaveEngine.Framework.Component.RenderManager
+  - WaveEngine.Framework.Component.Clone
+  - WaveEngine.Framework.Component.ToString
+  - WaveEngine.Framework.Component.Removed
+  - WaveEngine.Framework.DependencyObject.PropertyChanged
+  - WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  - WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  - WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  - WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Namespace
+      type: System.String
+      value: WaveEngine.Framework.Physics3D
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.IsConvex
+  commentId: P:WaveEngine.Framework.Physics3D.MeshCollider3D.IsConvex
+  id: IsConvex
+  parent: WaveEngine.Framework.Physics3D.MeshCollider3D
+  langs:
+  - csharp
+  - vb
+  name: IsConvex
+  nameWithType: MeshCollider3D.IsConvex
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.IsConvex
+  type: Property
+  source:
+    id: IsConvex
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Colliders\MeshCollider3D.cs
+    startLine: 60
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nGets or sets a value indicating whether you\n"
+  example: []
+  syntax:
+    content: public bool IsConvex { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsConvex As Boolean
+  overload: WaveEngine.Framework.Physics3D.MeshCollider3D.IsConvex*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.Size
+  commentId: P:WaveEngine.Framework.Physics3D.MeshCollider3D.Size
+  id: Size
+  parent: WaveEngine.Framework.Physics3D.MeshCollider3D
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: MeshCollider3D.Size
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.Size
+  type: Property
+  source:
+    id: Size
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Colliders\MeshCollider3D.cs
+    startLine: 76
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nGets or sets the size of the box collider\n"
+  example: []
+  syntax:
+    content: public Vector3 Size { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Math.Vector3
+    content.vb: Public Property Size As Vector3
+  overload: WaveEngine.Framework.Physics3D.MeshCollider3D.Size*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.OrientationOffset
+  commentId: P:WaveEngine.Framework.Physics3D.MeshCollider3D.OrientationOffset
+  id: OrientationOffset
+  parent: WaveEngine.Framework.Physics3D.MeshCollider3D
+  langs:
+  - csharp
+  - vb
+  name: OrientationOffset
+  nameWithType: MeshCollider3D.OrientationOffset
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.OrientationOffset
+  type: Property
+  source:
+    id: OrientationOffset
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Colliders\MeshCollider3D.cs
+    startLine: 93
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nGets or sets the orientation\n"
+  example: []
+  syntax:
+    content: public Quaternion OrientationOffset { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Math.Quaternion
+    content.vb: Public Property OrientationOffset As Quaternion
+  overload: WaveEngine.Framework.Physics3D.MeshCollider3D.OrientationOffset*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.RotationOffset
+  commentId: P:WaveEngine.Framework.Physics3D.MeshCollider3D.RotationOffset
+  id: RotationOffset
+  parent: WaveEngine.Framework.Physics3D.MeshCollider3D
+  langs:
+  - csharp
+  - vb
+  name: RotationOffset
+  nameWithType: MeshCollider3D.RotationOffset
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.RotationOffset
+  type: Property
+  source:
+    id: RotationOffset
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Colliders\MeshCollider3D.cs
+    startLine: 111
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nGets or sets the orientation\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(typeof(Vector3RadianToDegreeConverter))]
+
+      public Vector3 RotationOffset { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Math.Vector3
+    content.vb: >-
+      <RenderProperty(GetType(Vector3RadianToDegreeConverter))>
+
+      Public Property RotationOffset As Vector3
+  overload: WaveEngine.Framework.Physics3D.MeshCollider3D.RotationOffset*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: WaveEngine.Common.Attributes.Converters.Vector3RadianToDegreeConverter
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.DefaultValues
+  commentId: M:WaveEngine.Framework.Physics3D.MeshCollider3D.DefaultValues
+  id: DefaultValues
+  parent: WaveEngine.Framework.Physics3D.MeshCollider3D
+  langs:
+  - csharp
+  - vb
+  name: DefaultValues()
+  nameWithType: MeshCollider3D.DefaultValues()
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.DefaultValues()
+  type: Method
+  source:
+    id: DefaultValues
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Colliders\MeshCollider3D.cs
+    startLine: 131
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nSets the default values\n"
+  example: []
+  syntax:
+    content: protected override void DefaultValues()
+    content.vb: Protected Overrides Sub DefaultValues
+  overridden: WaveEngine.Framework.Physics3D.Collider3D{WaveEngine.Common.Physics3D.IMeshColliderShape3D}.DefaultValues
+  overload: WaveEngine.Framework.Physics3D.MeshCollider3D.DefaultValues*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.Initialize
+  commentId: M:WaveEngine.Framework.Physics3D.MeshCollider3D.Initialize
+  id: Initialize
+  parent: WaveEngine.Framework.Physics3D.MeshCollider3D
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: MeshCollider3D.Initialize()
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.Initialize()
+  type: Method
+  source:
+    id: Initialize
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Colliders\MeshCollider3D.cs
+    startLine: 145
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nInitialize the app\n"
+  example: []
+  syntax:
+    content: protected override void Initialize()
+    content.vb: Protected Overrides Sub Initialize
+  overridden: WaveEngine.Framework.Physics3D.Collider3D.Initialize
+  overload: WaveEngine.Framework.Physics3D.MeshCollider3D.Initialize*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.AddShapeToRigidBody
+  commentId: M:WaveEngine.Framework.Physics3D.MeshCollider3D.AddShapeToRigidBody
+  id: AddShapeToRigidBody
+  parent: WaveEngine.Framework.Physics3D.MeshCollider3D
+  langs:
+  - csharp
+  - vb
+  name: AddShapeToRigidBody()
+  nameWithType: MeshCollider3D.AddShapeToRigidBody()
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.AddShapeToRigidBody()
+  type: Method
+  source:
+    id: AddShapeToRigidBody
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Colliders\MeshCollider3D.cs
+    startLine: 156
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nAdds the shape to the rigid body\n"
+  example: []
+  syntax:
+    content: protected override void AddShapeToRigidBody()
+    content.vb: Protected Overrides Sub AddShapeToRigidBody
+  overridden: WaveEngine.Framework.Physics3D.Collider3D.AddShapeToRigidBody
+  overload: WaveEngine.Framework.Physics3D.MeshCollider3D.AddShapeToRigidBody*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.BaseCreateColliderShape
+  commentId: M:WaveEngine.Framework.Physics3D.MeshCollider3D.BaseCreateColliderShape
+  id: BaseCreateColliderShape
+  parent: WaveEngine.Framework.Physics3D.MeshCollider3D
+  langs:
+  - csharp
+  - vb
+  name: BaseCreateColliderShape()
+  nameWithType: MeshCollider3D.BaseCreateColliderShape()
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.BaseCreateColliderShape()
+  type: Method
+  source:
+    id: BaseCreateColliderShape
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Colliders\MeshCollider3D.cs
+    startLine: 167
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nBase method to create a collider shape\n"
+  example: []
+  syntax:
+    content: protected override void BaseCreateColliderShape()
+    content.vb: Protected Overrides Sub BaseCreateColliderShape
+  overridden: WaveEngine.Framework.Physics3D.Collider3D.BaseCreateColliderShape
+  overload: WaveEngine.Framework.Physics3D.MeshCollider3D.BaseCreateColliderShape*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.CreateColliderShape3D_T
+  commentId: M:WaveEngine.Framework.Physics3D.MeshCollider3D.CreateColliderShape3D_T
+  id: CreateColliderShape3D_T
+  parent: WaveEngine.Framework.Physics3D.MeshCollider3D
+  langs:
+  - csharp
+  - vb
+  name: CreateColliderShape3D_T()
+  nameWithType: MeshCollider3D.CreateColliderShape3D_T()
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.CreateColliderShape3D_T()
+  type: Method
+  source:
+    id: CreateColliderShape3D_T
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Colliders\MeshCollider3D.cs
+    startLine: 194
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nCreates the physic object.\n"
+  example: []
+  syntax:
+    content: protected override IMeshColliderShape3D CreateColliderShape3D_T()
+    return:
+      type: WaveEngine.Common.Physics3D.IMeshColliderShape3D
+      description: A new physics object.
+    content.vb: Protected Overrides Function CreateColliderShape3D_T As IMeshColliderShape3D
+  overridden: WaveEngine.Framework.Physics3D.Collider3D{WaveEngine.Common.Physics3D.IMeshColliderShape3D}.CreateColliderShape3D_T
+  overload: WaveEngine.Framework.Physics3D.MeshCollider3D.CreateColliderShape3D_T*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.Dispose
+  commentId: M:WaveEngine.Framework.Physics3D.MeshCollider3D.Dispose
+  id: Dispose
+  parent: WaveEngine.Framework.Physics3D.MeshCollider3D
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: MeshCollider3D.Dispose()
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Colliders\MeshCollider3D.cs
+    startLine: 218
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nDispose this instance\n"
+  example: []
+  syntax:
+    content: public override void Dispose()
+    content.vb: Public Overrides Sub Dispose
+  overridden: WaveEngine.Framework.Physics3D.Collider3D.Dispose
+  overload: WaveEngine.Framework.Physics3D.MeshCollider3D.Dispose*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.OnModelRefreshed
+  commentId: M:WaveEngine.Framework.Physics3D.MeshCollider3D.OnModelRefreshed
+  id: OnModelRefreshed
+  parent: WaveEngine.Framework.Physics3D.MeshCollider3D
+  langs:
+  - csharp
+  - vb
+  name: OnModelRefreshed()
+  nameWithType: MeshCollider3D.OnModelRefreshed()
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.OnModelRefreshed()
+  type: Method
+  source:
+    id: OnModelRefreshed
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Colliders\MeshCollider3D.cs
+    startLine: 233
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nThe model is refreshed, so we need to recreate the models\n"
+  example: []
+  syntax:
+    content: protected override void OnModelRefreshed()
+    content.vb: Protected Overrides Sub OnModelRefreshed
+  overridden: WaveEngine.Framework.Physics3D.Collider3D.OnModelRefreshed
+  overload: WaveEngine.Framework.Physics3D.MeshCollider3D.OnModelRefreshed*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.RefreshShapeDimensions
+  commentId: M:WaveEngine.Framework.Physics3D.MeshCollider3D.RefreshShapeDimensions
+  id: RefreshShapeDimensions
+  parent: WaveEngine.Framework.Physics3D.MeshCollider3D
+  langs:
+  - csharp
+  - vb
+  name: RefreshShapeDimensions()
+  nameWithType: MeshCollider3D.RefreshShapeDimensions()
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.RefreshShapeDimensions()
+  type: Method
+  source:
+    id: RefreshShapeDimensions
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Colliders\MeshCollider3D.cs
+    startLine: 279
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nRefresh the shape dimensions\n"
+  example: []
+  syntax:
+    content: protected override void RefreshShapeDimensions()
+    content.vb: Protected Overrides Sub RefreshShapeDimensions
+  overridden: WaveEngine.Framework.Physics3D.Collider3D.RefreshShapeDimensions
+  overload: WaveEngine.Framework.Physics3D.MeshCollider3D.RefreshShapeDimensions*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.RefreshHierarchyTransform
+  commentId: M:WaveEngine.Framework.Physics3D.MeshCollider3D.RefreshHierarchyTransform
+  id: RefreshHierarchyTransform
+  parent: WaveEngine.Framework.Physics3D.MeshCollider3D
+  langs:
+  - csharp
+  - vb
+  name: RefreshHierarchyTransform()
+  nameWithType: MeshCollider3D.RefreshHierarchyTransform()
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.RefreshHierarchyTransform()
+  type: Method
+  source:
+    id: RefreshHierarchyTransform
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Colliders\MeshCollider3D.cs
+    startLine: 311
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nRefresh the hierarchy transform\n"
+  example: []
+  syntax:
+    content: protected override void RefreshHierarchyTransform()
+    content.vb: Protected Overrides Sub RefreshHierarchyTransform
+  overridden: WaveEngine.Framework.Physics3D.Collider3D.RefreshHierarchyTransform
+  overload: WaveEngine.Framework.Physics3D.MeshCollider3D.RefreshHierarchyTransform*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: WaveEngine.Framework.Physics3D
+  commentId: N:WaveEngine.Framework.Physics3D
+  name: WaveEngine.Framework.Physics3D
+  nameWithType: WaveEngine.Framework.Physics3D
+  fullName: WaveEngine.Framework.Physics3D
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.IO.SerializableObject
+  commentId: T:WaveEngine.Common.IO.SerializableObject
+  parent: WaveEngine.Common.IO
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: WaveEngine.Common.IO.SerializableObject
+- uid: WaveEngine.Framework.DependencyObject
+  commentId: T:WaveEngine.Framework.DependencyObject
+  parent: WaveEngine.Framework
+  name: DependencyObject
+  nameWithType: DependencyObject
+  fullName: WaveEngine.Framework.DependencyObject
+- uid: WaveEngine.Framework.Component
+  commentId: T:WaveEngine.Framework.Component
+  parent: WaveEngine.Framework
+  name: Component
+  nameWithType: Component
+  fullName: WaveEngine.Framework.Component
+- uid: WaveEngine.Framework.Physics3D.Collider3D
+  commentId: T:WaveEngine.Framework.Physics3D.Collider3D
+  parent: WaveEngine.Framework.Physics3D
+  name: Collider3D
+  nameWithType: Collider3D
+  fullName: WaveEngine.Framework.Physics3D.Collider3D
+- uid: WaveEngine.Framework.Physics3D.Collider3D{WaveEngine.Common.Physics3D.IMeshColliderShape3D}
+  commentId: T:WaveEngine.Framework.Physics3D.Collider3D{WaveEngine.Common.Physics3D.IMeshColliderShape3D}
+  parent: WaveEngine.Framework.Physics3D
+  definition: WaveEngine.Framework.Physics3D.Collider3D`1
+  name: Collider3D<IMeshColliderShape3D>
+  nameWithType: Collider3D<IMeshColliderShape3D>
+  fullName: WaveEngine.Framework.Physics3D.Collider3D<WaveEngine.Common.Physics3D.IMeshColliderShape3D>
+  nameWithType.vb: Collider3D(Of IMeshColliderShape3D)
+  fullName.vb: WaveEngine.Framework.Physics3D.Collider3D(Of WaveEngine.Common.Physics3D.IMeshColliderShape3D)
+  name.vb: Collider3D(Of IMeshColliderShape3D)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D`1
+    name: Collider3D
+    nameWithType: Collider3D
+    fullName: WaveEngine.Framework.Physics3D.Collider3D
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Common.Physics3D.IMeshColliderShape3D
+    name: IMeshColliderShape3D
+    nameWithType: IMeshColliderShape3D
+    fullName: WaveEngine.Common.Physics3D.IMeshColliderShape3D
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D`1
+    name: Collider3D
+    nameWithType: Collider3D
+    fullName: WaveEngine.Framework.Physics3D.Collider3D
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Common.Physics3D.IMeshColliderShape3D
+    name: IMeshColliderShape3D
+    nameWithType: IMeshColliderShape3D
+    fullName: WaveEngine.Common.Physics3D.IMeshColliderShape3D
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: WaveEngine.Framework.Physics3D.Collider3D{WaveEngine.Common.Physics3D.IMeshColliderShape3D}.physicColliderShape
+  commentId: F:WaveEngine.Framework.Physics3D.Collider3D{WaveEngine.Common.Physics3D.IMeshColliderShape3D}.physicColliderShape
+  parent: WaveEngine.Framework.Physics3D.Collider3D{WaveEngine.Common.Physics3D.IMeshColliderShape3D}
+  definition: WaveEngine.Framework.Physics3D.Collider3D`1.physicColliderShape
+  name: physicColliderShape
+  nameWithType: Collider3D<IMeshColliderShape3D>.physicColliderShape
+  fullName: WaveEngine.Framework.Physics3D.Collider3D<WaveEngine.Common.Physics3D.IMeshColliderShape3D>.physicColliderShape
+  nameWithType.vb: Collider3D(Of IMeshColliderShape3D).physicColliderShape
+  fullName.vb: WaveEngine.Framework.Physics3D.Collider3D(Of WaveEngine.Common.Physics3D.IMeshColliderShape3D).physicColliderShape
+- uid: WaveEngine.Framework.Physics3D.Collider3D{WaveEngine.Common.Physics3D.IMeshColliderShape3D}.InternalColliderShape
+  commentId: P:WaveEngine.Framework.Physics3D.Collider3D{WaveEngine.Common.Physics3D.IMeshColliderShape3D}.InternalColliderShape
+  parent: WaveEngine.Framework.Physics3D.Collider3D{WaveEngine.Common.Physics3D.IMeshColliderShape3D}
+  definition: WaveEngine.Framework.Physics3D.Collider3D`1.InternalColliderShape
+  name: InternalColliderShape
+  nameWithType: Collider3D<IMeshColliderShape3D>.InternalColliderShape
+  fullName: WaveEngine.Framework.Physics3D.Collider3D<WaveEngine.Common.Physics3D.IMeshColliderShape3D>.InternalColliderShape
+  nameWithType.vb: Collider3D(Of IMeshColliderShape3D).InternalColliderShape
+  fullName.vb: WaveEngine.Framework.Physics3D.Collider3D(Of WaveEngine.Common.Physics3D.IMeshColliderShape3D).InternalColliderShape
+- uid: WaveEngine.Framework.Physics3D.Collider3D{WaveEngine.Common.Physics3D.IMeshColliderShape3D}.CreateColliderShape3D
+  commentId: M:WaveEngine.Framework.Physics3D.Collider3D{WaveEngine.Common.Physics3D.IMeshColliderShape3D}.CreateColliderShape3D
+  parent: WaveEngine.Framework.Physics3D.Collider3D{WaveEngine.Common.Physics3D.IMeshColliderShape3D}
+  definition: WaveEngine.Framework.Physics3D.Collider3D`1.CreateColliderShape3D
+  name: CreateColliderShape3D()
+  nameWithType: Collider3D<IMeshColliderShape3D>.CreateColliderShape3D()
+  fullName: WaveEngine.Framework.Physics3D.Collider3D<WaveEngine.Common.Physics3D.IMeshColliderShape3D>.CreateColliderShape3D()
+  nameWithType.vb: Collider3D(Of IMeshColliderShape3D).CreateColliderShape3D()
+  fullName.vb: WaveEngine.Framework.Physics3D.Collider3D(Of WaveEngine.Common.Physics3D.IMeshColliderShape3D).CreateColliderShape3D()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D`1.CreateColliderShape3D
+    name: CreateColliderShape3D
+    nameWithType: Collider3D<IMeshColliderShape3D>.CreateColliderShape3D
+    fullName: WaveEngine.Framework.Physics3D.Collider3D<WaveEngine.Common.Physics3D.IMeshColliderShape3D>.CreateColliderShape3D
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D`1.CreateColliderShape3D
+    name: CreateColliderShape3D
+    nameWithType: Collider3D(Of IMeshColliderShape3D).CreateColliderShape3D
+    fullName: WaveEngine.Framework.Physics3D.Collider3D(Of WaveEngine.Common.Physics3D.IMeshColliderShape3D).CreateColliderShape3D
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Collider3D.MinSize
+  commentId: F:WaveEngine.Framework.Physics3D.Collider3D.MinSize
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  name: MinSize
+  nameWithType: Collider3D.MinSize
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.MinSize
+- uid: WaveEngine.Framework.Physics3D.Collider3D.physicBody
+  commentId: F:WaveEngine.Framework.Physics3D.Collider3D.physicBody
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  name: physicBody
+  nameWithType: Collider3D.physicBody
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.physicBody
+- uid: WaveEngine.Framework.Physics3D.Collider3D.offset
+  commentId: F:WaveEngine.Framework.Physics3D.Collider3D.offset
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  name: offset
+  nameWithType: Collider3D.offset
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.offset
+- uid: WaveEngine.Framework.Physics3D.Collider3D.transform3D
+  commentId: F:WaveEngine.Framework.Physics3D.Collider3D.transform3D
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  name: transform3D
+  nameWithType: Collider3D.transform3D
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.transform3D
+- uid: WaveEngine.Framework.Physics3D.Collider3D.usedTransform
+  commentId: F:WaveEngine.Framework.Physics3D.Collider3D.usedTransform
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  name: usedTransform
+  nameWithType: Collider3D.usedTransform
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.usedTransform
+- uid: WaveEngine.Framework.Physics3D.Collider3D.model
+  commentId: F:WaveEngine.Framework.Physics3D.Collider3D.model
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  name: model
+  nameWithType: Collider3D.model
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.model
+- uid: WaveEngine.Framework.Physics3D.Collider3D.margin
+  commentId: F:WaveEngine.Framework.Physics3D.Collider3D.margin
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  name: margin
+  nameWithType: Collider3D.margin
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.margin
+- uid: WaveEngine.Framework.Physics3D.Collider3D.PhysicBody
+  commentId: P:WaveEngine.Framework.Physics3D.Collider3D.PhysicBody
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  name: PhysicBody
+  nameWithType: Collider3D.PhysicBody
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.PhysicBody
+- uid: WaveEngine.Framework.Physics3D.Collider3D.Margin
+  commentId: P:WaveEngine.Framework.Physics3D.Collider3D.Margin
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  name: Margin
+  nameWithType: Collider3D.Margin
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.Margin
+- uid: WaveEngine.Framework.Physics3D.Collider3D.Offset
+  commentId: P:WaveEngine.Framework.Physics3D.Collider3D.Offset
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  name: Offset
+  nameWithType: Collider3D.Offset
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.Offset
+- uid: WaveEngine.Framework.Physics3D.Collider3D.OffsetTransform
+  commentId: P:WaveEngine.Framework.Physics3D.Collider3D.OffsetTransform
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  name: OffsetTransform
+  nameWithType: Collider3D.OffsetTransform
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.OffsetTransform
+- uid: WaveEngine.Framework.Physics3D.Collider3D.PointTest(WaveEngine.Common.Math.Vector3)
+  commentId: M:WaveEngine.Framework.Physics3D.Collider3D.PointTest(WaveEngine.Common.Math.Vector3)
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  name: PointTest(Vector3)
+  nameWithType: Collider3D.PointTest(Vector3)
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.PointTest(WaveEngine.Common.Math.Vector3)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.PointTest(WaveEngine.Common.Math.Vector3)
+    name: PointTest
+    nameWithType: Collider3D.PointTest
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.PointTest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.PointTest(WaveEngine.Common.Math.Vector3)
+    name: PointTest
+    nameWithType: Collider3D.PointTest
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.PointTest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Collider3D.ResolveDependencies
+  commentId: M:WaveEngine.Framework.Physics3D.Collider3D.ResolveDependencies
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  name: ResolveDependencies()
+  nameWithType: Collider3D.ResolveDependencies()
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.ResolveDependencies()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.ResolveDependencies
+    name: ResolveDependencies
+    nameWithType: Collider3D.ResolveDependencies
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.ResolveDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.ResolveDependencies
+    name: ResolveDependencies
+    nameWithType: Collider3D.ResolveDependencies
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.ResolveDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Collider3D.DeleteDependencies
+  commentId: M:WaveEngine.Framework.Physics3D.Collider3D.DeleteDependencies
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  name: DeleteDependencies()
+  nameWithType: Collider3D.DeleteDependencies()
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.DeleteDependencies()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Collider3D.DeleteDependencies
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Collider3D.DeleteDependencies
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Collider3D.SweepTest(WaveEngine.Common.Math.Vector3,System.Single,WaveEngine.Common.Physics3D.CollisionCategory3D)
+  commentId: M:WaveEngine.Framework.Physics3D.Collider3D.SweepTest(WaveEngine.Common.Math.Vector3,System.Single,WaveEngine.Common.Physics3D.CollisionCategory3D)
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  isExternal: true
+  name: SweepTest(Vector3, Single, CollisionCategory3D)
+  nameWithType: Collider3D.SweepTest(Vector3, Single, CollisionCategory3D)
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.SweepTest(WaveEngine.Common.Math.Vector3, System.Single, WaveEngine.Common.Physics3D.CollisionCategory3D)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.SweepTest(WaveEngine.Common.Math.Vector3,System.Single,WaveEngine.Common.Physics3D.CollisionCategory3D)
+    name: SweepTest
+    nameWithType: Collider3D.SweepTest
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.SweepTest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Physics3D.CollisionCategory3D
+    name: CollisionCategory3D
+    nameWithType: CollisionCategory3D
+    fullName: WaveEngine.Common.Physics3D.CollisionCategory3D
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.SweepTest(WaveEngine.Common.Math.Vector3,System.Single,WaveEngine.Common.Physics3D.CollisionCategory3D)
+    name: SweepTest
+    nameWithType: Collider3D.SweepTest
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.SweepTest
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Physics3D.CollisionCategory3D
+    name: CollisionCategory3D
+    nameWithType: CollisionCategory3D
+    fullName: WaveEngine.Common.Physics3D.CollisionCategory3D
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Collider3D.SweepTestAll(WaveEngine.Common.Math.Vector3,System.Single,System.Collections.Generic.IList{WaveEngine.Common.Physics3D.HitResult3D},WaveEngine.Common.Physics3D.CollisionCategory3D)
+  commentId: M:WaveEngine.Framework.Physics3D.Collider3D.SweepTestAll(WaveEngine.Common.Math.Vector3,System.Single,System.Collections.Generic.IList{WaveEngine.Common.Physics3D.HitResult3D},WaveEngine.Common.Physics3D.CollisionCategory3D)
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  isExternal: true
+  name: SweepTestAll(Vector3, Single, IList<HitResult3D>, CollisionCategory3D)
+  nameWithType: Collider3D.SweepTestAll(Vector3, Single, IList<HitResult3D>, CollisionCategory3D)
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.SweepTestAll(WaveEngine.Common.Math.Vector3, System.Single, System.Collections.Generic.IList<WaveEngine.Common.Physics3D.HitResult3D>, WaveEngine.Common.Physics3D.CollisionCategory3D)
+  nameWithType.vb: Collider3D.SweepTestAll(Vector3, Single, IList(Of HitResult3D), CollisionCategory3D)
+  fullName.vb: WaveEngine.Framework.Physics3D.Collider3D.SweepTestAll(WaveEngine.Common.Math.Vector3, System.Single, System.Collections.Generic.IList(Of WaveEngine.Common.Physics3D.HitResult3D), WaveEngine.Common.Physics3D.CollisionCategory3D)
+  name.vb: SweepTestAll(Vector3, Single, IList(Of HitResult3D), CollisionCategory3D)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.SweepTestAll(WaveEngine.Common.Math.Vector3,System.Single,System.Collections.Generic.IList{WaveEngine.Common.Physics3D.HitResult3D},WaveEngine.Common.Physics3D.CollisionCategory3D)
+    name: SweepTestAll
+    nameWithType: Collider3D.SweepTestAll
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.SweepTestAll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Common.Physics3D.HitResult3D
+    name: HitResult3D
+    nameWithType: HitResult3D
+    fullName: WaveEngine.Common.Physics3D.HitResult3D
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Physics3D.CollisionCategory3D
+    name: CollisionCategory3D
+    nameWithType: CollisionCategory3D
+    fullName: WaveEngine.Common.Physics3D.CollisionCategory3D
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.SweepTestAll(WaveEngine.Common.Math.Vector3,System.Single,System.Collections.Generic.IList{WaveEngine.Common.Physics3D.HitResult3D},WaveEngine.Common.Physics3D.CollisionCategory3D)
+    name: SweepTestAll
+    nameWithType: Collider3D.SweepTestAll
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.SweepTestAll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Common.Physics3D.HitResult3D
+    name: HitResult3D
+    nameWithType: HitResult3D
+    fullName: WaveEngine.Common.Physics3D.HitResult3D
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Physics3D.CollisionCategory3D
+    name: CollisionCategory3D
+    nameWithType: CollisionCategory3D
+    fullName: WaveEngine.Common.Physics3D.CollisionCategory3D
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Collider3D.RemoveCollider
+  commentId: M:WaveEngine.Framework.Physics3D.Collider3D.RemoveCollider
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  name: RemoveCollider()
+  nameWithType: Collider3D.RemoveCollider()
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.RemoveCollider()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.RemoveCollider
+    name: RemoveCollider
+    nameWithType: Collider3D.RemoveCollider
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.RemoveCollider
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.RemoveCollider
+    name: RemoveCollider
+    nameWithType: Collider3D.RemoveCollider
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.RemoveCollider
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Collider3D.RefreshOffsetTransform(WaveEngine.Common.Math.Vector3)
+  commentId: M:WaveEngine.Framework.Physics3D.Collider3D.RefreshOffsetTransform(WaveEngine.Common.Math.Vector3)
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  name: RefreshOffsetTransform(Vector3)
+  nameWithType: Collider3D.RefreshOffsetTransform(Vector3)
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.RefreshOffsetTransform(WaveEngine.Common.Math.Vector3)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.RefreshOffsetTransform(WaveEngine.Common.Math.Vector3)
+    name: RefreshOffsetTransform
+    nameWithType: Collider3D.RefreshOffsetTransform
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.RefreshOffsetTransform
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.RefreshOffsetTransform(WaveEngine.Common.Math.Vector3)
+    name: RefreshOffsetTransform
+    nameWithType: Collider3D.RefreshOffsetTransform
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.RefreshOffsetTransform
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Collider3D.RefreshOffsetTransform(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Quaternion,System.Boolean)
+  commentId: M:WaveEngine.Framework.Physics3D.Collider3D.RefreshOffsetTransform(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Quaternion,System.Boolean)
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  isExternal: true
+  name: RefreshOffsetTransform(Vector3, Quaternion, Boolean)
+  nameWithType: Collider3D.RefreshOffsetTransform(Vector3, Quaternion, Boolean)
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.RefreshOffsetTransform(WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Quaternion, System.Boolean)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.RefreshOffsetTransform(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Quaternion,System.Boolean)
+    name: RefreshOffsetTransform
+    nameWithType: Collider3D.RefreshOffsetTransform
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.RefreshOffsetTransform
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: WaveEngine.Common.Math.Quaternion
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.RefreshOffsetTransform(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Quaternion,System.Boolean)
+    name: RefreshOffsetTransform
+    nameWithType: Collider3D.RefreshOffsetTransform
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.RefreshOffsetTransform
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: WaveEngine.Common.Math.Quaternion
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.isInitialized
+  commentId: F:WaveEngine.Framework.Component.isInitialized
+  parent: WaveEngine.Framework.Component
+  name: isInitialized
+  nameWithType: Component.isInitialized
+  fullName: WaveEngine.Framework.Component.isInitialized
+- uid: WaveEngine.Framework.Component.OnComponentInitialized
+  commentId: E:WaveEngine.Framework.Component.OnComponentInitialized
+  parent: WaveEngine.Framework.Component
+  name: OnComponentInitialized
+  nameWithType: Component.OnComponentInitialized
+  fullName: WaveEngine.Framework.Component.OnComponentInitialized
+- uid: WaveEngine.Framework.Component.OnComponentRemoved
+  commentId: E:WaveEngine.Framework.Component.OnComponentRemoved
+  parent: WaveEngine.Framework.Component
+  name: OnComponentRemoved
+  nameWithType: Component.OnComponentRemoved
+  fullName: WaveEngine.Framework.Component.OnComponentRemoved
+- uid: WaveEngine.Framework.Component.Name
+  commentId: P:WaveEngine.Framework.Component.Name
+  parent: WaveEngine.Framework.Component
+  name: Name
+  nameWithType: Component.Name
+  fullName: WaveEngine.Framework.Component.Name
+- uid: WaveEngine.Framework.Component.Owner
+  commentId: P:WaveEngine.Framework.Component.Owner
+  parent: WaveEngine.Framework.Component
+  name: Owner
+  nameWithType: Component.Owner
+  fullName: WaveEngine.Framework.Component.Owner
+- uid: WaveEngine.Framework.Component.Assets
+  commentId: P:WaveEngine.Framework.Component.Assets
+  parent: WaveEngine.Framework.Component
+  name: Assets
+  nameWithType: Component.Assets
+  fullName: WaveEngine.Framework.Component.Assets
+- uid: WaveEngine.Framework.Component.EntityManager
+  commentId: P:WaveEngine.Framework.Component.EntityManager
+  parent: WaveEngine.Framework.Component
+  name: EntityManager
+  nameWithType: Component.EntityManager
+  fullName: WaveEngine.Framework.Component.EntityManager
+- uid: WaveEngine.Framework.Component.BehaviorManager
+  commentId: P:WaveEngine.Framework.Component.BehaviorManager
+  parent: WaveEngine.Framework.Component
+  name: BehaviorManager
+  nameWithType: Component.BehaviorManager
+  fullName: WaveEngine.Framework.Component.BehaviorManager
+- uid: WaveEngine.Framework.Component.RenderManager
+  commentId: P:WaveEngine.Framework.Component.RenderManager
+  parent: WaveEngine.Framework.Component
+  name: RenderManager
+  nameWithType: Component.RenderManager
+  fullName: WaveEngine.Framework.Component.RenderManager
+- uid: WaveEngine.Framework.Component.Clone
+  commentId: M:WaveEngine.Framework.Component.Clone
+  parent: WaveEngine.Framework.Component
+  name: Clone()
+  nameWithType: Component.Clone()
+  fullName: WaveEngine.Framework.Component.Clone()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Clone
+    name: Clone
+    nameWithType: Component.Clone
+    fullName: WaveEngine.Framework.Component.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Clone
+    name: Clone
+    nameWithType: Component.Clone
+    fullName: WaveEngine.Framework.Component.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.ToString
+  commentId: M:WaveEngine.Framework.Component.ToString
+  parent: WaveEngine.Framework.Component
+  name: ToString()
+  nameWithType: Component.ToString()
+  fullName: WaveEngine.Framework.Component.ToString()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: WaveEngine.Framework.Component.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: WaveEngine.Framework.Component.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.Removed
+  commentId: M:WaveEngine.Framework.Component.Removed
+  parent: WaveEngine.Framework.Component
+  name: Removed()
+  nameWithType: Component.Removed()
+  fullName: WaveEngine.Framework.Component.Removed()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Removed
+    name: Removed
+    nameWithType: Component.Removed
+    fullName: WaveEngine.Framework.Component.Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Removed
+    name: Removed
+    nameWithType: Component.Removed
+    fullName: WaveEngine.Framework.Component.Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.PropertyChanged
+  commentId: E:WaveEngine.Framework.DependencyObject.PropertyChanged
+  parent: WaveEngine.Framework.DependencyObject
+  name: PropertyChanged
+  nameWithType: DependencyObject.PropertyChanged
+  fullName: WaveEngine.Framework.DependencyObject.PropertyChanged
+- uid: WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  commentId: P:WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  parent: WaveEngine.Framework.DependencyObject
+  name: ParentDependencyObject
+  nameWithType: DependencyObject.ParentDependencyObject
+  fullName: WaveEngine.Framework.DependencyObject.ParentDependencyObject
+- uid: WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  commentId: P:WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  parent: WaveEngine.Framework.DependencyObject
+  name: EnableDiagnosticCallback
+  nameWithType: DependencyObject.EnableDiagnosticCallback
+  fullName: WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+- uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  commentId: M:WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  parent: WaveEngine.Framework.DependencyObject
+  isExternal: true
+  name: SetValue(DependencyProperty, Object)
+  nameWithType: DependencyObject.SetValue(DependencyProperty, Object)
+  fullName: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty, System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+    name: SetValue
+    nameWithType: DependencyObject.SetValue
+    fullName: WaveEngine.Framework.DependencyObject.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+    name: SetValue
+    nameWithType: DependencyObject.SetValue
+    fullName: WaveEngine.Framework.DependencyObject.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: GetValue(DependencyProperty)
+  nameWithType: DependencyObject.GetValue(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+    name: GetValue
+    nameWithType: DependencyObject.GetValue
+    fullName: WaveEngine.Framework.DependencyObject.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+    name: GetValue
+    nameWithType: DependencyObject.GetValue
+    fullName: WaveEngine.Framework.DependencyObject.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: GetAbsoluteValue<T>(DependencyProperty)
+  nameWithType: DependencyObject.GetAbsoluteValue<T>(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue<T>(WaveEngine.Framework.DependencyProperty)
+  nameWithType.vb: DependencyObject.GetAbsoluteValue(Of T)(DependencyProperty)
+  fullName.vb: WaveEngine.Framework.DependencyObject.GetAbsoluteValue(Of T)(WaveEngine.Framework.DependencyProperty)
+  name.vb: GetAbsoluteValue(Of T)(DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+    name: GetAbsoluteValue<T>
+    nameWithType: DependencyObject.GetAbsoluteValue<T>
+    fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+    name: GetAbsoluteValue(Of T)
+    nameWithType: DependencyObject.GetAbsoluteValue(Of T)
+    fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: ClearValue(DependencyProperty)
+  nameWithType: DependencyObject.ClearValue(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+    name: ClearValue
+    nameWithType: DependencyObject.ClearValue
+    fullName: WaveEngine.Framework.DependencyObject.ClearValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+    name: ClearValue
+    nameWithType: DependencyObject.ClearValue
+    fullName: WaveEngine.Framework.DependencyObject.ClearValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: IsValueSet(DependencyProperty)
+  nameWithType: DependencyObject.IsValueSet(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+    name: IsValueSet
+    nameWithType: DependencyObject.IsValueSet
+    fullName: WaveEngine.Framework.DependencyObject.IsValueSet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+    name: IsValueSet
+    nameWithType: DependencyObject.IsValueSet
+    fullName: WaveEngine.Framework.DependencyObject.IsValueSet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  commentId: M:WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  parent: WaveEngine.Common.IO.SerializableObject
+  isExternal: true
+  name: OnDeserializing(StreamingContext)
+  nameWithType: SerializableObject.OnDeserializing(StreamingContext)
+  fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.IO
+  commentId: N:WaveEngine.Common.IO
+  name: WaveEngine.Common.IO
+  nameWithType: WaveEngine.Common.IO
+  fullName: WaveEngine.Common.IO
+- uid: WaveEngine.Framework
+  commentId: N:WaveEngine.Framework
+  name: WaveEngine.Framework
+  nameWithType: WaveEngine.Framework
+  fullName: WaveEngine.Framework
+- uid: WaveEngine.Framework.Physics3D.Collider3D`1
+  commentId: T:WaveEngine.Framework.Physics3D.Collider3D`1
+  name: Collider3D<T>
+  nameWithType: Collider3D<T>
+  fullName: WaveEngine.Framework.Physics3D.Collider3D<T>
+  nameWithType.vb: Collider3D(Of T)
+  fullName.vb: WaveEngine.Framework.Physics3D.Collider3D(Of T)
+  name.vb: Collider3D(Of T)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D`1
+    name: Collider3D
+    nameWithType: Collider3D
+    fullName: WaveEngine.Framework.Physics3D.Collider3D
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D`1
+    name: Collider3D
+    nameWithType: Collider3D
+    fullName: WaveEngine.Framework.Physics3D.Collider3D
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Collider3D`1.physicColliderShape
+  commentId: F:WaveEngine.Framework.Physics3D.Collider3D`1.physicColliderShape
+  name: physicColliderShape
+  nameWithType: Collider3D<T>.physicColliderShape
+  fullName: WaveEngine.Framework.Physics3D.Collider3D<T>.physicColliderShape
+  nameWithType.vb: Collider3D(Of T).physicColliderShape
+  fullName.vb: WaveEngine.Framework.Physics3D.Collider3D(Of T).physicColliderShape
+- uid: WaveEngine.Framework.Physics3D.Collider3D`1.InternalColliderShape
+  commentId: P:WaveEngine.Framework.Physics3D.Collider3D`1.InternalColliderShape
+  name: InternalColliderShape
+  nameWithType: Collider3D<T>.InternalColliderShape
+  fullName: WaveEngine.Framework.Physics3D.Collider3D<T>.InternalColliderShape
+  nameWithType.vb: Collider3D(Of T).InternalColliderShape
+  fullName.vb: WaveEngine.Framework.Physics3D.Collider3D(Of T).InternalColliderShape
+- uid: WaveEngine.Framework.Physics3D.Collider3D`1.CreateColliderShape3D
+  commentId: M:WaveEngine.Framework.Physics3D.Collider3D`1.CreateColliderShape3D
+  name: CreateColliderShape3D()
+  nameWithType: Collider3D<T>.CreateColliderShape3D()
+  fullName: WaveEngine.Framework.Physics3D.Collider3D<T>.CreateColliderShape3D()
+  nameWithType.vb: Collider3D(Of T).CreateColliderShape3D()
+  fullName.vb: WaveEngine.Framework.Physics3D.Collider3D(Of T).CreateColliderShape3D()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D`1.CreateColliderShape3D
+    name: CreateColliderShape3D
+    nameWithType: Collider3D<T>.CreateColliderShape3D
+    fullName: WaveEngine.Framework.Physics3D.Collider3D<T>.CreateColliderShape3D
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D`1.CreateColliderShape3D
+    name: CreateColliderShape3D
+    nameWithType: Collider3D(Of T).CreateColliderShape3D
+    fullName: WaveEngine.Framework.Physics3D.Collider3D(Of T).CreateColliderShape3D
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.IsConvex*
+  commentId: Overload:WaveEngine.Framework.Physics3D.MeshCollider3D.IsConvex
+  name: IsConvex
+  nameWithType: MeshCollider3D.IsConvex
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.IsConvex
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.Size*
+  commentId: Overload:WaveEngine.Framework.Physics3D.MeshCollider3D.Size
+  name: Size
+  nameWithType: MeshCollider3D.Size
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.Size
+- uid: WaveEngine.Common.Math.Vector3
+  commentId: T:WaveEngine.Common.Math.Vector3
+  parent: WaveEngine.Common.Math
+  name: Vector3
+  nameWithType: Vector3
+  fullName: WaveEngine.Common.Math.Vector3
+- uid: WaveEngine.Common.Math
+  commentId: N:WaveEngine.Common.Math
+  name: WaveEngine.Common.Math
+  nameWithType: WaveEngine.Common.Math
+  fullName: WaveEngine.Common.Math
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.OrientationOffset*
+  commentId: Overload:WaveEngine.Framework.Physics3D.MeshCollider3D.OrientationOffset
+  name: OrientationOffset
+  nameWithType: MeshCollider3D.OrientationOffset
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.OrientationOffset
+- uid: WaveEngine.Common.Math.Quaternion
+  commentId: T:WaveEngine.Common.Math.Quaternion
+  parent: WaveEngine.Common.Math
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: WaveEngine.Common.Math.Quaternion
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.RotationOffset*
+  commentId: Overload:WaveEngine.Framework.Physics3D.MeshCollider3D.RotationOffset
+  name: RotationOffset
+  nameWithType: MeshCollider3D.RotationOffset
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.RotationOffset
+- uid: WaveEngine.Framework.Physics3D.Collider3D{WaveEngine.Common.Physics3D.IMeshColliderShape3D}.DefaultValues
+  commentId: M:WaveEngine.Framework.Physics3D.Collider3D{WaveEngine.Common.Physics3D.IMeshColliderShape3D}.DefaultValues
+  parent: WaveEngine.Framework.Physics3D.Collider3D{WaveEngine.Common.Physics3D.IMeshColliderShape3D}
+  definition: WaveEngine.Framework.Physics3D.Collider3D`1.DefaultValues
+  name: DefaultValues()
+  nameWithType: Collider3D<IMeshColliderShape3D>.DefaultValues()
+  fullName: WaveEngine.Framework.Physics3D.Collider3D<WaveEngine.Common.Physics3D.IMeshColliderShape3D>.DefaultValues()
+  nameWithType.vb: Collider3D(Of IMeshColliderShape3D).DefaultValues()
+  fullName.vb: WaveEngine.Framework.Physics3D.Collider3D(Of WaveEngine.Common.Physics3D.IMeshColliderShape3D).DefaultValues()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D`1.DefaultValues
+    name: DefaultValues
+    nameWithType: Collider3D<IMeshColliderShape3D>.DefaultValues
+    fullName: WaveEngine.Framework.Physics3D.Collider3D<WaveEngine.Common.Physics3D.IMeshColliderShape3D>.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D`1.DefaultValues
+    name: DefaultValues
+    nameWithType: Collider3D(Of IMeshColliderShape3D).DefaultValues
+    fullName: WaveEngine.Framework.Physics3D.Collider3D(Of WaveEngine.Common.Physics3D.IMeshColliderShape3D).DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.DefaultValues*
+  commentId: Overload:WaveEngine.Framework.Physics3D.MeshCollider3D.DefaultValues
+  name: DefaultValues
+  nameWithType: MeshCollider3D.DefaultValues
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.DefaultValues
+- uid: WaveEngine.Framework.Physics3D.Collider3D`1.DefaultValues
+  commentId: M:WaveEngine.Framework.Physics3D.Collider3D`1.DefaultValues
+  name: DefaultValues()
+  nameWithType: Collider3D<T>.DefaultValues()
+  fullName: WaveEngine.Framework.Physics3D.Collider3D<T>.DefaultValues()
+  nameWithType.vb: Collider3D(Of T).DefaultValues()
+  fullName.vb: WaveEngine.Framework.Physics3D.Collider3D(Of T).DefaultValues()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D`1.DefaultValues
+    name: DefaultValues
+    nameWithType: Collider3D<T>.DefaultValues
+    fullName: WaveEngine.Framework.Physics3D.Collider3D<T>.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D`1.DefaultValues
+    name: DefaultValues
+    nameWithType: Collider3D(Of T).DefaultValues
+    fullName: WaveEngine.Framework.Physics3D.Collider3D(Of T).DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Collider3D.Initialize
+  commentId: M:WaveEngine.Framework.Physics3D.Collider3D.Initialize
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  name: Initialize()
+  nameWithType: Collider3D.Initialize()
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.Initialize()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.Initialize
+    name: Initialize
+    nameWithType: Collider3D.Initialize
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.Initialize
+    name: Initialize
+    nameWithType: Collider3D.Initialize
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.Initialize*
+  commentId: Overload:WaveEngine.Framework.Physics3D.MeshCollider3D.Initialize
+  name: Initialize
+  nameWithType: MeshCollider3D.Initialize
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.Initialize
+- uid: WaveEngine.Framework.Physics3D.Collider3D.AddShapeToRigidBody
+  commentId: M:WaveEngine.Framework.Physics3D.Collider3D.AddShapeToRigidBody
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  name: AddShapeToRigidBody()
+  nameWithType: Collider3D.AddShapeToRigidBody()
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.AddShapeToRigidBody()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.AddShapeToRigidBody
+    name: AddShapeToRigidBody
+    nameWithType: Collider3D.AddShapeToRigidBody
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.AddShapeToRigidBody
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.AddShapeToRigidBody
+    name: AddShapeToRigidBody
+    nameWithType: Collider3D.AddShapeToRigidBody
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.AddShapeToRigidBody
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.AddShapeToRigidBody*
+  commentId: Overload:WaveEngine.Framework.Physics3D.MeshCollider3D.AddShapeToRigidBody
+  name: AddShapeToRigidBody
+  nameWithType: MeshCollider3D.AddShapeToRigidBody
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.AddShapeToRigidBody
+- uid: WaveEngine.Framework.Physics3D.Collider3D.BaseCreateColliderShape
+  commentId: M:WaveEngine.Framework.Physics3D.Collider3D.BaseCreateColliderShape
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  name: BaseCreateColliderShape()
+  nameWithType: Collider3D.BaseCreateColliderShape()
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.BaseCreateColliderShape()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.BaseCreateColliderShape
+    name: BaseCreateColliderShape
+    nameWithType: Collider3D.BaseCreateColliderShape
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.BaseCreateColliderShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.BaseCreateColliderShape
+    name: BaseCreateColliderShape
+    nameWithType: Collider3D.BaseCreateColliderShape
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.BaseCreateColliderShape
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.BaseCreateColliderShape*
+  commentId: Overload:WaveEngine.Framework.Physics3D.MeshCollider3D.BaseCreateColliderShape
+  name: BaseCreateColliderShape
+  nameWithType: MeshCollider3D.BaseCreateColliderShape
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.BaseCreateColliderShape
+- uid: WaveEngine.Framework.Physics3D.Collider3D{WaveEngine.Common.Physics3D.IMeshColliderShape3D}.CreateColliderShape3D_T
+  commentId: M:WaveEngine.Framework.Physics3D.Collider3D{WaveEngine.Common.Physics3D.IMeshColliderShape3D}.CreateColliderShape3D_T
+  parent: WaveEngine.Framework.Physics3D.Collider3D{WaveEngine.Common.Physics3D.IMeshColliderShape3D}
+  definition: WaveEngine.Framework.Physics3D.Collider3D`1.CreateColliderShape3D_T
+  name: CreateColliderShape3D_T()
+  nameWithType: Collider3D<IMeshColliderShape3D>.CreateColliderShape3D_T()
+  fullName: WaveEngine.Framework.Physics3D.Collider3D<WaveEngine.Common.Physics3D.IMeshColliderShape3D>.CreateColliderShape3D_T()
+  nameWithType.vb: Collider3D(Of IMeshColliderShape3D).CreateColliderShape3D_T()
+  fullName.vb: WaveEngine.Framework.Physics3D.Collider3D(Of WaveEngine.Common.Physics3D.IMeshColliderShape3D).CreateColliderShape3D_T()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D`1.CreateColliderShape3D_T
+    name: CreateColliderShape3D_T
+    nameWithType: Collider3D<IMeshColliderShape3D>.CreateColliderShape3D_T
+    fullName: WaveEngine.Framework.Physics3D.Collider3D<WaveEngine.Common.Physics3D.IMeshColliderShape3D>.CreateColliderShape3D_T
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D`1.CreateColliderShape3D_T
+    name: CreateColliderShape3D_T
+    nameWithType: Collider3D(Of IMeshColliderShape3D).CreateColliderShape3D_T
+    fullName: WaveEngine.Framework.Physics3D.Collider3D(Of WaveEngine.Common.Physics3D.IMeshColliderShape3D).CreateColliderShape3D_T
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.CreateColliderShape3D_T*
+  commentId: Overload:WaveEngine.Framework.Physics3D.MeshCollider3D.CreateColliderShape3D_T
+  name: CreateColliderShape3D_T
+  nameWithType: MeshCollider3D.CreateColliderShape3D_T
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.CreateColliderShape3D_T
+- uid: WaveEngine.Common.Physics3D.IMeshColliderShape3D
+  commentId: T:WaveEngine.Common.Physics3D.IMeshColliderShape3D
+  parent: WaveEngine.Common.Physics3D
+  name: IMeshColliderShape3D
+  nameWithType: IMeshColliderShape3D
+  fullName: WaveEngine.Common.Physics3D.IMeshColliderShape3D
+- uid: WaveEngine.Framework.Physics3D.Collider3D`1.CreateColliderShape3D_T
+  commentId: M:WaveEngine.Framework.Physics3D.Collider3D`1.CreateColliderShape3D_T
+  name: CreateColliderShape3D_T()
+  nameWithType: Collider3D<T>.CreateColliderShape3D_T()
+  fullName: WaveEngine.Framework.Physics3D.Collider3D<T>.CreateColliderShape3D_T()
+  nameWithType.vb: Collider3D(Of T).CreateColliderShape3D_T()
+  fullName.vb: WaveEngine.Framework.Physics3D.Collider3D(Of T).CreateColliderShape3D_T()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D`1.CreateColliderShape3D_T
+    name: CreateColliderShape3D_T
+    nameWithType: Collider3D<T>.CreateColliderShape3D_T
+    fullName: WaveEngine.Framework.Physics3D.Collider3D<T>.CreateColliderShape3D_T
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D`1.CreateColliderShape3D_T
+    name: CreateColliderShape3D_T
+    nameWithType: Collider3D(Of T).CreateColliderShape3D_T
+    fullName: WaveEngine.Framework.Physics3D.Collider3D(Of T).CreateColliderShape3D_T
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Physics3D
+  commentId: N:WaveEngine.Common.Physics3D
+  name: WaveEngine.Common.Physics3D
+  nameWithType: WaveEngine.Common.Physics3D
+  fullName: WaveEngine.Common.Physics3D
+- uid: WaveEngine.Framework.Physics3D.Collider3D.Dispose
+  commentId: M:WaveEngine.Framework.Physics3D.Collider3D.Dispose
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  name: Dispose()
+  nameWithType: Collider3D.Dispose()
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.Dispose()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.Dispose
+    name: Dispose
+    nameWithType: Collider3D.Dispose
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.Dispose
+    name: Dispose
+    nameWithType: Collider3D.Dispose
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.Dispose*
+  commentId: Overload:WaveEngine.Framework.Physics3D.MeshCollider3D.Dispose
+  name: Dispose
+  nameWithType: MeshCollider3D.Dispose
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.Dispose
+- uid: WaveEngine.Framework.Physics3D.Collider3D.OnModelRefreshed
+  commentId: M:WaveEngine.Framework.Physics3D.Collider3D.OnModelRefreshed
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  name: OnModelRefreshed()
+  nameWithType: Collider3D.OnModelRefreshed()
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.OnModelRefreshed()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.OnModelRefreshed
+    name: OnModelRefreshed
+    nameWithType: Collider3D.OnModelRefreshed
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.OnModelRefreshed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.OnModelRefreshed
+    name: OnModelRefreshed
+    nameWithType: Collider3D.OnModelRefreshed
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.OnModelRefreshed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.OnModelRefreshed*
+  commentId: Overload:WaveEngine.Framework.Physics3D.MeshCollider3D.OnModelRefreshed
+  name: OnModelRefreshed
+  nameWithType: MeshCollider3D.OnModelRefreshed
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.OnModelRefreshed
+- uid: WaveEngine.Framework.Physics3D.Collider3D.RefreshShapeDimensions
+  commentId: M:WaveEngine.Framework.Physics3D.Collider3D.RefreshShapeDimensions
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  name: RefreshShapeDimensions()
+  nameWithType: Collider3D.RefreshShapeDimensions()
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.RefreshShapeDimensions()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.RefreshShapeDimensions
+    name: RefreshShapeDimensions
+    nameWithType: Collider3D.RefreshShapeDimensions
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.RefreshShapeDimensions
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.RefreshShapeDimensions
+    name: RefreshShapeDimensions
+    nameWithType: Collider3D.RefreshShapeDimensions
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.RefreshShapeDimensions
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.RefreshShapeDimensions*
+  commentId: Overload:WaveEngine.Framework.Physics3D.MeshCollider3D.RefreshShapeDimensions
+  name: RefreshShapeDimensions
+  nameWithType: MeshCollider3D.RefreshShapeDimensions
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.RefreshShapeDimensions
+- uid: WaveEngine.Framework.Physics3D.Collider3D.RefreshHierarchyTransform
+  commentId: M:WaveEngine.Framework.Physics3D.Collider3D.RefreshHierarchyTransform
+  parent: WaveEngine.Framework.Physics3D.Collider3D
+  name: RefreshHierarchyTransform()
+  nameWithType: Collider3D.RefreshHierarchyTransform()
+  fullName: WaveEngine.Framework.Physics3D.Collider3D.RefreshHierarchyTransform()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.RefreshHierarchyTransform
+    name: RefreshHierarchyTransform
+    nameWithType: Collider3D.RefreshHierarchyTransform
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.RefreshHierarchyTransform
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Collider3D.RefreshHierarchyTransform
+    name: RefreshHierarchyTransform
+    nameWithType: Collider3D.RefreshHierarchyTransform
+    fullName: WaveEngine.Framework.Physics3D.Collider3D.RefreshHierarchyTransform
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.MeshCollider3D.RefreshHierarchyTransform*
+  commentId: Overload:WaveEngine.Framework.Physics3D.MeshCollider3D.RefreshHierarchyTransform
+  name: RefreshHierarchyTransform
+  nameWithType: MeshCollider3D.RefreshHierarchyTransform
+  fullName: WaveEngine.Framework.Physics3D.MeshCollider3D.RefreshHierarchyTransform

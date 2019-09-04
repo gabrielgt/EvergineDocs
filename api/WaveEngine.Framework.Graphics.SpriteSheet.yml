@@ -1,0 +1,1292 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Framework.Graphics.SpriteSheet
+  commentId: T:WaveEngine.Framework.Graphics.SpriteSheet
+  id: SpriteSheet
+  parent: WaveEngine.Framework.Graphics
+  children:
+  - WaveEngine.Framework.Graphics.SpriteSheet.AssetPath
+  - WaveEngine.Framework.Graphics.SpriteSheet.Load(WaveEngine.Framework.Services.GraphicsDevice,System.IO.Stream)
+  - WaveEngine.Framework.Graphics.SpriteSheet.ReaderVersion
+  - WaveEngine.Framework.Graphics.SpriteSheet.SpriteAnimations
+  - WaveEngine.Framework.Graphics.SpriteSheet.SpriteDictionary
+  - WaveEngine.Framework.Graphics.SpriteSheet.Sprites
+  - WaveEngine.Framework.Graphics.SpriteSheet.Texture
+  - WaveEngine.Framework.Graphics.SpriteSheet.Unload
+  langs:
+  - csharp
+  - vb
+  name: SpriteSheet
+  nameWithType: SpriteSheet
+  fullName: WaveEngine.Framework.Graphics.SpriteSheet
+  type: Class
+  source:
+    id: SpriteSheet
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\SpriteSheet.cs
+    startLine: 16
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nThis class represent a spriteSheet texture.\n"
+  example: []
+  syntax:
+    content: 'public sealed class SpriteSheet : ILoadable<GraphicsDevice>, ILoadable'
+    content.vb: >-
+      Public NotInheritable Class SpriteSheet
+
+          Implements ILoadable(Of GraphicsDevice), ILoadable
+  inheritance:
+  - System.Object
+  implements:
+  - WaveEngine.Common.ILoadable{WaveEngine.Framework.Services.GraphicsDevice}
+  - WaveEngine.Common.ILoadable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: WaveEngine.Framework.Graphics.SpriteSheet.Sprites
+  commentId: P:WaveEngine.Framework.Graphics.SpriteSheet.Sprites
+  id: Sprites
+  parent: WaveEngine.Framework.Graphics.SpriteSheet
+  langs:
+  - csharp
+  - vb
+  name: Sprites
+  nameWithType: SpriteSheet.Sprites
+  fullName: WaveEngine.Framework.Graphics.SpriteSheet.Sprites
+  type: Property
+  source:
+    id: Sprites
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\SpriteSheet.cs
+    startLine: 23
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets the sprite array.\n"
+  example: []
+  syntax:
+    content: public SpriteSheetResource[] Sprites { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Graphics.SpriteSheetResource[]
+    content.vb: Public ReadOnly Property Sprites As SpriteSheetResource()
+  overload: WaveEngine.Framework.Graphics.SpriteSheet.Sprites*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.SpriteSheet.SpriteDictionary
+  commentId: P:WaveEngine.Framework.Graphics.SpriteSheet.SpriteDictionary
+  id: SpriteDictionary
+  parent: WaveEngine.Framework.Graphics.SpriteSheet
+  langs:
+  - csharp
+  - vb
+  name: SpriteDictionary
+  nameWithType: SpriteSheet.SpriteDictionary
+  fullName: WaveEngine.Framework.Graphics.SpriteSheet.SpriteDictionary
+  type: Property
+  source:
+    id: SpriteDictionary
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\SpriteSheet.cs
+    startLine: 28
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets the sprite resource dictionary.\n"
+  example: []
+  syntax:
+    content: public Dictionary<string, SpriteSheetResource> SpriteDictionary { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,WaveEngine.Framework.Graphics.SpriteSheetResource}
+    content.vb: Public ReadOnly Property SpriteDictionary As Dictionary(Of String, SpriteSheetResource)
+  overload: WaveEngine.Framework.Graphics.SpriteSheet.SpriteDictionary*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.SpriteSheet.SpriteAnimations
+  commentId: P:WaveEngine.Framework.Graphics.SpriteSheet.SpriteAnimations
+  id: SpriteAnimations
+  parent: WaveEngine.Framework.Graphics.SpriteSheet
+  langs:
+  - csharp
+  - vb
+  name: SpriteAnimations
+  nameWithType: SpriteSheet.SpriteAnimations
+  fullName: WaveEngine.Framework.Graphics.SpriteSheet.SpriteAnimations
+  type: Property
+  source:
+    id: SpriteAnimations
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\SpriteSheet.cs
+    startLine: 36
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets the sprite animations.\n"
+  example: []
+  syntax:
+    content: public Dictionary<string, SpriteSheetAnimation> SpriteAnimations { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,WaveEngine.Framework.Graphics.SpriteSheetAnimation}
+      description: "\nThe sprite animations.\n"
+    content.vb: Public ReadOnly Property SpriteAnimations As Dictionary(Of String, SpriteSheetAnimation)
+  overload: WaveEngine.Framework.Graphics.SpriteSheet.SpriteAnimations*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.SpriteSheet.Texture
+  commentId: P:WaveEngine.Framework.Graphics.SpriteSheet.Texture
+  id: Texture
+  parent: WaveEngine.Framework.Graphics.SpriteSheet
+  langs:
+  - csharp
+  - vb
+  name: Texture
+  nameWithType: SpriteSheet.Texture
+  fullName: WaveEngine.Framework.Graphics.SpriteSheet.Texture
+  type: Property
+  source:
+    id: Texture
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\SpriteSheet.cs
+    startLine: 44
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the texture.\n"
+  example: []
+  syntax:
+    content: public Texture2D Texture { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Graphics.Texture2D
+      description: "\nThe texture.\n"
+    content.vb: Public Property Texture As Texture2D
+  overload: WaveEngine.Framework.Graphics.SpriteSheet.Texture*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.SpriteSheet.AssetPath
+  commentId: P:WaveEngine.Framework.Graphics.SpriteSheet.AssetPath
+  id: AssetPath
+  parent: WaveEngine.Framework.Graphics.SpriteSheet
+  langs:
+  - csharp
+  - vb
+  name: AssetPath
+  nameWithType: SpriteSheet.AssetPath
+  fullName: WaveEngine.Framework.Graphics.SpriteSheet.AssetPath
+  type: Property
+  source:
+    id: AssetPath
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\SpriteSheet.cs
+    startLine: 52
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the asset path.\n"
+  example: []
+  syntax:
+    content: public string AssetPath { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe asset path.\n"
+    content.vb: Public Property AssetPath As String
+  overload: WaveEngine.Framework.Graphics.SpriteSheet.AssetPath*
+  implements:
+  - WaveEngine.Common.ILoadable.AssetPath
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.SpriteSheet.ReaderVersion
+  commentId: P:WaveEngine.Framework.Graphics.SpriteSheet.ReaderVersion
+  id: ReaderVersion
+  parent: WaveEngine.Framework.Graphics.SpriteSheet
+  langs:
+  - csharp
+  - vb
+  name: ReaderVersion
+  nameWithType: SpriteSheet.ReaderVersion
+  fullName: WaveEngine.Framework.Graphics.SpriteSheet.ReaderVersion
+  type: Property
+  source:
+    id: ReaderVersion
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\SpriteSheet.cs
+    startLine: 60
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets the reader version.\n"
+  example: []
+  syntax:
+    content: public Version ReaderVersion { get; }
+    parameters: []
+    return:
+      type: System.Version
+      description: "\nThe reader version.\n"
+    content.vb: Public ReadOnly Property ReaderVersion As Version
+  overload: WaveEngine.Framework.Graphics.SpriteSheet.ReaderVersion*
+  implements:
+  - WaveEngine.Common.ILoadable.ReaderVersion
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.SpriteSheet.Load(WaveEngine.Framework.Services.GraphicsDevice,System.IO.Stream)
+  commentId: M:WaveEngine.Framework.Graphics.SpriteSheet.Load(WaveEngine.Framework.Services.GraphicsDevice,System.IO.Stream)
+  id: Load(WaveEngine.Framework.Services.GraphicsDevice,System.IO.Stream)
+  parent: WaveEngine.Framework.Graphics.SpriteSheet
+  langs:
+  - csharp
+  - vb
+  name: Load(GraphicsDevice, Stream)
+  nameWithType: SpriteSheet.Load(GraphicsDevice, Stream)
+  fullName: WaveEngine.Framework.Graphics.SpriteSheet.Load(WaveEngine.Framework.Services.GraphicsDevice, System.IO.Stream)
+  type: Method
+  source:
+    id: Load
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\SpriteSheet.cs
+    startLine: 73
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nLoads the specified graphicsDevice.\n"
+  example: []
+  syntax:
+    content: public void Load(GraphicsDevice graphicsDevice, Stream stream)
+    parameters:
+    - id: graphicsDevice
+      type: WaveEngine.Framework.Services.GraphicsDevice
+      description: The graphicsDevice.
+    - id: stream
+      type: System.IO.Stream
+      description: The stream.
+    content.vb: Public Sub Load(graphicsDevice As GraphicsDevice, stream As Stream)
+  overload: WaveEngine.Framework.Graphics.SpriteSheet.Load*
+  implements:
+  - WaveEngine.Common.ILoadable{WaveEngine.Framework.Services.GraphicsDevice}.Load(WaveEngine.Framework.Services.GraphicsDevice,System.IO.Stream)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.SpriteSheet.Unload
+  commentId: M:WaveEngine.Framework.Graphics.SpriteSheet.Unload
+  id: Unload
+  parent: WaveEngine.Framework.Graphics.SpriteSheet
+  langs:
+  - csharp
+  - vb
+  name: Unload()
+  nameWithType: SpriteSheet.Unload()
+  fullName: WaveEngine.Framework.Graphics.SpriteSheet.Unload()
+  type: Method
+  source:
+    id: Unload
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\SpriteSheet.cs
+    startLine: 141
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nUnloads this instance.\n"
+  example: []
+  syntax:
+    content: public void Unload()
+    content.vb: Public Sub Unload
+  overload: WaveEngine.Framework.Graphics.SpriteSheet.Unload*
+  implements:
+  - WaveEngine.Common.ILoadable.Unload
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: WaveEngine.Framework.Graphics
+  commentId: N:WaveEngine.Framework.Graphics
+  name: WaveEngine.Framework.Graphics
+  nameWithType: WaveEngine.Framework.Graphics
+  fullName: WaveEngine.Framework.Graphics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.ILoadable{WaveEngine.Framework.Services.GraphicsDevice}
+  commentId: T:WaveEngine.Common.ILoadable{WaveEngine.Framework.Services.GraphicsDevice}
+  parent: WaveEngine.Common
+  definition: WaveEngine.Common.ILoadable`1
+  name: ILoadable<GraphicsDevice>
+  nameWithType: ILoadable<GraphicsDevice>
+  fullName: WaveEngine.Common.ILoadable<WaveEngine.Framework.Services.GraphicsDevice>
+  nameWithType.vb: ILoadable(Of GraphicsDevice)
+  fullName.vb: WaveEngine.Common.ILoadable(Of WaveEngine.Framework.Services.GraphicsDevice)
+  name.vb: ILoadable(Of GraphicsDevice)
+  spec.csharp:
+  - uid: WaveEngine.Common.ILoadable`1
+    name: ILoadable
+    nameWithType: ILoadable
+    fullName: WaveEngine.Common.ILoadable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Framework.Services.GraphicsDevice
+    name: GraphicsDevice
+    nameWithType: GraphicsDevice
+    fullName: WaveEngine.Framework.Services.GraphicsDevice
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: WaveEngine.Common.ILoadable`1
+    name: ILoadable
+    nameWithType: ILoadable
+    fullName: WaveEngine.Common.ILoadable
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Framework.Services.GraphicsDevice
+    name: GraphicsDevice
+    nameWithType: GraphicsDevice
+    fullName: WaveEngine.Framework.Services.GraphicsDevice
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.ILoadable
+  commentId: T:WaveEngine.Common.ILoadable
+  parent: WaveEngine.Common
+  name: ILoadable
+  nameWithType: ILoadable
+  fullName: WaveEngine.Common.ILoadable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.ILoadable`1
+  commentId: T:WaveEngine.Common.ILoadable`1
+  name: ILoadable<T>
+  nameWithType: ILoadable<T>
+  fullName: WaveEngine.Common.ILoadable<T>
+  nameWithType.vb: ILoadable(Of T)
+  fullName.vb: WaveEngine.Common.ILoadable(Of T)
+  name.vb: ILoadable(Of T)
+  spec.csharp:
+  - uid: WaveEngine.Common.ILoadable`1
+    name: ILoadable
+    nameWithType: ILoadable
+    fullName: WaveEngine.Common.ILoadable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: WaveEngine.Common.ILoadable`1
+    name: ILoadable
+    nameWithType: ILoadable
+    fullName: WaveEngine.Common.ILoadable
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common
+  commentId: N:WaveEngine.Common
+  name: WaveEngine.Common
+  nameWithType: WaveEngine.Common
+  fullName: WaveEngine.Common
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Framework.Graphics.SpriteSheet.Sprites*
+  commentId: Overload:WaveEngine.Framework.Graphics.SpriteSheet.Sprites
+  name: Sprites
+  nameWithType: SpriteSheet.Sprites
+  fullName: WaveEngine.Framework.Graphics.SpriteSheet.Sprites
+- uid: WaveEngine.Framework.Graphics.SpriteSheetResource[]
+  isExternal: true
+  name: SpriteSheetResource[]
+  nameWithType: SpriteSheetResource[]
+  fullName: WaveEngine.Framework.Graphics.SpriteSheetResource[]
+  nameWithType.vb: SpriteSheetResource()
+  fullName.vb: WaveEngine.Framework.Graphics.SpriteSheetResource()
+  name.vb: SpriteSheetResource()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.SpriteSheetResource
+    name: SpriteSheetResource
+    nameWithType: SpriteSheetResource
+    fullName: WaveEngine.Framework.Graphics.SpriteSheetResource
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.SpriteSheetResource
+    name: SpriteSheetResource
+    nameWithType: SpriteSheetResource
+    fullName: WaveEngine.Framework.Graphics.SpriteSheetResource
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: WaveEngine.Framework.Graphics.SpriteSheet.SpriteDictionary*
+  commentId: Overload:WaveEngine.Framework.Graphics.SpriteSheet.SpriteDictionary
+  name: SpriteDictionary
+  nameWithType: SpriteSheet.SpriteDictionary
+  fullName: WaveEngine.Framework.Graphics.SpriteSheet.SpriteDictionary
+- uid: System.Collections.Generic.Dictionary{System.String,WaveEngine.Framework.Graphics.SpriteSheetResource}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,WaveEngine.Framework.Graphics.SpriteSheetResource}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, SpriteSheetResource>
+  nameWithType: Dictionary<String, SpriteSheetResource>
+  fullName: System.Collections.Generic.Dictionary<System.String, WaveEngine.Framework.Graphics.SpriteSheetResource>
+  nameWithType.vb: Dictionary(Of String, SpriteSheetResource)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, WaveEngine.Framework.Graphics.SpriteSheetResource)
+  name.vb: Dictionary(Of String, SpriteSheetResource)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Framework.Graphics.SpriteSheetResource
+    name: SpriteSheetResource
+    nameWithType: SpriteSheetResource
+    fullName: WaveEngine.Framework.Graphics.SpriteSheetResource
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Framework.Graphics.SpriteSheetResource
+    name: SpriteSheetResource
+    nameWithType: SpriteSheetResource
+    fullName: WaveEngine.Framework.Graphics.SpriteSheetResource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: WaveEngine.Framework.Graphics.SpriteSheet.SpriteAnimations*
+  commentId: Overload:WaveEngine.Framework.Graphics.SpriteSheet.SpriteAnimations
+  name: SpriteAnimations
+  nameWithType: SpriteSheet.SpriteAnimations
+  fullName: WaveEngine.Framework.Graphics.SpriteSheet.SpriteAnimations
+- uid: System.Collections.Generic.Dictionary{System.String,WaveEngine.Framework.Graphics.SpriteSheetAnimation}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,WaveEngine.Framework.Graphics.SpriteSheetAnimation}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, SpriteSheetAnimation>
+  nameWithType: Dictionary<String, SpriteSheetAnimation>
+  fullName: System.Collections.Generic.Dictionary<System.String, WaveEngine.Framework.Graphics.SpriteSheetAnimation>
+  nameWithType.vb: Dictionary(Of String, SpriteSheetAnimation)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, WaveEngine.Framework.Graphics.SpriteSheetAnimation)
+  name.vb: Dictionary(Of String, SpriteSheetAnimation)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Framework.Graphics.SpriteSheetAnimation
+    name: SpriteSheetAnimation
+    nameWithType: SpriteSheetAnimation
+    fullName: WaveEngine.Framework.Graphics.SpriteSheetAnimation
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Framework.Graphics.SpriteSheetAnimation
+    name: SpriteSheetAnimation
+    nameWithType: SpriteSheetAnimation
+    fullName: WaveEngine.Framework.Graphics.SpriteSheetAnimation
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.SpriteSheet.Texture*
+  commentId: Overload:WaveEngine.Framework.Graphics.SpriteSheet.Texture
+  name: Texture
+  nameWithType: SpriteSheet.Texture
+  fullName: WaveEngine.Framework.Graphics.SpriteSheet.Texture
+- uid: WaveEngine.Framework.Graphics.Texture2D
+  commentId: T:WaveEngine.Framework.Graphics.Texture2D
+  parent: WaveEngine.Framework.Graphics
+  name: Texture2D
+  nameWithType: Texture2D
+  fullName: WaveEngine.Framework.Graphics.Texture2D
+- uid: WaveEngine.Framework.Graphics.SpriteSheet.AssetPath*
+  commentId: Overload:WaveEngine.Framework.Graphics.SpriteSheet.AssetPath
+  name: AssetPath
+  nameWithType: SpriteSheet.AssetPath
+  fullName: WaveEngine.Framework.Graphics.SpriteSheet.AssetPath
+- uid: WaveEngine.Common.ILoadable.AssetPath
+  commentId: P:WaveEngine.Common.ILoadable.AssetPath
+  parent: WaveEngine.Common.ILoadable
+  name: AssetPath
+  nameWithType: ILoadable.AssetPath
+  fullName: WaveEngine.Common.ILoadable.AssetPath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: WaveEngine.Framework.Graphics.SpriteSheet.ReaderVersion*
+  commentId: Overload:WaveEngine.Framework.Graphics.SpriteSheet.ReaderVersion
+  name: ReaderVersion
+  nameWithType: SpriteSheet.ReaderVersion
+  fullName: WaveEngine.Framework.Graphics.SpriteSheet.ReaderVersion
+- uid: WaveEngine.Common.ILoadable.ReaderVersion
+  commentId: P:WaveEngine.Common.ILoadable.ReaderVersion
+  parent: WaveEngine.Common.ILoadable
+  name: ReaderVersion
+  nameWithType: ILoadable.ReaderVersion
+  fullName: WaveEngine.Common.ILoadable.ReaderVersion
+- uid: System.Version
+  commentId: T:System.Version
+  parent: System
+  isExternal: true
+  name: Version
+  nameWithType: Version
+  fullName: System.Version
+- uid: WaveEngine.Framework.Graphics.SpriteSheet.Load*
+  commentId: Overload:WaveEngine.Framework.Graphics.SpriteSheet.Load
+  name: Load
+  nameWithType: SpriteSheet.Load
+  fullName: WaveEngine.Framework.Graphics.SpriteSheet.Load
+- uid: WaveEngine.Common.ILoadable{WaveEngine.Framework.Services.GraphicsDevice}.Load(WaveEngine.Framework.Services.GraphicsDevice,System.IO.Stream)
+  commentId: M:WaveEngine.Common.ILoadable{WaveEngine.Framework.Services.GraphicsDevice}.Load(WaveEngine.Framework.Services.GraphicsDevice,System.IO.Stream)
+  parent: WaveEngine.Common.ILoadable{WaveEngine.Framework.Services.GraphicsDevice}
+  definition: WaveEngine.Common.ILoadable`1.Load(`0,System.IO.Stream)
+  name: Load(GraphicsDevice, Stream)
+  nameWithType: ILoadable<GraphicsDevice>.Load(GraphicsDevice, Stream)
+  fullName: WaveEngine.Common.ILoadable<WaveEngine.Framework.Services.GraphicsDevice>.Load(WaveEngine.Framework.Services.GraphicsDevice, System.IO.Stream)
+  nameWithType.vb: ILoadable(Of GraphicsDevice).Load(GraphicsDevice, Stream)
+  fullName.vb: WaveEngine.Common.ILoadable(Of WaveEngine.Framework.Services.GraphicsDevice).Load(WaveEngine.Framework.Services.GraphicsDevice, System.IO.Stream)
+  spec.csharp:
+  - uid: WaveEngine.Common.ILoadable`1.Load(`0,System.IO.Stream)
+    name: Load
+    nameWithType: ILoadable<GraphicsDevice>.Load
+    fullName: WaveEngine.Common.ILoadable<WaveEngine.Framework.Services.GraphicsDevice>.Load
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Services.GraphicsDevice
+    name: GraphicsDevice
+    nameWithType: GraphicsDevice
+    fullName: WaveEngine.Framework.Services.GraphicsDevice
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.ILoadable`1.Load(`0,System.IO.Stream)
+    name: Load
+    nameWithType: ILoadable(Of GraphicsDevice).Load
+    fullName: WaveEngine.Common.ILoadable(Of WaveEngine.Framework.Services.GraphicsDevice).Load
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Services.GraphicsDevice
+    name: GraphicsDevice
+    nameWithType: GraphicsDevice
+    fullName: WaveEngine.Framework.Services.GraphicsDevice
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Services.GraphicsDevice
+  commentId: T:WaveEngine.Framework.Services.GraphicsDevice
+  parent: WaveEngine.Framework.Services
+  name: GraphicsDevice
+  nameWithType: GraphicsDevice
+  fullName: WaveEngine.Framework.Services.GraphicsDevice
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: WaveEngine.Common.ILoadable`1.Load(`0,System.IO.Stream)
+  commentId: M:WaveEngine.Common.ILoadable`1.Load(`0,System.IO.Stream)
+  isExternal: true
+  name: Load(T, Stream)
+  nameWithType: ILoadable<T>.Load(T, Stream)
+  fullName: WaveEngine.Common.ILoadable<T>.Load(T, System.IO.Stream)
+  nameWithType.vb: ILoadable(Of T).Load(T, Stream)
+  fullName.vb: WaveEngine.Common.ILoadable(Of T).Load(T, System.IO.Stream)
+  spec.csharp:
+  - uid: WaveEngine.Common.ILoadable`1.Load(`0,System.IO.Stream)
+    name: Load
+    nameWithType: ILoadable<T>.Load
+    fullName: WaveEngine.Common.ILoadable<T>.Load
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.ILoadable`1.Load(`0,System.IO.Stream)
+    name: Load
+    nameWithType: ILoadable(Of T).Load
+    fullName: WaveEngine.Common.ILoadable(Of T).Load
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Services
+  commentId: N:WaveEngine.Framework.Services
+  name: WaveEngine.Framework.Services
+  nameWithType: WaveEngine.Framework.Services
+  fullName: WaveEngine.Framework.Services
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: WaveEngine.Framework.Graphics.SpriteSheet.Unload*
+  commentId: Overload:WaveEngine.Framework.Graphics.SpriteSheet.Unload
+  name: Unload
+  nameWithType: SpriteSheet.Unload
+  fullName: WaveEngine.Framework.Graphics.SpriteSheet.Unload
+- uid: WaveEngine.Common.ILoadable.Unload
+  commentId: M:WaveEngine.Common.ILoadable.Unload
+  parent: WaveEngine.Common.ILoadable
+  name: Unload()
+  nameWithType: ILoadable.Unload()
+  fullName: WaveEngine.Common.ILoadable.Unload()
+  spec.csharp:
+  - uid: WaveEngine.Common.ILoadable.Unload
+    name: Unload
+    nameWithType: ILoadable.Unload
+    fullName: WaveEngine.Common.ILoadable.Unload
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.ILoadable.Unload
+    name: Unload
+    nameWithType: ILoadable.Unload
+    fullName: WaveEngine.Common.ILoadable.Unload
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

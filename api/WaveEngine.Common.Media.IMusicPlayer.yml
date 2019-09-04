@@ -1,0 +1,630 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Common.Media.IMusicPlayer
+  commentId: T:WaveEngine.Common.Media.IMusicPlayer
+  id: IMusicPlayer
+  parent: WaveEngine.Common.Media
+  children:
+  - WaveEngine.Common.Media.IMusicPlayer.IsMuted
+  - WaveEngine.Common.Media.IMusicPlayer.IsRepeat
+  - WaveEngine.Common.Media.IMusicPlayer.MusicEnabled
+  - WaveEngine.Common.Media.IMusicPlayer.OnActivated
+  - WaveEngine.Common.Media.IMusicPlayer.OnDeactivated
+  - WaveEngine.Common.Media.IMusicPlayer.Pause
+  - WaveEngine.Common.Media.IMusicPlayer.Play(WaveEngine.Common.Media.MusicInfo)
+  - WaveEngine.Common.Media.IMusicPlayer.Resume
+  - WaveEngine.Common.Media.IMusicPlayer.State
+  - WaveEngine.Common.Media.IMusicPlayer.Stop
+  - WaveEngine.Common.Media.IMusicPlayer.Volume
+  langs:
+  - csharp
+  - vb
+  name: IMusicPlayer
+  nameWithType: IMusicPlayer
+  fullName: WaveEngine.Common.Media.IMusicPlayer
+  type: Interface
+  source:
+    id: IMusicPlayer
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Media\IMusicPlayer.cs
+    startLine: 13
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Media
+  summary: "\nInterface for music player.\n"
+  example: []
+  syntax:
+    content: 'public interface IMusicPlayer : IDisposable'
+    content.vb: >-
+      Public Interface IMusicPlayer
+
+          Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: WaveEngine.Common.Media.IMusicPlayer.State
+  commentId: P:WaveEngine.Common.Media.IMusicPlayer.State
+  id: State
+  parent: WaveEngine.Common.Media.IMusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: IMusicPlayer.State
+  fullName: WaveEngine.Common.Media.IMusicPlayer.State
+  type: Property
+  source:
+    id: State
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Media\IMusicPlayer.cs
+    startLine: 20
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Media
+  summary: "\nGets the state.\n"
+  example: []
+  syntax:
+    content: MusicState State { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Media.MusicState
+    content.vb: ReadOnly Property State As MusicState
+  overload: WaveEngine.Common.Media.IMusicPlayer.State*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: WaveEngine.Common.Media.IMusicPlayer.IsMuted
+  commentId: P:WaveEngine.Common.Media.IMusicPlayer.IsMuted
+  id: IsMuted
+  parent: WaveEngine.Common.Media.IMusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: IsMuted
+  nameWithType: IMusicPlayer.IsMuted
+  fullName: WaveEngine.Common.Media.IMusicPlayer.IsMuted
+  type: Property
+  source:
+    id: IsMuted
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Media\IMusicPlayer.cs
+    startLine: 28
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Media
+  summary: "\nGets or sets a value indicating whether this instance is muted.\n"
+  example: []
+  syntax:
+    content: bool IsMuted { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if this instance is muted; otherwise, <code>false</code>.\n"
+    content.vb: Property IsMuted As Boolean
+  overload: WaveEngine.Common.Media.IMusicPlayer.IsMuted*
+  modifiers.csharp:
+  - get
+  - set
+- uid: WaveEngine.Common.Media.IMusicPlayer.IsRepeat
+  commentId: P:WaveEngine.Common.Media.IMusicPlayer.IsRepeat
+  id: IsRepeat
+  parent: WaveEngine.Common.Media.IMusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: IsRepeat
+  nameWithType: IMusicPlayer.IsRepeat
+  fullName: WaveEngine.Common.Media.IMusicPlayer.IsRepeat
+  type: Property
+  source:
+    id: IsRepeat
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Media\IMusicPlayer.cs
+    startLine: 36
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Media
+  summary: "\nGets or sets a value indicating whether this instance is repeat.\n"
+  example: []
+  syntax:
+    content: bool IsRepeat { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if this instance is repeat; otherwise, <code>false</code>.\n"
+    content.vb: Property IsRepeat As Boolean
+  overload: WaveEngine.Common.Media.IMusicPlayer.IsRepeat*
+  modifiers.csharp:
+  - get
+  - set
+- uid: WaveEngine.Common.Media.IMusicPlayer.Volume
+  commentId: P:WaveEngine.Common.Media.IMusicPlayer.Volume
+  id: Volume
+  parent: WaveEngine.Common.Media.IMusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: Volume
+  nameWithType: IMusicPlayer.Volume
+  fullName: WaveEngine.Common.Media.IMusicPlayer.Volume
+  type: Property
+  source:
+    id: Volume
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Media\IMusicPlayer.cs
+    startLine: 44
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Media
+  summary: "\nGets or sets the volume.\n"
+  example: []
+  syntax:
+    content: float Volume { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: "\nThe volume.\n"
+    content.vb: Property Volume As Single
+  overload: WaveEngine.Common.Media.IMusicPlayer.Volume*
+  modifiers.csharp:
+  - get
+  - set
+- uid: WaveEngine.Common.Media.IMusicPlayer.MusicEnabled
+  commentId: P:WaveEngine.Common.Media.IMusicPlayer.MusicEnabled
+  id: MusicEnabled
+  parent: WaveEngine.Common.Media.IMusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: MusicEnabled
+  nameWithType: IMusicPlayer.MusicEnabled
+  fullName: WaveEngine.Common.Media.IMusicPlayer.MusicEnabled
+  type: Property
+  source:
+    id: MusicEnabled
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Media\IMusicPlayer.cs
+    startLine: 52
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Media
+  summary: "\nGets or sets a value indicating whether [music enabled].\n"
+  example: []
+  syntax:
+    content: bool MusicEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if [music enabled]; otherwise, <code>false</code>.\n"
+    content.vb: Property MusicEnabled As Boolean
+  overload: WaveEngine.Common.Media.IMusicPlayer.MusicEnabled*
+  modifiers.csharp:
+  - get
+  - set
+- uid: WaveEngine.Common.Media.IMusicPlayer.Play(WaveEngine.Common.Media.MusicInfo)
+  commentId: M:WaveEngine.Common.Media.IMusicPlayer.Play(WaveEngine.Common.Media.MusicInfo)
+  id: Play(WaveEngine.Common.Media.MusicInfo)
+  parent: WaveEngine.Common.Media.IMusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: Play(MusicInfo)
+  nameWithType: IMusicPlayer.Play(MusicInfo)
+  fullName: WaveEngine.Common.Media.IMusicPlayer.Play(WaveEngine.Common.Media.MusicInfo)
+  type: Method
+  source:
+    id: Play
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Media\IMusicPlayer.cs
+    startLine: 61
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Media
+  summary: "\nPlays the specified music.\n"
+  example: []
+  syntax:
+    content: void Play(MusicInfo music)
+    parameters:
+    - id: music
+      type: WaveEngine.Common.Media.MusicInfo
+      description: The music.
+    content.vb: Sub Play(music As MusicInfo)
+  overload: WaveEngine.Common.Media.IMusicPlayer.Play*
+- uid: WaveEngine.Common.Media.IMusicPlayer.Resume
+  commentId: M:WaveEngine.Common.Media.IMusicPlayer.Resume
+  id: Resume
+  parent: WaveEngine.Common.Media.IMusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: Resume()
+  nameWithType: IMusicPlayer.Resume()
+  fullName: WaveEngine.Common.Media.IMusicPlayer.Resume()
+  type: Method
+  source:
+    id: Resume
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Media\IMusicPlayer.cs
+    startLine: 66
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Media
+  summary: "\nResumes this instance.\n"
+  example: []
+  syntax:
+    content: void Resume()
+    content.vb: Sub Resume
+  overload: WaveEngine.Common.Media.IMusicPlayer.Resume*
+- uid: WaveEngine.Common.Media.IMusicPlayer.Stop
+  commentId: M:WaveEngine.Common.Media.IMusicPlayer.Stop
+  id: Stop
+  parent: WaveEngine.Common.Media.IMusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: IMusicPlayer.Stop()
+  fullName: WaveEngine.Common.Media.IMusicPlayer.Stop()
+  type: Method
+  source:
+    id: Stop
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Media\IMusicPlayer.cs
+    startLine: 71
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Media
+  summary: "\nStops this instance.\n"
+  example: []
+  syntax:
+    content: void Stop()
+    content.vb: Sub Stop
+  overload: WaveEngine.Common.Media.IMusicPlayer.Stop*
+- uid: WaveEngine.Common.Media.IMusicPlayer.Pause
+  commentId: M:WaveEngine.Common.Media.IMusicPlayer.Pause
+  id: Pause
+  parent: WaveEngine.Common.Media.IMusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: Pause()
+  nameWithType: IMusicPlayer.Pause()
+  fullName: WaveEngine.Common.Media.IMusicPlayer.Pause()
+  type: Method
+  source:
+    id: Pause
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Media\IMusicPlayer.cs
+    startLine: 76
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Media
+  summary: "\nPauses this instance.\n"
+  example: []
+  syntax:
+    content: void Pause()
+    content.vb: Sub Pause
+  overload: WaveEngine.Common.Media.IMusicPlayer.Pause*
+- uid: WaveEngine.Common.Media.IMusicPlayer.OnActivated
+  commentId: M:WaveEngine.Common.Media.IMusicPlayer.OnActivated
+  id: OnActivated
+  parent: WaveEngine.Common.Media.IMusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: OnActivated()
+  nameWithType: IMusicPlayer.OnActivated()
+  fullName: WaveEngine.Common.Media.IMusicPlayer.OnActivated()
+  type: Method
+  source:
+    id: OnActivated
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Media\IMusicPlayer.cs
+    startLine: 81
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Media
+  summary: "\nCalled when service activated.\n"
+  example: []
+  syntax:
+    content: void OnActivated()
+    content.vb: Sub OnActivated
+  overload: WaveEngine.Common.Media.IMusicPlayer.OnActivated*
+- uid: WaveEngine.Common.Media.IMusicPlayer.OnDeactivated
+  commentId: M:WaveEngine.Common.Media.IMusicPlayer.OnDeactivated
+  id: OnDeactivated
+  parent: WaveEngine.Common.Media.IMusicPlayer
+  langs:
+  - csharp
+  - vb
+  name: OnDeactivated()
+  nameWithType: IMusicPlayer.OnDeactivated()
+  fullName: WaveEngine.Common.Media.IMusicPlayer.OnDeactivated()
+  type: Method
+  source:
+    id: OnDeactivated
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Media\IMusicPlayer.cs
+    startLine: 86
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Media
+  summary: "\nCalled when service deactivated.\n"
+  example: []
+  syntax:
+    content: void OnDeactivated()
+    content.vb: Sub OnDeactivated
+  overload: WaveEngine.Common.Media.IMusicPlayer.OnDeactivated*
+references:
+- uid: WaveEngine.Common.Media
+  commentId: N:WaveEngine.Common.Media
+  name: WaveEngine.Common.Media
+  nameWithType: WaveEngine.Common.Media
+  fullName: WaveEngine.Common.Media
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Common.Media.IMusicPlayer.State*
+  commentId: Overload:WaveEngine.Common.Media.IMusicPlayer.State
+  name: State
+  nameWithType: IMusicPlayer.State
+  fullName: WaveEngine.Common.Media.IMusicPlayer.State
+- uid: WaveEngine.Common.Media.MusicState
+  commentId: T:WaveEngine.Common.Media.MusicState
+  parent: WaveEngine.Common.Media
+  name: MusicState
+  nameWithType: MusicState
+  fullName: WaveEngine.Common.Media.MusicState
+- uid: WaveEngine.Common.Media.IMusicPlayer.IsMuted*
+  commentId: Overload:WaveEngine.Common.Media.IMusicPlayer.IsMuted
+  name: IsMuted
+  nameWithType: IMusicPlayer.IsMuted
+  fullName: WaveEngine.Common.Media.IMusicPlayer.IsMuted
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Common.Media.IMusicPlayer.IsRepeat*
+  commentId: Overload:WaveEngine.Common.Media.IMusicPlayer.IsRepeat
+  name: IsRepeat
+  nameWithType: IMusicPlayer.IsRepeat
+  fullName: WaveEngine.Common.Media.IMusicPlayer.IsRepeat
+- uid: WaveEngine.Common.Media.IMusicPlayer.Volume*
+  commentId: Overload:WaveEngine.Common.Media.IMusicPlayer.Volume
+  name: Volume
+  nameWithType: IMusicPlayer.Volume
+  fullName: WaveEngine.Common.Media.IMusicPlayer.Volume
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Common.Media.IMusicPlayer.MusicEnabled*
+  commentId: Overload:WaveEngine.Common.Media.IMusicPlayer.MusicEnabled
+  name: MusicEnabled
+  nameWithType: IMusicPlayer.MusicEnabled
+  fullName: WaveEngine.Common.Media.IMusicPlayer.MusicEnabled
+- uid: WaveEngine.Common.Media.IMusicPlayer.Play*
+  commentId: Overload:WaveEngine.Common.Media.IMusicPlayer.Play
+  name: Play
+  nameWithType: IMusicPlayer.Play
+  fullName: WaveEngine.Common.Media.IMusicPlayer.Play
+- uid: WaveEngine.Common.Media.MusicInfo
+  commentId: T:WaveEngine.Common.Media.MusicInfo
+  parent: WaveEngine.Common.Media
+  name: MusicInfo
+  nameWithType: MusicInfo
+  fullName: WaveEngine.Common.Media.MusicInfo
+- uid: WaveEngine.Common.Media.IMusicPlayer.Resume*
+  commentId: Overload:WaveEngine.Common.Media.IMusicPlayer.Resume
+  name: Resume
+  nameWithType: IMusicPlayer.Resume
+  fullName: WaveEngine.Common.Media.IMusicPlayer.Resume
+- uid: WaveEngine.Common.Media.IMusicPlayer.Stop*
+  commentId: Overload:WaveEngine.Common.Media.IMusicPlayer.Stop
+  name: Stop
+  nameWithType: IMusicPlayer.Stop
+  fullName: WaveEngine.Common.Media.IMusicPlayer.Stop
+- uid: WaveEngine.Common.Media.IMusicPlayer.Pause*
+  commentId: Overload:WaveEngine.Common.Media.IMusicPlayer.Pause
+  name: Pause
+  nameWithType: IMusicPlayer.Pause
+  fullName: WaveEngine.Common.Media.IMusicPlayer.Pause
+- uid: WaveEngine.Common.Media.IMusicPlayer.OnActivated*
+  commentId: Overload:WaveEngine.Common.Media.IMusicPlayer.OnActivated
+  name: OnActivated
+  nameWithType: IMusicPlayer.OnActivated
+  fullName: WaveEngine.Common.Media.IMusicPlayer.OnActivated
+- uid: WaveEngine.Common.Media.IMusicPlayer.OnDeactivated*
+  commentId: Overload:WaveEngine.Common.Media.IMusicPlayer.OnDeactivated
+  name: OnDeactivated
+  nameWithType: IMusicPlayer.OnDeactivated
+  fullName: WaveEngine.Common.Media.IMusicPlayer.OnDeactivated

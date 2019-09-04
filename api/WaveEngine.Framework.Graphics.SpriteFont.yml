@@ -1,0 +1,1373 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Framework.Graphics.SpriteFont
+  commentId: T:WaveEngine.Framework.Graphics.SpriteFont
+  id: SpriteFont
+  parent: WaveEngine.Framework.Graphics
+  children:
+  - WaveEngine.Framework.Graphics.SpriteFont.#ctor
+  - WaveEngine.Framework.Graphics.SpriteFont.AssetPath
+  - WaveEngine.Framework.Graphics.SpriteFont.Cropping
+  - WaveEngine.Framework.Graphics.SpriteFont.FontTexture
+  - WaveEngine.Framework.Graphics.SpriteFont.GetIndexForCharacter(System.Char)
+  - WaveEngine.Framework.Graphics.SpriteFont.Glyphs
+  - WaveEngine.Framework.Graphics.SpriteFont.Kerning
+  - WaveEngine.Framework.Graphics.SpriteFont.LineSpacing
+  - WaveEngine.Framework.Graphics.SpriteFont.Load(WaveEngine.Framework.Services.GraphicsDevice,System.IO.Stream)
+  - WaveEngine.Framework.Graphics.SpriteFont.MeasureString(System.String)
+  - WaveEngine.Framework.Graphics.SpriteFont.ReaderVersion
+  - WaveEngine.Framework.Graphics.SpriteFont.Spacing
+  - WaveEngine.Framework.Graphics.SpriteFont.Unload
+  langs:
+  - csharp
+  - vb
+  name: SpriteFont
+  nameWithType: SpriteFont
+  fullName: WaveEngine.Framework.Graphics.SpriteFont
+  type: Class
+  source:
+    id: SpriteFont
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\SpriteFont.cs
+    startLine: 17
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nThis class represents a font texture.\n"
+  example: []
+  syntax:
+    content: 'public sealed class SpriteFont : ILoadable<GraphicsDevice>, ILoadable'
+    content.vb: >-
+      Public NotInheritable Class SpriteFont
+
+          Implements ILoadable(Of GraphicsDevice), ILoadable
+  inheritance:
+  - System.Object
+  implements:
+  - WaveEngine.Common.ILoadable{WaveEngine.Framework.Services.GraphicsDevice}
+  - WaveEngine.Common.ILoadable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: WaveEngine.Framework.Graphics.SpriteFont.AssetPath
+  commentId: P:WaveEngine.Framework.Graphics.SpriteFont.AssetPath
+  id: AssetPath
+  parent: WaveEngine.Framework.Graphics.SpriteFont
+  langs:
+  - csharp
+  - vb
+  name: AssetPath
+  nameWithType: SpriteFont.AssetPath
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.AssetPath
+  type: Property
+  source:
+    id: AssetPath
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\SpriteFont.cs
+    startLine: 72
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets or sets the asset path.\n"
+  example: []
+  syntax:
+    content: public string AssetPath { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe asset path.\n"
+    content.vb: Public Property AssetPath As String
+  overload: WaveEngine.Framework.Graphics.SpriteFont.AssetPath*
+  implements:
+  - WaveEngine.Common.ILoadable.AssetPath
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.SpriteFont.ReaderVersion
+  commentId: P:WaveEngine.Framework.Graphics.SpriteFont.ReaderVersion
+  id: ReaderVersion
+  parent: WaveEngine.Framework.Graphics.SpriteFont
+  langs:
+  - csharp
+  - vb
+  name: ReaderVersion
+  nameWithType: SpriteFont.ReaderVersion
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.ReaderVersion
+  type: Property
+  source:
+    id: ReaderVersion
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\SpriteFont.cs
+    startLine: 80
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets the reader version.\n"
+  example: []
+  syntax:
+    content: public Version ReaderVersion { get; }
+    parameters: []
+    return:
+      type: System.Version
+      description: "\nThe reader version.\n"
+    content.vb: Public ReadOnly Property ReaderVersion As Version
+  overload: WaveEngine.Framework.Graphics.SpriteFont.ReaderVersion*
+  implements:
+  - WaveEngine.Common.ILoadable.ReaderVersion
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.SpriteFont.FontTexture
+  commentId: P:WaveEngine.Framework.Graphics.SpriteFont.FontTexture
+  id: FontTexture
+  parent: WaveEngine.Framework.Graphics.SpriteFont
+  langs:
+  - csharp
+  - vb
+  name: FontTexture
+  nameWithType: SpriteFont.FontTexture
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.FontTexture
+  type: Property
+  source:
+    id: FontTexture
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\SpriteFont.cs
+    startLine: 88
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets the font texture.\n"
+  example: []
+  syntax:
+    content: public Texture2D FontTexture { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Graphics.Texture2D
+    content.vb: Public ReadOnly Property FontTexture As Texture2D
+  overload: WaveEngine.Framework.Graphics.SpriteFont.FontTexture*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.SpriteFont.LineSpacing
+  commentId: P:WaveEngine.Framework.Graphics.SpriteFont.LineSpacing
+  id: LineSpacing
+  parent: WaveEngine.Framework.Graphics.SpriteFont
+  langs:
+  - csharp
+  - vb
+  name: LineSpacing
+  nameWithType: SpriteFont.LineSpacing
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.LineSpacing
+  type: Property
+  source:
+    id: LineSpacing
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\SpriteFont.cs
+    startLine: 96
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets the line spacing.\n"
+  example: []
+  syntax:
+    content: public int LineSpacing { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property LineSpacing As Integer
+  overload: WaveEngine.Framework.Graphics.SpriteFont.LineSpacing*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.SpriteFont.Spacing
+  commentId: P:WaveEngine.Framework.Graphics.SpriteFont.Spacing
+  id: Spacing
+  parent: WaveEngine.Framework.Graphics.SpriteFont
+  langs:
+  - csharp
+  - vb
+  name: Spacing
+  nameWithType: SpriteFont.Spacing
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.Spacing
+  type: Property
+  source:
+    id: Spacing
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\SpriteFont.cs
+    startLine: 104
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets the spacing.\n"
+  example: []
+  syntax:
+    content: public float Spacing { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Spacing As Single
+  overload: WaveEngine.Framework.Graphics.SpriteFont.Spacing*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.SpriteFont.Glyphs
+  commentId: P:WaveEngine.Framework.Graphics.SpriteFont.Glyphs
+  id: Glyphs
+  parent: WaveEngine.Framework.Graphics.SpriteFont
+  langs:
+  - csharp
+  - vb
+  name: Glyphs
+  nameWithType: SpriteFont.Glyphs
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.Glyphs
+  type: Property
+  source:
+    id: Glyphs
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\SpriteFont.cs
+    startLine: 112
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets the glyphs.\n"
+  example: []
+  syntax:
+    content: public Rectangle[] Glyphs { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Math.Rectangle[]
+    content.vb: Public ReadOnly Property Glyphs As Rectangle()
+  overload: WaveEngine.Framework.Graphics.SpriteFont.Glyphs*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.SpriteFont.Cropping
+  commentId: P:WaveEngine.Framework.Graphics.SpriteFont.Cropping
+  id: Cropping
+  parent: WaveEngine.Framework.Graphics.SpriteFont
+  langs:
+  - csharp
+  - vb
+  name: Cropping
+  nameWithType: SpriteFont.Cropping
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.Cropping
+  type: Property
+  source:
+    id: Cropping
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\SpriteFont.cs
+    startLine: 120
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets the cropping.\n"
+  example: []
+  syntax:
+    content: public Rectangle[] Cropping { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Math.Rectangle[]
+    content.vb: Public ReadOnly Property Cropping As Rectangle()
+  overload: WaveEngine.Framework.Graphics.SpriteFont.Cropping*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.SpriteFont.Kerning
+  commentId: P:WaveEngine.Framework.Graphics.SpriteFont.Kerning
+  id: Kerning
+  parent: WaveEngine.Framework.Graphics.SpriteFont
+  langs:
+  - csharp
+  - vb
+  name: Kerning
+  nameWithType: SpriteFont.Kerning
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.Kerning
+  type: Property
+  source:
+    id: Kerning
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\SpriteFont.cs
+    startLine: 128
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets the kerning.\n"
+  example: []
+  syntax:
+    content: public Vector3[] Kerning { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Math.Vector3[]
+    content.vb: Public ReadOnly Property Kerning As Vector3()
+  overload: WaveEngine.Framework.Graphics.SpriteFont.Kerning*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Graphics.SpriteFont.#ctor
+  commentId: M:WaveEngine.Framework.Graphics.SpriteFont.#ctor
+  id: '#ctor'
+  parent: WaveEngine.Framework.Graphics.SpriteFont
+  langs:
+  - csharp
+  - vb
+  name: SpriteFont()
+  nameWithType: SpriteFont.SpriteFont()
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.SpriteFont()
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\SpriteFont.cs
+    startLine: 139
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Framework.Graphics.SpriteFont\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public SpriteFont()
+    content.vb: Public Sub New
+  overload: WaveEngine.Framework.Graphics.SpriteFont.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.SpriteFont.Load(WaveEngine.Framework.Services.GraphicsDevice,System.IO.Stream)
+  commentId: M:WaveEngine.Framework.Graphics.SpriteFont.Load(WaveEngine.Framework.Services.GraphicsDevice,System.IO.Stream)
+  id: Load(WaveEngine.Framework.Services.GraphicsDevice,System.IO.Stream)
+  parent: WaveEngine.Framework.Graphics.SpriteFont
+  langs:
+  - csharp
+  - vb
+  name: Load(GraphicsDevice, Stream)
+  nameWithType: SpriteFont.Load(GraphicsDevice, Stream)
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.Load(WaveEngine.Framework.Services.GraphicsDevice, System.IO.Stream)
+  type: Method
+  source:
+    id: Load
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\SpriteFont.cs
+    startLine: 153
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nLoads the specified graphicsDevice.\n"
+  example: []
+  syntax:
+    content: public void Load(GraphicsDevice graphicsDevice, Stream stream)
+    parameters:
+    - id: graphicsDevice
+      type: WaveEngine.Framework.Services.GraphicsDevice
+      description: The graphicsDevice.
+    - id: stream
+      type: System.IO.Stream
+      description: The stream.
+    content.vb: Public Sub Load(graphicsDevice As GraphicsDevice, stream As Stream)
+  overload: WaveEngine.Framework.Graphics.SpriteFont.Load*
+  implements:
+  - WaveEngine.Common.ILoadable{WaveEngine.Framework.Services.GraphicsDevice}.Load(WaveEngine.Framework.Services.GraphicsDevice,System.IO.Stream)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.SpriteFont.Unload
+  commentId: M:WaveEngine.Framework.Graphics.SpriteFont.Unload
+  id: Unload
+  parent: WaveEngine.Framework.Graphics.SpriteFont
+  langs:
+  - csharp
+  - vb
+  name: Unload()
+  nameWithType: SpriteFont.Unload()
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.Unload()
+  type: Method
+  source:
+    id: Unload
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\SpriteFont.cs
+    startLine: 218
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nUnloads this instance.\n"
+  example: []
+  syntax:
+    content: public void Unload()
+    content.vb: Public Sub Unload
+  overload: WaveEngine.Framework.Graphics.SpriteFont.Unload*
+  implements:
+  - WaveEngine.Common.ILoadable.Unload
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.SpriteFont.GetIndexForCharacter(System.Char)
+  commentId: M:WaveEngine.Framework.Graphics.SpriteFont.GetIndexForCharacter(System.Char)
+  id: GetIndexForCharacter(System.Char)
+  parent: WaveEngine.Framework.Graphics.SpriteFont
+  langs:
+  - csharp
+  - vb
+  name: GetIndexForCharacter(Char)
+  nameWithType: SpriteFont.GetIndexForCharacter(Char)
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.GetIndexForCharacter(System.Char)
+  type: Method
+  source:
+    id: GetIndexForCharacter
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\SpriteFont.cs
+    startLine: 231
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nGets the index for character.\n"
+  example: []
+  syntax:
+    content: public int GetIndexForCharacter(char character)
+    parameters:
+    - id: character
+      type: System.Char
+      description: The character.
+    return:
+      type: System.Int32
+      description: Character index.
+    content.vb: Public Function GetIndexForCharacter(character As Char) As Integer
+  overload: WaveEngine.Framework.Graphics.SpriteFont.GetIndexForCharacter*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Graphics.SpriteFont.MeasureString(System.String)
+  commentId: M:WaveEngine.Framework.Graphics.SpriteFont.MeasureString(System.String)
+  id: MeasureString(System.String)
+  parent: WaveEngine.Framework.Graphics.SpriteFont
+  langs:
+  - csharp
+  - vb
+  name: MeasureString(String)
+  nameWithType: SpriteFont.MeasureString(String)
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.MeasureString(System.String)
+  type: Method
+  source:
+    id: MeasureString
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Graphics\SpriteFont.cs
+    startLine: 267
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Graphics
+  summary: "\nMeasures the string.\n"
+  example: []
+  syntax:
+    content: public Vector2 MeasureString(string text)
+    parameters:
+    - id: text
+      type: System.String
+      description: The text.
+    return:
+      type: WaveEngine.Common.Math.Vector2
+      description: Size result.
+    content.vb: Public Function MeasureString(text As String) As Vector2
+  overload: WaveEngine.Framework.Graphics.SpriteFont.MeasureString*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: WaveEngine.Framework.Graphics
+  commentId: N:WaveEngine.Framework.Graphics
+  name: WaveEngine.Framework.Graphics
+  nameWithType: WaveEngine.Framework.Graphics
+  fullName: WaveEngine.Framework.Graphics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.ILoadable{WaveEngine.Framework.Services.GraphicsDevice}
+  commentId: T:WaveEngine.Common.ILoadable{WaveEngine.Framework.Services.GraphicsDevice}
+  parent: WaveEngine.Common
+  definition: WaveEngine.Common.ILoadable`1
+  name: ILoadable<GraphicsDevice>
+  nameWithType: ILoadable<GraphicsDevice>
+  fullName: WaveEngine.Common.ILoadable<WaveEngine.Framework.Services.GraphicsDevice>
+  nameWithType.vb: ILoadable(Of GraphicsDevice)
+  fullName.vb: WaveEngine.Common.ILoadable(Of WaveEngine.Framework.Services.GraphicsDevice)
+  name.vb: ILoadable(Of GraphicsDevice)
+  spec.csharp:
+  - uid: WaveEngine.Common.ILoadable`1
+    name: ILoadable
+    nameWithType: ILoadable
+    fullName: WaveEngine.Common.ILoadable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Framework.Services.GraphicsDevice
+    name: GraphicsDevice
+    nameWithType: GraphicsDevice
+    fullName: WaveEngine.Framework.Services.GraphicsDevice
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: WaveEngine.Common.ILoadable`1
+    name: ILoadable
+    nameWithType: ILoadable
+    fullName: WaveEngine.Common.ILoadable
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Framework.Services.GraphicsDevice
+    name: GraphicsDevice
+    nameWithType: GraphicsDevice
+    fullName: WaveEngine.Framework.Services.GraphicsDevice
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.ILoadable
+  commentId: T:WaveEngine.Common.ILoadable
+  parent: WaveEngine.Common
+  name: ILoadable
+  nameWithType: ILoadable
+  fullName: WaveEngine.Common.ILoadable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.ILoadable`1
+  commentId: T:WaveEngine.Common.ILoadable`1
+  name: ILoadable<T>
+  nameWithType: ILoadable<T>
+  fullName: WaveEngine.Common.ILoadable<T>
+  nameWithType.vb: ILoadable(Of T)
+  fullName.vb: WaveEngine.Common.ILoadable(Of T)
+  name.vb: ILoadable(Of T)
+  spec.csharp:
+  - uid: WaveEngine.Common.ILoadable`1
+    name: ILoadable
+    nameWithType: ILoadable
+    fullName: WaveEngine.Common.ILoadable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: WaveEngine.Common.ILoadable`1
+    name: ILoadable
+    nameWithType: ILoadable
+    fullName: WaveEngine.Common.ILoadable
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common
+  commentId: N:WaveEngine.Common
+  name: WaveEngine.Common
+  nameWithType: WaveEngine.Common
+  fullName: WaveEngine.Common
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Framework.Graphics.SpriteFont.AssetPath*
+  commentId: Overload:WaveEngine.Framework.Graphics.SpriteFont.AssetPath
+  name: AssetPath
+  nameWithType: SpriteFont.AssetPath
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.AssetPath
+- uid: WaveEngine.Common.ILoadable.AssetPath
+  commentId: P:WaveEngine.Common.ILoadable.AssetPath
+  parent: WaveEngine.Common.ILoadable
+  name: AssetPath
+  nameWithType: ILoadable.AssetPath
+  fullName: WaveEngine.Common.ILoadable.AssetPath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: WaveEngine.Framework.Graphics.SpriteFont.ReaderVersion*
+  commentId: Overload:WaveEngine.Framework.Graphics.SpriteFont.ReaderVersion
+  name: ReaderVersion
+  nameWithType: SpriteFont.ReaderVersion
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.ReaderVersion
+- uid: WaveEngine.Common.ILoadable.ReaderVersion
+  commentId: P:WaveEngine.Common.ILoadable.ReaderVersion
+  parent: WaveEngine.Common.ILoadable
+  name: ReaderVersion
+  nameWithType: ILoadable.ReaderVersion
+  fullName: WaveEngine.Common.ILoadable.ReaderVersion
+- uid: System.Version
+  commentId: T:System.Version
+  parent: System
+  isExternal: true
+  name: Version
+  nameWithType: Version
+  fullName: System.Version
+- uid: WaveEngine.Framework.Graphics.SpriteFont.FontTexture*
+  commentId: Overload:WaveEngine.Framework.Graphics.SpriteFont.FontTexture
+  name: FontTexture
+  nameWithType: SpriteFont.FontTexture
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.FontTexture
+- uid: WaveEngine.Framework.Graphics.Texture2D
+  commentId: T:WaveEngine.Framework.Graphics.Texture2D
+  parent: WaveEngine.Framework.Graphics
+  name: Texture2D
+  nameWithType: Texture2D
+  fullName: WaveEngine.Framework.Graphics.Texture2D
+- uid: WaveEngine.Framework.Graphics.SpriteFont.LineSpacing*
+  commentId: Overload:WaveEngine.Framework.Graphics.SpriteFont.LineSpacing
+  name: LineSpacing
+  nameWithType: SpriteFont.LineSpacing
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.LineSpacing
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: WaveEngine.Framework.Graphics.SpriteFont.Spacing*
+  commentId: Overload:WaveEngine.Framework.Graphics.SpriteFont.Spacing
+  name: Spacing
+  nameWithType: SpriteFont.Spacing
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.Spacing
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Framework.Graphics.SpriteFont.Glyphs*
+  commentId: Overload:WaveEngine.Framework.Graphics.SpriteFont.Glyphs
+  name: Glyphs
+  nameWithType: SpriteFont.Glyphs
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.Glyphs
+- uid: WaveEngine.Common.Math.Rectangle[]
+  isExternal: true
+  name: Rectangle[]
+  nameWithType: Rectangle[]
+  fullName: WaveEngine.Common.Math.Rectangle[]
+  nameWithType.vb: Rectangle()
+  fullName.vb: WaveEngine.Common.Math.Rectangle()
+  name.vb: Rectangle()
+  spec.csharp:
+  - uid: WaveEngine.Common.Math.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: WaveEngine.Common.Math.Rectangle
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: WaveEngine.Common.Math.Rectangle
+    name: Rectangle
+    nameWithType: Rectangle
+    fullName: WaveEngine.Common.Math.Rectangle
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: WaveEngine.Framework.Graphics.SpriteFont.Cropping*
+  commentId: Overload:WaveEngine.Framework.Graphics.SpriteFont.Cropping
+  name: Cropping
+  nameWithType: SpriteFont.Cropping
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.Cropping
+- uid: WaveEngine.Framework.Graphics.SpriteFont.Kerning*
+  commentId: Overload:WaveEngine.Framework.Graphics.SpriteFont.Kerning
+  name: Kerning
+  nameWithType: SpriteFont.Kerning
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.Kerning
+- uid: WaveEngine.Common.Math.Vector3[]
+  isExternal: true
+  name: Vector3[]
+  nameWithType: Vector3[]
+  fullName: WaveEngine.Common.Math.Vector3[]
+  nameWithType.vb: Vector3()
+  fullName.vb: WaveEngine.Common.Math.Vector3()
+  name.vb: Vector3()
+  spec.csharp:
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: WaveEngine.Framework.Graphics.SpriteFont
+  commentId: T:WaveEngine.Framework.Graphics.SpriteFont
+  parent: WaveEngine.Framework.Graphics
+  name: SpriteFont
+  nameWithType: SpriteFont
+  fullName: WaveEngine.Framework.Graphics.SpriteFont
+- uid: WaveEngine.Framework.Graphics.SpriteFont.#ctor*
+  commentId: Overload:WaveEngine.Framework.Graphics.SpriteFont.#ctor
+  name: SpriteFont
+  nameWithType: SpriteFont.SpriteFont
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.SpriteFont
+- uid: WaveEngine.Framework.Graphics.SpriteFont.Load*
+  commentId: Overload:WaveEngine.Framework.Graphics.SpriteFont.Load
+  name: Load
+  nameWithType: SpriteFont.Load
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.Load
+- uid: WaveEngine.Common.ILoadable{WaveEngine.Framework.Services.GraphicsDevice}.Load(WaveEngine.Framework.Services.GraphicsDevice,System.IO.Stream)
+  commentId: M:WaveEngine.Common.ILoadable{WaveEngine.Framework.Services.GraphicsDevice}.Load(WaveEngine.Framework.Services.GraphicsDevice,System.IO.Stream)
+  parent: WaveEngine.Common.ILoadable{WaveEngine.Framework.Services.GraphicsDevice}
+  definition: WaveEngine.Common.ILoadable`1.Load(`0,System.IO.Stream)
+  name: Load(GraphicsDevice, Stream)
+  nameWithType: ILoadable<GraphicsDevice>.Load(GraphicsDevice, Stream)
+  fullName: WaveEngine.Common.ILoadable<WaveEngine.Framework.Services.GraphicsDevice>.Load(WaveEngine.Framework.Services.GraphicsDevice, System.IO.Stream)
+  nameWithType.vb: ILoadable(Of GraphicsDevice).Load(GraphicsDevice, Stream)
+  fullName.vb: WaveEngine.Common.ILoadable(Of WaveEngine.Framework.Services.GraphicsDevice).Load(WaveEngine.Framework.Services.GraphicsDevice, System.IO.Stream)
+  spec.csharp:
+  - uid: WaveEngine.Common.ILoadable`1.Load(`0,System.IO.Stream)
+    name: Load
+    nameWithType: ILoadable<GraphicsDevice>.Load
+    fullName: WaveEngine.Common.ILoadable<WaveEngine.Framework.Services.GraphicsDevice>.Load
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Services.GraphicsDevice
+    name: GraphicsDevice
+    nameWithType: GraphicsDevice
+    fullName: WaveEngine.Framework.Services.GraphicsDevice
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.ILoadable`1.Load(`0,System.IO.Stream)
+    name: Load
+    nameWithType: ILoadable(Of GraphicsDevice).Load
+    fullName: WaveEngine.Common.ILoadable(Of WaveEngine.Framework.Services.GraphicsDevice).Load
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Services.GraphicsDevice
+    name: GraphicsDevice
+    nameWithType: GraphicsDevice
+    fullName: WaveEngine.Framework.Services.GraphicsDevice
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Services.GraphicsDevice
+  commentId: T:WaveEngine.Framework.Services.GraphicsDevice
+  parent: WaveEngine.Framework.Services
+  name: GraphicsDevice
+  nameWithType: GraphicsDevice
+  fullName: WaveEngine.Framework.Services.GraphicsDevice
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: WaveEngine.Common.ILoadable`1.Load(`0,System.IO.Stream)
+  commentId: M:WaveEngine.Common.ILoadable`1.Load(`0,System.IO.Stream)
+  isExternal: true
+  name: Load(T, Stream)
+  nameWithType: ILoadable<T>.Load(T, Stream)
+  fullName: WaveEngine.Common.ILoadable<T>.Load(T, System.IO.Stream)
+  nameWithType.vb: ILoadable(Of T).Load(T, Stream)
+  fullName.vb: WaveEngine.Common.ILoadable(Of T).Load(T, System.IO.Stream)
+  spec.csharp:
+  - uid: WaveEngine.Common.ILoadable`1.Load(`0,System.IO.Stream)
+    name: Load
+    nameWithType: ILoadable<T>.Load
+    fullName: WaveEngine.Common.ILoadable<T>.Load
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.ILoadable`1.Load(`0,System.IO.Stream)
+    name: Load
+    nameWithType: ILoadable(Of T).Load
+    fullName: WaveEngine.Common.ILoadable(Of T).Load
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Services
+  commentId: N:WaveEngine.Framework.Services
+  name: WaveEngine.Framework.Services
+  nameWithType: WaveEngine.Framework.Services
+  fullName: WaveEngine.Framework.Services
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: WaveEngine.Framework.Graphics.SpriteFont.Unload*
+  commentId: Overload:WaveEngine.Framework.Graphics.SpriteFont.Unload
+  name: Unload
+  nameWithType: SpriteFont.Unload
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.Unload
+- uid: WaveEngine.Common.ILoadable.Unload
+  commentId: M:WaveEngine.Common.ILoadable.Unload
+  parent: WaveEngine.Common.ILoadable
+  name: Unload()
+  nameWithType: ILoadable.Unload()
+  fullName: WaveEngine.Common.ILoadable.Unload()
+  spec.csharp:
+  - uid: WaveEngine.Common.ILoadable.Unload
+    name: Unload
+    nameWithType: ILoadable.Unload
+    fullName: WaveEngine.Common.ILoadable.Unload
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.ILoadable.Unload
+    name: Unload
+    nameWithType: ILoadable.Unload
+    fullName: WaveEngine.Common.ILoadable.Unload
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.SpriteFont.GetIndexForCharacter*
+  commentId: Overload:WaveEngine.Framework.Graphics.SpriteFont.GetIndexForCharacter
+  name: GetIndexForCharacter
+  nameWithType: SpriteFont.GetIndexForCharacter
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.GetIndexForCharacter
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  nameWithType: Char
+  fullName: System.Char
+- uid: WaveEngine.Framework.Graphics.SpriteFont.MeasureString*
+  commentId: Overload:WaveEngine.Framework.Graphics.SpriteFont.MeasureString
+  name: MeasureString
+  nameWithType: SpriteFont.MeasureString
+  fullName: WaveEngine.Framework.Graphics.SpriteFont.MeasureString
+- uid: WaveEngine.Common.Math.Vector2
+  commentId: T:WaveEngine.Common.Math.Vector2
+  parent: WaveEngine.Common.Math
+  name: Vector2
+  nameWithType: Vector2
+  fullName: WaveEngine.Common.Math.Vector2
+- uid: WaveEngine.Common.Math
+  commentId: N:WaveEngine.Common.Math
+  name: WaveEngine.Common.Math
+  nameWithType: WaveEngine.Common.Math
+  fullName: WaveEngine.Common.Math

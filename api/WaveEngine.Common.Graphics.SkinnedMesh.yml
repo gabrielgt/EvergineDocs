@@ -1,0 +1,1178 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Common.Graphics.SkinnedMesh
+  commentId: T:WaveEngine.Common.Graphics.SkinnedMesh
+  id: SkinnedMesh
+  parent: WaveEngine.Common.Graphics
+  children:
+  - WaveEngine.Common.Graphics.SkinnedMesh.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,WaveEngine.Common.Graphics.SkinnedVertexBuffer,WaveEngine.Common.Graphics.IndexBuffer,WaveEngine.Common.Graphics.PrimitiveType,System.Int32,WaveEngine.Common.Graphics.MorphTargetSlot[])
+  - WaveEngine.Common.Graphics.SkinnedMesh.#ctor(WaveEngine.Common.Graphics.SkinnedVertexBuffer,WaveEngine.Common.Graphics.IndexBuffer,WaveEngine.Common.Graphics.PrimitiveType,WaveEngine.Common.Graphics.MorphTargetSlot[])
+  - WaveEngine.Common.Graphics.SkinnedMesh.Clone
+  - WaveEngine.Common.Graphics.SkinnedMesh.MeshType
+  - WaveEngine.Common.Graphics.SkinnedMesh.MorphTargetSlots
+  - WaveEngine.Common.Graphics.SkinnedMesh.SetBones(WaveEngine.Common.Math.Matrix[],WaveEngine.Common.Shared.Graphics.SkinQuality,System.Single[],System.Boolean,System.Boolean)
+  - WaveEngine.Common.Graphics.SkinnedMesh.SetMorphTargetWeights(System.Single[],System.Boolean,System.Boolean)
+  - WaveEngine.Common.Graphics.SkinnedMesh.SkinnedVertexBuffer
+  langs:
+  - csharp
+  - vb
+  name: SkinnedMesh
+  nameWithType: SkinnedMesh
+  fullName: WaveEngine.Common.Graphics.SkinnedMesh
+  type: Class
+  source:
+    id: SkinnedMesh
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\SkinnedMesh.cs
+    startLine: 16
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nRepresents a mesh with skinned vertices.\n"
+  example: []
+  syntax:
+    content: 'public class SkinnedMesh : Mesh'
+    content.vb: >-
+      Public Class SkinnedMesh
+
+          Inherits Mesh
+  inheritance:
+  - System.Object
+  - WaveEngine.Common.Graphics.Mesh
+  inheritedMembers:
+  - WaveEngine.Common.Graphics.Mesh.VertexBuffer
+  - WaveEngine.Common.Graphics.Mesh.IndexBuffer
+  - WaveEngine.Common.Graphics.Mesh.VertexOffset
+  - WaveEngine.Common.Graphics.Mesh.NumVertices
+  - WaveEngine.Common.Graphics.Mesh.IndexOffset
+  - WaveEngine.Common.Graphics.Mesh.NumPrimitives
+  - WaveEngine.Common.Graphics.Mesh.PrimitiveType
+  - WaveEngine.Common.Graphics.Mesh.Name
+  - WaveEngine.Common.Graphics.Mesh.BoundingBox
+  - WaveEngine.Common.Graphics.Mesh.DisableBatch
+  - WaveEngine.Common.Graphics.Mesh.ZOrder
+  - WaveEngine.Common.Graphics.Mesh.MaterialIndex
+  - WaveEngine.Common.Graphics.Mesh.WriteMesh(WaveEngine.Common.Graphics.Mesh,System.IO.BinaryWriter)
+  - WaveEngine.Common.Graphics.Mesh.ReadMesh(System.IO.BinaryReader)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WaveEngine.Common.Graphics.SkinnedMesh.MeshType
+  commentId: P:WaveEngine.Common.Graphics.SkinnedMesh.MeshType
+  id: MeshType
+  parent: WaveEngine.Common.Graphics.SkinnedMesh
+  langs:
+  - csharp
+  - vb
+  name: MeshType
+  nameWithType: SkinnedMesh.MeshType
+  fullName: WaveEngine.Common.Graphics.SkinnedMesh.MeshType
+  type: Property
+  source:
+    id: MeshType
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\SkinnedMesh.cs
+    startLine: 28
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nGets the mesh type\n"
+  example: []
+  syntax:
+    content: public override MeshType MeshType { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Graphics.MeshType
+    content.vb: Public Overrides ReadOnly Property MeshType As MeshType
+  overridden: WaveEngine.Common.Graphics.Mesh.MeshType
+  overload: WaveEngine.Common.Graphics.SkinnedMesh.MeshType*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: WaveEngine.Common.Graphics.SkinnedMesh.MorphTargetSlots
+  commentId: P:WaveEngine.Common.Graphics.SkinnedMesh.MorphTargetSlots
+  id: MorphTargetSlots
+  parent: WaveEngine.Common.Graphics.SkinnedMesh
+  langs:
+  - csharp
+  - vb
+  name: MorphTargetSlots
+  nameWithType: SkinnedMesh.MorphTargetSlots
+  fullName: WaveEngine.Common.Graphics.SkinnedMesh.MorphTargetSlots
+  type: Property
+  source:
+    id: MorphTargetSlots
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\SkinnedMesh.cs
+    startLine: 33
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nGets the morph targets array\n"
+  example: []
+  syntax:
+    content: public MorphTargetSlot[] MorphTargetSlots { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Graphics.MorphTargetSlot[]
+    content.vb: Public ReadOnly Property MorphTargetSlots As MorphTargetSlot()
+  overload: WaveEngine.Common.Graphics.SkinnedMesh.MorphTargetSlots*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Common.Graphics.SkinnedMesh.SkinnedVertexBuffer
+  commentId: P:WaveEngine.Common.Graphics.SkinnedMesh.SkinnedVertexBuffer
+  id: SkinnedVertexBuffer
+  parent: WaveEngine.Common.Graphics.SkinnedMesh
+  langs:
+  - csharp
+  - vb
+  name: SkinnedVertexBuffer
+  nameWithType: SkinnedMesh.SkinnedVertexBuffer
+  fullName: WaveEngine.Common.Graphics.SkinnedMesh.SkinnedVertexBuffer
+  type: Property
+  source:
+    id: SkinnedVertexBuffer
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\SkinnedMesh.cs
+    startLine: 38
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nGets the skinned vertex buffer\n"
+  example: []
+  syntax:
+    content: public SkinnedVertexBuffer SkinnedVertexBuffer { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Graphics.SkinnedVertexBuffer
+    content.vb: Public ReadOnly Property SkinnedVertexBuffer As SkinnedVertexBuffer
+  overload: WaveEngine.Common.Graphics.SkinnedMesh.SkinnedVertexBuffer*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Common.Graphics.SkinnedMesh.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,WaveEngine.Common.Graphics.SkinnedVertexBuffer,WaveEngine.Common.Graphics.IndexBuffer,WaveEngine.Common.Graphics.PrimitiveType,System.Int32,WaveEngine.Common.Graphics.MorphTargetSlot[])
+  commentId: M:WaveEngine.Common.Graphics.SkinnedMesh.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,WaveEngine.Common.Graphics.SkinnedVertexBuffer,WaveEngine.Common.Graphics.IndexBuffer,WaveEngine.Common.Graphics.PrimitiveType,System.Int32,WaveEngine.Common.Graphics.MorphTargetSlot[])
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32,WaveEngine.Common.Graphics.SkinnedVertexBuffer,WaveEngine.Common.Graphics.IndexBuffer,WaveEngine.Common.Graphics.PrimitiveType,System.Int32,WaveEngine.Common.Graphics.MorphTargetSlot[])'
+  parent: WaveEngine.Common.Graphics.SkinnedMesh
+  langs:
+  - csharp
+  - vb
+  name: SkinnedMesh(Int32, Int32, Int32, Int32, SkinnedVertexBuffer, IndexBuffer, PrimitiveType, Int32, MorphTargetSlot[])
+  nameWithType: SkinnedMesh.SkinnedMesh(Int32, Int32, Int32, Int32, SkinnedVertexBuffer, IndexBuffer, PrimitiveType, Int32, MorphTargetSlot[])
+  fullName: WaveEngine.Common.Graphics.SkinnedMesh.SkinnedMesh(System.Int32, System.Int32, System.Int32, System.Int32, WaveEngine.Common.Graphics.SkinnedVertexBuffer, WaveEngine.Common.Graphics.IndexBuffer, WaveEngine.Common.Graphics.PrimitiveType, System.Int32, WaveEngine.Common.Graphics.MorphTargetSlot[])
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\SkinnedMesh.cs
+    startLine: 55
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Common.Graphics.SkinnedMesh\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public SkinnedMesh(int vertexOffset, int numVertices, int startIndex, int primitiveCount, SkinnedVertexBuffer vertexBuffer, IndexBuffer indexBuffer, PrimitiveType primitiveType, int materialID, MorphTargetSlot[] morphTargetSlots = null)
+    parameters:
+    - id: vertexOffset
+      type: System.Int32
+      description: The vertex offset.
+    - id: numVertices
+      type: System.Int32
+      description: The num vertices.
+    - id: startIndex
+      type: System.Int32
+      description: The start index.
+    - id: primitiveCount
+      type: System.Int32
+      description: The primitive count.
+    - id: vertexBuffer
+      type: WaveEngine.Common.Graphics.SkinnedVertexBuffer
+      description: The vertex buffer.
+    - id: indexBuffer
+      type: WaveEngine.Common.Graphics.IndexBuffer
+      description: The index buffer.
+    - id: primitiveType
+      type: WaveEngine.Common.Graphics.PrimitiveType
+      description: The primitive type.
+    - id: materialID
+      type: System.Int32
+      description: The material index.
+    - id: morphTargetSlots
+      type: WaveEngine.Common.Graphics.MorphTargetSlot[]
+      description: The morph targets slots
+    content.vb: Public Sub New(vertexOffset As Integer, numVertices As Integer, startIndex As Integer, primitiveCount As Integer, vertexBuffer As SkinnedVertexBuffer, indexBuffer As IndexBuffer, primitiveType As PrimitiveType, materialID As Integer, morphTargetSlots As MorphTargetSlot() = Nothing)
+  overload: WaveEngine.Common.Graphics.SkinnedMesh.#ctor*
+  nameWithType.vb: SkinnedMesh.SkinnedMesh(Int32, Int32, Int32, Int32, SkinnedVertexBuffer, IndexBuffer, PrimitiveType, Int32, MorphTargetSlot())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Graphics.SkinnedMesh.SkinnedMesh(System.Int32, System.Int32, System.Int32, System.Int32, WaveEngine.Common.Graphics.SkinnedVertexBuffer, WaveEngine.Common.Graphics.IndexBuffer, WaveEngine.Common.Graphics.PrimitiveType, System.Int32, WaveEngine.Common.Graphics.MorphTargetSlot())
+  name.vb: SkinnedMesh(Int32, Int32, Int32, Int32, SkinnedVertexBuffer, IndexBuffer, PrimitiveType, Int32, MorphTargetSlot())
+- uid: WaveEngine.Common.Graphics.SkinnedMesh.#ctor(WaveEngine.Common.Graphics.SkinnedVertexBuffer,WaveEngine.Common.Graphics.IndexBuffer,WaveEngine.Common.Graphics.PrimitiveType,WaveEngine.Common.Graphics.MorphTargetSlot[])
+  commentId: M:WaveEngine.Common.Graphics.SkinnedMesh.#ctor(WaveEngine.Common.Graphics.SkinnedVertexBuffer,WaveEngine.Common.Graphics.IndexBuffer,WaveEngine.Common.Graphics.PrimitiveType,WaveEngine.Common.Graphics.MorphTargetSlot[])
+  id: '#ctor(WaveEngine.Common.Graphics.SkinnedVertexBuffer,WaveEngine.Common.Graphics.IndexBuffer,WaveEngine.Common.Graphics.PrimitiveType,WaveEngine.Common.Graphics.MorphTargetSlot[])'
+  parent: WaveEngine.Common.Graphics.SkinnedMesh
+  langs:
+  - csharp
+  - vb
+  name: SkinnedMesh(SkinnedVertexBuffer, IndexBuffer, PrimitiveType, MorphTargetSlot[])
+  nameWithType: SkinnedMesh.SkinnedMesh(SkinnedVertexBuffer, IndexBuffer, PrimitiveType, MorphTargetSlot[])
+  fullName: WaveEngine.Common.Graphics.SkinnedMesh.SkinnedMesh(WaveEngine.Common.Graphics.SkinnedVertexBuffer, WaveEngine.Common.Graphics.IndexBuffer, WaveEngine.Common.Graphics.PrimitiveType, WaveEngine.Common.Graphics.MorphTargetSlot[])
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\SkinnedMesh.cs
+    startLine: 70
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Common.Graphics.SkinnedMesh\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public SkinnedMesh(SkinnedVertexBuffer vertexBuffer, IndexBuffer indexBuffer, PrimitiveType primitiveType, MorphTargetSlot[] morphTargetSlots = null)
+    parameters:
+    - id: vertexBuffer
+      type: WaveEngine.Common.Graphics.SkinnedVertexBuffer
+      description: The vertex buffer.
+    - id: indexBuffer
+      type: WaveEngine.Common.Graphics.IndexBuffer
+      description: The index buffer.
+    - id: primitiveType
+      type: WaveEngine.Common.Graphics.PrimitiveType
+      description: The primitive type.
+    - id: morphTargetSlots
+      type: WaveEngine.Common.Graphics.MorphTargetSlot[]
+      description: The morph targets slots
+    content.vb: Public Sub New(vertexBuffer As SkinnedVertexBuffer, indexBuffer As IndexBuffer, primitiveType As PrimitiveType, morphTargetSlots As MorphTargetSlot() = Nothing)
+  overload: WaveEngine.Common.Graphics.SkinnedMesh.#ctor*
+  nameWithType.vb: SkinnedMesh.SkinnedMesh(SkinnedVertexBuffer, IndexBuffer, PrimitiveType, MorphTargetSlot())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Graphics.SkinnedMesh.SkinnedMesh(WaveEngine.Common.Graphics.SkinnedVertexBuffer, WaveEngine.Common.Graphics.IndexBuffer, WaveEngine.Common.Graphics.PrimitiveType, WaveEngine.Common.Graphics.MorphTargetSlot())
+  name.vb: SkinnedMesh(SkinnedVertexBuffer, IndexBuffer, PrimitiveType, MorphTargetSlot())
+- uid: WaveEngine.Common.Graphics.SkinnedMesh.SetMorphTargetWeights(System.Single[],System.Boolean,System.Boolean)
+  commentId: M:WaveEngine.Common.Graphics.SkinnedMesh.SetMorphTargetWeights(System.Single[],System.Boolean,System.Boolean)
+  id: SetMorphTargetWeights(System.Single[],System.Boolean,System.Boolean)
+  parent: WaveEngine.Common.Graphics.SkinnedMesh
+  langs:
+  - csharp
+  - vb
+  name: SetMorphTargetWeights(Single[], Boolean, Boolean)
+  nameWithType: SkinnedMesh.SetMorphTargetWeights(Single[], Boolean, Boolean)
+  fullName: WaveEngine.Common.Graphics.SkinnedMesh.SetMorphTargetWeights(System.Single[], System.Boolean, System.Boolean)
+  type: Method
+  source:
+    id: SetMorphTargetWeights
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\SkinnedMesh.cs
+    startLine: 87
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nSet morph targets weights\n"
+  example: []
+  syntax:
+    content: public void SetMorphTargetWeights(float[] weights, bool morphNormals, bool morphTangentSpace)
+    parameters:
+    - id: weights
+      type: System.Single[]
+      description: The weights
+    - id: morphNormals
+      type: System.Boolean
+      description: if morph applies to normal
+    - id: morphTangentSpace
+      type: System.Boolean
+      description: if morph applies to tangent space
+    content.vb: Public Sub SetMorphTargetWeights(weights As Single(), morphNormals As Boolean, morphTangentSpace As Boolean)
+  overload: WaveEngine.Common.Graphics.SkinnedMesh.SetMorphTargetWeights*
+  nameWithType.vb: SkinnedMesh.SetMorphTargetWeights(Single(), Boolean, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Graphics.SkinnedMesh.SetMorphTargetWeights(System.Single(), System.Boolean, System.Boolean)
+  name.vb: SetMorphTargetWeights(Single(), Boolean, Boolean)
+- uid: WaveEngine.Common.Graphics.SkinnedMesh.SetBones(WaveEngine.Common.Math.Matrix[],WaveEngine.Common.Shared.Graphics.SkinQuality,System.Single[],System.Boolean,System.Boolean)
+  commentId: M:WaveEngine.Common.Graphics.SkinnedMesh.SetBones(WaveEngine.Common.Math.Matrix[],WaveEngine.Common.Shared.Graphics.SkinQuality,System.Single[],System.Boolean,System.Boolean)
+  id: SetBones(WaveEngine.Common.Math.Matrix[],WaveEngine.Common.Shared.Graphics.SkinQuality,System.Single[],System.Boolean,System.Boolean)
+  parent: WaveEngine.Common.Graphics.SkinnedMesh
+  langs:
+  - csharp
+  - vb
+  name: SetBones(Matrix[], SkinQuality, Single[], Boolean, Boolean)
+  nameWithType: SkinnedMesh.SetBones(Matrix[], SkinQuality, Single[], Boolean, Boolean)
+  fullName: WaveEngine.Common.Graphics.SkinnedMesh.SetBones(WaveEngine.Common.Math.Matrix[], WaveEngine.Common.Shared.Graphics.SkinQuality, System.Single[], System.Boolean, System.Boolean)
+  type: Method
+  source:
+    id: SetBones
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\SkinnedMesh.cs
+    startLine: 100
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nSets the bones.\n"
+  example: []
+  syntax:
+    content: public void SetBones(Matrix[] bones, SkinQuality skinQuality, float[] morphWeights, bool skinNormals, bool skinTangentSpace)
+    parameters:
+    - id: bones
+      type: WaveEngine.Common.Math.Matrix[]
+      description: The bones.
+    - id: skinQuality
+      type: WaveEngine.Common.Shared.Graphics.SkinQuality
+      description: The skin quality
+    - id: morphWeights
+      type: System.Single[]
+      description: The weights
+    - id: skinNormals
+      type: System.Boolean
+      description: if set to <code>true</code> [skin normals].
+    - id: skinTangentSpace
+      type: System.Boolean
+      description: skin tangent space
+    content.vb: Public Sub SetBones(bones As Matrix(), skinQuality As SkinQuality, morphWeights As Single(), skinNormals As Boolean, skinTangentSpace As Boolean)
+  overload: WaveEngine.Common.Graphics.SkinnedMesh.SetBones*
+  nameWithType.vb: SkinnedMesh.SetBones(Matrix(), SkinQuality, Single(), Boolean, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Graphics.SkinnedMesh.SetBones(WaveEngine.Common.Math.Matrix(), WaveEngine.Common.Shared.Graphics.SkinQuality, System.Single(), System.Boolean, System.Boolean)
+  name.vb: SetBones(Matrix(), SkinQuality, Single(), Boolean, Boolean)
+- uid: WaveEngine.Common.Graphics.SkinnedMesh.Clone
+  commentId: M:WaveEngine.Common.Graphics.SkinnedMesh.Clone
+  id: Clone
+  parent: WaveEngine.Common.Graphics.SkinnedMesh
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: SkinnedMesh.Clone()
+  fullName: WaveEngine.Common.Graphics.SkinnedMesh.Clone()
+  type: Method
+  source:
+    id: Clone
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\SkinnedMesh.cs
+    startLine: 119
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nClone this mesh\n"
+  example: []
+  syntax:
+    content: public SkinnedMesh Clone()
+    return:
+      type: WaveEngine.Common.Graphics.SkinnedMesh
+      description: The skinned mesh
+    content.vb: Public Function Clone As SkinnedMesh
+  overload: WaveEngine.Common.Graphics.SkinnedMesh.Clone*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: WaveEngine.Common.Graphics
+  commentId: N:WaveEngine.Common.Graphics
+  name: WaveEngine.Common.Graphics
+  nameWithType: WaveEngine.Common.Graphics
+  fullName: WaveEngine.Common.Graphics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.Graphics.Mesh
+  commentId: T:WaveEngine.Common.Graphics.Mesh
+  parent: WaveEngine.Common.Graphics
+  name: Mesh
+  nameWithType: Mesh
+  fullName: WaveEngine.Common.Graphics.Mesh
+- uid: WaveEngine.Common.Graphics.Mesh.VertexBuffer
+  commentId: F:WaveEngine.Common.Graphics.Mesh.VertexBuffer
+  parent: WaveEngine.Common.Graphics.Mesh
+  name: VertexBuffer
+  nameWithType: Mesh.VertexBuffer
+  fullName: WaveEngine.Common.Graphics.Mesh.VertexBuffer
+- uid: WaveEngine.Common.Graphics.Mesh.IndexBuffer
+  commentId: F:WaveEngine.Common.Graphics.Mesh.IndexBuffer
+  parent: WaveEngine.Common.Graphics.Mesh
+  name: IndexBuffer
+  nameWithType: Mesh.IndexBuffer
+  fullName: WaveEngine.Common.Graphics.Mesh.IndexBuffer
+- uid: WaveEngine.Common.Graphics.Mesh.VertexOffset
+  commentId: F:WaveEngine.Common.Graphics.Mesh.VertexOffset
+  parent: WaveEngine.Common.Graphics.Mesh
+  name: VertexOffset
+  nameWithType: Mesh.VertexOffset
+  fullName: WaveEngine.Common.Graphics.Mesh.VertexOffset
+- uid: WaveEngine.Common.Graphics.Mesh.NumVertices
+  commentId: F:WaveEngine.Common.Graphics.Mesh.NumVertices
+  parent: WaveEngine.Common.Graphics.Mesh
+  name: NumVertices
+  nameWithType: Mesh.NumVertices
+  fullName: WaveEngine.Common.Graphics.Mesh.NumVertices
+- uid: WaveEngine.Common.Graphics.Mesh.IndexOffset
+  commentId: F:WaveEngine.Common.Graphics.Mesh.IndexOffset
+  parent: WaveEngine.Common.Graphics.Mesh
+  name: IndexOffset
+  nameWithType: Mesh.IndexOffset
+  fullName: WaveEngine.Common.Graphics.Mesh.IndexOffset
+- uid: WaveEngine.Common.Graphics.Mesh.NumPrimitives
+  commentId: F:WaveEngine.Common.Graphics.Mesh.NumPrimitives
+  parent: WaveEngine.Common.Graphics.Mesh
+  name: NumPrimitives
+  nameWithType: Mesh.NumPrimitives
+  fullName: WaveEngine.Common.Graphics.Mesh.NumPrimitives
+- uid: WaveEngine.Common.Graphics.Mesh.PrimitiveType
+  commentId: F:WaveEngine.Common.Graphics.Mesh.PrimitiveType
+  parent: WaveEngine.Common.Graphics.Mesh
+  name: PrimitiveType
+  nameWithType: Mesh.PrimitiveType
+  fullName: WaveEngine.Common.Graphics.Mesh.PrimitiveType
+- uid: WaveEngine.Common.Graphics.Mesh.Name
+  commentId: F:WaveEngine.Common.Graphics.Mesh.Name
+  parent: WaveEngine.Common.Graphics.Mesh
+  name: Name
+  nameWithType: Mesh.Name
+  fullName: WaveEngine.Common.Graphics.Mesh.Name
+- uid: WaveEngine.Common.Graphics.Mesh.BoundingBox
+  commentId: F:WaveEngine.Common.Graphics.Mesh.BoundingBox
+  parent: WaveEngine.Common.Graphics.Mesh
+  name: BoundingBox
+  nameWithType: Mesh.BoundingBox
+  fullName: WaveEngine.Common.Graphics.Mesh.BoundingBox
+- uid: WaveEngine.Common.Graphics.Mesh.DisableBatch
+  commentId: F:WaveEngine.Common.Graphics.Mesh.DisableBatch
+  parent: WaveEngine.Common.Graphics.Mesh
+  name: DisableBatch
+  nameWithType: Mesh.DisableBatch
+  fullName: WaveEngine.Common.Graphics.Mesh.DisableBatch
+- uid: WaveEngine.Common.Graphics.Mesh.ZOrder
+  commentId: F:WaveEngine.Common.Graphics.Mesh.ZOrder
+  parent: WaveEngine.Common.Graphics.Mesh
+  name: ZOrder
+  nameWithType: Mesh.ZOrder
+  fullName: WaveEngine.Common.Graphics.Mesh.ZOrder
+- uid: WaveEngine.Common.Graphics.Mesh.MaterialIndex
+  commentId: F:WaveEngine.Common.Graphics.Mesh.MaterialIndex
+  parent: WaveEngine.Common.Graphics.Mesh
+  name: MaterialIndex
+  nameWithType: Mesh.MaterialIndex
+  fullName: WaveEngine.Common.Graphics.Mesh.MaterialIndex
+- uid: WaveEngine.Common.Graphics.Mesh.WriteMesh(WaveEngine.Common.Graphics.Mesh,System.IO.BinaryWriter)
+  commentId: M:WaveEngine.Common.Graphics.Mesh.WriteMesh(WaveEngine.Common.Graphics.Mesh,System.IO.BinaryWriter)
+  parent: WaveEngine.Common.Graphics.Mesh
+  isExternal: true
+  name: WriteMesh(Mesh, BinaryWriter)
+  nameWithType: Mesh.WriteMesh(Mesh, BinaryWriter)
+  fullName: WaveEngine.Common.Graphics.Mesh.WriteMesh(WaveEngine.Common.Graphics.Mesh, System.IO.BinaryWriter)
+  spec.csharp:
+  - uid: WaveEngine.Common.Graphics.Mesh.WriteMesh(WaveEngine.Common.Graphics.Mesh,System.IO.BinaryWriter)
+    name: WriteMesh
+    nameWithType: Mesh.WriteMesh
+    fullName: WaveEngine.Common.Graphics.Mesh.WriteMesh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Graphics.Mesh
+    name: Mesh
+    nameWithType: Mesh
+    fullName: WaveEngine.Common.Graphics.Mesh
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IO.BinaryWriter
+    name: BinaryWriter
+    nameWithType: BinaryWriter
+    fullName: System.IO.BinaryWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Graphics.Mesh.WriteMesh(WaveEngine.Common.Graphics.Mesh,System.IO.BinaryWriter)
+    name: WriteMesh
+    nameWithType: Mesh.WriteMesh
+    fullName: WaveEngine.Common.Graphics.Mesh.WriteMesh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Graphics.Mesh
+    name: Mesh
+    nameWithType: Mesh
+    fullName: WaveEngine.Common.Graphics.Mesh
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IO.BinaryWriter
+    name: BinaryWriter
+    nameWithType: BinaryWriter
+    fullName: System.IO.BinaryWriter
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Graphics.Mesh.ReadMesh(System.IO.BinaryReader)
+  commentId: M:WaveEngine.Common.Graphics.Mesh.ReadMesh(System.IO.BinaryReader)
+  parent: WaveEngine.Common.Graphics.Mesh
+  isExternal: true
+  name: ReadMesh(BinaryReader)
+  nameWithType: Mesh.ReadMesh(BinaryReader)
+  fullName: WaveEngine.Common.Graphics.Mesh.ReadMesh(System.IO.BinaryReader)
+  spec.csharp:
+  - uid: WaveEngine.Common.Graphics.Mesh.ReadMesh(System.IO.BinaryReader)
+    name: ReadMesh
+    nameWithType: Mesh.ReadMesh
+    fullName: WaveEngine.Common.Graphics.Mesh.ReadMesh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IO.BinaryReader
+    name: BinaryReader
+    nameWithType: BinaryReader
+    fullName: System.IO.BinaryReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Graphics.Mesh.ReadMesh(System.IO.BinaryReader)
+    name: ReadMesh
+    nameWithType: Mesh.ReadMesh
+    fullName: WaveEngine.Common.Graphics.Mesh.ReadMesh
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.IO.BinaryReader
+    name: BinaryReader
+    nameWithType: BinaryReader
+    fullName: System.IO.BinaryReader
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Common.Graphics.Mesh.MeshType
+  commentId: P:WaveEngine.Common.Graphics.Mesh.MeshType
+  parent: WaveEngine.Common.Graphics.Mesh
+  name: MeshType
+  nameWithType: Mesh.MeshType
+  fullName: WaveEngine.Common.Graphics.Mesh.MeshType
+- uid: WaveEngine.Common.Graphics.SkinnedMesh.MeshType*
+  commentId: Overload:WaveEngine.Common.Graphics.SkinnedMesh.MeshType
+  name: MeshType
+  nameWithType: SkinnedMesh.MeshType
+  fullName: WaveEngine.Common.Graphics.SkinnedMesh.MeshType
+- uid: WaveEngine.Common.Graphics.MeshType
+  commentId: T:WaveEngine.Common.Graphics.MeshType
+  parent: WaveEngine.Common.Graphics
+  name: MeshType
+  nameWithType: MeshType
+  fullName: WaveEngine.Common.Graphics.MeshType
+- uid: WaveEngine.Common.Graphics.SkinnedMesh.MorphTargetSlots*
+  commentId: Overload:WaveEngine.Common.Graphics.SkinnedMesh.MorphTargetSlots
+  name: MorphTargetSlots
+  nameWithType: SkinnedMesh.MorphTargetSlots
+  fullName: WaveEngine.Common.Graphics.SkinnedMesh.MorphTargetSlots
+- uid: WaveEngine.Common.Graphics.MorphTargetSlot[]
+  isExternal: true
+  name: MorphTargetSlot[]
+  nameWithType: MorphTargetSlot[]
+  fullName: WaveEngine.Common.Graphics.MorphTargetSlot[]
+  nameWithType.vb: MorphTargetSlot()
+  fullName.vb: WaveEngine.Common.Graphics.MorphTargetSlot()
+  name.vb: MorphTargetSlot()
+  spec.csharp:
+  - uid: WaveEngine.Common.Graphics.MorphTargetSlot
+    name: MorphTargetSlot
+    nameWithType: MorphTargetSlot
+    fullName: WaveEngine.Common.Graphics.MorphTargetSlot
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: WaveEngine.Common.Graphics.MorphTargetSlot
+    name: MorphTargetSlot
+    nameWithType: MorphTargetSlot
+    fullName: WaveEngine.Common.Graphics.MorphTargetSlot
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: WaveEngine.Common.Graphics.SkinnedMesh.SkinnedVertexBuffer*
+  commentId: Overload:WaveEngine.Common.Graphics.SkinnedMesh.SkinnedVertexBuffer
+  name: SkinnedVertexBuffer
+  nameWithType: SkinnedMesh.SkinnedVertexBuffer
+  fullName: WaveEngine.Common.Graphics.SkinnedMesh.SkinnedVertexBuffer
+- uid: WaveEngine.Common.Graphics.SkinnedVertexBuffer
+  commentId: T:WaveEngine.Common.Graphics.SkinnedVertexBuffer
+  parent: WaveEngine.Common.Graphics
+  name: SkinnedVertexBuffer
+  nameWithType: SkinnedVertexBuffer
+  fullName: WaveEngine.Common.Graphics.SkinnedVertexBuffer
+- uid: WaveEngine.Common.Graphics.SkinnedMesh
+  commentId: T:WaveEngine.Common.Graphics.SkinnedMesh
+  parent: WaveEngine.Common.Graphics
+  name: SkinnedMesh
+  nameWithType: SkinnedMesh
+  fullName: WaveEngine.Common.Graphics.SkinnedMesh
+- uid: WaveEngine.Common.Graphics.SkinnedMesh.#ctor*
+  commentId: Overload:WaveEngine.Common.Graphics.SkinnedMesh.#ctor
+  name: SkinnedMesh
+  nameWithType: SkinnedMesh.SkinnedMesh
+  fullName: WaveEngine.Common.Graphics.SkinnedMesh.SkinnedMesh
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: WaveEngine.Common.Graphics.IndexBuffer
+  commentId: T:WaveEngine.Common.Graphics.IndexBuffer
+  parent: WaveEngine.Common.Graphics
+  name: IndexBuffer
+  nameWithType: IndexBuffer
+  fullName: WaveEngine.Common.Graphics.IndexBuffer
+- uid: WaveEngine.Common.Graphics.PrimitiveType
+  commentId: T:WaveEngine.Common.Graphics.PrimitiveType
+  parent: WaveEngine.Common.Graphics
+  name: PrimitiveType
+  nameWithType: PrimitiveType
+  fullName: WaveEngine.Common.Graphics.PrimitiveType
+- uid: WaveEngine.Common.Graphics.SkinnedMesh.SetMorphTargetWeights*
+  commentId: Overload:WaveEngine.Common.Graphics.SkinnedMesh.SetMorphTargetWeights
+  name: SetMorphTargetWeights
+  nameWithType: SkinnedMesh.SetMorphTargetWeights
+  fullName: WaveEngine.Common.Graphics.SkinnedMesh.SetMorphTargetWeights
+- uid: System.Single[]
+  isExternal: true
+  name: Single[]
+  nameWithType: Single[]
+  fullName: System.Single[]
+  nameWithType.vb: Single()
+  fullName.vb: System.Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Common.Graphics.SkinnedMesh.SetBones*
+  commentId: Overload:WaveEngine.Common.Graphics.SkinnedMesh.SetBones
+  name: SetBones
+  nameWithType: SkinnedMesh.SetBones
+  fullName: WaveEngine.Common.Graphics.SkinnedMesh.SetBones
+- uid: WaveEngine.Common.Math.Matrix[]
+  isExternal: true
+  name: Matrix[]
+  nameWithType: Matrix[]
+  fullName: WaveEngine.Common.Math.Matrix[]
+  nameWithType.vb: Matrix()
+  fullName.vb: WaveEngine.Common.Math.Matrix()
+  name.vb: Matrix()
+  spec.csharp:
+  - uid: WaveEngine.Common.Math.Matrix
+    name: Matrix
+    nameWithType: Matrix
+    fullName: WaveEngine.Common.Math.Matrix
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: WaveEngine.Common.Math.Matrix
+    name: Matrix
+    nameWithType: Matrix
+    fullName: WaveEngine.Common.Math.Matrix
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: WaveEngine.Common.Shared.Graphics.SkinQuality
+  commentId: T:WaveEngine.Common.Shared.Graphics.SkinQuality
+  parent: WaveEngine.Common.Shared.Graphics
+  name: SkinQuality
+  nameWithType: SkinQuality
+  fullName: WaveEngine.Common.Shared.Graphics.SkinQuality
+- uid: WaveEngine.Common.Shared.Graphics
+  commentId: N:WaveEngine.Common.Shared.Graphics
+  name: WaveEngine.Common.Shared.Graphics
+  nameWithType: WaveEngine.Common.Shared.Graphics
+  fullName: WaveEngine.Common.Shared.Graphics
+- uid: WaveEngine.Common.Graphics.SkinnedMesh.Clone*
+  commentId: Overload:WaveEngine.Common.Graphics.SkinnedMesh.Clone
+  name: Clone
+  nameWithType: SkinnedMesh.Clone
+  fullName: WaveEngine.Common.Graphics.SkinnedMesh.Clone

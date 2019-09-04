@@ -1,0 +1,1772 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel
+  commentId: T:WaveEngine.Framework.Models.Assets.ModelAssetModel
+  id: ModelAssetModel
+  parent: WaveEngine.Framework.Models.Assets
+  children:
+  - WaveEngine.Framework.Models.Assets.ModelAssetModel.#ctor
+  - WaveEngine.Framework.Models.Assets.ModelAssetModel.AddClip(WaveEngine.Framework.Models.Profiles.AnimationClipModel)
+  - WaveEngine.Framework.Models.Assets.ModelAssetModel.Clips
+  - WaveEngine.Framework.Models.Assets.ModelAssetModel.EmbeddedResources
+  - WaveEngine.Framework.Models.Assets.ModelAssetModel.ExportAnimations
+  - WaveEngine.Framework.Models.Assets.ModelAssetModel.FindTrack(System.String)
+  - WaveEngine.Framework.Models.Assets.ModelAssetModel.GenerateTangentSpace
+  - WaveEngine.Framework.Models.Assets.ModelAssetModel.HasAnimations
+  - WaveEngine.Framework.Models.Assets.ModelAssetModel.Materials
+  - WaveEngine.Framework.Models.Assets.ModelAssetModel.Meshes
+  - WaveEngine.Framework.Models.Assets.ModelAssetModel.Nodes
+  - WaveEngine.Framework.Models.Assets.ModelAssetModel.OnDeserialized(System.Runtime.Serialization.StreamingContext)
+  - WaveEngine.Framework.Models.Assets.ModelAssetModel.SelectedAnimationChanged
+  - WaveEngine.Framework.Models.Assets.ModelAssetModel.SelectedClipChanged(WaveEngine.Framework.Models.Profiles.AnimationClipModel)
+  - WaveEngine.Framework.Models.Assets.ModelAssetModel.SourceAnimationTracks
+  - WaveEngine.Framework.Models.Assets.ModelAssetModel.SwapWindingOrder
+  langs:
+  - csharp
+  - vb
+  name: ModelAssetModel
+  nameWithType: ModelAssetModel
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel
+  type: Class
+  source:
+    id: ModelAssetModel
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Assets\ModelAssetModel.cs
+    startLine: 17
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Assets
+  summary: "\nModel asset\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract(Namespace = "WaveEngine.Framework.Models.Assets", Name = "Model")]
+
+      public class ModelAssetModel : AssetElement
+    content.vb: >-
+      <DataContract(Namespace:="WaveEngine.Framework.Models.Assets", Name:="Model")>
+
+      Public Class ModelAssetModel
+
+          Inherits AssetElement
+  inheritance:
+  - System.Object
+  - WaveEngine.Common.IO.SerializableObject
+  - WaveEngine.Framework.Models.Assets.AssetElement
+  inheritedMembers:
+  - WaveEngine.Framework.Models.Assets.AssetElement.ZipCompress
+  - WaveEngine.Framework.Models.Assets.AssetElement.Profiles
+  - WaveEngine.Framework.Models.Assets.AssetElement.AssociatedFiles
+  - WaveEngine.Common.IO.SerializableObject.DefaultValues
+  - WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Namespace
+      type: System.String
+      value: WaveEngine.Framework.Models.Assets
+    - name: Name
+      type: System.String
+      value: Model
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.Nodes
+  commentId: P:WaveEngine.Framework.Models.Assets.ModelAssetModel.Nodes
+  id: Nodes
+  parent: WaveEngine.Framework.Models.Assets.ModelAssetModel
+  langs:
+  - csharp
+  - vb
+  name: Nodes
+  nameWithType: ModelAssetModel.Nodes
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.Nodes
+  type: Property
+  source:
+    id: Nodes
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Assets\ModelAssetModel.cs
+    startLine: 23
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Assets
+  summary: "\nGets or sets the nodes of this model\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public List<string> Nodes { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: >-
+      <DataMember>
+
+      Public Property Nodes As List(Of String)
+  overload: WaveEngine.Framework.Models.Assets.ModelAssetModel.Nodes*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.Materials
+  commentId: P:WaveEngine.Framework.Models.Assets.ModelAssetModel.Materials
+  id: Materials
+  parent: WaveEngine.Framework.Models.Assets.ModelAssetModel
+  langs:
+  - csharp
+  - vb
+  name: Materials
+  nameWithType: ModelAssetModel.Materials
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.Materials
+  type: Property
+  source:
+    id: Materials
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Assets\ModelAssetModel.cs
+    startLine: 30
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Assets
+  summary: "\nGets or sets the model materials\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public List<ModelMaterialModel> Materials { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{WaveEngine.Framework.Models.Assets.ModelMaterialModel}
+    content.vb: >-
+      <DataMember>
+
+      Public Property Materials As List(Of ModelMaterialModel)
+  overload: WaveEngine.Framework.Models.Assets.ModelAssetModel.Materials*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.Meshes
+  commentId: P:WaveEngine.Framework.Models.Assets.ModelAssetModel.Meshes
+  id: Meshes
+  parent: WaveEngine.Framework.Models.Assets.ModelAssetModel
+  langs:
+  - csharp
+  - vb
+  name: Meshes
+  nameWithType: ModelAssetModel.Meshes
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.Meshes
+  type: Property
+  source:
+    id: Meshes
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Assets\ModelAssetModel.cs
+    startLine: 37
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Assets
+  summary: "\nGets or sets the model mesh list\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public List<MeshModel> Meshes { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{WaveEngine.Framework.Models.Assets.MeshModel}
+    content.vb: >-
+      <DataMember>
+
+      Public Property Meshes As List(Of MeshModel)
+  overload: WaveEngine.Framework.Models.Assets.ModelAssetModel.Meshes*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.SwapWindingOrder
+  commentId: P:WaveEngine.Framework.Models.Assets.ModelAssetModel.SwapWindingOrder
+  id: SwapWindingOrder
+  parent: WaveEngine.Framework.Models.Assets.ModelAssetModel
+  langs:
+  - csharp
+  - vb
+  name: SwapWindingOrder
+  nameWithType: ModelAssetModel.SwapWindingOrder
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.SwapWindingOrder
+  type: Property
+  source:
+    id: SwapWindingOrder
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Assets\ModelAssetModel.cs
+    startLine: 44
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Assets
+  summary: "\nGets or sets a value indicating whether [swap winding order]\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public bool SwapWindingOrder { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <DataMember>
+
+      Public Property SwapWindingOrder As Boolean
+  overload: WaveEngine.Framework.Models.Assets.ModelAssetModel.SwapWindingOrder*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.GenerateTangentSpace
+  commentId: P:WaveEngine.Framework.Models.Assets.ModelAssetModel.GenerateTangentSpace
+  id: GenerateTangentSpace
+  parent: WaveEngine.Framework.Models.Assets.ModelAssetModel
+  langs:
+  - csharp
+  - vb
+  name: GenerateTangentSpace
+  nameWithType: ModelAssetModel.GenerateTangentSpace
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.GenerateTangentSpace
+  type: Property
+  source:
+    id: GenerateTangentSpace
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Assets\ModelAssetModel.cs
+    startLine: 50
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Assets
+  summary: "\nGets or sets a value indicating whether [generate tangent space]\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public bool GenerateTangentSpace { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <DataMember>
+
+      Public Property GenerateTangentSpace As Boolean
+  overload: WaveEngine.Framework.Models.Assets.ModelAssetModel.GenerateTangentSpace*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.EmbeddedResources
+  commentId: P:WaveEngine.Framework.Models.Assets.ModelAssetModel.EmbeddedResources
+  id: EmbeddedResources
+  parent: WaveEngine.Framework.Models.Assets.ModelAssetModel
+  langs:
+  - csharp
+  - vb
+  name: EmbeddedResources
+  nameWithType: ModelAssetModel.EmbeddedResources
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.EmbeddedResources
+  type: Property
+  source:
+    id: EmbeddedResources
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Assets\ModelAssetModel.cs
+    startLine: 56
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Assets
+  summary: "\nGets or sets the embedded texture folders\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public List<string> EmbeddedResources { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: >-
+      <DataMember>
+
+      Public Property EmbeddedResources As List(Of String)
+  overload: WaveEngine.Framework.Models.Assets.ModelAssetModel.EmbeddedResources*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.SourceAnimationTracks
+  commentId: P:WaveEngine.Framework.Models.Assets.ModelAssetModel.SourceAnimationTracks
+  id: SourceAnimationTracks
+  parent: WaveEngine.Framework.Models.Assets.ModelAssetModel
+  langs:
+  - csharp
+  - vb
+  name: SourceAnimationTracks
+  nameWithType: ModelAssetModel.SourceAnimationTracks
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.SourceAnimationTracks
+  type: Property
+  source:
+    id: SourceAnimationTracks
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Assets\ModelAssetModel.cs
+    startLine: 63
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Assets
+  summary: "\nGets or sets the source animation tracks\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public List<AnimationTrackModel> SourceAnimationTracks { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{WaveEngine.Framework.Models.Profiles.AnimationTrackModel}
+    content.vb: >-
+      <DataMember>
+
+      Public Property SourceAnimationTracks As List(Of AnimationTrackModel)
+  overload: WaveEngine.Framework.Models.Assets.ModelAssetModel.SourceAnimationTracks*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.ExportAnimations
+  commentId: P:WaveEngine.Framework.Models.Assets.ModelAssetModel.ExportAnimations
+  id: ExportAnimations
+  parent: WaveEngine.Framework.Models.Assets.ModelAssetModel
+  langs:
+  - csharp
+  - vb
+  name: ExportAnimations
+  nameWithType: ModelAssetModel.ExportAnimations
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.ExportAnimations
+  type: Property
+  source:
+    id: ExportAnimations
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Assets\ModelAssetModel.cs
+    startLine: 70
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Assets
+  summary: "\nGets or sets a value indicating whether this instance is animated\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(Tag = 1, RenderPosition = RenderPosition.End, CustomPropertyName = "Export Animations", Tooltip = "Export animations in the final asset")]
+
+      [DataMember]
+
+      public bool ExportAnimations { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <RenderProperty(Tag:=1, RenderPosition:=RenderPosition.End, CustomPropertyName:="Export Animations", Tooltip:="Export animations in the final asset")>
+
+      <DataMember>
+
+      Public Property ExportAnimations As Boolean
+  overload: WaveEngine.Framework.Models.Assets.ModelAssetModel.ExportAnimations*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: Tag
+      type: System.Int32
+      value: 1
+    - name: RenderPosition
+      type: WaveEngine.Common.Attributes.RenderPosition
+      value: 2
+    - name: CustomPropertyName
+      type: System.String
+      value: Export Animations
+    - name: Tooltip
+      type: System.String
+      value: Export animations in the final asset
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.Clips
+  commentId: P:WaveEngine.Framework.Models.Assets.ModelAssetModel.Clips
+  id: Clips
+  parent: WaveEngine.Framework.Models.Assets.ModelAssetModel
+  langs:
+  - csharp
+  - vb
+  name: Clips
+  nameWithType: ModelAssetModel.Clips
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.Clips
+  type: Property
+  source:
+    id: Clips
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Assets\ModelAssetModel.cs
+    startLine: 77
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Assets
+  summary: "\nGets or sets the animations\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderPropertyAsList(true, true, true, true, null, null, null, null, null, null, null, null, AttatchToTag = 1, AttachToValue = true, RenderPosition = RenderPosition.End, AddItemAction = "AddClip", SelectionChangedItemAction = "SelectedClipChanged")]
+
+      [DataMember]
+
+      public List<AnimationClipModel> Clips { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{WaveEngine.Framework.Models.Profiles.AnimationClipModel}
+    content.vb: >-
+      <RenderPropertyAsList(True, True, True, True, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, AttatchToTag:=1, AttachToValue:=True, RenderPosition:=RenderPosition.End, AddItemAction:="AddClip", SelectionChangedItemAction:="SelectedClipChanged")>
+
+      <DataMember>
+
+      Public Property Clips As List(Of AnimationClipModel)
+  overload: WaveEngine.Framework.Models.Assets.ModelAssetModel.Clips*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderPropertyAsList
+    ctor: WaveEngine.Common.Attributes.RenderPropertyAsList.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
+    arguments:
+    - type: System.Boolean
+      value: true
+    - type: System.Boolean
+      value: true
+    - type: System.Boolean
+      value: true
+    - type: System.Boolean
+      value: true
+    - type: System.String
+    - type: System.String
+    - type: System.String
+    - type: System.String
+    - type: System.String
+    - type: System.String
+    - type: System.String
+    - type: System.String
+    namedArguments:
+    - name: AttatchToTag
+      type: System.Int32
+      value: 1
+    - name: AttachToValue
+      type: System.Boolean
+      value: true
+    - name: RenderPosition
+      type: WaveEngine.Common.Attributes.RenderPosition
+      value: 2
+    - name: AddItemAction
+      type: System.String
+      value: AddClip
+    - name: SelectionChangedItemAction
+      type: System.String
+      value: SelectedClipChanged
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.HasAnimations
+  commentId: P:WaveEngine.Framework.Models.Assets.ModelAssetModel.HasAnimations
+  id: HasAnimations
+  parent: WaveEngine.Framework.Models.Assets.ModelAssetModel
+  langs:
+  - csharp
+  - vb
+  name: HasAnimations
+  nameWithType: ModelAssetModel.HasAnimations
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.HasAnimations
+  type: Property
+  source:
+    id: HasAnimations
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Assets\ModelAssetModel.cs
+    startLine: 84
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Assets
+  summary: "\nGets a value indicating whether this model contains animations\n"
+  example: []
+  syntax:
+    content: public bool HasAnimations { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasAnimations As Boolean
+  overload: WaveEngine.Framework.Models.Assets.ModelAssetModel.HasAnimations*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.SelectedAnimationChanged
+  commentId: E:WaveEngine.Framework.Models.Assets.ModelAssetModel.SelectedAnimationChanged
+  id: SelectedAnimationChanged
+  parent: WaveEngine.Framework.Models.Assets.ModelAssetModel
+  langs:
+  - csharp
+  - vb
+  name: SelectedAnimationChanged
+  nameWithType: ModelAssetModel.SelectedAnimationChanged
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.SelectedAnimationChanged
+  type: Event
+  source:
+    id: SelectedAnimationChanged
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Assets\ModelAssetModel.cs
+    startLine: 89
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Assets
+  summary: "\nThe selected animation is changed\n"
+  example: []
+  syntax:
+    content: public event EventHandler<AnimationClipModel> SelectedAnimationChanged
+    return:
+      type: System.EventHandler{WaveEngine.Framework.Models.Profiles.AnimationClipModel}
+    content.vb: Public Event SelectedAnimationChanged As EventHandler(Of AnimationClipModel)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.#ctor
+  commentId: M:WaveEngine.Framework.Models.Assets.ModelAssetModel.#ctor
+  id: '#ctor'
+  parent: WaveEngine.Framework.Models.Assets.ModelAssetModel
+  langs:
+  - csharp
+  - vb
+  name: ModelAssetModel()
+  nameWithType: ModelAssetModel.ModelAssetModel()
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.ModelAssetModel()
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Assets\ModelAssetModel.cs
+    startLine: 94
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Assets
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Framework.Models.Assets.ModelAssetModel\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public ModelAssetModel()
+    content.vb: Public Sub New
+  overload: WaveEngine.Framework.Models.Assets.ModelAssetModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.OnDeserialized(System.Runtime.Serialization.StreamingContext)
+  commentId: M:WaveEngine.Framework.Models.Assets.ModelAssetModel.OnDeserialized(System.Runtime.Serialization.StreamingContext)
+  id: OnDeserialized(System.Runtime.Serialization.StreamingContext)
+  parent: WaveEngine.Framework.Models.Assets.ModelAssetModel
+  langs:
+  - csharp
+  - vb
+  name: OnDeserialized(StreamingContext)
+  nameWithType: ModelAssetModel.OnDeserialized(StreamingContext)
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.OnDeserialized(System.Runtime.Serialization.StreamingContext)
+  type: Method
+  source:
+    id: OnDeserialized
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Assets\ModelAssetModel.cs
+    startLine: 106
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Assets
+  summary: "\nOn deserialized\n"
+  example: []
+  syntax:
+    content: >-
+      [OnDeserialized]
+
+      public void OnDeserialized(StreamingContext streamingContext)
+    parameters:
+    - id: streamingContext
+      type: System.Runtime.Serialization.StreamingContext
+      description: The streaming context
+    content.vb: >-
+      <OnDeserialized>
+
+      Public Sub OnDeserialized(streamingContext As StreamingContext)
+  overload: WaveEngine.Framework.Models.Assets.ModelAssetModel.OnDeserialized*
+  attributes:
+  - type: System.Runtime.Serialization.OnDeserializedAttribute
+    ctor: System.Runtime.Serialization.OnDeserializedAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.AddClip(WaveEngine.Framework.Models.Profiles.AnimationClipModel)
+  commentId: M:WaveEngine.Framework.Models.Assets.ModelAssetModel.AddClip(WaveEngine.Framework.Models.Profiles.AnimationClipModel)
+  id: AddClip(WaveEngine.Framework.Models.Profiles.AnimationClipModel)
+  parent: WaveEngine.Framework.Models.Assets.ModelAssetModel
+  langs:
+  - csharp
+  - vb
+  name: AddClip(AnimationClipModel)
+  nameWithType: ModelAssetModel.AddClip(AnimationClipModel)
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.AddClip(WaveEngine.Framework.Models.Profiles.AnimationClipModel)
+  type: Method
+  source:
+    id: AddClip
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Assets\ModelAssetModel.cs
+    startLine: 116
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Assets
+  summary: "\nAdd clip to this collection\n"
+  example: []
+  syntax:
+    content: public void AddClip(AnimationClipModel clip)
+    parameters:
+    - id: clip
+      type: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+      description: The clip
+    content.vb: Public Sub AddClip(clip As AnimationClipModel)
+  overload: WaveEngine.Framework.Models.Assets.ModelAssetModel.AddClip*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.SelectedClipChanged(WaveEngine.Framework.Models.Profiles.AnimationClipModel)
+  commentId: M:WaveEngine.Framework.Models.Assets.ModelAssetModel.SelectedClipChanged(WaveEngine.Framework.Models.Profiles.AnimationClipModel)
+  id: SelectedClipChanged(WaveEngine.Framework.Models.Profiles.AnimationClipModel)
+  parent: WaveEngine.Framework.Models.Assets.ModelAssetModel
+  langs:
+  - csharp
+  - vb
+  name: SelectedClipChanged(AnimationClipModel)
+  nameWithType: ModelAssetModel.SelectedClipChanged(AnimationClipModel)
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.SelectedClipChanged(WaveEngine.Framework.Models.Profiles.AnimationClipModel)
+  type: Method
+  source:
+    id: SelectedClipChanged
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Assets\ModelAssetModel.cs
+    startLine: 140
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Assets
+  summary: "\nThe selected clip is changed\n"
+  example: []
+  syntax:
+    content: public void SelectedClipChanged(AnimationClipModel clip)
+    parameters:
+    - id: clip
+      type: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+      description: The clip
+    content.vb: Public Sub SelectedClipChanged(clip As AnimationClipModel)
+  overload: WaveEngine.Framework.Models.Assets.ModelAssetModel.SelectedClipChanged*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.FindTrack(System.String)
+  commentId: M:WaveEngine.Framework.Models.Assets.ModelAssetModel.FindTrack(System.String)
+  id: FindTrack(System.String)
+  parent: WaveEngine.Framework.Models.Assets.ModelAssetModel
+  langs:
+  - csharp
+  - vb
+  name: FindTrack(String)
+  nameWithType: ModelAssetModel.FindTrack(String)
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.FindTrack(System.String)
+  type: Method
+  source:
+    id: FindTrack
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Assets\ModelAssetModel.cs
+    startLine: 150
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Assets
+  summary: "\nFinds a track of the model\n"
+  example: []
+  syntax:
+    content: public AnimationTrackModel FindTrack(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the desired track
+    return:
+      type: WaveEngine.Framework.Models.Profiles.AnimationTrackModel
+      description: The desired track
+    content.vb: Public Function FindTrack(name As String) As AnimationTrackModel
+  overload: WaveEngine.Framework.Models.Assets.ModelAssetModel.FindTrack*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: WaveEngine.Framework.Models.Assets
+  commentId: N:WaveEngine.Framework.Models.Assets
+  name: WaveEngine.Framework.Models.Assets
+  nameWithType: WaveEngine.Framework.Models.Assets
+  fullName: WaveEngine.Framework.Models.Assets
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.IO.SerializableObject
+  commentId: T:WaveEngine.Common.IO.SerializableObject
+  parent: WaveEngine.Common.IO
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: WaveEngine.Common.IO.SerializableObject
+- uid: WaveEngine.Framework.Models.Assets.AssetElement
+  commentId: T:WaveEngine.Framework.Models.Assets.AssetElement
+  parent: WaveEngine.Framework.Models.Assets
+  name: AssetElement
+  nameWithType: AssetElement
+  fullName: WaveEngine.Framework.Models.Assets.AssetElement
+- uid: WaveEngine.Framework.Models.Assets.AssetElement.ZipCompress
+  commentId: P:WaveEngine.Framework.Models.Assets.AssetElement.ZipCompress
+  parent: WaveEngine.Framework.Models.Assets.AssetElement
+  name: ZipCompress
+  nameWithType: AssetElement.ZipCompress
+  fullName: WaveEngine.Framework.Models.Assets.AssetElement.ZipCompress
+- uid: WaveEngine.Framework.Models.Assets.AssetElement.Profiles
+  commentId: F:WaveEngine.Framework.Models.Assets.AssetElement.Profiles
+  parent: WaveEngine.Framework.Models.Assets.AssetElement
+  name: Profiles
+  nameWithType: AssetElement.Profiles
+  fullName: WaveEngine.Framework.Models.Assets.AssetElement.Profiles
+- uid: WaveEngine.Framework.Models.Assets.AssetElement.AssociatedFiles
+  commentId: P:WaveEngine.Framework.Models.Assets.AssetElement.AssociatedFiles
+  parent: WaveEngine.Framework.Models.Assets.AssetElement
+  name: AssociatedFiles
+  nameWithType: AssetElement.AssociatedFiles
+  fullName: WaveEngine.Framework.Models.Assets.AssetElement.AssociatedFiles
+- uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  commentId: M:WaveEngine.Common.IO.SerializableObject.DefaultValues
+  parent: WaveEngine.Common.IO.SerializableObject
+  name: DefaultValues()
+  nameWithType: SerializableObject.DefaultValues()
+  fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues()
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+    name: DefaultValues
+    nameWithType: SerializableObject.DefaultValues
+    fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.DefaultValues
+    name: DefaultValues
+    nameWithType: SerializableObject.DefaultValues
+    fullName: WaveEngine.Common.IO.SerializableObject.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  commentId: M:WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  parent: WaveEngine.Common.IO.SerializableObject
+  isExternal: true
+  name: OnDeserializing(StreamingContext)
+  nameWithType: SerializableObject.OnDeserializing(StreamingContext)
+  fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.IO
+  commentId: N:WaveEngine.Common.IO
+  name: WaveEngine.Common.IO
+  nameWithType: WaveEngine.Common.IO
+  fullName: WaveEngine.Common.IO
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.Nodes*
+  commentId: Overload:WaveEngine.Framework.Models.Assets.ModelAssetModel.Nodes
+  name: Nodes
+  nameWithType: ModelAssetModel.Nodes
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.Nodes
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.Materials*
+  commentId: Overload:WaveEngine.Framework.Models.Assets.ModelAssetModel.Materials
+  name: Materials
+  nameWithType: ModelAssetModel.Materials
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.Materials
+- uid: System.Collections.Generic.List{WaveEngine.Framework.Models.Assets.ModelMaterialModel}
+  commentId: T:System.Collections.Generic.List{WaveEngine.Framework.Models.Assets.ModelMaterialModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ModelMaterialModel>
+  nameWithType: List<ModelMaterialModel>
+  fullName: System.Collections.Generic.List<WaveEngine.Framework.Models.Assets.ModelMaterialModel>
+  nameWithType.vb: List(Of ModelMaterialModel)
+  fullName.vb: System.Collections.Generic.List(Of WaveEngine.Framework.Models.Assets.ModelMaterialModel)
+  name.vb: List(Of ModelMaterialModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Framework.Models.Assets.ModelMaterialModel
+    name: ModelMaterialModel
+    nameWithType: ModelMaterialModel
+    fullName: WaveEngine.Framework.Models.Assets.ModelMaterialModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Framework.Models.Assets.ModelMaterialModel
+    name: ModelMaterialModel
+    nameWithType: ModelMaterialModel
+    fullName: WaveEngine.Framework.Models.Assets.ModelMaterialModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.Meshes*
+  commentId: Overload:WaveEngine.Framework.Models.Assets.ModelAssetModel.Meshes
+  name: Meshes
+  nameWithType: ModelAssetModel.Meshes
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.Meshes
+- uid: System.Collections.Generic.List{WaveEngine.Framework.Models.Assets.MeshModel}
+  commentId: T:System.Collections.Generic.List{WaveEngine.Framework.Models.Assets.MeshModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<MeshModel>
+  nameWithType: List<MeshModel>
+  fullName: System.Collections.Generic.List<WaveEngine.Framework.Models.Assets.MeshModel>
+  nameWithType.vb: List(Of MeshModel)
+  fullName.vb: System.Collections.Generic.List(Of WaveEngine.Framework.Models.Assets.MeshModel)
+  name.vb: List(Of MeshModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Framework.Models.Assets.MeshModel
+    name: MeshModel
+    nameWithType: MeshModel
+    fullName: WaveEngine.Framework.Models.Assets.MeshModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Framework.Models.Assets.MeshModel
+    name: MeshModel
+    nameWithType: MeshModel
+    fullName: WaveEngine.Framework.Models.Assets.MeshModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.SwapWindingOrder*
+  commentId: Overload:WaveEngine.Framework.Models.Assets.ModelAssetModel.SwapWindingOrder
+  name: SwapWindingOrder
+  nameWithType: ModelAssetModel.SwapWindingOrder
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.SwapWindingOrder
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.GenerateTangentSpace*
+  commentId: Overload:WaveEngine.Framework.Models.Assets.ModelAssetModel.GenerateTangentSpace
+  name: GenerateTangentSpace
+  nameWithType: ModelAssetModel.GenerateTangentSpace
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.GenerateTangentSpace
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.EmbeddedResources*
+  commentId: Overload:WaveEngine.Framework.Models.Assets.ModelAssetModel.EmbeddedResources
+  name: EmbeddedResources
+  nameWithType: ModelAssetModel.EmbeddedResources
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.EmbeddedResources
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.SourceAnimationTracks*
+  commentId: Overload:WaveEngine.Framework.Models.Assets.ModelAssetModel.SourceAnimationTracks
+  name: SourceAnimationTracks
+  nameWithType: ModelAssetModel.SourceAnimationTracks
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.SourceAnimationTracks
+- uid: System.Collections.Generic.List{WaveEngine.Framework.Models.Profiles.AnimationTrackModel}
+  commentId: T:System.Collections.Generic.List{WaveEngine.Framework.Models.Profiles.AnimationTrackModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<AnimationTrackModel>
+  nameWithType: List<AnimationTrackModel>
+  fullName: System.Collections.Generic.List<WaveEngine.Framework.Models.Profiles.AnimationTrackModel>
+  nameWithType.vb: List(Of AnimationTrackModel)
+  fullName.vb: System.Collections.Generic.List(Of WaveEngine.Framework.Models.Profiles.AnimationTrackModel)
+  name.vb: List(Of AnimationTrackModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Framework.Models.Profiles.AnimationTrackModel
+    name: AnimationTrackModel
+    nameWithType: AnimationTrackModel
+    fullName: WaveEngine.Framework.Models.Profiles.AnimationTrackModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Framework.Models.Profiles.AnimationTrackModel
+    name: AnimationTrackModel
+    nameWithType: AnimationTrackModel
+    fullName: WaveEngine.Framework.Models.Profiles.AnimationTrackModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.ExportAnimations*
+  commentId: Overload:WaveEngine.Framework.Models.Assets.ModelAssetModel.ExportAnimations
+  name: ExportAnimations
+  nameWithType: ModelAssetModel.ExportAnimations
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.ExportAnimations
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.Clips*
+  commentId: Overload:WaveEngine.Framework.Models.Assets.ModelAssetModel.Clips
+  name: Clips
+  nameWithType: ModelAssetModel.Clips
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.Clips
+- uid: System.Collections.Generic.List{WaveEngine.Framework.Models.Profiles.AnimationClipModel}
+  commentId: T:System.Collections.Generic.List{WaveEngine.Framework.Models.Profiles.AnimationClipModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<AnimationClipModel>
+  nameWithType: List<AnimationClipModel>
+  fullName: System.Collections.Generic.List<WaveEngine.Framework.Models.Profiles.AnimationClipModel>
+  nameWithType.vb: List(Of AnimationClipModel)
+  fullName.vb: System.Collections.Generic.List(Of WaveEngine.Framework.Models.Profiles.AnimationClipModel)
+  name.vb: List(Of AnimationClipModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+    name: AnimationClipModel
+    nameWithType: AnimationClipModel
+    fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+    name: AnimationClipModel
+    nameWithType: AnimationClipModel
+    fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.HasAnimations*
+  commentId: Overload:WaveEngine.Framework.Models.Assets.ModelAssetModel.HasAnimations
+  name: HasAnimations
+  nameWithType: ModelAssetModel.HasAnimations
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.HasAnimations
+- uid: System.EventHandler{WaveEngine.Framework.Models.Profiles.AnimationClipModel}
+  commentId: T:System.EventHandler{WaveEngine.Framework.Models.Profiles.AnimationClipModel}
+  parent: System
+  definition: System.EventHandler`1
+  name: EventHandler<AnimationClipModel>
+  nameWithType: EventHandler<AnimationClipModel>
+  fullName: System.EventHandler<WaveEngine.Framework.Models.Profiles.AnimationClipModel>
+  nameWithType.vb: EventHandler(Of AnimationClipModel)
+  fullName.vb: System.EventHandler(Of WaveEngine.Framework.Models.Profiles.AnimationClipModel)
+  name.vb: EventHandler(Of AnimationClipModel)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+    name: AnimationClipModel
+    nameWithType: AnimationClipModel
+    fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+    name: AnimationClipModel
+    nameWithType: AnimationClipModel
+    fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    nameWithType: EventHandler
+    fullName: System.EventHandler
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEventArgs
+    nameWithType: TEventArgs
+    fullName: TEventArgs
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel
+  commentId: T:WaveEngine.Framework.Models.Assets.ModelAssetModel
+  parent: WaveEngine.Framework.Models.Assets
+  name: ModelAssetModel
+  nameWithType: ModelAssetModel
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.#ctor*
+  commentId: Overload:WaveEngine.Framework.Models.Assets.ModelAssetModel.#ctor
+  name: ModelAssetModel
+  nameWithType: ModelAssetModel.ModelAssetModel
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.ModelAssetModel
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.OnDeserialized*
+  commentId: Overload:WaveEngine.Framework.Models.Assets.ModelAssetModel.OnDeserialized
+  name: OnDeserialized
+  nameWithType: ModelAssetModel.OnDeserialized
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.OnDeserialized
+- uid: System.Runtime.Serialization.StreamingContext
+  commentId: T:System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.AddClip*
+  commentId: Overload:WaveEngine.Framework.Models.Assets.ModelAssetModel.AddClip
+  name: AddClip
+  nameWithType: ModelAssetModel.AddClip
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.AddClip
+- uid: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  commentId: T:WaveEngine.Framework.Models.Profiles.AnimationClipModel
+  parent: WaveEngine.Framework.Models.Profiles
+  name: AnimationClipModel
+  nameWithType: AnimationClipModel
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationClipModel
+- uid: WaveEngine.Framework.Models.Profiles
+  commentId: N:WaveEngine.Framework.Models.Profiles
+  name: WaveEngine.Framework.Models.Profiles
+  nameWithType: WaveEngine.Framework.Models.Profiles
+  fullName: WaveEngine.Framework.Models.Profiles
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.SelectedClipChanged*
+  commentId: Overload:WaveEngine.Framework.Models.Assets.ModelAssetModel.SelectedClipChanged
+  name: SelectedClipChanged
+  nameWithType: ModelAssetModel.SelectedClipChanged
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.SelectedClipChanged
+- uid: WaveEngine.Framework.Models.Assets.ModelAssetModel.FindTrack*
+  commentId: Overload:WaveEngine.Framework.Models.Assets.ModelAssetModel.FindTrack
+  name: FindTrack
+  nameWithType: ModelAssetModel.FindTrack
+  fullName: WaveEngine.Framework.Models.Assets.ModelAssetModel.FindTrack
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: WaveEngine.Framework.Models.Profiles.AnimationTrackModel
+  commentId: T:WaveEngine.Framework.Models.Profiles.AnimationTrackModel
+  parent: WaveEngine.Framework.Models.Profiles
+  name: AnimationTrackModel
+  nameWithType: AnimationTrackModel
+  fullName: WaveEngine.Framework.Models.Profiles.AnimationTrackModel

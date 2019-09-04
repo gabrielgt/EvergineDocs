@@ -1,0 +1,468 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Components.GameActions.IGameActionSet
+  commentId: T:WaveEngine.Components.GameActions.IGameActionSet
+  id: IGameActionSet
+  parent: WaveEngine.Components.GameActions
+  children:
+  - WaveEngine.Components.GameActions.IGameActionSet.WaitAll
+  - WaveEngine.Components.GameActions.IGameActionSet.WaitAny
+  - WaveEngine.Components.GameActions.IGameActionSet.WaitCount(System.Int32)
+  - WaveEngine.Components.GameActions.IGameActionSet.WaitPredicate(System.Func{System.Boolean,WaveEngine.Framework.Services.IGameAction[]})
+  langs:
+  - csharp
+  - vb
+  name: IGameActionSet
+  nameWithType: IGameActionSet
+  fullName: WaveEngine.Components.GameActions.IGameActionSet
+  type: Interface
+  source:
+    id: IGameActionSet
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\GameActions\IGameActionSet.cs
+    startLine: 17
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.GameActions
+  summary: "\nRepresent a Set of Game Actions\n"
+  example: []
+  syntax:
+    content: public interface IGameActionSet
+    content.vb: Public Interface IGameActionSet
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: WaveEngine.Components.GameActions.IGameActionSet.WaitAll
+  commentId: M:WaveEngine.Components.GameActions.IGameActionSet.WaitAll
+  id: WaitAll
+  parent: WaveEngine.Components.GameActions.IGameActionSet
+  langs:
+  - csharp
+  - vb
+  name: WaitAll()
+  nameWithType: IGameActionSet.WaitAll()
+  fullName: WaveEngine.Components.GameActions.IGameActionSet.WaitAll()
+  type: Method
+  source:
+    id: WaitAll
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\GameActions\IGameActionSet.cs
+    startLine: 23
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.GameActions
+  summary: "\nReturn an action that will be completed when all actions has been completed.\n"
+  example: []
+  syntax:
+    content: IGameAction WaitAll()
+    return:
+      type: WaveEngine.Framework.Services.IGameAction
+      description: The task.
+    content.vb: Function WaitAll As IGameAction
+  overload: WaveEngine.Components.GameActions.IGameActionSet.WaitAll*
+- uid: WaveEngine.Components.GameActions.IGameActionSet.WaitAny
+  commentId: M:WaveEngine.Components.GameActions.IGameActionSet.WaitAny
+  id: WaitAny
+  parent: WaveEngine.Components.GameActions.IGameActionSet
+  langs:
+  - csharp
+  - vb
+  name: WaitAny()
+  nameWithType: IGameActionSet.WaitAny()
+  fullName: WaveEngine.Components.GameActions.IGameActionSet.WaitAny()
+  type: Method
+  source:
+    id: WaitAny
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\GameActions\IGameActionSet.cs
+    startLine: 29
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.GameActions
+  summary: "\nReturn an action that will be completed when any actions has been completed.\n"
+  example: []
+  syntax:
+    content: IGameAction WaitAny()
+    return:
+      type: WaveEngine.Framework.Services.IGameAction
+      description: The task.
+    content.vb: Function WaitAny As IGameAction
+  overload: WaveEngine.Components.GameActions.IGameActionSet.WaitAny*
+- uid: WaveEngine.Components.GameActions.IGameActionSet.WaitCount(System.Int32)
+  commentId: M:WaveEngine.Components.GameActions.IGameActionSet.WaitCount(System.Int32)
+  id: WaitCount(System.Int32)
+  parent: WaveEngine.Components.GameActions.IGameActionSet
+  langs:
+  - csharp
+  - vb
+  name: WaitCount(Int32)
+  nameWithType: IGameActionSet.WaitCount(Int32)
+  fullName: WaveEngine.Components.GameActions.IGameActionSet.WaitCount(System.Int32)
+  type: Method
+  source:
+    id: WaitCount
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\GameActions\IGameActionSet.cs
+    startLine: 36
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.GameActions
+  summary: "\nReturn an action that will be completed when all actions has been completed.\n"
+  example: []
+  syntax:
+    content: IGameAction WaitCount(int count)
+    parameters:
+    - id: count
+      type: System.Int32
+      description: The Count value.
+    return:
+      type: WaveEngine.Framework.Services.IGameAction
+      description: The task.
+    content.vb: Function WaitCount(count As Integer) As IGameAction
+  overload: WaveEngine.Components.GameActions.IGameActionSet.WaitCount*
+- uid: WaveEngine.Components.GameActions.IGameActionSet.WaitPredicate(System.Func{System.Boolean,WaveEngine.Framework.Services.IGameAction[]})
+  commentId: M:WaveEngine.Components.GameActions.IGameActionSet.WaitPredicate(System.Func{System.Boolean,WaveEngine.Framework.Services.IGameAction[]})
+  id: WaitPredicate(System.Func{System.Boolean,WaveEngine.Framework.Services.IGameAction[]})
+  parent: WaveEngine.Components.GameActions.IGameActionSet
+  langs:
+  - csharp
+  - vb
+  name: WaitPredicate(Func<Boolean, IGameAction[]>)
+  nameWithType: IGameActionSet.WaitPredicate(Func<Boolean, IGameAction[]>)
+  fullName: WaveEngine.Components.GameActions.IGameActionSet.WaitPredicate(System.Func<System.Boolean, WaveEngine.Framework.Services.IGameAction[]>)
+  type: Method
+  source:
+    id: WaitPredicate
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Components\Shared\GameActions\IGameActionSet.cs
+    startLine: 43
+  assemblies:
+  - WaveEngine.Components
+  namespace: WaveEngine.Components.GameActions
+  summary: "\nWaits the predicate.\n"
+  example: []
+  syntax:
+    content: IGameAction WaitPredicate(Func<bool, IGameAction[]> waitingTaskPredicate)
+    parameters:
+    - id: waitingTaskPredicate
+      type: System.Func{System.Boolean,WaveEngine.Framework.Services.IGameAction[]}
+      description: The waiting task predicate.
+    return:
+      type: WaveEngine.Framework.Services.IGameAction
+      description: The task.
+    content.vb: Function WaitPredicate(waitingTaskPredicate As Func(Of Boolean, IGameAction())) As IGameAction
+  overload: WaveEngine.Components.GameActions.IGameActionSet.WaitPredicate*
+  nameWithType.vb: IGameActionSet.WaitPredicate(Func(Of Boolean, IGameAction()))
+  fullName.vb: WaveEngine.Components.GameActions.IGameActionSet.WaitPredicate(System.Func(Of System.Boolean, WaveEngine.Framework.Services.IGameAction()))
+  name.vb: WaitPredicate(Func(Of Boolean, IGameAction()))
+references:
+- uid: WaveEngine.Components.GameActions
+  commentId: N:WaveEngine.Components.GameActions
+  name: WaveEngine.Components.GameActions
+  nameWithType: WaveEngine.Components.GameActions
+  fullName: WaveEngine.Components.GameActions
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Components.GameActions.IGameActionSet.WaitAll*
+  commentId: Overload:WaveEngine.Components.GameActions.IGameActionSet.WaitAll
+  name: WaitAll
+  nameWithType: IGameActionSet.WaitAll
+  fullName: WaveEngine.Components.GameActions.IGameActionSet.WaitAll
+- uid: WaveEngine.Framework.Services.IGameAction
+  commentId: T:WaveEngine.Framework.Services.IGameAction
+  parent: WaveEngine.Framework.Services
+  name: IGameAction
+  nameWithType: IGameAction
+  fullName: WaveEngine.Framework.Services.IGameAction
+- uid: WaveEngine.Framework.Services
+  commentId: N:WaveEngine.Framework.Services
+  name: WaveEngine.Framework.Services
+  nameWithType: WaveEngine.Framework.Services
+  fullName: WaveEngine.Framework.Services
+- uid: WaveEngine.Components.GameActions.IGameActionSet.WaitAny*
+  commentId: Overload:WaveEngine.Components.GameActions.IGameActionSet.WaitAny
+  name: WaitAny
+  nameWithType: IGameActionSet.WaitAny
+  fullName: WaveEngine.Components.GameActions.IGameActionSet.WaitAny
+- uid: WaveEngine.Components.GameActions.IGameActionSet.WaitCount*
+  commentId: Overload:WaveEngine.Components.GameActions.IGameActionSet.WaitCount
+  name: WaitCount
+  nameWithType: IGameActionSet.WaitCount
+  fullName: WaveEngine.Components.GameActions.IGameActionSet.WaitCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Components.GameActions.IGameActionSet.WaitPredicate*
+  commentId: Overload:WaveEngine.Components.GameActions.IGameActionSet.WaitPredicate
+  name: WaitPredicate
+  nameWithType: IGameActionSet.WaitPredicate
+  fullName: WaveEngine.Components.GameActions.IGameActionSet.WaitPredicate
+- uid: System.Func{System.Boolean,WaveEngine.Framework.Services.IGameAction[]}
+  commentId: T:System.Func{System.Boolean,WaveEngine.Framework.Services.IGameAction[]}
+  parent: System
+  definition: System.Func`2
+  name: Func<Boolean, IGameAction[]>
+  nameWithType: Func<Boolean, IGameAction[]>
+  fullName: System.Func<System.Boolean, WaveEngine.Framework.Services.IGameAction[]>
+  nameWithType.vb: Func(Of Boolean, IGameAction())
+  fullName.vb: System.Func(Of System.Boolean, WaveEngine.Framework.Services.IGameAction())
+  name.vb: Func(Of Boolean, IGameAction())
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Framework.Services.IGameAction
+    name: IGameAction
+    nameWithType: IGameAction
+    fullName: WaveEngine.Framework.Services.IGameAction
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Framework.Services.IGameAction
+    name: IGameAction
+    nameWithType: IGameAction
+    fullName: WaveEngine.Framework.Services.IGameAction
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )

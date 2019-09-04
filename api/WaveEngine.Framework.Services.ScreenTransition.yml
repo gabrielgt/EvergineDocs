@@ -1,0 +1,1391 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Framework.Services.ScreenTransition
+  commentId: T:WaveEngine.Framework.Services.ScreenTransition
+  id: ScreenTransition
+  parent: WaveEngine.Framework.Services
+  children:
+  - WaveEngine.Framework.Services.ScreenTransition.#ctor(System.TimeSpan)
+  - WaveEngine.Framework.Services.ScreenTransition.BackgroundColor
+  - WaveEngine.Framework.Services.ScreenTransition.CurrentTime
+  - WaveEngine.Framework.Services.ScreenTransition.Dispose
+  - WaveEngine.Framework.Services.ScreenTransition.Dispose(System.Boolean)
+  - WaveEngine.Framework.Services.ScreenTransition.disposed
+  - WaveEngine.Framework.Services.ScreenTransition.Draw(System.TimeSpan)
+  - WaveEngine.Framework.Services.ScreenTransition.DrawSources(System.TimeSpan,WaveEngine.Common.Graphics.RenderTarget)
+  - WaveEngine.Framework.Services.ScreenTransition.DrawTarget(System.TimeSpan,WaveEngine.Common.Graphics.RenderTarget)
+  - WaveEngine.Framework.Services.ScreenTransition.EaseFunction
+  - WaveEngine.Framework.Services.ScreenTransition.EndTransition
+  - WaveEngine.Framework.Services.ScreenTransition.graphicsDevice
+  - WaveEngine.Framework.Services.ScreenTransition.Initialize
+  - WaveEngine.Framework.Services.ScreenTransition.Lerp
+  - WaveEngine.Framework.Services.ScreenTransition.platform
+  - WaveEngine.Framework.Services.ScreenTransition.SetRenderState
+  - WaveEngine.Framework.Services.ScreenTransition.Sources
+  - WaveEngine.Framework.Services.ScreenTransition.Target
+  - WaveEngine.Framework.Services.ScreenTransition.Update(System.TimeSpan)
+  - WaveEngine.Framework.Services.ScreenTransition.UpdateSources(System.TimeSpan)
+  - WaveEngine.Framework.Services.ScreenTransition.UpdateTarget(System.TimeSpan)
+  langs:
+  - csharp
+  - vb
+  name: ScreenTransition
+  nameWithType: ScreenTransition
+  fullName: WaveEngine.Framework.Services.ScreenTransition
+  type: Class
+  source:
+    id: ScreenTransition
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenTransition.cs
+    startLine: 14
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nThis class make an effect between two <xref href=\"WaveEngine.Framework.Services.ScreenContext\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: 'public abstract class ScreenTransition : IDisposable'
+    content.vb: >-
+      Public MustInherit Class ScreenTransition
+
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - WaveEngine.Components.Transitions.ChequeredAppearTransition
+  - WaveEngine.Components.Transitions.ColorFadeTransition
+  - WaveEngine.Components.Transitions.CombTransition
+  - WaveEngine.Components.Transitions.CoverTransition
+  - WaveEngine.Components.Transitions.CrossFadeTransition
+  - WaveEngine.Components.Transitions.CurtainsTransition
+  - WaveEngine.Components.Transitions.DoorwayTransition
+  - WaveEngine.Components.Transitions.FallingLinesTransition
+  - WaveEngine.Components.Transitions.FanTransition
+  - WaveEngine.Components.Transitions.PushTransition
+  - WaveEngine.Components.Transitions.RotateTransition
+  - WaveEngine.Components.Transitions.ScaleTransition
+  - WaveEngine.Components.Transitions.ShrinkAndSpinTransition
+  - WaveEngine.Components.Transitions.SpinningSquaresTransition
+  - WaveEngine.Components.Transitions.UncoverTransition
+  - WaveEngine.Components.Transitions.ZoomTransition
+  - WaveEngine.Framework.Services.SingleTransition
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: WaveEngine.Framework.Services.ScreenTransition.Sources
+  commentId: F:WaveEngine.Framework.Services.ScreenTransition.Sources
+  id: Sources
+  parent: WaveEngine.Framework.Services.ScreenTransition
+  langs:
+  - csharp
+  - vb
+  name: Sources
+  nameWithType: ScreenTransition.Sources
+  fullName: WaveEngine.Framework.Services.ScreenTransition.Sources
+  type: Field
+  source:
+    id: Sources
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenTransition.cs
+    startLine: 19
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nThe ScreenContext sources.\n"
+  example: []
+  syntax:
+    content: public ScreenContext[] Sources
+    return:
+      type: WaveEngine.Framework.Services.ScreenContext[]
+    content.vb: Public Sources As ScreenContext()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.ScreenTransition.Target
+  commentId: F:WaveEngine.Framework.Services.ScreenTransition.Target
+  id: Target
+  parent: WaveEngine.Framework.Services.ScreenTransition
+  langs:
+  - csharp
+  - vb
+  name: Target
+  nameWithType: ScreenTransition.Target
+  fullName: WaveEngine.Framework.Services.ScreenTransition.Target
+  type: Field
+  source:
+    id: Target
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenTransition.cs
+    startLine: 24
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nThe ScreenContext target\n"
+  example: []
+  syntax:
+    content: public ScreenContext Target
+    return:
+      type: WaveEngine.Framework.Services.ScreenContext
+    content.vb: Public Target As ScreenContext
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.ScreenTransition.BackgroundColor
+  commentId: F:WaveEngine.Framework.Services.ScreenTransition.BackgroundColor
+  id: BackgroundColor
+  parent: WaveEngine.Framework.Services.ScreenTransition
+  langs:
+  - csharp
+  - vb
+  name: BackgroundColor
+  nameWithType: ScreenTransition.BackgroundColor
+  fullName: WaveEngine.Framework.Services.ScreenTransition.BackgroundColor
+  type: Field
+  source:
+    id: BackgroundColor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenTransition.cs
+    startLine: 29
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nThe background color\n"
+  example: []
+  syntax:
+    content: public Color BackgroundColor
+    return:
+      type: WaveEngine.Common.Graphics.Color
+    content.vb: Public BackgroundColor As Color
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.ScreenTransition.graphicsDevice
+  commentId: F:WaveEngine.Framework.Services.ScreenTransition.graphicsDevice
+  id: graphicsDevice
+  parent: WaveEngine.Framework.Services.ScreenTransition
+  langs:
+  - csharp
+  - vb
+  name: graphicsDevice
+  nameWithType: ScreenTransition.graphicsDevice
+  fullName: WaveEngine.Framework.Services.ScreenTransition.graphicsDevice
+  type: Field
+  source:
+    id: graphicsDevice
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenTransition.cs
+    startLine: 39
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nThe graphics device\n"
+  example: []
+  syntax:
+    content: protected GraphicsDevice graphicsDevice
+    return:
+      type: WaveEngine.Framework.Services.GraphicsDevice
+    content.vb: Protected graphicsDevice As GraphicsDevice
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WaveEngine.Framework.Services.ScreenTransition.platform
+  commentId: F:WaveEngine.Framework.Services.ScreenTransition.platform
+  id: platform
+  parent: WaveEngine.Framework.Services.ScreenTransition
+  langs:
+  - csharp
+  - vb
+  name: platform
+  nameWithType: ScreenTransition.platform
+  fullName: WaveEngine.Framework.Services.ScreenTransition.platform
+  type: Field
+  source:
+    id: platform
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenTransition.cs
+    startLine: 44
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nThe platform service\n"
+  example: []
+  syntax:
+    content: protected Platform platform
+    return:
+      type: WaveEngine.Framework.Services.Platform
+    content.vb: Protected platform As Platform
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WaveEngine.Framework.Services.ScreenTransition.disposed
+  commentId: F:WaveEngine.Framework.Services.ScreenTransition.disposed
+  id: disposed
+  parent: WaveEngine.Framework.Services.ScreenTransition
+  langs:
+  - csharp
+  - vb
+  name: disposed
+  nameWithType: ScreenTransition.disposed
+  fullName: WaveEngine.Framework.Services.ScreenTransition.disposed
+  type: Field
+  source:
+    id: disposed
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenTransition.cs
+    startLine: 49
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nWether this instance has been disposed.\n"
+  example: []
+  syntax:
+    content: protected bool disposed
+    return:
+      type: System.Boolean
+    content.vb: Protected disposed As Boolean
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WaveEngine.Framework.Services.ScreenTransition.EaseFunction
+  commentId: F:WaveEngine.Framework.Services.ScreenTransition.EaseFunction
+  id: EaseFunction
+  parent: WaveEngine.Framework.Services.ScreenTransition
+  langs:
+  - csharp
+  - vb
+  name: EaseFunction
+  nameWithType: ScreenTransition.EaseFunction
+  fullName: WaveEngine.Framework.Services.ScreenTransition.EaseFunction
+  type: Field
+  source:
+    id: EaseFunction
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenTransition.cs
+    startLine: 64
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nThe ease function\n"
+  example: []
+  syntax:
+    content: public EasingFunctionBase EaseFunction
+    return:
+      type: WaveEngine.Framework.Animation.EasingFunctionBase
+    content.vb: Public EaseFunction As EasingFunctionBase
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.ScreenTransition.CurrentTime
+  commentId: P:WaveEngine.Framework.Services.ScreenTransition.CurrentTime
+  id: CurrentTime
+  parent: WaveEngine.Framework.Services.ScreenTransition
+  langs:
+  - csharp
+  - vb
+  name: CurrentTime
+  nameWithType: ScreenTransition.CurrentTime
+  fullName: WaveEngine.Framework.Services.ScreenTransition.CurrentTime
+  type: Property
+  source:
+    id: CurrentTime
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenTransition.cs
+    startLine: 74
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGets the current transition time\n"
+  example: []
+  syntax:
+    content: public TimeSpan CurrentTime { get; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public ReadOnly Property CurrentTime As TimeSpan
+  overload: WaveEngine.Framework.Services.ScreenTransition.CurrentTime*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Services.ScreenTransition.Lerp
+  commentId: P:WaveEngine.Framework.Services.ScreenTransition.Lerp
+  id: Lerp
+  parent: WaveEngine.Framework.Services.ScreenTransition
+  langs:
+  - csharp
+  - vb
+  name: Lerp
+  nameWithType: ScreenTransition.Lerp
+  fullName: WaveEngine.Framework.Services.ScreenTransition.Lerp
+  type: Property
+  source:
+    id: Lerp
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenTransition.cs
+    startLine: 82
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGets the Transition lerp value.\n"
+  example: []
+  syntax:
+    content: public float Lerp { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Lerp As Single
+  overload: WaveEngine.Framework.Services.ScreenTransition.Lerp*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Services.ScreenTransition.#ctor(System.TimeSpan)
+  commentId: M:WaveEngine.Framework.Services.ScreenTransition.#ctor(System.TimeSpan)
+  id: '#ctor(System.TimeSpan)'
+  parent: WaveEngine.Framework.Services.ScreenTransition
+  langs:
+  - csharp
+  - vb
+  name: ScreenTransition(TimeSpan)
+  nameWithType: ScreenTransition.ScreenTransition(TimeSpan)
+  fullName: WaveEngine.Framework.Services.ScreenTransition.ScreenTransition(System.TimeSpan)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenTransition.cs
+    startLine: 92
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Framework.Services.ScreenTransition\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public ScreenTransition(TimeSpan duration)
+    parameters:
+    - id: duration
+      type: System.TimeSpan
+      description: The duration.
+    content.vb: Public Sub New(duration As TimeSpan)
+  overload: WaveEngine.Framework.Services.ScreenTransition.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.ScreenTransition.SetRenderState
+  commentId: M:WaveEngine.Framework.Services.ScreenTransition.SetRenderState
+  id: SetRenderState
+  parent: WaveEngine.Framework.Services.ScreenTransition
+  langs:
+  - csharp
+  - vb
+  name: SetRenderState()
+  nameWithType: ScreenTransition.SetRenderState()
+  fullName: WaveEngine.Framework.Services.ScreenTransition.SetRenderState()
+  type: Method
+  source:
+    id: SetRenderState
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenTransition.cs
+    startLine: 121
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nSet the transition Render State.\n"
+  example: []
+  syntax:
+    content: protected virtual void SetRenderState()
+    content.vb: Protected Overridable Sub SetRenderState
+  overload: WaveEngine.Framework.Services.ScreenTransition.SetRenderState*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: WaveEngine.Framework.Services.ScreenTransition.Initialize
+  commentId: M:WaveEngine.Framework.Services.ScreenTransition.Initialize
+  id: Initialize
+  parent: WaveEngine.Framework.Services.ScreenTransition
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: ScreenTransition.Initialize()
+  fullName: WaveEngine.Framework.Services.ScreenTransition.Initialize()
+  type: Method
+  source:
+    id: Initialize
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenTransition.cs
+    startLine: 133
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nInitializes this instance.\n"
+  example: []
+  syntax:
+    content: protected abstract void Initialize()
+    content.vb: Protected MustOverride Sub Initialize
+  overload: WaveEngine.Framework.Services.ScreenTransition.Initialize*
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+- uid: WaveEngine.Framework.Services.ScreenTransition.EndTransition
+  commentId: M:WaveEngine.Framework.Services.ScreenTransition.EndTransition
+  id: EndTransition
+  parent: WaveEngine.Framework.Services.ScreenTransition
+  langs:
+  - csharp
+  - vb
+  name: EndTransition()
+  nameWithType: ScreenTransition.EndTransition()
+  fullName: WaveEngine.Framework.Services.ScreenTransition.EndTransition()
+  type: Method
+  source:
+    id: EndTransition
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenTransition.cs
+    startLine: 152
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nEnd of the transition\n"
+  example: []
+  syntax:
+    content: protected virtual void EndTransition()
+    content.vb: Protected Overridable Sub
+  overload: WaveEngine.Framework.Services.ScreenTransition.EndTransition*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: WaveEngine.Framework.Services.ScreenTransition.UpdateSources(System.TimeSpan)
+  commentId: M:WaveEngine.Framework.Services.ScreenTransition.UpdateSources(System.TimeSpan)
+  id: UpdateSources(System.TimeSpan)
+  parent: WaveEngine.Framework.Services.ScreenTransition
+  langs:
+  - csharp
+  - vb
+  name: UpdateSources(TimeSpan)
+  nameWithType: ScreenTransition.UpdateSources(TimeSpan)
+  fullName: WaveEngine.Framework.Services.ScreenTransition.UpdateSources(System.TimeSpan)
+  type: Method
+  source:
+    id: UpdateSources
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenTransition.cs
+    startLine: 220
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nUpdate all source contexts\n"
+  example: []
+  syntax:
+    content: protected void UpdateSources(TimeSpan gameTime)
+    parameters:
+    - id: gameTime
+      type: System.TimeSpan
+      description: The current time.
+    content.vb: Protected Sub UpdateSources(gameTime As TimeSpan)
+  overload: WaveEngine.Framework.Services.ScreenTransition.UpdateSources*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WaveEngine.Framework.Services.ScreenTransition.UpdateTarget(System.TimeSpan)
+  commentId: M:WaveEngine.Framework.Services.ScreenTransition.UpdateTarget(System.TimeSpan)
+  id: UpdateTarget(System.TimeSpan)
+  parent: WaveEngine.Framework.Services.ScreenTransition
+  langs:
+  - csharp
+  - vb
+  name: UpdateTarget(TimeSpan)
+  nameWithType: ScreenTransition.UpdateTarget(TimeSpan)
+  fullName: WaveEngine.Framework.Services.ScreenTransition.UpdateTarget(System.TimeSpan)
+  type: Method
+  source:
+    id: UpdateTarget
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenTransition.cs
+    startLine: 235
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nUpdate target context.\n"
+  example: []
+  syntax:
+    content: protected void UpdateTarget(TimeSpan gameTime)
+    parameters:
+    - id: gameTime
+      type: System.TimeSpan
+      description: The current time.
+    content.vb: Protected Sub UpdateTarget(gameTime As TimeSpan)
+  overload: WaveEngine.Framework.Services.ScreenTransition.UpdateTarget*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WaveEngine.Framework.Services.ScreenTransition.DrawSources(System.TimeSpan,WaveEngine.Common.Graphics.RenderTarget)
+  commentId: M:WaveEngine.Framework.Services.ScreenTransition.DrawSources(System.TimeSpan,WaveEngine.Common.Graphics.RenderTarget)
+  id: DrawSources(System.TimeSpan,WaveEngine.Common.Graphics.RenderTarget)
+  parent: WaveEngine.Framework.Services.ScreenTransition
+  langs:
+  - csharp
+  - vb
+  name: DrawSources(TimeSpan, RenderTarget)
+  nameWithType: ScreenTransition.DrawSources(TimeSpan, RenderTarget)
+  fullName: WaveEngine.Framework.Services.ScreenTransition.DrawSources(System.TimeSpan, WaveEngine.Common.Graphics.RenderTarget)
+  type: Method
+  source:
+    id: DrawSources
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenTransition.cs
+    startLine: 245
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nDraw all source contexts\n"
+  example: []
+  syntax:
+    content: protected void DrawSources(TimeSpan gameTime, RenderTarget renderTarget)
+    parameters:
+    - id: gameTime
+      type: System.TimeSpan
+      description: The current time.
+    - id: renderTarget
+      type: WaveEngine.Common.Graphics.RenderTarget
+      description: The associated rendertarget.
+    content.vb: Protected Sub DrawSources(gameTime As TimeSpan, renderTarget As RenderTarget)
+  overload: WaveEngine.Framework.Services.ScreenTransition.DrawSources*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WaveEngine.Framework.Services.ScreenTransition.DrawTarget(System.TimeSpan,WaveEngine.Common.Graphics.RenderTarget)
+  commentId: M:WaveEngine.Framework.Services.ScreenTransition.DrawTarget(System.TimeSpan,WaveEngine.Common.Graphics.RenderTarget)
+  id: DrawTarget(System.TimeSpan,WaveEngine.Common.Graphics.RenderTarget)
+  parent: WaveEngine.Framework.Services.ScreenTransition
+  langs:
+  - csharp
+  - vb
+  name: DrawTarget(TimeSpan, RenderTarget)
+  nameWithType: ScreenTransition.DrawTarget(TimeSpan, RenderTarget)
+  fullName: WaveEngine.Framework.Services.ScreenTransition.DrawTarget(System.TimeSpan, WaveEngine.Common.Graphics.RenderTarget)
+  type: Method
+  source:
+    id: DrawTarget
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenTransition.cs
+    startLine: 261
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nDraw target context.\n"
+  example: []
+  syntax:
+    content: protected void DrawTarget(TimeSpan gameTime, RenderTarget renderTarget)
+    parameters:
+    - id: gameTime
+      type: System.TimeSpan
+      description: The current time.
+    - id: renderTarget
+      type: WaveEngine.Common.Graphics.RenderTarget
+      description: The associated rendertarget.
+    content.vb: Protected Sub DrawTarget(gameTime As TimeSpan, renderTarget As RenderTarget)
+  overload: WaveEngine.Framework.Services.ScreenTransition.DrawTarget*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WaveEngine.Framework.Services.ScreenTransition.Update(System.TimeSpan)
+  commentId: M:WaveEngine.Framework.Services.ScreenTransition.Update(System.TimeSpan)
+  id: Update(System.TimeSpan)
+  parent: WaveEngine.Framework.Services.ScreenTransition
+  langs:
+  - csharp
+  - vb
+  name: Update(TimeSpan)
+  nameWithType: ScreenTransition.Update(TimeSpan)
+  fullName: WaveEngine.Framework.Services.ScreenTransition.Update(System.TimeSpan)
+  type: Method
+  source:
+    id: Update
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenTransition.cs
+    startLine: 270
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nUpdates the specified game time.\n"
+  example: []
+  syntax:
+    content: protected abstract void Update(TimeSpan gameTime)
+    parameters:
+    - id: gameTime
+      type: System.TimeSpan
+      description: The game time.
+    content.vb: Protected MustOverride Sub Update(gameTime As TimeSpan)
+  overload: WaveEngine.Framework.Services.ScreenTransition.Update*
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+- uid: WaveEngine.Framework.Services.ScreenTransition.Draw(System.TimeSpan)
+  commentId: M:WaveEngine.Framework.Services.ScreenTransition.Draw(System.TimeSpan)
+  id: Draw(System.TimeSpan)
+  parent: WaveEngine.Framework.Services.ScreenTransition
+  langs:
+  - csharp
+  - vb
+  name: Draw(TimeSpan)
+  nameWithType: ScreenTransition.Draw(TimeSpan)
+  fullName: WaveEngine.Framework.Services.ScreenTransition.Draw(System.TimeSpan)
+  type: Method
+  source:
+    id: Draw
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenTransition.cs
+    startLine: 276
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nDraws the specified game time.\n"
+  example: []
+  syntax:
+    content: protected abstract void Draw(TimeSpan gameTime)
+    parameters:
+    - id: gameTime
+      type: System.TimeSpan
+      description: The game time.
+    content.vb: Protected MustOverride Sub Draw(gameTime As TimeSpan)
+  overload: WaveEngine.Framework.Services.ScreenTransition.Draw*
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+- uid: WaveEngine.Framework.Services.ScreenTransition.Dispose
+  commentId: M:WaveEngine.Framework.Services.ScreenTransition.Dispose
+  id: Dispose
+  parent: WaveEngine.Framework.Services.ScreenTransition
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: ScreenTransition.Dispose()
+  fullName: WaveEngine.Framework.Services.ScreenTransition.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenTransition.cs
+    startLine: 281
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nPerforms application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: WaveEngine.Framework.Services.ScreenTransition.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.ScreenTransition.Dispose(System.Boolean)
+  commentId: M:WaveEngine.Framework.Services.ScreenTransition.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: WaveEngine.Framework.Services.ScreenTransition
+  langs:
+  - csharp
+  - vb
+  name: Dispose(Boolean)
+  nameWithType: ScreenTransition.Dispose(Boolean)
+  fullName: WaveEngine.Framework.Services.ScreenTransition.Dispose(System.Boolean)
+  type: Method
+  source:
+    id: Dispose
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenTransition.cs
+    startLine: 291
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nReleases unmanaged and - optionally - managed resources.\n"
+  example: []
+  syntax:
+    content: protected abstract void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: <code>true</code> to release both managed and unmanaged resources; <code>false</code> to release only unmanaged resources.
+    content.vb: Protected MustOverride Sub Dispose(disposing As Boolean)
+  overload: WaveEngine.Framework.Services.ScreenTransition.Dispose*
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+references:
+- uid: WaveEngine.Framework.Services.ScreenContext
+  commentId: T:WaveEngine.Framework.Services.ScreenContext
+  parent: WaveEngine.Framework.Services
+  name: ScreenContext
+  nameWithType: ScreenContext
+  fullName: WaveEngine.Framework.Services.ScreenContext
+- uid: WaveEngine.Framework.Services
+  commentId: N:WaveEngine.Framework.Services
+  name: WaveEngine.Framework.Services
+  nameWithType: WaveEngine.Framework.Services
+  fullName: WaveEngine.Framework.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Framework.Services.ScreenContext[]
+  isExternal: true
+  name: ScreenContext[]
+  nameWithType: ScreenContext[]
+  fullName: WaveEngine.Framework.Services.ScreenContext[]
+  nameWithType.vb: ScreenContext()
+  fullName.vb: WaveEngine.Framework.Services.ScreenContext()
+  name.vb: ScreenContext()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Services.ScreenContext
+    name: ScreenContext
+    nameWithType: ScreenContext
+    fullName: WaveEngine.Framework.Services.ScreenContext
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: WaveEngine.Framework.Services.ScreenContext
+    name: ScreenContext
+    nameWithType: ScreenContext
+    fullName: WaveEngine.Framework.Services.ScreenContext
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: WaveEngine.Common.Graphics.Color
+  commentId: T:WaveEngine.Common.Graphics.Color
+  parent: WaveEngine.Common.Graphics
+  name: Color
+  nameWithType: Color
+  fullName: WaveEngine.Common.Graphics.Color
+- uid: WaveEngine.Common.Graphics
+  commentId: N:WaveEngine.Common.Graphics
+  name: WaveEngine.Common.Graphics
+  nameWithType: WaveEngine.Common.Graphics
+  fullName: WaveEngine.Common.Graphics
+- uid: WaveEngine.Framework.Services.GraphicsDevice
+  commentId: T:WaveEngine.Framework.Services.GraphicsDevice
+  parent: WaveEngine.Framework.Services
+  name: GraphicsDevice
+  nameWithType: GraphicsDevice
+  fullName: WaveEngine.Framework.Services.GraphicsDevice
+- uid: WaveEngine.Framework.Services.Platform
+  commentId: T:WaveEngine.Framework.Services.Platform
+  parent: WaveEngine.Framework.Services
+  name: Platform
+  nameWithType: Platform
+  fullName: WaveEngine.Framework.Services.Platform
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Framework.Animation.EasingFunctionBase
+  commentId: T:WaveEngine.Framework.Animation.EasingFunctionBase
+  parent: WaveEngine.Framework.Animation
+  name: EasingFunctionBase
+  nameWithType: EasingFunctionBase
+  fullName: WaveEngine.Framework.Animation.EasingFunctionBase
+- uid: WaveEngine.Framework.Animation
+  commentId: N:WaveEngine.Framework.Animation
+  name: WaveEngine.Framework.Animation
+  nameWithType: WaveEngine.Framework.Animation
+  fullName: WaveEngine.Framework.Animation
+- uid: WaveEngine.Framework.Services.ScreenTransition.CurrentTime*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenTransition.CurrentTime
+  name: CurrentTime
+  nameWithType: ScreenTransition.CurrentTime
+  fullName: WaveEngine.Framework.Services.ScreenTransition.CurrentTime
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: WaveEngine.Framework.Services.ScreenTransition.Lerp*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenTransition.Lerp
+  name: Lerp
+  nameWithType: ScreenTransition.Lerp
+  fullName: WaveEngine.Framework.Services.ScreenTransition.Lerp
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Framework.Services.ScreenTransition
+  commentId: T:WaveEngine.Framework.Services.ScreenTransition
+  parent: WaveEngine.Framework.Services
+  name: ScreenTransition
+  nameWithType: ScreenTransition
+  fullName: WaveEngine.Framework.Services.ScreenTransition
+- uid: WaveEngine.Framework.Services.ScreenTransition.#ctor*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenTransition.#ctor
+  name: ScreenTransition
+  nameWithType: ScreenTransition.ScreenTransition
+  fullName: WaveEngine.Framework.Services.ScreenTransition.ScreenTransition
+- uid: WaveEngine.Framework.Services.ScreenTransition.SetRenderState*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenTransition.SetRenderState
+  name: SetRenderState
+  nameWithType: ScreenTransition.SetRenderState
+  fullName: WaveEngine.Framework.Services.ScreenTransition.SetRenderState
+- uid: WaveEngine.Framework.Services.ScreenTransition.Initialize*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenTransition.Initialize
+  name: Initialize
+  nameWithType: ScreenTransition.Initialize
+  fullName: WaveEngine.Framework.Services.ScreenTransition.Initialize
+- uid: WaveEngine.Framework.Services.ScreenTransition.EndTransition*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenTransition.EndTransition
+  name: EndTransition
+  nameWithType: ScreenTransition.EndTransition
+  fullName: WaveEngine.Framework.Services.ScreenTransition.EndTransition
+- uid: WaveEngine.Framework.Services.ScreenTransition.UpdateSources*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenTransition.UpdateSources
+  name: UpdateSources
+  nameWithType: ScreenTransition.UpdateSources
+  fullName: WaveEngine.Framework.Services.ScreenTransition.UpdateSources
+- uid: WaveEngine.Framework.Services.ScreenTransition.UpdateTarget*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenTransition.UpdateTarget
+  name: UpdateTarget
+  nameWithType: ScreenTransition.UpdateTarget
+  fullName: WaveEngine.Framework.Services.ScreenTransition.UpdateTarget
+- uid: WaveEngine.Framework.Services.ScreenTransition.DrawSources*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenTransition.DrawSources
+  name: DrawSources
+  nameWithType: ScreenTransition.DrawSources
+  fullName: WaveEngine.Framework.Services.ScreenTransition.DrawSources
+- uid: WaveEngine.Common.Graphics.RenderTarget
+  commentId: T:WaveEngine.Common.Graphics.RenderTarget
+  parent: WaveEngine.Common.Graphics
+  name: RenderTarget
+  nameWithType: RenderTarget
+  fullName: WaveEngine.Common.Graphics.RenderTarget
+- uid: WaveEngine.Framework.Services.ScreenTransition.DrawTarget*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenTransition.DrawTarget
+  name: DrawTarget
+  nameWithType: ScreenTransition.DrawTarget
+  fullName: WaveEngine.Framework.Services.ScreenTransition.DrawTarget
+- uid: WaveEngine.Framework.Services.ScreenTransition.Update*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenTransition.Update
+  name: Update
+  nameWithType: ScreenTransition.Update
+  fullName: WaveEngine.Framework.Services.ScreenTransition.Update
+- uid: WaveEngine.Framework.Services.ScreenTransition.Draw*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenTransition.Draw
+  name: Draw
+  nameWithType: ScreenTransition.Draw
+  fullName: WaveEngine.Framework.Services.ScreenTransition.Draw
+- uid: WaveEngine.Framework.Services.ScreenTransition.Dispose*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenTransition.Dispose
+  name: Dispose
+  nameWithType: ScreenTransition.Dispose
+  fullName: WaveEngine.Framework.Services.ScreenTransition.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

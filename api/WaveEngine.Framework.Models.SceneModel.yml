@@ -1,0 +1,1018 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Framework.Models.SceneModel
+  commentId: T:WaveEngine.Framework.Models.SceneModel
+  id: SceneModel
+  parent: WaveEngine.Framework.Models
+  children:
+  - WaveEngine.Framework.Models.SceneModel.#ctor
+  - WaveEngine.Framework.Models.SceneModel.Copy
+  - WaveEngine.Framework.Models.SceneModel.Entities
+  - WaveEngine.Framework.Models.SceneModel.EntityPointers
+  - WaveEngine.Framework.Models.SceneModel.LoadPointers
+  - WaveEngine.Framework.Models.SceneModel.SavePointers
+  - WaveEngine.Framework.Models.SceneModel.Settings
+  langs:
+  - csharp
+  - vb
+  name: SceneModel
+  nameWithType: SceneModel
+  fullName: WaveEngine.Framework.Models.SceneModel
+  type: Class
+  source:
+    id: SceneModel
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\SceneModel.cs
+    startLine: 15
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models
+  summary: "\nScene class\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract(Namespace = "WaveEngine.Framework.Models", Name = "Scene")]
+
+      public class SceneModel : FileModel, IPointersContainer
+    content.vb: >-
+      <DataContract(Namespace:="WaveEngine.Framework.Models", Name:="Scene")>
+
+      Public Class SceneModel
+
+          Inherits FileModel
+
+          Implements IPointersContainer
+  inheritance:
+  - System.Object
+  - WaveEngine.Framework.Models.FileModel
+  implements:
+  - WaveEngine.Framework.Models.IPointersContainer
+  inheritedMembers:
+  - WaveEngine.Framework.Models.FileModel.Path
+  - WaveEngine.Framework.Models.FileModel.Id
+  - WaveEngine.Framework.Models.FileModel.AutoGenerateId
+  - WaveEngine.Framework.Models.FileModel.Clone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Namespace
+      type: System.String
+      value: WaveEngine.Framework.Models
+    - name: Name
+      type: System.String
+      value: Scene
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WaveEngine.Framework.Models.SceneModel.Entities
+  commentId: F:WaveEngine.Framework.Models.SceneModel.Entities
+  id: Entities
+  parent: WaveEngine.Framework.Models.SceneModel
+  langs:
+  - csharp
+  - vb
+  name: Entities
+  nameWithType: SceneModel.Entities
+  fullName: WaveEngine.Framework.Models.SceneModel.Entities
+  type: Field
+  source:
+    id: Entities
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\SceneModel.cs
+    startLine: 22
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models
+  summary: "\nThe entities\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public List<BaseEntityModel> Entities
+    return:
+      type: System.Collections.Generic.List{WaveEngine.Framework.Models.Entities.BaseEntityModel}
+    content.vb: >-
+      <DataMember>
+
+      Public Entities As List(Of BaseEntityModel)
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.SceneModel.EntityPointers
+  commentId: P:WaveEngine.Framework.Models.SceneModel.EntityPointers
+  id: EntityPointers
+  parent: WaveEngine.Framework.Models.SceneModel
+  langs:
+  - csharp
+  - vb
+  name: EntityPointers
+  nameWithType: SceneModel.EntityPointers
+  fullName: WaveEngine.Framework.Models.SceneModel.EntityPointers
+  type: Property
+  source:
+    id: EntityPointers
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\SceneModel.cs
+    startLine: 27
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models
+  summary: "\nGets or sets the list of entities links\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public List<EntityPointer> EntityPointers { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{WaveEngine.Framework.Models.Entities.EntityPointer}
+    content.vb: >-
+      <DataMember>
+
+      Public Property EntityPointers As List(Of EntityPointer)
+  overload: WaveEngine.Framework.Models.SceneModel.EntityPointers*
+  implements:
+  - WaveEngine.Framework.Models.IPointersContainer.EntityPointers
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.SceneModel.Settings
+  commentId: F:WaveEngine.Framework.Models.SceneModel.Settings
+  id: Settings
+  parent: WaveEngine.Framework.Models.SceneModel
+  langs:
+  - csharp
+  - vb
+  name: Settings
+  nameWithType: SceneModel.Settings
+  fullName: WaveEngine.Framework.Models.SceneModel.Settings
+  type: Field
+  source:
+    id: Settings
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\SceneModel.cs
+    startLine: 34
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models
+  summary: "\nThe scene settings\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public SceneSettings Settings
+    return:
+      type: WaveEngine.Framework.Models.Settings.SceneSettings
+    content.vb: >-
+      <DataMember>
+
+      Public Settings As SceneSettings
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.SceneModel.#ctor
+  commentId: M:WaveEngine.Framework.Models.SceneModel.#ctor
+  id: '#ctor'
+  parent: WaveEngine.Framework.Models.SceneModel
+  langs:
+  - csharp
+  - vb
+  name: SceneModel()
+  nameWithType: SceneModel.SceneModel()
+  fullName: WaveEngine.Framework.Models.SceneModel.SceneModel()
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\SceneModel.cs
+    startLine: 44
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Framework.Models.SceneModel\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public SceneModel()
+    content.vb: Public Sub New
+  overload: WaveEngine.Framework.Models.SceneModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.SceneModel.Copy
+  commentId: M:WaveEngine.Framework.Models.SceneModel.Copy
+  id: Copy
+  parent: WaveEngine.Framework.Models.SceneModel
+  langs:
+  - csharp
+  - vb
+  name: Copy()
+  nameWithType: SceneModel.Copy()
+  fullName: WaveEngine.Framework.Models.SceneModel.Copy()
+  type: Method
+  source:
+    id: Copy
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\SceneModel.cs
+    startLine: 55
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models
+  summary: "\nReturn a copy of SceneModel\n"
+  example: []
+  syntax:
+    content: public SceneModel Copy()
+    return:
+      type: WaveEngine.Framework.Models.SceneModel
+      description: SceneModel copied
+    content.vb: Public Function Copy As SceneModel
+  overload: WaveEngine.Framework.Models.SceneModel.Copy*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.SceneModel.SavePointers
+  commentId: M:WaveEngine.Framework.Models.SceneModel.SavePointers
+  id: SavePointers
+  parent: WaveEngine.Framework.Models.SceneModel
+  langs:
+  - csharp
+  - vb
+  name: SavePointers()
+  nameWithType: SceneModel.SavePointers()
+  fullName: WaveEngine.Framework.Models.SceneModel.SavePointers()
+  type: Method
+  source:
+    id: SavePointers
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\SceneModel.cs
+    startLine: 81
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models
+  summary: "\nRefreshes the entity pointers\n"
+  example: []
+  syntax:
+    content: public void SavePointers()
+    content.vb: Public Sub SavePointers
+  overload: WaveEngine.Framework.Models.SceneModel.SavePointers*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.SceneModel.LoadPointers
+  commentId: M:WaveEngine.Framework.Models.SceneModel.LoadPointers
+  id: LoadPointers
+  parent: WaveEngine.Framework.Models.SceneModel
+  langs:
+  - csharp
+  - vb
+  name: LoadPointers()
+  nameWithType: SceneModel.LoadPointers()
+  fullName: WaveEngine.Framework.Models.SceneModel.LoadPointers()
+  type: Method
+  source:
+    id: LoadPointers
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\SceneModel.cs
+    startLine: 88
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models
+  summary: "\nLoad the object pointers\n"
+  example: []
+  syntax:
+    content: public void LoadPointers()
+    content.vb: Public Sub LoadPointers
+  overload: WaveEngine.Framework.Models.SceneModel.LoadPointers*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: WaveEngine.Framework.Models
+  commentId: N:WaveEngine.Framework.Models
+  name: WaveEngine.Framework.Models
+  nameWithType: WaveEngine.Framework.Models
+  fullName: WaveEngine.Framework.Models
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Framework.Models.FileModel
+  commentId: T:WaveEngine.Framework.Models.FileModel
+  parent: WaveEngine.Framework.Models
+  name: FileModel
+  nameWithType: FileModel
+  fullName: WaveEngine.Framework.Models.FileModel
+- uid: WaveEngine.Framework.Models.IPointersContainer
+  commentId: T:WaveEngine.Framework.Models.IPointersContainer
+  parent: WaveEngine.Framework.Models
+  name: IPointersContainer
+  nameWithType: IPointersContainer
+  fullName: WaveEngine.Framework.Models.IPointersContainer
+- uid: WaveEngine.Framework.Models.FileModel.Path
+  commentId: P:WaveEngine.Framework.Models.FileModel.Path
+  parent: WaveEngine.Framework.Models.FileModel
+  name: Path
+  nameWithType: FileModel.Path
+  fullName: WaveEngine.Framework.Models.FileModel.Path
+- uid: WaveEngine.Framework.Models.FileModel.Id
+  commentId: P:WaveEngine.Framework.Models.FileModel.Id
+  parent: WaveEngine.Framework.Models.FileModel
+  name: Id
+  nameWithType: FileModel.Id
+  fullName: WaveEngine.Framework.Models.FileModel.Id
+- uid: WaveEngine.Framework.Models.FileModel.AutoGenerateId
+  commentId: M:WaveEngine.Framework.Models.FileModel.AutoGenerateId
+  parent: WaveEngine.Framework.Models.FileModel
+  name: AutoGenerateId()
+  nameWithType: FileModel.AutoGenerateId()
+  fullName: WaveEngine.Framework.Models.FileModel.AutoGenerateId()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Models.FileModel.AutoGenerateId
+    name: AutoGenerateId
+    nameWithType: FileModel.AutoGenerateId
+    fullName: WaveEngine.Framework.Models.FileModel.AutoGenerateId
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Models.FileModel.AutoGenerateId
+    name: AutoGenerateId
+    nameWithType: FileModel.AutoGenerateId
+    fullName: WaveEngine.Framework.Models.FileModel.AutoGenerateId
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Models.FileModel.Clone
+  commentId: M:WaveEngine.Framework.Models.FileModel.Clone
+  parent: WaveEngine.Framework.Models.FileModel
+  name: Clone()
+  nameWithType: FileModel.Clone()
+  fullName: WaveEngine.Framework.Models.FileModel.Clone()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Models.FileModel.Clone
+    name: Clone
+    nameWithType: FileModel.Clone
+    fullName: WaveEngine.Framework.Models.FileModel.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Models.FileModel.Clone
+    name: Clone
+    nameWithType: FileModel.Clone
+    fullName: WaveEngine.Framework.Models.FileModel.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: System.Collections.Generic.List{WaveEngine.Framework.Models.Entities.BaseEntityModel}
+  commentId: T:System.Collections.Generic.List{WaveEngine.Framework.Models.Entities.BaseEntityModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<BaseEntityModel>
+  nameWithType: List<BaseEntityModel>
+  fullName: System.Collections.Generic.List<WaveEngine.Framework.Models.Entities.BaseEntityModel>
+  nameWithType.vb: List(Of BaseEntityModel)
+  fullName.vb: System.Collections.Generic.List(Of WaveEngine.Framework.Models.Entities.BaseEntityModel)
+  name.vb: List(Of BaseEntityModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel
+    name: BaseEntityModel
+    nameWithType: BaseEntityModel
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Framework.Models.Entities.BaseEntityModel
+    name: BaseEntityModel
+    nameWithType: BaseEntityModel
+    fullName: WaveEngine.Framework.Models.Entities.BaseEntityModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: WaveEngine.Framework.Models.SceneModel.EntityPointers*
+  commentId: Overload:WaveEngine.Framework.Models.SceneModel.EntityPointers
+  name: EntityPointers
+  nameWithType: SceneModel.EntityPointers
+  fullName: WaveEngine.Framework.Models.SceneModel.EntityPointers
+- uid: WaveEngine.Framework.Models.IPointersContainer.EntityPointers
+  commentId: P:WaveEngine.Framework.Models.IPointersContainer.EntityPointers
+  parent: WaveEngine.Framework.Models.IPointersContainer
+  name: EntityPointers
+  nameWithType: IPointersContainer.EntityPointers
+  fullName: WaveEngine.Framework.Models.IPointersContainer.EntityPointers
+- uid: System.Collections.Generic.List{WaveEngine.Framework.Models.Entities.EntityPointer}
+  commentId: T:System.Collections.Generic.List{WaveEngine.Framework.Models.Entities.EntityPointer}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<EntityPointer>
+  nameWithType: List<EntityPointer>
+  fullName: System.Collections.Generic.List<WaveEngine.Framework.Models.Entities.EntityPointer>
+  nameWithType.vb: List(Of EntityPointer)
+  fullName.vb: System.Collections.Generic.List(Of WaveEngine.Framework.Models.Entities.EntityPointer)
+  name.vb: List(Of EntityPointer)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Framework.Models.Entities.EntityPointer
+    name: EntityPointer
+    nameWithType: EntityPointer
+    fullName: WaveEngine.Framework.Models.Entities.EntityPointer
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Framework.Models.Entities.EntityPointer
+    name: EntityPointer
+    nameWithType: EntityPointer
+    fullName: WaveEngine.Framework.Models.Entities.EntityPointer
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Models.Settings.SceneSettings
+  commentId: T:WaveEngine.Framework.Models.Settings.SceneSettings
+  parent: WaveEngine.Framework.Models.Settings
+  name: SceneSettings
+  nameWithType: SceneSettings
+  fullName: WaveEngine.Framework.Models.Settings.SceneSettings
+- uid: WaveEngine.Framework.Models.Settings
+  commentId: N:WaveEngine.Framework.Models.Settings
+  name: WaveEngine.Framework.Models.Settings
+  nameWithType: WaveEngine.Framework.Models.Settings
+  fullName: WaveEngine.Framework.Models.Settings
+- uid: WaveEngine.Framework.Models.SceneModel
+  commentId: T:WaveEngine.Framework.Models.SceneModel
+  parent: WaveEngine.Framework.Models
+  name: SceneModel
+  nameWithType: SceneModel
+  fullName: WaveEngine.Framework.Models.SceneModel
+- uid: WaveEngine.Framework.Models.SceneModel.#ctor*
+  commentId: Overload:WaveEngine.Framework.Models.SceneModel.#ctor
+  name: SceneModel
+  nameWithType: SceneModel.SceneModel
+  fullName: WaveEngine.Framework.Models.SceneModel.SceneModel
+- uid: WaveEngine.Framework.Models.SceneModel.Copy*
+  commentId: Overload:WaveEngine.Framework.Models.SceneModel.Copy
+  name: Copy
+  nameWithType: SceneModel.Copy
+  fullName: WaveEngine.Framework.Models.SceneModel.Copy
+- uid: WaveEngine.Framework.Models.SceneModel.SavePointers*
+  commentId: Overload:WaveEngine.Framework.Models.SceneModel.SavePointers
+  name: SavePointers
+  nameWithType: SceneModel.SavePointers
+  fullName: WaveEngine.Framework.Models.SceneModel.SavePointers
+- uid: WaveEngine.Framework.Models.SceneModel.LoadPointers*
+  commentId: Overload:WaveEngine.Framework.Models.SceneModel.LoadPointers
+  name: LoadPointers
+  nameWithType: SceneModel.LoadPointers
+  fullName: WaveEngine.Framework.Models.SceneModel.LoadPointers

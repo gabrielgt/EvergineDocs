@@ -1,0 +1,2255 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Materials.EnvironmentMaterial
+  commentId: T:WaveEngine.Materials.EnvironmentMaterial
+  id: EnvironmentMaterial
+  parent: WaveEngine.Materials
+  children:
+  - WaveEngine.Materials.EnvironmentMaterial.#ctor
+  - WaveEngine.Materials.EnvironmentMaterial.#ctor(System.Int32)
+  - WaveEngine.Materials.EnvironmentMaterial.#ctor(System.Int32,System.String,System.String,System.String)
+  - WaveEngine.Materials.EnvironmentMaterial.#ctor(System.Int32,WaveEngine.Common.Graphics.Texture,WaveEngine.Framework.Graphics.TextureCube,WaveEngine.Common.Graphics.Texture)
+  - WaveEngine.Materials.EnvironmentMaterial.#ctor(WaveEngine.Common.Graphics.Color,System.Int32)
+  - WaveEngine.Materials.EnvironmentMaterial.AmbientColor
+  - WaveEngine.Materials.EnvironmentMaterial.CurrentTechnique
+  - WaveEngine.Materials.EnvironmentMaterial.DefaultValues
+  - WaveEngine.Materials.EnvironmentMaterial.Diffuse
+  - WaveEngine.Materials.EnvironmentMaterial.DiffuseColor
+  - WaveEngine.Materials.EnvironmentMaterial.DiffusePath
+  - WaveEngine.Materials.EnvironmentMaterial.Environment
+  - WaveEngine.Materials.EnvironmentMaterial.EnvironmentAmount
+  - WaveEngine.Materials.EnvironmentMaterial.EnvironmentPath
+  - WaveEngine.Materials.EnvironmentMaterial.FresnelEnabled
+  - WaveEngine.Materials.EnvironmentMaterial.FresnelFactor
+  - WaveEngine.Materials.EnvironmentMaterial.GBufferTexture
+  - WaveEngine.Materials.EnvironmentMaterial.Initialize(WaveEngine.Framework.Services.AssetsContainer)
+  - WaveEngine.Materials.EnvironmentMaterial.LightingEnabled
+  - WaveEngine.Materials.EnvironmentMaterial.LightingTexture
+  - WaveEngine.Materials.EnvironmentMaterial.Normal
+  - WaveEngine.Materials.EnvironmentMaterial.NormalPath
+  - WaveEngine.Materials.EnvironmentMaterial.RequireDeferredPass(WaveEngine.Framework.Graphics.DeferredLightingPass)
+  - WaveEngine.Materials.EnvironmentMaterial.SetParameters(System.Boolean)
+  - WaveEngine.Materials.EnvironmentMaterial.SpecularPower
+  langs:
+  - csharp
+  - vb
+  name: EnvironmentMaterial
+  nameWithType: EnvironmentMaterial
+  fullName: WaveEngine.Materials.EnvironmentMaterial
+  type: Class
+  source:
+    id: EnvironmentMaterial
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 19
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nLight PrePass Material\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract(Namespace = "WaveEngine.Materials")]
+
+      public class EnvironmentMaterial : DeferredMaterial, IEquatable<Material>
+    content.vb: >-
+      <DataContract(Namespace:="WaveEngine.Materials")>
+
+      Public Class EnvironmentMaterial
+
+          Inherits DeferredMaterial
+
+          Implements IEquatable(Of Material)
+  inheritance:
+  - System.Object
+  - WaveEngine.Common.IO.SerializableObject
+  - WaveEngine.Common.Graphics.Effect
+  - WaveEngine.Framework.Graphics.Material
+  - WaveEngine.Framework.Graphics.DeferredMaterial
+  implements:
+  - System.IEquatable{WaveEngine.Framework.Graphics.Material}
+  inheritedMembers:
+  - WaveEngine.Framework.Graphics.DeferredMaterial.DeferredLightingPass
+  - WaveEngine.Framework.Graphics.Material.renderManager
+  - WaveEngine.Framework.Graphics.Material.graphicsDevice
+  - WaveEngine.Framework.Graphics.Material.assetsContainer
+  - WaveEngine.Framework.Graphics.Material.LayerId
+  - WaveEngine.Framework.Graphics.Material.AssetPath
+  - WaveEngine.Framework.Graphics.Material.CheckFormatCompatibility(WaveEngine.Common.Graphics.VertexBufferFormat)
+  - WaveEngine.Framework.Graphics.Material.Apply(WaveEngine.Framework.Managers.RenderManager)
+  - WaveEngine.Framework.Graphics.Material.Equals(WaveEngine.Framework.Graphics.Material)
+  - WaveEngine.Framework.Graphics.Material.Equals(System.Object)
+  - WaveEngine.Framework.Graphics.Material.GetHashCode
+  - WaveEngine.Framework.Graphics.Material.InitializeTechniques(WaveEngine.Framework.Graphics.ShaderTechnique[])
+  - WaveEngine.Framework.Graphics.Material.Clone
+  - WaveEngine.Common.Graphics.Effect.Matrices
+  - WaveEngine.Common.Graphics.Effect.Parameters
+  - WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Namespace
+      type: System.String
+      value: WaveEngine.Materials
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WaveEngine.Materials.EnvironmentMaterial.FresnelFactor
+  commentId: P:WaveEngine.Materials.EnvironmentMaterial.FresnelFactor
+  id: FresnelFactor
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: FresnelFactor
+  nameWithType: EnvironmentMaterial.FresnelFactor
+  fullName: WaveEngine.Materials.EnvironmentMaterial.FresnelFactor
+  type: Property
+  source:
+    id: FresnelFactor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 179
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nGets or sets the fresnel factor value.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderPropertyAsSlider(0F, 6F, 0.1F)]
+
+      public float FresnelFactor { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: >-
+      <DataMember>
+
+      <RenderPropertyAsSlider(0F, 6F, 0.1F)>
+
+      Public Property FresnelFactor As Single
+  overload: WaveEngine.Materials.EnvironmentMaterial.FresnelFactor*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderPropertyAsSlider
+    ctor: WaveEngine.Common.Attributes.RenderPropertyAsSlider.#ctor(System.Single,System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 6
+    - type: System.Single
+      value: 0.10000000100000001
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Materials.EnvironmentMaterial.EnvironmentAmount
+  commentId: P:WaveEngine.Materials.EnvironmentMaterial.EnvironmentAmount
+  id: EnvironmentAmount
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: EnvironmentAmount
+  nameWithType: EnvironmentMaterial.EnvironmentAmount
+  fullName: WaveEngine.Materials.EnvironmentMaterial.EnvironmentAmount
+  type: Property
+  source:
+    id: EnvironmentAmount
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 186
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nGets or sets the environment amount value.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderPropertyAsSlider(0F, 1F, 0.1F)]
+
+      public float EnvironmentAmount { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: >-
+      <DataMember>
+
+      <RenderPropertyAsSlider(0F, 1F, 0.1F)>
+
+      Public Property EnvironmentAmount As Single
+  overload: WaveEngine.Materials.EnvironmentMaterial.EnvironmentAmount*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderPropertyAsSlider
+    ctor: WaveEngine.Common.Attributes.RenderPropertyAsSlider.#ctor(System.Single,System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 1
+    - type: System.Single
+      value: 0.10000000100000001
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Materials.EnvironmentMaterial.SpecularPower
+  commentId: P:WaveEngine.Materials.EnvironmentMaterial.SpecularPower
+  id: SpecularPower
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: SpecularPower
+  nameWithType: EnvironmentMaterial.SpecularPower
+  fullName: WaveEngine.Materials.EnvironmentMaterial.SpecularPower
+  type: Property
+  source:
+    id: SpecularPower
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 193
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nGets or sets the specular power value.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderPropertyAsSlider(0F, 255F, 1F)]
+
+      public float SpecularPower { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: >-
+      <DataMember>
+
+      <RenderPropertyAsSlider(0F, 255F, 1F)>
+
+      Public Property SpecularPower As Single
+  overload: WaveEngine.Materials.EnvironmentMaterial.SpecularPower*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderPropertyAsSlider
+    ctor: WaveEngine.Common.Attributes.RenderPropertyAsSlider.#ctor(System.Single,System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 255
+    - type: System.Single
+      value: 1
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Materials.EnvironmentMaterial.DiffuseColor
+  commentId: P:WaveEngine.Materials.EnvironmentMaterial.DiffuseColor
+  id: DiffuseColor
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: DiffuseColor
+  nameWithType: EnvironmentMaterial.DiffuseColor
+  fullName: WaveEngine.Materials.EnvironmentMaterial.DiffuseColor
+  type: Property
+  source:
+    id: DiffuseColor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 203
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nGets or sets the color of the diffuse.\n"
+  example: []
+  syntax:
+    content: public Color DiffuseColor { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Graphics.Color
+      description: "\nThe color of the diffuse.\n"
+    content.vb: Public Property DiffuseColor As Color
+  overload: WaveEngine.Materials.EnvironmentMaterial.DiffuseColor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Materials.EnvironmentMaterial.AmbientColor
+  commentId: P:WaveEngine.Materials.EnvironmentMaterial.AmbientColor
+  id: AmbientColor
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: AmbientColor
+  nameWithType: EnvironmentMaterial.AmbientColor
+  fullName: WaveEngine.Materials.EnvironmentMaterial.AmbientColor
+  type: Property
+  source:
+    id: AmbientColor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 222
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nGets or sets the color of the ambient.\n"
+  example: []
+  syntax:
+    content: public Color AmbientColor { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Graphics.Color
+      description: "\nThe color of the ambient.\n"
+    content.vb: Public Property AmbientColor As Color
+  overload: WaveEngine.Materials.EnvironmentMaterial.AmbientColor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Materials.EnvironmentMaterial.DiffusePath
+  commentId: P:WaveEngine.Materials.EnvironmentMaterial.DiffusePath
+  id: DiffusePath
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: DiffusePath
+  nameWithType: EnvironmentMaterial.DiffusePath
+  fullName: WaveEngine.Materials.EnvironmentMaterial.DiffusePath
+  type: Property
+  source:
+    id: DiffusePath
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 238
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nGets or sets the diffuse texture path\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderPropertyAsAsset(AssetType.Texture, null, 0)]
+
+      public string DiffusePath { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <RenderPropertyAsAsset(AssetType.Texture, Nothing, 0)>
+
+      Public Property DiffusePath As String
+  overload: WaveEngine.Materials.EnvironmentMaterial.DiffusePath*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderPropertyAsAsset
+    ctor: WaveEngine.Common.Attributes.RenderPropertyAsAsset.#ctor(WaveEngine.Common.Attributes.AssetType,System.String,System.Int32)
+    arguments:
+    - type: WaveEngine.Common.Attributes.AssetType
+      value: 16
+    - type: System.String
+    - type: System.Int32
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Materials.EnvironmentMaterial.NormalPath
+  commentId: P:WaveEngine.Materials.EnvironmentMaterial.NormalPath
+  id: NormalPath
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: NormalPath
+  nameWithType: EnvironmentMaterial.NormalPath
+  fullName: WaveEngine.Materials.EnvironmentMaterial.NormalPath
+  type: Property
+  source:
+    id: NormalPath
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 256
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nGets or sets the normal texture path\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderPropertyAsAsset(AssetType.Texture, null, 0)]
+
+      public string NormalPath { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <RenderPropertyAsAsset(AssetType.Texture, Nothing, 0)>
+
+      Public Property NormalPath As String
+  overload: WaveEngine.Materials.EnvironmentMaterial.NormalPath*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderPropertyAsAsset
+    ctor: WaveEngine.Common.Attributes.RenderPropertyAsAsset.#ctor(WaveEngine.Common.Attributes.AssetType,System.String,System.Int32)
+    arguments:
+    - type: WaveEngine.Common.Attributes.AssetType
+      value: 16
+    - type: System.String
+    - type: System.Int32
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Materials.EnvironmentMaterial.EnvironmentPath
+  commentId: P:WaveEngine.Materials.EnvironmentMaterial.EnvironmentPath
+  id: EnvironmentPath
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: EnvironmentPath
+  nameWithType: EnvironmentMaterial.EnvironmentPath
+  fullName: WaveEngine.Materials.EnvironmentMaterial.EnvironmentPath
+  type: Property
+  source:
+    id: EnvironmentPath
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 274
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nGets or sets the environment texture path\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderPropertyAsAsset(AssetType.Cubemap, null, 0)]
+
+      public string EnvironmentPath { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <RenderPropertyAsAsset(AssetType.Cubemap, Nothing, 0)>
+
+      Public Property EnvironmentPath As String
+  overload: WaveEngine.Materials.EnvironmentMaterial.EnvironmentPath*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderPropertyAsAsset
+    ctor: WaveEngine.Common.Attributes.RenderPropertyAsAsset.#ctor(WaveEngine.Common.Attributes.AssetType,System.String,System.Int32)
+    arguments:
+    - type: WaveEngine.Common.Attributes.AssetType
+      value: 32
+    - type: System.String
+    - type: System.Int32
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Materials.EnvironmentMaterial.LightingEnabled
+  commentId: P:WaveEngine.Materials.EnvironmentMaterial.LightingEnabled
+  id: LightingEnabled
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: LightingEnabled
+  nameWithType: EnvironmentMaterial.LightingEnabled
+  fullName: WaveEngine.Materials.EnvironmentMaterial.LightingEnabled
+  type: Property
+  source:
+    id: LightingEnabled
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 295
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nGets or sets a value indicating whether [lighting enable].\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public bool LightingEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if [lighting enable]; otherwise, <code>false</code>.\n"
+    content.vb: >-
+      <DataMember>
+
+      Public Property LightingEnabled As Boolean
+  overload: WaveEngine.Materials.EnvironmentMaterial.LightingEnabled*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Materials.EnvironmentMaterial.FresnelEnabled
+  commentId: P:WaveEngine.Materials.EnvironmentMaterial.FresnelEnabled
+  id: FresnelEnabled
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: FresnelEnabled
+  nameWithType: EnvironmentMaterial.FresnelEnabled
+  fullName: WaveEngine.Materials.EnvironmentMaterial.FresnelEnabled
+  type: Property
+  source:
+    id: FresnelEnabled
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 301
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nGets or sets a value indicating whether [fresnel enable].\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public bool FresnelEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <DataMember>
+
+      Public Property FresnelEnabled As Boolean
+  overload: WaveEngine.Materials.EnvironmentMaterial.FresnelEnabled*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Materials.EnvironmentMaterial.Diffuse
+  commentId: P:WaveEngine.Materials.EnvironmentMaterial.Diffuse
+  id: Diffuse
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: Diffuse
+  nameWithType: EnvironmentMaterial.Diffuse
+  fullName: WaveEngine.Materials.EnvironmentMaterial.Diffuse
+  type: Property
+  source:
+    id: Diffuse
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 311
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nGets or sets the diffuse.\n"
+  example: []
+  syntax:
+    content: public Texture Diffuse { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Graphics.Texture
+      description: "\nThe diffuse.\n"
+    content.vb: Public Property Diffuse As Texture
+  overload: WaveEngine.Materials.EnvironmentMaterial.Diffuse*
+  exceptions:
+  - type: System.NullReferenceException
+    commentId: T:System.NullReferenceException
+    description: Diffuse texture cannot be null.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Materials.EnvironmentMaterial.Environment
+  commentId: P:WaveEngine.Materials.EnvironmentMaterial.Environment
+  id: Environment
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: Environment
+  nameWithType: EnvironmentMaterial.Environment
+  fullName: WaveEngine.Materials.EnvironmentMaterial.Environment
+  type: Property
+  source:
+    id: Environment
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 337
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nGets or sets the environment.\n"
+  example: []
+  syntax:
+    content: public TextureCube Environment { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Graphics.TextureCube
+      description: "\nThe environment.\n"
+    content.vb: Public Property Environment As TextureCube
+  overload: WaveEngine.Materials.EnvironmentMaterial.Environment*
+  exceptions:
+  - type: System.NullReferenceException
+    commentId: T:System.NullReferenceException
+    description: Environment texture cannot be null
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Materials.EnvironmentMaterial.LightingTexture
+  commentId: P:WaveEngine.Materials.EnvironmentMaterial.LightingTexture
+  id: LightingTexture
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: LightingTexture
+  nameWithType: EnvironmentMaterial.LightingTexture
+  fullName: WaveEngine.Materials.EnvironmentMaterial.LightingTexture
+  type: Property
+  source:
+    id: LightingTexture
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 359
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nGets the lighting texture\n"
+  example: []
+  syntax:
+    content: public Texture LightingTexture { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Graphics.Texture
+    content.vb: Public ReadOnly Property LightingTexture As Texture
+  overload: WaveEngine.Materials.EnvironmentMaterial.LightingTexture*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Materials.EnvironmentMaterial.GBufferTexture
+  commentId: P:WaveEngine.Materials.EnvironmentMaterial.GBufferTexture
+  id: GBufferTexture
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: GBufferTexture
+  nameWithType: EnvironmentMaterial.GBufferTexture
+  fullName: WaveEngine.Materials.EnvironmentMaterial.GBufferTexture
+  type: Property
+  source:
+    id: GBufferTexture
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 369
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nGets the GBuffer texture\n"
+  example: []
+  syntax:
+    content: public Texture GBufferTexture { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Graphics.Texture
+    content.vb: Public ReadOnly Property GBufferTexture As Texture
+  overload: WaveEngine.Materials.EnvironmentMaterial.GBufferTexture*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Materials.EnvironmentMaterial.Normal
+  commentId: P:WaveEngine.Materials.EnvironmentMaterial.Normal
+  id: Normal
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: EnvironmentMaterial.Normal
+  fullName: WaveEngine.Materials.EnvironmentMaterial.Normal
+  type: Property
+  source:
+    id: Normal
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 383
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nGets or sets the normal.\n"
+  example: []
+  syntax:
+    content: public Texture Normal { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Graphics.Texture
+      description: "\nThe normal.\n"
+    content.vb: Public Property Normal As Texture
+  overload: WaveEngine.Materials.EnvironmentMaterial.Normal*
+  exceptions:
+  - type: System.NullReferenceException
+    commentId: T:System.NullReferenceException
+    description: Normal texture cannot be null.
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Materials.EnvironmentMaterial.CurrentTechnique
+  commentId: P:WaveEngine.Materials.EnvironmentMaterial.CurrentTechnique
+  id: CurrentTechnique
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: CurrentTechnique
+  nameWithType: EnvironmentMaterial.CurrentTechnique
+  fullName: WaveEngine.Materials.EnvironmentMaterial.CurrentTechnique
+  type: Property
+  source:
+    id: CurrentTechnique
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 439
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nGets gets or sets the current technique.\n"
+  example: []
+  syntax:
+    content: public override string CurrentTechnique { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe current technique.\n"
+    content.vb: Public Overrides ReadOnly Property CurrentTechnique As String
+  overridden: WaveEngine.Common.Graphics.Effect.CurrentTechnique
+  overload: WaveEngine.Materials.EnvironmentMaterial.CurrentTechnique*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: WaveEngine.Materials.EnvironmentMaterial.#ctor
+  commentId: M:WaveEngine.Materials.EnvironmentMaterial.#ctor
+  id: '#ctor'
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: EnvironmentMaterial()
+  nameWithType: EnvironmentMaterial.EnvironmentMaterial()
+  fullName: WaveEngine.Materials.EnvironmentMaterial.EnvironmentMaterial()
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 532
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Materials.EnvironmentMaterial\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public EnvironmentMaterial()
+    content.vb: Public Sub New
+  overload: WaveEngine.Materials.EnvironmentMaterial.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Materials.EnvironmentMaterial.#ctor(System.Int32)
+  commentId: M:WaveEngine.Materials.EnvironmentMaterial.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: EnvironmentMaterial(Int32)
+  nameWithType: EnvironmentMaterial.EnvironmentMaterial(Int32)
+  fullName: WaveEngine.Materials.EnvironmentMaterial.EnvironmentMaterial(System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 541
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Materials.EnvironmentMaterial\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public EnvironmentMaterial(int layerId)
+    parameters:
+    - id: layerId
+      type: System.Int32
+      description: The associated layer
+    content.vb: Public Sub New(layerId As Integer)
+  overload: WaveEngine.Materials.EnvironmentMaterial.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Materials.EnvironmentMaterial.#ctor(WaveEngine.Common.Graphics.Color,System.Int32)
+  commentId: M:WaveEngine.Materials.EnvironmentMaterial.#ctor(WaveEngine.Common.Graphics.Color,System.Int32)
+  id: '#ctor(WaveEngine.Common.Graphics.Color,System.Int32)'
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: EnvironmentMaterial(Color, Int32)
+  nameWithType: EnvironmentMaterial.EnvironmentMaterial(Color, Int32)
+  fullName: WaveEngine.Materials.EnvironmentMaterial.EnvironmentMaterial(WaveEngine.Common.Graphics.Color, System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 551
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Materials.EnvironmentMaterial\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public EnvironmentMaterial(Color diffuseColor, int layerId)
+    parameters:
+    - id: diffuseColor
+      type: WaveEngine.Common.Graphics.Color
+      description: The diffuse color.
+    - id: layerId
+      type: System.Int32
+      description: The associated layer
+    content.vb: Public Sub New(diffuseColor As Color, layerId As Integer)
+  overload: WaveEngine.Materials.EnvironmentMaterial.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Materials.EnvironmentMaterial.#ctor(System.Int32,System.String,System.String,System.String)
+  commentId: M:WaveEngine.Materials.EnvironmentMaterial.#ctor(System.Int32,System.String,System.String,System.String)
+  id: '#ctor(System.Int32,System.String,System.String,System.String)'
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: EnvironmentMaterial(Int32, String, String, String)
+  nameWithType: EnvironmentMaterial.EnvironmentMaterial(Int32, String, String, String)
+  fullName: WaveEngine.Materials.EnvironmentMaterial.EnvironmentMaterial(System.Int32, System.String, System.String, System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 564
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Materials.EnvironmentMaterial\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public EnvironmentMaterial(int layerId, string diffusePath = null, string environmentPath = null, string normalPath = null)
+    parameters:
+    - id: layerId
+      type: System.Int32
+      description: The associated layer
+    - id: diffusePath
+      type: System.String
+      description: The diffuse path.
+    - id: environmentPath
+      type: System.String
+      description: The environment path.
+    - id: normalPath
+      type: System.String
+      description: The normal path.
+    content.vb: Public Sub New(layerId As Integer, diffusePath As String = Nothing, environmentPath As String = Nothing, normalPath As String = Nothing)
+  overload: WaveEngine.Materials.EnvironmentMaterial.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Materials.EnvironmentMaterial.#ctor(System.Int32,WaveEngine.Common.Graphics.Texture,WaveEngine.Framework.Graphics.TextureCube,WaveEngine.Common.Graphics.Texture)
+  commentId: M:WaveEngine.Materials.EnvironmentMaterial.#ctor(System.Int32,WaveEngine.Common.Graphics.Texture,WaveEngine.Framework.Graphics.TextureCube,WaveEngine.Common.Graphics.Texture)
+  id: '#ctor(System.Int32,WaveEngine.Common.Graphics.Texture,WaveEngine.Framework.Graphics.TextureCube,WaveEngine.Common.Graphics.Texture)'
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: EnvironmentMaterial(Int32, Texture, TextureCube, Texture)
+  nameWithType: EnvironmentMaterial.EnvironmentMaterial(Int32, Texture, TextureCube, Texture)
+  fullName: WaveEngine.Materials.EnvironmentMaterial.EnvironmentMaterial(System.Int32, WaveEngine.Common.Graphics.Texture, WaveEngine.Framework.Graphics.TextureCube, WaveEngine.Common.Graphics.Texture)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 579
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Materials.EnvironmentMaterial\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public EnvironmentMaterial(int layerId, Texture diffuse = null, TextureCube environment = null, Texture normal = null)
+    parameters:
+    - id: layerId
+      type: System.Int32
+      description: The associated layer
+    - id: diffuse
+      type: WaveEngine.Common.Graphics.Texture
+      description: The diffuse.
+    - id: environment
+      type: WaveEngine.Framework.Graphics.TextureCube
+      description: The environment.
+    - id: normal
+      type: WaveEngine.Common.Graphics.Texture
+      description: The normal.
+    content.vb: Public Sub New(layerId As Integer, diffuse As Texture = Nothing, environment As TextureCube = Nothing, normal As Texture = Nothing)
+  overload: WaveEngine.Materials.EnvironmentMaterial.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Materials.EnvironmentMaterial.DefaultValues
+  commentId: M:WaveEngine.Materials.EnvironmentMaterial.DefaultValues
+  id: DefaultValues
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: DefaultValues()
+  nameWithType: EnvironmentMaterial.DefaultValues()
+  fullName: WaveEngine.Materials.EnvironmentMaterial.DefaultValues()
+  type: Method
+  source:
+    id: DefaultValues
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 590
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nDefaults the values.\n"
+  example: []
+  syntax:
+    content: protected override void DefaultValues()
+    content.vb: Protected Overrides Sub DefaultValues
+  overridden: WaveEngine.Framework.Graphics.Material.DefaultValues
+  overload: WaveEngine.Materials.EnvironmentMaterial.DefaultValues*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Materials.EnvironmentMaterial.Initialize(WaveEngine.Framework.Services.AssetsContainer)
+  commentId: M:WaveEngine.Materials.EnvironmentMaterial.Initialize(WaveEngine.Framework.Services.AssetsContainer)
+  id: Initialize(WaveEngine.Framework.Services.AssetsContainer)
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: Initialize(AssetsContainer)
+  nameWithType: EnvironmentMaterial.Initialize(AssetsContainer)
+  fullName: WaveEngine.Materials.EnvironmentMaterial.Initialize(WaveEngine.Framework.Services.AssetsContainer)
+  type: Method
+  source:
+    id: Initialize
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 611
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nInitializes the specified assets.\n"
+  example: []
+  syntax:
+    content: public override void Initialize(AssetsContainer assets)
+    parameters:
+    - id: assets
+      type: WaveEngine.Framework.Services.AssetsContainer
+      description: The assets.
+    content.vb: Public Overrides Sub Initialize(assets As AssetsContainer)
+  overridden: WaveEngine.Framework.Graphics.Material.Initialize(WaveEngine.Framework.Services.AssetsContainer)
+  overload: WaveEngine.Materials.EnvironmentMaterial.Initialize*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: WaveEngine.Materials.EnvironmentMaterial.RequireDeferredPass(WaveEngine.Framework.Graphics.DeferredLightingPass)
+  commentId: M:WaveEngine.Materials.EnvironmentMaterial.RequireDeferredPass(WaveEngine.Framework.Graphics.DeferredLightingPass)
+  id: RequireDeferredPass(WaveEngine.Framework.Graphics.DeferredLightingPass)
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: RequireDeferredPass(DeferredLightingPass)
+  nameWithType: EnvironmentMaterial.RequireDeferredPass(DeferredLightingPass)
+  fullName: WaveEngine.Materials.EnvironmentMaterial.RequireDeferredPass(WaveEngine.Framework.Graphics.DeferredLightingPass)
+  type: Method
+  source:
+    id: RequireDeferredPass
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 632
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nCheck if this material require the specified pass\n"
+  example: []
+  syntax:
+    content: public override bool RequireDeferredPass(DeferredLightingPass pass)
+    parameters:
+    - id: pass
+      type: WaveEngine.Framework.Graphics.DeferredLightingPass
+      description: The deferred pass
+    return:
+      type: System.Boolean
+      description: True if this material require this pass
+    content.vb: Public Overrides Function RequireDeferredPass(pass As DeferredLightingPass) As Boolean
+  overridden: WaveEngine.Framework.Graphics.DeferredMaterial.RequireDeferredPass(WaveEngine.Framework.Graphics.DeferredLightingPass)
+  overload: WaveEngine.Materials.EnvironmentMaterial.RequireDeferredPass*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: WaveEngine.Materials.EnvironmentMaterial.SetParameters(System.Boolean)
+  commentId: M:WaveEngine.Materials.EnvironmentMaterial.SetParameters(System.Boolean)
+  id: SetParameters(System.Boolean)
+  parent: WaveEngine.Materials.EnvironmentMaterial
+  langs:
+  - csharp
+  - vb
+  name: SetParameters(Boolean)
+  nameWithType: EnvironmentMaterial.SetParameters(Boolean)
+  fullName: WaveEngine.Materials.EnvironmentMaterial.SetParameters(System.Boolean)
+  type: Method
+  source:
+    id: SetParameters
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Materials\Shared\EnvironmentMaterial.cs
+    startLine: 646
+  assemblies:
+  - WaveEngine.Materials
+  namespace: WaveEngine.Materials
+  summary: "\nSets the parameters.\n"
+  example: []
+  syntax:
+    content: public override void SetParameters(bool cached)
+    parameters:
+    - id: cached
+      type: System.Boolean
+      description: if set to <code>true</code> [cached].
+    content.vb: Public Overrides Sub SetParameters(cached As Boolean)
+  overridden: WaveEngine.Framework.Graphics.Material.SetParameters(System.Boolean)
+  overload: WaveEngine.Materials.EnvironmentMaterial.SetParameters*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: WaveEngine.Materials
+  commentId: N:WaveEngine.Materials
+  name: WaveEngine.Materials
+  nameWithType: WaveEngine.Materials
+  fullName: WaveEngine.Materials
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.IO.SerializableObject
+  commentId: T:WaveEngine.Common.IO.SerializableObject
+  parent: WaveEngine.Common.IO
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: WaveEngine.Common.IO.SerializableObject
+- uid: WaveEngine.Common.Graphics.Effect
+  commentId: T:WaveEngine.Common.Graphics.Effect
+  parent: WaveEngine.Common.Graphics
+  name: Effect
+  nameWithType: Effect
+  fullName: WaveEngine.Common.Graphics.Effect
+- uid: WaveEngine.Framework.Graphics.Material
+  commentId: T:WaveEngine.Framework.Graphics.Material
+  parent: WaveEngine.Framework.Graphics
+  name: Material
+  nameWithType: Material
+  fullName: WaveEngine.Framework.Graphics.Material
+- uid: WaveEngine.Framework.Graphics.DeferredMaterial
+  commentId: T:WaveEngine.Framework.Graphics.DeferredMaterial
+  parent: WaveEngine.Framework.Graphics
+  name: DeferredMaterial
+  nameWithType: DeferredMaterial
+  fullName: WaveEngine.Framework.Graphics.DeferredMaterial
+- uid: System.IEquatable{WaveEngine.Framework.Graphics.Material}
+  commentId: T:System.IEquatable{WaveEngine.Framework.Graphics.Material}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<Material>
+  nameWithType: IEquatable<Material>
+  fullName: System.IEquatable<WaveEngine.Framework.Graphics.Material>
+  nameWithType.vb: IEquatable(Of Material)
+  fullName.vb: System.IEquatable(Of WaveEngine.Framework.Graphics.Material)
+  name.vb: IEquatable(Of Material)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Framework.Graphics.Material
+    name: Material
+    nameWithType: Material
+    fullName: WaveEngine.Framework.Graphics.Material
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Framework.Graphics.Material
+    name: Material
+    nameWithType: Material
+    fullName: WaveEngine.Framework.Graphics.Material
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.DeferredMaterial.DeferredLightingPass
+  commentId: P:WaveEngine.Framework.Graphics.DeferredMaterial.DeferredLightingPass
+  parent: WaveEngine.Framework.Graphics.DeferredMaterial
+  name: DeferredLightingPass
+  nameWithType: DeferredMaterial.DeferredLightingPass
+  fullName: WaveEngine.Framework.Graphics.DeferredMaterial.DeferredLightingPass
+- uid: WaveEngine.Framework.Graphics.Material.renderManager
+  commentId: F:WaveEngine.Framework.Graphics.Material.renderManager
+  parent: WaveEngine.Framework.Graphics.Material
+  name: renderManager
+  nameWithType: Material.renderManager
+  fullName: WaveEngine.Framework.Graphics.Material.renderManager
+- uid: WaveEngine.Framework.Graphics.Material.graphicsDevice
+  commentId: F:WaveEngine.Framework.Graphics.Material.graphicsDevice
+  parent: WaveEngine.Framework.Graphics.Material
+  name: graphicsDevice
+  nameWithType: Material.graphicsDevice
+  fullName: WaveEngine.Framework.Graphics.Material.graphicsDevice
+- uid: WaveEngine.Framework.Graphics.Material.assetsContainer
+  commentId: F:WaveEngine.Framework.Graphics.Material.assetsContainer
+  parent: WaveEngine.Framework.Graphics.Material
+  name: assetsContainer
+  nameWithType: Material.assetsContainer
+  fullName: WaveEngine.Framework.Graphics.Material.assetsContainer
+- uid: WaveEngine.Framework.Graphics.Material.LayerId
+  commentId: P:WaveEngine.Framework.Graphics.Material.LayerId
+  parent: WaveEngine.Framework.Graphics.Material
+  name: LayerId
+  nameWithType: Material.LayerId
+  fullName: WaveEngine.Framework.Graphics.Material.LayerId
+- uid: WaveEngine.Framework.Graphics.Material.AssetPath
+  commentId: P:WaveEngine.Framework.Graphics.Material.AssetPath
+  parent: WaveEngine.Framework.Graphics.Material
+  name: AssetPath
+  nameWithType: Material.AssetPath
+  fullName: WaveEngine.Framework.Graphics.Material.AssetPath
+- uid: WaveEngine.Framework.Graphics.Material.CheckFormatCompatibility(WaveEngine.Common.Graphics.VertexBufferFormat)
+  commentId: M:WaveEngine.Framework.Graphics.Material.CheckFormatCompatibility(WaveEngine.Common.Graphics.VertexBufferFormat)
+  parent: WaveEngine.Framework.Graphics.Material
+  name: CheckFormatCompatibility(VertexBufferFormat)
+  nameWithType: Material.CheckFormatCompatibility(VertexBufferFormat)
+  fullName: WaveEngine.Framework.Graphics.Material.CheckFormatCompatibility(WaveEngine.Common.Graphics.VertexBufferFormat)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Material.CheckFormatCompatibility(WaveEngine.Common.Graphics.VertexBufferFormat)
+    name: CheckFormatCompatibility
+    nameWithType: Material.CheckFormatCompatibility
+    fullName: WaveEngine.Framework.Graphics.Material.CheckFormatCompatibility
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Graphics.VertexBufferFormat
+    name: VertexBufferFormat
+    nameWithType: VertexBufferFormat
+    fullName: WaveEngine.Common.Graphics.VertexBufferFormat
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Material.CheckFormatCompatibility(WaveEngine.Common.Graphics.VertexBufferFormat)
+    name: CheckFormatCompatibility
+    nameWithType: Material.CheckFormatCompatibility
+    fullName: WaveEngine.Framework.Graphics.Material.CheckFormatCompatibility
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Graphics.VertexBufferFormat
+    name: VertexBufferFormat
+    nameWithType: VertexBufferFormat
+    fullName: WaveEngine.Common.Graphics.VertexBufferFormat
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.Material.Apply(WaveEngine.Framework.Managers.RenderManager)
+  commentId: M:WaveEngine.Framework.Graphics.Material.Apply(WaveEngine.Framework.Managers.RenderManager)
+  parent: WaveEngine.Framework.Graphics.Material
+  name: Apply(RenderManager)
+  nameWithType: Material.Apply(RenderManager)
+  fullName: WaveEngine.Framework.Graphics.Material.Apply(WaveEngine.Framework.Managers.RenderManager)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Material.Apply(WaveEngine.Framework.Managers.RenderManager)
+    name: Apply
+    nameWithType: Material.Apply
+    fullName: WaveEngine.Framework.Graphics.Material.Apply
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Managers.RenderManager
+    name: RenderManager
+    nameWithType: RenderManager
+    fullName: WaveEngine.Framework.Managers.RenderManager
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Material.Apply(WaveEngine.Framework.Managers.RenderManager)
+    name: Apply
+    nameWithType: Material.Apply
+    fullName: WaveEngine.Framework.Graphics.Material.Apply
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Managers.RenderManager
+    name: RenderManager
+    nameWithType: RenderManager
+    fullName: WaveEngine.Framework.Managers.RenderManager
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.Material.Equals(WaveEngine.Framework.Graphics.Material)
+  commentId: M:WaveEngine.Framework.Graphics.Material.Equals(WaveEngine.Framework.Graphics.Material)
+  parent: WaveEngine.Framework.Graphics.Material
+  name: Equals(Material)
+  nameWithType: Material.Equals(Material)
+  fullName: WaveEngine.Framework.Graphics.Material.Equals(WaveEngine.Framework.Graphics.Material)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Material.Equals(WaveEngine.Framework.Graphics.Material)
+    name: Equals
+    nameWithType: Material.Equals
+    fullName: WaveEngine.Framework.Graphics.Material.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Graphics.Material
+    name: Material
+    nameWithType: Material
+    fullName: WaveEngine.Framework.Graphics.Material
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Material.Equals(WaveEngine.Framework.Graphics.Material)
+    name: Equals
+    nameWithType: Material.Equals
+    fullName: WaveEngine.Framework.Graphics.Material.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Graphics.Material
+    name: Material
+    nameWithType: Material
+    fullName: WaveEngine.Framework.Graphics.Material
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.Material.Equals(System.Object)
+  commentId: M:WaveEngine.Framework.Graphics.Material.Equals(System.Object)
+  parent: WaveEngine.Framework.Graphics.Material
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Material.Equals(Object)
+  fullName: WaveEngine.Framework.Graphics.Material.Equals(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Material.Equals(System.Object)
+    name: Equals
+    nameWithType: Material.Equals
+    fullName: WaveEngine.Framework.Graphics.Material.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Material.Equals(System.Object)
+    name: Equals
+    nameWithType: Material.Equals
+    fullName: WaveEngine.Framework.Graphics.Material.Equals
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.Material.GetHashCode
+  commentId: M:WaveEngine.Framework.Graphics.Material.GetHashCode
+  parent: WaveEngine.Framework.Graphics.Material
+  name: GetHashCode()
+  nameWithType: Material.GetHashCode()
+  fullName: WaveEngine.Framework.Graphics.Material.GetHashCode()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Material.GetHashCode
+    name: GetHashCode
+    nameWithType: Material.GetHashCode
+    fullName: WaveEngine.Framework.Graphics.Material.GetHashCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Material.GetHashCode
+    name: GetHashCode
+    nameWithType: Material.GetHashCode
+    fullName: WaveEngine.Framework.Graphics.Material.GetHashCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.Material.InitializeTechniques(WaveEngine.Framework.Graphics.ShaderTechnique[])
+  commentId: M:WaveEngine.Framework.Graphics.Material.InitializeTechniques(WaveEngine.Framework.Graphics.ShaderTechnique[])
+  parent: WaveEngine.Framework.Graphics.Material
+  name: InitializeTechniques(ShaderTechnique[])
+  nameWithType: Material.InitializeTechniques(ShaderTechnique[])
+  fullName: WaveEngine.Framework.Graphics.Material.InitializeTechniques(WaveEngine.Framework.Graphics.ShaderTechnique[])
+  nameWithType.vb: Material.InitializeTechniques(ShaderTechnique())
+  fullName.vb: WaveEngine.Framework.Graphics.Material.InitializeTechniques(WaveEngine.Framework.Graphics.ShaderTechnique())
+  name.vb: InitializeTechniques(ShaderTechnique())
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Material.InitializeTechniques(WaveEngine.Framework.Graphics.ShaderTechnique[])
+    name: InitializeTechniques
+    nameWithType: Material.InitializeTechniques
+    fullName: WaveEngine.Framework.Graphics.Material.InitializeTechniques
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Graphics.ShaderTechnique
+    name: ShaderTechnique
+    nameWithType: ShaderTechnique
+    fullName: WaveEngine.Framework.Graphics.ShaderTechnique
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Material.InitializeTechniques(WaveEngine.Framework.Graphics.ShaderTechnique[])
+    name: InitializeTechniques
+    nameWithType: Material.InitializeTechniques
+    fullName: WaveEngine.Framework.Graphics.Material.InitializeTechniques
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Graphics.ShaderTechnique
+    name: ShaderTechnique
+    nameWithType: ShaderTechnique
+    fullName: WaveEngine.Framework.Graphics.ShaderTechnique
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Graphics.Material.Clone
+  commentId: M:WaveEngine.Framework.Graphics.Material.Clone
+  parent: WaveEngine.Framework.Graphics.Material
+  name: Clone()
+  nameWithType: Material.Clone()
+  fullName: WaveEngine.Framework.Graphics.Material.Clone()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Material.Clone
+    name: Clone
+    nameWithType: Material.Clone
+    fullName: WaveEngine.Framework.Graphics.Material.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Material.Clone
+    name: Clone
+    nameWithType: Material.Clone
+    fullName: WaveEngine.Framework.Graphics.Material.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Graphics.Effect.Matrices
+  commentId: F:WaveEngine.Common.Graphics.Effect.Matrices
+  parent: WaveEngine.Common.Graphics.Effect
+  name: Matrices
+  nameWithType: Effect.Matrices
+  fullName: WaveEngine.Common.Graphics.Effect.Matrices
+- uid: WaveEngine.Common.Graphics.Effect.Parameters
+  commentId: P:WaveEngine.Common.Graphics.Effect.Parameters
+  parent: WaveEngine.Common.Graphics.Effect
+  name: Parameters
+  nameWithType: Effect.Parameters
+  fullName: WaveEngine.Common.Graphics.Effect.Parameters
+- uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  commentId: M:WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  parent: WaveEngine.Common.IO.SerializableObject
+  isExternal: true
+  name: OnDeserializing(StreamingContext)
+  nameWithType: SerializableObject.OnDeserializing(StreamingContext)
+  fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.IO
+  commentId: N:WaveEngine.Common.IO
+  name: WaveEngine.Common.IO
+  nameWithType: WaveEngine.Common.IO
+  fullName: WaveEngine.Common.IO
+- uid: WaveEngine.Common.Graphics
+  commentId: N:WaveEngine.Common.Graphics
+  name: WaveEngine.Common.Graphics
+  nameWithType: WaveEngine.Common.Graphics
+  fullName: WaveEngine.Common.Graphics
+- uid: WaveEngine.Framework.Graphics
+  commentId: N:WaveEngine.Framework.Graphics
+  name: WaveEngine.Framework.Graphics
+  nameWithType: WaveEngine.Framework.Graphics
+  fullName: WaveEngine.Framework.Graphics
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Materials.EnvironmentMaterial.FresnelFactor*
+  commentId: Overload:WaveEngine.Materials.EnvironmentMaterial.FresnelFactor
+  name: FresnelFactor
+  nameWithType: EnvironmentMaterial.FresnelFactor
+  fullName: WaveEngine.Materials.EnvironmentMaterial.FresnelFactor
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Materials.EnvironmentMaterial.EnvironmentAmount*
+  commentId: Overload:WaveEngine.Materials.EnvironmentMaterial.EnvironmentAmount
+  name: EnvironmentAmount
+  nameWithType: EnvironmentMaterial.EnvironmentAmount
+  fullName: WaveEngine.Materials.EnvironmentMaterial.EnvironmentAmount
+- uid: WaveEngine.Materials.EnvironmentMaterial.SpecularPower*
+  commentId: Overload:WaveEngine.Materials.EnvironmentMaterial.SpecularPower
+  name: SpecularPower
+  nameWithType: EnvironmentMaterial.SpecularPower
+  fullName: WaveEngine.Materials.EnvironmentMaterial.SpecularPower
+- uid: WaveEngine.Materials.EnvironmentMaterial.DiffuseColor*
+  commentId: Overload:WaveEngine.Materials.EnvironmentMaterial.DiffuseColor
+  name: DiffuseColor
+  nameWithType: EnvironmentMaterial.DiffuseColor
+  fullName: WaveEngine.Materials.EnvironmentMaterial.DiffuseColor
+- uid: WaveEngine.Common.Graphics.Color
+  commentId: T:WaveEngine.Common.Graphics.Color
+  parent: WaveEngine.Common.Graphics
+  name: Color
+  nameWithType: Color
+  fullName: WaveEngine.Common.Graphics.Color
+- uid: WaveEngine.Materials.EnvironmentMaterial.AmbientColor*
+  commentId: Overload:WaveEngine.Materials.EnvironmentMaterial.AmbientColor
+  name: AmbientColor
+  nameWithType: EnvironmentMaterial.AmbientColor
+  fullName: WaveEngine.Materials.EnvironmentMaterial.AmbientColor
+- uid: WaveEngine.Materials.EnvironmentMaterial.DiffusePath*
+  commentId: Overload:WaveEngine.Materials.EnvironmentMaterial.DiffusePath
+  name: DiffusePath
+  nameWithType: EnvironmentMaterial.DiffusePath
+  fullName: WaveEngine.Materials.EnvironmentMaterial.DiffusePath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: WaveEngine.Materials.EnvironmentMaterial.NormalPath*
+  commentId: Overload:WaveEngine.Materials.EnvironmentMaterial.NormalPath
+  name: NormalPath
+  nameWithType: EnvironmentMaterial.NormalPath
+  fullName: WaveEngine.Materials.EnvironmentMaterial.NormalPath
+- uid: WaveEngine.Materials.EnvironmentMaterial.EnvironmentPath*
+  commentId: Overload:WaveEngine.Materials.EnvironmentMaterial.EnvironmentPath
+  name: EnvironmentPath
+  nameWithType: EnvironmentMaterial.EnvironmentPath
+  fullName: WaveEngine.Materials.EnvironmentMaterial.EnvironmentPath
+- uid: WaveEngine.Materials.EnvironmentMaterial.LightingEnabled*
+  commentId: Overload:WaveEngine.Materials.EnvironmentMaterial.LightingEnabled
+  name: LightingEnabled
+  nameWithType: EnvironmentMaterial.LightingEnabled
+  fullName: WaveEngine.Materials.EnvironmentMaterial.LightingEnabled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Materials.EnvironmentMaterial.FresnelEnabled*
+  commentId: Overload:WaveEngine.Materials.EnvironmentMaterial.FresnelEnabled
+  name: FresnelEnabled
+  nameWithType: EnvironmentMaterial.FresnelEnabled
+  fullName: WaveEngine.Materials.EnvironmentMaterial.FresnelEnabled
+- uid: System.NullReferenceException
+  commentId: T:System.NullReferenceException
+  isExternal: true
+- uid: WaveEngine.Materials.EnvironmentMaterial.Diffuse*
+  commentId: Overload:WaveEngine.Materials.EnvironmentMaterial.Diffuse
+  name: Diffuse
+  nameWithType: EnvironmentMaterial.Diffuse
+  fullName: WaveEngine.Materials.EnvironmentMaterial.Diffuse
+- uid: WaveEngine.Common.Graphics.Texture
+  commentId: T:WaveEngine.Common.Graphics.Texture
+  parent: WaveEngine.Common.Graphics
+  name: Texture
+  nameWithType: Texture
+  fullName: WaveEngine.Common.Graphics.Texture
+- uid: WaveEngine.Materials.EnvironmentMaterial.Environment*
+  commentId: Overload:WaveEngine.Materials.EnvironmentMaterial.Environment
+  name: Environment
+  nameWithType: EnvironmentMaterial.Environment
+  fullName: WaveEngine.Materials.EnvironmentMaterial.Environment
+- uid: WaveEngine.Framework.Graphics.TextureCube
+  commentId: T:WaveEngine.Framework.Graphics.TextureCube
+  parent: WaveEngine.Framework.Graphics
+  name: TextureCube
+  nameWithType: TextureCube
+  fullName: WaveEngine.Framework.Graphics.TextureCube
+- uid: WaveEngine.Materials.EnvironmentMaterial.LightingTexture*
+  commentId: Overload:WaveEngine.Materials.EnvironmentMaterial.LightingTexture
+  name: LightingTexture
+  nameWithType: EnvironmentMaterial.LightingTexture
+  fullName: WaveEngine.Materials.EnvironmentMaterial.LightingTexture
+- uid: WaveEngine.Materials.EnvironmentMaterial.GBufferTexture*
+  commentId: Overload:WaveEngine.Materials.EnvironmentMaterial.GBufferTexture
+  name: GBufferTexture
+  nameWithType: EnvironmentMaterial.GBufferTexture
+  fullName: WaveEngine.Materials.EnvironmentMaterial.GBufferTexture
+- uid: WaveEngine.Materials.EnvironmentMaterial.Normal*
+  commentId: Overload:WaveEngine.Materials.EnvironmentMaterial.Normal
+  name: Normal
+  nameWithType: EnvironmentMaterial.Normal
+  fullName: WaveEngine.Materials.EnvironmentMaterial.Normal
+- uid: WaveEngine.Common.Graphics.Effect.CurrentTechnique
+  commentId: P:WaveEngine.Common.Graphics.Effect.CurrentTechnique
+  parent: WaveEngine.Common.Graphics.Effect
+  name: CurrentTechnique
+  nameWithType: Effect.CurrentTechnique
+  fullName: WaveEngine.Common.Graphics.Effect.CurrentTechnique
+- uid: WaveEngine.Materials.EnvironmentMaterial.CurrentTechnique*
+  commentId: Overload:WaveEngine.Materials.EnvironmentMaterial.CurrentTechnique
+  name: CurrentTechnique
+  nameWithType: EnvironmentMaterial.CurrentTechnique
+  fullName: WaveEngine.Materials.EnvironmentMaterial.CurrentTechnique
+- uid: WaveEngine.Materials.EnvironmentMaterial
+  commentId: T:WaveEngine.Materials.EnvironmentMaterial
+  name: EnvironmentMaterial
+  nameWithType: EnvironmentMaterial
+  fullName: WaveEngine.Materials.EnvironmentMaterial
+- uid: WaveEngine.Materials.EnvironmentMaterial.#ctor*
+  commentId: Overload:WaveEngine.Materials.EnvironmentMaterial.#ctor
+  name: EnvironmentMaterial
+  nameWithType: EnvironmentMaterial.EnvironmentMaterial
+  fullName: WaveEngine.Materials.EnvironmentMaterial.EnvironmentMaterial
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: WaveEngine.Framework.Graphics.Material.DefaultValues
+  commentId: M:WaveEngine.Framework.Graphics.Material.DefaultValues
+  parent: WaveEngine.Framework.Graphics.Material
+  name: DefaultValues()
+  nameWithType: Material.DefaultValues()
+  fullName: WaveEngine.Framework.Graphics.Material.DefaultValues()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Material.DefaultValues
+    name: DefaultValues
+    nameWithType: Material.DefaultValues
+    fullName: WaveEngine.Framework.Graphics.Material.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Material.DefaultValues
+    name: DefaultValues
+    nameWithType: Material.DefaultValues
+    fullName: WaveEngine.Framework.Graphics.Material.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Materials.EnvironmentMaterial.DefaultValues*
+  commentId: Overload:WaveEngine.Materials.EnvironmentMaterial.DefaultValues
+  name: DefaultValues
+  nameWithType: EnvironmentMaterial.DefaultValues
+  fullName: WaveEngine.Materials.EnvironmentMaterial.DefaultValues
+- uid: WaveEngine.Framework.Graphics.Material.Initialize(WaveEngine.Framework.Services.AssetsContainer)
+  commentId: M:WaveEngine.Framework.Graphics.Material.Initialize(WaveEngine.Framework.Services.AssetsContainer)
+  parent: WaveEngine.Framework.Graphics.Material
+  name: Initialize(AssetsContainer)
+  nameWithType: Material.Initialize(AssetsContainer)
+  fullName: WaveEngine.Framework.Graphics.Material.Initialize(WaveEngine.Framework.Services.AssetsContainer)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Material.Initialize(WaveEngine.Framework.Services.AssetsContainer)
+    name: Initialize
+    nameWithType: Material.Initialize
+    fullName: WaveEngine.Framework.Graphics.Material.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Services.AssetsContainer
+    name: AssetsContainer
+    nameWithType: AssetsContainer
+    fullName: WaveEngine.Framework.Services.AssetsContainer
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Material.Initialize(WaveEngine.Framework.Services.AssetsContainer)
+    name: Initialize
+    nameWithType: Material.Initialize
+    fullName: WaveEngine.Framework.Graphics.Material.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Services.AssetsContainer
+    name: AssetsContainer
+    nameWithType: AssetsContainer
+    fullName: WaveEngine.Framework.Services.AssetsContainer
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Materials.EnvironmentMaterial.Initialize*
+  commentId: Overload:WaveEngine.Materials.EnvironmentMaterial.Initialize
+  name: Initialize
+  nameWithType: EnvironmentMaterial.Initialize
+  fullName: WaveEngine.Materials.EnvironmentMaterial.Initialize
+- uid: WaveEngine.Framework.Services.AssetsContainer
+  commentId: T:WaveEngine.Framework.Services.AssetsContainer
+  parent: WaveEngine.Framework.Services
+  name: AssetsContainer
+  nameWithType: AssetsContainer
+  fullName: WaveEngine.Framework.Services.AssetsContainer
+- uid: WaveEngine.Framework.Services
+  commentId: N:WaveEngine.Framework.Services
+  name: WaveEngine.Framework.Services
+  nameWithType: WaveEngine.Framework.Services
+  fullName: WaveEngine.Framework.Services
+- uid: WaveEngine.Framework.Graphics.DeferredMaterial.RequireDeferredPass(WaveEngine.Framework.Graphics.DeferredLightingPass)
+  commentId: M:WaveEngine.Framework.Graphics.DeferredMaterial.RequireDeferredPass(WaveEngine.Framework.Graphics.DeferredLightingPass)
+  parent: WaveEngine.Framework.Graphics.DeferredMaterial
+  name: RequireDeferredPass(DeferredLightingPass)
+  nameWithType: DeferredMaterial.RequireDeferredPass(DeferredLightingPass)
+  fullName: WaveEngine.Framework.Graphics.DeferredMaterial.RequireDeferredPass(WaveEngine.Framework.Graphics.DeferredLightingPass)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.DeferredMaterial.RequireDeferredPass(WaveEngine.Framework.Graphics.DeferredLightingPass)
+    name: RequireDeferredPass
+    nameWithType: DeferredMaterial.RequireDeferredPass
+    fullName: WaveEngine.Framework.Graphics.DeferredMaterial.RequireDeferredPass
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Graphics.DeferredLightingPass
+    name: DeferredLightingPass
+    nameWithType: DeferredLightingPass
+    fullName: WaveEngine.Framework.Graphics.DeferredLightingPass
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.DeferredMaterial.RequireDeferredPass(WaveEngine.Framework.Graphics.DeferredLightingPass)
+    name: RequireDeferredPass
+    nameWithType: DeferredMaterial.RequireDeferredPass
+    fullName: WaveEngine.Framework.Graphics.DeferredMaterial.RequireDeferredPass
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Graphics.DeferredLightingPass
+    name: DeferredLightingPass
+    nameWithType: DeferredLightingPass
+    fullName: WaveEngine.Framework.Graphics.DeferredLightingPass
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Materials.EnvironmentMaterial.RequireDeferredPass*
+  commentId: Overload:WaveEngine.Materials.EnvironmentMaterial.RequireDeferredPass
+  name: RequireDeferredPass
+  nameWithType: EnvironmentMaterial.RequireDeferredPass
+  fullName: WaveEngine.Materials.EnvironmentMaterial.RequireDeferredPass
+- uid: WaveEngine.Framework.Graphics.DeferredLightingPass
+  commentId: T:WaveEngine.Framework.Graphics.DeferredLightingPass
+  parent: WaveEngine.Framework.Graphics
+  name: DeferredLightingPass
+  nameWithType: DeferredLightingPass
+  fullName: WaveEngine.Framework.Graphics.DeferredLightingPass
+- uid: WaveEngine.Framework.Graphics.Material.SetParameters(System.Boolean)
+  commentId: M:WaveEngine.Framework.Graphics.Material.SetParameters(System.Boolean)
+  parent: WaveEngine.Framework.Graphics.Material
+  isExternal: true
+  name: SetParameters(Boolean)
+  nameWithType: Material.SetParameters(Boolean)
+  fullName: WaveEngine.Framework.Graphics.Material.SetParameters(System.Boolean)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Graphics.Material.SetParameters(System.Boolean)
+    name: SetParameters
+    nameWithType: Material.SetParameters
+    fullName: WaveEngine.Framework.Graphics.Material.SetParameters
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Graphics.Material.SetParameters(System.Boolean)
+    name: SetParameters
+    nameWithType: Material.SetParameters
+    fullName: WaveEngine.Framework.Graphics.Material.SetParameters
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Materials.EnvironmentMaterial.SetParameters*
+  commentId: Overload:WaveEngine.Materials.EnvironmentMaterial.SetParameters
+  name: SetParameters
+  nameWithType: EnvironmentMaterial.SetParameters
+  fullName: WaveEngine.Materials.EnvironmentMaterial.SetParameters

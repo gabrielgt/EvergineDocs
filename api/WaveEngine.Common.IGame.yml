@@ -1,0 +1,412 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Common.IGame
+  commentId: T:WaveEngine.Common.IGame
+  id: IGame
+  parent: WaveEngine.Common
+  children:
+  - WaveEngine.Common.IGame.DrawFrame(System.TimeSpan)
+  - WaveEngine.Common.IGame.HasExited
+  - WaveEngine.Common.IGame.Initialize(WaveEngine.Common.IApplication)
+  - WaveEngine.Common.IGame.OnActivated
+  - WaveEngine.Common.IGame.OnDeactivated
+  - WaveEngine.Common.IGame.UpdateFrame(System.TimeSpan)
+  langs:
+  - csharp
+  - vb
+  name: IGame
+  nameWithType: IGame
+  fullName: WaveEngine.Common.IGame
+  type: Interface
+  source:
+    id: IGame
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\IGame.cs
+    startLine: 11
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common
+  summary: "\nInterface that defines all methods need to create a new game instance.\n"
+  example: []
+  syntax:
+    content: public interface IGame
+    content.vb: Public Interface IGame
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: WaveEngine.Common.IGame.HasExited
+  commentId: P:WaveEngine.Common.IGame.HasExited
+  id: HasExited
+  parent: WaveEngine.Common.IGame
+  langs:
+  - csharp
+  - vb
+  name: HasExited
+  nameWithType: IGame.HasExited
+  fullName: WaveEngine.Common.IGame.HasExited
+  type: Property
+  source:
+    id: HasExited
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\IGame.cs
+    startLine: 19
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common
+  summary: "\nGets a value indicating whether this instance has exited.\n"
+  example: []
+  syntax:
+    content: bool HasExited { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if this instance has exited; otherwise, <code>false</code>.\n"
+    content.vb: ReadOnly Property HasExited As Boolean
+  overload: WaveEngine.Common.IGame.HasExited*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: WaveEngine.Common.IGame.Initialize(WaveEngine.Common.IApplication)
+  commentId: M:WaveEngine.Common.IGame.Initialize(WaveEngine.Common.IApplication)
+  id: Initialize(WaveEngine.Common.IApplication)
+  parent: WaveEngine.Common.IGame
+  langs:
+  - csharp
+  - vb
+  name: Initialize(IApplication)
+  nameWithType: IGame.Initialize(IApplication)
+  fullName: WaveEngine.Common.IGame.Initialize(WaveEngine.Common.IApplication)
+  type: Method
+  source:
+    id: Initialize
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\IGame.cs
+    startLine: 27
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common
+  summary: "\nInitializes the game according to the passed application (thus adapter).\nThe adapter implementation depends on the while-running platform.\nSuch method acts as the bridge between the game and the final hardware.\n"
+  example: []
+  syntax:
+    content: void Initialize(IApplication application)
+    parameters:
+    - id: application
+      type: WaveEngine.Common.IApplication
+      description: The application (adapter).
+    content.vb: Sub Initialize(application As IApplication)
+  overload: WaveEngine.Common.IGame.Initialize*
+- uid: WaveEngine.Common.IGame.UpdateFrame(System.TimeSpan)
+  commentId: M:WaveEngine.Common.IGame.UpdateFrame(System.TimeSpan)
+  id: UpdateFrame(System.TimeSpan)
+  parent: WaveEngine.Common.IGame
+  langs:
+  - csharp
+  - vb
+  name: UpdateFrame(TimeSpan)
+  nameWithType: IGame.UpdateFrame(TimeSpan)
+  fullName: WaveEngine.Common.IGame.UpdateFrame(System.TimeSpan)
+  type: Method
+  source:
+    id: UpdateFrame
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\IGame.cs
+    startLine: 33
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common
+  summary: "\nForces an update for the following game cycle.\n"
+  example: []
+  syntax:
+    content: void UpdateFrame(TimeSpan gameTime)
+    parameters:
+    - id: gameTime
+      type: System.TimeSpan
+      description: The game time.
+    content.vb: Sub UpdateFrame(gameTime As TimeSpan)
+  overload: WaveEngine.Common.IGame.UpdateFrame*
+- uid: WaveEngine.Common.IGame.DrawFrame(System.TimeSpan)
+  commentId: M:WaveEngine.Common.IGame.DrawFrame(System.TimeSpan)
+  id: DrawFrame(System.TimeSpan)
+  parent: WaveEngine.Common.IGame
+  langs:
+  - csharp
+  - vb
+  name: DrawFrame(TimeSpan)
+  nameWithType: IGame.DrawFrame(TimeSpan)
+  fullName: WaveEngine.Common.IGame.DrawFrame(System.TimeSpan)
+  type: Method
+  source:
+    id: DrawFrame
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\IGame.cs
+    startLine: 39
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common
+  summary: "\nForces a draw for the following game cycle.\n"
+  example: []
+  syntax:
+    content: void DrawFrame(TimeSpan gameTime)
+    parameters:
+    - id: gameTime
+      type: System.TimeSpan
+      description: The game time.
+    content.vb: Sub DrawFrame(gameTime As TimeSpan)
+  overload: WaveEngine.Common.IGame.DrawFrame*
+- uid: WaveEngine.Common.IGame.OnActivated
+  commentId: M:WaveEngine.Common.IGame.OnActivated
+  id: OnActivated
+  parent: WaveEngine.Common.IGame
+  langs:
+  - csharp
+  - vb
+  name: OnActivated()
+  nameWithType: IGame.OnActivated()
+  fullName: WaveEngine.Common.IGame.OnActivated()
+  type: Method
+  source:
+    id: OnActivated
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\IGame.cs
+    startLine: 44
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common
+  summary: "\nCalled when [activated].\n"
+  example: []
+  syntax:
+    content: void OnActivated()
+    content.vb: Sub OnActivated
+  overload: WaveEngine.Common.IGame.OnActivated*
+- uid: WaveEngine.Common.IGame.OnDeactivated
+  commentId: M:WaveEngine.Common.IGame.OnDeactivated
+  id: OnDeactivated
+  parent: WaveEngine.Common.IGame
+  langs:
+  - csharp
+  - vb
+  name: OnDeactivated()
+  nameWithType: IGame.OnDeactivated()
+  fullName: WaveEngine.Common.IGame.OnDeactivated()
+  type: Method
+  source:
+    id: OnDeactivated
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\IGame.cs
+    startLine: 49
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common
+  summary: "\nCalled when [deactivated].\n"
+  example: []
+  syntax:
+    content: void OnDeactivated()
+    content.vb: Sub OnDeactivated
+  overload: WaveEngine.Common.IGame.OnDeactivated*
+references:
+- uid: WaveEngine.Common
+  commentId: N:WaveEngine.Common
+  name: WaveEngine.Common
+  nameWithType: WaveEngine.Common
+  fullName: WaveEngine.Common
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Common.IGame.HasExited*
+  commentId: Overload:WaveEngine.Common.IGame.HasExited
+  name: HasExited
+  nameWithType: IGame.HasExited
+  fullName: WaveEngine.Common.IGame.HasExited
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.IGame.Initialize*
+  commentId: Overload:WaveEngine.Common.IGame.Initialize
+  name: Initialize
+  nameWithType: IGame.Initialize
+  fullName: WaveEngine.Common.IGame.Initialize
+- uid: WaveEngine.Common.IApplication
+  commentId: T:WaveEngine.Common.IApplication
+  parent: WaveEngine.Common
+  name: IApplication
+  nameWithType: IApplication
+  fullName: WaveEngine.Common.IApplication
+- uid: WaveEngine.Common.IGame.UpdateFrame*
+  commentId: Overload:WaveEngine.Common.IGame.UpdateFrame
+  name: UpdateFrame
+  nameWithType: IGame.UpdateFrame
+  fullName: WaveEngine.Common.IGame.UpdateFrame
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: WaveEngine.Common.IGame.DrawFrame*
+  commentId: Overload:WaveEngine.Common.IGame.DrawFrame
+  name: DrawFrame
+  nameWithType: IGame.DrawFrame
+  fullName: WaveEngine.Common.IGame.DrawFrame
+- uid: WaveEngine.Common.IGame.OnActivated*
+  commentId: Overload:WaveEngine.Common.IGame.OnActivated
+  name: OnActivated
+  nameWithType: IGame.OnActivated
+  fullName: WaveEngine.Common.IGame.OnActivated
+- uid: WaveEngine.Common.IGame.OnDeactivated*
+  commentId: Overload:WaveEngine.Common.IGame.OnDeactivated
+  name: OnDeactivated
+  nameWithType: IGame.OnDeactivated
+  fullName: WaveEngine.Common.IGame.OnDeactivated

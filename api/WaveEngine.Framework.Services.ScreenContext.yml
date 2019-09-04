@@ -1,0 +1,1290 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Framework.Services.ScreenContext
+  commentId: T:WaveEngine.Framework.Services.ScreenContext
+  id: ScreenContext
+  parent: WaveEngine.Framework.Services
+  children:
+  - WaveEngine.Framework.Services.ScreenContext.#ctor(System.String,WaveEngine.Framework.Scene[])
+  - WaveEngine.Framework.Services.ScreenContext.#ctor(WaveEngine.Framework.Scene[])
+  - WaveEngine.Framework.Services.ScreenContext.Behavior
+  - WaveEngine.Framework.Services.ScreenContext.Count
+  - WaveEngine.Framework.Services.ScreenContext.Diff(WaveEngine.Framework.Services.ScreenContext)
+  - WaveEngine.Framework.Services.ScreenContext.Dispose
+  - WaveEngine.Framework.Services.ScreenContext.Draw(System.TimeSpan)
+  - WaveEngine.Framework.Services.ScreenContext.FindScene``1(System.Boolean)
+  - WaveEngine.Framework.Services.ScreenContext.FindScenes``1(System.Boolean)
+  - WaveEngine.Framework.Services.ScreenContext.Item(System.Int32)
+  - WaveEngine.Framework.Services.ScreenContext.Name
+  - WaveEngine.Framework.Services.ScreenContext.PauseScenes
+  - WaveEngine.Framework.Services.ScreenContext.ResumeScenes
+  - WaveEngine.Framework.Services.ScreenContext.TakeSnapshot(WaveEngine.Common.Graphics.RenderTarget,System.TimeSpan)
+  - WaveEngine.Framework.Services.ScreenContext.Update(System.TimeSpan)
+  langs:
+  - csharp
+  - vb
+  name: ScreenContext
+  nameWithType: ScreenContext
+  fullName: WaveEngine.Framework.Services.ScreenContext
+  type: Class
+  source:
+    id: ScreenContext
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenContext.cs
+    startLine: 16
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nRepresents a scenes list.\n"
+  example: []
+  syntax:
+    content: public class ScreenContext
+    content.vb: Public Class ScreenContext
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WaveEngine.Framework.Services.ScreenContext.Name
+  commentId: P:WaveEngine.Framework.Services.ScreenContext.Name
+  id: Name
+  parent: WaveEngine.Framework.Services.ScreenContext
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ScreenContext.Name
+  fullName: WaveEngine.Framework.Services.ScreenContext.Name
+  type: Property
+  source:
+    id: Name
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenContext.cs
+    startLine: 41
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGets or sets the name.\n"
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe name.\n"
+    content.vb: Public Property Name As String
+  overload: WaveEngine.Framework.Services.ScreenContext.Name*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.ScreenContext.Behavior
+  commentId: F:WaveEngine.Framework.Services.ScreenContext.Behavior
+  id: Behavior
+  parent: WaveEngine.Framework.Services.ScreenContext
+  langs:
+  - csharp
+  - vb
+  name: Behavior
+  nameWithType: ScreenContext.Behavior
+  fullName: WaveEngine.Framework.Services.ScreenContext.Behavior
+  type: Field
+  source:
+    id: Behavior
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenContext.cs
+    startLine: 47
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nThe current <xref href=\"WaveEngine.Framework.Services.ScreenContextBehaviors\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  remarks: By default Behavior is set to None.
+  example: []
+  syntax:
+    content: public ScreenContextBehaviors Behavior
+    return:
+      type: WaveEngine.Framework.Services.ScreenContextBehaviors
+    content.vb: Public Behavior As ScreenContextBehaviors
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.ScreenContext.Item(System.Int32)
+  commentId: P:WaveEngine.Framework.Services.ScreenContext.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: WaveEngine.Framework.Services.ScreenContext
+  langs:
+  - csharp
+  - vb
+  name: Item[Int32]
+  nameWithType: ScreenContext.Item[Int32]
+  fullName: WaveEngine.Framework.Services.ScreenContext.Item[System.Int32]
+  type: Property
+  source:
+    id: this[]
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenContext.cs
+    startLine: 57
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGets the <xref href=\"WaveEngine.Framework.Scene\" data-throw-if-not-resolved=\"false\"></xref> located at index i.\n"
+  example: []
+  syntax:
+    content: public Scene this[int i] { get; }
+    parameters:
+    - id: i
+      type: System.Int32
+      description: The index i.
+    return:
+      type: WaveEngine.Framework.Scene
+      description: "\nThe <xref href=\"WaveEngine.Framework.Scene\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+    content.vb: Public ReadOnly Property Item(i As Integer) As Scene
+  overload: WaveEngine.Framework.Services.ScreenContext.Item*
+  nameWithType.vb: ScreenContext.Item(Int32)
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: WaveEngine.Framework.Services.ScreenContext.Item(System.Int32)
+  name.vb: Item(Int32)
+- uid: WaveEngine.Framework.Services.ScreenContext.Count
+  commentId: P:WaveEngine.Framework.Services.ScreenContext.Count
+  id: Count
+  parent: WaveEngine.Framework.Services.ScreenContext
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: ScreenContext.Count
+  fullName: WaveEngine.Framework.Services.ScreenContext.Count
+  type: Property
+  source:
+    id: Count
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenContext.cs
+    startLine: 76
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nGets the number of scenes actually contained in the SceneContext.\n"
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\nThe count.\n"
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: WaveEngine.Framework.Services.ScreenContext.Count*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Services.ScreenContext.#ctor(WaveEngine.Framework.Scene[])
+  commentId: M:WaveEngine.Framework.Services.ScreenContext.#ctor(WaveEngine.Framework.Scene[])
+  id: '#ctor(WaveEngine.Framework.Scene[])'
+  parent: WaveEngine.Framework.Services.ScreenContext
+  langs:
+  - csharp
+  - vb
+  name: ScreenContext(Scene[])
+  nameWithType: ScreenContext.ScreenContext(Scene[])
+  fullName: WaveEngine.Framework.Services.ScreenContext.ScreenContext(WaveEngine.Framework.Scene[])
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenContext.cs
+    startLine: 96
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Framework.Services.ScreenContext\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public ScreenContext(params Scene[] scenes)
+    parameters:
+    - id: scenes
+      type: WaveEngine.Framework.Scene[]
+      description: The scene list for this screenContext.
+    content.vb: Public Sub New(ParamArray scenes As Scene())
+  overload: WaveEngine.Framework.Services.ScreenContext.#ctor*
+  nameWithType.vb: ScreenContext.ScreenContext(Scene())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Framework.Services.ScreenContext.ScreenContext(WaveEngine.Framework.Scene())
+  name.vb: ScreenContext(Scene())
+- uid: WaveEngine.Framework.Services.ScreenContext.#ctor(System.String,WaveEngine.Framework.Scene[])
+  commentId: M:WaveEngine.Framework.Services.ScreenContext.#ctor(System.String,WaveEngine.Framework.Scene[])
+  id: '#ctor(System.String,WaveEngine.Framework.Scene[])'
+  parent: WaveEngine.Framework.Services.ScreenContext
+  langs:
+  - csharp
+  - vb
+  name: ScreenContext(String, Scene[])
+  nameWithType: ScreenContext.ScreenContext(String, Scene[])
+  fullName: WaveEngine.Framework.Services.ScreenContext.ScreenContext(System.String, WaveEngine.Framework.Scene[])
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenContext.cs
+    startLine: 106
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Framework.Services.ScreenContext\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public ScreenContext(string name, params Scene[] scenes)
+    parameters:
+    - id: name
+      type: System.String
+      description: The screen context name
+    - id: scenes
+      type: WaveEngine.Framework.Scene[]
+      description: The scene list for this screenContext.
+    content.vb: Public Sub New(name As String, ParamArray scenes As Scene())
+  overload: WaveEngine.Framework.Services.ScreenContext.#ctor*
+  nameWithType.vb: ScreenContext.ScreenContext(String, Scene())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Framework.Services.ScreenContext.ScreenContext(System.String, WaveEngine.Framework.Scene())
+  name.vb: ScreenContext(String, Scene())
+- uid: WaveEngine.Framework.Services.ScreenContext.Dispose
+  commentId: M:WaveEngine.Framework.Services.ScreenContext.Dispose
+  id: Dispose
+  parent: WaveEngine.Framework.Services.ScreenContext
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: ScreenContext.Dispose()
+  fullName: WaveEngine.Framework.Services.ScreenContext.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenContext.cs
+    startLine: 120
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nPerforms application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: WaveEngine.Framework.Services.ScreenContext.Dispose*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.ScreenContext.PauseScenes
+  commentId: M:WaveEngine.Framework.Services.ScreenContext.PauseScenes
+  id: PauseScenes
+  parent: WaveEngine.Framework.Services.ScreenContext
+  langs:
+  - csharp
+  - vb
+  name: PauseScenes()
+  nameWithType: ScreenContext.PauseScenes()
+  fullName: WaveEngine.Framework.Services.ScreenContext.PauseScenes()
+  type: Method
+  source:
+    id: PauseScenes
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenContext.cs
+    startLine: 129
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nPauses the scenes.\n"
+  example: []
+  syntax:
+    content: public void PauseScenes()
+    content.vb: Public Sub PauseScenes
+  overload: WaveEngine.Framework.Services.ScreenContext.PauseScenes*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.ScreenContext.ResumeScenes
+  commentId: M:WaveEngine.Framework.Services.ScreenContext.ResumeScenes
+  id: ResumeScenes
+  parent: WaveEngine.Framework.Services.ScreenContext
+  langs:
+  - csharp
+  - vb
+  name: ResumeScenes()
+  nameWithType: ScreenContext.ResumeScenes()
+  fullName: WaveEngine.Framework.Services.ScreenContext.ResumeScenes()
+  type: Method
+  source:
+    id: ResumeScenes
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenContext.cs
+    startLine: 143
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nResumes the scenes.\n"
+  example: []
+  syntax:
+    content: public void ResumeScenes()
+    content.vb: Public Sub ResumeScenes
+  overload: WaveEngine.Framework.Services.ScreenContext.ResumeScenes*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.ScreenContext.FindScene``1(System.Boolean)
+  commentId: M:WaveEngine.Framework.Services.ScreenContext.FindScene``1(System.Boolean)
+  id: FindScene``1(System.Boolean)
+  parent: WaveEngine.Framework.Services.ScreenContext
+  langs:
+  - csharp
+  - vb
+  name: FindScene<T>(Boolean)
+  nameWithType: ScreenContext.FindScene<T>(Boolean)
+  fullName: WaveEngine.Framework.Services.ScreenContext.FindScene<T>(System.Boolean)
+  type: Method
+  source:
+    id: FindScene
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenContext.cs
+    startLine: 160
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nFinds a <xref href=\"WaveEngine.Framework.Scene\" data-throw-if-not-resolved=\"false\"></xref> in this instance with an exact type.\n"
+  example: []
+  syntax:
+    content: >-
+      public T FindScene<T>(bool isExactType = true)
+
+          where T : Scene
+    parameters:
+    - id: isExactType
+      type: System.Boolean
+      description: if set to <code>true</code> [is exact type].
+    typeParameters:
+    - id: T
+      description: The scene type.
+    return:
+      type: '{T}'
+      description: The <xref href="WaveEngine.Framework.Scene" data-throw-if-not-resolved="false"></xref> or null if no <xref href="WaveEngine.Framework.Scene" data-throw-if-not-resolved="false"></xref> with the exact searched type was found.
+    content.vb: Public Function FindScene(Of T As Scene)(isExactType As Boolean = True) As T
+  overload: WaveEngine.Framework.Services.ScreenContext.FindScene*
+  nameWithType.vb: ScreenContext.FindScene(Of T)(Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Framework.Services.ScreenContext.FindScene(Of T)(System.Boolean)
+  name.vb: FindScene(Of T)(Boolean)
+- uid: WaveEngine.Framework.Services.ScreenContext.FindScenes``1(System.Boolean)
+  commentId: M:WaveEngine.Framework.Services.ScreenContext.FindScenes``1(System.Boolean)
+  id: FindScenes``1(System.Boolean)
+  parent: WaveEngine.Framework.Services.ScreenContext
+  langs:
+  - csharp
+  - vb
+  name: FindScenes<T>(Boolean)
+  nameWithType: ScreenContext.FindScenes<T>(Boolean)
+  fullName: WaveEngine.Framework.Services.ScreenContext.FindScenes<T>(System.Boolean)
+  type: Method
+  source:
+    id: FindScenes
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenContext.cs
+    startLine: 196
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nFinds a <xref href=\"WaveEngine.Framework.Scene\" data-throw-if-not-resolved=\"false\"></xref> list in this instance with an exact type.\n"
+  example: []
+  syntax:
+    content: >-
+      public T[] FindScenes<T>(bool isExactType = true)
+
+          where T : Scene
+    parameters:
+    - id: isExactType
+      type: System.Boolean
+      description: if set to <code>true</code> [is exact type].
+    typeParameters:
+    - id: T
+      description: The scene type.
+    return:
+      type: '{T}[]'
+      description: The array of <xref href="WaveEngine.Framework.Scene" data-throw-if-not-resolved="false"></xref> that match the condition.
+    content.vb: Public Function FindScenes(Of T As Scene)(isExactType As Boolean = True) As T()
+  overload: WaveEngine.Framework.Services.ScreenContext.FindScenes*
+  nameWithType.vb: ScreenContext.FindScenes(Of T)(Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Framework.Services.ScreenContext.FindScenes(Of T)(System.Boolean)
+  name.vb: FindScenes(Of T)(Boolean)
+- uid: WaveEngine.Framework.Services.ScreenContext.TakeSnapshot(WaveEngine.Common.Graphics.RenderTarget,System.TimeSpan)
+  commentId: M:WaveEngine.Framework.Services.ScreenContext.TakeSnapshot(WaveEngine.Common.Graphics.RenderTarget,System.TimeSpan)
+  id: TakeSnapshot(WaveEngine.Common.Graphics.RenderTarget,System.TimeSpan)
+  parent: WaveEngine.Framework.Services.ScreenContext
+  langs:
+  - csharp
+  - vb
+  name: TakeSnapshot(RenderTarget, TimeSpan)
+  nameWithType: ScreenContext.TakeSnapshot(RenderTarget, TimeSpan)
+  fullName: WaveEngine.Framework.Services.ScreenContext.TakeSnapshot(WaveEngine.Common.Graphics.RenderTarget, System.TimeSpan)
+  type: Method
+  source:
+    id: TakeSnapshot
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenContext.cs
+    startLine: 221
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nTakes a snapshot of the current screen context.\n"
+  example: []
+  syntax:
+    content: public void TakeSnapshot(RenderTarget overrideRenderTarget, TimeSpan gameTime)
+    parameters:
+    - id: overrideRenderTarget
+      type: WaveEngine.Common.Graphics.RenderTarget
+      description: Override the default scene&apos;s render target.
+    - id: gameTime
+      type: System.TimeSpan
+      description: The game time.
+    content.vb: Public Sub TakeSnapshot(overrideRenderTarget As RenderTarget, gameTime As TimeSpan)
+  overload: WaveEngine.Framework.Services.ScreenContext.TakeSnapshot*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.ScreenContext.Update(System.TimeSpan)
+  commentId: M:WaveEngine.Framework.Services.ScreenContext.Update(System.TimeSpan)
+  id: Update(System.TimeSpan)
+  parent: WaveEngine.Framework.Services.ScreenContext
+  langs:
+  - csharp
+  - vb
+  name: Update(TimeSpan)
+  nameWithType: ScreenContext.Update(TimeSpan)
+  fullName: WaveEngine.Framework.Services.ScreenContext.Update(System.TimeSpan)
+  type: Method
+  source:
+    id: Update
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenContext.cs
+    startLine: 261
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nUpdates every scene.\n"
+  example: []
+  syntax:
+    content: public void Update(TimeSpan gameTime)
+    parameters:
+    - id: gameTime
+      type: System.TimeSpan
+      description: The game time.
+    content.vb: Public Sub Update(gameTime As TimeSpan)
+  overload: WaveEngine.Framework.Services.ScreenContext.Update*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.ScreenContext.Draw(System.TimeSpan)
+  commentId: M:WaveEngine.Framework.Services.ScreenContext.Draw(System.TimeSpan)
+  id: Draw(System.TimeSpan)
+  parent: WaveEngine.Framework.Services.ScreenContext
+  langs:
+  - csharp
+  - vb
+  name: Draw(TimeSpan)
+  nameWithType: ScreenContext.Draw(TimeSpan)
+  fullName: WaveEngine.Framework.Services.ScreenContext.Draw(System.TimeSpan)
+  type: Method
+  source:
+    id: Draw
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenContext.cs
+    startLine: 273
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nDraws every scene.\n"
+  example: []
+  syntax:
+    content: public void Draw(TimeSpan gameTime)
+    parameters:
+    - id: gameTime
+      type: System.TimeSpan
+      description: The game time.
+    content.vb: Public Sub Draw(gameTime As TimeSpan)
+  overload: WaveEngine.Framework.Services.ScreenContext.Draw*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Services.ScreenContext.Diff(WaveEngine.Framework.Services.ScreenContext)
+  commentId: M:WaveEngine.Framework.Services.ScreenContext.Diff(WaveEngine.Framework.Services.ScreenContext)
+  id: Diff(WaveEngine.Framework.Services.ScreenContext)
+  parent: WaveEngine.Framework.Services.ScreenContext
+  langs:
+  - csharp
+  - vb
+  name: Diff(ScreenContext)
+  nameWithType: ScreenContext.Diff(ScreenContext)
+  fullName: WaveEngine.Framework.Services.ScreenContext.Diff(WaveEngine.Framework.Services.ScreenContext)
+  type: Method
+  source:
+    id: Diff
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Services\ScreenContext.cs
+    startLine: 286
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Services
+  summary: "\nScenes in this context that are not contained in the context passed as parameter.\n"
+  example: []
+  syntax:
+    content: public IEnumerable<Scene> Diff(ScreenContext context)
+    parameters:
+    - id: context
+      type: WaveEngine.Framework.Services.ScreenContext
+      description: The ScreenContext with to compare.
+    return:
+      type: System.Collections.Generic.IEnumerable{WaveEngine.Framework.Scene}
+      description: The list of difference scenes.
+    content.vb: Public Function Diff(context As ScreenContext) As IEnumerable(Of Scene)
+  overload: WaveEngine.Framework.Services.ScreenContext.Diff*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: WaveEngine.Framework.Services
+  commentId: N:WaveEngine.Framework.Services
+  name: WaveEngine.Framework.Services
+  nameWithType: WaveEngine.Framework.Services
+  fullName: WaveEngine.Framework.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Framework.Services.ScreenContext.Name*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenContext.Name
+  name: Name
+  nameWithType: ScreenContext.Name
+  fullName: WaveEngine.Framework.Services.ScreenContext.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: WaveEngine.Framework.Services.ScreenContextBehaviors
+  commentId: T:WaveEngine.Framework.Services.ScreenContextBehaviors
+  parent: WaveEngine.Framework.Services
+  name: ScreenContextBehaviors
+  nameWithType: ScreenContextBehaviors
+  fullName: WaveEngine.Framework.Services.ScreenContextBehaviors
+- uid: WaveEngine.Framework.Scene
+  commentId: T:WaveEngine.Framework.Scene
+  parent: WaveEngine.Framework
+  name: Scene
+  nameWithType: Scene
+  fullName: WaveEngine.Framework.Scene
+- uid: WaveEngine.Framework.Services.ScreenContext.Item*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenContext.Item
+  name: Item
+  nameWithType: ScreenContext.Item
+  fullName: WaveEngine.Framework.Services.ScreenContext.Item
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: WaveEngine.Framework
+  commentId: N:WaveEngine.Framework
+  name: WaveEngine.Framework
+  nameWithType: WaveEngine.Framework
+  fullName: WaveEngine.Framework
+- uid: WaveEngine.Framework.Services.ScreenContext.Count*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenContext.Count
+  name: Count
+  nameWithType: ScreenContext.Count
+  fullName: WaveEngine.Framework.Services.ScreenContext.Count
+- uid: WaveEngine.Framework.Services.ScreenContext
+  commentId: T:WaveEngine.Framework.Services.ScreenContext
+  parent: WaveEngine.Framework.Services
+  name: ScreenContext
+  nameWithType: ScreenContext
+  fullName: WaveEngine.Framework.Services.ScreenContext
+- uid: WaveEngine.Framework.Services.ScreenContext.#ctor*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenContext.#ctor
+  name: ScreenContext
+  nameWithType: ScreenContext.ScreenContext
+  fullName: WaveEngine.Framework.Services.ScreenContext.ScreenContext
+- uid: WaveEngine.Framework.Scene[]
+  isExternal: true
+  name: Scene[]
+  nameWithType: Scene[]
+  fullName: WaveEngine.Framework.Scene[]
+  nameWithType.vb: Scene()
+  fullName.vb: WaveEngine.Framework.Scene()
+  name.vb: Scene()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Scene
+    name: Scene
+    nameWithType: Scene
+    fullName: WaveEngine.Framework.Scene
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: WaveEngine.Framework.Scene
+    name: Scene
+    nameWithType: Scene
+    fullName: WaveEngine.Framework.Scene
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: WaveEngine.Framework.Services.ScreenContext.Dispose*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenContext.Dispose
+  name: Dispose
+  nameWithType: ScreenContext.Dispose
+  fullName: WaveEngine.Framework.Services.ScreenContext.Dispose
+- uid: WaveEngine.Framework.Services.ScreenContext.PauseScenes*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenContext.PauseScenes
+  name: PauseScenes
+  nameWithType: ScreenContext.PauseScenes
+  fullName: WaveEngine.Framework.Services.ScreenContext.PauseScenes
+- uid: WaveEngine.Framework.Services.ScreenContext.ResumeScenes*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenContext.ResumeScenes
+  name: ResumeScenes
+  nameWithType: ScreenContext.ResumeScenes
+  fullName: WaveEngine.Framework.Services.ScreenContext.ResumeScenes
+- uid: WaveEngine.Framework.Services.ScreenContext.FindScene*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenContext.FindScene
+  name: FindScene
+  nameWithType: ScreenContext.FindScene
+  fullName: WaveEngine.Framework.Services.ScreenContext.FindScene
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: WaveEngine.Framework.Services.ScreenContext.FindScenes*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenContext.FindScenes
+  name: FindScenes
+  nameWithType: ScreenContext.FindScenes
+  fullName: WaveEngine.Framework.Services.ScreenContext.FindScenes
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: WaveEngine.Framework.Services.ScreenContext.TakeSnapshot*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenContext.TakeSnapshot
+  name: TakeSnapshot
+  nameWithType: ScreenContext.TakeSnapshot
+  fullName: WaveEngine.Framework.Services.ScreenContext.TakeSnapshot
+- uid: WaveEngine.Common.Graphics.RenderTarget
+  commentId: T:WaveEngine.Common.Graphics.RenderTarget
+  parent: WaveEngine.Common.Graphics
+  name: RenderTarget
+  nameWithType: RenderTarget
+  fullName: WaveEngine.Common.Graphics.RenderTarget
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: WaveEngine.Common.Graphics
+  commentId: N:WaveEngine.Common.Graphics
+  name: WaveEngine.Common.Graphics
+  nameWithType: WaveEngine.Common.Graphics
+  fullName: WaveEngine.Common.Graphics
+- uid: WaveEngine.Framework.Services.ScreenContext.Update*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenContext.Update
+  name: Update
+  nameWithType: ScreenContext.Update
+  fullName: WaveEngine.Framework.Services.ScreenContext.Update
+- uid: WaveEngine.Framework.Services.ScreenContext.Draw*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenContext.Draw
+  name: Draw
+  nameWithType: ScreenContext.Draw
+  fullName: WaveEngine.Framework.Services.ScreenContext.Draw
+- uid: WaveEngine.Framework.Services.ScreenContext.Diff*
+  commentId: Overload:WaveEngine.Framework.Services.ScreenContext.Diff
+  name: Diff
+  nameWithType: ScreenContext.Diff
+  fullName: WaveEngine.Framework.Services.ScreenContext.Diff
+- uid: System.Collections.Generic.IEnumerable{WaveEngine.Framework.Scene}
+  commentId: T:System.Collections.Generic.IEnumerable{WaveEngine.Framework.Scene}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Scene>
+  nameWithType: IEnumerable<Scene>
+  fullName: System.Collections.Generic.IEnumerable<WaveEngine.Framework.Scene>
+  nameWithType.vb: IEnumerable(Of Scene)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of WaveEngine.Framework.Scene)
+  name.vb: IEnumerable(Of Scene)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Framework.Scene
+    name: Scene
+    nameWithType: Scene
+    fullName: WaveEngine.Framework.Scene
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Framework.Scene
+    name: Scene
+    nameWithType: Scene
+    fullName: WaveEngine.Framework.Scene
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

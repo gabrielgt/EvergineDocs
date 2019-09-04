@@ -1,0 +1,3691 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D
+  commentId: T:WaveEngine.Framework.Physics3D.SliderJoint3D
+  id: SliderJoint3D
+  parent: WaveEngine.Framework.Physics3D
+  children:
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.#ctor
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.Anchor
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.AutoConfigureConnected
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.Axis
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.BodyAChanged
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.BodyBChanged
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.ConnectedAnchor
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.ConnectedAxis
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.DefaultValues
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.FillJointDef(WaveEngine.Common.Physics3D.SliderJointDef3D)
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.Initialize
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.InitJoint
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.LowerAngularLimit
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.LowerLinearLimit
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.MaxAngularMotorForce
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.MaxLinearMotorForce
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.TargetAngularMotorVelocity
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.TargetLinearMotorVelocity
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.UpperAngularLimit
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.UpperLinearLimit
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.UseAngularLimit
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.UseAngularMotor
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.UseLinearLimit
+  - WaveEngine.Framework.Physics3D.SliderJoint3D.UseLinearMotor
+  langs:
+  - csharp
+  - vb
+  name: SliderJoint3D
+  nameWithType: SliderJoint3D
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D
+  type: Class
+  source:
+    id: SliderJoint3D
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 17
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nThis class represent a 3D physics joint and connects two entities together.\nAll Joints restrict some degrees of freedom, seeking a specific configuration.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract(Namespace = "WaveEngine.Framework.Physics3D")]
+
+      public class SliderJoint3D : Joint3D<ISliderJoint3D, SliderJointDef3D>, IDisposable
+    content.vb: >-
+      <DataContract(Namespace:="WaveEngine.Framework.Physics3D")>
+
+      Public Class SliderJoint3D
+
+          Inherits Joint3D(Of ISliderJoint3D, SliderJointDef3D)
+
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - WaveEngine.Common.IO.SerializableObject
+  - WaveEngine.Framework.DependencyObject
+  - WaveEngine.Framework.Component
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.breakpoint
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.joint
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.OnBroke
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.rigidBody
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.transform3D
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.connectedBody
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.isActive
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.BreakPoint
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.DebugDrawSize
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.ConnectedEntityPath
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.CollideConnected
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.AppliedImpulse
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.NeedsFeedback
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.JointFeedback
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.OverrideNumSolverIterations
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.DefaultValues
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.DeleteDependencies
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.Initialize
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.Removed
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.BodyAChanged
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.BodyBChanged
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.Dispose
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.RefreshJointValue``1({V}@,{V})
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.CreateJoint(WaveEngine.Common.Physics3D.SliderJointDef3D)
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.RefreshJoint
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.InitJoint
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.RefreshConnectedEntity
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.FillJointDef(WaveEngine.Common.Physics3D.SliderJointDef3D)
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.GetFrameZ(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@)
+  - WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.GetFrameX(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@)
+  - WaveEngine.Framework.Component.isInitialized
+  - WaveEngine.Framework.Component.OnComponentInitialized
+  - WaveEngine.Framework.Component.OnComponentRemoved
+  - WaveEngine.Framework.Component.Name
+  - WaveEngine.Framework.Component.Owner
+  - WaveEngine.Framework.Component.Assets
+  - WaveEngine.Framework.Component.EntityManager
+  - WaveEngine.Framework.Component.BehaviorManager
+  - WaveEngine.Framework.Component.RenderManager
+  - WaveEngine.Framework.Component.Clone
+  - WaveEngine.Framework.Component.ToString
+  - WaveEngine.Framework.Component.ResolveDependencies
+  - WaveEngine.Framework.Component.Removed
+  - WaveEngine.Framework.Component.DeleteDependencies
+  - WaveEngine.Framework.DependencyObject.PropertyChanged
+  - WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  - WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  - WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  - WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  - WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Namespace
+      type: System.String
+      value: WaveEngine.Framework.Physics3D
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.Axis
+  commentId: P:WaveEngine.Framework.Physics3D.SliderJoint3D.Axis
+  id: Axis
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: Axis
+  nameWithType: SliderJoint3D.Axis
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.Axis
+  type: Property
+  source:
+    id: Axis
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 131
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nGets or sets the hinge axis\n"
+  example: []
+  syntax:
+    content: public Vector3 Axis { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Math.Vector3
+    content.vb: Public Property Axis As Vector3
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.Axis*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.Anchor
+  commentId: P:WaveEngine.Framework.Physics3D.SliderJoint3D.Anchor
+  id: Anchor
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: Anchor
+  nameWithType: SliderJoint3D.Anchor
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.Anchor
+  type: Property
+  source:
+    id: Anchor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 148
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nGets or sets the local anchor point relative to bodyA&apos;s origin.\n"
+  example: []
+  syntax:
+    content: public Vector3 Anchor { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Math.Vector3
+    content.vb: Public Property Anchor As Vector3
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.Anchor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.AutoConfigureConnected
+  commentId: P:WaveEngine.Framework.Physics3D.SliderJoint3D.AutoConfigureConnected
+  id: AutoConfigureConnected
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: AutoConfigureConnected
+  nameWithType: SliderJoint3D.AutoConfigureConnected
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.AutoConfigureConnected
+  type: Property
+  source:
+    id: AutoConfigureConnected
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 165
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nGets or sets a value indicating whether\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderProperty(Tag = 1)]
+
+      public bool AutoConfigureConnected { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <DataMember>
+
+      <RenderProperty(Tag:=1)>
+
+      Public Property AutoConfigureConnected As Boolean
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.AutoConfigureConnected*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: Tag
+      type: System.Int32
+      value: 1
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.ConnectedAxis
+  commentId: P:WaveEngine.Framework.Physics3D.SliderJoint3D.ConnectedAxis
+  id: ConnectedAxis
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: ConnectedAxis
+  nameWithType: SliderJoint3D.ConnectedAxis
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.ConnectedAxis
+  type: Property
+  source:
+    id: ConnectedAxis
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 172
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nGets or sets the local anchor point relative to bodyA&apos;s origin.\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(AttatchToTag = 1, AttachToValue = false)]
+
+      public Vector3 ConnectedAxis { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Math.Vector3
+    content.vb: >-
+      <RenderProperty(AttatchToTag:=1, AttachToValue:=False)>
+
+      Public Property ConnectedAxis As Vector3
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.ConnectedAxis*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: AttatchToTag
+      type: System.Int32
+      value: 1
+    - name: AttachToValue
+      type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.ConnectedAnchor
+  commentId: P:WaveEngine.Framework.Physics3D.SliderJoint3D.ConnectedAnchor
+  id: ConnectedAnchor
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: ConnectedAnchor
+  nameWithType: SliderJoint3D.ConnectedAnchor
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.ConnectedAnchor
+  type: Property
+  source:
+    id: ConnectedAnchor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 190
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nGets or sets the local anchor point relative to bodyA&apos;s origin.\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(AttatchToTag = 1, AttachToValue = false)]
+
+      public Vector3 ConnectedAnchor { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Math.Vector3
+    content.vb: >-
+      <RenderProperty(AttatchToTag:=1, AttachToValue:=False)>
+
+      Public Property ConnectedAnchor As Vector3
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.ConnectedAnchor*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: AttatchToTag
+      type: System.Int32
+      value: 1
+    - name: AttachToValue
+      type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.UseLinearLimit
+  commentId: P:WaveEngine.Framework.Physics3D.SliderJoint3D.UseLinearLimit
+  id: UseLinearLimit
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: UseLinearLimit
+  nameWithType: SliderJoint3D.UseLinearLimit
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.UseLinearLimit
+  type: Property
+  source:
+    id: UseLinearLimit
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 208
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nGets or sets a value indicating whether Use angular limit\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(Tag = 2)]
+
+      public bool UseLinearLimit { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <RenderProperty(Tag:=2)>
+
+      Public Property UseLinearLimit As Boolean
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.UseLinearLimit*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: Tag
+      type: System.Int32
+      value: 2
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.LowerLinearLimit
+  commentId: P:WaveEngine.Framework.Physics3D.SliderJoint3D.LowerLinearLimit
+  id: LowerLinearLimit
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: LowerLinearLimit
+  nameWithType: SliderJoint3D.LowerLinearLimit
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.LowerLinearLimit
+  type: Property
+  source:
+    id: LowerLinearLimit
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 226
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nGets or sets the Lower linear limit\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(AttatchToTag = 2, AttachToValue = true)]
+
+      public float LowerLinearLimit { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: >-
+      <RenderProperty(AttatchToTag:=2, AttachToValue:=True)>
+
+      Public Property LowerLinearLimit As Single
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.LowerLinearLimit*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: AttatchToTag
+      type: System.Int32
+      value: 2
+    - name: AttachToValue
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.UpperLinearLimit
+  commentId: P:WaveEngine.Framework.Physics3D.SliderJoint3D.UpperLinearLimit
+  id: UpperLinearLimit
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: UpperLinearLimit
+  nameWithType: SliderJoint3D.UpperLinearLimit
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.UpperLinearLimit
+  type: Property
+  source:
+    id: UpperLinearLimit
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 244
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nGets or sets the Upper linear limit\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(AttatchToTag = 2, AttachToValue = true)]
+
+      public float UpperLinearLimit { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: >-
+      <RenderProperty(AttatchToTag:=2, AttachToValue:=True)>
+
+      Public Property UpperLinearLimit As Single
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.UpperLinearLimit*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: AttatchToTag
+      type: System.Int32
+      value: 2
+    - name: AttachToValue
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.UseAngularLimit
+  commentId: P:WaveEngine.Framework.Physics3D.SliderJoint3D.UseAngularLimit
+  id: UseAngularLimit
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: UseAngularLimit
+  nameWithType: SliderJoint3D.UseAngularLimit
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.UseAngularLimit
+  type: Property
+  source:
+    id: UseAngularLimit
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 262
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nGets or sets a value indicating whether Use angular limit\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(Tag = 3)]
+
+      public bool UseAngularLimit { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <RenderProperty(Tag:=3)>
+
+      Public Property UseAngularLimit As Boolean
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.UseAngularLimit*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: Tag
+      type: System.Int32
+      value: 3
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.LowerAngularLimit
+  commentId: P:WaveEngine.Framework.Physics3D.SliderJoint3D.LowerAngularLimit
+  id: LowerAngularLimit
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: LowerAngularLimit
+  nameWithType: SliderJoint3D.LowerAngularLimit
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.LowerAngularLimit
+  type: Property
+  source:
+    id: LowerAngularLimit
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 280
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nGets or sets the Lower linear limit\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(AttatchToTag = 3, AttachToValue = true, ConverterType = typeof(FloatRadianToDegreeConverter))]
+
+      public float LowerAngularLimit { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: >-
+      <RenderProperty(AttatchToTag:=3, AttachToValue:=True, ConverterType:=GetType(FloatRadianToDegreeConverter))>
+
+      Public Property LowerAngularLimit As Single
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.LowerAngularLimit*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: AttatchToTag
+      type: System.Int32
+      value: 3
+    - name: AttachToValue
+      type: System.Boolean
+      value: true
+    - name: ConverterType
+      type: System.Type
+      value: WaveEngine.Common.Attributes.Converters.FloatRadianToDegreeConverter
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.UpperAngularLimit
+  commentId: P:WaveEngine.Framework.Physics3D.SliderJoint3D.UpperAngularLimit
+  id: UpperAngularLimit
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: UpperAngularLimit
+  nameWithType: SliderJoint3D.UpperAngularLimit
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.UpperAngularLimit
+  type: Property
+  source:
+    id: UpperAngularLimit
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 298
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nGets or sets the Upper linear limit\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(AttatchToTag = 3, AttachToValue = true, ConverterType = typeof(FloatRadianToDegreeConverter))]
+
+      public float UpperAngularLimit { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: >-
+      <RenderProperty(AttatchToTag:=3, AttachToValue:=True, ConverterType:=GetType(FloatRadianToDegreeConverter))>
+
+      Public Property UpperAngularLimit As Single
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.UpperAngularLimit*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: AttatchToTag
+      type: System.Int32
+      value: 3
+    - name: AttachToValue
+      type: System.Boolean
+      value: true
+    - name: ConverterType
+      type: System.Type
+      value: WaveEngine.Common.Attributes.Converters.FloatRadianToDegreeConverter
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.UseLinearMotor
+  commentId: P:WaveEngine.Framework.Physics3D.SliderJoint3D.UseLinearMotor
+  id: UseLinearMotor
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: UseLinearMotor
+  nameWithType: SliderJoint3D.UseLinearMotor
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.UseLinearMotor
+  type: Property
+  source:
+    id: UseLinearMotor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 316
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nGets or sets a value indicating whether Use linear motor\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(Tag = 4)]
+
+      public bool UseLinearMotor { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <RenderProperty(Tag:=4)>
+
+      Public Property UseLinearMotor As Boolean
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.UseLinearMotor*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: Tag
+      type: System.Int32
+      value: 4
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.MaxLinearMotorForce
+  commentId: P:WaveEngine.Framework.Physics3D.SliderJoint3D.MaxLinearMotorForce
+  id: MaxLinearMotorForce
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: MaxLinearMotorForce
+  nameWithType: SliderJoint3D.MaxLinearMotorForce
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.MaxLinearMotorForce
+  type: Property
+  source:
+    id: MaxLinearMotorForce
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 337
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nGets or sets the Lower linear limit\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(AttatchToTag = 4, AttachToValue = true)]
+
+      public float MaxLinearMotorForce { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: >-
+      <RenderProperty(AttatchToTag:=4, AttachToValue:=True)>
+
+      Public Property MaxLinearMotorForce As Single
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.MaxLinearMotorForce*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: AttatchToTag
+      type: System.Int32
+      value: 4
+    - name: AttachToValue
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.TargetLinearMotorVelocity
+  commentId: P:WaveEngine.Framework.Physics3D.SliderJoint3D.TargetLinearMotorVelocity
+  id: TargetLinearMotorVelocity
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: TargetLinearMotorVelocity
+  nameWithType: SliderJoint3D.TargetLinearMotorVelocity
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.TargetLinearMotorVelocity
+  type: Property
+  source:
+    id: TargetLinearMotorVelocity
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 358
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nGets or sets the Upper linear limit\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(AttatchToTag = 4, AttachToValue = true)]
+
+      public float TargetLinearMotorVelocity { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: >-
+      <RenderProperty(AttatchToTag:=4, AttachToValue:=True)>
+
+      Public Property TargetLinearMotorVelocity As Single
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.TargetLinearMotorVelocity*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: AttatchToTag
+      type: System.Int32
+      value: 4
+    - name: AttachToValue
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.UseAngularMotor
+  commentId: P:WaveEngine.Framework.Physics3D.SliderJoint3D.UseAngularMotor
+  id: UseAngularMotor
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: UseAngularMotor
+  nameWithType: SliderJoint3D.UseAngularMotor
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.UseAngularMotor
+  type: Property
+  source:
+    id: UseAngularMotor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 379
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nGets or sets a value indicating whether Use angular motor\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(Tag = 5)]
+
+      public bool UseAngularMotor { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <RenderProperty(Tag:=5)>
+
+      Public Property UseAngularMotor As Boolean
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.UseAngularMotor*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: Tag
+      type: System.Int32
+      value: 5
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.MaxAngularMotorForce
+  commentId: P:WaveEngine.Framework.Physics3D.SliderJoint3D.MaxAngularMotorForce
+  id: MaxAngularMotorForce
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: MaxAngularMotorForce
+  nameWithType: SliderJoint3D.MaxAngularMotorForce
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.MaxAngularMotorForce
+  type: Property
+  source:
+    id: MaxAngularMotorForce
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 400
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nGets or sets the Lower angular limit\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(AttatchToTag = 5, AttachToValue = true)]
+
+      public float MaxAngularMotorForce { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: >-
+      <RenderProperty(AttatchToTag:=5, AttachToValue:=True)>
+
+      Public Property MaxAngularMotorForce As Single
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.MaxAngularMotorForce*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: AttatchToTag
+      type: System.Int32
+      value: 5
+    - name: AttachToValue
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.TargetAngularMotorVelocity
+  commentId: P:WaveEngine.Framework.Physics3D.SliderJoint3D.TargetAngularMotorVelocity
+  id: TargetAngularMotorVelocity
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: TargetAngularMotorVelocity
+  nameWithType: SliderJoint3D.TargetAngularMotorVelocity
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.TargetAngularMotorVelocity
+  type: Property
+  source:
+    id: TargetAngularMotorVelocity
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 421
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nGets or sets the Upper angular limit\n"
+  example: []
+  syntax:
+    content: >-
+      [RenderProperty(AttatchToTag = 5, AttachToValue = true)]
+
+      public float TargetAngularMotorVelocity { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: >-
+      <RenderProperty(AttatchToTag:=5, AttachToValue:=True)>
+
+      Public Property TargetAngularMotorVelocity As Single
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.TargetAngularMotorVelocity*
+  attributes:
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: AttatchToTag
+      type: System.Int32
+      value: 5
+    - name: AttachToValue
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.#ctor
+  commentId: M:WaveEngine.Framework.Physics3D.SliderJoint3D.#ctor
+  id: '#ctor'
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: SliderJoint3D()
+  nameWithType: SliderJoint3D.SliderJoint3D()
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.SliderJoint3D()
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 445
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Framework.Physics3D.SliderJoint3D\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public SliderJoint3D()
+    content.vb: Public Sub New
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.DefaultValues
+  commentId: M:WaveEngine.Framework.Physics3D.SliderJoint3D.DefaultValues
+  id: DefaultValues
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: DefaultValues()
+  nameWithType: SliderJoint3D.DefaultValues()
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.DefaultValues()
+  type: Method
+  source:
+    id: DefaultValues
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 452
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nSets the default values\n"
+  example: []
+  syntax:
+    content: protected override void DefaultValues()
+    content.vb: Protected Overrides Sub DefaultValues
+  overridden: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.DefaultValues
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.DefaultValues*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.Initialize
+  commentId: M:WaveEngine.Framework.Physics3D.SliderJoint3D.Initialize
+  id: Initialize
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: SliderJoint3D.Initialize()
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.Initialize()
+  type: Method
+  source:
+    id: Initialize
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 471
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nInitialize this instance\n"
+  example: []
+  syntax:
+    content: protected override void Initialize()
+    content.vb: Protected Overrides Sub Initialize
+  overridden: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.Initialize
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.Initialize*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.InitJoint
+  commentId: M:WaveEngine.Framework.Physics3D.SliderJoint3D.InitJoint
+  id: InitJoint
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: InitJoint()
+  nameWithType: SliderJoint3D.InitJoint()
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.InitJoint()
+  type: Method
+  source:
+    id: InitJoint
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 482
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nInit joint\n"
+  example: []
+  syntax:
+    content: protected override void InitJoint()
+    content.vb: Protected Overrides Sub InitJoint
+  overridden: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.InitJoint
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.InitJoint*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.BodyAChanged
+  commentId: M:WaveEngine.Framework.Physics3D.SliderJoint3D.BodyAChanged
+  id: BodyAChanged
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: BodyAChanged()
+  nameWithType: SliderJoint3D.BodyAChanged()
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.BodyAChanged()
+  type: Method
+  source:
+    id: BodyAChanged
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 502
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nBody A is changed\n"
+  example: []
+  syntax:
+    content: protected override void BodyAChanged()
+    content.vb: Protected Overrides Sub BodyAChanged
+  overridden: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.BodyAChanged
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.BodyAChanged*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.BodyBChanged
+  commentId: M:WaveEngine.Framework.Physics3D.SliderJoint3D.BodyBChanged
+  id: BodyBChanged
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: BodyBChanged()
+  nameWithType: SliderJoint3D.BodyBChanged()
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.BodyBChanged()
+  type: Method
+  source:
+    id: BodyBChanged
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 510
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nBody B is changed\n"
+  example: []
+  syntax:
+    content: protected override void BodyBChanged()
+    content.vb: Protected Overrides Sub BodyBChanged
+  overridden: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.BodyBChanged
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.BodyBChanged*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.FillJointDef(WaveEngine.Common.Physics3D.SliderJointDef3D)
+  commentId: M:WaveEngine.Framework.Physics3D.SliderJoint3D.FillJointDef(WaveEngine.Common.Physics3D.SliderJointDef3D)
+  id: FillJointDef(WaveEngine.Common.Physics3D.SliderJointDef3D)
+  parent: WaveEngine.Framework.Physics3D.SliderJoint3D
+  langs:
+  - csharp
+  - vb
+  name: FillJointDef(SliderJointDef3D)
+  nameWithType: SliderJoint3D.FillJointDef(SliderJointDef3D)
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.FillJointDef(WaveEngine.Common.Physics3D.SliderJointDef3D)
+  type: Method
+  source:
+    id: FillJointDef
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Physics3D\Joints\SliderJoint3D.cs
+    startLine: 520
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Physics3D
+  summary: "\nFill joint def values\n"
+  example: []
+  syntax:
+    content: protected override bool FillJointDef(SliderJointDef3D jointDef)
+    parameters:
+    - id: jointDef
+      type: WaveEngine.Common.Physics3D.SliderJointDef3D
+      description: The generated joint values
+    return:
+      type: System.Boolean
+      description: The result
+    content.vb: Protected Overrides Function FillJointDef(jointDef As SliderJointDef3D) As Boolean
+  overridden: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.FillJointDef(WaveEngine.Common.Physics3D.SliderJointDef3D)
+  overload: WaveEngine.Framework.Physics3D.SliderJoint3D.FillJointDef*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: WaveEngine.Framework.Physics3D
+  commentId: N:WaveEngine.Framework.Physics3D
+  name: WaveEngine.Framework.Physics3D
+  nameWithType: WaveEngine.Framework.Physics3D
+  fullName: WaveEngine.Framework.Physics3D
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.IO.SerializableObject
+  commentId: T:WaveEngine.Common.IO.SerializableObject
+  parent: WaveEngine.Common.IO
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: WaveEngine.Common.IO.SerializableObject
+- uid: WaveEngine.Framework.DependencyObject
+  commentId: T:WaveEngine.Framework.DependencyObject
+  parent: WaveEngine.Framework
+  name: DependencyObject
+  nameWithType: DependencyObject
+  fullName: WaveEngine.Framework.DependencyObject
+- uid: WaveEngine.Framework.Component
+  commentId: T:WaveEngine.Framework.Component
+  parent: WaveEngine.Framework
+  name: Component
+  nameWithType: Component
+  fullName: WaveEngine.Framework.Component
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  commentId: T:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  parent: WaveEngine.Framework.Physics3D
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2
+  name: Joint3D<ISliderJoint3D, SliderJointDef3D>
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D)
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D)
+  name.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2
+    name: Joint3D
+    nameWithType: Joint3D
+    fullName: WaveEngine.Framework.Physics3D.Joint3D
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Common.Physics3D.ISliderJoint3D
+    name: ISliderJoint3D
+    nameWithType: ISliderJoint3D
+    fullName: WaveEngine.Common.Physics3D.ISliderJoint3D
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Physics3D.SliderJointDef3D
+    name: SliderJointDef3D
+    nameWithType: SliderJointDef3D
+    fullName: WaveEngine.Common.Physics3D.SliderJointDef3D
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2
+    name: Joint3D
+    nameWithType: Joint3D
+    fullName: WaveEngine.Framework.Physics3D.Joint3D
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Common.Physics3D.ISliderJoint3D
+    name: ISliderJoint3D
+    nameWithType: ISliderJoint3D
+    fullName: WaveEngine.Common.Physics3D.ISliderJoint3D
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Physics3D.SliderJointDef3D
+    name: SliderJointDef3D
+    nameWithType: SliderJointDef3D
+    fullName: WaveEngine.Common.Physics3D.SliderJointDef3D
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.breakpoint
+  commentId: F:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.breakpoint
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.breakpoint
+  name: breakpoint
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.breakpoint
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.breakpoint
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).breakpoint
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).breakpoint
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.joint
+  commentId: F:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.joint
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.joint
+  name: joint
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.joint
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.joint
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).joint
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).joint
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.OnBroke
+  commentId: E:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.OnBroke
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.OnBroke
+  name: OnBroke
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.OnBroke
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.OnBroke
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).OnBroke
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).OnBroke
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.rigidBody
+  commentId: F:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.rigidBody
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.rigidBody
+  name: rigidBody
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.rigidBody
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.rigidBody
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).rigidBody
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).rigidBody
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.transform3D
+  commentId: F:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.transform3D
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.transform3D
+  name: transform3D
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.transform3D
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.transform3D
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).transform3D
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).transform3D
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.connectedBody
+  commentId: F:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.connectedBody
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.connectedBody
+  name: connectedBody
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.connectedBody
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.connectedBody
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).connectedBody
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).connectedBody
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.isActive
+  commentId: F:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.isActive
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.isActive
+  name: isActive
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.isActive
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.isActive
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).isActive
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).isActive
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.BreakPoint
+  commentId: P:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.BreakPoint
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.BreakPoint
+  name: BreakPoint
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.BreakPoint
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.BreakPoint
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).BreakPoint
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).BreakPoint
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.DebugDrawSize
+  commentId: P:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.DebugDrawSize
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.DebugDrawSize
+  name: DebugDrawSize
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.DebugDrawSize
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.DebugDrawSize
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).DebugDrawSize
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).DebugDrawSize
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.ConnectedEntityPath
+  commentId: P:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.ConnectedEntityPath
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.ConnectedEntityPath
+  name: ConnectedEntityPath
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.ConnectedEntityPath
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.ConnectedEntityPath
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).ConnectedEntityPath
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).ConnectedEntityPath
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.CollideConnected
+  commentId: P:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.CollideConnected
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.CollideConnected
+  name: CollideConnected
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.CollideConnected
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.CollideConnected
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).CollideConnected
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).CollideConnected
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.AppliedImpulse
+  commentId: P:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.AppliedImpulse
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.AppliedImpulse
+  name: AppliedImpulse
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.AppliedImpulse
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.AppliedImpulse
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).AppliedImpulse
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).AppliedImpulse
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.NeedsFeedback
+  commentId: P:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.NeedsFeedback
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.NeedsFeedback
+  name: NeedsFeedback
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.NeedsFeedback
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.NeedsFeedback
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).NeedsFeedback
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).NeedsFeedback
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.JointFeedback
+  commentId: P:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.JointFeedback
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.JointFeedback
+  name: JointFeedback
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.JointFeedback
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.JointFeedback
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).JointFeedback
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).JointFeedback
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.OverrideNumSolverIterations
+  commentId: P:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.OverrideNumSolverIterations
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.OverrideNumSolverIterations
+  name: OverrideNumSolverIterations
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.OverrideNumSolverIterations
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.OverrideNumSolverIterations
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).OverrideNumSolverIterations
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).OverrideNumSolverIterations
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.DefaultValues
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.DefaultValues
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.DefaultValues
+  name: DefaultValues()
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.DefaultValues()
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.DefaultValues()
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).DefaultValues()
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).DefaultValues()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.DefaultValues
+    name: DefaultValues
+    nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.DefaultValues
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.DefaultValues
+    name: DefaultValues
+    nameWithType: Joint3D(Of ISliderJoint3D, SliderJointDef3D).DefaultValues
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.DeleteDependencies
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.DeleteDependencies
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.DeleteDependencies
+  name: DeleteDependencies()
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.DeleteDependencies()
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.DeleteDependencies()
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).DeleteDependencies()
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).DeleteDependencies()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.DeleteDependencies
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Joint3D(Of ISliderJoint3D, SliderJointDef3D).DeleteDependencies
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.Initialize
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.Initialize
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.Initialize
+  name: Initialize()
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.Initialize()
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.Initialize()
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).Initialize()
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).Initialize()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.Initialize
+    name: Initialize
+    nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.Initialize
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.Initialize
+    name: Initialize
+    nameWithType: Joint3D(Of ISliderJoint3D, SliderJointDef3D).Initialize
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.Removed
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.Removed
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.Removed
+  name: Removed()
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.Removed()
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.Removed()
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).Removed()
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).Removed()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.Removed
+    name: Removed
+    nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.Removed
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.Removed
+    name: Removed
+    nameWithType: Joint3D(Of ISliderJoint3D, SliderJointDef3D).Removed
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.BodyAChanged
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.BodyAChanged
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.BodyAChanged
+  name: BodyAChanged()
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.BodyAChanged()
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.BodyAChanged()
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).BodyAChanged()
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).BodyAChanged()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.BodyAChanged
+    name: BodyAChanged
+    nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.BodyAChanged
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.BodyAChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.BodyAChanged
+    name: BodyAChanged
+    nameWithType: Joint3D(Of ISliderJoint3D, SliderJointDef3D).BodyAChanged
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).BodyAChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.BodyBChanged
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.BodyBChanged
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.BodyBChanged
+  name: BodyBChanged()
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.BodyBChanged()
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.BodyBChanged()
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).BodyBChanged()
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).BodyBChanged()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.BodyBChanged
+    name: BodyBChanged
+    nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.BodyBChanged
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.BodyBChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.BodyBChanged
+    name: BodyBChanged
+    nameWithType: Joint3D(Of ISliderJoint3D, SliderJointDef3D).BodyBChanged
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).BodyBChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.Dispose
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.Dispose
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.Dispose
+  name: Dispose()
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.Dispose()
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.Dispose()
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).Dispose()
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).Dispose()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.Dispose
+    name: Dispose
+    nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.Dispose
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.Dispose
+    name: Dispose
+    nameWithType: Joint3D(Of ISliderJoint3D, SliderJointDef3D).Dispose
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.RefreshJointValue``1({V}@,{V})
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.RefreshJointValue``1(``0@,``0)
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.RefreshJointValue``1(``0@,``0)
+  name: RefreshJointValue<V>(V, V)
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.RefreshJointValue<V>(V, V)
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.RefreshJointValue<V>(V, V)
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).RefreshJointValue(Of V)(V, V)
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).RefreshJointValue(Of V)(V, V)
+  name.vb: RefreshJointValue(Of V)(V, V)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.RefreshJointValue``1(``0@,``0)
+    name: RefreshJointValue<V>
+    nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.RefreshJointValue<V>
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.RefreshJointValue<V>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: V
+    nameWithType: V
+    fullName: V
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: V
+    nameWithType: V
+    fullName: V
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.RefreshJointValue``1(``0@,``0)
+    name: RefreshJointValue(Of V)
+    nameWithType: Joint3D(Of ISliderJoint3D, SliderJointDef3D).RefreshJointValue(Of V)
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).RefreshJointValue(Of V)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: V
+    nameWithType: V
+    fullName: V
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: V
+    nameWithType: V
+    fullName: V
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.CreateJoint(WaveEngine.Common.Physics3D.SliderJointDef3D)
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.CreateJoint(WaveEngine.Common.Physics3D.SliderJointDef3D)
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.CreateJoint(`1)
+  name: CreateJoint(SliderJointDef3D)
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.CreateJoint(SliderJointDef3D)
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.CreateJoint(WaveEngine.Common.Physics3D.SliderJointDef3D)
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).CreateJoint(SliderJointDef3D)
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).CreateJoint(WaveEngine.Common.Physics3D.SliderJointDef3D)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.CreateJoint(`1)
+    name: CreateJoint
+    nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.CreateJoint
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.CreateJoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Physics3D.SliderJointDef3D
+    name: SliderJointDef3D
+    nameWithType: SliderJointDef3D
+    fullName: WaveEngine.Common.Physics3D.SliderJointDef3D
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.CreateJoint(`1)
+    name: CreateJoint
+    nameWithType: Joint3D(Of ISliderJoint3D, SliderJointDef3D).CreateJoint
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).CreateJoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Physics3D.SliderJointDef3D
+    name: SliderJointDef3D
+    nameWithType: SliderJointDef3D
+    fullName: WaveEngine.Common.Physics3D.SliderJointDef3D
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.RefreshJoint
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.RefreshJoint
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.RefreshJoint
+  name: RefreshJoint()
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.RefreshJoint()
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.RefreshJoint()
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).RefreshJoint()
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).RefreshJoint()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.RefreshJoint
+    name: RefreshJoint
+    nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.RefreshJoint
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.RefreshJoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.RefreshJoint
+    name: RefreshJoint
+    nameWithType: Joint3D(Of ISliderJoint3D, SliderJointDef3D).RefreshJoint
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).RefreshJoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.InitJoint
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.InitJoint
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.InitJoint
+  name: InitJoint()
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.InitJoint()
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.InitJoint()
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).InitJoint()
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).InitJoint()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.InitJoint
+    name: InitJoint
+    nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.InitJoint
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.InitJoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.InitJoint
+    name: InitJoint
+    nameWithType: Joint3D(Of ISliderJoint3D, SliderJointDef3D).InitJoint
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).InitJoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.RefreshConnectedEntity
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.RefreshConnectedEntity
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.RefreshConnectedEntity
+  name: RefreshConnectedEntity()
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.RefreshConnectedEntity()
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.RefreshConnectedEntity()
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).RefreshConnectedEntity()
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).RefreshConnectedEntity()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.RefreshConnectedEntity
+    name: RefreshConnectedEntity
+    nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.RefreshConnectedEntity
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.RefreshConnectedEntity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.RefreshConnectedEntity
+    name: RefreshConnectedEntity
+    nameWithType: Joint3D(Of ISliderJoint3D, SliderJointDef3D).RefreshConnectedEntity
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).RefreshConnectedEntity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.FillJointDef(WaveEngine.Common.Physics3D.SliderJointDef3D)
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.FillJointDef(WaveEngine.Common.Physics3D.SliderJointDef3D)
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.FillJointDef(`1)
+  name: FillJointDef(SliderJointDef3D)
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.FillJointDef(SliderJointDef3D)
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.FillJointDef(WaveEngine.Common.Physics3D.SliderJointDef3D)
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).FillJointDef(SliderJointDef3D)
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).FillJointDef(WaveEngine.Common.Physics3D.SliderJointDef3D)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.FillJointDef(`1)
+    name: FillJointDef
+    nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.FillJointDef
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.FillJointDef
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Physics3D.SliderJointDef3D
+    name: SliderJointDef3D
+    nameWithType: SliderJointDef3D
+    fullName: WaveEngine.Common.Physics3D.SliderJointDef3D
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.FillJointDef(`1)
+    name: FillJointDef
+    nameWithType: Joint3D(Of ISliderJoint3D, SliderJointDef3D).FillJointDef
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).FillJointDef
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Physics3D.SliderJointDef3D
+    name: SliderJointDef3D
+    nameWithType: SliderJointDef3D
+    fullName: WaveEngine.Common.Physics3D.SliderJointDef3D
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.GetFrameZ(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@)
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.GetFrameZ(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@)
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.GetFrameZ(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@)
+  name: GetFrameZ(Vector3, Vector3, Vector3)
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.GetFrameZ(Vector3, Vector3, Vector3)
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.GetFrameZ(WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3)
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).GetFrameZ(Vector3, Vector3, Vector3)
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).GetFrameZ(WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.GetFrameZ(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@)
+    name: GetFrameZ
+    nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.GetFrameZ
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.GetFrameZ
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.GetFrameZ(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@)
+    name: GetFrameZ
+    nameWithType: Joint3D(Of ISliderJoint3D, SliderJointDef3D).GetFrameZ
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).GetFrameZ
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.GetFrameX(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@)
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}.GetFrameX(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@)
+  parent: WaveEngine.Framework.Physics3D.Joint3D{WaveEngine.Common.Physics3D.ISliderJoint3D,WaveEngine.Common.Physics3D.SliderJointDef3D}
+  definition: WaveEngine.Framework.Physics3D.Joint3D`2.GetFrameX(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@)
+  name: GetFrameX(Vector3, Vector3, Vector3)
+  nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.GetFrameX(Vector3, Vector3, Vector3)
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.GetFrameX(WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3)
+  nameWithType.vb: Joint3D(Of ISliderJoint3D, SliderJointDef3D).GetFrameX(Vector3, Vector3, Vector3)
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).GetFrameX(WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.GetFrameX(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@)
+    name: GetFrameX
+    nameWithType: Joint3D<ISliderJoint3D, SliderJointDef3D>.GetFrameX
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D>.GetFrameX
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.GetFrameX(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@)
+    name: GetFrameX
+    nameWithType: Joint3D(Of ISliderJoint3D, SliderJointDef3D).GetFrameX
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of WaveEngine.Common.Physics3D.ISliderJoint3D, WaveEngine.Common.Physics3D.SliderJointDef3D).GetFrameX
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.isInitialized
+  commentId: F:WaveEngine.Framework.Component.isInitialized
+  parent: WaveEngine.Framework.Component
+  name: isInitialized
+  nameWithType: Component.isInitialized
+  fullName: WaveEngine.Framework.Component.isInitialized
+- uid: WaveEngine.Framework.Component.OnComponentInitialized
+  commentId: E:WaveEngine.Framework.Component.OnComponentInitialized
+  parent: WaveEngine.Framework.Component
+  name: OnComponentInitialized
+  nameWithType: Component.OnComponentInitialized
+  fullName: WaveEngine.Framework.Component.OnComponentInitialized
+- uid: WaveEngine.Framework.Component.OnComponentRemoved
+  commentId: E:WaveEngine.Framework.Component.OnComponentRemoved
+  parent: WaveEngine.Framework.Component
+  name: OnComponentRemoved
+  nameWithType: Component.OnComponentRemoved
+  fullName: WaveEngine.Framework.Component.OnComponentRemoved
+- uid: WaveEngine.Framework.Component.Name
+  commentId: P:WaveEngine.Framework.Component.Name
+  parent: WaveEngine.Framework.Component
+  name: Name
+  nameWithType: Component.Name
+  fullName: WaveEngine.Framework.Component.Name
+- uid: WaveEngine.Framework.Component.Owner
+  commentId: P:WaveEngine.Framework.Component.Owner
+  parent: WaveEngine.Framework.Component
+  name: Owner
+  nameWithType: Component.Owner
+  fullName: WaveEngine.Framework.Component.Owner
+- uid: WaveEngine.Framework.Component.Assets
+  commentId: P:WaveEngine.Framework.Component.Assets
+  parent: WaveEngine.Framework.Component
+  name: Assets
+  nameWithType: Component.Assets
+  fullName: WaveEngine.Framework.Component.Assets
+- uid: WaveEngine.Framework.Component.EntityManager
+  commentId: P:WaveEngine.Framework.Component.EntityManager
+  parent: WaveEngine.Framework.Component
+  name: EntityManager
+  nameWithType: Component.EntityManager
+  fullName: WaveEngine.Framework.Component.EntityManager
+- uid: WaveEngine.Framework.Component.BehaviorManager
+  commentId: P:WaveEngine.Framework.Component.BehaviorManager
+  parent: WaveEngine.Framework.Component
+  name: BehaviorManager
+  nameWithType: Component.BehaviorManager
+  fullName: WaveEngine.Framework.Component.BehaviorManager
+- uid: WaveEngine.Framework.Component.RenderManager
+  commentId: P:WaveEngine.Framework.Component.RenderManager
+  parent: WaveEngine.Framework.Component
+  name: RenderManager
+  nameWithType: Component.RenderManager
+  fullName: WaveEngine.Framework.Component.RenderManager
+- uid: WaveEngine.Framework.Component.Clone
+  commentId: M:WaveEngine.Framework.Component.Clone
+  parent: WaveEngine.Framework.Component
+  name: Clone()
+  nameWithType: Component.Clone()
+  fullName: WaveEngine.Framework.Component.Clone()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Clone
+    name: Clone
+    nameWithType: Component.Clone
+    fullName: WaveEngine.Framework.Component.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Clone
+    name: Clone
+    nameWithType: Component.Clone
+    fullName: WaveEngine.Framework.Component.Clone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.ToString
+  commentId: M:WaveEngine.Framework.Component.ToString
+  parent: WaveEngine.Framework.Component
+  name: ToString()
+  nameWithType: Component.ToString()
+  fullName: WaveEngine.Framework.Component.ToString()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: WaveEngine.Framework.Component.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.ToString
+    name: ToString
+    nameWithType: Component.ToString
+    fullName: WaveEngine.Framework.Component.ToString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.ResolveDependencies
+  commentId: M:WaveEngine.Framework.Component.ResolveDependencies
+  parent: WaveEngine.Framework.Component
+  name: ResolveDependencies()
+  nameWithType: Component.ResolveDependencies()
+  fullName: WaveEngine.Framework.Component.ResolveDependencies()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.ResolveDependencies
+    name: ResolveDependencies
+    nameWithType: Component.ResolveDependencies
+    fullName: WaveEngine.Framework.Component.ResolveDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.ResolveDependencies
+    name: ResolveDependencies
+    nameWithType: Component.ResolveDependencies
+    fullName: WaveEngine.Framework.Component.ResolveDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.Removed
+  commentId: M:WaveEngine.Framework.Component.Removed
+  parent: WaveEngine.Framework.Component
+  name: Removed()
+  nameWithType: Component.Removed()
+  fullName: WaveEngine.Framework.Component.Removed()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.Removed
+    name: Removed
+    nameWithType: Component.Removed
+    fullName: WaveEngine.Framework.Component.Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.Removed
+    name: Removed
+    nameWithType: Component.Removed
+    fullName: WaveEngine.Framework.Component.Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Component.DeleteDependencies
+  commentId: M:WaveEngine.Framework.Component.DeleteDependencies
+  parent: WaveEngine.Framework.Component
+  name: DeleteDependencies()
+  nameWithType: Component.DeleteDependencies()
+  fullName: WaveEngine.Framework.Component.DeleteDependencies()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Component.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Component.DeleteDependencies
+    fullName: WaveEngine.Framework.Component.DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Component.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Component.DeleteDependencies
+    fullName: WaveEngine.Framework.Component.DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.PropertyChanged
+  commentId: E:WaveEngine.Framework.DependencyObject.PropertyChanged
+  parent: WaveEngine.Framework.DependencyObject
+  name: PropertyChanged
+  nameWithType: DependencyObject.PropertyChanged
+  fullName: WaveEngine.Framework.DependencyObject.PropertyChanged
+- uid: WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  commentId: P:WaveEngine.Framework.DependencyObject.ParentDependencyObject
+  parent: WaveEngine.Framework.DependencyObject
+  name: ParentDependencyObject
+  nameWithType: DependencyObject.ParentDependencyObject
+  fullName: WaveEngine.Framework.DependencyObject.ParentDependencyObject
+- uid: WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  commentId: P:WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+  parent: WaveEngine.Framework.DependencyObject
+  name: EnableDiagnosticCallback
+  nameWithType: DependencyObject.EnableDiagnosticCallback
+  fullName: WaveEngine.Framework.DependencyObject.EnableDiagnosticCallback
+- uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  commentId: M:WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+  parent: WaveEngine.Framework.DependencyObject
+  isExternal: true
+  name: SetValue(DependencyProperty, Object)
+  nameWithType: DependencyObject.SetValue(DependencyProperty, Object)
+  fullName: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty, System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+    name: SetValue
+    nameWithType: DependencyObject.SetValue
+    fullName: WaveEngine.Framework.DependencyObject.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.SetValue(WaveEngine.Framework.DependencyProperty,System.Object)
+    name: SetValue
+    nameWithType: DependencyObject.SetValue
+    fullName: WaveEngine.Framework.DependencyObject.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: GetValue(DependencyProperty)
+  nameWithType: DependencyObject.GetValue(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+    name: GetValue
+    nameWithType: DependencyObject.GetValue
+    fullName: WaveEngine.Framework.DependencyObject.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.GetValue(WaveEngine.Framework.DependencyProperty)
+    name: GetValue
+    nameWithType: DependencyObject.GetValue
+    fullName: WaveEngine.Framework.DependencyObject.GetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: GetAbsoluteValue<T>(DependencyProperty)
+  nameWithType: DependencyObject.GetAbsoluteValue<T>(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue<T>(WaveEngine.Framework.DependencyProperty)
+  nameWithType.vb: DependencyObject.GetAbsoluteValue(Of T)(DependencyProperty)
+  fullName.vb: WaveEngine.Framework.DependencyObject.GetAbsoluteValue(Of T)(WaveEngine.Framework.DependencyProperty)
+  name.vb: GetAbsoluteValue(Of T)(DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+    name: GetAbsoluteValue<T>
+    nameWithType: DependencyObject.GetAbsoluteValue<T>
+    fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.GetAbsoluteValue``1(WaveEngine.Framework.DependencyProperty)
+    name: GetAbsoluteValue(Of T)
+    nameWithType: DependencyObject.GetAbsoluteValue(Of T)
+    fullName: WaveEngine.Framework.DependencyObject.GetAbsoluteValue(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: ClearValue(DependencyProperty)
+  nameWithType: DependencyObject.ClearValue(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+    name: ClearValue
+    nameWithType: DependencyObject.ClearValue
+    fullName: WaveEngine.Framework.DependencyObject.ClearValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.ClearValue(WaveEngine.Framework.DependencyProperty)
+    name: ClearValue
+    nameWithType: DependencyObject.ClearValue
+    fullName: WaveEngine.Framework.DependencyObject.ClearValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  commentId: M:WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  parent: WaveEngine.Framework.DependencyObject
+  name: IsValueSet(DependencyProperty)
+  nameWithType: DependencyObject.IsValueSet(DependencyProperty)
+  fullName: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+  spec.csharp:
+  - uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+    name: IsValueSet
+    nameWithType: DependencyObject.IsValueSet
+    fullName: WaveEngine.Framework.DependencyObject.IsValueSet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.DependencyObject.IsValueSet(WaveEngine.Framework.DependencyProperty)
+    name: IsValueSet
+    nameWithType: DependencyObject.IsValueSet
+    fullName: WaveEngine.Framework.DependencyObject.IsValueSet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.DependencyProperty
+    name: DependencyProperty
+    nameWithType: DependencyProperty
+    fullName: WaveEngine.Framework.DependencyProperty
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  commentId: M:WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  parent: WaveEngine.Common.IO.SerializableObject
+  isExternal: true
+  name: OnDeserializing(StreamingContext)
+  nameWithType: SerializableObject.OnDeserializing(StreamingContext)
+  fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.IO.SerializableObject.OnDeserializing(System.Runtime.Serialization.StreamingContext)
+    name: OnDeserializing
+    nameWithType: SerializableObject.OnDeserializing
+    fullName: WaveEngine.Common.IO.SerializableObject.OnDeserializing
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.IO
+  commentId: N:WaveEngine.Common.IO
+  name: WaveEngine.Common.IO
+  nameWithType: WaveEngine.Common.IO
+  fullName: WaveEngine.Common.IO
+- uid: WaveEngine.Framework
+  commentId: N:WaveEngine.Framework
+  name: WaveEngine.Framework
+  nameWithType: WaveEngine.Framework
+  fullName: WaveEngine.Framework
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2
+  commentId: T:WaveEngine.Framework.Physics3D.Joint3D`2
+  name: Joint3D<T, K>
+  nameWithType: Joint3D<T, K>
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>
+  nameWithType.vb: Joint3D(Of T, K)
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K)
+  name.vb: Joint3D(Of T, K)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2
+    name: Joint3D
+    nameWithType: Joint3D
+    fullName: WaveEngine.Framework.Physics3D.Joint3D
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: K
+    nameWithType: K
+    fullName: K
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2
+    name: Joint3D
+    nameWithType: Joint3D
+    fullName: WaveEngine.Framework.Physics3D.Joint3D
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: K
+    nameWithType: K
+    fullName: K
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.breakpoint
+  commentId: F:WaveEngine.Framework.Physics3D.Joint3D`2.breakpoint
+  name: breakpoint
+  nameWithType: Joint3D<T, K>.breakpoint
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.breakpoint
+  nameWithType.vb: Joint3D(Of T, K).breakpoint
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).breakpoint
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.joint
+  commentId: F:WaveEngine.Framework.Physics3D.Joint3D`2.joint
+  name: joint
+  nameWithType: Joint3D<T, K>.joint
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.joint
+  nameWithType.vb: Joint3D(Of T, K).joint
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).joint
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.OnBroke
+  commentId: E:WaveEngine.Framework.Physics3D.Joint3D`2.OnBroke
+  name: OnBroke
+  nameWithType: Joint3D<T, K>.OnBroke
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.OnBroke
+  nameWithType.vb: Joint3D(Of T, K).OnBroke
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).OnBroke
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.rigidBody
+  commentId: F:WaveEngine.Framework.Physics3D.Joint3D`2.rigidBody
+  name: rigidBody
+  nameWithType: Joint3D<T, K>.rigidBody
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.rigidBody
+  nameWithType.vb: Joint3D(Of T, K).rigidBody
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).rigidBody
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.transform3D
+  commentId: F:WaveEngine.Framework.Physics3D.Joint3D`2.transform3D
+  name: transform3D
+  nameWithType: Joint3D<T, K>.transform3D
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.transform3D
+  nameWithType.vb: Joint3D(Of T, K).transform3D
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).transform3D
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.connectedBody
+  commentId: F:WaveEngine.Framework.Physics3D.Joint3D`2.connectedBody
+  name: connectedBody
+  nameWithType: Joint3D<T, K>.connectedBody
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.connectedBody
+  nameWithType.vb: Joint3D(Of T, K).connectedBody
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).connectedBody
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.isActive
+  commentId: F:WaveEngine.Framework.Physics3D.Joint3D`2.isActive
+  name: isActive
+  nameWithType: Joint3D<T, K>.isActive
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.isActive
+  nameWithType.vb: Joint3D(Of T, K).isActive
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).isActive
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.BreakPoint
+  commentId: P:WaveEngine.Framework.Physics3D.Joint3D`2.BreakPoint
+  name: BreakPoint
+  nameWithType: Joint3D<T, K>.BreakPoint
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.BreakPoint
+  nameWithType.vb: Joint3D(Of T, K).BreakPoint
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).BreakPoint
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.DebugDrawSize
+  commentId: P:WaveEngine.Framework.Physics3D.Joint3D`2.DebugDrawSize
+  name: DebugDrawSize
+  nameWithType: Joint3D<T, K>.DebugDrawSize
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.DebugDrawSize
+  nameWithType.vb: Joint3D(Of T, K).DebugDrawSize
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).DebugDrawSize
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.ConnectedEntityPath
+  commentId: P:WaveEngine.Framework.Physics3D.Joint3D`2.ConnectedEntityPath
+  name: ConnectedEntityPath
+  nameWithType: Joint3D<T, K>.ConnectedEntityPath
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.ConnectedEntityPath
+  nameWithType.vb: Joint3D(Of T, K).ConnectedEntityPath
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).ConnectedEntityPath
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.CollideConnected
+  commentId: P:WaveEngine.Framework.Physics3D.Joint3D`2.CollideConnected
+  name: CollideConnected
+  nameWithType: Joint3D<T, K>.CollideConnected
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.CollideConnected
+  nameWithType.vb: Joint3D(Of T, K).CollideConnected
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).CollideConnected
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.AppliedImpulse
+  commentId: P:WaveEngine.Framework.Physics3D.Joint3D`2.AppliedImpulse
+  name: AppliedImpulse
+  nameWithType: Joint3D<T, K>.AppliedImpulse
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.AppliedImpulse
+  nameWithType.vb: Joint3D(Of T, K).AppliedImpulse
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).AppliedImpulse
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.NeedsFeedback
+  commentId: P:WaveEngine.Framework.Physics3D.Joint3D`2.NeedsFeedback
+  name: NeedsFeedback
+  nameWithType: Joint3D<T, K>.NeedsFeedback
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.NeedsFeedback
+  nameWithType.vb: Joint3D(Of T, K).NeedsFeedback
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).NeedsFeedback
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.JointFeedback
+  commentId: P:WaveEngine.Framework.Physics3D.Joint3D`2.JointFeedback
+  name: JointFeedback
+  nameWithType: Joint3D<T, K>.JointFeedback
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.JointFeedback
+  nameWithType.vb: Joint3D(Of T, K).JointFeedback
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).JointFeedback
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.OverrideNumSolverIterations
+  commentId: P:WaveEngine.Framework.Physics3D.Joint3D`2.OverrideNumSolverIterations
+  name: OverrideNumSolverIterations
+  nameWithType: Joint3D<T, K>.OverrideNumSolverIterations
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.OverrideNumSolverIterations
+  nameWithType.vb: Joint3D(Of T, K).OverrideNumSolverIterations
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).OverrideNumSolverIterations
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.DefaultValues
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D`2.DefaultValues
+  name: DefaultValues()
+  nameWithType: Joint3D<T, K>.DefaultValues()
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.DefaultValues()
+  nameWithType.vb: Joint3D(Of T, K).DefaultValues()
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).DefaultValues()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.DefaultValues
+    name: DefaultValues
+    nameWithType: Joint3D<T, K>.DefaultValues
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.DefaultValues
+    name: DefaultValues
+    nameWithType: Joint3D(Of T, K).DefaultValues
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).DefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.DeleteDependencies
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D`2.DeleteDependencies
+  name: DeleteDependencies()
+  nameWithType: Joint3D<T, K>.DeleteDependencies()
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.DeleteDependencies()
+  nameWithType.vb: Joint3D(Of T, K).DeleteDependencies()
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).DeleteDependencies()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Joint3D<T, K>.DeleteDependencies
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.DeleteDependencies
+    name: DeleteDependencies
+    nameWithType: Joint3D(Of T, K).DeleteDependencies
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).DeleteDependencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.Initialize
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D`2.Initialize
+  name: Initialize()
+  nameWithType: Joint3D<T, K>.Initialize()
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.Initialize()
+  nameWithType.vb: Joint3D(Of T, K).Initialize()
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).Initialize()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.Initialize
+    name: Initialize
+    nameWithType: Joint3D<T, K>.Initialize
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.Initialize
+    name: Initialize
+    nameWithType: Joint3D(Of T, K).Initialize
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.Removed
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D`2.Removed
+  name: Removed()
+  nameWithType: Joint3D<T, K>.Removed()
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.Removed()
+  nameWithType.vb: Joint3D(Of T, K).Removed()
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).Removed()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.Removed
+    name: Removed
+    nameWithType: Joint3D<T, K>.Removed
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.Removed
+    name: Removed
+    nameWithType: Joint3D(Of T, K).Removed
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).Removed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.BodyAChanged
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D`2.BodyAChanged
+  name: BodyAChanged()
+  nameWithType: Joint3D<T, K>.BodyAChanged()
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.BodyAChanged()
+  nameWithType.vb: Joint3D(Of T, K).BodyAChanged()
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).BodyAChanged()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.BodyAChanged
+    name: BodyAChanged
+    nameWithType: Joint3D<T, K>.BodyAChanged
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.BodyAChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.BodyAChanged
+    name: BodyAChanged
+    nameWithType: Joint3D(Of T, K).BodyAChanged
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).BodyAChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.BodyBChanged
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D`2.BodyBChanged
+  name: BodyBChanged()
+  nameWithType: Joint3D<T, K>.BodyBChanged()
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.BodyBChanged()
+  nameWithType.vb: Joint3D(Of T, K).BodyBChanged()
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).BodyBChanged()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.BodyBChanged
+    name: BodyBChanged
+    nameWithType: Joint3D<T, K>.BodyBChanged
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.BodyBChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.BodyBChanged
+    name: BodyBChanged
+    nameWithType: Joint3D(Of T, K).BodyBChanged
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).BodyBChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.Dispose
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D`2.Dispose
+  name: Dispose()
+  nameWithType: Joint3D<T, K>.Dispose()
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.Dispose()
+  nameWithType.vb: Joint3D(Of T, K).Dispose()
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).Dispose()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.Dispose
+    name: Dispose
+    nameWithType: Joint3D<T, K>.Dispose
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.Dispose
+    name: Dispose
+    nameWithType: Joint3D(Of T, K).Dispose
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.RefreshJointValue``1(``0@,``0)
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D`2.RefreshJointValue``1(``0@,``0)
+  name: RefreshJointValue<V>(V, V)
+  nameWithType: Joint3D<T, K>.RefreshJointValue<V>(V, V)
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.RefreshJointValue<V>(V, V)
+  nameWithType.vb: Joint3D(Of T, K).RefreshJointValue(Of V)(V, V)
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).RefreshJointValue(Of V)(V, V)
+  name.vb: RefreshJointValue(Of V)(V, V)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.RefreshJointValue``1(``0@,``0)
+    name: RefreshJointValue<V>
+    nameWithType: Joint3D<T, K>.RefreshJointValue<V>
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.RefreshJointValue<V>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: V
+    nameWithType: V
+    fullName: V
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: V
+    nameWithType: V
+    fullName: V
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.RefreshJointValue``1(``0@,``0)
+    name: RefreshJointValue(Of V)
+    nameWithType: Joint3D(Of T, K).RefreshJointValue(Of V)
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).RefreshJointValue(Of V)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: V
+    nameWithType: V
+    fullName: V
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: V
+    nameWithType: V
+    fullName: V
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.CreateJoint(`1)
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D`2.CreateJoint(`1)
+  name: CreateJoint(K)
+  nameWithType: Joint3D<T, K>.CreateJoint(K)
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.CreateJoint(K)
+  nameWithType.vb: Joint3D(Of T, K).CreateJoint(K)
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).CreateJoint(K)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.CreateJoint(`1)
+    name: CreateJoint
+    nameWithType: Joint3D<T, K>.CreateJoint
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.CreateJoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: K
+    nameWithType: K
+    fullName: K
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.CreateJoint(`1)
+    name: CreateJoint
+    nameWithType: Joint3D(Of T, K).CreateJoint
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).CreateJoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: K
+    nameWithType: K
+    fullName: K
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.RefreshJoint
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D`2.RefreshJoint
+  name: RefreshJoint()
+  nameWithType: Joint3D<T, K>.RefreshJoint()
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.RefreshJoint()
+  nameWithType.vb: Joint3D(Of T, K).RefreshJoint()
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).RefreshJoint()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.RefreshJoint
+    name: RefreshJoint
+    nameWithType: Joint3D<T, K>.RefreshJoint
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.RefreshJoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.RefreshJoint
+    name: RefreshJoint
+    nameWithType: Joint3D(Of T, K).RefreshJoint
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).RefreshJoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.InitJoint
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D`2.InitJoint
+  name: InitJoint()
+  nameWithType: Joint3D<T, K>.InitJoint()
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.InitJoint()
+  nameWithType.vb: Joint3D(Of T, K).InitJoint()
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).InitJoint()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.InitJoint
+    name: InitJoint
+    nameWithType: Joint3D<T, K>.InitJoint
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.InitJoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.InitJoint
+    name: InitJoint
+    nameWithType: Joint3D(Of T, K).InitJoint
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).InitJoint
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.RefreshConnectedEntity
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D`2.RefreshConnectedEntity
+  name: RefreshConnectedEntity()
+  nameWithType: Joint3D<T, K>.RefreshConnectedEntity()
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.RefreshConnectedEntity()
+  nameWithType.vb: Joint3D(Of T, K).RefreshConnectedEntity()
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).RefreshConnectedEntity()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.RefreshConnectedEntity
+    name: RefreshConnectedEntity
+    nameWithType: Joint3D<T, K>.RefreshConnectedEntity
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.RefreshConnectedEntity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.RefreshConnectedEntity
+    name: RefreshConnectedEntity
+    nameWithType: Joint3D(Of T, K).RefreshConnectedEntity
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).RefreshConnectedEntity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.FillJointDef(`1)
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D`2.FillJointDef(`1)
+  name: FillJointDef(K)
+  nameWithType: Joint3D<T, K>.FillJointDef(K)
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.FillJointDef(K)
+  nameWithType.vb: Joint3D(Of T, K).FillJointDef(K)
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).FillJointDef(K)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.FillJointDef(`1)
+    name: FillJointDef
+    nameWithType: Joint3D<T, K>.FillJointDef
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.FillJointDef
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: K
+    nameWithType: K
+    fullName: K
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.FillJointDef(`1)
+    name: FillJointDef
+    nameWithType: Joint3D(Of T, K).FillJointDef
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).FillJointDef
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: K
+    nameWithType: K
+    fullName: K
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.GetFrameZ(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@)
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D`2.GetFrameZ(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@)
+  name: GetFrameZ(Vector3, Vector3, Vector3)
+  nameWithType: Joint3D<T, K>.GetFrameZ(Vector3, Vector3, Vector3)
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.GetFrameZ(WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3)
+  nameWithType.vb: Joint3D(Of T, K).GetFrameZ(Vector3, Vector3, Vector3)
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).GetFrameZ(WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.GetFrameZ(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@)
+    name: GetFrameZ
+    nameWithType: Joint3D<T, K>.GetFrameZ
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.GetFrameZ
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.GetFrameZ(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@)
+    name: GetFrameZ
+    nameWithType: Joint3D(Of T, K).GetFrameZ
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).GetFrameZ
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Physics3D.Joint3D`2.GetFrameX(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@)
+  commentId: M:WaveEngine.Framework.Physics3D.Joint3D`2.GetFrameX(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@)
+  name: GetFrameX(Vector3, Vector3, Vector3)
+  nameWithType: Joint3D<T, K>.GetFrameX(Vector3, Vector3, Vector3)
+  fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.GetFrameX(WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3)
+  nameWithType.vb: Joint3D(Of T, K).GetFrameX(Vector3, Vector3, Vector3)
+  fullName.vb: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).GetFrameX(WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.GetFrameX(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@)
+    name: GetFrameX
+    nameWithType: Joint3D<T, K>.GetFrameX
+    fullName: WaveEngine.Framework.Physics3D.Joint3D<T, K>.GetFrameX
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Physics3D.Joint3D`2.GetFrameX(WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@,WaveEngine.Common.Math.Vector3@)
+    name: GetFrameX
+    nameWithType: Joint3D(Of T, K).GetFrameX
+    fullName: WaveEngine.Framework.Physics3D.Joint3D(Of T, K).GetFrameX
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Common.Math.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: WaveEngine.Common.Math.Vector3
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.Axis*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.Axis
+  name: Axis
+  nameWithType: SliderJoint3D.Axis
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.Axis
+- uid: WaveEngine.Common.Math.Vector3
+  commentId: T:WaveEngine.Common.Math.Vector3
+  parent: WaveEngine.Common.Math
+  name: Vector3
+  nameWithType: Vector3
+  fullName: WaveEngine.Common.Math.Vector3
+- uid: WaveEngine.Common.Math
+  commentId: N:WaveEngine.Common.Math
+  name: WaveEngine.Common.Math
+  nameWithType: WaveEngine.Common.Math
+  fullName: WaveEngine.Common.Math
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.Anchor*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.Anchor
+  name: Anchor
+  nameWithType: SliderJoint3D.Anchor
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.Anchor
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.AutoConfigureConnected*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.AutoConfigureConnected
+  name: AutoConfigureConnected
+  nameWithType: SliderJoint3D.AutoConfigureConnected
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.AutoConfigureConnected
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.ConnectedAxis*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.ConnectedAxis
+  name: ConnectedAxis
+  nameWithType: SliderJoint3D.ConnectedAxis
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.ConnectedAxis
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.ConnectedAnchor*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.ConnectedAnchor
+  name: ConnectedAnchor
+  nameWithType: SliderJoint3D.ConnectedAnchor
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.ConnectedAnchor
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.UseLinearLimit*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.UseLinearLimit
+  name: UseLinearLimit
+  nameWithType: SliderJoint3D.UseLinearLimit
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.UseLinearLimit
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.LowerLinearLimit*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.LowerLinearLimit
+  name: LowerLinearLimit
+  nameWithType: SliderJoint3D.LowerLinearLimit
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.LowerLinearLimit
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.UpperLinearLimit*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.UpperLinearLimit
+  name: UpperLinearLimit
+  nameWithType: SliderJoint3D.UpperLinearLimit
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.UpperLinearLimit
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.UseAngularLimit*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.UseAngularLimit
+  name: UseAngularLimit
+  nameWithType: SliderJoint3D.UseAngularLimit
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.UseAngularLimit
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.LowerAngularLimit*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.LowerAngularLimit
+  name: LowerAngularLimit
+  nameWithType: SliderJoint3D.LowerAngularLimit
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.LowerAngularLimit
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.UpperAngularLimit*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.UpperAngularLimit
+  name: UpperAngularLimit
+  nameWithType: SliderJoint3D.UpperAngularLimit
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.UpperAngularLimit
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.UseLinearMotor*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.UseLinearMotor
+  name: UseLinearMotor
+  nameWithType: SliderJoint3D.UseLinearMotor
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.UseLinearMotor
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.MaxLinearMotorForce*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.MaxLinearMotorForce
+  name: MaxLinearMotorForce
+  nameWithType: SliderJoint3D.MaxLinearMotorForce
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.MaxLinearMotorForce
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.TargetLinearMotorVelocity*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.TargetLinearMotorVelocity
+  name: TargetLinearMotorVelocity
+  nameWithType: SliderJoint3D.TargetLinearMotorVelocity
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.TargetLinearMotorVelocity
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.UseAngularMotor*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.UseAngularMotor
+  name: UseAngularMotor
+  nameWithType: SliderJoint3D.UseAngularMotor
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.UseAngularMotor
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.MaxAngularMotorForce*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.MaxAngularMotorForce
+  name: MaxAngularMotorForce
+  nameWithType: SliderJoint3D.MaxAngularMotorForce
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.MaxAngularMotorForce
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.TargetAngularMotorVelocity*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.TargetAngularMotorVelocity
+  name: TargetAngularMotorVelocity
+  nameWithType: SliderJoint3D.TargetAngularMotorVelocity
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.TargetAngularMotorVelocity
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D
+  commentId: T:WaveEngine.Framework.Physics3D.SliderJoint3D
+  name: SliderJoint3D
+  nameWithType: SliderJoint3D
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.#ctor*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.#ctor
+  name: SliderJoint3D
+  nameWithType: SliderJoint3D.SliderJoint3D
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.SliderJoint3D
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.DefaultValues*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.DefaultValues
+  name: DefaultValues
+  nameWithType: SliderJoint3D.DefaultValues
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.DefaultValues
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.Initialize*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.Initialize
+  name: Initialize
+  nameWithType: SliderJoint3D.Initialize
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.Initialize
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.InitJoint*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.InitJoint
+  name: InitJoint
+  nameWithType: SliderJoint3D.InitJoint
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.InitJoint
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.BodyAChanged*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.BodyAChanged
+  name: BodyAChanged
+  nameWithType: SliderJoint3D.BodyAChanged
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.BodyAChanged
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.BodyBChanged*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.BodyBChanged
+  name: BodyBChanged
+  nameWithType: SliderJoint3D.BodyBChanged
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.BodyBChanged
+- uid: WaveEngine.Framework.Physics3D.SliderJoint3D.FillJointDef*
+  commentId: Overload:WaveEngine.Framework.Physics3D.SliderJoint3D.FillJointDef
+  name: FillJointDef
+  nameWithType: SliderJoint3D.FillJointDef
+  fullName: WaveEngine.Framework.Physics3D.SliderJoint3D.FillJointDef
+- uid: WaveEngine.Common.Physics3D.SliderJointDef3D
+  commentId: T:WaveEngine.Common.Physics3D.SliderJointDef3D
+  parent: WaveEngine.Common.Physics3D
+  name: SliderJointDef3D
+  nameWithType: SliderJointDef3D
+  fullName: WaveEngine.Common.Physics3D.SliderJointDef3D
+- uid: WaveEngine.Common.Physics3D
+  commentId: N:WaveEngine.Common.Physics3D
+  name: WaveEngine.Common.Physics3D
+  nameWithType: WaveEngine.Common.Physics3D
+  fullName: WaveEngine.Common.Physics3D

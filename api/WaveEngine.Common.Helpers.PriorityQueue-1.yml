@@ -1,0 +1,902 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Common.Helpers.PriorityQueue`1
+  commentId: T:WaveEngine.Common.Helpers.PriorityQueue`1
+  id: PriorityQueue`1
+  parent: WaveEngine.Common.Helpers
+  children:
+  - WaveEngine.Common.Helpers.PriorityQueue`1.#ctor(System.Int32)
+  - WaveEngine.Common.Helpers.PriorityQueue`1.Clear
+  - WaveEngine.Common.Helpers.PriorityQueue`1.Contains(`0)
+  - WaveEngine.Common.Helpers.PriorityQueue`1.Count
+  - WaveEngine.Common.Helpers.PriorityQueue`1.Dequeue
+  - WaveEngine.Common.Helpers.PriorityQueue`1.Enqueue(`0,System.Double)
+  - WaveEngine.Common.Helpers.PriorityQueue`1.First
+  - WaveEngine.Common.Helpers.PriorityQueue`1.Remove(`0)
+  langs:
+  - csharp
+  - vb
+  name: PriorityQueue<T>
+  nameWithType: PriorityQueue<T>
+  fullName: WaveEngine.Common.Helpers.PriorityQueue<T>
+  type: Class
+  source:
+    id: PriorityQueue
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Helpers\PriorityQueue`1.cs
+    startLine: 16
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Helpers
+  summary: "\nAn implementation of a min-Priority Queue using a heap.  Has O(1) .Contains()!\nSee https://bitbucket.org/BlueRaja/high-speed-priority-queue-for-c/wiki/Getting%20Started for more information\n"
+  example: []
+  syntax:
+    content: >-
+      public sealed class PriorityQueue<T>
+
+          where T : PriorityQueueNode
+    typeParameters:
+    - id: T
+      description: The values in the queue.  Must implement the PriorityQueueNode interface
+    content.vb: Public NotInheritable Class PriorityQueue(Of T As PriorityQueueNode)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  nameWithType.vb: PriorityQueue(Of T)
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  fullName.vb: WaveEngine.Common.Helpers.PriorityQueue(Of T)
+  name.vb: PriorityQueue(Of T)
+- uid: WaveEngine.Common.Helpers.PriorityQueue`1.Count
+  commentId: P:WaveEngine.Common.Helpers.PriorityQueue`1.Count
+  id: Count
+  parent: WaveEngine.Common.Helpers.PriorityQueue`1
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: PriorityQueue<T>.Count
+  fullName: WaveEngine.Common.Helpers.PriorityQueue<T>.Count
+  type: Property
+  source:
+    id: Count
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Helpers\PriorityQueue`1.cs
+    startLine: 45
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Helpers
+  summary: "\nGets the number of nodes.\n"
+  example: []
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\nThe count.\n"
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: WaveEngine.Common.Helpers.PriorityQueue`1.Count*
+  nameWithType.vb: PriorityQueue(Of T).Count
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: WaveEngine.Common.Helpers.PriorityQueue(Of T).Count
+- uid: WaveEngine.Common.Helpers.PriorityQueue`1.First
+  commentId: P:WaveEngine.Common.Helpers.PriorityQueue`1.First
+  id: First
+  parent: WaveEngine.Common.Helpers.PriorityQueue`1
+  langs:
+  - csharp
+  - vb
+  name: First
+  nameWithType: PriorityQueue<T>.First
+  fullName: WaveEngine.Common.Helpers.PriorityQueue<T>.First
+  type: Property
+  source:
+    id: First
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Helpers\PriorityQueue`1.cs
+    startLine: 59
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Helpers
+  summary: "\nGets the head of the queue, without removing it (use Dequeue() for that).  O(1)\n"
+  example: []
+  syntax:
+    content: public T First { get; }
+    parameters: []
+    return:
+      type: '{T}'
+      description: "\nReturns the head of the queue, without removing it (use Dequeue() for that).  O(1)\n"
+    content.vb: Public ReadOnly Property First As T
+  overload: WaveEngine.Common.Helpers.PriorityQueue`1.First*
+  nameWithType.vb: PriorityQueue(Of T).First
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: WaveEngine.Common.Helpers.PriorityQueue(Of T).First
+- uid: WaveEngine.Common.Helpers.PriorityQueue`1.#ctor(System.Int32)
+  commentId: M:WaveEngine.Common.Helpers.PriorityQueue`1.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: WaveEngine.Common.Helpers.PriorityQueue`1
+  langs:
+  - csharp
+  - vb
+  name: PriorityQueue(Int32)
+  nameWithType: PriorityQueue<T>.PriorityQueue(Int32)
+  fullName: WaveEngine.Common.Helpers.PriorityQueue<T>.PriorityQueue(System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Helpers\PriorityQueue`1.cs
+    startLine: 74
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Helpers
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Common.Helpers.PriorityQueue%601\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public PriorityQueue(int maxNodes)
+    parameters:
+    - id: maxNodes
+      type: System.Int32
+      description: The max nodes ever allowed to be enqueued (going over this will cause an exception)
+    content.vb: Public Sub New(maxNodes As Integer)
+  overload: WaveEngine.Common.Helpers.PriorityQueue`1.#ctor*
+  nameWithType.vb: PriorityQueue(Of T).PriorityQueue(Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Helpers.PriorityQueue(Of T).PriorityQueue(System.Int32)
+- uid: WaveEngine.Common.Helpers.PriorityQueue`1.Clear
+  commentId: M:WaveEngine.Common.Helpers.PriorityQueue`1.Clear
+  id: Clear
+  parent: WaveEngine.Common.Helpers.PriorityQueue`1
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: PriorityQueue<T>.Clear()
+  fullName: WaveEngine.Common.Helpers.PriorityQueue<T>.Clear()
+  type: Method
+  source:
+    id: Clear
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Helpers\PriorityQueue`1.cs
+    startLine: 88
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Helpers
+  summary: "\nClears this instance.\n"
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+  overload: WaveEngine.Common.Helpers.PriorityQueue`1.Clear*
+  nameWithType.vb: PriorityQueue(Of T).Clear()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Helpers.PriorityQueue(Of T).Clear()
+- uid: WaveEngine.Common.Helpers.PriorityQueue`1.Enqueue(`0,System.Double)
+  commentId: M:WaveEngine.Common.Helpers.PriorityQueue`1.Enqueue(`0,System.Double)
+  id: Enqueue(`0,System.Double)
+  parent: WaveEngine.Common.Helpers.PriorityQueue`1
+  langs:
+  - csharp
+  - vb
+  name: Enqueue(T, Double)
+  nameWithType: PriorityQueue<T>.Enqueue(T, Double)
+  fullName: WaveEngine.Common.Helpers.PriorityQueue<T>.Enqueue(T, System.Double)
+  type: Method
+  source:
+    id: Enqueue
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Helpers\PriorityQueue`1.cs
+    startLine: 99
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Helpers
+  summary: "\nEnqueues the specified node.\n"
+  example: []
+  syntax:
+    content: public void Enqueue(T node, double priority)
+    parameters:
+    - id: node
+      type: '{T}'
+      description: The node.
+    - id: priority
+      type: System.Double
+      description: The priority.
+    content.vb: Public Sub Enqueue(node As T, priority As Double)
+  overload: WaveEngine.Common.Helpers.PriorityQueue`1.Enqueue*
+  nameWithType.vb: PriorityQueue(Of T).Enqueue(T, Double)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Helpers.PriorityQueue(Of T).Enqueue(T, System.Double)
+- uid: WaveEngine.Common.Helpers.PriorityQueue`1.Dequeue
+  commentId: M:WaveEngine.Common.Helpers.PriorityQueue`1.Dequeue
+  id: Dequeue
+  parent: WaveEngine.Common.Helpers.PriorityQueue`1
+  langs:
+  - csharp
+  - vb
+  name: Dequeue()
+  nameWithType: PriorityQueue<T>.Dequeue()
+  fullName: WaveEngine.Common.Helpers.PriorityQueue<T>.Dequeue()
+  type: Method
+  source:
+    id: Dequeue
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Helpers\PriorityQueue`1.cs
+    startLine: 113
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Helpers
+  summary: "\nRemoves the head of the queue (node with highest priority; ties are broken by order of insertion), and returns it.  O(log n)\n"
+  example: []
+  syntax:
+    content: public T Dequeue()
+    return:
+      type: '{T}'
+      description: The dequeued node
+    content.vb: Public Function Dequeue As T
+  overload: WaveEngine.Common.Helpers.PriorityQueue`1.Dequeue*
+  nameWithType.vb: PriorityQueue(Of T).Dequeue()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Helpers.PriorityQueue(Of T).Dequeue()
+- uid: WaveEngine.Common.Helpers.PriorityQueue`1.Remove(`0)
+  commentId: M:WaveEngine.Common.Helpers.PriorityQueue`1.Remove(`0)
+  id: Remove(`0)
+  parent: WaveEngine.Common.Helpers.PriorityQueue`1
+  langs:
+  - csharp
+  - vb
+  name: Remove(T)
+  nameWithType: PriorityQueue<T>.Remove(T)
+  fullName: WaveEngine.Common.Helpers.PriorityQueue<T>.Remove(T)
+  type: Method
+  source:
+    id: Remove
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Helpers\PriorityQueue`1.cs
+    startLine: 124
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Helpers
+  summary: "\nRemoves a node from the queue.  Note that the node does not need to be the head of the queue.  O(log n)\n"
+  example: []
+  syntax:
+    content: public void Remove(T node)
+    parameters:
+    - id: node
+      type: '{T}'
+      description: The node.
+    content.vb: Public Sub Remove(node As T)
+  overload: WaveEngine.Common.Helpers.PriorityQueue`1.Remove*
+  nameWithType.vb: PriorityQueue(Of T).Remove(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Helpers.PriorityQueue(Of T).Remove(T)
+- uid: WaveEngine.Common.Helpers.PriorityQueue`1.Contains(`0)
+  commentId: M:WaveEngine.Common.Helpers.PriorityQueue`1.Contains(`0)
+  id: Contains(`0)
+  parent: WaveEngine.Common.Helpers.PriorityQueue`1
+  langs:
+  - csharp
+  - vb
+  name: Contains(T)
+  nameWithType: PriorityQueue<T>.Contains(T)
+  fullName: WaveEngine.Common.Helpers.PriorityQueue<T>.Contains(T)
+  type: Method
+  source:
+    id: Contains
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Helpers\PriorityQueue`1.cs
+    startLine: 163
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Helpers
+  summary: "\nDetermines whether [contains] [the specified node].\n"
+  example: []
+  syntax:
+    content: public bool Contains(T node)
+    parameters:
+    - id: node
+      type: '{T}'
+      description: The node.
+    return:
+      type: System.Boolean
+      description: True if contains the node, false in other case
+    content.vb: Public Function Contains(node As T) As Boolean
+  overload: WaveEngine.Common.Helpers.PriorityQueue`1.Contains*
+  nameWithType.vb: PriorityQueue(Of T).Contains(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Helpers.PriorityQueue(Of T).Contains(T)
+references:
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.PriorityQueue`1.Count*
+  commentId: Overload:WaveEngine.Common.Helpers.PriorityQueue`1.Count
+  name: Count
+  nameWithType: PriorityQueue<T>.Count
+  fullName: WaveEngine.Common.Helpers.PriorityQueue<T>.Count
+  nameWithType.vb: PriorityQueue(Of T).Count
+  fullName.vb: WaveEngine.Common.Helpers.PriorityQueue(Of T).Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: WaveEngine.Common.Helpers.PriorityQueue`1.First*
+  commentId: Overload:WaveEngine.Common.Helpers.PriorityQueue`1.First
+  name: First
+  nameWithType: PriorityQueue<T>.First
+  fullName: WaveEngine.Common.Helpers.PriorityQueue<T>.First
+  nameWithType.vb: PriorityQueue(Of T).First
+  fullName.vb: WaveEngine.Common.Helpers.PriorityQueue(Of T).First
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: WaveEngine.Common.Helpers.PriorityQueue`1
+  commentId: T:WaveEngine.Common.Helpers.PriorityQueue`1
+  name: PriorityQueue<T>
+  nameWithType: PriorityQueue<T>
+  fullName: WaveEngine.Common.Helpers.PriorityQueue<T>
+  nameWithType.vb: PriorityQueue(Of T)
+  fullName.vb: WaveEngine.Common.Helpers.PriorityQueue(Of T)
+  name.vb: PriorityQueue(Of T)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.PriorityQueue`1
+    name: PriorityQueue
+    nameWithType: PriorityQueue
+    fullName: WaveEngine.Common.Helpers.PriorityQueue
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.PriorityQueue`1
+    name: PriorityQueue
+    nameWithType: PriorityQueue
+    fullName: WaveEngine.Common.Helpers.PriorityQueue
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.PriorityQueue`1.#ctor*
+  commentId: Overload:WaveEngine.Common.Helpers.PriorityQueue`1.#ctor
+  name: PriorityQueue
+  nameWithType: PriorityQueue<T>.PriorityQueue
+  fullName: WaveEngine.Common.Helpers.PriorityQueue<T>.PriorityQueue
+  nameWithType.vb: PriorityQueue(Of T).PriorityQueue
+  fullName.vb: WaveEngine.Common.Helpers.PriorityQueue(Of T).PriorityQueue
+- uid: WaveEngine.Common.Helpers.PriorityQueue`1.Clear*
+  commentId: Overload:WaveEngine.Common.Helpers.PriorityQueue`1.Clear
+  name: Clear
+  nameWithType: PriorityQueue<T>.Clear
+  fullName: WaveEngine.Common.Helpers.PriorityQueue<T>.Clear
+  nameWithType.vb: PriorityQueue(Of T).Clear
+  fullName.vb: WaveEngine.Common.Helpers.PriorityQueue(Of T).Clear
+- uid: WaveEngine.Common.Helpers.PriorityQueue`1.Enqueue*
+  commentId: Overload:WaveEngine.Common.Helpers.PriorityQueue`1.Enqueue
+  name: Enqueue
+  nameWithType: PriorityQueue<T>.Enqueue
+  fullName: WaveEngine.Common.Helpers.PriorityQueue<T>.Enqueue
+  nameWithType.vb: PriorityQueue(Of T).Enqueue
+  fullName.vb: WaveEngine.Common.Helpers.PriorityQueue(Of T).Enqueue
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: WaveEngine.Common.Helpers.PriorityQueue`1.Dequeue*
+  commentId: Overload:WaveEngine.Common.Helpers.PriorityQueue`1.Dequeue
+  name: Dequeue
+  nameWithType: PriorityQueue<T>.Dequeue
+  fullName: WaveEngine.Common.Helpers.PriorityQueue<T>.Dequeue
+  nameWithType.vb: PriorityQueue(Of T).Dequeue
+  fullName.vb: WaveEngine.Common.Helpers.PriorityQueue(Of T).Dequeue
+- uid: WaveEngine.Common.Helpers.PriorityQueue`1.Remove*
+  commentId: Overload:WaveEngine.Common.Helpers.PriorityQueue`1.Remove
+  name: Remove
+  nameWithType: PriorityQueue<T>.Remove
+  fullName: WaveEngine.Common.Helpers.PriorityQueue<T>.Remove
+  nameWithType.vb: PriorityQueue(Of T).Remove
+  fullName.vb: WaveEngine.Common.Helpers.PriorityQueue(Of T).Remove
+- uid: WaveEngine.Common.Helpers.PriorityQueue`1.Contains*
+  commentId: Overload:WaveEngine.Common.Helpers.PriorityQueue`1.Contains
+  name: Contains
+  nameWithType: PriorityQueue<T>.Contains
+  fullName: WaveEngine.Common.Helpers.PriorityQueue<T>.Contains
+  nameWithType.vb: PriorityQueue(Of T).Contains
+  fullName.vb: WaveEngine.Common.Helpers.PriorityQueue(Of T).Contains
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

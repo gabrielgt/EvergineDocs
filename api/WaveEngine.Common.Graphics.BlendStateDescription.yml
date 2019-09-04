@@ -1,0 +1,1352 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Common.Graphics.BlendStateDescription
+  commentId: T:WaveEngine.Common.Graphics.BlendStateDescription
+  id: BlendStateDescription
+  parent: WaveEngine.Common.Graphics
+  children:
+  - WaveEngine.Common.Graphics.BlendStateDescription.AlphaToCoverageEnable
+  - WaveEngine.Common.Graphics.BlendStateDescription.Default
+  - WaveEngine.Common.Graphics.BlendStateDescription.Equals(System.Object)
+  - WaveEngine.Common.Graphics.BlendStateDescription.Equals(WaveEngine.Common.Graphics.BlendStateDescription)
+  - WaveEngine.Common.Graphics.BlendStateDescription.GetHashCode
+  - WaveEngine.Common.Graphics.BlendStateDescription.IndependentBlendEnable
+  - WaveEngine.Common.Graphics.BlendStateDescription.op_Equality(WaveEngine.Common.Graphics.BlendStateDescription,WaveEngine.Common.Graphics.BlendStateDescription)
+  - WaveEngine.Common.Graphics.BlendStateDescription.op_Inequality(WaveEngine.Common.Graphics.BlendStateDescription,WaveEngine.Common.Graphics.BlendStateDescription)
+  - WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget0
+  - WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget1
+  - WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget2
+  - WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget3
+  - WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget4
+  - WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget5
+  - WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget6
+  - WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget7
+  - WaveEngine.Common.Graphics.BlendStateDescription.SetDefault
+  langs:
+  - csharp
+  - vb
+  name: BlendStateDescription
+  nameWithType: BlendStateDescription
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription
+  type: Struct
+  source:
+    id: BlendStateDescription
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\BlendStateDescription.cs
+    startLine: 14
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nDescribes the blend state.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract(Namespace = "WaveEngine.Common.Graphics")]
+
+      public struct BlendStateDescription : IEquatable<BlendStateDescription>
+    content.vb: >-
+      <DataContract(Namespace:="WaveEngine.Common.Graphics")>
+
+      Public Structure BlendStateDescription
+
+          Implements IEquatable(Of BlendStateDescription)
+  implements:
+  - System.IEquatable{WaveEngine.Common.Graphics.BlendStateDescription}
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Namespace
+      type: System.String
+      value: WaveEngine.Common.Graphics
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: WaveEngine.Common.Graphics.BlendStateDescription.AlphaToCoverageEnable
+  commentId: F:WaveEngine.Common.Graphics.BlendStateDescription.AlphaToCoverageEnable
+  id: AlphaToCoverageEnable
+  parent: WaveEngine.Common.Graphics.BlendStateDescription
+  langs:
+  - csharp
+  - vb
+  name: AlphaToCoverageEnable
+  nameWithType: BlendStateDescription.AlphaToCoverageEnable
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription.AlphaToCoverageEnable
+  type: Field
+  source:
+    id: AlphaToCoverageEnable
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\BlendStateDescription.cs
+    startLine: 22
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nSpecifies whether to use alpha-to-coverage as a multisampling technique when setting a pixel to a render target.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public bool AlphaToCoverageEnable
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <DataMember>
+
+      Public AlphaToCoverageEnable As Boolean
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.BlendStateDescription.IndependentBlendEnable
+  commentId: F:WaveEngine.Common.Graphics.BlendStateDescription.IndependentBlendEnable
+  id: IndependentBlendEnable
+  parent: WaveEngine.Common.Graphics.BlendStateDescription
+  langs:
+  - csharp
+  - vb
+  name: IndependentBlendEnable
+  nameWithType: BlendStateDescription.IndependentBlendEnable
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription.IndependentBlendEnable
+  type: Field
+  source:
+    id: IndependentBlendEnable
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\BlendStateDescription.cs
+    startLine: 29
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nSpecifies whether to enable independent blending in simultaneous render targets. Set to TRUE to enable independent blending.\nIf set to FALSE, only the RenderTarget[0] members are used; RenderTarget[1..7] are ignored.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public bool IndependentBlendEnable
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <DataMember>
+
+      Public IndependentBlendEnable As Boolean
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget0
+  commentId: F:WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget0
+  id: RenderTarget0
+  parent: WaveEngine.Common.Graphics.BlendStateDescription
+  langs:
+  - csharp
+  - vb
+  name: RenderTarget0
+  nameWithType: BlendStateDescription.RenderTarget0
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget0
+  type: Field
+  source:
+    id: RenderTarget0
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\BlendStateDescription.cs
+    startLine: 36
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nRenderTarget blend description 0 / 7\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public BlendStateRenderTargetDescription RenderTarget0
+    return:
+      type: WaveEngine.Common.Graphics.BlendStateRenderTargetDescription
+    content.vb: >-
+      <DataMember>
+
+      Public RenderTarget0 As BlendStateRenderTargetDescription
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget1
+  commentId: F:WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget1
+  id: RenderTarget1
+  parent: WaveEngine.Common.Graphics.BlendStateDescription
+  langs:
+  - csharp
+  - vb
+  name: RenderTarget1
+  nameWithType: BlendStateDescription.RenderTarget1
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget1
+  type: Field
+  source:
+    id: RenderTarget1
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\BlendStateDescription.cs
+    startLine: 42
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nRenderTarget blend description 1 / 7\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public BlendStateRenderTargetDescription RenderTarget1
+    return:
+      type: WaveEngine.Common.Graphics.BlendStateRenderTargetDescription
+    content.vb: >-
+      <DataMember>
+
+      Public RenderTarget1 As BlendStateRenderTargetDescription
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget2
+  commentId: F:WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget2
+  id: RenderTarget2
+  parent: WaveEngine.Common.Graphics.BlendStateDescription
+  langs:
+  - csharp
+  - vb
+  name: RenderTarget2
+  nameWithType: BlendStateDescription.RenderTarget2
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget2
+  type: Field
+  source:
+    id: RenderTarget2
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\BlendStateDescription.cs
+    startLine: 48
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nRenderTarget blend description 2 / 7\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public BlendStateRenderTargetDescription RenderTarget2
+    return:
+      type: WaveEngine.Common.Graphics.BlendStateRenderTargetDescription
+    content.vb: >-
+      <DataMember>
+
+      Public RenderTarget2 As BlendStateRenderTargetDescription
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget3
+  commentId: F:WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget3
+  id: RenderTarget3
+  parent: WaveEngine.Common.Graphics.BlendStateDescription
+  langs:
+  - csharp
+  - vb
+  name: RenderTarget3
+  nameWithType: BlendStateDescription.RenderTarget3
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget3
+  type: Field
+  source:
+    id: RenderTarget3
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\BlendStateDescription.cs
+    startLine: 54
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nRenderTarget blend description 3 / 7\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public BlendStateRenderTargetDescription RenderTarget3
+    return:
+      type: WaveEngine.Common.Graphics.BlendStateRenderTargetDescription
+    content.vb: >-
+      <DataMember>
+
+      Public RenderTarget3 As BlendStateRenderTargetDescription
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget4
+  commentId: F:WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget4
+  id: RenderTarget4
+  parent: WaveEngine.Common.Graphics.BlendStateDescription
+  langs:
+  - csharp
+  - vb
+  name: RenderTarget4
+  nameWithType: BlendStateDescription.RenderTarget4
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget4
+  type: Field
+  source:
+    id: RenderTarget4
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\BlendStateDescription.cs
+    startLine: 60
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nRenderTarget blend description 4 / 7\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public BlendStateRenderTargetDescription RenderTarget4
+    return:
+      type: WaveEngine.Common.Graphics.BlendStateRenderTargetDescription
+    content.vb: >-
+      <DataMember>
+
+      Public RenderTarget4 As BlendStateRenderTargetDescription
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget5
+  commentId: F:WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget5
+  id: RenderTarget5
+  parent: WaveEngine.Common.Graphics.BlendStateDescription
+  langs:
+  - csharp
+  - vb
+  name: RenderTarget5
+  nameWithType: BlendStateDescription.RenderTarget5
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget5
+  type: Field
+  source:
+    id: RenderTarget5
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\BlendStateDescription.cs
+    startLine: 66
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nRenderTarget blend description 5 / 7\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public BlendStateRenderTargetDescription RenderTarget5
+    return:
+      type: WaveEngine.Common.Graphics.BlendStateRenderTargetDescription
+    content.vb: >-
+      <DataMember>
+
+      Public RenderTarget5 As BlendStateRenderTargetDescription
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget6
+  commentId: F:WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget6
+  id: RenderTarget6
+  parent: WaveEngine.Common.Graphics.BlendStateDescription
+  langs:
+  - csharp
+  - vb
+  name: RenderTarget6
+  nameWithType: BlendStateDescription.RenderTarget6
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget6
+  type: Field
+  source:
+    id: RenderTarget6
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\BlendStateDescription.cs
+    startLine: 72
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nRenderTarget blend description 6 / 7\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public BlendStateRenderTargetDescription RenderTarget6
+    return:
+      type: WaveEngine.Common.Graphics.BlendStateRenderTargetDescription
+    content.vb: >-
+      <DataMember>
+
+      Public RenderTarget6 As BlendStateRenderTargetDescription
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget7
+  commentId: F:WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget7
+  id: RenderTarget7
+  parent: WaveEngine.Common.Graphics.BlendStateDescription
+  langs:
+  - csharp
+  - vb
+  name: RenderTarget7
+  nameWithType: BlendStateDescription.RenderTarget7
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription.RenderTarget7
+  type: Field
+  source:
+    id: RenderTarget7
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\BlendStateDescription.cs
+    startLine: 78
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nRenderTarget blend description 7 / 7\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public BlendStateRenderTargetDescription RenderTarget7
+    return:
+      type: WaveEngine.Common.Graphics.BlendStateRenderTargetDescription
+    content.vb: >-
+      <DataMember>
+
+      Public RenderTarget7 As BlendStateRenderTargetDescription
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.BlendStateDescription.Default
+  commentId: P:WaveEngine.Common.Graphics.BlendStateDescription.Default
+  id: Default
+  parent: WaveEngine.Common.Graphics.BlendStateDescription
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: BlendStateDescription.Default
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription.Default
+  type: Property
+  source:
+    id: Default
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\BlendStateDescription.cs
+    startLine: 83
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nGets default values for BlendStateDescription.\n"
+  example: []
+  syntax:
+    content: public static BlendStateDescription Default { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Common.Graphics.BlendStateDescription
+    content.vb: Public Shared ReadOnly Property Default As BlendStateDescription
+  overload: WaveEngine.Common.Graphics.BlendStateDescription.Default*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: WaveEngine.Common.Graphics.BlendStateDescription.SetDefault
+  commentId: M:WaveEngine.Common.Graphics.BlendStateDescription.SetDefault
+  id: SetDefault
+  parent: WaveEngine.Common.Graphics.BlendStateDescription
+  langs:
+  - csharp
+  - vb
+  name: SetDefault()
+  nameWithType: BlendStateDescription.SetDefault()
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription.SetDefault()
+  type: Method
+  source:
+    id: SetDefault
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\BlendStateDescription.cs
+    startLine: 96
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nDefault BlendStateDescription values.\n"
+  example: []
+  syntax:
+    content: public void SetDefault()
+    content.vb: Public Sub SetDefault
+  overload: WaveEngine.Common.Graphics.BlendStateDescription.SetDefault*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.BlendStateDescription.Equals(WaveEngine.Common.Graphics.BlendStateDescription)
+  commentId: M:WaveEngine.Common.Graphics.BlendStateDescription.Equals(WaveEngine.Common.Graphics.BlendStateDescription)
+  id: Equals(WaveEngine.Common.Graphics.BlendStateDescription)
+  parent: WaveEngine.Common.Graphics.BlendStateDescription
+  langs:
+  - csharp
+  - vb
+  name: Equals(BlendStateDescription)
+  nameWithType: BlendStateDescription.Equals(BlendStateDescription)
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription.Equals(WaveEngine.Common.Graphics.BlendStateDescription)
+  type: Method
+  source:
+    id: Equals
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\BlendStateDescription.cs
+    startLine: 117
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nReturns a hash code for this instance.\n"
+  example: []
+  syntax:
+    content: public bool Equals(BlendStateDescription other)
+    parameters:
+    - id: other
+      type: WaveEngine.Common.Graphics.BlendStateDescription
+      description: Other used to compare.
+    return:
+      type: System.Boolean
+      description: "\nA hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.\n"
+    content.vb: Public Function Equals(other As BlendStateDescription) As Boolean
+  overload: WaveEngine.Common.Graphics.BlendStateDescription.Equals*
+  implements:
+  - System.IEquatable{WaveEngine.Common.Graphics.BlendStateDescription}.Equals(WaveEngine.Common.Graphics.BlendStateDescription)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Graphics.BlendStateDescription.Equals(System.Object)
+  commentId: M:WaveEngine.Common.Graphics.BlendStateDescription.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: WaveEngine.Common.Graphics.BlendStateDescription
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: BlendStateDescription.Equals(Object)
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription.Equals(System.Object)
+  type: Method
+  source:
+    id: Equals
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\BlendStateDescription.cs
+    startLine: 143
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nDetermines whether the specified <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> is equal to this instance.\n"
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The <xref href="System.Object" data-throw-if-not-resolved="false"></xref> to compare with this instance.
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if the specified <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> is equal to this instance; otherwise, <code>false</code>.\n"
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: WaveEngine.Common.Graphics.BlendStateDescription.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: WaveEngine.Common.Graphics.BlendStateDescription.GetHashCode
+  commentId: M:WaveEngine.Common.Graphics.BlendStateDescription.GetHashCode
+  id: GetHashCode
+  parent: WaveEngine.Common.Graphics.BlendStateDescription
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: BlendStateDescription.GetHashCode()
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\BlendStateDescription.cs
+    startLine: 159
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nReturns a hash code for this instance.\n"
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: "\nA hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.\n"
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: WaveEngine.Common.Graphics.BlendStateDescription.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: WaveEngine.Common.Graphics.BlendStateDescription.op_Equality(WaveEngine.Common.Graphics.BlendStateDescription,WaveEngine.Common.Graphics.BlendStateDescription)
+  commentId: M:WaveEngine.Common.Graphics.BlendStateDescription.op_Equality(WaveEngine.Common.Graphics.BlendStateDescription,WaveEngine.Common.Graphics.BlendStateDescription)
+  id: op_Equality(WaveEngine.Common.Graphics.BlendStateDescription,WaveEngine.Common.Graphics.BlendStateDescription)
+  parent: WaveEngine.Common.Graphics.BlendStateDescription
+  langs:
+  - csharp
+  - vb
+  name: Equality(BlendStateDescription, BlendStateDescription)
+  nameWithType: BlendStateDescription.Equality(BlendStateDescription, BlendStateDescription)
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription.Equality(WaveEngine.Common.Graphics.BlendStateDescription, WaveEngine.Common.Graphics.BlendStateDescription)
+  type: Operator
+  source:
+    id: op_Equality
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\BlendStateDescription.cs
+    startLine: 186
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nImplements the operator ==.\n"
+  example: []
+  syntax:
+    content: public static bool operator ==(BlendStateDescription value1, BlendStateDescription value2)
+    parameters:
+    - id: value1
+      type: WaveEngine.Common.Graphics.BlendStateDescription
+      description: The value1.
+    - id: value2
+      type: WaveEngine.Common.Graphics.BlendStateDescription
+      description: The value2.
+    return:
+      type: System.Boolean
+      description: "\nThe result of the operator.\n"
+    content.vb: Public Shared Operator =(value1 As BlendStateDescription, value2 As BlendStateDescription) As Boolean
+  overload: WaveEngine.Common.Graphics.BlendStateDescription.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Common.Graphics.BlendStateDescription.op_Inequality(WaveEngine.Common.Graphics.BlendStateDescription,WaveEngine.Common.Graphics.BlendStateDescription)
+  commentId: M:WaveEngine.Common.Graphics.BlendStateDescription.op_Inequality(WaveEngine.Common.Graphics.BlendStateDescription,WaveEngine.Common.Graphics.BlendStateDescription)
+  id: op_Inequality(WaveEngine.Common.Graphics.BlendStateDescription,WaveEngine.Common.Graphics.BlendStateDescription)
+  parent: WaveEngine.Common.Graphics.BlendStateDescription
+  langs:
+  - csharp
+  - vb
+  name: Inequality(BlendStateDescription, BlendStateDescription)
+  nameWithType: BlendStateDescription.Inequality(BlendStateDescription, BlendStateDescription)
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription.Inequality(WaveEngine.Common.Graphics.BlendStateDescription, WaveEngine.Common.Graphics.BlendStateDescription)
+  type: Operator
+  source:
+    id: op_Inequality
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Graphics\RenderStates\BlendStateDescription.cs
+    startLine: 199
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Graphics
+  summary: "\nImplements the operator ==.\n"
+  example: []
+  syntax:
+    content: public static bool operator !=(BlendStateDescription value1, BlendStateDescription value2)
+    parameters:
+    - id: value1
+      type: WaveEngine.Common.Graphics.BlendStateDescription
+      description: The value1.
+    - id: value2
+      type: WaveEngine.Common.Graphics.BlendStateDescription
+      description: The value2.
+    return:
+      type: System.Boolean
+      description: "\nThe result of the operator.\n"
+    content.vb: Public Shared Operator <>(value1 As BlendStateDescription, value2 As BlendStateDescription) As Boolean
+  overload: WaveEngine.Common.Graphics.BlendStateDescription.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: WaveEngine.Common.Graphics
+  commentId: N:WaveEngine.Common.Graphics
+  name: WaveEngine.Common.Graphics
+  nameWithType: WaveEngine.Common.Graphics
+  fullName: WaveEngine.Common.Graphics
+- uid: System.IEquatable{WaveEngine.Common.Graphics.BlendStateDescription}
+  commentId: T:System.IEquatable{WaveEngine.Common.Graphics.BlendStateDescription}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<BlendStateDescription>
+  nameWithType: IEquatable<BlendStateDescription>
+  fullName: System.IEquatable<WaveEngine.Common.Graphics.BlendStateDescription>
+  nameWithType.vb: IEquatable(Of BlendStateDescription)
+  fullName.vb: System.IEquatable(Of WaveEngine.Common.Graphics.BlendStateDescription)
+  name.vb: IEquatable(Of BlendStateDescription)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Common.Graphics.BlendStateDescription
+    name: BlendStateDescription
+    nameWithType: BlendStateDescription
+    fullName: WaveEngine.Common.Graphics.BlendStateDescription
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Common.Graphics.BlendStateDescription
+    name: BlendStateDescription
+    nameWithType: BlendStateDescription
+    fullName: WaveEngine.Common.Graphics.BlendStateDescription
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Common.Graphics.BlendStateRenderTargetDescription
+  commentId: T:WaveEngine.Common.Graphics.BlendStateRenderTargetDescription
+  parent: WaveEngine.Common.Graphics
+  name: BlendStateRenderTargetDescription
+  nameWithType: BlendStateRenderTargetDescription
+  fullName: WaveEngine.Common.Graphics.BlendStateRenderTargetDescription
+- uid: WaveEngine.Common.Graphics.BlendStateDescription.Default*
+  commentId: Overload:WaveEngine.Common.Graphics.BlendStateDescription.Default
+  name: Default
+  nameWithType: BlendStateDescription.Default
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription.Default
+- uid: WaveEngine.Common.Graphics.BlendStateDescription
+  commentId: T:WaveEngine.Common.Graphics.BlendStateDescription
+  parent: WaveEngine.Common.Graphics
+  name: BlendStateDescription
+  nameWithType: BlendStateDescription
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription
+- uid: WaveEngine.Common.Graphics.BlendStateDescription.SetDefault*
+  commentId: Overload:WaveEngine.Common.Graphics.BlendStateDescription.SetDefault
+  name: SetDefault
+  nameWithType: BlendStateDescription.SetDefault
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription.SetDefault
+- uid: WaveEngine.Common.Graphics.BlendStateDescription.Equals*
+  commentId: Overload:WaveEngine.Common.Graphics.BlendStateDescription.Equals
+  name: Equals
+  nameWithType: BlendStateDescription.Equals
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription.Equals
+- uid: System.IEquatable{WaveEngine.Common.Graphics.BlendStateDescription}.Equals(WaveEngine.Common.Graphics.BlendStateDescription)
+  commentId: M:System.IEquatable{WaveEngine.Common.Graphics.BlendStateDescription}.Equals(WaveEngine.Common.Graphics.BlendStateDescription)
+  parent: System.IEquatable{WaveEngine.Common.Graphics.BlendStateDescription}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(BlendStateDescription)
+  nameWithType: IEquatable<BlendStateDescription>.Equals(BlendStateDescription)
+  fullName: System.IEquatable<WaveEngine.Common.Graphics.BlendStateDescription>.Equals(WaveEngine.Common.Graphics.BlendStateDescription)
+  nameWithType.vb: IEquatable(Of BlendStateDescription).Equals(BlendStateDescription)
+  fullName.vb: System.IEquatable(Of WaveEngine.Common.Graphics.BlendStateDescription).Equals(WaveEngine.Common.Graphics.BlendStateDescription)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<BlendStateDescription>.Equals
+    fullName: System.IEquatable<WaveEngine.Common.Graphics.BlendStateDescription>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Graphics.BlendStateDescription
+    name: BlendStateDescription
+    nameWithType: BlendStateDescription
+    fullName: WaveEngine.Common.Graphics.BlendStateDescription
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of BlendStateDescription).Equals
+    fullName: System.IEquatable(Of WaveEngine.Common.Graphics.BlendStateDescription).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Graphics.BlendStateDescription
+    name: BlendStateDescription
+    nameWithType: BlendStateDescription
+    fullName: WaveEngine.Common.Graphics.BlendStateDescription
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Graphics.BlendStateDescription.GetHashCode*
+  commentId: Overload:WaveEngine.Common.Graphics.BlendStateDescription.GetHashCode
+  name: GetHashCode
+  nameWithType: BlendStateDescription.GetHashCode
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: WaveEngine.Common.Graphics.BlendStateDescription.op_Equality*
+  commentId: Overload:WaveEngine.Common.Graphics.BlendStateDescription.op_Equality
+  name: Equality
+  nameWithType: BlendStateDescription.Equality
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription.Equality
+- uid: WaveEngine.Common.Graphics.BlendStateDescription.op_Inequality*
+  commentId: Overload:WaveEngine.Common.Graphics.BlendStateDescription.op_Inequality
+  name: Inequality
+  nameWithType: BlendStateDescription.Inequality
+  fullName: WaveEngine.Common.Graphics.BlendStateDescription.Inequality

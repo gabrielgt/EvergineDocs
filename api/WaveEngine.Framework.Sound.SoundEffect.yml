@@ -1,0 +1,1111 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Framework.Sound.SoundEffect
+  commentId: T:WaveEngine.Framework.Sound.SoundEffect
+  id: SoundEffect
+  parent: WaveEngine.Framework.Sound
+  children:
+  - WaveEngine.Framework.Sound.SoundEffect.#ctor
+  - WaveEngine.Framework.Sound.SoundEffect.adapter
+  - WaveEngine.Framework.Sound.SoundEffect.AssetPath
+  - WaveEngine.Framework.Sound.SoundEffect.CreateInstance
+  - WaveEngine.Framework.Sound.SoundEffect.Load(WaveEngine.Framework.Services.SoundPlayer,System.IO.Stream)
+  - WaveEngine.Framework.Sound.SoundEffect.ReaderVersion
+  - WaveEngine.Framework.Sound.SoundEffect.Unload
+  langs:
+  - csharp
+  - vb
+  name: SoundEffect
+  nameWithType: SoundEffect
+  fullName: WaveEngine.Framework.Sound.SoundEffect
+  type: Class
+  source:
+    id: SoundEffect
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Sound\SoundEffect.cs
+    startLine: 15
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Sound
+  summary: "\nThis class represent a sound effect.\n"
+  example: []
+  syntax:
+    content: 'public class SoundEffect : SoundBase, ILoadable<SoundPlayer>, ILoadable'
+    content.vb: >-
+      Public Class SoundEffect
+
+          Inherits SoundBase
+
+          Implements ILoadable(Of SoundPlayer), ILoadable
+  inheritance:
+  - System.Object
+  - WaveEngine.Common.Media.SoundBase
+  implements:
+  - WaveEngine.Common.ILoadable{WaveEngine.Framework.Services.SoundPlayer}
+  - WaveEngine.Common.ILoadable
+  inheritedMembers:
+  - WaveEngine.Common.Media.SoundBase.SoundHandle
+  - WaveEngine.Common.Media.SoundBase.IsValidSound
+  - WaveEngine.Common.Media.SoundBase.Path
+  - WaveEngine.Common.Media.SoundBase.SampleRate
+  - WaveEngine.Common.Media.SoundBase.BitsPerSample
+  - WaveEngine.Common.Media.SoundBase.Channels
+  - WaveEngine.Common.Media.SoundBase.PCMData
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WaveEngine.Framework.Sound.SoundEffect.adapter
+  commentId: F:WaveEngine.Framework.Sound.SoundEffect.adapter
+  id: adapter
+  parent: WaveEngine.Framework.Sound.SoundEffect
+  langs:
+  - csharp
+  - vb
+  name: adapter
+  nameWithType: SoundEffect.adapter
+  fullName: WaveEngine.Framework.Sound.SoundEffect.adapter
+  type: Field
+  source:
+    id: adapter
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Sound\SoundEffect.cs
+    startLine: 20
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Sound
+  summary: "\nHandle the adapter.\n"
+  example: []
+  syntax:
+    content: protected IAdapter adapter
+    return:
+      type: WaveEngine.Common.IAdapter
+    content.vb: Protected adapter As IAdapter
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: WaveEngine.Framework.Sound.SoundEffect.AssetPath
+  commentId: P:WaveEngine.Framework.Sound.SoundEffect.AssetPath
+  id: AssetPath
+  parent: WaveEngine.Framework.Sound.SoundEffect
+  langs:
+  - csharp
+  - vb
+  name: AssetPath
+  nameWithType: SoundEffect.AssetPath
+  fullName: WaveEngine.Framework.Sound.SoundEffect.AssetPath
+  type: Property
+  source:
+    id: AssetPath
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Sound\SoundEffect.cs
+    startLine: 35
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Sound
+  summary: "\nGets or sets the asset path.\n"
+  example: []
+  syntax:
+    content: public string AssetPath { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe asset path.\n"
+    content.vb: Public Property AssetPath As String
+  overload: WaveEngine.Framework.Sound.SoundEffect.AssetPath*
+  implements:
+  - WaveEngine.Common.ILoadable.AssetPath
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Sound.SoundEffect.ReaderVersion
+  commentId: P:WaveEngine.Framework.Sound.SoundEffect.ReaderVersion
+  id: ReaderVersion
+  parent: WaveEngine.Framework.Sound.SoundEffect
+  langs:
+  - csharp
+  - vb
+  name: ReaderVersion
+  nameWithType: SoundEffect.ReaderVersion
+  fullName: WaveEngine.Framework.Sound.SoundEffect.ReaderVersion
+  type: Property
+  source:
+    id: ReaderVersion
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Sound\SoundEffect.cs
+    startLine: 43
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Sound
+  summary: "\nGets the reader version.\n"
+  example: []
+  syntax:
+    content: public Version ReaderVersion { get; }
+    parameters: []
+    return:
+      type: System.Version
+      description: "\nThe reader version.\n"
+    content.vb: Public ReadOnly Property ReaderVersion As Version
+  overload: WaveEngine.Framework.Sound.SoundEffect.ReaderVersion*
+  implements:
+  - WaveEngine.Common.ILoadable.ReaderVersion
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Sound.SoundEffect.#ctor
+  commentId: M:WaveEngine.Framework.Sound.SoundEffect.#ctor
+  id: '#ctor'
+  parent: WaveEngine.Framework.Sound.SoundEffect
+  langs:
+  - csharp
+  - vb
+  name: SoundEffect()
+  nameWithType: SoundEffect.SoundEffect()
+  fullName: WaveEngine.Framework.Sound.SoundEffect.SoundEffect()
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Sound\SoundEffect.cs
+    startLine: 52
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Sound
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Framework.Sound.SoundEffect\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public SoundEffect()
+    content.vb: Public Sub New
+  overload: WaveEngine.Framework.Sound.SoundEffect.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Sound.SoundEffect.Load(WaveEngine.Framework.Services.SoundPlayer,System.IO.Stream)
+  commentId: M:WaveEngine.Framework.Sound.SoundEffect.Load(WaveEngine.Framework.Services.SoundPlayer,System.IO.Stream)
+  id: Load(WaveEngine.Framework.Services.SoundPlayer,System.IO.Stream)
+  parent: WaveEngine.Framework.Sound.SoundEffect
+  langs:
+  - csharp
+  - vb
+  name: Load(SoundPlayer, Stream)
+  nameWithType: SoundEffect.Load(SoundPlayer, Stream)
+  fullName: WaveEngine.Framework.Sound.SoundEffect.Load(WaveEngine.Framework.Services.SoundPlayer, System.IO.Stream)
+  type: Method
+  source:
+    id: Load
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Sound\SoundEffect.cs
+    startLine: 76
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Sound
+  summary: "\nLoads the specified graphicsDevice.\n"
+  example: []
+  syntax:
+    content: public void Load(SoundPlayer graphicsDevice, Stream stream)
+    parameters:
+    - id: graphicsDevice
+      type: WaveEngine.Framework.Services.SoundPlayer
+      description: The graphicsDevice.
+    - id: stream
+      type: System.IO.Stream
+      description: The stream.
+    content.vb: Public Sub Load(graphicsDevice As SoundPlayer, stream As Stream)
+  overload: WaveEngine.Framework.Sound.SoundEffect.Load*
+  implements:
+  - WaveEngine.Common.ILoadable{WaveEngine.Framework.Services.SoundPlayer}.Load(WaveEngine.Framework.Services.SoundPlayer,System.IO.Stream)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Sound.SoundEffect.Unload
+  commentId: M:WaveEngine.Framework.Sound.SoundEffect.Unload
+  id: Unload
+  parent: WaveEngine.Framework.Sound.SoundEffect
+  langs:
+  - csharp
+  - vb
+  name: Unload()
+  nameWithType: SoundEffect.Unload()
+  fullName: WaveEngine.Framework.Sound.SoundEffect.Unload()
+  type: Method
+  source:
+    id: Unload
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Sound\SoundEffect.cs
+    startLine: 99
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Sound
+  summary: "\nUnloads this instance.\n"
+  example: []
+  syntax:
+    content: public void Unload()
+    content.vb: Public Sub Unload
+  overload: WaveEngine.Framework.Sound.SoundEffect.Unload*
+  implements:
+  - WaveEngine.Common.ILoadable.Unload
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Sound.SoundEffect.CreateInstance
+  commentId: M:WaveEngine.Framework.Sound.SoundEffect.CreateInstance
+  id: CreateInstance
+  parent: WaveEngine.Framework.Sound.SoundEffect
+  langs:
+  - csharp
+  - vb
+  name: CreateInstance()
+  nameWithType: SoundEffect.CreateInstance()
+  fullName: WaveEngine.Framework.Sound.SoundEffect.CreateInstance()
+  type: Method
+  source:
+    id: CreateInstance
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Sound\SoundEffect.cs
+    startLine: 108
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Sound
+  summary: "\nCreates the instance.\n"
+  example: []
+  syntax:
+    content: public SoundInstance CreateInstance()
+    return:
+      type: WaveEngine.Common.Media.SoundInstance
+      description: A sound instance.
+    content.vb: Public Function CreateInstance As SoundInstance
+  overload: WaveEngine.Framework.Sound.SoundEffect.CreateInstance*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: WaveEngine.Framework.Sound
+  commentId: N:WaveEngine.Framework.Sound
+  name: WaveEngine.Framework.Sound
+  nameWithType: WaveEngine.Framework.Sound
+  fullName: WaveEngine.Framework.Sound
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.Media.SoundBase
+  commentId: T:WaveEngine.Common.Media.SoundBase
+  parent: WaveEngine.Common.Media
+  name: SoundBase
+  nameWithType: SoundBase
+  fullName: WaveEngine.Common.Media.SoundBase
+- uid: WaveEngine.Common.ILoadable{WaveEngine.Framework.Services.SoundPlayer}
+  commentId: T:WaveEngine.Common.ILoadable{WaveEngine.Framework.Services.SoundPlayer}
+  parent: WaveEngine.Common
+  definition: WaveEngine.Common.ILoadable`1
+  name: ILoadable<SoundPlayer>
+  nameWithType: ILoadable<SoundPlayer>
+  fullName: WaveEngine.Common.ILoadable<WaveEngine.Framework.Services.SoundPlayer>
+  nameWithType.vb: ILoadable(Of SoundPlayer)
+  fullName.vb: WaveEngine.Common.ILoadable(Of WaveEngine.Framework.Services.SoundPlayer)
+  name.vb: ILoadable(Of SoundPlayer)
+  spec.csharp:
+  - uid: WaveEngine.Common.ILoadable`1
+    name: ILoadable
+    nameWithType: ILoadable
+    fullName: WaveEngine.Common.ILoadable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Framework.Services.SoundPlayer
+    name: SoundPlayer
+    nameWithType: SoundPlayer
+    fullName: WaveEngine.Framework.Services.SoundPlayer
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: WaveEngine.Common.ILoadable`1
+    name: ILoadable
+    nameWithType: ILoadable
+    fullName: WaveEngine.Common.ILoadable
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Framework.Services.SoundPlayer
+    name: SoundPlayer
+    nameWithType: SoundPlayer
+    fullName: WaveEngine.Framework.Services.SoundPlayer
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.ILoadable
+  commentId: T:WaveEngine.Common.ILoadable
+  parent: WaveEngine.Common
+  name: ILoadable
+  nameWithType: ILoadable
+  fullName: WaveEngine.Common.ILoadable
+- uid: WaveEngine.Common.Media.SoundBase.SoundHandle
+  commentId: F:WaveEngine.Common.Media.SoundBase.SoundHandle
+  parent: WaveEngine.Common.Media.SoundBase
+  name: SoundHandle
+  nameWithType: SoundBase.SoundHandle
+  fullName: WaveEngine.Common.Media.SoundBase.SoundHandle
+- uid: WaveEngine.Common.Media.SoundBase.IsValidSound
+  commentId: P:WaveEngine.Common.Media.SoundBase.IsValidSound
+  parent: WaveEngine.Common.Media.SoundBase
+  name: IsValidSound
+  nameWithType: SoundBase.IsValidSound
+  fullName: WaveEngine.Common.Media.SoundBase.IsValidSound
+- uid: WaveEngine.Common.Media.SoundBase.Path
+  commentId: P:WaveEngine.Common.Media.SoundBase.Path
+  parent: WaveEngine.Common.Media.SoundBase
+  name: Path
+  nameWithType: SoundBase.Path
+  fullName: WaveEngine.Common.Media.SoundBase.Path
+- uid: WaveEngine.Common.Media.SoundBase.SampleRate
+  commentId: P:WaveEngine.Common.Media.SoundBase.SampleRate
+  parent: WaveEngine.Common.Media.SoundBase
+  name: SampleRate
+  nameWithType: SoundBase.SampleRate
+  fullName: WaveEngine.Common.Media.SoundBase.SampleRate
+- uid: WaveEngine.Common.Media.SoundBase.BitsPerSample
+  commentId: P:WaveEngine.Common.Media.SoundBase.BitsPerSample
+  parent: WaveEngine.Common.Media.SoundBase
+  name: BitsPerSample
+  nameWithType: SoundBase.BitsPerSample
+  fullName: WaveEngine.Common.Media.SoundBase.BitsPerSample
+- uid: WaveEngine.Common.Media.SoundBase.Channels
+  commentId: P:WaveEngine.Common.Media.SoundBase.Channels
+  parent: WaveEngine.Common.Media.SoundBase
+  name: Channels
+  nameWithType: SoundBase.Channels
+  fullName: WaveEngine.Common.Media.SoundBase.Channels
+- uid: WaveEngine.Common.Media.SoundBase.PCMData
+  commentId: P:WaveEngine.Common.Media.SoundBase.PCMData
+  parent: WaveEngine.Common.Media.SoundBase
+  name: PCMData
+  nameWithType: SoundBase.PCMData
+  fullName: WaveEngine.Common.Media.SoundBase.PCMData
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Media
+  commentId: N:WaveEngine.Common.Media
+  name: WaveEngine.Common.Media
+  nameWithType: WaveEngine.Common.Media
+  fullName: WaveEngine.Common.Media
+- uid: WaveEngine.Common.ILoadable`1
+  commentId: T:WaveEngine.Common.ILoadable`1
+  name: ILoadable<T>
+  nameWithType: ILoadable<T>
+  fullName: WaveEngine.Common.ILoadable<T>
+  nameWithType.vb: ILoadable(Of T)
+  fullName.vb: WaveEngine.Common.ILoadable(Of T)
+  name.vb: ILoadable(Of T)
+  spec.csharp:
+  - uid: WaveEngine.Common.ILoadable`1
+    name: ILoadable
+    nameWithType: ILoadable
+    fullName: WaveEngine.Common.ILoadable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: WaveEngine.Common.ILoadable`1
+    name: ILoadable
+    nameWithType: ILoadable
+    fullName: WaveEngine.Common.ILoadable
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common
+  commentId: N:WaveEngine.Common
+  name: WaveEngine.Common
+  nameWithType: WaveEngine.Common
+  fullName: WaveEngine.Common
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Common.IAdapter
+  commentId: T:WaveEngine.Common.IAdapter
+  parent: WaveEngine.Common
+  name: IAdapter
+  nameWithType: IAdapter
+  fullName: WaveEngine.Common.IAdapter
+- uid: WaveEngine.Framework.Sound.SoundEffect.AssetPath*
+  commentId: Overload:WaveEngine.Framework.Sound.SoundEffect.AssetPath
+  name: AssetPath
+  nameWithType: SoundEffect.AssetPath
+  fullName: WaveEngine.Framework.Sound.SoundEffect.AssetPath
+- uid: WaveEngine.Common.ILoadable.AssetPath
+  commentId: P:WaveEngine.Common.ILoadable.AssetPath
+  parent: WaveEngine.Common.ILoadable
+  name: AssetPath
+  nameWithType: ILoadable.AssetPath
+  fullName: WaveEngine.Common.ILoadable.AssetPath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: WaveEngine.Framework.Sound.SoundEffect.ReaderVersion*
+  commentId: Overload:WaveEngine.Framework.Sound.SoundEffect.ReaderVersion
+  name: ReaderVersion
+  nameWithType: SoundEffect.ReaderVersion
+  fullName: WaveEngine.Framework.Sound.SoundEffect.ReaderVersion
+- uid: WaveEngine.Common.ILoadable.ReaderVersion
+  commentId: P:WaveEngine.Common.ILoadable.ReaderVersion
+  parent: WaveEngine.Common.ILoadable
+  name: ReaderVersion
+  nameWithType: ILoadable.ReaderVersion
+  fullName: WaveEngine.Common.ILoadable.ReaderVersion
+- uid: System.Version
+  commentId: T:System.Version
+  parent: System
+  isExternal: true
+  name: Version
+  nameWithType: Version
+  fullName: System.Version
+- uid: WaveEngine.Framework.Sound.SoundEffect
+  commentId: T:WaveEngine.Framework.Sound.SoundEffect
+  parent: WaveEngine.Framework.Sound
+  name: SoundEffect
+  nameWithType: SoundEffect
+  fullName: WaveEngine.Framework.Sound.SoundEffect
+- uid: WaveEngine.Framework.Sound.SoundEffect.#ctor*
+  commentId: Overload:WaveEngine.Framework.Sound.SoundEffect.#ctor
+  name: SoundEffect
+  nameWithType: SoundEffect.SoundEffect
+  fullName: WaveEngine.Framework.Sound.SoundEffect.SoundEffect
+- uid: WaveEngine.Framework.Sound.SoundEffect.Load*
+  commentId: Overload:WaveEngine.Framework.Sound.SoundEffect.Load
+  name: Load
+  nameWithType: SoundEffect.Load
+  fullName: WaveEngine.Framework.Sound.SoundEffect.Load
+- uid: WaveEngine.Common.ILoadable{WaveEngine.Framework.Services.SoundPlayer}.Load(WaveEngine.Framework.Services.SoundPlayer,System.IO.Stream)
+  commentId: M:WaveEngine.Common.ILoadable{WaveEngine.Framework.Services.SoundPlayer}.Load(WaveEngine.Framework.Services.SoundPlayer,System.IO.Stream)
+  parent: WaveEngine.Common.ILoadable{WaveEngine.Framework.Services.SoundPlayer}
+  definition: WaveEngine.Common.ILoadable`1.Load(`0,System.IO.Stream)
+  name: Load(SoundPlayer, Stream)
+  nameWithType: ILoadable<SoundPlayer>.Load(SoundPlayer, Stream)
+  fullName: WaveEngine.Common.ILoadable<WaveEngine.Framework.Services.SoundPlayer>.Load(WaveEngine.Framework.Services.SoundPlayer, System.IO.Stream)
+  nameWithType.vb: ILoadable(Of SoundPlayer).Load(SoundPlayer, Stream)
+  fullName.vb: WaveEngine.Common.ILoadable(Of WaveEngine.Framework.Services.SoundPlayer).Load(WaveEngine.Framework.Services.SoundPlayer, System.IO.Stream)
+  spec.csharp:
+  - uid: WaveEngine.Common.ILoadable`1.Load(`0,System.IO.Stream)
+    name: Load
+    nameWithType: ILoadable<SoundPlayer>.Load
+    fullName: WaveEngine.Common.ILoadable<WaveEngine.Framework.Services.SoundPlayer>.Load
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Services.SoundPlayer
+    name: SoundPlayer
+    nameWithType: SoundPlayer
+    fullName: WaveEngine.Framework.Services.SoundPlayer
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.ILoadable`1.Load(`0,System.IO.Stream)
+    name: Load
+    nameWithType: ILoadable(Of SoundPlayer).Load
+    fullName: WaveEngine.Common.ILoadable(Of WaveEngine.Framework.Services.SoundPlayer).Load
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Services.SoundPlayer
+    name: SoundPlayer
+    nameWithType: SoundPlayer
+    fullName: WaveEngine.Framework.Services.SoundPlayer
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Services.SoundPlayer
+  commentId: T:WaveEngine.Framework.Services.SoundPlayer
+  parent: WaveEngine.Framework.Services
+  name: SoundPlayer
+  nameWithType: SoundPlayer
+  fullName: WaveEngine.Framework.Services.SoundPlayer
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: WaveEngine.Common.ILoadable`1.Load(`0,System.IO.Stream)
+  commentId: M:WaveEngine.Common.ILoadable`1.Load(`0,System.IO.Stream)
+  isExternal: true
+  name: Load(T, Stream)
+  nameWithType: ILoadable<T>.Load(T, Stream)
+  fullName: WaveEngine.Common.ILoadable<T>.Load(T, System.IO.Stream)
+  nameWithType.vb: ILoadable(Of T).Load(T, Stream)
+  fullName.vb: WaveEngine.Common.ILoadable(Of T).Load(T, System.IO.Stream)
+  spec.csharp:
+  - uid: WaveEngine.Common.ILoadable`1.Load(`0,System.IO.Stream)
+    name: Load
+    nameWithType: ILoadable<T>.Load
+    fullName: WaveEngine.Common.ILoadable<T>.Load
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.ILoadable`1.Load(`0,System.IO.Stream)
+    name: Load
+    nameWithType: ILoadable(Of T).Load
+    fullName: WaveEngine.Common.ILoadable(Of T).Load
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Services
+  commentId: N:WaveEngine.Framework.Services
+  name: WaveEngine.Framework.Services
+  nameWithType: WaveEngine.Framework.Services
+  fullName: WaveEngine.Framework.Services
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: WaveEngine.Framework.Sound.SoundEffect.Unload*
+  commentId: Overload:WaveEngine.Framework.Sound.SoundEffect.Unload
+  name: Unload
+  nameWithType: SoundEffect.Unload
+  fullName: WaveEngine.Framework.Sound.SoundEffect.Unload
+- uid: WaveEngine.Common.ILoadable.Unload
+  commentId: M:WaveEngine.Common.ILoadable.Unload
+  parent: WaveEngine.Common.ILoadable
+  name: Unload()
+  nameWithType: ILoadable.Unload()
+  fullName: WaveEngine.Common.ILoadable.Unload()
+  spec.csharp:
+  - uid: WaveEngine.Common.ILoadable.Unload
+    name: Unload
+    nameWithType: ILoadable.Unload
+    fullName: WaveEngine.Common.ILoadable.Unload
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.ILoadable.Unload
+    name: Unload
+    nameWithType: ILoadable.Unload
+    fullName: WaveEngine.Common.ILoadable.Unload
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Sound.SoundEffect.CreateInstance*
+  commentId: Overload:WaveEngine.Framework.Sound.SoundEffect.CreateInstance
+  name: CreateInstance
+  nameWithType: SoundEffect.CreateInstance
+  fullName: WaveEngine.Framework.Sound.SoundEffect.CreateInstance
+- uid: WaveEngine.Common.Media.SoundInstance
+  commentId: T:WaveEngine.Common.Media.SoundInstance
+  parent: WaveEngine.Common.Media
+  name: SoundInstance
+  nameWithType: SoundInstance
+  fullName: WaveEngine.Common.Media.SoundInstance

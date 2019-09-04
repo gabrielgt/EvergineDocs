@@ -1,0 +1,2042 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Common.Math.Plane
+  commentId: T:WaveEngine.Common.Math.Plane
+  id: Plane
+  parent: WaveEngine.Common.Math
+  children:
+  - WaveEngine.Common.Math.Plane.#ctor(System.Single,System.Single,System.Single,System.Single)
+  - WaveEngine.Common.Math.Plane.#ctor(WaveEngine.Common.Math.Vector3,System.Single)
+  - WaveEngine.Common.Math.Plane.#ctor(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3)
+  - WaveEngine.Common.Math.Plane.#ctor(WaveEngine.Common.Math.Vector4)
+  - WaveEngine.Common.Math.Plane.D
+  - WaveEngine.Common.Math.Plane.Dot(WaveEngine.Common.Math.Vector4)
+  - WaveEngine.Common.Math.Plane.Dot(WaveEngine.Common.Math.Vector4@,System.Single@)
+  - WaveEngine.Common.Math.Plane.DotCoordinate(WaveEngine.Common.Math.Vector3)
+  - WaveEngine.Common.Math.Plane.DotCoordinate(WaveEngine.Common.Math.Vector3@,System.Single@)
+  - WaveEngine.Common.Math.Plane.DotNormal(WaveEngine.Common.Math.Vector3)
+  - WaveEngine.Common.Math.Plane.DotNormal(WaveEngine.Common.Math.Vector3@,System.Single@)
+  - WaveEngine.Common.Math.Plane.Equals(System.Object)
+  - WaveEngine.Common.Math.Plane.Equals(WaveEngine.Common.Math.Plane)
+  - WaveEngine.Common.Math.Plane.Equals(WaveEngine.Common.Math.Plane@)
+  - WaveEngine.Common.Math.Plane.GetHashCode
+  - WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.BoundingBox)
+  - WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.BoundingBox@,WaveEngine.Common.Math.PlaneIntersectionType@)
+  - WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.BoundingFrustum)
+  - WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.BoundingSphere)
+  - WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.BoundingSphere@,WaveEngine.Common.Math.PlaneIntersectionType@)
+  - WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.Plane)
+  - WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.Plane@,WaveEngine.Common.Math.Ray@)
+  - WaveEngine.Common.Math.Plane.Normal
+  - WaveEngine.Common.Math.Plane.Normalize
+  - WaveEngine.Common.Math.Plane.Normalize(WaveEngine.Common.Math.Plane)
+  - WaveEngine.Common.Math.Plane.Normalize(WaveEngine.Common.Math.Plane@,WaveEngine.Common.Math.Plane@)
+  - WaveEngine.Common.Math.Plane.op_Equality(WaveEngine.Common.Math.Plane,WaveEngine.Common.Math.Plane)
+  - WaveEngine.Common.Math.Plane.op_Inequality(WaveEngine.Common.Math.Plane,WaveEngine.Common.Math.Plane)
+  - WaveEngine.Common.Math.Plane.ToString
+  - WaveEngine.Common.Math.Plane.Transform(WaveEngine.Common.Math.Plane,WaveEngine.Common.Math.Matrix)
+  - WaveEngine.Common.Math.Plane.Transform(WaveEngine.Common.Math.Plane,WaveEngine.Common.Math.Quaternion)
+  - WaveEngine.Common.Math.Plane.Transform(WaveEngine.Common.Math.Plane@,WaveEngine.Common.Math.Matrix@,WaveEngine.Common.Math.Plane@)
+  - WaveEngine.Common.Math.Plane.Transform(WaveEngine.Common.Math.Plane@,WaveEngine.Common.Math.Quaternion@,WaveEngine.Common.Math.Plane@)
+  langs:
+  - csharp
+  - vb
+  name: Plane
+  nameWithType: Plane
+  fullName: WaveEngine.Common.Math.Plane
+  type: Struct
+  source:
+    id: Plane
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 14
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nRepresents a plane.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      public struct Plane : IEquatable<Plane>
+    content.vb: >-
+      <DataContract>
+
+      Public Structure Plane
+
+          Implements IEquatable(Of Plane)
+  implements:
+  - System.IEquatable{WaveEngine.Common.Math.Plane}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: WaveEngine.Common.Math.Plane.Normal
+  commentId: F:WaveEngine.Common.Math.Plane.Normal
+  id: Normal
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: Plane.Normal
+  fullName: WaveEngine.Common.Math.Plane.Normal
+  type: Field
+  source:
+    id: Normal
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 21
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nPlane normal.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public Vector3 Normal
+    return:
+      type: WaveEngine.Common.Math.Vector3
+    content.vb: >-
+      <DataMember>
+
+      Public Normal As Vector3
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Plane.D
+  commentId: F:WaveEngine.Common.Math.Plane.D
+  id: D
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: D
+  nameWithType: Plane.D
+  fullName: WaveEngine.Common.Math.Plane.D
+  type: Field
+  source:
+    id: D
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 27
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nPlane distance.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public float D
+    return:
+      type: System.Single
+    content.vb: >-
+      <DataMember>
+
+      Public D As Single
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Plane.#ctor(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:WaveEngine.Common.Math.Plane.#ctor(System.Single,System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single,System.Single)'
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Plane(Single, Single, Single, Single)
+  nameWithType: Plane.Plane(Single, Single, Single, Single)
+  fullName: WaveEngine.Common.Math.Plane.Plane(System.Single, System.Single, System.Single, System.Single)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 38
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Common.Math.Plane\" data-throw-if-not-resolved=\"false\"></xref> struct.\n"
+  example: []
+  syntax:
+    content: public Plane(float a, float b, float c, float d)
+    parameters:
+    - id: a
+      type: System.Single
+      description: The a.
+    - id: b
+      type: System.Single
+      description: The b.
+    - id: c
+      type: System.Single
+      description: The c.
+    - id: d
+      type: System.Single
+      description: The d.
+    content.vb: Public Sub New(a As Single, b As Single, c As Single, d As Single)
+  overload: WaveEngine.Common.Math.Plane.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Plane.#ctor(WaveEngine.Common.Math.Vector3,System.Single)
+  commentId: M:WaveEngine.Common.Math.Plane.#ctor(WaveEngine.Common.Math.Vector3,System.Single)
+  id: '#ctor(WaveEngine.Common.Math.Vector3,System.Single)'
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Plane(Vector3, Single)
+  nameWithType: Plane.Plane(Vector3, Single)
+  fullName: WaveEngine.Common.Math.Plane.Plane(WaveEngine.Common.Math.Vector3, System.Single)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 51
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Common.Math.Plane\" data-throw-if-not-resolved=\"false\"></xref> struct.\n"
+  example: []
+  syntax:
+    content: public Plane(Vector3 normal, float d)
+    parameters:
+    - id: normal
+      type: WaveEngine.Common.Math.Vector3
+      description: The normal.
+    - id: d
+      type: System.Single
+      description: The d.
+    content.vb: Public Sub New(normal As Vector3, d As Single)
+  overload: WaveEngine.Common.Math.Plane.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Plane.#ctor(WaveEngine.Common.Math.Vector4)
+  commentId: M:WaveEngine.Common.Math.Plane.#ctor(WaveEngine.Common.Math.Vector4)
+  id: '#ctor(WaveEngine.Common.Math.Vector4)'
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Plane(Vector4)
+  nameWithType: Plane.Plane(Vector4)
+  fullName: WaveEngine.Common.Math.Plane.Plane(WaveEngine.Common.Math.Vector4)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 61
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Common.Math.Plane\" data-throw-if-not-resolved=\"false\"></xref> struct.\n"
+  example: []
+  syntax:
+    content: public Plane(Vector4 value)
+    parameters:
+    - id: value
+      type: WaveEngine.Common.Math.Vector4
+      description: The value.
+    content.vb: Public Sub New(value As Vector4)
+  overload: WaveEngine.Common.Math.Plane.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Plane.#ctor(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3)
+  commentId: M:WaveEngine.Common.Math.Plane.#ctor(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3)
+  id: '#ctor(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3)'
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Plane(Vector3, Vector3, Vector3)
+  nameWithType: Plane.Plane(Vector3, Vector3, Vector3)
+  fullName: WaveEngine.Common.Math.Plane.Plane(WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 75
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Common.Math.Plane\" data-throw-if-not-resolved=\"false\"></xref> struct.\n"
+  example: []
+  syntax:
+    content: public Plane(Vector3 point1, Vector3 point2, Vector3 point3)
+    parameters:
+    - id: point1
+      type: WaveEngine.Common.Math.Vector3
+      description: The point1.
+    - id: point2
+      type: WaveEngine.Common.Math.Vector3
+      description: The point2.
+    - id: point3
+      type: WaveEngine.Common.Math.Vector3
+      description: The point3.
+    content.vb: Public Sub New(point1 As Vector3, point2 As Vector3, point3 As Vector3)
+  overload: WaveEngine.Common.Math.Plane.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Plane.Equals(WaveEngine.Common.Math.Plane)
+  commentId: M:WaveEngine.Common.Math.Plane.Equals(WaveEngine.Common.Math.Plane)
+  id: Equals(WaveEngine.Common.Math.Plane)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Equals(Plane)
+  nameWithType: Plane.Equals(Plane)
+  fullName: WaveEngine.Common.Math.Plane.Equals(WaveEngine.Common.Math.Plane)
+  type: Method
+  source:
+    id: Equals
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 103
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nEqualses the specified other.\n"
+  example: []
+  syntax:
+    content: public bool Equals(Plane other)
+    parameters:
+    - id: other
+      type: WaveEngine.Common.Math.Plane
+      description: The other.
+    return:
+      type: System.Boolean
+      description: The result.
+    content.vb: Public Function Equals(other As Plane) As Boolean
+  overload: WaveEngine.Common.Math.Plane.Equals*
+  implements:
+  - System.IEquatable{WaveEngine.Common.Math.Plane}.Equals(WaveEngine.Common.Math.Plane)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Plane.Equals(WaveEngine.Common.Math.Plane@)
+  commentId: M:WaveEngine.Common.Math.Plane.Equals(WaveEngine.Common.Math.Plane@)
+  id: Equals(WaveEngine.Common.Math.Plane@)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Equals(ref Plane)
+  nameWithType: Plane.Equals(ref Plane)
+  fullName: WaveEngine.Common.Math.Plane.Equals(ref WaveEngine.Common.Math.Plane)
+  type: Method
+  source:
+    id: Equals
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 113
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nEqualses the specified other.\n"
+  example: []
+  syntax:
+    content: public bool Equals(ref Plane other)
+    parameters:
+    - id: other
+      type: WaveEngine.Common.Math.Plane
+      description: The other.
+    return:
+      type: System.Boolean
+      description: The result.
+    content.vb: Public Function Equals(ByRef other As Plane) As Boolean
+  overload: WaveEngine.Common.Math.Plane.Equals*
+  nameWithType.vb: Plane.Equals(ByRef Plane)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Math.Plane.Equals(ByRef WaveEngine.Common.Math.Plane)
+  name.vb: Equals(ByRef Plane)
+- uid: WaveEngine.Common.Math.Plane.Equals(System.Object)
+  commentId: M:WaveEngine.Common.Math.Plane.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: Plane.Equals(Object)
+  fullName: WaveEngine.Common.Math.Plane.Equals(System.Object)
+  type: Method
+  source:
+    id: Equals
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 125
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nDetermines whether the specified <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> is equal to this instance.\n"
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The <xref href="System.Object" data-throw-if-not-resolved="false"></xref> to compare with this instance.
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if the specified <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> is equal to this instance; otherwise, <code>false</code>.\n"
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: WaveEngine.Common.Math.Plane.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: WaveEngine.Common.Math.Plane.GetHashCode
+  commentId: M:WaveEngine.Common.Math.Plane.GetHashCode
+  id: GetHashCode
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Plane.GetHashCode()
+  fullName: WaveEngine.Common.Math.Plane.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 143
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nReturns a hash code for this instance.\n"
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: "\nA hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.\n"
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: WaveEngine.Common.Math.Plane.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: WaveEngine.Common.Math.Plane.ToString
+  commentId: M:WaveEngine.Common.Math.Plane.ToString
+  id: ToString
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Plane.ToString()
+  fullName: WaveEngine.Common.Math.Plane.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 158
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nReturns a <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> that represents this instance.\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: "\nA <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> that represents this instance.\n"
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: WaveEngine.Common.Math.Plane.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: WaveEngine.Common.Math.Plane.Normalize
+  commentId: M:WaveEngine.Common.Math.Plane.Normalize
+  id: Normalize
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Normalize()
+  nameWithType: Plane.Normalize()
+  fullName: WaveEngine.Common.Math.Plane.Normalize()
+  type: Method
+  source:
+    id: Normalize
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 170
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nNormalizes this instance.\n"
+  example: []
+  syntax:
+    content: public void Normalize()
+    content.vb: Public Sub Normalize
+  overload: WaveEngine.Common.Math.Plane.Normalize*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Plane.Normalize(WaveEngine.Common.Math.Plane)
+  commentId: M:WaveEngine.Common.Math.Plane.Normalize(WaveEngine.Common.Math.Plane)
+  id: Normalize(WaveEngine.Common.Math.Plane)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Normalize(Plane)
+  nameWithType: Plane.Normalize(Plane)
+  fullName: WaveEngine.Common.Math.Plane.Normalize(WaveEngine.Common.Math.Plane)
+  type: Method
+  source:
+    id: Normalize
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 189
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nNormalizes the specified value.\n"
+  example: []
+  syntax:
+    content: public static Plane Normalize(Plane value)
+    parameters:
+    - id: value
+      type: WaveEngine.Common.Math.Plane
+      description: The value.
+    return:
+      type: WaveEngine.Common.Math.Plane
+      description: The result.
+    content.vb: Public Shared Function Normalize(value As Plane) As Plane
+  overload: WaveEngine.Common.Math.Plane.Normalize*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Common.Math.Plane.Normalize(WaveEngine.Common.Math.Plane@,WaveEngine.Common.Math.Plane@)
+  commentId: M:WaveEngine.Common.Math.Plane.Normalize(WaveEngine.Common.Math.Plane@,WaveEngine.Common.Math.Plane@)
+  id: Normalize(WaveEngine.Common.Math.Plane@,WaveEngine.Common.Math.Plane@)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Normalize(ref Plane, out Plane)
+  nameWithType: Plane.Normalize(ref Plane, out Plane)
+  fullName: WaveEngine.Common.Math.Plane.Normalize(ref WaveEngine.Common.Math.Plane, out WaveEngine.Common.Math.Plane)
+  type: Method
+  source:
+    id: Normalize
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 218
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nNormalizes the specified value.\n"
+  example: []
+  syntax:
+    content: public static void Normalize(ref Plane value, out Plane result)
+    parameters:
+    - id: value
+      type: WaveEngine.Common.Math.Plane
+      description: The value.
+    - id: result
+      type: WaveEngine.Common.Math.Plane
+      description: The result.
+    content.vb: Public Shared Sub Normalize(ByRef value As Plane, ByRef result As Plane)
+  overload: WaveEngine.Common.Math.Plane.Normalize*
+  nameWithType.vb: Plane.Normalize(ByRef Plane, ByRef Plane)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WaveEngine.Common.Math.Plane.Normalize(ByRef WaveEngine.Common.Math.Plane, ByRef WaveEngine.Common.Math.Plane)
+  name.vb: Normalize(ByRef Plane, ByRef Plane)
+- uid: WaveEngine.Common.Math.Plane.Transform(WaveEngine.Common.Math.Plane,WaveEngine.Common.Math.Matrix)
+  commentId: M:WaveEngine.Common.Math.Plane.Transform(WaveEngine.Common.Math.Plane,WaveEngine.Common.Math.Matrix)
+  id: Transform(WaveEngine.Common.Math.Plane,WaveEngine.Common.Math.Matrix)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Transform(Plane, Matrix)
+  nameWithType: Plane.Transform(Plane, Matrix)
+  fullName: WaveEngine.Common.Math.Plane.Transform(WaveEngine.Common.Math.Plane, WaveEngine.Common.Math.Matrix)
+  type: Method
+  source:
+    id: Transform
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 243
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nTransforms the specified plane.\n"
+  example: []
+  syntax:
+    content: public static Plane Transform(Plane plane, Matrix matrix)
+    parameters:
+    - id: plane
+      type: WaveEngine.Common.Math.Plane
+      description: The plane.
+    - id: matrix
+      type: WaveEngine.Common.Math.Matrix
+      description: The matrix.
+    return:
+      type: WaveEngine.Common.Math.Plane
+      description: The result.
+    content.vb: Public Shared Function Transform(plane As Plane, matrix As Matrix) As Plane
+  overload: WaveEngine.Common.Math.Plane.Transform*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Common.Math.Plane.Transform(WaveEngine.Common.Math.Plane@,WaveEngine.Common.Math.Matrix@,WaveEngine.Common.Math.Plane@)
+  commentId: M:WaveEngine.Common.Math.Plane.Transform(WaveEngine.Common.Math.Plane@,WaveEngine.Common.Math.Matrix@,WaveEngine.Common.Math.Plane@)
+  id: Transform(WaveEngine.Common.Math.Plane@,WaveEngine.Common.Math.Matrix@,WaveEngine.Common.Math.Plane@)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Transform(ref Plane, ref Matrix, out Plane)
+  nameWithType: Plane.Transform(ref Plane, ref Matrix, out Plane)
+  fullName: WaveEngine.Common.Math.Plane.Transform(ref WaveEngine.Common.Math.Plane, ref WaveEngine.Common.Math.Matrix, out WaveEngine.Common.Math.Plane)
+  type: Method
+  source:
+    id: Transform
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 268
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nTransforms the specified plane.\n"
+  example: []
+  syntax:
+    content: public static void Transform(ref Plane plane, ref Matrix matrix, out Plane result)
+    parameters:
+    - id: plane
+      type: WaveEngine.Common.Math.Plane
+      description: The plane.
+    - id: matrix
+      type: WaveEngine.Common.Math.Matrix
+      description: The matrix.
+    - id: result
+      type: WaveEngine.Common.Math.Plane
+      description: The result.
+    content.vb: Public Shared Sub Transform(ByRef plane As Plane, ByRef matrix As Matrix, ByRef result As Plane)
+  overload: WaveEngine.Common.Math.Plane.Transform*
+  nameWithType.vb: Plane.Transform(ByRef Plane, ByRef Matrix, ByRef Plane)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WaveEngine.Common.Math.Plane.Transform(ByRef WaveEngine.Common.Math.Plane, ByRef WaveEngine.Common.Math.Matrix, ByRef WaveEngine.Common.Math.Plane)
+  name.vb: Transform(ByRef Plane, ByRef Matrix, ByRef Plane)
+- uid: WaveEngine.Common.Math.Plane.Transform(WaveEngine.Common.Math.Plane,WaveEngine.Common.Math.Quaternion)
+  commentId: M:WaveEngine.Common.Math.Plane.Transform(WaveEngine.Common.Math.Plane,WaveEngine.Common.Math.Quaternion)
+  id: Transform(WaveEngine.Common.Math.Plane,WaveEngine.Common.Math.Quaternion)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Transform(Plane, Quaternion)
+  nameWithType: Plane.Transform(Plane, Quaternion)
+  fullName: WaveEngine.Common.Math.Plane.Transform(WaveEngine.Common.Math.Plane, WaveEngine.Common.Math.Quaternion)
+  type: Method
+  source:
+    id: Transform
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 289
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nTransforms the specified plane.\n"
+  example: []
+  syntax:
+    content: public static Plane Transform(Plane plane, Quaternion rotation)
+    parameters:
+    - id: plane
+      type: WaveEngine.Common.Math.Plane
+      description: The plane.
+    - id: rotation
+      type: WaveEngine.Common.Math.Quaternion
+      description: The rotation.
+    return:
+      type: WaveEngine.Common.Math.Plane
+      description: The result.
+    content.vb: Public Shared Function Transform(plane As Plane, rotation As Quaternion) As Plane
+  overload: WaveEngine.Common.Math.Plane.Transform*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Common.Math.Plane.Transform(WaveEngine.Common.Math.Plane@,WaveEngine.Common.Math.Quaternion@,WaveEngine.Common.Math.Plane@)
+  commentId: M:WaveEngine.Common.Math.Plane.Transform(WaveEngine.Common.Math.Plane@,WaveEngine.Common.Math.Quaternion@,WaveEngine.Common.Math.Plane@)
+  id: Transform(WaveEngine.Common.Math.Plane@,WaveEngine.Common.Math.Quaternion@,WaveEngine.Common.Math.Plane@)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Transform(ref Plane, ref Quaternion, out Plane)
+  nameWithType: Plane.Transform(ref Plane, ref Quaternion, out Plane)
+  fullName: WaveEngine.Common.Math.Plane.Transform(ref WaveEngine.Common.Math.Plane, ref WaveEngine.Common.Math.Quaternion, out WaveEngine.Common.Math.Plane)
+  type: Method
+  source:
+    id: Transform
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 331
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nTransforms the specified plane.\n"
+  example: []
+  syntax:
+    content: public static void Transform(ref Plane plane, ref Quaternion rotation, out Plane result)
+    parameters:
+    - id: plane
+      type: WaveEngine.Common.Math.Plane
+      description: The plane.
+    - id: rotation
+      type: WaveEngine.Common.Math.Quaternion
+      description: The rotation.
+    - id: result
+      type: WaveEngine.Common.Math.Plane
+      description: The result.
+    content.vb: Public Shared Sub Transform(ByRef plane As Plane, ByRef rotation As Quaternion, ByRef result As Plane)
+  overload: WaveEngine.Common.Math.Plane.Transform*
+  nameWithType.vb: Plane.Transform(ByRef Plane, ByRef Quaternion, ByRef Plane)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: WaveEngine.Common.Math.Plane.Transform(ByRef WaveEngine.Common.Math.Plane, ByRef WaveEngine.Common.Math.Quaternion, ByRef WaveEngine.Common.Math.Plane)
+  name.vb: Transform(ByRef Plane, ByRef Quaternion, ByRef Plane)
+- uid: WaveEngine.Common.Math.Plane.Dot(WaveEngine.Common.Math.Vector4)
+  commentId: M:WaveEngine.Common.Math.Plane.Dot(WaveEngine.Common.Math.Vector4)
+  id: Dot(WaveEngine.Common.Math.Vector4)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Dot(Vector4)
+  nameWithType: Plane.Dot(Vector4)
+  fullName: WaveEngine.Common.Math.Plane.Dot(WaveEngine.Common.Math.Vector4)
+  type: Method
+  source:
+    id: Dot
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 369
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nDots the specified value.\n"
+  example: []
+  syntax:
+    content: public float Dot(Vector4 value)
+    parameters:
+    - id: value
+      type: WaveEngine.Common.Math.Vector4
+      description: The value.
+    return:
+      type: System.Single
+      description: The result.
+    content.vb: Public Function Dot(value As Vector4) As Single
+  overload: WaveEngine.Common.Math.Plane.Dot*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Plane.Dot(WaveEngine.Common.Math.Vector4@,System.Single@)
+  commentId: M:WaveEngine.Common.Math.Plane.Dot(WaveEngine.Common.Math.Vector4@,System.Single@)
+  id: Dot(WaveEngine.Common.Math.Vector4@,System.Single@)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Dot(ref Vector4, out Single)
+  nameWithType: Plane.Dot(ref Vector4, out Single)
+  fullName: WaveEngine.Common.Math.Plane.Dot(ref WaveEngine.Common.Math.Vector4, out System.Single)
+  type: Method
+  source:
+    id: Dot
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 379
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nDots the specified value.\n"
+  example: []
+  syntax:
+    content: public void Dot(ref Vector4 value, out float result)
+    parameters:
+    - id: value
+      type: WaveEngine.Common.Math.Vector4
+      description: The value.
+    - id: result
+      type: System.Single
+      description: The result.
+    content.vb: Public Sub Dot(ByRef value As Vector4, ByRef result As Single)
+  overload: WaveEngine.Common.Math.Plane.Dot*
+  nameWithType.vb: Plane.Dot(ByRef Vector4, ByRef Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Math.Plane.Dot(ByRef WaveEngine.Common.Math.Vector4, ByRef System.Single)
+  name.vb: Dot(ByRef Vector4, ByRef Single)
+- uid: WaveEngine.Common.Math.Plane.DotCoordinate(WaveEngine.Common.Math.Vector3)
+  commentId: M:WaveEngine.Common.Math.Plane.DotCoordinate(WaveEngine.Common.Math.Vector3)
+  id: DotCoordinate(WaveEngine.Common.Math.Vector3)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: DotCoordinate(Vector3)
+  nameWithType: Plane.DotCoordinate(Vector3)
+  fullName: WaveEngine.Common.Math.Plane.DotCoordinate(WaveEngine.Common.Math.Vector3)
+  type: Method
+  source:
+    id: DotCoordinate
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 389
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nDots the coordinate.\n"
+  example: []
+  syntax:
+    content: public float DotCoordinate(Vector3 value)
+    parameters:
+    - id: value
+      type: WaveEngine.Common.Math.Vector3
+      description: The value.
+    return:
+      type: System.Single
+      description: The result.
+    content.vb: Public Function DotCoordinate(value As Vector3) As Single
+  overload: WaveEngine.Common.Math.Plane.DotCoordinate*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Plane.DotCoordinate(WaveEngine.Common.Math.Vector3@,System.Single@)
+  commentId: M:WaveEngine.Common.Math.Plane.DotCoordinate(WaveEngine.Common.Math.Vector3@,System.Single@)
+  id: DotCoordinate(WaveEngine.Common.Math.Vector3@,System.Single@)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: DotCoordinate(ref Vector3, out Single)
+  nameWithType: Plane.DotCoordinate(ref Vector3, out Single)
+  fullName: WaveEngine.Common.Math.Plane.DotCoordinate(ref WaveEngine.Common.Math.Vector3, out System.Single)
+  type: Method
+  source:
+    id: DotCoordinate
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 399
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nDots the coordinate.\n"
+  example: []
+  syntax:
+    content: public void DotCoordinate(ref Vector3 value, out float result)
+    parameters:
+    - id: value
+      type: WaveEngine.Common.Math.Vector3
+      description: The value.
+    - id: result
+      type: System.Single
+      description: The result.
+    content.vb: Public Sub DotCoordinate(ByRef value As Vector3, ByRef result As Single)
+  overload: WaveEngine.Common.Math.Plane.DotCoordinate*
+  nameWithType.vb: Plane.DotCoordinate(ByRef Vector3, ByRef Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Math.Plane.DotCoordinate(ByRef WaveEngine.Common.Math.Vector3, ByRef System.Single)
+  name.vb: DotCoordinate(ByRef Vector3, ByRef Single)
+- uid: WaveEngine.Common.Math.Plane.DotNormal(WaveEngine.Common.Math.Vector3)
+  commentId: M:WaveEngine.Common.Math.Plane.DotNormal(WaveEngine.Common.Math.Vector3)
+  id: DotNormal(WaveEngine.Common.Math.Vector3)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: DotNormal(Vector3)
+  nameWithType: Plane.DotNormal(Vector3)
+  fullName: WaveEngine.Common.Math.Plane.DotNormal(WaveEngine.Common.Math.Vector3)
+  type: Method
+  source:
+    id: DotNormal
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 409
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nDots the normal.\n"
+  example: []
+  syntax:
+    content: public float DotNormal(Vector3 value)
+    parameters:
+    - id: value
+      type: WaveEngine.Common.Math.Vector3
+      description: The value.
+    return:
+      type: System.Single
+      description: The result.
+    content.vb: Public Function DotNormal(value As Vector3) As Single
+  overload: WaveEngine.Common.Math.Plane.DotNormal*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Plane.DotNormal(WaveEngine.Common.Math.Vector3@,System.Single@)
+  commentId: M:WaveEngine.Common.Math.Plane.DotNormal(WaveEngine.Common.Math.Vector3@,System.Single@)
+  id: DotNormal(WaveEngine.Common.Math.Vector3@,System.Single@)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: DotNormal(ref Vector3, out Single)
+  nameWithType: Plane.DotNormal(ref Vector3, out Single)
+  fullName: WaveEngine.Common.Math.Plane.DotNormal(ref WaveEngine.Common.Math.Vector3, out System.Single)
+  type: Method
+  source:
+    id: DotNormal
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 419
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nDots the normal.\n"
+  example: []
+  syntax:
+    content: public void DotNormal(ref Vector3 value, out float result)
+    parameters:
+    - id: value
+      type: WaveEngine.Common.Math.Vector3
+      description: The value.
+    - id: result
+      type: System.Single
+      description: The result.
+    content.vb: Public Sub DotNormal(ByRef value As Vector3, ByRef result As Single)
+  overload: WaveEngine.Common.Math.Plane.DotNormal*
+  nameWithType.vb: Plane.DotNormal(ByRef Vector3, ByRef Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Math.Plane.DotNormal(ByRef WaveEngine.Common.Math.Vector3, ByRef System.Single)
+  name.vb: DotNormal(ByRef Vector3, ByRef Single)
+- uid: WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.BoundingBox)
+  commentId: M:WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.BoundingBox)
+  id: Intersects(WaveEngine.Common.Math.BoundingBox)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Intersects(BoundingBox)
+  nameWithType: Plane.Intersects(BoundingBox)
+  fullName: WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.BoundingBox)
+  type: Method
+  source:
+    id: Intersects
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 429
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nIntersectses the specified box.\n"
+  example: []
+  syntax:
+    content: public PlaneIntersectionType Intersects(BoundingBox box)
+    parameters:
+    - id: box
+      type: WaveEngine.Common.Math.BoundingBox
+      description: The box.
+    return:
+      type: WaveEngine.Common.Math.PlaneIntersectionType
+      description: The result.
+    content.vb: Public Function Intersects(box As BoundingBox) As PlaneIntersectionType
+  overload: WaveEngine.Common.Math.Plane.Intersects*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.BoundingBox@,WaveEngine.Common.Math.PlaneIntersectionType@)
+  commentId: M:WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.BoundingBox@,WaveEngine.Common.Math.PlaneIntersectionType@)
+  id: Intersects(WaveEngine.Common.Math.BoundingBox@,WaveEngine.Common.Math.PlaneIntersectionType@)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Intersects(ref BoundingBox, out PlaneIntersectionType)
+  nameWithType: Plane.Intersects(ref BoundingBox, out PlaneIntersectionType)
+  fullName: WaveEngine.Common.Math.Plane.Intersects(ref WaveEngine.Common.Math.BoundingBox, out WaveEngine.Common.Math.PlaneIntersectionType)
+  type: Method
+  source:
+    id: Intersects
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 463
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nIntersectses the specified box.\n"
+  example: []
+  syntax:
+    content: public void Intersects(ref BoundingBox box, out PlaneIntersectionType result)
+    parameters:
+    - id: box
+      type: WaveEngine.Common.Math.BoundingBox
+      description: The box.
+    - id: result
+      type: WaveEngine.Common.Math.PlaneIntersectionType
+      description: The result.
+    content.vb: Public Sub Intersects(ByRef box As BoundingBox, ByRef result As PlaneIntersectionType)
+  overload: WaveEngine.Common.Math.Plane.Intersects*
+  nameWithType.vb: Plane.Intersects(ByRef BoundingBox, ByRef PlaneIntersectionType)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Math.Plane.Intersects(ByRef WaveEngine.Common.Math.BoundingBox, ByRef WaveEngine.Common.Math.PlaneIntersectionType)
+  name.vb: Intersects(ByRef BoundingBox, ByRef PlaneIntersectionType)
+- uid: WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.BoundingFrustum)
+  commentId: M:WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.BoundingFrustum)
+  id: Intersects(WaveEngine.Common.Math.BoundingFrustum)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Intersects(BoundingFrustum)
+  nameWithType: Plane.Intersects(BoundingFrustum)
+  fullName: WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.BoundingFrustum)
+  type: Method
+  source:
+    id: Intersects
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 501
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nIntersectses the specified frustum.\n"
+  example: []
+  syntax:
+    content: public PlaneIntersectionType Intersects(BoundingFrustum frustum)
+    parameters:
+    - id: frustum
+      type: WaveEngine.Common.Math.BoundingFrustum
+      description: The frustum.
+    return:
+      type: WaveEngine.Common.Math.PlaneIntersectionType
+      description: The result.
+    content.vb: Public Function Intersects(frustum As BoundingFrustum) As PlaneIntersectionType
+  overload: WaveEngine.Common.Math.Plane.Intersects*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.BoundingSphere)
+  commentId: M:WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.BoundingSphere)
+  id: Intersects(WaveEngine.Common.Math.BoundingSphere)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Intersects(BoundingSphere)
+  nameWithType: Plane.Intersects(BoundingSphere)
+  fullName: WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.BoundingSphere)
+  type: Method
+  source:
+    id: Intersects
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 516
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nIntersectses the specified sphere.\n"
+  example: []
+  syntax:
+    content: public PlaneIntersectionType Intersects(BoundingSphere sphere)
+    parameters:
+    - id: sphere
+      type: WaveEngine.Common.Math.BoundingSphere
+      description: The sphere.
+    return:
+      type: WaveEngine.Common.Math.PlaneIntersectionType
+      description: The result.
+    content.vb: Public Function Intersects(sphere As BoundingSphere) As PlaneIntersectionType
+  overload: WaveEngine.Common.Math.Plane.Intersects*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.BoundingSphere@,WaveEngine.Common.Math.PlaneIntersectionType@)
+  commentId: M:WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.BoundingSphere@,WaveEngine.Common.Math.PlaneIntersectionType@)
+  id: Intersects(WaveEngine.Common.Math.BoundingSphere@,WaveEngine.Common.Math.PlaneIntersectionType@)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Intersects(ref BoundingSphere, out PlaneIntersectionType)
+  nameWithType: Plane.Intersects(ref BoundingSphere, out PlaneIntersectionType)
+  fullName: WaveEngine.Common.Math.Plane.Intersects(ref WaveEngine.Common.Math.BoundingSphere, out WaveEngine.Common.Math.PlaneIntersectionType)
+  type: Method
+  source:
+    id: Intersects
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 539
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nIntersectses the specified sphere.\n"
+  example: []
+  syntax:
+    content: public void Intersects(ref BoundingSphere sphere, out PlaneIntersectionType result)
+    parameters:
+    - id: sphere
+      type: WaveEngine.Common.Math.BoundingSphere
+      description: The sphere.
+    - id: result
+      type: WaveEngine.Common.Math.PlaneIntersectionType
+      description: The result.
+    content.vb: Public Sub Intersects(ByRef sphere As BoundingSphere, ByRef result As PlaneIntersectionType)
+  overload: WaveEngine.Common.Math.Plane.Intersects*
+  nameWithType.vb: Plane.Intersects(ByRef BoundingSphere, ByRef PlaneIntersectionType)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Math.Plane.Intersects(ByRef WaveEngine.Common.Math.BoundingSphere, ByRef WaveEngine.Common.Math.PlaneIntersectionType)
+  name.vb: Intersects(ByRef BoundingSphere, ByRef PlaneIntersectionType)
+- uid: WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.Plane)
+  commentId: M:WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.Plane)
+  id: Intersects(WaveEngine.Common.Math.Plane)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Intersects(Plane)
+  nameWithType: Plane.Intersects(Plane)
+  fullName: WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.Plane)
+  type: Method
+  source:
+    id: Intersects
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 563
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nComputes the intersection line between two planes.\n"
+  example: []
+  syntax:
+    content: public Ray Intersects(Plane p2)
+    parameters:
+    - id: p2
+      type: WaveEngine.Common.Math.Plane
+      description: The p2.
+    return:
+      type: WaveEngine.Common.Math.Ray
+      description: The result.
+    content.vb: Public Function Intersects(p2 As Plane) As Ray
+  overload: WaveEngine.Common.Math.Plane.Intersects*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.Plane@,WaveEngine.Common.Math.Ray@)
+  commentId: M:WaveEngine.Common.Math.Plane.Intersects(WaveEngine.Common.Math.Plane@,WaveEngine.Common.Math.Ray@)
+  id: Intersects(WaveEngine.Common.Math.Plane@,WaveEngine.Common.Math.Ray@)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Intersects(ref Plane, out Ray)
+  nameWithType: Plane.Intersects(ref Plane, out Ray)
+  fullName: WaveEngine.Common.Math.Plane.Intersects(ref WaveEngine.Common.Math.Plane, out WaveEngine.Common.Math.Ray)
+  type: Method
+  source:
+    id: Intersects
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 577
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nComputes the intersection line between two planes.\n"
+  example: []
+  syntax:
+    content: public void Intersects(ref Plane p2, out Ray ray)
+    parameters:
+    - id: p2
+      type: WaveEngine.Common.Math.Plane
+      description: The p2.
+    - id: ray
+      type: WaveEngine.Common.Math.Ray
+      description: The intersection line.
+    content.vb: Public Sub Intersects(ByRef p2 As Plane, ByRef ray As Ray)
+  overload: WaveEngine.Common.Math.Plane.Intersects*
+  nameWithType.vb: Plane.Intersects(ByRef Plane, ByRef Ray)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Math.Plane.Intersects(ByRef WaveEngine.Common.Math.Plane, ByRef WaveEngine.Common.Math.Ray)
+  name.vb: Intersects(ByRef Plane, ByRef Ray)
+- uid: WaveEngine.Common.Math.Plane.op_Equality(WaveEngine.Common.Math.Plane,WaveEngine.Common.Math.Plane)
+  commentId: M:WaveEngine.Common.Math.Plane.op_Equality(WaveEngine.Common.Math.Plane,WaveEngine.Common.Math.Plane)
+  id: op_Equality(WaveEngine.Common.Math.Plane,WaveEngine.Common.Math.Plane)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Equality(Plane, Plane)
+  nameWithType: Plane.Equality(Plane, Plane)
+  fullName: WaveEngine.Common.Math.Plane.Equality(WaveEngine.Common.Math.Plane, WaveEngine.Common.Math.Plane)
+  type: Operator
+  source:
+    id: op_Equality
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 592
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nImplements the operator ==.\n"
+  example: []
+  syntax:
+    content: public static bool operator ==(Plane lhs, Plane rhs)
+    parameters:
+    - id: lhs
+      type: WaveEngine.Common.Math.Plane
+      description: The LHS.
+    - id: rhs
+      type: WaveEngine.Common.Math.Plane
+      description: The RHS.
+    return:
+      type: System.Boolean
+      description: "\nThe result of the operator.\n"
+    content.vb: Public Shared Operator =(lhs As Plane, rhs As Plane) As Boolean
+  overload: WaveEngine.Common.Math.Plane.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Common.Math.Plane.op_Inequality(WaveEngine.Common.Math.Plane,WaveEngine.Common.Math.Plane)
+  commentId: M:WaveEngine.Common.Math.Plane.op_Inequality(WaveEngine.Common.Math.Plane,WaveEngine.Common.Math.Plane)
+  id: op_Inequality(WaveEngine.Common.Math.Plane,WaveEngine.Common.Math.Plane)
+  parent: WaveEngine.Common.Math.Plane
+  langs:
+  - csharp
+  - vb
+  name: Inequality(Plane, Plane)
+  nameWithType: Plane.Inequality(Plane, Plane)
+  fullName: WaveEngine.Common.Math.Plane.Inequality(WaveEngine.Common.Math.Plane, WaveEngine.Common.Math.Plane)
+  type: Operator
+  source:
+    id: op_Inequality
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Plane.cs
+    startLine: 605
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nImplements the operator !=.\n"
+  example: []
+  syntax:
+    content: public static bool operator !=(Plane lhs, Plane rhs)
+    parameters:
+    - id: lhs
+      type: WaveEngine.Common.Math.Plane
+      description: The LHS.
+    - id: rhs
+      type: WaveEngine.Common.Math.Plane
+      description: The RHS.
+    return:
+      type: System.Boolean
+      description: "\nThe result of the operator.\n"
+    content.vb: Public Shared Operator <>(lhs As Plane, rhs As Plane) As Boolean
+  overload: WaveEngine.Common.Math.Plane.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: WaveEngine.Common.Math
+  commentId: N:WaveEngine.Common.Math
+  name: WaveEngine.Common.Math
+  nameWithType: WaveEngine.Common.Math
+  fullName: WaveEngine.Common.Math
+- uid: System.IEquatable{WaveEngine.Common.Math.Plane}
+  commentId: T:System.IEquatable{WaveEngine.Common.Math.Plane}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<Plane>
+  nameWithType: IEquatable<Plane>
+  fullName: System.IEquatable<WaveEngine.Common.Math.Plane>
+  nameWithType.vb: IEquatable(Of Plane)
+  fullName.vb: System.IEquatable(Of WaveEngine.Common.Math.Plane)
+  name.vb: IEquatable(Of Plane)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Common.Math.Plane
+    name: Plane
+    nameWithType: Plane
+    fullName: WaveEngine.Common.Math.Plane
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Common.Math.Plane
+    name: Plane
+    nameWithType: Plane
+    fullName: WaveEngine.Common.Math.Plane
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Common.Math.Vector3
+  commentId: T:WaveEngine.Common.Math.Vector3
+  parent: WaveEngine.Common.Math
+  name: Vector3
+  nameWithType: Vector3
+  fullName: WaveEngine.Common.Math.Vector3
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Common.Math.Plane
+  commentId: T:WaveEngine.Common.Math.Plane
+  parent: WaveEngine.Common.Math
+  name: Plane
+  nameWithType: Plane
+  fullName: WaveEngine.Common.Math.Plane
+- uid: WaveEngine.Common.Math.Plane.#ctor*
+  commentId: Overload:WaveEngine.Common.Math.Plane.#ctor
+  name: Plane
+  nameWithType: Plane.Plane
+  fullName: WaveEngine.Common.Math.Plane.Plane
+- uid: WaveEngine.Common.Math.Vector4
+  commentId: T:WaveEngine.Common.Math.Vector4
+  parent: WaveEngine.Common.Math
+  name: Vector4
+  nameWithType: Vector4
+  fullName: WaveEngine.Common.Math.Vector4
+- uid: WaveEngine.Common.Math.Plane.Equals*
+  commentId: Overload:WaveEngine.Common.Math.Plane.Equals
+  name: Equals
+  nameWithType: Plane.Equals
+  fullName: WaveEngine.Common.Math.Plane.Equals
+- uid: System.IEquatable{WaveEngine.Common.Math.Plane}.Equals(WaveEngine.Common.Math.Plane)
+  commentId: M:System.IEquatable{WaveEngine.Common.Math.Plane}.Equals(WaveEngine.Common.Math.Plane)
+  parent: System.IEquatable{WaveEngine.Common.Math.Plane}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(Plane)
+  nameWithType: IEquatable<Plane>.Equals(Plane)
+  fullName: System.IEquatable<WaveEngine.Common.Math.Plane>.Equals(WaveEngine.Common.Math.Plane)
+  nameWithType.vb: IEquatable(Of Plane).Equals(Plane)
+  fullName.vb: System.IEquatable(Of WaveEngine.Common.Math.Plane).Equals(WaveEngine.Common.Math.Plane)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<Plane>.Equals
+    fullName: System.IEquatable<WaveEngine.Common.Math.Plane>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Plane
+    name: Plane
+    nameWithType: Plane
+    fullName: WaveEngine.Common.Math.Plane
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of Plane).Equals
+    fullName: System.IEquatable(Of WaveEngine.Common.Math.Plane).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Plane
+    name: Plane
+    nameWithType: Plane
+    fullName: WaveEngine.Common.Math.Plane
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Math.Plane.GetHashCode*
+  commentId: Overload:WaveEngine.Common.Math.Plane.GetHashCode
+  name: GetHashCode
+  nameWithType: Plane.GetHashCode
+  fullName: WaveEngine.Common.Math.Plane.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Math.Plane.ToString*
+  commentId: Overload:WaveEngine.Common.Math.Plane.ToString
+  name: ToString
+  nameWithType: Plane.ToString
+  fullName: WaveEngine.Common.Math.Plane.ToString
+- uid: WaveEngine.Common.Math.Plane.Normalize*
+  commentId: Overload:WaveEngine.Common.Math.Plane.Normalize
+  name: Normalize
+  nameWithType: Plane.Normalize
+  fullName: WaveEngine.Common.Math.Plane.Normalize
+- uid: WaveEngine.Common.Math.Plane.Transform*
+  commentId: Overload:WaveEngine.Common.Math.Plane.Transform
+  name: Transform
+  nameWithType: Plane.Transform
+  fullName: WaveEngine.Common.Math.Plane.Transform
+- uid: WaveEngine.Common.Math.Matrix
+  commentId: T:WaveEngine.Common.Math.Matrix
+  parent: WaveEngine.Common.Math
+  name: Matrix
+  nameWithType: Matrix
+  fullName: WaveEngine.Common.Math.Matrix
+- uid: WaveEngine.Common.Math.Quaternion
+  commentId: T:WaveEngine.Common.Math.Quaternion
+  parent: WaveEngine.Common.Math
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: WaveEngine.Common.Math.Quaternion
+- uid: WaveEngine.Common.Math.Plane.Dot*
+  commentId: Overload:WaveEngine.Common.Math.Plane.Dot
+  name: Dot
+  nameWithType: Plane.Dot
+  fullName: WaveEngine.Common.Math.Plane.Dot
+- uid: WaveEngine.Common.Math.Plane.DotCoordinate*
+  commentId: Overload:WaveEngine.Common.Math.Plane.DotCoordinate
+  name: DotCoordinate
+  nameWithType: Plane.DotCoordinate
+  fullName: WaveEngine.Common.Math.Plane.DotCoordinate
+- uid: WaveEngine.Common.Math.Plane.DotNormal*
+  commentId: Overload:WaveEngine.Common.Math.Plane.DotNormal
+  name: DotNormal
+  nameWithType: Plane.DotNormal
+  fullName: WaveEngine.Common.Math.Plane.DotNormal
+- uid: WaveEngine.Common.Math.Plane.Intersects*
+  commentId: Overload:WaveEngine.Common.Math.Plane.Intersects
+  name: Intersects
+  nameWithType: Plane.Intersects
+  fullName: WaveEngine.Common.Math.Plane.Intersects
+- uid: WaveEngine.Common.Math.BoundingBox
+  commentId: T:WaveEngine.Common.Math.BoundingBox
+  parent: WaveEngine.Common.Math
+  name: BoundingBox
+  nameWithType: BoundingBox
+  fullName: WaveEngine.Common.Math.BoundingBox
+- uid: WaveEngine.Common.Math.PlaneIntersectionType
+  commentId: T:WaveEngine.Common.Math.PlaneIntersectionType
+  parent: WaveEngine.Common.Math
+  name: PlaneIntersectionType
+  nameWithType: PlaneIntersectionType
+  fullName: WaveEngine.Common.Math.PlaneIntersectionType
+- uid: WaveEngine.Common.Math.BoundingFrustum
+  commentId: T:WaveEngine.Common.Math.BoundingFrustum
+  parent: WaveEngine.Common.Math
+  name: BoundingFrustum
+  nameWithType: BoundingFrustum
+  fullName: WaveEngine.Common.Math.BoundingFrustum
+- uid: WaveEngine.Common.Math.BoundingSphere
+  commentId: T:WaveEngine.Common.Math.BoundingSphere
+  parent: WaveEngine.Common.Math
+  name: BoundingSphere
+  nameWithType: BoundingSphere
+  fullName: WaveEngine.Common.Math.BoundingSphere
+- uid: WaveEngine.Common.Math.Ray
+  commentId: T:WaveEngine.Common.Math.Ray
+  parent: WaveEngine.Common.Math
+  name: Ray
+  nameWithType: Ray
+  fullName: WaveEngine.Common.Math.Ray
+- uid: WaveEngine.Common.Math.Plane.op_Equality*
+  commentId: Overload:WaveEngine.Common.Math.Plane.op_Equality
+  name: Equality
+  nameWithType: Plane.Equality
+  fullName: WaveEngine.Common.Math.Plane.Equality
+- uid: WaveEngine.Common.Math.Plane.op_Inequality*
+  commentId: Overload:WaveEngine.Common.Math.Plane.op_Inequality
+  name: Inequality
+  nameWithType: Plane.Inequality
+  fullName: WaveEngine.Common.Math.Plane.Inequality

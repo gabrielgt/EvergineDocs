@@ -1,0 +1,715 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Box2D.Utils.SimplifyTools
+  commentId: T:WaveEngine.Box2D.Utils.SimplifyTools
+  id: SimplifyTools
+  parent: WaveEngine.Box2D.Utils
+  children:
+  - WaveEngine.Box2D.Utils.SimplifyTools.CollinearSimplify(WaveEngine.Box2D.Utils.Vertices)
+  - WaveEngine.Box2D.Utils.SimplifyTools.CollinearSimplify(WaveEngine.Box2D.Utils.Vertices,System.Single)
+  - WaveEngine.Box2D.Utils.SimplifyTools.DouglasPeuckerSimplify(WaveEngine.Box2D.Utils.Vertices,System.Single)
+  - WaveEngine.Box2D.Utils.SimplifyTools.MergeIdenticalPoints(WaveEngine.Box2D.Utils.Vertices)
+  - WaveEngine.Box2D.Utils.SimplifyTools.MergeParallelEdges(WaveEngine.Box2D.Utils.Vertices,System.Single)
+  - WaveEngine.Box2D.Utils.SimplifyTools.ReduceByArea(WaveEngine.Box2D.Utils.Vertices,System.Single)
+  - WaveEngine.Box2D.Utils.SimplifyTools.ReduceByDistance(WaveEngine.Box2D.Utils.Vertices,System.Single)
+  - WaveEngine.Box2D.Utils.SimplifyTools.ReduceByNth(WaveEngine.Box2D.Utils.Vertices,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: SimplifyTools
+  nameWithType: SimplifyTools
+  fullName: WaveEngine.Box2D.Utils.SimplifyTools
+  type: Class
+  source:
+    id: SimplifyTools
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Box2D\Shared\Utils\SimplifyTools.cs
+    startLine: 14
+  assemblies:
+  - WaveEngine.Box2D
+  namespace: WaveEngine.Box2D.Utils
+  summary: "\nSimplify tools\n"
+  example: []
+  syntax:
+    content: public static class SimplifyTools
+    content.vb: Public Module SimplifyTools
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: WaveEngine.Box2D.Utils.SimplifyTools.CollinearSimplify(WaveEngine.Box2D.Utils.Vertices,System.Single)
+  commentId: M:WaveEngine.Box2D.Utils.SimplifyTools.CollinearSimplify(WaveEngine.Box2D.Utils.Vertices,System.Single)
+  id: CollinearSimplify(WaveEngine.Box2D.Utils.Vertices,System.Single)
+  parent: WaveEngine.Box2D.Utils.SimplifyTools
+  langs:
+  - csharp
+  - vb
+  name: CollinearSimplify(Vertices, Single)
+  nameWithType: SimplifyTools.CollinearSimplify(Vertices, Single)
+  fullName: WaveEngine.Box2D.Utils.SimplifyTools.CollinearSimplify(WaveEngine.Box2D.Utils.Vertices, System.Single)
+  type: Method
+  source:
+    id: CollinearSimplify
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Box2D\Shared\Utils\SimplifyTools.cs
+    startLine: 25
+  assemblies:
+  - WaveEngine.Box2D
+  namespace: WaveEngine.Box2D.Utils
+  summary: "\nRemoves all collinear points on the polygon.\n"
+  example: []
+  syntax:
+    content: public static Vertices CollinearSimplify(Vertices vertices, float collinearityTolerance)
+    parameters:
+    - id: vertices
+      type: WaveEngine.Box2D.Utils.Vertices
+      description: The polygon that needs simplification.
+    - id: collinearityTolerance
+      type: System.Single
+      description: The collinearity tolerance.
+    return:
+      type: WaveEngine.Box2D.Utils.Vertices
+      description: A simplified polygon.
+    content.vb: Public Shared Function CollinearSimplify(vertices As Vertices, collinearityTolerance As Single) As Vertices
+  overload: WaveEngine.Box2D.Utils.SimplifyTools.CollinearSimplify*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Box2D.Utils.SimplifyTools.CollinearSimplify(WaveEngine.Box2D.Utils.Vertices)
+  commentId: M:WaveEngine.Box2D.Utils.SimplifyTools.CollinearSimplify(WaveEngine.Box2D.Utils.Vertices)
+  id: CollinearSimplify(WaveEngine.Box2D.Utils.Vertices)
+  parent: WaveEngine.Box2D.Utils.SimplifyTools
+  langs:
+  - csharp
+  - vb
+  name: CollinearSimplify(Vertices)
+  nameWithType: SimplifyTools.CollinearSimplify(Vertices)
+  fullName: WaveEngine.Box2D.Utils.SimplifyTools.CollinearSimplify(WaveEngine.Box2D.Utils.Vertices)
+  type: Method
+  source:
+    id: CollinearSimplify
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Box2D\Shared\Utils\SimplifyTools.cs
+    startLine: 62
+  assemblies:
+  - WaveEngine.Box2D
+  namespace: WaveEngine.Box2D.Utils
+  summary: "\nRemoves all collinear points on the polygon.\nHas a default bias of 0\n"
+  example: []
+  syntax:
+    content: public static Vertices CollinearSimplify(Vertices vertices)
+    parameters:
+    - id: vertices
+      type: WaveEngine.Box2D.Utils.Vertices
+      description: The polygon that needs simplification.
+    return:
+      type: WaveEngine.Box2D.Utils.Vertices
+      description: A simplified polygon.
+    content.vb: Public Shared Function CollinearSimplify(vertices As Vertices) As Vertices
+  overload: WaveEngine.Box2D.Utils.SimplifyTools.CollinearSimplify*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Box2D.Utils.SimplifyTools.DouglasPeuckerSimplify(WaveEngine.Box2D.Utils.Vertices,System.Single)
+  commentId: M:WaveEngine.Box2D.Utils.SimplifyTools.DouglasPeuckerSimplify(WaveEngine.Box2D.Utils.Vertices,System.Single)
+  id: DouglasPeuckerSimplify(WaveEngine.Box2D.Utils.Vertices,System.Single)
+  parent: WaveEngine.Box2D.Utils.SimplifyTools
+  langs:
+  - csharp
+  - vb
+  name: DouglasPeuckerSimplify(Vertices, Single)
+  nameWithType: SimplifyTools.DouglasPeuckerSimplify(Vertices, Single)
+  fullName: WaveEngine.Box2D.Utils.SimplifyTools.DouglasPeuckerSimplify(WaveEngine.Box2D.Utils.Vertices, System.Single)
+  type: Method
+  source:
+    id: DouglasPeuckerSimplify
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Box2D\Shared\Utils\SimplifyTools.cs
+    startLine: 76
+  assemblies:
+  - WaveEngine.Box2D
+  namespace: WaveEngine.Box2D.Utils
+  summary: "\nRamer-Douglas-Peucker polygon simplification algorithm.This is the general recursive version that does not use the\nspeed-up technique by using the Melkman convex hull.\n\nIf you pass in 0, it will remove all collinear points\n"
+  example: []
+  syntax:
+    content: public static Vertices DouglasPeuckerSimplify(Vertices vertices, float distanceTolerance)
+    parameters:
+    - id: vertices
+      type: WaveEngine.Box2D.Utils.Vertices
+      description: vertices
+    - id: distanceTolerance
+      type: System.Single
+      description: distanceTolerance
+    return:
+      type: WaveEngine.Box2D.Utils.Vertices
+      description: The simplified polygon
+    content.vb: Public Shared Function DouglasPeuckerSimplify(vertices As Vertices, distanceTolerance As Single) As Vertices
+  overload: WaveEngine.Box2D.Utils.SimplifyTools.DouglasPeuckerSimplify*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Box2D.Utils.SimplifyTools.ReduceByArea(WaveEngine.Box2D.Utils.Vertices,System.Single)
+  commentId: M:WaveEngine.Box2D.Utils.SimplifyTools.ReduceByArea(WaveEngine.Box2D.Utils.Vertices,System.Single)
+  id: ReduceByArea(WaveEngine.Box2D.Utils.Vertices,System.Single)
+  parent: WaveEngine.Box2D.Utils.SimplifyTools
+  langs:
+  - csharp
+  - vb
+  name: ReduceByArea(Vertices, Single)
+  nameWithType: SimplifyTools.ReduceByArea(Vertices, Single)
+  fullName: WaveEngine.Box2D.Utils.SimplifyTools.ReduceByArea(WaveEngine.Box2D.Utils.Vertices, System.Single)
+  type: Method
+  source:
+    id: ReduceByArea
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Box2D\Shared\Utils\SimplifyTools.cs
+    startLine: 199
+  assemblies:
+  - WaveEngine.Box2D
+  namespace: WaveEngine.Box2D.Utils
+  summary: "\nReduce vertices by area\n"
+  example: []
+  syntax:
+    content: public static Vertices ReduceByArea(Vertices vertices, float areaTolerance)
+    parameters:
+    - id: vertices
+      type: WaveEngine.Box2D.Utils.Vertices
+      description: The vertices
+    - id: areaTolerance
+      type: System.Single
+      description: The area tolerance
+    return:
+      type: WaveEngine.Box2D.Utils.Vertices
+      description: vertices
+    content.vb: Public Shared Function ReduceByArea(vertices As Vertices, areaTolerance As Single) As Vertices
+  overload: WaveEngine.Box2D.Utils.SimplifyTools.ReduceByArea*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Box2D.Utils.SimplifyTools.MergeParallelEdges(WaveEngine.Box2D.Utils.Vertices,System.Single)
+  commentId: M:WaveEngine.Box2D.Utils.SimplifyTools.MergeParallelEdges(WaveEngine.Box2D.Utils.Vertices,System.Single)
+  id: MergeParallelEdges(WaveEngine.Box2D.Utils.Vertices,System.Single)
+  parent: WaveEngine.Box2D.Utils.SimplifyTools
+  langs:
+  - csharp
+  - vb
+  name: MergeParallelEdges(Vertices, Single)
+  nameWithType: SimplifyTools.MergeParallelEdges(Vertices, Single)
+  fullName: WaveEngine.Box2D.Utils.SimplifyTools.MergeParallelEdges(WaveEngine.Box2D.Utils.Vertices, System.Single)
+  type: Method
+  source:
+    id: MergeParallelEdges
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Box2D\Shared\Utils\SimplifyTools.cs
+    startLine: 253
+  assemblies:
+  - WaveEngine.Box2D
+  namespace: WaveEngine.Box2D.Utils
+  summary: "\nMerges all parallel edges in the list of vertices\n"
+  example: []
+  syntax:
+    content: public static void MergeParallelEdges(Vertices vertices, float tolerance)
+    parameters:
+    - id: vertices
+      type: WaveEngine.Box2D.Utils.Vertices
+      description: The vertices.
+    - id: tolerance
+      type: System.Single
+      description: The tolerance.
+    content.vb: Public Shared Sub MergeParallelEdges(vertices As Vertices, tolerance As Single)
+  overload: WaveEngine.Box2D.Utils.SimplifyTools.MergeParallelEdges*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Box2D.Utils.SimplifyTools.MergeIdenticalPoints(WaveEngine.Box2D.Utils.Vertices)
+  commentId: M:WaveEngine.Box2D.Utils.SimplifyTools.MergeIdenticalPoints(WaveEngine.Box2D.Utils.Vertices)
+  id: MergeIdenticalPoints(WaveEngine.Box2D.Utils.Vertices)
+  parent: WaveEngine.Box2D.Utils.SimplifyTools
+  langs:
+  - csharp
+  - vb
+  name: MergeIdenticalPoints(Vertices)
+  nameWithType: SimplifyTools.MergeIdenticalPoints(Vertices)
+  fullName: WaveEngine.Box2D.Utils.SimplifyTools.MergeIdenticalPoints(WaveEngine.Box2D.Utils.Vertices)
+  type: Method
+  source:
+    id: MergeIdenticalPoints
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Box2D\Shared\Utils\SimplifyTools.cs
+    startLine: 334
+  assemblies:
+  - WaveEngine.Box2D
+  namespace: WaveEngine.Box2D.Utils
+  summary: "\nMerges the identical points in the polygon.\n"
+  example: []
+  syntax:
+    content: public static Vertices MergeIdenticalPoints(Vertices vertices)
+    parameters:
+    - id: vertices
+      type: WaveEngine.Box2D.Utils.Vertices
+      description: The vertices.
+    return:
+      type: WaveEngine.Box2D.Utils.Vertices
+      description: The result.
+    content.vb: Public Shared Function MergeIdenticalPoints(vertices As Vertices) As Vertices
+  overload: WaveEngine.Box2D.Utils.SimplifyTools.MergeIdenticalPoints*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Box2D.Utils.SimplifyTools.ReduceByDistance(WaveEngine.Box2D.Utils.Vertices,System.Single)
+  commentId: M:WaveEngine.Box2D.Utils.SimplifyTools.ReduceByDistance(WaveEngine.Box2D.Utils.Vertices,System.Single)
+  id: ReduceByDistance(WaveEngine.Box2D.Utils.Vertices,System.Single)
+  parent: WaveEngine.Box2D.Utils.SimplifyTools
+  langs:
+  - csharp
+  - vb
+  name: ReduceByDistance(Vertices, Single)
+  nameWithType: SimplifyTools.ReduceByDistance(Vertices, Single)
+  fullName: WaveEngine.Box2D.Utils.SimplifyTools.ReduceByDistance(WaveEngine.Box2D.Utils.Vertices, System.Single)
+  type: Method
+  source:
+    id: ReduceByDistance
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Box2D\Shared\Utils\SimplifyTools.cs
+    startLine: 359
+  assemblies:
+  - WaveEngine.Box2D
+  namespace: WaveEngine.Box2D.Utils
+  summary: "\nReduces the polygon by distance.\n"
+  example: []
+  syntax:
+    content: public static Vertices ReduceByDistance(Vertices vertices, float distance)
+    parameters:
+    - id: vertices
+      type: WaveEngine.Box2D.Utils.Vertices
+      description: The vertices.
+    - id: distance
+      type: System.Single
+      description: The distance between points. Points closer than this will be &apos;joined&apos;.
+    return:
+      type: WaveEngine.Box2D.Utils.Vertices
+      description: The result.
+    content.vb: Public Shared Function ReduceByDistance(vertices As Vertices, distance As Single) As Vertices
+  overload: WaveEngine.Box2D.Utils.SimplifyTools.ReduceByDistance*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Box2D.Utils.SimplifyTools.ReduceByNth(WaveEngine.Box2D.Utils.Vertices,System.Int32)
+  commentId: M:WaveEngine.Box2D.Utils.SimplifyTools.ReduceByNth(WaveEngine.Box2D.Utils.Vertices,System.Int32)
+  id: ReduceByNth(WaveEngine.Box2D.Utils.Vertices,System.Int32)
+  parent: WaveEngine.Box2D.Utils.SimplifyTools
+  langs:
+  - csharp
+  - vb
+  name: ReduceByNth(Vertices, Int32)
+  nameWithType: SimplifyTools.ReduceByNth(Vertices, Int32)
+  fullName: WaveEngine.Box2D.Utils.SimplifyTools.ReduceByNth(WaveEngine.Box2D.Utils.Vertices, System.Int32)
+  type: Method
+  source:
+    id: ReduceByNth
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Box2D\Shared\Utils\SimplifyTools.cs
+    startLine: 392
+  assemblies:
+  - WaveEngine.Box2D
+  namespace: WaveEngine.Box2D.Utils
+  summary: "\nReduces the polygon by removing the Nth vertex in the vertices list.\n"
+  example: []
+  syntax:
+    content: public static Vertices ReduceByNth(Vertices vertices, int nth)
+    parameters:
+    - id: vertices
+      type: WaveEngine.Box2D.Utils.Vertices
+      description: The vertices.
+    - id: nth
+      type: System.Int32
+      description: 'The Nth point to remove. Example: 5.'
+    return:
+      type: WaveEngine.Box2D.Utils.Vertices
+      description: The result.
+    content.vb: Public Shared Function ReduceByNth(vertices As Vertices, nth As Integer) As Vertices
+  overload: WaveEngine.Box2D.Utils.SimplifyTools.ReduceByNth*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: WaveEngine.Box2D.Utils
+  commentId: N:WaveEngine.Box2D.Utils
+  name: WaveEngine.Box2D.Utils
+  nameWithType: WaveEngine.Box2D.Utils
+  fullName: WaveEngine.Box2D.Utils
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Box2D.Utils.SimplifyTools.CollinearSimplify*
+  commentId: Overload:WaveEngine.Box2D.Utils.SimplifyTools.CollinearSimplify
+  name: CollinearSimplify
+  nameWithType: SimplifyTools.CollinearSimplify
+  fullName: WaveEngine.Box2D.Utils.SimplifyTools.CollinearSimplify
+- uid: WaveEngine.Box2D.Utils.Vertices
+  commentId: T:WaveEngine.Box2D.Utils.Vertices
+  parent: WaveEngine.Box2D.Utils
+  name: Vertices
+  nameWithType: Vertices
+  fullName: WaveEngine.Box2D.Utils.Vertices
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Box2D.Utils.SimplifyTools.DouglasPeuckerSimplify*
+  commentId: Overload:WaveEngine.Box2D.Utils.SimplifyTools.DouglasPeuckerSimplify
+  name: DouglasPeuckerSimplify
+  nameWithType: SimplifyTools.DouglasPeuckerSimplify
+  fullName: WaveEngine.Box2D.Utils.SimplifyTools.DouglasPeuckerSimplify
+- uid: WaveEngine.Box2D.Utils.SimplifyTools.ReduceByArea*
+  commentId: Overload:WaveEngine.Box2D.Utils.SimplifyTools.ReduceByArea
+  name: ReduceByArea
+  nameWithType: SimplifyTools.ReduceByArea
+  fullName: WaveEngine.Box2D.Utils.SimplifyTools.ReduceByArea
+- uid: WaveEngine.Box2D.Utils.SimplifyTools.MergeParallelEdges*
+  commentId: Overload:WaveEngine.Box2D.Utils.SimplifyTools.MergeParallelEdges
+  name: MergeParallelEdges
+  nameWithType: SimplifyTools.MergeParallelEdges
+  fullName: WaveEngine.Box2D.Utils.SimplifyTools.MergeParallelEdges
+- uid: WaveEngine.Box2D.Utils.SimplifyTools.MergeIdenticalPoints*
+  commentId: Overload:WaveEngine.Box2D.Utils.SimplifyTools.MergeIdenticalPoints
+  name: MergeIdenticalPoints
+  nameWithType: SimplifyTools.MergeIdenticalPoints
+  fullName: WaveEngine.Box2D.Utils.SimplifyTools.MergeIdenticalPoints
+- uid: WaveEngine.Box2D.Utils.SimplifyTools.ReduceByDistance*
+  commentId: Overload:WaveEngine.Box2D.Utils.SimplifyTools.ReduceByDistance
+  name: ReduceByDistance
+  nameWithType: SimplifyTools.ReduceByDistance
+  fullName: WaveEngine.Box2D.Utils.SimplifyTools.ReduceByDistance
+- uid: WaveEngine.Box2D.Utils.SimplifyTools.ReduceByNth*
+  commentId: Overload:WaveEngine.Box2D.Utils.SimplifyTools.ReduceByNth
+  name: ReduceByNth
+  nameWithType: SimplifyTools.ReduceByNth
+  fullName: WaveEngine.Box2D.Utils.SimplifyTools.ReduceByNth
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

@@ -1,0 +1,1098 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Framework.Models.Settings.GameSettings
+  commentId: T:WaveEngine.Framework.Models.Settings.GameSettings
+  id: GameSettings
+  parent: WaveEngine.Framework.Models.Settings
+  children:
+  - WaveEngine.Framework.Models.Settings.GameSettings.#ctor
+  - WaveEngine.Framework.Models.Settings.GameSettings.CheckConsistency
+  - WaveEngine.Framework.Models.Settings.GameSettings.FindLayerById(System.Int32)
+  - WaveEngine.Framework.Models.Settings.GameSettings.OptimizationsCheckKey
+  - WaveEngine.Framework.Models.Settings.GameSettings.OptimizeResources
+  - WaveEngine.Framework.Models.Settings.GameSettings.RenderLayers
+  - WaveEngine.Framework.Models.Settings.GameSettings.RenderLayersKey
+  - WaveEngine.Framework.Models.Settings.GameSettings.Services
+  - WaveEngine.Framework.Models.Settings.GameSettings.ServicesKey
+  langs:
+  - csharp
+  - vb
+  name: GameSettings
+  nameWithType: GameSettings
+  fullName: WaveEngine.Framework.Models.Settings.GameSettings
+  type: Class
+  source:
+    id: GameSettings
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Settings\GameSettings.cs
+    startLine: 17
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Settings
+  summary: "\nThe additional settings of the project\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract(Namespace = "WaveEngine.Framework.Models.Settings", Name = "GameInfoModel")]
+
+      public class GameSettings : ASettings
+    content.vb: >-
+      <DataContract(Namespace:="WaveEngine.Framework.Models.Settings", Name:="GameInfoModel")>
+
+      Public Class GameSettings
+
+          Inherits ASettings
+  inheritance:
+  - System.Object
+  - WaveEngine.Framework.Models.Settings.ASettings
+  inheritedMembers:
+  - WaveEngine.Framework.Models.Settings.ASettings.Categories
+  - WaveEngine.Framework.Models.Settings.ASettings.AddCategory(System.String,WaveEngine.Framework.Models.Settings.ISettingCategory)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Namespace
+      type: System.String
+      value: WaveEngine.Framework.Models.Settings
+    - name: Name
+      type: System.String
+      value: GameInfoModel
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WaveEngine.Framework.Models.Settings.GameSettings.ServicesKey
+  commentId: F:WaveEngine.Framework.Models.Settings.GameSettings.ServicesKey
+  id: ServicesKey
+  parent: WaveEngine.Framework.Models.Settings.GameSettings
+  langs:
+  - csharp
+  - vb
+  name: ServicesKey
+  nameWithType: GameSettings.ServicesKey
+  fullName: WaveEngine.Framework.Models.Settings.GameSettings.ServicesKey
+  type: Field
+  source:
+    id: ServicesKey
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Settings\GameSettings.cs
+    startLine: 23
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Settings
+  summary: "\nServices key\n"
+  example: []
+  syntax:
+    content: public const string ServicesKey = "Services"
+    return:
+      type: System.String
+    content.vb: Public Const ServicesKey As String = "Services"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: WaveEngine.Framework.Models.Settings.GameSettings.RenderLayersKey
+  commentId: F:WaveEngine.Framework.Models.Settings.GameSettings.RenderLayersKey
+  id: RenderLayersKey
+  parent: WaveEngine.Framework.Models.Settings.GameSettings
+  langs:
+  - csharp
+  - vb
+  name: RenderLayersKey
+  nameWithType: GameSettings.RenderLayersKey
+  fullName: WaveEngine.Framework.Models.Settings.GameSettings.RenderLayersKey
+  type: Field
+  source:
+    id: RenderLayersKey
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Settings\GameSettings.cs
+    startLine: 28
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Settings
+  summary: "\nLayers key\n"
+  example: []
+  syntax:
+    content: public const string RenderLayersKey = "Render Layers"
+    return:
+      type: System.String
+    content.vb: Public Const RenderLayersKey As String = "Render Layers"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: WaveEngine.Framework.Models.Settings.GameSettings.OptimizationsCheckKey
+  commentId: F:WaveEngine.Framework.Models.Settings.GameSettings.OptimizationsCheckKey
+  id: OptimizationsCheckKey
+  parent: WaveEngine.Framework.Models.Settings.GameSettings
+  langs:
+  - csharp
+  - vb
+  name: OptimizationsCheckKey
+  nameWithType: GameSettings.OptimizationsCheckKey
+  fullName: WaveEngine.Framework.Models.Settings.GameSettings.OptimizationsCheckKey
+  type: Field
+  source:
+    id: OptimizationsCheckKey
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Settings\GameSettings.cs
+    startLine: 33
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Settings
+  summary: "\nSerializer key\n"
+  example: []
+  syntax:
+    content: public const string OptimizationsCheckKey = "Optimizations"
+    return:
+      type: System.String
+    content.vb: Public Const OptimizationsCheckKey As String = "Optimizations"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: WaveEngine.Framework.Models.Settings.GameSettings.#ctor
+  commentId: M:WaveEngine.Framework.Models.Settings.GameSettings.#ctor
+  id: '#ctor'
+  parent: WaveEngine.Framework.Models.Settings.GameSettings
+  langs:
+  - csharp
+  - vb
+  name: GameSettings()
+  nameWithType: GameSettings.GameSettings()
+  fullName: WaveEngine.Framework.Models.Settings.GameSettings.GameSettings()
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Settings\GameSettings.cs
+    startLine: 38
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Settings
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Framework.Models.Settings.GameSettings\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public GameSettings()
+    content.vb: Public Sub New
+  overload: WaveEngine.Framework.Models.Settings.GameSettings.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Settings.GameSettings.Services
+  commentId: P:WaveEngine.Framework.Models.Settings.GameSettings.Services
+  id: Services
+  parent: WaveEngine.Framework.Models.Settings.GameSettings
+  langs:
+  - csharp
+  - vb
+  name: Services
+  nameWithType: GameSettings.Services
+  fullName: WaveEngine.Framework.Models.Settings.GameSettings.Services
+  type: Property
+  source:
+    id: Services
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Settings\GameSettings.cs
+    startLine: 48
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Settings
+  summary: "\nGets the services of the project\n"
+  example: []
+  syntax:
+    content: public List<Service> Services { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{WaveEngine.Common.Service}
+    content.vb: Public ReadOnly Property Services As List(Of Service)
+  overload: WaveEngine.Framework.Models.Settings.GameSettings.Services*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Models.Settings.GameSettings.RenderLayers
+  commentId: P:WaveEngine.Framework.Models.Settings.GameSettings.RenderLayers
+  id: RenderLayers
+  parent: WaveEngine.Framework.Models.Settings.GameSettings
+  langs:
+  - csharp
+  - vb
+  name: RenderLayers
+  nameWithType: GameSettings.RenderLayers
+  fullName: WaveEngine.Framework.Models.Settings.GameSettings.RenderLayers
+  type: Property
+  source:
+    id: RenderLayers
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Settings\GameSettings.cs
+    startLine: 59
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Settings
+  summary: "\nGets the layers of the project\n"
+  example: []
+  syntax:
+    content: public List<RenderLayerDescription> RenderLayers { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{WaveEngine.Common.Graphics.RenderLayerDescription}
+    content.vb: Public ReadOnly Property RenderLayers As List(Of RenderLayerDescription)
+  overload: WaveEngine.Framework.Models.Settings.GameSettings.RenderLayers*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Framework.Models.Settings.GameSettings.OptimizeResources
+  commentId: P:WaveEngine.Framework.Models.Settings.GameSettings.OptimizeResources
+  id: OptimizeResources
+  parent: WaveEngine.Framework.Models.Settings.GameSettings
+  langs:
+  - csharp
+  - vb
+  name: OptimizeResources
+  nameWithType: GameSettings.OptimizeResources
+  fullName: WaveEngine.Framework.Models.Settings.GameSettings.OptimizeResources
+  type: Property
+  source:
+    id: OptimizeResources
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Settings\GameSettings.cs
+    startLine: 70
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Settings
+  summary: "\nGets or sets a value indicating whether the serializer to use\n"
+  example: []
+  syntax:
+    content: public bool OptimizeResources { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property OptimizeResources As Boolean
+  overload: WaveEngine.Framework.Models.Settings.GameSettings.OptimizeResources*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Settings.GameSettings.CheckConsistency
+  commentId: M:WaveEngine.Framework.Models.Settings.GameSettings.CheckConsistency
+  id: CheckConsistency
+  parent: WaveEngine.Framework.Models.Settings.GameSettings
+  langs:
+  - csharp
+  - vb
+  name: CheckConsistency()
+  nameWithType: GameSettings.CheckConsistency()
+  fullName: WaveEngine.Framework.Models.Settings.GameSettings.CheckConsistency()
+  type: Method
+  source:
+    id: CheckConsistency
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Settings\GameSettings.cs
+    startLine: 87
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Settings
+  summary: "\nChecks the consistency of the settings\n"
+  example: []
+  syntax:
+    content: public override bool CheckConsistency()
+    return:
+      type: System.Boolean
+      description: If the file has been modified
+    content.vb: Public Overrides Function CheckConsistency As Boolean
+  overridden: WaveEngine.Framework.Models.Settings.ASettings.CheckConsistency
+  overload: WaveEngine.Framework.Models.Settings.GameSettings.CheckConsistency*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: WaveEngine.Framework.Models.Settings.GameSettings.FindLayerById(System.Int32)
+  commentId: M:WaveEngine.Framework.Models.Settings.GameSettings.FindLayerById(System.Int32)
+  id: FindLayerById(System.Int32)
+  parent: WaveEngine.Framework.Models.Settings.GameSettings
+  langs:
+  - csharp
+  - vb
+  name: FindLayerById(Int32)
+  nameWithType: GameSettings.FindLayerById(Int32)
+  fullName: WaveEngine.Framework.Models.Settings.GameSettings.FindLayerById(System.Int32)
+  type: Method
+  source:
+    id: FindLayerById
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Settings\GameSettings.cs
+    startLine: 129
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Settings
+  summary: "\nFinds the layer description by id\n"
+  example: []
+  syntax:
+    content: public RenderLayerDescription FindLayerById(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: The id
+    return:
+      type: WaveEngine.Common.Graphics.RenderLayerDescription
+      description: The layer description
+    content.vb: Public Function FindLayerById(id As Integer) As RenderLayerDescription
+  overload: WaveEngine.Framework.Models.Settings.GameSettings.FindLayerById*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: WaveEngine.Framework.Models.Settings
+  commentId: N:WaveEngine.Framework.Models.Settings
+  name: WaveEngine.Framework.Models.Settings
+  nameWithType: WaveEngine.Framework.Models.Settings
+  fullName: WaveEngine.Framework.Models.Settings
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Framework.Models.Settings.ASettings
+  commentId: T:WaveEngine.Framework.Models.Settings.ASettings
+  parent: WaveEngine.Framework.Models.Settings
+  name: ASettings
+  nameWithType: ASettings
+  fullName: WaveEngine.Framework.Models.Settings.ASettings
+- uid: WaveEngine.Framework.Models.Settings.ASettings.Categories
+  commentId: F:WaveEngine.Framework.Models.Settings.ASettings.Categories
+  parent: WaveEngine.Framework.Models.Settings.ASettings
+  name: Categories
+  nameWithType: ASettings.Categories
+  fullName: WaveEngine.Framework.Models.Settings.ASettings.Categories
+- uid: WaveEngine.Framework.Models.Settings.ASettings.AddCategory(System.String,WaveEngine.Framework.Models.Settings.ISettingCategory)
+  commentId: M:WaveEngine.Framework.Models.Settings.ASettings.AddCategory(System.String,WaveEngine.Framework.Models.Settings.ISettingCategory)
+  parent: WaveEngine.Framework.Models.Settings.ASettings
+  isExternal: true
+  name: AddCategory(String, ISettingCategory)
+  nameWithType: ASettings.AddCategory(String, ISettingCategory)
+  fullName: WaveEngine.Framework.Models.Settings.ASettings.AddCategory(System.String, WaveEngine.Framework.Models.Settings.ISettingCategory)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Models.Settings.ASettings.AddCategory(System.String,WaveEngine.Framework.Models.Settings.ISettingCategory)
+    name: AddCategory
+    nameWithType: ASettings.AddCategory
+    fullName: WaveEngine.Framework.Models.Settings.ASettings.AddCategory
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Framework.Models.Settings.ISettingCategory
+    name: ISettingCategory
+    nameWithType: ISettingCategory
+    fullName: WaveEngine.Framework.Models.Settings.ISettingCategory
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Models.Settings.ASettings.AddCategory(System.String,WaveEngine.Framework.Models.Settings.ISettingCategory)
+    name: AddCategory
+    nameWithType: ASettings.AddCategory
+    fullName: WaveEngine.Framework.Models.Settings.ASettings.AddCategory
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Framework.Models.Settings.ISettingCategory
+    name: ISettingCategory
+    nameWithType: ISettingCategory
+    fullName: WaveEngine.Framework.Models.Settings.ISettingCategory
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: WaveEngine.Framework.Models.Settings.GameSettings
+  commentId: T:WaveEngine.Framework.Models.Settings.GameSettings
+  parent: WaveEngine.Framework.Models.Settings
+  name: GameSettings
+  nameWithType: GameSettings
+  fullName: WaveEngine.Framework.Models.Settings.GameSettings
+- uid: WaveEngine.Framework.Models.Settings.GameSettings.#ctor*
+  commentId: Overload:WaveEngine.Framework.Models.Settings.GameSettings.#ctor
+  name: GameSettings
+  nameWithType: GameSettings.GameSettings
+  fullName: WaveEngine.Framework.Models.Settings.GameSettings.GameSettings
+- uid: WaveEngine.Framework.Models.Settings.GameSettings.Services*
+  commentId: Overload:WaveEngine.Framework.Models.Settings.GameSettings.Services
+  name: Services
+  nameWithType: GameSettings.Services
+  fullName: WaveEngine.Framework.Models.Settings.GameSettings.Services
+- uid: System.Collections.Generic.List{WaveEngine.Common.Service}
+  commentId: T:System.Collections.Generic.List{WaveEngine.Common.Service}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Service>
+  nameWithType: List<Service>
+  fullName: System.Collections.Generic.List<WaveEngine.Common.Service>
+  nameWithType.vb: List(Of Service)
+  fullName.vb: System.Collections.Generic.List(Of WaveEngine.Common.Service)
+  name.vb: List(Of Service)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Common.Service
+    name: Service
+    nameWithType: Service
+    fullName: WaveEngine.Common.Service
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Common.Service
+    name: Service
+    nameWithType: Service
+    fullName: WaveEngine.Common.Service
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: WaveEngine.Framework.Models.Settings.GameSettings.RenderLayers*
+  commentId: Overload:WaveEngine.Framework.Models.Settings.GameSettings.RenderLayers
+  name: RenderLayers
+  nameWithType: GameSettings.RenderLayers
+  fullName: WaveEngine.Framework.Models.Settings.GameSettings.RenderLayers
+- uid: System.Collections.Generic.List{WaveEngine.Common.Graphics.RenderLayerDescription}
+  commentId: T:System.Collections.Generic.List{WaveEngine.Common.Graphics.RenderLayerDescription}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<RenderLayerDescription>
+  nameWithType: List<RenderLayerDescription>
+  fullName: System.Collections.Generic.List<WaveEngine.Common.Graphics.RenderLayerDescription>
+  nameWithType.vb: List(Of RenderLayerDescription)
+  fullName.vb: System.Collections.Generic.List(Of WaveEngine.Common.Graphics.RenderLayerDescription)
+  name.vb: List(Of RenderLayerDescription)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Common.Graphics.RenderLayerDescription
+    name: RenderLayerDescription
+    nameWithType: RenderLayerDescription
+    fullName: WaveEngine.Common.Graphics.RenderLayerDescription
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Common.Graphics.RenderLayerDescription
+    name: RenderLayerDescription
+    nameWithType: RenderLayerDescription
+    fullName: WaveEngine.Common.Graphics.RenderLayerDescription
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Models.Settings.GameSettings.OptimizeResources*
+  commentId: Overload:WaveEngine.Framework.Models.Settings.GameSettings.OptimizeResources
+  name: OptimizeResources
+  nameWithType: GameSettings.OptimizeResources
+  fullName: WaveEngine.Framework.Models.Settings.GameSettings.OptimizeResources
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Framework.Models.Settings.ASettings.CheckConsistency
+  commentId: M:WaveEngine.Framework.Models.Settings.ASettings.CheckConsistency
+  parent: WaveEngine.Framework.Models.Settings.ASettings
+  name: CheckConsistency()
+  nameWithType: ASettings.CheckConsistency()
+  fullName: WaveEngine.Framework.Models.Settings.ASettings.CheckConsistency()
+  spec.csharp:
+  - uid: WaveEngine.Framework.Models.Settings.ASettings.CheckConsistency
+    name: CheckConsistency
+    nameWithType: ASettings.CheckConsistency
+    fullName: WaveEngine.Framework.Models.Settings.ASettings.CheckConsistency
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Models.Settings.ASettings.CheckConsistency
+    name: CheckConsistency
+    nameWithType: ASettings.CheckConsistency
+    fullName: WaveEngine.Framework.Models.Settings.ASettings.CheckConsistency
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Models.Settings.GameSettings.CheckConsistency*
+  commentId: Overload:WaveEngine.Framework.Models.Settings.GameSettings.CheckConsistency
+  name: CheckConsistency
+  nameWithType: GameSettings.CheckConsistency
+  fullName: WaveEngine.Framework.Models.Settings.GameSettings.CheckConsistency
+- uid: WaveEngine.Framework.Models.Settings.GameSettings.FindLayerById*
+  commentId: Overload:WaveEngine.Framework.Models.Settings.GameSettings.FindLayerById
+  name: FindLayerById
+  nameWithType: GameSettings.FindLayerById
+  fullName: WaveEngine.Framework.Models.Settings.GameSettings.FindLayerById
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: WaveEngine.Common.Graphics.RenderLayerDescription
+  commentId: T:WaveEngine.Common.Graphics.RenderLayerDescription
+  parent: WaveEngine.Common.Graphics
+  name: RenderLayerDescription
+  nameWithType: RenderLayerDescription
+  fullName: WaveEngine.Common.Graphics.RenderLayerDescription
+- uid: WaveEngine.Common.Graphics
+  commentId: N:WaveEngine.Common.Graphics
+  name: WaveEngine.Common.Graphics
+  nameWithType: WaveEngine.Common.Graphics
+  fullName: WaveEngine.Common.Graphics

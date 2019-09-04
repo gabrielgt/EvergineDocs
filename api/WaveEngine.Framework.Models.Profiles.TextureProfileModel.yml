@@ -1,0 +1,937 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Framework.Models.Profiles.TextureProfileModel
+  commentId: T:WaveEngine.Framework.Models.Profiles.TextureProfileModel
+  id: TextureProfileModel
+  parent: WaveEngine.Framework.Models.Profiles
+  children:
+  - WaveEngine.Framework.Models.Profiles.TextureProfileModel.CopyValues(WaveEngine.Framework.Models.Profiles.ExportProfileModel)
+  - WaveEngine.Framework.Models.Profiles.TextureProfileModel.OutputFormat
+  - WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledHeight
+  - WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledPercentage
+  - WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledWidth
+  - WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScalingType
+  langs:
+  - csharp
+  - vb
+  name: TextureProfileModel
+  nameWithType: TextureProfileModel
+  fullName: WaveEngine.Framework.Models.Profiles.TextureProfileModel
+  type: Class
+  source:
+    id: TextureProfileModel
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\TextureProfileModel.cs
+    startLine: 12
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nTextureProfile class\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract(Namespace = "WaveEngine.Framework.Models.Profiles", Name = "TextureProfile")]
+
+      public class TextureProfileModel : ExportProfileModel
+    content.vb: >-
+      <DataContract(Namespace:="WaveEngine.Framework.Models.Profiles", Name:="TextureProfile")>
+
+      Public Class TextureProfileModel
+
+          Inherits ExportProfileModel
+  inheritance:
+  - System.Object
+  - WaveEngine.Framework.Models.Profiles.ExportProfileModel
+  derivedClasses:
+  - WaveEngine.Framework.Models.Profiles.SpriteSheetProfileModel
+  inheritedMembers:
+  - WaveEngine.Framework.Models.Profiles.ExportProfileModel.Name
+  - WaveEngine.Framework.Models.Profiles.ExportProfileModel.ExcludeAsset
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Namespace
+      type: System.String
+      value: WaveEngine.Framework.Models.Profiles
+    - name: Name
+      type: System.String
+      value: TextureProfile
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScalingType
+  commentId: P:WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScalingType
+  id: ScalingType
+  parent: WaveEngine.Framework.Models.Profiles.TextureProfileModel
+  langs:
+  - csharp
+  - vb
+  name: ScalingType
+  nameWithType: TextureProfileModel.ScalingType
+  fullName: WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScalingType
+  type: Property
+  source:
+    id: ScalingType
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\TextureProfileModel.cs
+    startLine: 60
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets or sets the scaling type\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderProperty(Tag = 1)]
+
+      public TextureProfileModel.TextureScalingType ScalingType { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Models.Profiles.TextureProfileModel.TextureScalingType
+    content.vb: >-
+      <DataMember>
+
+      <RenderProperty(Tag:=1)>
+
+      Public Property ScalingType As TextureProfileModel.TextureScalingType
+  overload: WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScalingType*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: Tag
+      type: System.Int32
+      value: 1
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledPercentage
+  commentId: P:WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledPercentage
+  id: ScaledPercentage
+  parent: WaveEngine.Framework.Models.Profiles.TextureProfileModel
+  langs:
+  - csharp
+  - vb
+  name: ScaledPercentage
+  nameWithType: TextureProfileModel.ScaledPercentage
+  fullName: WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledPercentage
+  type: Property
+  source:
+    id: ScaledPercentage
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\TextureProfileModel.cs
+    startLine: 67
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets or sets the scaled percentaje\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderPropertyAsSlider(0F, 100F, 1F, AttatchToTag = 1, AttachToValue = TextureProfileModel.TextureScalingType.Percentage)]
+
+      public float ScaledPercentage { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: >-
+      <DataMember>
+
+      <RenderPropertyAsSlider(0F, 100F, 1F, AttatchToTag:=1, AttachToValue:=TextureProfileModel.TextureScalingType.Percentage)>
+
+      Public Property ScaledPercentage As Single
+  overload: WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledPercentage*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderPropertyAsSlider
+    ctor: WaveEngine.Common.Attributes.RenderPropertyAsSlider.#ctor(System.Single,System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 100
+    - type: System.Single
+      value: 1
+    namedArguments:
+    - name: AttatchToTag
+      type: System.Int32
+      value: 1
+    - name: AttachToValue
+      type: WaveEngine.Framework.Models.Profiles.TextureProfileModel.TextureScalingType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledWidth
+  commentId: P:WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledWidth
+  id: ScaledWidth
+  parent: WaveEngine.Framework.Models.Profiles.TextureProfileModel
+  langs:
+  - csharp
+  - vb
+  name: ScaledWidth
+  nameWithType: TextureProfileModel.ScaledWidth
+  fullName: WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledWidth
+  type: Property
+  source:
+    id: ScaledWidth
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\TextureProfileModel.cs
+    startLine: 74
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets or sets the scaled height\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderProperty(AttatchToTag = 1, AttachToValue = TextureProfileModel.TextureScalingType.Freeform)]
+
+      public int ScaledWidth { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember>
+
+      <RenderProperty(AttatchToTag:=1, AttachToValue:=TextureProfileModel.TextureScalingType.Freeform)>
+
+      Public Property ScaledWidth As Integer
+  overload: WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledWidth*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: AttatchToTag
+      type: System.Int32
+      value: 1
+    - name: AttachToValue
+      type: WaveEngine.Framework.Models.Profiles.TextureProfileModel.TextureScalingType
+      value: 1
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledHeight
+  commentId: P:WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledHeight
+  id: ScaledHeight
+  parent: WaveEngine.Framework.Models.Profiles.TextureProfileModel
+  langs:
+  - csharp
+  - vb
+  name: ScaledHeight
+  nameWithType: TextureProfileModel.ScaledHeight
+  fullName: WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledHeight
+  type: Property
+  source:
+    id: ScaledHeight
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\TextureProfileModel.cs
+    startLine: 81
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets or sets the scaled height.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [RenderProperty(AttatchToTag = 1, AttachToValue = TextureProfileModel.TextureScalingType.Freeform)]
+
+      public int ScaledHeight { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember>
+
+      <RenderProperty(AttatchToTag:=1, AttachToValue:=TextureProfileModel.TextureScalingType.Freeform)>
+
+      Public Property ScaledHeight As Integer
+  overload: WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledHeight*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: WaveEngine.Common.Attributes.RenderProperty
+    ctor: WaveEngine.Common.Attributes.RenderProperty.#ctor
+    arguments: []
+    namedArguments:
+    - name: AttatchToTag
+      type: System.Int32
+      value: 1
+    - name: AttachToValue
+      type: WaveEngine.Framework.Models.Profiles.TextureProfileModel.TextureScalingType
+      value: 1
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Profiles.TextureProfileModel.OutputFormat
+  commentId: P:WaveEngine.Framework.Models.Profiles.TextureProfileModel.OutputFormat
+  id: OutputFormat
+  parent: WaveEngine.Framework.Models.Profiles.TextureProfileModel
+  langs:
+  - csharp
+  - vb
+  name: OutputFormat
+  nameWithType: TextureProfileModel.OutputFormat
+  fullName: WaveEngine.Framework.Models.Profiles.TextureProfileModel.OutputFormat
+  type: Property
+  source:
+    id: OutputFormat
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\TextureProfileModel.cs
+    startLine: 88
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nGets or sets the output form\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public TextureProfileModel.TextureOutputFormat OutputFormat { get; set; }
+    parameters: []
+    return:
+      type: WaveEngine.Framework.Models.Profiles.TextureProfileModel.TextureOutputFormat
+    content.vb: >-
+      <DataMember>
+
+      Public Property OutputFormat As TextureProfileModel.TextureOutputFormat
+  overload: WaveEngine.Framework.Models.Profiles.TextureProfileModel.OutputFormat*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Framework.Models.Profiles.TextureProfileModel.CopyValues(WaveEngine.Framework.Models.Profiles.ExportProfileModel)
+  commentId: M:WaveEngine.Framework.Models.Profiles.TextureProfileModel.CopyValues(WaveEngine.Framework.Models.Profiles.ExportProfileModel)
+  id: CopyValues(WaveEngine.Framework.Models.Profiles.ExportProfileModel)
+  parent: WaveEngine.Framework.Models.Profiles.TextureProfileModel
+  langs:
+  - csharp
+  - vb
+  name: CopyValues(ExportProfileModel)
+  nameWithType: TextureProfileModel.CopyValues(ExportProfileModel)
+  fullName: WaveEngine.Framework.Models.Profiles.TextureProfileModel.CopyValues(WaveEngine.Framework.Models.Profiles.ExportProfileModel)
+  type: Method
+  source:
+    id: CopyValues
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Framework\Shared\Models\Profiles\TextureProfileModel.cs
+    startLine: 95
+  assemblies:
+  - WaveEngine.Framework
+  namespace: WaveEngine.Framework.Models.Profiles
+  summary: "\nCopy values from another ExportProfileModel\n"
+  example: []
+  syntax:
+    content: public override void CopyValues(ExportProfileModel copy)
+    parameters:
+    - id: copy
+      type: WaveEngine.Framework.Models.Profiles.ExportProfileModel
+      description: Another export profile
+    content.vb: Public Overrides Sub CopyValues(copy As ExportProfileModel)
+  overridden: WaveEngine.Framework.Models.Profiles.ExportProfileModel.CopyValues(WaveEngine.Framework.Models.Profiles.ExportProfileModel)
+  overload: WaveEngine.Framework.Models.Profiles.TextureProfileModel.CopyValues*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: WaveEngine.Framework.Models.Profiles
+  commentId: N:WaveEngine.Framework.Models.Profiles
+  name: WaveEngine.Framework.Models.Profiles
+  nameWithType: WaveEngine.Framework.Models.Profiles
+  fullName: WaveEngine.Framework.Models.Profiles
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Framework.Models.Profiles.ExportProfileModel
+  commentId: T:WaveEngine.Framework.Models.Profiles.ExportProfileModel
+  parent: WaveEngine.Framework.Models.Profiles
+  name: ExportProfileModel
+  nameWithType: ExportProfileModel
+  fullName: WaveEngine.Framework.Models.Profiles.ExportProfileModel
+- uid: WaveEngine.Framework.Models.Profiles.ExportProfileModel.Name
+  commentId: P:WaveEngine.Framework.Models.Profiles.ExportProfileModel.Name
+  parent: WaveEngine.Framework.Models.Profiles.ExportProfileModel
+  name: Name
+  nameWithType: ExportProfileModel.Name
+  fullName: WaveEngine.Framework.Models.Profiles.ExportProfileModel.Name
+- uid: WaveEngine.Framework.Models.Profiles.ExportProfileModel.ExcludeAsset
+  commentId: P:WaveEngine.Framework.Models.Profiles.ExportProfileModel.ExcludeAsset
+  parent: WaveEngine.Framework.Models.Profiles.ExportProfileModel
+  name: ExcludeAsset
+  nameWithType: ExportProfileModel.ExcludeAsset
+  fullName: WaveEngine.Framework.Models.Profiles.ExportProfileModel.ExcludeAsset
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScalingType*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScalingType
+  name: ScalingType
+  nameWithType: TextureProfileModel.ScalingType
+  fullName: WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScalingType
+- uid: WaveEngine.Framework.Models.Profiles.TextureProfileModel.TextureScalingType
+  commentId: T:WaveEngine.Framework.Models.Profiles.TextureProfileModel.TextureScalingType
+  parent: WaveEngine.Framework.Models.Profiles
+  name: TextureProfileModel.TextureScalingType
+  nameWithType: TextureProfileModel.TextureScalingType
+  fullName: WaveEngine.Framework.Models.Profiles.TextureProfileModel.TextureScalingType
+- uid: WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledPercentage*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledPercentage
+  name: ScaledPercentage
+  nameWithType: TextureProfileModel.ScaledPercentage
+  fullName: WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledPercentage
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledWidth*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledWidth
+  name: ScaledWidth
+  nameWithType: TextureProfileModel.ScaledWidth
+  fullName: WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledWidth
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledHeight*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledHeight
+  name: ScaledHeight
+  nameWithType: TextureProfileModel.ScaledHeight
+  fullName: WaveEngine.Framework.Models.Profiles.TextureProfileModel.ScaledHeight
+- uid: WaveEngine.Framework.Models.Profiles.TextureProfileModel.OutputFormat*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.TextureProfileModel.OutputFormat
+  name: OutputFormat
+  nameWithType: TextureProfileModel.OutputFormat
+  fullName: WaveEngine.Framework.Models.Profiles.TextureProfileModel.OutputFormat
+- uid: WaveEngine.Framework.Models.Profiles.TextureProfileModel.TextureOutputFormat
+  commentId: T:WaveEngine.Framework.Models.Profiles.TextureProfileModel.TextureOutputFormat
+  parent: WaveEngine.Framework.Models.Profiles
+  name: TextureProfileModel.TextureOutputFormat
+  nameWithType: TextureProfileModel.TextureOutputFormat
+  fullName: WaveEngine.Framework.Models.Profiles.TextureProfileModel.TextureOutputFormat
+- uid: WaveEngine.Framework.Models.Profiles.ExportProfileModel.CopyValues(WaveEngine.Framework.Models.Profiles.ExportProfileModel)
+  commentId: M:WaveEngine.Framework.Models.Profiles.ExportProfileModel.CopyValues(WaveEngine.Framework.Models.Profiles.ExportProfileModel)
+  parent: WaveEngine.Framework.Models.Profiles.ExportProfileModel
+  name: CopyValues(ExportProfileModel)
+  nameWithType: ExportProfileModel.CopyValues(ExportProfileModel)
+  fullName: WaveEngine.Framework.Models.Profiles.ExportProfileModel.CopyValues(WaveEngine.Framework.Models.Profiles.ExportProfileModel)
+  spec.csharp:
+  - uid: WaveEngine.Framework.Models.Profiles.ExportProfileModel.CopyValues(WaveEngine.Framework.Models.Profiles.ExportProfileModel)
+    name: CopyValues
+    nameWithType: ExportProfileModel.CopyValues
+    fullName: WaveEngine.Framework.Models.Profiles.ExportProfileModel.CopyValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Models.Profiles.ExportProfileModel
+    name: ExportProfileModel
+    nameWithType: ExportProfileModel
+    fullName: WaveEngine.Framework.Models.Profiles.ExportProfileModel
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Framework.Models.Profiles.ExportProfileModel.CopyValues(WaveEngine.Framework.Models.Profiles.ExportProfileModel)
+    name: CopyValues
+    nameWithType: ExportProfileModel.CopyValues
+    fullName: WaveEngine.Framework.Models.Profiles.ExportProfileModel.CopyValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Framework.Models.Profiles.ExportProfileModel
+    name: ExportProfileModel
+    nameWithType: ExportProfileModel
+    fullName: WaveEngine.Framework.Models.Profiles.ExportProfileModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Framework.Models.Profiles.TextureProfileModel.CopyValues*
+  commentId: Overload:WaveEngine.Framework.Models.Profiles.TextureProfileModel.CopyValues
+  name: CopyValues
+  nameWithType: TextureProfileModel.CopyValues
+  fullName: WaveEngine.Framework.Models.Profiles.TextureProfileModel.CopyValues

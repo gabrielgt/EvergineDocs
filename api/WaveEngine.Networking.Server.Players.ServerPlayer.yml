@@ -1,0 +1,788 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Networking.Server.Players.ServerPlayer
+  commentId: T:WaveEngine.Networking.Server.Players.ServerPlayer
+  id: ServerPlayer
+  parent: WaveEngine.Networking.Server.Players
+  children:
+  - WaveEngine.Networking.Server.Players.ServerPlayer.#ctor(System.Int32,WaveEngine.Networking.NetworkEndpoint)
+  - WaveEngine.Networking.Server.Players.ServerPlayer.Endpoint
+  - WaveEngine.Networking.Server.Players.ServerPlayer.Room
+  langs:
+  - csharp
+  - vb
+  name: ServerPlayer
+  nameWithType: ServerPlayer
+  fullName: WaveEngine.Networking.Server.Players.ServerPlayer
+  type: Class
+  source:
+    id: ServerPlayer
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Players\ServerPlayer.cs
+    startLine: 13
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Server.Players
+  summary: "\nThis class represents a player from the server\n"
+  example: []
+  syntax:
+    content: 'public class ServerPlayer : BaseSyncNetworkPlayer, INetworkPlayer'
+    content.vb: >-
+      Public Class ServerPlayer
+
+          Inherits BaseSyncNetworkPlayer
+
+          Implements INetworkPlayer
+  inheritance:
+  - System.Object
+  - WaveEngine.Networking.Players.BaseNetworkPlayer
+  - WaveEngine.Networking.Players.BaseSyncNetworkPlayer
+  implements:
+  - WaveEngine.Networking.Players.INetworkPlayer
+  inheritedMembers:
+  - WaveEngine.Networking.Players.BaseSyncNetworkPlayer.Nickname
+  - WaveEngine.Networking.Players.BaseNetworkPlayer.Id
+  - WaveEngine.Networking.Players.BaseNetworkPlayer.CustomProperties
+  - WaveEngine.Networking.Players.BaseNetworkPlayer.TagObject
+  - WaveEngine.Networking.Players.BaseNetworkPlayer.IsMasterClient
+  - WaveEngine.Networking.Players.BaseNetworkPlayer.IsInLobby
+  - WaveEngine.Networking.Players.BaseNetworkPlayer.IsLocalPlayer
+  - WaveEngine.Networking.Players.BaseNetworkPlayer.OnNicknameChanged
+  - WaveEngine.Networking.Players.BaseNetworkPlayer.OnCustomPropertiesChanged
+  - WaveEngine.Networking.Players.BaseNetworkPlayer.WriteToMessage(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Players.BaseNetworkPlayer.PlayerFliedsFlags)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WaveEngine.Networking.Server.Players.ServerPlayer.Endpoint
+  commentId: P:WaveEngine.Networking.Server.Players.ServerPlayer.Endpoint
+  id: Endpoint
+  parent: WaveEngine.Networking.Server.Players.ServerPlayer
+  langs:
+  - csharp
+  - vb
+  name: Endpoint
+  nameWithType: ServerPlayer.Endpoint
+  fullName: WaveEngine.Networking.Server.Players.ServerPlayer.Endpoint
+  type: Property
+  source:
+    id: Endpoint
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Players\ServerPlayer.cs
+    startLine: 25
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Server.Players
+  summary: "\nGets the network endpoint of the player\n"
+  example: []
+  syntax:
+    content: public NetworkEndpoint Endpoint { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Networking.NetworkEndpoint
+    content.vb: Public ReadOnly Property Endpoint As NetworkEndpoint
+  overload: WaveEngine.Networking.Server.Players.ServerPlayer.Endpoint*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Networking.Server.Players.ServerPlayer.Room
+  commentId: P:WaveEngine.Networking.Server.Players.ServerPlayer.Room
+  id: Room
+  parent: WaveEngine.Networking.Server.Players.ServerPlayer
+  langs:
+  - csharp
+  - vb
+  name: Room
+  nameWithType: ServerPlayer.Room
+  fullName: WaveEngine.Networking.Server.Players.ServerPlayer.Room
+  type: Property
+  source:
+    id: Room
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Players\ServerPlayer.cs
+    startLine: 30
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Server.Players
+  summary: "\nGets the server room where is the player. It is null if the player is in the lobby.\n"
+  example: []
+  syntax:
+    content: public ServerRoom Room { get; }
+    parameters: []
+    return:
+      type: WaveEngine.Networking.Server.Rooms.ServerRoom
+    content.vb: Public ReadOnly Property Room As ServerRoom
+  overload: WaveEngine.Networking.Server.Players.ServerPlayer.Room*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: WaveEngine.Networking.Server.Players.ServerPlayer.#ctor(System.Int32,WaveEngine.Networking.NetworkEndpoint)
+  commentId: M:WaveEngine.Networking.Server.Players.ServerPlayer.#ctor(System.Int32,WaveEngine.Networking.NetworkEndpoint)
+  id: '#ctor(System.Int32,WaveEngine.Networking.NetworkEndpoint)'
+  parent: WaveEngine.Networking.Server.Players.ServerPlayer
+  langs:
+  - csharp
+  - vb
+  name: ServerPlayer(Int32, NetworkEndpoint)
+  nameWithType: ServerPlayer.ServerPlayer(Int32, NetworkEndpoint)
+  fullName: WaveEngine.Networking.Server.Players.ServerPlayer.ServerPlayer(System.Int32, WaveEngine.Networking.NetworkEndpoint)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Extensions\WaveEngine.Networking\Shared\Players\ServerPlayer.cs
+    startLine: 47
+  assemblies:
+  - WaveEngine.Networking
+  namespace: WaveEngine.Networking.Server.Players
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Networking.Server.Players.ServerPlayer\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public ServerPlayer(int key, NetworkEndpoint endpoint)
+    parameters:
+    - id: key
+      type: System.Int32
+      description: Internal unique key generated by the server to identify players
+    - id: endpoint
+      type: WaveEngine.Networking.NetworkEndpoint
+      description: The network endpoint of the player
+    content.vb: Public Sub New(key As Integer, endpoint As NetworkEndpoint)
+  overload: WaveEngine.Networking.Server.Players.ServerPlayer.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: WaveEngine.Networking.Server.Players
+  commentId: N:WaveEngine.Networking.Server.Players
+  name: WaveEngine.Networking.Server.Players
+  nameWithType: WaveEngine.Networking.Server.Players
+  fullName: WaveEngine.Networking.Server.Players
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Networking.Players.BaseNetworkPlayer
+  commentId: T:WaveEngine.Networking.Players.BaseNetworkPlayer
+  parent: WaveEngine.Networking.Players
+  name: BaseNetworkPlayer
+  nameWithType: BaseNetworkPlayer
+  fullName: WaveEngine.Networking.Players.BaseNetworkPlayer
+- uid: WaveEngine.Networking.Players.BaseSyncNetworkPlayer
+  commentId: T:WaveEngine.Networking.Players.BaseSyncNetworkPlayer
+  parent: WaveEngine.Networking.Players
+  name: BaseSyncNetworkPlayer
+  nameWithType: BaseSyncNetworkPlayer
+  fullName: WaveEngine.Networking.Players.BaseSyncNetworkPlayer
+- uid: WaveEngine.Networking.Players.INetworkPlayer
+  commentId: T:WaveEngine.Networking.Players.INetworkPlayer
+  parent: WaveEngine.Networking.Players
+  name: INetworkPlayer
+  nameWithType: INetworkPlayer
+  fullName: WaveEngine.Networking.Players.INetworkPlayer
+- uid: WaveEngine.Networking.Players.BaseSyncNetworkPlayer.Nickname
+  commentId: P:WaveEngine.Networking.Players.BaseSyncNetworkPlayer.Nickname
+  parent: WaveEngine.Networking.Players.BaseSyncNetworkPlayer
+  name: Nickname
+  nameWithType: BaseSyncNetworkPlayer.Nickname
+  fullName: WaveEngine.Networking.Players.BaseSyncNetworkPlayer.Nickname
+- uid: WaveEngine.Networking.Players.BaseNetworkPlayer.Id
+  commentId: P:WaveEngine.Networking.Players.BaseNetworkPlayer.Id
+  parent: WaveEngine.Networking.Players.BaseNetworkPlayer
+  name: Id
+  nameWithType: BaseNetworkPlayer.Id
+  fullName: WaveEngine.Networking.Players.BaseNetworkPlayer.Id
+- uid: WaveEngine.Networking.Players.BaseNetworkPlayer.CustomProperties
+  commentId: P:WaveEngine.Networking.Players.BaseNetworkPlayer.CustomProperties
+  parent: WaveEngine.Networking.Players.BaseNetworkPlayer
+  name: CustomProperties
+  nameWithType: BaseNetworkPlayer.CustomProperties
+  fullName: WaveEngine.Networking.Players.BaseNetworkPlayer.CustomProperties
+- uid: WaveEngine.Networking.Players.BaseNetworkPlayer.TagObject
+  commentId: P:WaveEngine.Networking.Players.BaseNetworkPlayer.TagObject
+  parent: WaveEngine.Networking.Players.BaseNetworkPlayer
+  name: TagObject
+  nameWithType: BaseNetworkPlayer.TagObject
+  fullName: WaveEngine.Networking.Players.BaseNetworkPlayer.TagObject
+- uid: WaveEngine.Networking.Players.BaseNetworkPlayer.IsMasterClient
+  commentId: P:WaveEngine.Networking.Players.BaseNetworkPlayer.IsMasterClient
+  parent: WaveEngine.Networking.Players.BaseNetworkPlayer
+  name: IsMasterClient
+  nameWithType: BaseNetworkPlayer.IsMasterClient
+  fullName: WaveEngine.Networking.Players.BaseNetworkPlayer.IsMasterClient
+- uid: WaveEngine.Networking.Players.BaseNetworkPlayer.IsInLobby
+  commentId: P:WaveEngine.Networking.Players.BaseNetworkPlayer.IsInLobby
+  parent: WaveEngine.Networking.Players.BaseNetworkPlayer
+  name: IsInLobby
+  nameWithType: BaseNetworkPlayer.IsInLobby
+  fullName: WaveEngine.Networking.Players.BaseNetworkPlayer.IsInLobby
+- uid: WaveEngine.Networking.Players.BaseNetworkPlayer.IsLocalPlayer
+  commentId: P:WaveEngine.Networking.Players.BaseNetworkPlayer.IsLocalPlayer
+  parent: WaveEngine.Networking.Players.BaseNetworkPlayer
+  name: IsLocalPlayer
+  nameWithType: BaseNetworkPlayer.IsLocalPlayer
+  fullName: WaveEngine.Networking.Players.BaseNetworkPlayer.IsLocalPlayer
+- uid: WaveEngine.Networking.Players.BaseNetworkPlayer.OnNicknameChanged
+  commentId: E:WaveEngine.Networking.Players.BaseNetworkPlayer.OnNicknameChanged
+  parent: WaveEngine.Networking.Players.BaseNetworkPlayer
+  name: OnNicknameChanged
+  nameWithType: BaseNetworkPlayer.OnNicknameChanged
+  fullName: WaveEngine.Networking.Players.BaseNetworkPlayer.OnNicknameChanged
+- uid: WaveEngine.Networking.Players.BaseNetworkPlayer.OnCustomPropertiesChanged
+  commentId: E:WaveEngine.Networking.Players.BaseNetworkPlayer.OnCustomPropertiesChanged
+  parent: WaveEngine.Networking.Players.BaseNetworkPlayer
+  name: OnCustomPropertiesChanged
+  nameWithType: BaseNetworkPlayer.OnCustomPropertiesChanged
+  fullName: WaveEngine.Networking.Players.BaseNetworkPlayer.OnCustomPropertiesChanged
+- uid: WaveEngine.Networking.Players.BaseNetworkPlayer.WriteToMessage(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Players.BaseNetworkPlayer.PlayerFliedsFlags)
+  commentId: M:WaveEngine.Networking.Players.BaseNetworkPlayer.WriteToMessage(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Players.BaseNetworkPlayer.PlayerFliedsFlags)
+  parent: WaveEngine.Networking.Players.BaseNetworkPlayer
+  name: WriteToMessage(OutgoingMessage, BaseNetworkPlayer.PlayerFliedsFlags)
+  nameWithType: BaseNetworkPlayer.WriteToMessage(OutgoingMessage, BaseNetworkPlayer.PlayerFliedsFlags)
+  fullName: WaveEngine.Networking.Players.BaseNetworkPlayer.WriteToMessage(WaveEngine.Networking.Connection.Messages.OutgoingMessage, WaveEngine.Networking.Players.BaseNetworkPlayer.PlayerFliedsFlags)
+  spec.csharp:
+  - uid: WaveEngine.Networking.Players.BaseNetworkPlayer.WriteToMessage(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Players.BaseNetworkPlayer.PlayerFliedsFlags)
+    name: WriteToMessage
+    nameWithType: BaseNetworkPlayer.WriteToMessage
+    fullName: WaveEngine.Networking.Players.BaseNetworkPlayer.WriteToMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Networking.Connection.Messages.OutgoingMessage
+    name: OutgoingMessage
+    nameWithType: OutgoingMessage
+    fullName: WaveEngine.Networking.Connection.Messages.OutgoingMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Networking.Players.BaseNetworkPlayer.PlayerFliedsFlags
+    name: BaseNetworkPlayer.PlayerFliedsFlags
+    nameWithType: BaseNetworkPlayer.PlayerFliedsFlags
+    fullName: WaveEngine.Networking.Players.BaseNetworkPlayer.PlayerFliedsFlags
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Networking.Players.BaseNetworkPlayer.WriteToMessage(WaveEngine.Networking.Connection.Messages.OutgoingMessage,WaveEngine.Networking.Players.BaseNetworkPlayer.PlayerFliedsFlags)
+    name: WriteToMessage
+    nameWithType: BaseNetworkPlayer.WriteToMessage
+    fullName: WaveEngine.Networking.Players.BaseNetworkPlayer.WriteToMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Networking.Connection.Messages.OutgoingMessage
+    name: OutgoingMessage
+    nameWithType: OutgoingMessage
+    fullName: WaveEngine.Networking.Connection.Messages.OutgoingMessage
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: WaveEngine.Networking.Players.BaseNetworkPlayer.PlayerFliedsFlags
+    name: BaseNetworkPlayer.PlayerFliedsFlags
+    nameWithType: BaseNetworkPlayer.PlayerFliedsFlags
+    fullName: WaveEngine.Networking.Players.BaseNetworkPlayer.PlayerFliedsFlags
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Networking.Players
+  commentId: N:WaveEngine.Networking.Players
+  name: WaveEngine.Networking.Players
+  nameWithType: WaveEngine.Networking.Players
+  fullName: WaveEngine.Networking.Players
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Networking.Server.Players.ServerPlayer.Endpoint*
+  commentId: Overload:WaveEngine.Networking.Server.Players.ServerPlayer.Endpoint
+  name: Endpoint
+  nameWithType: ServerPlayer.Endpoint
+  fullName: WaveEngine.Networking.Server.Players.ServerPlayer.Endpoint
+- uid: WaveEngine.Networking.NetworkEndpoint
+  commentId: T:WaveEngine.Networking.NetworkEndpoint
+  parent: WaveEngine.Networking
+  name: NetworkEndpoint
+  nameWithType: NetworkEndpoint
+  fullName: WaveEngine.Networking.NetworkEndpoint
+- uid: WaveEngine.Networking
+  commentId: N:WaveEngine.Networking
+  name: WaveEngine.Networking
+  nameWithType: WaveEngine.Networking
+  fullName: WaveEngine.Networking
+- uid: WaveEngine.Networking.Server.Players.ServerPlayer.Room*
+  commentId: Overload:WaveEngine.Networking.Server.Players.ServerPlayer.Room
+  name: Room
+  nameWithType: ServerPlayer.Room
+  fullName: WaveEngine.Networking.Server.Players.ServerPlayer.Room
+- uid: WaveEngine.Networking.Server.Rooms.ServerRoom
+  commentId: T:WaveEngine.Networking.Server.Rooms.ServerRoom
+  parent: WaveEngine.Networking.Server.Rooms
+  name: ServerRoom
+  nameWithType: ServerRoom
+  fullName: WaveEngine.Networking.Server.Rooms.ServerRoom
+- uid: WaveEngine.Networking.Server.Rooms
+  commentId: N:WaveEngine.Networking.Server.Rooms
+  name: WaveEngine.Networking.Server.Rooms
+  nameWithType: WaveEngine.Networking.Server.Rooms
+  fullName: WaveEngine.Networking.Server.Rooms
+- uid: WaveEngine.Networking.Server.Players.ServerPlayer
+  commentId: T:WaveEngine.Networking.Server.Players.ServerPlayer
+  parent: WaveEngine.Networking.Server.Players
+  name: ServerPlayer
+  nameWithType: ServerPlayer
+  fullName: WaveEngine.Networking.Server.Players.ServerPlayer
+- uid: WaveEngine.Networking.Server.Players.ServerPlayer.#ctor*
+  commentId: Overload:WaveEngine.Networking.Server.Players.ServerPlayer.#ctor
+  name: ServerPlayer
+  nameWithType: ServerPlayer.ServerPlayer
+  fullName: WaveEngine.Networking.Server.Players.ServerPlayer.ServerPlayer
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

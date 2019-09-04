@@ -1,0 +1,1824 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Common.Math.Ray
+  commentId: T:WaveEngine.Common.Math.Ray
+  id: Ray
+  parent: WaveEngine.Common.Math
+  children:
+  - WaveEngine.Common.Math.Ray.#ctor(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3)
+  - WaveEngine.Common.Math.Ray.Direction
+  - WaveEngine.Common.Math.Ray.Equals(System.Object)
+  - WaveEngine.Common.Math.Ray.Equals(WaveEngine.Common.Math.Ray)
+  - WaveEngine.Common.Math.Ray.Equals(WaveEngine.Common.Math.Ray@)
+  - WaveEngine.Common.Math.Ray.GetHashCode
+  - WaveEngine.Common.Math.Ray.GetPoint(System.Single)
+  - WaveEngine.Common.Math.Ray.GetPoint(System.Single,WaveEngine.Common.Math.Vector3@)
+  - WaveEngine.Common.Math.Ray.IntersectionXPlane(System.Single)
+  - WaveEngine.Common.Math.Ray.IntersectionXPlane(System.Single,WaveEngine.Common.Math.Vector3@)
+  - WaveEngine.Common.Math.Ray.IntersectionYPlane(System.Single)
+  - WaveEngine.Common.Math.Ray.IntersectionYPlane(System.Single,WaveEngine.Common.Math.Vector3@)
+  - WaveEngine.Common.Math.Ray.IntersectionZPlane(System.Single)
+  - WaveEngine.Common.Math.Ray.IntersectionZPlane(System.Single,WaveEngine.Common.Math.Vector3@)
+  - WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.BoundingBox)
+  - WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.BoundingBox@,System.Nullable{System.Single}@)
+  - WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.BoundingFrustum)
+  - WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.BoundingSphere)
+  - WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.BoundingSphere@,System.Nullable{System.Single}@)
+  - WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.Plane,System.Boolean)
+  - WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.Plane@,System.Nullable{System.Single}@)
+  - WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.Ray@,System.Nullable{System.Single}@,System.Nullable{System.Single}@)
+  - WaveEngine.Common.Math.Ray.op_Equality(WaveEngine.Common.Math.Ray,WaveEngine.Common.Math.Ray)
+  - WaveEngine.Common.Math.Ray.op_Inequality(WaveEngine.Common.Math.Ray,WaveEngine.Common.Math.Ray)
+  - WaveEngine.Common.Math.Ray.Position
+  - WaveEngine.Common.Math.Ray.ToString
+  langs:
+  - csharp
+  - vb
+  name: Ray
+  nameWithType: Ray
+  fullName: WaveEngine.Common.Math.Ray
+  type: Struct
+  source:
+    id: Ray
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 13
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nRepresents a ray.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      public struct Ray : IEquatable<Ray>
+    content.vb: >-
+      <DataContract>
+
+      Public Structure Ray
+
+          Implements IEquatable(Of Ray)
+  implements:
+  - System.IEquatable{WaveEngine.Common.Math.Ray}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: WaveEngine.Common.Math.Ray.Position
+  commentId: F:WaveEngine.Common.Math.Ray.Position
+  id: Position
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: Ray.Position
+  fullName: WaveEngine.Common.Math.Ray.Position
+  type: Field
+  source:
+    id: Position
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 20
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nRay origin position.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public Vector3 Position
+    return:
+      type: WaveEngine.Common.Math.Vector3
+    content.vb: >-
+      <DataMember>
+
+      Public Position As Vector3
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Ray.Direction
+  commentId: F:WaveEngine.Common.Math.Ray.Direction
+  id: Direction
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: Direction
+  nameWithType: Ray.Direction
+  fullName: WaveEngine.Common.Math.Ray.Direction
+  type: Field
+  source:
+    id: Direction
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 26
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nRay direction.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public Vector3 Direction
+    return:
+      type: WaveEngine.Common.Math.Vector3
+    content.vb: >-
+      <DataMember>
+
+      Public Direction As Vector3
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Ray.#ctor(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3)
+  commentId: M:WaveEngine.Common.Math.Ray.#ctor(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3)
+  id: '#ctor(WaveEngine.Common.Math.Vector3,WaveEngine.Common.Math.Vector3)'
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: Ray(Vector3, Vector3)
+  nameWithType: Ray.Ray(Vector3, Vector3)
+  fullName: WaveEngine.Common.Math.Ray.Ray(WaveEngine.Common.Math.Vector3, WaveEngine.Common.Math.Vector3)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 35
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nInitializes a new instance of the <xref href=\"WaveEngine.Common.Math.Ray\" data-throw-if-not-resolved=\"false\"></xref> struct.\n"
+  example: []
+  syntax:
+    content: public Ray(Vector3 position, Vector3 direction)
+    parameters:
+    - id: position
+      type: WaveEngine.Common.Math.Vector3
+      description: The position.
+    - id: direction
+      type: WaveEngine.Common.Math.Vector3
+      description: The direction.
+    content.vb: Public Sub New(position As Vector3, direction As Vector3)
+  overload: WaveEngine.Common.Math.Ray.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Ray.Equals(WaveEngine.Common.Math.Ray)
+  commentId: M:WaveEngine.Common.Math.Ray.Equals(WaveEngine.Common.Math.Ray)
+  id: Equals(WaveEngine.Common.Math.Ray)
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: Equals(Ray)
+  nameWithType: Ray.Equals(Ray)
+  fullName: WaveEngine.Common.Math.Ray.Equals(WaveEngine.Common.Math.Ray)
+  type: Method
+  source:
+    id: Equals
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 49
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nEqualses the specified other.\n"
+  example: []
+  syntax:
+    content: public bool Equals(Ray other)
+    parameters:
+    - id: other
+      type: WaveEngine.Common.Math.Ray
+      description: The other.
+    return:
+      type: System.Boolean
+      description: The result.
+    content.vb: Public Function Equals(other As Ray) As Boolean
+  overload: WaveEngine.Common.Math.Ray.Equals*
+  implements:
+  - System.IEquatable{WaveEngine.Common.Math.Ray}.Equals(WaveEngine.Common.Math.Ray)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Ray.Equals(WaveEngine.Common.Math.Ray@)
+  commentId: M:WaveEngine.Common.Math.Ray.Equals(WaveEngine.Common.Math.Ray@)
+  id: Equals(WaveEngine.Common.Math.Ray@)
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: Equals(ref Ray)
+  nameWithType: Ray.Equals(ref Ray)
+  fullName: WaveEngine.Common.Math.Ray.Equals(ref WaveEngine.Common.Math.Ray)
+  type: Method
+  source:
+    id: Equals
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 59
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nEqualses the specified other.\n"
+  example: []
+  syntax:
+    content: public bool Equals(ref Ray other)
+    parameters:
+    - id: other
+      type: WaveEngine.Common.Math.Ray
+      description: The other.
+    return:
+      type: System.Boolean
+      description: The result.
+    content.vb: Public Function Equals(ByRef other As Ray) As Boolean
+  overload: WaveEngine.Common.Math.Ray.Equals*
+  nameWithType.vb: Ray.Equals(ByRef Ray)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Math.Ray.Equals(ByRef WaveEngine.Common.Math.Ray)
+  name.vb: Equals(ByRef Ray)
+- uid: WaveEngine.Common.Math.Ray.Equals(System.Object)
+  commentId: M:WaveEngine.Common.Math.Ray.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: Ray.Equals(Object)
+  fullName: WaveEngine.Common.Math.Ray.Equals(System.Object)
+  type: Method
+  source:
+    id: Equals
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 76
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nDetermines whether the specified <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> is equal to this instance.\n"
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The <xref href="System.Object" data-throw-if-not-resolved="false"></xref> to compare with this instance.
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if the specified <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> is equal to this instance; otherwise, <code>false</code>.\n"
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: WaveEngine.Common.Math.Ray.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: WaveEngine.Common.Math.Ray.GetHashCode
+  commentId: M:WaveEngine.Common.Math.Ray.GetHashCode
+  id: GetHashCode
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Ray.GetHashCode()
+  fullName: WaveEngine.Common.Math.Ray.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 93
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nReturns a hash code for this instance.\n"
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: "\nA hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.\n"
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: WaveEngine.Common.Math.Ray.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: WaveEngine.Common.Math.Ray.ToString
+  commentId: M:WaveEngine.Common.Math.Ray.ToString
+  id: ToString
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Ray.ToString()
+  fullName: WaveEngine.Common.Math.Ray.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 107
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nReturns a <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> that represents this instance.\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: "\nA <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> that represents this instance.\n"
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.ValueType.ToString
+  overload: WaveEngine.Common.Math.Ray.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.BoundingBox)
+  commentId: M:WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.BoundingBox)
+  id: Intersects(WaveEngine.Common.Math.BoundingBox)
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: Intersects(BoundingBox)
+  nameWithType: Ray.Intersects(BoundingBox)
+  fullName: WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.BoundingBox)
+  type: Method
+  source:
+    id: Intersects
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 117
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nIntersectses the specified box.\n"
+  example: []
+  syntax:
+    content: public float? Intersects(BoundingBox box)
+    parameters:
+    - id: box
+      type: WaveEngine.Common.Math.BoundingBox
+      description: The box.
+    return:
+      type: System.Nullable{System.Single}
+      description: The result.
+    content.vb: Public Function Intersects(box As BoundingBox) As Single?
+  overload: WaveEngine.Common.Math.Ray.Intersects*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.BoundingBox@,System.Nullable{System.Single}@)
+  commentId: M:WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.BoundingBox@,System.Nullable{System.Single}@)
+  id: Intersects(WaveEngine.Common.Math.BoundingBox@,System.Nullable{System.Single}@)
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: Intersects(ref BoundingBox, out Nullable<Single>)
+  nameWithType: Ray.Intersects(ref BoundingBox, out Nullable<Single>)
+  fullName: WaveEngine.Common.Math.Ray.Intersects(ref WaveEngine.Common.Math.BoundingBox, out System.Nullable<System.Single>)
+  type: Method
+  source:
+    id: Intersects
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 127
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nIntersectses the specified box.\n"
+  example: []
+  syntax:
+    content: public void Intersects(ref BoundingBox box, out float? result)
+    parameters:
+    - id: box
+      type: WaveEngine.Common.Math.BoundingBox
+      description: The box.
+    - id: result
+      type: System.Nullable{System.Single}
+      description: The result.
+    content.vb: Public Sub Intersects(ByRef box As BoundingBox, ByRef result As Single?)
+  overload: WaveEngine.Common.Math.Ray.Intersects*
+  nameWithType.vb: Ray.Intersects(ByRef BoundingBox, ByRef Nullable(Of Single))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Math.Ray.Intersects(ByRef WaveEngine.Common.Math.BoundingBox, ByRef System.Nullable(Of System.Single))
+  name.vb: Intersects(ByRef BoundingBox, ByRef Nullable(Of Single))
+- uid: WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.BoundingFrustum)
+  commentId: M:WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.BoundingFrustum)
+  id: Intersects(WaveEngine.Common.Math.BoundingFrustum)
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: Intersects(BoundingFrustum)
+  nameWithType: Ray.Intersects(BoundingFrustum)
+  fullName: WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.BoundingFrustum)
+  type: Method
+  source:
+    id: Intersects
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 137
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nIntersectses the specified frustum.\n"
+  example: []
+  syntax:
+    content: public float? Intersects(BoundingFrustum frustum)
+    parameters:
+    - id: frustum
+      type: WaveEngine.Common.Math.BoundingFrustum
+      description: The frustum.
+    return:
+      type: System.Nullable{System.Single}
+      description: The result.
+    content.vb: Public Function Intersects(frustum As BoundingFrustum) As Single?
+  overload: WaveEngine.Common.Math.Ray.Intersects*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.Plane,System.Boolean)
+  commentId: M:WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.Plane,System.Boolean)
+  id: Intersects(WaveEngine.Common.Math.Plane,System.Boolean)
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: Intersects(Plane, Boolean)
+  nameWithType: Ray.Intersects(Plane, Boolean)
+  fullName: WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.Plane, System.Boolean)
+  type: Method
+  source:
+    id: Intersects
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 153
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nIntersectses the specified plane.\n"
+  example: []
+  syntax:
+    content: public float? Intersects(Plane plane, bool ignoreNegative = true)
+    parameters:
+    - id: plane
+      type: WaveEngine.Common.Math.Plane
+      description: The plane.
+    - id: ignoreNegative
+      type: System.Boolean
+      description: Ignore negative values
+    return:
+      type: System.Nullable{System.Single}
+      description: The result.
+    content.vb: Public Function Intersects(plane As Plane, ignoreNegative As Boolean = True) As Single?
+  overload: WaveEngine.Common.Math.Ray.Intersects*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.Plane@,System.Nullable{System.Single}@)
+  commentId: M:WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.Plane@,System.Nullable{System.Single}@)
+  id: Intersects(WaveEngine.Common.Math.Plane@,System.Nullable{System.Single}@)
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: Intersects(ref Plane, out Nullable<Single>)
+  nameWithType: Ray.Intersects(ref Plane, out Nullable<Single>)
+  fullName: WaveEngine.Common.Math.Ray.Intersects(ref WaveEngine.Common.Math.Plane, out System.Nullable<System.Single>)
+  type: Method
+  source:
+    id: Intersects
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 183
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nIntersectses the specified plane.\n"
+  example: []
+  syntax:
+    content: public void Intersects(ref Plane plane, out float? result)
+    parameters:
+    - id: plane
+      type: WaveEngine.Common.Math.Plane
+      description: The plane.
+    - id: result
+      type: System.Nullable{System.Single}
+      description: The result.
+    content.vb: Public Sub Intersects(ByRef plane As Plane, ByRef result As Single?)
+  overload: WaveEngine.Common.Math.Ray.Intersects*
+  nameWithType.vb: Ray.Intersects(ByRef Plane, ByRef Nullable(Of Single))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Math.Ray.Intersects(ByRef WaveEngine.Common.Math.Plane, ByRef System.Nullable(Of System.Single))
+  name.vb: Intersects(ByRef Plane, ByRef Nullable(Of Single))
+- uid: WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.BoundingSphere)
+  commentId: M:WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.BoundingSphere)
+  id: Intersects(WaveEngine.Common.Math.BoundingSphere)
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: Intersects(BoundingSphere)
+  nameWithType: Ray.Intersects(BoundingSphere)
+  fullName: WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.BoundingSphere)
+  type: Method
+  source:
+    id: Intersects
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 216
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nIntersectses the specified sphere.\n"
+  example: []
+  syntax:
+    content: public float? Intersects(BoundingSphere sphere)
+    parameters:
+    - id: sphere
+      type: WaveEngine.Common.Math.BoundingSphere
+      description: The sphere.
+    return:
+      type: System.Nullable{System.Single}
+      description: The result.
+    content.vb: Public Function Intersects(sphere As BoundingSphere) As Single?
+  overload: WaveEngine.Common.Math.Ray.Intersects*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.BoundingSphere@,System.Nullable{System.Single}@)
+  commentId: M:WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.BoundingSphere@,System.Nullable{System.Single}@)
+  id: Intersects(WaveEngine.Common.Math.BoundingSphere@,System.Nullable{System.Single}@)
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: Intersects(ref BoundingSphere, out Nullable<Single>)
+  nameWithType: Ray.Intersects(ref BoundingSphere, out Nullable<Single>)
+  fullName: WaveEngine.Common.Math.Ray.Intersects(ref WaveEngine.Common.Math.BoundingSphere, out System.Nullable<System.Single>)
+  type: Method
+  source:
+    id: Intersects
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 253
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nIntersectses the specified sphere.\n"
+  example: []
+  syntax:
+    content: public void Intersects(ref BoundingSphere sphere, out float? result)
+    parameters:
+    - id: sphere
+      type: WaveEngine.Common.Math.BoundingSphere
+      description: The sphere.
+    - id: result
+      type: System.Nullable{System.Single}
+      description: The result.
+    content.vb: Public Sub Intersects(ByRef sphere As BoundingSphere, ByRef result As Single?)
+  overload: WaveEngine.Common.Math.Ray.Intersects*
+  nameWithType.vb: Ray.Intersects(ByRef BoundingSphere, ByRef Nullable(Of Single))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Math.Ray.Intersects(ByRef WaveEngine.Common.Math.BoundingSphere, ByRef System.Nullable(Of System.Single))
+  name.vb: Intersects(ByRef BoundingSphere, ByRef Nullable(Of Single))
+- uid: WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.Ray@,System.Nullable{System.Single}@,System.Nullable{System.Single}@)
+  commentId: M:WaveEngine.Common.Math.Ray.Intersects(WaveEngine.Common.Math.Ray@,System.Nullable{System.Single}@,System.Nullable{System.Single}@)
+  id: Intersects(WaveEngine.Common.Math.Ray@,System.Nullable{System.Single}@,System.Nullable{System.Single}@)
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: Intersects(ref Ray, out Nullable<Single>, out Nullable<Single>)
+  nameWithType: Ray.Intersects(ref Ray, out Nullable<Single>, out Nullable<Single>)
+  fullName: WaveEngine.Common.Math.Ray.Intersects(ref WaveEngine.Common.Math.Ray, out System.Nullable<System.Single>, out System.Nullable<System.Single>)
+  type: Method
+  source:
+    id: Intersects
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 290
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nCalculate the closest points between two rays\n"
+  example: []
+  syntax:
+    content: public void Intersects(ref Ray ray, out float? distanceA, out float? distanceB)
+    parameters:
+    - id: ray
+      type: WaveEngine.Common.Math.Ray
+      description: The second ray
+    - id: distanceA
+      type: System.Nullable{System.Single}
+      description: 'The closest point distance in first ray to the second ray '
+    - id: distanceB
+      type: System.Nullable{System.Single}
+      description: The closest point distance in second ray to the first ray
+    content.vb: Public Sub Intersects(ByRef ray As Ray, ByRef distanceA As Single?, ByRef distanceB As Single?)
+  overload: WaveEngine.Common.Math.Ray.Intersects*
+  nameWithType.vb: Ray.Intersects(ByRef Ray, ByRef Nullable(Of Single), ByRef Nullable(Of Single))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Math.Ray.Intersects(ByRef WaveEngine.Common.Math.Ray, ByRef System.Nullable(Of System.Single), ByRef System.Nullable(Of System.Single))
+  name.vb: Intersects(ByRef Ray, ByRef Nullable(Of Single), ByRef Nullable(Of Single))
+- uid: WaveEngine.Common.Math.Ray.IntersectionXPlane(System.Single)
+  commentId: M:WaveEngine.Common.Math.Ray.IntersectionXPlane(System.Single)
+  id: IntersectionXPlane(System.Single)
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: IntersectionXPlane(Single)
+  nameWithType: Ray.IntersectionXPlane(Single)
+  fullName: WaveEngine.Common.Math.Ray.IntersectionXPlane(System.Single)
+  type: Method
+  source:
+    id: IntersectionXPlane
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 333
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nGets the intersection point with the X plane at the specified X value\n"
+  example: []
+  syntax:
+    content: public Vector3 IntersectionXPlane(float xValue)
+    parameters:
+    - id: xValue
+      type: System.Single
+      description: The X plane value.
+    return:
+      type: WaveEngine.Common.Math.Vector3
+      description: The intersection point with the ray
+    content.vb: Public Function IntersectionXPlane(xValue As Single) As Vector3
+  overload: WaveEngine.Common.Math.Ray.IntersectionXPlane*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Ray.IntersectionXPlane(System.Single,WaveEngine.Common.Math.Vector3@)
+  commentId: M:WaveEngine.Common.Math.Ray.IntersectionXPlane(System.Single,WaveEngine.Common.Math.Vector3@)
+  id: IntersectionXPlane(System.Single,WaveEngine.Common.Math.Vector3@)
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: IntersectionXPlane(Single, out Vector3)
+  nameWithType: Ray.IntersectionXPlane(Single, out Vector3)
+  fullName: WaveEngine.Common.Math.Ray.IntersectionXPlane(System.Single, out WaveEngine.Common.Math.Vector3)
+  type: Method
+  source:
+    id: IntersectionXPlane
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 350
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nGets the intersection point with the X plane at the specified X value\n"
+  example: []
+  syntax:
+    content: public void IntersectionXPlane(float xValue, out Vector3 point)
+    parameters:
+    - id: xValue
+      type: System.Single
+      description: The X plane value.
+    - id: point
+      type: WaveEngine.Common.Math.Vector3
+      description: The intersection point with the ray
+    content.vb: Public Sub IntersectionXPlane(xValue As Single, ByRef point As Vector3)
+  overload: WaveEngine.Common.Math.Ray.IntersectionXPlane*
+  nameWithType.vb: Ray.IntersectionXPlane(Single, ByRef Vector3)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Math.Ray.IntersectionXPlane(System.Single, ByRef WaveEngine.Common.Math.Vector3)
+  name.vb: IntersectionXPlane(Single, ByRef Vector3)
+- uid: WaveEngine.Common.Math.Ray.IntersectionYPlane(System.Single)
+  commentId: M:WaveEngine.Common.Math.Ray.IntersectionYPlane(System.Single)
+  id: IntersectionYPlane(System.Single)
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: IntersectionYPlane(Single)
+  nameWithType: Ray.IntersectionYPlane(Single)
+  fullName: WaveEngine.Common.Math.Ray.IntersectionYPlane(System.Single)
+  type: Method
+  source:
+    id: IntersectionYPlane
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 367
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nGets the intersection point with the Y plane at the specified Y value\n"
+  example: []
+  syntax:
+    content: public Vector3 IntersectionYPlane(float yValue)
+    parameters:
+    - id: yValue
+      type: System.Single
+      description: The Y plane value.
+    return:
+      type: WaveEngine.Common.Math.Vector3
+      description: The intersection point with the ray
+    content.vb: Public Function IntersectionYPlane(yValue As Single) As Vector3
+  overload: WaveEngine.Common.Math.Ray.IntersectionYPlane*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Ray.IntersectionYPlane(System.Single,WaveEngine.Common.Math.Vector3@)
+  commentId: M:WaveEngine.Common.Math.Ray.IntersectionYPlane(System.Single,WaveEngine.Common.Math.Vector3@)
+  id: IntersectionYPlane(System.Single,WaveEngine.Common.Math.Vector3@)
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: IntersectionYPlane(Single, out Vector3)
+  nameWithType: Ray.IntersectionYPlane(Single, out Vector3)
+  fullName: WaveEngine.Common.Math.Ray.IntersectionYPlane(System.Single, out WaveEngine.Common.Math.Vector3)
+  type: Method
+  source:
+    id: IntersectionYPlane
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 384
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nGets the intersection point with the Y plane at the specified Y value\n"
+  example: []
+  syntax:
+    content: public void IntersectionYPlane(float yValue, out Vector3 point)
+    parameters:
+    - id: yValue
+      type: System.Single
+      description: The Y plane value.
+    - id: point
+      type: WaveEngine.Common.Math.Vector3
+      description: The intersection point with the ray
+    content.vb: Public Sub IntersectionYPlane(yValue As Single, ByRef point As Vector3)
+  overload: WaveEngine.Common.Math.Ray.IntersectionYPlane*
+  nameWithType.vb: Ray.IntersectionYPlane(Single, ByRef Vector3)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Math.Ray.IntersectionYPlane(System.Single, ByRef WaveEngine.Common.Math.Vector3)
+  name.vb: IntersectionYPlane(Single, ByRef Vector3)
+- uid: WaveEngine.Common.Math.Ray.IntersectionZPlane(System.Single)
+  commentId: M:WaveEngine.Common.Math.Ray.IntersectionZPlane(System.Single)
+  id: IntersectionZPlane(System.Single)
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: IntersectionZPlane(Single)
+  nameWithType: Ray.IntersectionZPlane(Single)
+  fullName: WaveEngine.Common.Math.Ray.IntersectionZPlane(System.Single)
+  type: Method
+  source:
+    id: IntersectionZPlane
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 401
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nGets the intersection point with the Z plane at the specified Z value\n"
+  example: []
+  syntax:
+    content: public Vector3 IntersectionZPlane(float zValue)
+    parameters:
+    - id: zValue
+      type: System.Single
+      description: The Z plane value.
+    return:
+      type: WaveEngine.Common.Math.Vector3
+      description: The intersection point with the ray
+    content.vb: Public Function IntersectionZPlane(zValue As Single) As Vector3
+  overload: WaveEngine.Common.Math.Ray.IntersectionZPlane*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Ray.IntersectionZPlane(System.Single,WaveEngine.Common.Math.Vector3@)
+  commentId: M:WaveEngine.Common.Math.Ray.IntersectionZPlane(System.Single,WaveEngine.Common.Math.Vector3@)
+  id: IntersectionZPlane(System.Single,WaveEngine.Common.Math.Vector3@)
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: IntersectionZPlane(Single, out Vector3)
+  nameWithType: Ray.IntersectionZPlane(Single, out Vector3)
+  fullName: WaveEngine.Common.Math.Ray.IntersectionZPlane(System.Single, out WaveEngine.Common.Math.Vector3)
+  type: Method
+  source:
+    id: IntersectionZPlane
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 418
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nGets the intersection point with the Z plane at the specified Z value\n"
+  example: []
+  syntax:
+    content: public void IntersectionZPlane(float zValue, out Vector3 point)
+    parameters:
+    - id: zValue
+      type: System.Single
+      description: The Z plane value.
+    - id: point
+      type: WaveEngine.Common.Math.Vector3
+      description: The intersection point with the ray
+    content.vb: Public Sub IntersectionZPlane(zValue As Single, ByRef point As Vector3)
+  overload: WaveEngine.Common.Math.Ray.IntersectionZPlane*
+  nameWithType.vb: Ray.IntersectionZPlane(Single, ByRef Vector3)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Math.Ray.IntersectionZPlane(System.Single, ByRef WaveEngine.Common.Math.Vector3)
+  name.vb: IntersectionZPlane(Single, ByRef Vector3)
+- uid: WaveEngine.Common.Math.Ray.GetPoint(System.Single)
+  commentId: M:WaveEngine.Common.Math.Ray.GetPoint(System.Single)
+  id: GetPoint(System.Single)
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: GetPoint(Single)
+  nameWithType: Ray.GetPoint(Single)
+  fullName: WaveEngine.Common.Math.Ray.GetPoint(System.Single)
+  type: Method
+  source:
+    id: GetPoint
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 435
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nGets a point at distance units along the ray\n"
+  example: []
+  syntax:
+    content: public Vector3 GetPoint(float distance)
+    parameters:
+    - id: distance
+      type: System.Single
+      description: he distance
+    return:
+      type: WaveEngine.Common.Math.Vector3
+      description: The point
+    content.vb: Public Function GetPoint(distance As Single) As Vector3
+  overload: WaveEngine.Common.Math.Ray.GetPoint*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WaveEngine.Common.Math.Ray.GetPoint(System.Single,WaveEngine.Common.Math.Vector3@)
+  commentId: M:WaveEngine.Common.Math.Ray.GetPoint(System.Single,WaveEngine.Common.Math.Vector3@)
+  id: GetPoint(System.Single,WaveEngine.Common.Math.Vector3@)
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: GetPoint(Single, out Vector3)
+  nameWithType: Ray.GetPoint(Single, out Vector3)
+  fullName: WaveEngine.Common.Math.Ray.GetPoint(System.Single, out WaveEngine.Common.Math.Vector3)
+  type: Method
+  source:
+    id: GetPoint
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 445
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nGets a point at distance units along the ray\n"
+  example: []
+  syntax:
+    content: public void GetPoint(float distance, out Vector3 result)
+    parameters:
+    - id: distance
+      type: System.Single
+      description: he distance
+    - id: result
+      type: WaveEngine.Common.Math.Vector3
+      description: The point
+    content.vb: Public Sub GetPoint(distance As Single, ByRef result As Vector3)
+  overload: WaveEngine.Common.Math.Ray.GetPoint*
+  nameWithType.vb: Ray.GetPoint(Single, ByRef Vector3)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: WaveEngine.Common.Math.Ray.GetPoint(System.Single, ByRef WaveEngine.Common.Math.Vector3)
+  name.vb: GetPoint(Single, ByRef Vector3)
+- uid: WaveEngine.Common.Math.Ray.op_Equality(WaveEngine.Common.Math.Ray,WaveEngine.Common.Math.Ray)
+  commentId: M:WaveEngine.Common.Math.Ray.op_Equality(WaveEngine.Common.Math.Ray,WaveEngine.Common.Math.Ray)
+  id: op_Equality(WaveEngine.Common.Math.Ray,WaveEngine.Common.Math.Ray)
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: Equality(Ray, Ray)
+  nameWithType: Ray.Equality(Ray, Ray)
+  fullName: WaveEngine.Common.Math.Ray.Equality(WaveEngine.Common.Math.Ray, WaveEngine.Common.Math.Ray)
+  type: Operator
+  source:
+    id: op_Equality
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 460
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nImplements the operator ==.\n"
+  example: []
+  syntax:
+    content: public static bool operator ==(Ray a, Ray b)
+    parameters:
+    - id: a
+      type: WaveEngine.Common.Math.Ray
+      description: The a.
+    - id: b
+      type: WaveEngine.Common.Math.Ray
+      description: The b.
+    return:
+      type: System.Boolean
+      description: "\nThe result of the operator.\n"
+    content.vb: Public Shared Operator =(a As Ray, b As Ray) As Boolean
+  overload: WaveEngine.Common.Math.Ray.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WaveEngine.Common.Math.Ray.op_Inequality(WaveEngine.Common.Math.Ray,WaveEngine.Common.Math.Ray)
+  commentId: M:WaveEngine.Common.Math.Ray.op_Inequality(WaveEngine.Common.Math.Ray,WaveEngine.Common.Math.Ray)
+  id: op_Inequality(WaveEngine.Common.Math.Ray,WaveEngine.Common.Math.Ray)
+  parent: WaveEngine.Common.Math.Ray
+  langs:
+  - csharp
+  - vb
+  name: Inequality(Ray, Ray)
+  nameWithType: Ray.Inequality(Ray, Ray)
+  fullName: WaveEngine.Common.Math.Ray.Inequality(WaveEngine.Common.Math.Ray, WaveEngine.Common.Math.Ray)
+  type: Operator
+  source:
+    id: op_Inequality
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Math\Ray.cs
+    startLine: 473
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Math
+  summary: "\nImplements the operator !=.\n"
+  example: []
+  syntax:
+    content: public static bool operator !=(Ray a, Ray b)
+    parameters:
+    - id: a
+      type: WaveEngine.Common.Math.Ray
+      description: The a.
+    - id: b
+      type: WaveEngine.Common.Math.Ray
+      description: The b.
+    return:
+      type: System.Boolean
+      description: "\nThe result of the operator.\n"
+    content.vb: Public Shared Operator <>(a As Ray, b As Ray) As Boolean
+  overload: WaveEngine.Common.Math.Ray.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: WaveEngine.Common.Math
+  commentId: N:WaveEngine.Common.Math
+  name: WaveEngine.Common.Math
+  nameWithType: WaveEngine.Common.Math
+  fullName: WaveEngine.Common.Math
+- uid: System.IEquatable{WaveEngine.Common.Math.Ray}
+  commentId: T:System.IEquatable{WaveEngine.Common.Math.Ray}
+  parent: System
+  definition: System.IEquatable`1
+  name: IEquatable<Ray>
+  nameWithType: IEquatable<Ray>
+  fullName: System.IEquatable<WaveEngine.Common.Math.Ray>
+  nameWithType.vb: IEquatable(Of Ray)
+  fullName.vb: System.IEquatable(Of WaveEngine.Common.Math.Ray)
+  name.vb: IEquatable(Of Ray)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: WaveEngine.Common.Math.Ray
+    name: Ray
+    nameWithType: Ray
+    fullName: WaveEngine.Common.Math.Ray
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: WaveEngine.Common.Math.Ray
+    name: Ray
+    nameWithType: Ray
+    fullName: WaveEngine.Common.Math.Ray
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: System.IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: WaveEngine.Common.Math.Vector3
+  commentId: T:WaveEngine.Common.Math.Vector3
+  parent: WaveEngine.Common.Math
+  name: Vector3
+  nameWithType: Vector3
+  fullName: WaveEngine.Common.Math.Vector3
+- uid: WaveEngine.Common.Math.Ray
+  commentId: T:WaveEngine.Common.Math.Ray
+  parent: WaveEngine.Common.Math
+  name: Ray
+  nameWithType: Ray
+  fullName: WaveEngine.Common.Math.Ray
+- uid: WaveEngine.Common.Math.Ray.#ctor*
+  commentId: Overload:WaveEngine.Common.Math.Ray.#ctor
+  name: Ray
+  nameWithType: Ray.Ray
+  fullName: WaveEngine.Common.Math.Ray.Ray
+- uid: WaveEngine.Common.Math.Ray.Equals*
+  commentId: Overload:WaveEngine.Common.Math.Ray.Equals
+  name: Equals
+  nameWithType: Ray.Equals
+  fullName: WaveEngine.Common.Math.Ray.Equals
+- uid: System.IEquatable{WaveEngine.Common.Math.Ray}.Equals(WaveEngine.Common.Math.Ray)
+  commentId: M:System.IEquatable{WaveEngine.Common.Math.Ray}.Equals(WaveEngine.Common.Math.Ray)
+  parent: System.IEquatable{WaveEngine.Common.Math.Ray}
+  definition: System.IEquatable`1.Equals(`0)
+  name: Equals(Ray)
+  nameWithType: IEquatable<Ray>.Equals(Ray)
+  fullName: System.IEquatable<WaveEngine.Common.Math.Ray>.Equals(WaveEngine.Common.Math.Ray)
+  nameWithType.vb: IEquatable(Of Ray).Equals(Ray)
+  fullName.vb: System.IEquatable(Of WaveEngine.Common.Math.Ray).Equals(WaveEngine.Common.Math.Ray)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<Ray>.Equals
+    fullName: System.IEquatable<WaveEngine.Common.Math.Ray>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Ray
+    name: Ray
+    nameWithType: Ray
+    fullName: WaveEngine.Common.Math.Ray
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of Ray).Equals
+    fullName: System.IEquatable(Of WaveEngine.Common.Math.Ray).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: WaveEngine.Common.Math.Ray
+    name: Ray
+    nameWithType: Ray
+    fullName: WaveEngine.Common.Math.Ray
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable<T>.Equals
+    fullName: System.IEquatable<T>.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    nameWithType: IEquatable(Of T).Equals
+    fullName: System.IEquatable(Of T).Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Math.Ray.GetHashCode*
+  commentId: Overload:WaveEngine.Common.Math.Ray.GetHashCode
+  name: GetHashCode
+  nameWithType: Ray.GetHashCode
+  fullName: WaveEngine.Common.Math.Ray.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Math.Ray.ToString*
+  commentId: Overload:WaveEngine.Common.Math.Ray.ToString
+  name: ToString
+  nameWithType: Ray.ToString
+  fullName: WaveEngine.Common.Math.Ray.ToString
+- uid: WaveEngine.Common.Math.Ray.Intersects*
+  commentId: Overload:WaveEngine.Common.Math.Ray.Intersects
+  name: Intersects
+  nameWithType: Ray.Intersects
+  fullName: WaveEngine.Common.Math.Ray.Intersects
+- uid: WaveEngine.Common.Math.BoundingBox
+  commentId: T:WaveEngine.Common.Math.BoundingBox
+  parent: WaveEngine.Common.Math
+  name: BoundingBox
+  nameWithType: BoundingBox
+  fullName: WaveEngine.Common.Math.BoundingBox
+- uid: System.Nullable{System.Single}
+  commentId: T:System.Nullable{System.Single}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Single>
+  nameWithType: Nullable<Single>
+  fullName: System.Nullable<System.Single>
+  nameWithType.vb: Nullable(Of Single)
+  fullName.vb: System.Nullable(Of System.Single)
+  name.vb: Nullable(Of Single)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Math.BoundingFrustum
+  commentId: T:WaveEngine.Common.Math.BoundingFrustum
+  parent: WaveEngine.Common.Math
+  name: BoundingFrustum
+  nameWithType: BoundingFrustum
+  fullName: WaveEngine.Common.Math.BoundingFrustum
+- uid: WaveEngine.Common.Math.Plane
+  commentId: T:WaveEngine.Common.Math.Plane
+  parent: WaveEngine.Common.Math
+  name: Plane
+  nameWithType: Plane
+  fullName: WaveEngine.Common.Math.Plane
+- uid: WaveEngine.Common.Math.BoundingSphere
+  commentId: T:WaveEngine.Common.Math.BoundingSphere
+  parent: WaveEngine.Common.Math
+  name: BoundingSphere
+  nameWithType: BoundingSphere
+  fullName: WaveEngine.Common.Math.BoundingSphere
+- uid: WaveEngine.Common.Math.Ray.IntersectionXPlane*
+  commentId: Overload:WaveEngine.Common.Math.Ray.IntersectionXPlane
+  name: IntersectionXPlane
+  nameWithType: Ray.IntersectionXPlane
+  fullName: WaveEngine.Common.Math.Ray.IntersectionXPlane
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: WaveEngine.Common.Math.Ray.IntersectionYPlane*
+  commentId: Overload:WaveEngine.Common.Math.Ray.IntersectionYPlane
+  name: IntersectionYPlane
+  nameWithType: Ray.IntersectionYPlane
+  fullName: WaveEngine.Common.Math.Ray.IntersectionYPlane
+- uid: WaveEngine.Common.Math.Ray.IntersectionZPlane*
+  commentId: Overload:WaveEngine.Common.Math.Ray.IntersectionZPlane
+  name: IntersectionZPlane
+  nameWithType: Ray.IntersectionZPlane
+  fullName: WaveEngine.Common.Math.Ray.IntersectionZPlane
+- uid: WaveEngine.Common.Math.Ray.GetPoint*
+  commentId: Overload:WaveEngine.Common.Math.Ray.GetPoint
+  name: GetPoint
+  nameWithType: Ray.GetPoint
+  fullName: WaveEngine.Common.Math.Ray.GetPoint
+- uid: WaveEngine.Common.Math.Ray.op_Equality*
+  commentId: Overload:WaveEngine.Common.Math.Ray.op_Equality
+  name: Equality
+  nameWithType: Ray.Equality
+  fullName: WaveEngine.Common.Math.Ray.Equality
+- uid: WaveEngine.Common.Math.Ray.op_Inequality*
+  commentId: Overload:WaveEngine.Common.Math.Ray.op_Inequality
+  name: Inequality
+  nameWithType: Ray.Inequality
+  fullName: WaveEngine.Common.Math.Ray.Inequality

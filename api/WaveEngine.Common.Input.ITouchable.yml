@@ -1,0 +1,472 @@
+### YamlMime:ManagedReference
+items:
+- uid: WaveEngine.Common.Input.ITouchable
+  commentId: T:WaveEngine.Common.Input.ITouchable
+  id: ITouchable
+  parent: WaveEngine.Common.Input
+  children:
+  - WaveEngine.Common.Input.ITouchable.AddTouch(WaveEngine.Common.Input.TouchLocation,System.Boolean)
+  - WaveEngine.Common.Input.ITouchable.Contains(WaveEngine.Common.Math.Vector2)
+  - WaveEngine.Common.Input.ITouchable.IsActive
+  - WaveEngine.Common.Input.ITouchable.ManualTouchOrder
+  - WaveEngine.Common.Input.ITouchable.TouchOrder
+  - WaveEngine.Common.Input.ITouchable.TouchOrderChanged
+  - WaveEngine.Common.Input.ITouchable.UpdateTouchOrder
+  langs:
+  - csharp
+  - vb
+  name: ITouchable
+  nameWithType: ITouchable
+  fullName: WaveEngine.Common.Input.ITouchable
+  type: Interface
+  source:
+    id: ITouchable
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Input\ITouchable.cs
+    startLine: 13
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Input
+  summary: "\nInterface for touchables.\n"
+  example: []
+  syntax:
+    content: public interface ITouchable
+    content.vb: Public Interface ITouchable
+  extensionMethods:
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: WaveEngine.Common.Input.ITouchable.TouchOrderChanged
+  commentId: E:WaveEngine.Common.Input.ITouchable.TouchOrderChanged
+  id: TouchOrderChanged
+  parent: WaveEngine.Common.Input.ITouchable
+  langs:
+  - csharp
+  - vb
+  name: TouchOrderChanged
+  nameWithType: ITouchable.TouchOrderChanged
+  fullName: WaveEngine.Common.Input.ITouchable.TouchOrderChanged
+  type: Event
+  source:
+    id: TouchOrderChanged
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Input\ITouchable.cs
+    startLine: 18
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Input
+  summary: "\nOccurs when [touch order changed].\n"
+  example: []
+  syntax:
+    content: event EventHandler TouchOrderChanged
+    return:
+      type: System.EventHandler
+    content.vb: Event TouchOrderChanged As EventHandler
+- uid: WaveEngine.Common.Input.ITouchable.TouchOrder
+  commentId: P:WaveEngine.Common.Input.ITouchable.TouchOrder
+  id: TouchOrder
+  parent: WaveEngine.Common.Input.ITouchable
+  langs:
+  - csharp
+  - vb
+  name: TouchOrder
+  nameWithType: ITouchable.TouchOrder
+  fullName: WaveEngine.Common.Input.ITouchable.TouchOrder
+  type: Property
+  source:
+    id: TouchOrder
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Input\ITouchable.cs
+    startLine: 25
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Input
+  summary: "\nGets the touch order.\n"
+  example: []
+  syntax:
+    content: int TouchOrder { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property TouchOrder As Integer
+  overload: WaveEngine.Common.Input.ITouchable.TouchOrder*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: WaveEngine.Common.Input.ITouchable.IsActive
+  commentId: P:WaveEngine.Common.Input.ITouchable.IsActive
+  id: IsActive
+  parent: WaveEngine.Common.Input.ITouchable
+  langs:
+  - csharp
+  - vb
+  name: IsActive
+  nameWithType: ITouchable.IsActive
+  fullName: WaveEngine.Common.Input.ITouchable.IsActive
+  type: Property
+  source:
+    id: IsActive
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Input\ITouchable.cs
+    startLine: 33
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Input
+  summary: "\nGets a value indicating whether this instance is active.\n"
+  example: []
+  syntax:
+    content: bool IsActive { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if this instance is active; otherwise, <code>false</code>.\n"
+    content.vb: ReadOnly Property IsActive As Boolean
+  overload: WaveEngine.Common.Input.ITouchable.IsActive*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: WaveEngine.Common.Input.ITouchable.Contains(WaveEngine.Common.Math.Vector2)
+  commentId: M:WaveEngine.Common.Input.ITouchable.Contains(WaveEngine.Common.Math.Vector2)
+  id: Contains(WaveEngine.Common.Math.Vector2)
+  parent: WaveEngine.Common.Input.ITouchable
+  langs:
+  - csharp
+  - vb
+  name: Contains(Vector2)
+  nameWithType: ITouchable.Contains(Vector2)
+  fullName: WaveEngine.Common.Input.ITouchable.Contains(WaveEngine.Common.Math.Vector2)
+  type: Method
+  source:
+    id: Contains
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Input\ITouchable.cs
+    startLine: 45
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Input
+  summary: "\nDetermines whether [contains] [the specified point].\n"
+  example: []
+  syntax:
+    content: bool Contains(Vector2 point)
+    parameters:
+    - id: point
+      type: WaveEngine.Common.Math.Vector2
+      description: The point.
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if [contains] [the specified point]; otherwise, <code>false</code>.\n"
+    content.vb: Function Contains(point As Vector2) As Boolean
+  overload: WaveEngine.Common.Input.ITouchable.Contains*
+- uid: WaveEngine.Common.Input.ITouchable.AddTouch(WaveEngine.Common.Input.TouchLocation,System.Boolean)
+  commentId: M:WaveEngine.Common.Input.ITouchable.AddTouch(WaveEngine.Common.Input.TouchLocation,System.Boolean)
+  id: AddTouch(WaveEngine.Common.Input.TouchLocation,System.Boolean)
+  parent: WaveEngine.Common.Input.ITouchable
+  langs:
+  - csharp
+  - vb
+  name: AddTouch(TouchLocation, Boolean)
+  nameWithType: ITouchable.AddTouch(TouchLocation, Boolean)
+  fullName: WaveEngine.Common.Input.ITouchable.AddTouch(WaveEngine.Common.Input.TouchLocation, System.Boolean)
+  type: Method
+  source:
+    id: AddTouch
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Input\ITouchable.cs
+    startLine: 52
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Input
+  summary: "\nAdds the touch.\n"
+  example: []
+  syntax:
+    content: void AddTouch(TouchLocation touch, bool isNew)
+    parameters:
+    - id: touch
+      type: WaveEngine.Common.Input.TouchLocation
+      description: The touch.
+    - id: isNew
+      type: System.Boolean
+      description: if set to <code>true</code> [is new].
+    content.vb: Sub AddTouch(touch As TouchLocation, isNew As Boolean)
+  overload: WaveEngine.Common.Input.ITouchable.AddTouch*
+- uid: WaveEngine.Common.Input.ITouchable.UpdateTouchOrder
+  commentId: M:WaveEngine.Common.Input.ITouchable.UpdateTouchOrder
+  id: UpdateTouchOrder
+  parent: WaveEngine.Common.Input.ITouchable
+  langs:
+  - csharp
+  - vb
+  name: UpdateTouchOrder()
+  nameWithType: ITouchable.UpdateTouchOrder()
+  fullName: WaveEngine.Common.Input.ITouchable.UpdateTouchOrder()
+  type: Method
+  source:
+    id: UpdateTouchOrder
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Input\ITouchable.cs
+    startLine: 58
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Input
+  summary: "\nUpdates the touch order.\n"
+  example: []
+  syntax:
+    content: void UpdateTouchOrder()
+    content.vb: Sub UpdateTouchOrder
+  overload: WaveEngine.Common.Input.ITouchable.UpdateTouchOrder*
+- uid: WaveEngine.Common.Input.ITouchable.ManualTouchOrder
+  commentId: P:WaveEngine.Common.Input.ITouchable.ManualTouchOrder
+  id: ManualTouchOrder
+  parent: WaveEngine.Common.Input.ITouchable
+  langs:
+  - csharp
+  - vb
+  name: ManualTouchOrder
+  nameWithType: ITouchable.ManualTouchOrder
+  fullName: WaveEngine.Common.Input.ITouchable.ManualTouchOrder
+  type: Property
+  source:
+    id: ManualTouchOrder
+    path: D:\Source\Repos\TestDoc\src25\Common\WaveEngine.Common\Shared\Input\ITouchable.cs
+    startLine: 66
+  assemblies:
+  - WaveEngine.Common
+  namespace: WaveEngine.Common.Input
+  summary: "\nGets or sets a value indicating whether [manual touch order].\n"
+  example: []
+  syntax:
+    content: bool ManualTouchOrder { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if [manual touch order]; otherwise, <code>false</code>.\n"
+    content.vb: Property ManualTouchOrder As Boolean
+  overload: WaveEngine.Common.Input.ITouchable.ManualTouchOrder*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: WaveEngine.Common.Input
+  commentId: N:WaveEngine.Common.Input
+  name: WaveEngine.Common.Input
+  nameWithType: WaveEngine.Common.Input
+  fullName: WaveEngine.Common.Input
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  name: GetMemberAssembly()
+  nameWithType: ReflectionHelper.GetMemberAssembly()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  parent: WaveEngine.Common.Helpers.ReflectionHelper
+  definition: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  name: GetTypeName()
+  nameWithType: ReflectionHelper.GetTypeName()
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName()
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  isExternal: true
+  name: GetMemberAssembly(Object)
+  nameWithType: ReflectionHelper.GetMemberAssembly(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly(System.Object)
+    name: GetMemberAssembly
+    nameWithType: ReflectionHelper.GetMemberAssembly
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetMemberAssembly
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers.ReflectionHelper
+  commentId: T:WaveEngine.Common.Helpers.ReflectionHelper
+  parent: WaveEngine.Common.Helpers
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper
+- uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  commentId: M:WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  isExternal: true
+  name: GetTypeName(Object)
+  nameWithType: ReflectionHelper.GetTypeName(Object)
+  fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+  spec.csharp:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName(System.Object)
+    name: GetTypeName
+    nameWithType: ReflectionHelper.GetTypeName
+    fullName: WaveEngine.Common.Helpers.ReflectionHelper.GetTypeName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WaveEngine.Common.Helpers
+  commentId: N:WaveEngine.Common.Helpers
+  name: WaveEngine.Common.Helpers
+  nameWithType: WaveEngine.Common.Helpers
+  fullName: WaveEngine.Common.Helpers
+- uid: System.EventHandler
+  commentId: T:System.EventHandler
+  parent: System
+  isExternal: true
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WaveEngine.Common.Input.ITouchable.TouchOrder*
+  commentId: Overload:WaveEngine.Common.Input.ITouchable.TouchOrder
+  name: TouchOrder
+  nameWithType: ITouchable.TouchOrder
+  fullName: WaveEngine.Common.Input.ITouchable.TouchOrder
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: WaveEngine.Common.Input.ITouchable.IsActive*
+  commentId: Overload:WaveEngine.Common.Input.ITouchable.IsActive
+  name: IsActive
+  nameWithType: ITouchable.IsActive
+  fullName: WaveEngine.Common.Input.ITouchable.IsActive
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WaveEngine.Common.Input.ITouchable.Contains*
+  commentId: Overload:WaveEngine.Common.Input.ITouchable.Contains
+  name: Contains
+  nameWithType: ITouchable.Contains
+  fullName: WaveEngine.Common.Input.ITouchable.Contains
+- uid: WaveEngine.Common.Math.Vector2
+  commentId: T:WaveEngine.Common.Math.Vector2
+  parent: WaveEngine.Common.Math
+  name: Vector2
+  nameWithType: Vector2
+  fullName: WaveEngine.Common.Math.Vector2
+- uid: WaveEngine.Common.Math
+  commentId: N:WaveEngine.Common.Math
+  name: WaveEngine.Common.Math
+  nameWithType: WaveEngine.Common.Math
+  fullName: WaveEngine.Common.Math
+- uid: WaveEngine.Common.Input.ITouchable.AddTouch*
+  commentId: Overload:WaveEngine.Common.Input.ITouchable.AddTouch
+  name: AddTouch
+  nameWithType: ITouchable.AddTouch
+  fullName: WaveEngine.Common.Input.ITouchable.AddTouch
+- uid: WaveEngine.Common.Input.TouchLocation
+  commentId: T:WaveEngine.Common.Input.TouchLocation
+  parent: WaveEngine.Common.Input
+  name: TouchLocation
+  nameWithType: TouchLocation
+  fullName: WaveEngine.Common.Input.TouchLocation
+- uid: WaveEngine.Common.Input.ITouchable.UpdateTouchOrder*
+  commentId: Overload:WaveEngine.Common.Input.ITouchable.UpdateTouchOrder
+  name: UpdateTouchOrder
+  nameWithType: ITouchable.UpdateTouchOrder
+  fullName: WaveEngine.Common.Input.ITouchable.UpdateTouchOrder
+- uid: WaveEngine.Common.Input.ITouchable.ManualTouchOrder*
+  commentId: Overload:WaveEngine.Common.Input.ITouchable.ManualTouchOrder
+  name: ManualTouchOrder
+  nameWithType: ITouchable.ManualTouchOrder
+  fullName: WaveEngine.Common.Input.ITouchable.ManualTouchOrder
