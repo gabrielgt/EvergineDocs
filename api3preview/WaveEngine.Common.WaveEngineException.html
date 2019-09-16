@@ -88,12 +88,13 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
       <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level1"><span class="xref">System.Exception</span></div>
       <div class="level"><span class="xref"></span></div>
   </div>
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.Common.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class WaveEngineException : Exception</code></pre>
+    <pre><code class="lang-csharp hljs">public class WaveEngineException : Exception, ISerializable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -117,7 +118,7 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Common_WaveEngineException__ctor_System_String_Exception_">WaveEngineException(String, Exception)</a></td>
+        <td><a href="#WaveEngine_Common_WaveEngineException__ctor_System_String_System_Exception_">WaveEngineException(String, Exception)</a></td>
         <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.WaveEngineException.html">WaveEngineException</a> class.</p>
 </td>
       </tr>
@@ -157,7 +158,7 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Common_WaveEngineException__ctor_System_String_Exception_" data-uid="WaveEngine.Common.WaveEngineException.#ctor(System.String,Exception)">WaveEngineException(String, Exception)</h4>
+  <h4 id="WaveEngine_Common_WaveEngineException__ctor_System_String_System_Exception_" data-uid="WaveEngine.Common.WaveEngineException.#ctor(System.String,System.Exception)">WaveEngineException(String, Exception)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.WaveEngineException.html">WaveEngineException</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -182,13 +183,17 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Exception</span></td>
+        <td><span class="xref">System.Exception</span></td>
         <td><em>innerException</em></td>
         <td><p>The inner exception.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Runtime.Serialization.ISerializable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

@@ -95,7 +95,7 @@
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.OpenVR.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class OpenVRInputTracking : XRInputTracking</code></pre>
+    <pre><code class="lang-csharp hljs">public class OpenVRInputTracking : XRInputTracking, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -227,8 +227,9 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_OpenVR_InputTracking_OpenVRInputTracking_GetDeviceByRole_XRControllerRole_System_Int32_">GetDeviceByRole(XRControllerRole, Int32)</a></td>
-        <td></td>
+        <td><a href="#WaveEngine_OpenVR_InputTracking_OpenVRInputTracking_GetDeviceByRole_WaveEngine_Common_XR_XRControllerRole_System_Int32_">GetDeviceByRole(XRControllerRole, Int32)</a></td>
+        <td><p>Gets device by role.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_OpenVR_InputTracking_OpenVRInputTracking_GetDeviceByType_WaveEngine_Framework_XR_TrackedDevices_XRTrackedDeviceType_System_Int32_">GetDeviceByType(XRTrackedDeviceType, Int32)</a></td>
@@ -284,8 +285,9 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_OpenVR_InputTracking_OpenVRInputTracking_GetDeviceByRole_XRControllerRole_System_Int32_" data-uid="WaveEngine.OpenVR.InputTracking.OpenVRInputTracking.GetDeviceByRole(XRControllerRole,System.Int32)">GetDeviceByRole(XRControllerRole, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="WaveEngine_OpenVR_InputTracking_OpenVRInputTracking_GetDeviceByRole_WaveEngine_Common_XR_XRControllerRole_System_Int32_" data-uid="WaveEngine.OpenVR.InputTracking.OpenVRInputTracking.GetDeviceByRole(WaveEngine.Common.XR.XRControllerRole,System.Int32)">GetDeviceByRole(XRControllerRole, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets device by role.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -302,14 +304,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">XRControllerRole</span></td>
+        <td><a class="xref" href="WaveEngine.Common.XR.XRControllerRole.html">XRControllerRole</a></td>
         <td><em>controllerRole</em></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><em>count</em></td>
-        <td></td>
+        <td><p>Device count.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -324,7 +327,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="WaveEngine.Framework.XR.TrackedDevices.XRTrackedDevice.html">XRTrackedDevice</a></td>
-        <td></td>
+        <td><p>Tracked device.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -383,6 +387,10 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void Initialize()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>

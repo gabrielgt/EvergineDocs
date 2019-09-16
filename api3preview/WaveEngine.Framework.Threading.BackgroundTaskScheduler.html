@@ -88,6 +88,7 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
       <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level1"><span class="xref">System.Threading.Tasks.TaskScheduler</span></div>
       <div class="level"><span class="xref"></span></div>
   </div>
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
@@ -159,12 +160,12 @@ currently queued to the scheduler waiting to be executed.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Threading_BackgroundTaskScheduler_QueueTask_Task_">QueueTask(Task)</a></td>
+        <td><a href="#WaveEngine_Framework_Threading_BackgroundTaskScheduler_QueueTask_System_Threading_Tasks_Task_">QueueTask(Task)</a></td>
         <td><p>Queues a <span class="xref">System.Threading.Tasks.Task</span> to the scheduler.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Threading_BackgroundTaskScheduler_TryExecuteTaskInline_Task_System_Boolean_">TryExecuteTaskInline(Task, Boolean)</a></td>
+        <td><a href="#WaveEngine_Framework_Threading_BackgroundTaskScheduler_TryExecuteTaskInline_System_Threading_Tasks_Task_System_Boolean_">TryExecuteTaskInline(Task, Boolean)</a></td>
         <td><p>Determines whether the provided <span class="xref">System.Threading.Tasks.Task</span>
 can be executed synchronously in this call, and if it can, executes it.</p>
 </td>
@@ -197,6 +198,22 @@ can be executed synchronously in this call, and if it can, executes it.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>The scheduler can be configured once.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Framework_Threading_BackgroundTaskScheduler_GetScheduledTasks" data-uid="WaveEngine.Framework.Threading.BackgroundTaskScheduler.GetScheduledTasks">GetScheduledTasks()</h4>
   <div class="markdown level1 summary"><p>Generates an enumerable of <span class="xref">System.Threading.Tasks.Task</span> instances
 currently queued to the scheduler waiting to be executed.</p>
@@ -216,7 +233,7 @@ currently queued to the scheduler waiting to be executed.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Task</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Threading.Tasks.Task</span>&gt;</td>
         <td><p>An enumerable that allows traversal of tasks currently queued to this scheduler.</p>
 </td>
       </tr>
@@ -238,7 +255,7 @@ currently queued to the scheduler waiting to be executed.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Threading_BackgroundTaskScheduler_QueueTask_Task_" data-uid="WaveEngine.Framework.Threading.BackgroundTaskScheduler.QueueTask(Task)">QueueTask(Task)</h4>
+  <h4 id="WaveEngine_Framework_Threading_BackgroundTaskScheduler_QueueTask_System_Threading_Tasks_Task_" data-uid="WaveEngine.Framework.Threading.BackgroundTaskScheduler.QueueTask(System.Threading.Tasks.Task)">QueueTask(Task)</h4>
   <div class="markdown level1 summary"><p>Queues a <span class="xref">System.Threading.Tasks.Task</span> to the scheduler.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -257,14 +274,14 @@ currently queued to the scheduler waiting to be executed.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td><em>task</em></td>
         <td><p>The <span class="xref">System.Threading.Tasks.Task</span> to be queued.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Threading_BackgroundTaskScheduler_TryExecuteTaskInline_Task_System_Boolean_" data-uid="WaveEngine.Framework.Threading.BackgroundTaskScheduler.TryExecuteTaskInline(Task,System.Boolean)">TryExecuteTaskInline(Task, Boolean)</h4>
+  <h4 id="WaveEngine_Framework_Threading_BackgroundTaskScheduler_TryExecuteTaskInline_System_Threading_Tasks_Task_System_Boolean_" data-uid="WaveEngine.Framework.Threading.BackgroundTaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task,System.Boolean)">TryExecuteTaskInline(Task, Boolean)</h4>
   <div class="markdown level1 summary"><p>Determines whether the provided <span class="xref">System.Threading.Tasks.Task</span>
 can be executed synchronously in this call, and if it can, executes it.</p>
 </div>
@@ -284,7 +301,7 @@ can be executed synchronously in this call, and if it can, executes it.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td><em>task</em></td>
         <td><p>The <span class="xref">System.Threading.Tasks.Task</span> to be
 executed.</p>

@@ -123,7 +123,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected GazeBehavior gazeBehavior</code></pre>
+    <pre><code class="lang-csharp hljs">[BindComponent(true, true, BindComponentSource.Owner, null)]
+protected GazeBehavior gazeBehavior</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -169,7 +170,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool NormalAligned { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tooltip = &quot;Indicate whether cursor will be aligned with the surfaces or no in otherwise&quot;)]
+public bool NormalAligned { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -192,7 +194,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float SurfaceOffset { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tooltip = &quot;Offset value in meters between the surface and cursor&quot;)]
+public float SurfaceOffset { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -221,13 +224,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Components_Toolkit_GazeCollision_CheckCursorCollision_Ray__System_Single_WaveEngine_Components_Toolkit_GazeCollision_CursorHit__">CheckCursorCollision(ref Ray, Single, out GazeCollision.CursorHit)</a></td>
+        <td><a href="#WaveEngine_Components_Toolkit_GazeCollision_CheckCursorCollision_WaveEngine_Mathematics_Ray__System_Single_WaveEngine_Components_Toolkit_GazeCollision_CursorHit__">CheckCursorCollision(ref Ray, Single, out GazeCollision.CursorHit)</a></td>
         <td><p>Check cursor collision.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Components_Toolkit_GazeCollision_CheckCursorCollision_Ray__System_Single_WaveEngine_Components_Toolkit_GazeCollision_CursorHit__" data-uid="WaveEngine.Components.Toolkit.GazeCollision.CheckCursorCollision(Ray@,System.Single,WaveEngine.Components.Toolkit.GazeCollision.CursorHit@)">CheckCursorCollision(ref Ray, Single, out GazeCollision.CursorHit)</h4>
+  <h4 id="WaveEngine_Components_Toolkit_GazeCollision_CheckCursorCollision_WaveEngine_Mathematics_Ray__System_Single_WaveEngine_Components_Toolkit_GazeCollision_CursorHit__" data-uid="WaveEngine.Components.Toolkit.GazeCollision.CheckCursorCollision(WaveEngine.Mathematics.Ray@,System.Single,WaveEngine.Components.Toolkit.GazeCollision.CursorHit@)">CheckCursorCollision(ref Ray, Single, out GazeCollision.CursorHit)</h4>
   <div class="markdown level1 summary"><p>Check cursor collision.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -246,7 +249,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Ray</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Ray.html">Ray</a></td>
         <td><em>ray</em></td>
         <td><p>ray cast.</p>
 </td>

@@ -88,7 +88,7 @@
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.Common.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct TouchPanelState : IController, IList&lt;TouchLocation&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public struct TouchPanelState : IController, IList&lt;TouchLocation&gt;, ICollection&lt;TouchLocation&gt;, IEnumerable&lt;TouchLocation&gt;, IEnumerable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -158,7 +158,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int MaxTouches = null</code></pre>
+    <pre><code class="lang-csharp hljs">public const int MaxTouches = 16</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -438,7 +438,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddTouchLocation(int id, TouchLocationState state, float x, float y)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use AddTouchLocation(int id, float x, float y) instead&quot;)]
+public void AddTouchLocation(int id, TouchLocationState state, float x, float y)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -792,12 +793,245 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Update()</code></pre>
   </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <h4 id="eii-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Common_Input_TouchPanelState_System_Collections_Generic_ICollection_WaveEngine_Common_Input_TouchLocation__Add_WaveEngine_Common_Input_TouchLocation_">ICollection&lt;TouchLocation&gt;.Add(TouchLocation)</a></td>
+        <td><p>Adds the specified item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_Input_TouchPanelState_System_Collections_Generic_ICollection_WaveEngine_Common_Input_TouchLocation__Remove_WaveEngine_Common_Input_TouchLocation_">ICollection&lt;TouchLocation&gt;.Remove(TouchLocation)</a></td>
+        <td><p>Removes the specified item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_Input_TouchPanelState_System_Collections_Generic_IEnumerable_WaveEngine_Common_Input_TouchLocation__GetEnumerator">IEnumerable&lt;TouchLocation&gt;.GetEnumerator()</a></td>
+        <td><p>Gets the enumerator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_Input_TouchPanelState_System_Collections_Generic_IList_WaveEngine_Common_Input_TouchLocation__Insert_System_Int32_WaveEngine_Common_Input_TouchLocation_">IList&lt;TouchLocation&gt;.Insert(Int32, TouchLocation)</a></td>
+        <td><p>Inserts the specified index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_Input_TouchPanelState_System_Collections_Generic_IList_WaveEngine_Common_Input_TouchLocation__RemoveAt_System_Int32_">IList&lt;TouchLocation&gt;.RemoveAt(Int32)</a></td>
+        <td><p>Removes at.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_Input_TouchPanelState_System_Collections_IEnumerable_GetEnumerator">IEnumerable.GetEnumerator()</a></td>
+        <td><p>Returns an enumerator that iterates through a collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_Input_TouchPanelState_System_Collections_Generic_ICollection_WaveEngine_Common_Input_TouchLocation__Add_WaveEngine_Common_Input_TouchLocation_" data-uid="WaveEngine.Common.Input.TouchPanelState.System#Collections#Generic#ICollection{WaveEngine#Common#Input#TouchLocation}#Add(WaveEngine.Common.Input.TouchLocation)">ICollection&lt;TouchLocation&gt;.Add(TouchLocation)</h4>
+  <div class="markdown level1 summary"><p>Adds the specified item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ICollection&lt;TouchLocation&gt;.Add(TouchLocation item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Input.TouchLocation.html">TouchLocation</a></td>
+        <td><em>item</em></td>
+        <td><p>The item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_Input_TouchPanelState_System_Collections_Generic_ICollection_WaveEngine_Common_Input_TouchLocation__Remove_WaveEngine_Common_Input_TouchLocation_" data-uid="WaveEngine.Common.Input.TouchPanelState.System#Collections#Generic#ICollection{WaveEngine#Common#Input#TouchLocation}#Remove(WaveEngine.Common.Input.TouchLocation)">ICollection&lt;TouchLocation&gt;.Remove(TouchLocation)</h4>
+  <div class="markdown level1 summary"><p>Removes the specified item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ICollection&lt;TouchLocation&gt;.Remove(TouchLocation item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Input.TouchLocation.html">TouchLocation</a></td>
+        <td><em>item</em></td>
+        <td><p>The item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>The result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_Input_TouchPanelState_System_Collections_Generic_IEnumerable_WaveEngine_Common_Input_TouchLocation__GetEnumerator" data-uid="WaveEngine.Common.Input.TouchPanelState.System#Collections#Generic#IEnumerable{WaveEngine#Common#Input#TouchLocation}#GetEnumerator">IEnumerable&lt;TouchLocation&gt;.GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Gets the enumerator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator&lt;TouchLocation&gt; IEnumerable&lt;TouchLocation&gt;.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<a class="xref" href="WaveEngine.Common.Input.TouchLocation.html">TouchLocation</a>&gt;</td>
+        <td><p>The result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_Input_TouchPanelState_System_Collections_Generic_IList_WaveEngine_Common_Input_TouchLocation__Insert_System_Int32_WaveEngine_Common_Input_TouchLocation_" data-uid="WaveEngine.Common.Input.TouchPanelState.System#Collections#Generic#IList{WaveEngine#Common#Input#TouchLocation}#Insert(System.Int32,WaveEngine.Common.Input.TouchLocation)">IList&lt;TouchLocation&gt;.Insert(Int32, TouchLocation)</h4>
+  <div class="markdown level1 summary"><p>Inserts the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IList&lt;TouchLocation&gt;.Insert(int index, TouchLocation item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>index</em></td>
+        <td><p>The index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Input.TouchLocation.html">TouchLocation</a></td>
+        <td><em>item</em></td>
+        <td><p>The item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_Input_TouchPanelState_System_Collections_Generic_IList_WaveEngine_Common_Input_TouchLocation__RemoveAt_System_Int32_" data-uid="WaveEngine.Common.Input.TouchPanelState.System#Collections#Generic#IList{WaveEngine#Common#Input#TouchLocation}#RemoveAt(System.Int32)">IList&lt;TouchLocation&gt;.RemoveAt(Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes at.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IList&lt;TouchLocation&gt;.RemoveAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>index</em></td>
+        <td><p>The index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_Input_TouchPanelState_System_Collections_IEnumerable_GetEnumerator" data-uid="WaveEngine.Common.Input.TouchPanelState.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through a collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td><p>An <span class="xref">System.Collections.IEnumerator</span> object that can be used to iterate through the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="WaveEngine.Common.Input.IController.html">IController</a>
   </div>
   <div>
-      <span class="xref">IList&lt;&gt;</span>
+      <span class="xref">System.Collections.Generic.IList&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
   </div>
 </article>
           </div>

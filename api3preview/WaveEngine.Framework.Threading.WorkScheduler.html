@@ -304,17 +304,17 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Threading_WorkScheduler_For_System_Int32_System_Int32_Action_System_Int32__WaveEngine_Framework_Threading_WorkHandle_WaveEngine_Framework_Threading_WorkPriority_">For(Int32, Int32, Action&lt;Int32&gt;, WorkHandle, WorkPriority)</a></td>
+        <td><a href="#WaveEngine_Framework_Threading_WorkScheduler_For_System_Int32_System_Int32_System_Action_System_Int32__WaveEngine_Framework_Threading_WorkHandle_WaveEngine_Framework_Threading_WorkPriority_">For(Int32, Int32, Action&lt;Int32&gt;, WorkHandle, WorkPriority)</a></td>
         <td><p>Schedule For works.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Threading_WorkScheduler_ForEach__1___0___Action___0__WaveEngine_Framework_Threading_WorkHandle_WaveEngine_Framework_Threading_WorkPriority_">ForEach&lt;T&gt;(T[], Action&lt;T&gt;, WorkHandle, WorkPriority)</a></td>
+        <td><a href="#WaveEngine_Framework_Threading_WorkScheduler_ForEach__1___0___System_Action___0__WaveEngine_Framework_Threading_WorkHandle_WaveEngine_Framework_Threading_WorkPriority_">ForEach&lt;T&gt;(T[], Action&lt;T&gt;, WorkHandle, WorkPriority)</a></td>
         <td><p>Executes an action on every work.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Threading_WorkScheduler_ForEach__1_IList___0__Action___0__WaveEngine_Framework_Threading_WorkHandle_WaveEngine_Framework_Threading_WorkPriority_">ForEach&lt;T&gt;(IList&lt;T&gt;, Action&lt;T&gt;, WorkHandle, WorkPriority)</a></td>
+        <td><a href="#WaveEngine_Framework_Threading_WorkScheduler_ForEach__1_System_Collections_Generic_IList___0__System_Action___0__WaveEngine_Framework_Threading_WorkHandle_WaveEngine_Framework_Threading_WorkPriority_">ForEach&lt;T&gt;(IList&lt;T&gt;, Action&lt;T&gt;, WorkHandle, WorkPriority)</a></td>
         <td><p>Executes an action on every work.</p>
 </td>
       </tr>
@@ -324,7 +324,7 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Threading_WorkScheduler_Schedule_Action_WaveEngine_Framework_Threading_WorkHandle_WaveEngine_Framework_Threading_WorkPriority_">Schedule(Action, WorkHandle, WorkPriority)</a></td>
+        <td><a href="#WaveEngine_Framework_Threading_WorkScheduler_Schedule_System_Action_WaveEngine_Framework_Threading_WorkHandle_WaveEngine_Framework_Threading_WorkPriority_">Schedule(Action, WorkHandle, WorkPriority)</a></td>
         <td><p>Schedule work.</p>
 </td>
       </tr>
@@ -372,13 +372,13 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
   </div>
-  <h4 id="WaveEngine_Framework_Threading_WorkScheduler_For_System_Int32_System_Int32_Action_System_Int32__WaveEngine_Framework_Threading_WorkHandle_WaveEngine_Framework_Threading_WorkPriority_" data-uid="WaveEngine.Framework.Threading.WorkScheduler.For(System.Int32,System.Int32,Action{System.Int32},WaveEngine.Framework.Threading.WorkHandle,WaveEngine.Framework.Threading.WorkPriority)">For(Int32, Int32, Action&lt;Int32&gt;, WorkHandle, WorkPriority)</h4>
+  <h4 id="WaveEngine_Framework_Threading_WorkScheduler_For_System_Int32_System_Int32_System_Action_System_Int32__WaveEngine_Framework_Threading_WorkHandle_WaveEngine_Framework_Threading_WorkPriority_" data-uid="WaveEngine.Framework.Threading.WorkScheduler.For(System.Int32,System.Int32,System.Action{System.Int32},WaveEngine.Framework.Threading.WorkHandle,WaveEngine.Framework.Threading.WorkPriority)">For(Int32, Int32, Action&lt;Int32&gt;, WorkHandle, WorkPriority)</h4>
   <div class="markdown level1 summary"><p>Schedule For works.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WorkHandle For(int fromInclusive, int toExclusive, Action&lt;int&gt; action, WorkHandle parent = null, WorkPriority priority = default(WorkPriority))</code></pre>
+    <pre><code class="lang-csharp hljs">public WorkHandle For(int fromInclusive, int toExclusive, Action&lt;int&gt; action, WorkHandle parent = null, WorkPriority priority = WorkPriority.Normal)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -403,7 +403,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><em>action</em></td>
         <td><p>The action to execute.</p>
 </td>
@@ -438,13 +438,13 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Threading_WorkScheduler_ForEach__1___0___Action___0__WaveEngine_Framework_Threading_WorkHandle_WaveEngine_Framework_Threading_WorkPriority_" data-uid="WaveEngine.Framework.Threading.WorkScheduler.ForEach``1(``0[],Action{``0},WaveEngine.Framework.Threading.WorkHandle,WaveEngine.Framework.Threading.WorkPriority)">ForEach&lt;T&gt;(T[], Action&lt;T&gt;, WorkHandle, WorkPriority)</h4>
+  <h4 id="WaveEngine_Framework_Threading_WorkScheduler_ForEach__1___0___System_Action___0__WaveEngine_Framework_Threading_WorkHandle_WaveEngine_Framework_Threading_WorkPriority_" data-uid="WaveEngine.Framework.Threading.WorkScheduler.ForEach``1(``0[],System.Action{``0},WaveEngine.Framework.Threading.WorkHandle,WaveEngine.Framework.Threading.WorkPriority)">ForEach&lt;T&gt;(T[], Action&lt;T&gt;, WorkHandle, WorkPriority)</h4>
   <div class="markdown level1 summary"><p>Executes an action on every work.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WorkHandle ForEach&lt;T&gt;(T[] array, Action&lt;T&gt; action, WorkHandle parent = null, WorkPriority priority = default(WorkPriority))</code></pre>
+    <pre><code class="lang-csharp hljs">public WorkHandle ForEach&lt;T&gt;(T[] array, Action&lt;T&gt; action, WorkHandle parent = null, WorkPriority priority = WorkPriority.Normal)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -463,7 +463,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span>&lt;T&gt;</td>
+        <td><span class="xref">System.Action</span>&lt;T&gt;</td>
         <td><em>action</em></td>
         <td><p>Action to execute.</p>
 </td>
@@ -514,13 +514,13 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Threading_WorkScheduler_ForEach__1_IList___0__Action___0__WaveEngine_Framework_Threading_WorkHandle_WaveEngine_Framework_Threading_WorkPriority_" data-uid="WaveEngine.Framework.Threading.WorkScheduler.ForEach``1(IList{``0},Action{``0},WaveEngine.Framework.Threading.WorkHandle,WaveEngine.Framework.Threading.WorkPriority)">ForEach&lt;T&gt;(IList&lt;T&gt;, Action&lt;T&gt;, WorkHandle, WorkPriority)</h4>
+  <h4 id="WaveEngine_Framework_Threading_WorkScheduler_ForEach__1_System_Collections_Generic_IList___0__System_Action___0__WaveEngine_Framework_Threading_WorkHandle_WaveEngine_Framework_Threading_WorkPriority_" data-uid="WaveEngine.Framework.Threading.WorkScheduler.ForEach``1(System.Collections.Generic.IList{``0},System.Action{``0},WaveEngine.Framework.Threading.WorkHandle,WaveEngine.Framework.Threading.WorkPriority)">ForEach&lt;T&gt;(IList&lt;T&gt;, Action&lt;T&gt;, WorkHandle, WorkPriority)</h4>
   <div class="markdown level1 summary"><p>Executes an action on every work.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WorkHandle ForEach&lt;T&gt;(IList&lt;T&gt; list, Action&lt;T&gt; action, WorkHandle parent = null, WorkPriority priority = default(WorkPriority))</code></pre>
+    <pre><code class="lang-csharp hljs">public WorkHandle ForEach&lt;T&gt;(IList&lt;T&gt; list, Action&lt;T&gt; action, WorkHandle parent = null, WorkPriority priority = WorkPriority.Normal)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -533,13 +533,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IList</span>&lt;T&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;T&gt;</td>
         <td><em>list</em></td>
         <td><p>Work collection list.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span>&lt;T&gt;</td>
+        <td><span class="xref">System.Action</span>&lt;T&gt;</td>
         <td><em>action</em></td>
         <td><p>Action to execute.</p>
 </td>
@@ -598,13 +598,13 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ResetStats()</code></pre>
   </div>
-  <h4 id="WaveEngine_Framework_Threading_WorkScheduler_Schedule_Action_WaveEngine_Framework_Threading_WorkHandle_WaveEngine_Framework_Threading_WorkPriority_" data-uid="WaveEngine.Framework.Threading.WorkScheduler.Schedule(Action,WaveEngine.Framework.Threading.WorkHandle,WaveEngine.Framework.Threading.WorkPriority)">Schedule(Action, WorkHandle, WorkPriority)</h4>
+  <h4 id="WaveEngine_Framework_Threading_WorkScheduler_Schedule_System_Action_WaveEngine_Framework_Threading_WorkHandle_WaveEngine_Framework_Threading_WorkPriority_" data-uid="WaveEngine.Framework.Threading.WorkScheduler.Schedule(System.Action,WaveEngine.Framework.Threading.WorkHandle,WaveEngine.Framework.Threading.WorkPriority)">Schedule(Action, WorkHandle, WorkPriority)</h4>
   <div class="markdown level1 summary"><p>Schedule work.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WorkHandle Schedule(Action workItem, WorkHandle parent = null, WorkPriority priority = default(WorkPriority))</code></pre>
+    <pre><code class="lang-csharp hljs">public WorkHandle Schedule(Action workItem, WorkHandle parent = null, WorkPriority priority = WorkPriority.Normal)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -617,7 +617,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Action</span></td>
+        <td><span class="xref">System.Action</span></td>
         <td><em>workItem</em></td>
         <td><p>The action to execute.</p>
 </td>
@@ -652,6 +652,10 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

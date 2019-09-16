@@ -94,7 +94,7 @@
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.DirectX12.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DX12CommandBuffer : CommandBuffer, IGetNativePointers</code></pre>
+    <pre><code class="lang-csharp hljs">public class DX12CommandBuffer : CommandBuffer, IDisposable, IGetNativePointers</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -303,7 +303,7 @@ This function must be called before other graphics commands ca be issued.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_DirectX12_DX12CommandBuffer_End">End()</a></td>
+        <td><a href="#WaveEngine_DirectX12_DX12CommandBuffer_EndInternal">EndInternal()</a></td>
         <td><p>Completes the command buffer.</p>
 </td>
       </tr>
@@ -318,12 +318,12 @@ This function must be called before other graphics commands ca be issued.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_DirectX12_DX12CommandBuffer_SetComputePipelineState_WaveEngine_Common_Graphics_ComputePipelineState_">SetComputePipelineState(ComputePipelineState)</a></td>
+        <td><a href="#WaveEngine_DirectX12_DX12CommandBuffer_SetComputePipelineStateInternal_WaveEngine_Common_Graphics_ComputePipelineState_">SetComputePipelineStateInternal(ComputePipelineState)</a></td>
         <td><p>Sets the compute pipeline state object for this commandbuffer.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_DirectX12_DX12CommandBuffer_SetGraphicsPipelineState_WaveEngine_Common_Graphics_GraphicsPipelineState_">SetGraphicsPipelineState(GraphicsPipelineState)</a></td>
+        <td><a href="#WaveEngine_DirectX12_DX12CommandBuffer_SetGraphicsPipelineStateInternal_WaveEngine_Common_Graphics_GraphicsPipelineState_">SetGraphicsPipelineStateInternal(GraphicsPipelineState)</a></td>
         <td><p>Sets the graphics pipeline state object for this commandbuffer.</p>
 </td>
       </tr>
@@ -363,8 +363,9 @@ This function must be called before other graphics commands ca be issued.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_DirectX12_DX12CommandBuffer_UpdateBufferDataInternal_WaveEngine_Common_Graphics_Buffer_IntPtr_System_UInt32_System_UInt32_">UpdateBufferDataInternal(Buffer, IntPtr, UInt32, UInt32)</a></td>
-        <td></td>
+        <td><a href="#WaveEngine_DirectX12_DX12CommandBuffer_UpdateBufferDataInternal_WaveEngine_Common_Graphics_Buffer_System_IntPtr_System_UInt32_System_UInt32_">UpdateBufferDataInternal(Buffer, IntPtr, UInt32, UInt32)</a></td>
+        <td><p>Fill the buffer from a pointer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -417,7 +418,7 @@ This function must be called before other graphics commands ca be issued.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void CopyBufferDataToInternal(Buffer buffer, Buffer destination, uint sizeInBytes, uint sourceOffset = null, uint destinationOffset = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void CopyBufferDataToInternal(Buffer buffer, Buffer destination, uint sizeInBytes, uint sourceOffset = 0U, uint destinationOffset = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -694,7 +695,7 @@ less than or equal to (65535).</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Draw(uint vertexCount, uint startVertexLocation = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Draw(uint vertexCount, uint startVertexLocation = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -726,7 +727,7 @@ less than or equal to (65535).</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void DrawIndexed(uint indexCount, uint startIndexLocation = null, uint baseVertexLocation = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void DrawIndexed(uint indexCount, uint startIndexLocation = 0U, uint baseVertexLocation = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -764,7 +765,7 @@ less than or equal to (65535).</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void DrawIndexedInstanced(uint indexCountPerInstance, uint instanceCount, uint startIndexLocation = null, uint baseVertexLocation = null, uint startInstanceLocation = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void DrawIndexedInstanced(uint indexCountPerInstance, uint instanceCount, uint startIndexLocation = 0U, uint baseVertexLocation = 0U, uint startInstanceLocation = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -858,7 +859,7 @@ less than or equal to (65535).</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void DrawInstanced(uint vertexCountPerInstance, uint instanceCount, uint startVertexLocation = null, uint startInstanceLocation = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void DrawInstanced(uint vertexCountPerInstance, uint instanceCount, uint startVertexLocation = 0U, uint startInstanceLocation = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -940,13 +941,13 @@ less than or equal to (65535).</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_DirectX12_DX12CommandBuffer_End" data-uid="WaveEngine.DirectX12.DX12CommandBuffer.End">End()</h4>
+  <h4 id="WaveEngine_DirectX12_DX12CommandBuffer_EndInternal" data-uid="WaveEngine.DirectX12.DX12CommandBuffer.EndInternal">EndInternal()</h4>
   <div class="markdown level1 summary"><p>Completes the command buffer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void End()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void EndInternal()</code></pre>
   </div>
   <h4 id="WaveEngine_DirectX12_DX12CommandBuffer_EndRenderPassInternal" data-uid="WaveEngine.DirectX12.DX12CommandBuffer.EndRenderPassInternal">EndRenderPassInternal()</h4>
   <div class="markdown level1 summary"><p>End a render pass.</p>
@@ -964,13 +965,13 @@ less than or equal to (65535).</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void Reset()</code></pre>
   </div>
-  <h4 id="WaveEngine_DirectX12_DX12CommandBuffer_SetComputePipelineState_WaveEngine_Common_Graphics_ComputePipelineState_" data-uid="WaveEngine.DirectX12.DX12CommandBuffer.SetComputePipelineState(WaveEngine.Common.Graphics.ComputePipelineState)">SetComputePipelineState(ComputePipelineState)</h4>
+  <h4 id="WaveEngine_DirectX12_DX12CommandBuffer_SetComputePipelineStateInternal_WaveEngine_Common_Graphics_ComputePipelineState_" data-uid="WaveEngine.DirectX12.DX12CommandBuffer.SetComputePipelineStateInternal(WaveEngine.Common.Graphics.ComputePipelineState)">SetComputePipelineStateInternal(ComputePipelineState)</h4>
   <div class="markdown level1 summary"><p>Sets the compute pipeline state object for this commandbuffer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void SetComputePipelineState(ComputePipelineState pipeline)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void SetComputePipelineStateInternal(ComputePipelineState pipeline)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -990,13 +991,13 @@ less than or equal to (65535).</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_DirectX12_DX12CommandBuffer_SetGraphicsPipelineState_WaveEngine_Common_Graphics_GraphicsPipelineState_" data-uid="WaveEngine.DirectX12.DX12CommandBuffer.SetGraphicsPipelineState(WaveEngine.Common.Graphics.GraphicsPipelineState)">SetGraphicsPipelineState(GraphicsPipelineState)</h4>
+  <h4 id="WaveEngine_DirectX12_DX12CommandBuffer_SetGraphicsPipelineStateInternal_WaveEngine_Common_Graphics_GraphicsPipelineState_" data-uid="WaveEngine.DirectX12.DX12CommandBuffer.SetGraphicsPipelineStateInternal(WaveEngine.Common.Graphics.GraphicsPipelineState)">SetGraphicsPipelineStateInternal(GraphicsPipelineState)</h4>
   <div class="markdown level1 summary"><p>Sets the graphics pipeline state object for this commandbuffer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void SetGraphicsPipelineState(GraphicsPipelineState pipeline)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void SetGraphicsPipelineStateInternal(GraphicsPipelineState pipeline)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1022,7 +1023,7 @@ less than or equal to (65535).</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void SetIndexBuffer(Buffer buffer, IndexFormat format = IndexFormat.UInt16, uint offset = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void SetIndexBuffer(Buffer buffer, IndexFormat format = IndexFormat.UInt16, uint offset = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1123,7 +1124,7 @@ less than or equal to (65535).</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void SetVertexBuffer(uint slot, Buffer buffer, uint offset = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void SetVertexBuffer(uint slot, Buffer buffer, uint offset = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1220,12 +1221,13 @@ less than or equal to (65535).</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void UnsetResourceSet()</code></pre>
   </div>
-  <h4 id="WaveEngine_DirectX12_DX12CommandBuffer_UpdateBufferDataInternal_WaveEngine_Common_Graphics_Buffer_IntPtr_System_UInt32_System_UInt32_" data-uid="WaveEngine.DirectX12.DX12CommandBuffer.UpdateBufferDataInternal(WaveEngine.Common.Graphics.Buffer,IntPtr,System.UInt32,System.UInt32)">UpdateBufferDataInternal(Buffer, IntPtr, UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="WaveEngine_DirectX12_DX12CommandBuffer_UpdateBufferDataInternal_WaveEngine_Common_Graphics_Buffer_System_IntPtr_System_UInt32_System_UInt32_" data-uid="WaveEngine.DirectX12.DX12CommandBuffer.UpdateBufferDataInternal(WaveEngine.Common.Graphics.Buffer,System.IntPtr,System.UInt32,System.UInt32)">UpdateBufferDataInternal(Buffer, IntPtr, UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Fill the buffer from a pointer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void UpdateBufferDataInternal(Buffer buffer, IntPtr source, uint sourceSizeInBytes, uint destinationOffsetInBytes = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void UpdateBufferDataInternal(Buffer buffer, IntPtr source, uint sourceSizeInBytes, uint destinationOffsetInBytes = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1240,26 +1242,33 @@ less than or equal to (65535).</p>
       <tr>
         <td><a class="xref" href="WaveEngine.Common.Graphics.Buffer.html">Buffer</a></td>
         <td><em>buffer</em></td>
-        <td></td>
+        <td><p>Buffer instance.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td><em>source</em></td>
-        <td></td>
+        <td><p>The data pointer.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><em>sourceSizeInBytes</em></td>
-        <td></td>
+        <td><p>The size in bytes.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><em>destinationOffsetInBytes</em></td>
-        <td></td>
+        <td><p>The offset in bytes.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <div>
       <a class="xref" href="WaveEngine.Common.Helpers.IGetNativePointers.html">IGetNativePointers</a>
   </div>

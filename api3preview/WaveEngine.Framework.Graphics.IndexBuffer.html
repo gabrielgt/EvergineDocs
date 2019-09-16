@@ -94,7 +94,7 @@
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class IndexBuffer : GraphicBuffer</code></pre>
+    <pre><code class="lang-csharp hljs">public class IndexBuffer : GraphicBuffer, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -108,19 +108,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_IndexBuffer__ctor_WaveEngine_Common_Graphics_Buffer_WaveEngine_Common_Graphics_IndexFormat_System_Int32_System_Int32_System_Boolean_IntPtr_">IndexBuffer(Buffer, IndexFormat, Int32, Int32, Boolean, IntPtr)</a></td>
+        <td><a href="#WaveEngine_Framework_Graphics_IndexBuffer__ctor_WaveEngine_Common_Graphics_Buffer_WaveEngine_Common_Graphics_IndexFormat_System_Int32_System_Int32_System_Boolean_System_IntPtr_">IndexBuffer(Buffer, IndexFormat, Int32, Int32, Boolean, IntPtr)</a></td>
         <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Graphics.IndexBuffer.html">IndexBuffer</a> class.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Graphics_IndexBuffer__ctor_WaveEngine_Common_Graphics_Buffer_WaveEngine_Common_Graphics_IndexFormat_System_Int32_System_Int32_System_Boolean_IntPtr_" data-uid="WaveEngine.Framework.Graphics.IndexBuffer.#ctor(WaveEngine.Common.Graphics.Buffer,WaveEngine.Common.Graphics.IndexFormat,System.Int32,System.Int32,System.Boolean,IntPtr)">IndexBuffer(Buffer, IndexFormat, Int32, Int32, Boolean, IntPtr)</h4>
+  <h4 id="WaveEngine_Framework_Graphics_IndexBuffer__ctor_WaveEngine_Common_Graphics_Buffer_WaveEngine_Common_Graphics_IndexFormat_System_Int32_System_Int32_System_Boolean_System_IntPtr_" data-uid="WaveEngine.Framework.Graphics.IndexBuffer.#ctor(WaveEngine.Common.Graphics.Buffer,WaveEngine.Common.Graphics.IndexFormat,System.Int32,System.Int32,System.Boolean,System.IntPtr)">IndexBuffer(Buffer, IndexFormat, Int32, Int32, Boolean, IntPtr)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Graphics.IndexBuffer.html">IndexBuffer</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IndexBuffer(Buffer buffer, IndexFormat indexFormat = IndexFormat.UInt16, int offset = 0, int size = null, bool flipWinding = false, IntPtr data = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public IndexBuffer(Buffer buffer, IndexFormat indexFormat = IndexFormat.UInt16, int offset = 0, int size = -1, bool flipWinding = false, IntPtr data = default(IntPtr))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -163,7 +163,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td><em>data</em></td>
         <td><p>The raw data.</p>
 </td>
@@ -308,6 +308,10 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

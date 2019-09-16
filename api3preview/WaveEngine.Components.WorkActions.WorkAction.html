@@ -93,7 +93,7 @@
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.Components.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class WorkAction : object, IWorkAction</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class WorkAction : IWorkAction</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -166,6 +166,22 @@
         <td><a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a></td>
         <td><em>parent</em></td>
         <td><p>The parent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>parent task cannot be null. if is a root task, use the other constructor.</p>
 </td>
       </tr>
     </tbody>
@@ -257,7 +273,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
         <td><p>The child tasks.</p>
 </td>
       </tr>
@@ -422,6 +438,22 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual void Run()</code></pre>
   </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.NotSupportedException</span></td>
+        <td><p>When the action state is not correct.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Components_WorkActions_WorkAction_TrySkip" data-uid="WaveEngine.Components.WorkActions.WorkAction.TrySkip">TrySkip()</h4>
   <div class="markdown level1 summary"><p>Skips this instance.</p>
 </div>
@@ -442,6 +474,22 @@
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><p>If the action is skipped successfully.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.NotImplementedException</span></td>
+        <td><p>When the action state is not correct.</p>
 </td>
       </tr>
     </tbody>
@@ -492,7 +540,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Action</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -515,7 +563,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Action</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -538,7 +586,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Action</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="WaveEngine.Framework.Services.IWorkAction.html">IWorkAction</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -553,6 +601,36 @@
   </div>
   <div>
       <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.WorkActions.WorkActionFactory.html#WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWith_WaveEngine_Framework_Services_IWorkAction_WaveEngine_Framework_Services_IWorkAction_">WorkActionFactory.ContinueWith(IWorkAction, IWorkAction)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.WorkActions.WorkActionFactory.html#WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWith_WaveEngine_Framework_Services_IWorkAction_System_Func_WaveEngine_Framework_Services_IWorkAction__">WorkActionFactory.ContinueWith(IWorkAction, Func&lt;IWorkAction&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.WorkActions.WorkActionFactory.html#WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWithAction_WaveEngine_Framework_Services_IWorkAction_System_Action_">WorkActionFactory.ContinueWithAction(IWorkAction, Action)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.WorkActions.WorkActionFactory.html#WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWith_WaveEngine_Framework_Services_IWorkAction_WaveEngine_Framework_Services_IWorkAction___">WorkActionFactory.ContinueWith(IWorkAction, IWorkAction[])</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.WorkActions.WorkActionFactory.html#WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWith_WaveEngine_Framework_Services_IWorkAction_System_Collections_Generic_IEnumerable_WaveEngine_Framework_Services_IWorkAction__">WorkActionFactory.ContinueWith(IWorkAction, IEnumerable&lt;IWorkAction&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.WorkActions.WorkActionFactory.html#WaveEngine_Components_WorkActions_WorkActionFactory_ContinueWith_WaveEngine_Framework_Services_IWorkAction_System_Func_WaveEngine_Framework_Services_IWorkAction____">WorkActionFactory.ContinueWith(IWorkAction, Func&lt;IWorkAction&gt;[])</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.WorkActions.WorkActionFactory.html#WaveEngine_Components_WorkActions_WorkActionFactory_Delay_WaveEngine_Framework_Services_IWorkAction_System_TimeSpan_">WorkActionFactory.Delay(IWorkAction, TimeSpan)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.WorkActions.WorkActionFactory.html#WaveEngine_Components_WorkActions_WorkActionFactory_AndWaitCondition_WaveEngine_Framework_Services_IWorkAction_System_Func_System_Boolean__System_Int32_">WorkActionFactory.AndWaitCondition(IWorkAction, Func&lt;Boolean&gt;, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.WorkActions.WorkActionFactory.html#WaveEngine_Components_WorkActions_WorkActionFactory_CreateParallelWorkActions_WaveEngine_Framework_Services_IWorkAction_System_Collections_Generic_IEnumerable_WaveEngine_Framework_Services_IWorkAction__">WorkActionFactory.CreateParallelWorkActions(IWorkAction, IEnumerable&lt;IWorkAction&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Components.WorkActions.WorkActionFactory.html#WaveEngine_Components_WorkActions_WorkActionFactory_AsSkippableWorkAction_WaveEngine_Framework_Services_IWorkAction_">WorkActionFactory.AsSkippableWorkAction(IWorkAction)</a>
   </div>
 </article>
           </div>

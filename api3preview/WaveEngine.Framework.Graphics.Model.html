@@ -93,7 +93,7 @@
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Model : object, ILoadable, IDisposable, IDependencyObject</code></pre>
+    <pre><code class="lang-csharp hljs">public class Model : ILoadable, IDisposable, IDependencyObject</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -211,7 +211,7 @@ Create simple model based on a single mesh.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">BoundingBox</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="WaveEngine.Mathematics.BoundingBox.html">BoundingBox</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -257,7 +257,7 @@ Create simple model based on a single mesh.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.String</span>, <span class="xref">Guid</span>&gt;&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Guid</span>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -308,11 +308,13 @@ Create simple model based on a single mesh.</p>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Model_Dependencies">Dependencies</a></td>
-        <td></td>
+        <td><p>Gets the dependency list.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Model_Id">Id</a></td>
-        <td></td>
+        <td><p>Gets or sets the asset Id.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Model_MeshContainers">MeshContainers</a></td>
@@ -321,7 +323,8 @@ Create simple model based on a single mesh.</p>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Model_ReaderVersion">ReaderVersion</a></td>
-        <td></td>
+        <td><p>Gets the reader version.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Model_RootNodes">RootNodes</a></td>
@@ -371,13 +374,14 @@ Create simple model based on a single mesh.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="WaveEngine.Framework.Animation.AnimationClip.html">AnimationClip</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="WaveEngine.Framework.Animation.AnimationClip.html">AnimationClip</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h4 id="WaveEngine_Framework_Graphics_Model_Dependencies" data-uid="WaveEngine.Framework.Graphics.Model.Dependencies">Dependencies</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the dependency list.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -393,13 +397,14 @@ Create simple model based on a single mesh.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Lazy</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="WaveEngine.Common.IDependencyLink.html">IDependencyLink</a>&gt;&gt;</td>
+        <td><span class="xref">System.Lazy</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="WaveEngine.Common.IDependencyLink.html">IDependencyLink</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h4 id="WaveEngine_Framework_Graphics_Model_Id" data-uid="WaveEngine.Framework.Graphics.Model.Id">Id</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the asset Id.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -415,8 +420,9 @@ Create simple model based on a single mesh.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
-        <td></td>
+        <td><span class="xref">System.Guid</span></td>
+        <td><p>The asset path.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -444,7 +450,8 @@ Create simple model based on a single mesh.</p>
     </tbody>
   </table>
   <h4 id="WaveEngine_Framework_Graphics_Model_ReaderVersion" data-uid="WaveEngine.Framework.Graphics.Model.ReaderVersion">ReaderVersion</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the reader version.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -460,8 +467,9 @@ Create simple model based on a single mesh.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Version</span></td>
-        <td></td>
+        <td><span class="xref">System.Version</span></td>
+        <td><p>The reader version.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -716,12 +724,14 @@ Create simple model based on a single mesh.</p>
     <tbody>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Model_Invalidated">Invalidated</a></td>
-        <td></td>
+        <td><p>Occurs when this instance has been invalidated and all references must be reloaded.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h4 id="WaveEngine_Framework_Graphics_Model_Invalidated" data-uid="WaveEngine.Framework.Graphics.Model.Invalidated">Invalidated</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Occurs when this instance has been invalidated and all references must be reloaded.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -737,7 +747,7 @@ Create simple model based on a single mesh.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Common.ILoadable.html">ILoadable</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Common.ILoadable.html">ILoadable</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -747,7 +757,7 @@ Create simple model based on a single mesh.</p>
       <a class="xref" href="WaveEngine.Common.ILoadable.html">ILoadable</a>
   </div>
   <div>
-      <span class="xref">IDisposable</span>
+      <span class="xref">System.IDisposable</span>
   </div>
   <div>
       <a class="xref" href="WaveEngine.Common.IDependencyObject.html">IDependencyObject</a>

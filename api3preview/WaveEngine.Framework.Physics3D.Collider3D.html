@@ -228,7 +228,8 @@ through physics engine.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected BaseModel model</code></pre>
+    <pre><code class="lang-csharp hljs">[BindComponent(false, false, BindComponentSource.Owner, null)]
+protected BaseModel model</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -263,7 +264,7 @@ through physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -297,7 +298,8 @@ through physics engine.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Transform3D transform3D</code></pre>
+    <pre><code class="lang-csharp hljs">[BindComponent(true, true, BindComponentSource.Owner, null)]
+protected Transform3D transform3D</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -398,7 +400,7 @@ through physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -432,7 +434,8 @@ through physics engine.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Margin { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderPropertyAsFInput(MinLimit = 0F)]
+public float Margin { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -467,7 +470,7 @@ through physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -490,7 +493,7 @@ through physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -560,12 +563,12 @@ through physics engine.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Physics3D_Collider3D_OnScaleChanged_System_Object_EventArgs_">OnScaleChanged(Object, EventArgs)</a></td>
+        <td><a href="#WaveEngine_Framework_Physics3D_Collider3D_OnScaleChanged_System_Object_System_EventArgs_">OnScaleChanged(Object, EventArgs)</a></td>
         <td><p>On scale changed.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Physics3D_Collider3D_PointTest_Vector3_">PointTest(Vector3)</a></td>
+        <td><a href="#WaveEngine_Framework_Physics3D_Collider3D_PointTest_WaveEngine_Mathematics_Vector3_">PointTest(Vector3)</a></td>
         <td><p>Test if a point is inside this collider.</p>
 </td>
       </tr>
@@ -575,12 +578,12 @@ through physics engine.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Physics3D_Collider3D_RefreshOffsetTransform_Vector3_">RefreshOffsetTransform(Vector3)</a></td>
+        <td><a href="#WaveEngine_Framework_Physics3D_Collider3D_RefreshOffsetTransform_WaveEngine_Mathematics_Vector3_">RefreshOffsetTransform(Vector3)</a></td>
         <td><p>Refresh the hierarchy transform.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Physics3D_Collider3D_RefreshOffsetTransform_Vector3_Quaternion_System_Boolean_">RefreshOffsetTransform(Vector3, Quaternion, Boolean)</a></td>
+        <td><a href="#WaveEngine_Framework_Physics3D_Collider3D_RefreshOffsetTransform_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Quaternion_System_Boolean_">RefreshOffsetTransform(Vector3, Quaternion, Boolean)</a></td>
         <td><p>Refresh the hierarchy transform.</p>
 </td>
       </tr>
@@ -600,12 +603,12 @@ through physics engine.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Physics3D_Collider3D_SweepTest_Vector3_System_Single_WaveEngine_Framework_Physics3D_CollisionCategory3D_">SweepTest(Vector3, Single, CollisionCategory3D)</a></td>
+        <td><a href="#WaveEngine_Framework_Physics3D_Collider3D_SweepTest_WaveEngine_Mathematics_Vector3_System_Single_WaveEngine_Framework_Physics3D_CollisionCategory3D_">SweepTest(Vector3, Single, CollisionCategory3D)</a></td>
         <td><p>Tests if this shape would collide with anything, if it was moved in the specified direction.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Physics3D_Collider3D_SweepTestAll_Vector3_System_Single_IList_WaveEngine_Framework_Physics3D_HitResult3D__WaveEngine_Framework_Physics3D_CollisionCategory3D_">SweepTestAll(Vector3, Single, IList&lt;HitResult3D&gt;, CollisionCategory3D)</a></td>
+        <td><a href="#WaveEngine_Framework_Physics3D_Collider3D_SweepTestAll_WaveEngine_Mathematics_Vector3_System_Single_System_Collections_Generic_IList_WaveEngine_Framework_Physics3D_HitResult3D__WaveEngine_Framework_Physics3D_CollisionCategory3D_">SweepTestAll(Vector3, Single, IList&lt;HitResult3D&gt;, CollisionCategory3D)</a></td>
         <td><p>Tests if this shape would collide with anything, if it was moved in the specified direction.</p>
 </td>
       </tr>
@@ -691,7 +694,7 @@ through physics engine.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnModelRefreshed()</code></pre>
   </div>
-  <h4 id="WaveEngine_Framework_Physics3D_Collider3D_OnScaleChanged_System_Object_EventArgs_" data-uid="WaveEngine.Framework.Physics3D.Collider3D.OnScaleChanged(System.Object,EventArgs)">OnScaleChanged(Object, EventArgs)</h4>
+  <h4 id="WaveEngine_Framework_Physics3D_Collider3D_OnScaleChanged_System_Object_System_EventArgs_" data-uid="WaveEngine.Framework.Physics3D.Collider3D.OnScaleChanged(System.Object,System.EventArgs)">OnScaleChanged(Object, EventArgs)</h4>
   <div class="markdown level1 summary"><p>On scale changed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -716,14 +719,14 @@ through physics engine.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">EventArgs</span></td>
+        <td><span class="xref">System.EventArgs</span></td>
         <td><em>e</em></td>
         <td><p>The event args.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Physics3D_Collider3D_PointTest_Vector3_" data-uid="WaveEngine.Framework.Physics3D.Collider3D.PointTest(Vector3)">PointTest(Vector3)</h4>
+  <h4 id="WaveEngine_Framework_Physics3D_Collider3D_PointTest_WaveEngine_Mathematics_Vector3_" data-uid="WaveEngine.Framework.Physics3D.Collider3D.PointTest(WaveEngine.Mathematics.Vector3)">PointTest(Vector3)</h4>
   <div class="markdown level1 summary"><p>Test if a point is inside this collider.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -742,7 +745,7 @@ through physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>position</em></td>
         <td><p>The position in world coordinates.</p>
 </td>
@@ -773,7 +776,7 @@ through physics engine.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void RefreshHierarchyTransform()</code></pre>
   </div>
-  <h4 id="WaveEngine_Framework_Physics3D_Collider3D_RefreshOffsetTransform_Vector3_" data-uid="WaveEngine.Framework.Physics3D.Collider3D.RefreshOffsetTransform(Vector3)">RefreshOffsetTransform(Vector3)</h4>
+  <h4 id="WaveEngine_Framework_Physics3D_Collider3D_RefreshOffsetTransform_WaveEngine_Mathematics_Vector3_" data-uid="WaveEngine.Framework.Physics3D.Collider3D.RefreshOffsetTransform(WaveEngine.Mathematics.Vector3)">RefreshOffsetTransform(Vector3)</h4>
   <div class="markdown level1 summary"><p>Refresh the hierarchy transform.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -792,7 +795,7 @@ through physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>initialOffset</em></td>
         <td><p>The initial offset.</p>
 </td>
@@ -809,13 +812,13 @@ through physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td><p>The offset transform.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Physics3D_Collider3D_RefreshOffsetTransform_Vector3_Quaternion_System_Boolean_" data-uid="WaveEngine.Framework.Physics3D.Collider3D.RefreshOffsetTransform(Vector3,Quaternion,System.Boolean)">RefreshOffsetTransform(Vector3, Quaternion, Boolean)</h4>
+  <h4 id="WaveEngine_Framework_Physics3D_Collider3D_RefreshOffsetTransform_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Quaternion_System_Boolean_" data-uid="WaveEngine.Framework.Physics3D.Collider3D.RefreshOffsetTransform(WaveEngine.Mathematics.Vector3,WaveEngine.Mathematics.Quaternion,System.Boolean)">RefreshOffsetTransform(Vector3, Quaternion, Boolean)</h4>
   <div class="markdown level1 summary"><p>Refresh the hierarchy transform.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -834,13 +837,13 @@ through physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>initialOffset</em></td>
         <td><p>The initial offset.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Quaternion</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Quaternion.html">Quaternion</a></td>
         <td><em>initialOrientation</em></td>
         <td><p>The initial orientation.</p>
 </td>
@@ -863,7 +866,7 @@ through physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td><p>The offset transform.</p>
 </td>
       </tr>
@@ -893,13 +896,13 @@ through physics engine.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void Start()</code></pre>
   </div>
-  <h4 id="WaveEngine_Framework_Physics3D_Collider3D_SweepTest_Vector3_System_Single_WaveEngine_Framework_Physics3D_CollisionCategory3D_" data-uid="WaveEngine.Framework.Physics3D.Collider3D.SweepTest(Vector3,System.Single,WaveEngine.Framework.Physics3D.CollisionCategory3D)">SweepTest(Vector3, Single, CollisionCategory3D)</h4>
+  <h4 id="WaveEngine_Framework_Physics3D_Collider3D_SweepTest_WaveEngine_Mathematics_Vector3_System_Single_WaveEngine_Framework_Physics3D_CollisionCategory3D_" data-uid="WaveEngine.Framework.Physics3D.Collider3D.SweepTest(WaveEngine.Mathematics.Vector3,System.Single,WaveEngine.Framework.Physics3D.CollisionCategory3D)">SweepTest(Vector3, Single, CollisionCategory3D)</h4>
   <div class="markdown level1 summary"><p>Tests if this shape would collide with anything, if it was moved in the specified direction.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public HitResult3D SweepTest(Vector3 direction, float maxDistance, CollisionCategory3D filterMask = default(CollisionCategory3D))</code></pre>
+    <pre><code class="lang-csharp hljs">public HitResult3D SweepTest(Vector3 direction, float maxDistance, CollisionCategory3D filterMask = CollisionCategory3D.Cat1 | CollisionCategory3D.Cat2 | CollisionCategory3D.Cat3 | CollisionCategory3D.Cat4 | CollisionCategory3D.Cat5 | CollisionCategory3D.Cat6 | CollisionCategory3D.Cat7 | CollisionCategory3D.Cat8 | CollisionCategory3D.Cat9 | CollisionCategory3D.Cat10 | CollisionCategory3D.Cat11 | CollisionCategory3D.Cat12 | CollisionCategory3D.Cat13 | CollisionCategory3D.Cat14 | CollisionCategory3D.Cat15 | CollisionCategory3D.Cat16 | CollisionCategory3D.All)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -912,7 +915,7 @@ through physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>direction</em></td>
         <td><p>The direction.</p>
 </td>
@@ -947,13 +950,13 @@ through physics engine.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Physics3D_Collider3D_SweepTestAll_Vector3_System_Single_IList_WaveEngine_Framework_Physics3D_HitResult3D__WaveEngine_Framework_Physics3D_CollisionCategory3D_" data-uid="WaveEngine.Framework.Physics3D.Collider3D.SweepTestAll(Vector3,System.Single,IList{WaveEngine.Framework.Physics3D.HitResult3D},WaveEngine.Framework.Physics3D.CollisionCategory3D)">SweepTestAll(Vector3, Single, IList&lt;HitResult3D&gt;, CollisionCategory3D)</h4>
+  <h4 id="WaveEngine_Framework_Physics3D_Collider3D_SweepTestAll_WaveEngine_Mathematics_Vector3_System_Single_System_Collections_Generic_IList_WaveEngine_Framework_Physics3D_HitResult3D__WaveEngine_Framework_Physics3D_CollisionCategory3D_" data-uid="WaveEngine.Framework.Physics3D.Collider3D.SweepTestAll(WaveEngine.Mathematics.Vector3,System.Single,System.Collections.Generic.IList{WaveEngine.Framework.Physics3D.HitResult3D},WaveEngine.Framework.Physics3D.CollisionCategory3D)">SweepTestAll(Vector3, Single, IList&lt;HitResult3D&gt;, CollisionCategory3D)</h4>
   <div class="markdown level1 summary"><p>Tests if this shape would collide with anything, if it was moved in the specified direction.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SweepTestAll(Vector3 direction, float maxDistance, IList&lt;HitResult3D&gt; resultsOutput, CollisionCategory3D filterMask = default(CollisionCategory3D))</code></pre>
+    <pre><code class="lang-csharp hljs">public void SweepTestAll(Vector3 direction, float maxDistance, IList&lt;HitResult3D&gt; resultsOutput, CollisionCategory3D filterMask = CollisionCategory3D.Cat1 | CollisionCategory3D.Cat2 | CollisionCategory3D.Cat3 | CollisionCategory3D.Cat4 | CollisionCategory3D.Cat5 | CollisionCategory3D.Cat6 | CollisionCategory3D.Cat7 | CollisionCategory3D.Cat8 | CollisionCategory3D.Cat9 | CollisionCategory3D.Cat10 | CollisionCategory3D.Cat11 | CollisionCategory3D.Cat12 | CollisionCategory3D.Cat13 | CollisionCategory3D.Cat14 | CollisionCategory3D.Cat15 | CollisionCategory3D.Cat16 | CollisionCategory3D.All)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -966,7 +969,7 @@ through physics engine.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>direction</em></td>
         <td><p>The direction.</p>
 </td>
@@ -978,7 +981,7 @@ through physics engine.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IList</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.HitResult3D.html">HitResult3D</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.HitResult3D.html">HitResult3D</a>&gt;</td>
         <td><em>resultsOutput</em></td>
         <td><p>The output result list.</p>
 </td>

@@ -94,7 +94,7 @@
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.OpenAL.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ALAudioSource : AudioSource</code></pre>
+    <pre><code class="lang-csharp hljs">public class ALAudioSource : AudioSource, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -262,8 +262,9 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_OpenAL_ALAudioSource_SetQueuePlayPosition_TimeSpan_">SetQueuePlayPosition(TimeSpan)</a></td>
-        <td></td>
+        <td><a href="#WaveEngine_OpenAL_ALAudioSource_SetQueuePlayPosition_System_TimeSpan_">SetQueuePlayPosition(TimeSpan)</a></td>
+        <td><p>Sets the queue play TimeSpan position.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_OpenAL_ALAudioSource_SetVolume_System_Single_">SetVolume(Single)</a></td>
@@ -331,7 +332,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><p>A TimeSpan with the current play position.</p>
 </td>
       </tr>
@@ -355,7 +356,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><p>A TimeSpan with the Queue Play Position.</p>
 </td>
       </tr>
@@ -543,8 +544,9 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_OpenAL_ALAudioSource_SetQueuePlayPosition_TimeSpan_" data-uid="WaveEngine.OpenAL.ALAudioSource.SetQueuePlayPosition(TimeSpan)">SetQueuePlayPosition(TimeSpan)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="WaveEngine_OpenAL_ALAudioSource_SetQueuePlayPosition_System_TimeSpan_" data-uid="WaveEngine.OpenAL.ALAudioSource.SetQueuePlayPosition(System.TimeSpan)">SetQueuePlayPosition(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Sets the queue play TimeSpan position.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -561,9 +563,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><em>position</em></td>
-        <td></td>
+        <td><p>The new TimeSpan position.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -629,11 +632,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

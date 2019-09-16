@@ -149,7 +149,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected AssetsService assetService</code></pre>
+    <pre><code class="lang-csharp hljs">[BindService(true)]
+protected AssetsService assetService</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -178,23 +179,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Framework_Managers_AssetSceneManager_AddReference_Guid_System_Int32_">AddReference(Guid, Int32)</a></td>
+        <td><a href="#WaveEngine_Framework_Managers_AssetSceneManager_AddReference_System_Guid_System_Int32_">AddReference(Guid, Int32)</a></td>
         <td><p>Adds an asset reference to the dictionary.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Managers_AssetSceneManager_Load__1_Guid_System_Boolean_">Load&lt;T&gt;(Guid, Boolean)</a></td>
+        <td><a href="#WaveEngine_Framework_Managers_AssetSceneManager_Load__1_System_Guid_System_Boolean_">Load&lt;T&gt;(Guid, Boolean)</a></td>
         <td><p>Load an asset.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a href="#WaveEngine_Framework_Managers_AssetSceneManager_Load__1_System_String_Stream_System_Boolean_">Load&lt;T&gt;(String, Stream, Boolean)</a></td>
-        <td><p>Loads an asset.</p>
 </td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Managers_AssetSceneManager_Load__1_System_String_System_Boolean_">Load&lt;T&gt;(String, Boolean)</a></td>
         <td><p>Load an asset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Managers_AssetSceneManager_Load__1_System_String_System_IO_Stream_System_Boolean_">Load&lt;T&gt;(String, Stream, Boolean)</a></td>
+        <td><p>Loads an asset.</p>
 </td>
       </tr>
       <tr>
@@ -208,7 +209,7 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Managers_AssetSceneManager_Unload_Guid_">Unload(Guid)</a></td>
+        <td><a href="#WaveEngine_Framework_Managers_AssetSceneManager_Unload_System_Guid_">Unload(Guid)</a></td>
         <td><p>Unload scene asset by Guid.</p>
 </td>
       </tr>
@@ -219,7 +220,7 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Managers_AssetSceneManager_AddReference_Guid_System_Int32_" data-uid="WaveEngine.Framework.Managers.AssetSceneManager.AddReference(Guid,System.Int32)">AddReference(Guid, Int32)</h4>
+  <h4 id="WaveEngine_Framework_Managers_AssetSceneManager_AddReference_System_Guid_System_Int32_" data-uid="WaveEngine.Framework.Managers.AssetSceneManager.AddReference(System.Guid,System.Int32)">AddReference(Guid, Int32)</h4>
   <div class="markdown level1 summary"><p>Adds an asset reference to the dictionary.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -238,7 +239,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td><em>id</em></td>
         <td><p>The asset&apos;s id.</p>
 </td>
@@ -251,7 +252,7 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Managers_AssetSceneManager_Load__1_Guid_System_Boolean_" data-uid="WaveEngine.Framework.Managers.AssetSceneManager.Load``1(Guid,System.Boolean)">Load&lt;T&gt;(Guid, Boolean)</h4>
+  <h4 id="WaveEngine_Framework_Managers_AssetSceneManager_Load__1_System_Guid_System_Boolean_" data-uid="WaveEngine.Framework.Managers.AssetSceneManager.Load``1(System.Guid,System.Boolean)">Load&lt;T&gt;(Guid, Boolean)</h4>
   <div class="markdown level1 summary"><p>Load an asset.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -271,7 +272,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td><em>id</em></td>
         <td><p>The asset id to load.</p>
 </td>
@@ -312,77 +313,6 @@
       <tr>
         <td><em>T</em></td>
         <td><p>The asset type to load.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_Framework_Managers_AssetSceneManager_Load__1_System_String_Stream_System_Boolean_" data-uid="WaveEngine.Framework.Managers.AssetSceneManager.Load``1(System.String,Stream,System.Boolean)">Load&lt;T&gt;(String, Stream, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Loads an asset.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T Load&lt;T&gt;(string name, Stream stream, bool forceNewInstance = false)
-    where T : ILoadable</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><em>name</em></td>
-        <td><p>The name of the asset.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Stream</span></td>
-        <td><em>stream</em></td>
-        <td><p>The stream of the asset.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><em>forceNewInstance</em></td>
-        <td><p>True to force a new instance of the asset.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><p>The loaded asset.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><em>T</em></td>
-        <td><p>Type of the asset to load.</p>
 </td>
       </tr>
     </tbody>
@@ -452,6 +382,98 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_Framework_Managers_AssetSceneManager_Load__1_System_String_System_IO_Stream_System_Boolean_" data-uid="WaveEngine.Framework.Managers.AssetSceneManager.Load``1(System.String,System.IO.Stream,System.Boolean)">Load&lt;T&gt;(String, Stream, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Loads an asset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Load&lt;T&gt;(string name, Stream stream, bool forceNewInstance = false)
+    where T : ILoadable</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>name</em></td>
+        <td><p>The name of the asset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><em>stream</em></td>
+        <td><p>The stream of the asset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>forceNewInstance</em></td>
+        <td><p>True to force a new instance of the asset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The loaded asset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Type of the asset to load.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Stream is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Asset name is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Framework_Managers_AssetSceneManager_OnAttached" data-uid="WaveEngine.Framework.Managers.AssetSceneManager.OnAttached">OnAttached()</h4>
   <div class="markdown level1 summary"><p>Invoked when the object is attached to the system.</p>
 </div>
@@ -484,7 +506,7 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnDestroy()</code></pre>
   </div>
-  <h4 id="WaveEngine_Framework_Managers_AssetSceneManager_Unload_Guid_" data-uid="WaveEngine.Framework.Managers.AssetSceneManager.Unload(Guid)">Unload(Guid)</h4>
+  <h4 id="WaveEngine_Framework_Managers_AssetSceneManager_Unload_System_Guid_" data-uid="WaveEngine.Framework.Managers.AssetSceneManager.Unload(System.Guid)">Unload(Guid)</h4>
   <div class="markdown level1 summary"><p>Unload scene asset by Guid.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -503,7 +525,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td><em>id</em></td>
         <td><p>Asset guid.</p>
 </td>

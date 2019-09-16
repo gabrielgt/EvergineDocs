@@ -95,7 +95,7 @@
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.DirectX11.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DX11Buffer : Buffer</code></pre>
+    <pre><code class="lang-csharp hljs">public class DX11Buffer : Buffer, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -109,13 +109,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_DirectX11_DX11Buffer__ctor_WaveEngine_DirectX11_DX11GraphicsContext_IntPtr_WaveEngine_Common_Graphics_BufferDescription__">DX11Buffer(DX11GraphicsContext, IntPtr, ref BufferDescription)</a></td>
+        <td><a href="#WaveEngine_DirectX11_DX11Buffer__ctor_WaveEngine_DirectX11_DX11GraphicsContext_System_IntPtr_WaveEngine_Common_Graphics_BufferDescription__">DX11Buffer(DX11GraphicsContext, IntPtr, ref BufferDescription)</a></td>
         <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.DirectX11.DX11Buffer.html">DX11Buffer</a> class.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_DirectX11_DX11Buffer__ctor_WaveEngine_DirectX11_DX11GraphicsContext_IntPtr_WaveEngine_Common_Graphics_BufferDescription__" data-uid="WaveEngine.DirectX11.DX11Buffer.#ctor(WaveEngine.DirectX11.DX11GraphicsContext,IntPtr,WaveEngine.Common.Graphics.BufferDescription@)">DX11Buffer(DX11GraphicsContext, IntPtr, ref BufferDescription)</h4>
+  <h4 id="WaveEngine_DirectX11_DX11Buffer__ctor_WaveEngine_DirectX11_DX11GraphicsContext_System_IntPtr_WaveEngine_Common_Graphics_BufferDescription__" data-uid="WaveEngine.DirectX11.DX11Buffer.#ctor(WaveEngine.DirectX11.DX11GraphicsContext,System.IntPtr,WaveEngine.Common.Graphics.BufferDescription@)">DX11Buffer(DX11GraphicsContext, IntPtr, ref BufferDescription)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.DirectX11.DX11Buffer.html">DX11Buffer</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -140,7 +140,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td><em>data</em></td>
         <td><p>Data pointer.</p>
 </td>
@@ -177,7 +177,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SharpDX.Direct3D11.Buffer NativeBuffer</code></pre>
+    <pre><code class="lang-csharp hljs">public Buffer NativeBuffer</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -268,7 +268,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -291,7 +291,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ShaderResourceView</span></td>
+        <td><span class="xref">SharpDX.Direct3D11.ShaderResourceView</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -314,7 +314,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UnorderedAccessView</span></td>
+        <td><span class="xref">SharpDX.Direct3D11.UnorderedAccessView</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -331,7 +331,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_DirectX11_DX11Buffer_CopyTo_DeviceContext_WaveEngine_Common_Graphics_Buffer_System_UInt32_System_UInt32_System_UInt32_">CopyTo(DeviceContext, Buffer, UInt32, UInt32, UInt32)</a></td>
+        <td><a href="#WaveEngine_DirectX11_DX11Buffer_CopyTo_SharpDX_Direct3D11_DeviceContext_WaveEngine_Common_Graphics_Buffer_System_UInt32_System_UInt32_System_UInt32_">CopyTo(DeviceContext, Buffer, UInt32, UInt32, UInt32)</a></td>
         <td><p>Copy this buffer in the destination buffer.</p>
 </td>
       </tr>
@@ -341,7 +341,7 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_DirectX11_DX11Buffer_SetData_DeviceContext_IntPtr_System_UInt32_System_UInt32_">SetData(DeviceContext, IntPtr, UInt32, UInt32)</a></td>
+        <td><a href="#WaveEngine_DirectX11_DX11Buffer_SetData_SharpDX_Direct3D11_DeviceContext_System_IntPtr_System_UInt32_System_UInt32_">SetData(DeviceContext, IntPtr, UInt32, UInt32)</a></td>
         <td><p>Fill the buffer from a pointer.</p>
 </td>
       </tr>
@@ -352,13 +352,13 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_DirectX11_DX11Buffer_CopyTo_DeviceContext_WaveEngine_Common_Graphics_Buffer_System_UInt32_System_UInt32_System_UInt32_" data-uid="WaveEngine.DirectX11.DX11Buffer.CopyTo(DeviceContext,WaveEngine.Common.Graphics.Buffer,System.UInt32,System.UInt32,System.UInt32)">CopyTo(DeviceContext, Buffer, UInt32, UInt32, UInt32)</h4>
+  <h4 id="WaveEngine_DirectX11_DX11Buffer_CopyTo_SharpDX_Direct3D11_DeviceContext_WaveEngine_Common_Graphics_Buffer_System_UInt32_System_UInt32_System_UInt32_" data-uid="WaveEngine.DirectX11.DX11Buffer.CopyTo(SharpDX.Direct3D11.DeviceContext,WaveEngine.Common.Graphics.Buffer,System.UInt32,System.UInt32,System.UInt32)">CopyTo(DeviceContext, Buffer, UInt32, UInt32, UInt32)</h4>
   <div class="markdown level1 summary"><p>Copy this buffer in the destination buffer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void CopyTo(DeviceContext deviceContext, Buffer destination, uint sizeInBytes, uint sourceOffset = null, uint destinationOffset = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public void CopyTo(DeviceContext deviceContext, Buffer destination, uint sizeInBytes, uint sourceOffset = 0U, uint destinationOffset = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -371,7 +371,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DeviceContext</span></td>
+        <td><span class="xref">SharpDX.Direct3D11.DeviceContext</span></td>
         <td><em>deviceContext</em></td>
         <td><p>Device context.</p>
 </td>
@@ -410,13 +410,13 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
   </div>
-  <h4 id="WaveEngine_DirectX11_DX11Buffer_SetData_DeviceContext_IntPtr_System_UInt32_System_UInt32_" data-uid="WaveEngine.DirectX11.DX11Buffer.SetData(DeviceContext,IntPtr,System.UInt32,System.UInt32)">SetData(DeviceContext, IntPtr, UInt32, UInt32)</h4>
+  <h4 id="WaveEngine_DirectX11_DX11Buffer_SetData_SharpDX_Direct3D11_DeviceContext_System_IntPtr_System_UInt32_System_UInt32_" data-uid="WaveEngine.DirectX11.DX11Buffer.SetData(SharpDX.Direct3D11.DeviceContext,System.IntPtr,System.UInt32,System.UInt32)">SetData(DeviceContext, IntPtr, UInt32, UInt32)</h4>
   <div class="markdown level1 summary"><p>Fill the buffer from a pointer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetData(DeviceContext deviceContext, IntPtr source, uint sourceSizeInBytes, uint destinationOffsetInBytes = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetData(DeviceContext deviceContext, IntPtr source, uint sourceSizeInBytes, uint destinationOffsetInBytes = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -429,13 +429,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DeviceContext</span></td>
+        <td><span class="xref">SharpDX.Direct3D11.DeviceContext</span></td>
         <td><em>deviceContext</em></td>
         <td><p>Device context.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td><em>source</em></td>
         <td><p>The data pointer.</p>
 </td>
@@ -478,6 +478,10 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

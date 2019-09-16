@@ -95,7 +95,7 @@
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.Bullet.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BulletConeTwistJoint3D : BulletJoint3D&lt;ConeTwistConstraint, ConeTwistJointDef3D&gt;, IDisposable, IConeTwistJoint3D, IJoint3D, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class BulletConeTwistJoint3D : BulletJoint3D&lt;ConeTwistConstraint, ConeTwistJointDef3D&gt;, IConeTwistJoint3D, IJoint3D, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -848,7 +848,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetLimit(float swingSpan1, float swingSpan2, float twistSpan, float softness = null, float biasFactor = 0.3F, float relaxationFactor = 1F)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetLimit(float swingSpan1, float swingSpan2, float twistSpan, float softness = 1F, float biasFactor = 0.3F, float relaxationFactor = 1F)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -952,16 +952,13 @@
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">IDisposable</span>
-  </div>
-  <div>
       <a class="xref" href="WaveEngine.Framework.Physics3D.IConeTwistJoint3D.html">IConeTwistJoint3D</a>
   </div>
   <div>
       <a class="xref" href="WaveEngine.Framework.Physics3D.IJoint3D.html">IJoint3D</a>
   </div>
   <div>
-      <span class="xref">IDisposable</span>
+      <span class="xref">System.IDisposable</span>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>

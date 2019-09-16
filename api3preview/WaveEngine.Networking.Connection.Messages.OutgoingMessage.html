@@ -93,7 +93,7 @@
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.Networking.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class OutgoingMessage : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class OutgoingMessage</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -107,13 +107,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Networking_Connection_Messages_OutgoingMessage__ctor_NetOutgoingMessage_">OutgoingMessage(NetOutgoingMessage)</a></td>
+        <td><a href="#WaveEngine_Networking_Connection_Messages_OutgoingMessage__ctor_Lidgren_Network_NetOutgoingMessage_">OutgoingMessage(NetOutgoingMessage)</a></td>
         <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Networking.Connection.Messages.OutgoingMessage.html">OutgoingMessage</a> class.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Networking_Connection_Messages_OutgoingMessage__ctor_NetOutgoingMessage_" data-uid="WaveEngine.Networking.Connection.Messages.OutgoingMessage.#ctor(NetOutgoingMessage)">OutgoingMessage(NetOutgoingMessage)</h4>
+  <h4 id="WaveEngine_Networking_Connection_Messages_OutgoingMessage__ctor_Lidgren_Network_NetOutgoingMessage_" data-uid="WaveEngine.Networking.Connection.Messages.OutgoingMessage.#ctor(Lidgren.Network.NetOutgoingMessage)">OutgoingMessage(NetOutgoingMessage)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Networking.Connection.Messages.OutgoingMessage.html">OutgoingMessage</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -132,7 +132,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">NetOutgoingMessage</span></td>
+        <td><span class="xref">Lidgren.Network.NetOutgoingMessage</span></td>
         <td><em>message</em></td>
         <td><p>The message.</p>
 </td>
@@ -248,11 +248,6 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Networking_Connection_Messages_OutgoingMessage_Write_DateTime_">Write(DateTime)</a></td>
-        <td><p>Writes the specified value.</p>
-</td>
-      </tr>
-      <tr>
         <td><a href="#WaveEngine_Networking_Connection_Messages_OutgoingMessage_Write_System_Boolean_">Write(Boolean)</a></td>
         <td><p>Writes the specified value.</p>
 </td>
@@ -270,6 +265,11 @@
       <tr>
         <td><a href="#WaveEngine_Networking_Connection_Messages_OutgoingMessage_Write_System_Byte___System_Int32_System_Int32_">Write(Byte[], Int32, Int32)</a></td>
         <td><p>Writes the specified number of bytes from an array, preceded with the length as an integer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Networking_Connection_Messages_OutgoingMessage_Write_System_DateTime_">Write(DateTime)</a></td>
+        <td><p>Writes the specified value.</p>
 </td>
       </tr>
       <tr>
@@ -298,7 +298,7 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Networking_Connection_Messages_OutgoingMessage_Write_TimeSpan_System_Boolean_">Write(TimeSpan, Boolean)</a></td>
+        <td><a href="#WaveEngine_Networking_Connection_Messages_OutgoingMessage_Write_System_TimeSpan_System_Boolean_">Write(TimeSpan, Boolean)</a></td>
         <td><p>Writes the specified value.</p>
 </td>
       </tr>
@@ -340,32 +340,6 @@
       <tr>
         <td><a href="#WaveEngine_Networking_Connection_Messages_OutgoingMessage_Write_WaveEngine_Networking_Connection_Messages_OutgoingMessage_">Write(OutgoingMessage)</a></td>
         <td><p>Append all the bits of message to this message.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_Networking_Connection_Messages_OutgoingMessage_Write_DateTime_" data-uid="WaveEngine.Networking.Connection.Messages.OutgoingMessage.Write(DateTime)">Write(DateTime)</h4>
-  <div class="markdown level1 summary"><p>Writes the specified value.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Write(DateTime value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DateTime</span></td>
-        <td><em>value</em></td>
-        <td><p>The value.</p>
 </td>
       </tr>
     </tbody>
@@ -424,6 +398,22 @@
         <td><span class="xref">System.Int32</span></td>
         <td><em>numberOfBits</em></td>
         <td><p>The number of bits that should be read. By default 8 bits.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>ReadByte(bits) can only read between 1 and 8 bits.</p>
 </td>
       </tr>
     </tbody>
@@ -488,6 +478,32 @@
         <td><span class="xref">System.Int32</span></td>
         <td><em>numberOfBytes</em></td>
         <td><p>Numbers of bytes to write.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Networking_Connection_Messages_OutgoingMessage_Write_System_DateTime_" data-uid="WaveEngine.Networking.Connection.Messages.OutgoingMessage.Write(System.DateTime)">Write(DateTime)</h4>
+  <div class="markdown level1 summary"><p>Writes the specified value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(DateTime value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><em>value</em></td>
+        <td><p>The value.</p>
 </td>
       </tr>
     </tbody>
@@ -622,12 +638,12 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Networking_Connection_Messages_OutgoingMessage_Write_TimeSpan_System_Boolean_" data-uid="WaveEngine.Networking.Connection.Messages.OutgoingMessage.Write(TimeSpan,System.Boolean)">Write(TimeSpan, Boolean)</h4>
+  <h4 id="WaveEngine_Networking_Connection_Messages_OutgoingMessage_Write_System_TimeSpan_System_Boolean_" data-uid="WaveEngine.Networking.Connection.Messages.OutgoingMessage.Write(System.TimeSpan,System.Boolean)">Write(TimeSpan, Boolean)</h4>
   <div class="markdown level1 summary"><p>Writes the specified value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 id="WaveEngine_Networking_Connection_Messages_OutgoingMessage_Write_TimeSpan_System_Boolean__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>High precision allows full <see cref="!:TimeSpan"></see> range, otherwise it will be limited to &quot;+-24.20:31:23.647&quot; (+-24 days, 20 hours, 31 minutes, 23 seconds and 647 milliseconds).</p>
+  <h5 id="WaveEngine_Networking_Connection_Messages_OutgoingMessage_Write_System_TimeSpan_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>High precision allows full <span class="xref">System.TimeSpan</span> range, otherwise it will be limited to &quot;+-24.20:31:23.647&quot; (+-24 days, 20 hours, 31 minutes, 23 seconds and 647 milliseconds).</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -644,7 +660,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><em>value</em></td>
         <td><p>The value.</p>
 </td>
@@ -652,7 +668,7 @@
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><em>highPrecision</em></td>
-        <td><p>Indicates whether the <see cref="!:TimeSpan"></see> will be written using high precision (ticks) or not (milliseconds).</p>
+        <td><p>Indicates whether the <span class="xref">System.TimeSpan</span> will be written using high precision (ticks) or not (milliseconds).</p>
 </td>
       </tr>
     </tbody>

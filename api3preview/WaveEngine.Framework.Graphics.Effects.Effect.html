@@ -93,7 +93,7 @@
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class Effect : object, ILoadable, IDisposable, IDependencyObject</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class Effect : ILoadable, IDisposable, IDependencyObject</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -228,7 +228,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="WaveEngine.Framework.Graphics.Effects.Analyzer.GraphicsResourceInfo.html">GraphicsResourceInfo</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="WaveEngine.Framework.Graphics.Effects.Analyzer.GraphicsResourceInfo.html">GraphicsResourceInfo</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -274,7 +274,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="WaveEngine.Framework.Graphics.ConstantBuffer.html">ConstantBuffer</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="WaveEngine.Framework.Graphics.ConstantBuffer.html">ConstantBuffer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -297,7 +297,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="WaveEngine.Framework.Graphics.Effects.EffectTechnique.html">EffectTechnique</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="WaveEngine.Framework.Graphics.Effects.EffectTechnique.html">EffectTechnique</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -315,7 +315,8 @@
     <tbody>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Effects_Effect_Dependencies">Dependencies</a></td>
-        <td></td>
+        <td><p>Gets the dependency list.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Effects_Effect_Directives">Directives</a></td>
@@ -329,7 +330,8 @@
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Effects_Effect_Id">Id</a></td>
-        <td></td>
+        <td><p>Gets or sets the asset Id.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Effects_Effect_Passes">Passes</a></td>
@@ -338,12 +340,14 @@
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Effects_Effect_ReaderVersion">ReaderVersion</a></td>
-        <td></td>
+        <td><p>Gets the reader version.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h4 id="WaveEngine_Framework_Graphics_Effects_Effect_Dependencies" data-uid="WaveEngine.Framework.Graphics.Effects.Effect.Dependencies">Dependencies</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the dependency list.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -359,7 +363,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Lazy</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="WaveEngine.Common.IDependencyLink.html">IDependencyLink</a>&gt;&gt;</td>
+        <td><span class="xref">System.Lazy</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="WaveEngine.Common.IDependencyLink.html">IDependencyLink</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -405,13 +409,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="WaveEngine.Framework.Graphics.Effects.Analyzer.GraphicsResourceInfo.html">GraphicsResourceInfo</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="WaveEngine.Framework.Graphics.Effects.Analyzer.GraphicsResourceInfo.html">GraphicsResourceInfo</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h4 id="WaveEngine_Framework_Graphics_Effects_Effect_Id" data-uid="WaveEngine.Framework.Graphics.Effects.Effect.Id">Id</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the asset Id.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -427,8 +432,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
-        <td></td>
+        <td><span class="xref">System.Guid</span></td>
+        <td><p>The asset path.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -456,7 +462,8 @@
     </tbody>
   </table>
   <h4 id="WaveEngine_Framework_Graphics_Effects_Effect_ReaderVersion" data-uid="WaveEngine.Framework.Graphics.Effects.Effect.ReaderVersion">ReaderVersion</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the reader version.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -472,8 +479,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Version</span></td>
-        <td></td>
+        <td><span class="xref">System.Version</span></td>
+        <td><p>The reader version.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -525,7 +533,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void CheckDirectives(string[] wantedDirectives)</code></pre>
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+protected void CheckDirectives(string[] wantedDirectives)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -695,12 +704,14 @@
     <tbody>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Effects_Effect_Invalidated">Invalidated</a></td>
-        <td></td>
+        <td><p>Occurs when this instance has been invalidated and all references must be reloaded.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h4 id="WaveEngine_Framework_Graphics_Effects_Effect_Invalidated" data-uid="WaveEngine.Framework.Graphics.Effects.Effect.Invalidated">Invalidated</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Occurs when this instance has been invalidated and all references must be reloaded.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -716,7 +727,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Common.ILoadable.html">ILoadable</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Common.ILoadable.html">ILoadable</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -726,7 +737,7 @@
       <a class="xref" href="WaveEngine.Common.ILoadable.html">ILoadable</a>
   </div>
   <div>
-      <span class="xref">IDisposable</span>
+      <span class="xref">System.IDisposable</span>
   </div>
   <div>
       <a class="xref" href="WaveEngine.Common.IDependencyObject.html">IDependencyObject</a>

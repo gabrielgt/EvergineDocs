@@ -93,7 +93,7 @@
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Material : object, ILoadable, IDisposable, IDependencyObject</code></pre>
+    <pre><code class="lang-csharp hljs">public class Material : ILoadable, IDisposable, IDependencyObject</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -536,7 +536,8 @@
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Material_Dependencies">Dependencies</a></td>
-        <td></td>
+        <td><p>Gets the dependency list.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Material_Effect">Effect</a></td>
@@ -545,7 +546,8 @@
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Material_Id">Id</a></td>
-        <td></td>
+        <td><p>Gets or sets the asset Id.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Material_LayerDescription">LayerDescription</a></td>
@@ -560,7 +562,8 @@ This value is used to modify the rendering order of the meshes.</p>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Material_ReaderVersion">ReaderVersion</a></td>
-        <td></td>
+        <td><p>Gets the reader version.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Material_ResourceLayout">ResourceLayout</a></td>
@@ -667,7 +670,8 @@ This value is used to modify the rendering order of the meshes.</p>
     </tbody>
   </table>
   <h4 id="WaveEngine_Framework_Graphics_Material_Dependencies" data-uid="WaveEngine.Framework.Graphics.Material.Dependencies">Dependencies</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the dependency list.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -683,7 +687,7 @@ This value is used to modify the rendering order of the meshes.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Lazy</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="WaveEngine.Common.IDependencyLink.html">IDependencyLink</a>&gt;&gt;</td>
+        <td><span class="xref">System.Lazy</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="WaveEngine.Common.IDependencyLink.html">IDependencyLink</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -712,7 +716,8 @@ This value is used to modify the rendering order of the meshes.</p>
     </tbody>
   </table>
   <h4 id="WaveEngine_Framework_Graphics_Material_Id" data-uid="WaveEngine.Framework.Graphics.Material.Id">Id</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the asset Id.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -728,8 +733,9 @@ This value is used to modify the rendering order of the meshes.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
-        <td></td>
+        <td><span class="xref">System.Guid</span></td>
+        <td><p>The asset path.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -763,7 +769,8 @@ This value is used to modify the rendering order of the meshes.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int OrderBias { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderPropertyAsInput(MinLimit = -511, MaxLimit = 512)]
+public int OrderBias { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -781,7 +788,8 @@ This value is used to modify the rendering order of the meshes.</p>
     </tbody>
   </table>
   <h4 id="WaveEngine_Framework_Graphics_Material_ReaderVersion" data-uid="WaveEngine.Framework.Graphics.Material.ReaderVersion">ReaderVersion</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the reader version.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -797,8 +805,9 @@ This value is used to modify the rendering order of the meshes.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Version</span></td>
-        <td></td>
+        <td><span class="xref">System.Version</span></td>
+        <td><p>The reader version.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -899,7 +908,7 @@ This value is used to modify the rendering order of the meshes.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_Material_SetParameterValue_System_String_Type_System_Byte___">SetParameterValue(String, Type, Byte[])</a></td>
+        <td><a href="#WaveEngine_Framework_Graphics_Material_SetParameterValue_System_String_System_Type_System_Byte___">SetParameterValue(String, Type, Byte[])</a></td>
         <td><p>Sets the parameter value.</p>
 </td>
       </tr>
@@ -1106,7 +1115,7 @@ This value is used to modify the rendering order of the meshes.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Graphics_Material_SetParameterValue_System_String_Type_System_Byte___" data-uid="WaveEngine.Framework.Graphics.Material.SetParameterValue(System.String,Type,System.Byte[])">SetParameterValue(String, Type, Byte[])</h4>
+  <h4 id="WaveEngine_Framework_Graphics_Material_SetParameterValue_System_String_System_Type_System_Byte___" data-uid="WaveEngine.Framework.Graphics.Material.SetParameterValue(System.String,System.Type,System.Byte[])">SetParameterValue(String, Type, Byte[])</h4>
   <div class="markdown level1 summary"><p>Sets the parameter value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1131,7 +1140,7 @@ This value is used to modify the rendering order of the meshes.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><em>parameterType</em></td>
         <td><p>Parameter type.</p>
 </td>
@@ -1334,7 +1343,8 @@ This value is used to modify the rendering order of the meshes.</p>
     <tbody>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Material_Invalidated">Invalidated</a></td>
-        <td></td>
+        <td><p>Occurs when this instance has been invalidated and all references must be reloaded.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Material_MaterialStateChanged">MaterialStateChanged</a></td>
@@ -1344,7 +1354,8 @@ This value is used to modify the rendering order of the meshes.</p>
     </tbody>
   </table>
   <h4 id="WaveEngine_Framework_Graphics_Material_Invalidated" data-uid="WaveEngine.Framework.Graphics.Material.Invalidated">Invalidated</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Occurs when this instance has been invalidated and all references must be reloaded.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1360,7 +1371,7 @@ This value is used to modify the rendering order of the meshes.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Common.ILoadable.html">ILoadable</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Common.ILoadable.html">ILoadable</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1383,7 +1394,7 @@ This value is used to modify the rendering order of the meshes.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1393,7 +1404,7 @@ This value is used to modify the rendering order of the meshes.</p>
       <a class="xref" href="WaveEngine.Common.ILoadable.html">ILoadable</a>
   </div>
   <div>
-      <span class="xref">IDisposable</span>
+      <span class="xref">System.IDisposable</span>
   </div>
   <div>
       <a class="xref" href="WaveEngine.Common.IDependencyObject.html">IDependencyObject</a>

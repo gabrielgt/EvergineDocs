@@ -95,7 +95,7 @@
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class LineBatch : RenderObjectInfo</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class LineBatch : RenderObjectInfo, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -649,17 +649,17 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_LineBatch_DrawLine_Vector3_Vector3_WaveEngine_Common_Graphics_Color_">DrawLine(Vector3, Vector3, Color)</a></td>
-        <td><p>Draws the line.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_LineBatch_DrawLine_Vector3__Vector3__WaveEngine_Common_Graphics_Color__">DrawLine(ref Vector3, ref Vector3, ref Color)</a></td>
-        <td><p>Draws the line.</p>
-</td>
-      </tr>
-      <tr>
         <td><a href="#WaveEngine_Framework_Graphics_LineBatch_DrawLine_WaveEngine_Framework_Graphics_Line__">DrawLine(ref Line)</a></td>
+        <td><p>Draws the line.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_LineBatch_DrawLine_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Vector3_WaveEngine_Common_Graphics_Color_">DrawLine(Vector3, Vector3, Color)</a></td>
+        <td><p>Draws the line.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_LineBatch_DrawLine_WaveEngine_Mathematics_Vector3__WaveEngine_Mathematics_Vector3__WaveEngine_Common_Graphics_Color__">DrawLine(ref Vector3, ref Vector3, ref Color)</a></td>
         <td><p>Draws the line.</p>
 </td>
       </tr>
@@ -719,82 +719,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void Destroy()</code></pre>
   </div>
-  <h4 id="WaveEngine_Framework_Graphics_LineBatch_DrawLine_Vector3_Vector3_WaveEngine_Common_Graphics_Color_" data-uid="WaveEngine.Framework.Graphics.LineBatch.DrawLine(Vector3,Vector3,WaveEngine.Common.Graphics.Color)">DrawLine(Vector3, Vector3, Color)</h4>
-  <div class="markdown level1 summary"><p>Draws the line.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void DrawLine(Vector3 start, Vector3 end, Color color)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><em>start</em></td>
-        <td><p>The start.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><em>end</em></td>
-        <td><p>The end.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="WaveEngine.Common.Graphics.Color.html">Color</a></td>
-        <td><em>color</em></td>
-        <td><p>The color.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_Framework_Graphics_LineBatch_DrawLine_Vector3__Vector3__WaveEngine_Common_Graphics_Color__" data-uid="WaveEngine.Framework.Graphics.LineBatch.DrawLine(Vector3@,Vector3@,WaveEngine.Common.Graphics.Color@)">DrawLine(ref Vector3, ref Vector3, ref Color)</h4>
-  <div class="markdown level1 summary"><p>Draws the line.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void DrawLine(ref Vector3 startPoint, ref Vector3 endPoint, ref Color color)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><em>startPoint</em></td>
-        <td><p>The start point.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><em>endPoint</em></td>
-        <td><p>The end point.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="WaveEngine.Common.Graphics.Color.html">Color</a></td>
-        <td><em>color</em></td>
-        <td><p>The color.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h4 id="WaveEngine_Framework_Graphics_LineBatch_DrawLine_WaveEngine_Framework_Graphics_Line__" data-uid="WaveEngine.Framework.Graphics.LineBatch.DrawLine(WaveEngine.Framework.Graphics.Line@)">DrawLine(ref Line)</h4>
   <div class="markdown level1 summary"><p>Draws the line.</p>
 </div>
@@ -817,6 +741,82 @@
         <td><a class="xref" href="WaveEngine.Framework.Graphics.Line.html">Line</a></td>
         <td><em>line</em></td>
         <td><p>The line.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_LineBatch_DrawLine_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Vector3_WaveEngine_Common_Graphics_Color_" data-uid="WaveEngine.Framework.Graphics.LineBatch.DrawLine(WaveEngine.Mathematics.Vector3,WaveEngine.Mathematics.Vector3,WaveEngine.Common.Graphics.Color)">DrawLine(Vector3, Vector3, Color)</h4>
+  <div class="markdown level1 summary"><p>Draws the line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawLine(Vector3 start, Vector3 end, Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
+        <td><em>start</em></td>
+        <td><p>The start.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
+        <td><em>end</em></td>
+        <td><p>The end.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Color.html">Color</a></td>
+        <td><em>color</em></td>
+        <td><p>The color.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_LineBatch_DrawLine_WaveEngine_Mathematics_Vector3__WaveEngine_Mathematics_Vector3__WaveEngine_Common_Graphics_Color__" data-uid="WaveEngine.Framework.Graphics.LineBatch.DrawLine(WaveEngine.Mathematics.Vector3@,WaveEngine.Mathematics.Vector3@,WaveEngine.Common.Graphics.Color@)">DrawLine(ref Vector3, ref Vector3, ref Color)</h4>
+  <div class="markdown level1 summary"><p>Draws the line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawLine(ref Vector3 startPoint, ref Vector3 endPoint, ref Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
+        <td><em>startPoint</em></td>
+        <td><p>The start point.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
+        <td><em>endPoint</em></td>
+        <td><p>The end point.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Color.html">Color</a></td>
+        <td><em>color</em></td>
+        <td><p>The color.</p>
 </td>
       </tr>
     </tbody>
@@ -910,6 +910,10 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>

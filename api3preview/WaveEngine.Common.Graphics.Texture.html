@@ -108,19 +108,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Common_Graphics_Texture__ctor_WaveEngine_Common_Graphics_GraphicsContext_WaveEngine_Common_Graphics_DataBox___WaveEngine_Common_Graphics_TextureDescription__">Texture(GraphicsContext, DataBox[], ref TextureDescription)</a></td>
+        <td><a href="#WaveEngine_Common_Graphics_Texture__ctor_WaveEngine_Common_Graphics_GraphicsContext_WaveEngine_Common_Graphics_TextureDescription__">Texture(GraphicsContext, ref TextureDescription)</a></td>
         <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.Texture.html">Texture</a> class.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Common_Graphics_Texture__ctor_WaveEngine_Common_Graphics_GraphicsContext_WaveEngine_Common_Graphics_DataBox___WaveEngine_Common_Graphics_TextureDescription__" data-uid="WaveEngine.Common.Graphics.Texture.#ctor(WaveEngine.Common.Graphics.GraphicsContext,WaveEngine.Common.Graphics.DataBox[],WaveEngine.Common.Graphics.TextureDescription@)">Texture(GraphicsContext, DataBox[], ref TextureDescription)</h4>
+  <h4 id="WaveEngine_Common_Graphics_Texture__ctor_WaveEngine_Common_Graphics_GraphicsContext_WaveEngine_Common_Graphics_TextureDescription__" data-uid="WaveEngine.Common.Graphics.Texture.#ctor(WaveEngine.Common.Graphics.GraphicsContext,WaveEngine.Common.Graphics.TextureDescription@)">Texture(GraphicsContext, ref TextureDescription)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.Texture.html">Texture</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Texture(GraphicsContext context, DataBox[] data, ref TextureDescription description)</code></pre>
+    <pre><code class="lang-csharp hljs">protected Texture(GraphicsContext context, ref TextureDescription description)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -136,12 +136,6 @@
         <td><a class="xref" href="WaveEngine.Common.Graphics.GraphicsContext.html">GraphicsContext</a></td>
         <td><em>context</em></td>
         <td><p>The graphics context.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="WaveEngine.Common.Graphics.DataBox.html">DataBox</a>[]</td>
-        <td><em>data</em></td>
-        <td><p>The texture data.</p>
 </td>
       </tr>
       <tr>
@@ -205,6 +199,11 @@
     </thead>
     <tbody>
       <tr>
+        <td><a href="#WaveEngine_Common_Graphics_Texture_CouldBeAttachedToFramebuffer">CouldBeAttachedToFramebuffer</a></td>
+        <td><p>Gets a value indicating whether this texture could be attached to a framebuffer.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_Common_Graphics_Texture_Dependencies">Dependencies</a></td>
         <td><p>Gets the dependency list.</p>
 </td>
@@ -231,6 +230,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_Common_Graphics_Texture_CouldBeAttachedToFramebuffer" data-uid="WaveEngine.Common.Graphics.Texture.CouldBeAttachedToFramebuffer">CouldBeAttachedToFramebuffer</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this texture could be attached to a framebuffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CouldBeAttachedToFramebuffer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Common_Graphics_Texture_Dependencies" data-uid="WaveEngine.Common.Graphics.Texture.Dependencies">Dependencies</h4>
   <div class="markdown level1 summary"><p>Gets the dependency list.</p>
 </div>
@@ -249,7 +271,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Lazy</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="WaveEngine.Common.IDependencyLink.html">IDependencyLink</a>&gt;&gt;</td>
+        <td><span class="xref">System.Lazy</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="WaveEngine.Common.IDependencyLink.html">IDependencyLink</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -272,7 +294,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td><p>The texture Id.</p>
 </td>
       </tr>
@@ -319,7 +341,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Version</span></td>
+        <td><span class="xref">System.Version</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -440,7 +462,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Common.ILoadable.html">ILoadable</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Common.ILoadable.html">ILoadable</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -450,7 +472,7 @@
       <a class="xref" href="WaveEngine.Common.ILoadable.html">ILoadable</a>
   </div>
   <div>
-      <span class="xref">IDisposable</span>
+      <span class="xref">System.IDisposable</span>
   </div>
   <div>
       <a class="xref" href="WaveEngine.Common.IDependencyObject.html">IDependencyObject</a>

@@ -187,7 +187,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="WaveEngine.Framework.Graphics.Transform3D.html">Transform3D</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="WaveEngine.Framework.Graphics.Transform3D.html">Transform3D</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -210,7 +210,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Quaternion</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Quaternion.html">Quaternion</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -233,7 +233,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -256,7 +256,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -267,7 +267,8 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Transform3D parentTransform</code></pre>
+    <pre><code class="lang-csharp hljs">[BindComponent(false, false, BindComponentSource.Parents, null)]
+protected Transform3D parentTransform</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -408,7 +409,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Graphics.Transform3D.html">Transform3D</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Graphics.Transform3D.html">Transform3D</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -431,7 +432,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Quaternion</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Quaternion.html">Quaternion</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -442,7 +443,8 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3 LocalPosition { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Local Position&quot;, Tooltip = &quot;The entity position in local space&quot;)]
+public Vector3 LocalPosition { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -454,7 +456,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -465,7 +467,8 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3 LocalRotation { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(typeof(Vector3RadianToDegreeConverter), CustomPropertyName = &quot;Local Rotation&quot;, Tooltip = &quot;The global rotation expressed in Euler angles (yaw, pitch, roll)&quot;)]
+public Vector3 LocalRotation { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -477,7 +480,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -488,7 +491,8 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3 LocalScale { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Local Scale&quot;, Tooltip = &quot;The entity scale in local space&quot;)]
+public Vector3 LocalScale { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -500,7 +504,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -523,7 +527,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -546,7 +550,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Quaternion</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Quaternion.html">Quaternion</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -592,7 +596,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -615,7 +619,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -638,7 +642,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -661,7 +665,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -684,7 +688,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -707,7 +711,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -724,17 +728,17 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_Transform3D_LocalLookAt_Vector3_Vector3_">LocalLookAt(Vector3, Vector3)</a></td>
+        <td><a href="#WaveEngine_Framework_Graphics_Transform3D_LocalLookAt_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Vector3_">LocalLookAt(Vector3, Vector3)</a></td>
         <td><p>Rotates the entity to point to the specified position and up vector (in Local space).</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_Transform3D_LookAt_Vector3_">LookAt(Vector3)</a></td>
+        <td><a href="#WaveEngine_Framework_Graphics_Transform3D_LookAt_WaveEngine_Mathematics_Vector3_">LookAt(Vector3)</a></td>
         <td><p>Rotates the entity to point to the specified position and up vector.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_Transform3D_LookAt_Vector3_Vector3_">LookAt(Vector3, Vector3)</a></td>
+        <td><a href="#WaveEngine_Framework_Graphics_Transform3D_LookAt_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Vector3_">LookAt(Vector3, Vector3)</a></td>
         <td><p>Rotates the entity to point to the specified position and up vector (in World space).</p>
 </td>
       </tr>
@@ -754,38 +758,38 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_Transform3D_RotateAround_Vector3_Quaternion_">RotateAround(Vector3, Quaternion)</a></td>
+        <td><a href="#WaveEngine_Framework_Graphics_Transform3D_RotateAround_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Quaternion_">RotateAround(Vector3, Quaternion)</a></td>
         <td><p>Rotates the entity respect the point using the quaternion.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_Transform3D_RotateAround_Vector3_Vector3_System_Single_">RotateAround(Vector3, Vector3, Single)</a></td>
+        <td><a href="#WaveEngine_Framework_Graphics_Transform3D_RotateAround_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Vector3_System_Single_">RotateAround(Vector3, Vector3, Single)</a></td>
         <td><p>Rotates the entity respect the point using an axis and angle.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_Transform3D_RotateAround_Vector3__Quaternion__">RotateAround(ref Vector3, ref Quaternion)</a></td>
+        <td><a href="#WaveEngine_Framework_Graphics_Transform3D_RotateAround_WaveEngine_Mathematics_Vector3__WaveEngine_Mathematics_Quaternion__">RotateAround(ref Vector3, ref Quaternion)</a></td>
         <td><p>Rotates the entity respect the point using the quaternion.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_Transform3D_RotateAround_Vector3__Vector3__System_Single_">RotateAround(ref Vector3, ref Vector3, Single)</a></td>
+        <td><a href="#WaveEngine_Framework_Graphics_Transform3D_RotateAround_WaveEngine_Mathematics_Vector3__WaveEngine_Mathematics_Vector3__System_Single_">RotateAround(ref Vector3, ref Vector3, Single)</a></td>
         <td><p>Rotates the entity respect the point using an axis and angle.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_Transform3D_SetLocalTransform_Vector3_Quaternion_Vector3_">SetLocalTransform(Vector3, Quaternion, Vector3)</a></td>
+        <td><a href="#WaveEngine_Framework_Graphics_Transform3D_SetLocalTransform_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Quaternion_WaveEngine_Mathematics_Vector3_">SetLocalTransform(Vector3, Quaternion, Vector3)</a></td>
         <td><p>Set the local transform.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_Transform3D_SetLocalTransform_Vector3__Quaternion__Vector3__">SetLocalTransform(ref Vector3, ref Quaternion, ref Vector3)</a></td>
+        <td><a href="#WaveEngine_Framework_Graphics_Transform3D_SetLocalTransform_WaveEngine_Mathematics_Vector3__WaveEngine_Mathematics_Quaternion__WaveEngine_Mathematics_Vector3__">SetLocalTransform(ref Vector3, ref Quaternion, ref Vector3)</a></td>
         <td><p>Set the local transform.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Graphics_Transform3D_LocalLookAt_Vector3_Vector3_" data-uid="WaveEngine.Framework.Graphics.Transform3D.LocalLookAt(Vector3,Vector3)">LocalLookAt(Vector3, Vector3)</h4>
+  <h4 id="WaveEngine_Framework_Graphics_Transform3D_LocalLookAt_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Vector3_" data-uid="WaveEngine.Framework.Graphics.Transform3D.LocalLookAt(WaveEngine.Mathematics.Vector3,WaveEngine.Mathematics.Vector3)">LocalLookAt(Vector3, Vector3)</h4>
   <div class="markdown level1 summary"><p>Rotates the entity to point to the specified position and up vector (in Local space).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -804,20 +808,20 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>targetPosition</em></td>
         <td><p>The world position to look at.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>up</em></td>
         <td><p>The up vector.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Graphics_Transform3D_LookAt_Vector3_" data-uid="WaveEngine.Framework.Graphics.Transform3D.LookAt(Vector3)">LookAt(Vector3)</h4>
+  <h4 id="WaveEngine_Framework_Graphics_Transform3D_LookAt_WaveEngine_Mathematics_Vector3_" data-uid="WaveEngine.Framework.Graphics.Transform3D.LookAt(WaveEngine.Mathematics.Vector3)">LookAt(Vector3)</h4>
   <div class="markdown level1 summary"><p>Rotates the entity to point to the specified position and up vector.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -836,14 +840,14 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>targetPosition</em></td>
         <td><p>The world position to look at.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Graphics_Transform3D_LookAt_Vector3_Vector3_" data-uid="WaveEngine.Framework.Graphics.Transform3D.LookAt(Vector3,Vector3)">LookAt(Vector3, Vector3)</h4>
+  <h4 id="WaveEngine_Framework_Graphics_Transform3D_LookAt_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Vector3_" data-uid="WaveEngine.Framework.Graphics.Transform3D.LookAt(WaveEngine.Mathematics.Vector3,WaveEngine.Mathematics.Vector3)">LookAt(Vector3, Vector3)</h4>
   <div class="markdown level1 summary"><p>Rotates the entity to point to the specified position and up vector (in World space).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -862,13 +866,13 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>targetPosition</em></td>
         <td><p>The world position to look at.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>up</em></td>
         <td><p>The up vector.</p>
 </td>
@@ -915,7 +919,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void ResetDirtyFlags()</code></pre>
   </div>
-  <h4 id="WaveEngine_Framework_Graphics_Transform3D_RotateAround_Vector3_Quaternion_" data-uid="WaveEngine.Framework.Graphics.Transform3D.RotateAround(Vector3,Quaternion)">RotateAround(Vector3, Quaternion)</h4>
+  <h4 id="WaveEngine_Framework_Graphics_Transform3D_RotateAround_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Quaternion_" data-uid="WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Mathematics.Vector3,WaveEngine.Mathematics.Quaternion)">RotateAround(Vector3, Quaternion)</h4>
   <div class="markdown level1 summary"><p>Rotates the entity respect the point using the quaternion.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -934,20 +938,20 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>point</em></td>
         <td><p>The center of rotation.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Quaternion</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Quaternion.html">Quaternion</a></td>
         <td><em>quaternion</em></td>
         <td><p>The rotation specified as a quaternion.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Graphics_Transform3D_RotateAround_Vector3_Vector3_System_Single_" data-uid="WaveEngine.Framework.Graphics.Transform3D.RotateAround(Vector3,Vector3,System.Single)">RotateAround(Vector3, Vector3, Single)</h4>
+  <h4 id="WaveEngine_Framework_Graphics_Transform3D_RotateAround_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Vector3_System_Single_" data-uid="WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Mathematics.Vector3,WaveEngine.Mathematics.Vector3,System.Single)">RotateAround(Vector3, Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Rotates the entity respect the point using an axis and angle.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -966,13 +970,13 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>point</em></td>
         <td><p>The center of rotation. </p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>axis</em></td>
         <td><p>The axis of rotation.</p>
 </td>
@@ -985,7 +989,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Graphics_Transform3D_RotateAround_Vector3__Quaternion__" data-uid="WaveEngine.Framework.Graphics.Transform3D.RotateAround(Vector3@,Quaternion@)">RotateAround(ref Vector3, ref Quaternion)</h4>
+  <h4 id="WaveEngine_Framework_Graphics_Transform3D_RotateAround_WaveEngine_Mathematics_Vector3__WaveEngine_Mathematics_Quaternion__" data-uid="WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Mathematics.Vector3@,WaveEngine.Mathematics.Quaternion@)">RotateAround(ref Vector3, ref Quaternion)</h4>
   <div class="markdown level1 summary"><p>Rotates the entity respect the point using the quaternion.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1004,20 +1008,20 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>point</em></td>
         <td><p>The center of rotation.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Quaternion</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Quaternion.html">Quaternion</a></td>
         <td><em>quaternion</em></td>
         <td><p>The rotation specified as a quaternion.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Graphics_Transform3D_RotateAround_Vector3__Vector3__System_Single_" data-uid="WaveEngine.Framework.Graphics.Transform3D.RotateAround(Vector3@,Vector3@,System.Single)">RotateAround(ref Vector3, ref Vector3, Single)</h4>
+  <h4 id="WaveEngine_Framework_Graphics_Transform3D_RotateAround_WaveEngine_Mathematics_Vector3__WaveEngine_Mathematics_Vector3__System_Single_" data-uid="WaveEngine.Framework.Graphics.Transform3D.RotateAround(WaveEngine.Mathematics.Vector3@,WaveEngine.Mathematics.Vector3@,System.Single)">RotateAround(ref Vector3, ref Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Rotates the entity respect the point using an axis and angle.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1036,13 +1040,13 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>point</em></td>
         <td><p>The center of rotation. </p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>axis</em></td>
         <td><p>The axis of rotation.</p>
 </td>
@@ -1055,7 +1059,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Graphics_Transform3D_SetLocalTransform_Vector3_Quaternion_Vector3_" data-uid="WaveEngine.Framework.Graphics.Transform3D.SetLocalTransform(Vector3,Quaternion,Vector3)">SetLocalTransform(Vector3, Quaternion, Vector3)</h4>
+  <h4 id="WaveEngine_Framework_Graphics_Transform3D_SetLocalTransform_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Quaternion_WaveEngine_Mathematics_Vector3_" data-uid="WaveEngine.Framework.Graphics.Transform3D.SetLocalTransform(WaveEngine.Mathematics.Vector3,WaveEngine.Mathematics.Quaternion,WaveEngine.Mathematics.Vector3)">SetLocalTransform(Vector3, Quaternion, Vector3)</h4>
   <div class="markdown level1 summary"><p>Set the local transform.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1074,26 +1078,26 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>localPosition</em></td>
         <td><p>The local position.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Quaternion</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Quaternion.html">Quaternion</a></td>
         <td><em>localOrientation</em></td>
         <td><p>The local orientation.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>localScale</em></td>
         <td><p>The local scale.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Graphics_Transform3D_SetLocalTransform_Vector3__Quaternion__Vector3__" data-uid="WaveEngine.Framework.Graphics.Transform3D.SetLocalTransform(Vector3@,Quaternion@,Vector3@)">SetLocalTransform(ref Vector3, ref Quaternion, ref Vector3)</h4>
+  <h4 id="WaveEngine_Framework_Graphics_Transform3D_SetLocalTransform_WaveEngine_Mathematics_Vector3__WaveEngine_Mathematics_Quaternion__WaveEngine_Mathematics_Vector3__" data-uid="WaveEngine.Framework.Graphics.Transform3D.SetLocalTransform(WaveEngine.Mathematics.Vector3@,WaveEngine.Mathematics.Quaternion@,WaveEngine.Mathematics.Vector3@)">SetLocalTransform(ref Vector3, ref Quaternion, ref Vector3)</h4>
   <div class="markdown level1 summary"><p>Set the local transform.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1112,19 +1116,19 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>localPosition</em></td>
         <td><p>The local position.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Quaternion</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Quaternion.html">Quaternion</a></td>
         <td><em>localOrientation</em></td>
         <td><p>The local orientation.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>localScale</em></td>
         <td><p>The local scale.</p>
 </td>
@@ -1202,7 +1206,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1225,7 +1229,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1248,7 +1252,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1271,7 +1275,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1294,7 +1298,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1317,7 +1321,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1340,7 +1344,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1363,7 +1367,7 @@ It&apos;s used to store and manipulate the position, rotation and scale of the e
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -95,7 +95,7 @@
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.SDL.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SDLWindow : Window</code></pre>
+    <pre><code class="lang-csharp hljs">public class SDLWindow : Window, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -266,7 +266,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -357,7 +357,7 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_SDL_SDLWindow_OnEvent_SDL_Event_">OnEvent(SDL_Event)</a></td>
+        <td><a href="#WaveEngine_SDL_SDLWindow_OnEvent_Veldrid_Sdl2_SDL_Event_">OnEvent(SDL_Event)</a></td>
         <td><p>SDL Event manager method.</p>
 </td>
       </tr>
@@ -371,7 +371,7 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void Destroy()</code></pre>
   </div>
-  <h4 id="WaveEngine_SDL_SDLWindow_OnEvent_SDL_Event_" data-uid="WaveEngine.SDL.SDLWindow.OnEvent(SDL_Event)">OnEvent(SDL_Event)</h4>
+  <h4 id="WaveEngine_SDL_SDLWindow_OnEvent_Veldrid_Sdl2_SDL_Event_" data-uid="WaveEngine.SDL.SDLWindow.OnEvent(Veldrid.Sdl2.SDL_Event)">OnEvent(SDL_Event)</h4>
   <div class="markdown level1 summary"><p>SDL Event manager method.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -390,13 +390,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">SDL_Event</span></td>
+        <td><span class="xref">Veldrid.Sdl2.SDL_Event</span></td>
         <td><em>ev</em></td>
         <td><p>SDL event.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

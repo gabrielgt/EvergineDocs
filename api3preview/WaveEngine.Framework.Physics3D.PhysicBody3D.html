@@ -177,7 +177,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.Collider3D.html">Collider3D</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.Collider3D.html">Collider3D</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -211,7 +211,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected PhysicManager3D PhysicManager3D</code></pre>
+    <pre><code class="lang-csharp hljs">[BindSceneManager(false, true)]
+protected PhysicManager3D PhysicManager3D</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -234,7 +235,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Transform3D Transform3D</code></pre>
+    <pre><code class="lang-csharp hljs">[BindComponent(true, true, BindComponentSource.Owner, null)]
+public Transform3D Transform3D</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -357,7 +359,8 @@ velocity threshold. By default this threshold is zero, which means this feature 
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float CcdMotionThreshold { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tooltip = &quot;CCD motion clamping activates for convex objects that exceed a (squared to avoid taking square roots) velocity threshold. By default this threshold is zero, which means this feature is disabled for rigid bodies.&quot;)]
+public float CcdMotionThreshold { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -383,7 +386,8 @@ velocity threshold. By default this threshold is zero, which means this feature 
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float CcdSweptSphereRadius { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tooltip = &quot;CCD works on an embedded sphere of radius, make sure this radius is embedded inside the convex objects, preferably smaller&quot;)]
+public float CcdSweptSphereRadius { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -418,7 +422,7 @@ velocity threshold. By default this threshold is zero, which means this feature 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.Collider3D.html">Collider3D</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.Collider3D.html">Collider3D</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -464,7 +468,7 @@ velocity threshold. By default this threshold is zero, which means this feature 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.CollisionInfo3D.html">CollisionInfo3D</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.CollisionInfo3D.html">CollisionInfo3D</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -475,7 +479,8 @@ velocity threshold. By default this threshold is zero, which means this feature 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Friction { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tooltip = &quot;friction coefficient, usually in the range [0,1]&quot;)]
+public float Friction { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -521,7 +526,8 @@ velocity threshold. By default this threshold is zero, which means this feature 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsSensor { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tooltip = &quot;This body collects contact information but never generates a collision response&quot;)]
+public bool IsSensor { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -590,7 +596,8 @@ velocity threshold. By default this threshold is zero, which means this feature 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float RollingFriction { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tooltip = &quot;rolling friction coefficient, usually in the range [0,1]&quot;)]
+public float RollingFriction { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -624,7 +631,7 @@ velocity threshold. By default this threshold is zero, which means this feature 
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_ContactTest_List_WaveEngine_Framework_Physics3D_CollisionInfo3D__">ContactTest(List&lt;CollisionInfo3D&gt;)</a></td>
+        <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_ContactTest_System_Collections_Generic_List_WaveEngine_Framework_Physics3D_CollisionInfo3D__">ContactTest(List&lt;CollisionInfo3D&gt;)</a></td>
         <td><p>Contact test query.</p>
 </td>
       </tr>
@@ -649,32 +656,32 @@ velocity threshold. By default this threshold is zero, which means this feature 
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_OnTransformChanged_System_Object_EventArgs_">OnTransformChanged(Object, EventArgs)</a></td>
+        <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_OnTransformChanged_System_Object_System_EventArgs_">OnTransformChanged(Object, EventArgs)</a></td>
         <td><p>The rotation has changed.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_PointTest_Vector3_">PointTest(Vector3)</a></td>
+        <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_PointTest_WaveEngine_Mathematics_Vector3_">PointTest(Vector3)</a></td>
         <td><p>Test if a point is inside this body.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_ResetTransform_Vector3_Quaternion_Vector3_">ResetTransform(Vector3, Quaternion, Vector3)</a></td>
+        <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_ResetTransform_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Quaternion_WaveEngine_Mathematics_Vector3_">ResetTransform(Vector3, Quaternion, Vector3)</a></td>
         <td><p>Set the position of the body&apos;s origin and rotation. This breaks any contacts and wakes the other bodies. Manipulating a body&apos;s transform may cause non-physical behavior.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_Update_TimeSpan_">Update(TimeSpan)</a></td>
+        <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_Update_System_TimeSpan_">Update(TimeSpan)</a></td>
         <td><p>Allows this instance to execute custom logic during its <code>Update</code>.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_WorldToLocalPosition_Vector3_">WorldToLocalPosition(Vector3)</a></td>
+        <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_WorldToLocalPosition_WaveEngine_Mathematics_Vector3_">WorldToLocalPosition(Vector3)</a></td>
         <td><p>World to local position.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_WorldToLocalPosition_Vector3__Vector3__">WorldToLocalPosition(ref Vector3, out Vector3)</a></td>
+        <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_WorldToLocalPosition_WaveEngine_Mathematics_Vector3__WaveEngine_Mathematics_Vector3__">WorldToLocalPosition(ref Vector3, out Vector3)</a></td>
         <td><p>World to local position.</p>
 </td>
       </tr>
@@ -722,7 +729,7 @@ velocity threshold. By default this threshold is zero, which means this feature 
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_ContactTest_List_WaveEngine_Framework_Physics3D_CollisionInfo3D__" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.ContactTest(List{WaveEngine.Framework.Physics3D.CollisionInfo3D})">ContactTest(List&lt;CollisionInfo3D&gt;)</h4>
+  <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_ContactTest_System_Collections_Generic_List_WaveEngine_Framework_Physics3D_CollisionInfo3D__" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.ContactTest(System.Collections.Generic.List{WaveEngine.Framework.Physics3D.CollisionInfo3D})">ContactTest(List&lt;CollisionInfo3D&gt;)</h4>
   <div class="markdown level1 summary"><p>Contact test query.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -741,7 +748,7 @@ velocity threshold. By default this threshold is zero, which means this feature 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.CollisionInfo3D.html">CollisionInfo3D</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.CollisionInfo3D.html">CollisionInfo3D</a>&gt;</td>
         <td><em>contactList</em></td>
         <td><p>The list that will be filled with the contact information.</p>
 </td>
@@ -796,7 +803,7 @@ velocity threshold. By default this threshold is zero, which means this feature 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnDetach()</code></pre>
   </div>
-  <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_OnTransformChanged_System_Object_EventArgs_" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.OnTransformChanged(System.Object,EventArgs)">OnTransformChanged(Object, EventArgs)</h4>
+  <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_OnTransformChanged_System_Object_System_EventArgs_" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.OnTransformChanged(System.Object,System.EventArgs)">OnTransformChanged(Object, EventArgs)</h4>
   <div class="markdown level1 summary"><p>The rotation has changed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -821,14 +828,14 @@ velocity threshold. By default this threshold is zero, which means this feature 
 </td>
       </tr>
       <tr>
-        <td><span class="xref">EventArgs</span></td>
+        <td><span class="xref">System.EventArgs</span></td>
         <td><em>e</em></td>
         <td><p>The event args.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_PointTest_Vector3_" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.PointTest(Vector3)">PointTest(Vector3)</h4>
+  <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_PointTest_WaveEngine_Mathematics_Vector3_" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.PointTest(WaveEngine.Mathematics.Vector3)">PointTest(Vector3)</h4>
   <div class="markdown level1 summary"><p>Test if a point is inside this body.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -847,7 +854,7 @@ velocity threshold. By default this threshold is zero, which means this feature 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>position</em></td>
         <td><p>The other body to detect contact.</p>
 </td>
@@ -870,7 +877,7 @@ velocity threshold. By default this threshold is zero, which means this feature 
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_ResetTransform_Vector3_Quaternion_Vector3_" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.ResetTransform(Vector3,Quaternion,Vector3)">ResetTransform(Vector3, Quaternion, Vector3)</h4>
+  <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_ResetTransform_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Quaternion_WaveEngine_Mathematics_Vector3_" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.ResetTransform(WaveEngine.Mathematics.Vector3,WaveEngine.Mathematics.Quaternion,WaveEngine.Mathematics.Vector3)">ResetTransform(Vector3, Quaternion, Vector3)</h4>
   <div class="markdown level1 summary"><p>Set the position of the body&apos;s origin and rotation. This breaks any contacts and wakes the other bodies. Manipulating a body&apos;s transform may cause non-physical behavior.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -889,30 +896,30 @@ velocity threshold. By default this threshold is zero, which means this feature 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>position</em></td>
         <td><p>the world position of the body&apos;s local origin.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Quaternion</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Quaternion.html">Quaternion</a></td>
         <td><em>orientation</em></td>
         <td><p>the world rotation as a quaternion.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>scale</em></td>
         <td><p>the world scale.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_Update_TimeSpan_" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.Update(TimeSpan)">Update(TimeSpan)</h4>
+  <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_Update_System_TimeSpan_" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.Update(System.TimeSpan)">Update(TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Allows this instance to execute custom logic during its <code>Update</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 id="WaveEngine_Framework_Physics3D_PhysicBody3D_Update_TimeSpan__remarks">Remarks</h5>
+  <h5 id="WaveEngine_Framework_Physics3D_PhysicBody3D_Update_System_TimeSpan__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method will not be executed if the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a>, or the <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>
 owning it are not <code>Active</code>.</p>
 </div>
@@ -931,14 +938,14 @@ owning it are not <code>Active</code>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><em>gameTime</em></td>
         <td><p>The game time.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_WorldToLocalPosition_Vector3_" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.WorldToLocalPosition(Vector3)">WorldToLocalPosition(Vector3)</h4>
+  <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_WorldToLocalPosition_WaveEngine_Mathematics_Vector3_" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.WorldToLocalPosition(WaveEngine.Mathematics.Vector3)">WorldToLocalPosition(Vector3)</h4>
   <div class="markdown level1 summary"><p>World to local position.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -957,7 +964,7 @@ owning it are not <code>Active</code>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>worldPosition</em></td>
         <td><p>The world position.</p>
 </td>
@@ -974,13 +981,13 @@ owning it are not <code>Active</code>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>The local position.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_WorldToLocalPosition_Vector3__Vector3__" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.WorldToLocalPosition(Vector3@,Vector3@)">WorldToLocalPosition(ref Vector3, out Vector3)</h4>
+  <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_WorldToLocalPosition_WaveEngine_Mathematics_Vector3__WaveEngine_Mathematics_Vector3__" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.WorldToLocalPosition(WaveEngine.Mathematics.Vector3@,WaveEngine.Mathematics.Vector3@)">WorldToLocalPosition(ref Vector3, out Vector3)</h4>
   <div class="markdown level1 summary"><p>World to local position.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -999,13 +1006,13 @@ owning it are not <code>Active</code>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>worldPosition</em></td>
         <td><p>The world position.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Vector3</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><em>localPosition</em></td>
         <td><p>The local position.</p>
 </td>
@@ -1058,7 +1065,7 @@ owning it are not <code>Active</code>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.CollisionInfo3D.html">CollisionInfo3D</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.CollisionInfo3D.html">CollisionInfo3D</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1081,7 +1088,7 @@ owning it are not <code>Active</code>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.CollisionInfo3D.html">CollisionInfo3D</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.CollisionInfo3D.html">CollisionInfo3D</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1104,7 +1111,7 @@ owning it are not <code>Active</code>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.CollisionInfo3D.html">CollisionInfo3D</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.CollisionInfo3D.html">CollisionInfo3D</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

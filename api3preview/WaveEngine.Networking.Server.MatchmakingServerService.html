@@ -198,7 +198,7 @@ client versions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -221,7 +221,7 @@ client versions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Rooms.ServerRoom.html">ServerRoom</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Rooms.ServerRoom.html">ServerRoom</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -291,7 +291,7 @@ client versions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -337,7 +337,7 @@ client versions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -360,7 +360,7 @@ client versions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -402,8 +402,9 @@ client versions.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Networking_Server_MatchmakingServerService_Update_TimeSpan_">Update(TimeSpan)</a></td>
-        <td></td>
+        <td><a href="#WaveEngine_Networking_Server_MatchmakingServerService_Update_System_TimeSpan_">Update(TimeSpan)</a></td>
+        <td><p>Updates this instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -529,8 +530,8 @@ client versions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A <see cref="!:Task"></see> representing the asynchronous operation.</p>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>A <span class="xref">System.Threading.Tasks.Task</span> representing the asynchronous operation.</p>
 </td>
       </tr>
     </tbody>
@@ -571,14 +572,38 @@ client versions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A <see cref="!:Task"></see> representing the asynchronous operation.</p>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>A <span class="xref">System.Threading.Tasks.Task</span> representing the asynchronous operation.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Networking_Server_MatchmakingServerService_Update_TimeSpan_" data-uid="WaveEngine.Networking.Server.MatchmakingServerService.Update(TimeSpan)">Update(TimeSpan)</h4>
-  <div class="markdown level1 summary"></div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Application identifier parameter can&apos;t be null or empty.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p><a class="xref" href="WaveEngine.Networking.Server.MatchmakingServerService.html#WaveEngine_Networking_Server_MatchmakingServerService_ApplicationIdentifier">ApplicationIdentifier</a> must have a valid value before initialize.
+or
+You can&apos;t call multiple times to Start method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Networking_Server_MatchmakingServerService_Update_System_TimeSpan_" data-uid="WaveEngine.Networking.Server.MatchmakingServerService.Update(System.TimeSpan)">Update(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Updates this instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -595,9 +620,10 @@ client versions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><em>gameTime</em></td>
-        <td></td>
+        <td><p>The elapsed game time since the last update.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -688,7 +714,7 @@ This event is not fired when the first player creates the room.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Connection.MessageReceivedEventArgs.html">MessageReceivedEventArgs</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Connection.MessageReceivedEventArgs.html">MessageReceivedEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -711,7 +737,7 @@ This event is not fired when the first player creates the room.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -734,7 +760,7 @@ This event is not fired when the first player creates the room.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -757,7 +783,7 @@ This event is not fired when the first player creates the room.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -781,7 +807,7 @@ This event is not fired when the first player creates the room.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.PlayerJoiningEventArgs.html">PlayerJoiningEventArgs</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.PlayerJoiningEventArgs.html">PlayerJoiningEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -804,7 +830,7 @@ This event is not fired when the first player creates the room.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -827,7 +853,7 @@ This event is not fired when the first player creates the room.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -850,7 +876,7 @@ This event is not fired when the first player creates the room.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Players.ServerPlayer.html">ServerPlayer</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -873,7 +899,7 @@ This event is not fired when the first player creates the room.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Rooms.ServerRoom.html">ServerRoom</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Rooms.ServerRoom.html">ServerRoom</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -896,7 +922,7 @@ This event is not fired when the first player creates the room.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Rooms.ServerRoom.html">ServerRoom</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Rooms.ServerRoom.html">ServerRoom</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -919,7 +945,7 @@ This event is not fired when the first player creates the room.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Rooms.ServerRoom.html">ServerRoom</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Server.Rooms.ServerRoom.html">ServerRoom</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

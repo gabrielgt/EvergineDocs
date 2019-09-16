@@ -102,24 +102,24 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Common_Graphics_DataBox__ctor_IntPtr_System_UInt32_System_UInt32_">DataBox(IntPtr, UInt32, UInt32)</a></td>
-        <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.DataBox.html">DataBox</a> struct from a IntPtr.</p>
-</td>
-      </tr>
-      <tr>
         <td><a href="#WaveEngine_Common_Graphics_DataBox__ctor_System_Byte___System_UInt32_System_UInt32_">DataBox(Byte[], UInt32, UInt32)</a></td>
         <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.DataBox.html">DataBox</a> struct from a byte array.</p>
 </td>
       </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_Graphics_DataBox__ctor_System_IntPtr_System_UInt32_System_UInt32_">DataBox(IntPtr, UInt32, UInt32)</a></td>
+        <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.DataBox.html">DataBox</a> struct from a IntPtr.</p>
+</td>
+      </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Common_Graphics_DataBox__ctor_IntPtr_System_UInt32_System_UInt32_" data-uid="WaveEngine.Common.Graphics.DataBox.#ctor(IntPtr,System.UInt32,System.UInt32)">DataBox(IntPtr, UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.DataBox.html">DataBox</a> struct from a IntPtr.</p>
+  <h4 id="WaveEngine_Common_Graphics_DataBox__ctor_System_Byte___System_UInt32_System_UInt32_" data-uid="WaveEngine.Common.Graphics.DataBox.#ctor(System.Byte[],System.UInt32,System.UInt32)">DataBox(Byte[], UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.DataBox.html">DataBox</a> struct from a byte array.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DataBox(IntPtr datapointer, uint rowPitch = null, uint slicePitch = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public DataBox(byte[] data, uint rowPitch = 0U, uint slicePitch = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -132,9 +132,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
-        <td><em>datapointer</em></td>
-        <td><p>The datapointer.</p>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><em>data</em></td>
+        <td><p>The data as byte array.</p>
 </td>
       </tr>
       <tr>
@@ -151,13 +151,13 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Common_Graphics_DataBox__ctor_System_Byte___System_UInt32_System_UInt32_" data-uid="WaveEngine.Common.Graphics.DataBox.#ctor(System.Byte[],System.UInt32,System.UInt32)">DataBox(Byte[], UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.DataBox.html">DataBox</a> struct from a byte array.</p>
+  <h4 id="WaveEngine_Common_Graphics_DataBox__ctor_System_IntPtr_System_UInt32_System_UInt32_" data-uid="WaveEngine.Common.Graphics.DataBox.#ctor(System.IntPtr,System.UInt32,System.UInt32)">DataBox(IntPtr, UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.DataBox.html">DataBox</a> struct from a IntPtr.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DataBox(byte[] data, uint rowPitch = null, uint slicePitch = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public DataBox(IntPtr datapointer, uint rowPitch = 0U, uint slicePitch = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -170,9 +170,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Byte</span>[]</td>
-        <td><em>data</em></td>
-        <td><p>The data as byte array.</p>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><em>datapointer</em></td>
+        <td><p>The datapointer.</p>
 </td>
       </tr>
       <tr>
@@ -235,7 +235,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -356,7 +356,14 @@
   </div>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">IDisposable</span>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
   </div>
 </article>
           </div>

@@ -94,7 +94,7 @@
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.Vulkan.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class VKGraphicsContext : GraphicsContext, IGetNativePointers</code></pre>
+    <pre><code class="lang-csharp hljs">public class VKGraphicsContext : GraphicsContext, IDisposable, IGetNativePointers</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -193,7 +193,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkCommandBuffer</span></td>
+        <td><span class="xref">Vulkan.VkCommandBuffer</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -239,7 +239,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkDevice</span></td>
+        <td><span class="xref">Vulkan.VkDevice</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -262,7 +262,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkInstance</span></td>
+        <td><span class="xref">Vulkan.VkInstance</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -285,7 +285,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkPhysicalDevice</span></td>
+        <td><span class="xref">Vulkan.VkPhysicalDevice</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -308,7 +308,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkPhysicalDeviceFeatures</span></td>
+        <td><span class="xref">Vulkan.VkPhysicalDeviceFeatures</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -331,7 +331,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkPhysicalDeviceMemoryProperties</span></td>
+        <td><span class="xref">Vulkan.VkPhysicalDeviceMemoryProperties</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -354,7 +354,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkPhysicalDeviceProperties</span></td>
+        <td><span class="xref">Vulkan.VkPhysicalDeviceProperties</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -451,7 +451,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -483,12 +483,14 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Vulkan_VKGraphicsContext_GetNativePointer_System_String_IntPtr__">GetNativePointer(String, out IntPtr)</a></td>
-        <td></td>
+        <td><a href="#WaveEngine_Vulkan_VKGraphicsContext_GetNativePointer_System_String_System_IntPtr__">GetNativePointer(String, out IntPtr)</a></td>
+        <td><p>Obtain a native pointer of this graphics context using the given key.</p>
+</td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Vulkan_VKGraphicsContext_InternalUpdateBufferData_WaveEngine_Common_Graphics_Buffer_IntPtr_System_UInt32_System_UInt32_">InternalUpdateBufferData(Buffer, IntPtr, UInt32, UInt32)</a></td>
-        <td></td>
+        <td><a href="#WaveEngine_Vulkan_VKGraphicsContext_InternalUpdateBufferData_WaveEngine_Common_Graphics_Buffer_System_IntPtr_System_UInt32_System_UInt32_">InternalUpdateBufferData(Buffer, IntPtr, UInt32, UInt32)</a></td>
+        <td><p>Fill the buffer from a pointer.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Vulkan_VKGraphicsContext_MapMemory_WaveEngine_Common_Graphics_GraphicsResource_WaveEngine_Common_Graphics_MapMode_System_UInt32_">MapMemory(GraphicsResource, MapMode, UInt32)</a></td>
@@ -506,8 +508,9 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Vulkan_VKGraphicsContext_UpdateTextureData_WaveEngine_Common_Graphics_Texture_IntPtr_System_UInt32_System_UInt32_">UpdateTextureData(Texture, IntPtr, UInt32, UInt32)</a></td>
-        <td></td>
+        <td><a href="#WaveEngine_Vulkan_VKGraphicsContext_UpdateTextureData_WaveEngine_Common_Graphics_Texture_System_IntPtr_System_UInt32_System_UInt32_">UpdateTextureData(Texture, IntPtr, UInt32, UInt32)</a></td>
+        <td><p>Fill the buffer from a pointer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -587,8 +590,9 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Vulkan_VKGraphicsContext_GetNativePointer_System_String_IntPtr__" data-uid="WaveEngine.Vulkan.VKGraphicsContext.GetNativePointer(System.String,IntPtr@)">GetNativePointer(String, out IntPtr)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="WaveEngine_Vulkan_VKGraphicsContext_GetNativePointer_System_String_System_IntPtr__" data-uid="WaveEngine.Vulkan.VKGraphicsContext.GetNativePointer(System.String,System.IntPtr@)">GetNativePointer(String, out IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Obtain a native pointer of this graphics context using the given key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -607,12 +611,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><em>pointerKey</em></td>
-        <td></td>
+        <td><p>The pointer key.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td><em>nativePointer</em></td>
-        <td></td>
+        <td><p>The native pointer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -627,16 +633,18 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>True if there are an available pointer with this key.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Vulkan_VKGraphicsContext_InternalUpdateBufferData_WaveEngine_Common_Graphics_Buffer_IntPtr_System_UInt32_System_UInt32_" data-uid="WaveEngine.Vulkan.VKGraphicsContext.InternalUpdateBufferData(WaveEngine.Common.Graphics.Buffer,IntPtr,System.UInt32,System.UInt32)">InternalUpdateBufferData(Buffer, IntPtr, UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="WaveEngine_Vulkan_VKGraphicsContext_InternalUpdateBufferData_WaveEngine_Common_Graphics_Buffer_System_IntPtr_System_UInt32_System_UInt32_" data-uid="WaveEngine.Vulkan.VKGraphicsContext.InternalUpdateBufferData(WaveEngine.Common.Graphics.Buffer,System.IntPtr,System.UInt32,System.UInt32)">InternalUpdateBufferData(Buffer, IntPtr, UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Fill the buffer from a pointer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void InternalUpdateBufferData(Buffer buffer, IntPtr source, uint sourceSizeInBytes, uint destinationOffsetInBytes = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void InternalUpdateBufferData(Buffer buffer, IntPtr source, uint sourceSizeInBytes, uint destinationOffsetInBytes = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -651,22 +659,26 @@
       <tr>
         <td><a class="xref" href="WaveEngine.Common.Graphics.Buffer.html">Buffer</a></td>
         <td><em>buffer</em></td>
-        <td></td>
+        <td><p>Buffer instance.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td><em>source</em></td>
-        <td></td>
+        <td><p>The data pointer.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><em>sourceSizeInBytes</em></td>
-        <td></td>
+        <td><p>The size in bytes.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><em>destinationOffsetInBytes</em></td>
-        <td></td>
+        <td><p>The offset in bytes.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -676,7 +688,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override MappedResource MapMemory(GraphicsResource resource, MapMode mode, uint subResource = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public override MappedResource MapMemory(GraphicsResource resource, MapMode mode, uint subResource = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -790,7 +802,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void UnmapMemory(GraphicsResource resource, uint subResource = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void UnmapMemory(GraphicsResource resource, uint subResource = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -816,8 +828,9 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Vulkan_VKGraphicsContext_UpdateTextureData_WaveEngine_Common_Graphics_Texture_IntPtr_System_UInt32_System_UInt32_" data-uid="WaveEngine.Vulkan.VKGraphicsContext.UpdateTextureData(WaveEngine.Common.Graphics.Texture,IntPtr,System.UInt32,System.UInt32)">UpdateTextureData(Texture, IntPtr, UInt32, UInt32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="WaveEngine_Vulkan_VKGraphicsContext_UpdateTextureData_WaveEngine_Common_Graphics_Texture_System_IntPtr_System_UInt32_System_UInt32_" data-uid="WaveEngine.Vulkan.VKGraphicsContext.UpdateTextureData(WaveEngine.Common.Graphics.Texture,System.IntPtr,System.UInt32,System.UInt32)">UpdateTextureData(Texture, IntPtr, UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Fill the buffer from a pointer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -836,26 +849,33 @@
       <tr>
         <td><a class="xref" href="WaveEngine.Common.Graphics.Texture.html">Texture</a></td>
         <td><em>texture</em></td>
-        <td></td>
+        <td><p>Texture instance.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td><em>source</em></td>
-        <td></td>
+        <td><p>The data pointer.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><em>sourceSizeInBytes</em></td>
-        <td></td>
+        <td><p>The size in bytes.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
         <td><em>subResource</em></td>
-        <td></td>
+        <td><p>The subResource index.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <div>
       <a class="xref" href="WaveEngine.Common.Helpers.IGetNativePointers.html">IGetNativePointers</a>
   </div>

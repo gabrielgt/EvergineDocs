@@ -94,7 +94,7 @@
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.WebGL.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class WGLCommandBuffer : CommandBuffer, IGetNativePointers</code></pre>
+    <pre><code class="lang-csharp hljs">public class WGLCommandBuffer : CommandBuffer, IDisposable, IGetNativePointers</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -298,8 +298,7 @@ This function must be called before other graphics commands ca be issued.</p>
       </tr>
       <tr>
         <td><a href="#WaveEngine_WebGL_WGLCommandBuffer_End">End()</a></td>
-        <td><p>Completes the command buffer.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_WebGL_WGLCommandBuffer_EndRenderPassInternal">EndRenderPassInternal()</a></td>
@@ -313,13 +312,11 @@ This function must be called before other graphics commands ca be issued.</p>
       </tr>
       <tr>
         <td><a href="#WaveEngine_WebGL_WGLCommandBuffer_SetComputePipelineState_WaveEngine_Common_Graphics_ComputePipelineState_">SetComputePipelineState(ComputePipelineState)</a></td>
-        <td><p>Sets the compute pipeline state object for this commandbuffer.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_WebGL_WGLCommandBuffer_SetGraphicsPipelineState_WaveEngine_Common_Graphics_GraphicsPipelineState_">SetGraphicsPipelineState(GraphicsPipelineState)</a></td>
-        <td><p>Sets the graphics pipeline state object for this commandbuffer.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_WebGL_WGLCommandBuffer_SetIndexBuffer_WaveEngine_Common_Graphics_Buffer_WaveEngine_Common_Graphics_IndexFormat_System_UInt32_">SetIndexBuffer(Buffer, IndexFormat, UInt32)</a></td>
@@ -936,8 +933,7 @@ less than or equal to (65535).</p>
     </tbody>
   </table>
   <h4 id="WaveEngine_WebGL_WGLCommandBuffer_End" data-uid="WaveEngine.WebGL.WGLCommandBuffer.End">End()</h4>
-  <div class="markdown level1 summary"><p>Completes the command buffer.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -960,8 +956,7 @@ less than or equal to (65535).</p>
     <pre><code class="lang-csharp hljs">public override void Reset()</code></pre>
   </div>
   <h4 id="WaveEngine_WebGL_WGLCommandBuffer_SetComputePipelineState_WaveEngine_Common_Graphics_ComputePipelineState_" data-uid="WaveEngine.WebGL.WGLCommandBuffer.SetComputePipelineState(WaveEngine.Common.Graphics.ComputePipelineState)">SetComputePipelineState(ComputePipelineState)</h4>
-  <div class="markdown level1 summary"><p>Sets the compute pipeline state object for this commandbuffer.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -980,14 +975,12 @@ less than or equal to (65535).</p>
       <tr>
         <td><a class="xref" href="WaveEngine.Common.Graphics.ComputePipelineState.html">ComputePipelineState</a></td>
         <td><em>pipeline</em></td>
-        <td><p>The compute pipeline state description.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h4 id="WaveEngine_WebGL_WGLCommandBuffer_SetGraphicsPipelineState_WaveEngine_Common_Graphics_GraphicsPipelineState_" data-uid="WaveEngine.WebGL.WGLCommandBuffer.SetGraphicsPipelineState(WaveEngine.Common.Graphics.GraphicsPipelineState)">SetGraphicsPipelineState(GraphicsPipelineState)</h4>
-  <div class="markdown level1 summary"><p>Sets the graphics pipeline state object for this commandbuffer.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1006,8 +999,7 @@ less than or equal to (65535).</p>
       <tr>
         <td><a class="xref" href="WaveEngine.Common.Graphics.GraphicsPipelineState.html">GraphicsPipelineState</a></td>
         <td><em>pipeline</em></td>
-        <td><p>The graphics pipeline state description.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1257,6 +1249,9 @@ less than or equal to (65535).</p>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <div>
       <a class="xref" href="WaveEngine.Common.Helpers.IGetNativePointers.html">IGetNativePointers</a>
   </div>

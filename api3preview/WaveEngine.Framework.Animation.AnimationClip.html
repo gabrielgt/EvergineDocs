@@ -93,7 +93,7 @@
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AnimationClip : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class AnimationClip</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -181,7 +181,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="WaveEngine.Framework.Animation.AnimationChannel.html">AnimationChannel</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="WaveEngine.Framework.Animation.AnimationChannel.html">AnimationChannel</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -204,7 +204,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="WaveEngine.Framework.Animation.AnimationChannel.html">AnimationChannel</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="WaveEngine.Framework.Animation.AnimationChannel.html">AnimationChannel</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -250,7 +250,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">SortedList</span>&lt;<span class="xref">System.Single</span>, <a class="xref" href="WaveEngine.Framework.Animation.AnimationKeyframeEvent.html">AnimationKeyframeEvent</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.SortedList</span>&lt;<span class="xref">System.Single</span>, <a class="xref" href="WaveEngine.Framework.Animation.AnimationKeyframeEvent.html">AnimationKeyframeEvent</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -474,7 +474,7 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Animation_AnimationClip_ComputeRootMotion_Matrix4x4_">ComputeRootMotion(Matrix4x4)</a></td>
+        <td><a href="#WaveEngine_Framework_Animation_AnimationClip_ComputeRootMotion_WaveEngine_Mathematics_Matrix4x4_">ComputeRootMotion(Matrix4x4)</a></td>
         <td><p>Initialize some values.</p>
 </td>
       </tr>
@@ -536,7 +536,7 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Animation_AnimationClip_ComputeRootMotion_Matrix4x4_" data-uid="WaveEngine.Framework.Animation.AnimationClip.ComputeRootMotion(Matrix4x4)">ComputeRootMotion(Matrix4x4)</h4>
+  <h4 id="WaveEngine_Framework_Animation_AnimationClip_ComputeRootMotion_WaveEngine_Mathematics_Matrix4x4_" data-uid="WaveEngine.Framework.Animation.AnimationClip.ComputeRootMotion(WaveEngine.Mathematics.Matrix4x4)">ComputeRootMotion(Matrix4x4)</h4>
   <div class="markdown level1 summary"><p>Initialize some values.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -555,7 +555,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Matrix4x4</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
         <td><em>rootMotionNodeWorldTransform</em></td>
         <td><p>The root motion world transform.</p>
 </td>
@@ -568,7 +568,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void GetSample(float time, AnimationSample sample, float playbackRate = null, int loopCount = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public void GetSample(float time, AnimationSample sample, float playbackRate = 1F, int loopCount = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -612,7 +612,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void GetSample(float time, AnimationSample sample, AnimationTrackContext context, float playbackRate = null, int loopCount = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public void GetSample(float time, AnimationSample sample, AnimationTrackContext context, float playbackRate = 1F, int loopCount = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

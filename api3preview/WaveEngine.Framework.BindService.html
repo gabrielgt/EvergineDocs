@@ -88,15 +88,17 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
       <div class="level0"><span class="xref">System.Object</span></div>
-      <div class="level1"><a class="xref" href="WaveEngine.Common.Attributes.WaveAttributeBase.html">WaveAttributeBase</a></div>
-      <div class="level2"><a class="xref" href="WaveEngine.Common.Attributes.WaveIgnoreAttribute.html">WaveIgnoreAttribute</a></div>
-      <div class="level3"><a class="xref" href="WaveEngine.Framework.Dependencies.BindObject.html">BindObject</a></div>
+      <div class="level1"><span class="xref">System.Attribute</span></div>
+      <div class="level2"><a class="xref" href="WaveEngine.Common.Attributes.WaveAttributeBase.html">WaveAttributeBase</a></div>
+      <div class="level3"><a class="xref" href="WaveEngine.Common.Attributes.WaveIgnoreAttribute.html">WaveIgnoreAttribute</a></div>
+      <div class="level4"><a class="xref" href="WaveEngine.Framework.Dependencies.BindObject.html">BindObject</a></div>
       <div class="level"><span class="xref"></span></div>
   </div>
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BindService : BindObject</code></pre>
+    <pre><code class="lang-csharp hljs">[AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
+public class BindService : BindObject</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -154,18 +156,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Framework_BindService_Resolve_WaveEngine_Framework_DependencyObject_Type_">Resolve(DependencyObject, Type)</a></td>
+        <td><a href="#WaveEngine_Framework_BindService_Resolve_WaveEngine_Framework_DependencyObject_System_Type_">Resolve(DependencyObject, Type)</a></td>
         <td><p>Resolve this binding with the specified object.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_BindService_ResolveCollection_WaveEngine_Framework_DependencyObject_Type_">ResolveCollection(DependencyObject, Type)</a></td>
+        <td><a href="#WaveEngine_Framework_BindService_ResolveCollection_WaveEngine_Framework_DependencyObject_System_Type_">ResolveCollection(DependencyObject, Type)</a></td>
         <td><p>Resolve this binding with the specified object.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_BindService_Resolve_WaveEngine_Framework_DependencyObject_Type_" data-uid="WaveEngine.Framework.BindService.Resolve(WaveEngine.Framework.DependencyObject,Type)">Resolve(DependencyObject, Type)</h4>
+  <h4 id="WaveEngine_Framework_BindService_Resolve_WaveEngine_Framework_DependencyObject_System_Type_" data-uid="WaveEngine.Framework.BindService.Resolve(WaveEngine.Framework.DependencyObject,System.Type)">Resolve(DependencyObject, Type)</h4>
   <div class="markdown level1 summary"><p>Resolve this binding with the specified object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -190,7 +192,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><em>propertyType</em></td>
         <td><p>The property type.</p>
 </td>
@@ -213,7 +215,7 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_BindService_ResolveCollection_WaveEngine_Framework_DependencyObject_Type_" data-uid="WaveEngine.Framework.BindService.ResolveCollection(WaveEngine.Framework.DependencyObject,Type)">ResolveCollection(DependencyObject, Type)</h4>
+  <h4 id="WaveEngine_Framework_BindService_ResolveCollection_WaveEngine_Framework_DependencyObject_System_Type_" data-uid="WaveEngine.Framework.BindService.ResolveCollection(WaveEngine.Framework.DependencyObject,System.Type)">ResolveCollection(DependencyObject, Type)</h4>
   <div class="markdown level1 summary"><p>Resolve this binding with the specified object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -238,7 +240,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><em>propertyType</em></td>
         <td><p>The property type.</p>
 </td>
@@ -255,7 +257,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
         <td><p>The collection.</p>
 </td>
       </tr>

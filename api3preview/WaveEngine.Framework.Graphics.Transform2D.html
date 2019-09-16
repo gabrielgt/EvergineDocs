@@ -312,7 +312,8 @@ always drawn closer than another one with draw order 0 in Alpha, as GUI layer is
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FlipMode FlipMode { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tooltip = &quot;Flip mode (FlipHorizontally, FlipVertically)&quot;)]
+public FlipMode FlipMode { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -364,7 +365,8 @@ always drawn closer than another one with draw order 0 in Alpha, as GUI layer is
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float LocalDrawOrder { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Local Draw Order&quot;, Tooltip = &quot;It's included in [0, 1] where 0 represents the closest position \nto the camera, and 1 the farthest. The draw order is also 'contained' in layers, so the order \non these last ones act prior to this value (i.e. an instance with draw order 1 in GUI layer will be \n always drawn closer than another one with draw order 0 in Alpha, as GUI layer is before than Alpha one).&quot;)]
+public float LocalDrawOrder { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -388,7 +390,8 @@ always drawn closer than another one with draw order 0 in Alpha, as GUI layer is
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2 LocalPosition { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(AttatchToTag = 1, AttachToValue = Transform2D.TransformMode.Standard, CustomPropertyName = &quot;Local Position&quot;, Tooltip = &quot;The entity position in local space&quot;)]
+public Vector2 LocalPosition { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -400,7 +403,7 @@ always drawn closer than another one with draw order 0 in Alpha, as GUI layer is
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector2.html">Vector2</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -411,7 +414,8 @@ always drawn closer than another one with draw order 0 in Alpha, as GUI layer is
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float LocalRotation { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(typeof(FloatRadianToDegreeConverter), CustomPropertyName = &quot;Local Rotation&quot;, Tooltip = &quot;The local rotation expressed in its Roll euler angle.&quot;)]
+public float LocalRotation { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -434,7 +438,8 @@ always drawn closer than another one with draw order 0 in Alpha, as GUI layer is
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2 LocalScale { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Local Scale&quot;, Tooltip = &quot;The entity scale in local space&quot;)]
+public Vector2 LocalScale { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -446,7 +451,7 @@ always drawn closer than another one with draw order 0 in Alpha, as GUI layer is
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector2.html">Vector2</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -582,7 +587,8 @@ Such values are percentages where 1 means the 100% of the rectangle&apos;s width
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2 Origin { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tooltip = &quot;The origin (also known as pivot) from where the entity scales, rotates and translates. Its values are included in [0, 1] where (0, 0) indicates the top left corner. Such values are percentages where 1 means the 100% of the rectangle's width/height.&quot;)]
+public Vector2 Origin { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -594,7 +600,7 @@ Such values are percentages where 1 means the 100% of the rectangle&apos;s width
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector2.html">Vector2</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -617,7 +623,7 @@ Such values are percentages where 1 means the 100% of the rectangle&apos;s width
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector2.html">Vector2</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -645,7 +651,7 @@ It then can be used to limit the area of the texture to be drawn.
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">RectangleF</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.RectangleF.html">RectangleF</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -691,7 +697,7 @@ It then can be used to limit the area of the texture to be drawn.
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector2.html">Vector2</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -702,7 +708,8 @@ It then can be used to limit the area of the texture to be drawn.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2 ScreenPosition { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(AttatchToTag = 1, AttachToValue = Transform2D.TransformMode.Screen, CustomPropertyName = &quot;Screen Position&quot;, Tooltip = &quot;The screen position.&quot;)]
+public Vector2 ScreenPosition { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -714,7 +721,7 @@ It then can be used to limit the area of the texture to be drawn.
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector2.html">Vector2</a></td>
         <td><p>The screen position.</p>
 </td>
       </tr>
@@ -726,7 +733,8 @@ It then can be used to limit the area of the texture to be drawn.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Transform2D.TransformMode TranformMode { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tag = 1, CustomPropertyName = &quot;Transform Mode&quot;, Tooltip = &quot;Select between Standard or Screen mode&quot;)]
+public Transform2D.TransformMode TranformMode { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -966,7 +974,7 @@ growing to down as it increases.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -989,7 +997,7 @@ growing to down as it increases.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1012,7 +1020,7 @@ growing to down as it increases.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>

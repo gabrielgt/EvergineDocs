@@ -88,12 +88,14 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
       <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level1"><span class="xref">System.MarshalByRefObject</span></div>
+      <div class="level2"><span class="xref">System.IO.Stream</span></div>
       <div class="level"><span class="xref"></span></div>
   </div>
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.Common.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class WavFileWriter : Stream</code></pre>
+    <pre><code class="lang-csharp hljs">public class WavFileWriter : Stream, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -107,18 +109,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Common_Media_WavFileWriter__ctor_Stream_WaveEngine_Common_Media_WavFormat_">WavFileWriter(Stream, WavFormat)</a></td>
+        <td><a href="#WaveEngine_Common_Media_WavFileWriter__ctor_System_IO_Stream_WaveEngine_Common_Media_WavFormat_">WavFileWriter(Stream, WavFormat)</a></td>
         <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Media.WavFileWriter.html">WavFileWriter</a> class that actually writes to a stream.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Common_Media_WavFileWriter__ctor_Stream_WaveEngine_Common_Media_WavFormat_System_Boolean_">WavFileWriter(Stream, WavFormat, Boolean)</a></td>
+        <td><a href="#WaveEngine_Common_Media_WavFileWriter__ctor_System_IO_Stream_WaveEngine_Common_Media_WavFormat_System_Boolean_">WavFileWriter(Stream, WavFormat, Boolean)</a></td>
         <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Media.WavFileWriter.html">WavFileWriter</a> class that actually writes to a stream.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Common_Media_WavFileWriter__ctor_Stream_WaveEngine_Common_Media_WavFormat_" data-uid="WaveEngine.Common.Media.WavFileWriter.#ctor(Stream,WaveEngine.Common.Media.WavFormat)">WavFileWriter(Stream, WavFormat)</h4>
+  <h4 id="WaveEngine_Common_Media_WavFileWriter__ctor_System_IO_Stream_WaveEngine_Common_Media_WavFormat_" data-uid="WaveEngine.Common.Media.WavFileWriter.#ctor(System.IO.Stream,WaveEngine.Common.Media.WavFormat)">WavFileWriter(Stream, WavFormat)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Media.WavFileWriter.html">WavFileWriter</a> class that actually writes to a stream.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -137,7 +139,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><em>outStream</em></td>
         <td><p>Stream to be written to.</p>
 </td>
@@ -150,7 +152,7 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Common_Media_WavFileWriter__ctor_Stream_WaveEngine_Common_Media_WavFormat_System_Boolean_" data-uid="WaveEngine.Common.Media.WavFileWriter.#ctor(Stream,WaveEngine.Common.Media.WavFormat,System.Boolean)">WavFileWriter(Stream, WavFormat, Boolean)</h4>
+  <h4 id="WaveEngine_Common_Media_WavFileWriter__ctor_System_IO_Stream_WaveEngine_Common_Media_WavFormat_System_Boolean_" data-uid="WaveEngine.Common.Media.WavFileWriter.#ctor(System.IO.Stream,WaveEngine.Common.Media.WavFormat,System.Boolean)">WavFileWriter(Stream, WavFormat, Boolean)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Media.WavFileWriter.html">WavFileWriter</a> class that actually writes to a stream.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -169,7 +171,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.IO.Stream</span></td>
         <td><em>outStream</em></td>
         <td><p>Stream to be written to.</p>
 </td>
@@ -401,7 +403,7 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Common_Media_WavFileWriter_Seek_System_Int64_SeekOrigin_">Seek(Int64, SeekOrigin)</a></td>
+        <td><a href="#WaveEngine_Common_Media_WavFileWriter_Seek_System_Int64_System_IO_SeekOrigin_">Seek(Int64, SeekOrigin)</a></td>
         <td><p>Seek is not supported for a WaveFileWriter.</p>
 </td>
       </tr>
@@ -411,7 +413,7 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Common_Media_WavFileWriter_UpdateHeader_BinaryWriter_">UpdateHeader(BinaryWriter)</a></td>
+        <td><a href="#WaveEngine_Common_Media_WavFileWriter_UpdateHeader_System_IO_BinaryWriter_">UpdateHeader(BinaryWriter)</a></td>
         <td><p>Updates the header with file size information.</p>
 </td>
       </tr>
@@ -539,7 +541,7 @@ They will be converted to the appropriate bit depth depending on the WaveFormat 
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Common_Media_WavFileWriter_Seek_System_Int64_SeekOrigin_" data-uid="WaveEngine.Common.Media.WavFileWriter.Seek(System.Int64,SeekOrigin)">Seek(Int64, SeekOrigin)</h4>
+  <h4 id="WaveEngine_Common_Media_WavFileWriter_Seek_System_Int64_System_IO_SeekOrigin_" data-uid="WaveEngine.Common.Media.WavFileWriter.Seek(System.Int64,System.IO.SeekOrigin)">Seek(Int64, SeekOrigin)</h4>
   <div class="markdown level1 summary"><p>Seek is not supported for a WaveFileWriter.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -564,7 +566,7 @@ They will be converted to the appropriate bit depth depending on the WaveFormat 
 </td>
       </tr>
       <tr>
-        <td><span class="xref">SeekOrigin</span></td>
+        <td><span class="xref">System.IO.SeekOrigin</span></td>
         <td><em>origin</em></td>
         <td><p>Origin of the seek.</p>
 </td>
@@ -613,7 +615,7 @@ They will be converted to the appropriate bit depth depending on the WaveFormat 
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Common_Media_WavFileWriter_UpdateHeader_BinaryWriter_" data-uid="WaveEngine.Common.Media.WavFileWriter.UpdateHeader(BinaryWriter)">UpdateHeader(BinaryWriter)</h4>
+  <h4 id="WaveEngine_Common_Media_WavFileWriter_UpdateHeader_System_IO_BinaryWriter_" data-uid="WaveEngine.Common.Media.WavFileWriter.UpdateHeader(System.IO.BinaryWriter)">UpdateHeader(BinaryWriter)</h4>
   <div class="markdown level1 summary"><p>Updates the header with file size information.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -632,7 +634,7 @@ They will be converted to the appropriate bit depth depending on the WaveFormat 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">BinaryWriter</span></td>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
         <td><em>writer</em></td>
         <td><p>Binary writer.</p>
 </td>
@@ -683,7 +685,8 @@ They will be converted to the appropriate bit depth depending on the WaveFormat 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteData(short[] samples, int offset, int count)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use WriteSamples instead&quot;)]
+public void WriteData(short[] samples, int offset, int count)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -818,6 +821,10 @@ They will be converted to the appropriate bit depth depending on the WaveFormat 
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

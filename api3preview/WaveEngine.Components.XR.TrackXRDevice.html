@@ -129,7 +129,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Transform3D transform</code></pre>
+    <pre><code class="lang-csharp hljs">[BindComponent(true, true, BindComponentSource.Owner, null)]
+protected Transform3D transform</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -152,7 +153,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected XRPlatform xrPlatform</code></pre>
+    <pre><code class="lang-csharp hljs">[BindService(true)]
+protected XRPlatform xrPlatform</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -377,8 +379,9 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Components_XR_TrackXRDevice_Update_TimeSpan_">Update(TimeSpan)</a></td>
-        <td></td>
+        <td><a href="#WaveEngine_Components_XR_TrackXRDevice_Update_System_TimeSpan_">Update(TimeSpan)</a></td>
+        <td><p>Allows this instance to execute custom logic during its <code>Update</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -422,9 +425,14 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnDetach()</code></pre>
   </div>
-  <h4 id="WaveEngine_Components_XR_TrackXRDevice_Update_TimeSpan_" data-uid="WaveEngine.Components.XR.TrackXRDevice.Update(TimeSpan)">Update(TimeSpan)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="WaveEngine_Components_XR_TrackXRDevice_Update_System_TimeSpan_" data-uid="WaveEngine.Components.XR.TrackXRDevice.Update(System.TimeSpan)">Update(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Allows this instance to execute custom logic during its <code>Update</code>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Components_XR_TrackXRDevice_Update_System_TimeSpan__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method will not be executed if the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a>, or the <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>
+owning it are not <code>Active</code>.</p>
+</div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void Update(TimeSpan gameTime)</code></pre>
@@ -440,9 +448,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><em>gameTime</em></td>
-        <td></td>
+        <td><p>The game time.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -482,7 +491,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.XR.TrackedDevices.XRTrackedDevice.html">XRTrackedDevice</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.XR.TrackedDevices.XRTrackedDevice.html">XRTrackedDevice</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

@@ -93,7 +93,7 @@
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.Converter.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class OptimizationsData : object, ISettingCategory</code></pre>
+    <pre><code class="lang-csharp hljs">public class OptimizationsData : ISettingCategory</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -145,7 +145,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool UseBinaryResources { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[RenderProperty(CustomPropertyName = &quot;Use Binary resources&quot;, Tooltip = &quot;This option will binarize all project text resources to optimize size and obfuscate their content.&quot;)]
+public bool UseBinaryResources { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

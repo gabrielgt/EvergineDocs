@@ -125,7 +125,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Transform3D transform</code></pre>
+    <pre><code class="lang-csharp hljs">[BindComponent(true, true, BindComponentSource.Owner, null)]
+protected Transform3D transform</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -276,13 +277,13 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_NoesisGUI_NoesisFramebufferPanel_ProjectPointer_Ray_System_Single_WaveEngine_Mathematics_Point__System_Single__">ProjectPointer(Ray, Single, out Mathematics.Point, out Single)</a></td>
-        <td><p>Get the projected position of a 3D ray.</p>
+        <td><a href="#WaveEngine_NoesisGUI_NoesisFramebufferPanel_ProjectPointer_WaveEngine_Mathematics_Point_WaveEngine_Mathematics_Point__">ProjectPointer(Point, out Point)</a></td>
+        <td><p>Get the projected position of a mouse or touch input.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_NoesisGUI_NoesisFramebufferPanel_ProjectPointer_WaveEngine_Mathematics_Point_WaveEngine_Mathematics_Point__">ProjectPointer(Mathematics.Point, out Mathematics.Point)</a></td>
-        <td><p>Get the projected position of a mouse or touch input.</p>
+        <td><a href="#WaveEngine_NoesisGUI_NoesisFramebufferPanel_ProjectPointer_WaveEngine_Mathematics_Ray_System_Single_WaveEngine_Mathematics_Point__System_Single__">ProjectPointer(Ray, Single, out Point, out Single)</a></td>
+        <td><p>Get the projected position of a 3D ray.</p>
 </td>
       </tr>
       <tr>
@@ -296,7 +297,12 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_NoesisGUI_NoesisFramebufferPanel_UpdateTouchEvent_Ray__System_Single_WaveEngine_Common_Input_ButtonState_System_UInt64_System_Single__">UpdateTouchEvent(ref Ray, Single, ButtonState, UInt64, out Single)</a></td>
+        <td><a href="#WaveEngine_NoesisGUI_NoesisFramebufferPanel_UpdateMouseEventByHit_WaveEngine_Framework_Physics3D_HitResult3D__WaveEngine_Common_Input_ButtonState_WaveEngine_Common_Input_Mouse_MouseButtons_">UpdateMouseEventByHit(ref HitResult3D, ButtonState, MouseButtons)</a></td>
+        <td><p>Updates noesis panel using a HitResult from mouse.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_NoesisGUI_NoesisFramebufferPanel_UpdateTouchEvent_WaveEngine_Mathematics_Ray__System_Single_WaveEngine_Common_Input_ButtonState_System_UInt64_System_Single__">UpdateTouchEvent(ref Ray, Single, ButtonState, UInt64, out Single)</a></td>
         <td><p>Updates the panel.</p>
 </td>
       </tr>
@@ -403,73 +409,13 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void OnDeactivated()</code></pre>
   </div>
-  <h4 id="WaveEngine_NoesisGUI_NoesisFramebufferPanel_ProjectPointer_Ray_System_Single_WaveEngine_Mathematics_Point__System_Single__" data-uid="WaveEngine.NoesisGUI.NoesisFramebufferPanel.ProjectPointer(Ray,System.Single,WaveEngine.Mathematics.Point@,System.Single@)">ProjectPointer(Ray, Single, out Mathematics.Point, out Single)</h4>
-  <div class="markdown level1 summary"><p>Get the projected position of a 3D ray.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool ProjectPointer(Ray ray, float maxRayDistance, out Mathematics.Point projected, out float distance)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Ray</span></td>
-        <td><em>ray</em></td>
-        <td><p>The ray to project.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><em>maxRayDistance</em></td>
-        <td><p>The ray distance to test.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="WaveEngine.Mathematics.Point.html">Point</a></td>
-        <td><em>projected</em></td>
-        <td><p>Projected point on the noesis surface.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><em>distance</em></td>
-        <td><p>The distance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>Whether the ray intersected the plane.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_NoesisGUI_NoesisFramebufferPanel_ProjectPointer_WaveEngine_Mathematics_Point_WaveEngine_Mathematics_Point__" data-uid="WaveEngine.NoesisGUI.NoesisFramebufferPanel.ProjectPointer(WaveEngine.Mathematics.Point,WaveEngine.Mathematics.Point@)">ProjectPointer(Mathematics.Point, out Mathematics.Point)</h4>
+  <h4 id="WaveEngine_NoesisGUI_NoesisFramebufferPanel_ProjectPointer_WaveEngine_Mathematics_Point_WaveEngine_Mathematics_Point__" data-uid="WaveEngine.NoesisGUI.NoesisFramebufferPanel.ProjectPointer(WaveEngine.Mathematics.Point,WaveEngine.Mathematics.Point@)">ProjectPointer(Point, out Point)</h4>
   <div class="markdown level1 summary"><p>Get the projected position of a mouse or touch input.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool ProjectPointer(Mathematics.Point screen, out Mathematics.Point projected)</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool ProjectPointer(Point screen, out Point projected)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -511,6 +457,66 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_NoesisGUI_NoesisFramebufferPanel_ProjectPointer_WaveEngine_Mathematics_Ray_System_Single_WaveEngine_Mathematics_Point__System_Single__" data-uid="WaveEngine.NoesisGUI.NoesisFramebufferPanel.ProjectPointer(WaveEngine.Mathematics.Ray,System.Single,WaveEngine.Mathematics.Point@,System.Single@)">ProjectPointer(Ray, Single, out Point, out Single)</h4>
+  <div class="markdown level1 summary"><p>Get the projected position of a 3D ray.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ProjectPointer(Ray ray, float maxRayDistance, out Point projected, out float distance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Ray.html">Ray</a></td>
+        <td><em>ray</em></td>
+        <td><p>The ray to project.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><em>maxRayDistance</em></td>
+        <td><p>The ray distance to test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Point.html">Point</a></td>
+        <td><em>projected</em></td>
+        <td><p>Projected point on the noesis surface.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><em>distance</em></td>
+        <td><p>The distance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether the ray intersected the plane.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_NoesisGUI_NoesisFramebufferPanel_RegisterRenderEvents" data-uid="WaveEngine.NoesisGUI.NoesisFramebufferPanel.RegisterRenderEvents">RegisterRenderEvents()</h4>
   <div class="markdown level1 summary"><p>Register to the necessary events to perform the render cycle.</p>
 </div>
@@ -527,7 +533,61 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void UnregisterRenderEvents()</code></pre>
   </div>
-  <h4 id="WaveEngine_NoesisGUI_NoesisFramebufferPanel_UpdateTouchEvent_Ray__System_Single_WaveEngine_Common_Input_ButtonState_System_UInt64_System_Single__" data-uid="WaveEngine.NoesisGUI.NoesisFramebufferPanel.UpdateTouchEvent(Ray@,System.Single,WaveEngine.Common.Input.ButtonState,System.UInt64,System.Single@)">UpdateTouchEvent(ref Ray, Single, ButtonState, UInt64, out Single)</h4>
+  <h4 id="WaveEngine_NoesisGUI_NoesisFramebufferPanel_UpdateMouseEventByHit_WaveEngine_Framework_Physics3D_HitResult3D__WaveEngine_Common_Input_ButtonState_WaveEngine_Common_Input_Mouse_MouseButtons_" data-uid="WaveEngine.NoesisGUI.NoesisFramebufferPanel.UpdateMouseEventByHit(WaveEngine.Framework.Physics3D.HitResult3D@,WaveEngine.Common.Input.ButtonState,WaveEngine.Common.Input.Mouse.MouseButtons)">UpdateMouseEventByHit(ref HitResult3D, ButtonState, MouseButtons)</h4>
+  <div class="markdown level1 summary"><p>Updates noesis panel using a HitResult from mouse.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateMouseEventByHit(ref HitResult3D hit, ButtonState buttonSate, MouseButtons button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Physics3D.HitResult3D.html">HitResult3D</a></td>
+        <td><em>hit</em></td>
+        <td><p>the HitResult3D object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Input.ButtonState.html">ButtonState</a></td>
+        <td><em>buttonSate</em></td>
+        <td><p>Current button state.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Input.Mouse.MouseButtons.html">MouseButtons</a></td>
+        <td><em>button</em></td>
+        <td><p>Button from mouse we want to emulate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True when HitResult3D object settings hits the panel.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_NoesisGUI_NoesisFramebufferPanel_UpdateTouchEvent_WaveEngine_Mathematics_Ray__System_Single_WaveEngine_Common_Input_ButtonState_System_UInt64_System_Single__" data-uid="WaveEngine.NoesisGUI.NoesisFramebufferPanel.UpdateTouchEvent(WaveEngine.Mathematics.Ray@,System.Single,WaveEngine.Common.Input.ButtonState,System.UInt64,System.Single@)">UpdateTouchEvent(ref Ray, Single, ButtonState, UInt64, out Single)</h4>
   <div class="markdown level1 summary"><p>Updates the panel.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -546,7 +606,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Ray</span></td>
+        <td><a class="xref" href="WaveEngine.Mathematics.Ray.html">Ray</a></td>
         <td><em>ray</em></td>
         <td><p>The triggered ray.</p>
 </td>

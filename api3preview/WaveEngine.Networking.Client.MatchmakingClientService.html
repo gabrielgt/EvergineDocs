@@ -284,7 +284,7 @@ client versions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -427,7 +427,7 @@ The ID will be -1 outside of rooms.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -450,7 +450,7 @@ The ID will be -1 outside of rooms.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Networking.Rooms.RoomInfo.html">RoomInfo</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Networking.Rooms.RoomInfo.html">RoomInfo</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -529,8 +529,9 @@ Register to <a class="xref" href="WaveEngine.Networking.Client.MatchmakingClient
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Networking_Client_MatchmakingClientService_Update_TimeSpan_">Update(TimeSpan)</a></td>
-        <td></td>
+        <td><a href="#WaveEngine_Networking_Client_MatchmakingClientService_Update_System_TimeSpan_">Update(TimeSpan)</a></td>
+        <td><p>Updates this instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -570,8 +571,26 @@ Register to <a class="xref" href="WaveEngine.Networking.Client.MatchmakingClient
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><p>An a value indicating whether the connection was succeed or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>You can&apos;t call Connect method while is connected to a matchmaking server. Call before to <a class="xref" href="WaveEngine.Networking.Client.MatchmakingClientService.html#WaveEngine_Networking_Client_MatchmakingClientService_Disconnect">Disconnect()</a> method.
+or
+<a class="xref" href="WaveEngine.Networking.Client.MatchmakingClientService.html#WaveEngine_Networking_Client_MatchmakingClientService_ApplicationIdentifier">ApplicationIdentifier</a> must have a valid value before trying to connect.</p>
 </td>
       </tr>
     </tbody>
@@ -653,7 +672,7 @@ Note that the player properties will be cached locally and sent to any next room
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="WaveEngine.Networking.Messages.EnterRoomResultCodes.html">EnterRoomResultCodes</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="WaveEngine.Networking.Messages.EnterRoomResultCodes.html">EnterRoomResultCodes</a>&gt;</td>
         <td><p>A value indicating if the operation was successful (requires connection to matchmaking server).</p>
 </td>
       </tr>
@@ -691,6 +710,24 @@ Register to <a class="xref" href="WaveEngine.Networking.Client.MatchmakingClient
         <td><span class="xref">System.Int32</span></td>
         <td><em>port</em></td>
         <td><p>The port.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p><a class="xref" href="WaveEngine.Networking.Client.MatchmakingClientService.html#WaveEngine_Networking_Client_MatchmakingClientService_ApplicationIdentifier">ApplicationIdentifier</a> must have a valid value before trying to connect.
+or
+You can&apos;t call discovery method while is connected to a matchmaking server. Call before to <a class="xref" href="WaveEngine.Networking.Client.MatchmakingClientService.html#WaveEngine_Networking_Client_MatchmakingClientService_Disconnect">Disconnect()</a> method.</p>
 </td>
       </tr>
     </tbody>
@@ -751,7 +788,7 @@ Note that the player properties will be cached locally and sent to any next room
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="WaveEngine.Networking.Messages.EnterRoomResultCodes.html">EnterRoomResultCodes</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="WaveEngine.Networking.Messages.EnterRoomResultCodes.html">EnterRoomResultCodes</a>&gt;</td>
         <td><p>A value indicating if the operation was successful (requires connection to matchmaking server).</p>
 </td>
       </tr>
@@ -812,7 +849,7 @@ Then it does not matter if the room is already setup.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="WaveEngine.Networking.Messages.EnterRoomResultCodes.html">EnterRoomResultCodes</a>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="WaveEngine.Networking.Messages.EnterRoomResultCodes.html">EnterRoomResultCodes</a>&gt;</td>
         <td><p>A value indicating if the operation was successful (requires connection to matchmaking server).</p>
 </td>
       </tr>
@@ -984,8 +1021,9 @@ Then it does not matter if the room is already setup.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Networking_Client_MatchmakingClientService_Update_TimeSpan_" data-uid="WaveEngine.Networking.Client.MatchmakingClientService.Update(TimeSpan)">Update(TimeSpan)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="WaveEngine_Networking_Client_MatchmakingClientService_Update_System_TimeSpan_" data-uid="WaveEngine.Networking.Client.MatchmakingClientService.Update(System.TimeSpan)">Update(TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Updates this instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1002,9 +1040,10 @@ Then it does not matter if the room is already setup.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><em>gameTime</em></td>
-        <td></td>
+        <td><p>The elapsed game time since the last update.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1078,7 +1117,7 @@ Occurs when a new matchmaking server is discovered</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Client.ClientStates.html">ClientStates</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Client.ClientStates.html">ClientStates</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1104,7 +1143,7 @@ Occurs when a new matchmaking server is discovered</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1130,7 +1169,7 @@ Occurs when a new matchmaking server is discovered</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Client.MessageFromPlayerEventArgs.html">MessageFromPlayerEventArgs</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Client.MessageFromPlayerEventArgs.html">MessageFromPlayerEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1156,7 +1195,7 @@ Occurs when a new matchmaking server is discovered</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Client.MessageFromPlayerEventArgs.html">MessageFromPlayerEventArgs</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Client.MessageFromPlayerEventArgs.html">MessageFromPlayerEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1179,7 +1218,7 @@ Occurs when a new matchmaking server is discovered</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Connection.MessageReceivedEventArgs.html">MessageReceivedEventArgs</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Connection.MessageReceivedEventArgs.html">MessageReceivedEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1206,7 +1245,7 @@ refresh a list of available rooms.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1230,7 +1269,7 @@ Occurs when a new matchmaking server is discovered</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Connection.HostDiscoveredEventArgs.html">HostDiscoveredEventArgs</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Networking.Connection.HostDiscoveredEventArgs.html">HostDiscoveredEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

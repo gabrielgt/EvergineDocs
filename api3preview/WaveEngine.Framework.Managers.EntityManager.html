@@ -126,6 +126,22 @@ As a collection, it supports common operations like adding and removing entities
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public EntityManager()</code></pre>
   </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If adapter or scene are null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <h4 id="properties-summary">Summary</h4>
@@ -152,7 +168,7 @@ including its children.</p>
       <tr>
         <td><a href="#WaveEngine_Framework_Managers_EntityManager_EntityGraph">EntityGraph</a></td>
         <td><p>Gets the <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> instances
-(see <see pref="ObjectGraph"></see> if you prefer a collection of <see cref="!:System.Object"></see>).
+(see <see pref="ObjectGraph"></see> if you prefer a collection of <span class="xref">System.Object</span>).
 IMPORTANT NOTE: Just the parents are contained within the returning value (i.e.
 just the instances subject to an Add() call). Children will not be considered here.
 See <see pref="AllEntities"></see> if you are looking also for children.</p>
@@ -180,8 +196,24 @@ including its children.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
         <td><p><em>Every</em> <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>EntityManager has been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -212,7 +244,7 @@ including its children.</p>
   </table>
   <h4 id="WaveEngine_Framework_Managers_EntityManager_EntityGraph" data-uid="WaveEngine.Framework.Managers.EntityManager.EntityGraph">EntityGraph</h4>
   <div class="markdown level1 summary"><p>Gets the <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> instances
-(see <see pref="ObjectGraph"></see> if you prefer a collection of <see cref="!:System.Object"></see>).
+(see <see pref="ObjectGraph"></see> if you prefer a collection of <span class="xref">System.Object</span>).
 IMPORTANT NOTE: Just the parents are contained within the returning value (i.e.
 just the instances subject to an Add() call). Children will not be considered here.
 See <see pref="AllEntities"></see> if you are looking also for children.</p>
@@ -232,8 +264,24 @@ See <see pref="AllEntities"></see> if you are looking also for children.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
         <td><p>The <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> instances.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>EntityManager has been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -250,7 +298,7 @@ See <see pref="AllEntities"></see> if you are looking also for children.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Framework_Managers_EntityManager_Add_IEnumerable_WaveEngine_Framework_Entity__">Add(IEnumerable&lt;Entity&gt;)</a></td>
+        <td><a href="#WaveEngine_Framework_Managers_EntityManager_Add_System_Collections_Generic_IEnumerable_WaveEngine_Framework_Entity__">Add(IEnumerable&lt;Entity&gt;)</a></td>
         <td><p>Adds a list of <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> to EntityManager.</p>
 </td>
       </tr>
@@ -276,7 +324,7 @@ through its <see pref="Entity.Name"></see> property.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Managers_EntityManager_Find_Guid_">Find(Guid)</a></td>
+        <td><a href="#WaveEngine_Framework_Managers_EntityManager_Find_System_Guid_">Find(Guid)</a></td>
         <td><p>Looks for an <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> entity
 in the <see pref="EntityGraph"></see>, through its name.</p>
 </td>
@@ -304,7 +352,7 @@ in the <see pref="ObjectGraph"></see>.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Managers_EntityManager_FindComponentsOfType_Type_System_Boolean_System_String_">FindComponentsOfType(Type, Boolean, String)</a></td>
+        <td><a href="#WaveEngine_Framework_Managers_EntityManager_FindComponentsOfType_System_Type_System_Boolean_System_String_">FindComponentsOfType(Type, Boolean, String)</a></td>
         <td><p>Iterate through the entire entity hierarchy and return all component instances of the specified type.</p>
 </td>
       </tr>
@@ -314,7 +362,7 @@ in the <see pref="ObjectGraph"></see>.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Managers_EntityManager_FindFirstComponentOfType_Type_System_Boolean_System_String_">FindFirstComponentOfType(Type, Boolean, String)</a></td>
+        <td><a href="#WaveEngine_Framework_Managers_EntityManager_FindFirstComponentOfType_System_Type_System_Boolean_System_String_">FindFirstComponentOfType(Type, Boolean, String)</a></td>
         <td><p>Iterate through the entire entity hierarchy and return the first component instance of the specified type.</p>
 </td>
       </tr>
@@ -350,7 +398,7 @@ in the <see pref="ObjectGraph"></see>.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Managers_EntityManager_Add_IEnumerable_WaveEngine_Framework_Entity__" data-uid="WaveEngine.Framework.Managers.EntityManager.Add(IEnumerable{WaveEngine.Framework.Entity})">Add(IEnumerable&lt;Entity&gt;)</h4>
+  <h4 id="WaveEngine_Framework_Managers_EntityManager_Add_System_Collections_Generic_IEnumerable_WaveEngine_Framework_Entity__" data-uid="WaveEngine.Framework.Managers.EntityManager.Add(System.Collections.Generic.IEnumerable{WaveEngine.Framework.Entity})">Add(IEnumerable&lt;Entity&gt;)</h4>
   <div class="markdown level1 summary"><p>Adds a list of <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> to EntityManager.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -369,9 +417,30 @@ in the <see pref="ObjectGraph"></see>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
         <td><em>newEntities</em></td>
         <td><p>The <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> list to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entity is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>If there is already an entity added to this instance with the same name.</p>
 </td>
       </tr>
     </tbody>
@@ -398,6 +467,27 @@ in the <see pref="ObjectGraph"></see>.</p>
         <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
         <td><em>entity</em></td>
         <td><p>The <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entity is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>If there is already an entity added to this instance with the same name.</p>
 </td>
       </tr>
     </tbody>
@@ -441,6 +531,22 @@ through its <see pref="Entity.Name"></see> property.</p>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><p><code>true</code> if this instance contains the specified <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entity is null.</p>
 </td>
       </tr>
     </tbody>
@@ -532,7 +638,23 @@ through its <see pref="Entity.Name"></see> property.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Managers_EntityManager_Find_Guid_" data-uid="WaveEngine.Framework.Managers.EntityManager.Find(Guid)">Find(Guid)</h4>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entity is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Managers_EntityManager_Find_System_Guid_" data-uid="WaveEngine.Framework.Managers.EntityManager.Find(System.Guid)">Find(Guid)</h4>
   <div class="markdown level1 summary"><p>Looks for an <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> entity
 in the <see pref="EntityGraph"></see>, through its name.</p>
 </div>
@@ -552,7 +674,7 @@ in the <see pref="EntityGraph"></see>, through its name.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td><em>entityId</em></td>
         <td><p>The entity Id to find.</p>
 </td>
@@ -572,6 +694,22 @@ in the <see pref="EntityGraph"></see>, through its name.</p>
         <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
         <td><p>The <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> with the specified <code data-dev-comment-type="paramref" class="paramref">entityId</code>,
 or null if no entity was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If the entity id is an empty Guid.</p>
 </td>
       </tr>
     </tbody>
@@ -626,6 +764,22 @@ or null if no entity was found.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If name is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Framework_Managers_EntityManager_FindAllByTag_System_String_" data-uid="WaveEngine.Framework.Managers.EntityManager.FindAllByTag(System.String)">FindAllByTag(String)</h4>
   <div class="markdown level1 summary"><p>Finds all entities with the same <code data-dev-comment-type="paramref" class="paramref">tag</code>
 in the <see pref="ObjectGraph"></see>.</p>
@@ -663,7 +817,7 @@ in the <see pref="ObjectGraph"></see>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
         <td><p>All entities with the same <code data-dev-comment-type="paramref" class="paramref">tag</code>
 in the <see pref="EntityGraph"></see>.</p>
 </td>
@@ -778,7 +932,7 @@ in the <see pref="EntityGraph"></see>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
         <td><p>Components collection.</p>
 </td>
       </tr>
@@ -800,11 +954,11 @@ in the <see pref="EntityGraph"></see>.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Managers_EntityManager_FindComponentsOfType_Type_System_Boolean_System_String_" data-uid="WaveEngine.Framework.Managers.EntityManager.FindComponentsOfType(Type,System.Boolean,System.String)">FindComponentsOfType(Type, Boolean, String)</h4>
+  <h4 id="WaveEngine_Framework_Managers_EntityManager_FindComponentsOfType_System_Type_System_Boolean_System_String_" data-uid="WaveEngine.Framework.Managers.EntityManager.FindComponentsOfType(System.Type,System.Boolean,System.String)">FindComponentsOfType(Type, Boolean, String)</h4>
   <div class="markdown level1 summary"><p>Iterate through the entire entity hierarchy and return all component instances of the specified type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 id="WaveEngine_Framework_Managers_EntityManager_FindComponentsOfType_Type_System_Boolean_System_String__remarks">Remarks</h5>
+  <h5 id="WaveEngine_Framework_Managers_EntityManager_FindComponentsOfType_System_Type_System_Boolean_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method is extremely low, try to not use inside an Update method.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -822,7 +976,7 @@ in the <see pref="EntityGraph"></see>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><em>type</em></td>
         <td><p>The component type.</p>
 </td>
@@ -851,7 +1005,7 @@ in the <see pref="EntityGraph"></see>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Component.html">Component</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Component.html">Component</a>&gt;</td>
         <td><p>The component enumerable.</p>
 </td>
       </tr>
@@ -903,7 +1057,7 @@ in the <see pref="EntityGraph"></see>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
         <td><p>The component enumerable.</p>
 </td>
       </tr>
@@ -925,11 +1079,11 @@ in the <see pref="EntityGraph"></see>.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Managers_EntityManager_FindFirstComponentOfType_Type_System_Boolean_System_String_" data-uid="WaveEngine.Framework.Managers.EntityManager.FindFirstComponentOfType(Type,System.Boolean,System.String)">FindFirstComponentOfType(Type, Boolean, String)</h4>
+  <h4 id="WaveEngine_Framework_Managers_EntityManager_FindFirstComponentOfType_System_Type_System_Boolean_System_String_" data-uid="WaveEngine.Framework.Managers.EntityManager.FindFirstComponentOfType(System.Type,System.Boolean,System.String)">FindFirstComponentOfType(Type, Boolean, String)</h4>
   <div class="markdown level1 summary"><p>Iterate through the entire entity hierarchy and return the first component instance of the specified type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 id="WaveEngine_Framework_Managers_EntityManager_FindFirstComponentOfType_Type_System_Boolean_System_String__remarks">Remarks</h5>
+  <h5 id="WaveEngine_Framework_Managers_EntityManager_FindFirstComponentOfType_System_Type_System_Boolean_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method is extremely low, try to not use inside an Update method.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
@@ -947,7 +1101,7 @@ in the <see pref="EntityGraph"></see>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><em>type</em></td>
         <td><p>The component type.</p>
 </td>
@@ -1105,6 +1259,22 @@ in the <see pref="EntityGraph"></see>.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If name is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Framework_Managers_EntityManager_Remove_WaveEngine_Framework_Entity_" data-uid="WaveEngine.Framework.Managers.EntityManager.Remove(WaveEngine.Framework.Entity)">Remove(Entity)</h4>
   <div class="markdown level1 summary"><p>Removes a specific entity.</p>
 </div>
@@ -1146,6 +1316,22 @@ in the <see pref="EntityGraph"></see>.</p>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><p>Whether an entity was removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entity is null.</p>
 </td>
       </tr>
     </tbody>
@@ -1199,7 +1385,7 @@ in the <see pref="EntityGraph"></see>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1222,7 +1408,7 @@ in the <see pref="EntityGraph"></see>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1233,16 +1419,16 @@ in the <see pref="EntityGraph"></see>.</p>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="WaveEngine.Framework.Extensions.EntityHierarchyExtensions.html#WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityBefore_WaveEngine_Framework_Managers_EntityManager_System_String_System_String_">EntityHierarchyExtensions.MoveEntityBefore(EntityManager, String, String)</a>
-  </div>
-  <div>
-      <a class="xref" href="WaveEngine.Framework.Extensions.EntityHierarchyExtensions.html#WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityAfter_WaveEngine_Framework_Managers_EntityManager_System_String_System_String_">EntityHierarchyExtensions.MoveEntityAfter(EntityManager, String, String)</a>
-  </div>
-  <div>
       <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
   </div>
   <div>
       <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Framework.Extensions.EntityHierarchyExtensions.html#WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityBefore_WaveEngine_Framework_Managers_EntityManager_System_String_System_String_">EntityHierarchyExtensions.MoveEntityBefore(EntityManager, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Framework.Extensions.EntityHierarchyExtensions.html#WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityAfter_WaveEngine_Framework_Managers_EntityManager_System_String_System_String_">EntityHierarchyExtensions.MoveEntityAfter(EntityManager, String, String)</a>
   </div>
 </article>
           </div>

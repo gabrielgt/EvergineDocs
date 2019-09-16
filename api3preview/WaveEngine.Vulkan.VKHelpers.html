@@ -93,7 +93,7 @@
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.Vulkan.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class VKHelpers : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class VKHelpers</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -107,7 +107,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Vulkan_VKHelpers_CheckErrors_WaveEngine_Common_Graphics_GraphicsContext_VkResult_">CheckErrors(GraphicsContext, VkResult)</a></td>
+        <td><a href="#WaveEngine_Vulkan_VKHelpers_CheckErrors_WaveEngine_Common_Graphics_GraphicsContext_Vulkan_VkResult_">CheckErrors(GraphicsContext, VkResult)</a></td>
         <td><p>Check errors.</p>
 </td>
       </tr>
@@ -122,7 +122,7 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Vulkan_VKHelpers_FindMemoryType_WaveEngine_Vulkan_VKGraphicsContext_System_UInt32_VkMemoryPropertyFlags_">FindMemoryType(VKGraphicsContext, UInt32, VkMemoryPropertyFlags)</a></td>
+        <td><a href="#WaveEngine_Vulkan_VKHelpers_FindMemoryType_WaveEngine_Vulkan_VKGraphicsContext_System_UInt32_Vulkan_VkMemoryPropertyFlags_">FindMemoryType(VKGraphicsContext, UInt32, VkMemoryPropertyFlags)</a></td>
         <td><p>Find a memory type.</p>
 </td>
       </tr>
@@ -137,7 +137,7 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Vulkan_VKHelpers_GetMemoryType_VkPhysicalDeviceMemoryProperties_System_UInt32_">GetMemoryType(VkPhysicalDeviceMemoryProperties, UInt32)</a></td>
+        <td><a href="#WaveEngine_Vulkan_VKHelpers_GetMemoryType_Vulkan_VkPhysicalDeviceMemoryProperties_System_UInt32_">GetMemoryType(VkPhysicalDeviceMemoryProperties, UInt32)</a></td>
         <td><p>Gets the memory type.</p>
 </td>
       </tr>
@@ -153,13 +153,14 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Vulkan_VKHelpers_CheckErrors_WaveEngine_Common_Graphics_GraphicsContext_VkResult_" data-uid="WaveEngine.Vulkan.VKHelpers.CheckErrors(WaveEngine.Common.Graphics.GraphicsContext,VkResult)">CheckErrors(GraphicsContext, VkResult)</h4>
+  <h4 id="WaveEngine_Vulkan_VKHelpers_CheckErrors_WaveEngine_Common_Graphics_GraphicsContext_Vulkan_VkResult_" data-uid="WaveEngine.Vulkan.VKHelpers.CheckErrors(WaveEngine.Common.Graphics.GraphicsContext,Vulkan.VkResult)">CheckErrors(GraphicsContext, VkResult)</h4>
   <div class="markdown level1 summary"><p>Check errors.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CheckErrors(GraphicsContext context, VkResult result)</code></pre>
+    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+public static void CheckErrors(GraphicsContext context, VkResult result)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -178,7 +179,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">VkResult</span></td>
+        <td><span class="xref">Vulkan.VkResult</span></td>
         <td><em>result</em></td>
         <td><p>The result of last operation.</p>
 </td>
@@ -269,7 +270,7 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Vulkan_VKHelpers_FindMemoryType_WaveEngine_Vulkan_VKGraphicsContext_System_UInt32_VkMemoryPropertyFlags_" data-uid="WaveEngine.Vulkan.VKHelpers.FindMemoryType(WaveEngine.Vulkan.VKGraphicsContext,System.UInt32,VkMemoryPropertyFlags)">FindMemoryType(VKGraphicsContext, UInt32, VkMemoryPropertyFlags)</h4>
+  <h4 id="WaveEngine_Vulkan_VKHelpers_FindMemoryType_WaveEngine_Vulkan_VKGraphicsContext_System_UInt32_Vulkan_VkMemoryPropertyFlags_" data-uid="WaveEngine.Vulkan.VKHelpers.FindMemoryType(WaveEngine.Vulkan.VKGraphicsContext,System.UInt32,Vulkan.VkMemoryPropertyFlags)">FindMemoryType(VKGraphicsContext, UInt32, VkMemoryPropertyFlags)</h4>
   <div class="markdown level1 summary"><p>Find a memory type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -300,7 +301,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">VkMemoryPropertyFlags</span></td>
+        <td><span class="xref">Vulkan.VkMemoryPropertyFlags</span></td>
         <td><em>properties</em></td>
         <td><p>The memory properties.</p>
 </td>
@@ -389,7 +390,7 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Vulkan_VKHelpers_GetMemoryType_VkPhysicalDeviceMemoryProperties_System_UInt32_" data-uid="WaveEngine.Vulkan.VKHelpers.GetMemoryType(VkPhysicalDeviceMemoryProperties,System.UInt32)">GetMemoryType(VkPhysicalDeviceMemoryProperties, UInt32)</h4>
+  <h4 id="WaveEngine_Vulkan_VKHelpers_GetMemoryType_Vulkan_VkPhysicalDeviceMemoryProperties_System_UInt32_" data-uid="WaveEngine.Vulkan.VKHelpers.GetMemoryType(Vulkan.VkPhysicalDeviceMemoryProperties,System.UInt32)">GetMemoryType(VkPhysicalDeviceMemoryProperties, UInt32)</h4>
   <div class="markdown level1 summary"><p>Gets the memory type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -408,7 +409,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkPhysicalDeviceMemoryProperties</span></td>
+        <td><span class="xref">Vulkan.VkPhysicalDeviceMemoryProperties</span></td>
         <td><em>memoryProperties</em></td>
         <td><p>The device memory properties.</p>
 </td>
@@ -431,7 +432,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkMemoryType</span></td>
+        <td><span class="xref">Vulkan.VkMemoryType</span></td>
         <td><p>The result memory type.</p>
 </td>
       </tr>

@@ -102,19 +102,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Common_Graphics_LayoutElementDescription__ctor_System_UInt32_WaveEngine_Common_Graphics_ResourceType_WaveEngine_Common_Graphics_ShaderStages_System_Boolean_">LayoutElementDescription(UInt32, ResourceType, ShaderStages, Boolean)</a></td>
+        <td><a href="#WaveEngine_Common_Graphics_LayoutElementDescription__ctor_System_UInt32_WaveEngine_Common_Graphics_ResourceType_WaveEngine_Common_Graphics_ShaderStages_System_Boolean_System_UInt32_">LayoutElementDescription(UInt32, ResourceType, ShaderStages, Boolean, UInt32)</a></td>
         <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.LayoutElementDescription.html">LayoutElementDescription</a> struct.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Common_Graphics_LayoutElementDescription__ctor_System_UInt32_WaveEngine_Common_Graphics_ResourceType_WaveEngine_Common_Graphics_ShaderStages_System_Boolean_" data-uid="WaveEngine.Common.Graphics.LayoutElementDescription.#ctor(System.UInt32,WaveEngine.Common.Graphics.ResourceType,WaveEngine.Common.Graphics.ShaderStages,System.Boolean)">LayoutElementDescription(UInt32, ResourceType, ShaderStages, Boolean)</h4>
+  <h4 id="WaveEngine_Common_Graphics_LayoutElementDescription__ctor_System_UInt32_WaveEngine_Common_Graphics_ResourceType_WaveEngine_Common_Graphics_ShaderStages_System_Boolean_System_UInt32_" data-uid="WaveEngine.Common.Graphics.LayoutElementDescription.#ctor(System.UInt32,WaveEngine.Common.Graphics.ResourceType,WaveEngine.Common.Graphics.ShaderStages,System.Boolean,System.UInt32)">LayoutElementDescription(UInt32, ResourceType, ShaderStages, Boolean, UInt32)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.LayoutElementDescription.html">LayoutElementDescription</a> struct.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LayoutElementDescription(uint slot, ResourceType type, ShaderStages stages, bool allowDynamicOffset = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public LayoutElementDescription(uint slot, ResourceType type, ShaderStages stages, bool allowDynamicOffset = false, uint size = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -147,7 +147,13 @@
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><em>allowDynamicOffset</em></td>
-        <td><p>Allow specifying dynamic offset.</p>
+        <td><p>Allow specifying dynamic offset. Only valid on Constant Buffers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><em>size</em></td>
+        <td><p>If it is greater than 0, it overrides the size of this resource (in bytes). Only valid on Constant Buffers.</p>
 </td>
       </tr>
     </tbody>
@@ -166,6 +172,11 @@
       <tr>
         <td><a href="#WaveEngine_Common_Graphics_LayoutElementDescription_AllowDynamicOffset">AllowDynamicOffset</a></td>
         <td><p>Gets a value indicating whether this resource allow dynamic offset. Its used in some graphics backend to allow specifying dynamic offset.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_Graphics_LayoutElementDescription_Range">Range</a></td>
+        <td><p>If it is greater than 0, it overrides the size of this resource (in bytes). Only valid on Constant Buffers.</p>
 </td>
       </tr>
       <tr>
@@ -204,6 +215,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_Graphics_LayoutElementDescription_Range" data-uid="WaveEngine.Common.Graphics.LayoutElementDescription.Range">Range</h4>
+  <div class="markdown level1 summary"><p>If it is greater than 0, it overrides the size of this resource (in bytes). Only valid on Constant Buffers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly uint Range</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -290,7 +324,7 @@
     <tbody>
       <tr>
         <td><a href="#WaveEngine_Common_Graphics_LayoutElementDescription_Equals_System_Object_">Equals(Object)</a></td>
-        <td><p>Determines whether the specified <see cref="!:System.Object"></see> is equal to this instance.</p>
+        <td><p>Determines whether the specified <span class="xref">System.Object</span> is equal to this instance.</p>
 </td>
       </tr>
       <tr>
@@ -306,7 +340,7 @@
     </tbody>
   </table>
   <h4 id="WaveEngine_Common_Graphics_LayoutElementDescription_Equals_System_Object_" data-uid="WaveEngine.Common.Graphics.LayoutElementDescription.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"><p>Determines whether the specified <see cref="!:System.Object"></see> is equal to this instance.</p>
+  <div class="markdown level1 summary"><p>Determines whether the specified <span class="xref">System.Object</span> is equal to this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -326,7 +360,7 @@
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><em>obj</em></td>
-        <td><p>The <see cref="!:System.Object"></see> to compare with this instance.</p>
+        <td><p>The <span class="xref">System.Object</span> to compare with this instance.</p>
 </td>
       </tr>
     </tbody>
@@ -342,7 +376,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if the specified <see cref="!:System.Object"></see> is equal to this instance; otherwise, <code>false</code>.</p>
+        <td><p><code>true</code> if the specified <span class="xref">System.Object</span> is equal to this instance; otherwise, <code>false</code>.</p>
 </td>
       </tr>
     </tbody>
@@ -534,7 +568,14 @@
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">IEquatable&lt;&gt;</span>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
   </div>
 </article>
           </div>

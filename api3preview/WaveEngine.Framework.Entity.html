@@ -180,6 +180,22 @@ By default, the <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If name is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="fields">Fields
   </h3>
   <h4 id="fields-summary">Summary</h4>
@@ -392,7 +408,7 @@ that conform the path in the EntityManager to obtain the instance.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -415,7 +431,7 @@ that conform the path in the EntityManager to obtain the instance.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Component.html">Component</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Component.html">Component</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -560,6 +576,22 @@ that conform the path in the EntityManager to obtain the instance.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity have been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Framework_Entity_Scene" data-uid="WaveEngine.Framework.Entity.Scene">Scene</h4>
   <div class="markdown level1 summary"><p>Gets the <a class="xref" href="WaveEngine.Framework.Entity.html#WaveEngine_Framework_Entity_Scene">Scene</a> that contains this instance.</p>
 </div>
@@ -651,7 +683,7 @@ that conform the path in the EntityManager to obtain the instance.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Entity_DetachChild_Guid_">DetachChild(Guid)</a></td>
+        <td><a href="#WaveEngine_Framework_Entity_DetachChild_System_Guid_">DetachChild(Guid)</a></td>
         <td><p>Detaches the child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>.</p>
 </td>
       </tr>
@@ -666,7 +698,7 @@ that conform the path in the EntityManager to obtain the instance.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Entity_DetachComponent_Type_WaveEngine_Framework_Component__System_Boolean_">DetachComponent(Type, out Component, Boolean)</a></td>
+        <td><a href="#WaveEngine_Framework_Entity_DetachComponent_System_Type_WaveEngine_Framework_Component__System_Boolean_">DetachComponent(Type, out Component, Boolean)</a></td>
         <td><p>Removes a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> from this instance.</p>
 </td>
       </tr>
@@ -686,7 +718,7 @@ that conform the path in the EntityManager to obtain the instance.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Entity_FindChild_Guid_System_Boolean_">FindChild(Guid, Boolean)</a></td>
+        <td><a href="#WaveEngine_Framework_Entity_FindChild_System_Guid_System_Boolean_">FindChild(Guid, Boolean)</a></td>
         <td><p>Finds a child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> in this instance with a id.</p>
 </td>
       </tr>
@@ -701,7 +733,7 @@ that conform the path in the EntityManager to obtain the instance.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Entity_FindComponent_Type_System_Boolean_System_String_">FindComponent(Type, Boolean, String)</a></td>
+        <td><a href="#WaveEngine_Framework_Entity_FindComponent_System_Type_System_Boolean_System_String_">FindComponent(Type, Boolean, String)</a></td>
         <td><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> in this instance with the specified type.</p>
 </td>
       </tr>
@@ -711,7 +743,7 @@ that conform the path in the EntityManager to obtain the instance.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Entity_FindComponentInChildren_Type_System_Boolean_System_String_">FindComponentInChildren(Type, Boolean, String)</a></td>
+        <td><a href="#WaveEngine_Framework_Entity_FindComponentInChildren_System_Type_System_Boolean_System_String_">FindComponentInChildren(Type, Boolean, String)</a></td>
         <td><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> in this instance or any of its children with the specified type using depth first search.</p>
 </td>
       </tr>
@@ -721,7 +753,7 @@ that conform the path in the EntityManager to obtain the instance.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Entity_FindComponentInParents_Type_System_Boolean_System_String_">FindComponentInParents(Type, Boolean, String)</a></td>
+        <td><a href="#WaveEngine_Framework_Entity_FindComponentInParents_System_Type_System_Boolean_System_String_">FindComponentInParents(Type, Boolean, String)</a></td>
         <td><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> in this instance or any of its parents with the specified type using depth first search.</p>
 </td>
       </tr>
@@ -731,7 +763,7 @@ that conform the path in the EntityManager to obtain the instance.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Entity_FindComponents_Type_System_Boolean_System_String_">FindComponents(Type, Boolean, String)</a></td>
+        <td><a href="#WaveEngine_Framework_Entity_FindComponents_System_Type_System_Boolean_System_String_">FindComponents(Type, Boolean, String)</a></td>
         <td><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> collection in this instance with the specified type.</p>
 </td>
       </tr>
@@ -741,7 +773,7 @@ that conform the path in the EntityManager to obtain the instance.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Entity_FindComponentsInChildren_Type_System_Boolean_System_String_">FindComponentsInChildren(Type, Boolean, String)</a></td>
+        <td><a href="#WaveEngine_Framework_Entity_FindComponentsInChildren_System_Type_System_Boolean_System_String_">FindComponentsInChildren(Type, Boolean, String)</a></td>
         <td><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> collection in this instance or any of its children with the specified type.</p>
 </td>
       </tr>
@@ -751,7 +783,7 @@ that conform the path in the EntityManager to obtain the instance.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Entity_FindComponentsInParents_Type_System_Boolean_System_String_">FindComponentsInParents(Type, Boolean, String)</a></td>
+        <td><a href="#WaveEngine_Framework_Entity_FindComponentsInParents_System_Type_System_Boolean_System_String_">FindComponentsInParents(Type, Boolean, String)</a></td>
         <td><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> collection in this instance or any of its parents with the specified type.</p>
 </td>
       </tr>
@@ -806,7 +838,7 @@ that conform the path in the EntityManager to obtain the instance.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Entity_RemoveAllComponentsOfType_Type_System_Boolean_">RemoveAllComponentsOfType(Type, Boolean)</a></td>
+        <td><a href="#WaveEngine_Framework_Entity_RemoveAllComponentsOfType_System_Type_System_Boolean_">RemoveAllComponentsOfType(Type, Boolean)</a></td>
         <td><p>Removes all components of specified type from this instance.</p>
 </td>
       </tr>
@@ -816,7 +848,7 @@ that conform the path in the EntityManager to obtain the instance.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Entity_RemoveChild_Guid_">RemoveChild(Guid)</a></td>
+        <td><a href="#WaveEngine_Framework_Entity_RemoveChild_System_Guid_">RemoveChild(Guid)</a></td>
         <td><p>Removes a child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> from this instance.</p>
 </td>
       </tr>
@@ -831,7 +863,7 @@ that conform the path in the EntityManager to obtain the instance.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Entity_RemoveComponent_Type_System_Boolean_">RemoveComponent(Type, Boolean)</a></td>
+        <td><a href="#WaveEngine_Framework_Entity_RemoveComponent_System_Type_System_Boolean_">RemoveComponent(Type, Boolean)</a></td>
         <td><p>Removes a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> from this instance.</p>
 </td>
       </tr>
@@ -852,7 +884,7 @@ that conform the path in the EntityManager to obtain the instance.</p>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Entity_ToString">ToString()</a></td>
-        <td><p>Returns a <see cref="!:System.String"></see> that represents this instance (its name).</p>
+        <td><p>Returns a <span class="xref">System.String</span> that represents this instance (its name).</p>
 </td>
       </tr>
       <tr>
@@ -909,6 +941,37 @@ over the same instance is simpler.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entity is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>If entity was added to itself.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>If entity was already added to another <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>If there already was an <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> with the same name as entity added to this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Framework_Entity_AddComponent_WaveEngine_Framework_Component_" data-uid="WaveEngine.Framework.Entity.AddComponent(WaveEngine.Framework.Component)">AddComponent(Component)</h4>
   <div class="markdown level1 summary"><p>Adds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to this instance.</p>
 </div>
@@ -956,7 +1019,33 @@ over the same instance is simpler.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Entity_DetachChild_Guid_" data-uid="WaveEngine.Framework.Entity.DetachChild(Guid)">DetachChild(Guid)</h4>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>If component is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>If component was already added to another <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>If there already was a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> of the same type as component added to this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_DetachChild_System_Guid_" data-uid="WaveEngine.Framework.Entity.DetachChild(System.Guid)">DetachChild(Guid)</h4>
   <div class="markdown level1 summary"><p>Detaches the child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -975,7 +1064,7 @@ over the same instance is simpler.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td><em>id</em></td>
         <td><p>Id of the entity.</p>
 </td>
@@ -994,6 +1083,22 @@ over the same instance is simpler.</p>
       <tr>
         <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
         <td><p>The entity detached or null otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entityName is null or empty.</p>
 </td>
       </tr>
     </tbody>
@@ -1040,6 +1145,22 @@ over the same instance is simpler.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entityName is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Framework_Entity_DetachChild_WaveEngine_Framework_Entity_" data-uid="WaveEngine.Framework.Entity.DetachChild(WaveEngine.Framework.Entity)">DetachChild(Entity)</h4>
   <div class="markdown level1 summary"><p>Detaches the child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>.</p>
 </div>
@@ -1082,11 +1203,27 @@ over the same instance is simpler.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Entity_DetachComponent_Type_WaveEngine_Framework_Component__System_Boolean_" data-uid="WaveEngine.Framework.Entity.DetachComponent(Type,WaveEngine.Framework.Component@,System.Boolean)">DetachComponent(Type, out Component, Boolean)</h4>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entity is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_DetachComponent_System_Type_WaveEngine_Framework_Component__System_Boolean_" data-uid="WaveEngine.Framework.Entity.DetachComponent(System.Type,WaveEngine.Framework.Component@,System.Boolean)">DetachComponent(Type, out Component, Boolean)</h4>
   <div class="markdown level1 summary"><p>Removes a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> from this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 id="WaveEngine_Framework_Entity_DetachComponent_Type_WaveEngine_Framework_Component__System_Boolean__remarks">Remarks</h5>
+  <h5 id="WaveEngine_Framework_Entity_DetachComponent_System_Type_WaveEngine_Framework_Component__System_Boolean__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The method returns this instance. It can be used
 with method chaining, so performing consecutive operations
 over the same instance is simpler.</p>
@@ -1106,7 +1243,7 @@ over the same instance is simpler.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><em>componentType</em></td>
         <td><p>Type of the component.</p>
 </td>
@@ -1137,6 +1274,29 @@ over the same instance is simpler.</p>
       <tr>
         <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
         <td><p>This instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>The entity is disposed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.NullReferenceException</span></td>
+        <td><p>componentType
+or
+componentType.</p>
 </td>
       </tr>
     </tbody>
@@ -1184,6 +1344,29 @@ over the same instance is simpler.</p>
       <tr>
         <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
         <td><p>This instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>The entity is disposed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.NullReferenceException</span></td>
+        <td><p>componentType
+or
+componentType.</p>
 </td>
       </tr>
     </tbody>
@@ -1300,7 +1483,7 @@ over the same instance is simpler.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Entity_FindChild_Guid_System_Boolean_" data-uid="WaveEngine.Framework.Entity.FindChild(Guid,System.Boolean)">FindChild(Guid, Boolean)</h4>
+  <h4 id="WaveEngine_Framework_Entity_FindChild_System_Guid_System_Boolean_" data-uid="WaveEngine.Framework.Entity.FindChild(System.Guid,System.Boolean)">FindChild(Guid, Boolean)</h4>
   <div class="markdown level1 summary"><p>Finds a child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> in this instance with a id.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1319,7 +1502,7 @@ over the same instance is simpler.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td><em>id</em></td>
         <td><p>Id of the child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>.</p>
 </td>
@@ -1344,6 +1527,22 @@ over the same instance is simpler.</p>
       <tr>
         <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
         <td><p>The searched child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>, or null if no matching child was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entityName is null or empty.</p>
 </td>
       </tr>
     </tbody>
@@ -1396,6 +1595,22 @@ over the same instance is simpler.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entityName is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Framework_Entity_FindChildrenByTag_System_String_System_Boolean_" data-uid="WaveEngine.Framework.Entity.FindChildrenByTag(System.String,System.Boolean)">FindChildrenByTag(String, Boolean)</h4>
   <div class="markdown level1 summary"><p>Find children <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> in this instance by Tag.</p>
 </div>
@@ -1438,13 +1653,29 @@ over the same instance is simpler.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
         <td><p>A collection of <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>, with all children that match the specified Tag.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Entity_FindComponent_Type_System_Boolean_System_String_" data-uid="WaveEngine.Framework.Entity.FindComponent(Type,System.Boolean,System.String)">FindComponent(Type, Boolean, String)</h4>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If tag is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_FindComponent_System_Type_System_Boolean_System_String_" data-uid="WaveEngine.Framework.Entity.FindComponent(System.Type,System.Boolean,System.String)">FindComponent(Type, Boolean, String)</h4>
   <div class="markdown level1 summary"><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> in this instance with the specified type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1463,7 +1694,7 @@ over the same instance is simpler.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><em>type</em></td>
         <td><p>The type of the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to find.</p>
 </td>
@@ -1494,6 +1725,22 @@ over the same instance is simpler.</p>
       <tr>
         <td><a class="xref" href="WaveEngine.Framework.Component.html">Component</a></td>
         <td><p>The <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> or null if no <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> with the specified type was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -1563,7 +1810,23 @@ over the same instance is simpler.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Entity_FindComponentInChildren_Type_System_Boolean_System_String_" data-uid="WaveEngine.Framework.Entity.FindComponentInChildren(Type,System.Boolean,System.String)">FindComponentInChildren(Type, Boolean, String)</h4>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_FindComponentInChildren_System_Type_System_Boolean_System_String_" data-uid="WaveEngine.Framework.Entity.FindComponentInChildren(System.Type,System.Boolean,System.String)">FindComponentInChildren(Type, Boolean, String)</h4>
   <div class="markdown level1 summary"><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> in this instance or any of its children with the specified type using depth first search.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1582,7 +1845,7 @@ over the same instance is simpler.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><em>type</em></td>
         <td><p>The type of the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to find.</p>
 </td>
@@ -1613,6 +1876,22 @@ over the same instance is simpler.</p>
       <tr>
         <td><a class="xref" href="WaveEngine.Framework.Component.html">Component</a></td>
         <td><p>The <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> or null if no <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> with the specified type was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -1682,7 +1961,23 @@ over the same instance is simpler.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Entity_FindComponentInParents_Type_System_Boolean_System_String_" data-uid="WaveEngine.Framework.Entity.FindComponentInParents(Type,System.Boolean,System.String)">FindComponentInParents(Type, Boolean, String)</h4>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_FindComponentInParents_System_Type_System_Boolean_System_String_" data-uid="WaveEngine.Framework.Entity.FindComponentInParents(System.Type,System.Boolean,System.String)">FindComponentInParents(Type, Boolean, String)</h4>
   <div class="markdown level1 summary"><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> in this instance or any of its parents with the specified type using depth first search.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1701,7 +1996,7 @@ over the same instance is simpler.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><em>type</em></td>
         <td><p>The type of the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to find.</p>
 </td>
@@ -1732,6 +2027,22 @@ over the same instance is simpler.</p>
       <tr>
         <td><a class="xref" href="WaveEngine.Framework.Component.html">Component</a></td>
         <td><p>The <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> or null if no <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> with the specified type was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -1801,7 +2112,23 @@ over the same instance is simpler.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Entity_FindComponents_Type_System_Boolean_System_String_" data-uid="WaveEngine.Framework.Entity.FindComponents(Type,System.Boolean,System.String)">FindComponents(Type, Boolean, String)</h4>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_FindComponents_System_Type_System_Boolean_System_String_" data-uid="WaveEngine.Framework.Entity.FindComponents(System.Type,System.Boolean,System.String)">FindComponents(Type, Boolean, String)</h4>
   <div class="markdown level1 summary"><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> collection in this instance with the specified type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1820,7 +2147,7 @@ over the same instance is simpler.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><em>type</em></td>
         <td><p>The type of the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to find.</p>
 </td>
@@ -1849,8 +2176,24 @@ over the same instance is simpler.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Component.html">Component</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Component.html">Component</a>&gt;</td>
         <td><p>The <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> or null if no <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> with the specified type was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -1898,7 +2241,7 @@ over the same instance is simpler.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
         <td><p>The <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> or null if no <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> with the specified type was found.</p>
 </td>
       </tr>
@@ -1920,7 +2263,23 @@ over the same instance is simpler.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Entity_FindComponentsInChildren_Type_System_Boolean_System_String_" data-uid="WaveEngine.Framework.Entity.FindComponentsInChildren(Type,System.Boolean,System.String)">FindComponentsInChildren(Type, Boolean, String)</h4>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_FindComponentsInChildren_System_Type_System_Boolean_System_String_" data-uid="WaveEngine.Framework.Entity.FindComponentsInChildren(System.Type,System.Boolean,System.String)">FindComponentsInChildren(Type, Boolean, String)</h4>
   <div class="markdown level1 summary"><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> collection in this instance or any of its children with the specified type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1939,7 +2298,7 @@ over the same instance is simpler.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><em>type</em></td>
         <td><p>The type of the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to find.</p>
 </td>
@@ -1968,8 +2327,24 @@ over the same instance is simpler.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Component.html">Component</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Component.html">Component</a>&gt;</td>
         <td><p>The <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> or null if no <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> with the specified type was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -2017,7 +2392,7 @@ over the same instance is simpler.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
         <td><p>The <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> or null if no <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> with the specified type was found.</p>
 </td>
       </tr>
@@ -2039,7 +2414,23 @@ over the same instance is simpler.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Entity_FindComponentsInParents_Type_System_Boolean_System_String_" data-uid="WaveEngine.Framework.Entity.FindComponentsInParents(Type,System.Boolean,System.String)">FindComponentsInParents(Type, Boolean, String)</h4>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_FindComponentsInParents_System_Type_System_Boolean_System_String_" data-uid="WaveEngine.Framework.Entity.FindComponentsInParents(System.Type,System.Boolean,System.String)">FindComponentsInParents(Type, Boolean, String)</h4>
   <div class="markdown level1 summary"><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> collection in this instance or any of its parents with the specified type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2058,7 +2449,7 @@ over the same instance is simpler.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><em>type</em></td>
         <td><p>The type of the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to find.</p>
 </td>
@@ -2087,8 +2478,24 @@ over the same instance is simpler.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Component.html">Component</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Component.html">Component</a>&gt;</td>
         <td><p>The <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> or null if no <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> with the specified type was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -2136,7 +2543,7 @@ over the same instance is simpler.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
         <td><p>The <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> or null if no <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> with the specified type was found.</p>
 </td>
       </tr>
@@ -2154,6 +2561,22 @@ over the same instance is simpler.</p>
       <tr>
         <td><em>T</em></td>
         <td><p>The type of the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to find.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
 </td>
       </tr>
     </tbody>
@@ -2296,11 +2719,11 @@ over the same instance is simpler.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ReattachComponents()</code></pre>
   </div>
-  <h4 id="WaveEngine_Framework_Entity_RemoveAllComponentsOfType_Type_System_Boolean_" data-uid="WaveEngine.Framework.Entity.RemoveAllComponentsOfType(Type,System.Boolean)">RemoveAllComponentsOfType(Type, Boolean)</h4>
+  <h4 id="WaveEngine_Framework_Entity_RemoveAllComponentsOfType_System_Type_System_Boolean_" data-uid="WaveEngine.Framework.Entity.RemoveAllComponentsOfType(System.Type,System.Boolean)">RemoveAllComponentsOfType(Type, Boolean)</h4>
   <div class="markdown level1 summary"><p>Removes all components of specified type from this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 id="WaveEngine_Framework_Entity_RemoveAllComponentsOfType_Type_System_Boolean__remarks">Remarks</h5>
+  <h5 id="WaveEngine_Framework_Entity_RemoveAllComponentsOfType_System_Type_System_Boolean__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The method returns this instance. It can be used
 with method chaining, so performing consecutive operations
 over the same instance is simpler.</p>
@@ -2320,7 +2743,7 @@ over the same instance is simpler.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><em>componentType</em></td>
         <td><p>Type of the component.</p>
 </td>
@@ -2345,6 +2768,29 @@ over the same instance is simpler.</p>
       <tr>
         <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
         <td><p>This instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>The entity is disposed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.NullReferenceException</span></td>
+        <td><p>componentType
+or
+componentType.</p>
 </td>
       </tr>
     </tbody>
@@ -2413,11 +2859,34 @@ over the same instance is simpler.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Entity_RemoveChild_Guid_" data-uid="WaveEngine.Framework.Entity.RemoveChild(Guid)">RemoveChild(Guid)</h4>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>The entity is disposed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.NullReferenceException</span></td>
+        <td><p>componentType
+or
+componentType.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_RemoveChild_System_Guid_" data-uid="WaveEngine.Framework.Entity.RemoveChild(System.Guid)">RemoveChild(Guid)</h4>
   <div class="markdown level1 summary"><p>Removes a child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> from this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 id="WaveEngine_Framework_Entity_RemoveChild_Guid__remarks">Remarks</h5>
+  <h5 id="WaveEngine_Framework_Entity_RemoveChild_System_Guid__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The method returns this instance. It can be used
 with method chaining, so performing consecutive operations
 over the same instance is simpler.</p>
@@ -2437,7 +2906,7 @@ over the same instance is simpler.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Guid</span></td>
+        <td><span class="xref">System.Guid</span></td>
         <td><em>id</em></td>
         <td><p>Id of the child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>.</p>
 </td>
@@ -2456,6 +2925,22 @@ over the same instance is simpler.</p>
       <tr>
         <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
         <td><p>This instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entityName is null or empty.</p>
 </td>
       </tr>
     </tbody>
@@ -2507,6 +2992,22 @@ over the same instance is simpler.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entityName is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Framework_Entity_RemoveChild_WaveEngine_Framework_Entity_" data-uid="WaveEngine.Framework.Entity.RemoveChild(WaveEngine.Framework.Entity)">RemoveChild(Entity)</h4>
   <div class="markdown level1 summary"><p>Removes a child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> from this instance.</p>
 </div>
@@ -2554,11 +3055,27 @@ over the same instance is simpler.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Entity_RemoveComponent_Type_System_Boolean_" data-uid="WaveEngine.Framework.Entity.RemoveComponent(Type,System.Boolean)">RemoveComponent(Type, Boolean)</h4>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entity is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_RemoveComponent_System_Type_System_Boolean_" data-uid="WaveEngine.Framework.Entity.RemoveComponent(System.Type,System.Boolean)">RemoveComponent(Type, Boolean)</h4>
   <div class="markdown level1 summary"><p>Removes a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> from this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 id="WaveEngine_Framework_Entity_RemoveComponent_Type_System_Boolean__remarks">Remarks</h5>
+  <h5 id="WaveEngine_Framework_Entity_RemoveComponent_System_Type_System_Boolean__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The method returns this instance. It can be used
 with method chaining, so performing consecutive operations
 over the same instance is simpler.</p>
@@ -2578,7 +3095,7 @@ over the same instance is simpler.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td><em>componentType</em></td>
         <td><p>Type of the component.</p>
 </td>
@@ -2603,6 +3120,29 @@ over the same instance is simpler.</p>
       <tr>
         <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
         <td><p>This instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>The entity is disposed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.NullReferenceException</span></td>
+        <td><p>componentType
+or
+componentType.</p>
 </td>
       </tr>
     </tbody>
@@ -2650,6 +3190,29 @@ over the same instance is simpler.</p>
       <tr>
         <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
         <td><p>This instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>The entity is disposed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.NullReferenceException</span></td>
+        <td><p>componentType
+or
+componentType.</p>
 </td>
       </tr>
     </tbody>
@@ -2727,7 +3290,7 @@ over the same instance is simpler.</p>
     <pre><code class="lang-csharp hljs">protected override void Start()</code></pre>
   </div>
   <h4 id="WaveEngine_Framework_Entity_ToString" data-uid="WaveEngine.Framework.Entity.ToString">ToString()</h4>
-  <div class="markdown level1 summary"><p>Returns a <see cref="!:System.String"></see> that represents this instance (its name).</p>
+  <div class="markdown level1 summary"><p>Returns a <span class="xref">System.String</span> that represents this instance (its name).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2745,7 +3308,7 @@ over the same instance is simpler.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>A <see cref="!:System.String"></see> that represents this instance (its name).</p>
+        <td><p>A <span class="xref">System.String</span> that represents this instance (its name).</p>
 </td>
       </tr>
     </tbody>
@@ -2796,6 +3359,22 @@ This parameter is passed uninitialized.</p>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><p>true if this <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> contains a child with the specified name; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If the entity name is null.</p>
 </td>
       </tr>
     </tbody>
@@ -2866,7 +3445,7 @@ This parameter is passed uninitialized.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Helpers.ValidNameEventArgs.html">ValidNameEventArgs</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Helpers.ValidNameEventArgs.html">ValidNameEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2889,7 +3468,7 @@ This parameter is passed uninitialized.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2912,7 +3491,7 @@ This parameter is passed uninitialized.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2935,7 +3514,7 @@ This parameter is passed uninitialized.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Component.html">Component</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Component.html">Component</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2958,7 +3537,7 @@ This parameter is passed uninitialized.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Component.html">Component</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Component.html">Component</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -2981,7 +3560,7 @@ This parameter is passed uninitialized.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -3004,7 +3583,7 @@ This parameter is passed uninitialized.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Helpers.NameEventArgs.html">NameEventArgs</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Helpers.NameEventArgs.html">NameEventArgs</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -3015,16 +3594,16 @@ This parameter is passed uninitialized.</p>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="WaveEngine.Framework.Extensions.EntityHierarchyExtensions.html#WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityBefore_WaveEngine_Framework_Entity_System_String_System_String_">EntityHierarchyExtensions.MoveEntityBefore(Entity, String, String)</a>
-  </div>
-  <div>
-      <a class="xref" href="WaveEngine.Framework.Extensions.EntityHierarchyExtensions.html#WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityAfter_WaveEngine_Framework_Entity_System_String_System_String_">EntityHierarchyExtensions.MoveEntityAfter(Entity, String, String)</a>
-  </div>
-  <div>
       <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
   </div>
   <div>
       <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Framework.Extensions.EntityHierarchyExtensions.html#WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityBefore_WaveEngine_Framework_Entity_System_String_System_String_">EntityHierarchyExtensions.MoveEntityBefore(Entity, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Framework.Extensions.EntityHierarchyExtensions.html#WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityAfter_WaveEngine_Framework_Entity_System_String_System_String_">EntityHierarchyExtensions.MoveEntityAfter(Entity, String, String)</a>
   </div>
 </article>
           </div>

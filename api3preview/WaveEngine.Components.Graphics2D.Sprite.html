@@ -168,6 +168,22 @@ See <a class="xref" href="WaveEngine.Components.Graphics2D.Sprite.html#WaveEngin
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Texture can not be null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Components_Graphics2D_Sprite__ctor_WaveEngine_Common_Graphics_Texture_WaveEngine_Common_Graphics_SamplerState_" data-uid="WaveEngine.Components.Graphics2D.Sprite.#ctor(WaveEngine.Common.Graphics.Texture,WaveEngine.Common.Graphics.SamplerState)">Sprite(Texture, SamplerState)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Components.Graphics2D.Sprite.html">Sprite</a> class.</p>
 </div>
@@ -310,7 +326,8 @@ See <a class="xref" href="WaveEngine.Components.Graphics2D.Sprite.html#WaveEngin
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Transform2D Transform2D</code></pre>
+    <pre><code class="lang-csharp hljs">[BindComponent(true, true, BindComponentSource.Owner, null)]
+public Transform2D Transform2D</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -441,7 +458,7 @@ texture&apos;s rectangle) to be drawn.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Rectangle</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="WaveEngine.Mathematics.Rectangle.html">Rectangle</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -553,6 +570,22 @@ By default, it is white.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected void UpdateSourceRectangle()</code></pre>
   </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Sprite has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="events">Events
   </h3>
   <h4 id="events-summary">Summary</h4>
@@ -594,7 +627,7 @@ By default, it is white.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -617,7 +650,7 @@ By default, it is white.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span></td>
+        <td><span class="xref">System.EventHandler</span></td>
         <td></td>
       </tr>
     </tbody>

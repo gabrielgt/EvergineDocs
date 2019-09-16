@@ -90,12 +90,13 @@
       <div class="level0"><span class="xref">System.Object</span></div>
       <div class="level1"><a class="xref" href="WaveEngine.Common.Graphics.GraphicsResource.html">GraphicsResource</a></div>
       <div class="level2"><a class="xref" href="WaveEngine.Common.Graphics.Texture.html">Texture</a></div>
+      <div class="level3"><a class="xref" href="WaveEngine.OpenGL.GLBaseTexture.html">GLBaseTexture</a></div>
       <div class="level"><span class="xref"></span></div>
   </div>
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.OpenGL.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GLTexture : Texture, ILoadable, IDisposable, IDependencyObject</code></pre>
+    <pre><code class="lang-csharp hljs">public class GLTexture : GLBaseTexture, ILoadable, IDisposable, IDependencyObject</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -159,172 +160,6 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="fields">Fields
-  </h3>
-  <h4 id="fields-summary">Summary</h4>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a href="#WaveEngine_OpenGL_GLTexture_Format">Format</a></td>
-        <td><p>The GL Format for this texture, <a class="xref" href="WaveEngine.OpenGL.GLPixelFormat.html">GLPixelFormat</a>.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a href="#WaveEngine_OpenGL_GLTexture_NativeTexture">NativeTexture</a></td>
-        <td><p>The GL native texture.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a href="#WaveEngine_OpenGL_GLTexture_TextureTarget">TextureTarget</a></td>
-        <td><p>The GL Texture Target for this texture.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_OpenGL_GLTexture_Format" data-uid="WaveEngine.OpenGL.GLTexture.Format">Format</h4>
-  <div class="markdown level1 summary"><p>The GL Format for this texture, <a class="xref" href="WaveEngine.OpenGL.GLPixelFormat.html">GLPixelFormat</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GLPixelFormat Format</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="WaveEngine.OpenGL.GLPixelFormat.html">GLPixelFormat</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_OpenGL_GLTexture_NativeTexture" data-uid="WaveEngine.OpenGL.GLTexture.NativeTexture">NativeTexture</h4>
-  <div class="markdown level1 summary"><p>The GL native texture.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public uint NativeTexture</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.UInt32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_OpenGL_GLTexture_TextureTarget" data-uid="WaveEngine.OpenGL.GLTexture.TextureTarget">TextureTarget</h4>
-  <div class="markdown level1 summary"><p>The GL Texture Target for this texture.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TextureTarget TextureTarget</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">TextureTarget</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
-  <h4 id="properties-summary">Summary</h4>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a href="#WaveEngine_OpenGL_GLTexture_Name">Name</a></td>
-        <td><p>Gets or sets a string identifying this instance. Can be used in graphics debuggers tools.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a href="#WaveEngine_OpenGL_GLTexture_NativePointer">NativePointer</a></td>
-        <td><p>Gets the native pointer.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_OpenGL_GLTexture_Name" data-uid="WaveEngine.OpenGL.GLTexture.Name">Name</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a string identifying this instance. Can be used in graphics debuggers tools.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string Name { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_OpenGL_GLTexture_NativePointer" data-uid="WaveEngine.OpenGL.GLTexture.NativePointer">NativePointer</h4>
-  <div class="markdown level1 summary"><p>Gets the native pointer.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override IntPtr NativePointer { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IntPtr</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   <h4 id="methods-summary">Summary</h4>
@@ -347,17 +182,12 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_OpenGL_GLTexture_FromOpenGLTexture_WaveEngine_OpenGL_GLGraphicsContext_System_Int32_TextureTarget_">FromOpenGLTexture(GLGraphicsContext, Int32, TextureTarget)</a></td>
+        <td><a href="#WaveEngine_OpenGL_GLTexture_FromOpenGLTexture_WaveEngine_OpenGL_GLGraphicsContext_System_Int32_WaveEngine_Bindings_OpenGL_TextureTarget_">FromOpenGLTexture(GLGraphicsContext, Int32, TextureTarget)</a></td>
         <td><p>Generate a DXTexture from SharpDX Texture2D.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_OpenGL_GLTexture_HasStencil">HasStencil()</a></td>
-        <td><p>Whether the texture format has stencil.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a href="#WaveEngine_OpenGL_GLTexture_SetData_IntPtr_System_UInt32_System_UInt32_">SetData(IntPtr, UInt32, UInt32)</a></td>
+        <td><a href="#WaveEngine_OpenGL_GLTexture_SetData_System_IntPtr_System_UInt32_System_UInt32_">SetData(IntPtr, UInt32, UInt32)</a></td>
         <td><p>Fill the buffer from a pointer.</p>
 </td>
       </tr>
@@ -481,7 +311,7 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
   </div>
-  <h4 id="WaveEngine_OpenGL_GLTexture_FromOpenGLTexture_WaveEngine_OpenGL_GLGraphicsContext_System_Int32_TextureTarget_" data-uid="WaveEngine.OpenGL.GLTexture.FromOpenGLTexture(WaveEngine.OpenGL.GLGraphicsContext,System.Int32,TextureTarget)">FromOpenGLTexture(GLGraphicsContext, Int32, TextureTarget)</h4>
+  <h4 id="WaveEngine_OpenGL_GLTexture_FromOpenGLTexture_WaveEngine_OpenGL_GLGraphicsContext_System_Int32_WaveEngine_Bindings_OpenGL_TextureTarget_" data-uid="WaveEngine.OpenGL.GLTexture.FromOpenGLTexture(WaveEngine.OpenGL.GLGraphicsContext,System.Int32,WaveEngine.Bindings.OpenGL.TextureTarget)">FromOpenGLTexture(GLGraphicsContext, Int32, TextureTarget)</h4>
   <div class="markdown level1 summary"><p>Generate a DXTexture from SharpDX Texture2D.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -512,7 +342,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">TextureTarget</span></td>
+        <td><span class="xref">WaveEngine.Bindings.OpenGL.TextureTarget</span></td>
         <td><em>textureTarget</em></td>
         <td><p>The specific textureTarget.</p>
 </td>
@@ -535,37 +365,13 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_OpenGL_GLTexture_HasStencil" data-uid="WaveEngine.OpenGL.GLTexture.HasStencil">HasStencil()</h4>
-  <div class="markdown level1 summary"><p>Whether the texture format has stencil.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool HasStencil()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>Return if the texture has stencil.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_OpenGL_GLTexture_SetData_IntPtr_System_UInt32_System_UInt32_" data-uid="WaveEngine.OpenGL.GLTexture.SetData(IntPtr,System.UInt32,System.UInt32)">SetData(IntPtr, UInt32, UInt32)</h4>
+  <h4 id="WaveEngine_OpenGL_GLTexture_SetData_System_IntPtr_System_UInt32_System_UInt32_" data-uid="WaveEngine.OpenGL.GLTexture.SetData(System.IntPtr,System.UInt32,System.UInt32)">SetData(IntPtr, UInt32, UInt32)</h4>
   <div class="markdown level1 summary"><p>Fill the buffer from a pointer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetData(IntPtr source, uint sourceSizeInBytes, uint subResource = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetData(IntPtr source, uint sourceSizeInBytes, uint subResource = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -578,7 +384,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IntPtr</span></td>
+        <td><span class="xref">System.IntPtr</span></td>
         <td><em>source</em></td>
         <td><p>The data pointer.</p>
 </td>
@@ -602,7 +408,7 @@
       <a class="xref" href="WaveEngine.Common.ILoadable.html">ILoadable</a>
   </div>
   <div>
-      <span class="xref">IDisposable</span>
+      <span class="xref">System.IDisposable</span>
   </div>
   <div>
       <a class="xref" href="WaveEngine.Common.IDependencyObject.html">IDependencyObject</a>

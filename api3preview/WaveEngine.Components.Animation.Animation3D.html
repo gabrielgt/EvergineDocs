@@ -212,7 +212,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Transform3D transform3D</code></pre>
+    <pre><code class="lang-csharp hljs">[BindComponent(true, true, BindComponentSource.Owner, null)]
+protected Transform3D transform3D</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -340,7 +341,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>The animation names.</p>
 </td>
       </tr>
@@ -743,7 +744,7 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Components_Animation_Animation3D_Update_TimeSpan_">Update(TimeSpan)</a></td>
+        <td><a href="#WaveEngine_Components_Animation_Animation3D_Update_System_TimeSpan_">Update(TimeSpan)</a></td>
         <td><p>Updates the animation.</p>
 </td>
       </tr>
@@ -821,7 +822,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void PlayAnimation(string name, bool loop = true, float transitionTime = null, float playbackRate = null, float? startTime = null, float? endTime = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public void PlayAnimation(string name, bool loop = true, float transitionTime = 0F, float playbackRate = 1F, float? startTime = default(float? ), float? endTime = default(float? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -877,7 +878,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void PlayAnimation(string name, int? startTime, int? endTime, bool loop = true, float playbackRate = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public void PlayAnimation(string name, int? startTime, int? endTime, bool loop = true, float playbackRate = 1F)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -927,7 +928,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void PlayAnimation(AnimationBlendClip clip, float transitionTime = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public void PlayAnimation(AnimationBlendClip clip, float transitionTime = 0F)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -969,7 +970,7 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void StopAnimation()</code></pre>
   </div>
-  <h4 id="WaveEngine_Components_Animation_Animation3D_Update_TimeSpan_" data-uid="WaveEngine.Components.Animation.Animation3D.Update(TimeSpan)">Update(TimeSpan)</h4>
+  <h4 id="WaveEngine_Components_Animation_Animation3D_Update_System_TimeSpan_" data-uid="WaveEngine.Components.Animation.Animation3D.Update(System.TimeSpan)">Update(TimeSpan)</h4>
   <div class="markdown level1 summary"><p>Updates the animation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -988,7 +989,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="xref">System.TimeSpan</span></td>
         <td><em>gameTime</em></td>
         <td><p>The game time.</p>
 </td>
@@ -1036,7 +1037,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Animation.AnimationSample.html">AnimationSample</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Animation.AnimationSample.html">AnimationSample</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1059,7 +1060,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Animation.AnimationKeyframeEvent.html">AnimationKeyframeEvent</a>&gt;</td>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Animation.AnimationKeyframeEvent.html">AnimationKeyframeEvent</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
