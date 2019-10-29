@@ -111,19 +111,19 @@ This object describes the inputs from a single vertex buffer.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Common_Graphics_LayoutDescription__ctor_System_Int32_">LayoutDescription(Int32)</a></td>
+        <td><a href="#WaveEngine_Common_Graphics_LayoutDescription__ctor_WaveEngine_Common_Graphics_VertexStepFunction_System_UInt32_">LayoutDescription(VertexStepFunction, UInt32)</a></td>
         <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.LayoutDescription.html">LayoutDescription</a> class.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Common_Graphics_LayoutDescription__ctor_System_Int32_" data-uid="WaveEngine.Common.Graphics.LayoutDescription.#ctor(System.Int32)">LayoutDescription(Int32)</h4>
+  <h4 id="WaveEngine_Common_Graphics_LayoutDescription__ctor_WaveEngine_Common_Graphics_VertexStepFunction_System_UInt32_" data-uid="WaveEngine.Common.Graphics.LayoutDescription.#ctor(WaveEngine.Common.Graphics.VertexStepFunction,System.UInt32)">LayoutDescription(VertexStepFunction, UInt32)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.LayoutDescription.html">LayoutDescription</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LayoutDescription(int stepRate = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public LayoutDescription(VertexStepFunction stepFunction = VertexStepFunction.PerVertexData, uint stepRate = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -136,7 +136,13 @@ This object describes the inputs from a single vertex buffer.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.VertexStepFunction.html">VertexStepFunction</a></td>
+        <td><em>stepFunction</em></td>
+        <td><p>The frequency with which the vertex function fetches attributes data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
         <td><em>stepRate</em></td>
         <td><p>The number of instances to draw using the same per-instance data before advancing in
 the buffer by one element. This value must be 0 for an element that contains per-vertex data.</p>
@@ -158,6 +164,11 @@ the buffer by one element. This value must be 0 for an element that contains per
       <tr>
         <td><a href="#WaveEngine_Common_Graphics_LayoutDescription_Elements">Elements</a></td>
         <td><p>The collection of individual vertex elements comprising a single vertex.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_Graphics_LayoutDescription_StepFunction">StepFunction</a></td>
+        <td><p>The frequency with which the vertex function fetches attributes data.</p>
 </td>
       </tr>
       <tr>
@@ -192,6 +203,29 @@ should be 0.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="WaveEngine.Common.Graphics.ElementDescription.html">ElementDescription</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_Graphics_LayoutDescription_StepFunction" data-uid="WaveEngine.Common.Graphics.LayoutDescription.StepFunction">StepFunction</h4>
+  <div class="markdown level1 summary"><p>The frequency with which the vertex function fetches attributes data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VertexStepFunction StepFunction</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.VertexStepFunction.html">VertexStepFunction</a></td>
         <td></td>
       </tr>
     </tbody>

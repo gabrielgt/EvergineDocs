@@ -367,7 +367,7 @@ in the <see pref="ObjectGraph"></see>.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Managers_EntityManager_FindFirstComponentOfType__1_System_Boolean_">FindFirstComponentOfType&lt;T&gt;(Boolean)</a></td>
+        <td><a href="#WaveEngine_Framework_Managers_EntityManager_FindFirstComponentOfType__1_System_Boolean_System_String_">FindFirstComponentOfType&lt;T&gt;(Boolean, String)</a></td>
         <td><p>Iterate through the entire entity hierarchy and return the first component instance of the specified type.</p>
 </td>
       </tr>
@@ -1136,16 +1136,16 @@ in the <see pref="EntityGraph"></see>.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Managers_EntityManager_FindFirstComponentOfType__1_System_Boolean_" data-uid="WaveEngine.Framework.Managers.EntityManager.FindFirstComponentOfType``1(System.Boolean)">FindFirstComponentOfType&lt;T&gt;(Boolean)</h4>
+  <h4 id="WaveEngine_Framework_Managers_EntityManager_FindFirstComponentOfType__1_System_Boolean_System_String_" data-uid="WaveEngine.Framework.Managers.EntityManager.FindFirstComponentOfType``1(System.Boolean,System.String)">FindFirstComponentOfType&lt;T&gt;(Boolean, String)</h4>
   <div class="markdown level1 summary"><p>Iterate through the entire entity hierarchy and return the first component instance of the specified type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 id="WaveEngine_Framework_Managers_EntityManager_FindFirstComponentOfType__1_System_Boolean__remarks">Remarks</h5>
+  <h5 id="WaveEngine_Framework_Managers_EntityManager_FindFirstComponentOfType__1_System_Boolean_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method is extremely low, try to not use inside an Update method.</p>
 </div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T FindFirstComponentOfType&lt;T&gt;(bool isExactType = true)
+    <pre><code class="lang-csharp hljs">public T FindFirstComponentOfType&lt;T&gt;(bool isExactType = true, string tag = null)
     where T : Component</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1162,6 +1162,12 @@ in the <see pref="EntityGraph"></see>.</p>
         <td><span class="xref">System.Boolean</span></td>
         <td><em>isExactType</em></td>
         <td><p>if set to <code>true</code> [is exact type].</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>tag</em></td>
+        <td><p>Filter entities by this tag.</p>
 </td>
       </tr>
     </tbody>

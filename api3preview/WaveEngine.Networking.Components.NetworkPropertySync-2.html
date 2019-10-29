@@ -100,7 +100,7 @@ This class simplifies the access to the property value with the methods
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.Networking.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class NetworkPropertySync&lt;K, V&gt; : Component, IDependencyObject, IDisposable where K : struct, IConvertible</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class NetworkPropertySync&lt;K, V&gt; : Component, IDependencyObject where K : struct, IConvertible</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -207,6 +207,11 @@ This class simplifies the access to the property value with the methods
 </td>
       </tr>
       <tr>
+        <td><a href="#WaveEngine_Networking_Components_NetworkPropertySync_2_IsLocalPlayerProvider">IsLocalPlayerProvider</a></td>
+        <td><p>Gets a value indicating whether the custom property comes from the local player <a class="xref" href="WaveEngine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a>.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_Networking_Components_NetworkPropertySync_2_IsReady">IsReady</a></td>
         <td><p>Gets a value indicating whether this instance is ready to synchronize the property value.</p>
 </td>
@@ -241,6 +246,29 @@ the resolution of dependencies.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool HasValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Networking_Components_NetworkPropertySync_2_IsLocalPlayerProvider" data-uid="WaveEngine.Networking.Components.NetworkPropertySync`2.IsLocalPlayerProvider">IsLocalPlayerProvider</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the custom property comes from the local player <a class="xref" href="WaveEngine.Networking.NetworkPropertiesTable.html">NetworkPropertiesTable</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLocalPlayerProvider { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -387,12 +415,18 @@ public NetworkPropertyProviderFilter ProviderFilter { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Networking_Components_NetworkPropertySync_2_Dispose">Dispose()</a></td>
-        <td></td>
+        <td><a href="#WaveEngine_Networking_Components_NetworkPropertySync_2_OnActivated">OnActivated()</a></td>
+        <td><p>Invoked when the object is activated once is attached.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Networking_Components_NetworkPropertySync_2_OnAttached">OnAttached()</a></td>
         <td><p>Invoked when the object is attached to the system.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Networking_Components_NetworkPropertySync_2_OnDeactivated">OnDeactivated()</a></td>
+        <td><p>Invoked when the object is deactivated.</p>
 </td>
       </tr>
       <tr>
@@ -403,6 +437,11 @@ public NetworkPropertyProviderFilter ProviderFilter { get; set; }</code></pre>
       <tr>
         <td><a href="#WaveEngine_Networking_Components_NetworkPropertySync_2_OnPropertyAddedOrChanged">OnPropertyAddedOrChanged()</a></td>
         <td><p>Called every time a value with the target property key is added or modified.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Networking_Components_NetworkPropertySync_2_OnPropertyReadyToSet">OnPropertyReadyToSet()</a></td>
+        <td><p>Called every time the target property is ready to be set.</p>
 </td>
       </tr>
       <tr>
@@ -422,12 +461,13 @@ public NetworkPropertyProviderFilter ProviderFilter { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Networking_Components_NetworkPropertySync_2_Dispose" data-uid="WaveEngine.Networking.Components.NetworkPropertySync`2.Dispose">Dispose()</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="WaveEngine_Networking_Components_NetworkPropertySync_2_OnActivated" data-uid="WaveEngine.Networking.Components.NetworkPropertySync`2.OnActivated">OnActivated()</h4>
+  <div class="markdown level1 summary"><p>Invoked when the object is activated once is attached.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void Dispose()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void OnActivated()</code></pre>
   </div>
   <h4 id="WaveEngine_Networking_Components_NetworkPropertySync_2_OnAttached" data-uid="WaveEngine.Networking.Components.NetworkPropertySync`2.OnAttached">OnAttached()</h4>
   <div class="markdown level1 summary"><p>Invoked when the object is attached to the system.</p>
@@ -453,6 +493,14 @@ public NetworkPropertyProviderFilter ProviderFilter { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_Networking_Components_NetworkPropertySync_2_OnDeactivated" data-uid="WaveEngine.Networking.Components.NetworkPropertySync`2.OnDeactivated">OnDeactivated()</h4>
+  <div class="markdown level1 summary"><p>Invoked when the object is deactivated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDeactivated()</code></pre>
+  </div>
   <h4 id="WaveEngine_Networking_Components_NetworkPropertySync_2_OnDetach" data-uid="WaveEngine.Networking.Components.NetworkPropertySync`2.OnDetach">OnDetach()</h4>
   <div class="markdown level1 summary"><p>Invoked when the object is detached.</p>
 </div>
@@ -468,6 +516,14 @@ public NetworkPropertyProviderFilter ProviderFilter { get; set; }</code></pre>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected abstract void OnPropertyAddedOrChanged()</code></pre>
+  </div>
+  <h4 id="WaveEngine_Networking_Components_NetworkPropertySync_2_OnPropertyReadyToSet" data-uid="WaveEngine.Networking.Components.NetworkPropertySync`2.OnPropertyReadyToSet">OnPropertyReadyToSet()</h4>
+  <div class="markdown level1 summary"><p>Called every time the target property is ready to be set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnPropertyReadyToSet()</code></pre>
   </div>
   <h4 id="WaveEngine_Networking_Components_NetworkPropertySync_2_OnPropertyRemoved" data-uid="WaveEngine.Networking.Components.NetworkPropertySync`2.OnPropertyRemoved">OnPropertyRemoved()</h4>
   <div class="markdown level1 summary"><p>Called every time a value with the target property key is removed.</p>
@@ -551,53 +607,9 @@ public NetworkPropertyProviderFilter ProviderFilter { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
-  <h3 id="events">Events
-  </h3>
-  <h4 id="events-summary">Summary</h4>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a href="#WaveEngine_Networking_Components_NetworkPropertySync_2_IsReadyChanged">IsReadyChanged</a></td>
-        <td><p>Occurs when the property <a class="xref" href="WaveEngine.Networking.Components.NetworkPropertySync-2.html#WaveEngine_Networking_Components_NetworkPropertySync_2_IsReady">IsReady</a> has changed.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_Networking_Components_NetworkPropertySync_2_IsReadyChanged" data-uid="WaveEngine.Networking.Components.NetworkPropertySync`2.IsReadyChanged">IsReadyChanged</h4>
-  <div class="markdown level1 summary"><p>Occurs when the property <a class="xref" href="WaveEngine.Networking.Components.NetworkPropertySync-2.html#WaveEngine_Networking_Components_NetworkPropertySync_2_IsReady">IsReady</a> has changed.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event EventHandler IsReadyChanged</code></pre>
-  </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.EventHandler</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="WaveEngine.Common.IDependencyObject.html">IDependencyObject</a>
-  </div>
-  <div>
-      <span class="xref">System.IDisposable</span>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
