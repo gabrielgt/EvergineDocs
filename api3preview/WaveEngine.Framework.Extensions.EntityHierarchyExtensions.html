@@ -107,28 +107,28 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityAfter_WaveEngine_Framework_Entity_System_String_System_String_">MoveEntityAfter(Entity, String, String)</a></td>
+        <td><a href="#WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityAfter_WaveEngine_Framework_Entity_System_Guid_System_Nullable_System_Guid__">MoveEntityAfter(Entity, Guid, Nullable&lt;Guid&gt;)</a></td>
         <td><p>Moves the source entity after the target entity in the child list.
 Both entities must be children of this entity.
 If target entity name is null the source entity will be moved to the start.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityAfter_WaveEngine_Framework_Managers_EntityManager_System_String_System_String_">MoveEntityAfter(EntityManager, String, String)</a></td>
+        <td><a href="#WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityAfter_WaveEngine_Framework_Managers_EntityManager_System_Guid_System_Nullable_System_Guid__">MoveEntityAfter(EntityManager, Guid, Nullable&lt;Guid&gt;)</a></td>
         <td><p>Moves the source entity after the target entity in the child list.
 Both entities must be children of this entity.
 If target entity name is null the source entity will be moved to the start.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityBefore_WaveEngine_Framework_Entity_System_String_System_String_">MoveEntityBefore(Entity, String, String)</a></td>
+        <td><a href="#WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityBefore_WaveEngine_Framework_Entity_System_Guid_System_Nullable_System_Guid__">MoveEntityBefore(Entity, Guid, Nullable&lt;Guid&gt;)</a></td>
         <td><p>Moves the source entity before the target entity in the child list.
 Both entities must be children of this entity.
 If target entity name is null the source entity will be moved to the end.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityBefore_WaveEngine_Framework_Managers_EntityManager_System_String_System_String_">MoveEntityBefore(EntityManager, String, String)</a></td>
+        <td><a href="#WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityBefore_WaveEngine_Framework_Managers_EntityManager_System_Guid_System_Nullable_System_Guid__">MoveEntityBefore(EntityManager, Guid, Nullable&lt;Guid&gt;)</a></td>
         <td><p>Moves the source entity before the target entity in the child list.
 Both entities must be children of this entity.
 If target entity name is null the source entity will be moved to the end.</p>
@@ -136,7 +136,7 @@ If target entity name is null the source entity will be moved to the end.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityAfter_WaveEngine_Framework_Entity_System_String_System_String_" data-uid="WaveEngine.Framework.Extensions.EntityHierarchyExtensions.MoveEntityAfter(WaveEngine.Framework.Entity,System.String,System.String)">MoveEntityAfter(Entity, String, String)</h4>
+  <h4 id="WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityAfter_WaveEngine_Framework_Entity_System_Guid_System_Nullable_System_Guid__" data-uid="WaveEngine.Framework.Extensions.EntityHierarchyExtensions.MoveEntityAfter(WaveEngine.Framework.Entity,System.Guid,System.Nullable{System.Guid})">MoveEntityAfter(Entity, Guid, Nullable&lt;Guid&gt;)</h4>
   <div class="markdown level1 summary"><p>Moves the source entity after the target entity in the child list.
 Both entities must be children of this entity.
 If target entity name is null the source entity will be moved to the start.</p>
@@ -144,7 +144,7 @@ If target entity name is null the source entity will be moved to the start.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void MoveEntityAfter(this Entity entity, string sourceChildName, string targetChildName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void MoveEntityAfter(this Entity entity, Guid sourceChildId, Guid? targetChildId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -163,20 +163,20 @@ If target entity name is null the source entity will be moved to the start.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><em>sourceChildName</em></td>
-        <td><p>The name of the child entity used as source in the move operation.</p>
+        <td><span class="xref">System.Guid</span></td>
+        <td><em>sourceChildId</em></td>
+        <td><p>The id of the child entity used as source in the move operation.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><em>targetChildName</em></td>
-        <td><p>The name of the child entity used as target in the move operation.</p>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Guid</span>&gt;</td>
+        <td><em>targetChildId</em></td>
+        <td><p>The id of the child entity used as target in the move operation.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityAfter_WaveEngine_Framework_Managers_EntityManager_System_String_System_String_" data-uid="WaveEngine.Framework.Extensions.EntityHierarchyExtensions.MoveEntityAfter(WaveEngine.Framework.Managers.EntityManager,System.String,System.String)">MoveEntityAfter(EntityManager, String, String)</h4>
+  <h4 id="WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityAfter_WaveEngine_Framework_Managers_EntityManager_System_Guid_System_Nullable_System_Guid__" data-uid="WaveEngine.Framework.Extensions.EntityHierarchyExtensions.MoveEntityAfter(WaveEngine.Framework.Managers.EntityManager,System.Guid,System.Nullable{System.Guid})">MoveEntityAfter(EntityManager, Guid, Nullable&lt;Guid&gt;)</h4>
   <div class="markdown level1 summary"><p>Moves the source entity after the target entity in the child list.
 Both entities must be children of this entity.
 If target entity name is null the source entity will be moved to the start.</p>
@@ -184,7 +184,7 @@ If target entity name is null the source entity will be moved to the start.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void MoveEntityAfter(this EntityManager entityManager, string sourceChildName, string targetChildName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void MoveEntityAfter(this EntityManager entityManager, Guid sourceChildId, Guid? targetChildId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -203,20 +203,20 @@ If target entity name is null the source entity will be moved to the start.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><em>sourceChildName</em></td>
-        <td><p>The name of the child entity used as source in the move operation.</p>
+        <td><span class="xref">System.Guid</span></td>
+        <td><em>sourceChildId</em></td>
+        <td><p>The id of the child entity used as source in the move operation.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><em>targetChildName</em></td>
-        <td><p>The name of the child entity used as target in the move operation.</p>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Guid</span>&gt;</td>
+        <td><em>targetChildId</em></td>
+        <td><p>The id of the child entity used as target in the move operation.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityBefore_WaveEngine_Framework_Entity_System_String_System_String_" data-uid="WaveEngine.Framework.Extensions.EntityHierarchyExtensions.MoveEntityBefore(WaveEngine.Framework.Entity,System.String,System.String)">MoveEntityBefore(Entity, String, String)</h4>
+  <h4 id="WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityBefore_WaveEngine_Framework_Entity_System_Guid_System_Nullable_System_Guid__" data-uid="WaveEngine.Framework.Extensions.EntityHierarchyExtensions.MoveEntityBefore(WaveEngine.Framework.Entity,System.Guid,System.Nullable{System.Guid})">MoveEntityBefore(Entity, Guid, Nullable&lt;Guid&gt;)</h4>
   <div class="markdown level1 summary"><p>Moves the source entity before the target entity in the child list.
 Both entities must be children of this entity.
 If target entity name is null the source entity will be moved to the end.</p>
@@ -224,7 +224,7 @@ If target entity name is null the source entity will be moved to the end.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void MoveEntityBefore(this Entity entity, string sourceChildName, string targetChildName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void MoveEntityBefore(this Entity entity, Guid sourceChildId, Guid? targetChildId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -243,20 +243,20 @@ If target entity name is null the source entity will be moved to the end.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><em>sourceChildName</em></td>
-        <td><p>The name of the child entity used as source in the move operation.</p>
+        <td><span class="xref">System.Guid</span></td>
+        <td><em>sourceChildId</em></td>
+        <td><p>The id of the child entity used as source in the move operation.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><em>targetChildName</em></td>
-        <td><p>The name of the child entity used as target in the move operation.</p>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Guid</span>&gt;</td>
+        <td><em>targetChildId</em></td>
+        <td><p>The id of the child entity used as target in the move operation.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityBefore_WaveEngine_Framework_Managers_EntityManager_System_String_System_String_" data-uid="WaveEngine.Framework.Extensions.EntityHierarchyExtensions.MoveEntityBefore(WaveEngine.Framework.Managers.EntityManager,System.String,System.String)">MoveEntityBefore(EntityManager, String, String)</h4>
+  <h4 id="WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityBefore_WaveEngine_Framework_Managers_EntityManager_System_Guid_System_Nullable_System_Guid__" data-uid="WaveEngine.Framework.Extensions.EntityHierarchyExtensions.MoveEntityBefore(WaveEngine.Framework.Managers.EntityManager,System.Guid,System.Nullable{System.Guid})">MoveEntityBefore(EntityManager, Guid, Nullable&lt;Guid&gt;)</h4>
   <div class="markdown level1 summary"><p>Moves the source entity before the target entity in the child list.
 Both entities must be children of this entity.
 If target entity name is null the source entity will be moved to the end.</p>
@@ -264,7 +264,7 @@ If target entity name is null the source entity will be moved to the end.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void MoveEntityBefore(this EntityManager entityManager, string sourceChildName, string targetChildName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void MoveEntityBefore(this EntityManager entityManager, Guid sourceChildId, Guid? targetChildId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -283,15 +283,15 @@ If target entity name is null the source entity will be moved to the end.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><em>sourceChildName</em></td>
-        <td><p>The name of the child entity used as source in the move operation.</p>
+        <td><span class="xref">System.Guid</span></td>
+        <td><em>sourceChildId</em></td>
+        <td><p>The id of the child entity used as source in the move operation.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><em>targetChildName</em></td>
-        <td><p>The name of the child entity used as target in the move operation.</p>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Guid</span>&gt;</td>
+        <td><em>targetChildId</em></td>
+        <td><p>The id of the child entity used as target in the move operation.</p>
 </td>
       </tr>
     </tbody>

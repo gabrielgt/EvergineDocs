@@ -1,0 +1,2677 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Request
+   | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Request
+   | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DryIoc.Request">
+  
+  <h1 id="DryIoc_Request" data-uid="DryIoc.Request" class="xk-margin-default">Class Request
+  </h1>
+  <div class="markdown level0 summary"><p>Tracks the requested service and resolved factory details in a chain of nested dependencies.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+      <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level"><span class="xref"></span></div>
+  </div>
+  <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Request : IEnumerable&lt;Request&gt;, IEnumerable</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="fields-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#DryIoc_Request_Container">Container</a></td>
+        <td><p>Available in runtime only, provides access to container initiated the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_DependencyDepth">DependencyDepth</a></td>
+        <td><p>Number of nested dependencies. Set with each new Push.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_DirectParent">DirectParent</a></td>
+        <td><p>Request immediate parent.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_Empty">Empty</a></td>
+        <td><p>Empty terminal request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_EmptyOpensResolutionScope">EmptyOpensResolutionScope</a></td>
+        <td><p>Empty request which opens resolution scope.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_Flags">Flags</a></td>
+        <td><p>Persisted request conditions</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_Container" data-uid="DryIoc.Request.Container">Container</h4>
+  <div class="markdown level1 summary"><p>Available in runtime only, provides access to container initiated the request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IContainer Container</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_DependencyDepth" data-uid="DryIoc.Request.DependencyDepth">DependencyDepth</h4>
+  <div class="markdown level1 summary"><p>Number of nested dependencies. Set with each new Push.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DependencyDepth</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_DirectParent" data-uid="DryIoc.Request.DirectParent">DirectParent</h4>
+  <div class="markdown level1 summary"><p>Request immediate parent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Request DirectParent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.Request.html">Request</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_Empty" data-uid="DryIoc.Request.Empty">Empty</h4>
+  <div class="markdown level1 summary"><p>Empty terminal request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Request Empty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.Request.html">Request</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_EmptyOpensResolutionScope" data-uid="DryIoc.Request.EmptyOpensResolutionScope">EmptyOpensResolutionScope</h4>
+  <div class="markdown level1 summary"><p>Empty request which opens resolution scope.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Request EmptyOpensResolutionScope</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.Request.html">Request</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_Flags" data-uid="DryIoc.Request.Flags">Flags</h4>
+  <div class="markdown level1 summary"><p>Persisted request conditions</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RequestFlags Flags</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.RequestFlags.html">RequestFlags</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <h4 id="properties-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#DryIoc_Request_CurrentScope">CurrentScope</a></td>
+        <td><p>Current scope</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_DecoratedFactoryID">DecoratedFactoryID</a></td>
+        <td><p>ID of decorated factory in case of decorator factory type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_FactoryID">FactoryID</a></td>
+        <td><p>Resolved factory ID, used to identify applied decorator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_FactoryType">FactoryType</a></td>
+        <td><p>Type of factory: Service, Wrapper, or Decorator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_IfUnresolved">IfUnresolved</a></td>
+        <td><p>Policy to deal with unresolved service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_ImplementationType">ImplementationType</a></td>
+        <td><p>Service implementation type if known.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_IsEmpty">IsEmpty</a></td>
+        <td><p>Indicates that request is empty initial request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_IsNestedResolutionCall">IsNestedResolutionCall</a></td>
+        <td><p>Not the root resolution call.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_IsResolutionCall">IsResolutionCall</a></td>
+        <td><p>Returns true if request is First in Resolve call.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_IsResolutionRoot">IsResolutionRoot</a></td>
+        <td><p>Returns true if request is First in First Resolve call.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_IsSingletonOrDependencyOfSingleton">IsSingletonOrDependencyOfSingleton</a></td>
+        <td><p>Indicates the request is singleton or has singleton upper in dependency chain.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_Made">Made</a></td>
+        <td><p>(optional) Made spec used for resolving request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_Metadata">Metadata</a></td>
+        <td><p>Metadata or the value (if key specified) to find in resolved service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_MetadataKey">MetadataKey</a></td>
+        <td><p>Metadata key to find in metadata dictionary in resolved service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_OpensResolutionScope">OpensResolutionScope</a></td>
+        <td><p>Returns true if request is First in First Resolve call.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_Parent">Parent</a></td>
+        <td><p>Returns service parent skipping wrapper if any. To get direct parent use <a class="xref" href="DryIoc.Request.html#DryIoc_Request_DirectParent">DirectParent</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_RequiredServiceType">RequiredServiceType</a></td>
+        <td><p>Required service type if specified.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_Reuse">Reuse</a></td>
+        <td><p>Service reuse.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_ReuseLifespan">ReuseLifespan</a></td>
+        <td><p>Relative number representing reuse lifespan.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_Rules">Rules</a></td>
+        <td><p>Shortcut to issued container rules.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_ServiceKey">ServiceKey</a></td>
+        <td><p>Optional service key to identify service of the same type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_ServiceType">ServiceType</a></td>
+        <td><p>Requested service type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_SingletonScope">SingletonScope</a></td>
+        <td><p>Singletons</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_TracksTransientDisposable">TracksTransientDisposable</a></td>
+        <td><p>Indicates that requested service is transient disposable that should be tracked.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_CurrentScope" data-uid="DryIoc.Request.CurrentScope">CurrentScope</h4>
+  <div class="markdown level1 summary"><p>Current scope</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IScope CurrentScope { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IScope.html">IScope</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_DecoratedFactoryID" data-uid="DryIoc.Request.DecoratedFactoryID">DecoratedFactoryID</h4>
+  <div class="markdown level1 summary"><p>ID of decorated factory in case of decorator factory type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DecoratedFactoryID { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_FactoryID" data-uid="DryIoc.Request.FactoryID">FactoryID</h4>
+  <div class="markdown level1 summary"><p>Resolved factory ID, used to identify applied decorator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FactoryID { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_FactoryType" data-uid="DryIoc.Request.FactoryType">FactoryType</h4>
+  <div class="markdown level1 summary"><p>Type of factory: Service, Wrapper, or Decorator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FactoryType FactoryType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.FactoryType.html">FactoryType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_IfUnresolved" data-uid="DryIoc.Request.IfUnresolved">IfUnresolved</h4>
+  <div class="markdown level1 summary"><p>Policy to deal with unresolved service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IfUnresolved IfUnresolved { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IfUnresolved.html">IfUnresolved</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_ImplementationType" data-uid="DryIoc.Request.ImplementationType">ImplementationType</h4>
+  <div class="markdown level1 summary"><p>Service implementation type if known.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type ImplementationType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_IsEmpty" data-uid="DryIoc.Request.IsEmpty">IsEmpty</h4>
+  <div class="markdown level1 summary"><p>Indicates that request is empty initial request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_IsNestedResolutionCall" data-uid="DryIoc.Request.IsNestedResolutionCall">IsNestedResolutionCall</h4>
+  <div class="markdown level1 summary"><p>Not the root resolution call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNestedResolutionCall { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_IsResolutionCall" data-uid="DryIoc.Request.IsResolutionCall">IsResolutionCall</h4>
+  <div class="markdown level1 summary"><p>Returns true if request is First in Resolve call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsResolutionCall { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_IsResolutionRoot" data-uid="DryIoc.Request.IsResolutionRoot">IsResolutionRoot</h4>
+  <div class="markdown level1 summary"><p>Returns true if request is First in First Resolve call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsResolutionRoot { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_IsSingletonOrDependencyOfSingleton" data-uid="DryIoc.Request.IsSingletonOrDependencyOfSingleton">IsSingletonOrDependencyOfSingleton</h4>
+  <div class="markdown level1 summary"><p>Indicates the request is singleton or has singleton upper in dependency chain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSingletonOrDependencyOfSingleton { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_Made" data-uid="DryIoc.Request.Made">Made</h4>
+  <div class="markdown level1 summary"><p>(optional) Made spec used for resolving request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Made Made { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.Made.html">Made</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_Metadata" data-uid="DryIoc.Request.Metadata">Metadata</h4>
+  <div class="markdown level1 summary"><p>Metadata or the value (if key specified) to find in resolved service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Metadata { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_MetadataKey" data-uid="DryIoc.Request.MetadataKey">MetadataKey</h4>
+  <div class="markdown level1 summary"><p>Metadata key to find in metadata dictionary in resolved service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string MetadataKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_OpensResolutionScope" data-uid="DryIoc.Request.OpensResolutionScope">OpensResolutionScope</h4>
+  <div class="markdown level1 summary"><p>Returns true if request is First in First Resolve call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OpensResolutionScope { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_Parent" data-uid="DryIoc.Request.Parent">Parent</h4>
+  <div class="markdown level1 summary"><p>Returns service parent skipping wrapper if any. To get direct parent use <a class="xref" href="DryIoc.Request.html#DryIoc_Request_DirectParent">DirectParent</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Request Parent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.Request.html">Request</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_RequiredServiceType" data-uid="DryIoc.Request.RequiredServiceType">RequiredServiceType</h4>
+  <div class="markdown level1 summary"><p>Required service type if specified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type RequiredServiceType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_Reuse" data-uid="DryIoc.Request.Reuse">Reuse</h4>
+  <div class="markdown level1 summary"><p>Service reuse.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReuse Reuse { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IReuse.html">IReuse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_ReuseLifespan" data-uid="DryIoc.Request.ReuseLifespan">ReuseLifespan</h4>
+  <div class="markdown level1 summary"><p>Relative number representing reuse lifespan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ReuseLifespan { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_Rules" data-uid="DryIoc.Request.Rules">Rules</h4>
+  <div class="markdown level1 summary"><p>Shortcut to issued container rules.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rules Rules { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.Rules.html">Rules</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_ServiceKey" data-uid="DryIoc.Request.ServiceKey">ServiceKey</h4>
+  <div class="markdown level1 summary"><p>Optional service key to identify service of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object ServiceKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_ServiceType" data-uid="DryIoc.Request.ServiceType">ServiceType</h4>
+  <div class="markdown level1 summary"><p>Requested service type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type ServiceType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_SingletonScope" data-uid="DryIoc.Request.SingletonScope">SingletonScope</h4>
+  <div class="markdown level1 summary"><p>Singletons</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IScope SingletonScope { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IScope.html">IScope</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_TracksTransientDisposable" data-uid="DryIoc.Request.TracksTransientDisposable">TracksTransientDisposable</h4>
+  <div class="markdown level1 summary"><p>Indicates that requested service is transient disposable that should be tracked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TracksTransientDisposable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <h4 id="methods-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#DryIoc_Request_ChangeServiceKey_System_Object_">ChangeServiceKey(Object)</a></td>
+        <td><p>Sets service key to passed value. Required for multiple default services to change null key to
+actual <a class="xref" href="DryIoc.DefaultKey.html">DefaultKey</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_Create_DryIoc_IContainer_DryIoc_IServiceInfo_DryIoc_Request_DryIoc_RequestFlags_System_Object___">Create(IContainer, IServiceInfo, Request, RequestFlags, Object[])</a></td>
+        <td><p>Creates the Resolve request. The container initiated the Resolve is stored with request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_Create_DryIoc_IContainer_System_Type_System_Object_DryIoc_IfUnresolved_System_Type_DryIoc_Request_DryIoc_RequestFlags_System_Object___">Create(IContainer, Type, Object, IfUnresolved, Type, Request, RequestFlags, Object[])</a></td>
+        <td><p>Creates the Resolve request. The container initiated the Resolve is stored with request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_Enumerate">Enumerate()</a></td>
+        <td><p>Obsolete: now request is directly implements the <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_Equals_DryIoc_Request_">Equals(Request)</a></td>
+        <td><p>Returns true if request info and passed info are equal, and their parents recursively are equal.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_Equals_System_Object_">Equals(Object)</a></td>
+        <td><p>Returns true if request info and passed object are equal, and their parents recursively are equal.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_EqualsWithoutParent_DryIoc_Request_">EqualsWithoutParent(Request)</a></td>
+        <td><p>Compares self properties but not the parents.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_GetActualServiceType">GetActualServiceType()</a></td>
+        <td><p>Compatible required or service type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_GetEnumerator">GetEnumerator()</a></td>
+        <td><p>Enumerates self and all request stack parents.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_GetHashCode">GetHashCode()</a></td>
+        <td><p>Calculates the combined hash code based on factory IDs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_GetInputArgsExpr">GetInputArgsExpr()</a></td>
+        <td><p>Returns expression for func arguments.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_GetKnownImplementationOrServiceType">GetKnownImplementationOrServiceType()</a></td>
+        <td><p>Known implementation, or otherwise actual service type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_HasRecursiveParent_System_Int32_">HasRecursiveParent(Int32)</a></td>
+        <td><p>Check for the parents.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_Is__1_System_Func___0__System_Func_System_Reflection_ParameterInfo___0__System_Func_System_Reflection_PropertyInfo___0__System_Func_System_Reflection_FieldInfo___0__">Is&lt;TResult&gt;(Func&lt;TResult&gt;, Func&lt;ParameterInfo, TResult&gt;, Func&lt;PropertyInfo, TResult&gt;, Func&lt;FieldInfo, TResult&gt;)</a></td>
+        <td><p>If request corresponds to dependency injected into parameter,
+then method calls <code data-dev-comment-type="paramref" class="paramref">parameter</code> handling and returns its result.
+If request corresponds to property or field, then method calls respective handler.
+If request does not correspond to dependency, then calls <code data-dev-comment-type="paramref" class="paramref">root</code> handler.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_IsDirectlyWrappedInFunc">IsDirectlyWrappedInFunc()</a></td>
+        <td><p>Checks if the request is directly wrapped in Func</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_IsWrappedInFunc">IsWrappedInFunc()</a></td>
+        <td><p>Checks if the request Or its parent is wrapped in Func.
+Use <a class="xref" href="DryIoc.Request.html#DryIoc_Request_IsDirectlyWrappedInFunc">IsDirectlyWrappedInFunc()</a> for the direct Func wrapper.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_IsWrappedInFuncWithArgs">IsWrappedInFuncWithArgs()</a></td>
+        <td><p>Checks if request has parent with service type of Func with arguments.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_Print_System_Int32_">Print(Int32)</a></td>
+        <td><p>Prints full stack of requests starting from current one using <a class="xref" href="DryIoc.Request.html#DryIoc_Request_PrintCurrent_System_Text_StringBuilder_">PrintCurrent(StringBuilder)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_PrintCurrent_System_Text_StringBuilder_">PrintCurrent(StringBuilder)</a></td>
+        <td><p>Prints current request info only (no parents printed) to provided builder.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_Push_DryIoc_IServiceInfo_DryIoc_RequestFlags_">Push(IServiceInfo, RequestFlags)</a></td>
+        <td><p>Creates new request with provided info, and links current request as a parent.
+Allows to set some additional flags. Existing/parent request should be resolved to 
+factory via <code>WithResolvedFactory</code> before pushing info into it.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_Push_System_Type_System_Int32_System_Type_DryIoc_IReuse_">Push(Type, Int32, Type, IReuse)</a></td>
+        <td><p>Creates info by supplying all the properties and chaining it with current (parent) info.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_Push_System_Type_System_Object_DryIoc_IfUnresolved_System_Type_DryIoc_RequestFlags_">Push(Type, Object, IfUnresolved, Type, RequestFlags)</a></td>
+        <td><p>Composes service description into <a class="xref" href="DryIoc.IServiceInfo.html">IServiceInfo</a> and Pushes the new request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_Push_System_Type_System_Type_System_Object_DryIoc_IfUnresolved_System_Int32_DryIoc_FactoryType_System_Type_DryIoc_IReuse_DryIoc_RequestFlags_System_Int32_">Push(Type, Type, Object, IfUnresolved, Int32, FactoryType, Type, IReuse, RequestFlags, Int32)</a></td>
+        <td><p>Creates info by supplying all the properties and chaining it with current (parent) info.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_Push_System_Type_System_Type_System_Object_System_Int32_DryIoc_FactoryType_System_Type_DryIoc_IReuse_DryIoc_RequestFlags_">Push(Type, Type, Object, Int32, FactoryType, Type, IReuse, RequestFlags)</a></td>
+        <td><p>Creates info by supplying all the properties and chaining it with current (parent) info.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_Push_System_Type_System_Type_System_Object_System_String_System_Object_DryIoc_IfUnresolved_System_Int32_DryIoc_FactoryType_System_Type_DryIoc_IReuse_DryIoc_RequestFlags_System_Int32_">Push(Type, Type, Object, String, Object, IfUnresolved, Int32, FactoryType, Type, IReuse, RequestFlags, Int32)</a></td>
+        <td><p>Creates info by supplying all the properties and chaining it with current (parent) info.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_ShouldSplitObjectGraph">ShouldSplitObjectGraph()</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_ToString">ToString()</a></td>
+        <td><p>Prints whole request chain.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_WithChangedServiceInfo_System_Func_DryIoc_IServiceInfo_DryIoc_IServiceInfo__">WithChangedServiceInfo(Func&lt;IServiceInfo, IServiceInfo&gt;)</a></td>
+        <td><p>Allow to switch current service info to the new one, e.g. in decorators.
+If info did not change then return the same this request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_WithFlags_DryIoc_RequestFlags_">WithFlags(RequestFlags)</a></td>
+        <td><p>Updates the flags</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_WithIfUnresolved_DryIoc_IfUnresolved_">WithIfUnresolved(IfUnresolved)</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_WithInputArgs_FastExpressionCompiler_LightExpression_Expression___">WithInputArgs(Expression[])</a></td>
+        <td><p>Prepends input arguments to existing arguments in request. It is done because the
+nested Func/Action input argument has a priority over outer argument.
+The arguments are provided by Func and Action wrappers, or by <code>args</code> parameter in Resolve call.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Request_WithResolvedFactory_DryIoc_Factory_System_Boolean_System_Boolean_System_Boolean_">WithResolvedFactory(Factory, Boolean, Boolean, Boolean)</a></td>
+        <td><p>Returns new request with set implementation details.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_ChangeServiceKey_System_Object_" data-uid="DryIoc.Request.ChangeServiceKey(System.Object)">ChangeServiceKey(Object)</h4>
+  <div class="markdown level1 summary"><p>Sets service key to passed value. Required for multiple default services to change null key to
+actual <a class="xref" href="DryIoc.DefaultKey.html">DefaultKey</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangeServiceKey(object serviceKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_Create_DryIoc_IContainer_DryIoc_IServiceInfo_DryIoc_Request_DryIoc_RequestFlags_System_Object___" data-uid="DryIoc.Request.Create(DryIoc.IContainer,DryIoc.IServiceInfo,DryIoc.Request,DryIoc.RequestFlags,System.Object[])">Create(IContainer, IServiceInfo, Request, RequestFlags, Object[])</h4>
+  <div class="markdown level1 summary"><p>Creates the Resolve request. The container initiated the Resolve is stored with request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Request Create(IContainer container, IServiceInfo serviceInfo, Request preResolveParent = null, RequestFlags flags = default(RequestFlags), object[] inputArgs = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.IServiceInfo.html">IServiceInfo</a></td>
+        <td><em>serviceInfo</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.Request.html">Request</a></td>
+        <td><em>preResolveParent</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.RequestFlags.html">RequestFlags</a></td>
+        <td><em>flags</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><em>inputArgs</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.Request.html">Request</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_Create_DryIoc_IContainer_System_Type_System_Object_DryIoc_IfUnresolved_System_Type_DryIoc_Request_DryIoc_RequestFlags_System_Object___" data-uid="DryIoc.Request.Create(DryIoc.IContainer,System.Type,System.Object,DryIoc.IfUnresolved,System.Type,DryIoc.Request,DryIoc.RequestFlags,System.Object[])">Create(IContainer, Type, Object, IfUnresolved, Type, Request, RequestFlags, Object[])</h4>
+  <div class="markdown level1 summary"><p>Creates the Resolve request. The container initiated the Resolve is stored with request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Request Create(IContainer container, Type serviceType, object serviceKey = null, IfUnresolved ifUnresolved = IfUnresolved.Throw, Type requiredServiceType = null, Request preResolveParent = null, RequestFlags flags = default(RequestFlags), object[] inputArgs = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>serviceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.IfUnresolved.html">IfUnresolved</a></td>
+        <td><em>ifUnresolved</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>requiredServiceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.Request.html">Request</a></td>
+        <td><em>preResolveParent</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.RequestFlags.html">RequestFlags</a></td>
+        <td><em>flags</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><em>inputArgs</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.Request.html">Request</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_Enumerate" data-uid="DryIoc.Request.Enumerate">Enumerate()</h4>
+  <div class="markdown level1 summary"><p>Obsolete: now request is directly implements the <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Request&gt; Enumerate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="DryIoc.Request.html">Request</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_Equals_DryIoc_Request_" data-uid="DryIoc.Request.Equals(DryIoc.Request)">Equals(Request)</h4>
+  <div class="markdown level1 summary"><p>Returns true if request info and passed info are equal, and their parents recursively are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Request other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.Request.html">Request</a></td>
+        <td><em>other</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_Equals_System_Object_" data-uid="DryIoc.Request.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Returns true if request info and passed object are equal, and their parents recursively are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>obj</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_EqualsWithoutParent_DryIoc_Request_" data-uid="DryIoc.Request.EqualsWithoutParent(DryIoc.Request)">EqualsWithoutParent(Request)</h4>
+  <div class="markdown level1 summary"><p>Compares self properties but not the parents.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EqualsWithoutParent(Request other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.Request.html">Request</a></td>
+        <td><em>other</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_GetActualServiceType" data-uid="DryIoc.Request.GetActualServiceType">GetActualServiceType()</h4>
+  <div class="markdown level1 summary"><p>Compatible required or service type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type GetActualServiceType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_GetEnumerator" data-uid="DryIoc.Request.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Enumerates self and all request stack parents.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;Request&gt; GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<a class="xref" href="DryIoc.Request.html">Request</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_GetHashCode" data-uid="DryIoc.Request.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Calculates the combined hash code based on factory IDs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_GetInputArgsExpr" data-uid="DryIoc.Request.GetInputArgsExpr">GetInputArgsExpr()</h4>
+  <div class="markdown level1 summary"><p>Returns expression for func arguments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Expression GetInputArgsExpr()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastExpressionCompiler.LightExpression.Expression.html">Expression</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_GetKnownImplementationOrServiceType" data-uid="DryIoc.Request.GetKnownImplementationOrServiceType">GetKnownImplementationOrServiceType()</h4>
+  <div class="markdown level1 summary"><p>Known implementation, or otherwise actual service type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type GetKnownImplementationOrServiceType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_HasRecursiveParent_System_Int32_" data-uid="DryIoc.Request.HasRecursiveParent(System.Int32)">HasRecursiveParent(Int32)</h4>
+  <div class="markdown level1 summary"><p>Check for the parents.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasRecursiveParent(int factoryID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>factoryID</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_Is__1_System_Func___0__System_Func_System_Reflection_ParameterInfo___0__System_Func_System_Reflection_PropertyInfo___0__System_Func_System_Reflection_FieldInfo___0__" data-uid="DryIoc.Request.Is``1(System.Func{``0},System.Func{System.Reflection.ParameterInfo,``0},System.Func{System.Reflection.PropertyInfo,``0},System.Func{System.Reflection.FieldInfo,``0})">Is&lt;TResult&gt;(Func&lt;TResult&gt;, Func&lt;ParameterInfo, TResult&gt;, Func&lt;PropertyInfo, TResult&gt;, Func&lt;FieldInfo, TResult&gt;)</h4>
+  <div class="markdown level1 summary"><p>If request corresponds to dependency injected into parameter,
+then method calls <code data-dev-comment-type="paramref" class="paramref">parameter</code> handling and returns its result.
+If request corresponds to property or field, then method calls respective handler.
+If request does not correspond to dependency, then calls <code data-dev-comment-type="paramref" class="paramref">root</code> handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TResult Is&lt;TResult&gt;(Func&lt;TResult&gt; root = null, Func&lt;ParameterInfo, TResult&gt; parameter = null, Func&lt;PropertyInfo, TResult&gt; property = null, Func&lt;FieldInfo, TResult&gt; field = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TResult&gt;</td>
+        <td><em>root</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Reflection.ParameterInfo</span>, TResult&gt;</td>
+        <td><em>parameter</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Reflection.PropertyInfo</span>, TResult&gt;</td>
+        <td><em>property</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Reflection.FieldInfo</span>, TResult&gt;</td>
+        <td><em>field</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>TResult</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_IsDirectlyWrappedInFunc" data-uid="DryIoc.Request.IsDirectlyWrappedInFunc">IsDirectlyWrappedInFunc()</h4>
+  <div class="markdown level1 summary"><p>Checks if the request is directly wrapped in Func</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDirectlyWrappedInFunc()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_IsWrappedInFunc" data-uid="DryIoc.Request.IsWrappedInFunc">IsWrappedInFunc()</h4>
+  <div class="markdown level1 summary"><p>Checks if the request Or its parent is wrapped in Func.
+Use <a class="xref" href="DryIoc.Request.html#DryIoc_Request_IsDirectlyWrappedInFunc">IsDirectlyWrappedInFunc()</a> for the direct Func wrapper.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsWrappedInFunc()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_IsWrappedInFuncWithArgs" data-uid="DryIoc.Request.IsWrappedInFuncWithArgs">IsWrappedInFuncWithArgs()</h4>
+  <div class="markdown level1 summary"><p>Checks if request has parent with service type of Func with arguments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsWrappedInFuncWithArgs()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_Print_System_Int32_" data-uid="DryIoc.Request.Print(System.Int32)">Print(Int32)</h4>
+  <div class="markdown level1 summary"><p>Prints full stack of requests starting from current one using <a class="xref" href="DryIoc.Request.html#DryIoc_Request_PrintCurrent_System_Text_StringBuilder_">PrintCurrent(StringBuilder)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringBuilder Print(int recursiveFactoryID = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>recursiveFactoryID</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Text.StringBuilder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_PrintCurrent_System_Text_StringBuilder_" data-uid="DryIoc.Request.PrintCurrent(System.Text.StringBuilder)">PrintCurrent(StringBuilder)</h4>
+  <div class="markdown level1 summary"><p>Prints current request info only (no parents printed) to provided builder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringBuilder PrintCurrent(StringBuilder s = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Text.StringBuilder</span></td>
+        <td><em>s</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Text.StringBuilder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_Push_DryIoc_IServiceInfo_DryIoc_RequestFlags_" data-uid="DryIoc.Request.Push(DryIoc.IServiceInfo,DryIoc.RequestFlags)">Push(IServiceInfo, RequestFlags)</h4>
+  <div class="markdown level1 summary"><p>Creates new request with provided info, and links current request as a parent.
+Allows to set some additional flags. Existing/parent request should be resolved to 
+factory via <code>WithResolvedFactory</code> before pushing info into it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Request Push(IServiceInfo info, RequestFlags additionalFlags = default(RequestFlags))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IServiceInfo.html">IServiceInfo</a></td>
+        <td><em>info</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.RequestFlags.html">RequestFlags</a></td>
+        <td><em>additionalFlags</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.Request.html">Request</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_Push_System_Type_System_Int32_System_Type_DryIoc_IReuse_" data-uid="DryIoc.Request.Push(System.Type,System.Int32,System.Type,DryIoc.IReuse)">Push(Type, Int32, Type, IReuse)</h4>
+  <div class="markdown level1 summary"><p>Creates info by supplying all the properties and chaining it with current (parent) info.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Request Push(Type serviceType, int factoryID, Type implementationType, IReuse reuse)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>serviceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>factoryID</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>implementationType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.IReuse.html">IReuse</a></td>
+        <td><em>reuse</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.Request.html">Request</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_Push_System_Type_System_Object_DryIoc_IfUnresolved_System_Type_DryIoc_RequestFlags_" data-uid="DryIoc.Request.Push(System.Type,System.Object,DryIoc.IfUnresolved,System.Type,DryIoc.RequestFlags)">Push(Type, Object, IfUnresolved, Type, RequestFlags)</h4>
+  <div class="markdown level1 summary"><p>Composes service description into <a class="xref" href="DryIoc.IServiceInfo.html">IServiceInfo</a> and Pushes the new request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Request Push(Type serviceType, object serviceKey = null, IfUnresolved ifUnresolved = IfUnresolved.Throw, Type requiredServiceType = null, RequestFlags flags = default(RequestFlags))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>serviceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.IfUnresolved.html">IfUnresolved</a></td>
+        <td><em>ifUnresolved</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>requiredServiceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.RequestFlags.html">RequestFlags</a></td>
+        <td><em>flags</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.Request.html">Request</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_Push_System_Type_System_Type_System_Object_DryIoc_IfUnresolved_System_Int32_DryIoc_FactoryType_System_Type_DryIoc_IReuse_DryIoc_RequestFlags_System_Int32_" data-uid="DryIoc.Request.Push(System.Type,System.Type,System.Object,DryIoc.IfUnresolved,System.Int32,DryIoc.FactoryType,System.Type,DryIoc.IReuse,DryIoc.RequestFlags,System.Int32)">Push(Type, Type, Object, IfUnresolved, Int32, FactoryType, Type, IReuse, RequestFlags, Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates info by supplying all the properties and chaining it with current (parent) info.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Request Push(Type serviceType, Type requiredServiceType, object serviceKey, IfUnresolved ifUnresolved, int factoryID, FactoryType factoryType, Type implementationType, IReuse reuse, RequestFlags flags, int decoratedFactoryID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>serviceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>requiredServiceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.IfUnresolved.html">IfUnresolved</a></td>
+        <td><em>ifUnresolved</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>factoryID</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.FactoryType.html">FactoryType</a></td>
+        <td><em>factoryType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>implementationType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.IReuse.html">IReuse</a></td>
+        <td><em>reuse</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.RequestFlags.html">RequestFlags</a></td>
+        <td><em>flags</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>decoratedFactoryID</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.Request.html">Request</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_Push_System_Type_System_Type_System_Object_System_Int32_DryIoc_FactoryType_System_Type_DryIoc_IReuse_DryIoc_RequestFlags_" data-uid="DryIoc.Request.Push(System.Type,System.Type,System.Object,System.Int32,DryIoc.FactoryType,System.Type,DryIoc.IReuse,DryIoc.RequestFlags)">Push(Type, Type, Object, Int32, FactoryType, Type, IReuse, RequestFlags)</h4>
+  <div class="markdown level1 summary"><p>Creates info by supplying all the properties and chaining it with current (parent) info.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Request Push(Type serviceType, Type requiredServiceType, object serviceKey, int factoryID, FactoryType factoryType, Type implementationType, IReuse reuse, RequestFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>serviceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>requiredServiceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>factoryID</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.FactoryType.html">FactoryType</a></td>
+        <td><em>factoryType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>implementationType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.IReuse.html">IReuse</a></td>
+        <td><em>reuse</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.RequestFlags.html">RequestFlags</a></td>
+        <td><em>flags</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.Request.html">Request</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_Push_System_Type_System_Type_System_Object_System_String_System_Object_DryIoc_IfUnresolved_System_Int32_DryIoc_FactoryType_System_Type_DryIoc_IReuse_DryIoc_RequestFlags_System_Int32_" data-uid="DryIoc.Request.Push(System.Type,System.Type,System.Object,System.String,System.Object,DryIoc.IfUnresolved,System.Int32,DryIoc.FactoryType,System.Type,DryIoc.IReuse,DryIoc.RequestFlags,System.Int32)">Push(Type, Type, Object, String, Object, IfUnresolved, Int32, FactoryType, Type, IReuse, RequestFlags, Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates info by supplying all the properties and chaining it with current (parent) info.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Request Push(Type serviceType, Type requiredServiceType, object serviceKey, string metadataKey, object metadata, IfUnresolved ifUnresolved, int factoryID, FactoryType factoryType, Type implementationType, IReuse reuse, RequestFlags flags, int decoratedFactoryID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>serviceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>requiredServiceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>metadataKey</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>metadata</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.IfUnresolved.html">IfUnresolved</a></td>
+        <td><em>ifUnresolved</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>factoryID</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.FactoryType.html">FactoryType</a></td>
+        <td><em>factoryType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>implementationType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.IReuse.html">IReuse</a></td>
+        <td><em>reuse</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.RequestFlags.html">RequestFlags</a></td>
+        <td><em>flags</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>decoratedFactoryID</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.Request.html">Request</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_ShouldSplitObjectGraph" data-uid="DryIoc.Request.ShouldSplitObjectGraph">ShouldSplitObjectGraph()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShouldSplitObjectGraph()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_ToString" data-uid="DryIoc.Request.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Prints whole request chain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_WithChangedServiceInfo_System_Func_DryIoc_IServiceInfo_DryIoc_IServiceInfo__" data-uid="DryIoc.Request.WithChangedServiceInfo(System.Func{DryIoc.IServiceInfo,DryIoc.IServiceInfo})">WithChangedServiceInfo(Func&lt;IServiceInfo, IServiceInfo&gt;)</h4>
+  <div class="markdown level1 summary"><p>Allow to switch current service info to the new one, e.g. in decorators.
+If info did not change then return the same this request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Request WithChangedServiceInfo(Func&lt;IServiceInfo, IServiceInfo&gt; getInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="DryIoc.IServiceInfo.html">IServiceInfo</a>, <a class="xref" href="DryIoc.IServiceInfo.html">IServiceInfo</a>&gt;</td>
+        <td><em>getInfo</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.Request.html">Request</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_WithFlags_DryIoc_RequestFlags_" data-uid="DryIoc.Request.WithFlags(DryIoc.RequestFlags)">WithFlags(RequestFlags)</h4>
+  <div class="markdown level1 summary"><p>Updates the flags</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Request WithFlags(RequestFlags newFlags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.RequestFlags.html">RequestFlags</a></td>
+        <td><em>newFlags</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.Request.html">Request</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_WithIfUnresolved_DryIoc_IfUnresolved_" data-uid="DryIoc.Request.WithIfUnresolved(DryIoc.IfUnresolved)">WithIfUnresolved(IfUnresolved)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Request WithIfUnresolved(IfUnresolved ifUnresolved)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IfUnresolved.html">IfUnresolved</a></td>
+        <td><em>ifUnresolved</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.Request.html">Request</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_WithInputArgs_FastExpressionCompiler_LightExpression_Expression___" data-uid="DryIoc.Request.WithInputArgs(FastExpressionCompiler.LightExpression.Expression[])">WithInputArgs(Expression[])</h4>
+  <div class="markdown level1 summary"><p>Prepends input arguments to existing arguments in request. It is done because the
+nested Func/Action input argument has a priority over outer argument.
+The arguments are provided by Func and Action wrappers, or by <code>args</code> parameter in Resolve call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Request WithInputArgs(Expression[] inputArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastExpressionCompiler.LightExpression.Expression.html">Expression</a>[]</td>
+        <td><em>inputArgs</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.Request.html">Request</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_WithResolvedFactory_DryIoc_Factory_System_Boolean_System_Boolean_System_Boolean_" data-uid="DryIoc.Request.WithResolvedFactory(DryIoc.Factory,System.Boolean,System.Boolean,System.Boolean)">WithResolvedFactory(Factory, Boolean, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Returns new request with set implementation details.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Request WithResolvedFactory(Factory factory, bool skipRecursiveDependencyCheck = false, bool skipCaptiveDependencyCheck = false, bool copyRequest = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.Factory.html">Factory</a></td>
+        <td><em>factory</em></td>
+        <td><p>Factory to which request is resolved.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>skipRecursiveDependencyCheck</em></td>
+        <td><p>(optional) does not check for recursive dependency.
+Use with caution. Make sense for Resolution expression.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>skipCaptiveDependencyCheck</em></td>
+        <td><p>(optional) allows to skip reuse mismatch aka captive dependency check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>copyRequest</em></td>
+        <td><p>Make a defensive copy of request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.Request.html">Request</a></td>
+        <td><p>New request with set factory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <h4 id="eii-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#DryIoc_Request_System_Collections_IEnumerable_GetEnumerator">IEnumerable.GetEnumerator()</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Request_System_Collections_IEnumerable_GetEnumerator" data-uid="DryIoc.Request.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Registrator.html#DryIoc_Registrator_ToFactoryDelegate_System_Object_DryIoc_IResolverContext_">Registrator.ToFactoryDelegate(Object, IResolverContext)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Throw.html#DryIoc_Throw_ThrowIf__1___0_System_Boolean_System_Int32_System_Object_System_Object_System_Object_">Throw.ThrowIf&lt;T&gt;(T, Boolean, Int32, Object, Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Throw.html#DryIoc_Throw_ThrowIfNull__1___0_System_Int32_System_Object_System_Object_System_Object_System_Object_">Throw.ThrowIfNull&lt;T&gt;(T, Int32, Object, Object, Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Throw.html#DryIoc_Throw_ThrowIfNotInstanceOf__1___0_System_Type_System_Int32_System_Object_System_Object_">Throw.ThrowIfNotInstanceOf&lt;T&gt;(T, Type, Int32, Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.ThrowInGeneratedCode.html#DryIoc_ThrowInGeneratedCode_WeakRefReuseWrapperGCed_System_Object_">ThrowInGeneratedCode.WeakRefReuseWrapperGCed(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__2___0_System_Func___0___1__">Fun.To&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__3___0___1_System_Func___0___1___2__">Fun.To&lt;T, S, R&gt;(T, S, Func&lt;T, S, R&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__1_System_Object_">Fun.To&lt;R&gt;(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_Do__1___0_System_Action___0__">Fun.Do&lt;T&gt;(T, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_Do__2___0___1_System_Action___0___1__">Fun.Do&lt;T, S&gt;(T, S, Action&lt;T, S&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_ToFunc__2___1___0_">Fun.ToFunc&lt;T, R&gt;(R, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ArrayTools.html#ImTools_ArrayTools_One__1___0_">ArrayTools.One&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ArrayTools.html#ImTools_ArrayTools_ToArrayOrSelf__1_System_Collections_Generic_IEnumerable___0__">ArrayTools.ToArrayOrSelf&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ArrayTools.html#ImTools_ArrayTools_ToListOrSelf__1_System_Collections_Generic_IEnumerable___0__">ArrayTools.ToListOrSelf&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ArrayTools.html#ImTools_ArrayTools_Append__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__">ArrayTools.Append&lt;T&gt;(IEnumerable&lt;T&gt;, IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ArrayTools.html#ImTools_ArrayTools_FindFirst__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__">ArrayTools.FindFirst&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, Boolean&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ArrayTools.html#ImTools_ArrayTools_SingleOrDefaultIfMany__1_System_Collections_Generic_IEnumerable___0__">ArrayTools.SingleOrDefaultIfMany&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ArrayTools.html#ImTools_ArrayTools_Map__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__">ArrayTools.Map&lt;T, R&gt;(IEnumerable&lt;T&gt;, Func&lt;T, R&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ArrayTools.html#ImTools_ArrayTools_Match__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__">ArrayTools.Match&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, Boolean&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ArrayTools.html#ImTools_ArrayTools_Match__2_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__System_Func___0___1__">ArrayTools.Match&lt;T, R&gt;(IEnumerable&lt;T&gt;, Func&lt;T, Boolean&gt;, Func&lt;T, R&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.KeyValuePair.html#ImTools_KeyValuePair_Pair__2___0___1_">KeyValuePair.Pair&lt;K, V&gt;(K, V)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ImList.html#ImTools_ImList_ToImList__1_System_Collections_Generic_IEnumerable___0__">ImList.ToImList&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ImList.html#ImTools_ImList_List__1___0_">ImList.List&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ImList.html#ImTools_ImList_List__1___0_ImTools_ImList___0__">ImList.List&lt;T&gt;(T, ImList&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FastExpressionCompiler.LightExpression.CodePrinter.html#FastExpressionCompiler_LightExpression_CodePrinter_ToCommaSeparatedCode_System_Collections_IEnumerable_System_Func_System_Object_System_String__">CodePrinter.ToCommaSeparatedCode(IEnumerable, Func&lt;Object, String&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FastExpressionCompiler.LightExpression.CodePrinter.html#FastExpressionCompiler_LightExpression_CodePrinter_ToArrayInitializerCode_System_Collections_IEnumerable_System_Type_System_Func_System_Object_System_String__">CodePrinter.ToArrayInitializerCode(IEnumerable, Type, Func&lt;Object, String&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FastExpressionCompiler.LightExpression.CodePrinter.html#FastExpressionCompiler_LightExpression_CodePrinter_ToCode_System_Object_System_Func_System_Object_System_String__">CodePrinter.ToCode(Object, Func&lt;Object, String&gt;)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

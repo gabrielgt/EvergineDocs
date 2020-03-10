@@ -88,12 +88,13 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
       <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level1"><a class="xref" href="WaveEngine.Framework.DisposableObject.html">DisposableObject</a></div>
       <div class="level"><span class="xref"></span></div>
   </div>
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class RenderPipeline : IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class RenderPipeline : DisposableObject, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -133,6 +134,11 @@
     </thead>
     <tbody>
       <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderPipeline_AdditionalEffectDirectives">AdditionalEffectDirectives</a></td>
+        <td><p>Gets the additional effects directives specified by this pipeline.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_Framework_Graphics_RenderPipeline_DefaultRenderPath">DefaultRenderPath</a></td>
         <td><p>Gets the default render path.</p>
 </td>
@@ -146,6 +152,29 @@
         <td><a href="#WaveEngine_Framework_Graphics_RenderPipeline_SupportedRenderPaths">SupportedRenderPaths</a></td>
         <td><p>Gets the supported render path.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_RenderPipeline_AdditionalEffectDirectives" data-uid="WaveEngine.Framework.Graphics.RenderPipeline.AdditionalEffectDirectives">AdditionalEffectDirectives</h4>
+  <div class="markdown level1 summary"><p>Gets the additional effects directives specified by this pipeline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string[] AdditionalEffectDirectives { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -250,19 +279,8 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_RenderPipeline_Dispose">Dispose()</a></td>
-        <td><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_RenderPipeline_Dispose_System_Boolean_">Dispose(Boolean)</a></td>
-        <td><p>Dispose this render pipeline.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_RenderPipeline_Finalize">Finalize()</a></td>
-        <td><p>Finalizes an instance of the <a class="xref" href="WaveEngine.Framework.Graphics.RenderPipeline.html">RenderPipeline</a> class.
-<a class="xref" href="WaveEngine.Framework.Graphics.RenderPipeline.html">RenderPipeline</a> is reclaimed by garbage collection.</p>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderPipeline_Destroy">Destroy()</a></td>
+        <td><p>Destroy all resources of this instance.</p>
 </td>
       </tr>
       <tr>
@@ -411,48 +429,13 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Graphics_RenderPipeline_Dispose" data-uid="WaveEngine.Framework.Graphics.RenderPipeline.Dispose">Dispose()</h4>
-  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+  <h4 id="WaveEngine_Framework_Graphics_RenderPipeline_Destroy" data-uid="WaveEngine.Framework.Graphics.RenderPipeline.Destroy">Destroy()</h4>
+  <div class="markdown level1 summary"><p>Destroy all resources of this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
-  </div>
-  <h4 id="WaveEngine_Framework_Graphics_RenderPipeline_Dispose_System_Boolean_" data-uid="WaveEngine.Framework.Graphics.RenderPipeline.Dispose(System.Boolean)">Dispose(Boolean)</h4>
-  <div class="markdown level1 summary"><p>Dispose this render pipeline.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><em>disposing</em></td>
-        <td><p>Dispose native resources.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_Framework_Graphics_RenderPipeline_Finalize" data-uid="WaveEngine.Framework.Graphics.RenderPipeline.Finalize">Finalize()</h4>
-  <div class="markdown level1 summary"><p>Finalizes an instance of the <a class="xref" href="WaveEngine.Framework.Graphics.RenderPipeline.html">RenderPipeline</a> class.
-<a class="xref" href="WaveEngine.Framework.Graphics.RenderPipeline.html">RenderPipeline</a> is reclaimed by garbage collection.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void Destroy()</code></pre>
   </div>
   <h4 id="WaveEngine_Framework_Graphics_RenderPipeline_FireOnCameraRender_WaveEngine_Framework_Graphics_DrawContext_" data-uid="WaveEngine.Framework.Graphics.RenderPipeline.FireOnCameraRender(WaveEngine.Framework.Graphics.DrawContext)">FireOnCameraRender(DrawContext)</h4>
   <div class="markdown level1 summary"><p>Fire on camera render event.</p>
@@ -593,7 +576,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True if has been removed susscessfully.</p>
+        <td><p>True if has been removed successfully.</p>
 </td>
       </tr>
     </tbody>
@@ -731,6 +714,54 @@
   </div>
   <div>
       <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Registrator.html#DryIoc_Registrator_ToFactoryDelegate_System_Object_DryIoc_IResolverContext_">Registrator.ToFactoryDelegate(Object, IResolverContext)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Throw.html#DryIoc_Throw_ThrowIf__1___0_System_Boolean_System_Int32_System_Object_System_Object_System_Object_">Throw.ThrowIf&lt;T&gt;(T, Boolean, Int32, Object, Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Throw.html#DryIoc_Throw_ThrowIfNull__1___0_System_Int32_System_Object_System_Object_System_Object_System_Object_">Throw.ThrowIfNull&lt;T&gt;(T, Int32, Object, Object, Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Throw.html#DryIoc_Throw_ThrowIfNotInstanceOf__1___0_System_Type_System_Int32_System_Object_System_Object_">Throw.ThrowIfNotInstanceOf&lt;T&gt;(T, Type, Int32, Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.ThrowInGeneratedCode.html#DryIoc_ThrowInGeneratedCode_WeakRefReuseWrapperGCed_System_Object_">ThrowInGeneratedCode.WeakRefReuseWrapperGCed(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__2___0_System_Func___0___1__">Fun.To&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__3___0___1_System_Func___0___1___2__">Fun.To&lt;T, S, R&gt;(T, S, Func&lt;T, S, R&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__1_System_Object_">Fun.To&lt;R&gt;(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_Do__1___0_System_Action___0__">Fun.Do&lt;T&gt;(T, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_Do__2___0___1_System_Action___0___1__">Fun.Do&lt;T, S&gt;(T, S, Action&lt;T, S&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_ToFunc__2___1___0_">Fun.ToFunc&lt;T, R&gt;(R, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ArrayTools.html#ImTools_ArrayTools_One__1___0_">ArrayTools.One&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.KeyValuePair.html#ImTools_KeyValuePair_Pair__2___0___1_">KeyValuePair.Pair&lt;K, V&gt;(K, V)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ImList.html#ImTools_ImList_List__1___0_">ImList.List&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ImList.html#ImTools_ImList_List__1___0_ImTools_ImList___0__">ImList.List&lt;T&gt;(T, ImList&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FastExpressionCompiler.LightExpression.CodePrinter.html#FastExpressionCompiler_LightExpression_CodePrinter_ToCode_System_Object_System_Func_System_Object_System_String__">CodePrinter.ToCode(Object, Func&lt;Object, String&gt;)</a>
   </div>
 </article>
           </div>

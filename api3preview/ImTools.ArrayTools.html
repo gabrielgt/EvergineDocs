@@ -1,0 +1,2200 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ArrayTools
+   | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ArrayTools
+   | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ImTools.ArrayTools">
+  
+  <h1 id="ImTools_ArrayTools" data-uid="ImTools.ArrayTools" class="xk-margin-default">Class ArrayTools
+  </h1>
+  <div class="markdown level0 summary"><p>Methods to work with immutable arrays and some sugar.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+      <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level"><span class="xref"></span></div>
+  </div>
+  <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ArrayTools</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <h4 id="methods-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_Append__1___0_____0___">Append&lt;T&gt;(T[], T[])</a></td>
+        <td><p>Returns new array consisting from all items from source array then all items from added array.
+If source is null or empty, then added array will be returned.
+If added is null or empty, then source will be returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_Append__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__">Append&lt;T&gt;(IEnumerable&lt;T&gt;, IEnumerable&lt;T&gt;)</a></td>
+        <td><p>Performant concat of enumerables in case of arrays.
+But performance will degrade if you use Concat().Where().</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_AppendOrUpdate__1___0_____0_System_Int32_">AppendOrUpdate&lt;T&gt;(T[], T, Int32)</a></td>
+        <td><p>Returns new array with <code data-dev-comment-type="paramref" class="paramref">value</code> appended, 
+or <code data-dev-comment-type="paramref" class="paramref">value</code> at <code data-dev-comment-type="paramref" class="paramref">index</code>, if specified.
+If source array could be null or empty, then single value item array will be created despite any index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_AppendTo__1___0___System_Int32_System_Int32___0___">AppendTo&lt;T&gt;(T[], Int32, Int32, T[])</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_Copy__1___0___">Copy&lt;T&gt;(T[])</a></td>
+        <td><p>Array copy</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_Empty__1">Empty&lt;T&gt;()</a></td>
+        <td><p>Returns singleton empty array of provided type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_EmptyIfNull__1___0___">EmptyIfNull&lt;T&gt;(T[])</a></td>
+        <td><p>Returns empty array instead of null, or source array otherwise.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_FindFirst__1___0___System_Func___0_System_Boolean__">FindFirst&lt;T&gt;(T[], Func&lt;T, Boolean&gt;)</a></td>
+        <td><p>Returns first item matching the <code data-dev-comment-type="paramref" class="paramref">predicate</code>, or default item value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_FindFirst__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__">FindFirst&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, Boolean&gt;)</a></td>
+        <td><p>Returns first item matching the <code data-dev-comment-type="paramref" class="paramref">predicate</code>, or default item value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_FindFirst__2___0_____1_System_Func___1___0_System_Boolean__">FindFirst&lt;T, S&gt;(T[], S, Func&lt;S, T, Boolean&gt;)</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_ForEach__1___0___System_Action___0__">ForEach&lt;T&gt;(T[], Action&lt;T&gt;)</a></td>
+        <td><p>Does <code data-dev-comment-type="paramref" class="paramref">action</code> for each item</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_IndexOf__1___0_____0_">IndexOf&lt;T&gt;(T[], T)</a></td>
+        <td><p>Looks up for item in source array equal to provided value, and returns its index, or -1 if not found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_IndexOf__1___0___System_Func___0_System_Boolean__">IndexOf&lt;T&gt;(T[], Func&lt;T, Boolean&gt;)</a></td>
+        <td><p>Calls predicate on each item in <code data-dev-comment-type="paramref" class="paramref">source</code> array until predicate returns true,
+then method will return this item index, or if predicate returns false for each item, method will return -1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_IndexOf__2___0_____1_System_Func___1___0_System_Boolean__">IndexOf&lt;T, S&gt;(T[], S, Func&lt;S, T, Boolean&gt;)</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_IsNullOrEmpty__1___0___">IsNullOrEmpty&lt;T&gt;(T[])</a></td>
+        <td><p>Returns true if array is null or have no items.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_Map__2___0___System_Func___0___1__">Map&lt;T, R&gt;(T[], Func&lt;T, R&gt;)</a></td>
+        <td><p>Maps all items from source to result array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_Map__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__">Map&lt;T, R&gt;(IEnumerable&lt;T&gt;, Func&lt;T, R&gt;)</a></td>
+        <td><p>Maps all items from source to result collection. 
+If possible uses fast array Map otherwise Enumerable.Select.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_Map__3___0_____1_System_Func___1___0___2__">Map&lt;T, S, R&gt;(T[], S, Func&lt;S, T, R&gt;)</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_Match__1___0___System_Func___0_System_Boolean__">Match&lt;T&gt;(T[], Func&lt;T, Boolean&gt;)</a></td>
+        <td><p>Where method similar to Enumerable.Where but more performant and non necessary allocating.
+It returns source array and does Not create new one if all items match the condition.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_Match__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__">Match&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, Boolean&gt;)</a></td>
+        <td><p>If <code data-dev-comment-type="paramref" class="paramref">source</code> is array uses more effective Match for array, otherwise just calls Where</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_Match__2___0_____1_System_Func___1___0_System_Boolean__">Match&lt;T, S&gt;(T[], S, Func&lt;S, T, Boolean&gt;)</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_Match__2___0___System_Func___0_System_Boolean__System_Func___0___1__">Match&lt;T, R&gt;(T[], Func&lt;T, Boolean&gt;, Func&lt;T, R&gt;)</a></td>
+        <td><p>Where method similar to Enumerable.Where but more performant and non necessary allocating.
+It returns source array and does Not create new one if all items match the condition.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_Match__2_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__System_Func___0___1__">Match&lt;T, R&gt;(IEnumerable&lt;T&gt;, Func&lt;T, Boolean&gt;, Func&lt;T, R&gt;)</a></td>
+        <td><p>If <code data-dev-comment-type="paramref" class="paramref">source</code> is array uses more effective Match for array,
+otherwise just calls Where, Select</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_Match__3___0_____1_System_Func___1___0_System_Boolean__System_Func___1___0___2__">Match&lt;T, S, R&gt;(T[], S, Func&lt;S, T, Boolean&gt;, Func&lt;S, T, R&gt;)</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_One__1___0_">One&lt;T&gt;(T)</a></td>
+        <td><p>Wraps item in array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_Remove__1___0_____0_">Remove&lt;T&gt;(T[], T)</a></td>
+        <td><p>Looks for item in array using equality comparison, and returns new array with found item remove, or original array if not item found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_RemoveAt__1___0___System_Int32_">RemoveAt&lt;T&gt;(T[], Int32)</a></td>
+        <td><p>Produces new array without item at specified <code data-dev-comment-type="paramref" class="paramref">index</code>. 
+Will return <code data-dev-comment-type="paramref" class="paramref">source</code> array if index is out of bounds, or source is null/empty.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_SingleOrDefaultIfMany__1_System_Collections_Generic_IEnumerable___0__">SingleOrDefaultIfMany&lt;T&gt;(IEnumerable&lt;T&gt;)</a></td>
+        <td><p>Returns element if collection consist on single element, otherwise returns default value.
+It does not throw for collection with many elements</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_ToArrayOrSelf__1_System_Collections_Generic_IEnumerable___0__">ToArrayOrSelf&lt;T&gt;(IEnumerable&lt;T&gt;)</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ArrayTools_ToListOrSelf__1_System_Collections_Generic_IEnumerable___0__">ToListOrSelf&lt;T&gt;(IEnumerable&lt;T&gt;)</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_Append__1___0_____0___" data-uid="ImTools.ArrayTools.Append``1(``0[],``0[])">Append&lt;T&gt;(T[], T[])</h4>
+  <div class="markdown level1 summary"><p>Returns new array consisting from all items from source array then all items from added array.
+If source is null or empty, then added array will be returned.
+If added is null or empty, then source will be returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] Append&lt;T&gt;(this T[] source, params T[] added)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>source</em></td>
+        <td><p>Array with leading items.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><em>added</em></td>
+        <td><p>Array with following items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><p>New array with items of source and added arrays.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Array item type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_Append__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__" data-uid="ImTools.ArrayTools.Append``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">Append&lt;T&gt;(IEnumerable&lt;T&gt;, IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Performant concat of enumerables in case of arrays.
+But performance will degrade if you use Concat().Where().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] Append&lt;T&gt;(this IEnumerable&lt;T&gt; source, IEnumerable&lt;T&gt; other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><em>source</em></td>
+        <td><p>goes first.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><em>other</em></td>
+        <td><p>appended to source.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><p>empty array or concat of source and other.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Type of item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_AppendOrUpdate__1___0_____0_System_Int32_" data-uid="ImTools.ArrayTools.AppendOrUpdate``1(``0[],``0,System.Int32)">AppendOrUpdate&lt;T&gt;(T[], T, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns new array with <code data-dev-comment-type="paramref" class="paramref">value</code> appended, 
+or <code data-dev-comment-type="paramref" class="paramref">value</code> at <code data-dev-comment-type="paramref" class="paramref">index</code>, if specified.
+If source array could be null or empty, then single value item array will be created despite any index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] AppendOrUpdate&lt;T&gt;(this T[] source, T value, int index = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>source</em></td>
+        <td><p>Array to append value to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><em>value</em></td>
+        <td><p>Value to append.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>index</em></td>
+        <td><p>(optional) Index of value to update.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><p>New array with appended or updated value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Array item type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_AppendTo__1___0___System_Int32_System_Int32___0___" data-uid="ImTools.ArrayTools.AppendTo``1(``0[],System.Int32,System.Int32,``0[])">AppendTo&lt;T&gt;(T[], Int32, Int32, T[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] AppendTo&lt;T&gt;(T[] source, int sourcePos, int count, T[] results = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>source</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>sourcePos</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>count</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><em>results</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_Copy__1___0___" data-uid="ImTools.ArrayTools.Copy``1(``0[])">Copy&lt;T&gt;(T[])</h4>
+  <div class="markdown level1 summary"><p>Array copy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] Copy&lt;T&gt;(this T[] items)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>items</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_Empty__1" data-uid="ImTools.ArrayTools.Empty``1">Empty&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Returns singleton empty array of provided type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] Empty&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><p>Empty array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Array item type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_EmptyIfNull__1___0___" data-uid="ImTools.ArrayTools.EmptyIfNull``1(``0[])">EmptyIfNull&lt;T&gt;(T[])</h4>
+  <div class="markdown level1 summary"><p>Returns empty array instead of null, or source array otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] EmptyIfNull&lt;T&gt;(this T[] source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>source</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Type of array item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_FindFirst__1___0___System_Func___0_System_Boolean__" data-uid="ImTools.ArrayTools.FindFirst``1(``0[],System.Func{``0,System.Boolean})">FindFirst&lt;T&gt;(T[], Func&lt;T, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns first item matching the <code data-dev-comment-type="paramref" class="paramref">predicate</code>, or default item value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T FindFirst&lt;T&gt;(this T[] source, Func&lt;T, bool&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>source</em></td>
+        <td><p>items collection to search</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><em>predicate</em></td>
+        <td><p>condition to evaluate for each item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>First item matching condition or default value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>item type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_FindFirst__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__" data-uid="ImTools.ArrayTools.FindFirst``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})">FindFirst&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns first item matching the <code data-dev-comment-type="paramref" class="paramref">predicate</code>, or default item value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T FindFirst&lt;T&gt;(this IEnumerable&lt;T&gt; source, Func&lt;T, bool&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><em>source</em></td>
+        <td><p>items collection to search</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><em>predicate</em></td>
+        <td><p>condition to evaluate for each item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>First item matching condition or default value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>item type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_FindFirst__2___0_____1_System_Func___1___0_System_Boolean__" data-uid="ImTools.ArrayTools.FindFirst``2(``0[],``1,System.Func{``1,``0,System.Boolean})">FindFirst&lt;T, S&gt;(T[], S, Func&lt;S, T, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T FindFirst&lt;T, S&gt;(this T[] source, S state, Func&lt;S, T, bool&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>source</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">S</span></td>
+        <td><em>state</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;S, T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><em>predicate</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><em>S</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_ForEach__1___0___System_Action___0__" data-uid="ImTools.ArrayTools.ForEach``1(``0[],System.Action{``0})">ForEach&lt;T&gt;(T[], Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Does <code data-dev-comment-type="paramref" class="paramref">action</code> for each item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ForEach&lt;T&gt;(this T[] source, Action&lt;T&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>source</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;T&gt;</td>
+        <td><em>action</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_IndexOf__1___0_____0_" data-uid="ImTools.ArrayTools.IndexOf``1(``0[],``0)">IndexOf&lt;T&gt;(T[], T)</h4>
+  <div class="markdown level1 summary"><p>Looks up for item in source array equal to provided value, and returns its index, or -1 if not found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IndexOf&lt;T&gt;(this T[] source, T value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>source</em></td>
+        <td><p>Source array: if null or empty, then method will return -1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><em>value</em></td>
+        <td><p>Value to look up.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Index of item equal to value, or -1 item is not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Type of array items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_IndexOf__1___0___System_Func___0_System_Boolean__" data-uid="ImTools.ArrayTools.IndexOf``1(``0[],System.Func{``0,System.Boolean})">IndexOf&lt;T&gt;(T[], Func&lt;T, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Calls predicate on each item in <code data-dev-comment-type="paramref" class="paramref">source</code> array until predicate returns true,
+then method will return this item index, or if predicate returns false for each item, method will return -1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IndexOf&lt;T&gt;(this T[] source, Func&lt;T, bool&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>source</em></td>
+        <td><p>Source array: if null or empty, then method will return -1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><em>predicate</em></td>
+        <td><p>Delegate to evaluate on each array item until delegate returns true.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Index of item for which predicate returns true, or -1 otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Type of array items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_IndexOf__2___0_____1_System_Func___1___0_System_Boolean__" data-uid="ImTools.ArrayTools.IndexOf``2(``0[],``1,System.Func{``1,``0,System.Boolean})">IndexOf&lt;T, S&gt;(T[], S, Func&lt;S, T, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IndexOf&lt;T, S&gt;(this T[] source, S state, Func&lt;S, T, bool&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>source</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">S</span></td>
+        <td><em>state</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;S, T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><em>predicate</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><em>S</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_IsNullOrEmpty__1___0___" data-uid="ImTools.ArrayTools.IsNullOrEmpty``1(``0[])">IsNullOrEmpty&lt;T&gt;(T[])</h4>
+  <div class="markdown level1 summary"><p>Returns true if array is null or have no items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsNullOrEmpty&lt;T&gt;(this T[] source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>source</em></td>
+        <td><p>Source array to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if null or has no items, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Type of array item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_Map__2___0___System_Func___0___1__" data-uid="ImTools.ArrayTools.Map``2(``0[],System.Func{``0,``1})">Map&lt;T, R&gt;(T[], Func&lt;T, R&gt;)</h4>
+  <div class="markdown level1 summary"><p>Maps all items from source to result array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static R[] Map&lt;T, R&gt;(this T[] source, Func&lt;T, R&gt; map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>source</em></td>
+        <td><p>Source items</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, R&gt;</td>
+        <td><em>map</em></td>
+        <td><p>Function to convert item from source to result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>R[]</td>
+        <td><p>Converted items</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Source item type</p>
+</td>
+      </tr>
+      <tr>
+        <td><em>R</em></td>
+        <td><p>Result item type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_Map__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__" data-uid="ImTools.ArrayTools.Map``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})">Map&lt;T, R&gt;(IEnumerable&lt;T&gt;, Func&lt;T, R&gt;)</h4>
+  <div class="markdown level1 summary"><p>Maps all items from source to result collection. 
+If possible uses fast array Map otherwise Enumerable.Select.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;R&gt; Map&lt;T, R&gt;(this IEnumerable&lt;T&gt; source, Func&lt;T, R&gt; map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><em>source</em></td>
+        <td><p>Source items</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, R&gt;</td>
+        <td><em>map</em></td>
+        <td><p>Function to convert item from source to result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;R&gt;</td>
+        <td><p>Converted items</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Source item type</p>
+</td>
+      </tr>
+      <tr>
+        <td><em>R</em></td>
+        <td><p>Result item type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_Map__3___0_____1_System_Func___1___0___2__" data-uid="ImTools.ArrayTools.Map``3(``0[],``1,System.Func{``1,``0,``2})">Map&lt;T, S, R&gt;(T[], S, Func&lt;S, T, R&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static R[] Map&lt;T, S, R&gt;(this T[] source, S state, Func&lt;S, T, R&gt; map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>source</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">S</span></td>
+        <td><em>state</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;S, T, R&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>R[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><em>S</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><em>R</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_Match__1___0___System_Func___0_System_Boolean__" data-uid="ImTools.ArrayTools.Match``1(``0[],System.Func{``0,System.Boolean})">Match&lt;T&gt;(T[], Func&lt;T, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Where method similar to Enumerable.Where but more performant and non necessary allocating.
+It returns source array and does Not create new one if all items match the condition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] Match&lt;T&gt;(this T[] source, Func&lt;T, bool&gt; condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>source</em></td>
+        <td><p>If null, the null will be returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><em>condition</em></td>
+        <td><p>Condition to keep items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><p>New array if some items are filter out. Empty array if all items are filtered out. Original array otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Type of source items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_Match__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__" data-uid="ImTools.ArrayTools.Match``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})">Match&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>If <code data-dev-comment-type="paramref" class="paramref">source</code> is array uses more effective Match for array, otherwise just calls Where</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;T&gt; Match&lt;T&gt;(this IEnumerable&lt;T&gt; source, Func&lt;T, bool&gt; condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><em>source</em></td>
+        <td><p>If null, the null will be returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><em>condition</em></td>
+        <td><p>Condition to keep items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><p>Result items, may be an array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Type of source items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_Match__2___0_____1_System_Func___1___0_System_Boolean__" data-uid="ImTools.ArrayTools.Match``2(``0[],``1,System.Func{``1,``0,System.Boolean})">Match&lt;T, S&gt;(T[], S, Func&lt;S, T, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] Match&lt;T, S&gt;(this T[] source, S state, Func&lt;S, T, bool&gt; condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>source</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">S</span></td>
+        <td><em>state</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;S, T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><em>condition</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><em>S</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_Match__2___0___System_Func___0_System_Boolean__System_Func___0___1__" data-uid="ImTools.ArrayTools.Match``2(``0[],System.Func{``0,System.Boolean},System.Func{``0,``1})">Match&lt;T, R&gt;(T[], Func&lt;T, Boolean&gt;, Func&lt;T, R&gt;)</h4>
+  <div class="markdown level1 summary"><p>Where method similar to Enumerable.Where but more performant and non necessary allocating.
+It returns source array and does Not create new one if all items match the condition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static R[] Match&lt;T, R&gt;(this T[] source, Func&lt;T, bool&gt; condition, Func&lt;T, R&gt; map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>source</em></td>
+        <td><p>If null, the null will be returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><em>condition</em></td>
+        <td><p>Condition to keep items.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, R&gt;</td>
+        <td><em>map</em></td>
+        <td><p>Converter from source to result item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>R[]</td>
+        <td><p>New array of result items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Type of source items.</p>
+</td>
+      </tr>
+      <tr>
+        <td><em>R</em></td>
+        <td><p>Type of result items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_Match__2_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__System_Func___0___1__" data-uid="ImTools.ArrayTools.Match``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean},System.Func{``0,``1})">Match&lt;T, R&gt;(IEnumerable&lt;T&gt;, Func&lt;T, Boolean&gt;, Func&lt;T, R&gt;)</h4>
+  <div class="markdown level1 summary"><p>If <code data-dev-comment-type="paramref" class="paramref">source</code> is array uses more effective Match for array,
+otherwise just calls Where, Select</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;R&gt; Match&lt;T, R&gt;(this IEnumerable&lt;T&gt; source, Func&lt;T, bool&gt; condition, Func&lt;T, R&gt; map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><em>source</em></td>
+        <td><p>If null, the null will be returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><em>condition</em></td>
+        <td><p>Condition to keep items.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, R&gt;</td>
+        <td><em>map</em></td>
+        <td><p>Converter from source to result item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;R&gt;</td>
+        <td><p>Result items, may be an array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Type of source items.</p>
+</td>
+      </tr>
+      <tr>
+        <td><em>R</em></td>
+        <td><p>Type of result items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_Match__3___0_____1_System_Func___1___0_System_Boolean__System_Func___1___0___2__" data-uid="ImTools.ArrayTools.Match``3(``0[],``1,System.Func{``1,``0,System.Boolean},System.Func{``1,``0,``2})">Match&lt;T, S, R&gt;(T[], S, Func&lt;S, T, Boolean&gt;, Func&lt;S, T, R&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static R[] Match&lt;T, S, R&gt;(this T[] source, S state, Func&lt;S, T, bool&gt; condition, Func&lt;S, T, R&gt; map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>source</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">S</span></td>
+        <td><em>state</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;S, T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><em>condition</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;S, T, R&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>R[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><em>S</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><em>R</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_One__1___0_" data-uid="ImTools.ArrayTools.One``1(``0)">One&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Wraps item in array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] One&lt;T&gt;(this T one)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><em>one</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_Remove__1___0_____0_" data-uid="ImTools.ArrayTools.Remove``1(``0[],``0)">Remove&lt;T&gt;(T[], T)</h4>
+  <div class="markdown level1 summary"><p>Looks for item in array using equality comparison, and returns new array with found item remove, or original array if not item found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] Remove&lt;T&gt;(this T[] source, T value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>source</em></td>
+        <td><p>Input array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><em>value</em></td>
+        <td><p>Value to find and remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><p>New array with value removed or original array if value is not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Type of array item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_RemoveAt__1___0___System_Int32_" data-uid="ImTools.ArrayTools.RemoveAt``1(``0[],System.Int32)">RemoveAt&lt;T&gt;(T[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Produces new array without item at specified <code data-dev-comment-type="paramref" class="paramref">index</code>. 
+Will return <code data-dev-comment-type="paramref" class="paramref">source</code> array if index is out of bounds, or source is null/empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] RemoveAt&lt;T&gt;(this T[] source, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><em>source</em></td>
+        <td><p>Input array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>index</em></td>
+        <td><p>Index if item to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><p>New array with removed item at index, or input source array if index is not in array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Type of array item.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_SingleOrDefaultIfMany__1_System_Collections_Generic_IEnumerable___0__" data-uid="ImTools.ArrayTools.SingleOrDefaultIfMany``1(System.Collections.Generic.IEnumerable{``0})">SingleOrDefaultIfMany&lt;T&gt;(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns element if collection consist on single element, otherwise returns default value.
+It does not throw for collection with many elements</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T SingleOrDefaultIfMany&lt;T&gt;(this IEnumerable&lt;T&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><em>source</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_ToArrayOrSelf__1_System_Collections_Generic_IEnumerable___0__" data-uid="ImTools.ArrayTools.ToArrayOrSelf``1(System.Collections.Generic.IEnumerable{``0})">ToArrayOrSelf&lt;T&gt;(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] ToArrayOrSelf&lt;T&gt;(this IEnumerable&lt;T&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><em>source</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ArrayTools_ToListOrSelf__1_System_Collections_Generic_IEnumerable___0__" data-uid="ImTools.ArrayTools.ToListOrSelf``1(System.Collections.Generic.IEnumerable{``0})">ToListOrSelf&lt;T&gt;(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IList&lt;T&gt; ToListOrSelf&lt;T&gt;(this IEnumerable&lt;T&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><em>source</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

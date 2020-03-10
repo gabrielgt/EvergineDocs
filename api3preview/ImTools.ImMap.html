@@ -1,0 +1,2659 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ImMap
+   | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ImMap
+   | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ImTools.ImMap">
+  
+  <h1 id="ImTools_ImMap" data-uid="ImTools.ImMap" class="xk-margin-default">Class ImMap
+  </h1>
+  <div class="markdown level0 summary"><p>ImMap methods</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+      <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level"><span class="xref"></span></div>
+  </div>
+  <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ImMap</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <h4 id="methods-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#ImTools_ImMap_AddEntryUnsafe__1_ImTools_ImMap___0__ImTools_ImMapEntry___0__">AddEntryUnsafe&lt;V&gt;(ImMap&lt;V&gt;, ImMapEntry&lt;V&gt;)</a></td>
+        <td><p>Adds the value by key in the map - ASSUMES that the key is not in the map, always returns a modified map </p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_AddOrKeep__1_ImTools_ImMap___0__System_Int32_">AddOrKeep&lt;V&gt;(ImMap&lt;V&gt;, Int32)</a></td>
+        <td><p>Adds the entry with default value for the key or returns the un-modified map if key is already present </p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_AddOrKeep__1_ImTools_ImMap___0__System_Int32___0_">AddOrKeep&lt;V&gt;(ImMap&lt;V&gt;, Int32, V)</a></td>
+        <td><p>Adds the value for the key or returns the un-modified map if key is already present </p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_AddOrKeep__1_ImTools_ImMap_ImTools_ImMap_KValue___0___System_Int32___0_">AddOrKeep&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, Int32, K)</a></td>
+        <td><p>Adds the new entry or keeps the current map if entry key is already present</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_AddOrKeep__1_ImTools_ImMap_ImTools_ImMap_KValue___0___System_Int32___0_System_Object_">AddOrKeep&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, Int32, K, Object)</a></td>
+        <td><p>Adds the new entry or keeps the current map if entry key is already present</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_AddOrKeepEntry__1_ImTools_ImMap___0__ImTools_ImMapEntry___0__">AddOrKeepEntry&lt;V&gt;(ImMap&lt;V&gt;, ImMapEntry&lt;V&gt;)</a></td>
+        <td><p>Adds the entry for the key or returns the un-modified map if key is already present </p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_AddOrUpdate__1_ImTools_ImMap___0__System_Int32___0_">AddOrUpdate&lt;V&gt;(ImMap&lt;V&gt;, Int32, V)</a></td>
+        <td><p>Adds or updates the value by key in the map, always returns a modified map </p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_AddOrUpdate__1_ImTools_ImMap_ImTools_ImMap_KValue___0_____0_System_Object_">AddOrUpdate&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, K, Object)</a></td>
+        <td><p>Adds or updates the tree with passed key-value. Returns a new tree.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_AddOrUpdate__1_ImTools_ImMap_ImTools_ImMap_KValue___0___System_Int32___0_System_Object_">AddOrUpdate&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, Int32, K, Object)</a></td>
+        <td><p>Uses the user provided hash and adds or updates the tree with passed key-value. Returns a new tree.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_AddOrUpdate__1_ImTools_ImMap_ImTools_ImMap_KValue___0___System_Int32___0_System_Object_ImTools_Update___0_System_Object__">AddOrUpdate&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, Int32, K, Object, Update&lt;K, Object&gt;)</a></td>
+        <td><p>Uses the user provided hash and adds or updates the tree with passed key-value. Returns a new tree.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_AddOrUpdate__1_ImTools_ImMap_ImTools_ImMap_KValue___0___System_Int32_ImTools_ImMapEntry_ImTools_ImMap_KValue___0___">AddOrUpdate&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, Int32, ImMapEntry&lt;ImMap.KValue&lt;K&gt;&gt;)</a></td>
+        <td><p>Uses the provided hash and adds or updates the tree with the passed key-value. Returns a new tree.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_AddOrUpdateEntry__1_ImTools_ImMap___0__ImTools_ImMapEntry___0__">AddOrUpdateEntry&lt;V&gt;(ImMap&lt;V&gt;, ImMapEntry&lt;V&gt;)</a></td>
+        <td><p>Adds or updates the value by key in the map, always returns a modified map </p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_Contains__1_ImTools_ImMap___0__System_Int32_">Contains&lt;V&gt;(ImMap&lt;V&gt;, Int32)</a></td>
+        <td><p>Returns <code>true</code> if key is found or <code>false</code> otherwise. </p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_CreateKValueEntry__1_System_Int32___0_">CreateKValueEntry&lt;K&gt;(Int32, K)</a></td>
+        <td><p>Efficiently creates the new entry</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_Enumerate__1_ImTools_ImMap___0__ImTools_ImMapTree___0____">Enumerate&lt;V&gt;(ImMap&lt;V&gt;, ImMapTree&lt;V&gt;[])</a></td>
+        <td><p>Enumerates all the map nodes from the left to the right and from the bottom to top
+You may pass <code>parentStacks</code> to reuse the array memory.
+NOTE: the length of <code>parentStack</code> should be at least of map (height - 2) - the stack want be used for 0, 1, 2 height maps,
+the content of the stack is not important and could be erased.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_Enumerate__1_ImTools_ImMap_ImTools_ImMap_KValue___0___">Enumerate&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;)</a></td>
+        <td><p>Depth-first in-order traversal as described in <a href="http://en.wikipedia.org/wiki/Tree_traversal">http://en.wikipedia.org/wiki/Tree_traversal</a>
+The only difference is using fixed size array instead of stack for speed-up.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_Fold__2_ImTools_ImMap___0____1_System_Func_ImTools_ImMapEntry___0____1___1__ImTools_ImMapTree___0____">Fold&lt;V, S&gt;(ImMap&lt;V&gt;, S, Func&lt;ImMapEntry&lt;V&gt;, S, S&gt;, ImMapTree&lt;V&gt;[])</a></td>
+        <td><p>Folds all the map nodes with the state from left to right and from the bottom to top
+You may pass <code>parentStacks</code> to reuse the array memory.
+NOTE: the length of <code>parentStack</code> should be at least of map (height - 2) - the stack want be used for 0, 1, 2 height maps,
+the content of the stack is not important and could be erased.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_Fold__2_ImTools_ImMap_ImTools_ImMap_KValue___0_____1_System_Func_ImTools_ImMapEntry_ImTools_ImMap_KValue___0_____1___1__ImTools_ImMapTree_ImTools_ImMap_KValue___0_____">Fold&lt;K, S&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, S, Func&lt;ImMapEntry&lt;ImMap.KValue&lt;K&gt;&gt;, S, S&gt;, ImMapTree&lt;ImMap.KValue&lt;K&gt;&gt;[])</a></td>
+        <td><p>Depth-first in-order traversal as described in <a href="http://en.wikipedia.org/wiki/Tree_traversal">http://en.wikipedia.org/wiki/Tree_traversal</a>
+The only difference is using fixed size array instead of stack for speed-up.
+Note: By passing <code data-dev-comment-type="paramref" class="paramref">parentsStack</code> you may reuse the stack array between different method calls,
+but it should be at least <a class="xref" href="ImTools.ImHashMap-2.html#ImTools_ImHashMap_2_Height">Height</a> length. The contents of array are not important.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_Fold__3_ImTools_ImMap___0____1___2_System_Func_ImTools_ImMapEntry___0____1___2___1__ImTools_ImMapTree___0____">Fold&lt;V, S, A&gt;(ImMap&lt;V&gt;, S, A, Func&lt;ImMapEntry&lt;V&gt;, S, A, S&gt;, ImMapTree&lt;V&gt;[])</a></td>
+        <td><p>Folds all the map nodes with the state from left to right and from the bottom to top
+You may pass <code>parentStacks</code> to reuse the array memory.
+NOTE: the length of <code>parentStack</code> should be at least of map (height - 2) - the stack want be used for 0, 1, 2 height maps,
+the content of the stack is not important and could be erased.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_GetEntryOrDefault_ImTools_ImMap_ImTools_ImMap_KValue_System_Type___System_Int32_System_Type_">GetEntryOrDefault(ImMap&lt;ImMap.KValue&lt;Type&gt;&gt;, Int32, Type)</a></td>
+        <td><p>Returns the entry if key is found or <code>null</code> otherwise. </p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_GetEntryOrDefault__1_ImTools_ImMap___0__System_Int32_">GetEntryOrDefault&lt;V&gt;(ImMap&lt;V&gt;, Int32)</a></td>
+        <td><p>Returns the entry if key is found or null otherwise. </p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_GetEntryOrDefault__1_ImTools_ImMap_ImTools_ImMap_KValue___0___System_Int32___0_">GetEntryOrDefault&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, Int32, K)</a></td>
+        <td><p>Returns the entry if key is found or default value otherwise. </p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_GetValueOrDefault_ImTools_ImMap_ImTools_ImMap_KValue_System_Type___System_Int32_System_Type_">GetValueOrDefault(ImMap&lt;ImMap.KValue&lt;Type&gt;&gt;, Int32, Type)</a></td>
+        <td><p>Returns the value if key is found or default value otherwise. </p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_GetValueOrDefault__1_ImTools_ImMap___0__System_Int32_">GetValueOrDefault&lt;V&gt;(ImMap&lt;V&gt;, Int32)</a></td>
+        <td><p>Returns the value if key is found or default value otherwise. </p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_GetValueOrDefault__1_ImTools_ImMap_ImTools_ImMap_KValue___0___System_Int32___0_">GetValueOrDefault&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, Int32, K)</a></td>
+        <td><p>Returns the value if key is found or default value otherwise. </p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_TryFind__1_ImTools_ImMap___0__System_Int32___0__">TryFind&lt;V&gt;(ImMap&lt;V&gt;, Int32, out V)</a></td>
+        <td><p>Returns true if key is found and sets the value. </p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_TryFind__1_ImTools_ImMap_ImTools_ImMap_KValue___0___System_Int32___0_System_Object__">TryFind&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, Int32, K, out Object)</a></td>
+        <td><p>Sets the value if key is found or returns false otherwise. </p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_TryFindEntry__1_ImTools_ImMap___0__System_Int32_ImTools_ImMapEntry___0___">TryFindEntry&lt;V&gt;(ImMap&lt;V&gt;, Int32, out ImMapEntry&lt;V&gt;)</a></td>
+        <td><p>Returns true if key is found and sets the value. </p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_Update__1_ImTools_ImMap___0__System_Int32___0_">Update&lt;V&gt;(ImMap&lt;V&gt;, Int32, V)</a></td>
+        <td><p>Returns the new map with the updated value for the key, or the same map if the key was not found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_Update__1_ImTools_ImMap_ImTools_ImMap_KValue___0___System_Int32___0_System_Object_ImTools_Update___0_System_Object__">Update&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, Int32, K, Object, Update&lt;K, Object&gt;)</a></td>
+        <td><p>Updates the map with the new value if key is found, otherwise returns the same unchanged map.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_UpdateEntryUnsafe__1_ImTools_ImMap___0__ImTools_ImMapEntry___0__">UpdateEntryUnsafe&lt;V&gt;(ImMap&lt;V&gt;, ImMapEntry&lt;V&gt;)</a></td>
+        <td><p>Returns the new map with the updated value for the key, ASSUMES that the key is not in the map.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_UpdateToDefault__1_ImTools_ImMap___0__System_Int32_">UpdateToDefault&lt;V&gt;(ImMap&lt;V&gt;, Int32)</a></td>
+        <td><p>Returns the new map with the value set to default, or the same map if the key was not found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_UpdateToDefault__1_ImTools_ImMap_ImTools_ImMap_KValue___0___System_Int32___0_">UpdateToDefault&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, Int32, K)</a></td>
+        <td><p>Updates the map with the default value if the key is found, otherwise returns the same unchanged map.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_Visit__1_ImTools_ImMap___0__System_Action_ImTools_ImMapEntry___0___ImTools_ImMapTree___0____">Visit&lt;V&gt;(ImMap&lt;V&gt;, Action&lt;ImMapEntry&lt;V&gt;&gt;, ImMapTree&lt;V&gt;[])</a></td>
+        <td><p>Visits all the map nodes with from the left to the right and from the bottom to the top
+You may pass <code>parentStacks</code> to reuse the array memory.
+NOTE: the length of <code>parentStack</code> should be at least of map height, content is not important and could be erased.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_Visit__1_ImTools_ImMap_ImTools_ImMap_KValue___0___System_Action_ImTools_ImMapEntry_ImTools_ImMap_KValue___0____ImTools_ImMapTree_ImTools_ImMap_KValue___0_____">Visit&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, Action&lt;ImMapEntry&lt;ImMap.KValue&lt;K&gt;&gt;&gt;, ImMapTree&lt;ImMap.KValue&lt;K&gt;&gt;[])</a></td>
+        <td><p>Depth-first in-order traversal as described in <a href="http://en.wikipedia.org/wiki/Tree_traversal">http://en.wikipedia.org/wiki/Tree_traversal</a>
+The only difference is using fixed size array instead of stack for speed-up.
+Note: By passing <code data-dev-comment-type="paramref" class="paramref">parentsStack</code> you may reuse the stack array between different method calls,
+but it should be at least <a class="xref" href="ImTools.ImHashMap-2.html#ImTools_ImHashMap_2_Height">Height</a> length. The contents of array are not important.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#ImTools_ImMap_Visit__2_ImTools_ImMap_ImTools_ImMap_KValue___0_____1_System_Action_ImTools_ImMapEntry_ImTools_ImMap_KValue___0_____1__ImTools_ImMapTree_ImTools_ImMap_KValue___0_____">Visit&lt;K, S&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, S, Action&lt;ImMapEntry&lt;ImMap.KValue&lt;K&gt;&gt;, S&gt;, ImMapTree&lt;ImMap.KValue&lt;K&gt;&gt;[])</a></td>
+        <td><p>Depth-first in-order traversal as described in <a href="http://en.wikipedia.org/wiki/Tree_traversal">http://en.wikipedia.org/wiki/Tree_traversal</a>
+The only difference is using fixed size array instead of stack for speed-up.
+Note: By passing <code data-dev-comment-type="paramref" class="paramref">parentsStack</code> you may reuse the stack array between different method calls,
+but it should be at least <a class="xref" href="ImTools.ImHashMap-2.html#ImTools_ImHashMap_2_Height">Height</a> length. The contents of array are not important.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_AddEntryUnsafe__1_ImTools_ImMap___0__ImTools_ImMapEntry___0__" data-uid="ImTools.ImMap.AddEntryUnsafe``1(ImTools.ImMap{``0},ImTools.ImMapEntry{``0})">AddEntryUnsafe&lt;V&gt;(ImMap&lt;V&gt;, ImMapEntry&lt;V&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds the value by key in the map - ASSUMES that the key is not in the map, always returns a modified map </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImMap&lt;V&gt; AddEntryUnsafe&lt;V&gt;(this ImMap&lt;V&gt; map, ImMapEntry&lt;V&gt; entry)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMapEntry-1.html">ImMapEntry</a>&lt;V&gt;</td>
+        <td><em>entry</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>V</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_AddOrKeep__1_ImTools_ImMap___0__System_Int32_" data-uid="ImTools.ImMap.AddOrKeep``1(ImTools.ImMap{``0},System.Int32)">AddOrKeep&lt;V&gt;(ImMap&lt;V&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>Adds the entry with default value for the key or returns the un-modified map if key is already present </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImMap&lt;V&gt; AddOrKeep&lt;V&gt;(this ImMap&lt;V&gt; map, int key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>V</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_AddOrKeep__1_ImTools_ImMap___0__System_Int32___0_" data-uid="ImTools.ImMap.AddOrKeep``1(ImTools.ImMap{``0},System.Int32,``0)">AddOrKeep&lt;V&gt;(ImMap&lt;V&gt;, Int32, V)</h4>
+  <div class="markdown level1 summary"><p>Adds the value for the key or returns the un-modified map if key is already present </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImMap&lt;V&gt; AddOrKeep&lt;V&gt;(this ImMap&lt;V&gt; map, int key, V value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">V</span></td>
+        <td><em>value</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>V</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_AddOrKeep__1_ImTools_ImMap_ImTools_ImMap_KValue___0___System_Int32___0_" data-uid="ImTools.ImMap.AddOrKeep``1(ImTools.ImMap{ImTools.ImMap.KValue{``0}},System.Int32,``0)">AddOrKeep&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, Int32, K)</h4>
+  <div class="markdown level1 summary"><p>Adds the new entry or keeps the current map if entry key is already present</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImMap&lt;ImMap.KValue&lt;K&gt;&gt; AddOrKeep&lt;K&gt;(this ImMap&lt;ImMap.KValue&lt;K&gt;&gt; map, int hash, K key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>hash</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>K</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_AddOrKeep__1_ImTools_ImMap_ImTools_ImMap_KValue___0___System_Int32___0_System_Object_" data-uid="ImTools.ImMap.AddOrKeep``1(ImTools.ImMap{ImTools.ImMap.KValue{``0}},System.Int32,``0,System.Object)">AddOrKeep&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, Int32, K, Object)</h4>
+  <div class="markdown level1 summary"><p>Adds the new entry or keeps the current map if entry key is already present</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImMap&lt;ImMap.KValue&lt;K&gt;&gt; AddOrKeep&lt;K&gt;(this ImMap&lt;ImMap.KValue&lt;K&gt;&gt; map, int hash, K key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>hash</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>value</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>K</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_AddOrKeepEntry__1_ImTools_ImMap___0__ImTools_ImMapEntry___0__" data-uid="ImTools.ImMap.AddOrKeepEntry``1(ImTools.ImMap{``0},ImTools.ImMapEntry{``0})">AddOrKeepEntry&lt;V&gt;(ImMap&lt;V&gt;, ImMapEntry&lt;V&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds the entry for the key or returns the un-modified map if key is already present </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImMap&lt;V&gt; AddOrKeepEntry&lt;V&gt;(this ImMap&lt;V&gt; map, ImMapEntry&lt;V&gt; entry)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMapEntry-1.html">ImMapEntry</a>&lt;V&gt;</td>
+        <td><em>entry</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>V</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_AddOrUpdate__1_ImTools_ImMap___0__System_Int32___0_" data-uid="ImTools.ImMap.AddOrUpdate``1(ImTools.ImMap{``0},System.Int32,``0)">AddOrUpdate&lt;V&gt;(ImMap&lt;V&gt;, Int32, V)</h4>
+  <div class="markdown level1 summary"><p>Adds or updates the value by key in the map, always returns a modified map </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImMap&lt;V&gt; AddOrUpdate&lt;V&gt;(this ImMap&lt;V&gt; map, int key, V value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">V</span></td>
+        <td><em>value</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>V</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_AddOrUpdate__1_ImTools_ImMap_ImTools_ImMap_KValue___0_____0_System_Object_" data-uid="ImTools.ImMap.AddOrUpdate``1(ImTools.ImMap{ImTools.ImMap.KValue{``0}},``0,System.Object)">AddOrUpdate&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, K, Object)</h4>
+  <div class="markdown level1 summary"><p>Adds or updates the tree with passed key-value. Returns a new tree.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImMap&lt;ImMap.KValue&lt;K&gt;&gt; AddOrUpdate&lt;K&gt;(this ImMap&lt;ImMap.KValue&lt;K&gt;&gt; map, K key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>value</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>K</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_AddOrUpdate__1_ImTools_ImMap_ImTools_ImMap_KValue___0___System_Int32___0_System_Object_" data-uid="ImTools.ImMap.AddOrUpdate``1(ImTools.ImMap{ImTools.ImMap.KValue{``0}},System.Int32,``0,System.Object)">AddOrUpdate&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, Int32, K, Object)</h4>
+  <div class="markdown level1 summary"><p>Uses the user provided hash and adds or updates the tree with passed key-value. Returns a new tree.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImMap&lt;ImMap.KValue&lt;K&gt;&gt; AddOrUpdate&lt;K&gt;(this ImMap&lt;ImMap.KValue&lt;K&gt;&gt; map, int hash, K key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>hash</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>value</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>K</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_AddOrUpdate__1_ImTools_ImMap_ImTools_ImMap_KValue___0___System_Int32___0_System_Object_ImTools_Update___0_System_Object__" data-uid="ImTools.ImMap.AddOrUpdate``1(ImTools.ImMap{ImTools.ImMap.KValue{``0}},System.Int32,``0,System.Object,ImTools.Update{``0,System.Object})">AddOrUpdate&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, Int32, K, Object, Update&lt;K, Object&gt;)</h4>
+  <div class="markdown level1 summary"><p>Uses the user provided hash and adds or updates the tree with passed key-value. Returns a new tree.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImMap&lt;ImMap.KValue&lt;K&gt;&gt; AddOrUpdate&lt;K&gt;(this ImMap&lt;ImMap.KValue&lt;K&gt;&gt; map, int hash, K key, object value, Update&lt;K, object&gt; update)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>hash</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>value</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ImTools.Update-2.html">Update</a>&lt;K, <span class="xref">System.Object</span>&gt;</td>
+        <td><em>update</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>K</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_AddOrUpdate__1_ImTools_ImMap_ImTools_ImMap_KValue___0___System_Int32_ImTools_ImMapEntry_ImTools_ImMap_KValue___0___" data-uid="ImTools.ImMap.AddOrUpdate``1(ImTools.ImMap{ImTools.ImMap.KValue{``0}},System.Int32,ImTools.ImMapEntry{ImTools.ImMap.KValue{``0}})">AddOrUpdate&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, Int32, ImMapEntry&lt;ImMap.KValue&lt;K&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Uses the provided hash and adds or updates the tree with the passed key-value. Returns a new tree.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImMap&lt;ImMap.KValue&lt;K&gt;&gt; AddOrUpdate&lt;K&gt;(this ImMap&lt;ImMap.KValue&lt;K&gt;&gt; map, int hash, ImMapEntry&lt;ImMap.KValue&lt;K&gt;&gt; entry)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>hash</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMapEntry-1.html">ImMapEntry</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td><em>entry</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>K</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_AddOrUpdateEntry__1_ImTools_ImMap___0__ImTools_ImMapEntry___0__" data-uid="ImTools.ImMap.AddOrUpdateEntry``1(ImTools.ImMap{``0},ImTools.ImMapEntry{``0})">AddOrUpdateEntry&lt;V&gt;(ImMap&lt;V&gt;, ImMapEntry&lt;V&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds or updates the value by key in the map, always returns a modified map </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImMap&lt;V&gt; AddOrUpdateEntry&lt;V&gt;(this ImMap&lt;V&gt; map, ImMapEntry&lt;V&gt; entry)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMapEntry-1.html">ImMapEntry</a>&lt;V&gt;</td>
+        <td><em>entry</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>V</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_Contains__1_ImTools_ImMap___0__System_Int32_" data-uid="ImTools.ImMap.Contains``1(ImTools.ImMap{``0},System.Int32)">Contains&lt;V&gt;(ImMap&lt;V&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns <code>true</code> if key is found or <code>false</code> otherwise. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Contains&lt;V&gt;(this ImMap&lt;V&gt; map, int key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>V</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_CreateKValueEntry__1_System_Int32___0_" data-uid="ImTools.ImMap.CreateKValueEntry``1(System.Int32,``0)">CreateKValueEntry&lt;K&gt;(Int32, K)</h4>
+  <div class="markdown level1 summary"><p>Efficiently creates the new entry</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImMapEntry&lt;ImMap.KValue&lt;K&gt;&gt; CreateKValueEntry&lt;K&gt;(int hash, K key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>hash</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMapEntry-1.html">ImMapEntry</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>K</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_Enumerate__1_ImTools_ImMap___0__ImTools_ImMapTree___0____" data-uid="ImTools.ImMap.Enumerate``1(ImTools.ImMap{``0},ImTools.ImMapTree{``0}[])">Enumerate&lt;V&gt;(ImMap&lt;V&gt;, ImMapTree&lt;V&gt;[])</h4>
+  <div class="markdown level1 summary"><p>Enumerates all the map nodes from the left to the right and from the bottom to top
+You may pass <code>parentStacks</code> to reuse the array memory.
+NOTE: the length of <code>parentStack</code> should be at least of map (height - 2) - the stack want be used for 0, 1, 2 height maps,
+the content of the stack is not important and could be erased.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ImMapEntry&lt;V&gt;&gt; Enumerate&lt;V&gt;(this ImMap&lt;V&gt; map, ImMapTree&lt;V&gt;[] parentStack = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMapTree-1.html">ImMapTree</a>&lt;V&gt;[]</td>
+        <td><em>parentStack</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="ImTools.ImMapEntry-1.html">ImMapEntry</a>&lt;V&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>V</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_Enumerate__1_ImTools_ImMap_ImTools_ImMap_KValue___0___" data-uid="ImTools.ImMap.Enumerate``1(ImTools.ImMap{ImTools.ImMap.KValue{``0}})">Enumerate&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Depth-first in-order traversal as described in <a href="http://en.wikipedia.org/wiki/Tree_traversal">http://en.wikipedia.org/wiki/Tree_traversal</a>
+The only difference is using fixed size array instead of stack for speed-up.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;ImMapEntry&lt;ImMap.KValue&lt;K&gt;&gt;&gt; Enumerate&lt;K&gt;(this ImMap&lt;ImMap.KValue&lt;K&gt;&gt; map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="ImTools.ImMapEntry-1.html">ImMapEntry</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>K</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_Fold__2_ImTools_ImMap___0____1_System_Func_ImTools_ImMapEntry___0____1___1__ImTools_ImMapTree___0____" data-uid="ImTools.ImMap.Fold``2(ImTools.ImMap{``0},``1,System.Func{ImTools.ImMapEntry{``0},``1,``1},ImTools.ImMapTree{``0}[])">Fold&lt;V, S&gt;(ImMap&lt;V&gt;, S, Func&lt;ImMapEntry&lt;V&gt;, S, S&gt;, ImMapTree&lt;V&gt;[])</h4>
+  <div class="markdown level1 summary"><p>Folds all the map nodes with the state from left to right and from the bottom to top
+You may pass <code>parentStacks</code> to reuse the array memory.
+NOTE: the length of <code>parentStack</code> should be at least of map (height - 2) - the stack want be used for 0, 1, 2 height maps,
+the content of the stack is not important and could be erased.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static S Fold&lt;V, S&gt;(this ImMap&lt;V&gt; map, S state, Func&lt;ImMapEntry&lt;V&gt;, S, S&gt; reduce, ImMapTree&lt;V&gt;[] parentStack = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">S</span></td>
+        <td><em>state</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="ImTools.ImMapEntry-1.html">ImMapEntry</a>&lt;V&gt;, S, S&gt;</td>
+        <td><em>reduce</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMapTree-1.html">ImMapTree</a>&lt;V&gt;[]</td>
+        <td><em>parentStack</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">S</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>V</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><em>S</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_Fold__2_ImTools_ImMap_ImTools_ImMap_KValue___0_____1_System_Func_ImTools_ImMapEntry_ImTools_ImMap_KValue___0_____1___1__ImTools_ImMapTree_ImTools_ImMap_KValue___0_____" data-uid="ImTools.ImMap.Fold``2(ImTools.ImMap{ImTools.ImMap.KValue{``0}},``1,System.Func{ImTools.ImMapEntry{ImTools.ImMap.KValue{``0}},``1,``1},ImTools.ImMapTree{ImTools.ImMap.KValue{``0}}[])">Fold&lt;K, S&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, S, Func&lt;ImMapEntry&lt;ImMap.KValue&lt;K&gt;&gt;, S, S&gt;, ImMapTree&lt;ImMap.KValue&lt;K&gt;&gt;[])</h4>
+  <div class="markdown level1 summary"><p>Depth-first in-order traversal as described in <a href="http://en.wikipedia.org/wiki/Tree_traversal">http://en.wikipedia.org/wiki/Tree_traversal</a>
+The only difference is using fixed size array instead of stack for speed-up.
+Note: By passing <code data-dev-comment-type="paramref" class="paramref">parentsStack</code> you may reuse the stack array between different method calls,
+but it should be at least <a class="xref" href="ImTools.ImHashMap-2.html#ImTools_ImHashMap_2_Height">Height</a> length. The contents of array are not important.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static S Fold&lt;K, S&gt;(this ImMap&lt;ImMap.KValue&lt;K&gt;&gt; map, S state, Func&lt;ImMapEntry&lt;ImMap.KValue&lt;K&gt;&gt;, S, S&gt; reduce, ImMapTree&lt;ImMap.KValue&lt;K&gt;&gt;[] parentsStack = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">S</span></td>
+        <td><em>state</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="ImTools.ImMapEntry-1.html">ImMapEntry</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;, S, S&gt;</td>
+        <td><em>reduce</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMapTree-1.html">ImMapTree</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;[]</td>
+        <td><em>parentsStack</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">S</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>K</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><em>S</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_Fold__3_ImTools_ImMap___0____1___2_System_Func_ImTools_ImMapEntry___0____1___2___1__ImTools_ImMapTree___0____" data-uid="ImTools.ImMap.Fold``3(ImTools.ImMap{``0},``1,``2,System.Func{ImTools.ImMapEntry{``0},``1,``2,``1},ImTools.ImMapTree{``0}[])">Fold&lt;V, S, A&gt;(ImMap&lt;V&gt;, S, A, Func&lt;ImMapEntry&lt;V&gt;, S, A, S&gt;, ImMapTree&lt;V&gt;[])</h4>
+  <div class="markdown level1 summary"><p>Folds all the map nodes with the state from left to right and from the bottom to top
+You may pass <code>parentStacks</code> to reuse the array memory.
+NOTE: the length of <code>parentStack</code> should be at least of map (height - 2) - the stack want be used for 0, 1, 2 height maps,
+the content of the stack is not important and could be erased.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static S Fold&lt;V, S, A&gt;(this ImMap&lt;V&gt; map, S state, A a, Func&lt;ImMapEntry&lt;V&gt;, S, A, S&gt; reduce, ImMapTree&lt;V&gt;[] parentStack = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">S</span></td>
+        <td><em>state</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">A</span></td>
+        <td><em>a</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="ImTools.ImMapEntry-1.html">ImMapEntry</a>&lt;V&gt;, S, A, S&gt;</td>
+        <td><em>reduce</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMapTree-1.html">ImMapTree</a>&lt;V&gt;[]</td>
+        <td><em>parentStack</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">S</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>V</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><em>S</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><em>A</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_GetEntryOrDefault_ImTools_ImMap_ImTools_ImMap_KValue_System_Type___System_Int32_System_Type_" data-uid="ImTools.ImMap.GetEntryOrDefault(ImTools.ImMap{ImTools.ImMap.KValue{System.Type}},System.Int32,System.Type)">GetEntryOrDefault(ImMap&lt;ImMap.KValue&lt;Type&gt;&gt;, Int32, Type)</h4>
+  <div class="markdown level1 summary"><p>Returns the entry if key is found or <code>null</code> otherwise. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImMapEntry&lt;ImMap.KValue&lt;Type&gt;&gt; GetEntryOrDefault(this ImMap&lt;ImMap.KValue&lt;Type&gt;&gt; map, int hash, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;<span class="xref">System.Type</span>&gt;&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>hash</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>type</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMapEntry-1.html">ImMapEntry</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;<span class="xref">System.Type</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_GetEntryOrDefault__1_ImTools_ImMap___0__System_Int32_" data-uid="ImTools.ImMap.GetEntryOrDefault``1(ImTools.ImMap{``0},System.Int32)">GetEntryOrDefault&lt;V&gt;(ImMap&lt;V&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the entry if key is found or null otherwise. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImMapEntry&lt;V&gt; GetEntryOrDefault&lt;V&gt;(this ImMap&lt;V&gt; map, int key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMapEntry-1.html">ImMapEntry</a>&lt;V&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>V</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_GetEntryOrDefault__1_ImTools_ImMap_ImTools_ImMap_KValue___0___System_Int32___0_" data-uid="ImTools.ImMap.GetEntryOrDefault``1(ImTools.ImMap{ImTools.ImMap.KValue{``0}},System.Int32,``0)">GetEntryOrDefault&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, Int32, K)</h4>
+  <div class="markdown level1 summary"><p>Returns the entry if key is found or default value otherwise. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImMapEntry&lt;ImMap.KValue&lt;K&gt;&gt; GetEntryOrDefault&lt;K&gt;(this ImMap&lt;ImMap.KValue&lt;K&gt;&gt; map, int hash, K key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>hash</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMapEntry-1.html">ImMapEntry</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>K</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_GetValueOrDefault_ImTools_ImMap_ImTools_ImMap_KValue_System_Type___System_Int32_System_Type_" data-uid="ImTools.ImMap.GetValueOrDefault(ImTools.ImMap{ImTools.ImMap.KValue{System.Type}},System.Int32,System.Type)">GetValueOrDefault(ImMap&lt;ImMap.KValue&lt;Type&gt;&gt;, Int32, Type)</h4>
+  <div class="markdown level1 summary"><p>Returns the value if key is found or default value otherwise. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object GetValueOrDefault(this ImMap&lt;ImMap.KValue&lt;Type&gt;&gt; map, int hash, Type typeKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;<span class="xref">System.Type</span>&gt;&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>hash</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>typeKey</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_GetValueOrDefault__1_ImTools_ImMap___0__System_Int32_" data-uid="ImTools.ImMap.GetValueOrDefault``1(ImTools.ImMap{``0},System.Int32)">GetValueOrDefault&lt;V&gt;(ImMap&lt;V&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the value if key is found or default value otherwise. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static V GetValueOrDefault&lt;V&gt;(this ImMap&lt;V&gt; map, int key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">V</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>V</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_GetValueOrDefault__1_ImTools_ImMap_ImTools_ImMap_KValue___0___System_Int32___0_" data-uid="ImTools.ImMap.GetValueOrDefault``1(ImTools.ImMap{ImTools.ImMap.KValue{``0}},System.Int32,``0)">GetValueOrDefault&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, Int32, K)</h4>
+  <div class="markdown level1 summary"><p>Returns the value if key is found or default value otherwise. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object GetValueOrDefault&lt;K&gt;(this ImMap&lt;ImMap.KValue&lt;K&gt;&gt; map, int hash, K key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>hash</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>K</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_TryFind__1_ImTools_ImMap___0__System_Int32___0__" data-uid="ImTools.ImMap.TryFind``1(ImTools.ImMap{``0},System.Int32,``0@)">TryFind&lt;V&gt;(ImMap&lt;V&gt;, Int32, out V)</h4>
+  <div class="markdown level1 summary"><p>Returns true if key is found and sets the value. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryFind&lt;V&gt;(this ImMap&lt;V&gt; map, int key, out V value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">V</span></td>
+        <td><em>value</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>V</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_TryFind__1_ImTools_ImMap_ImTools_ImMap_KValue___0___System_Int32___0_System_Object__" data-uid="ImTools.ImMap.TryFind``1(ImTools.ImMap{ImTools.ImMap.KValue{``0}},System.Int32,``0,System.Object@)">TryFind&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, Int32, K, out Object)</h4>
+  <div class="markdown level1 summary"><p>Sets the value if key is found or returns false otherwise. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryFind&lt;K&gt;(this ImMap&lt;ImMap.KValue&lt;K&gt;&gt; map, int hash, K key, out object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>hash</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>value</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>K</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_TryFindEntry__1_ImTools_ImMap___0__System_Int32_ImTools_ImMapEntry___0___" data-uid="ImTools.ImMap.TryFindEntry``1(ImTools.ImMap{``0},System.Int32,ImTools.ImMapEntry{``0}@)">TryFindEntry&lt;V&gt;(ImMap&lt;V&gt;, Int32, out ImMapEntry&lt;V&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns true if key is found and sets the value. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryFindEntry&lt;V&gt;(this ImMap&lt;V&gt; map, int key, out ImMapEntry&lt;V&gt; result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMapEntry-1.html">ImMapEntry</a>&lt;V&gt;</td>
+        <td><em>result</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>V</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_Update__1_ImTools_ImMap___0__System_Int32___0_" data-uid="ImTools.ImMap.Update``1(ImTools.ImMap{``0},System.Int32,``0)">Update&lt;V&gt;(ImMap&lt;V&gt;, Int32, V)</h4>
+  <div class="markdown level1 summary"><p>Returns the new map with the updated value for the key, or the same map if the key was not found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImMap&lt;V&gt; Update&lt;V&gt;(this ImMap&lt;V&gt; map, int key, V value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">V</span></td>
+        <td><em>value</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>V</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_Update__1_ImTools_ImMap_ImTools_ImMap_KValue___0___System_Int32___0_System_Object_ImTools_Update___0_System_Object__" data-uid="ImTools.ImMap.Update``1(ImTools.ImMap{ImTools.ImMap.KValue{``0}},System.Int32,``0,System.Object,ImTools.Update{``0,System.Object})">Update&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, Int32, K, Object, Update&lt;K, Object&gt;)</h4>
+  <div class="markdown level1 summary"><p>Updates the map with the new value if key is found, otherwise returns the same unchanged map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImMap&lt;ImMap.KValue&lt;K&gt;&gt; Update&lt;K&gt;(this ImMap&lt;ImMap.KValue&lt;K&gt;&gt; map, int hash, K key, object value, Update&lt;K, object&gt; update = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>hash</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>value</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ImTools.Update-2.html">Update</a>&lt;K, <span class="xref">System.Object</span>&gt;</td>
+        <td><em>update</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>K</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_UpdateEntryUnsafe__1_ImTools_ImMap___0__ImTools_ImMapEntry___0__" data-uid="ImTools.ImMap.UpdateEntryUnsafe``1(ImTools.ImMap{``0},ImTools.ImMapEntry{``0})">UpdateEntryUnsafe&lt;V&gt;(ImMap&lt;V&gt;, ImMapEntry&lt;V&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns the new map with the updated value for the key, ASSUMES that the key is not in the map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImMap&lt;V&gt; UpdateEntryUnsafe&lt;V&gt;(this ImMap&lt;V&gt; map, ImMapEntry&lt;V&gt; entry)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMapEntry-1.html">ImMapEntry</a>&lt;V&gt;</td>
+        <td><em>entry</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>V</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_UpdateToDefault__1_ImTools_ImMap___0__System_Int32_" data-uid="ImTools.ImMap.UpdateToDefault``1(ImTools.ImMap{``0},System.Int32)">UpdateToDefault&lt;V&gt;(ImMap&lt;V&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the new map with the value set to default, or the same map if the key was not found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImMap&lt;V&gt; UpdateToDefault&lt;V&gt;(this ImMap&lt;V&gt; map, int key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>V</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_UpdateToDefault__1_ImTools_ImMap_ImTools_ImMap_KValue___0___System_Int32___0_" data-uid="ImTools.ImMap.UpdateToDefault``1(ImTools.ImMap{ImTools.ImMap.KValue{``0}},System.Int32,``0)">UpdateToDefault&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, Int32, K)</h4>
+  <div class="markdown level1 summary"><p>Updates the map with the default value if the key is found, otherwise returns the same unchanged map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImMap&lt;ImMap.KValue&lt;K&gt;&gt; UpdateToDefault&lt;K&gt;(this ImMap&lt;ImMap.KValue&lt;K&gt;&gt; map, int hash, K key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>hash</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><em>key</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>K</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_Visit__1_ImTools_ImMap___0__System_Action_ImTools_ImMapEntry___0___ImTools_ImMapTree___0____" data-uid="ImTools.ImMap.Visit``1(ImTools.ImMap{``0},System.Action{ImTools.ImMapEntry{``0}},ImTools.ImMapTree{``0}[])">Visit&lt;V&gt;(ImMap&lt;V&gt;, Action&lt;ImMapEntry&lt;V&gt;&gt;, ImMapTree&lt;V&gt;[])</h4>
+  <div class="markdown level1 summary"><p>Visits all the map nodes with from the left to the right and from the bottom to the top
+You may pass <code>parentStacks</code> to reuse the array memory.
+NOTE: the length of <code>parentStack</code> should be at least of map height, content is not important and could be erased.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Visit&lt;V&gt;(this ImMap&lt;V&gt; map, Action&lt;ImMapEntry&lt;V&gt;&gt; visit, ImMapTree&lt;V&gt;[] parentStack = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;V&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="ImTools.ImMapEntry-1.html">ImMapEntry</a>&lt;V&gt;&gt;</td>
+        <td><em>visit</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMapTree-1.html">ImMapTree</a>&lt;V&gt;[]</td>
+        <td><em>parentStack</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>V</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_Visit__1_ImTools_ImMap_ImTools_ImMap_KValue___0___System_Action_ImTools_ImMapEntry_ImTools_ImMap_KValue___0____ImTools_ImMapTree_ImTools_ImMap_KValue___0_____" data-uid="ImTools.ImMap.Visit``1(ImTools.ImMap{ImTools.ImMap.KValue{``0}},System.Action{ImTools.ImMapEntry{ImTools.ImMap.KValue{``0}}},ImTools.ImMapTree{ImTools.ImMap.KValue{``0}}[])">Visit&lt;K&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, Action&lt;ImMapEntry&lt;ImMap.KValue&lt;K&gt;&gt;&gt;, ImMapTree&lt;ImMap.KValue&lt;K&gt;&gt;[])</h4>
+  <div class="markdown level1 summary"><p>Depth-first in-order traversal as described in <a href="http://en.wikipedia.org/wiki/Tree_traversal">http://en.wikipedia.org/wiki/Tree_traversal</a>
+The only difference is using fixed size array instead of stack for speed-up.
+Note: By passing <code data-dev-comment-type="paramref" class="paramref">parentsStack</code> you may reuse the stack array between different method calls,
+but it should be at least <a class="xref" href="ImTools.ImHashMap-2.html#ImTools_ImHashMap_2_Height">Height</a> length. The contents of array are not important.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Visit&lt;K&gt;(this ImMap&lt;ImMap.KValue&lt;K&gt;&gt; map, Action&lt;ImMapEntry&lt;ImMap.KValue&lt;K&gt;&gt;&gt; effect, ImMapTree&lt;ImMap.KValue&lt;K&gt;&gt;[] parentsStack = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="ImTools.ImMapEntry-1.html">ImMapEntry</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;&gt;</td>
+        <td><em>effect</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMapTree-1.html">ImMapTree</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;[]</td>
+        <td><em>parentsStack</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>K</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="ImTools_ImMap_Visit__2_ImTools_ImMap_ImTools_ImMap_KValue___0_____1_System_Action_ImTools_ImMapEntry_ImTools_ImMap_KValue___0_____1__ImTools_ImMapTree_ImTools_ImMap_KValue___0_____" data-uid="ImTools.ImMap.Visit``2(ImTools.ImMap{ImTools.ImMap.KValue{``0}},``1,System.Action{ImTools.ImMapEntry{ImTools.ImMap.KValue{``0}},``1},ImTools.ImMapTree{ImTools.ImMap.KValue{``0}}[])">Visit&lt;K, S&gt;(ImMap&lt;ImMap.KValue&lt;K&gt;&gt;, S, Action&lt;ImMapEntry&lt;ImMap.KValue&lt;K&gt;&gt;, S&gt;, ImMapTree&lt;ImMap.KValue&lt;K&gt;&gt;[])</h4>
+  <div class="markdown level1 summary"><p>Depth-first in-order traversal as described in <a href="http://en.wikipedia.org/wiki/Tree_traversal">http://en.wikipedia.org/wiki/Tree_traversal</a>
+The only difference is using fixed size array instead of stack for speed-up.
+Note: By passing <code data-dev-comment-type="paramref" class="paramref">parentsStack</code> you may reuse the stack array between different method calls,
+but it should be at least <a class="xref" href="ImTools.ImHashMap-2.html#ImTools_ImHashMap_2_Height">Height</a> length. The contents of array are not important.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static S Visit&lt;K, S&gt;(this ImMap&lt;ImMap.KValue&lt;K&gt;&gt; map, S state, Action&lt;ImMapEntry&lt;ImMap.KValue&lt;K&gt;&gt;, S&gt; effect, ImMapTree&lt;ImMap.KValue&lt;K&gt;&gt;[] parentsStack = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMap-1.html">ImMap</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;</td>
+        <td><em>map</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">S</span></td>
+        <td><em>state</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="ImTools.ImMapEntry-1.html">ImMapEntry</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;, S&gt;</td>
+        <td><em>effect</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ImTools.ImMapTree-1.html">ImMapTree</a>&lt;<a class="xref" href="ImTools.ImMap.KValue-1.html">ImMap.KValue</a>&lt;K&gt;&gt;[]</td>
+        <td><em>parentsStack</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">S</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>K</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><em>S</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

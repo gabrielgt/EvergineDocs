@@ -112,7 +112,7 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_HLSLEverywhere_HLSLTranslator_HLSLTo_System_String_WaveEngine_Common_Graphics_ShaderStages_WaveEngine_Common_Graphics_GraphicsProfile_System_String_WaveEngine_HLSLEverywhere_ShadingLanguage_">HLSLTo(String, ShaderStages, GraphicsProfile, String, ShadingLanguage)</a></td>
+        <td><a href="#WaveEngine_HLSLEverywhere_HLSLTranslator_HLSLTo_System_String_WaveEngine_Common_Graphics_ShaderStages_WaveEngine_Common_Graphics_GraphicsProfile_System_String_WaveEngine_HLSLEverywhere_ShadingLanguage_System_Int32_">HLSLTo(String, ShaderStages, GraphicsProfile, String, ShadingLanguage, Int32)</a></td>
         <td><p>Translate HLSL to other languages (GLSL, ESSL, SPIRV, Metal).</p>
 </td>
       </tr>
@@ -165,13 +165,13 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_HLSLEverywhere_HLSLTranslator_HLSLTo_System_String_WaveEngine_Common_Graphics_ShaderStages_WaveEngine_Common_Graphics_GraphicsProfile_System_String_WaveEngine_HLSLEverywhere_ShadingLanguage_" data-uid="WaveEngine.HLSLEverywhere.HLSLTranslator.HLSLTo(System.String,WaveEngine.Common.Graphics.ShaderStages,WaveEngine.Common.Graphics.GraphicsProfile,System.String,WaveEngine.HLSLEverywhere.ShadingLanguage)">HLSLTo(String, ShaderStages, GraphicsProfile, String, ShadingLanguage)</h4>
+  <h4 id="WaveEngine_HLSLEverywhere_HLSLTranslator_HLSLTo_System_String_WaveEngine_Common_Graphics_ShaderStages_WaveEngine_Common_Graphics_GraphicsProfile_System_String_WaveEngine_HLSLEverywhere_ShadingLanguage_System_Int32_" data-uid="WaveEngine.HLSLEverywhere.HLSLTranslator.HLSLTo(System.String,WaveEngine.Common.Graphics.ShaderStages,WaveEngine.Common.Graphics.GraphicsProfile,System.String,WaveEngine.HLSLEverywhere.ShadingLanguage,System.Int32)">HLSLTo(String, ShaderStages, GraphicsProfile, String, ShadingLanguage, Int32)</h4>
   <div class="markdown level1 summary"><p>Translate HLSL to other languages (GLSL, ESSL, SPIRV, Metal).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string HLSLTo(string hlslSource, ShaderStages stage, GraphicsProfile profile, string entryPoint, ShadingLanguage language)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string HLSLTo(string hlslSource, ShaderStages stage, GraphicsProfile profile, string entryPoint, ShadingLanguage language, int version = 450)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -211,6 +211,12 @@
         <td><a class="xref" href="WaveEngine.HLSLEverywhere.ShadingLanguage.html">ShadingLanguage</a></td>
         <td><em>language</em></td>
         <td><p>Target language.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>version</em></td>
+        <td><p>OpenGL/ES version. Default value 460.</p>
 </td>
       </tr>
     </tbody>

@@ -102,19 +102,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Common_Graphics_ComputePipelineDescription__ctor_WaveEngine_Common_Graphics_ResourceLayout___WaveEngine_Common_Graphics_Shader_System_UInt32_System_UInt32_System_UInt32_">ComputePipelineDescription(ResourceLayout[], Shader, UInt32, UInt32, UInt32)</a></td>
+        <td><a href="#WaveEngine_Common_Graphics_ComputePipelineDescription__ctor_WaveEngine_Common_Graphics_ResourceLayout___WaveEngine_Common_Graphics_ComputeShaderStateDescription_System_UInt32_System_UInt32_System_UInt32_">ComputePipelineDescription(ResourceLayout[], ComputeShaderStateDescription, UInt32, UInt32, UInt32)</a></td>
         <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.ComputePipelineDescription.html">ComputePipelineDescription</a> struct.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Common_Graphics_ComputePipelineDescription__ctor_WaveEngine_Common_Graphics_ResourceLayout___WaveEngine_Common_Graphics_Shader_System_UInt32_System_UInt32_System_UInt32_" data-uid="WaveEngine.Common.Graphics.ComputePipelineDescription.#ctor(WaveEngine.Common.Graphics.ResourceLayout[],WaveEngine.Common.Graphics.Shader,System.UInt32,System.UInt32,System.UInt32)">ComputePipelineDescription(ResourceLayout[], Shader, UInt32, UInt32, UInt32)</h4>
+  <h4 id="WaveEngine_Common_Graphics_ComputePipelineDescription__ctor_WaveEngine_Common_Graphics_ResourceLayout___WaveEngine_Common_Graphics_ComputeShaderStateDescription_System_UInt32_System_UInt32_System_UInt32_" data-uid="WaveEngine.Common.Graphics.ComputePipelineDescription.#ctor(WaveEngine.Common.Graphics.ResourceLayout[],WaveEngine.Common.Graphics.ComputeShaderStateDescription,System.UInt32,System.UInt32,System.UInt32)">ComputePipelineDescription(ResourceLayout[], ComputeShaderStateDescription, UInt32, UInt32, UInt32)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.ComputePipelineDescription.html">ComputePipelineDescription</a> struct.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ComputePipelineDescription(ResourceLayout[] resourceLayouts, Shader computeShader, uint threadGroupSizeX = 1U, uint threadGroupSizeY = 1U, uint threadGroupSizeZ = 1U)</code></pre>
+    <pre><code class="lang-csharp hljs">public ComputePipelineDescription(ResourceLayout[] resourceLayouts, ComputeShaderStateDescription shaderDescription, uint threadGroupSizeX = 1U, uint threadGroupSizeY = 1U, uint threadGroupSizeZ = 1U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -133,8 +133,8 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="WaveEngine.Common.Graphics.Shader.html">Shader</a></td>
-        <td><em>computeShader</em></td>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.ComputeShaderStateDescription.html">ComputeShaderStateDescription</a></td>
+        <td><em>shaderDescription</em></td>
         <td><p>The compute shader.</p>
 </td>
       </tr>
@@ -170,13 +170,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Common_Graphics_ComputePipelineDescription_ComputeShader">ComputeShader</a></td>
-        <td><p>Gets or sets the compute shader program.</p>
+        <td><a href="#WaveEngine_Common_Graphics_ComputePipelineDescription_ResourceLayouts">ResourceLayouts</a></td>
+        <td><p>Describes the resources layout input.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Common_Graphics_ComputePipelineDescription_ResourceLayouts">ResourceLayouts</a></td>
-        <td><p>Describes the resources layout input.</p>
+        <td><a href="#WaveEngine_Common_Graphics_ComputePipelineDescription_shaderDescription">shaderDescription</a></td>
+        <td><p>Gets or sets the compute shader program.</p>
 </td>
       </tr>
       <tr>
@@ -193,29 +193,6 @@
         <td><a href="#WaveEngine_Common_Graphics_ComputePipelineDescription_ThreadGroupSizeZ">ThreadGroupSizeZ</a></td>
         <td><p>The Z dimension of the thread group size.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_Common_Graphics_ComputePipelineDescription_ComputeShader" data-uid="WaveEngine.Common.Graphics.ComputePipelineDescription.ComputeShader">ComputeShader</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the compute shader program.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Shader ComputeShader</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="WaveEngine.Common.Graphics.Shader.html">Shader</a></td>
-        <td></td>
       </tr>
     </tbody>
   </table>
@@ -238,6 +215,29 @@
     <tbody>
       <tr>
         <td><a class="xref" href="WaveEngine.Common.Graphics.ResourceLayout.html">ResourceLayout</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_Graphics_ComputePipelineDescription_shaderDescription" data-uid="WaveEngine.Common.Graphics.ComputePipelineDescription.shaderDescription">shaderDescription</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the compute shader program.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ComputeShaderStateDescription shaderDescription</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.ComputeShaderStateDescription.html">ComputeShaderStateDescription</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -576,6 +576,48 @@
   </div>
   <div>
       <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Registrator.html#DryIoc_Registrator_ToFactoryDelegate_System_Object_DryIoc_IResolverContext_">Registrator.ToFactoryDelegate(Object, IResolverContext)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Throw.html#DryIoc_Throw_ThrowIf__1___0_System_Boolean_System_Int32_System_Object_System_Object_System_Object_">Throw.ThrowIf&lt;T&gt;(T, Boolean, Int32, Object, Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.ThrowInGeneratedCode.html#DryIoc_ThrowInGeneratedCode_WeakRefReuseWrapperGCed_System_Object_">ThrowInGeneratedCode.WeakRefReuseWrapperGCed(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__2___0_System_Func___0___1__">Fun.To&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__3___0___1_System_Func___0___1___2__">Fun.To&lt;T, S, R&gt;(T, S, Func&lt;T, S, R&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__1_System_Object_">Fun.To&lt;R&gt;(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_Do__1___0_System_Action___0__">Fun.Do&lt;T&gt;(T, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_Do__2___0___1_System_Action___0___1__">Fun.Do&lt;T, S&gt;(T, S, Action&lt;T, S&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_ToFunc__2___1___0_">Fun.ToFunc&lt;T, R&gt;(R, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ArrayTools.html#ImTools_ArrayTools_One__1___0_">ArrayTools.One&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.KeyValuePair.html#ImTools_KeyValuePair_Pair__2___0___1_">KeyValuePair.Pair&lt;K, V&gt;(K, V)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ImList.html#ImTools_ImList_List__1___0_">ImList.List&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ImList.html#ImTools_ImList_List__1___0_ImTools_ImList___0__">ImList.List&lt;T&gt;(T, ImList&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FastExpressionCompiler.LightExpression.CodePrinter.html#FastExpressionCompiler_LightExpression_CodePrinter_ToCode_System_Object_System_Func_System_Object_System_String__">CodePrinter.ToCode(Object, Func&lt;Object, String&gt;)</a>
   </div>
 </article>
           </div>

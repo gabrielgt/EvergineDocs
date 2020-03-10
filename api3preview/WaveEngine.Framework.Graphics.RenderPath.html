@@ -91,12 +91,13 @@ is rendered within the same batch.</p>
   <div class="inheritance">
     <h5>Inheritance</h5>
       <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level1"><a class="xref" href="WaveEngine.Framework.DisposableObject.html">DisposableObject</a></div>
       <div class="level"><span class="xref"></span></div>
   </div>
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class RenderPath</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class RenderPath : DisposableObject, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -223,6 +224,11 @@ is rendered within the same batch.</p>
     </thead>
     <tbody>
       <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderPath_AdditionalEffectDirectives">AdditionalEffectDirectives</a></td>
+        <td><p>Gets the additional effects directives specified by this pipeline.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_Framework_Graphics_RenderPath_DefaultPathId">DefaultPathId</a></td>
         <td><p>Gets the default path Id. Every RenderPath should define a default pass.</p>
 </td>
@@ -251,6 +257,29 @@ is rendered within the same batch.</p>
         <td><a href="#WaveEngine_Framework_Graphics_RenderPath_RenderManager">RenderManager</a></td>
         <td><p>Gets the render manager.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_RenderPath_AdditionalEffectDirectives" data-uid="WaveEngine.Framework.Graphics.RenderPath.AdditionalEffectDirectives">AdditionalEffectDirectives</h4>
+  <div class="markdown level1 summary"><p>Gets the additional effects directives specified by this pipeline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string[] AdditionalEffectDirectives { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -404,6 +433,11 @@ is rendered within the same batch.</p>
     </thead>
     <tbody>
       <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderPath_Collect_WaveEngine_Framework_Graphics_DrawContext_">Collect(DrawContext)</a></td>
+        <td><p>Collect data to perform draw.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_Framework_Graphics_RenderPath_CreateNewDrawContext_WaveEngine_Framework_Graphics_RenderPipeline_WaveEngine_Framework_Graphics_Camera_">CreateNewDrawContext(RenderPipeline, Camera)</a></td>
         <td><p>Create a new draw context.</p>
 </td>
@@ -416,6 +450,32 @@ is rendered within the same batch.</p>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_RenderPath_RenderPasses_WaveEngine_Framework_Graphics_DrawContext_WaveEngine_Common_Graphics_CommandBuffer_">RenderPasses(DrawContext, CommandBuffer)</a></td>
         <td><p>Render all passes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_RenderPath_Collect_WaveEngine_Framework_Graphics_DrawContext_" data-uid="WaveEngine.Framework.Graphics.RenderPath.Collect(WaveEngine.Framework.Graphics.DrawContext)">Collect(DrawContext)</h4>
+  <div class="markdown level1 summary"><p>Collect data to perform draw.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Collect(DrawContext drawContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.DrawContext.html">DrawContext</a></td>
+        <td><em>drawContext</em></td>
+        <td><p>The context to draw.</p>
 </td>
       </tr>
     </tbody>
@@ -526,12 +586,64 @@ is rendered within the same batch.</p>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
   </div>
   <div>
       <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Registrator.html#DryIoc_Registrator_ToFactoryDelegate_System_Object_DryIoc_IResolverContext_">Registrator.ToFactoryDelegate(Object, IResolverContext)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Throw.html#DryIoc_Throw_ThrowIf__1___0_System_Boolean_System_Int32_System_Object_System_Object_System_Object_">Throw.ThrowIf&lt;T&gt;(T, Boolean, Int32, Object, Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Throw.html#DryIoc_Throw_ThrowIfNull__1___0_System_Int32_System_Object_System_Object_System_Object_System_Object_">Throw.ThrowIfNull&lt;T&gt;(T, Int32, Object, Object, Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Throw.html#DryIoc_Throw_ThrowIfNotInstanceOf__1___0_System_Type_System_Int32_System_Object_System_Object_">Throw.ThrowIfNotInstanceOf&lt;T&gt;(T, Type, Int32, Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.ThrowInGeneratedCode.html#DryIoc_ThrowInGeneratedCode_WeakRefReuseWrapperGCed_System_Object_">ThrowInGeneratedCode.WeakRefReuseWrapperGCed(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__2___0_System_Func___0___1__">Fun.To&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__3___0___1_System_Func___0___1___2__">Fun.To&lt;T, S, R&gt;(T, S, Func&lt;T, S, R&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__1_System_Object_">Fun.To&lt;R&gt;(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_Do__1___0_System_Action___0__">Fun.Do&lt;T&gt;(T, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_Do__2___0___1_System_Action___0___1__">Fun.Do&lt;T, S&gt;(T, S, Action&lt;T, S&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_ToFunc__2___1___0_">Fun.ToFunc&lt;T, R&gt;(R, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ArrayTools.html#ImTools_ArrayTools_One__1___0_">ArrayTools.One&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.KeyValuePair.html#ImTools_KeyValuePair_Pair__2___0___1_">KeyValuePair.Pair&lt;K, V&gt;(K, V)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ImList.html#ImTools_ImList_List__1___0_">ImList.List&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ImList.html#ImTools_ImList_List__1___0_ImTools_ImList___0__">ImList.List&lt;T&gt;(T, ImList&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FastExpressionCompiler.LightExpression.CodePrinter.html#FastExpressionCompiler_LightExpression_CodePrinter_ToCode_System_Object_System_Func_System_Object_System_String__">CodePrinter.ToCode(Object, Func&lt;Object, String&gt;)</a>
   </div>
 </article>
           </div>

@@ -1,0 +1,1150 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Resolver
+   | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Resolver
+   | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DryIoc.Resolver">
+  
+  <h1 id="DryIoc_Resolver" data-uid="DryIoc.Resolver" class="xk-margin-default">Class Resolver
+  </h1>
+  <div class="markdown level0 summary"><p>Extension methods for <a class="xref" href="DryIoc.IResolver.html">IResolver</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+      <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level"><span class="xref"></span></div>
+  </div>
+  <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Resolver</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <h4 id="methods-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#DryIoc_Resolver_Resolve_DryIoc_IResolver_System_Type_">Resolve(IResolver, Type)</a></td>
+        <td><p>Resolves instance of service type from container. Throws exception if unable to resolve.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Resolver_Resolve_DryIoc_IResolver_System_Type_DryIoc_IfUnresolved_">Resolve(IResolver, Type, IfUnresolved)</a></td>
+        <td><p>Resolves instance of service type from container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Resolver_Resolve_DryIoc_IResolver_System_Type_System_Boolean_">Resolve(IResolver, Type, Boolean)</a></td>
+        <td><p>Tries to resolve instance of service type from container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Resolver_Resolve_DryIoc_IResolver_System_Type_System_Object_DryIoc_IfUnresolved_System_Type_System_Object___">Resolve(IResolver, Type, Object, IfUnresolved, Type, Object[])</a></td>
+        <td><p>Returns instance of <code data-dev-comment-type="paramref" class="paramref">serviceType</code> searching for <code data-dev-comment-type="paramref" class="paramref">requiredServiceType</code>.
+In case of <code data-dev-comment-type="paramref" class="paramref">serviceType</code> being generic wrapper like Func, Lazy, IEnumerable, etc., <code data-dev-comment-type="paramref" class="paramref">requiredServiceType</code>
+could specify wrapped service type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Resolver_Resolve_DryIoc_IResolver_System_Type_System_Object___DryIoc_IfUnresolved_System_Type_System_Object_">Resolve(IResolver, Type, Object[], IfUnresolved, Type, Object)</a></td>
+        <td><p>Resolves the service supplying all or some of its dependencies 
+(including nested) with the <code data-dev-comment-type="paramref" class="paramref">args</code>. The rest of dependencies is injected from
+container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Resolver_Resolve_DryIoc_IResolver_System_Type_System_Type_DryIoc_IfUnresolved_System_Object___System_Object_">Resolve(IResolver, Type, Type, IfUnresolved, Object[], Object)</a></td>
+        <td><p>Returns instance of <code data-dev-comment-type="paramref" class="paramref">serviceType</code> searching for <code data-dev-comment-type="paramref" class="paramref">requiredServiceType</code>.
+In case of <code data-dev-comment-type="paramref" class="paramref">serviceType</code> being generic wrapper like Func, Lazy, IEnumerable, etc. 
+<code data-dev-comment-type="paramref" class="paramref">requiredServiceType</code> allow you to specify wrapped service type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Resolver_Resolve__1_DryIoc_IResolver_DryIoc_IfUnresolved_">Resolve&lt;TService&gt;(IResolver, IfUnresolved)</a></td>
+        <td><p>Resolves instance of type TService from container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Resolver_Resolve__1_DryIoc_IResolver_System_Boolean_">Resolve&lt;TService&gt;(IResolver, Boolean)</a></td>
+        <td><p>Tries to resolve instance of TService from container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Resolver_Resolve__1_DryIoc_IResolver_System_Object_DryIoc_IfUnresolved_System_Type_System_Object___">Resolve&lt;TService&gt;(IResolver, Object, IfUnresolved, Type, Object[])</a></td>
+        <td><p>Returns instance of <typepsaramref name="TService"></typepsaramref> type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Resolver_Resolve__1_DryIoc_IResolver_System_Object___DryIoc_IfUnresolved_System_Type_System_Object_">Resolve&lt;TService&gt;(IResolver, Object[], IfUnresolved, Type, Object)</a></td>
+        <td><p>Resolves the service supplying all or some of its dependencies 
+(including nested) with the <code data-dev-comment-type="paramref" class="paramref">args</code>. The rest of dependencies is injected from
+container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Resolver_Resolve__1_DryIoc_IResolver_System_Type_DryIoc_IfUnresolved_System_Object___System_Object_">Resolve&lt;TService&gt;(IResolver, Type, IfUnresolved, Object[], Object)</a></td>
+        <td><p>Returns instance of <code data-dev-comment-type="typeparamref" class="typeparamref">TService</code> searching for <code data-dev-comment-type="paramref" class="paramref">requiredServiceType</code>.
+In case of <code data-dev-comment-type="typeparamref" class="typeparamref">TService</code> being generic wrapper like Func, Lazy, IEnumerable, etc. 
+<code data-dev-comment-type="paramref" class="paramref">requiredServiceType</code> allow you to specify wrapped service type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Resolver_Resolve__2_DryIoc_IResolver_DryIoc_IfUnresolved_System_Object___System_Object_">Resolve&lt;TService, TRequiredService&gt;(IResolver, IfUnresolved, Object[], Object)</a></td>
+        <td><p>Returns instance of <code data-dev-comment-type="typeparamref" class="typeparamref">TService</code> searching for <code data-dev-comment-type="typeparamref" class="typeparamref">TRequiredService</code>.
+In case of <code data-dev-comment-type="typeparamref" class="typeparamref">TService</code> being generic wrapper like Func, Lazy, IEnumerable, etc. 
+<code data-dev-comment-type="typeparamref" class="typeparamref">TRequiredService</code> allow you to specify wrapped service type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Resolver_ResolveMany_DryIoc_IResolver_System_Type_DryIoc_ResolveManyBehavior_System_Object___System_Object_">ResolveMany(IResolver, Type, ResolveManyBehavior, Object[], Object)</a></td>
+        <td><p>Returns all registered services as objects, including all keyed and default registrations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Resolver_ResolveMany__1_DryIoc_IResolver_System_Type_DryIoc_ResolveManyBehavior_System_Object___System_Object_">ResolveMany&lt;TService&gt;(IResolver, Type, ResolveManyBehavior, Object[], Object)</a></td>
+        <td><p>Returns all registered services instances including all keyed and default registrations.
+Use <code data-dev-comment-type="paramref" class="paramref">behavior</code> to return either all registered services at the moment of resolve (dynamic fresh view) or
+the same services that were returned with first <a class="xref" href="DryIoc.Resolver.html#DryIoc_Resolver_ResolveMany__1_DryIoc_IResolver_System_Type_DryIoc_ResolveManyBehavior_System_Object___System_Object_">ResolveMany&lt;TService&gt;(IResolver, Type, ResolveManyBehavior, Object[], Object)</a> call (fixed view).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Resolver_Resolve_DryIoc_IResolver_System_Type_" data-uid="DryIoc.Resolver.Resolve(DryIoc.IResolver,System.Type)">Resolve(IResolver, Type)</h4>
+  <div class="markdown level1 summary"><p>Resolves instance of service type from container. Throws exception if unable to resolve.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object Resolve(this IResolver resolver, Type serviceType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IResolver.html">IResolver</a></td>
+        <td><em>resolver</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>serviceType</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Resolver_Resolve_DryIoc_IResolver_System_Type_DryIoc_IfUnresolved_" data-uid="DryIoc.Resolver.Resolve(DryIoc.IResolver,System.Type,DryIoc.IfUnresolved)">Resolve(IResolver, Type, IfUnresolved)</h4>
+  <div class="markdown level1 summary"><p>Resolves instance of service type from container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object Resolve(this IResolver resolver, Type serviceType, IfUnresolved ifUnresolved)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IResolver.html">IResolver</a></td>
+        <td><em>resolver</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>serviceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.IfUnresolved.html">IfUnresolved</a></td>
+        <td><em>ifUnresolved</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Resolver_Resolve_DryIoc_IResolver_System_Type_System_Boolean_" data-uid="DryIoc.Resolver.Resolve(DryIoc.IResolver,System.Type,System.Boolean)">Resolve(IResolver, Type, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Tries to resolve instance of service type from container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object Resolve(this IResolver resolver, Type serviceType, bool ifUnresolvedReturnDefault)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IResolver.html">IResolver</a></td>
+        <td><em>resolver</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>serviceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>ifUnresolvedReturnDefault</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Resolver_Resolve_DryIoc_IResolver_System_Type_System_Object_DryIoc_IfUnresolved_System_Type_System_Object___" data-uid="DryIoc.Resolver.Resolve(DryIoc.IResolver,System.Type,System.Object,DryIoc.IfUnresolved,System.Type,System.Object[])">Resolve(IResolver, Type, Object, IfUnresolved, Type, Object[])</h4>
+  <div class="markdown level1 summary"><p>Returns instance of <code data-dev-comment-type="paramref" class="paramref">serviceType</code> searching for <code data-dev-comment-type="paramref" class="paramref">requiredServiceType</code>.
+In case of <code data-dev-comment-type="paramref" class="paramref">serviceType</code> being generic wrapper like Func, Lazy, IEnumerable, etc., <code data-dev-comment-type="paramref" class="paramref">requiredServiceType</code>
+could specify wrapped service type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="DryIoc_Resolver_Resolve_DryIoc_IResolver_System_Type_System_Object_DryIoc_IfUnresolved_System_Type_System_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Using <code data-dev-comment-type="paramref" class="paramref">requiredServiceType</code> implicitly support Covariance for generic wrappers even in .Net 3.5.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object Resolve(this IResolver resolver, Type serviceType, object serviceKey, IfUnresolved ifUnresolved = IfUnresolved.Throw, Type requiredServiceType = null, object[] args = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IResolver.html">IResolver</a></td>
+        <td><em>resolver</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>serviceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.IfUnresolved.html">IfUnresolved</a></td>
+        <td><em>ifUnresolved</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>requiredServiceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><em>args</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Resolver_Resolve_DryIoc_IResolver_System_Type_System_Object___DryIoc_IfUnresolved_System_Type_System_Object_" data-uid="DryIoc.Resolver.Resolve(DryIoc.IResolver,System.Type,System.Object[],DryIoc.IfUnresolved,System.Type,System.Object)">Resolve(IResolver, Type, Object[], IfUnresolved, Type, Object)</h4>
+  <div class="markdown level1 summary"><p>Resolves the service supplying all or some of its dependencies 
+(including nested) with the <code data-dev-comment-type="paramref" class="paramref">args</code>. The rest of dependencies is injected from
+container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object Resolve(this IResolver resolver, Type serviceType, object[] args, IfUnresolved ifUnresolved = IfUnresolved.Throw, Type requiredServiceType = null, object serviceKey = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IResolver.html">IResolver</a></td>
+        <td><em>resolver</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>serviceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><em>args</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.IfUnresolved.html">IfUnresolved</a></td>
+        <td><em>ifUnresolved</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>requiredServiceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Resolver_Resolve_DryIoc_IResolver_System_Type_System_Type_DryIoc_IfUnresolved_System_Object___System_Object_" data-uid="DryIoc.Resolver.Resolve(DryIoc.IResolver,System.Type,System.Type,DryIoc.IfUnresolved,System.Object[],System.Object)">Resolve(IResolver, Type, Type, IfUnresolved, Object[], Object)</h4>
+  <div class="markdown level1 summary"><p>Returns instance of <code data-dev-comment-type="paramref" class="paramref">serviceType</code> searching for <code data-dev-comment-type="paramref" class="paramref">requiredServiceType</code>.
+In case of <code data-dev-comment-type="paramref" class="paramref">serviceType</code> being generic wrapper like Func, Lazy, IEnumerable, etc. 
+<code data-dev-comment-type="paramref" class="paramref">requiredServiceType</code> allow you to specify wrapped service type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object Resolve(this IResolver resolver, Type serviceType, Type requiredServiceType, IfUnresolved ifUnresolved = IfUnresolved.Throw, object[] args = null, object serviceKey = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IResolver.html">IResolver</a></td>
+        <td><em>resolver</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>serviceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>requiredServiceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.IfUnresolved.html">IfUnresolved</a></td>
+        <td><em>ifUnresolved</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><em>args</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Resolver_Resolve__1_DryIoc_IResolver_DryIoc_IfUnresolved_" data-uid="DryIoc.Resolver.Resolve``1(DryIoc.IResolver,DryIoc.IfUnresolved)">Resolve&lt;TService&gt;(IResolver, IfUnresolved)</h4>
+  <div class="markdown level1 summary"><p>Resolves instance of type TService from container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TService Resolve&lt;TService&gt;(this IResolver resolver, IfUnresolved ifUnresolved = IfUnresolved.Throw)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IResolver.html">IResolver</a></td>
+        <td><em>resolver</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.IfUnresolved.html">IfUnresolved</a></td>
+        <td><em>ifUnresolved</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TService</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>TService</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Resolver_Resolve__1_DryIoc_IResolver_System_Boolean_" data-uid="DryIoc.Resolver.Resolve``1(DryIoc.IResolver,System.Boolean)">Resolve&lt;TService&gt;(IResolver, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Tries to resolve instance of TService from container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object Resolve&lt;TService&gt;(this IResolver resolver, bool ifUnresolvedReturnDefault)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IResolver.html">IResolver</a></td>
+        <td><em>resolver</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>ifUnresolvedReturnDefault</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>TService</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Resolver_Resolve__1_DryIoc_IResolver_System_Object_DryIoc_IfUnresolved_System_Type_System_Object___" data-uid="DryIoc.Resolver.Resolve``1(DryIoc.IResolver,System.Object,DryIoc.IfUnresolved,System.Type,System.Object[])">Resolve&lt;TService&gt;(IResolver, Object, IfUnresolved, Type, Object[])</h4>
+  <div class="markdown level1 summary"><p>Returns instance of <typepsaramref name="TService"></typepsaramref> type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="DryIoc_Resolver_Resolve__1_DryIoc_IResolver_System_Object_DryIoc_IfUnresolved_System_Type_System_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Using <code data-dev-comment-type="paramref" class="paramref">requiredServiceType</code> implicitly support Covariance for generic wrappers even in .Net 3.5.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TService Resolve&lt;TService&gt;(this IResolver resolver, object serviceKey, IfUnresolved ifUnresolved = IfUnresolved.Throw, Type requiredServiceType = null, object[] args = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IResolver.html">IResolver</a></td>
+        <td><em>resolver</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.IfUnresolved.html">IfUnresolved</a></td>
+        <td><em>ifUnresolved</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>requiredServiceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><em>args</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TService</span></td>
+        <td><p>The requested service instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>TService</em></td>
+        <td><p>The type of the requested service.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Resolver_Resolve__1_DryIoc_IResolver_System_Object___DryIoc_IfUnresolved_System_Type_System_Object_" data-uid="DryIoc.Resolver.Resolve``1(DryIoc.IResolver,System.Object[],DryIoc.IfUnresolved,System.Type,System.Object)">Resolve&lt;TService&gt;(IResolver, Object[], IfUnresolved, Type, Object)</h4>
+  <div class="markdown level1 summary"><p>Resolves the service supplying all or some of its dependencies 
+(including nested) with the <code data-dev-comment-type="paramref" class="paramref">args</code>. The rest of dependencies is injected from
+container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TService Resolve&lt;TService&gt;(this IResolver resolver, object[] args, IfUnresolved ifUnresolved = IfUnresolved.Throw, Type requiredServiceType = null, object serviceKey = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IResolver.html">IResolver</a></td>
+        <td><em>resolver</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><em>args</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.IfUnresolved.html">IfUnresolved</a></td>
+        <td><em>ifUnresolved</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>requiredServiceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TService</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>TService</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Resolver_Resolve__1_DryIoc_IResolver_System_Type_DryIoc_IfUnresolved_System_Object___System_Object_" data-uid="DryIoc.Resolver.Resolve``1(DryIoc.IResolver,System.Type,DryIoc.IfUnresolved,System.Object[],System.Object)">Resolve&lt;TService&gt;(IResolver, Type, IfUnresolved, Object[], Object)</h4>
+  <div class="markdown level1 summary"><p>Returns instance of <code data-dev-comment-type="typeparamref" class="typeparamref">TService</code> searching for <code data-dev-comment-type="paramref" class="paramref">requiredServiceType</code>.
+In case of <code data-dev-comment-type="typeparamref" class="typeparamref">TService</code> being generic wrapper like Func, Lazy, IEnumerable, etc. 
+<code data-dev-comment-type="paramref" class="paramref">requiredServiceType</code> allow you to specify wrapped service type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TService Resolve&lt;TService&gt;(this IResolver resolver, Type requiredServiceType, IfUnresolved ifUnresolved = IfUnresolved.Throw, object[] args = null, object serviceKey = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IResolver.html">IResolver</a></td>
+        <td><em>resolver</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>requiredServiceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.IfUnresolved.html">IfUnresolved</a></td>
+        <td><em>ifUnresolved</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><em>args</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TService</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>TService</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Resolver_Resolve__2_DryIoc_IResolver_DryIoc_IfUnresolved_System_Object___System_Object_" data-uid="DryIoc.Resolver.Resolve``2(DryIoc.IResolver,DryIoc.IfUnresolved,System.Object[],System.Object)">Resolve&lt;TService, TRequiredService&gt;(IResolver, IfUnresolved, Object[], Object)</h4>
+  <div class="markdown level1 summary"><p>Returns instance of <code data-dev-comment-type="typeparamref" class="typeparamref">TService</code> searching for <code data-dev-comment-type="typeparamref" class="typeparamref">TRequiredService</code>.
+In case of <code data-dev-comment-type="typeparamref" class="typeparamref">TService</code> being generic wrapper like Func, Lazy, IEnumerable, etc. 
+<code data-dev-comment-type="typeparamref" class="typeparamref">TRequiredService</code> allow you to specify wrapped service type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TService Resolve&lt;TService, TRequiredService&gt;(this IResolver resolver, IfUnresolved ifUnresolved = IfUnresolved.Throw, object[] args = null, object serviceKey = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IResolver.html">IResolver</a></td>
+        <td><em>resolver</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.IfUnresolved.html">IfUnresolved</a></td>
+        <td><em>ifUnresolved</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><em>args</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TService</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>TService</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><em>TRequiredService</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Resolver_ResolveMany_DryIoc_IResolver_System_Type_DryIoc_ResolveManyBehavior_System_Object___System_Object_" data-uid="DryIoc.Resolver.ResolveMany(DryIoc.IResolver,System.Type,DryIoc.ResolveManyBehavior,System.Object[],System.Object)">ResolveMany(IResolver, Type, ResolveManyBehavior, Object[], Object)</h4>
+  <div class="markdown level1 summary"><p>Returns all registered services as objects, including all keyed and default registrations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;object&gt; ResolveMany(this IResolver resolver, Type serviceType, ResolveManyBehavior behavior = ResolveManyBehavior.AsLazyEnumerable, object[] args = null, object serviceKey = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IResolver.html">IResolver</a></td>
+        <td><em>resolver</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>serviceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.ResolveManyBehavior.html">ResolveManyBehavior</a></td>
+        <td><em>behavior</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><em>args</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Resolver_ResolveMany__1_DryIoc_IResolver_System_Type_DryIoc_ResolveManyBehavior_System_Object___System_Object_" data-uid="DryIoc.Resolver.ResolveMany``1(DryIoc.IResolver,System.Type,DryIoc.ResolveManyBehavior,System.Object[],System.Object)">ResolveMany&lt;TService&gt;(IResolver, Type, ResolveManyBehavior, Object[], Object)</h4>
+  <div class="markdown level1 summary"><p>Returns all registered services instances including all keyed and default registrations.
+Use <code data-dev-comment-type="paramref" class="paramref">behavior</code> to return either all registered services at the moment of resolve (dynamic fresh view) or
+the same services that were returned with first <a class="xref" href="DryIoc.Resolver.html#DryIoc_Resolver_ResolveMany__1_DryIoc_IResolver_System_Type_DryIoc_ResolveManyBehavior_System_Object___System_Object_">ResolveMany&lt;TService&gt;(IResolver, Type, ResolveManyBehavior, Object[], Object)</a> call (fixed view).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="DryIoc_Resolver_ResolveMany__1_DryIoc_IResolver_System_Type_DryIoc_ResolveManyBehavior_System_Object___System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The same result could be achieved by directly calling:</p>
+<pre><code>    container.Resolve&lt;LazyEnumerable&lt;IService>>();  // for dynamic result - default behavior
+    container.Resolve&lt;IService[]>();                // for fixed array
+    container.Resolve&lt;IEnumerable&lt;IService>>();     // same as fixed array</code></pre>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;TService&gt; ResolveMany&lt;TService&gt;(this IResolver resolver, Type requiredServiceType = null, ResolveManyBehavior behavior = ResolveManyBehavior.AsLazyEnumerable, object[] args = null, object serviceKey = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IResolver.html">IResolver</a></td>
+        <td><em>resolver</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>requiredServiceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.ResolveManyBehavior.html">ResolveManyBehavior</a></td>
+        <td><em>behavior</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><em>args</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TService&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>TService</em></td>
+        <td><p>Return collection item type. 
+It denotes registered service type if <code data-dev-comment-type="paramref" class="paramref">requiredServiceType</code> is not specified.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

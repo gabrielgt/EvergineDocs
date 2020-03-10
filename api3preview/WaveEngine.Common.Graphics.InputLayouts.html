@@ -208,6 +208,21 @@
         <td><p>If the current layout is assignable to the parameter input layout.</p>
 </td>
       </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_Graphics_InputLayouts_Read_System_IO_BinaryReader_">Read(BinaryReader)</a></td>
+        <td><p>Read InputLayouts from binary file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_Graphics_InputLayouts_TryGetSlot_WaveEngine_Common_Graphics_ElementSemanticType_System_UInt32_System_UInt32__">TryGetSlot(ElementSemanticType, UInt32, out UInt32)</a></td>
+        <td><p>Try get the attribute slot by semantic and semantic index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_Graphics_InputLayouts_Write_System_IO_BinaryWriter_">Write(BinaryWriter)</a></td>
+        <td><p>Write InputLayouts in a binary file.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h4 id="WaveEngine_Common_Graphics_InputLayouts_Add_WaveEngine_Common_Graphics_LayoutDescription_" data-uid="WaveEngine.Common.Graphics.InputLayouts.Add(WaveEngine.Common.Graphics.LayoutDescription)">Add(LayoutDescription)</h4>
@@ -470,6 +485,128 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_Common_Graphics_InputLayouts_Read_System_IO_BinaryReader_" data-uid="WaveEngine.Common.Graphics.InputLayouts.Read(System.IO.BinaryReader)">Read(BinaryReader)</h4>
+  <div class="markdown level1 summary"><p>Read InputLayouts from binary file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InputLayouts Read(BinaryReader reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryReader</span></td>
+        <td><em>reader</em></td>
+        <td><p>The binary reader.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.InputLayouts.html">InputLayouts</a></td>
+        <td><p>The readed inputLayouts.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_Graphics_InputLayouts_TryGetSlot_WaveEngine_Common_Graphics_ElementSemanticType_System_UInt32_System_UInt32__" data-uid="WaveEngine.Common.Graphics.InputLayouts.TryGetSlot(WaveEngine.Common.Graphics.ElementSemanticType,System.UInt32,System.UInt32@)">TryGetSlot(ElementSemanticType, UInt32, out UInt32)</h4>
+  <div class="markdown level1 summary"><p>Try get the attribute slot by semantic and semantic index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetSlot(ElementSemanticType semantic, uint semanticIndex, out uint slot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.ElementSemanticType.html">ElementSemanticType</a></td>
+        <td><em>semantic</em></td>
+        <td><p>Attribute semantic type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><em>semanticIndex</em></td>
+        <td><p>Attribute semantic index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><em>slot</em></td>
+        <td><p>Attribute slot.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True whether found the attribute and False in otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_Graphics_InputLayouts_Write_System_IO_BinaryWriter_" data-uid="WaveEngine.Common.Graphics.InputLayouts.Write(System.IO.BinaryWriter)">Write(BinaryWriter)</h4>
+  <div class="markdown level1 summary"><p>Write InputLayouts in a binary file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(BinaryWriter writer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><em>writer</em></td>
+        <td><p>The binary writer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="operators">Operators
   </h3>
   <h4 id="operators-summary">Summary</h4>
@@ -599,6 +736,54 @@
   </div>
   <div>
       <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Registrator.html#DryIoc_Registrator_ToFactoryDelegate_System_Object_DryIoc_IResolverContext_">Registrator.ToFactoryDelegate(Object, IResolverContext)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Throw.html#DryIoc_Throw_ThrowIf__1___0_System_Boolean_System_Int32_System_Object_System_Object_System_Object_">Throw.ThrowIf&lt;T&gt;(T, Boolean, Int32, Object, Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Throw.html#DryIoc_Throw_ThrowIfNull__1___0_System_Int32_System_Object_System_Object_System_Object_System_Object_">Throw.ThrowIfNull&lt;T&gt;(T, Int32, Object, Object, Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Throw.html#DryIoc_Throw_ThrowIfNotInstanceOf__1___0_System_Type_System_Int32_System_Object_System_Object_">Throw.ThrowIfNotInstanceOf&lt;T&gt;(T, Type, Int32, Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.ThrowInGeneratedCode.html#DryIoc_ThrowInGeneratedCode_WeakRefReuseWrapperGCed_System_Object_">ThrowInGeneratedCode.WeakRefReuseWrapperGCed(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__2___0_System_Func___0___1__">Fun.To&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__3___0___1_System_Func___0___1___2__">Fun.To&lt;T, S, R&gt;(T, S, Func&lt;T, S, R&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__1_System_Object_">Fun.To&lt;R&gt;(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_Do__1___0_System_Action___0__">Fun.Do&lt;T&gt;(T, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_Do__2___0___1_System_Action___0___1__">Fun.Do&lt;T, S&gt;(T, S, Action&lt;T, S&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_ToFunc__2___1___0_">Fun.ToFunc&lt;T, R&gt;(R, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ArrayTools.html#ImTools_ArrayTools_One__1___0_">ArrayTools.One&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.KeyValuePair.html#ImTools_KeyValuePair_Pair__2___0___1_">KeyValuePair.Pair&lt;K, V&gt;(K, V)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ImList.html#ImTools_ImList_List__1___0_">ImList.List&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ImList.html#ImTools_ImList_List__1___0_ImTools_ImList___0__">ImList.List&lt;T&gt;(T, ImList&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FastExpressionCompiler.LightExpression.CodePrinter.html#FastExpressionCompiler_LightExpression_CodePrinter_ToCode_System_Object_System_Func_System_Object_System_String__">CodePrinter.ToCode(Object, Func&lt;Object, String&gt;)</a>
   </div>
 </article>
           </div>

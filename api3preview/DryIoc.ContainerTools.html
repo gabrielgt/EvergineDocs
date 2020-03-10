@@ -1,0 +1,2242 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ContainerTools
+   | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ContainerTools
+   | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DryIoc.ContainerTools">
+  
+  <h1 id="DryIoc_ContainerTools" data-uid="DryIoc.ContainerTools" class="xk-margin-default">Class ContainerTools
+  </h1>
+  <div class="markdown level0 summary"><p>Container extended features.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+      <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level"><span class="xref"></span></div>
+  </div>
+  <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ContainerTools</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="fields-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_FacadeKey">FacadeKey</a></td>
+        <td><p>The default key for services registered into container created by <a class="xref" href="DryIoc.ContainerTools.html#DryIoc_ContainerTools_CreateFacade_DryIoc_IContainer_System_String_">CreateFacade(IContainer, String)</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_FacadeKey" data-uid="DryIoc.ContainerTools.FacadeKey">FacadeKey</h4>
+  <div class="markdown level1 summary"><p>The default key for services registered into container created by <a class="xref" href="DryIoc.ContainerTools.html#DryIoc_ContainerTools_CreateFacade_DryIoc_IContainer_System_String_">CreateFacade(IContainer, String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string FacadeKey = &quot;@facade&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <h4 id="methods-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_ClearCache_DryIoc_IContainer_System_Type_System_Nullable_DryIoc_FactoryType__System_Object_">ClearCache(IContainer, Type, Nullable&lt;FactoryType&gt;, Object)</a></td>
+        <td><p>Clears delegate and expression cache for specified service.
+But does not clear instances of already resolved/created singletons and scoped services!</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_ClearCache__1_DryIoc_IContainer_System_Nullable_DryIoc_FactoryType__System_Object_">ClearCache&lt;T&gt;(IContainer, Nullable&lt;FactoryType&gt;, Object)</a></td>
+        <td><p>Clears delegate and expression cache for specified <code data-dev-comment-type="typeparamref" class="typeparamref">T</code>.
+But does not clear instances of already resolved/created singletons and scoped services!</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_CreateFacade_DryIoc_IContainer_System_String_">CreateFacade(IContainer, String)</a></td>
+        <td><p>Allows to register new specially keyed services which will facade the same default service,
+registered earlier. May be used to &quot;override&quot; registrations when testing the container</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_DefaultValidateCondition_DryIoc_ServiceRegistrationInfo_">DefaultValidateCondition(ServiceRegistrationInfo)</a></td>
+        <td><p>Excluding open-generic registrations, cause you need to provide type arguments to actually create these types.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_GenerateResolutionExpressions_DryIoc_IContainer_DryIoc_ServiceInfo___">GenerateResolutionExpressions(IContainer, ServiceInfo[])</a></td>
+        <td><p>Generates expressions for provided root services</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_GenerateResolutionExpressions_DryIoc_IContainer_System_Func_DryIoc_ServiceRegistrationInfo_System_Boolean__">GenerateResolutionExpressions(IContainer, Func&lt;ServiceRegistrationInfo, Boolean&gt;)</a></td>
+        <td><p>Generates expressions for provided root services</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_GenerateResolutionExpressions_DryIoc_IContainer_System_Func_System_Collections_Generic_IEnumerable_DryIoc_ServiceRegistrationInfo__System_Collections_Generic_IEnumerable_DryIoc_ServiceInfo___System_Boolean_">GenerateResolutionExpressions(IContainer, Func&lt;IEnumerable&lt;ServiceRegistrationInfo&gt;, IEnumerable&lt;ServiceInfo&gt;&gt;, Boolean)</a></td>
+        <td><p>Generates expressions for specified roots and their &quot;Resolve-call&quot; dependencies.
+Wraps exceptions into errors. The method does not create any actual services.
+You may use Factory <a class="xref" href="DryIoc.Setup.html#DryIoc_Setup_AsResolutionRoot">AsResolutionRoot</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_GetRequestExpression_DryIoc_IContainer_DryIoc_Request_DryIoc_RequestFlags_">GetRequestExpression(IContainer, Request, RequestFlags)</a></td>
+        <td><p>Re-constructs the whole request chain as request creation expression.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_InjectPropertiesAndFields__1_DryIoc_IResolverContext___0_">InjectPropertiesAndFields&lt;TService&gt;(IResolverContext, TService)</a></td>
+        <td><p>For given instance resolves and sets properties and fields.
+It respects <a class="xref" href="DryIoc.Rules.html#DryIoc_Rules_PropertiesAndFields">PropertiesAndFields</a> rules set per container,
+or if rules are not set it uses <a class="xref" href="DryIoc.PropertiesAndFields.html#DryIoc_PropertiesAndFields_Auto">Auto</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_InjectPropertiesAndFields__1_DryIoc_IResolverContext___0_System_String___">InjectPropertiesAndFields&lt;TService&gt;(IResolverContext, TService, String[])</a></td>
+        <td><p>For given instance resolves and sets properties and fields. You may specify what 
+properties and fields.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_New_DryIoc_IContainer_System_Type_DryIoc_Made_DryIoc_RegistrySharing_">New(IContainer, Type, Made, RegistrySharing)</a></td>
+        <td><p>Creates service using container for injecting parameters without registering anything in <code data-dev-comment-type="paramref" class="paramref">container</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_New_DryIoc_IContainer_System_Type_DryIoc_Setup_DryIoc_Made_DryIoc_RegistrySharing_">New(IContainer, Type, Setup, Made, RegistrySharing)</a></td>
+        <td><p>Creates service using container for injecting parameters without registering anything in <code data-dev-comment-type="paramref" class="paramref">container</code>
+if the TYPE is not registered yet.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_New__1_DryIoc_IContainer_DryIoc_Made_DryIoc_RegistrySharing_">New&lt;T&gt;(IContainer, Made, RegistrySharing)</a></td>
+        <td><p>Creates service using container for injecting parameters without registering anything in <code data-dev-comment-type="paramref" class="paramref">container</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_New__1_DryIoc_IContainer_DryIoc_Made_TypedMade___0__DryIoc_RegistrySharing_">New&lt;T&gt;(IContainer, Made.TypedMade&lt;T&gt;, RegistrySharing)</a></td>
+        <td><p>Creates service given strongly-typed creation expression.
+Can be used to invoke arbitrary method returning some value with injecting its parameters from container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_RegisterMapping_DryIoc_IContainer_System_Type_System_Type_System_Object_System_Object_">RegisterMapping(IContainer, Type, Type, Object, Object)</a></td>
+        <td><p>Registers new service type with factory for registered service type.
+Throw if no such registered service type in container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_RegisterMapping__2_DryIoc_IContainer_System_Object_System_Object_">RegisterMapping&lt;TService, TRegisteredService&gt;(IContainer, Object, Object)</a></td>
+        <td><p>Registers new service type with factory for registered service type.
+Throw if no such registered service type in container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_RegisterPlaceholder_DryIoc_IContainer_System_Type_System_Nullable_DryIoc_IfAlreadyRegistered__System_Object_">RegisterPlaceholder(IContainer, Type, Nullable&lt;IfAlreadyRegistered&gt;, Object)</a></td>
+        <td><p>Forwards to <a class="xref" href="DryIoc.Registrator.html#DryIoc_Registrator_RegisterPlaceholder_DryIoc_IRegistrator_System_Type_System_Nullable_DryIoc_IfAlreadyRegistered__System_Object_">RegisterPlaceholder(IRegistrator, Type, Nullable&lt;IfAlreadyRegistered&gt;, Object)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_RegisterPlaceholder__1_DryIoc_IContainer_System_Nullable_DryIoc_IfAlreadyRegistered__System_Object_">RegisterPlaceholder&lt;TService&gt;(IContainer, Nullable&lt;IfAlreadyRegistered&gt;, Object)</a></td>
+        <td><p>Register a service without implementation which can be provided later in terms
+of normal registration with IfAlreadyRegistered.Replace parameter.
+When the implementation is still not provided when the placeholder service is accessed,
+then the exception will be thrown.
+This feature allows you to postpone decision on implementation until it is later known.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_Validate_DryIoc_IContainer_DryIoc_ServiceInfo___">Validate(IContainer, ServiceInfo[])</a></td>
+        <td><p>Helps to find potential problems when resolving the <code data-dev-comment-type="paramref" class="paramref">roots</code>.
+Method will collect the exceptions when resolving or injecting the specific root.
+Does not create any actual service objects.
+You must specify <code data-dev-comment-type="paramref" class="paramref">roots</code> to define your resolution roots,
+otherwise container will try to resolve all registrations, 
+which usually is not realistic case to validate. </p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_Validate_DryIoc_IContainer_System_Func_DryIoc_ServiceRegistrationInfo_System_Boolean__">Validate(IContainer, Func&lt;ServiceRegistrationInfo, Boolean&gt;)</a></td>
+        <td><p>Helps to find potential problems in service registration setup.
+Method tries to resolve the specified registrations, collects exceptions, and
+returns them to user. Does not create any actual service objects.
+You must specify <code data-dev-comment-type="paramref" class="paramref">condition</code> to define your resolution roots,
+otherwise container will try to resolve all registrations, 
+which usually is not realistic case to validate. </p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_With_DryIoc_IContainer_System_Func_DryIoc_Rules_DryIoc_Rules__DryIoc_IScopeContext_">With(IContainer, Func&lt;Rules, Rules&gt;, IScopeContext)</a></td>
+        <td><p>Shares all of container state except the cache and the new rules.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_WithAutoFallbackDynamicRegistrations_DryIoc_IContainer_DryIoc_IReuse_DryIoc_Setup_System_Type___">WithAutoFallbackDynamicRegistrations(IContainer, IReuse, Setup, Type[])</a></td>
+        <td><p>Provides automatic fallback resolution mechanism for not normally registered
+services. Underneath uses <a class="xref" href="DryIoc.Rules.html#DryIoc_Rules_WithDynamicRegistrations_DryIoc_Rules_DynamicRegistrationProvider___">WithDynamicRegistrations(Rules.DynamicRegistrationProvider[])</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_WithAutoFallbackDynamicRegistrations_DryIoc_IContainer_DryIoc_IReuse_System_Type___">WithAutoFallbackDynamicRegistrations(IContainer, IReuse, Type[])</a></td>
+        <td><p>Provides automatic fallback resolution mechanism for not normally registered
+services. Underneath uses <a class="xref" href="DryIoc.Rules.html#DryIoc_Rules_WithDynamicRegistrations_DryIoc_Rules_DynamicRegistrationProvider___">WithDynamicRegistrations(Rules.DynamicRegistrationProvider[])</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_WithAutoFallbackDynamicRegistrations_DryIoc_IContainer_System_Collections_Generic_IEnumerable_System_Reflection_Assembly__">WithAutoFallbackDynamicRegistrations(IContainer, IEnumerable&lt;Assembly&gt;)</a></td>
+        <td><p>Provides automatic fallback resolution mechanism for not normally registered
+services. Underneath uses <a class="xref" href="DryIoc.Rules.html#DryIoc_Rules_WithDynamicRegistrations_DryIoc_Rules_DynamicRegistrationProvider___">WithDynamicRegistrations(Rules.DynamicRegistrationProvider[])</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_WithAutoFallbackDynamicRegistrations_DryIoc_IContainer_System_Func_System_Type_System_Object_System_Collections_Generic_IEnumerable_System_Reflection_Assembly___System_Func_System_Type_DryIoc_Factory__">WithAutoFallbackDynamicRegistrations(IContainer, Func&lt;Type, Object, IEnumerable&lt;Assembly&gt;&gt;, Func&lt;Type, Factory&gt;)</a></td>
+        <td><p>Provides automatic fallback resolution mechanism for not normally registered
+services. Underneath uses <a class="xref" href="DryIoc.Rules.html#DryIoc_Rules_WithDynamicRegistrations_DryIoc_Rules_DynamicRegistrationProvider___">WithDynamicRegistrations(Rules.DynamicRegistrationProvider[])</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_WithAutoFallbackDynamicRegistrations_DryIoc_IContainer_System_Func_System_Type_System_Object_System_Collections_Generic_IEnumerable_System_Type___System_Func_System_Type_DryIoc_Factory__">WithAutoFallbackDynamicRegistrations(IContainer, Func&lt;Type, Object, IEnumerable&lt;Type&gt;&gt;, Func&lt;Type, Factory&gt;)</a></td>
+        <td><p>Provides automatic fallback resolution mechanism for not normally registered
+services. Underneath uses <a class="xref" href="DryIoc.Rules.html#DryIoc_Rules_WithDynamicRegistrations_DryIoc_Rules_DynamicRegistrationProvider___">WithDynamicRegistrations(Rules.DynamicRegistrationProvider[])</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_WithAutoFallbackDynamicRegistrations_DryIoc_IContainer_System_Reflection_Assembly___">WithAutoFallbackDynamicRegistrations(IContainer, Assembly[])</a></td>
+        <td><p>Provides automatic fallback resolution mechanism for not normally registered
+services. Underneath uses <a class="xref" href="DryIoc.Rules.html#DryIoc_Rules_WithDynamicRegistrations_DryIoc_Rules_DynamicRegistrationProvider___">WithDynamicRegistrations(Rules.DynamicRegistrationProvider[])</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_WithAutoFallbackDynamicRegistrations_DryIoc_IContainer_System_Type___">WithAutoFallbackDynamicRegistrations(IContainer, Type[])</a></td>
+        <td><p>Provides automatic fallback resolution mechanism for not normally registered
+services. Underneath uses <a class="xref" href="DryIoc.Rules.html#DryIoc_Rules_WithDynamicRegistrations_DryIoc_Rules_DynamicRegistrationProvider___">WithDynamicRegistrations(Rules.DynamicRegistrationProvider[])</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_WithAutoFallbackResolution_DryIoc_IContainer_System_Collections_Generic_IEnumerable_System_Reflection_Assembly__System_Func_DryIoc_IReuse_DryIoc_Request_DryIoc_IReuse__System_Func_DryIoc_Request_System_Boolean__">WithAutoFallbackResolution(IContainer, IEnumerable&lt;Assembly&gt;, Func&lt;IReuse, Request, IReuse&gt;, Func&lt;Request, Boolean&gt;)</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_WithAutoFallbackResolution_DryIoc_IContainer_System_Collections_Generic_IEnumerable_System_Type__System_Func_DryIoc_IReuse_DryIoc_Request_DryIoc_IReuse__System_Func_DryIoc_Request_System_Boolean__">WithAutoFallbackResolution(IContainer, IEnumerable&lt;Type&gt;, Func&lt;IReuse, Request, IReuse&gt;, Func&lt;Request, Boolean&gt;)</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_WithDependencies_DryIoc_IContainer_DryIoc_ParameterSelector_DryIoc_PropertiesAndFieldsSelector_">WithDependencies(IContainer, ParameterSelector, PropertiesAndFieldsSelector)</a></td>
+        <td><p>Creates new container with provided parameters and properties
+to pass the custom dependency values for injection. The old parameters and properties are overridden,
+but not replaced.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_WithExpressionGeneration_DryIoc_IContainer_System_Boolean_">WithExpressionGeneration(IContainer, Boolean)</a></td>
+        <td><p>Prepares container for expression generation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_WithoutCache_DryIoc_IContainer_">WithoutCache(IContainer)</a></td>
+        <td><p>Returns new container with all expression, delegate, items cache removed/reset.
+But it will preserve resolved services in Singleton/Current scope.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_WithoutSingletonsAndCache_DryIoc_IContainer_">WithoutSingletonsAndCache(IContainer)</a></td>
+        <td><p>Creates new container with state shared with original, except for the singletons and cache.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_ContainerTools_WithRegistrationsCopy_DryIoc_IContainer_System_Boolean_">WithRegistrationsCopy(IContainer, Boolean)</a></td>
+        <td><p>Shares the setup with original container but copies the registrations, so the new registrations
+won&apos;t be visible in original. Registrations include decorators and wrappers as well.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_ClearCache_DryIoc_IContainer_System_Type_System_Nullable_DryIoc_FactoryType__System_Object_" data-uid="DryIoc.ContainerTools.ClearCache(DryIoc.IContainer,System.Type,System.Nullable{DryIoc.FactoryType},System.Object)">ClearCache(IContainer, Type, Nullable&lt;FactoryType&gt;, Object)</h4>
+  <div class="markdown level1 summary"><p>Clears delegate and expression cache for specified service.
+But does not clear instances of already resolved/created singletons and scoped services!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ClearCache(this IContainer container, Type serviceType, FactoryType? factoryType = default(FactoryType? ), object serviceKey = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>serviceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DryIoc.FactoryType.html">FactoryType</a>&gt;</td>
+        <td><em>factoryType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_ClearCache__1_DryIoc_IContainer_System_Nullable_DryIoc_FactoryType__System_Object_" data-uid="DryIoc.ContainerTools.ClearCache``1(DryIoc.IContainer,System.Nullable{DryIoc.FactoryType},System.Object)">ClearCache&lt;T&gt;(IContainer, Nullable&lt;FactoryType&gt;, Object)</h4>
+  <div class="markdown level1 summary"><p>Clears delegate and expression cache for specified <code data-dev-comment-type="typeparamref" class="typeparamref">T</code>.
+But does not clear instances of already resolved/created singletons and scoped services!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ClearCache&lt;T&gt;(this IContainer container, FactoryType? factoryType = default(FactoryType? ), object serviceKey = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DryIoc.FactoryType.html">FactoryType</a>&gt;</td>
+        <td><em>factoryType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_CreateFacade_DryIoc_IContainer_System_String_" data-uid="DryIoc.ContainerTools.CreateFacade(DryIoc.IContainer,System.String)">CreateFacade(IContainer, String)</h4>
+  <div class="markdown level1 summary"><p>Allows to register new specially keyed services which will facade the same default service,
+registered earlier. May be used to &quot;override&quot; registrations when testing the container</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IContainer CreateFacade(this IContainer container, string facadeKey = &quot;@facade&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>facadeKey</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_DefaultValidateCondition_DryIoc_ServiceRegistrationInfo_" data-uid="DryIoc.ContainerTools.DefaultValidateCondition(DryIoc.ServiceRegistrationInfo)">DefaultValidateCondition(ServiceRegistrationInfo)</h4>
+  <div class="markdown level1 summary"><p>Excluding open-generic registrations, cause you need to provide type arguments to actually create these types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DefaultValidateCondition(ServiceRegistrationInfo reg)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.ServiceRegistrationInfo.html">ServiceRegistrationInfo</a></td>
+        <td><em>reg</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_GenerateResolutionExpressions_DryIoc_IContainer_DryIoc_ServiceInfo___" data-uid="DryIoc.ContainerTools.GenerateResolutionExpressions(DryIoc.IContainer,DryIoc.ServiceInfo[])">GenerateResolutionExpressions(IContainer, ServiceInfo[])</h4>
+  <div class="markdown level1 summary"><p>Generates expressions for provided root services</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ContainerTools.GeneratedExpressions GenerateResolutionExpressions(this IContainer container, params ServiceInfo[] roots)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.ServiceInfo.html">ServiceInfo</a>[]</td>
+        <td><em>roots</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.ContainerTools.GeneratedExpressions.html">ContainerTools.GeneratedExpressions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_GenerateResolutionExpressions_DryIoc_IContainer_System_Func_DryIoc_ServiceRegistrationInfo_System_Boolean__" data-uid="DryIoc.ContainerTools.GenerateResolutionExpressions(DryIoc.IContainer,System.Func{DryIoc.ServiceRegistrationInfo,System.Boolean})">GenerateResolutionExpressions(IContainer, Func&lt;ServiceRegistrationInfo, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Generates expressions for provided root services</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ContainerTools.GeneratedExpressions GenerateResolutionExpressions(this IContainer container, Func&lt;ServiceRegistrationInfo, bool&gt; condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="DryIoc.ServiceRegistrationInfo.html">ServiceRegistrationInfo</a>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><em>condition</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.ContainerTools.GeneratedExpressions.html">ContainerTools.GeneratedExpressions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_GenerateResolutionExpressions_DryIoc_IContainer_System_Func_System_Collections_Generic_IEnumerable_DryIoc_ServiceRegistrationInfo__System_Collections_Generic_IEnumerable_DryIoc_ServiceInfo___System_Boolean_" data-uid="DryIoc.ContainerTools.GenerateResolutionExpressions(DryIoc.IContainer,System.Func{System.Collections.Generic.IEnumerable{DryIoc.ServiceRegistrationInfo},System.Collections.Generic.IEnumerable{DryIoc.ServiceInfo}},System.Boolean)">GenerateResolutionExpressions(IContainer, Func&lt;IEnumerable&lt;ServiceRegistrationInfo&gt;, IEnumerable&lt;ServiceInfo&gt;&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Generates expressions for specified roots and their &quot;Resolve-call&quot; dependencies.
+Wraps exceptions into errors. The method does not create any actual services.
+You may use Factory <a class="xref" href="DryIoc.Setup.html#DryIoc_Setup_AsResolutionRoot">AsResolutionRoot</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ContainerTools.GeneratedExpressions GenerateResolutionExpressions(this IContainer container, Func&lt;IEnumerable&lt;ServiceRegistrationInfo&gt;, IEnumerable&lt;ServiceInfo&gt;&gt; getRoots = null, bool allowRuntimeState = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="DryIoc.ServiceRegistrationInfo.html">ServiceRegistrationInfo</a>&gt;, <span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="DryIoc.ServiceInfo.html">ServiceInfo</a>&gt;&gt;</td>
+        <td><em>getRoots</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>allowRuntimeState</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.ContainerTools.GeneratedExpressions.html">ContainerTools.GeneratedExpressions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_GetRequestExpression_DryIoc_IContainer_DryIoc_Request_DryIoc_RequestFlags_" data-uid="DryIoc.ContainerTools.GetRequestExpression(DryIoc.IContainer,DryIoc.Request,DryIoc.RequestFlags)">GetRequestExpression(IContainer, Request, RequestFlags)</h4>
+  <div class="markdown level1 summary"><p>Re-constructs the whole request chain as request creation expression.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Expression GetRequestExpression(this IContainer container, Request request, RequestFlags requestParentFlags = (RequestFlags)0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.Request.html">Request</a></td>
+        <td><em>request</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.RequestFlags.html">RequestFlags</a></td>
+        <td><em>requestParentFlags</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FastExpressionCompiler.LightExpression.Expression.html">Expression</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_InjectPropertiesAndFields__1_DryIoc_IResolverContext___0_" data-uid="DryIoc.ContainerTools.InjectPropertiesAndFields``1(DryIoc.IResolverContext,``0)">InjectPropertiesAndFields&lt;TService&gt;(IResolverContext, TService)</h4>
+  <div class="markdown level1 summary"><p>For given instance resolves and sets properties and fields.
+It respects <a class="xref" href="DryIoc.Rules.html#DryIoc_Rules_PropertiesAndFields">PropertiesAndFields</a> rules set per container,
+or if rules are not set it uses <a class="xref" href="DryIoc.PropertiesAndFields.html#DryIoc_PropertiesAndFields_Auto">Auto</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TService InjectPropertiesAndFields&lt;TService&gt;(this IResolverContext r, TService instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IResolverContext.html">IResolverContext</a></td>
+        <td><em>r</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TService</span></td>
+        <td><em>instance</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TService</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>TService</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_InjectPropertiesAndFields__1_DryIoc_IResolverContext___0_System_String___" data-uid="DryIoc.ContainerTools.InjectPropertiesAndFields``1(DryIoc.IResolverContext,``0,System.String[])">InjectPropertiesAndFields&lt;TService&gt;(IResolverContext, TService, String[])</h4>
+  <div class="markdown level1 summary"><p>For given instance resolves and sets properties and fields. You may specify what 
+properties and fields.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TService InjectPropertiesAndFields&lt;TService&gt;(this IResolverContext r, TService instance, params string[] propertyAndFieldNames)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IResolverContext.html">IResolverContext</a></td>
+        <td><em>r</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TService</span></td>
+        <td><em>instance</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><em>propertyAndFieldNames</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TService</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>TService</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_New_DryIoc_IContainer_System_Type_DryIoc_Made_DryIoc_RegistrySharing_" data-uid="DryIoc.ContainerTools.New(DryIoc.IContainer,System.Type,DryIoc.Made,DryIoc.RegistrySharing)">New(IContainer, Type, Made, RegistrySharing)</h4>
+  <div class="markdown level1 summary"><p>Creates service using container for injecting parameters without registering anything in <code data-dev-comment-type="paramref" class="paramref">container</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object New(this IContainer container, Type concreteType, Made made = null, RegistrySharing registrySharing = RegistrySharing.CloneButKeepCache)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td><p>Container to use for type creation and injecting its dependencies.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>concreteType</em></td>
+        <td><p>Type to instantiate. Wrappers (Func, Lazy, etc.) is also supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.Made.html">Made</a></td>
+        <td><em>made</em></td>
+        <td><p>(optional) Injection rules to select constructor/factory method, inject parameters, 
+properties and fields.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.RegistrySharing.html">RegistrySharing</a></td>
+        <td><em>registrySharing</em></td>
+        <td><p>The default is <a class="xref" href="DryIoc.RegistrySharing.html#DryIoc_RegistrySharing_CloneButKeepCache">CloneButKeepCache</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>Object instantiated by constructor or object returned by factory method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_New_DryIoc_IContainer_System_Type_DryIoc_Setup_DryIoc_Made_DryIoc_RegistrySharing_" data-uid="DryIoc.ContainerTools.New(DryIoc.IContainer,System.Type,DryIoc.Setup,DryIoc.Made,DryIoc.RegistrySharing)">New(IContainer, Type, Setup, Made, RegistrySharing)</h4>
+  <div class="markdown level1 summary"><p>Creates service using container for injecting parameters without registering anything in <code data-dev-comment-type="paramref" class="paramref">container</code>
+if the TYPE is not registered yet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object New(this IContainer container, Type concreteType, Setup setup, Made made = null, RegistrySharing registrySharing = RegistrySharing.CloneButKeepCache)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td><p>Container to use for type creation and injecting its dependencies.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>concreteType</em></td>
+        <td><p>Type to instantiate. Wrappers (Func, Lazy, etc.) is also supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.Setup.html">Setup</a></td>
+        <td><em>setup</em></td>
+        <td><p>Setup for the concrete type, e.g. <code>TrackDisposableTransient</code></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.Made.html">Made</a></td>
+        <td><em>made</em></td>
+        <td><p>(optional) Injection rules to select constructor/factory method, inject parameters, 
+properties and fields.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.RegistrySharing.html">RegistrySharing</a></td>
+        <td><em>registrySharing</em></td>
+        <td><p>The default is <a class="xref" href="DryIoc.RegistrySharing.html#DryIoc_RegistrySharing_CloneButKeepCache">CloneButKeepCache</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>Object instantiated by constructor or object returned by factory method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_New__1_DryIoc_IContainer_DryIoc_Made_DryIoc_RegistrySharing_" data-uid="DryIoc.ContainerTools.New``1(DryIoc.IContainer,DryIoc.Made,DryIoc.RegistrySharing)">New&lt;T&gt;(IContainer, Made, RegistrySharing)</h4>
+  <div class="markdown level1 summary"><p>Creates service using container for injecting parameters without registering anything in <code data-dev-comment-type="paramref" class="paramref">container</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T New&lt;T&gt;(this IContainer container, Made made = null, RegistrySharing registrySharing = RegistrySharing.CloneButKeepCache)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td><p>Container to use for type creation and injecting its dependencies.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.Made.html">Made</a></td>
+        <td><em>made</em></td>
+        <td><p>(optional) Injection rules to select constructor/factory method, inject parameters, properties and fields.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.RegistrySharing.html">RegistrySharing</a></td>
+        <td><em>registrySharing</em></td>
+        <td><p>The default is <a class="xref" href="DryIoc.RegistrySharing.html#DryIoc_RegistrySharing_CloneButKeepCache">CloneButKeepCache</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>Object instantiated by constructor or object returned by factory method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Type to instantiate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_New__1_DryIoc_IContainer_DryIoc_Made_TypedMade___0__DryIoc_RegistrySharing_" data-uid="DryIoc.ContainerTools.New``1(DryIoc.IContainer,DryIoc.Made.TypedMade{``0},DryIoc.RegistrySharing)">New&lt;T&gt;(IContainer, Made.TypedMade&lt;T&gt;, RegistrySharing)</h4>
+  <div class="markdown level1 summary"><p>Creates service given strongly-typed creation expression.
+Can be used to invoke arbitrary method returning some value with injecting its parameters from container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T New&lt;T&gt;(this IContainer container, Made.TypedMade&lt;T&gt; made, RegistrySharing registrySharing = RegistrySharing.CloneButKeepCache)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td><p>Container to use for injecting dependencies.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.Made.TypedMade-1.html">Made.TypedMade</a>&lt;T&gt;</td>
+        <td><em>made</em></td>
+        <td><p>Creation expression.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.RegistrySharing.html">RegistrySharing</a></td>
+        <td><em>registrySharing</em></td>
+        <td><p>The default is <a class="xref" href="DryIoc.RegistrySharing.html#DryIoc_RegistrySharing_CloneButKeepCache">CloneButKeepCache</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>Created result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Method or constructor result type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_RegisterMapping_DryIoc_IContainer_System_Type_System_Type_System_Object_System_Object_" data-uid="DryIoc.ContainerTools.RegisterMapping(DryIoc.IContainer,System.Type,System.Type,System.Object,System.Object)">RegisterMapping(IContainer, Type, Type, Object, Object)</h4>
+  <div class="markdown level1 summary"><p>Registers new service type with factory for registered service type.
+Throw if no such registered service type in container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="DryIoc_ContainerTools_RegisterMapping_DryIoc_IContainer_System_Type_System_Type_System_Object_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Does nothing if registration is already exists.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterMapping(this IContainer container, Type serviceType, Type registeredServiceType, object serviceKey = null, object registeredServiceKey = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td><p>Container</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>serviceType</em></td>
+        <td><p>New service type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>registeredServiceType</em></td>
+        <td><p>Existing registered service type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>registeredServiceKey</em></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_RegisterMapping__2_DryIoc_IContainer_System_Object_System_Object_" data-uid="DryIoc.ContainerTools.RegisterMapping``2(DryIoc.IContainer,System.Object,System.Object)">RegisterMapping&lt;TService, TRegisteredService&gt;(IContainer, Object, Object)</h4>
+  <div class="markdown level1 summary"><p>Registers new service type with factory for registered service type.
+Throw if no such registered service type in container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="DryIoc_ContainerTools_RegisterMapping__2_DryIoc_IContainer_System_Object_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Does nothing if registration is already exists.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterMapping&lt;TService, TRegisteredService&gt;(this IContainer container, object serviceKey = null, object registeredServiceKey = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td><p>Container</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>registeredServiceKey</em></td>
+        <td><p>(optional)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>TService</em></td>
+        <td><p>New service type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><em>TRegisteredService</em></td>
+        <td><p>Existing registered service type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_RegisterPlaceholder_DryIoc_IContainer_System_Type_System_Nullable_DryIoc_IfAlreadyRegistered__System_Object_" data-uid="DryIoc.ContainerTools.RegisterPlaceholder(DryIoc.IContainer,System.Type,System.Nullable{DryIoc.IfAlreadyRegistered},System.Object)">RegisterPlaceholder(IContainer, Type, Nullable&lt;IfAlreadyRegistered&gt;, Object)</h4>
+  <div class="markdown level1 summary"><p>Forwards to <a class="xref" href="DryIoc.Registrator.html#DryIoc_Registrator_RegisterPlaceholder_DryIoc_IRegistrator_System_Type_System_Nullable_DryIoc_IfAlreadyRegistered__System_Object_">RegisterPlaceholder(IRegistrator, Type, Nullable&lt;IfAlreadyRegistered&gt;, Object)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterPlaceholder(this IContainer container, Type serviceType, IfAlreadyRegistered? ifAlreadyRegistered = default(IfAlreadyRegistered? ), object serviceKey = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>serviceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DryIoc.IfAlreadyRegistered.html">IfAlreadyRegistered</a>&gt;</td>
+        <td><em>ifAlreadyRegistered</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_RegisterPlaceholder__1_DryIoc_IContainer_System_Nullable_DryIoc_IfAlreadyRegistered__System_Object_" data-uid="DryIoc.ContainerTools.RegisterPlaceholder``1(DryIoc.IContainer,System.Nullable{DryIoc.IfAlreadyRegistered},System.Object)">RegisterPlaceholder&lt;TService&gt;(IContainer, Nullable&lt;IfAlreadyRegistered&gt;, Object)</h4>
+  <div class="markdown level1 summary"><p>Register a service without implementation which can be provided later in terms
+of normal registration with IfAlreadyRegistered.Replace parameter.
+When the implementation is still not provided when the placeholder service is accessed,
+then the exception will be thrown.
+This feature allows you to postpone decision on implementation until it is later known.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="DryIoc_ContainerTools_RegisterPlaceholder__1_DryIoc_IContainer_System_Nullable_DryIoc_IfAlreadyRegistered__System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Internally the empty factory is registered with the setup asResolutionCall set to true.
+That means, instead of placing service instance into graph expression we put here redirecting call to
+container Resolve.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterPlaceholder&lt;TService&gt;(this IContainer container, IfAlreadyRegistered? ifAlreadyRegistered = default(IfAlreadyRegistered? ), object serviceKey = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="DryIoc.IfAlreadyRegistered.html">IfAlreadyRegistered</a>&gt;</td>
+        <td><em>ifAlreadyRegistered</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>TService</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_Validate_DryIoc_IContainer_DryIoc_ServiceInfo___" data-uid="DryIoc.ContainerTools.Validate(DryIoc.IContainer,DryIoc.ServiceInfo[])">Validate(IContainer, ServiceInfo[])</h4>
+  <div class="markdown level1 summary"><p>Helps to find potential problems when resolving the <code data-dev-comment-type="paramref" class="paramref">roots</code>.
+Method will collect the exceptions when resolving or injecting the specific root.
+Does not create any actual service objects.
+You must specify <code data-dev-comment-type="paramref" class="paramref">roots</code> to define your resolution roots,
+otherwise container will try to resolve all registrations, 
+which usually is not realistic case to validate. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static KeyValuePair&lt;ServiceInfo, ContainerException&gt;[] Validate(this IContainer container, params ServiceInfo[] roots)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.ServiceInfo.html">ServiceInfo</a>[]</td>
+        <td><em>roots</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.KeyValuePair</span>&lt;<a class="xref" href="DryIoc.ServiceInfo.html">ServiceInfo</a>, <a class="xref" href="DryIoc.ContainerException.html">ContainerException</a>&gt;[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_Validate_DryIoc_IContainer_System_Func_DryIoc_ServiceRegistrationInfo_System_Boolean__" data-uid="DryIoc.ContainerTools.Validate(DryIoc.IContainer,System.Func{DryIoc.ServiceRegistrationInfo,System.Boolean})">Validate(IContainer, Func&lt;ServiceRegistrationInfo, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Helps to find potential problems in service registration setup.
+Method tries to resolve the specified registrations, collects exceptions, and
+returns them to user. Does not create any actual service objects.
+You must specify <code data-dev-comment-type="paramref" class="paramref">condition</code> to define your resolution roots,
+otherwise container will try to resolve all registrations, 
+which usually is not realistic case to validate. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static KeyValuePair&lt;ServiceInfo, ContainerException&gt;[] Validate(this IContainer container, Func&lt;ServiceRegistrationInfo, bool&gt; condition = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="DryIoc.ServiceRegistrationInfo.html">ServiceRegistrationInfo</a>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><em>condition</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.KeyValuePair</span>&lt;<a class="xref" href="DryIoc.ServiceInfo.html">ServiceInfo</a>, <a class="xref" href="DryIoc.ContainerException.html">ContainerException</a>&gt;[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_With_DryIoc_IContainer_System_Func_DryIoc_Rules_DryIoc_Rules__DryIoc_IScopeContext_" data-uid="DryIoc.ContainerTools.With(DryIoc.IContainer,System.Func{DryIoc.Rules,DryIoc.Rules},DryIoc.IScopeContext)">With(IContainer, Func&lt;Rules, Rules&gt;, IScopeContext)</h4>
+  <div class="markdown level1 summary"><p>Shares all of container state except the cache and the new rules.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IContainer With(this IContainer container, Func&lt;Rules, Rules&gt; configure = null, IScopeContext scopeContext = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="DryIoc.Rules.html">Rules</a>, <a class="xref" href="DryIoc.Rules.html">Rules</a>&gt;</td>
+        <td><em>configure</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.IScopeContext.html">IScopeContext</a></td>
+        <td><em>scopeContext</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_WithAutoFallbackDynamicRegistrations_DryIoc_IContainer_DryIoc_IReuse_DryIoc_Setup_System_Type___" data-uid="DryIoc.ContainerTools.WithAutoFallbackDynamicRegistrations(DryIoc.IContainer,DryIoc.IReuse,DryIoc.Setup,System.Type[])">WithAutoFallbackDynamicRegistrations(IContainer, IReuse, Setup, Type[])</h4>
+  <div class="markdown level1 summary"><p>Provides automatic fallback resolution mechanism for not normally registered
+services. Underneath uses <a class="xref" href="DryIoc.Rules.html#DryIoc_Rules_WithDynamicRegistrations_DryIoc_Rules_DynamicRegistrationProvider___">WithDynamicRegistrations(Rules.DynamicRegistrationProvider[])</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IContainer WithAutoFallbackDynamicRegistrations(this IContainer container, IReuse reuse, Setup setup, params Type[] implTypes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.IReuse.html">IReuse</a></td>
+        <td><em>reuse</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.Setup.html">Setup</a></td>
+        <td><em>setup</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span>[]</td>
+        <td><em>implTypes</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_WithAutoFallbackDynamicRegistrations_DryIoc_IContainer_DryIoc_IReuse_System_Type___" data-uid="DryIoc.ContainerTools.WithAutoFallbackDynamicRegistrations(DryIoc.IContainer,DryIoc.IReuse,System.Type[])">WithAutoFallbackDynamicRegistrations(IContainer, IReuse, Type[])</h4>
+  <div class="markdown level1 summary"><p>Provides automatic fallback resolution mechanism for not normally registered
+services. Underneath uses <a class="xref" href="DryIoc.Rules.html#DryIoc_Rules_WithDynamicRegistrations_DryIoc_Rules_DynamicRegistrationProvider___">WithDynamicRegistrations(Rules.DynamicRegistrationProvider[])</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IContainer WithAutoFallbackDynamicRegistrations(this IContainer container, IReuse reuse, params Type[] implTypes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.IReuse.html">IReuse</a></td>
+        <td><em>reuse</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span>[]</td>
+        <td><em>implTypes</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_WithAutoFallbackDynamicRegistrations_DryIoc_IContainer_System_Collections_Generic_IEnumerable_System_Reflection_Assembly__" data-uid="DryIoc.ContainerTools.WithAutoFallbackDynamicRegistrations(DryIoc.IContainer,System.Collections.Generic.IEnumerable{System.Reflection.Assembly})">WithAutoFallbackDynamicRegistrations(IContainer, IEnumerable&lt;Assembly&gt;)</h4>
+  <div class="markdown level1 summary"><p>Provides automatic fallback resolution mechanism for not normally registered
+services. Underneath uses <a class="xref" href="DryIoc.Rules.html#DryIoc_Rules_WithDynamicRegistrations_DryIoc_Rules_DynamicRegistrationProvider___">WithDynamicRegistrations(Rules.DynamicRegistrationProvider[])</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IContainer WithAutoFallbackDynamicRegistrations(this IContainer container, IEnumerable&lt;Assembly&gt; implTypeAssemblies)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Reflection.Assembly</span>&gt;</td>
+        <td><em>implTypeAssemblies</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_WithAutoFallbackDynamicRegistrations_DryIoc_IContainer_System_Func_System_Type_System_Object_System_Collections_Generic_IEnumerable_System_Reflection_Assembly___System_Func_System_Type_DryIoc_Factory__" data-uid="DryIoc.ContainerTools.WithAutoFallbackDynamicRegistrations(DryIoc.IContainer,System.Func{System.Type,System.Object,System.Collections.Generic.IEnumerable{System.Reflection.Assembly}},System.Func{System.Type,DryIoc.Factory})">WithAutoFallbackDynamicRegistrations(IContainer, Func&lt;Type, Object, IEnumerable&lt;Assembly&gt;&gt;, Func&lt;Type, Factory&gt;)</h4>
+  <div class="markdown level1 summary"><p>Provides automatic fallback resolution mechanism for not normally registered
+services. Underneath uses <a class="xref" href="DryIoc.Rules.html#DryIoc_Rules_WithDynamicRegistrations_DryIoc_Rules_DynamicRegistrationProvider___">WithDynamicRegistrations(Rules.DynamicRegistrationProvider[])</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IContainer WithAutoFallbackDynamicRegistrations(this IContainer container, Func&lt;Type, object, IEnumerable&lt;Assembly&gt;&gt; getImplTypeAssemblies, Func&lt;Type, Factory&gt; factory = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Type</span>, <span class="xref">System.Object</span>, <span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Reflection.Assembly</span>&gt;&gt;</td>
+        <td><em>getImplTypeAssemblies</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Type</span>, <a class="xref" href="DryIoc.Factory.html">Factory</a>&gt;</td>
+        <td><em>factory</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_WithAutoFallbackDynamicRegistrations_DryIoc_IContainer_System_Func_System_Type_System_Object_System_Collections_Generic_IEnumerable_System_Type___System_Func_System_Type_DryIoc_Factory__" data-uid="DryIoc.ContainerTools.WithAutoFallbackDynamicRegistrations(DryIoc.IContainer,System.Func{System.Type,System.Object,System.Collections.Generic.IEnumerable{System.Type}},System.Func{System.Type,DryIoc.Factory})">WithAutoFallbackDynamicRegistrations(IContainer, Func&lt;Type, Object, IEnumerable&lt;Type&gt;&gt;, Func&lt;Type, Factory&gt;)</h4>
+  <div class="markdown level1 summary"><p>Provides automatic fallback resolution mechanism for not normally registered
+services. Underneath uses <a class="xref" href="DryIoc.Rules.html#DryIoc_Rules_WithDynamicRegistrations_DryIoc_Rules_DynamicRegistrationProvider___">WithDynamicRegistrations(Rules.DynamicRegistrationProvider[])</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IContainer WithAutoFallbackDynamicRegistrations(this IContainer container, Func&lt;Type, object, IEnumerable&lt;Type&gt;&gt; getImplTypes, Func&lt;Type, Factory&gt; factory = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Type</span>, <span class="xref">System.Object</span>, <span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Type</span>&gt;&gt;</td>
+        <td><em>getImplTypes</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Type</span>, <a class="xref" href="DryIoc.Factory.html">Factory</a>&gt;</td>
+        <td><em>factory</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_WithAutoFallbackDynamicRegistrations_DryIoc_IContainer_System_Reflection_Assembly___" data-uid="DryIoc.ContainerTools.WithAutoFallbackDynamicRegistrations(DryIoc.IContainer,System.Reflection.Assembly[])">WithAutoFallbackDynamicRegistrations(IContainer, Assembly[])</h4>
+  <div class="markdown level1 summary"><p>Provides automatic fallback resolution mechanism for not normally registered
+services. Underneath uses <a class="xref" href="DryIoc.Rules.html#DryIoc_Rules_WithDynamicRegistrations_DryIoc_Rules_DynamicRegistrationProvider___">WithDynamicRegistrations(Rules.DynamicRegistrationProvider[])</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IContainer WithAutoFallbackDynamicRegistrations(this IContainer container, params Assembly[] implTypeAssemblies)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Reflection.Assembly</span>[]</td>
+        <td><em>implTypeAssemblies</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_WithAutoFallbackDynamicRegistrations_DryIoc_IContainer_System_Type___" data-uid="DryIoc.ContainerTools.WithAutoFallbackDynamicRegistrations(DryIoc.IContainer,System.Type[])">WithAutoFallbackDynamicRegistrations(IContainer, Type[])</h4>
+  <div class="markdown level1 summary"><p>Provides automatic fallback resolution mechanism for not normally registered
+services. Underneath uses <a class="xref" href="DryIoc.Rules.html#DryIoc_Rules_WithDynamicRegistrations_DryIoc_Rules_DynamicRegistrationProvider___">WithDynamicRegistrations(Rules.DynamicRegistrationProvider[])</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IContainer WithAutoFallbackDynamicRegistrations(this IContainer container, params Type[] implTypes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span>[]</td>
+        <td><em>implTypes</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_WithAutoFallbackResolution_DryIoc_IContainer_System_Collections_Generic_IEnumerable_System_Reflection_Assembly__System_Func_DryIoc_IReuse_DryIoc_Request_DryIoc_IReuse__System_Func_DryIoc_Request_System_Boolean__" data-uid="DryIoc.ContainerTools.WithAutoFallbackResolution(DryIoc.IContainer,System.Collections.Generic.IEnumerable{System.Reflection.Assembly},System.Func{DryIoc.IReuse,DryIoc.Request,DryIoc.IReuse},System.Func{DryIoc.Request,System.Boolean})">WithAutoFallbackResolution(IContainer, IEnumerable&lt;Assembly&gt;, Func&lt;IReuse, Request, IReuse&gt;, Func&lt;Request, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Please use WithAutoFallbackDynamicRegistration instead&quot;)]
+public static IContainer WithAutoFallbackResolution(this IContainer container, IEnumerable&lt;Assembly&gt; implTypeAssemblies, Func&lt;IReuse, Request, IReuse&gt; changeDefaultReuse = null, Func&lt;Request, bool&gt; condition = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Reflection.Assembly</span>&gt;</td>
+        <td><em>implTypeAssemblies</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="DryIoc.IReuse.html">IReuse</a>, <a class="xref" href="DryIoc.Request.html">Request</a>, <a class="xref" href="DryIoc.IReuse.html">IReuse</a>&gt;</td>
+        <td><em>changeDefaultReuse</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="DryIoc.Request.html">Request</a>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><em>condition</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_WithAutoFallbackResolution_DryIoc_IContainer_System_Collections_Generic_IEnumerable_System_Type__System_Func_DryIoc_IReuse_DryIoc_Request_DryIoc_IReuse__System_Func_DryIoc_Request_System_Boolean__" data-uid="DryIoc.ContainerTools.WithAutoFallbackResolution(DryIoc.IContainer,System.Collections.Generic.IEnumerable{System.Type},System.Func{DryIoc.IReuse,DryIoc.Request,DryIoc.IReuse},System.Func{DryIoc.Request,System.Boolean})">WithAutoFallbackResolution(IContainer, IEnumerable&lt;Type&gt;, Func&lt;IReuse, Request, IReuse&gt;, Func&lt;Request, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Please use WithAutoFallbackDynamicRegistration instead&quot;)]
+public static IContainer WithAutoFallbackResolution(this IContainer container, IEnumerable&lt;Type&gt; implTypes, Func&lt;IReuse, Request, IReuse&gt; changeDefaultReuse = null, Func&lt;Request, bool&gt; condition = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Type</span>&gt;</td>
+        <td><em>implTypes</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="DryIoc.IReuse.html">IReuse</a>, <a class="xref" href="DryIoc.Request.html">Request</a>, <a class="xref" href="DryIoc.IReuse.html">IReuse</a>&gt;</td>
+        <td><em>changeDefaultReuse</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="DryIoc.Request.html">Request</a>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><em>condition</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_WithDependencies_DryIoc_IContainer_DryIoc_ParameterSelector_DryIoc_PropertiesAndFieldsSelector_" data-uid="DryIoc.ContainerTools.WithDependencies(DryIoc.IContainer,DryIoc.ParameterSelector,DryIoc.PropertiesAndFieldsSelector)">WithDependencies(IContainer, ParameterSelector, PropertiesAndFieldsSelector)</h4>
+  <div class="markdown level1 summary"><p>Creates new container with provided parameters and properties
+to pass the custom dependency values for injection. The old parameters and properties are overridden,
+but not replaced.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IContainer WithDependencies(this IContainer container, ParameterSelector parameters = null, PropertiesAndFieldsSelector propertiesAndFields = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td><p>Container to work with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.ParameterSelector.html">ParameterSelector</a></td>
+        <td><em>parameters</em></td>
+        <td><p>(optional) Parameters specification, can be used to proved custom values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DryIoc.PropertiesAndFieldsSelector.html">PropertiesAndFieldsSelector</a></td>
+        <td><em>propertiesAndFields</em></td>
+        <td><p>(optional) Properties and fields specification, can be used to proved custom values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><p>New container with adjusted rules.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_WithExpressionGeneration_DryIoc_IContainer_System_Boolean_" data-uid="DryIoc.ContainerTools.WithExpressionGeneration(DryIoc.IContainer,System.Boolean)">WithExpressionGeneration(IContainer, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Prepares container for expression generation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IContainer WithExpressionGeneration(this IContainer container, bool allowRuntimeState = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>allowRuntimeState</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_WithoutCache_DryIoc_IContainer_" data-uid="DryIoc.ContainerTools.WithoutCache(DryIoc.IContainer)">WithoutCache(IContainer)</h4>
+  <div class="markdown level1 summary"><p>Returns new container with all expression, delegate, items cache removed/reset.
+But it will preserve resolved services in Singleton/Current scope.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IContainer WithoutCache(this IContainer container)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_WithoutSingletonsAndCache_DryIoc_IContainer_" data-uid="DryIoc.ContainerTools.WithoutSingletonsAndCache(DryIoc.IContainer)">WithoutSingletonsAndCache(IContainer)</h4>
+  <div class="markdown level1 summary"><p>Creates new container with state shared with original, except for the singletons and cache.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IContainer WithoutSingletonsAndCache(this IContainer container)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_ContainerTools_WithRegistrationsCopy_DryIoc_IContainer_System_Boolean_" data-uid="DryIoc.ContainerTools.WithRegistrationsCopy(DryIoc.IContainer,System.Boolean)">WithRegistrationsCopy(IContainer, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Shares the setup with original container but copies the registrations, so the new registrations
+won&apos;t be visible in original. Registrations include decorators and wrappers as well.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IContainer WithRegistrationsCopy(this IContainer container, bool preserveCache = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td><em>container</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>preserveCache</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IContainer.html">IContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

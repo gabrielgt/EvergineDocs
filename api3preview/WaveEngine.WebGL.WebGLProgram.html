@@ -107,21 +107,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_WebGL_WebGLProgram__ctor_WaveEngine_OpenGL_Common_GLGraphicsContext_WaveEngine_Common_Graphics_Shader_">WebGLProgram(GLGraphicsContext, Shader)</a></td>
+        <td><a href="#WaveEngine_WebGL_WebGLProgram__ctor_WaveEngine_OpenGL_Common_GLGraphicsContext_WaveEngine_Common_Graphics_ComputeShaderStateDescription_">WebGLProgram(GLGraphicsContext, ComputeShaderStateDescription)</a></td>
         <td></td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_WebGL_WebGLProgram__ctor_WaveEngine_OpenGL_Common_GLGraphicsContext_WaveEngine_Common_Graphics_ShaderStateDescription__">WebGLProgram(GLGraphicsContext, ref ShaderStateDescription)</a></td>
+        <td><a href="#WaveEngine_WebGL_WebGLProgram__ctor_WaveEngine_OpenGL_Common_GLGraphicsContext_WaveEngine_Common_Graphics_GraphicsShaderStateDescription_">WebGLProgram(GLGraphicsContext, GraphicsShaderStateDescription)</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_WebGL_WebGLProgram__ctor_WaveEngine_OpenGL_Common_GLGraphicsContext_WaveEngine_Common_Graphics_Shader_" data-uid="WaveEngine.WebGL.WebGLProgram.#ctor(WaveEngine.OpenGL.Common.GLGraphicsContext,WaveEngine.Common.Graphics.Shader)">WebGLProgram(GLGraphicsContext, Shader)</h4>
+  <h4 id="WaveEngine_WebGL_WebGLProgram__ctor_WaveEngine_OpenGL_Common_GLGraphicsContext_WaveEngine_Common_Graphics_ComputeShaderStateDescription_" data-uid="WaveEngine.WebGL.WebGLProgram.#ctor(WaveEngine.OpenGL.Common.GLGraphicsContext,WaveEngine.Common.Graphics.ComputeShaderStateDescription)">WebGLProgram(GLGraphicsContext, ComputeShaderStateDescription)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WebGLProgram(GLGraphicsContext context, Shader computeShader)</code></pre>
+    <pre><code class="lang-csharp hljs">public WebGLProgram(GLGraphicsContext context, ComputeShaderStateDescription computeShaderDescription)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -139,18 +139,18 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="WaveEngine.Common.Graphics.Shader.html">Shader</a></td>
-        <td><em>computeShader</em></td>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.ComputeShaderStateDescription.html">ComputeShaderStateDescription</a></td>
+        <td><em>computeShaderDescription</em></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_WebGL_WebGLProgram__ctor_WaveEngine_OpenGL_Common_GLGraphicsContext_WaveEngine_Common_Graphics_ShaderStateDescription__" data-uid="WaveEngine.WebGL.WebGLProgram.#ctor(WaveEngine.OpenGL.Common.GLGraphicsContext,WaveEngine.Common.Graphics.ShaderStateDescription@)">WebGLProgram(GLGraphicsContext, ref ShaderStateDescription)</h4>
+  <h4 id="WaveEngine_WebGL_WebGLProgram__ctor_WaveEngine_OpenGL_Common_GLGraphicsContext_WaveEngine_Common_Graphics_GraphicsShaderStateDescription_" data-uid="WaveEngine.WebGL.WebGLProgram.#ctor(WaveEngine.OpenGL.Common.GLGraphicsContext,WaveEngine.Common.Graphics.GraphicsShaderStateDescription)">WebGLProgram(GLGraphicsContext, GraphicsShaderStateDescription)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WebGLProgram(GLGraphicsContext context, ref ShaderStateDescription shaderDescription)</code></pre>
+    <pre><code class="lang-csharp hljs">public WebGLProgram(GLGraphicsContext context, GraphicsShaderStateDescription graphicsShaderDescription)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -168,8 +168,8 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="WaveEngine.Common.Graphics.ShaderStateDescription.html">ShaderStateDescription</a></td>
-        <td><em>shaderDescription</em></td>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.GraphicsShaderStateDescription.html">GraphicsShaderStateDescription</a></td>
+        <td><em>graphicsShaderDescription</em></td>
         <td></td>
       </tr>
     </tbody>
@@ -222,7 +222,11 @@
         <td></td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_WebGL_WebGLProgram_GLGetUniformLocation_System_String_System_Int32_System_Int32_System_UInt32_">GLGetUniformLocation(String, Int32, Int32, UInt32)</a></td>
+        <td><a href="#WaveEngine_WebGL_WebGLProgram_GLGetUniformBlockIndex_System_String_">GLGetUniformBlockIndex(String)</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_WebGL_WebGLProgram_GLGetUniformLocation_System_String_">GLGetUniformLocation(String)</a></td>
         <td></td>
       </tr>
       <tr>
@@ -504,12 +508,51 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_WebGL_WebGLProgram_GLGetUniformLocation_System_String_System_Int32_System_Int32_System_UInt32_" data-uid="WaveEngine.WebGL.WebGLProgram.GLGetUniformLocation(System.String,System.Int32,System.Int32,System.UInt32)">GLGetUniformLocation(String, Int32, Int32, UInt32)</h4>
+  <h4 id="WaveEngine_WebGL_WebGLProgram_GLGetUniformBlockIndex_System_String_" data-uid="WaveEngine.WebGL.WebGLProgram.GLGetUniformBlockIndex(System.String)">GLGetUniformBlockIndex(String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override int GLGetUniformLocation(string name, int index, int size, uint type)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override uint GLGetUniformBlockIndex(string uniformBlockName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>uniformBlockName</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_WebGL_WebGLProgram_GLGetUniformLocation_System_String_" data-uid="WaveEngine.WebGL.WebGLProgram.GLGetUniformLocation(System.String)">GLGetUniformLocation(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int GLGetUniformLocation(string name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -524,21 +567,6 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><em>name</em></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><em>index</em></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><em>size</em></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.UInt32</span></td>
-        <td><em>type</em></td>
         <td></td>
       </tr>
     </tbody>
@@ -611,6 +639,54 @@
   </div>
   <div>
       <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Registrator.html#DryIoc_Registrator_ToFactoryDelegate_System_Object_DryIoc_IResolverContext_">Registrator.ToFactoryDelegate(Object, IResolverContext)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Throw.html#DryIoc_Throw_ThrowIf__1___0_System_Boolean_System_Int32_System_Object_System_Object_System_Object_">Throw.ThrowIf&lt;T&gt;(T, Boolean, Int32, Object, Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Throw.html#DryIoc_Throw_ThrowIfNull__1___0_System_Int32_System_Object_System_Object_System_Object_System_Object_">Throw.ThrowIfNull&lt;T&gt;(T, Int32, Object, Object, Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Throw.html#DryIoc_Throw_ThrowIfNotInstanceOf__1___0_System_Type_System_Int32_System_Object_System_Object_">Throw.ThrowIfNotInstanceOf&lt;T&gt;(T, Type, Int32, Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.ThrowInGeneratedCode.html#DryIoc_ThrowInGeneratedCode_WeakRefReuseWrapperGCed_System_Object_">ThrowInGeneratedCode.WeakRefReuseWrapperGCed(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__2___0_System_Func___0___1__">Fun.To&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__3___0___1_System_Func___0___1___2__">Fun.To&lt;T, S, R&gt;(T, S, Func&lt;T, S, R&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__1_System_Object_">Fun.To&lt;R&gt;(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_Do__1___0_System_Action___0__">Fun.Do&lt;T&gt;(T, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_Do__2___0___1_System_Action___0___1__">Fun.Do&lt;T, S&gt;(T, S, Action&lt;T, S&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_ToFunc__2___1___0_">Fun.ToFunc&lt;T, R&gt;(R, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ArrayTools.html#ImTools_ArrayTools_One__1___0_">ArrayTools.One&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.KeyValuePair.html#ImTools_KeyValuePair_Pair__2___0___1_">KeyValuePair.Pair&lt;K, V&gt;(K, V)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ImList.html#ImTools_ImList_List__1___0_">ImList.List&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ImList.html#ImTools_ImList_List__1___0_ImTools_ImList___0__">ImList.List&lt;T&gt;(T, ImList&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FastExpressionCompiler.LightExpression.CodePrinter.html#FastExpressionCompiler_LightExpression_CodePrinter_ToCode_System_Object_System_Func_System_Object_System_String__">CodePrinter.ToCode(Object, Func&lt;Object, String&gt;)</a>
   </div>
 </article>
           </div>

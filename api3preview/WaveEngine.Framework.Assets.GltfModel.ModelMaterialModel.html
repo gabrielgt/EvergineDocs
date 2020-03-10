@@ -133,22 +133,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_AmbientColor">AmbientColor</a></td>
-        <td><p>Gets or sets the ambient Color.</p>
+        <td><a href="#WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_AlphaCutout">AlphaCutout</a></td>
+        <td><p>Gets or sets the alpha cutout.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_AmbientTextureFile">AmbientTextureFile</a></td>
-        <td><p>Gets or sets the ambient Texture.</p>
+        <td><a href="#WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_AlphaMode">AlphaMode</a></td>
+        <td><p>Gets or sets the alpha mode.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_DiffuseColor">DiffuseColor</a></td>
-        <td><p>Gets or sets the diffuse Color.</p>
+        <td><a href="#WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_BaseColor">BaseColor</a></td>
+        <td><p>Gets or sets the base Color.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_DiffuseTextureFile">DiffuseTextureFile</a></td>
+        <td><a href="#WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_BaseColorTextureFile">BaseColorTextureFile</a></td>
         <td><p>Gets or sets the diffuse texture.</p>
 </td>
       </tr>
@@ -163,6 +163,16 @@
 </td>
       </tr>
       <tr>
+        <td><a href="#WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_Metallic">Metallic</a></td>
+        <td><p>Gets or sets the metallic value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_MetallicRoughnessTextureFile">MetallicRoughnessTextureFile</a></td>
+        <td><p>Gets or sets the MetalRoughness Texture.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_Name">Name</a></td>
         <td><p>Gets or sets the mesh name.</p>
 </td>
@@ -173,29 +183,24 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_Opacity">Opacity</a></td>
-        <td><p>Gets or sets the opacity.</p>
+        <td><a href="#WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_OcclusionTextureFile">OcclusionTextureFile</a></td>
+        <td><p>Gets or sets the Occlusion Texture.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_SpecularColor">SpecularColor</a></td>
-        <td><p>Gets or sets the specular color.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a href="#WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_SpecularTextureFile">SpecularTextureFile</a></td>
-        <td><p>Gets or sets the specular texture.</p>
+        <td><a href="#WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_Roughness">Roughness</a></td>
+        <td><p>Gets or sets the roughness value.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_AmbientColor" data-uid="WaveEngine.Framework.Assets.GltfModel.ModelMaterialModel.AmbientColor">AmbientColor</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the ambient Color.</p>
+  <h4 id="WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_AlphaCutout" data-uid="WaveEngine.Framework.Assets.GltfModel.ModelMaterialModel.AlphaCutout">AlphaCutout</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the alpha cutout.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Color AmbientColor { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float AlphaCutout { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -207,18 +212,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="WaveEngine.Common.Graphics.Color.html">Color</a></td>
+        <td><span class="xref">System.Single</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_AmbientTextureFile" data-uid="WaveEngine.Framework.Assets.GltfModel.ModelMaterialModel.AmbientTextureFile">AmbientTextureFile</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the ambient Texture.</p>
+  <h4 id="WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_AlphaMode" data-uid="WaveEngine.Framework.Assets.GltfModel.ModelMaterialModel.AlphaMode">AlphaMode</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the alpha mode.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Guid AmbientTextureFile { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public AlphaMode AlphaMode { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -230,18 +235,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Guid</span></td>
+        <td><a class="xref" href="WaveEngine.Framework.Assets.GltfModel.AlphaMode.html">AlphaMode</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_DiffuseColor" data-uid="WaveEngine.Framework.Assets.GltfModel.ModelMaterialModel.DiffuseColor">DiffuseColor</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the diffuse Color.</p>
+  <h4 id="WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_BaseColor" data-uid="WaveEngine.Framework.Assets.GltfModel.ModelMaterialModel.BaseColor">BaseColor</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the base Color.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Color DiffuseColor { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public LinearColor BaseColor { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -253,18 +258,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="WaveEngine.Common.Graphics.Color.html">Color</a></td>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.LinearColor.html">LinearColor</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_DiffuseTextureFile" data-uid="WaveEngine.Framework.Assets.GltfModel.ModelMaterialModel.DiffuseTextureFile">DiffuseTextureFile</h4>
+  <h4 id="WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_BaseColorTextureFile" data-uid="WaveEngine.Framework.Assets.GltfModel.ModelMaterialModel.BaseColorTextureFile">BaseColorTextureFile</h4>
   <div class="markdown level1 summary"><p>Gets or sets the diffuse texture.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Guid DiffuseTextureFile { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Guid BaseColorTextureFile { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -287,7 +292,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Color EmissiveColor { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public LinearColor EmissiveColor { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -299,7 +304,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="WaveEngine.Common.Graphics.Color.html">Color</a></td>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.LinearColor.html">LinearColor</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -311,6 +316,52 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Guid EmissiveTextureFile { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_Metallic" data-uid="WaveEngine.Framework.Assets.GltfModel.ModelMaterialModel.Metallic">Metallic</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the metallic value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Metallic { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_MetallicRoughnessTextureFile" data-uid="WaveEngine.Framework.Assets.GltfModel.ModelMaterialModel.MetallicRoughnessTextureFile">MetallicRoughnessTextureFile</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the MetalRoughness Texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid MetallicRoughnessTextureFile { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -373,59 +424,13 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_Opacity" data-uid="WaveEngine.Framework.Assets.GltfModel.ModelMaterialModel.Opacity">Opacity</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the opacity.</p>
+  <h4 id="WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_OcclusionTextureFile" data-uid="WaveEngine.Framework.Assets.GltfModel.ModelMaterialModel.OcclusionTextureFile">OcclusionTextureFile</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the Occlusion Texture.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Opacity { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_SpecularColor" data-uid="WaveEngine.Framework.Assets.GltfModel.ModelMaterialModel.SpecularColor">SpecularColor</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the specular color.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Color SpecularColor { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="WaveEngine.Common.Graphics.Color.html">Color</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_SpecularTextureFile" data-uid="WaveEngine.Framework.Assets.GltfModel.ModelMaterialModel.SpecularTextureFile">SpecularTextureFile</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the specular texture.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Guid SpecularTextureFile { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Guid OcclusionTextureFile { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -442,12 +447,83 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_Framework_Assets_GltfModel_ModelMaterialModel_Roughness" data-uid="WaveEngine.Framework.Assets.GltfModel.ModelMaterialModel.Roughness">Roughness</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the roughness value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Roughness { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
   </div>
   <div>
       <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Registrator.html#DryIoc_Registrator_ToFactoryDelegate_System_Object_DryIoc_IResolverContext_">Registrator.ToFactoryDelegate(Object, IResolverContext)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Throw.html#DryIoc_Throw_ThrowIf__1___0_System_Boolean_System_Int32_System_Object_System_Object_System_Object_">Throw.ThrowIf&lt;T&gt;(T, Boolean, Int32, Object, Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Throw.html#DryIoc_Throw_ThrowIfNull__1___0_System_Int32_System_Object_System_Object_System_Object_System_Object_">Throw.ThrowIfNull&lt;T&gt;(T, Int32, Object, Object, Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Throw.html#DryIoc_Throw_ThrowIfNotInstanceOf__1___0_System_Type_System_Int32_System_Object_System_Object_">Throw.ThrowIfNotInstanceOf&lt;T&gt;(T, Type, Int32, Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.ThrowInGeneratedCode.html#DryIoc_ThrowInGeneratedCode_WeakRefReuseWrapperGCed_System_Object_">ThrowInGeneratedCode.WeakRefReuseWrapperGCed(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__2___0_System_Func___0___1__">Fun.To&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__3___0___1_System_Func___0___1___2__">Fun.To&lt;T, S, R&gt;(T, S, Func&lt;T, S, R&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__1_System_Object_">Fun.To&lt;R&gt;(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_Do__1___0_System_Action___0__">Fun.Do&lt;T&gt;(T, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_Do__2___0___1_System_Action___0___1__">Fun.Do&lt;T, S&gt;(T, S, Action&lt;T, S&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_ToFunc__2___1___0_">Fun.ToFunc&lt;T, R&gt;(R, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ArrayTools.html#ImTools_ArrayTools_One__1___0_">ArrayTools.One&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.KeyValuePair.html#ImTools_KeyValuePair_Pair__2___0___1_">KeyValuePair.Pair&lt;K, V&gt;(K, V)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ImList.html#ImTools_ImList_List__1___0_">ImList.List&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ImList.html#ImTools_ImList_List__1___0_ImTools_ImList___0__">ImList.List&lt;T&gt;(T, ImList&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FastExpressionCompiler.LightExpression.CodePrinter.html#FastExpressionCompiler_LightExpression_CodePrinter_ToCode_System_Object_System_Func_System_Object_System_String__">CodePrinter.ToCode(Object, Func&lt;Object, String&gt;)</a>
   </div>
 </article>
           </div>

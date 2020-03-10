@@ -957,6 +957,16 @@ barycentric coordinates and relative to 3D triangle.</p>
 </td>
       </tr>
       <tr>
+        <td><a href="#WaveEngine_Mathematics_Vector3_Project_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Vector3_">Project(Vector3, Vector3)</a></td>
+        <td><p>Projects a <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a> onto another <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Mathematics_Vector3_Project_WaveEngine_Mathematics_Vector3__WaveEngine_Mathematics_Vector3__WaveEngine_Mathematics_Vector3__">Project(ref Vector3, ref Vector3, out Vector3)</a></td>
+        <td><p>Projects a <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a> onto another <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a>.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_Mathematics_Vector3_Reflect_WaveEngine_Mathematics_Vector3_">Reflect(Vector3)</a></td>
         <td><p>Creates a new <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a> that contains reflect vector of this <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a> instance and
 given normal.</p>
@@ -1039,6 +1049,12 @@ given normal.</p>
 </td>
       </tr>
       <tr>
+        <td><a href="#WaveEngine_Mathematics_Vector3_Transform_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Matrix3x3_">Transform(Vector3, Matrix3x3)</a></td>
+        <td><p>Creates a new <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a> that contains a transformation of 3D vector by the specified
+<a class="xref" href="WaveEngine.Mathematics.Matrix3x3.html">Matrix3x3</a>.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_Mathematics_Vector3_Transform_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Matrix4x4_">Transform(Vector3, Matrix4x4)</a></td>
         <td><p>Creates a new <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a> that contains a transformation of 3D vector by the specified
 <a class="xref" href="WaveEngine.Mathematics.Matrix4x4.html">Matrix4x4</a>.</p>
@@ -1048,6 +1064,12 @@ given normal.</p>
         <td><a href="#WaveEngine_Mathematics_Vector3_Transform_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Quaternion_">Transform(Vector3, Quaternion)</a></td>
         <td><p>Creates a new <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a> that contains a transformation of 3D vector by the specified
 <a class="xref" href="WaveEngine.Mathematics.Quaternion.html">Quaternion</a>, representing the rotation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Mathematics_Vector3_Transform_WaveEngine_Mathematics_Vector3__WaveEngine_Mathematics_Matrix3x3__WaveEngine_Mathematics_Vector3__">Transform(ref Vector3, ref Matrix3x3, out Vector3)</a></td>
+        <td><p>Creates a new <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a> that contains a transformation of 3D vector by the specified
+<a class="xref" href="WaveEngine.Mathematics.Matrix3x3.html">Matrix3x3</a>.</p>
 </td>
       </tr>
       <tr>
@@ -3395,6 +3417,98 @@ vector of 3D triangle.</p>
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_Mathematics_Vector3_Project_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Vector3_" data-uid="WaveEngine.Mathematics.Vector3.Project(WaveEngine.Mathematics.Vector3,WaveEngine.Mathematics.Vector3)">Project(Vector3, Vector3)</h4>
+  <div class="markdown level1 summary"><p>Projects a <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a> onto another <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Mathematics_Vector3_Project_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Vector3__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The returned vector is parallel to <code data-dev-comment-type="paramref" class="paramref">onVector</code>. The function will return a zero vector if <code data-dev-comment-type="paramref" class="paramref">onVector</code> is almost zero.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 Project(Vector3 vector, Vector3 onVector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
+        <td><em>vector</em></td>
+        <td><p>The <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a> to project.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
+        <td><em>onVector</em></td>
+        <td><p>The <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a> to project <code data-dev-comment-type="paramref" class="paramref">vector</code> on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
+        <td><p>The <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a> obtained by projecting <code data-dev-comment-type="paramref" class="paramref">vector</code> onto <code data-dev-comment-type="paramref" class="paramref">onVector</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Mathematics_Vector3_Project_WaveEngine_Mathematics_Vector3__WaveEngine_Mathematics_Vector3__WaveEngine_Mathematics_Vector3__" data-uid="WaveEngine.Mathematics.Vector3.Project(WaveEngine.Mathematics.Vector3@,WaveEngine.Mathematics.Vector3@,WaveEngine.Mathematics.Vector3@)">Project(ref Vector3, ref Vector3, out Vector3)</h4>
+  <div class="markdown level1 summary"><p>Projects a <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a> onto another <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Mathematics_Vector3_Project_WaveEngine_Mathematics_Vector3__WaveEngine_Mathematics_Vector3__WaveEngine_Mathematics_Vector3___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <code data-dev-comment-type="paramref" class="paramref">result</code> vector is parallel to <code data-dev-comment-type="paramref" class="paramref">onVector</code>. The function will return a zero vector if <code data-dev-comment-type="paramref" class="paramref">onVector</code> is almost zero.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Project(ref Vector3 vector, ref Vector3 onVector, out Vector3 result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
+        <td><em>vector</em></td>
+        <td><p>The <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a> to project.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
+        <td><em>onVector</em></td>
+        <td><p>The <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a> to project <code data-dev-comment-type="paramref" class="paramref">vector</code> on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
+        <td><em>result</em></td>
+        <td><p>The <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a> obtained by projecting <code data-dev-comment-type="paramref" class="paramref">vector</code> onto <code data-dev-comment-type="paramref" class="paramref">onVector</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Mathematics_Vector3_Reflect_WaveEngine_Mathematics_Vector3_" data-uid="WaveEngine.Mathematics.Vector3.Reflect(WaveEngine.Mathematics.Vector3)">Reflect(Vector3)</h4>
   <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a> that contains reflect vector of this <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a> instance and
 given normal.</p>
@@ -4088,6 +4202,55 @@ given normal.</p>
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_Mathematics_Vector3_Transform_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Matrix3x3_" data-uid="WaveEngine.Mathematics.Vector3.Transform(WaveEngine.Mathematics.Vector3,WaveEngine.Mathematics.Matrix3x3)">Transform(Vector3, Matrix3x3)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a> that contains a transformation of 3D vector by the specified
+<a class="xref" href="WaveEngine.Mathematics.Matrix3x3.html">Matrix3x3</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 Transform(Vector3 position, Matrix3x3 matrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
+        <td><em>position</em></td>
+        <td><p>Source <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Matrix3x3.html">Matrix3x3</a></td>
+        <td><em>matrix</em></td>
+        <td><p>The transformation <a class="xref" href="WaveEngine.Mathematics.Matrix3x3.html">Matrix3x3</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
+        <td><p>Transformed <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Mathematics_Vector3_Transform_WaveEngine_Mathematics_Vector3_WaveEngine_Mathematics_Matrix4x4_" data-uid="WaveEngine.Mathematics.Vector3.Transform(WaveEngine.Mathematics.Vector3,WaveEngine.Mathematics.Matrix4x4)">Transform(Vector3, Matrix4x4)</h4>
   <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a> that contains a transformation of 3D vector by the specified
 <a class="xref" href="WaveEngine.Mathematics.Matrix4x4.html">Matrix4x4</a>.</p>
@@ -4182,6 +4345,45 @@ given normal.</p>
       <tr>
         <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
         <td><p>Transformed <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Mathematics_Vector3_Transform_WaveEngine_Mathematics_Vector3__WaveEngine_Mathematics_Matrix3x3__WaveEngine_Mathematics_Vector3__" data-uid="WaveEngine.Mathematics.Vector3.Transform(WaveEngine.Mathematics.Vector3@,WaveEngine.Mathematics.Matrix3x3@,WaveEngine.Mathematics.Vector3@)">Transform(ref Vector3, ref Matrix3x3, out Vector3)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a> that contains a transformation of 3D vector by the specified
+<a class="xref" href="WaveEngine.Mathematics.Matrix3x3.html">Matrix3x3</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Transform(ref Vector3 position, ref Matrix3x3 matrix, out Vector3 result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
+        <td><em>position</em></td>
+        <td><p>Source <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Matrix3x3.html">Matrix3x3</a></td>
+        <td><em>matrix</em></td>
+        <td><p>The transformation <a class="xref" href="WaveEngine.Mathematics.Matrix3x3.html">Matrix3x3</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
+        <td><em>result</em></td>
+        <td><p>Transformed <a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a> as an output parameter.</p>
 </td>
       </tr>
     </tbody>
@@ -5086,6 +5288,48 @@ with coordinates as the w component can safely be ignored.</p>
   </div>
   <div>
       <a class="xref" href="WaveEngine.DirectX12.DX12ExtensionsMethods.html#WaveEngine_DirectX12_DX12ExtensionsMethods_ToSharpDXVector_WaveEngine_Mathematics_Vector3_SharpDX_Mathematics_Interop_RawVector3__">DX12ExtensionsMethods.ToSharpDXVector(Vector3, out RawVector3)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Registrator.html#DryIoc_Registrator_ToFactoryDelegate_System_Object_DryIoc_IResolverContext_">Registrator.ToFactoryDelegate(Object, IResolverContext)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.Throw.html#DryIoc_Throw_ThrowIf__1___0_System_Boolean_System_Int32_System_Object_System_Object_System_Object_">Throw.ThrowIf&lt;T&gt;(T, Boolean, Int32, Object, Object, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DryIoc.ThrowInGeneratedCode.html#DryIoc_ThrowInGeneratedCode_WeakRefReuseWrapperGCed_System_Object_">ThrowInGeneratedCode.WeakRefReuseWrapperGCed(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__2___0_System_Func___0___1__">Fun.To&lt;T, R&gt;(T, Func&lt;T, R&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__3___0___1_System_Func___0___1___2__">Fun.To&lt;T, S, R&gt;(T, S, Func&lt;T, S, R&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_To__1_System_Object_">Fun.To&lt;R&gt;(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_Do__1___0_System_Action___0__">Fun.Do&lt;T&gt;(T, Action&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_Do__2___0___1_System_Action___0___1__">Fun.Do&lt;T, S&gt;(T, S, Action&lt;T, S&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.Fun.html#ImTools_Fun_ToFunc__2___1___0_">Fun.ToFunc&lt;T, R&gt;(R, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ArrayTools.html#ImTools_ArrayTools_One__1___0_">ArrayTools.One&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.KeyValuePair.html#ImTools_KeyValuePair_Pair__2___0___1_">KeyValuePair.Pair&lt;K, V&gt;(K, V)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ImList.html#ImTools_ImList_List__1___0_">ImList.List&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="ImTools.ImList.html#ImTools_ImList_List__1___0_ImTools_ImList___0__">ImList.List&lt;T&gt;(T, ImList&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FastExpressionCompiler.LightExpression.CodePrinter.html#FastExpressionCompiler_LightExpression_CodePrinter_ToCode_System_Object_System_Func_System_Object_System_String__">CodePrinter.ToCode(Object, Func&lt;Object, String&gt;)</a>
   </div>
 </article>
           </div>

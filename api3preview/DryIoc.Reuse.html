@@ -1,0 +1,775 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Reuse
+   | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Reuse
+   | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DryIoc.Reuse">
+  
+  <h1 id="DryIoc_Reuse" data-uid="DryIoc.Reuse" class="xk-margin-default">Class Reuse
+  </h1>
+  <div class="markdown level0 summary"><p>Specifies pre-defined reuse behaviors supported by container:
+used when registering services into container with <a class="xref" href="DryIoc.Registrator.html">Registrator</a> methods.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+      <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level"><span class="xref"></span></div>
+  </div>
+  <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Reuse</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="fields-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#DryIoc_Reuse_InCurrentScope">InCurrentScope</a></td>
+        <td><p>Obsolete: same as <a class="xref" href="DryIoc.Reuse.html#DryIoc_Reuse_Scoped">Scoped</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Reuse_InResolutionScope">InResolutionScope</a></td>
+        <td><p>Obsolete: same as <a class="xref" href="DryIoc.Reuse.html#DryIoc_Reuse_Scoped">Scoped</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Reuse_InThread">InThread</a></td>
+        <td><p>Same as Scoped but requires <a class="xref" href="DryIoc.ThreadScopeContext.html">ThreadScopeContext</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Reuse_InWebRequest">InWebRequest</a></td>
+        <td><p>Obsolete: please prefer using <a class="xref" href="DryIoc.Reuse.html#DryIoc_Reuse_Scoped">Scoped</a> instead.
+The named scope has performance drawback comparing to just a scope.
+If you need to distinguish nested scope, give names to them instead of naming the top web request scope.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Reuse_Scoped">Scoped</a></td>
+        <td><p>Same as InCurrentScope. From now on will be the default name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Reuse_ScopedOrSingleton">ScopedOrSingleton</a></td>
+        <td><p>The same as <a class="xref" href="DryIoc.Reuse.html#DryIoc_Reuse_InCurrentScope">InCurrentScope</a> but if no open scope available will fallback to <a class="xref" href="DryIoc.Reuse.html#DryIoc_Reuse_Singleton">Singleton</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Reuse_Singleton">Singleton</a></td>
+        <td><p>Specifies to store single service instance per <a class="xref" href="DryIoc.Container.html">Container</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Reuse_Transient">Transient</a></td>
+        <td><p>Synonym for absence of reuse.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Reuse_WebRequestScopeName">WebRequestScopeName</a></td>
+        <td><p>Special name that by convention recognized by <a class="xref" href="DryIoc.Reuse.html#DryIoc_Reuse_InWebRequest">InWebRequest</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Reuse_InCurrentScope" data-uid="DryIoc.Reuse.InCurrentScope">InCurrentScope</h4>
+  <div class="markdown level1 summary"><p>Obsolete: same as <a class="xref" href="DryIoc.Reuse.html#DryIoc_Reuse_Scoped">Scoped</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly IReuse InCurrentScope</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IReuse.html">IReuse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Reuse_InResolutionScope" data-uid="DryIoc.Reuse.InResolutionScope">InResolutionScope</h4>
+  <div class="markdown level1 summary"><p>Obsolete: same as <a class="xref" href="DryIoc.Reuse.html#DryIoc_Reuse_Scoped">Scoped</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;The same as Reuse.Scoped, please prefer to use Reuse.Scoped or the Reuse.ScopedTo to specify a bound service.&quot;)]
+public static readonly IReuse InResolutionScope</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IReuse.html">IReuse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Reuse_InThread" data-uid="DryIoc.Reuse.InThread">InThread</h4>
+  <div class="markdown level1 summary"><p>Same as Scoped but requires <a class="xref" href="DryIoc.ThreadScopeContext.html">ThreadScopeContext</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly IReuse InThread</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IReuse.html">IReuse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Reuse_InWebRequest" data-uid="DryIoc.Reuse.InWebRequest">InWebRequest</h4>
+  <div class="markdown level1 summary"><p>Obsolete: please prefer using <a class="xref" href="DryIoc.Reuse.html#DryIoc_Reuse_Scoped">Scoped</a> instead.
+The named scope has performance drawback comparing to just a scope.
+If you need to distinguish nested scope, give names to them instead of naming the top web request scope.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly IReuse InWebRequest</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IReuse.html">IReuse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Reuse_Scoped" data-uid="DryIoc.Reuse.Scoped">Scoped</h4>
+  <div class="markdown level1 summary"><p>Same as InCurrentScope. From now on will be the default name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly IReuse Scoped</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IReuse.html">IReuse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Reuse_ScopedOrSingleton" data-uid="DryIoc.Reuse.ScopedOrSingleton">ScopedOrSingleton</h4>
+  <div class="markdown level1 summary"><p>The same as <a class="xref" href="DryIoc.Reuse.html#DryIoc_Reuse_InCurrentScope">InCurrentScope</a> but if no open scope available will fallback to <a class="xref" href="DryIoc.Reuse.html#DryIoc_Reuse_Singleton">Singleton</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="DryIoc_Reuse_ScopedOrSingleton_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="DryIoc.Error.html#DryIoc_Error_DependencyHasShorterReuseLifespan">DependencyHasShorterReuseLifespan</a> is applied the same way as for <a class="xref" href="DryIoc.Reuse.html#DryIoc_Reuse_InCurrentScope">InCurrentScope</a> reuse.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly IReuse ScopedOrSingleton</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IReuse.html">IReuse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Reuse_Singleton" data-uid="DryIoc.Reuse.Singleton">Singleton</h4>
+  <div class="markdown level1 summary"><p>Specifies to store single service instance per <a class="xref" href="DryIoc.Container.html">Container</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly IReuse Singleton</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IReuse.html">IReuse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Reuse_Transient" data-uid="DryIoc.Reuse.Transient">Transient</h4>
+  <div class="markdown level1 summary"><p>Synonym for absence of reuse.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly IReuse Transient</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IReuse.html">IReuse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Reuse_WebRequestScopeName" data-uid="DryIoc.Reuse.WebRequestScopeName">WebRequestScopeName</h4>
+  <div class="markdown level1 summary"><p>Special name that by convention recognized by <a class="xref" href="DryIoc.Reuse.html#DryIoc_Reuse_InWebRequest">InWebRequest</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string WebRequestScopeName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <h4 id="methods-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#DryIoc_Reuse_InCurrentNamedScope_System_Object_">InCurrentNamedScope(Object)</a></td>
+        <td><p>Returns current scope reuse with specific name to match with scope.
+If name is not specified then function returns <a class="xref" href="DryIoc.Reuse.html#DryIoc_Reuse_InCurrentScope">InCurrentScope</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Reuse_InResolutionScopeOf_System_Type_System_Object_">InResolutionScopeOf(Type, Object)</a></td>
+        <td><p>Obsolete: please use ScopedTo instead.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Reuse_InResolutionScopeOf__1_System_Object_">InResolutionScopeOf&lt;TAssignableFromServiceType&gt;(Object)</a></td>
+        <td><p>Obsolete: please use ScopedTo instead.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Reuse_ScopedTo_System_Object_">ScopedTo(Object)</a></td>
+        <td><p>Same as InCurrentNamedScope. From now on will be the default name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Reuse_ScopedTo_System_Object___">ScopedTo(Object[])</a></td>
+        <td><p>Scoped to multiple names.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Reuse_ScopedTo_System_Type_System_Object_">ScopedTo(Type, Object)</a></td>
+        <td><p>Same as InResolutionScopeOf. From now on will be the default name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#DryIoc_Reuse_ScopedTo__1_System_Object_">ScopedTo&lt;TService&gt;(Object)</a></td>
+        <td><p>Same as InResolutionScopeOf. From now on will be the default name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Reuse_InCurrentNamedScope_System_Object_" data-uid="DryIoc.Reuse.InCurrentNamedScope(System.Object)">InCurrentNamedScope(Object)</h4>
+  <div class="markdown level1 summary"><p>Returns current scope reuse with specific name to match with scope.
+If name is not specified then function returns <a class="xref" href="DryIoc.Reuse.html#DryIoc_Reuse_InCurrentScope">InCurrentScope</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReuse InCurrentNamedScope(object name = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>name</em></td>
+        <td><p>(optional) Name to match with scope.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IReuse.html">IReuse</a></td>
+        <td><p>Created current scope reuse.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Reuse_InResolutionScopeOf_System_Type_System_Object_" data-uid="DryIoc.Reuse.InResolutionScopeOf(System.Type,System.Object)">InResolutionScopeOf(Type, Object)</h4>
+  <div class="markdown level1 summary"><p>Obsolete: please use ScopedTo instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReuse InResolutionScopeOf(Type assignableFromServiceType = null, object serviceKey = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>assignableFromServiceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IReuse.html">IReuse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Reuse_InResolutionScopeOf__1_System_Object_" data-uid="DryIoc.Reuse.InResolutionScopeOf``1(System.Object)">InResolutionScopeOf&lt;TAssignableFromServiceType&gt;(Object)</h4>
+  <div class="markdown level1 summary"><p>Obsolete: please use ScopedTo instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReuse InResolutionScopeOf&lt;TAssignableFromServiceType&gt;(object serviceKey = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IReuse.html">IReuse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>TAssignableFromServiceType</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Reuse_ScopedTo_System_Object_" data-uid="DryIoc.Reuse.ScopedTo(System.Object)">ScopedTo(Object)</h4>
+  <div class="markdown level1 summary"><p>Same as InCurrentNamedScope. From now on will be the default name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReuse ScopedTo(object name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>name</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IReuse.html">IReuse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Reuse_ScopedTo_System_Object___" data-uid="DryIoc.Reuse.ScopedTo(System.Object[])">ScopedTo(Object[])</h4>
+  <div class="markdown level1 summary"><p>Scoped to multiple names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReuse ScopedTo(params object[] names)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><em>names</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IReuse.html">IReuse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Reuse_ScopedTo_System_Type_System_Object_" data-uid="DryIoc.Reuse.ScopedTo(System.Type,System.Object)">ScopedTo(Type, Object)</h4>
+  <div class="markdown level1 summary"><p>Same as InResolutionScopeOf. From now on will be the default name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReuse ScopedTo(Type serviceType = null, object serviceKey = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>serviceType</em></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IReuse.html">IReuse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="DryIoc_Reuse_ScopedTo__1_System_Object_" data-uid="DryIoc.Reuse.ScopedTo``1(System.Object)">ScopedTo&lt;TService&gt;(Object)</h4>
+  <div class="markdown level1 summary"><p>Same as InResolutionScopeOf. From now on will be the default name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReuse ScopedTo&lt;TService&gt;(object serviceKey = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><em>serviceKey</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DryIoc.IReuse.html">IReuse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>TService</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
