@@ -168,11 +168,6 @@
         <td><p>Gets dictionary with drawContextId as key and Pipelines by pass as value.</p>
 </td>
       </tr>
-      <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_RenderMeshInfo_MeshOrderBias">MeshOrderBias</a></td>
-        <td><p>Mesh order bias.</p>
-</td>
-      </tr>
     </tbody>
   </table>
   <h4 id="WaveEngine_Framework_Graphics_RenderMeshInfo_IsPipelineCacheDirty" data-uid="WaveEngine.Framework.Graphics.RenderMeshInfo.IsPipelineCacheDirty">IsPipelineCacheDirty</h4>
@@ -217,29 +212,6 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="WaveEngine.Framework.Graphics.MaterialResourcesCacheEntry.html">MaterialResourcesCacheEntry</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_Framework_Graphics_RenderMeshInfo_MeshOrderBias" data-uid="WaveEngine.Framework.Graphics.RenderMeshInfo.MeshOrderBias">MeshOrderBias</h4>
-  <div class="markdown level1 summary"><p>Mesh order bias.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int MeshOrderBias</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -293,6 +265,11 @@
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_RenderMeshInfo_Mesh">Mesh</a></td>
         <td><p>Gets the associated mesh.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderMeshInfo_MeshOrderBias">MeshOrderBias</a></td>
+        <td><p>Gets or sets the Mesh order bias.</p>
 </td>
       </tr>
       <tr>
@@ -501,6 +478,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_Framework_Graphics_RenderMeshInfo_MeshOrderBias" data-uid="WaveEngine.Framework.Graphics.RenderMeshInfo.MeshOrderBias">MeshOrderBias</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the Mesh order bias.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MeshOrderBias { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Framework_Graphics_RenderMeshInfo_OrderBias" data-uid="WaveEngine.Framework.Graphics.RenderMeshInfo.OrderBias">OrderBias</h4>
   <div class="markdown level1 summary"><p>Gets the order bias.</p>
 </div>
@@ -553,7 +553,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override uint RenderStateOrder { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override int RenderStateOrder { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -565,7 +565,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -797,12 +797,6 @@
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
-  </div>
-  <div>
-      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
-  </div>
-  <div>
       <a class="xref" href="DryIoc.Registrator.html#DryIoc_Registrator_ToFactoryDelegate_System_Object_DryIoc_IResolverContext_">Registrator.ToFactoryDelegate(Object, IResolverContext)</a>
   </div>
   <div>
@@ -849,6 +843,12 @@
   </div>
   <div>
       <a class="xref" href="FastExpressionCompiler.LightExpression.CodePrinter.html#FastExpressionCompiler_LightExpression_CodePrinter_ToCode_System_Object_System_Func_System_Object_System_String__">CodePrinter.ToCode(Object, Func&lt;Object, String&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
   </div>
 </article>
           </div>
