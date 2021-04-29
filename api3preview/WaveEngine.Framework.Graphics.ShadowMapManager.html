@@ -1,0 +1,875 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ShadowMapManager
+   | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ShadowMapManager
+   | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.57.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager">
+  
+  <h1 id="WaveEngine_Framework_Graphics_ShadowMapManager" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager" class="xk-margin-default">Class ShadowMapManager
+  </h1>
+  <div class="markdown level0 summary"><p>This class is responsible to manage all shadows of this scene.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+      <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level1"><a class="xref" href="WaveEngine.Framework.DisposableObject.html">DisposableObject</a></div>
+      <div class="level"><span class="xref"></span></div>
+  </div>
+  <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ShadowMapManager : DisposableObject, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <h4 id="constructors-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager__ctor_WaveEngine_Framework_Graphics_DefaultRenderPipeline_">ShadowMapManager(DefaultRenderPipeline)</a></td>
+        <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Graphics.ShadowMapManager.html">ShadowMapManager</a> class.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager__ctor_WaveEngine_Framework_Graphics_DefaultRenderPipeline_" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.#ctor(WaveEngine.Framework.Graphics.DefaultRenderPipeline)">ShadowMapManager(DefaultRenderPipeline)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Graphics.ShadowMapManager.html">ShadowMapManager</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ShadowMapManager(DefaultRenderPipeline renderPipeline)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.DefaultRenderPipeline.html">DefaultRenderPipeline</a></td>
+        <td><em>renderPipeline</em></td>
+        <td><p>The render pipeline.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="fields-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager_DirectionalShadowMapArray">DirectionalShadowMapArray</a></td>
+        <td><p>Texture to hold all directional lights depth maps.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager_DirectionalShadowMapFramebuffers">DirectionalShadowMapFramebuffers</a></td>
+        <td><p>The directional shadowmap framebuffer array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager_NumCascades">NumCascades</a></td>
+        <td><p>Cascade count used in directional lights.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager_PunctualShadowMapArray">PunctualShadowMapArray</a></td>
+        <td><p>Texture to hold all point lights depth maps.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager_PunctualShadowMapFramebuffers">PunctualShadowMapFramebuffers</a></td>
+        <td><p>The punctual shadowmap framebuffer array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager_ShadowViewProjectionBuffer">ShadowViewProjectionBuffer</a></td>
+        <td><p>Gets the shadow view projection buffer pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager_ShadowViewProjectionBufferSize">ShadowViewProjectionBufferSize</a></td>
+        <td><p>Gets the shadow view projection buffer size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager_SpotShadowMapArray">SpotShadowMapArray</a></td>
+        <td><p>Texture to hold all spot lights depth maps.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager_SpotShadowMapFramebuffers">SpotShadowMapFramebuffers</a></td>
+        <td><p>The spot shadowmap framebuffer array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager_DirectionalShadowMapArray" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.DirectionalShadowMapArray">DirectionalShadowMapArray</h4>
+  <div class="markdown level1 summary"><p>Texture to hold all directional lights depth maps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture DirectionalShadowMapArray</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Texture.html">Texture</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager_DirectionalShadowMapFramebuffers" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.DirectionalShadowMapFramebuffers">DirectionalShadowMapFramebuffers</h4>
+  <div class="markdown level1 summary"><p>The directional shadowmap framebuffer array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrameBuffer[] DirectionalShadowMapFramebuffers</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.FrameBuffer.html">FrameBuffer</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager_NumCascades" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.NumCascades">NumCascades</h4>
+  <div class="markdown level1 summary"><p>Cascade count used in directional lights.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const uint NumCascades = 4U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager_PunctualShadowMapArray" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.PunctualShadowMapArray">PunctualShadowMapArray</h4>
+  <div class="markdown level1 summary"><p>Texture to hold all point lights depth maps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture PunctualShadowMapArray</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Texture.html">Texture</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager_PunctualShadowMapFramebuffers" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.PunctualShadowMapFramebuffers">PunctualShadowMapFramebuffers</h4>
+  <div class="markdown level1 summary"><p>The punctual shadowmap framebuffer array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrameBuffer[] PunctualShadowMapFramebuffers</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.FrameBuffer.html">FrameBuffer</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager_ShadowViewProjectionBuffer" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.ShadowViewProjectionBuffer">ShadowViewProjectionBuffer</h4>
+  <div class="markdown level1 summary"><p>Gets the shadow view projection buffer pointer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntPtr ShadowViewProjectionBuffer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager_ShadowViewProjectionBufferSize" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.ShadowViewProjectionBufferSize">ShadowViewProjectionBufferSize</h4>
+  <div class="markdown level1 summary"><p>Gets the shadow view projection buffer size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint ShadowViewProjectionBufferSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager_SpotShadowMapArray" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.SpotShadowMapArray">SpotShadowMapArray</h4>
+  <div class="markdown level1 summary"><p>Texture to hold all spot lights depth maps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture SpotShadowMapArray</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Texture.html">Texture</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager_SpotShadowMapFramebuffers" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.SpotShadowMapFramebuffers">SpotShadowMapFramebuffers</h4>
+  <div class="markdown level1 summary"><p>The spot shadowmap framebuffer array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrameBuffer[] SpotShadowMapFramebuffers</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.FrameBuffer.html">FrameBuffer</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <h4 id="properties-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager_DirectionalShadowMapResolution">DirectionalShadowMapResolution</a></td>
+        <td><p>Gets or sets the Directional Shadow Map texture size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager_PunctualShadowMapResolution">PunctualShadowMapResolution</a></td>
+        <td><p>Gets or sets the Punctual Shadow Map texture size.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager_ShadowFilter">ShadowFilter</a></td>
+        <td><p>Gets or sets the global shadow filter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager_SpotShadowMapResolution">SpotShadowMapResolution</a></td>
+        <td><p>Gets or sets the Spot Shadow Map texture size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager_DirectionalShadowMapResolution" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.DirectionalShadowMapResolution">DirectionalShadowMapResolution</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the Directional Shadow Map texture size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ShadowMapManager.ShadowMapSize DirectionalShadowMapResolution { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.ShadowMapManager.ShadowMapSize.html">ShadowMapManager.ShadowMapSize</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager_PunctualShadowMapResolution" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.PunctualShadowMapResolution">PunctualShadowMapResolution</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the Punctual Shadow Map texture size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ShadowMapManager.ShadowMapSize PunctualShadowMapResolution { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.ShadowMapManager.ShadowMapSize.html">ShadowMapManager.ShadowMapSize</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager_ShadowFilter" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.ShadowFilter">ShadowFilter</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the global shadow filter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ShadowMapManager.Filter ShadowFilter { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.ShadowMapManager.Filter.html">ShadowMapManager.Filter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager_SpotShadowMapResolution" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.SpotShadowMapResolution">SpotShadowMapResolution</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the Spot Shadow Map texture size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ShadowMapManager.ShadowMapSize SpotShadowMapResolution { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.ShadowMapManager.ShadowMapSize.html">ShadowMapManager.ShadowMapSize</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <h4 id="methods-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager_BeginFrame">BeginFrame()</a></td>
+        <td><p>Reset the slice counters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager_Destroy">Destroy()</a></td>
+        <td><p>Destroy all resources of this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager_ExtendShadowMapSlot_WaveEngine_Framework_Graphics_LightType_">ExtendShadowMapSlot(LightType)</a></td>
+        <td><p>Extend the capacity of the shadow map textures.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager_NextDirectionalShadowMapFramebuffer_WaveEngine_Framework_Graphics_LightDrawContext_System_Int32_">NextDirectionalShadowMapFramebuffer(LightDrawContext, Int32)</a></td>
+        <td><p>Get the next free shadow framebuffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager_NextPunctualShadowMapFramebuffer_WaveEngine_Framework_Graphics_LightDrawContext_System_Int32_">NextPunctualShadowMapFramebuffer(LightDrawContext, Int32)</a></td>
+        <td><p>Get the next free shadow framebuffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager_NextSpotShadowMapFramebuffer_WaveEngine_Framework_Graphics_LightDrawContext_System_Int32_">NextSpotShadowMapFramebuffer(LightDrawContext, Int32)</a></td>
+        <td><p>Get the next free shadow framebuffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager_ReduceShadowMapSlot_WaveEngine_Framework_Graphics_LightType_">ReduceShadowMapSlot(LightType)</a></td>
+        <td><p>Reduce the capacity of the shadow map textures.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager_RefreshLightProjection_WaveEngine_Framework_Graphics_LightDrawContext_System_Int32_">RefreshLightProjection(LightDrawContext, Int32)</a></td>
+        <td><p>Refresh the light projection.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager_ReserveShadowMapSlots_WaveEngine_Framework_Graphics_Light_System_UInt32_">ReserveShadowMapSlots(Light, UInt32)</a></td>
+        <td><p>Set a valid shadowMap slot.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_ShadowMapManager_ResetDirectionalCurrentSlice">ResetDirectionalCurrentSlice()</a></td>
+        <td><p>Reset the current slice.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager_BeginFrame" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.BeginFrame">BeginFrame()</h4>
+  <div class="markdown level1 summary"><p>Reset the slice counters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginFrame()</code></pre>
+  </div>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager_Destroy" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.Destroy">Destroy()</h4>
+  <div class="markdown level1 summary"><p>Destroy all resources of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Destroy()</code></pre>
+  </div>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager_ExtendShadowMapSlot_WaveEngine_Framework_Graphics_LightType_" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.ExtendShadowMapSlot(WaveEngine.Framework.Graphics.LightType)">ExtendShadowMapSlot(LightType)</h4>
+  <div class="markdown level1 summary"><p>Extend the capacity of the shadow map textures.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExtendShadowMapSlot(LightType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.LightType.html">LightType</a></td>
+        <td><em>type</em></td>
+        <td><p>The type of light that need a slot.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager_NextDirectionalShadowMapFramebuffer_WaveEngine_Framework_Graphics_LightDrawContext_System_Int32_" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.NextDirectionalShadowMapFramebuffer(WaveEngine.Framework.Graphics.LightDrawContext,System.Int32)">NextDirectionalShadowMapFramebuffer(LightDrawContext, Int32)</h4>
+  <div class="markdown level1 summary"><p>Get the next free shadow framebuffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void NextDirectionalShadowMapFramebuffer(LightDrawContext lightDrawContext, int cascadeIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.LightDrawContext.html">LightDrawContext</a></td>
+        <td><em>lightDrawContext</em></td>
+        <td><p>The active light draw context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>cascadeIdx</em></td>
+        <td><p>The cascade index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager_NextPunctualShadowMapFramebuffer_WaveEngine_Framework_Graphics_LightDrawContext_System_Int32_" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.NextPunctualShadowMapFramebuffer(WaveEngine.Framework.Graphics.LightDrawContext,System.Int32)">NextPunctualShadowMapFramebuffer(LightDrawContext, Int32)</h4>
+  <div class="markdown level1 summary"><p>Get the next free shadow framebuffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void NextPunctualShadowMapFramebuffer(LightDrawContext lightDrawContext, int faceIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.LightDrawContext.html">LightDrawContext</a></td>
+        <td><em>lightDrawContext</em></td>
+        <td><p>The active light draw context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>faceIdx</em></td>
+        <td><p>The cube face index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager_NextSpotShadowMapFramebuffer_WaveEngine_Framework_Graphics_LightDrawContext_System_Int32_" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.NextSpotShadowMapFramebuffer(WaveEngine.Framework.Graphics.LightDrawContext,System.Int32)">NextSpotShadowMapFramebuffer(LightDrawContext, Int32)</h4>
+  <div class="markdown level1 summary"><p>Get the next free shadow framebuffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void NextSpotShadowMapFramebuffer(LightDrawContext lightDrawContext, int cascadeIdx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.LightDrawContext.html">LightDrawContext</a></td>
+        <td><em>lightDrawContext</em></td>
+        <td><p>The active light draw context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>cascadeIdx</em></td>
+        <td><p>The cascade index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager_ReduceShadowMapSlot_WaveEngine_Framework_Graphics_LightType_" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.ReduceShadowMapSlot(WaveEngine.Framework.Graphics.LightType)">ReduceShadowMapSlot(LightType)</h4>
+  <div class="markdown level1 summary"><p>Reduce the capacity of the shadow map textures.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReduceShadowMapSlot(LightType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.LightType.html">LightType</a></td>
+        <td><em>type</em></td>
+        <td><p>The type of light that need a slot.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager_RefreshLightProjection_WaveEngine_Framework_Graphics_LightDrawContext_System_Int32_" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.RefreshLightProjection(WaveEngine.Framework.Graphics.LightDrawContext,System.Int32)">RefreshLightProjection(LightDrawContext, Int32)</h4>
+  <div class="markdown level1 summary"><p>Refresh the light projection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshLightProjection(LightDrawContext lightDrawContext, int slot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.LightDrawContext.html">LightDrawContext</a></td>
+        <td><em>lightDrawContext</em></td>
+        <td><p>The light draw context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>slot</em></td>
+        <td><p>The slot index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager_ReserveShadowMapSlots_WaveEngine_Framework_Graphics_Light_System_UInt32_" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.ReserveShadowMapSlots(WaveEngine.Framework.Graphics.Light,System.UInt32)">ReserveShadowMapSlots(Light, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Set a valid shadowMap slot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReserveShadowMapSlots(Light light, uint slots)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.Light.html">Light</a></td>
+        <td><em>light</em></td>
+        <td><p>The light.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><em>slots</em></td>
+        <td><p>the slots needed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_ShadowMapManager_ResetDirectionalCurrentSlice" data-uid="WaveEngine.Framework.Graphics.ShadowMapManager.ResetDirectionalCurrentSlice">ResetDirectionalCurrentSlice()</h4>
+  <div class="markdown level1 summary"><p>Reset the current slice.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetDirectionalCurrentSlice()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

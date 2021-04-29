@@ -1,0 +1,587 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BinaryWriterExtensions
+   | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BinaryWriterExtensions
+   | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.57.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WaveEngine.Common.BinaryWriterExtensions">
+  
+  <h1 id="WaveEngine_Common_BinaryWriterExtensions" data-uid="WaveEngine.Common.BinaryWriterExtensions" class="xk-margin-default">Class BinaryWriterExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>Extension functions for writing WaveEngine data types with a BinaryWriter.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+      <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level"><span class="xref"></span></div>
+  </div>
+  <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>:WaveEngine.Common.dll</h6>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class BinaryWriterExtensions</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <h4 id="methods-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_System_Collections_Generic_Dictionary_System_String_System_Int32__">Write(BinaryWriter, Dictionary&lt;String, Int32&gt;)</a></td>
+        <td><p>Writes a vertex attributes dictionary to the binary stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_System_Nullable_WaveEngine_Mathematics_BoundingBox__">Write(BinaryWriter, Nullable&lt;BoundingBox&gt;)</a></td>
+        <td><p>Writes a nullable Bounding Box into a Binary Writer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_WaveEngine_Mathematics_BoundingBox_">Write(BinaryWriter, BoundingBox)</a></td>
+        <td><p>Writes a Bounding Box into a BinaryWriter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_WaveEngine_Mathematics_Byte4_">Write(BinaryWriter, Byte4)</a></td>
+        <td><p>Writes the byte4.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_WaveEngine_Mathematics_Matrix4x4_">Write(BinaryWriter, Matrix4x4)</a></td>
+        <td><p>Writes the matrix.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_WaveEngine_Mathematics_Point_">Write(BinaryWriter, Point)</a></td>
+        <td><p>Writes the Point.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_WaveEngine_Mathematics_Quaternion_">Write(BinaryWriter, Quaternion)</a></td>
+        <td><p>Writes the vector4.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_WaveEngine_Mathematics_Rectangle_">Write(BinaryWriter, Rectangle)</a></td>
+        <td><p>Writes the rectangle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_WaveEngine_Mathematics_RectangleF_">Write(BinaryWriter, RectangleF)</a></td>
+        <td><p>Writes the rectangle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_WaveEngine_Mathematics_Vector2_">Write(BinaryWriter, Vector2)</a></td>
+        <td><p>Writes the vector2.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_WaveEngine_Mathematics_Vector3_">Write(BinaryWriter, Vector3)</a></td>
+        <td><p>Writes the vector3.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_WaveEngine_Mathematics_Vector4_">Write(BinaryWriter, Vector4)</a></td>
+        <td><p>Writes the vector4.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_System_Collections_Generic_Dictionary_System_String_System_Int32__" data-uid="WaveEngine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,System.Collections.Generic.Dictionary{System.String,System.Int32})">Write(BinaryWriter, Dictionary&lt;String, Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Writes a vertex attributes dictionary to the binary stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Dictionary&lt;string, int&gt; vertexAttributes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><em>writer</em></td>
+        <td><p>The Binary Writer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Int32</span>&gt;</td>
+        <td><em>vertexAttributes</em></td>
+        <td><p>The vertex attribute dictionary.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_System_Nullable_WaveEngine_Mathematics_BoundingBox__" data-uid="WaveEngine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,System.Nullable{WaveEngine.Mathematics.BoundingBox})">Write(BinaryWriter, Nullable&lt;BoundingBox&gt;)</h4>
+  <div class="markdown level1 summary"><p>Writes a nullable Bounding Box into a Binary Writer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, BoundingBox? boundingBox)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><em>writer</em></td>
+        <td><p>The Binary Writer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="WaveEngine.Mathematics.BoundingBox.html">BoundingBox</a>&gt;</td>
+        <td><em>boundingBox</em></td>
+        <td><p>The nullable Bounding Box to be written.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_WaveEngine_Mathematics_BoundingBox_" data-uid="WaveEngine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,WaveEngine.Mathematics.BoundingBox)">Write(BinaryWriter, BoundingBox)</h4>
+  <div class="markdown level1 summary"><p>Writes a Bounding Box into a BinaryWriter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, BoundingBox boundingBox)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><em>writer</em></td>
+        <td><p>The BinaryWriter object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.BoundingBox.html">BoundingBox</a></td>
+        <td><em>boundingBox</em></td>
+        <td><p>The Bounding Box.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_WaveEngine_Mathematics_Byte4_" data-uid="WaveEngine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,WaveEngine.Mathematics.Byte4)">Write(BinaryWriter, Byte4)</h4>
+  <div class="markdown level1 summary"><p>Writes the byte4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Byte4 b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><em>writer</em></td>
+        <td><p>The writer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Byte4.html">Byte4</a></td>
+        <td><em>b</em></td>
+        <td><p>The byte.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_WaveEngine_Mathematics_Matrix4x4_" data-uid="WaveEngine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,WaveEngine.Mathematics.Matrix4x4)">Write(BinaryWriter, Matrix4x4)</h4>
+  <div class="markdown level1 summary"><p>Writes the matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Matrix4x4 m)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><em>writer</em></td>
+        <td><p>The writer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Matrix4x4.html">Matrix4x4</a></td>
+        <td><em>m</em></td>
+        <td><p>The matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_WaveEngine_Mathematics_Point_" data-uid="WaveEngine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,WaveEngine.Mathematics.Point)">Write(BinaryWriter, Point)</h4>
+  <div class="markdown level1 summary"><p>Writes the Point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Point v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><em>writer</em></td>
+        <td><p>The writer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Point.html">Point</a></td>
+        <td><em>v</em></td>
+        <td><p>The vector2.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_WaveEngine_Mathematics_Quaternion_" data-uid="WaveEngine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,WaveEngine.Mathematics.Quaternion)">Write(BinaryWriter, Quaternion)</h4>
+  <div class="markdown level1 summary"><p>Writes the vector4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Quaternion q)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><em>writer</em></td>
+        <td><p>The writer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Quaternion.html">Quaternion</a></td>
+        <td><em>q</em></td>
+        <td><p>The quaternion.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_WaveEngine_Mathematics_Rectangle_" data-uid="WaveEngine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,WaveEngine.Mathematics.Rectangle)">Write(BinaryWriter, Rectangle)</h4>
+  <div class="markdown level1 summary"><p>Writes the rectangle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Rectangle r)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><em>writer</em></td>
+        <td><p>The writer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Rectangle.html">Rectangle</a></td>
+        <td><em>r</em></td>
+        <td><p>The rectangle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_WaveEngine_Mathematics_RectangleF_" data-uid="WaveEngine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,WaveEngine.Mathematics.RectangleF)">Write(BinaryWriter, RectangleF)</h4>
+  <div class="markdown level1 summary"><p>Writes the rectangle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, RectangleF r)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><em>writer</em></td>
+        <td><p>The writer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.RectangleF.html">RectangleF</a></td>
+        <td><em>r</em></td>
+        <td><p>The rectangle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_WaveEngine_Mathematics_Vector2_" data-uid="WaveEngine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,WaveEngine.Mathematics.Vector2)">Write(BinaryWriter, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Writes the vector2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Vector2 v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><em>writer</em></td>
+        <td><p>The writer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector2.html">Vector2</a></td>
+        <td><em>v</em></td>
+        <td><p>The vector2.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_WaveEngine_Mathematics_Vector3_" data-uid="WaveEngine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,WaveEngine.Mathematics.Vector3)">Write(BinaryWriter, Vector3)</h4>
+  <div class="markdown level1 summary"><p>Writes the vector3.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Vector3 v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><em>writer</em></td>
+        <td><p>The writer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector3.html">Vector3</a></td>
+        <td><em>v</em></td>
+        <td><p>The vector3.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_BinaryWriterExtensions_Write_System_IO_BinaryWriter_WaveEngine_Mathematics_Vector4_" data-uid="WaveEngine.Common.BinaryWriterExtensions.Write(System.IO.BinaryWriter,WaveEngine.Mathematics.Vector4)">Write(BinaryWriter, Vector4)</h4>
+  <div class="markdown level1 summary"><p>Writes the vector4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write(this BinaryWriter writer, Vector4 v)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><em>writer</em></td>
+        <td><p>The writer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Mathematics.Vector4.html">Vector4</a></td>
+        <td><em>v</em></td>
+        <td><p>The vector4.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,3900 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Entity
+   | Wave Engine API Doc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Entity
+   | Wave Engine API Doc ">
+    <meta name="generator" content="docfx 2.57.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WaveEngine.Framework.Entity">
+  
+  <h1 id="WaveEngine_Framework_Entity" data-uid="WaveEngine.Framework.Entity" class="xk-margin-default">Class Entity
+  </h1>
+  <div class="markdown level0 summary"><p>This class represents a game entity, which is basically a container of <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> types,
+which are the ones that provide the actual game logic.
+<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> types are contained in <a class="xref" href="WaveEngine.Framework.Entity.html#WaveEngine_Framework_Entity_Scene">Scene</a> ones, which handle how
+to update and draw them.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+      <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level1"><a class="xref" href="WaveEngine.Common.IdentifiableObject.html">IdentifiableObject</a></div>
+      <div class="level2"><a class="xref" href="WaveEngine.Framework.DependencyObject.html">DependencyObject</a></div>
+      <div class="level3"><a class="xref" href="WaveEngine.Framework.AttachableObject.html">AttachableObject</a></div>
+      <div class="level"><span class="xref"></span></div>
+  </div>
+  <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Entity : AttachableObject, IDependencyObject</code></pre>
+  </div>
+  <strong id="WaveEngine_Framework_Entity_remarks">Remarks</strong>
+  <div class="markdown level1 remarks"><p><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> types can be organized in trees, with an entity containing others and so on.</p>
+</div>
+  <strong id="WaveEngine_Framework_Entity_examples">Examples</strong>
+  <p>This is an example on how to create an <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>.
+Take into account that the <em>AddComponent()</em> and <em>RemoveComponent()</em> methods are designed to allow method chaining,
+so this type of code can be written when creating or configuring an <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>:</p>
+<pre><code>    var primitive = new Entity(&quot;Primitive&quot;)
+                        .AddComponent(new Transform3D())
+                        .AddComponent(new Spinner() { AxisTotalIncreases = new Vector3(0.01f, 0.02f, 0.01f) })
+                        .AddComponent(new CubeMesh())
+                        .AddComponent(new MeshRenderer())
+                        .AddComponent(new MaterialComponent() { Material = myMaterial });</code></pre>
+<h4 id="recipes-and-samples">Recipes and samples.</h4>
+<ul><li><a href="../recipes/Basic/Component-based-Architecture.md">Component based Architecture recipe</a></li></ul>
+
+  <h3 id="constructors">Constructors
+  </h3>
+  <h4 id="constructors-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity__ctor">Entity()</a></td>
+        <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> class.
+By default, the <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> is visible and active.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity__ctor_System_String_">Entity(String)</a></td>
+        <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> class.
+By default, the <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> is visible and active.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity__ctor" data-uid="WaveEngine.Framework.Entity.#ctor">Entity()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> class.
+By default, the <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> is visible and active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity()</code></pre>
+  </div>
+  <h4 id="WaveEngine_Framework_Entity__ctor_System_String_" data-uid="WaveEngine.Framework.Entity.#ctor(System.String)">Entity(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> class.
+By default, the <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> is visible and active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>name</em></td>
+        <td><p>The name of the entity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If name is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="fields-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_Flags">Flags</a></td>
+        <td><p>Special entity behavior flags.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_InvalidEntityNameStrings">InvalidEntityNameStrings</a></td>
+        <td><p>Strings that are not valid in an entity name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_PathParent">PathParent</a></td>
+        <td><p>The separator string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_PathSelf">PathSelf</a></td>
+        <td><p>The separator string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_PathSeparatorChar">PathSeparatorChar</a></td>
+        <td><p>The separator char used in EntityPath property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_PathSeparatorString">PathSeparatorString</a></td>
+        <td><p>The separator string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_Flags" data-uid="WaveEngine.Framework.Entity.Flags">Flags</h4>
+  <div class="markdown level1 summary"><p>Special entity behavior flags.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HideFlags Flags</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.HideFlags.html">HideFlags</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_InvalidEntityNameStrings" data-uid="WaveEngine.Framework.Entity.InvalidEntityNameStrings">InvalidEntityNameStrings</h4>
+  <div class="markdown level1 summary"><p>Strings that are not valid in an entity name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string[] InvalidEntityNameStrings</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_PathParent" data-uid="WaveEngine.Framework.Entity.PathParent">PathParent</h4>
+  <div class="markdown level1 summary"><p>The separator string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string PathParent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_PathSelf" data-uid="WaveEngine.Framework.Entity.PathSelf">PathSelf</h4>
+  <div class="markdown level1 summary"><p>The separator string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string PathSelf</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_PathSeparatorChar" data-uid="WaveEngine.Framework.Entity.PathSeparatorChar">PathSeparatorChar</h4>
+  <div class="markdown level1 summary"><p>The separator char used in EntityPath property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly char PathSeparatorChar</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_PathSeparatorString" data-uid="WaveEngine.Framework.Entity.PathSeparatorString">PathSeparatorString</h4>
+  <div class="markdown level1 summary"><p>The separator string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string PathSeparatorString</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <h4 id="properties-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_ChildEntities">ChildEntities</a></td>
+        <td><p>Gets the children <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> of this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_Components">Components</a></td>
+        <td><p>Gets the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> collection of this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_EntityManager">EntityManager</a></td>
+        <td><p>Gets the <a class="xref" href="WaveEngine.Framework.Entity.html#WaveEngine_Framework_Entity_EntityManager">EntityManager</a> that contains this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_EntityPath">EntityPath</a></td>
+        <td><p>Gets the Entity path. The entity path is a string
+that conform the path in the EntityManager to obtain the instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_IsStatic">IsStatic</a></td>
+        <td><p>Gets or sets a value indicating whether this instance is static. Once an entity is initialized, this cannot be displaced, rotated or scaled.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_Name">Name</a></td>
+        <td><p>Gets or sets the name of the instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_NumChildren">NumChildren</a></td>
+        <td><p>Gets the number of children <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> actually contained in this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_Parent">Parent</a></td>
+        <td><p>Gets or sets the parent <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_Scene">Scene</a></td>
+        <td><p>Gets the <a class="xref" href="WaveEngine.Framework.Entity.html#WaveEngine_Framework_Entity_Scene">Scene</a> that contains this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_ShouldBeActivated">ShouldBeActivated</a></td>
+        <td><p>Gets a value indicating whether this object should be activated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_Tag">Tag</a></td>
+        <td><p>Gets or sets the Tag of the instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_ChildEntities" data-uid="WaveEngine.Framework.Entity.ChildEntities">ChildEntities</h4>
+  <div class="markdown level1 summary"><p>Gets the children <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Entity&gt; ChildEntities { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_Components" data-uid="WaveEngine.Framework.Entity.Components">Components</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> collection of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Component&gt; Components { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Component.html">Component</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_EntityManager" data-uid="WaveEngine.Framework.Entity.EntityManager">EntityManager</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="WaveEngine.Framework.Entity.html#WaveEngine_Framework_Entity_EntityManager">EntityManager</a> that contains this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityManager EntityManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Managers.EntityManager.html">EntityManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_EntityPath" data-uid="WaveEngine.Framework.Entity.EntityPath">EntityPath</h4>
+  <div class="markdown level1 summary"><p>Gets the Entity path. The entity path is a string
+that conform the path in the EntityManager to obtain the instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EntityPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_IsStatic" data-uid="WaveEngine.Framework.Entity.IsStatic">IsStatic</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this instance is static. Once an entity is initialized, this cannot be displaced, rotated or scaled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStatic { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance is static; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_Name" data-uid="WaveEngine.Framework.Entity.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the name of the instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_NumChildren" data-uid="WaveEngine.Framework.Entity.NumChildren">NumChildren</h4>
+  <div class="markdown level1 summary"><p>Gets the number of children <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> actually contained in this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumChildren { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_Parent" data-uid="WaveEngine.Framework.Entity.Parent">Parent</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the parent <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity Parent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity have been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_Scene" data-uid="WaveEngine.Framework.Entity.Scene">Scene</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="WaveEngine.Framework.Entity.html#WaveEngine_Framework_Entity_Scene">Scene</a> that contains this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Scene Scene { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Scene.html">Scene</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_ShouldBeActivated" data-uid="WaveEngine.Framework.Entity.ShouldBeActivated">ShouldBeActivated</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this object should be activated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool ShouldBeActivated { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_Tag" data-uid="WaveEngine.Framework.Entity.Tag">Tag</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the Tag of the instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Tag { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <h4 id="methods-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_AddChild_WaveEngine_Framework_Entity_">AddChild(Entity)</a></td>
+        <td><p>Adds a child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> to this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_AddComponent_WaveEngine_Framework_Component_">AddComponent(Component)</a></td>
+        <td><p>Adds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_DetachChild_System_Guid_">DetachChild(Guid)</a></td>
+        <td><p>Detaches the child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_DetachChild_System_String_">DetachChild(String)</a></td>
+        <td><p>Detaches the child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_DetachChild_WaveEngine_Framework_Entity_">DetachChild(Entity)</a></td>
+        <td><p>Detaches the child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_DetachComponent_System_Type_WaveEngine_Framework_Component__System_Boolean_">DetachComponent(Type, out Component, Boolean)</a></td>
+        <td><p>Removes a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> from this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_DetachComponent_WaveEngine_Framework_Component_">DetachComponent(Component)</a></td>
+        <td><p>Removes a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> from this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_DetachComponent__1___0__System_Boolean_">DetachComponent&lt;T&gt;(out T, Boolean)</a></td>
+        <td><p>Removes a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> from this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_Find_System_String_">Find(String)</a></td>
+        <td><p>Finds the first child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> in this instance with a given entity path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_FindChild_System_Guid_System_Boolean_">FindChild(Guid, Boolean)</a></td>
+        <td><p>Finds a child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> in this instance with a id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_FindChild_System_String_System_Boolean_">FindChild(String, Boolean)</a></td>
+        <td><p>Finds the first child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> in this instance with a given name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_FindChildrenByTag_System_String_System_Boolean_">FindChildrenByTag(String, Boolean)</a></td>
+        <td><p>Find children <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> in this instance by Tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_FindComponent_System_Type_System_Boolean_System_String_">FindComponent(Type, Boolean, String)</a></td>
+        <td><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> in this instance with the specified type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_FindComponent__1_System_Boolean_System_String_">FindComponent&lt;T&gt;(Boolean, String)</a></td>
+        <td><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> in this instance with the specified type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_FindComponentInChildren_System_Type_System_Boolean_System_String_System_Boolean_">FindComponentInChildren(Type, Boolean, String, Boolean)</a></td>
+        <td><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> in this instance or any of its children with the specified type using depth first search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_FindComponentInChildren__1_System_Boolean_System_String_System_Boolean_">FindComponentInChildren&lt;T&gt;(Boolean, String, Boolean)</a></td>
+        <td><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> in this instance or any of its children with the specified type using depth first search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_FindComponentInParents_System_Type_System_Boolean_System_String_System_Boolean_">FindComponentInParents(Type, Boolean, String, Boolean)</a></td>
+        <td><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> in any of the parents of this instance with the specified type using depth first search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_FindComponentInParents__1_System_Boolean_System_String_System_Boolean_">FindComponentInParents&lt;T&gt;(Boolean, String, Boolean)</a></td>
+        <td><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> in any of the parents of this instance with the specified type using depth first search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_FindComponents_System_Type_System_Boolean_System_String_">FindComponents(Type, Boolean, String)</a></td>
+        <td><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> collection in this instance with the specified type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_FindComponents__1_System_Boolean_System_String_">FindComponents&lt;T&gt;(Boolean, String)</a></td>
+        <td><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> collection in this instance with the specified type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_FindComponentsInChildren_System_Type_System_Boolean_System_String_System_Boolean_">FindComponentsInChildren(Type, Boolean, String, Boolean)</a></td>
+        <td><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> collection in this instance or any of its children with the specified type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_FindComponentsInChildren__1_System_Boolean_System_String_System_Boolean_">FindComponentsInChildren&lt;T&gt;(Boolean, String, Boolean)</a></td>
+        <td><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> collection in this instance or any of its children with the specified type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_FindComponentsInParents_System_Type_System_Boolean_System_String_System_Boolean_">FindComponentsInParents(Type, Boolean, String, Boolean)</a></td>
+        <td><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> collection in this instance or any of its parents with the specified type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_FindComponentsInParents__1_System_Boolean_System_String_System_Boolean_">FindComponentsInParents&lt;T&gt;(Boolean, String, Boolean)</a></td>
+        <td><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> collection in this instance or any of its parents with the specified type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_IdHasChanged_System_Guid_">IdHasChanged(Guid)</a></td>
+        <td><p>The Id of the object has been updated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_IsValidName_System_String_">IsValidName(String)</a></td>
+        <td><p>Check an entity name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_NextDefaultName">NextDefaultName()</a></td>
+        <td><p>Return a default entity name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_OnActivated">OnActivated()</a></td>
+        <td><p>Invoked when the object is activated once is attached.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_OnAttached">OnAttached()</a></td>
+        <td><p>Invoked when the object is attached to the system.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_OnDeactivated">OnDeactivated()</a></td>
+        <td><p>Invoked when the object is deactivated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_OnDestroy">OnDestroy()</a></td>
+        <td><p>Invoked when the object is going to be disposed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_OnDetach">OnDetach()</a></td>
+        <td><p>Invoked when the object is detached.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_OnLoaded">OnLoaded()</a></td>
+        <td><p>Invoked when the object is loaded.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_ReattachComponents">ReattachComponents()</a></td>
+        <td><p>Reattach all components.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_RemoveAllComponentsOfType_System_Type_System_Boolean_">RemoveAllComponentsOfType(Type, Boolean)</a></td>
+        <td><p>Removes all components of specified type from this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_RemoveAllComponentsOfType__1_System_Boolean_">RemoveAllComponentsOfType&lt;T&gt;(Boolean)</a></td>
+        <td><p>Removes all components of specified type from this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_RemoveChild_System_Guid_">RemoveChild(Guid)</a></td>
+        <td><p>Removes a child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> from this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_RemoveChild_System_String_">RemoveChild(String)</a></td>
+        <td><p>Removes a child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> from this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_RemoveChild_WaveEngine_Framework_Entity_">RemoveChild(Entity)</a></td>
+        <td><p>Removes a child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> from this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_RemoveComponent_System_Type_System_Boolean_">RemoveComponent(Type, Boolean)</a></td>
+        <td><p>Removes a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> from this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_RemoveComponent_WaveEngine_Framework_Component_">RemoveComponent(Component)</a></td>
+        <td><p>Removes a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> from this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_RemoveComponent__1_System_Boolean_">RemoveComponent&lt;T&gt;(Boolean)</a></td>
+        <td><p>Removes a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> from this instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_Start">Start()</a></td>
+        <td><p>Invoked to start the object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_ToString">ToString()</a></td>
+        <td><p>Returns a <span class="xref">System.String</span> that represents this instance (its name).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_TryGetChildById_System_Guid_WaveEngine_Framework_Entity__">TryGetChildById(Guid, out Entity)</a></td>
+        <td><p>Gets the child entity with the specified id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_TryGetChildByName_System_String_WaveEngine_Framework_Entity__">TryGetChildByName(String, out Entity)</a></td>
+        <td><p>Gets the first child entity with the specified name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_AddChild_WaveEngine_Framework_Entity_" data-uid="WaveEngine.Framework.Entity.AddChild(WaveEngine.Framework.Entity)">AddChild(Entity)</h4>
+  <div class="markdown level1 summary"><p>Adds a child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> to this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Entity_AddChild_WaveEngine_Framework_Entity__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The method returns this instance. It can be used
+with method chaining, so performing consecutive operations
+over the same instance is simpler.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity AddChild(Entity entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><em>entity</em></td>
+        <td><p>The <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><p>This instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entity is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>If entity was added to itself.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>If entity was already added to another <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>If there already was an <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> with the same name as entity added to this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_AddComponent_WaveEngine_Framework_Component_" data-uid="WaveEngine.Framework.Entity.AddComponent(WaveEngine.Framework.Component)">AddComponent(Component)</h4>
+  <div class="markdown level1 summary"><p>Adds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Entity_AddComponent_WaveEngine_Framework_Component__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The method returns this instance. It can be used
+with method chaining, so performing consecutive operations
+over the same instance is simpler.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity AddComponent(Component component)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Component.html">Component</a></td>
+        <td><em>component</em></td>
+        <td><p>The <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><p>This instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>If component is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>If component was already added to another <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>If there already was a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> of the same type as component added to this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_DetachChild_System_Guid_" data-uid="WaveEngine.Framework.Entity.DetachChild(System.Guid)">DetachChild(Guid)</h4>
+  <div class="markdown level1 summary"><p>Detaches the child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity DetachChild(Guid id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><em>id</em></td>
+        <td><p>Id of the entity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><p>The entity detached or null otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entityName is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_DetachChild_System_String_" data-uid="WaveEngine.Framework.Entity.DetachChild(System.String)">DetachChild(String)</h4>
+  <div class="markdown level1 summary"><p>Detaches the child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity DetachChild(string childName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>childName</em></td>
+        <td><p>Name of the child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><p>The entity detached or null otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entityName is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_DetachChild_WaveEngine_Framework_Entity_" data-uid="WaveEngine.Framework.Entity.DetachChild(WaveEngine.Framework.Entity)">DetachChild(Entity)</h4>
+  <div class="markdown level1 summary"><p>Detaches the child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity DetachChild(Entity entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><em>entity</em></td>
+        <td><p>Name of the entity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><p>The entity detached or null otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entity is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_DetachComponent_System_Type_WaveEngine_Framework_Component__System_Boolean_" data-uid="WaveEngine.Framework.Entity.DetachComponent(System.Type,WaveEngine.Framework.Component@,System.Boolean)">DetachComponent(Type, out Component, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Removes a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> from this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Entity_DetachComponent_System_Type_WaveEngine_Framework_Component__System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The method returns this instance. It can be used
+with method chaining, so performing consecutive operations
+over the same instance is simpler.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity DetachComponent(Type componentType, out Component detachedComponent, bool isExactType = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>componentType</em></td>
+        <td><p>Type of the component.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Component.html">Component</a></td>
+        <td><em>detachedComponent</em></td>
+        <td><p>The detached component instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>isExactType</em></td>
+        <td><p>if set to <code>true</code> [is exact type].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><p>This instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>The entity is disposed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.NullReferenceException</span></td>
+        <td><p>componentType
+or
+componentType.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_DetachComponent_WaveEngine_Framework_Component_" data-uid="WaveEngine.Framework.Entity.DetachComponent(WaveEngine.Framework.Component)">DetachComponent(Component)</h4>
+  <div class="markdown level1 summary"><p>Removes a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> from this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Entity_DetachComponent_WaveEngine_Framework_Component__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The method returns this instance. It can be used
+with method chaining, so performing consecutive operations
+over the same instance is simpler.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity DetachComponent(Component component)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Component.html">Component</a></td>
+        <td><em>component</em></td>
+        <td><p>The component to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><p>This instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>The entity is disposed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.NullReferenceException</span></td>
+        <td><p>componentType
+or
+componentType.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_DetachComponent__1___0__System_Boolean_" data-uid="WaveEngine.Framework.Entity.DetachComponent``1(``0@,System.Boolean)">DetachComponent&lt;T&gt;(out T, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Removes a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> from this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Entity_DetachComponent__1___0__System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The method returns this instance. It can be used
+with method chaining, so performing consecutive operations
+over the same instance is simpler.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity DetachComponent&lt;T&gt;(out T detachedComponent, bool isExactType = true)
+    where T : Component</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><em>detachedComponent</em></td>
+        <td><p>The detached component instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>isExactType</em></td>
+        <td><p>if set to<code>true</code> [is exact type].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><p>This instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Type of the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_Find_System_String_" data-uid="WaveEngine.Framework.Entity.Find(System.String)">Find(String)</h4>
+  <div class="markdown level1 summary"><p>Finds the first child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> in this instance with a given entity path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity Find(string entityPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>entityPath</em></td>
+        <td><p>The path to the entity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><p>The entity of the path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_FindChild_System_Guid_System_Boolean_" data-uid="WaveEngine.Framework.Entity.FindChild(System.Guid,System.Boolean)">FindChild(Guid, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Finds a child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> in this instance with a id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity FindChild(Guid id, bool isRecursive = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><em>id</em></td>
+        <td><p>Id of the child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>isRecursive</em></td>
+        <td><p>If set to <code>true</code> the search will include all descendants of the hierarchy; otherwise, the search will only include the direct descendants.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><p>The searched child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>, or null if no matching child was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entityName is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_FindChild_System_String_System_Boolean_" data-uid="WaveEngine.Framework.Entity.FindChild(System.String,System.Boolean)">FindChild(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Finds the first child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> in this instance with a given name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity FindChild(string entityName, bool isRecursive = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>entityName</em></td>
+        <td><p>Name of the child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>isRecursive</em></td>
+        <td><p>If set to <code>true</code> the search will include all descendants of the hierarchy; otherwise, the search will only include the direct descendants.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><p>The searched child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>, or null if no matching child was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entityName is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_FindChildrenByTag_System_String_System_Boolean_" data-uid="WaveEngine.Framework.Entity.FindChildrenByTag(System.String,System.Boolean)">FindChildrenByTag(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Find children <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> in this instance by Tag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Entity&gt; FindChildrenByTag(string tag, bool isRecursive = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>tag</em></td>
+        <td><p>The tag to filter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>isRecursive</em></td>
+        <td><p>If set to <code>true</code> the search will include all descendants of the hierarchy; otherwise, the search will only include the direct descendants.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
+        <td><p>A collection of <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>, with all children that match the specified Tag.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If tag is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_FindComponent_System_Type_System_Boolean_System_String_" data-uid="WaveEngine.Framework.Entity.FindComponent(System.Type,System.Boolean,System.String)">FindComponent(Type, Boolean, String)</h4>
+  <div class="markdown level1 summary"><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> in this instance with the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Component FindComponent(Type type, bool isExactType = true, string tag = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>type</em></td>
+        <td><p>The type of the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to find.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>isExactType</em></td>
+        <td><p>Whether to match the exact type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>tag</em></td>
+        <td><p>Filter entities by this tag.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Component.html">Component</a></td>
+        <td><p>The <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> or null if no <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> with the specified type was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_FindComponent__1_System_Boolean_System_String_" data-uid="WaveEngine.Framework.Entity.FindComponent``1(System.Boolean,System.String)">FindComponent&lt;T&gt;(Boolean, String)</h4>
+  <div class="markdown level1 summary"><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> in this instance with the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T FindComponent&lt;T&gt;(bool isExactType = true, string tag = null)
+    where T : Component</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>isExactType</em></td>
+        <td><p>Whether to match the exact type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>tag</em></td>
+        <td><p>Filter entities by this tag.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> or null if no <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> with the specified type was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>The type of the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to find.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_FindComponentInChildren_System_Type_System_Boolean_System_String_System_Boolean_" data-uid="WaveEngine.Framework.Entity.FindComponentInChildren(System.Type,System.Boolean,System.String,System.Boolean)">FindComponentInChildren(Type, Boolean, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> in this instance or any of its children with the specified type using depth first search.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Component FindComponentInChildren(Type type, bool isExactType = true, string tag = null, bool skipOwner = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>type</em></td>
+        <td><p>The type of the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to find.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>isExactType</em></td>
+        <td><p>Whether to match the exact type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>tag</em></td>
+        <td><p>Filter entities by this tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>skipOwner</em></td>
+        <td><p>Indicates whether the owner is included in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Component.html">Component</a></td>
+        <td><p>The <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> or null if no <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> with the specified type was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_FindComponentInChildren__1_System_Boolean_System_String_System_Boolean_" data-uid="WaveEngine.Framework.Entity.FindComponentInChildren``1(System.Boolean,System.String,System.Boolean)">FindComponentInChildren&lt;T&gt;(Boolean, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> in this instance or any of its children with the specified type using depth first search.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T FindComponentInChildren&lt;T&gt;(bool isExactType = true, string tag = null, bool skipOwner = false)
+    where T : Component</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>isExactType</em></td>
+        <td><p>Whether to match the exact type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>tag</em></td>
+        <td><p>Filter entities by this tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>skipOwner</em></td>
+        <td><p>Indicates whether the owner is included in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> or null if no <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> with the specified type was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>The type of the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to find.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_FindComponentInParents_System_Type_System_Boolean_System_String_System_Boolean_" data-uid="WaveEngine.Framework.Entity.FindComponentInParents(System.Type,System.Boolean,System.String,System.Boolean)">FindComponentInParents(Type, Boolean, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> in any of the parents of this instance with the specified type using depth first search.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Component FindComponentInParents(Type type, bool isExactType = true, string tag = null, bool skipOwner = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>type</em></td>
+        <td><p>The type of the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to find.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>isExactType</em></td>
+        <td><p>Whether to match the exact type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>tag</em></td>
+        <td><p>Filter entities by this tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>skipOwner</em></td>
+        <td><p>Indicates whether the owner is included in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Component.html">Component</a></td>
+        <td><p>The <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> or null if no <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> with the specified type was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_FindComponentInParents__1_System_Boolean_System_String_System_Boolean_" data-uid="WaveEngine.Framework.Entity.FindComponentInParents``1(System.Boolean,System.String,System.Boolean)">FindComponentInParents&lt;T&gt;(Boolean, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> in any of the parents of this instance with the specified type using depth first search.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T FindComponentInParents&lt;T&gt;(bool isExactType = true, string tag = null, bool skipOwner = false)
+    where T : Component</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>isExactType</em></td>
+        <td><p>Whether to match the exact type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>tag</em></td>
+        <td><p>Filter entities by this tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>skipOwner</em></td>
+        <td><p>Indicates whether the owner is included in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> or null if no <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> with the specified type was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>The type of the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to find.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_FindComponents_System_Type_System_Boolean_System_String_" data-uid="WaveEngine.Framework.Entity.FindComponents(System.Type,System.Boolean,System.String)">FindComponents(Type, Boolean, String)</h4>
+  <div class="markdown level1 summary"><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> collection in this instance with the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Component&gt; FindComponents(Type type, bool isExactType = true, string tag = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>type</em></td>
+        <td><p>The type of the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to find.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>isExactType</em></td>
+        <td><p>Whether to match the exact type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>tag</em></td>
+        <td><p>Filter entities by this tag.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Component.html">Component</a>&gt;</td>
+        <td><p>The <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> or null if no <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> with the specified type was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_FindComponents__1_System_Boolean_System_String_" data-uid="WaveEngine.Framework.Entity.FindComponents``1(System.Boolean,System.String)">FindComponents&lt;T&gt;(Boolean, String)</h4>
+  <div class="markdown level1 summary"><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> collection in this instance with the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; FindComponents&lt;T&gt;(bool isExactType = true, string tag = null)
+    where T : Component</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>isExactType</em></td>
+        <td><p>Whether to match the exact type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>tag</em></td>
+        <td><p>Filter entities by this tag.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><p>The <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> or null if no <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> with the specified type was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>The type of the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to find.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_FindComponentsInChildren_System_Type_System_Boolean_System_String_System_Boolean_" data-uid="WaveEngine.Framework.Entity.FindComponentsInChildren(System.Type,System.Boolean,System.String,System.Boolean)">FindComponentsInChildren(Type, Boolean, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> collection in this instance or any of its children with the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Component&gt; FindComponentsInChildren(Type type, bool isExactType = true, string tag = null, bool skipOwner = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>type</em></td>
+        <td><p>The type of the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to find.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>isExactType</em></td>
+        <td><p>Whether to match the exact type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>tag</em></td>
+        <td><p>Filter entities by this tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>skipOwner</em></td>
+        <td><p>Indicates whether the owner is included in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Component.html">Component</a>&gt;</td>
+        <td><p>The <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> or null if no <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> with the specified type was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_FindComponentsInChildren__1_System_Boolean_System_String_System_Boolean_" data-uid="WaveEngine.Framework.Entity.FindComponentsInChildren``1(System.Boolean,System.String,System.Boolean)">FindComponentsInChildren&lt;T&gt;(Boolean, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> collection in this instance or any of its children with the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; FindComponentsInChildren&lt;T&gt;(bool isExactType = true, string tag = null, bool skipOwner = false)
+    where T : Component</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>isExactType</em></td>
+        <td><p>Whether to match the exact type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>tag</em></td>
+        <td><p>Filter entities by this tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>skipOwner</em></td>
+        <td><p>Indicates whether the owner is included in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><p>The <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> or null if no <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> with the specified type was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>The type of the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to find.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_FindComponentsInParents_System_Type_System_Boolean_System_String_System_Boolean_" data-uid="WaveEngine.Framework.Entity.FindComponentsInParents(System.Type,System.Boolean,System.String,System.Boolean)">FindComponentsInParents(Type, Boolean, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> collection in this instance or any of its parents with the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Component&gt; FindComponentsInParents(Type type, bool isExactType = true, string tag = null, bool skipOwner = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>type</em></td>
+        <td><p>The type of the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to find.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>isExactType</em></td>
+        <td><p>Whether to match the exact type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>tag</em></td>
+        <td><p>Filter entities by this tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>skipOwner</em></td>
+        <td><p>Indicates whether the owner is included in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Component.html">Component</a>&gt;</td>
+        <td><p>The <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> or null if no <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> with the specified type was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_FindComponentsInParents__1_System_Boolean_System_String_System_Boolean_" data-uid="WaveEngine.Framework.Entity.FindComponentsInParents``1(System.Boolean,System.String,System.Boolean)">FindComponentsInParents&lt;T&gt;(Boolean, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Finds a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> collection in this instance or any of its parents with the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; FindComponentsInParents&lt;T&gt;(bool isExactType = true, string tag = null, bool skipOwner = false)
+    where T : Component</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>isExactType</em></td>
+        <td><p>Whether to match the exact type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>tag</em></td>
+        <td><p>Filter entities by this tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>skipOwner</em></td>
+        <td><p>Indicates whether the owner is included in the search.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><p>The <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> or null if no <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> with the specified type was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>The type of the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to find.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>Entity has been disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_IdHasChanged_System_Guid_" data-uid="WaveEngine.Framework.Entity.IdHasChanged(System.Guid)">IdHasChanged(Guid)</h4>
+  <div class="markdown level1 summary"><p>The Id of the object has been updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void IdHasChanged(Guid oldId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><em>oldId</em></td>
+        <td><p>The old Id value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_IsValidName_System_String_" data-uid="WaveEngine.Framework.Entity.IsValidName(System.String)">IsValidName(String)</h4>
+  <div class="markdown level1 summary"><p>Check an entity name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidName(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>name</em></td>
+        <td><p>The entity name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>If it&apos;s valid or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_NextDefaultName" data-uid="WaveEngine.Framework.Entity.NextDefaultName">NextDefaultName()</h4>
+  <div class="markdown level1 summary"><p>Return a default entity name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string NextDefaultName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The entity name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_OnActivated" data-uid="WaveEngine.Framework.Entity.OnActivated">OnActivated()</h4>
+  <div class="markdown level1 summary"><p>Invoked when the object is activated once is attached.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnActivated()</code></pre>
+  </div>
+  <h4 id="WaveEngine_Framework_Entity_OnAttached" data-uid="WaveEngine.Framework.Entity.OnAttached">OnAttached()</h4>
+  <div class="markdown level1 summary"><p>Invoked when the object is attached to the system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool OnAttached()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if all is OK.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_OnDeactivated" data-uid="WaveEngine.Framework.Entity.OnDeactivated">OnDeactivated()</h4>
+  <div class="markdown level1 summary"><p>Invoked when the object is deactivated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDeactivated()</code></pre>
+  </div>
+  <h4 id="WaveEngine_Framework_Entity_OnDestroy" data-uid="WaveEngine.Framework.Entity.OnDestroy">OnDestroy()</h4>
+  <div class="markdown level1 summary"><p>Invoked when the object is going to be disposed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDestroy()</code></pre>
+  </div>
+  <h4 id="WaveEngine_Framework_Entity_OnDetach" data-uid="WaveEngine.Framework.Entity.OnDetach">OnDetach()</h4>
+  <div class="markdown level1 summary"><p>Invoked when the object is detached.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDetach()</code></pre>
+  </div>
+  <h4 id="WaveEngine_Framework_Entity_OnLoaded" data-uid="WaveEngine.Framework.Entity.OnLoaded">OnLoaded()</h4>
+  <div class="markdown level1 summary"><p>Invoked when the object is loaded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnLoaded()</code></pre>
+  </div>
+  <h4 id="WaveEngine_Framework_Entity_ReattachComponents" data-uid="WaveEngine.Framework.Entity.ReattachComponents">ReattachComponents()</h4>
+  <div class="markdown level1 summary"><p>Reattach all components.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReattachComponents()</code></pre>
+  </div>
+  <h4 id="WaveEngine_Framework_Entity_RemoveAllComponentsOfType_System_Type_System_Boolean_" data-uid="WaveEngine.Framework.Entity.RemoveAllComponentsOfType(System.Type,System.Boolean)">RemoveAllComponentsOfType(Type, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Removes all components of specified type from this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Entity_RemoveAllComponentsOfType_System_Type_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The method returns this instance. It can be used
+with method chaining, so performing consecutive operations
+over the same instance is simpler.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity RemoveAllComponentsOfType(Type componentType, bool isExactType = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>componentType</em></td>
+        <td><p>Type of the component.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>isExactType</em></td>
+        <td><p>if set to <code>true</code> [is exact type].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><p>This instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>The entity is disposed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.NullReferenceException</span></td>
+        <td><p>componentType
+or
+componentType.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_RemoveAllComponentsOfType__1_System_Boolean_" data-uid="WaveEngine.Framework.Entity.RemoveAllComponentsOfType``1(System.Boolean)">RemoveAllComponentsOfType&lt;T&gt;(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Removes all components of specified type from this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Entity_RemoveAllComponentsOfType__1_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The method returns this instance. It can be used
+with method chaining, so performing consecutive operations
+over the same instance is simpler.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity RemoveAllComponentsOfType&lt;T&gt;(bool isExactType = true)
+    where T : Component</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>isExactType</em></td>
+        <td><p>if set to <code>true</code> [is exact type].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><p>This instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>The exact type of the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to find.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>The entity is disposed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.NullReferenceException</span></td>
+        <td><p>componentType
+or
+componentType.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_RemoveChild_System_Guid_" data-uid="WaveEngine.Framework.Entity.RemoveChild(System.Guid)">RemoveChild(Guid)</h4>
+  <div class="markdown level1 summary"><p>Removes a child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> from this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Entity_RemoveChild_System_Guid__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The method returns this instance. It can be used
+with method chaining, so performing consecutive operations
+over the same instance is simpler.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity RemoveChild(Guid id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><em>id</em></td>
+        <td><p>Id of the child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><p>This instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entityName is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_RemoveChild_System_String_" data-uid="WaveEngine.Framework.Entity.RemoveChild(System.String)">RemoveChild(String)</h4>
+  <div class="markdown level1 summary"><p>Removes a child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> from this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Entity_RemoveChild_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The method returns this instance. It can be used
+with method chaining, so performing consecutive operations
+over the same instance is simpler.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity RemoveChild(string childName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>childName</em></td>
+        <td><p>Name of the child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><p>This instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entityName is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_RemoveChild_WaveEngine_Framework_Entity_" data-uid="WaveEngine.Framework.Entity.RemoveChild(WaveEngine.Framework.Entity)">RemoveChild(Entity)</h4>
+  <div class="markdown level1 summary"><p>Removes a child <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> from this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Entity_RemoveChild_WaveEngine_Framework_Entity__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The method returns this instance. It can be used
+with method chaining, so performing consecutive operations
+over the same instance is simpler.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity RemoveChild(Entity entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><em>entity</em></td>
+        <td><p>The <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><p>This instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If entity is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_RemoveComponent_System_Type_System_Boolean_" data-uid="WaveEngine.Framework.Entity.RemoveComponent(System.Type,System.Boolean)">RemoveComponent(Type, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Removes a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> from this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Entity_RemoveComponent_System_Type_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The method returns this instance. It can be used
+with method chaining, so performing consecutive operations
+over the same instance is simpler.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity RemoveComponent(Type componentType, bool isExactType = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><em>componentType</em></td>
+        <td><p>Type of the component.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>isExactType</em></td>
+        <td><p>if set to <code>true</code> [is exact type].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><p>This instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>The entity is disposed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.NullReferenceException</span></td>
+        <td><p>componentType
+or
+componentType.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_RemoveComponent_WaveEngine_Framework_Component_" data-uid="WaveEngine.Framework.Entity.RemoveComponent(WaveEngine.Framework.Component)">RemoveComponent(Component)</h4>
+  <div class="markdown level1 summary"><p>Removes a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> from this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Entity_RemoveComponent_WaveEngine_Framework_Component__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The method returns this instance. It can be used
+with method chaining, so performing consecutive operations
+over the same instance is simpler.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity RemoveComponent(Component component)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Component.html">Component</a></td>
+        <td><em>component</em></td>
+        <td><p>The component to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><p>This instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ObjectDisposedException</span></td>
+        <td><p>The entity is disposed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.NullReferenceException</span></td>
+        <td><p>componentType
+or
+componentType.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_RemoveComponent__1_System_Boolean_" data-uid="WaveEngine.Framework.Entity.RemoveComponent``1(System.Boolean)">RemoveComponent&lt;T&gt;(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Removes a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> from this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Entity_RemoveComponent__1_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The method returns this instance. It can be used
+with method chaining, so performing consecutive operations
+over the same instance is simpler.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Entity RemoveComponent&lt;T&gt;(bool isExactType = true)
+    where T : Component</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>isExactType</em></td>
+        <td><p>if set to<code>true</code> [is exact type].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><p>This instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>Type of the <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_Start" data-uid="WaveEngine.Framework.Entity.Start">Start()</h4>
+  <div class="markdown level1 summary"><p>Invoked to start the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Start()</code></pre>
+  </div>
+  <h4 id="WaveEngine_Framework_Entity_ToString" data-uid="WaveEngine.Framework.Entity.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a <span class="xref">System.String</span> that represents this instance (its name).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A <span class="xref">System.String</span> that represents this instance (its name).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_TryGetChildById_System_Guid_WaveEngine_Framework_Entity__" data-uid="WaveEngine.Framework.Entity.TryGetChildById(System.Guid,WaveEngine.Framework.Entity@)">TryGetChildById(Guid, out Entity)</h4>
+  <div class="markdown level1 summary"><p>Gets the child entity with the specified id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetChildById(Guid entityId, out Entity childEntity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><em>entityId</em></td>
+        <td><p>The id of the entity to get.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><em>childEntity</em></td>
+        <td><p>When this method returns, contains the value associated with the specified key,
+if the key is found; otherwise, the default value for the type of the value parameter.
+This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if this <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> contains a child with the specified id; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If the entity name is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_TryGetChildByName_System_String_WaveEngine_Framework_Entity__" data-uid="WaveEngine.Framework.Entity.TryGetChildByName(System.String,WaveEngine.Framework.Entity@)">TryGetChildByName(String, out Entity)</h4>
+  <div class="markdown level1 summary"><p>Gets the first child entity with the specified name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetChildByName(string entityName, out Entity childEntity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>entityName</em></td>
+        <td><p>The name of the entity to get.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a></td>
+        <td><em>childEntity</em></td>
+        <td><p>When this method returns, contains the value associated with the specified key,
+if the key is found; otherwise, the default value for the type of the value parameter.
+This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if this <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> contains the first child with the specified name; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>If the entity name is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <h4 id="events-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_CheckValidName">CheckValidName</a></td>
+        <td><p>Occurs when a valid name is set to an entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_ChildAdded">ChildAdded</a></td>
+        <td><p>Occurs when an <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> is added as child of this entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_ChildDetached">ChildDetached</a></td>
+        <td><p>Occurs when an <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> child is detached from this entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_ChildOrderChanged">ChildOrderChanged</a></td>
+        <td><p>Occurs when an <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> child order has been changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_ComponentAdded">ComponentAdded</a></td>
+        <td><p>Occurs when a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> is added to this entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_ComponentDetached">ComponentDetached</a></td>
+        <td><p>Occurs when a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> is detached from this entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_EntityInitialized">EntityInitialized</a></td>
+        <td><p>Occurs when an <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> and all its children are initialized.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_NameChanged">NameChanged</a></td>
+        <td><p>Occurs when the entity&apos;s name changes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Entity_TagChanged">TagChanged</a></td>
+        <td><p>Fired when the entity tag has been changed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_CheckValidName" data-uid="WaveEngine.Framework.Entity.CheckValidName">CheckValidName</h4>
+  <div class="markdown level1 summary"><p>Occurs when a valid name is set to an entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ValidNameEventArgs&gt; CheckValidName</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Helpers.ValidNameEventArgs.html">ValidNameEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_ChildAdded" data-uid="WaveEngine.Framework.Entity.ChildAdded">ChildAdded</h4>
+  <div class="markdown level1 summary"><p>Occurs when an <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> is added as child of this entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;Entity&gt; ChildAdded</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_ChildDetached" data-uid="WaveEngine.Framework.Entity.ChildDetached">ChildDetached</h4>
+  <div class="markdown level1 summary"><p>Occurs when an <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> child is detached from this entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;Entity&gt; ChildDetached</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_ChildOrderChanged" data-uid="WaveEngine.Framework.Entity.ChildOrderChanged">ChildOrderChanged</h4>
+  <div class="markdown level1 summary"><p>Occurs when an <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> child order has been changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;Entity&gt; ChildOrderChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_ComponentAdded" data-uid="WaveEngine.Framework.Entity.ComponentAdded">ComponentAdded</h4>
+  <div class="markdown level1 summary"><p>Occurs when a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> is added to this entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;Component&gt; ComponentAdded</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Component.html">Component</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_ComponentDetached" data-uid="WaveEngine.Framework.Entity.ComponentDetached">ComponentDetached</h4>
+  <div class="markdown level1 summary"><p>Occurs when a <a class="xref" href="WaveEngine.Framework.Component.html">Component</a> is detached from this entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;Component&gt; ComponentDetached</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Component.html">Component</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_EntityInitialized" data-uid="WaveEngine.Framework.Entity.EntityInitialized">EntityInitialized</h4>
+  <div class="markdown level1 summary"><p>Occurs when an <a class="xref" href="WaveEngine.Framework.Entity.html">Entity</a> and all its children are initialized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler EntityInitialized</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_NameChanged" data-uid="WaveEngine.Framework.Entity.NameChanged">NameChanged</h4>
+  <div class="markdown level1 summary"><p>Occurs when the entity&apos;s name changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;NameEventArgs&gt; NameChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Helpers.NameEventArgs.html">NameEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Entity_TagChanged" data-uid="WaveEngine.Framework.Entity.TagChanged">TagChanged</h4>
+  <div class="markdown level1 summary"><p>Fired when the entity tag has been changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;ValueChanged&lt;string&gt;&gt; TagChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Framework.Helpers.ValueChanged-1.html">ValueChanged</a>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="WaveEngine.Common.IDependencyObject.html">IDependencyObject</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="WaveEngine.Framework.Extensions.EntityHierarchyExtensions.html#WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityBefore_WaveEngine_Framework_Entity_System_Guid_System_Nullable_System_Guid__">EntityHierarchyExtensions.MoveEntityBefore(Entity, Guid, Nullable&lt;Guid&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Framework.Extensions.EntityHierarchyExtensions.html#WaveEngine_Framework_Extensions_EntityHierarchyExtensions_MoveEntityAfter_WaveEngine_Framework_Entity_System_Guid_System_Nullable_System_Guid__">EntityHierarchyExtensions.MoveEntityAfter(Entity, Guid, Nullable&lt;Guid&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName(Object)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

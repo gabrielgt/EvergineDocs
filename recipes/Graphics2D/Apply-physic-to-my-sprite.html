@@ -8,7 +8,7 @@
     <title>Goal | Wave Engine API Doc </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Goal | Wave Engine API Doc ">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.57.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -59,11 +59,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -91,14 +91,14 @@
 <li>Rotation: expressed in radians, allow the entity to rotate during the physics computation happens</li>
 </ul>
 <h3 id="with-wave-visual-editor">With Wave Visual Editor</h3>
-<p>You can see <a href="Load-a-Sprite-%28Image%29.html">Load a Sprite recipe</a> from this web as starting point.</p>
+<p>You can see <a href="Load-a-Sprite-(Image).html">Load a Sprite recipe</a> from this web as starting point.</p>
 <p>Select the Sprite Entity and use the <img src="images/ApplyPhysicToMyModel/Physics2DPlusIcon.jpg" alt=""> icon from Entity Details section to add a RectangleCollider2D and RigidBody2D Components (in that order cause RigidBody requires a Collider):</p>
 <p><img src="images/ApplyPhysicToMyModel/Physics2DEntityDetails.jpg" alt=""></p>
 <p>Set the physic properties for our RigidBody2D component:</p>
 <p><img src="images/ApplyPhysicToMyModel/Physics3DEntityDetailsRigidBody2D.jpg" alt=""></p>
 <p>And let them fall!</p>
 <h3 id="with-visual-studio-for-windows-or-mac">With Visual Studio (for Windows or Mac)</h3>
-<p>We&#39;ll use the <a href="Load-a-Sprite-%28Image%29.html">Load a Sprite recipe</a> from this web as starting point.</p>
+<p>We&#39;ll use the <a href="Load-a-Sprite-(Image).html">Load a Sprite recipe</a> from this web as starting point.</p>
 <p>Select <code>Open C# Project</code> option from <code>File</code> menu.</p>
 <p>In Visual Studio we&#39;ll open the scene file and add the code (in CreateScene method):</p>
 <pre><code class="lang-c#">var entity = this.EntityManager.Find(&quot;sprite&quot;);
@@ -129,7 +129,8 @@ entity.AddComponent(new RectangleCollider2D())
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
