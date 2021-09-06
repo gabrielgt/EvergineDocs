@@ -471,7 +471,7 @@ is rendered within the same batch.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_RenderPath_Render_WaveEngine_Framework_Graphics_DrawContext_">Render(DrawContext)</a></td>
+        <td><a href="#WaveEngine_Framework_Graphics_RenderPath_Render_WaveEngine_Framework_Graphics_DrawContext_WaveEngine_Common_Graphics_CommandBuffer_">Render(DrawContext, CommandBuffer)</a></td>
         <td><p>Render all batches collected by the specified DrawContext.</p>
 </td>
       </tr>
@@ -521,13 +521,13 @@ is rendered within the same batch.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void Destroy()</code></pre>
   </div>
-  <h4 id="WaveEngine_Framework_Graphics_RenderPath_Render_WaveEngine_Framework_Graphics_DrawContext_" data-uid="WaveEngine.Framework.Graphics.RenderPath.Render(WaveEngine.Framework.Graphics.DrawContext)">Render(DrawContext)</h4>
+  <h4 id="WaveEngine_Framework_Graphics_RenderPath_Render_WaveEngine_Framework_Graphics_DrawContext_WaveEngine_Common_Graphics_CommandBuffer_" data-uid="WaveEngine.Framework.Graphics.RenderPath.Render(WaveEngine.Framework.Graphics.DrawContext,WaveEngine.Common.Graphics.CommandBuffer)">Render(DrawContext, CommandBuffer)</h4>
   <div class="markdown level1 summary"><p>Render all batches collected by the specified DrawContext.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void Render(DrawContext drawContext)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract void Render(DrawContext drawContext, CommandBuffer commandBuffer)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -543,6 +543,12 @@ is rendered within the same batch.</p>
         <td><a class="xref" href="WaveEngine.Framework.Graphics.DrawContext.html">DrawContext</a></td>
         <td><em>drawContext</em></td>
         <td><p>The DrawContext.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.CommandBuffer.html">CommandBuffer</a></td>
+        <td><em>commandBuffer</em></td>
+        <td><p>The command buffer used to render this context.</p>
 </td>
       </tr>
     </tbody>

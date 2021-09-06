@@ -171,19 +171,37 @@
     </thead>
     <tbody>
       <tr>
+        <td><a href="#WaveEngine_Vulkan_VKFrameBuffer_defaultRenderPasses">defaultRenderPasses</a></td>
+        <td><p>Default Render Passes.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_Vulkan_VKFrameBuffer_NativeFrameBuffer">NativeFrameBuffer</a></td>
         <td><p>The Vulkan frameBuffer struct.</p>
 </td>
       </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Vulkan_VKFrameBuffer_defaultRenderPasses" data-uid="WaveEngine.Vulkan.VKFrameBuffer.defaultRenderPasses">defaultRenderPasses</h4>
+  <div class="markdown level1 summary"><p>Default Render Passes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VkRenderPass[] defaultRenderPasses</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
       <tr>
-        <td><a href="#WaveEngine_Vulkan_VKFrameBuffer_RenderPassNoClear">RenderPassNoClear</a></td>
-        <td><p>PreCompute RenderPass for no clear not preserve before index.</p>
-</td>
+        <th>Type</th>
+        <th>Description</th>
       </tr>
+    </thead>
+    <tbody>
       <tr>
-        <td><a href="#WaveEngine_Vulkan_VKFrameBuffer_RenderPassNoClearLoad">RenderPassNoClearLoad</a></td>
-        <td><p>PreCompute RenderPass for no clear preserve before index.</p>
-</td>
+        <td><span class="xref">VkRenderPass</span>[]</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -206,52 +224,6 @@
     <tbody>
       <tr>
         <td><span class="xref">WaveEngine.Bindings.Vulkan.VkFramebuffer</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_Vulkan_VKFrameBuffer_RenderPassNoClear" data-uid="WaveEngine.Vulkan.VKFrameBuffer.RenderPassNoClear">RenderPassNoClear</h4>
-  <div class="markdown level1 summary"><p>PreCompute RenderPass for no clear not preserve before index.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RenderPassNoClear</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_Vulkan_VKFrameBuffer_RenderPassNoClearLoad" data-uid="WaveEngine.Vulkan.VKFrameBuffer.RenderPassNoClearLoad">RenderPassNoClearLoad</h4>
-  <div class="markdown level1 summary"><p>PreCompute RenderPass for no clear preserve before index.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int RenderPassNoClearLoad</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -337,7 +309,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Vulkan_VKFrameBuffer_CreateImageView_WaveEngine_Vulkan_VKTexture_System_UInt32_System_UInt32_VkImageAspectFlags_">CreateImageView(VKTexture, UInt32, UInt32, VkImageAspectFlags)</a></td>
+        <td><a href="#WaveEngine_Vulkan_VKFrameBuffer_CreateImageView_WaveEngine_Vulkan_VKTexture_System_UInt32_System_UInt32_VkImageAspectFlags_System_Boolean_">CreateImageView(VKTexture, UInt32, UInt32, VkImageAspectFlags, Boolean)</a></td>
         <td><p>Generate a VKImageView from FrameBufferAttachment.</p>
 </td>
       </tr>
@@ -358,13 +330,13 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Vulkan_VKFrameBuffer_CreateImageView_WaveEngine_Vulkan_VKTexture_System_UInt32_System_UInt32_VkImageAspectFlags_" data-uid="WaveEngine.Vulkan.VKFrameBuffer.CreateImageView(WaveEngine.Vulkan.VKTexture,System.UInt32,System.UInt32,VkImageAspectFlags)">CreateImageView(VKTexture, UInt32, UInt32, VkImageAspectFlags)</h4>
+  <h4 id="WaveEngine_Vulkan_VKFrameBuffer_CreateImageView_WaveEngine_Vulkan_VKTexture_System_UInt32_System_UInt32_VkImageAspectFlags_System_Boolean_" data-uid="WaveEngine.Vulkan.VKFrameBuffer.CreateImageView(WaveEngine.Vulkan.VKTexture,System.UInt32,System.UInt32,VkImageAspectFlags,System.Boolean)">CreateImageView(VKTexture, UInt32, UInt32, VkImageAspectFlags, Boolean)</h4>
   <div class="markdown level1 summary"><p>Generate a VKImageView from FrameBufferAttachment.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected VkImageView CreateImageView(VKTexture vkTexture, uint mipSlice, uint firstSlice, VkImageAspectFlags flags = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected VkImageView CreateImageView(VKTexture vkTexture, uint mipSlice, uint firstSlice, VkImageAspectFlags flags = null, bool depthTexture = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -398,6 +370,12 @@
         <td><span class="xref">VkImageAspectFlags</span></td>
         <td><em>flags</em></td>
         <td><p>Aspect flags.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>depthTexture</em></td>
+        <td><p>This image view is a depth texture.</p>
 </td>
       </tr>
     </tbody>

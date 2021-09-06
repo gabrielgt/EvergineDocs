@@ -218,6 +218,16 @@
 </td>
       </tr>
       <tr>
+        <td><a href="#WaveEngine_Metal_MTLResourceFactory_CreateQueryHeap_WaveEngine_Common_Graphics_QueryHeapDescription__">CreateQueryHeap(ref QueryHeapDescription)</a></td>
+        <td><p>Create a <a class="xref" href="WaveEngine.Common.Graphics.QueryHeap.html">QueryHeap</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Metal_MTLResourceFactory_CreateRaytracingPipelineInternal_WaveEngine_Common_Graphics_Raytracing_RaytracingPipelineDescription__">CreateRaytracingPipelineInternal(ref RaytracingPipelineDescription)</a></td>
+        <td><p>Creates a <a class="xref" href="WaveEngine.Common.Graphics.Raytracing.RaytracingPipelineState.html">RaytracingPipelineState</a> instance.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_Metal_MTLResourceFactory_CreateResourceLayoutInternal_WaveEngine_Common_Graphics_ResourceLayoutDescription__">CreateResourceLayoutInternal(ref ResourceLayoutDescription)</a></td>
         <td><p>Create a new <a class="xref" href="WaveEngine.Common.Graphics.ResourceLayout.html">ResourceLayout</a>.</p>
 </td>
@@ -240,6 +250,11 @@
       <tr>
         <td><a href="#WaveEngine_Metal_MTLResourceFactory_CreateTextureInternal_WaveEngine_Common_Graphics_DataBox___WaveEngine_Common_Graphics_TextureDescription__WaveEngine_Common_Graphics_SamplerStateDescription__">CreateTextureInternal(DataBox[], ref TextureDescription, ref SamplerStateDescription)</a></td>
         <td><p>Creates a <a class="xref" href="WaveEngine.Common.Graphics.Texture.html">Texture</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Metal_MTLResourceFactory_GetTextureFromNativePointerInternal_System_IntPtr_System_Nullable_WaveEngine_Common_Graphics_PixelFormat__">GetTextureFromNativePointerInternal(IntPtr, Nullable&lt;PixelFormat&gt;)</a></td>
+        <td><p>Gets a <a class="xref" href="WaveEngine.Common.Graphics.Texture.html">Texture</a> instance from an existing texture using the specified native pointer.</p>
 </td>
       </tr>
     </tbody>
@@ -471,6 +486,90 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_Metal_MTLResourceFactory_CreateQueryHeap_WaveEngine_Common_Graphics_QueryHeapDescription__" data-uid="WaveEngine.Metal.MTLResourceFactory.CreateQueryHeap(WaveEngine.Common.Graphics.QueryHeapDescription@)">CreateQueryHeap(ref QueryHeapDescription)</h4>
+  <div class="markdown level1 summary"><p>Create a <a class="xref" href="WaveEngine.Common.Graphics.QueryHeap.html">QueryHeap</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override QueryHeap CreateQueryHeap(ref QueryHeapDescription description)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.QueryHeapDescription.html">QueryHeapDescription</a></td>
+        <td><em>description</em></td>
+        <td><p>The queryheap description.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.QueryHeap.html">QueryHeap</a></td>
+        <td><p>The new queryheap.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Metal_MTLResourceFactory_CreateRaytracingPipelineInternal_WaveEngine_Common_Graphics_Raytracing_RaytracingPipelineDescription__" data-uid="WaveEngine.Metal.MTLResourceFactory.CreateRaytracingPipelineInternal(WaveEngine.Common.Graphics.Raytracing.RaytracingPipelineDescription@)">CreateRaytracingPipelineInternal(ref RaytracingPipelineDescription)</h4>
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="WaveEngine.Common.Graphics.Raytracing.RaytracingPipelineState.html">RaytracingPipelineState</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override RaytracingPipelineState CreateRaytracingPipelineInternal(ref RaytracingPipelineDescription description)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Raytracing.RaytracingPipelineDescription.html">RaytracingPipelineDescription</a></td>
+        <td><em>description</em></td>
+        <td><p>The raytracing pipelinestate description.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Raytracing.RaytracingPipelineState.html">RaytracingPipelineState</a></td>
+        <td><p>The new pipelinestate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Metal_MTLResourceFactory_CreateResourceLayoutInternal_WaveEngine_Common_Graphics_ResourceLayoutDescription__" data-uid="WaveEngine.Metal.MTLResourceFactory.CreateResourceLayoutInternal(WaveEngine.Common.Graphics.ResourceLayoutDescription@)">CreateResourceLayoutInternal(ref ResourceLayoutDescription)</h4>
   <div class="markdown level1 summary"><p>Create a new <a class="xref" href="WaveEngine.Common.Graphics.ResourceLayout.html">ResourceLayout</a>.</p>
 </div>
@@ -689,6 +788,54 @@
       <tr>
         <td><a class="xref" href="WaveEngine.Common.Graphics.Texture.html">Texture</a></td>
         <td><p>The new texture.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Metal_MTLResourceFactory_GetTextureFromNativePointerInternal_System_IntPtr_System_Nullable_WaveEngine_Common_Graphics_PixelFormat__" data-uid="WaveEngine.Metal.MTLResourceFactory.GetTextureFromNativePointerInternal(System.IntPtr,System.Nullable{WaveEngine.Common.Graphics.PixelFormat})">GetTextureFromNativePointerInternal(IntPtr, Nullable&lt;PixelFormat&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="WaveEngine.Common.Graphics.Texture.html">Texture</a> instance from an existing texture using the specified native pointer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Texture GetTextureFromNativePointerInternal(IntPtr texturePointer, PixelFormat? pixelFormat = default(PixelFormat? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><em>texturePointer</em></td>
+        <td><p>The pointer of the texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="WaveEngine.Common.Graphics.PixelFormat.html">PixelFormat</a>&gt;</td>
+        <td><em>pixelFormat</em></td>
+        <td><p>Optional overrided pixel format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Texture.html">Texture</a></td>
+        <td><p>The texture instance.</p>
 </td>
       </tr>
     </tbody>

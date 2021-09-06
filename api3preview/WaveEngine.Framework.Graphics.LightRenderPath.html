@@ -161,12 +161,12 @@ is rendered within the same batch.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_LightRenderPath_Render_WaveEngine_Framework_Graphics_DrawContext_">Render(DrawContext)</a></td>
-        <td><p>Render this scene.</p>
+        <td><a href="#WaveEngine_Framework_Graphics_LightRenderPath_Render_WaveEngine_Framework_Graphics_DrawContext_WaveEngine_Common_Graphics_CommandBuffer_">Render(DrawContext, CommandBuffer)</a></td>
+        <td><p>Render all batches collected by the specified DrawContext.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_LightRenderPath_Render_WaveEngine_Framework_Graphics_LightDrawContext_">Render(LightDrawContext)</a></td>
+        <td><a href="#WaveEngine_Framework_Graphics_LightRenderPath_Render_WaveEngine_Framework_Graphics_LightDrawContext_WaveEngine_Common_Graphics_CommandBuffer_">Render(LightDrawContext, CommandBuffer)</a></td>
         <td><p>Render this scene.</p>
 </td>
       </tr>
@@ -220,13 +220,13 @@ is rendered within the same batch.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Graphics_LightRenderPath_Render_WaveEngine_Framework_Graphics_DrawContext_" data-uid="WaveEngine.Framework.Graphics.LightRenderPath.Render(WaveEngine.Framework.Graphics.DrawContext)">Render(DrawContext)</h4>
-  <div class="markdown level1 summary"><p>Render this scene.</p>
+  <h4 id="WaveEngine_Framework_Graphics_LightRenderPath_Render_WaveEngine_Framework_Graphics_DrawContext_WaveEngine_Common_Graphics_CommandBuffer_" data-uid="WaveEngine.Framework.Graphics.LightRenderPath.Render(WaveEngine.Framework.Graphics.DrawContext,WaveEngine.Common.Graphics.CommandBuffer)">Render(DrawContext, CommandBuffer)</h4>
+  <div class="markdown level1 summary"><p>Render all batches collected by the specified DrawContext.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Render(DrawContext drawContext)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Render(DrawContext drawContext, CommandBuffer commandBuffer)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -241,18 +241,24 @@ is rendered within the same batch.</p>
       <tr>
         <td><a class="xref" href="WaveEngine.Framework.Graphics.DrawContext.html">DrawContext</a></td>
         <td><em>drawContext</em></td>
-        <td><p>The context to draw.</p>
+        <td><p>The DrawContext.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.CommandBuffer.html">CommandBuffer</a></td>
+        <td><em>commandBuffer</em></td>
+        <td><p>The command buffer used to render this context.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Graphics_LightRenderPath_Render_WaveEngine_Framework_Graphics_LightDrawContext_" data-uid="WaveEngine.Framework.Graphics.LightRenderPath.Render(WaveEngine.Framework.Graphics.LightDrawContext)">Render(LightDrawContext)</h4>
+  <h4 id="WaveEngine_Framework_Graphics_LightRenderPath_Render_WaveEngine_Framework_Graphics_LightDrawContext_WaveEngine_Common_Graphics_CommandBuffer_" data-uid="WaveEngine.Framework.Graphics.LightRenderPath.Render(WaveEngine.Framework.Graphics.LightDrawContext,WaveEngine.Common.Graphics.CommandBuffer)">Render(LightDrawContext, CommandBuffer)</h4>
   <div class="markdown level1 summary"><p>Render this scene.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract void Render(LightDrawContext drawContext)</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract void Render(LightDrawContext drawContext, CommandBuffer commandBuffer)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -268,6 +274,12 @@ is rendered within the same batch.</p>
         <td><a class="xref" href="WaveEngine.Framework.Graphics.LightDrawContext.html">LightDrawContext</a></td>
         <td><em>drawContext</em></td>
         <td><p>The context to draw.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.CommandBuffer.html">CommandBuffer</a></td>
+        <td><em>commandBuffer</em></td>
+        <td><p>The command buffer used to render this context.</p>
 </td>
       </tr>
     </tbody>

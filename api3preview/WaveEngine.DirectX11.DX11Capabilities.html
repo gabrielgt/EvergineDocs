@@ -96,6 +96,50 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class DX11Capabilities : GraphicsContextCapabilities</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <h4 id="constructors-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_DirectX11_DX11Capabilities__ctor_WaveEngine_DirectX11_DX11GraphicsContext_">DX11Capabilities(DX11GraphicsContext)</a></td>
+        <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.DirectX11.DX11Capabilities.html">DX11Capabilities</a> class.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_DirectX11_DX11Capabilities__ctor_WaveEngine_DirectX11_DX11GraphicsContext_" data-uid="WaveEngine.DirectX11.DX11Capabilities.#ctor(WaveEngine.DirectX11.DX11GraphicsContext)">DX11Capabilities(DX11GraphicsContext)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.DirectX11.DX11Capabilities.html">DX11Capabilities</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DX11Capabilities(DX11GraphicsContext dx11Context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.DirectX11.DX11GraphicsContext.html">DX11GraphicsContext</a></td>
+        <td><em>dx11Context</em></td>
+        <td><p>The dx11 graphic context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <h4 id="properties-summary">Summary</h4>
@@ -109,7 +153,7 @@
     <tbody>
       <tr>
         <td><a href="#WaveEngine_DirectX11_DX11Capabilities_ClipDepth">ClipDepth</a></td>
-        <td><p>Gets the depth rang in clip space.</p>
+        <td><p>Gets the depth range in clip space.</p>
 </td>
       </tr>
       <tr>
@@ -128,6 +172,11 @@
 </td>
       </tr>
       <tr>
+        <td><a href="#WaveEngine_DirectX11_DX11Capabilities_IsRaytracingSupported">IsRaytracingSupported</a></td>
+        <td><p>Gets a value indicating whether this graphics context supports Raytracing.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_DirectX11_DX11Capabilities_IsShadowMapSupported">IsShadowMapSupported</a></td>
         <td><p>Gets a value indicating whether this graphics context supports Shadow Maps.</p>
 </td>
@@ -137,10 +186,15 @@
         <td><p>Gets a value indicating whether this graphics context uses row major matrices by default.</p>
 </td>
       </tr>
+      <tr>
+        <td><a href="#WaveEngine_DirectX11_DX11Capabilities_MultiviewStrategy">MultiviewStrategy</a></td>
+        <td><p>Gets the multiview strategy supported by this graphic context.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h4 id="WaveEngine_DirectX11_DX11Capabilities_ClipDepth" data-uid="WaveEngine.DirectX11.DX11Capabilities.ClipDepth">ClipDepth</h4>
-  <div class="markdown level1 summary"><p>Gets the depth rang in clip space.</p>
+  <div class="markdown level1 summary"><p>Gets the depth range in clip space.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -231,6 +285,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_DirectX11_DX11Capabilities_IsRaytracingSupported" data-uid="WaveEngine.DirectX11.DX11Capabilities.IsRaytracingSupported">IsRaytracingSupported</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this graphics context supports Raytracing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsRaytracingSupported { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_DirectX11_DX11Capabilities_IsShadowMapSupported" data-uid="WaveEngine.DirectX11.DX11Capabilities.IsShadowMapSupported">IsShadowMapSupported</h4>
   <div class="markdown level1 summary"><p>Gets a value indicating whether this graphics context supports Shadow Maps.</p>
 </div>
@@ -273,6 +350,29 @@
     <tbody>
       <tr>
         <td><a class="xref" href="WaveEngine.Common.Graphics.MatrixMajorness.html">MatrixMajorness</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_DirectX11_DX11Capabilities_MultiviewStrategy" data-uid="WaveEngine.DirectX11.DX11Capabilities.MultiviewStrategy">MultiviewStrategy</h4>
+  <div class="markdown level1 summary"><p>Gets the multiview strategy supported by this graphic context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override MultiviewStrategy MultiviewStrategy { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.MultiviewStrategy.html">MultiviewStrategy</a></td>
         <td></td>
       </tr>
     </tbody>

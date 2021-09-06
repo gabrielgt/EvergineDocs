@@ -784,6 +784,11 @@ protected NoesisService noesisService</code></pre>
 </td>
       </tr>
       <tr>
+        <td><a href="#WaveEngine_NoesisGUI_NoesisPanel_TouchDeadzoneRadius">TouchDeadzoneRadius</a></td>
+        <td><p>Gets or sets the deadzone radius for touch events.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_NoesisGUI_NoesisPanel_Width">Width</a></td>
         <td><p>Gets or sets the render width.</p>
 </td>
@@ -1127,6 +1132,30 @@ public TessellationMaxPixelError TessellationQuality { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_NoesisGUI_NoesisPanel_TouchDeadzoneRadius" data-uid="WaveEngine.NoesisGUI.NoesisPanel.TouchDeadzoneRadius">TouchDeadzoneRadius</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the deadzone radius for touch events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tooltip = &quot;The radius of the deadzone for touch events. Dragging interactions will not be sent to the panel until the touch reaches this distance from the initial touch point.&quot;)]
+public float TouchDeadzoneRadius { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_NoesisGUI_NoesisPanel_Width" data-uid="WaveEngine.NoesisGUI.NoesisPanel.Width">Width</h4>
   <div class="markdown level1 summary"><p>Gets or sets the render width.</p>
 </div>
@@ -1262,7 +1291,7 @@ public uint Width { get; set; }</code></pre>
       </tr>
       <tr>
         <td><a href="#WaveEngine_NoesisGUI_NoesisPanel_UpdateMouseButtonEvent_WaveEngine_Mathematics_Point__WaveEngine_Common_Input_ButtonState_WaveEngine_Common_Input_Mouse_MouseButtons_">UpdateMouseButtonEvent(ref Mathematics.Point, ButtonState, MouseButtons)</a></td>
-        <td><p>Determine if was a MouseDown or Mouseup event.</p>
+        <td><p>Update the mouse button state.</p>
 </td>
       </tr>
       <tr>
@@ -1599,7 +1628,7 @@ public uint Width { get; set; }</code></pre>
     </tbody>
   </table>
   <h4 id="WaveEngine_NoesisGUI_NoesisPanel_UpdateMouseButtonEvent_WaveEngine_Mathematics_Point__WaveEngine_Common_Input_ButtonState_WaveEngine_Common_Input_Mouse_MouseButtons_" data-uid="WaveEngine.NoesisGUI.NoesisPanel.UpdateMouseButtonEvent(WaveEngine.Mathematics.Point@,WaveEngine.Common.Input.ButtonState,WaveEngine.Common.Input.Mouse.MouseButtons)">UpdateMouseButtonEvent(ref Mathematics.Point, ButtonState, MouseButtons)</h4>
-  <div class="markdown level1 summary"><p>Determine if was a MouseDown or Mouseup event.</p>
+  <div class="markdown level1 summary"><p>Update the mouse button state.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1808,37 +1837,9 @@ public uint Width { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_NoesisGUI_NoesisPanel_OnExternalInput">OnExternalInput</a></td>
-        <td><p>Event raised to obtain external input</p>
-</td>
-      </tr>
-      <tr>
         <td><a href="#WaveEngine_NoesisGUI_NoesisPanel_OnViewCreated">OnViewCreated</a></td>
         <td><p>Event raised when the Noesis view is created</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_NoesisGUI_NoesisPanel_OnExternalInput" data-uid="WaveEngine.NoesisGUI.NoesisPanel.OnExternalInput">OnExternalInput</h4>
-  <div class="markdown level1 summary"><p>Event raised to obtain external input</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event EventHandler&lt;View&gt; OnExternalInput</code></pre>
-  </div>
-  <h5 class="eventType">Event Type</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.EventHandler</span>&lt;<span class="xref">Noesis.View</span>&gt;</td>
-        <td></td>
       </tr>
     </tbody>
   </table>

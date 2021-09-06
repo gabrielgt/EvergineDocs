@@ -122,8 +122,8 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_DirectX12_DX12ExtensionsMethods_Index_WaveEngine_Common_Graphics_ShaderStages_">Index(ShaderStages)</a></td>
-        <td><p>Gets the shaderStage Index.</p>
+        <td><a href="#WaveEngine_DirectX12_DX12ExtensionsMethods_ToDepthStencilFormat_WaveEngine_Common_Graphics_PixelFormat_">ToDepthStencilFormat(PixelFormat)</a></td>
+        <td><p>Convert to DirectX Depth stencil format.</p>
 </td>
       </tr>
       <tr>
@@ -154,6 +154,16 @@
       <tr>
         <td><a href="#WaveEngine_DirectX12_DX12ExtensionsMethods_ToDirectX_WaveEngine_Common_Graphics_PixelFormat_">ToDirectX(PixelFormat)</a></td>
         <td><p>Convert to DirectX Pixel Format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_DirectX12_DX12ExtensionsMethods_ToDirectX_WaveEngine_Common_Graphics_Raytracing_HitGroupDescription_HitGroupType_">ToDirectX(HitGroupDescription.HitGroupType)</a></td>
+        <td><p>Convert to DirectX HitGroupType.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_DirectX12_DX12ExtensionsMethods_ToDirectX_WaveEngine_Common_Graphics_ResourceType_">ToDirectX(ResourceType)</a></td>
+        <td><p>Convert to DirectX DescriptorRangeType.</p>
 </td>
       </tr>
       <tr>
@@ -329,13 +339,13 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_DirectX12_DX12ExtensionsMethods_Index_WaveEngine_Common_Graphics_ShaderStages_" data-uid="WaveEngine.DirectX12.DX12ExtensionsMethods.Index(WaveEngine.Common.Graphics.ShaderStages)">Index(ShaderStages)</h4>
-  <div class="markdown level1 summary"><p>Gets the shaderStage Index.</p>
+  <h4 id="WaveEngine_DirectX12_DX12ExtensionsMethods_ToDepthStencilFormat_WaveEngine_Common_Graphics_PixelFormat_" data-uid="WaveEngine.DirectX12.DX12ExtensionsMethods.ToDepthStencilFormat(WaveEngine.Common.Graphics.PixelFormat)">ToDepthStencilFormat(PixelFormat)</h4>
+  <div class="markdown level1 summary"><p>Convert to DirectX Depth stencil format.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int Index(this ShaderStages stage)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Vortice.DXGI.Format ToDepthStencilFormat(this PixelFormat pixelFormat)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -348,9 +358,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="WaveEngine.Common.Graphics.ShaderStages.html">ShaderStages</a></td>
-        <td><em>stage</em></td>
-        <td><p>The stage to get the index.</p>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.PixelFormat.html">PixelFormat</a></td>
+        <td><em>pixelFormat</em></td>
+        <td><p>The pixel format.</p>
 </td>
       </tr>
     </tbody>
@@ -365,8 +375,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><p>The stage index.</p>
+        <td><span class="xref">Vortice.DXGI.Format</span></td>
+        <td><p>DirectX pixel format for depth stencil.</p>
 </td>
       </tr>
     </tbody>
@@ -619,6 +629,90 @@
       <tr>
         <td><span class="xref">Vortice.DXGI.Format</span></td>
         <td><p>DirectX pixel format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_DirectX12_DX12ExtensionsMethods_ToDirectX_WaveEngine_Common_Graphics_Raytracing_HitGroupDescription_HitGroupType_" data-uid="WaveEngine.DirectX12.DX12ExtensionsMethods.ToDirectX(WaveEngine.Common.Graphics.Raytracing.HitGroupDescription.HitGroupType)">ToDirectX(HitGroupDescription.HitGroupType)</h4>
+  <div class="markdown level1 summary"><p>Convert to DirectX HitGroupType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vortice.Direct3D12.HitGroupType ToDirectX(this HitGroupDescription.HitGroupType hitGroupType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Raytracing.HitGroupDescription.HitGroupType.html">HitGroupDescription.HitGroupType</a></td>
+        <td><em>hitGroupType</em></td>
+        <td><p>HitGroup type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vortice.Direct3D12.HitGroupType</span></td>
+        <td><p>DirectX HitGroupType.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_DirectX12_DX12ExtensionsMethods_ToDirectX_WaveEngine_Common_Graphics_ResourceType_" data-uid="WaveEngine.DirectX12.DX12ExtensionsMethods.ToDirectX(WaveEngine.Common.Graphics.ResourceType)">ToDirectX(ResourceType)</h4>
+  <div class="markdown level1 summary"><p>Convert to DirectX DescriptorRangeType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vortice.Direct3D12.DescriptorRangeType ToDirectX(this ResourceType resourceType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.ResourceType.html">ResourceType</a></td>
+        <td><em>resourceType</em></td>
+        <td><p>The resource type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vortice.Direct3D12.DescriptorRangeType</span></td>
+        <td><p>DirectX DescriptorRangeType.</p>
 </td>
       </tr>
     </tbody>

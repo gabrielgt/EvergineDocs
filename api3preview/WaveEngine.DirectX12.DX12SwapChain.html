@@ -158,37 +158,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_DirectX12_DX12SwapChain_NativeSwapChain">NativeSwapChain</a></td>
-        <td><p>The DirectX SwapChain instance.</p>
-</td>
-      </tr>
-      <tr>
         <td><a href="#WaveEngine_DirectX12_DX12SwapChain_SwapChainBufferCount">SwapChainBufferCount</a></td>
         <td><p>A default number of buffer in the swapchain.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_DirectX12_DX12SwapChain_NativeSwapChain" data-uid="WaveEngine.DirectX12.DX12SwapChain.NativeSwapChain">NativeSwapChain</h4>
-  <div class="markdown level1 summary"><p>The DirectX SwapChain instance.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IDXGISwapChain3 NativeSwapChain</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IDXGISwapChain3</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>
@@ -227,11 +199,6 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_DirectX12_DX12SwapChain_CurrentBackBuffer">CurrentBackBuffer</a></td>
-        <td><p>Gets the current backbuffer texture.</p>
-</td>
-      </tr>
-      <tr>
         <td><a href="#WaveEngine_DirectX12_DX12SwapChain_CurrentBackBufferIndex">CurrentBackBufferIndex</a></td>
         <td><p>Gets or sets the active backbuffer index.</p>
 </td>
@@ -241,28 +208,10 @@
         <td><p>Gets or sets a string identifying this instance. Can be used in graphics debuggers tools.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_DirectX12_DX12SwapChain_CurrentBackBuffer" data-uid="WaveEngine.DirectX12.DX12SwapChain.CurrentBackBuffer">CurrentBackBuffer</h4>
-  <div class="markdown level1 summary"><p>Gets the current backbuffer texture.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DX12Texture CurrentBackBuffer { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="WaveEngine.DirectX12.DX12Texture.html">DX12Texture</a></td>
-        <td></td>
+        <td><a href="#WaveEngine_DirectX12_DX12SwapChain_NativeSwapChainPointer">NativeSwapChainPointer</a></td>
+        <td><p>Gets the native SwapChain pointer. Default value is returned if the platform does not support it.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -312,6 +261,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_DirectX12_DX12SwapChain_NativeSwapChainPointer" data-uid="WaveEngine.DirectX12.DX12SwapChain.NativeSwapChainPointer">NativeSwapChainPointer</h4>
+  <div class="markdown level1 summary"><p>Gets the native SwapChain pointer. Default value is returned if the platform does not support it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IntPtr NativeSwapChainPointer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <h4 id="methods-summary">Summary</h4>
@@ -329,8 +301,18 @@
 </td>
       </tr>
       <tr>
+        <td><a href="#WaveEngine_DirectX12_DX12SwapChain_GetCurrentFramebufferTexture">GetCurrentFramebufferTexture()</a></td>
+        <td><p>Gets the current Framebuffer Texture.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_DirectX12_DX12SwapChain_Present">Present()</a></td>
         <td><p>Presents a rendered image to the user.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_DirectX12_DX12SwapChain_RefreshSurfaceInfo_WaveEngine_Common_Graphics_SurfaceInfo_">RefreshSurfaceInfo(SurfaceInfo)</a></td>
+        <td><p>The swapchain surface info has changed.</p>
 </td>
       </tr>
       <tr>
@@ -348,6 +330,30 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
   </div>
+  <h4 id="WaveEngine_DirectX12_DX12SwapChain_GetCurrentFramebufferTexture" data-uid="WaveEngine.DirectX12.DX12SwapChain.GetCurrentFramebufferTexture">GetCurrentFramebufferTexture()</h4>
+  <div class="markdown level1 summary"><p>Gets the current Framebuffer Texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Texture GetCurrentFramebufferTexture()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Texture.html">Texture</a></td>
+        <td><p>Framebuffer texture.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_DirectX12_DX12SwapChain_Present" data-uid="WaveEngine.DirectX12.DX12SwapChain.Present">Present()</h4>
   <div class="markdown level1 summary"><p>Presents a rendered image to the user.</p>
 </div>
@@ -356,6 +362,32 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void Present()</code></pre>
   </div>
+  <h4 id="WaveEngine_DirectX12_DX12SwapChain_RefreshSurfaceInfo_WaveEngine_Common_Graphics_SurfaceInfo_" data-uid="WaveEngine.DirectX12.DX12SwapChain.RefreshSurfaceInfo(WaveEngine.Common.Graphics.SurfaceInfo)">RefreshSurfaceInfo(SurfaceInfo)</h4>
+  <div class="markdown level1 summary"><p>The swapchain surface info has changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RefreshSurfaceInfo(SurfaceInfo surfaceInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.SurfaceInfo.html">SurfaceInfo</a></td>
+        <td><em>surfaceInfo</em></td>
+        <td><p>The surface info.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_DirectX12_DX12SwapChain_ResizeSwapChain_System_UInt32_System_UInt32_" data-uid="WaveEngine.DirectX12.DX12SwapChain.ResizeSwapChain(System.UInt32,System.UInt32)">ResizeSwapChain(UInt32, UInt32)</h4>
   <div class="markdown level1 summary"><p>Resize SwapChain.</p>
 </div>

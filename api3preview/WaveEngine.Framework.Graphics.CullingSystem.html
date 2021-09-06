@@ -107,19 +107,62 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_CullingSystem_CullingTest_WaveEngine_Framework_Graphics_DrawContext_WaveEngine_Framework_Graphics_RenderObjectSource___System_Collections_Generic_List_WaveEngine_Framework_Graphics_Light__WaveEngine_Framework_Graphics_CullingResult_">CullingTest(DrawContext, RenderObjectSource[], List&lt;Light&gt;, CullingResult)</a></td>
-        <td><p>Fill the sorting key array.</p>
+        <td><a href="#WaveEngine_Framework_Graphics_CullingSystem_CullLights_WaveEngine_Framework_Graphics_DrawContext_System_Collections_Generic_List_WaveEngine_Framework_Graphics_Light__System_Collections_Generic_List_WaveEngine_Framework_Graphics_Light__">CullLights(DrawContext, List&lt;Light&gt;, List&lt;Light&gt;)</a></td>
+        <td><p>Execute the culling test.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_CullingSystem_CullObjects_WaveEngine_Framework_Graphics_DrawContext_WaveEngine_Framework_Graphics_RenderObjectSource___WaveEngine_Framework_Graphics_RenderObjectSource_">CullObjects(DrawContext, RenderObjectSource[], RenderObjectSource)</a></td>
+        <td><p>Execute the culling test.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Graphics_CullingSystem_CullingTest_WaveEngine_Framework_Graphics_DrawContext_WaveEngine_Framework_Graphics_RenderObjectSource___System_Collections_Generic_List_WaveEngine_Framework_Graphics_Light__WaveEngine_Framework_Graphics_CullingResult_" data-uid="WaveEngine.Framework.Graphics.CullingSystem.CullingTest(WaveEngine.Framework.Graphics.DrawContext,WaveEngine.Framework.Graphics.RenderObjectSource[],System.Collections.Generic.List{WaveEngine.Framework.Graphics.Light},WaveEngine.Framework.Graphics.CullingResult)">CullingTest(DrawContext, RenderObjectSource[], List&lt;Light&gt;, CullingResult)</h4>
-  <div class="markdown level1 summary"><p>Fill the sorting key array.</p>
+  <h4 id="WaveEngine_Framework_Graphics_CullingSystem_CullLights_WaveEngine_Framework_Graphics_DrawContext_System_Collections_Generic_List_WaveEngine_Framework_Graphics_Light__System_Collections_Generic_List_WaveEngine_Framework_Graphics_Light__" data-uid="WaveEngine.Framework.Graphics.CullingSystem.CullLights(WaveEngine.Framework.Graphics.DrawContext,System.Collections.Generic.List{WaveEngine.Framework.Graphics.Light},System.Collections.Generic.List{WaveEngine.Framework.Graphics.Light})">CullLights(DrawContext, List&lt;Light&gt;, List&lt;Light&gt;)</h4>
+  <div class="markdown level1 summary"><p>Execute the culling test.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void CullingTest(DrawContext drawContext, RenderObjectSource[] mesheSources, List&lt;Light&gt; lights, CullingResult cullingResult)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract void CullLights(DrawContext drawContext, List&lt;Light&gt; lights, List&lt;Light&gt; visibleLights)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.DrawContext.html">DrawContext</a></td>
+        <td><em>drawContext</em></td>
+        <td><p>The drawContext.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="WaveEngine.Framework.Graphics.Light.html">Light</a>&gt;</td>
+        <td><em>lights</em></td>
+        <td><p>The lights.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="WaveEngine.Framework.Graphics.Light.html">Light</a>&gt;</td>
+        <td><em>visibleLights</em></td>
+        <td><p>The visible lights.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_CullingSystem_CullObjects_WaveEngine_Framework_Graphics_DrawContext_WaveEngine_Framework_Graphics_RenderObjectSource___WaveEngine_Framework_Graphics_RenderObjectSource_" data-uid="WaveEngine.Framework.Graphics.CullingSystem.CullObjects(WaveEngine.Framework.Graphics.DrawContext,WaveEngine.Framework.Graphics.RenderObjectSource[],WaveEngine.Framework.Graphics.RenderObjectSource)">CullObjects(DrawContext, RenderObjectSource[], RenderObjectSource)</h4>
+  <div class="markdown level1 summary"><p>Execute the culling test.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void CullObjects(DrawContext drawContext, RenderObjectSource[] mesheSources, RenderObjectSource visibleObjects)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -144,14 +187,8 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="WaveEngine.Framework.Graphics.Light.html">Light</a>&gt;</td>
-        <td><em>lights</em></td>
-        <td><p>The lights.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="WaveEngine.Framework.Graphics.CullingResult.html">CullingResult</a></td>
-        <td><em>cullingResult</em></td>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.RenderObjectSource.html">RenderObjectSource</a></td>
+        <td><em>visibleObjects</em></td>
         <td><p>The culling result.</p>
 </td>
       </tr>

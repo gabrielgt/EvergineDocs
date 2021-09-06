@@ -102,19 +102,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Common_Graphics_OutputDescription__ctor_System_Nullable_WaveEngine_Common_Graphics_OutputAttachmentDescription__WaveEngine_Common_Graphics_OutputAttachmentDescription___WaveEngine_Common_Graphics_TextureSampleCount_">OutputDescription(Nullable&lt;OutputAttachmentDescription&gt;, OutputAttachmentDescription[], TextureSampleCount)</a></td>
+        <td><a href="#WaveEngine_Common_Graphics_OutputDescription__ctor_System_Nullable_WaveEngine_Common_Graphics_OutputAttachmentDescription__WaveEngine_Common_Graphics_OutputAttachmentDescription___WaveEngine_Common_Graphics_TextureSampleCount_System_UInt32_">OutputDescription(Nullable&lt;OutputAttachmentDescription&gt;, OutputAttachmentDescription[], TextureSampleCount, UInt32)</a></td>
         <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.OutputDescription.html">OutputDescription</a> struct.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Common_Graphics_OutputDescription__ctor_System_Nullable_WaveEngine_Common_Graphics_OutputAttachmentDescription__WaveEngine_Common_Graphics_OutputAttachmentDescription___WaveEngine_Common_Graphics_TextureSampleCount_" data-uid="WaveEngine.Common.Graphics.OutputDescription.#ctor(System.Nullable{WaveEngine.Common.Graphics.OutputAttachmentDescription},WaveEngine.Common.Graphics.OutputAttachmentDescription[],WaveEngine.Common.Graphics.TextureSampleCount)">OutputDescription(Nullable&lt;OutputAttachmentDescription&gt;, OutputAttachmentDescription[], TextureSampleCount)</h4>
+  <h4 id="WaveEngine_Common_Graphics_OutputDescription__ctor_System_Nullable_WaveEngine_Common_Graphics_OutputAttachmentDescription__WaveEngine_Common_Graphics_OutputAttachmentDescription___WaveEngine_Common_Graphics_TextureSampleCount_System_UInt32_" data-uid="WaveEngine.Common.Graphics.OutputDescription.#ctor(System.Nullable{WaveEngine.Common.Graphics.OutputAttachmentDescription},WaveEngine.Common.Graphics.OutputAttachmentDescription[],WaveEngine.Common.Graphics.TextureSampleCount,System.UInt32)">OutputDescription(Nullable&lt;OutputAttachmentDescription&gt;, OutputAttachmentDescription[], TextureSampleCount, UInt32)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Common.Graphics.OutputDescription.html">OutputDescription</a> struct.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public OutputDescription(OutputAttachmentDescription? depth, OutputAttachmentDescription[] colors, TextureSampleCount sampleCount)</code></pre>
+    <pre><code class="lang-csharp hljs">public OutputDescription(OutputAttachmentDescription? depth, OutputAttachmentDescription[] colors, TextureSampleCount sampleCount, uint arraySliceCount)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -144,6 +144,12 @@
         <td><p>The number of samples in each target attachment.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><em>arraySliceCount</em></td>
+        <td><p>The number of views rendered.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h3 id="fields">Fields
@@ -157,6 +163,11 @@
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Common_Graphics_OutputDescription_ArraySliceCount">ArraySliceCount</a></td>
+        <td><p>Gets the number of view counts.</p>
+</td>
+      </tr>
       <tr>
         <td><a href="#WaveEngine_Common_Graphics_OutputDescription_CachedHashCode">CachedHashCode</a></td>
         <td><p>Precomputed outputDescription hash. Used to speed up the comparison between output descriptions.</p>
@@ -176,6 +187,29 @@
         <td><a href="#WaveEngine_Common_Graphics_OutputDescription_SampleCount">SampleCount</a></td>
         <td><p>The number of samples in each target attachment.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_Graphics_OutputDescription_ArraySliceCount" data-uid="WaveEngine.Common.Graphics.OutputDescription.ArraySliceCount">ArraySliceCount</h4>
+  <div class="markdown level1 summary"><p>Gets the number of view counts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly uint ArraySliceCount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

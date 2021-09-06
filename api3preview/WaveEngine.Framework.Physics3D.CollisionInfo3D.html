@@ -94,7 +94,7 @@ Note: As class because it is shared between the 2 Colliders.. maybe struct is fa
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CollisionInfo3D</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class CollisionInfo3D</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -108,44 +108,20 @@ Note: As class because it is shared between the 2 Colliders.. maybe struct is fa
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Framework_Physics3D_CollisionInfo3D__ctor_WaveEngine_Framework_Physics3D_PhysicBody3D_WaveEngine_Framework_Physics3D_PhysicBody3D_">CollisionInfo3D(PhysicBody3D, PhysicBody3D)</a></td>
+        <td><a href="#WaveEngine_Framework_Physics3D_CollisionInfo3D__ctor">CollisionInfo3D()</a></td>
         <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Physics3D.CollisionInfo3D.html">CollisionInfo3D</a> class.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Physics3D_CollisionInfo3D__ctor_WaveEngine_Framework_Physics3D_PhysicBody3D_WaveEngine_Framework_Physics3D_PhysicBody3D_" data-uid="WaveEngine.Framework.Physics3D.CollisionInfo3D.#ctor(WaveEngine.Framework.Physics3D.PhysicBody3D,WaveEngine.Framework.Physics3D.PhysicBody3D)">CollisionInfo3D(PhysicBody3D, PhysicBody3D)</h4>
+  <h4 id="WaveEngine_Framework_Physics3D_CollisionInfo3D__ctor" data-uid="WaveEngine.Framework.Physics3D.CollisionInfo3D.#ctor">CollisionInfo3D()</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Framework.Physics3D.CollisionInfo3D.html">CollisionInfo3D</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CollisionInfo3D(PhysicBody3D bodyA, PhysicBody3D bodyB)</code></pre>
+    <pre><code class="lang-csharp hljs">public CollisionInfo3D()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="WaveEngine.Framework.Physics3D.PhysicBody3D.html">PhysicBody3D</a></td>
-        <td><em>bodyA</em></td>
-        <td><p>The collider A.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="WaveEngine.Framework.Physics3D.PhysicBody3D.html">PhysicBody3D</a></td>
-        <td><em>bodyB</em></td>
-        <td><p>The collider B.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="properties">Properties
   </h3>
   <h4 id="properties-summary">Summary</h4>
@@ -158,8 +134,13 @@ Note: As class because it is shared between the 2 Colliders.. maybe struct is fa
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Framework_Physics3D_CollisionInfo3D_Contacts">Contacts</a></td>
-        <td><p>Gets the concat list.</p>
+        <td><a href="#WaveEngine_Framework_Physics3D_CollisionInfo3D_Id">Id</a></td>
+        <td><p>Gets the contact info id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics3D_CollisionInfo3D_NumContacts">NumContacts</a></td>
+        <td><p>Gets the number of contacts.</p>
 </td>
       </tr>
       <tr>
@@ -169,7 +150,7 @@ Note: As class because it is shared between the 2 Colliders.. maybe struct is fa
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Physics3D_CollisionInfo3D_State">State</a></td>
-        <td><p>Gets or sets the collision state.</p>
+        <td><p>Gets the collision state.</p>
 </td>
       </tr>
       <tr>
@@ -179,13 +160,13 @@ Note: As class because it is shared between the 2 Colliders.. maybe struct is fa
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Physics3D_CollisionInfo3D_Contacts" data-uid="WaveEngine.Framework.Physics3D.CollisionInfo3D.Contacts">Contacts</h4>
-  <div class="markdown level1 summary"><p>Gets the concat list.</p>
+  <h4 id="WaveEngine_Framework_Physics3D_CollisionInfo3D_Id" data-uid="WaveEngine.Framework.Physics3D.CollisionInfo3D.Id">Id</h4>
+  <div class="markdown level1 summary"><p>Gets the contact info id.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;ContactPoint3D&gt; Contacts { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract int Id { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -197,7 +178,30 @@ Note: As class because it is shared between the 2 Colliders.. maybe struct is fa
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.ContactPoint3D.html">ContactPoint3D</a>&gt;</td>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Physics3D_CollisionInfo3D_NumContacts" data-uid="WaveEngine.Framework.Physics3D.CollisionInfo3D.NumContacts">NumContacts</h4>
+  <div class="markdown level1 summary"><p>Gets the number of contacts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int NumContacts { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -208,7 +212,7 @@ Note: As class because it is shared between the 2 Colliders.. maybe struct is fa
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PhysicBody3D OtherBody { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract PhysicBody3D OtherBody { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -226,12 +230,12 @@ Note: As class because it is shared between the 2 Colliders.. maybe struct is fa
     </tbody>
   </table>
   <h4 id="WaveEngine_Framework_Physics3D_CollisionInfo3D_State" data-uid="WaveEngine.Framework.Physics3D.CollisionInfo3D.State">State</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the collision state.</p>
+  <div class="markdown level1 summary"><p>Gets the collision state.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CollisionInfo3DState State { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract CollisionInfo3DState State { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -254,7 +258,7 @@ Note: As class because it is shared between the 2 Colliders.. maybe struct is fa
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PhysicBody3D ThisBody { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract PhysicBody3D ThisBody { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -283,20 +287,141 @@ Note: As class because it is shared between the 2 Colliders.. maybe struct is fa
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Framework_Physics3D_CollisionInfo3D_Reset">Reset()</a></td>
-        <td><p>Reset info.</p>
+        <td><a href="#WaveEngine_Framework_Physics3D_CollisionInfo3D_GetContact_System_Int32_WaveEngine_Framework_Physics3D_ContactPoint3D__">GetContact(Int32, out ContactPoint3D)</a></td>
+        <td><p>Gets the contact point at the specific index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics3D_CollisionInfo3D_GetContacts_System_Collections_Generic_ICollection_WaveEngine_Framework_Physics3D_ContactPoint3D__">GetContacts(ICollection&lt;ContactPoint3D&gt;)</a></td>
+        <td><p>Retrieve all contact points for this collision.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics3D_CollisionInfo3D_GetContacts_WaveEngine_Framework_Physics3D_ContactPoint3D___">GetContacts(ContactPoint3D[])</a></td>
+        <td><p>Retrieve all contact points for this collision.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Physics3D_CollisionInfo3D_Reset" data-uid="WaveEngine.Framework.Physics3D.CollisionInfo3D.Reset">Reset()</h4>
-  <div class="markdown level1 summary"><p>Reset info.</p>
+  <h4 id="WaveEngine_Framework_Physics3D_CollisionInfo3D_GetContact_System_Int32_WaveEngine_Framework_Physics3D_ContactPoint3D__" data-uid="WaveEngine.Framework.Physics3D.CollisionInfo3D.GetContact(System.Int32,WaveEngine.Framework.Physics3D.ContactPoint3D@)">GetContact(Int32, out ContactPoint3D)</h4>
+  <div class="markdown level1 summary"><p>Gets the contact point at the specific index.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract bool GetContact(int index, out ContactPoint3D contact)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><em>index</em></td>
+        <td><p>The index of the contact to retrieve.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Physics3D.ContactPoint3D.html">ContactPoint3D</a></td>
+        <td><em>contact</em></td>
+        <td><p>The retrieved contact.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the contact has been susccessfully retrieved.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Physics3D_CollisionInfo3D_GetContacts_System_Collections_Generic_ICollection_WaveEngine_Framework_Physics3D_ContactPoint3D__" data-uid="WaveEngine.Framework.Physics3D.CollisionInfo3D.GetContacts(System.Collections.Generic.ICollection{WaveEngine.Framework.Physics3D.ContactPoint3D})">GetContacts(ICollection&lt;ContactPoint3D&gt;)</h4>
+  <div class="markdown level1 summary"><p>Retrieve all contact points for this collision.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Physics3D_CollisionInfo3D_GetContacts_System_Collections_Generic_ICollection_WaveEngine_Framework_Physics3D_ContactPoint3D___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The collection is not cleared.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void GetContacts(ICollection&lt;ContactPoint3D&gt; contacts)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.ContactPoint3D.html">ContactPoint3D</a>&gt;</td>
+        <td><em>contacts</em></td>
+        <td><p>A collection of contacts used to retrieve the results.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Physics3D_CollisionInfo3D_GetContacts_WaveEngine_Framework_Physics3D_ContactPoint3D___" data-uid="WaveEngine.Framework.Physics3D.CollisionInfo3D.GetContacts(WaveEngine.Framework.Physics3D.ContactPoint3D[])">GetContacts(ContactPoint3D[])</h4>
+  <div class="markdown level1 summary"><p>Retrieve all contact points for this collision.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int GetContacts(ContactPoint3D[] contacts)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Physics3D.ContactPoint3D.html">ContactPoint3D</a>[]</td>
+        <td><em>contacts</em></td>
+        <td><p>Array of contacts used to retrieve the results.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of contacts retrieveed in the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

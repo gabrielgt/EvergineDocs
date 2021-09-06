@@ -125,10 +125,10 @@ for Video Rendering. Direct3D 11.1:??This value is not supported until Windows?8
       <tr>
         <td id="WaveEngine_Common_Graphics_PixelFormat_AYUV">AYUV</td>
         <td><p>Most common YUV 4:4:4 video resource format. Valid view formats for this video
-resource format are SharpDX.DXGI.Format.R8G8B8A8_UNorm and SharpDX.DXGI.Format.R8G8B8A8_UInt.
-For UAVs, an additional valid view format is SharpDX.DXGI.Format.R32_UInt. By
-using SharpDX.DXGI.Format.R32_UInt for UAVs, you can both read and write as opposed
-to just write for SharpDX.DXGI.Format.R8G8B8A8_UNorm and SharpDX.DXGI.Format.R8G8B8A8_UInt.
+resource format are R8G8B8A8_UNorm and R8G8B8A8_UInt.
+For UAVs, an additional valid view format is R32_UInt. By
+using R32_UInt for UAVs, you can both read and write as opposed
+to just write for R8G8B8A8_UNorm and R8G8B8A8_UInt.
 Supported view types are SRV, RTV, and UAV. One view provides a straightforward
 mapping of the entire surface. The mapping to the view channel is V-&gt;R8, U-&gt;G8,
 Y-&gt;B8, and A-&gt;A8. For more info about YUV formats for video rendering, see Recommended
@@ -381,9 +381,9 @@ for Video Rendering. Direct3D 11.1:??This value is not supported until Windows?8
       <tr>
         <td id="WaveEngine_Common_Graphics_PixelFormat_NV11">NV11</td>
         <td><p>Most common planar YUV 4:1:1 video resource format. Valid luminance data view
-formats for this video resource format are SharpDX.DXGI.Format.R8_UNorm and SharpDX.DXGI.Format.R8_UInt.
+formats for this video resource format are R8_UNorm and R8_UInt.
 Valid chrominance data view formats (width and height are each 1/4 of luminance
-view) for this video resource format are SharpDX.DXGI.Format.R8G8_UNorm and SharpDX.DXGI.Format.R8G8_UInt.
+view) for this video resource format are R8G8_UNorm and R8G8_UInt.
 Supported view types are SRV, RTV, and UAV. For luminance data view, the mapping
 to the view channel is Y-&gt;R8. For chrominance data view, the mapping to the view
 channel is U-&gt;R8 and V-&gt;G8. For more info about YUV formats for video rendering,
@@ -397,9 +397,9 @@ remainder is padding. Direct3D 11.1:??This value is not supported until Windows?
       <tr>
         <td id="WaveEngine_Common_Graphics_PixelFormat_NV12">NV12</td>
         <td><p>Most common YUV 4:2:0 video resource format. Valid luminance data view formats
-for this video resource format are SharpDX.DXGI.Format.R8_UNorm and SharpDX.DXGI.Format.R8_UInt.
+for this video resource format are R8_UNorm and R8_UInt.
 Valid chrominance data view formats (width and height are each 1/2 of luminance
-view) for this video resource format are SharpDX.DXGI.Format.R8G8_UNorm and SharpDX.DXGI.Format.R8G8_UInt.
+view) for this video resource format are R8G8_UNorm and R8G8_UInt.
 Supported view types are SRV, RTV, and UAV. For luminance data view, the mapping
 to the view channel is Y-&gt;R8. For chrominance data view, the mapping to the view
 channel is U-&gt;R8 and V-&gt;G8. For more info about YUV formats for video rendering,
@@ -416,8 +416,8 @@ UV plane. Direct3D 11.1:??This value is not supported until Windows?8.</p>
 where each pixel has its own Y value, but each 2x2 pixel block shares a single
 U and V value. The runtime requires that the width and height of all resources
 that are created with this format are multiples of 2. The runtime also requires
-that the left, right, top, and bottom members of any SharpDX.Mathematics.Interop.RawRectangle
-that are used for this format are multiples of 2. This format differs from SharpDX.DXGI.Format.NV12
+that the left, right, top, and bottom members of any RECT
+that are used for this format are multiples of 2. This format differs from NV12
 in that the layout of the data within the resource is completely opaque to applications.
 Applications cannot use the CPU to map the resource and then access the data
 within the resource. You cannot use shaders with this format. Because of this
@@ -436,17 +436,17 @@ until Windows?8.</li>
       <tr>
         <td id="WaveEngine_Common_Graphics_PixelFormat_P010">P010</td>
         <td><p>10-bit per channel planar YUV 4:2:0 video resource format. Valid luminance data
-view formats for this video resource format are SharpDX.DXGI.Format.R16_UNorm
-and SharpDX.DXGI.Format.R16_UInt. The runtime does not enforce whether the lowest
+view formats for this video resource format are R16_UNorm
+and R16_UInt. The runtime does not enforce whether the lowest
 6 bits are 0 (given that this video resource format is a 10-bit format that uses
 16 bits). If required, application shader code would have to enforce this manually.
-From the runtime&apos;s point of view, SharpDX.DXGI.Format.P010 is no different than
-SharpDX.DXGI.Format.P016. Valid chrominance data view formats (width and height
-are each 1/2 of luminance view) for this video resource format are SharpDX.DXGI.Format.R16G16_UNorm
-and SharpDX.DXGI.Format.R16G16_UInt. For UAVs, an additional valid chrominance
-data view format is SharpDX.DXGI.Format.R32_UInt. By using SharpDX.DXGI.Format.R32_UInt
-for UAVs, you can both read and write as opposed to just write for SharpDX.DXGI.Format.R16G16_UNorm
-and SharpDX.DXGI.Format.R16G16_UInt. Supported view types are SRV, RTV, and UAV.
+From the runtime&apos;s point of view, P010 is no different than
+P016. Valid chrominance data view formats (width and height
+are each 1/2 of luminance view) for this video resource format are R16G16_UNorm
+and R16G16_UInt. For UAVs, an additional valid chrominance
+data view format is R32_UInt. By using R32_UInt
+for UAVs, you can both read and write as opposed to just write for R16G16_UNorm
+and R16G16_UInt. Supported view types are SRV, RTV, and UAV.
 For luminance data view, the mapping to the view channel is Y-&gt;R16. For chrominance
 data view, the mapping to the view channel is U-&gt;R16 and V-&gt;G16. For more info
 about YUV formats for video rendering, see Recommended 8-Bit YUV Formats for
@@ -460,13 +460,13 @@ is not supported until Windows?8.</p>
       <tr>
         <td id="WaveEngine_Common_Graphics_PixelFormat_P016">P016</td>
         <td><p>16-bit per channel planar YUV 4:2:0 video resource format. Valid luminance data
-view formats for this video resource format are SharpDX.DXGI.Format.R16_UNorm
-and SharpDX.DXGI.Format.R16_UInt. Valid chrominance data view formats (width
+view formats for this video resource format are R16_UNorm
+and R16_UInt. Valid chrominance data view formats (width
 and height are each 1/2 of luminance view) for this video resource format are
-SharpDX.DXGI.Format.R16G16_UNorm and SharpDX.DXGI.Format.R16G16_UInt. For UAVs,
-an additional valid chrominance data view format is SharpDX.DXGI.Format.R32_UInt.
-By using SharpDX.DXGI.Format.R32_UInt for UAVs, you can both read and write as
-opposed to just write for SharpDX.DXGI.Format.R16G16_UNorm and SharpDX.DXGI.Format.R16G16_UInt.
+R16G16_UNorm and R16G16_UInt. For UAVs,
+an additional valid chrominance data view format is R32_UInt.
+By using R32_UInt for UAVs, you can both read and write as
+opposed to just write for R16G16_UNorm and R16G16_UInt.
 Supported view types are SRV, RTV, and UAV. For luminance data view, the mapping
 to the view channel is Y-&gt;R16. For chrominance data view, the mapping to the
 view channel is U-&gt;R16 and V-&gt;G16. For more info about YUV formats for video
@@ -952,12 +952,12 @@ are unused.</p>
       <tr>
         <td id="WaveEngine_Common_Graphics_PixelFormat_Y210">Y210</td>
         <td><p>10-bit per channel packed YUV 4:2:2 video resource format. Valid view formats
-for this video resource format are SharpDX.DXGI.Format.R16G16B16A16_UNorm and
-SharpDX.DXGI.Format.R16G16B16A16_UInt. The runtime does not enforce whether the
+for this video resource format are R16G16B16A16_UNorm and
+R16G16B16A16_UInt. The runtime does not enforce whether the
 lowest 6 bits are 0 (given that this video resource format is a 10-bit format
 that uses 16 bits). If required, application shader code would have to enforce
-this manually. From the runtime&apos;s point of view, SharpDX.DXGI.Format.Y210 is
-no different than SharpDX.DXGI.Format.Y216. Supported view types are SRV and
+this manually. From the runtime&apos;s point of view, Y210 is
+no different than Y216. Supported view types are SRV and
 UAV. One view provides a straightforward mapping of the entire surface. The mapping
 to the view channel is Y0-&gt;R16, U-&gt;G16, Y1-&gt;B16, and V-&gt;A16. For more info about
 YUV formats for video rendering, see Recommended 8-Bit YUV Formats for Video
@@ -968,8 +968,8 @@ Windows?8.</p>
       <tr>
         <td id="WaveEngine_Common_Graphics_PixelFormat_Y216">Y216</td>
         <td><p>16-bit per channel packed YUV 4:2:2 video resource format. Valid view formats
-for this video resource format are SharpDX.DXGI.Format.R16G16B16A16_UNorm and
-SharpDX.DXGI.Format.R16G16B16A16_UInt. Supported view types are SRV and UAV.
+for this video resource format are R16G16B16A16_UNorm and
+R16G16B16A16_UInt. Supported view types are SRV and UAV.
 One view provides a straightforward mapping of the entire surface. The mapping
 to the view channel is Y0-&gt;R16, U-&gt;G16, Y1-&gt;B16, and V-&gt;A16. For more info about
 YUV formats for video rendering, see Recommended 8-Bit YUV Formats for Video
@@ -980,11 +980,11 @@ Windows?8.</p>
       <tr>
         <td id="WaveEngine_Common_Graphics_PixelFormat_Y410">Y410</td>
         <td><p>10-bit per channel packed YUV 4:4:4 video resource format. Valid view formats
-for this video resource format are SharpDX.DXGI.Format.R10G10B10A2_UNorm and
-SharpDX.DXGI.Format.R10G10B10A2_UInt. For UAVs, an additional valid view format
-is SharpDX.DXGI.Format.R32_UInt. By using SharpDX.DXGI.Format.R32_UInt for UAVs,
-you can both read and write as opposed to just write for SharpDX.DXGI.Format.R10G10B10A2_UNorm
-and SharpDX.DXGI.Format.R10G10B10A2_UInt. Supported view types are SRV and UAV.
+for this video resource format are R10G10B10A2_UNorm and
+R10G10B10A2_UInt. For UAVs, an additional valid view format
+is R32_UInt. By using R32_UInt for UAVs,
+you can both read and write as opposed to just write for R10G10B10A2_UNorm
+and R10G10B10A2_UInt. Supported view types are SRV and UAV.
 One view provides a straightforward mapping of the entire surface. The mapping
 to the view channel is U-&gt;R10, Y-&gt;G10, V-&gt;B10, and A-&gt;A2. For more info about
 YUV formats for video rendering, see Recommended 8-Bit YUV Formats for Video
@@ -994,8 +994,8 @@ Rendering. Direct3D 11.1:??This value is not supported until Windows?8.</p>
       <tr>
         <td id="WaveEngine_Common_Graphics_PixelFormat_Y416">Y416</td>
         <td><p>16-bit per channel packed YUV 4:4:4 video resource format. Valid view formats
-for this video resource format are SharpDX.DXGI.Format.R16G16B16A16_UNorm and
-SharpDX.DXGI.Format.R16G16B16A16_UInt. Supported view types are SRV and UAV.
+for this video resource format are R16G16B16A16_UNorm and
+R16G16B16A16_UInt. Supported view types are SRV and UAV.
 One view provides a straightforward mapping of the entire surface. The mapping
 to the view channel is U-&gt;R16, Y-&gt;G16, V-&gt;B16, and A-&gt;A16. For more info about
 YUV formats for video rendering, see Recommended 8-Bit YUV Formats for Video
@@ -1005,15 +1005,15 @@ Rendering. Direct3D 11.1:??This value is not supported until Windows?8.</p>
       <tr>
         <td id="WaveEngine_Common_Graphics_PixelFormat_YUY2">YUY2</td>
         <td><p>Most common YUV 4:2:2 video resource format. Valid view formats for this video
-resource format are SharpDX.DXGI.Format.R8G8B8A8_UNorm and SharpDX.DXGI.Format.R8G8B8A8_UInt.
-For UAVs, an additional valid view format is SharpDX.DXGI.Format.R32_UInt. By
-using SharpDX.DXGI.Format.R32_UInt for UAVs, you can both read and write as opposed
-to just write for SharpDX.DXGI.Format.R8G8B8A8_UNorm and SharpDX.DXGI.Format.R8G8B8A8_UInt.
+resource format are R8G8B8A8_UNorm and R8G8B8A8_UInt.
+For UAVs, an additional valid view format is R32_UInt. By
+using R32_UInt for UAVs, you can both read and write as opposed
+to just write for R8G8B8A8_UNorm and R8G8B8A8_UInt.
 Supported view types are SRV and UAV. One view provides a straightforward mapping
 of the entire surface. The mapping to the view channel is Y0-&gt;R8, U0-&gt;G8, Y1-&gt;B8,
-and V0-&gt;A8. A unique valid view format for this video resource format is SharpDX.DXGI.Format.R8G8_B8G8_UNorm.
-With this view format, the width of the view appears to be twice what the SharpDX.DXGI.Format.R8G8B8A8_UNorm
-or SharpDX.DXGI.Format.R8G8B8A8_UInt view would be when hardware reconstructs
+and V0-&gt;A8. A unique valid view format for this video resource format is R8G8_B8G8_UNorm.
+With this view format, the width of the view appears to be twice what the R8G8B8A8_UNorm
+or R8G8B8A8_UInt view would be when hardware reconstructs
 RGBA automatically on read and before filtering. This Direct3D hardware behavior
 is legacy and is likely not useful any more. With this view format, the mapping
 to the view channel is Y0-&gt;R8, U0-&gt; G8[0], Y1-&gt;B8, and V0-&gt; G8[1]. For more info
@@ -1041,16 +1041,19 @@ until Windows?8.</p>
       <a class="xref" href="WaveEngine.Common.Graphics.ExtensionMethods.html#WaveEngine_Common_Graphics_ExtensionMethods_GetSizeInBits_WaveEngine_Common_Graphics_PixelFormat_">ExtensionMethods.GetSizeInBits()</a>
   </div>
   <div>
-      <a class="xref" href="WaveEngine.DirectX11.DX11ExtensionsMethods.html#WaveEngine_DirectX11_DX11ExtensionsMethods_ToDirectX_WaveEngine_Common_Graphics_PixelFormat_">DX11ExtensionsMethods.ToDirectX()</a>
-  </div>
-  <div>
       <a class="xref" href="WaveEngine.Metal.MTLExtensionsMethods.html#WaveEngine_Metal_MTLExtensionsMethods_ToMetal_WaveEngine_Common_Graphics_PixelFormat_System_Boolean_">MTLExtensionsMethods.ToMetal(Boolean)</a>
   </div>
   <div>
       <a class="xref" href="WaveEngine.DirectX12.DX12ExtensionsMethods.html#WaveEngine_DirectX12_DX12ExtensionsMethods_ToDirectX_WaveEngine_Common_Graphics_PixelFormat_">DX12ExtensionsMethods.ToDirectX()</a>
   </div>
   <div>
+      <a class="xref" href="WaveEngine.DirectX12.DX12ExtensionsMethods.html#WaveEngine_DirectX12_DX12ExtensionsMethods_ToDepthStencilFormat_WaveEngine_Common_Graphics_PixelFormat_">DX12ExtensionsMethods.ToDepthStencilFormat()</a>
+  </div>
+  <div>
       <a class="xref" href="WaveEngine.Vulkan.VKExtensionsMethods.html#WaveEngine_Vulkan_VKExtensionsMethods_ToVulkan_WaveEngine_Common_Graphics_PixelFormat_System_Boolean_">VKExtensionsMethods.ToVulkan(Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.DirectX11.DX11ExtensionsMethods.html#WaveEngine_DirectX11_DX11ExtensionsMethods_ToDirectX_WaveEngine_Common_Graphics_PixelFormat_">DX11ExtensionsMethods.ToDirectX()</a>
   </div>
 </article>
           </div>

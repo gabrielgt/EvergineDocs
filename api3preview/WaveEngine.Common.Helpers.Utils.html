@@ -111,6 +111,11 @@
         <td><p>Compare an array with other array.</p>
 </td>
       </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_Helpers_Utils_DisposeAndNull__1___0__">DisposeAndNull&lt;T&gt;(ref T)</a></td>
+        <td><p>Safely dispose a reference if not null, and set it to null after dispose.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h4 id="WaveEngine_Common_Helpers_Utils_CompareTo__1___0_____0___" data-uid="WaveEngine.Common.Helpers.Utils.CompareTo``1(``0[],``0[])">CompareTo&lt;T&gt;(T[], T[])</h4>
@@ -174,6 +179,52 @@
       <tr>
         <td><em>T</em></td>
         <td><p>The array type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_Helpers_Utils_DisposeAndNull__1___0__" data-uid="WaveEngine.Common.Helpers.Utils.DisposeAndNull``1(``0@)">DisposeAndNull&lt;T&gt;(ref T)</h4>
+  <div class="markdown level1 summary"><p>Safely dispose a reference if not null, and set it to null after dispose.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Common_Helpers_Utils_DisposeAndNull__1___0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The reference will be set to null after dispose.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DisposeAndNull&lt;T&gt;(ref T disposable)
+    where T : class, IDisposable</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><em>disposable</em></td>
+        <td><p>Object to dispose.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>T</em></td>
+        <td><p>The type of object to dispose.</p>
 </td>
       </tr>
     </tbody>

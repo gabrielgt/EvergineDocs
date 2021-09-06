@@ -300,7 +300,7 @@
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_MaterialPassResources_ResourceSet">ResourceSet</a></td>
-        <td><p>Gets the resource set of this pass.</p>
+        <td><p>Gets the global resource set of this material pass resources.</p>
 </td>
       </tr>
     </tbody>
@@ -352,7 +352,7 @@
     </tbody>
   </table>
   <h4 id="WaveEngine_Framework_Graphics_MaterialPassResources_ResourceSet" data-uid="WaveEngine.Framework.Graphics.MaterialPassResources.ResourceSet">ResourceSet</h4>
-  <div class="markdown level1 summary"><p>Gets the resource set of this pass.</p>
+  <div class="markdown level1 summary"><p>Gets the global resource set of this material pass resources.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -391,12 +391,22 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_MaterialPassResources_MakeResourceSetDirty">MakeResourceSetDirty()</a></td>
+        <td><a href="#WaveEngine_Framework_Graphics_MaterialPassResources_FindResourceUsage_WaveEngine_Framework_Graphics_Effects_Analyzer_GraphicsResourceInfo_">FindResourceUsage(GraphicsResourceInfo)</a></td>
+        <td><p>Gets the resource usage of the specified resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_MaterialPassResources_FireResourceSetchanged">FireResourceSetchanged()</a></td>
         <td><p>Make the resource set of this technique dirty.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_MaterialPassResources_UpdateMaterialSetters_WaveEngine_Framework_Graphics_MaterialResourceSetters_">UpdateMaterialSetters(MaterialResourceSetters)</a></td>
+        <td><a href="#WaveEngine_Framework_Graphics_MaterialPassResources_UpdateCBufferSetters_WaveEngine_Framework_Graphics_MaterialResourceSetters_">UpdateCBufferSetters(MaterialResourceSetters)</a></td>
+        <td><p>Update the specified material setters with this technique.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_MaterialPassResources_UpdateMaterialSetters_WaveEngine_Framework_Graphics_MaterialResourceSetters_System_Boolean_System_Boolean_">UpdateMaterialSetters(MaterialResourceSetters, Boolean, Boolean)</a></td>
         <td><p>Update the specified material setters with this technique.</p>
 </td>
       </tr>
@@ -410,21 +420,63 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void Destroy()</code></pre>
   </div>
-  <h4 id="WaveEngine_Framework_Graphics_MaterialPassResources_MakeResourceSetDirty" data-uid="WaveEngine.Framework.Graphics.MaterialPassResources.MakeResourceSetDirty">MakeResourceSetDirty()</h4>
+  <h4 id="WaveEngine_Framework_Graphics_MaterialPassResources_FindResourceUsage_WaveEngine_Framework_Graphics_Effects_Analyzer_GraphicsResourceInfo_" data-uid="WaveEngine.Framework.Graphics.MaterialPassResources.FindResourceUsage(WaveEngine.Framework.Graphics.Effects.Analyzer.GraphicsResourceInfo)">FindResourceUsage(GraphicsResourceInfo)</h4>
+  <div class="markdown level1 summary"><p>Gets the resource usage of the specified resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GraphicsResourceUsage FindResourceUsage(GraphicsResourceInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.Effects.Analyzer.GraphicsResourceInfo.html">GraphicsResourceInfo</a></td>
+        <td><em>info</em></td>
+        <td><p>The resource info.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.Effects.Analyzer.GraphicsResourceUsage.html">GraphicsResourceUsage</a></td>
+        <td><p>The resource usage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_MaterialPassResources_FireResourceSetchanged" data-uid="WaveEngine.Framework.Graphics.MaterialPassResources.FireResourceSetchanged">FireResourceSetchanged()</h4>
   <div class="markdown level1 summary"><p>Make the resource set of this technique dirty.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void MakeResourceSetDirty()</code></pre>
+    <pre><code class="lang-csharp hljs">public void FireResourceSetchanged()</code></pre>
   </div>
-  <h4 id="WaveEngine_Framework_Graphics_MaterialPassResources_UpdateMaterialSetters_WaveEngine_Framework_Graphics_MaterialResourceSetters_" data-uid="WaveEngine.Framework.Graphics.MaterialPassResources.UpdateMaterialSetters(WaveEngine.Framework.Graphics.MaterialResourceSetters)">UpdateMaterialSetters(MaterialResourceSetters)</h4>
+  <h4 id="WaveEngine_Framework_Graphics_MaterialPassResources_UpdateCBufferSetters_WaveEngine_Framework_Graphics_MaterialResourceSetters_" data-uid="WaveEngine.Framework.Graphics.MaterialPassResources.UpdateCBufferSetters(WaveEngine.Framework.Graphics.MaterialResourceSetters)">UpdateCBufferSetters(MaterialResourceSetters)</h4>
   <div class="markdown level1 summary"><p>Update the specified material setters with this technique.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void UpdateMaterialSetters(MaterialResourceSetters materialSetters)</code></pre>
+    <pre><code class="lang-csharp hljs">public void UpdateCBufferSetters(MaterialResourceSetters materialSetters)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -440,6 +492,44 @@
         <td><a class="xref" href="WaveEngine.Framework.Graphics.MaterialResourceSetters.html">MaterialResourceSetters</a></td>
         <td><em>materialSetters</em></td>
         <td><p>The material setter to update.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_MaterialPassResources_UpdateMaterialSetters_WaveEngine_Framework_Graphics_MaterialResourceSetters_System_Boolean_System_Boolean_" data-uid="WaveEngine.Framework.Graphics.MaterialPassResources.UpdateMaterialSetters(WaveEngine.Framework.Graphics.MaterialResourceSetters,System.Boolean,System.Boolean)">UpdateMaterialSetters(MaterialResourceSetters, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Update the specified material setters with this technique.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateMaterialSetters(MaterialResourceSetters materialSetters, bool cbuferSetters = true, bool textureSetters = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.MaterialResourceSetters.html">MaterialResourceSetters</a></td>
+        <td><em>materialSetters</em></td>
+        <td><p>The material setter to update.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>cbuferSetters</em></td>
+        <td><p>Update Constant Buffer setters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><em>textureSetters</em></td>
+        <td><p>Update Texturesetters.</p>
 </td>
       </tr>
     </tbody>

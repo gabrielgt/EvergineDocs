@@ -107,7 +107,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Assets_Exporters_ExportContext__ctor_System_String_System_String_WaveEngine_Common_ProjectProfile_WaveEngine_Assets_Contents_ContentDirectory_WaveEngine_Assets_Contents_ContentDirectory_">ExportContext(String, String, ProjectProfile, ContentDirectory, ContentDirectory)</a></td>
+        <td><a href="#WaveEngine_Assets_Exporters_ExportContext__ctor_System_String_System_String_WaveEngine_Common_ProjectProfile_WaveEngine_Assets_Contents_ContentDirectory_WaveEngine_Assets_Contents_ContentDirectory___">ExportContext(String, String, ProjectProfile, ContentDirectory, ContentDirectory[])</a></td>
         <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Assets.Exporters.ExportContext.html">ExportContext</a> class.</p>
 </td>
       </tr>
@@ -116,15 +116,20 @@
         <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Assets.Exporters.ExportContext.html">ExportContext</a> class.</p>
 </td>
       </tr>
+      <tr>
+        <td><a href="#WaveEngine_Assets_Exporters_ExportContext__ctor_System_String_WaveEngine_Common_ProjectProfile_WaveEngine_Assets_Contents_ContentDirectory_WaveEngine_Assets_Contents_ContentDirectory___">ExportContext(String, ProjectProfile, ContentDirectory, ContentDirectory[])</a></td>
+        <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Assets.Exporters.ExportContext.html">ExportContext</a> class.</p>
+</td>
+      </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Assets_Exporters_ExportContext__ctor_System_String_System_String_WaveEngine_Common_ProjectProfile_WaveEngine_Assets_Contents_ContentDirectory_WaveEngine_Assets_Contents_ContentDirectory_" data-uid="WaveEngine.Assets.Exporters.ExportContext.#ctor(System.String,System.String,WaveEngine.Common.ProjectProfile,WaveEngine.Assets.Contents.ContentDirectory,WaveEngine.Assets.Contents.ContentDirectory)">ExportContext(String, String, ProjectProfile, ContentDirectory, ContentDirectory)</h4>
+  <h4 id="WaveEngine_Assets_Exporters_ExportContext__ctor_System_String_System_String_WaveEngine_Common_ProjectProfile_WaveEngine_Assets_Contents_ContentDirectory_WaveEngine_Assets_Contents_ContentDirectory___" data-uid="WaveEngine.Assets.Exporters.ExportContext.#ctor(System.String,System.String,WaveEngine.Common.ProjectProfile,WaveEngine.Assets.Contents.ContentDirectory,WaveEngine.Assets.Contents.ContentDirectory[])">ExportContext(String, String, ProjectProfile, ContentDirectory, ContentDirectory[])</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Assets.Exporters.ExportContext.html">ExportContext</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ExportContext(string weprojFilePath, string profileName, ProjectProfile projectProfile, ContentDirectory outputDirectory, ContentDirectory contentDirectory)</code></pre>
+    <pre><code class="lang-csharp hljs">public ExportContext(string weprojFilePath, string profileName, ProjectProfile projectProfile, ContentDirectory outputDirectory, ContentDirectory[] contentDirectories)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -161,9 +166,9 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="WaveEngine.Assets.Contents.ContentDirectory.html">ContentDirectory</a></td>
-        <td><em>contentDirectory</em></td>
-        <td><p>The project root content directory.</p>
+        <td><a class="xref" href="WaveEngine.Assets.Contents.ContentDirectory.html">ContentDirectory</a>[]</td>
+        <td><em>contentDirectories</em></td>
+        <td><p>The project root content directories.</p>
 </td>
       </tr>
     </tbody>
@@ -212,6 +217,50 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_Assets_Exporters_ExportContext__ctor_System_String_WaveEngine_Common_ProjectProfile_WaveEngine_Assets_Contents_ContentDirectory_WaveEngine_Assets_Contents_ContentDirectory___" data-uid="WaveEngine.Assets.Exporters.ExportContext.#ctor(System.String,WaveEngine.Common.ProjectProfile,WaveEngine.Assets.Contents.ContentDirectory,WaveEngine.Assets.Contents.ContentDirectory[])">ExportContext(String, ProjectProfile, ContentDirectory, ContentDirectory[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Assets.Exporters.ExportContext.html">ExportContext</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExportContext(string profileName, ProjectProfile projectProfile, ContentDirectory outputDirectory, ContentDirectory[] contentDirectories)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><em>profileName</em></td>
+        <td><p>The export profile name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.ProjectProfile.html">ProjectProfile</a></td>
+        <td><em>projectProfile</em></td>
+        <td><p>The project profile.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Assets.Contents.ContentDirectory.html">ContentDirectory</a></td>
+        <td><em>outputDirectory</em></td>
+        <td><p>The output directory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Assets.Contents.ContentDirectory.html">ContentDirectory</a>[]</td>
+        <td><em>contentDirectories</em></td>
+        <td><p>The project root content directories.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <h4 id="properties-summary">Summary</h4>
@@ -224,8 +273,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Assets_Exporters_ExportContext_Content">Content</a></td>
-        <td><p>Gets the project root content directory.</p>
+        <td><a href="#WaveEngine_Assets_Exporters_ExportContext_Contents">Contents</a></td>
+        <td><p>Gets the project root content directories.</p>
 </td>
       </tr>
       <tr>
@@ -250,13 +299,13 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Assets_Exporters_ExportContext_Content" data-uid="WaveEngine.Assets.Exporters.ExportContext.Content">Content</h4>
-  <div class="markdown level1 summary"><p>Gets the project root content directory.</p>
+  <h4 id="WaveEngine_Assets_Exporters_ExportContext_Contents" data-uid="WaveEngine.Assets.Exporters.ExportContext.Contents">Contents</h4>
+  <div class="markdown level1 summary"><p>Gets the project root content directories.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ContentDirectory Content { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ContentDirectory[] Contents { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -268,7 +317,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="WaveEngine.Assets.Contents.ContentDirectory.html">ContentDirectory</a></td>
+        <td><a class="xref" href="WaveEngine.Assets.Contents.ContentDirectory.html">ContentDirectory</a>[]</td>
         <td></td>
       </tr>
     </tbody>

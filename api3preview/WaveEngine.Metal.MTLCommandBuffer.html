@@ -239,8 +239,23 @@ categorized and filtered when viewed in external debugging tools.</p>
 </td>
       </tr>
       <tr>
+        <td><a href="#WaveEngine_Metal_MTLCommandBuffer_BeginQuery_WaveEngine_Common_Graphics_QueryHeap_System_UInt32_">BeginQuery(QueryHeap, UInt32)</a></td>
+        <td><p>Begins a GPU query.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_Metal_MTLCommandBuffer_BeginRenderPassInternal_WaveEngine_Common_Graphics_RenderPassDescription__">BeginRenderPassInternal(ref RenderPassDescription)</a></td>
         <td><p>Begin a render pass.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Metal_MTLCommandBuffer_BuildRaytracingAccelerationStructure_WaveEngine_Common_Graphics_Raytracing_BottomLevelASDescription_">BuildRaytracingAccelerationStructure(BottomLevelASDescription)</a></td>
+        <td><p>Perform an bottom level acceleration structure build on the GPU.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Metal_MTLCommandBuffer_BuildRaytracingAccelerationStructure_WaveEngine_Common_Graphics_Raytracing_TopLevelASDescription_">BuildRaytracingAccelerationStructure(TopLevelASDescription)</a></td>
+        <td><p>Perform an top level acceleration structure build on the GPU.</p>
 </td>
       </tr>
       <tr>
@@ -266,6 +281,12 @@ categorized and filtered when viewed in external debugging tools.</p>
       <tr>
         <td><a href="#WaveEngine_Metal_MTLCommandBuffer_DispatchIndirect_WaveEngine_Common_Graphics_Buffer_System_UInt32_">DispatchIndirect(Buffer, UInt32)</a></td>
         <td><p>Execute a command list over one or more thread groups.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Metal_MTLCommandBuffer_DispatchRays_WaveEngine_Common_Graphics_Raytracing_DispatchRaysDescription_">DispatchRays(DispatchRaysDescription)</a></td>
+        <td><p>Launch threads of a ray generation shader. See Initiating raytracing for an overview. Can be called from
+graphics or compute command lists and bundles.</p>
 </td>
       </tr>
       <tr>
@@ -319,6 +340,11 @@ categorized and filtered when viewed in external debugging tools.</p>
 </td>
       </tr>
       <tr>
+        <td><a href="#WaveEngine_Metal_MTLCommandBuffer_EndQuery_WaveEngine_Common_Graphics_QueryHeap_System_UInt32_">EndQuery(QueryHeap, UInt32)</a></td>
+        <td><p>Ends a GPU query.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_Metal_MTLCommandBuffer_EndRenderPassInternal">EndRenderPassInternal()</a></td>
         <td><p>End a render pass.</p>
 </td>
@@ -366,6 +392,11 @@ points of interest in a command stream.</p>
 </td>
       </tr>
       <tr>
+        <td><a href="#WaveEngine_Metal_MTLCommandBuffer_SetRaytracingPipelineStateInternal_WaveEngine_Common_Graphics_Raytracing_RaytracingPipelineState_">SetRaytracingPipelineStateInternal(RaytracingPipelineState)</a></td>
+        <td><p>Sets the raytracing pipeline state object for this commandbuffer.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_Metal_MTLCommandBuffer_SetResourceSet_WaveEngine_Common_Graphics_ResourceSet_System_UInt32_System_UInt32___">SetResourceSet(ResourceSet, UInt32, UInt32[])</a></td>
         <td><p>Set the active <a class="xref" href="WaveEngine.Common.Graphics.ResourceSet.html">ResourceSet</a> for the given index.</p>
 </td>
@@ -393,6 +424,16 @@ points of interest in a command stream.</p>
       <tr>
         <td><a href="#WaveEngine_Metal_MTLCommandBuffer_UpdateBufferDataInternal_WaveEngine_Common_Graphics_Buffer_System_IntPtr_System_UInt32_System_UInt32_">UpdateBufferDataInternal(Buffer, IntPtr, UInt32, UInt32)</a></td>
         <td><p>Fill the buffer from a pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Metal_MTLCommandBuffer_UpdateRaytracingAccelerationStructure_WaveEngine_Common_Graphics_Raytracing_TopLevelAS__WaveEngine_Common_Graphics_Raytracing_TopLevelASDescription_">UpdateRaytracingAccelerationStructure(ref TopLevelAS, TopLevelASDescription)</a></td>
+        <td><p>Refit an top level accelerations structure build on the GPU.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Metal_MTLCommandBuffer_WriteTimestamp_WaveEngine_Common_Graphics_QueryHeap_System_UInt32_">WriteTimestamp(QueryHeap, UInt32)</a></td>
+        <td><p>Write a device timestamp into a query heap.</p>
 </td>
       </tr>
     </tbody>
@@ -437,6 +478,41 @@ BeginDebugMarker has no effect if the calling application is not running under a
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_Metal_MTLCommandBuffer_BeginQuery_WaveEngine_Common_Graphics_QueryHeap_System_UInt32_" data-uid="WaveEngine.Metal.MTLCommandBuffer.BeginQuery(WaveEngine.Common.Graphics.QueryHeap,System.UInt32)">BeginQuery(QueryHeap, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Begins a GPU query.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Metal_MTLCommandBuffer_BeginQuery_WaveEngine_Common_Graphics_QueryHeap_System_UInt32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method works only with occusion and binaryOcclusion queryheap types.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void BeginQuery(QueryHeap heap, uint index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.QueryHeap.html">QueryHeap</a></td>
+        <td><em>heap</em></td>
+        <td><p>Specifies the queryheap containing the query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><em>index</em></td>
+        <td><p>The query index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Metal_MTLCommandBuffer_BeginRenderPassInternal_WaveEngine_Common_Graphics_RenderPassDescription__" data-uid="WaveEngine.Metal.MTLCommandBuffer.BeginRenderPassInternal(WaveEngine.Common.Graphics.RenderPassDescription@)">BeginRenderPassInternal(ref RenderPassDescription)</h4>
   <div class="markdown level1 summary"><p>Begin a render pass.</p>
 </div>
@@ -459,6 +535,88 @@ BeginDebugMarker has no effect if the calling application is not running under a
         <td><a class="xref" href="WaveEngine.Common.Graphics.RenderPassDescription.html">RenderPassDescription</a></td>
         <td><em>description</em></td>
         <td><p>The renderPass description <a class="xref" href="WaveEngine.Common.Graphics.RenderPassDescription.html">RenderPassDescription</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Metal_MTLCommandBuffer_BuildRaytracingAccelerationStructure_WaveEngine_Common_Graphics_Raytracing_BottomLevelASDescription_" data-uid="WaveEngine.Metal.MTLCommandBuffer.BuildRaytracingAccelerationStructure(WaveEngine.Common.Graphics.Raytracing.BottomLevelASDescription)">BuildRaytracingAccelerationStructure(BottomLevelASDescription)</h4>
+  <div class="markdown level1 summary"><p>Perform an bottom level acceleration structure build on the GPU.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override BottomLevelAS BuildRaytracingAccelerationStructure(BottomLevelASDescription description)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Raytracing.BottomLevelASDescription.html">BottomLevelASDescription</a></td>
+        <td><em>description</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Raytracing.BottomLevelAS.html">BottomLevelAS</a></td>
+        <td><p>Bottom Level Acceleration Structure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Metal_MTLCommandBuffer_BuildRaytracingAccelerationStructure_WaveEngine_Common_Graphics_Raytracing_TopLevelASDescription_" data-uid="WaveEngine.Metal.MTLCommandBuffer.BuildRaytracingAccelerationStructure(WaveEngine.Common.Graphics.Raytracing.TopLevelASDescription)">BuildRaytracingAccelerationStructure(TopLevelASDescription)</h4>
+  <div class="markdown level1 summary"><p>Perform an top level acceleration structure build on the GPU.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TopLevelAS BuildRaytracingAccelerationStructure(TopLevelASDescription description)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Raytracing.TopLevelASDescription.html">TopLevelASDescription</a></td>
+        <td><em>description</em></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Raytracing.TopLevelAS.html">TopLevelAS</a></td>
+        <td><p>Top Level Acceleration Structure.</p>
 </td>
       </tr>
     </tbody>
@@ -705,6 +863,33 @@ particular thread, within a thread group using a 3D vector given by (x,y,z).</p>
         <td><span class="xref">System.UInt32</span></td>
         <td><em>offset</em></td>
         <td><p>A byte-aligned offset between the start of the buffer and the arguments.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Metal_MTLCommandBuffer_DispatchRays_WaveEngine_Common_Graphics_Raytracing_DispatchRaysDescription_" data-uid="WaveEngine.Metal.MTLCommandBuffer.DispatchRays(WaveEngine.Common.Graphics.Raytracing.DispatchRaysDescription)">DispatchRays(DispatchRaysDescription)</h4>
+  <div class="markdown level1 summary"><p>Launch threads of a ray generation shader. See Initiating raytracing for an overview. Can be called from
+graphics or compute command lists and bundles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DispatchRays(DispatchRaysDescription description)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Raytracing.DispatchRaysDescription.html">DispatchRaysDescription</a></td>
+        <td><em>description</em></td>
+        <td><p>Dispatch rays description.</p>
 </td>
       </tr>
     </tbody>
@@ -1014,6 +1199,41 @@ particular thread, within a thread group using a 3D vector given by (x,y,z).</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override void EndInternal()</code></pre>
   </div>
+  <h4 id="WaveEngine_Metal_MTLCommandBuffer_EndQuery_WaveEngine_Common_Graphics_QueryHeap_System_UInt32_" data-uid="WaveEngine.Metal.MTLCommandBuffer.EndQuery(WaveEngine.Common.Graphics.QueryHeap,System.UInt32)">EndQuery(QueryHeap, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Ends a GPU query.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Metal_MTLCommandBuffer_EndQuery_WaveEngine_Common_Graphics_QueryHeap_System_UInt32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method works only with occusion and binaryOcclusion queryheap types.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void EndQuery(QueryHeap heap, uint index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.QueryHeap.html">QueryHeap</a></td>
+        <td><em>heap</em></td>
+        <td><p>Specifies the queryheap containing the query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><em>index</em></td>
+        <td><p>The query index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Metal_MTLCommandBuffer_EndRenderPassInternal" data-uid="WaveEngine.Metal.MTLCommandBuffer.EndRenderPassInternal">EndRenderPassInternal()</h4>
   <div class="markdown level1 summary"><p>End a render pass.</p>
 </div>
@@ -1230,6 +1450,32 @@ points of interest in a command stream.</p>
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_Metal_MTLCommandBuffer_SetRaytracingPipelineStateInternal_WaveEngine_Common_Graphics_Raytracing_RaytracingPipelineState_" data-uid="WaveEngine.Metal.MTLCommandBuffer.SetRaytracingPipelineStateInternal(WaveEngine.Common.Graphics.Raytracing.RaytracingPipelineState)">SetRaytracingPipelineStateInternal(RaytracingPipelineState)</h4>
+  <div class="markdown level1 summary"><p>Sets the raytracing pipeline state object for this commandbuffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void SetRaytracingPipelineStateInternal(RaytracingPipelineState pipeline)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Raytracing.RaytracingPipelineState.html">RaytracingPipelineState</a></td>
+        <td><em>pipeline</em></td>
+        <td><p>The raytracing pipeline state description.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Metal_MTLCommandBuffer_SetResourceSet_WaveEngine_Common_Graphics_ResourceSet_System_UInt32_System_UInt32___" data-uid="WaveEngine.Metal.MTLCommandBuffer.SetResourceSet(WaveEngine.Common.Graphics.ResourceSet,System.UInt32,System.UInt32[])">SetResourceSet(ResourceSet, UInt32, UInt32[])</h4>
   <div class="markdown level1 summary"><p>Set the active <a class="xref" href="WaveEngine.Common.Graphics.ResourceSet.html">ResourceSet</a> for the given index.</p>
 </div>
@@ -1430,6 +1676,73 @@ points of interest in a command stream.</p>
         <td><span class="xref">System.UInt32</span></td>
         <td><em>destinationOffsetInBytes</em></td>
         <td><p>The offset in bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Metal_MTLCommandBuffer_UpdateRaytracingAccelerationStructure_WaveEngine_Common_Graphics_Raytracing_TopLevelAS__WaveEngine_Common_Graphics_Raytracing_TopLevelASDescription_" data-uid="WaveEngine.Metal.MTLCommandBuffer.UpdateRaytracingAccelerationStructure(WaveEngine.Common.Graphics.Raytracing.TopLevelAS@,WaveEngine.Common.Graphics.Raytracing.TopLevelASDescription)">UpdateRaytracingAccelerationStructure(ref TopLevelAS, TopLevelASDescription)</h4>
+  <div class="markdown level1 summary"><p>Refit an top level accelerations structure build on the GPU.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UpdateRaytracingAccelerationStructure(ref TopLevelAS tlas, TopLevelASDescription newDescription)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Raytracing.TopLevelAS.html">TopLevelAS</a></td>
+        <td><em>tlas</em></td>
+        <td><p>Top level acceleration structure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.Raytracing.TopLevelASDescription.html">TopLevelASDescription</a></td>
+        <td><em>newDescription</em></td>
+        <td><p>New top level description.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Metal_MTLCommandBuffer_WriteTimestamp_WaveEngine_Common_Graphics_QueryHeap_System_UInt32_" data-uid="WaveEngine.Metal.MTLCommandBuffer.WriteTimestamp(WaveEngine.Common.Graphics.QueryHeap,System.UInt32)">WriteTimestamp(QueryHeap, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Write a device timestamp into a query heap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Metal_MTLCommandBuffer_WriteTimestamp_WaveEngine_Common_Graphics_QueryHeap_System_UInt32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method works only with timestamp queryheap type.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteTimestamp(QueryHeap heap, uint index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.QueryHeap.html">QueryHeap</a></td>
+        <td><em>heap</em></td>
+        <td><p>Specifies the queryheap.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><em>index</em></td>
+        <td><p>The query index.</p>
 </td>
       </tr>
     </tbody>

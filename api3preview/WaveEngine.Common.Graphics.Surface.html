@@ -371,6 +371,11 @@
 </td>
       </tr>
       <tr>
+        <td><a href="#WaveEngine_Common_Graphics_Surface_OnInfoChanged">OnInfoChanged()</a></td>
+        <td><p>Raise surface info changed.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_Common_Graphics_Surface_OnLostFocus">OnLostFocus()</a></td>
         <td><p>Raise base lost focus event.</p>
 </td>
@@ -404,7 +409,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void OnClosing()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual void OnClosing()</code></pre>
   </div>
   <h4 id="WaveEngine_Common_Graphics_Surface_OnGotFocus" data-uid="WaveEngine.Common.Graphics.Surface.OnGotFocus">OnGotFocus()</h4>
   <div class="markdown level1 summary"><p>Raise base got focus event.</p>
@@ -412,7 +417,15 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void OnGotFocus()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual void OnGotFocus()</code></pre>
+  </div>
+  <h4 id="WaveEngine_Common_Graphics_Surface_OnInfoChanged" data-uid="WaveEngine.Common.Graphics.Surface.OnInfoChanged">OnInfoChanged()</h4>
+  <div class="markdown level1 summary"><p>Raise surface info changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnInfoChanged()</code></pre>
   </div>
   <h4 id="WaveEngine_Common_Graphics_Surface_OnLostFocus" data-uid="WaveEngine.Common.Graphics.Surface.OnLostFocus">OnLostFocus()</h4>
   <div class="markdown level1 summary"><p>Raise base lost focus event.</p>
@@ -420,7 +433,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void OnLostFocus()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual void OnLostFocus()</code></pre>
   </div>
   <h4 id="WaveEngine_Common_Graphics_Surface_OnSizeChanged" data-uid="WaveEngine.Common.Graphics.Surface.OnSizeChanged">OnSizeChanged()</h4>
   <div class="markdown level1 summary"><p>Raise base size changed event.</p>
@@ -428,7 +441,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void OnSizeChanged()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual void OnSizeChanged()</code></pre>
   </div>
   <h3 id="events">Events
   </h3>
@@ -459,6 +472,11 @@
       <tr>
         <td><a href="#WaveEngine_Common_Graphics_Surface_OnScreenSizeChanged">OnScreenSizeChanged</a></td>
         <td><p>Occurs when surface size is changed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_Graphics_Surface_OnSurfaceInfoChanged">OnSurfaceInfoChanged</a></td>
+        <td><p>Occurs when surface info is changed.</p>
 </td>
       </tr>
     </tbody>
@@ -551,6 +569,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Common.Helpers.SizeEventArgs.html">SizeEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_Graphics_Surface_OnSurfaceInfoChanged" data-uid="WaveEngine.Common.Graphics.Surface.OnSurfaceInfoChanged">OnSurfaceInfoChanged</h4>
+  <div class="markdown level1 summary"><p>Occurs when surface info is changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;SurfaceInfo&gt; OnSurfaceInfoChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="WaveEngine.Common.Graphics.SurfaceInfo.html">SurfaceInfo</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

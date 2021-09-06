@@ -88,12 +88,13 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
       <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level1"><a class="xref" href="WaveEngine.Framework.DisposableObject.html">DisposableObject</a></div>
       <div class="level"><span class="xref"></span></div>
   </div>
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MaterialResourcesCacheEntry</code></pre>
+    <pre><code class="lang-csharp hljs">public class MaterialResourcesCacheEntry : DisposableObject, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -163,12 +164,7 @@
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_MaterialResourcesCacheEntry_PassResources">PassResources</a></td>
-        <td><p>PassesResources.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_MaterialResourcesCacheEntry_Pipelines">Pipelines</a></td>
-        <td><p>The pipeline state array.</p>
+        <td><p>Material resources per pass.</p>
 </td>
       </tr>
     </tbody>
@@ -197,12 +193,12 @@
     </tbody>
   </table>
   <h4 id="WaveEngine_Framework_Graphics_MaterialResourcesCacheEntry_PassResources" data-uid="WaveEngine.Framework.Graphics.MaterialResourcesCacheEntry.PassResources">PassResources</h4>
-  <div class="markdown level1 summary"><p>PassesResources.</p>
+  <div class="markdown level1 summary"><p>Material resources per pass.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MaterialPassResources[] PassResources</code></pre>
+    <pre><code class="lang-csharp hljs">public MaterialResourcesCacheEntry.MaterialResourcesPerPass[] PassResources</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -214,30 +210,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="WaveEngine.Framework.Graphics.MaterialPassResources.html">MaterialPassResources</a>[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_Framework_Graphics_MaterialResourcesCacheEntry_Pipelines" data-uid="WaveEngine.Framework.Graphics.MaterialResourcesCacheEntry.Pipelines">Pipelines</h4>
-  <div class="markdown level1 summary"><p>The pipeline state array.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GraphicsPipelineState[] Pipelines</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="WaveEngine.Common.Graphics.GraphicsPipelineState.html">GraphicsPipelineState</a>[]</td>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.MaterialResourcesCacheEntry.MaterialResourcesPerPass.html">MaterialResourcesCacheEntry.MaterialResourcesPerPass</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -259,6 +232,11 @@
 </td>
       </tr>
       <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_MaterialResourcesCacheEntry_Destroy">Destroy()</a></td>
+        <td><p>Destroy all resources of this instance.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_Framework_Graphics_MaterialResourcesCacheEntry_MakePipelineDirty">MakePipelineDirty()</a></td>
         <td><p>Turn dirty this entry.</p>
 </td>
@@ -269,7 +247,7 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_MaterialResourcesCacheEntry_SetResources_WaveEngine_Framework_Graphics_Effects_EngineShaderParameters_WaveEngine_Framework_Graphics_Material_System_UInt32____">SetResources(EngineShaderParameters, Material, ref UInt32[])</a></td>
+        <td><a href="#WaveEngine_Framework_Graphics_MaterialResourcesCacheEntry_SetResources_WaveEngine_Framework_Graphics_Effects_EngineShaderParameters_System_UInt32____">SetResources(EngineShaderParameters, ref UInt32[])</a></td>
         <td><p>Set parameters to shaders.</p>
 </td>
       </tr>
@@ -282,6 +260,14 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Collect()</code></pre>
+  </div>
+  <h4 id="WaveEngine_Framework_Graphics_MaterialResourcesCacheEntry_Destroy" data-uid="WaveEngine.Framework.Graphics.MaterialResourcesCacheEntry.Destroy">Destroy()</h4>
+  <div class="markdown level1 summary"><p>Destroy all resources of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Destroy()</code></pre>
   </div>
   <h4 id="WaveEngine_Framework_Graphics_MaterialResourcesCacheEntry_MakePipelineDirty" data-uid="WaveEngine.Framework.Graphics.MaterialResourcesCacheEntry.MakePipelineDirty">MakePipelineDirty()</h4>
   <div class="markdown level1 summary"><p>Turn dirty this entry.</p>
@@ -333,13 +319,13 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Graphics_MaterialResourcesCacheEntry_SetResources_WaveEngine_Framework_Graphics_Effects_EngineShaderParameters_WaveEngine_Framework_Graphics_Material_System_UInt32____" data-uid="WaveEngine.Framework.Graphics.MaterialResourcesCacheEntry.SetResources(WaveEngine.Framework.Graphics.Effects.EngineShaderParameters,WaveEngine.Framework.Graphics.Material,System.UInt32[]@)">SetResources(EngineShaderParameters, Material, ref UInt32[])</h4>
+  <h4 id="WaveEngine_Framework_Graphics_MaterialResourcesCacheEntry_SetResources_WaveEngine_Framework_Graphics_Effects_EngineShaderParameters_System_UInt32____" data-uid="WaveEngine.Framework.Graphics.MaterialResourcesCacheEntry.SetResources(WaveEngine.Framework.Graphics.Effects.EngineShaderParameters,System.UInt32[]@)">SetResources(EngineShaderParameters, ref UInt32[])</h4>
   <div class="markdown level1 summary"><p>Set parameters to shaders.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetResources(EngineShaderParameters effectAutoParamSource, Material material, ref uint[] dynamicCBufferOffsets)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetResources(EngineShaderParameters effectParams, ref uint[] dynamicCBufferOffsets)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -353,24 +339,22 @@
     <tbody>
       <tr>
         <td><a class="xref" href="WaveEngine.Framework.Graphics.Effects.EngineShaderParameters.html">EngineShaderParameters</a></td>
-        <td><em>effectAutoParamSource</em></td>
+        <td><em>effectParams</em></td>
         <td><p>The effect auto parameters.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="WaveEngine.Framework.Graphics.Material.html">Material</a></td>
-        <td><em>material</em></td>
-        <td><p>The material.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span>[]</td>
         <td><em>dynamicCBufferOffsets</em></td>
-        <td><p>The dynamic offsets.</p>
+        <td><p>The dynamic buffer offsets array.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly(Object)</a>

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace WaveEngine.Converter
+    <title>Enum AccelerationStructureGeometryFlags
    | Wave Engine API Doc </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace WaveEngine.Converter
+    <meta name="title" content="Enum AccelerationStructureGeometryFlags
    | Wave Engine API Doc ">
     <meta name="generator" content="docfx 2.57.2.0">
     
@@ -78,37 +78,60 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="WaveEngine.Converter">
+            <article class="content wrap" id="_content" data-uid="WaveEngine.Common.Graphics.Raytracing.AccelerationStructureGeometryFlags">
   
-  <h1 id="WaveEngine_Converter" data-uid="WaveEngine.Converter">Namespace WaveEngine.Converter
+  
+  <h1 id="WaveEngine_Common_Graphics_Raytracing_AccelerationStructureGeometryFlags" data-uid="WaveEngine.Common.Graphics.Raytracing.AccelerationStructureGeometryFlags" class="text-break">Enum AccelerationStructureGeometryFlags
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Flags specifying additional parameters for acceleration structure builds.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h2 id="classes">Classes
-  </h2>
-    <div class="table-responsive">
-      <table class="table table-bordered table-striped table-condensed">
-          <tr>
-              <td>
-                  <p><a class="xref" href="WaveEngine.Converter.ConverterService.html">ConverterService</a></p>
-              </td>
-              <td>
-                  <section><p>A converter service for different platforms.</p>
-</section>
-              </td>
-          </tr>  
-          <tr>
-              <td>
-                  <p><a class="xref" href="WaveEngine.Converter.TemplatesService.html">TemplatesService</a></p>
-              </td>
-              <td>
-                  <section><p>Service to retrive available templates.</p>
-</section>
-              </td>
-          </tr>  
-      </table>
-    </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="WaveEngine.Common.Graphics.Raytracing.html">WaveEngine.Common.Graphics.Raytracing</a></h6>
+  <h6><strong>Assembly</strong>: WaveEngine.Common.dll</h6>
+  <h5 id="WaveEngine_Common_Graphics_Raytracing_AccelerationStructureGeometryFlags_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Flags]
+public enum AccelerationStructureGeometryFlags</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="WaveEngine_Common_Graphics_Raytracing_AccelerationStructureGeometryFlags_NoDuplicateAnyhitInverseOcation">NoDuplicateAnyhitInverseOcation</td>
+        <td><p>By default, the system is free to trigger an any hit shader more than once for a given ray-primitive intersection.
+This flexibility helps improve the traversal efficiency of acceleration structures in certain cases</p>
+</td>
+      </tr>
+      <tr>
+        <td id="WaveEngine_Common_Graphics_Raytracing_AccelerationStructureGeometryFlags_None">None</td>
+        <td><p>No options specified.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="WaveEngine_Common_Graphics_Raytracing_AccelerationStructureGeometryFlags_Opaque">Opaque</td>
+        <td><p>When rays encounter this geometry, the geometry acts as if no any hit shader is present.
+It is recommended to use this flag liberally, as it can enable important ray processing optimizations.</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.EnumExtensions.html#WaveEngine_Common_Helpers_EnumExtensions_HasFlag_System_Enum_System_Enum_">EnumExtensions.HasFlag(Enum)</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetMemberAssembly_System_Object_">ReflectionHelper.GetMemberAssembly()</a>
+  </div>
+  <div>
+      <a class="xref" href="WaveEngine.Common.Helpers.ReflectionHelper.html#WaveEngine_Common_Helpers_ReflectionHelper_GetTypeName_System_Object_">ReflectionHelper.GetTypeName()</a>
+  </div>
 </article>
           </div>
           

@@ -236,6 +236,11 @@
 </td>
       </tr>
       <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_LightDrawContext_MultiviewInstancingCount">MultiviewInstancingCount</a></td>
+        <td><p>Gets the number of instance count to render all views.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_Framework_Graphics_LightDrawContext_MultiviewPosition">MultiviewPosition</a></td>
         <td><p>Gets the Multiview position array.</p>
 </td>
@@ -308,6 +313,11 @@
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_LightDrawContext_View">View</a></td>
         <td><p>Gets the view transform.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_LightDrawContext_ViewCount">ViewCount</a></td>
+        <td><p>Gets the number of views of this draw context.</p>
 </td>
       </tr>
       <tr>
@@ -454,6 +464,33 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override int MultiviewEyeCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_LightDrawContext_MultiviewInstancingCount" data-uid="WaveEngine.Framework.Graphics.LightDrawContext.MultiviewInstancingCount">MultiviewInstancingCount</h4>
+  <div class="markdown level1 summary"><p>Gets the number of instance count to render all views.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Graphics_LightDrawContext_MultiviewInstancingCount_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In a Multiview with RenderTargetIndex strategy the number is  MultiviewEyeCount,
+but in ViewIndex strategy the instanceCount is 1.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int MultiviewInstancingCount { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -815,6 +852,32 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_Framework_Graphics_LightDrawContext_ViewCount" data-uid="WaveEngine.Framework.Graphics.LightDrawContext.ViewCount">ViewCount</h4>
+  <div class="markdown level1 summary"><p>Gets the number of views of this draw context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Graphics_LightDrawContext_ViewCount_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A draw context can contains several views (cascade shadows, point light shadows, reflection probe, etc...).</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int ViewCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Framework_Graphics_LightDrawContext_ViewIndex" data-uid="WaveEngine.Framework.Graphics.LightDrawContext.ViewIndex">ViewIndex</h4>
   <div class="markdown level1 summary"><p>Gets the View index of this draw context.</p>
 </div>
@@ -932,12 +995,12 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_LightDrawContext_Render">Render()</a></td>
+        <td><a href="#WaveEngine_Framework_Graphics_LightDrawContext_Render_WaveEngine_Common_Graphics_CommandBuffer_">Render(CommandBuffer)</a></td>
         <td><p>Execute the draw action of draw context.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_LightDrawContext_SetPerViewResources">SetPerViewResources()</a></td>
+        <td><a href="#WaveEngine_Framework_Graphics_LightDrawContext_SetPerViewEngineParameters">SetPerViewEngineParameters()</a></td>
         <td><p>Collect shader resources per view.</p>
 </td>
       </tr>
@@ -1009,21 +1072,39 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Graphics_LightDrawContext_Render" data-uid="WaveEngine.Framework.Graphics.LightDrawContext.Render">Render()</h4>
+  <h4 id="WaveEngine_Framework_Graphics_LightDrawContext_Render_WaveEngine_Common_Graphics_CommandBuffer_" data-uid="WaveEngine.Framework.Graphics.LightDrawContext.Render(WaveEngine.Common.Graphics.CommandBuffer)">Render(CommandBuffer)</h4>
   <div class="markdown level1 summary"><p>Execute the draw action of draw context.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Render()</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Render(CommandBuffer commandBuffer)</code></pre>
   </div>
-  <h4 id="WaveEngine_Framework_Graphics_LightDrawContext_SetPerViewResources" data-uid="WaveEngine.Framework.Graphics.LightDrawContext.SetPerViewResources">SetPerViewResources()</h4>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.CommandBuffer.html">CommandBuffer</a></td>
+        <td><em>commandBuffer</em></td>
+        <td><p>The command buffer used to render.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_LightDrawContext_SetPerViewEngineParameters" data-uid="WaveEngine.Framework.Graphics.LightDrawContext.SetPerViewEngineParameters">SetPerViewEngineParameters()</h4>
   <div class="markdown level1 summary"><p>Collect shader resources per view.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void SetPerViewResources()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void SetPerViewEngineParameters()</code></pre>
   </div>
   <h3 id="implements">Implements</h3>
   <div>

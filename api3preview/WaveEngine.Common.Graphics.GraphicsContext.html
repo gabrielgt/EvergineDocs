@@ -95,6 +95,47 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class GraphicsContext : IDisposable, IGetNativePointers</code></pre>
   </div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="fields-summary">Summary</h4>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#WaveEngine_Common_Graphics_GraphicsContext_TimestampFrequency">TimestampFrequency</a></td>
+        <td><p>the rate at which the GPU timestamp counter increments.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Common_Graphics_GraphicsContext_TimestampFrequency" data-uid="WaveEngine.Common.Graphics.GraphicsContext.TimestampFrequency">TimestampFrequency</h4>
+  <div class="markdown level1 summary"><p>the rate at which the GPU timestamp counter increments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong TimestampFrequency</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <h4 id="properties-summary">Summary</h4>
@@ -434,6 +475,11 @@ The initial size of this uploaders is defined by this property, The Default valu
       <tr>
         <td><a href="#WaveEngine_Common_Graphics_GraphicsContext_ShaderCompile_System_String_System_String_WaveEngine_Common_Graphics_ShaderStages_WaveEngine_Common_Graphics_CompilerParameters_">ShaderCompile(String, String, ShaderStages, CompilerParameters)</a></td>
         <td><p>Converts the shader source into bytecode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Common_Graphics_GraphicsContext_SyncUpcopyQueue">SyncUpcopyQueue()</a></td>
+        <td><p>Sync the current buffer data in the copyQueue. Internal function used in the uploadbuffer strategy.</p>
 </td>
       </tr>
       <tr>
@@ -895,6 +941,14 @@ The initial size of this uploaders is defined by this property, The Default valu
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_Common_Graphics_GraphicsContext_SyncUpcopyQueue" data-uid="WaveEngine.Common.Graphics.GraphicsContext.SyncUpcopyQueue">SyncUpcopyQueue()</h4>
+  <div class="markdown level1 summary"><p>Sync the current buffer data in the copyQueue. Internal function used in the uploadbuffer strategy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SyncUpcopyQueue()</code></pre>
+  </div>
   <h4 id="WaveEngine_Common_Graphics_GraphicsContext_UnmapMemory_WaveEngine_Common_Graphics_GraphicsResource_System_UInt32_" data-uid="WaveEngine.Common.Graphics.GraphicsContext.UnmapMemory(WaveEngine.Common.Graphics.GraphicsResource,System.UInt32)">UnmapMemory(GraphicsResource, UInt32)</h4>
   <div class="markdown level1 summary"><p>Invalidates a previously-mapped data region for the given <a class="xref" href="WaveEngine.Common.Graphics.Buffer.html">Buffer</a> or <a class="xref" href="WaveEngine.Common.Graphics.Texture.html">Texture</a>.</p>
 </div>

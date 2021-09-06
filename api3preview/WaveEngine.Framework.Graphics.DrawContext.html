@@ -179,6 +179,11 @@
 </td>
       </tr>
       <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_DrawContext_DrawContextResources">DrawContextResources</a></td>
+        <td><p>The material collection associated to this draw context.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_Framework_Graphics_DrawContext_EffectAutoParamSource">EffectAutoParamSource</a></td>
         <td><p>Instance used to automatically pass parameters to effects.</p>
 </td>
@@ -196,6 +201,11 @@
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_DrawContext_ID">ID</a></td>
         <td><p>Gets the identified id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_DrawContext_MultiviewStrategy">MultiviewStrategy</a></td>
+        <td><p>The cached multiview strategy of this graphic context device.</p>
 </td>
       </tr>
       <tr>
@@ -289,6 +299,29 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_Framework_Graphics_DrawContext_DrawContextResources" data-uid="WaveEngine.Framework.Graphics.DrawContext.DrawContextResources">DrawContextResources</h4>
+  <div class="markdown level1 summary"><p>The material collection associated to this draw context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DrawContextResources DrawContextResources</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.DrawContextResources.html">DrawContextResources</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Framework_Graphics_DrawContext_EffectAutoParamSource" data-uid="WaveEngine.Framework.Graphics.DrawContext.EffectAutoParamSource">EffectAutoParamSource</h4>
   <div class="markdown level1 summary"><p>Instance used to automatically pass parameters to effects.</p>
 </div>
@@ -377,6 +410,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_DrawContext_MultiviewStrategy" data-uid="WaveEngine.Framework.Graphics.DrawContext.MultiviewStrategy">MultiviewStrategy</h4>
+  <div class="markdown level1 summary"><p>The cached multiview strategy of this graphic context device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly MultiviewStrategy MultiviewStrategy</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.MultiviewStrategy.html">MultiviewStrategy</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -525,10 +581,15 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_DrawContext_IntermediateFrameBuffer">IntermediateFrameBuffer</a></td>
+        <td><a href="#WaveEngine_Framework_Graphics_DrawContext_HighResolutionIntermediateFrameBuffer">HighResolutionIntermediateFrameBuffer</a></td>
         <td><p>Gets or sets the intermediate framebuffer.
 Is used whether the framebuffer came from swapchain, then the renderPath will use this intermediateFramebuffer to render before
 to transfer the intermediateFrameBuffer to Framebuffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_DrawContext_IntermediateFrameBuffer">IntermediateFrameBuffer</a></td>
+        <td><p>Gets the intermediate framebuffer depending of whether super resolution is enable or not.</p>
 </td>
       </tr>
       <tr>
@@ -537,13 +598,25 @@ to transfer the intermediateFrameBuffer to Framebuffer.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_DrawContext_IsStereo">IsStereo</a></td>
+        <td><a href="#WaveEngine_Framework_Graphics_DrawContext_IsMultiview">IsMultiview</a></td>
         <td><p>Gets or sets a value indicating whether this draw context will draw in a stereo display.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_DrawContext_LowResolutionIntermediateFrameBuffer">LowResolutionIntermediateFrameBuffer</a></td>
+        <td><p>Gets or sets the low resolution intermediate framebuffer.
+This buffer is used by the render after that will be upsampling and copy to the IntermediateFramebuffer before to transfer
+to FrameBuffer swapchain.</p>
 </td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_DrawContext_MultiviewEyeCount">MultiviewEyeCount</a></td>
         <td><p>Gets the number of views of this drawcontext.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_DrawContext_MultiviewInstancingCount">MultiviewInstancingCount</a></td>
+        <td><p>Gets the number of instance count to render all views.</p>
 </td>
       </tr>
       <tr>
@@ -612,6 +685,17 @@ to transfer the intermediateFrameBuffer to Framebuffer.</p>
 </td>
       </tr>
       <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_DrawContext_SuperResolutionEnabled">SuperResolutionEnabled</a></td>
+        <td><p>Gets or sets a value indicating whether the super resolution is enabled.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_DrawContext_SuperResolutionScaleFactor">SuperResolutionScaleFactor</a></td>
+        <td><p>Gets or sets Scale Factor for FidelityFX 1.0
+Performance 2.0, Balance 1.7, Quality 1.5, UltraQuality 1.7.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_Framework_Graphics_DrawContext_Transform">Transform</a></td>
         <td><p>Gets the view object transform.</p>
 </td>
@@ -619,6 +703,11 @@ to transfer the intermediateFrameBuffer to Framebuffer.</p>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_DrawContext_View">View</a></td>
         <td><p>Gets the view transform.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_DrawContext_ViewCount">ViewCount</a></td>
+        <td><p>Gets the number of views of this draw context.</p>
 </td>
       </tr>
       <tr>
@@ -827,7 +916,7 @@ to transfer the intermediateFrameBuffer to Framebuffer.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Graphics_DrawContext_IntermediateFrameBuffer" data-uid="WaveEngine.Framework.Graphics.DrawContext.IntermediateFrameBuffer">IntermediateFrameBuffer</h4>
+  <h4 id="WaveEngine_Framework_Graphics_DrawContext_HighResolutionIntermediateFrameBuffer" data-uid="WaveEngine.Framework.Graphics.DrawContext.HighResolutionIntermediateFrameBuffer">HighResolutionIntermediateFrameBuffer</h4>
   <div class="markdown level1 summary"><p>Gets or sets the intermediate framebuffer.
 Is used whether the framebuffer came from swapchain, then the renderPath will use this intermediateFramebuffer to render before
 to transfer the intermediateFrameBuffer to Framebuffer.</p>
@@ -835,7 +924,30 @@ to transfer the intermediateFrameBuffer to Framebuffer.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FrameBuffer IntermediateFrameBuffer { get; protected set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public FrameBuffer HighResolutionIntermediateFrameBuffer { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.FrameBuffer.html">FrameBuffer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_DrawContext_IntermediateFrameBuffer" data-uid="WaveEngine.Framework.Graphics.DrawContext.IntermediateFrameBuffer">IntermediateFrameBuffer</h4>
+  <div class="markdown level1 summary"><p>Gets the intermediate framebuffer depending of whether super resolution is enable or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrameBuffer IntermediateFrameBuffer { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -875,13 +987,13 @@ to transfer the intermediateFrameBuffer to Framebuffer.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Graphics_DrawContext_IsStereo" data-uid="WaveEngine.Framework.Graphics.DrawContext.IsStereo">IsStereo</h4>
+  <h4 id="WaveEngine_Framework_Graphics_DrawContext_IsMultiview" data-uid="WaveEngine.Framework.Graphics.DrawContext.IsMultiview">IsMultiview</h4>
   <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this draw context will draw in a stereo display.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsStereo { get; protected set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsMultiview { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -898,6 +1010,31 @@ to transfer the intermediateFrameBuffer to Framebuffer.</p>
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_Framework_Graphics_DrawContext_LowResolutionIntermediateFrameBuffer" data-uid="WaveEngine.Framework.Graphics.DrawContext.LowResolutionIntermediateFrameBuffer">LowResolutionIntermediateFrameBuffer</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the low resolution intermediate framebuffer.
+This buffer is used by the render after that will be upsampling and copy to the IntermediateFramebuffer before to transfer
+to FrameBuffer swapchain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrameBuffer LowResolutionIntermediateFrameBuffer { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.FrameBuffer.html">FrameBuffer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Framework_Graphics_DrawContext_MultiviewEyeCount" data-uid="WaveEngine.Framework.Graphics.DrawContext.MultiviewEyeCount">MultiviewEyeCount</h4>
   <div class="markdown level1 summary"><p>Gets the number of views of this drawcontext.</p>
 </div>
@@ -905,6 +1042,33 @@ to transfer the intermediateFrameBuffer to Framebuffer.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract int MultiviewEyeCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_DrawContext_MultiviewInstancingCount" data-uid="WaveEngine.Framework.Graphics.DrawContext.MultiviewInstancingCount">MultiviewInstancingCount</h4>
+  <div class="markdown level1 summary"><p>Gets the number of instance count to render all views.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Graphics_DrawContext_MultiviewInstancingCount_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In a Multiview with RenderTargetIndex strategy the number is  MultiviewEyeCount,
+but in ViewIndex strategy the instanceCount is 1.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int MultiviewInstancingCount { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1223,6 +1387,53 @@ to transfer the intermediateFrameBuffer to Framebuffer.</p>
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_Framework_Graphics_DrawContext_SuperResolutionEnabled" data-uid="WaveEngine.Framework.Graphics.DrawContext.SuperResolutionEnabled">SuperResolutionEnabled</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the super resolution is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SuperResolutionEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_DrawContext_SuperResolutionScaleFactor" data-uid="WaveEngine.Framework.Graphics.DrawContext.SuperResolutionScaleFactor">SuperResolutionScaleFactor</h4>
+  <div class="markdown level1 summary"><p>Gets or sets Scale Factor for FidelityFX 1.0
+Performance 2.0, Balance 1.7, Quality 1.5, UltraQuality 1.7.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SuperResolutionScaleFactor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Framework_Graphics_DrawContext_Transform" data-uid="WaveEngine.Framework.Graphics.DrawContext.Transform">Transform</h4>
   <div class="markdown level1 summary"><p>Gets the view object transform.</p>
 </div>
@@ -1265,6 +1476,32 @@ to transfer the intermediateFrameBuffer to Framebuffer.</p>
     <tbody>
       <tr>
         <td><span class="xref">Matrix4x4</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_DrawContext_ViewCount" data-uid="WaveEngine.Framework.Graphics.DrawContext.ViewCount">ViewCount</h4>
+  <div class="markdown level1 summary"><p>Gets the number of views of this draw context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Framework_Graphics_DrawContext_ViewCount_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A draw context can contains several views (cascade shadows, point light shadows, reflection probe, etc...).</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int ViewCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1401,6 +1638,11 @@ to transfer the intermediateFrameBuffer to Framebuffer.</p>
 </td>
       </tr>
       <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_DrawContext_CollectMaterials">CollectMaterials()</a></td>
+        <td><p>Update all per view constant buffers.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_Framework_Graphics_DrawContext_CollectMeshSources">CollectMeshSources()</a></td>
         <td><p>Gets the mesh sources.</p>
 </td>
@@ -1408,6 +1650,11 @@ to transfer the intermediateFrameBuffer to Framebuffer.</p>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_DrawContext_CouldBatch_System_Int32_WaveEngine_Framework_Graphics_RenderObjectInfo_System_Int32_WaveEngine_Framework_Graphics_RenderObjectInfo_">CouldBatch(Int32, RenderObjectInfo, Int32, RenderObjectInfo)</a></td>
         <td><p>Method that indicates if this drawContext could batch this meshes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_DrawContext_CullLights">CullLights()</a></td>
+        <td><p>Cull non visible meshes.</p>
 </td>
       </tr>
       <tr>
@@ -1471,7 +1718,7 @@ to transfer the intermediateFrameBuffer to Framebuffer.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_DrawContext_Render">Render()</a></td>
+        <td><a href="#WaveEngine_Framework_Graphics_DrawContext_Render_WaveEngine_Common_Graphics_CommandBuffer_">Render(CommandBuffer)</a></td>
         <td><p>Execute the draw action of draw context.</p>
 </td>
       </tr>
@@ -1486,7 +1733,7 @@ to transfer the intermediateFrameBuffer to Framebuffer.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_DrawContext_SetPerViewResources">SetPerViewResources()</a></td>
+        <td><a href="#WaveEngine_Framework_Graphics_DrawContext_SetPerViewEngineParameters">SetPerViewEngineParameters()</a></td>
         <td><p>Collect shader resources per view.</p>
 </td>
       </tr>
@@ -1570,6 +1817,14 @@ to transfer the intermediateFrameBuffer to Framebuffer.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void CollectBatches()</code></pre>
+  </div>
+  <h4 id="WaveEngine_Framework_Graphics_DrawContext_CollectMaterials" data-uid="WaveEngine.Framework.Graphics.DrawContext.CollectMaterials">CollectMaterials()</h4>
+  <div class="markdown level1 summary"><p>Update all per view constant buffers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CollectMaterials()</code></pre>
   </div>
   <h4 id="WaveEngine_Framework_Graphics_DrawContext_CollectMeshSources" data-uid="WaveEngine.Framework.Graphics.DrawContext.CollectMeshSources">CollectMeshSources()</h4>
   <div class="markdown level1 summary"><p>Gets the mesh sources.</p>
@@ -1655,6 +1910,14 @@ to transfer the intermediateFrameBuffer to Framebuffer.</p>
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_Framework_Graphics_DrawContext_CullLights" data-uid="WaveEngine.Framework.Graphics.DrawContext.CullLights">CullLights()</h4>
+  <div class="markdown level1 summary"><p>Cull non visible meshes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CullLights()</code></pre>
+  </div>
   <h4 id="WaveEngine_Framework_Graphics_DrawContext_CullObjects" data-uid="WaveEngine.Framework.Graphics.DrawContext.CullObjects">CullObjects()</h4>
   <div class="markdown level1 summary"><p>Cull non visible meshes.</p>
 </div>
@@ -1957,14 +2220,32 @@ to transfer the intermediateFrameBuffer to Framebuffer.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Graphics_DrawContext_Render" data-uid="WaveEngine.Framework.Graphics.DrawContext.Render">Render()</h4>
+  <h4 id="WaveEngine_Framework_Graphics_DrawContext_Render_WaveEngine_Common_Graphics_CommandBuffer_" data-uid="WaveEngine.Framework.Graphics.DrawContext.Render(WaveEngine.Common.Graphics.CommandBuffer)">Render(CommandBuffer)</h4>
   <div class="markdown level1 summary"><p>Execute the draw action of draw context.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void Render()</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract void Render(CommandBuffer commandBuffer)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Common.Graphics.CommandBuffer.html">CommandBuffer</a></td>
+        <td><em>commandBuffer</em></td>
+        <td><p>The command buffer used to render.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Framework_Graphics_DrawContext_RenderBatches_System_Int32_WaveEngine_Common_Graphics_CommandBuffer_" data-uid="WaveEngine.Framework.Graphics.DrawContext.RenderBatches(System.Int32,WaveEngine.Common.Graphics.CommandBuffer)">RenderBatches(Int32, CommandBuffer)</h4>
   <div class="markdown level1 summary"><p>Batches the render passes.</p>
 </div>
@@ -2041,13 +2322,13 @@ to transfer the intermediateFrameBuffer to Framebuffer.</p>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Graphics_DrawContext_SetPerViewResources" data-uid="WaveEngine.Framework.Graphics.DrawContext.SetPerViewResources">SetPerViewResources()</h4>
+  <h4 id="WaveEngine_Framework_Graphics_DrawContext_SetPerViewEngineParameters" data-uid="WaveEngine.Framework.Graphics.DrawContext.SetPerViewEngineParameters">SetPerViewEngineParameters()</h4>
   <div class="markdown level1 summary"><p>Collect shader resources per view.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract void SetPerViewResources()</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract void SetPerViewEngineParameters()</code></pre>
   </div>
   <h4 id="WaveEngine_Framework_Graphics_DrawContext_SortObjects" data-uid="WaveEngine.Framework.Graphics.DrawContext.SortObjects">SortObjects()</h4>
   <div class="markdown level1 summary"><p>Sort the meshes.</p>

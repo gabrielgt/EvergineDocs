@@ -183,7 +183,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Resource NativeTexture</code></pre>
+    <pre><code class="lang-csharp hljs">public ID3D11Resource NativeTexture</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -195,7 +195,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Resource</span></td>
+        <td><span class="xref">ID3D11Resource</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -285,7 +285,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ShaderResourceView ShaderResourceView { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ID3D11ShaderResourceView ShaderResourceView { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -297,7 +297,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ShaderResourceView</span></td>
+        <td><span class="xref">ID3D11ShaderResourceView</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -308,7 +308,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UnorderedAccessView UnorderedAccessView { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ID3D11UnorderedAccessView UnorderedAccessView { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -320,7 +320,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UnorderedAccessView</span></td>
+        <td><span class="xref">ID3D11UnorderedAccessView</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -337,7 +337,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_DirectX11_DX11Texture_CopyTo_DeviceContext_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_WaveEngine_Common_Graphics_Texture_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_">CopyTo(DeviceContext, UInt32, UInt32, UInt32, UInt32, UInt32, Texture, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)</a></td>
+        <td><a href="#WaveEngine_DirectX11_DX11Texture_CopyTo_ID3D11DeviceContext_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_WaveEngine_Common_Graphics_Texture_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_">CopyTo(ID3D11DeviceContext, UInt32, UInt32, UInt32, UInt32, UInt32, Texture, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)</a></td>
         <td><p>Copy a pixel region from source to destination texture.</p>
 </td>
       </tr>
@@ -347,13 +347,13 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_DirectX11_DX11Texture_FromDirectXTexture_WaveEngine_DirectX11_DX11GraphicsContext_System_IntPtr_">FromDirectXTexture(DX11GraphicsContext, IntPtr)</a></td>
-        <td><p>Generate a DXTexture from SharpDX Texture2D.</p>
+        <td><a href="#WaveEngine_DirectX11_DX11Texture_FromDirectXTexture_WaveEngine_DirectX11_DX11GraphicsContext_ID3D11Texture2D_System_Nullable_WaveEngine_Common_Graphics_PixelFormat__">FromDirectXTexture(DX11GraphicsContext, ID3D11Texture2D, Nullable&lt;PixelFormat&gt;)</a></td>
+        <td><p>Generate a DXTexture from Vortice Texture2D.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_DirectX11_DX11Texture_FromDirectXTexture_WaveEngine_DirectX11_DX11GraphicsContext_Texture2D_">FromDirectXTexture(DX11GraphicsContext, Texture2D)</a></td>
-        <td><p>Generate a DXTexture from SharpDX Texture2D.</p>
+        <td><a href="#WaveEngine_DirectX11_DX11Texture_FromDirectXTexture_WaveEngine_DirectX11_DX11GraphicsContext_System_IntPtr_System_Nullable_WaveEngine_Common_Graphics_PixelFormat__">FromDirectXTexture(DX11GraphicsContext, IntPtr, Nullable&lt;PixelFormat&gt;)</a></td>
+        <td><p>Generate a DXTexture from DirectX Texture2D pointer.</p>
 </td>
       </tr>
       <tr>
@@ -377,7 +377,7 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_DirectX11_DX11Texture_SetData_DeviceContext_System_IntPtr_System_UInt32_System_UInt32_">SetData(DeviceContext, IntPtr, UInt32, UInt32)</a></td>
+        <td><a href="#WaveEngine_DirectX11_DX11Texture_SetData_ID3D11DeviceContext_System_IntPtr_System_UInt32_System_UInt32_">SetData(ID3D11DeviceContext, IntPtr, UInt32, UInt32)</a></td>
         <td><p>Fill the buffer from a pointer.</p>
 </td>
       </tr>
@@ -388,13 +388,13 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_DirectX11_DX11Texture_CopyTo_DeviceContext_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_WaveEngine_Common_Graphics_Texture_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_" data-uid="WaveEngine.DirectX11.DX11Texture.CopyTo(DeviceContext,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,WaveEngine.Common.Graphics.Texture,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32)">CopyTo(DeviceContext, UInt32, UInt32, UInt32, UInt32, UInt32, Texture, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)</h4>
+  <h4 id="WaveEngine_DirectX11_DX11Texture_CopyTo_ID3D11DeviceContext_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_WaveEngine_Common_Graphics_Texture_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_" data-uid="WaveEngine.DirectX11.DX11Texture.CopyTo(ID3D11DeviceContext,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,WaveEngine.Common.Graphics.Texture,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32)">CopyTo(ID3D11DeviceContext, UInt32, UInt32, UInt32, UInt32, UInt32, Texture, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)</h4>
   <div class="markdown level1 summary"><p>Copy a pixel region from source to destination texture.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void CopyTo(DeviceContext deviceContext, uint sourceX, uint sourceY, uint sourceZ, uint sourceMipLevel, uint sourceBaseArray, Texture destination, uint destinationX, uint destinationY, uint destinationZ, uint destinationMipLevel, uint destinationBasedArray, uint width, uint height, uint depth, uint layerCount)</code></pre>
+    <pre><code class="lang-csharp hljs">public void CopyTo(ID3D11DeviceContext deviceContext, uint sourceX, uint sourceY, uint sourceZ, uint sourceMipLevel, uint sourceBaseArray, Texture destination, uint destinationX, uint destinationY, uint destinationZ, uint destinationMipLevel, uint destinationBasedArray, uint width, uint height, uint depth, uint layerCount)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -407,7 +407,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DeviceContext</span></td>
+        <td><span class="xref">ID3D11DeviceContext</span></td>
         <td><em>deviceContext</em></td>
         <td><p>Graphics Context.</p>
 </td>
@@ -512,13 +512,67 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
   </div>
-  <h4 id="WaveEngine_DirectX11_DX11Texture_FromDirectXTexture_WaveEngine_DirectX11_DX11GraphicsContext_System_IntPtr_" data-uid="WaveEngine.DirectX11.DX11Texture.FromDirectXTexture(WaveEngine.DirectX11.DX11GraphicsContext,System.IntPtr)">FromDirectXTexture(DX11GraphicsContext, IntPtr)</h4>
-  <div class="markdown level1 summary"><p>Generate a DXTexture from SharpDX Texture2D.</p>
+  <h4 id="WaveEngine_DirectX11_DX11Texture_FromDirectXTexture_WaveEngine_DirectX11_DX11GraphicsContext_ID3D11Texture2D_System_Nullable_WaveEngine_Common_Graphics_PixelFormat__" data-uid="WaveEngine.DirectX11.DX11Texture.FromDirectXTexture(WaveEngine.DirectX11.DX11GraphicsContext,ID3D11Texture2D,System.Nullable{WaveEngine.Common.Graphics.PixelFormat})">FromDirectXTexture(DX11GraphicsContext, ID3D11Texture2D, Nullable&lt;PixelFormat&gt;)</h4>
+  <div class="markdown level1 summary"><p>Generate a DXTexture from Vortice Texture2D.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DX11Texture FromDirectXTexture(DX11GraphicsContext context, IntPtr texturePointer)</code></pre>
+    <pre><code class="lang-csharp hljs">public static DX11Texture FromDirectXTexture(DX11GraphicsContext context, ID3D11Texture2D vorticeTexture, PixelFormat? pixelFormat = default(PixelFormat? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.DirectX11.DX11GraphicsContext.html">DX11GraphicsContext</a></td>
+        <td><em>context</em></td>
+        <td><p>DX context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ID3D11Texture2D</span></td>
+        <td><em>vorticeTexture</em></td>
+        <td><p>ID3D11Texture2D instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="WaveEngine.Common.Graphics.PixelFormat.html">PixelFormat</a>&gt;</td>
+        <td><em>pixelFormat</em></td>
+        <td><p>Overrided pixel format. This only affect to the generated TextureDescription. It does not change the source texture format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.DirectX11.DX11Texture.html">DX11Texture</a></td>
+        <td><p>DXTexture with ID3D11Texture2D as resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_DirectX11_DX11Texture_FromDirectXTexture_WaveEngine_DirectX11_DX11GraphicsContext_System_IntPtr_System_Nullable_WaveEngine_Common_Graphics_PixelFormat__" data-uid="WaveEngine.DirectX11.DX11Texture.FromDirectXTexture(WaveEngine.DirectX11.DX11GraphicsContext,System.IntPtr,System.Nullable{WaveEngine.Common.Graphics.PixelFormat})">FromDirectXTexture(DX11GraphicsContext, IntPtr, Nullable&lt;PixelFormat&gt;)</h4>
+  <div class="markdown level1 summary"><p>Generate a DXTexture from DirectX Texture2D pointer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DX11Texture FromDirectXTexture(DX11GraphicsContext context, IntPtr texturePointer, PixelFormat? pixelFormat = default(PixelFormat? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -539,7 +593,13 @@
       <tr>
         <td><span class="xref">System.IntPtr</span></td>
         <td><em>texturePointer</em></td>
-        <td><p>DirectX Texture pointer.</p>
+        <td><p>DirectX Texture2D pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="WaveEngine.Common.Graphics.PixelFormat.html">PixelFormat</a>&gt;</td>
+        <td><em>pixelFormat</em></td>
+        <td><p>Overrided pixel format. This only affect to the generated TextureDescription. It does not change the source texture format.</p>
 </td>
       </tr>
     </tbody>
@@ -555,55 +615,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="WaveEngine.DirectX11.DX11Texture.html">DX11Texture</a></td>
-        <td><p>DXTexture with SharpDXTexture as resource.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_DirectX11_DX11Texture_FromDirectXTexture_WaveEngine_DirectX11_DX11GraphicsContext_Texture2D_" data-uid="WaveEngine.DirectX11.DX11Texture.FromDirectXTexture(WaveEngine.DirectX11.DX11GraphicsContext,Texture2D)">FromDirectXTexture(DX11GraphicsContext, Texture2D)</h4>
-  <div class="markdown level1 summary"><p>Generate a DXTexture from SharpDX Texture2D.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DX11Texture FromDirectXTexture(DX11GraphicsContext context, Texture2D sharpDXTexture)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="WaveEngine.DirectX11.DX11GraphicsContext.html">DX11GraphicsContext</a></td>
-        <td><em>context</em></td>
-        <td><p>DX context.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Texture2D</span></td>
-        <td><em>sharpDXTexture</em></td>
-        <td><p>SharpDXTexture instance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="WaveEngine.DirectX11.DX11Texture.html">DX11Texture</a></td>
-        <td><p>DXTexture with SharpDXTexture as resource.</p>
+        <td><p>DXTexture from specified DirectX Texture2D pointer.</p>
 </td>
       </tr>
     </tbody>
@@ -614,7 +626,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DepthStencilView GetDepthStencilView(uint firstSlice, uint sliceCount, uint mipSlice)</code></pre>
+    <pre><code class="lang-csharp hljs">public ID3D11DepthStencilView GetDepthStencilView(uint firstSlice, uint sliceCount, uint mipSlice)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -656,7 +668,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DepthStencilView</span></td>
+        <td><span class="xref">ID3D11DepthStencilView</span></td>
         <td><p>A new DepthStencil view.</p>
 </td>
       </tr>
@@ -668,7 +680,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RenderTargetView GetRenderTargetView(uint firstSlice, uint sliceCount, uint mipSlice)</code></pre>
+    <pre><code class="lang-csharp hljs">public ID3D11RenderTargetView GetRenderTargetView(uint firstSlice, uint sliceCount, uint mipSlice)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -710,7 +722,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">RenderTargetView</span></td>
+        <td><span class="xref">ID3D11RenderTargetView</span></td>
         <td><p>A new RenderTargetView instance.</p>
 </td>
       </tr>
@@ -722,7 +734,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ShaderResourceView GetShaderResourceView(uint firstSlice, uint sliceCount, uint mipSlice)</code></pre>
+    <pre><code class="lang-csharp hljs">public ID3D11ShaderResourceView GetShaderResourceView(uint firstSlice, uint sliceCount, uint mipSlice)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -764,7 +776,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ShaderResourceView</span></td>
+        <td><span class="xref">ID3D11ShaderResourceView</span></td>
         <td><p>A new ShaderResource view.</p>
 </td>
       </tr>
@@ -776,7 +788,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UnorderedAccessView GetUnorderedAccessView(uint arraySlice, uint mipSlice)</code></pre>
+    <pre><code class="lang-csharp hljs">public ID3D11UnorderedAccessView GetUnorderedAccessView(uint arraySlice, uint mipSlice)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -812,19 +824,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UnorderedAccessView</span></td>
+        <td><span class="xref">ID3D11UnorderedAccessView</span></td>
         <td><p>A new UnorderedAccessView.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_DirectX11_DX11Texture_SetData_DeviceContext_System_IntPtr_System_UInt32_System_UInt32_" data-uid="WaveEngine.DirectX11.DX11Texture.SetData(DeviceContext,System.IntPtr,System.UInt32,System.UInt32)">SetData(DeviceContext, IntPtr, UInt32, UInt32)</h4>
+  <h4 id="WaveEngine_DirectX11_DX11Texture_SetData_ID3D11DeviceContext_System_IntPtr_System_UInt32_System_UInt32_" data-uid="WaveEngine.DirectX11.DX11Texture.SetData(ID3D11DeviceContext,System.IntPtr,System.UInt32,System.UInt32)">SetData(ID3D11DeviceContext, IntPtr, UInt32, UInt32)</h4>
   <div class="markdown level1 summary"><p>Fill the buffer from a pointer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetData(DeviceContext deviceContext, IntPtr source, uint sourceSizeInBytes, uint subResource = 0U)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetData(ID3D11DeviceContext deviceContext, IntPtr source, uint sourceSizeInBytes, uint subResource = 0U)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -837,7 +849,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DeviceContext</span></td>
+        <td><span class="xref">ID3D11DeviceContext</span></td>
         <td><em>deviceContext</em></td>
         <td><p>Device Context.</p>
 </td>

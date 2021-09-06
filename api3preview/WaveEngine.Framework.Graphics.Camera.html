@@ -3781,27 +3781,6 @@ public bool UsePhysicalParameters { get; set; }</code></pre>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_Camera_Project_Vector3__">Project(ref Vector3)</a></td>
-        <td><p>Transforms position from world space into screen space.
-Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
-The z position is in world units from the camera.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_Camera_Project_Vector3__Matrix4x4__Matrix4x4__Matrix4x4__">Project(ref Vector3, ref Matrix4x4, ref Matrix4x4, ref Matrix4x4)</a></td>
-        <td><p>Transforms position from world space into screen space.
-Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
-The z position is in world units from the camera.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_Camera_Project_Vector3__Vector3__">Project(ref Vector3, out Vector3)</a></td>
-        <td><p>Transforms position from world space into screen space.
-Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
-The z position is in world units from the camera.</p>
-</td>
-      </tr>
-      <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Camera_RefreshAspectRatio">RefreshAspectRatio()</a></td>
         <td><p>Refreshes the aspect ratio.</p>
 </td>
@@ -3847,6 +3826,22 @@ The z position is in world units from the camera.</p>
 </td>
       </tr>
       <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_ScreenToWorld_Vector3__">ScreenToWorld(ref Vector3)</a></td>
+        <td><p>Transforms a point from screen space into world space. World space coordinates can still be calculated even when
+provided as an off-screen coordinate, for example for instantiating an off-screen object near a specific corner of the screen.
+Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
+The z position is in world units from the camera.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_ScreenToWorld_Vector3__Vector3__">ScreenToWorld(ref Vector3, out Vector3)</a></td>
+        <td><p>Transforms a point from screen space into world space. World space coordinates can still be calculated even when
+provided as an off-screen coordinate, for example for instantiating an off-screen object near a specific corner of the screen.
+Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
+The z position is in world units from the camera.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Camera_SetCustomProjection_Matrix4x4_">SetCustomProjection(Matrix4x4)</a></td>
         <td><p>Specify a custom projection to that camera. This methods override the default projection.</p>
 </td>
@@ -3867,30 +3862,6 @@ The z position is in world units from the camera.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_Camera_Unproject_Vector3__">Unproject(ref Vector3)</a></td>
-        <td><p>Transforms a point from screen space into world space. World space coordinates can still be calculated even when
-provided as an off-screen coordinate, for example for instantiating an off-screen object near a specific corner of the screen.
-Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
-The z position is in world units from the camera.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_Camera_Unproject_Vector3__Matrix4x4__Matrix4x4__Matrix4x4__">Unproject(ref Vector3, ref Matrix4x4, ref Matrix4x4, ref Matrix4x4)</a></td>
-        <td><p>Transforms a point from screen space into world space. World space coordinates can still be calculated even when
-provided as an off-screen coordinate, for example for instantiating an off-screen object near a specific corner of the screen.
-Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
-The z position is in world units from the camera.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_Camera_Unproject_Vector3__Vector3__">Unproject(ref Vector3, out Vector3)</a></td>
-        <td><p>Transforms a point from screen space into world space. World space coordinates can still be calculated even when
-provided as an off-screen coordinate, for example for instantiating an off-screen object near a specific corner of the screen.
-Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
-The z position is in world units from the camera.</p>
-</td>
-      </tr>
-      <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Camera_UnsuscribeDisplayEvents">UnsuscribeDisplayEvents()</a></td>
         <td><p>Unsubscribe display events.</p>
 </td>
@@ -3903,6 +3874,20 @@ The z position is in world units from the camera.</p>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Camera_WithinEpsilon_System_Single_System_Single_">WithinEpsilon(Single, Single)</a></td>
         <td><p>Withins the epsilon.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_WorldToScreen_Vector3__">WorldToScreen(ref Vector3)</a></td>
+        <td><p>Transforms position from world space into screen space.
+Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
+The z position is in world units from the camera.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Camera_WorldToScreen_Vector3__Vector3__">WorldToScreen(ref Vector3, out Vector3)</a></td>
+        <td><p>Transforms position from world space into screen space.
+Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
+The z position is in world units from the camera.</p>
 </td>
       </tr>
     </tbody>
@@ -4021,146 +4006,6 @@ The z position is in world units from the camera.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void PreRender()</code></pre>
   </div>
-  <h4 id="WaveEngine_Framework_Graphics_Camera_Project_Vector3__" data-uid="WaveEngine.Framework.Graphics.Camera.Project(Vector3@)">Project(ref Vector3)</h4>
-  <div class="markdown level1 summary"><p>Transforms position from world space into screen space.
-Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
-The z position is in world units from the camera.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3 Project(ref Vector3 position)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><em>position</em></td>
-        <td><p>A world space position.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><p>The screen space point <see cref="!:Vector3"></see> created by converting the world space position.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_Framework_Graphics_Camera_Project_Vector3__Matrix4x4__Matrix4x4__Matrix4x4__" data-uid="WaveEngine.Framework.Graphics.Camera.Project(Vector3@,Matrix4x4@,Matrix4x4@,Matrix4x4@)">Project(ref Vector3, ref Matrix4x4, ref Matrix4x4, ref Matrix4x4)</h4>
-  <div class="markdown level1 summary"><p>Transforms position from world space into screen space.
-Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
-The z position is in world units from the camera.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3 Project(ref Vector3 position, ref Matrix4x4 view, ref Matrix4x4 projection, ref Matrix4x4 world)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><em>position</em></td>
-        <td><p>A world space position.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Matrix4x4</span></td>
-        <td><em>view</em></td>
-        <td><p>The view matrix to be used.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Matrix4x4</span></td>
-        <td><em>projection</em></td>
-        <td><p>The projection matrix to be used.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Matrix4x4</span></td>
-        <td><em>world</em></td>
-        <td><p>The world matrix to be used.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><p>The screen space point <see cref="!:Vector3"></see> created by converting the world space position.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_Framework_Graphics_Camera_Project_Vector3__Vector3__" data-uid="WaveEngine.Framework.Graphics.Camera.Project(Vector3@,Vector3@)">Project(ref Vector3, out Vector3)</h4>
-  <div class="markdown level1 summary"><p>Transforms position from world space into screen space.
-Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
-The z position is in world units from the camera.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Project(ref Vector3 position, out Vector3 result)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><em>position</em></td>
-        <td><p>A world space position.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><em>result</em></td>
-        <td><p>The screen space point <see cref="!:Vector3"></see> created by converting the world space position.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h4 id="WaveEngine_Framework_Graphics_Camera_RefreshAspectRatio" data-uid="WaveEngine.Framework.Graphics.Camera.RefreshAspectRatio">RefreshAspectRatio()</h4>
   <div class="markdown level1 summary"><p>Refreshes the aspect ratio.</p>
 </div>
@@ -4233,6 +4078,86 @@ The z position is in world units from the camera.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ResetCustomProjection()</code></pre>
   </div>
+  <h4 id="WaveEngine_Framework_Graphics_Camera_ScreenToWorld_Vector3__" data-uid="WaveEngine.Framework.Graphics.Camera.ScreenToWorld(Vector3@)">ScreenToWorld(ref Vector3)</h4>
+  <div class="markdown level1 summary"><p>Transforms a point from screen space into world space. World space coordinates can still be calculated even when
+provided as an off-screen coordinate, for example for instantiating an off-screen object near a specific corner of the screen.
+Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
+The z position is in world units from the camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 ScreenToWorld(ref Vector3 position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><em>position</em></td>
+        <td><p>A screen space position in pixels (often mouse x, y), plus a z position for depth in world space (for example, a camera clipping plane).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><p>The world space <see cref="!:Vector3"></see> created by converting the screen space point at the provided distance z from the camera plane.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_Camera_ScreenToWorld_Vector3__Vector3__" data-uid="WaveEngine.Framework.Graphics.Camera.ScreenToWorld(Vector3@,Vector3@)">ScreenToWorld(ref Vector3, out Vector3)</h4>
+  <div class="markdown level1 summary"><p>Transforms a point from screen space into world space. World space coordinates can still be calculated even when
+provided as an off-screen coordinate, for example for instantiating an off-screen object near a specific corner of the screen.
+Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
+The z position is in world units from the camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScreenToWorld(ref Vector3 position, out Vector3 result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><em>position</em></td>
+        <td><p>A screen space position in pixels (often mouse x, y), plus a z position for depth in world space (for example, a camera clipping plane).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><em>result</em></td>
+        <td><p>The world space <see cref="!:Vector3"></see> created by converting the screen space point at the provided distance z from the camera plane.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Framework_Graphics_Camera_SetCustomProjection_Matrix4x4_" data-uid="WaveEngine.Framework.Graphics.Camera.SetCustomProjection(Matrix4x4)">SetCustomProjection(Matrix4x4)</h4>
   <div class="markdown level1 summary"><p>Specify a custom projection to that camera. This methods override the default projection.</p>
 </div>
@@ -4319,149 +4244,6 @@ The z position is in world units from the camera.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected void SuscribeDisplayEvents()</code></pre>
   </div>
-  <h4 id="WaveEngine_Framework_Graphics_Camera_Unproject_Vector3__" data-uid="WaveEngine.Framework.Graphics.Camera.Unproject(Vector3@)">Unproject(ref Vector3)</h4>
-  <div class="markdown level1 summary"><p>Transforms a point from screen space into world space. World space coordinates can still be calculated even when
-provided as an off-screen coordinate, for example for instantiating an off-screen object near a specific corner of the screen.
-Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
-The z position is in world units from the camera.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3 Unproject(ref Vector3 position)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><em>position</em></td>
-        <td><p>A screen space position in pixels (often mouse x, y), plus a z position for depth in world space (for example, a camera clipping plane).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><p>The world space <see cref="!:Vector3"></see> created by converting the screen space point at the provided distance z from the camera plane.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_Framework_Graphics_Camera_Unproject_Vector3__Matrix4x4__Matrix4x4__Matrix4x4__" data-uid="WaveEngine.Framework.Graphics.Camera.Unproject(Vector3@,Matrix4x4@,Matrix4x4@,Matrix4x4@)">Unproject(ref Vector3, ref Matrix4x4, ref Matrix4x4, ref Matrix4x4)</h4>
-  <div class="markdown level1 summary"><p>Transforms a point from screen space into world space. World space coordinates can still be calculated even when
-provided as an off-screen coordinate, for example for instantiating an off-screen object near a specific corner of the screen.
-Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
-The z position is in world units from the camera.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3 Unproject(ref Vector3 position, ref Matrix4x4 view, ref Matrix4x4 projection, ref Matrix4x4 world)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><em>position</em></td>
-        <td><p>A screen space position in pixels (often mouse x, y), plus a z position for depth in world space (for example, a camera clipping plane).</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Matrix4x4</span></td>
-        <td><em>view</em></td>
-        <td><p>The view matrix to be used.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Matrix4x4</span></td>
-        <td><em>projection</em></td>
-        <td><p>The projection matrix to be used.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Matrix4x4</span></td>
-        <td><em>world</em></td>
-        <td><p>The world matrix to be used.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><p>The world space <see cref="!:Vector3"></see> created by converting the screen space point at the provided distance z from the camera plane.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_Framework_Graphics_Camera_Unproject_Vector3__Vector3__" data-uid="WaveEngine.Framework.Graphics.Camera.Unproject(Vector3@,Vector3@)">Unproject(ref Vector3, out Vector3)</h4>
-  <div class="markdown level1 summary"><p>Transforms a point from screen space into world space. World space coordinates can still be calculated even when
-provided as an off-screen coordinate, for example for instantiating an off-screen object near a specific corner of the screen.
-Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
-The z position is in world units from the camera.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Unproject(ref Vector3 position, out Vector3 result)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><em>position</em></td>
-        <td><p>A screen space position in pixels (often mouse x, y), plus a z position for depth in world space (for example, a camera clipping plane).</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><em>result</em></td>
-        <td><p>The world space <see cref="!:Vector3"></see> created by converting the screen space point at the provided distance z from the camera plane.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h4 id="WaveEngine_Framework_Graphics_Camera_UnsuscribeDisplayEvents" data-uid="WaveEngine.Framework.Graphics.Camera.UnsuscribeDisplayEvents">UnsuscribeDisplayEvents()</h4>
   <div class="markdown level1 summary"><p>Unsubscribe display events.</p>
 </div>
@@ -4540,6 +4322,84 @@ The z position is in world units from the camera.</p>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><p>Operation result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_Camera_WorldToScreen_Vector3__" data-uid="WaveEngine.Framework.Graphics.Camera.WorldToScreen(Vector3@)">WorldToScreen(ref Vector3)</h4>
+  <div class="markdown level1 summary"><p>Transforms position from world space into screen space.
+Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
+The z position is in world units from the camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 WorldToScreen(ref Vector3 position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><em>position</em></td>
+        <td><p>A world space position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><p>The screen space point <see cref="!:Vector3"></see> created by converting the world space position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_Camera_WorldToScreen_Vector3__Vector3__" data-uid="WaveEngine.Framework.Graphics.Camera.WorldToScreen(Vector3@,Vector3@)">WorldToScreen(ref Vector3, out Vector3)</h4>
+  <div class="markdown level1 summary"><p>Transforms position from world space into screen space.
+Screen space is defined in pixels. The top-left of the screen is (0,0); the right-bottom is (pixelWidth, pixelHeight).
+The z position is in world units from the camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WorldToScreen(ref Vector3 position, out Vector3 result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><em>position</em></td>
+        <td><p>A world space position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><em>result</em></td>
+        <td><p>The screen space point <see cref="!:Vector3"></see> created by converting the world space position.</p>
 </td>
       </tr>
     </tbody>

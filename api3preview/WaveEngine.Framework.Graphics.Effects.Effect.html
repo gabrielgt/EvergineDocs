@@ -88,12 +88,13 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
       <div class="level0"><span class="xref">System.Object</span></div>
+      <div class="level1"><a class="xref" href="WaveEngine.Framework.DisposableObject.html">DisposableObject</a></div>
       <div class="level"><span class="xref"></span></div>
   </div>
   <h6><strong>Namespace</strong>:System.Dynamic.ExpandoObject</h6>
   <h6><strong>Assembly</strong>:WaveEngine.Framework.dll</h6>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class Effect : ILoadable, IDisposable, IDependencyObject</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class Effect : DisposableObject, ILoadable, IDisposable, IDependencyObject</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -133,6 +134,11 @@
     </thead>
     <tbody>
       <tr>
+        <td><a href="#WaveEngine_Framework_Graphics_Effects_Effect_ConstantBufferPool">ConstantBufferPool</a></td>
+        <td><p>The effect constant buffer pool.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Effects_Effect_directivesGroups">directivesGroups</a></td>
         <td><p>The directives groups.</p>
 </td>
@@ -161,6 +167,29 @@
         <td><a href="#WaveEngine_Framework_Graphics_Effects_Effect_techniquesCached">techniquesCached</a></td>
         <td><p>The techniques cached.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Graphics_Effects_Effect_ConstantBufferPool" data-uid="WaveEngine.Framework.Graphics.Effects.Effect.ConstantBufferPool">ConstantBufferPool</h4>
+  <div class="markdown level1 summary"><p>The effect constant buffer pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConstantBufferPool ConstantBufferPool</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Graphics.Effects.ConstantBufferPool.html">ConstantBufferPool</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -558,13 +587,14 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_Effects_Effect_CreateSharedCBuffers">CreateSharedCBuffers()</a></td>
+        <td><a href="#WaveEngine_Framework_Graphics_Effects_Effect_CreateSharedResources">CreateSharedResources()</a></td>
         <td><p>This method must be called after obtain graphicsResourcesInfo and it creates the shared cbuffers.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Graphics_Effects_Effect_Dispose">Dispose()</a></td>
-        <td></td>
+        <td><a href="#WaveEngine_Framework_Graphics_Effects_Effect_Destroy">Destroy()</a></td>
+        <td><p>Destroy all resources of this instance.</p>
+</td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Graphics_Effects_Effect_GetEffectTechnique_System_String_System_String___">GetEffectTechnique(String, String[])</a></td>
@@ -640,20 +670,21 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Graphics_Effects_Effect_CreateSharedCBuffers" data-uid="WaveEngine.Framework.Graphics.Effects.Effect.CreateSharedCBuffers">CreateSharedCBuffers()</h4>
+  <h4 id="WaveEngine_Framework_Graphics_Effects_Effect_CreateSharedResources" data-uid="WaveEngine.Framework.Graphics.Effects.Effect.CreateSharedResources">CreateSharedResources()</h4>
   <div class="markdown level1 summary"><p>This method must be called after obtain graphicsResourcesInfo and it creates the shared cbuffers.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void CreateSharedCBuffers()</code></pre>
+    <pre><code class="lang-csharp hljs">protected void CreateSharedResources()</code></pre>
   </div>
-  <h4 id="WaveEngine_Framework_Graphics_Effects_Effect_Dispose" data-uid="WaveEngine.Framework.Graphics.Effects.Effect.Dispose">Dispose()</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="WaveEngine_Framework_Graphics_Effects_Effect_Destroy" data-uid="WaveEngine.Framework.Graphics.Effects.Effect.Destroy">Destroy()</h4>
+  <div class="markdown level1 summary"><p>Destroy all resources of this instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void Dispose()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void Destroy()</code></pre>
   </div>
   <h4 id="WaveEngine_Framework_Graphics_Effects_Effect_GetEffectTechnique_System_String_System_String___" data-uid="WaveEngine.Framework.Graphics.Effects.Effect.GetEffectTechnique(System.String,System.String[])">GetEffectTechnique(String, String[])</h4>
   <div class="markdown level1 summary"><p>Gets Effect Technique with a specific directives group.</p>

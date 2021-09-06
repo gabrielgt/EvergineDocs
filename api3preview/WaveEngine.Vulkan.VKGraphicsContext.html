@@ -112,6 +112,11 @@
         <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Vulkan.VKGraphicsContext.html">VKGraphicsContext</a> class.</p>
 </td>
       </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vulkan_VKGraphicsContext__ctor_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__">VKGraphicsContext(IEnumerable&lt;String&gt;, IEnumerable&lt;String&gt;)</a></td>
+        <td><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Vulkan.VKGraphicsContext.html">VKGraphicsContext</a> class.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h4 id="WaveEngine_Vulkan_VKGraphicsContext__ctor" data-uid="WaveEngine.Vulkan.VKGraphicsContext.#ctor">VKGraphicsContext()</h4>
@@ -122,6 +127,38 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public VKGraphicsContext()</code></pre>
   </div>
+  <h4 id="WaveEngine_Vulkan_VKGraphicsContext__ctor_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__" data-uid="WaveEngine.Vulkan.VKGraphicsContext.#ctor(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})">VKGraphicsContext(IEnumerable&lt;String&gt;, IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="WaveEngine.Vulkan.VKGraphicsContext.html">VKGraphicsContext</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VKGraphicsContext(IEnumerable&lt;string&gt; deviceExtensionsToEnable, IEnumerable&lt;string&gt; instanceExtensionsToEnable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><em>deviceExtensionsToEnable</em></td>
+        <td><p>Set of device extensions to be enabled for this application.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><em>instanceExtensionsToEnable</em></td>
+        <td><p>Set of device instance extensions to be enabled for this application.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="fields">Fields
   </h3>
   <h4 id="fields-summary">Summary</h4>
@@ -139,8 +176,18 @@
 </td>
       </tr>
       <tr>
+        <td><a href="#WaveEngine_Vulkan_VKGraphicsContext_DeviceExtensionsToEnable">DeviceExtensionsToEnable</a></td>
+        <td><p>Set of device extensions to be enabled for this application.</p>
+</td>
+      </tr>
+      <tr>
         <td><a href="#WaveEngine_Vulkan_VKGraphicsContext_disposed">disposed</a></td>
         <td><p>Whether the object is disposed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vulkan_VKGraphicsContext_InstanceExtensionsToEnable">InstanceExtensionsToEnable</a></td>
+        <td><p>Set of device instance extensions to be enabled for this application.</p>
 </td>
       </tr>
       <tr>
@@ -159,7 +206,7 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Vulkan_VKGraphicsContext_VkPhysicalDeviceFeatures">VkPhysicalDeviceFeatures</a></td>
+        <td><a href="#WaveEngine_Vulkan_VKGraphicsContext_VkPhysicalDeviceFeatures2">VkPhysicalDeviceFeatures2</a></td>
         <td><p>Vulkan physical device features.</p>
 </td>
       </tr>
@@ -169,7 +216,7 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Vulkan_VKGraphicsContext_VkPhysicalDeviceProperties">VkPhysicalDeviceProperties</a></td>
+        <td><a href="#WaveEngine_Vulkan_VKGraphicsContext_VkPhysicalDeviceProperties2">VkPhysicalDeviceProperties2</a></td>
         <td><p>Vulkan physical device properties.</p>
 </td>
       </tr>
@@ -198,6 +245,32 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_Vulkan_VKGraphicsContext_DeviceExtensionsToEnable" data-uid="WaveEngine.Vulkan.VKGraphicsContext.DeviceExtensionsToEnable">DeviceExtensionsToEnable</h4>
+  <div class="markdown level1 summary"><p>Set of device extensions to be enabled for this application.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Vulkan_VKGraphicsContext_DeviceExtensionsToEnable_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Must be set before create device.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly List&lt;string&gt; DeviceExtensionsToEnable</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="WaveEngine_Vulkan_VKGraphicsContext_disposed" data-uid="WaveEngine.Vulkan.VKGraphicsContext.disposed">disposed</h4>
   <div class="markdown level1 summary"><p>Whether the object is disposed.</p>
 </div>
@@ -217,6 +290,32 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Vulkan_VKGraphicsContext_InstanceExtensionsToEnable" data-uid="WaveEngine.Vulkan.VKGraphicsContext.InstanceExtensionsToEnable">InstanceExtensionsToEnable</h4>
+  <div class="markdown level1 summary"><p>Set of device instance extensions to be enabled for this application.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 id="WaveEngine_Vulkan_VKGraphicsContext_InstanceExtensionsToEnable_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Must be set before create device.</p>
+</div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly List&lt;string&gt; InstanceExtensionsToEnable</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -290,13 +389,13 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Vulkan_VKGraphicsContext_VkPhysicalDeviceFeatures" data-uid="WaveEngine.Vulkan.VKGraphicsContext.VkPhysicalDeviceFeatures">VkPhysicalDeviceFeatures</h4>
+  <h4 id="WaveEngine_Vulkan_VKGraphicsContext_VkPhysicalDeviceFeatures2" data-uid="WaveEngine.Vulkan.VKGraphicsContext.VkPhysicalDeviceFeatures2">VkPhysicalDeviceFeatures2</h4>
   <div class="markdown level1 summary"><p>Vulkan physical device features.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public VkPhysicalDeviceFeatures VkPhysicalDeviceFeatures</code></pre>
+    <pre><code class="lang-csharp hljs">public VkPhysicalDeviceFeatures2 VkPhysicalDeviceFeatures2</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -308,7 +407,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkPhysicalDeviceFeatures</span></td>
+        <td><span class="xref">VkPhysicalDeviceFeatures2</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -336,13 +435,13 @@
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Vulkan_VKGraphicsContext_VkPhysicalDeviceProperties" data-uid="WaveEngine.Vulkan.VKGraphicsContext.VkPhysicalDeviceProperties">VkPhysicalDeviceProperties</h4>
+  <h4 id="WaveEngine_Vulkan_VKGraphicsContext_VkPhysicalDeviceProperties2" data-uid="WaveEngine.Vulkan.VKGraphicsContext.VkPhysicalDeviceProperties2">VkPhysicalDeviceProperties2</h4>
   <div class="markdown level1 summary"><p>Vulkan physical device properties.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public VkPhysicalDeviceProperties VkPhysicalDeviceProperties</code></pre>
+    <pre><code class="lang-csharp hljs">public VkPhysicalDeviceProperties2 VkPhysicalDeviceProperties2</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -354,7 +453,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VkPhysicalDeviceProperties</span></td>
+        <td><span class="xref">VkPhysicalDeviceProperties2</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -505,6 +604,11 @@
       <tr>
         <td><a href="#WaveEngine_Vulkan_VKGraphicsContext_ShaderCompile_System_String_System_String_WaveEngine_Common_Graphics_ShaderStages_WaveEngine_Common_Graphics_CompilerParameters_">ShaderCompile(String, String, ShaderStages, CompilerParameters)</a></td>
         <td><p>Converts the shader source into bytecode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Vulkan_VKGraphicsContext_SyncUpcopyQueue">SyncUpcopyQueue()</a></td>
+        <td><p>Sync the current buffer data in the copyQueue. Internal function used in the uploadbuffer strategy.</p>
 </td>
       </tr>
       <tr>
@@ -843,6 +947,14 @@
       </tr>
     </tbody>
   </table>
+  <h4 id="WaveEngine_Vulkan_VKGraphicsContext_SyncUpcopyQueue" data-uid="WaveEngine.Vulkan.VKGraphicsContext.SyncUpcopyQueue">SyncUpcopyQueue()</h4>
+  <div class="markdown level1 summary"><p>Sync the current buffer data in the copyQueue. Internal function used in the uploadbuffer strategy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SyncUpcopyQueue()</code></pre>
+  </div>
   <h4 id="WaveEngine_Vulkan_VKGraphicsContext_UnmapMemory_WaveEngine_Common_Graphics_GraphicsResource_System_UInt32_" data-uid="WaveEngine.Vulkan.VKGraphicsContext.UnmapMemory(WaveEngine.Common.Graphics.GraphicsResource,System.UInt32)">UnmapMemory(GraphicsResource, UInt32)</h4>
   <div class="markdown level1 summary"><p>Invalidates a previously-mapped data region for the given <a class="xref" href="WaveEngine.Common.Graphics.Buffer.html">Buffer</a> or <a class="xref" href="WaveEngine.Common.Graphics.Texture.html">Texture</a>.</p>
 </div>

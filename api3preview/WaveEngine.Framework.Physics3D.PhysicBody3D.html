@@ -143,11 +143,6 @@
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_collisionStore">collisionStore</a></td>
-        <td><p>The collision store.</p>
-</td>
-      </tr>
-      <tr>
         <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_PhysicManager3D">PhysicManager3D</a></td>
         <td><p>The physic manager.</p>
 </td>
@@ -178,29 +173,6 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.Collider3D.html">Collider3D</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_collisionStore" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.collisionStore">collisionStore</h4>
-  <div class="markdown level1 summary"><p>The collision store.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected CollisionInfoStore3D collisionStore</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="WaveEngine.Framework.Physics3D.CollisionInfoStore3D.html">CollisionInfoStore3D</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -290,11 +262,6 @@ public Transform3D Transform3D</code></pre>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_Collisions">Collisions</a></td>
-        <td><p>Gets the current collision list.</p>
-</td>
-      </tr>
-      <tr>
         <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_Friction">Friction</a></td>
         <td><p>Gets or sets the friction coefficient, usually in the range [0,1].</p>
 </td>
@@ -306,12 +273,17 @@ public Transform3D Transform3D</code></pre>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_IsSensor">IsSensor</a></td>
-        <td><p>Gets or sets a value indicating whether this body collects contact information but never generates a collision response.</p>
+        <td><p>Gets or sets a value indicating whether this body raise contact events but never generates a collision response.</p>
 </td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_MaskBits">MaskBits</a></td>
         <td><p>Gets or sets the collision mask bits.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_ProcessCollision">ProcessCollision</a></td>
+        <td><p>Gets a value indicating whether we need to process collision of this entity.</p>
 </td>
       </tr>
       <tr>
@@ -450,36 +422,13 @@ public float CcdSweptSphereRadius { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_Collisions" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.Collisions">Collisions</h4>
-  <div class="markdown level1 summary"><p>Gets the current collision list.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;CollisionInfo3D&gt; Collisions { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.CollisionInfo3D.html">CollisionInfo3D</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_Friction" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.Friction">Friction</h4>
   <div class="markdown level1 summary"><p>Gets or sets the friction coefficient, usually in the range [0,1].</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[RenderProperty(Tooltip = &quot;friction coefficient, usually in the range [0,1]&quot;)]
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tooltip = &quot;Friction coefficient, usually in the range [0,1]&quot;)]
 public float Friction { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
@@ -521,12 +470,12 @@ public float Friction { get; set; }</code></pre>
     </tbody>
   </table>
   <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_IsSensor" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.IsSensor">IsSensor</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this body collects contact information but never generates a collision response.</p>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this body raise contact events but never generates a collision response.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[RenderProperty(Tooltip = &quot;This body collects contact information but never generates a collision response&quot;)]
+    <pre><code class="lang-csharp hljs">[RenderProperty(Tooltip = &quot;This body raise contact events but never generates a collision response&quot;)]
 public bool IsSensor { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
@@ -563,6 +512,29 @@ public bool IsSensor { get; set; }</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="WaveEngine.Framework.Physics3D.CollisionCategory3D.html">CollisionCategory3D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_ProcessCollision" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.ProcessCollision">ProcessCollision</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether we need to process collision of this entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ProcessCollision { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -626,13 +598,19 @@ public float RollingFriction { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_ContactPairTest_WaveEngine_Framework_Physics3D_PhysicBody3D_">ContactPairTest(PhysicBody3D)</a></td>
-        <td><p>Contact test query.</p>
+        <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_ContactPairTest_WaveEngine_Framework_Physics3D_Collider3D_WaveEngine_Framework_Physics3D_PhysicBody3D_WaveEngine_Framework_Physics3D_Collider3D_System_Collections_Generic_ICollection_WaveEngine_Framework_Physics3D_ContactPoint3D__">ContactPairTest(Collider3D, PhysicBody3D, Collider3D, ICollection&lt;ContactPoint3D&gt;)</a></td>
+        <td><p>Performs a discrete collision test between this body and the specified body considering only
+the specified colliders.</p>
 </td>
       </tr>
       <tr>
-        <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_ContactTest_System_Collections_Generic_List_WaveEngine_Framework_Physics3D_CollisionInfo3D__">ContactTest(List&lt;CollisionInfo3D&gt;)</a></td>
-        <td><p>Contact test query.</p>
+        <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_ContactPairTest_WaveEngine_Framework_Physics3D_PhysicBody3D_System_Collections_Generic_ICollection_WaveEngine_Framework_Physics3D_ContactPoint3D__">ContactPairTest(PhysicBody3D, ICollection&lt;ContactPoint3D&gt;)</a></td>
+        <td><p>Performs a discrete collision test between this body and the specified body.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_ContactTest_System_Collections_Generic_ICollection_WaveEngine_Framework_Physics3D_ContactPoint3D__">ContactTest(ICollection&lt;ContactPoint3D&gt;)</a></td>
+        <td><p>Performs a discrete collision test between this body against all bodies in the physic world.</p>
 </td>
       </tr>
       <tr>
@@ -662,12 +640,13 @@ public float RollingFriction { get; set; }</code></pre>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_PointTest_Vector3_">PointTest(Vector3)</a></td>
-        <td><p>Test if a point is inside this body.</p>
+        <td><p>Tests if a point is inside this body.</p>
 </td>
       </tr>
       <tr>
         <td><a href="#WaveEngine_Framework_Physics3D_PhysicBody3D_ResetTransform_Vector3_Quaternion_Vector3_">ResetTransform(Vector3, Quaternion, Vector3)</a></td>
-        <td><p>Set the position of the body&apos;s origin and rotation. This breaks any contacts and wakes the other bodies. Manipulating a body&apos;s transform may cause non-physical behavior.</p>
+        <td><p>Sets the position of the body&apos;s origin and rotation. This breaks any contacts and wakes the other bodies.
+Manipulating a body&apos;s transform may cause non-physical behavior.</p>
 </td>
       </tr>
       <tr>
@@ -687,13 +666,14 @@ public float RollingFriction { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_ContactPairTest_WaveEngine_Framework_Physics3D_PhysicBody3D_" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.ContactPairTest(WaveEngine.Framework.Physics3D.PhysicBody3D)">ContactPairTest(PhysicBody3D)</h4>
-  <div class="markdown level1 summary"><p>Contact test query.</p>
+  <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_ContactPairTest_WaveEngine_Framework_Physics3D_Collider3D_WaveEngine_Framework_Physics3D_PhysicBody3D_WaveEngine_Framework_Physics3D_Collider3D_System_Collections_Generic_ICollection_WaveEngine_Framework_Physics3D_ContactPoint3D__" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.ContactPairTest(WaveEngine.Framework.Physics3D.Collider3D,WaveEngine.Framework.Physics3D.PhysicBody3D,WaveEngine.Framework.Physics3D.Collider3D,System.Collections.Generic.ICollection{WaveEngine.Framework.Physics3D.ContactPoint3D})">ContactPairTest(Collider3D, PhysicBody3D, Collider3D, ICollection&lt;ContactPoint3D&gt;)</h4>
+  <div class="markdown level1 summary"><p>Performs a discrete collision test between this body and the specified body considering only
+the specified colliders.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CollisionInfo3D ContactPairTest(PhysicBody3D physicBody)</code></pre>
+    <pre><code class="lang-csharp hljs">public int ContactPairTest(Collider3D collider, PhysicBody3D otherBody, Collider3D otherBodyCollider, ICollection&lt;ContactPoint3D&gt; resultsOutput)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -706,9 +686,27 @@ public float RollingFriction { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Physics3D.Collider3D.html">Collider3D</a></td>
+        <td><em>collider</em></td>
+        <td><p>The collider in this body.</p>
+</td>
+      </tr>
+      <tr>
         <td><a class="xref" href="WaveEngine.Framework.Physics3D.PhysicBody3D.html">PhysicBody3D</a></td>
-        <td><em>physicBody</em></td>
+        <td><em>otherBody</em></td>
         <td><p>The other body to detect contact.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="WaveEngine.Framework.Physics3D.Collider3D.html">Collider3D</a></td>
+        <td><em>otherBodyCollider</em></td>
+        <td><p>The collider in the specified body.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.ContactPoint3D.html">ContactPoint3D</a>&gt;</td>
+        <td><em>resultsOutput</em></td>
+        <td><p>The collection where the contact results will be included.</p>
 </td>
       </tr>
     </tbody>
@@ -723,19 +721,19 @@ public float RollingFriction { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="WaveEngine.Framework.Physics3D.CollisionInfo3D.html">CollisionInfo3D</a></td>
-        <td><p>The collision info.</p>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of contacts detected.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_ContactTest_System_Collections_Generic_List_WaveEngine_Framework_Physics3D_CollisionInfo3D__" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.ContactTest(System.Collections.Generic.List{WaveEngine.Framework.Physics3D.CollisionInfo3D})">ContactTest(List&lt;CollisionInfo3D&gt;)</h4>
-  <div class="markdown level1 summary"><p>Contact test query.</p>
+  <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_ContactPairTest_WaveEngine_Framework_Physics3D_PhysicBody3D_System_Collections_Generic_ICollection_WaveEngine_Framework_Physics3D_ContactPoint3D__" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.ContactPairTest(WaveEngine.Framework.Physics3D.PhysicBody3D,System.Collections.Generic.ICollection{WaveEngine.Framework.Physics3D.ContactPoint3D})">ContactPairTest(PhysicBody3D, ICollection&lt;ContactPoint3D&gt;)</h4>
+  <div class="markdown level1 summary"><p>Performs a discrete collision test between this body and the specified body.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ContactTest(List&lt;CollisionInfo3D&gt; contactList)</code></pre>
+    <pre><code class="lang-csharp hljs">public int ContactPairTest(PhysicBody3D otherBody, ICollection&lt;ContactPoint3D&gt; resultsOutput)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -748,9 +746,73 @@ public float RollingFriction { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.CollisionInfo3D.html">CollisionInfo3D</a>&gt;</td>
-        <td><em>contactList</em></td>
-        <td><p>The list that will be filled with the contact information.</p>
+        <td><a class="xref" href="WaveEngine.Framework.Physics3D.PhysicBody3D.html">PhysicBody3D</a></td>
+        <td><em>otherBody</em></td>
+        <td><p>The other body to detect contact.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.ContactPoint3D.html">ContactPoint3D</a>&gt;</td>
+        <td><em>resultsOutput</em></td>
+        <td><p>The collection where the contact results will be included.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of contacts detected.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_ContactTest_System_Collections_Generic_ICollection_WaveEngine_Framework_Physics3D_ContactPoint3D__" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.ContactTest(System.Collections.Generic.ICollection{WaveEngine.Framework.Physics3D.ContactPoint3D})">ContactTest(ICollection&lt;ContactPoint3D&gt;)</h4>
+  <div class="markdown level1 summary"><p>Performs a discrete collision test between this body against all bodies in the physic world.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ContactTest(ICollection&lt;ContactPoint3D&gt; resultsOutput)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="WaveEngine.Framework.Physics3D.ContactPoint3D.html">ContactPoint3D</a>&gt;</td>
+        <td><em>resultsOutput</em></td>
+        <td><p>The collection where the contact results will be included.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of contacts detected.</p>
 </td>
       </tr>
     </tbody>
@@ -830,13 +892,13 @@ public float RollingFriction { get; set; }</code></pre>
       <tr>
         <td><span class="xref">System.EventArgs</span></td>
         <td><em>e</em></td>
-        <td><p>The event args.</p>
+        <td><p>The event arguments.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_PointTest_Vector3_" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.PointTest(Vector3)">PointTest(Vector3)</h4>
-  <div class="markdown level1 summary"><p>Test if a point is inside this body.</p>
+  <div class="markdown level1 summary"><p>Tests if a point is inside this body.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -878,7 +940,8 @@ public float RollingFriction { get; set; }</code></pre>
     </tbody>
   </table>
   <h4 id="WaveEngine_Framework_Physics3D_PhysicBody3D_ResetTransform_Vector3_Quaternion_Vector3_" data-uid="WaveEngine.Framework.Physics3D.PhysicBody3D.ResetTransform(Vector3,Quaternion,Vector3)">ResetTransform(Vector3, Quaternion, Vector3)</h4>
-  <div class="markdown level1 summary"><p>Set the position of the body&apos;s origin and rotation. This breaks any contacts and wakes the other bodies. Manipulating a body&apos;s transform may cause non-physical behavior.</p>
+  <div class="markdown level1 summary"><p>Sets the position of the body&apos;s origin and rotation. This breaks any contacts and wakes the other bodies.
+Manipulating a body&apos;s transform may cause non-physical behavior.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
