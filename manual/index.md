@@ -1,5 +1,5 @@
 # Evergine manual
-
+---
 ![Manual](images/manual.jpg)
 
 These pages contain information about how to use Evergine. This manual helps you learn how to use Evergine and its associated tools.
