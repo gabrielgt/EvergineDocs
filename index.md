@@ -6,19 +6,11 @@ For example, a game can be entirely developed on a Windows PC and, in the end, m
 
 **Wave Visual Editor** handles such logic, automatically generating the required scaffolding to share a common code base, resources set, etc.
 
-## [Recipes](recipes/GettingStarted/Getting-Started-on-Windows.md)
+## [Manual](manual/index.md)
 This section describes common and simple scenarios that are bastly used while developing with **Wave Engine**.
 
-## [Wave API Reference](api/)
+## [C# API Reference](api/index.md)
 This sections shows all the public [API](https://en.wikipedia.org/wiki/Application_programming_interface) of **Wave Engine**.
-
-# Wave Engine 3 Preview
-We are working in the next release of Wave Engine. 
-You can find information about the first preview in our [blog](https://geeks.ms/waveengineteam/).
-
-## [Wave API Reference Preview](api3preview/)
-This sections shows all the public [API](https://en.wikipedia.org/wiki/Application_programming_interface) of **Wave Engine 3.0 Preview**.
-
 
 
 > [!Note]
