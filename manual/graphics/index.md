@@ -2,7 +2,9 @@
 ---
 ![Graphics](images/graphics.jpg)
 
-Evergine offers a wide variety of graphics features as well as solid renderer. This section explains how to use Evergine for graphics and rendering.
+Evergine's graphics features let you control the appearance of your applications and are highly-customizable. You can use Evergine's graphics features to create beautiful, optimized graphics across a range of platforms, from mobile, portable XR headset to desktop.
+
+This section explains how to use Evergine for graphics and rendering.
 
 ## In this section
 * [Rendering overview](rendering_overview.md)
