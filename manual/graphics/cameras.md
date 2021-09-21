@@ -24,7 +24,6 @@ protected override void CreateScene()
 }
 ```
 
-
 ## Create a Camera3D in Evergine Studio
 In the Entities Hierarchy panel of your Scene Editor, click the "Add Entity and select **Camera3D**, then choose the kind of camera you want to create:
 * **Fixed Camera:** This camera does not have any built-in behaviour, it is static.
@@ -34,8 +33,8 @@ In the Entities Hierarchy panel of your Scene Editor, click the "Add Entity and 
 ![Create Camera](images/createFreeCamera.png)
 
 ## Camera3D properties
-![Camera Properties](images/cameraProperties.png)
 
+### Basic Camera3D properties
 
 |Property           | Description |
 |--------------------|-------------|
@@ -48,3 +47,59 @@ In the Entities Hierarchy panel of your Scene Editor, click the "Add Entity and 
 | HDR Enabled | Render the camera output in a HDR format |
 | Camera Order | Specify the order in which the camera will be rendered. Lower values produces that the camera will be rendered first.|
 
+### Frustum
+The camera frustum is the region of the space that will be appear on the screen.
+
+![Camera Frustum](images/cameraFrustum.png)
+
+Is defined by near, far planes and field of view properties.
+
+The near and far planes determine where the camera's view begins and ends.
+* The **near plane** is the closest point the camera can see. The default value is 0.1. Objects before this point aren't drawn.
+* The **far plane**, also known as the draw distance, is the furthest point the camera can see. Objects beyond this point aren't drawn. The default setting is 1000.
+
+## Photometric properties
+
+By default, the camera uses basic properties to specify camera views (field of view and exposure). However, is possible to specify these values using physical values used in real cameras.
+
+To enable physical parameters:
+
+|Property           | Description |
+|--------------------|-------------|
+| Enable Physical Parameters | Boolean to indicate if the camera will use the physical parameters to define its field of view. |
+
+### Focal Length and sensor size
+|Property           | Description |
+|--------------------|-------------|
+| Focal Length (milimeters)| The [Focal length](https://en.wikipedia.org/wiki/Focal_length) is a common terms in photography to describe the field of view. |
+| Sensor Size (milimeters)| The [Sensor size](https://en.wikipedia.org/wiki/Image_sensor_format) describes the size in milimeters of the camera sensor. It has several implications in combination with other properties. For example, Sensor Size and Focal length defines the camera field of view.|
+
+### Exposure
+The Exposure property specifies the overal factor that will be applied to the render output. In combination with HDR render output and environments will produce realistic results:
+
+| Exposure = 0.2 | Exposure = 1.0 | Exposure = 3.0 | 
+| --- | --- | --- |
+| ![Exposure 1](images/CameraExposure0.2.png) | ![Exposure 0.2](images/CameraExposure1.png) | ![Exposure 0.3](images/CameraExposure3.png) |
+
+The exposure can be specified using the Exposure property, but if you use photometric camera properties you could reproduce physical behavior concerning the amount of light gathered by the camera:
+
+|Property           | Description |
+|--------------------|-------------|
+| Aperture (f-stops) | The [Aperture](https://en.wikipedia.org/wiki/Aperture), expressed in f-stops, controls how open or closed the camera system's aperture is. In addition to the exposition, the aperture setting controls the depth of field. |
+| Shutter speed (Seconds) | The [Shutter speed](https://en.wikipedia.org/wiki/Shutter_speed), expressed in seconds, controls how long the aperture remains opened. In addition to the exposition, the shutter speed controls motion blur.  |
+| Sensitivity (ISO) | The [Focal length](https://en.wikipedia.org/wiki/Focal_length), expressed in ISO, controls how the light reaching the sensor is quantized. In addition to the exposition, the sensitivity setting controls the amount of noise. |
+| Compensation (EV units) | The [Compensation, Exposure Compensation or EC](https://en.wikipedia.org/wiki/Exposure_compensation) is expressed in EV units. Applying an exposure compensation EC is a simple as adding an offset to the final exposure.  |
+
+> [!Tip]
+> Exposure of 1 could be achieved using Aperture 1 f-stop, Shutter Speed of 1.2 seconds and Sensitivity of 100 ISO
+
+## Camera render output
+
+By default, the camera render output will be targeted to the default **Display** registered in the **GraphicPresenter** service.
+
+This behavior could be modified using two properties:
+
+|Property           | Description |
+|--------------------|-------------|
+| DisplayTag | It controls wich Display will be used to output the render. Each display is registered into the GraphicPresenter using a DisplayTag. Setting this property will be used to specify the camera output to the framebuffer defined in this display. |
+| Framebuffer | However, you can override this behavior by setting a Framebuffer instance. If you are doing that, the camera output will be targeted to this framebuffer instance, even if you have previously specified a DisplayTag. | 
