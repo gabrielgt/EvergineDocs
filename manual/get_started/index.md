@@ -1,5 +1,6 @@
-# Getting started
+# Get started
 ---
+Comming soon
 
 ## In this section
 * [Install Evergine](install.md)

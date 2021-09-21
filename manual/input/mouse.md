@@ -1,2 +1,2 @@
-# Install
+# Mouse
 Comming soon
