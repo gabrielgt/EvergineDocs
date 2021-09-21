@@ -19,5 +19,5 @@ You can read it from start to finish, or use it as a reference
 * [Animation](animation/index.md)
 * [Physics](physics/index.md)
 * [XR](xr/index.md)
-* [Extensions](extension/index.md)
+* [Extensions](extensions/index.md)
 * [Platforms](platforms/index.md)
