@@ -1,4 +1,4 @@
-__#Cameras
+# Cameras
 ![Cameras](images/cameras.jpg)
 
 **Cameras** are responsible to capture your scene and display it to the user. By customizing and manipulating cameras, you can make the visual composition of your scene truly appealing.
