@@ -1,2 +1,2 @@
-#Lights
+# Effects
 Comming soon
