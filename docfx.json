@@ -34,7 +34,6 @@
           "src": "../"
         }
       ],
-      "properties": { "TargetFramework": "net5.0" },
       "dest": "api",
       "filter": "filterConfig.yml"
     }
@@ -45,8 +44,7 @@
         "files": [
           "api/**.yml",
           "api/index.md"
-        ],
-        "version": "v3.0"
+        ]
       },
       {
         "files": [
@@ -65,7 +63,7 @@
       {
         "files": [
           "manual/**/images/**",
-		  "images/**"
+		      "images/**"
         ],
         "exclude": [
           "obj/**",
@@ -76,7 +74,7 @@
     "overwrite": [
       {
         "files": [
-          "api/**",
+          "api/**.md"
         ],
         "exclude": [
           "obj/**",
@@ -97,6 +95,8 @@
     "fileMetadataFiles": [],
     "template": ["default", "templates/darkfx"],
     "postProcessors": [],
+    "markdownEngineName": "markdig",
+    "disableGitFeatures": false,
     "noLangKeyword": false,
     "keepFileLink": false,
     "cleanupCacheHistory": false
