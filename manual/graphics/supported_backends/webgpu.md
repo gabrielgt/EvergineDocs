@@ -6,7 +6,7 @@
 
 It is developed by the **W3C** for the Web community group with engineers from **Apple**, **Mozilla**, **Microsoft**, **Google** and others. This technology run on top of the latest graphics APIs like DirectX 12, Vulkan and Metal.
 
-**Evergine** uses **WebGPU** on Web platforms when it is available. Chrome, Edge and Firefox already support it as experimental feature so you need to move to beta channel and active it.
+**Chrome**, **Edge** and **Firefox** already support it as experimental feature so you need to move to beta channel and active it. **Evergine** uses **WebGPU** on Web platforms when it is available otherwise use [WebGL](opengl.md) which is the most supported graphics technology today.
 
 To check the implementation status of this technology visit [webgpu.io](https://github.com/gpuweb/gpuweb/wiki/Implementation-Status).
 
