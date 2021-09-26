@@ -40,3 +40,7 @@ Selecting and adding the profile for Windows (DirectX12).
 You can run on **OpenGL** by clicking on File -> Build & Run -> Windows.DirectX12.
 
 ![Settings](images/gl_support_3.jpg)
+
+To support Web Platforms based on **WebGL** versions you also need to add from project setting the WebGL Template, selecting WebGL 2.0 or 1.0 depends your project needs.
+
+![Settings](images/gl_support_4.jpg)
