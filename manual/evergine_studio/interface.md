@@ -1,12 +1,12 @@
 # Interface
 ![Graphics](images/interface.jpg)
 
-Evergine Studio's interface use dockable panels to organize different section so you can create you own layout with the panel location that you prefer. The above image shows the default layout and his main panels are:
+Evergine Studio's interface uses dockable panels to organize different section so you can create your own layout with the panel location that you prefer. The above image shows the default layout and his main panels are:
 
 * **Project Explorer**: is used to manage the [assets](assets/index.md) and [packages](packages.md) of the current project.
 * **Assets Details**: shows the assets of the current folder selected on Project Explorer. Allow you open, rename or create new assets.
-* **Scene Editor**: shows the current scene and have 3 diferents parts: Viewport, Entity Hierarchy and Entity Details.
-* **Entities Hierarchy**: shows the entities added to the current scenes and allow you create, organize or delete entities in your scene.
+* **Scene Editor**: shows the current scene and has 3 different parts: Viewport, Entity Hierarchy, and Entity Details.
+* **Entities Hierarchy**: shows the entities added to the current scenes and allows you to create, organize or delete entities in your scene.
 * **Entity Details**: shows the properties or the selected entity in the Entities Hierarchy.
 
 <br/>
@@ -25,6 +25,6 @@ Evergine studio has the following editors that allow you manage the associate as
 <br/>
 
 > [!Tip]
-> The default layout can always be restored by using Windows menu
+> The default layout can always be restored by using the windows menu.
 
 ![Graphics](images/RestoreLayout.jpg)
