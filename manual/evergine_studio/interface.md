@@ -20,6 +20,7 @@ Evergine studio has the following editors that allow you manage the associate as
 * **RenderLayer Editor**: Double clicking a [renderLayer](assets/render_layers.md) asset opens a dedicated editor.
 * **Sampler Editor**: Double clicking a [sampler](assets/samplers.md) asset opens a dedicated editor
 * **Sound Editor**: Double clicking a [sound](assets/sounds.md) asset opens a dedicated editor.
+* **Post-Processing Graph Editor**: Double clicking a [Post-Processing graph](assets/post_processing_graph.md) asset opens a dedicated editor.
 
 <br/>
 
