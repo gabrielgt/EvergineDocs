@@ -1,32 +1,8 @@
-# Materials
+# Using Materials
 
 ![Materials header](images/materials.jpg)
 
-**Materials** are [assets](../evergine_studio/assets/materials.md) that allows simulate different surfaces like Plastic, Concrete, Metal ... A material requires a graphics effect so for create a new material you can use an effect includes in [**Evergine.Core** package](../evergine_studio/packages.md) or create your own effect. Also the Evergine.Core package includes a **Default Material** that will be used when you import any [model](models.md) to the Evergine Studio. **Default Material** is based on [**PBR**](https://en.wikipedia.org/wiki/Physically_based_rendering) that allows you simulate realistic materials.
-
-## Create a Material from code
-The following sample code can be used to instantiate a new material and apply to an entity in your scene.
-```c#
-protected override void CreateScene()
-{
-    var assetsService = Application.Current.Container.Resolve<AssetsService>();
-
-    // Load Material
-    Material defaultMaterial = assetsService.Load<Material>(EvergineContent.Materials.DefaultMaterial);
-
-    // Apply to an entity
-    Entity primitive = new Entity()
-            .AddComponent(new Transform3D())
-            .AddComponent(new MaterialComponent() { Material = defaultMaterial })
-            .AddComponent(new SphereMesh())
-            .AddComponent(new MeshRenderer());
-
-    this.Managers.EntityManager.Add(primitive);
-}
-```
-
-## Create a Material in Evergine Studio
-Materials are a type of asset so for more details about how to create read this [section](../evergine_studio/assets/materials.md).
+Materials describe the appearance of object surfaces and how they react to [light](../lights.md).
 
 ## Material properties
 
@@ -81,4 +57,3 @@ A material will have the properties define by his effect. In this section are de
 | **Distortion Texture**        | - |
 | **Sampler**                   | - |
 
-## How to apply material to an entity from Evergine Studio.
