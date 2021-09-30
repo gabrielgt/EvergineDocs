@@ -16,13 +16,10 @@ To check the implementation status of this technology visit [webgpu.io](https://
 
 ## Checking WebGPU version
 
-**Chrome**: The WebGPU flag must be enabled by writing this in your browser:
-
-> `chrome://flags/#enable-unsafe-webgpu`
-
- **Edge**: The WebGPUflag must be enabled by writing this in your browser:
-
-> `edge://flags/#enable-unsafe-webgpu`
+| Browser | Check command |
+| ---- | ---- | 
+| **Chrome** |  The WebGPU flag must be enabled by writing this in your browser: <br/> `chrome://flags/#enable-unsafe-webgpu`
+| **Edge** |  The WebGPUflag must be enabled by writing this in your browser: <br/> `edge://flags/#enable-unsafe-webgpu` | 
 
 ## Build & Run on WebGPU
 
