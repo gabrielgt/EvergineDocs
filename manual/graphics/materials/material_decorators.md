@@ -1,6 +1,6 @@
 # Material Decorators
 
-**Material Decorator** is a C# class that allows to define how the effect resource layout elements are shown in the [Material Editor](material_editor.md). The material decorator are generated from [Effect Editor](../effects/EffectEditor.md).
+**Material Decorator** is a C# class that allows defining how the effect resource layout elements are shown in the [Material Editor](material_editor.md). The material decorator are generated from [Effect Editor](../effects/EffectEditor.md).
 
 <br>
 
@@ -24,7 +24,7 @@ The effect resource layout block is marked in the effect code with the _[Begin_R
 
 <br>
 
-From [Effect Editor](../effects/EffectEditor.md) toolbox push the ![Generate Material Decorator button](images/MaterialDecoratorIcon.jpg) button to generate the Material decorator.
+From the [Effect Editor](../effects/EffectEditor.md) toolbox push the ![Generate Material Decorator button](images/MaterialDecoratorIcon.jpg) button to generate the Material decorator.
 
 ![Generate Material Decorator](images/GenerateMaterialDecorator.jpg)
 
@@ -36,7 +36,7 @@ A new c# class will be created in your C# solution that you will see from **Visu
 
 <br>
 
-This is a example of material decorator generated:
+This is an example of material decorator generated:
 
 ```c#
 //------------------------------------------------------------------------------
@@ -81,7 +81,7 @@ namespace DocumentationWorkBench.Effects
 }
 ```
 
-The above Material decorator example shows how the effect resourceLayout is translated to get/set class properties to make easier use the effect from code.
+The above Material decorator example shows how the effect resource layout is translated to get/set class properties to make easier use of the effect from code.
 
 <br>
 
@@ -91,7 +91,7 @@ Now when you open a material asset from [Material Editor](material_editor.md) an
 
 <br>
 
-Editing the material decorator c# class you can modify how the properties are shown in the [Material Editor](material_editor.md). For example the Color property appear as Vector3 property because this is the type using in the HLSL effect code. You can change it to use a Color picker to configure this parameter with the following code change:
+Editing the material decorator c# class you can modify how the properties are shown in the [Material Editor](material_editor.md). For example, the Color property appears as Vector3 property because this is the type using in the HLSL effect code. You can change it to use a Color picker to configure this parameter with the following code change:
 
 ```c#
 public Evergine.Common.Graphics.Color Parameters_Color
@@ -110,5 +110,5 @@ public Evergine.Common.Graphics.Color Parameters_Color
 
 <br>
 
-After this change if you reload the project in the Evergine Studio, the Material Editor shows it color property as:
+After this change, if you reload the project in the Evergine Studio, the Material Editor shows its color property as:
 ![Custom Material Decorator](images/customMaterialDecorator.jpg)
