@@ -17,6 +17,15 @@
 
 It is the default graphics API used on iOS and MacOS devices and **Apple** updates through updates. To make sure you have the latest version just update to the latest OS version.
 
-## Build & Run on Metal
+## Create a Graphics Context
+
+To create a graphics context based on **Metal** use the lines:
+
+```c#
+GraphicsContext graphicsContext = new Evergine.Metal.MTLGraphicsContext();
+graphicsContext.CreateDevice();
+```
+
+## Build & Run
 
 The project template will be available soon.

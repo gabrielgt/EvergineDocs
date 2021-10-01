@@ -26,7 +26,16 @@ To make sure that you can visualize the rendering options Vulkan has available o
 
 It is highly recommended download [LunarSDK](https://vulkan.lunarg.com/) to install the latest developing and debugging tools for **Vulkan** graphics API.
 
-## Build & Run on Vulkan
+## Create a Graphics Context
+
+To create a graphics context based on **Vulkan** use the lines:
+
+```c#
+GraphicsContext graphicsContext = new Evergine.Vulkan.VKGraphicsContext();
+graphicsContext.CreateDevice();
+```
+
+## Build & Run
 
 You can select **Vulkan** API support during the new project creation from the **Evergine** launcher.
 
@@ -34,12 +43,12 @@ If the project already exists you can add the **Vulkan** support from **Evergine
 
 ![Settings](images/dx12_support_0.jpg)
 
-Selecting and adding the profile for Windows (DirectX12).
+Selecting and adding the profile for Windows (Vulkan).
 
 ![Settings](images/vk_support_1.jpg)
 
 ![Settings](images/vk_support_2.jpg)
 
-You can run on **Vulkan** by clicking on File -> Build & Run -> Windows.DirectX12.
+You can run on **Vulkan** by clicking on File -> Build & Run -> Windows.Vulkan.
 
 ![Settings](images/vk_support_3.jpg)
