@@ -21,6 +21,15 @@ To check the implementation status of this technology visit [webgpu.io](https://
 | **Chrome** |  The WebGPU flag must be enabled by writing this in your browser: <br/> `chrome://flags/#enable-unsafe-webgpu`
 | **Edge** |  The WebGPUflag must be enabled by writing this in your browser: <br/> `edge://flags/#enable-unsafe-webgpu` | 
 
+## Create a Graphics Context
+
+To create a graphics context based on **WebGPU** just write:
+
+```c#  
+GraphicsContext graphicsContext = new Evergine.WebGPU.WGPUGraphicsContext();
+graphicsContext.CreateDevice();
+```
+
 ## Build & Run on WebGPU
 
 The project template will be available soon.

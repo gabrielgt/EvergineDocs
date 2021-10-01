@@ -18,7 +18,16 @@ To get the latest DirectX version on your system used Windows update.
 
 For more information visit [Microsoft support.](https://support.microsoft.com/en-us/windows/checking-your-version-of-directx-7b71e74f-02e8-456f-72c7-9a1c1bbf0e9a)
 
-## Build & Run on DirectX 12
+## Create a Graphics Context
+
+To create a graphics context based on **DirectX12** just write:
+
+```c#
+GraphicsContext graphicsContext = new Evergine.DirectX12.DX12GraphicsContext();
+graphicsContext.CreateDevice();
+```
+
+## Build & Run
 
 You can select **DirectX 12** API support during the new project creation from the **Evergine** launcher.
 

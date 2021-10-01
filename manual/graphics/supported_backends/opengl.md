@@ -23,23 +23,43 @@ If you a running Windows 7 or later the **OpenGL** library has already been inst
 
 To check the **OpenGL** version available on your system just find out the control panel of your graphics card or you can download the [OpenGL Hardware Capability Viewer](https://opengl.gpuinfo.org/download.php).
 
-## Build & Run on OpenGL
+## Create a Graphics Context
+
+To create a graphics context based on **OpenGL** just write:
+
+```c#
+GraphicsContext graphicsContext = new Evergine.OpenGL.GLGraphicsContext();
+graphicsContext.CreateDevice();
+```
+
+To create a graphics context based on **WebGL** just write:
+
+```c#
+GraphicsContext graphicsContext = new Evergine.OpenGL.GLGraphicsContext(GraphicsBackend.WebGL2);
+graphicsContext.CreateDevice();
+```
+
+## Build & Run
 
 You can select **OpenGL** API support during the new project creation from the **Evergine** launcher.
+
+### Desktop
 
 If the project already exists you can add the **OpenGL** support from **Evergine Studio** by clicking on Settings -> Project Settings.
 
 ![Settings](images/dx12_support_0.jpg)
 
-Selecting and adding the profile for Windows (DirectX12).
+Selecting and adding the profile for Windows (OpenGL).
 
 ![Settings](images/gl_support_1.jpg)
 
 ![Settings](images/gl_support_2.jpg)
 
-You can run on **OpenGL** by clicking on File -> Build & Run -> Windows.DirectX12.
+You can run on **OpenGL** by clicking on File -> Build & Run -> Windows.OpenGL.
 
 ![Settings](images/gl_support_3.jpg)
+
+### WebGL
 
 To support Web Platforms based on **WebGL** versions you also need to add from project setting the WebGL Template, selecting WebGL 2.0 or 1.0 depends your project needs.
 
