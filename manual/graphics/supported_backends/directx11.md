@@ -27,10 +27,10 @@ For more information visit [Microsoft support.](https://support.microsoft.com/en
 
 ## Create a Graphics Context
 
-To create a graphics context based on DirectX12 just write:
+To create a graphics context based on **DirectX11** just write:
 
 ```c#
-GraphicsContext graphicsContext = new Evergine.DirectX12.DX12GraphicsContext();
+GraphicsContext graphicsContext = new Evergine.DirectX11.DX11GraphicsContext();
 graphicsContext.CreateDevice();
 ```
 

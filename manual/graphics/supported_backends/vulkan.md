@@ -28,7 +28,7 @@ It is highly recommended download [LunarSDK](https://vulkan.lunarg.com/) to inst
 
 ## Create a Graphics Context
 
-To create a graphics context based on **Vulkan** use the lines:
+To create a graphics context based on **Vulkan** just write:
 
 ```c#
 GraphicsContext graphicsContext = new Evergine.Vulkan.VKGraphicsContext();

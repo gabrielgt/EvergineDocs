@@ -19,7 +19,7 @@ It is the default graphics API used on iOS and MacOS devices and **Apple** updat
 
 ## Create a Graphics Context
 
-To create a graphics context based on **Metal** use the lines:
+To create a graphics context based on **Metal** just write:
 
 ```c#
 GraphicsContext graphicsContext = new Evergine.Metal.MTLGraphicsContext();

@@ -26,7 +26,7 @@ Pressing this button will trigger a capture of the next frame of rendering for t
 
 The **Evergine** low level API allow you to name all the different object types available, this include samplers, buffers, pipelines and much more. These names can then be displayed on RenderDoc to help to debugging the application.
 
-To set an object name, in a buffer for example, just set it as parameter in the factory constructor or set the property Name.
+To set an object name, in a buffer for example, just set it as a parameter in the factory constructor or set the property Name.
 
 ```c#
 this.graphicsContext.Factory.CreateBuffer(ref Description, "Buffer_Name");
@@ -54,6 +54,20 @@ commandBuffer.EndDebugMarker();
 ```
 
 ![Graphics](images/RenderDoc_5.jpg)
+
+## Including shader debug information
+
+By default to optimize the size of DirectX shaders, debugging information is stripped out. This mean that constants and resources will have no names, and the shader source will not be available. To include this debugging information in your shader you need to set the debug mode inside the pass code:
+
+```c#
+[Begin_Pass:Default]
+
+    [Mode Debug]
+    [Profile 10_0]
+    [Entrypoints VS=VS PS=PS]
+
+    // ...
+```
 
 ## Alternative graphics debugging technique
 
