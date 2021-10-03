@@ -57,7 +57,7 @@ commandBuffer.EndDebugMarker();
 
 ## Including shader debug information
 
-By default to optimize the size of DirectX shaders, debugging information is stripped out. This mean that constants and resources will have no names, and the shader source will not be available. To include this debugging information in your shader you need to set the debug mode inside the pass code:
+By default to optimize the size of DirectX shaders, debugging information is stripped out. This mean that constants and resources will have no names, and the shader source will not be available. To include this debugging information in your shader you need to set the debug mode inside the pass shader code:
 
 ```c#
 [Begin_Pass:Default]
