@@ -1,4 +1,5 @@
 # Interface
+---
 ![Graphics](images/interface.jpg)
 
 Evergine Studio's interface uses dockable panels to organize different section so you can create your own layout with the panel location that you prefer. The above image shows the default layout and his main panels are:
