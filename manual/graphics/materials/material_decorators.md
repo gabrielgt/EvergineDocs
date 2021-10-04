@@ -1,10 +1,20 @@
 # Material Decorators
 
-**Material Decorator** is a C# class that allows defining how the effect resource layout elements are shown in the [Material Editor](material_editor.md). The material decorator are generated from [Effect Editor](../effects/EffectEditor.md).
+**Material Decorator** is a C# class that simplify the use of custom materials to the users. It allows to define how the effect resource layout elements are shown in the [Material Editor](material_editor.md). To generate material decorator of your effects you need to use the [Effect Editor](../effects/EffectEditor.md).
+
+## Generate Material Decorator
+From the [Effect Editor](../effects/EffectEditor.md) toolbox push the ![Generate Material Decorator button](images/MaterialDecoratorIcon.jpg) button to generate the Material decorator.
+
+![Generate Material Decorator](images/GenerateMaterialDecorator.jpg)
 
 <br>
 
-The effect resource layout block is marked in the effect code with the _[Begin_ResourceLayout]_ and _[End_ResourceLayout] tags:
+A new c# class will be created in your C# solution that you will see from **Visual Studio**
+
+![Material Decorator In Visual Studio](images/MaterialDecoratorInVS.jpg)
+
+## Example
+Parting from the following effect resource layout block (This is the section marked in the effect code with the `[Begin_ResourceLayout]` and `[End_ResourceLayout]` tags):
 
 ```c#
 [Begin_ResourceLayout]
@@ -22,21 +32,7 @@ The effect resource layout block is marked in the effect code with the _[Begin_R
 [End_ResourceLayout]
 ```
 
-<br>
-
-From the [Effect Editor](../effects/EffectEditor.md) toolbox push the ![Generate Material Decorator button](images/MaterialDecoratorIcon.jpg) button to generate the Material decorator.
-
-![Generate Material Decorator](images/GenerateMaterialDecorator.jpg)
-
-<br>
-
-A new c# class will be created in your C# solution that you will see from **Visual Studio**
-
-![Material Decorator In Visual Studio](images/MaterialDecoratorInVS.jpg)
-
-<br>
-
-This is an example of material decorator generated:
+The generated Material Decorator will be the following:
 
 ```c#
 //------------------------------------------------------------------------------
@@ -83,14 +79,11 @@ namespace DocumentationWorkBench.Effects
 
 The above Material decorator example shows how the effect resource layout is translated to get/set class properties to make easier use of the effect from code.
 
-<br>
-
 Now when you open a material asset from [Material Editor](material_editor.md) and the material uses _MyGraphicEffect_ its properties as:
 
 ![Material properties](images/defaultMaterialDecorator.jpg)
 
-<br>
-
+## Customize Material Decorators
 Editing the material decorator c# class you can modify how the properties are shown in the [Material Editor](material_editor.md). For example, the Color property appears as Vector3 property because this is the type using in the HLSL effect code. You can change it to use a Color picker to configure this parameter with the following code change:
 
 ```c#
