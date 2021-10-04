@@ -1,15 +1,11 @@
-# Materials
+# Effects
 ---
-![Effect header](images/materials.jpg)
+![Effect header](images/effects.jpg)
 
-Materials describe the appearance of object surfaces and how they react to [light](../lights.md). This allows you to simulate properties like roughness, reflection, specular to create realistic materials of the real world as metal, plastic, concrete, etc. 
+An **effect** is a _uber-shader_ so be able to represent a single shader or a large group of shaders. A shader is a piece of code written in a specific language creates to run on a GPU. The effects in evergine are written using [**HLSL**](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-pguide). The effects automatically translate to another language when it is necessary.
 
-## Matertial and Effects
-The materials are based on an [Effect](../effects.md) so you first need to create one or use an existing Effect.
-While an effect defines all the properties and possibilities, a **Material** sets specific values for each property defined in the associated effect.
-
-## Default Materials
-Default Evergine project template imports the [ **Evergine.Core** package](../../evergine_studio/packages.md) and this package includes the [Default Material](material_editor.md) that you can use to simulate a large amount of surfaces. Materials are a type of [asset](../../evergine_studio/assets/index.md) and have a dedicated Editor [**Material Editor**](material_editor.md).
+## Default Effect
+Default evergine project template imports the [ **Evergine.Core** package](../../evergine_studio/packages.md) package and this package includes several effects like the **Standard Effect** used by Default Material asset. Effects are a type of asset and have a dedicated Editor [Effect Editor](effect_editor.md).
 
 ## In this section
 * [Create Effects](create_effects.md)

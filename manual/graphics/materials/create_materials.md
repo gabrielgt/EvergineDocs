@@ -4,9 +4,9 @@
 Materials describe the appearance of object surfaces and how they react to [light](../lights.md).
 
 ## Create a Material asset in Evergine Studio
-You can create a material click button on ![Plus Icon](../../evergine_studio/assets/images/plusIcon.jpg) from [Assets Details](../../evergine_studio/interface.md) panel to deploy a create menu options and click on the option _"Create material"_
+You can create a material click button on ![Plus Icon](../images/plusIcon.jpg) from [Assets Details](../../evergine_studio/interface.md) panel to deploy a create menu options and click on the option _"Create material"_
 
-![Create new scene menu option](../../evergine_studio/assets/images/AssetsDetailsMenu.jpg)
+![Create new material menu option](images/AssetsDetailsMenu.jpg)
 
 ### Inspect materials in Asset Details
 You can find the material assets in the [**Assets Details**](../../evergine_studio/interface.md) panel when you select a folder in the [**Project Explorer**](../../evergine_studio/interface.md).
