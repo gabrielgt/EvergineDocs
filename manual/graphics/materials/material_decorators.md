@@ -3,31 +3,31 @@
 **Material Decorator** is a C# class that simplify the use of custom materials to the users. It allows to define how the effect resource layout elements are shown in the [Material Editor](material_editor.md). To generate material decorator of your effects you need to use the [Effect Editor](../effects/EffectEditor.md).
 
 ## Generate Material Decorator
+
 From the [Effect Editor](../effects/EffectEditor.md) toolbox push the ![Generate Material Decorator button](images/MaterialDecoratorIcon.jpg) button to generate the Material decorator.
 
 ![Generate Material Decorator](images/GenerateMaterialDecorator.jpg)
-
-<br>
 
 A new c# class will be created in your C# solution that you will see from **Visual Studio**
 
 ![Material Decorator In Visual Studio](images/MaterialDecoratorInVS.jpg)
 
 ## Example
+
 Parting from the following effect resource layout block (This is the section marked in the effect code with the `[Begin_ResourceLayout]` and `[End_ResourceLayout]` tags):
 
 ```c#
 [Begin_ResourceLayout]
 
-	cbuffer PerDrawCall : register(b0)
-	{
-		float4x4 WorldViewProj	: packoffset(c0);	[WorldViewProjection]
-	};
+    cbuffer PerDrawCall : register(b0)
+    {
+        float4x4 WorldViewProj : packoffset(c0);    [WorldViewProjection]
+    };
 
-	cbuffer Parameters : register(b1)
-	{
-		float3 Color			: packoffset(c0);   [Default(0.3, 0.3, 1.0)]
-	};
+    cbuffer Parameters : register(b1)
+    {
+        float3 Color : packoffset(c0);   [Default(0.3, 0.3, 1.0)]
+    };
 
 [End_ResourceLayout]
 ```
@@ -84,6 +84,7 @@ Now when you open a material asset from [Material Editor](material_editor.md) an
 ![Material properties](images/defaultMaterialDecorator.jpg)
 
 ## Customize Material Decorators
+
 Editing the material decorator c# class you can modify how the properties are shown in the [Material Editor](material_editor.md). For example, the Color property appears as Vector3 property because this is the type using in the HLSL effect code. You can change it to use a Color picker to configure this parameter with the following code change:
 
 ```c#
@@ -100,8 +101,6 @@ public Evergine.Common.Graphics.Color Parameters_Color
     }
 }
 ```
-
-<br>
 
 After this change, if you reload the project in the Evergine Studio, the Material Editor shows its color property as:
 ![Custom Material Decorator](images/customMaterialDecorator.jpg)

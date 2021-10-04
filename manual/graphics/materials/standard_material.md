@@ -47,7 +47,6 @@ A material will have the properties define by his effect. In this section are de
 | **OrderBias**                 | - |
 | **LayerDescription**          | - |
 
-
 ### Distortion Material properties
 
 |Property                       | Description |
@@ -56,4 +55,3 @@ A material will have the properties define by his effect. In this section are de
 | **Intensity**                 | - |
 | **Distortion Texture**        | - |
 | **Sampler**                   | - |
-
