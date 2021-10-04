@@ -1,4 +1,5 @@
 # Evergine manual
+
 ---
 ![Manual](images/manual.jpg)
 
@@ -9,6 +10,7 @@ You can read it from start to finish, or use it as a reference
 > This documentation is a work-in-progress and updated regularly with new content. If you find something that can be improved, please contact us in the [feedback repository](https://github.com/WaveEngine/Feedback)
 
 ## In this section
+
 * [Getting started](get_started/index.md)
 * [Evergine Launcher](evergine_launcher/index.md)
 * [Evergine Studio](everginestudio/index.md)
