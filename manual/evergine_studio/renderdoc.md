@@ -5,6 +5,8 @@
 RenderDoc is a graphics debugger currently available for Vulkan, DirectX 11/ 12 and OpenGL development on Windows, Linux and Android.
 It is integrated on **Evergine Studio** to make it easy to debug your application during the development process.
 
+To install the latest RenderDoc version visit the project [website](https://renderdoc.org/)
+
 ## Loading RenderDoc
 
 First you need to load the RenderDoc assembly to allow the graphical commands that are sent to the GPU to be captured.

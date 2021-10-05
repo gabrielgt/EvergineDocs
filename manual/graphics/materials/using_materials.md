@@ -26,4 +26,7 @@ protected override void CreateScene()
 ```
 
 ## How to apply material to an entity from Evergine Studio.
-To assign a material to your objects...
+
+Select an entity from Viewport or Entities Hierarchy and then the Entity Details panel shows the entity component list. To apply a new material set the Material property in the Material Component of your entity.
+
+![Material Component](images/ApplyMaterial.jpg)
