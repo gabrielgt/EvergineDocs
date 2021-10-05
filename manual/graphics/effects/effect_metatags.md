@@ -2,23 +2,183 @@
 
 In evergine the effect are written in [**HLSL**](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-pguide) languages, but to automatize some tasks evergine includes an additional tags that you can add to the HLSL code.
 
+</br>
+
 ## Block Metatags
 
 Effect code are organize in two importants kind of blocks:
 
 | Block     | Tags      | Description        |
 | --------- | --------- | ------------------ |
-| Resource Layout | [Begin_ResourceLayout] <br> [End_ResourceLayout] | This block of code defines all resources (Constant Buffers, Structured Buffers, Textures and Samplers) using by all effect passes. |
-| Pass | [Begin_Pass:PassName] <br> [End_Pass] | This block of code defines a RenderPipeline pass. The _DefaultRenderPipeline_ defines 3 passes that any effect can define:  ZPrePass, Distortion, Default |
+| Resource Layout | <span style="color:lightgreen">[Begin_ResourceLayout] <br> [End_ResourceLayout]</span> | This block of code defines all resources (Constant Buffers, Structured Buffers, Textures and Samplers) using by all effect passes. |
+| Pass | <span style="color:lightgreen">[Begin_Pass:PassName] <br> [End_Pass]</span> | This block of code defines a RenderPipeline pass. The _DefaultRenderPipeline_ defines 3 passes that any effect can define:  ZPrePass, Distortion, Default |
 
-## Pass settings
+</br>
+
+## Directives Metatags
+
+Inside of resource layout block you can define the directive set that your custom effect will have. The directive are useful to enable differente features of your effect. <br>
+ A directive can be define two values On/Off feature or can define a feature with multiple values:
+<br><span style="color:lightgreen">[Directive:Name `A_OFF` `A`] <br>
+[Directive:Name `A_OFF` `B` `C` `D` ...]</span>
+
+Example: <br>
+<span style="color:lightgreen">[Directive:NormalMapping Normal_OFF, Normal]</span>
+<br><span style="color:lightgreen">[Directive:ShadowFilter Shadow_OFF, ShadowFilter3 ShadowFilter5 ShadowFilter7]</span>
+
+A effect is a set of shader (known as _Uber-shader_) and the directive help you to define this set of shader. The directives generate automatically multiple shader with the effects is compiled.
+
+Example: 
+<br><span style="color:lightgreen">[Directive:Name `A_OFF` `A`]</span> will generate a shader with A enabled and other shader with A disabled.
+
+<span style="color:lightgreen">[Directive:Name `A_OFF` `B` `C` `D` ...]</span> will generate an A, B, C, D ...  shaders.
+
+And the directives combination multiply the combinations. If you define two <br><span style="color:lightgreen">[Directive:FeatureA `A_OFF` `A`]<br>
+[Directive:FeatureB `B_OFF C D</span> will generate the shader combinations: A_OFF-B_OFF, A-B_OFF, A_OFF-C, A-C, A_OFF-D, A-D
+
+The number of combination are multiply for effect passes so the complex effect would have hundreds or thousands of combinations.
+
+The effects can compiled his combination on demand in runtime or pre-compiled combination before and use it later in rutime without compile. So you generate a bundle with compiled shader combinations. To know more details go to this [section](using_effects.md)
+
+</br>
+
+## Default Values Metatag
+Evergine allows to inyect contant values constant buffer attributes automatically using tags.
+
+Default values can be inyected directly using the <span style="color:lightgreen">[Default(value)]</span> tag:
+```c#
+cbuffer Parameters : register(b0)
+{
+    float SpeedFactor : packoffset(c0.x); [Default(1.5)]
+    float3 Position   : packoffset(c0.y); [Default(2.3, 3.3, 5.6)]
+}
+```
+Default value tag support the following types: _int_, _float_, _bool_, _float_, _float2_, _float3_, _float4_.
+
+<br>
+
+## Inyected Values Metatags
+
+Evergine allows to inyect engine data to resource layout resources _(Constant Buffers attributes and Textures)_ automatically using tags.
+
+| Tag  | Type | Description |
+| ---- | -----| ----------- | 
+| FrameID              | long |          |
+| DrawContextID        | int  |          |
+| DrawContextViewIndex | int  |          |
+| World                | Matrix4x4 |         |
+| View                 | Matrix4x4 |         |
+| ViewInverse          | Matrix4x4 |         |  
+| Projection           | Matrix4x4 |         |
+| UnjitteredProjection | Matrix4x4 |         |
+| ProjectionInverse    | Matrix4x4 |         |
+| ViewProjection       | Matrix4x4 |         |
+| UnjitteredViewProjection | Matrix4x4 |         |
+| PreviousViewProjection   | Matrix4x4 |         |
+| WorldViewProjection      | Matrix4x4 |         |
+| UnjitteredWorldViewProjection | Matrix4x4 |         |
+| WorldInverse                  | Matrix4x4 |         |
+| WorldInverseTranspose         | Matrix4x4 |         |
+| float Time
+| Vector3 CameraPosition
+| Vector2 CameraJitter
+| Vector2 CameraPreviousJitter
+| Vector3 CameraRight
+| Vector3 CameraUp
+| Vector3 CameraForward
+| float CameraFocalDistance
+| float CameraFocalLength
+| float CameraAperture
+| float CameraExposure
+| float CameraFarPlane
+| float CameraNearPlane
+| Matrix4x4 ViewProjectionInverse
+| int MultiviewCount
+| Matrix4x4[] MultiviewProjection
+| Matrix4x4[] MultiviewView
+| Matrix4x4[] MultiviewViewProjection
+| Matrix4x4[] MultiviewViewProjectionInverse
+| Vector4[] MultiviewPosition
+| ulong ForwardLightMask
+| uint LightCount
+| IntPtr LightBufferPtr
+| uint LightBufferSize
+| IntPtr ShadowViewProjectionBufferPtr
+| uint ShadowViewProjectionBufferSize
+| uint IBLMipMapLevel
+| float IBLLuminance
+| IntPtr IrradianceSHPtr
+| uint IrradianceSHBufferSize
+| float EV100
+| float Exposure
+| Vector3 SunDirection
+| Vector3 SunColor
+| float SunIntensity
+| Matrix4x4 SkyboxTransform
+<br>
+
+## Pass Settings Metatags
 
 These tags are used inside of a pass block code and are useful to configure which settings do you want to compile this pass.
 
 | Tag   | Description  |
 | ----- | ------------ |
-| [Profile `API_Level`] | Defines HLSL language version and capabilities. The API level values could be: <ul><li>**9_1:** DirectX9.1 HLSL 3.0.</li><li>**9_2:** DirectX 9.2 HLSL 3.0</li><li>**9_3:** DirectX 9.3 HLSL 3.0</li><li>**10_0:** DirectX 10 HLSL 4.0</li><li>**10_1:** DirectX 10.1 HLSL 4.1</li><li>**11_0:** DirectX 11 HLSL 5.0</li><li>**11_1:** DirectX 11 HLSL 5.0</li><li>**12_0:** DirectX 12 HLSL 6.0</li><li>**12_1:** DirectX 12 HLSL 6.1</li><li>**12_3:** DirectX 12 HLSL 6.3 (Raytracing)</li></ul>
-| [Entirypoints `Stage=MethodName`] | Defines the entrypoint stage methods of the pass. The valid stages values are: <ul><li>**VS:** Vertex Shader.</li><li>**HS:** Hull Shader.</li><li>**DS:** Domain Shader.</li><li>**GS:** Geometry Shader.</li><li>**PS:** Pixel Shader.</li><li>**CS:** Compute Shader.</li></ul>
-| [Mode `value`]| Defines the compilation mode of the pass. Available mode list:<ul><li>**None:** Default compilation mode.</li><li>**Debug:** Debug mode includes depuration symbols to analyze with shader tools like [RenderDoc](https://renderdoc.org/), [PIX](https://devblogs.microsoft.com/pix/introduction/) or [NVidia Nsight Graphics](https://developer.nvidia.com/nsight-graphics)</li><li>**Release:** Optimize compilation mode.</li></ul> |
+| <span style="color:lightgreen">[Profile `API_Level`]</span> | Defines HLSL language version and capabilities. The API level values could be: <ul><li>**9_1:** DirectX9.1 HLSL 3.0.</li><li>**9_2:** DirectX 9.2 HLSL 3.0</li><li>**9_3:** DirectX 9.3 HLSL 3.0</li><li>**10_0:** DirectX 10 HLSL 4.0</li><li>**10_1:** DirectX 10.1 HLSL 4.1</li><li>**11_0:** DirectX 11 HLSL 5.0</li><li>**11_1:** DirectX 11 HLSL 5.0</li><li>**12_0:** DirectX 12 HLSL 6.0</li><li>**12_1:** DirectX 12 HLSL 6.1</li><li>**12_3:** DirectX 12 HLSL 6.3 (Raytracing)</li></ul> |
+| <span style="color:lightgreen">[Entirypoints `Stage=MethodName`]</span> | Defines the entrypoint stage methods of the pass. The valid stages values are: <ul><li>**VS:** Vertex Shader.</li><li>**HS:** Hull Shader.</li><li>**DS:** Domain Shader.</li><li>**GS:** Geometry Shader.</li><li>**PS:** Pixel Shader.</li><li>**CS:** Compute Shader.</li></ul>
+| <span style="color:lightgreen">[Mode `value`]</span>| Defines the compilation mode of the pass. Available mode list:<ul><li>**None:** Default compilation mode.</li><li>**Debug:** Debug mode includes depuration symbols to analyze with shader tools like [RenderDoc](https://renderdoc.org/), [PIX](https://devblogs.microsoft.com/pix/introduction/) or [NVidia Nsight Graphics](https://developer.nvidia.com/nsight-graphics)</li><li>**Release:** Optimize compilation mode.</li></ul> |
+| <span style="color:lightgreen">[RequiredWidth `Directive`</span>] | Defines the directive list required by the pass. <br> _Example: [RequiredWith VCOLOR] the renderpipeline run this pass only when VCOLOR directive is enabled._|
 
+<br> 
+
+## Override Render Layer Metatags
+
+Theses tags allows the pass modify the render layer properties when the render pipeline run this pass. To know more details about the RenderLayer properties read this [section](../render_layers.md):
+
+
+| Rasterization Process Tag      |  Description                               |
+| ------------------------------ | ------------------------------------------ |
+| <span style="color:lightgreen">[FillMode `Value`]</span>           | Determines the fill mode to use when rendering.<br>Available values: _WireFrame_ or _Solid_   |
+| <span style="color:lightgreen">[CullMode `Value`] </span>            |  Indicates triangles facing the specified direction are not drawn.<br>Available values: _None_, _Front_ or _Back_      |
+| <span style="color:lightgreen">[FrontCounterClockwise `bool`]</span>| Determines if a triangle is front- or back-facing. If this parameter is true, a triangle will be considered front-facing if its vertices are counter-clockwise on the render target and considered back-facing if they are clockwise. <br> Available values: _True_ or _false_            |
+| <span style="color:lightgreen">[DepthBias `int`]   | Depth value added to a given pixel. <br> The value is an integer. |
+| <span style="color:lightgreen">[DepthBiasClamp `float`] | Maximum depth bias of a pixel. <br> The value is a float [0-1].|
+| <span style="color:lightgreen">[SlopeScaledDepthBias `float`]</span> | Scalar on a given pixel's slope. <br> The value is a float.|
+| <span style="color:lightgreen">[DepthClipEnable `bool`]</span> | Enable clipping based on distance. <br> Available values: _True_ or _False_|
+| <span style="color:lightgreen">[ScissorEnable `bool`]</span> | Enable scissor-rectangle culling. All pixels outside an active scissor rectangle are culled. <br> Available values: _True_ or _False_ |
+| <span style="color:lightgreen">[AntialiasedLineEnable `bool`]</span> |  Specifies whether to enable line antialiasing; only applies if doing line drawing and MultisampleEnable is false. <br> Available values: _True_ or _False. |
+
+<br>
+
+| Blend State Tag | Description |
+| --------------- | ---------------- |
+| <span style="color:lightgreen">[AlphaToCoverageEnable `bool`]</span> | Specifies whether to use alpha-to-coverage as a multisampling technique when setting a pixel to a render target.<br> Available values: _True_ or _False. |
+| <span style="color:lightgreen">[IndependentBlendEnable `bool`]</span> | Specifies whether to enable independent blending in simultaneous render targets. Set to true to enable independent blending. If set to false, only the RenderTarget[0] members are used; RenderTarget[1..7] are ignored. <br> Available values: _True_ or _False. |
+| <span style="color:lightgreen">[RT0BlendEnable `bool`]</span> | Enable (or disable) blending for RenderTarget 0. <br> Available values: _True_ or _False. | 
+| <span style="color:lightgreen">[RT0SourceBlendColor `Value`]</span> | This blend option specifies the operation to perform on the RGB value that the pixel shader outputs. The BlendOp member defines how to combine the SrcBlend and DestBlend operations. <br> Availables values: _Zero_, _One_ _SourceColor_, _InverseSourceColor_, _SourceAlpha_, _InverseSourceAlpha_, _DestinationAlpha_, _InverseDesinationAlpha_, _DestinationColor_, _InverseDestinatinoColor_, _SourceAlphaSaturate_, _BlendFactor_, _InverseBlendFactor_, _SecondarySourceColor_, _InverseSecondarySourceColor_, SecondarySourceAlpha_ or _InverseSecondarySourceAlpha_. |
+| <span style="color:lightgreen">[RT0DestinationBlendColor `Value`]</span> | This blend option specifies the operation to perform on the current RGB value in the render target. The BlendOp member defines how to combine the SrcBlend and DestBlend operations. <br> Availables values: _Zero_, _One_ _SourceColor_, _InverseSourceColor_, _SourceAlpha_, _InverseSourceAlpha_, _DestinationAlpha_, _InverseDesinationAlpha_, _DestinationColor_, _InverseDestinatinoColor_, _SourceAlphaSaturate_, _BlendFactor_, _InverseBlendFactor_, _SecondarySourceColor_, _InverseSecondarySourceColor_, SecondarySourceAlpha_ or _InverseSecondarySourceAlpha_. |
+| <span style="color:lightgreen">[RT0BlendOperationColor `Value`]</span> | This blend operation defines how to combine the SrcBlend and DestBlend operations. <br> Available values: _Add_, _Substract_, _ReverseSubstract_, _Min_ or _Max_.|
+| <span style="color:lightgreen">[RT0SourceBlendAlpha `Value`]</span> | This blend option specifies the operation to perform on the alpha value that the pixel shader outputs. Blend options that end in _COLOR are not allowed. The BlendOpAlpha member defines how to combine the SrcBlendAlpha and DestBlendAlpha operations. <br> Availables values: _Zero_, _One_ _SourceColor_, _InverseSourceColor_, _SourceAlpha_, _InverseSourceAlpha_, _DestinationAlpha_, _InverseDesinationAlpha_, _DestinationColor_, _InverseDestinatinoColor_, _SourceAlphaSaturate_, _BlendFactor_, _InverseBlendFactor_, _SecondarySourceColor_, _InverseSecondarySourceColor_, SecondarySourceAlpha_ or _InverseSecondarySourceAlpha_. |
+| <span style="color:lightgreen">[RT0DestinationBlendAlpha `Value`]</span> | This blend option specifies the operation to perform on the current alpha value in the render target. Blend options that end in _COLOR are not allowed. The BlendOpAlpha member defines how to combine the SrcBlendAlpha and DestBlendAlpha operations. <br> Availables values: _Zero_, _One_ _SourceColor_, _InverseSourceColor_, _SourceAlpha_, _InverseSourceAlpha_, _DestinationAlpha_, _InverseDesinationAlpha_, _DestinationColor_, _InverseDestinatinoColor_, _SourceAlphaSaturate_, _BlendFactor_, _InverseBlendFactor_, _SecondarySourceColor_, _InverseSecondarySourceColor_, SecondarySourceAlpha_ or _InverseSecondarySourceAlpha_. |
+| <span style="color:lightgreen">[RT0BlendOperationAlpha `Value`]</span> | This blend operation defines how to combine the SrcBlendAlpha and DestBlendAlpha operations for RenderTarget 0. <br> Available values: _Add_, _Substract_, _ReverseSubstract_, _Min_ or _Max_.|
+| <span style="color:lightgreen">[RT0ColorWriteChannels `Value`]</span> | A write mask for Render target 0. <br> Availables values: _None_, _Red_, _Green_, _Blue_, _Alpha_ or _All_. |
+
+<br>
+
+| Depth Stencil Tag | Description |
+| ----------------- | ----------- |
+| <span style="color:lightgreen">[DepthEnable `bool`]</span> | Enable depth testing. <br> Availables values: _True_ or _False_.|
+| <span style="color:lightgreen">[DepthWriteMask `bool`]</span> | Identify a portion of the depth-stencil buffer that can be modified by depth data. <br> Available values: _True_ or _False_.|
+| <span style="color:lightgreen">[DepthFunction `Value`]</span> | A function that compares depth data against existing depth data. <br> Availables values: _Never_, _Less_, _Equal_, _LessEqual_, _Greater_, _NotEqual_, _GreaterEqual_ or _Always_. |
+| <span style="color:lightgreen">[StencilEnable `bool`]</span> | Enable stencil testing. <br> Availables values: _True_ or _False_. |
+| <span style="color:lightgreen">[StencilReadMask `byte`]</span> | Identify a portion of the depth-stencil buffer for reading stencil data. <br> The value is a byte. |
+| <span style="color:lightgreen">[StencilWriteMask `byte`]</span> | Identify a portion of the depth-stencil buffer for writing stencil data. <br> The value is a byte.
+| <span style="color:lightgreen">[FrontFaceStencilFailOperation `Value`]</span> | The stencil operation to perform when stencil testing fails in FrontFace <br> Availables values: _Keep_, _Zero_, _Replace_, _IncrementSaturation_, _DescrementSaturation_, _Invert_, _Increment_, _Decrement_. |
+| <span style="color:lightgreen">[FrontFaceStencilDepthFailOperation `Value`]</span> | The stencil operation to perform when stencil testing passes and depth testing fails in FrontFace. <br> Availables values: _Keep_, _Zero_, _Replace_, _IncrementSaturation_, _DescrementSaturation_, _Invert_, _Increment_, _Decrement_. |
+| <span style="color:lightgreen">[FrontFaceStencilPassOperation `Value`]</span> | The stencil operation to perform when stencil testing and depth testing both pass in FrontFace. <br> Availables values: _Never_, _Less_, _Equal_, _LessEqual_, _Greater_, _NotEqual_, _GreaterEqual_ or _Always_. |
+| <span style="color:lightgreen">[FrontFaceStencilFunction `Value`]</span> | A function that compares stencil data against existing stencil data in FrontFace. <br> Availables values: _Never_, _Less_, _Equal_, _LessEqual_, _Greater_, _NotEqual_, _GreaterEqual_ or _Always_. |
+| <span style="color:lightgreen">[BackFaceStencilFailOperation `Value`]</span> |The stencil operation to perform when stencil testing fails in BackFace <br> Availables values: _Keep_, _Zero_, _Replace_, _IncrementSaturation_, _DescrementSaturation_, _Invert_, _Increment_, _Decrement_. |
+| <span style="color:lightgreen">[BackFaceStencilDepthFailOperation `Value`]</span> | The stencil operation to perform when stencil testing passes and depth testing fails in BackFace. <br> Availables values: _Keep_, _Zero_, _Replace_, _IncrementSaturation_, _DescrementSaturation_, _Invert_, _Increment_, _Decrement_. |
+| <span style="color:lightgreen">[BackFaceStencilPassOperation `Value`]</span> | The stencil operation to perform when stencil testing and depth testing both pass in BackFace. <br> Availables values: _Never_, _Less_, _Equal_, _LessEqual_, _Greater_, _NotEqual_, _GreaterEqual_ or _Always_. |
+| <span style="color:lightgreen">[BackFaceStencilFunction `Value`]</span> | A function that compares stencil data against existing stencil data in BackFace. <br> Availables values: _Never_, _Less_, _Equal_, _LessEqual_, _Greater_, _NotEqual_, _GreaterEqual_ or _Always_. |
+| <span style="color:lightgreen">[StencilReference `int`]</span> | The reference value to use when doing a stencil test. <br> The value is a integer. |
 
