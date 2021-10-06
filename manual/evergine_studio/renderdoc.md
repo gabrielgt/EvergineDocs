@@ -44,7 +44,7 @@ buffer.Name = "Buffer_Name";
 
 ## Debug markers and regions
 
-In addition to naming the **Evergine** low level API also adds the ability to place debug markers inside command buffers. These ca be used to mark points of interest and highlight specific areas inside of the command buffer.
+In addition to naming the **Evergine** low level API also adds the ability to place debug markers inside command buffers. These can be used to mark points of interest and highlight specific areas inside of the command buffer.
 
 > [!Tip]
 > Note that contrary to naming objects, debug markers (and regions) have to placed inside of an active command buffer.
@@ -59,7 +59,7 @@ commandBuffer.EndDebugMarker();
 
 ## Including shader debug information
 
-By default to optimize the size of DirectX shaders, debugging information is stripped out. This mean that constants and resources will have no names, and the shader source will not be available. To include this debugging information in your shader you need to set the debug mode inside the pass shader code:
+By default to optimize the size of DirectX shaders, debugging information is stripped out. This mean that constants and resources will have no names, and the shader source will not be available. To include this debugging information in your shader you need to set the debug mode inside the pass shader code by adding `[Mode Debug]` line:
 
 ```c#
 [Begin_Pass:Default]
