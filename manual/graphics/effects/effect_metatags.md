@@ -2,8 +2,6 @@
 
 In evergine the effect are written in [**HLSL**](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-pguide) languages, but to automatize some tasks evergine includes an additional tags that you can add to the HLSL code.
 
-</br>
-
 ## Block Metatags
 
 Effect code are organize in two importants kind of blocks:
@@ -12,8 +10,6 @@ Effect code are organize in two importants kind of blocks:
 | --------- | --------- | ------------------ |
 | Resource Layout | <span style="color:lightgreen">[Begin_ResourceLayout] <br> [End_ResourceLayout]</span> | This block of code defines all resources (Constant Buffers, Structured Buffers, Textures and Samplers) using by all effect passes. |
 | Pass | <span style="color:lightgreen">[Begin_Pass:PassName] <br> [End_Pass]</span> | This block of code defines a RenderPipeline pass. The _DefaultRenderPipeline_ defines 3 passes that any effect can define:  ZPrePass, Distortion, Default |
-
-</br>
 
 ## Directives Metatags
 
@@ -40,8 +36,6 @@ The number of combination are multiply for effect passes so the complex effect w
 
 The effects can compiled his combination on demand in runtime or pre-compiled combination before and use it later in rutime without compile. So you generate a bundle with compiled shader combinations. To know more details go to this [section](using_effects.md)
 
-</br>
-
 ## Default Values Metatag
 Evergine allows to inyect contant values constant buffer attributes automatically using tags.
 
@@ -55,67 +49,81 @@ cbuffer Parameters : register(b0)
 ```
 Default value tag support the following types: _int_, _float_, _bool_, _float_, _float2_, _float3_, _float4_.
 
-<br>
-
 ## Inyected Values Metatags
 
 Evergine allows to inyect engine data to resource layout resources _(Constant Buffers attributes and Textures)_ automatically using tags.
 
-| Tag  | Type | Description |
-| ---- | -----| ----------- | 
-| FrameID              | long |          |
-| DrawContextID        | int  |          |
-| DrawContextViewIndex | int  |          |
-| World                | Matrix4x4 |         |
-| View                 | Matrix4x4 |         |
-| ViewInverse          | Matrix4x4 |         |  
-| Projection           | Matrix4x4 |         |
-| UnjitteredProjection | Matrix4x4 |         |
-| ProjectionInverse    | Matrix4x4 |         |
-| ViewProjection       | Matrix4x4 |         |
-| UnjitteredViewProjection | Matrix4x4 |         |
-| PreviousViewProjection   | Matrix4x4 |         |
-| WorldViewProjection      | Matrix4x4 |         |
-| UnjitteredWorldViewProjection | Matrix4x4 |         |
-| WorldInverse                  | Matrix4x4 |         |
-| WorldInverseTranspose         | Matrix4x4 |         |
-| float Time
-| Vector3 CameraPosition
-| Vector2 CameraJitter
-| Vector2 CameraPreviousJitter
-| Vector3 CameraRight
-| Vector3 CameraUp
-| Vector3 CameraForward
-| float CameraFocalDistance
-| float CameraFocalLength
-| float CameraAperture
-| float CameraExposure
-| float CameraFarPlane
-| float CameraNearPlane
-| Matrix4x4 ViewProjectionInverse
-| int MultiviewCount
-| Matrix4x4[] MultiviewProjection
-| Matrix4x4[] MultiviewView
-| Matrix4x4[] MultiviewViewProjection
-| Matrix4x4[] MultiviewViewProjectionInverse
-| Vector4[] MultiviewPosition
-| ulong ForwardLightMask
-| uint LightCount
-| IntPtr LightBufferPtr
-| uint LightBufferSize
-| IntPtr ShadowViewProjectionBufferPtr
-| uint ShadowViewProjectionBufferSize
-| uint IBLMipMapLevel
-| float IBLLuminance
-| IntPtr IrradianceSHPtr
-| uint IrradianceSHBufferSize
-| float EV100
-| float Exposure
-| Vector3 SunDirection
-| Vector3 SunColor
-| float SunIntensity
-| Matrix4x4 SkyboxTransform
-<br>
+| Parameters Tag                  | Type | Update Policy |  Description |
+| -------------------- | -----| ----------- | --------- |
+| <span style="color:lightgreen">[FrameID]</span>              | long | PerFrame |Gets Frame ID.   |
+| <span style="color:lightgreen">[DrawContextID]</span>        | int  | PerView | Gets drawcontext ID. |
+| <span style="color:lightgreen">[DrawContextViewIndex]</span> | int  | PerView | Gets the view index of this draw context. A draw context can contains several views (cascade shadow, point light shadows, reflection probe, etc...).   |
+| <span style="color:lightgreen">[World]</span>                | Matrix4x4 | PerDrawCall | Gets the world value of the current render mesh.|
+| <span style="color:lightgreen">[View]</span>                 | Matrix4x4 | PerView | Gets the view value of the current camera.|
+| <span style="color:lightgreen">[ViewInverse]</span>          | Matrix4x4 | PerView | Gets the view inverse value of the current camera.|  
+| <span style="color:lightgreen">[Projection]</span>           | Matrix4x4 | PerView | Gets the projection value of the current camera.|
+| <span style="color:lightgreen">[UnjitteredProjection]</span> | Matrix4x4 | PerView | Gets the unjittered projection value of the current camera. |
+| <span style="color:lightgreen">[ProjectionInverse]</span>    | Matrix4x4 | PerView | Gets the projection inverse value of the current camera. |
+| <span style="color:lightgreen">[ViewProjection]</span>       | Matrix4x4 | PerView |  Gets the view projection value of the current camera. |
+| <span style="color:lightgreen">[UnjitteredViewProjection]</span> | Matrix4x4 | PerView | Gets the unjittered view projection value of the current camera. |
+| <span style="color:lightgreen">[PreviousViewProjection]</span>   | Matrix4x4 | PerView | Gets the view projection value of the current camera in the previous frame. |
+| <span style="color:lightgreen">[WorldViewProjection]</span>      | Matrix4x4 | PerDrawCall | Gets the world view projection value of the current camera and mesh. |
+| <span style="color:lightgreen">[UnjitteredWorldViewProjection]</span> | Matrix4x4 | PerDrawCall | Gets the unjittered (TAA) world view projection value of the current camera and mesh. |
+| <span style="color:lightgreen">[WorldInverse] </span>                  | Matrix4x4 | PerDrawCall | Gets the inverse world value of the current render mesh. |
+| <span style="color:lightgreen">[WorldInverseTranspose]</span>         | Matrix4x4 | PerDrawCall | Gets the world inverse transpose of the current mesh. |
+| <span style="color:lightgreen">[Time]</span> | float | PerFrame | Gets the time value since the game has started.|
+| <span style="color:lightgreen">[CameraPosition]</span> | Vector3 | PerView | Gets the position value of the current camera. | 
+| <span style="color:lightgreen">[CameraJitter]</span> | Vector2 | PerView | Gets the current frame camera jittering. |
+| <span style="color:lightgreen">[CameraPreviousJitter]</span> | Vector2 | PerView | Gets the previous frame camera jittering.|
+| <span style="color:lightgreen">[CameraRight]</span> | Vector3 | PerView | Gets the right component of the camera orientation.|
+| <span style="color:lightgreen">[CameraUp]</span> | Vector3 | PerView | Gets the up component of the camera orientation.|
+| <span style="color:lightgreen">[CameraForward]</span> | Vector3 | PerView | Gets the forward component of the camera orientation.|
+| <span style="color:lightgreen">[CameraFocalDistance]</span> | float | PerView | Gets the camera focal distance (used with DoF).|
+| <span style="color:lightgreen">[CameraFocalLength]</span> | float  | PerView | Gets the camera focal length.|
+| <span style="color:lightgreen">[CameraAperture]</span> | float | PerView | Gets the camera aperture.|
+| <span style="color:lightgreen">[CameraExposure]</span> | float | PerView | Gets the camera exposure. |
+| <span style="color:lightgreen">[CameraFarPlane]</span> | float | PerView |Gets the far plane of the camera.|
+| <span style="color:lightgreen">[CameraNearPlane]</span> | float | PerView | Gets the near plane of the camera.|
+| <span style="color:lightgreen">[ViewProjectionInverse]</span> | Matrix4x4 | PerView | Gets the inverse of the view projection value of the current camera.|
+| <span style="color:lightgreen">[MultiviewCount]</span> | int | PerView | Gets the number of eyes to be rendered.|
+| <span style="color:lightgreen">[MultiviewProjection]</span> | Matrix4x4 | PerView | Gets the stereo camera projection.|
+| <span style="color:lightgreen">[MultiviewView]</span> | Matrix4x4 | PerView | Gets the stereo camera view.|
+| <span style="color:lightgreen">[MultiviewViewProjection]</span> | Matrix4x4 | PerView | Gets the stereo camera view projection. |
+| <span style="color:lightgreen">[MultiviewViewProjectionInverse]</span> | Matrix4x4 | PerView | Gets the stereo camera inverse view projection. |
+| <span style="color:lightgreen">[MultiviewPosition]</span> | Vector4 | PerView | Gets the stereo camera view. | 
+| <span style="color:lightgreen">[ForwardLightMask]</span> | ulong | PerDrawCall | Gets the lighting mask, used in Forward passes.|
+| <span style="color:lightgreen">[LightCount]</span> | uint | PerView | Gets the number of lights.|
+| <span style="color:lightgreen">[LightBuffer]</span> | IntPtr | PerView | Gets the light buffer ptr.|
+| <span style="color:lightgreen">[LightBufferSize]</span> | uint | PerView | Gets the light buffer size.|
+| <span style="color:lightgreen">[ShadowViewProjectionBuffer]</span> | IntPtr | PerView | Gets the shadow view projection buffer pointer.|
+| <span style="color:lightgreen">[ShadowViewProjectionBufferSize]</span> | uint | PerView | Gets the shadow view projection buffer size.|
+| <span style="color:lightgreen">[IBLMipMapLevel]</span> | uint | PerFrame | Gets the IBL texture mipmap level.|
+| <span style="color:lightgreen">[IBLLuminance]</span> | float | PerFrame | Gets the IBL luminance.|
+| <span style="color:lightgreen">[IrradianceSH]</span> | IntPtr | PerFrame | Gets the irradiance spherical harmonics buffer ptr.|
+| <span style="color:lightgreen">[IrradianceSHBufferSize]</span> | uint | PerFrame | Gets the irradiance spherical harmonics buffer size.|
+| <span style="color:lightgreen">[EV100]</span> | float | PerView | Gets the Exposition Value at ISO 100.|
+| <span style="color:lightgreen">[Exposure]</span> | float | PerView | Gets the camera exposure.|
+| <span style="color:lightgreen">[SunDirection]</span> | Vector3 | PerFrame | Gets the sun direction.|
+| <span style="color:lightgreen">[SunColor]</span> | Vector3 | PerFrame | Gets the sun color. |
+| <span style="color:lightgreen">[SunIntensity]</span> | float | PerFrame | Gets the sun intensity.|
+| <span style="color:lightgreen">[SkyboxTransform]</span> | Matrix4x4 | PerFrame | Gets the skybox transform.
+
+| Texture Tag | Description |
+| ----------- | ----------- |
+| <span style="color:lightgreen">[Framebuffer]</span> | Framebuffer texture. |
+| <span style="color:lightgreen">[DepthBuffer]</span> | Depthbuffer texture. |
+| <span style="color:lightgreen">[GBuffer]</span>     | GBuffer texture.     |
+| <span style="color:lightgreen">[Lighting]</span>    | Lighting texture.    |
+| <span style="color:lightgreen">[DFGLut]</span>      | Lookup table for DFG precalculated texture.|
+| <span style="color:lightgreen">[IBLRadiance]</span> | IBL Prefiltered Mipmapped radiance environment texture.|
+| <span style="color:lightgreen">[ZPrePass]</span>    | ZPrePass in forward rendering (Normal + Roughness).|
+| <span style="color:lightgreen">[DistortionPass]</span> | Distortion pass in forward rendering.|
+| <span style="color:lightgreen">[IBLIrradiance]</span>  | IBL diffuse irradiance map.|
+| <span style="color:lightgreen">[TemporalHistory]</span> | Temporal AA history texture.|
+| <span style="color:lightgreen">[DirectionalShadowMap]</span> | Shadow map array texture.|
+| <span style="color:lightgreen">[SpotShadowMap]</span> | Shadow map array texture.|
+| <span style="color:lightgreen">[PunctualShadowMap]</span> | Shadow map array cube texture.|
+| <span style="color:lightgreen">[Custom`0..N`] | Custom renderpipeline texture. |
 
 ## Pass Settings Metatags
 
@@ -127,8 +135,6 @@ These tags are used inside of a pass block code and are useful to configure whic
 | <span style="color:lightgreen">[Entirypoints `Stage=MethodName`]</span> | Defines the entrypoint stage methods of the pass. The valid stages values are: <ul><li>**VS:** Vertex Shader.</li><li>**HS:** Hull Shader.</li><li>**DS:** Domain Shader.</li><li>**GS:** Geometry Shader.</li><li>**PS:** Pixel Shader.</li><li>**CS:** Compute Shader.</li></ul>
 | <span style="color:lightgreen">[Mode `value`]</span>| Defines the compilation mode of the pass. Available mode list:<ul><li>**None:** Default compilation mode.</li><li>**Debug:** Debug mode includes depuration symbols to analyze with shader tools like [RenderDoc](https://renderdoc.org/), [PIX](https://devblogs.microsoft.com/pix/introduction/) or [NVidia Nsight Graphics](https://developer.nvidia.com/nsight-graphics)</li><li>**Release:** Optimize compilation mode.</li></ul> |
 | <span style="color:lightgreen">[RequiredWidth `Directive`</span>] | Defines the directive list required by the pass. <br> _Example: [RequiredWith VCOLOR] the renderpipeline run this pass only when VCOLOR directive is enabled._|
-
-<br> 
 
 ## Override Render Layer Metatags
 
@@ -147,8 +153,6 @@ Theses tags allows the pass modify the render layer properties when the render p
 | <span style="color:lightgreen">[ScissorEnable `bool`]</span> | Enable scissor-rectangle culling. All pixels outside an active scissor rectangle are culled. <br> Available values: _True_ or _False_ |
 | <span style="color:lightgreen">[AntialiasedLineEnable `bool`]</span> |  Specifies whether to enable line antialiasing; only applies if doing line drawing and MultisampleEnable is false. <br> Available values: _True_ or _False. |
 
-<br>
-
 | Blend State Tag | Description |
 | --------------- | ---------------- |
 | <span style="color:lightgreen">[AlphaToCoverageEnable `bool`]</span> | Specifies whether to use alpha-to-coverage as a multisampling technique when setting a pixel to a render target.<br> Available values: _True_ or _False. |
@@ -161,8 +165,6 @@ Theses tags allows the pass modify the render layer properties when the render p
 | <span style="color:lightgreen">[RT0DestinationBlendAlpha `Value`]</span> | This blend option specifies the operation to perform on the current alpha value in the render target. Blend options that end in _COLOR are not allowed. The BlendOpAlpha member defines how to combine the SrcBlendAlpha and DestBlendAlpha operations. <br> Availables values: _Zero_, _One_ _SourceColor_, _InverseSourceColor_, _SourceAlpha_, _InverseSourceAlpha_, _DestinationAlpha_, _InverseDesinationAlpha_, _DestinationColor_, _InverseDestinatinoColor_, _SourceAlphaSaturate_, _BlendFactor_, _InverseBlendFactor_, _SecondarySourceColor_, _InverseSecondarySourceColor_, SecondarySourceAlpha_ or _InverseSecondarySourceAlpha_. |
 | <span style="color:lightgreen">[RT0BlendOperationAlpha `Value`]</span> | This blend operation defines how to combine the SrcBlendAlpha and DestBlendAlpha operations for RenderTarget 0. <br> Available values: _Add_, _Substract_, _ReverseSubstract_, _Min_ or _Max_.|
 | <span style="color:lightgreen">[RT0ColorWriteChannels `Value`]</span> | A write mask for Render target 0. <br> Availables values: _None_, _Red_, _Green_, _Blue_, _Alpha_ or _All_. |
-
-<br>
 
 | Depth Stencil Tag | Description |
 | ----------------- | ----------- |
