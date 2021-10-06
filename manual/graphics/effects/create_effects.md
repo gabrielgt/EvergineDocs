@@ -12,21 +12,25 @@ An **effect** is a _uber-shader_ so be able to represent a single shader or a la
 | Compute Effect | Defines a compute pipeline with Compute Shader and are useful to create [compute task]() and [post-processing graph](../postprocessing/index.md) nodes.|
 
 ## Create a Effect asset in Evergine Studio
+
 You can create an effect click button on ![Plus Icon](../images/plusIcon.jpg) from [Assets Details](../../evergine_studio/interface.md) panel to deploy a create menu options and click on the option _"Create effect->Graphics Effect or Compute Effect"_
 
 ![Create new effect menu option](images/AssetsDetailsMenu.jpg)
 
 ### Inspect effects in Asset Details
+
 You can find the effect assets in the [**Assets Details**](../../evergine_studio/interface.md) panel when you select a folder in the [**Project Explorer**](../../evergine_studio/interface.md).
 
 ![Effect asset](images/effectAsset.jpg)
 
 ### Effects files in content directory
+
 The effect file has the `wefx_` extension and always come together a folder with the same name of the effect.
 
 ![Effect file](images/effectFile.jpg)
 
 ## Create a new Effect from code
+
 The following sample code can be used to create a new effect and create a material associated to apply to an entity in your scene.
 
 ```c#
@@ -38,7 +42,7 @@ protected override void CreateScene()
             var assetsService = Application.Current.Container.Resolve<AssetsService>();
 
             string shaderSource = @"
-				[Begin_ResourceLayout]
+                [Begin_ResourceLayout]
 
 					cbuffer PerDrawCall : register(b0)
 					{
@@ -92,11 +96,11 @@ protected override void CreateScene()
             // Create effect
             Effect myEffect = new EffectFromCode(graphicsContext, shaderSource);
 
-            // Create material asociated			
+            // Create material asociated
             Material myMaterial = new Material(myEffect)
-			{
-				LayerDescription = assetsService.Load<RenderLayerDescription>(EvergineContent.RenderLayers.Opaque),
-			};
+            {
+                LayerDescription = assetsService.Load<RenderLayerDescription>(EvergineContent.RenderLayers.Opaque),
+            };
 
             // Apply to an entity
             Entity primitive = new Entity()
