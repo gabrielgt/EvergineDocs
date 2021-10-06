@@ -1,20 +1,20 @@
 # Effect Metatags
 
-In evergine the effect are written in [**HLSL**](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-pguide) languages, but to automatize some tasks evergine includes an additional tags that you can add to the HLSL code.
+In evergine the effect are written in [**HLSL**](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-pguide) languages, but to automatize some tasks evergine includes additional tags that you can add to the HLSL code.
 
 ## Block Metatags
 
-Effect code are organize in two importants kind of blocks:
+Effect codes are organized into two important kinds of blocks:
 
 | Block     | Tags      | Description        |
 | --------- | --------- | ------------------ |
-| Resource Layout | <span style="color:lightgreen">[Begin_ResourceLayout] <br> [End_ResourceLayout]</span> | This block of code defines all resources (Constant Buffers, Structured Buffers, Textures and Samplers) using by all effect passes. |
+| Resource Layout | <span style="color:lightgreen">[Begin_ResourceLayout] <br> [End_ResourceLayout]</span> | This block of code defines all resources (Constant Buffers, Structured Buffers, Textures and Samplers) using all effect passes. |
 | Pass | <span style="color:lightgreen">[Begin_Pass:PassName] <br> [End_Pass]</span> | This block of code defines a RenderPipeline pass. The _DefaultRenderPipeline_ defines 3 passes that any effect can define:  ZPrePass, Distortion, Default |
 
 ## Directives Metatags
 
-Inside of resource layout block you can define the directive set that your custom effect will have. The directive are useful to enable differente features of your effect. <br>
- A directive can be define two values On/Off feature or can define a feature with multiple values:
+Inside of resource layout block you can define the directive set that your custom effect will have. The directives are useful to enable different features of your effect. <br>
+ A directive can be defined as two values On/Off feature or can define a feature with multiple values:
 <br><span style="color:lightgreen">[Directive:Name `A_OFF` `A`] <br>
 [Directive:Name `A_OFF` `B` `C` `D` ...]</span>
 
@@ -22,10 +22,10 @@ Example: <br>
 <span style="color:lightgreen">[Directive:NormalMapping Normal_OFF, Normal]</span>
 <br><span style="color:lightgreen">[Directive:ShadowFilter Shadow_OFF, ShadowFilter3 ShadowFilter5 ShadowFilter7]</span>
 
-A effect is a set of shader (known as _Uber-shader_) and the directive help you to define this set of shader. The directives generate automatically multiple shader with the effects is compiled.
+An effect is a set of the shader (known as _Uber-shader_) and the directive help you to define this set of the shader. The directives generate automatically multiple shaders with the effects is compiled.
 
 Example: 
-<br><span style="color:lightgreen">[Directive:Name `A_OFF` `A`]</span> will generate a shader with A enabled and other shader with A disabled.
+<br><span style="color:lightgreen">[Directive:Name `A_OFF` `A`]</span> will generate a shader with A enabled and another shader with A disabled.
 
 <span style="color:lightgreen">[Directive:Name `A_OFF` `B` `C` `D` ...]</span> will generate an A, B, C, D ...  shaders.
 
@@ -34,12 +34,12 @@ And the directives combination multiply the combinations. If you define two <br>
 
 The number of combination are multiply for effect passes so the complex effect would have hundreds or thousands of combinations.
 
-The effects can compiled his combination on demand in runtime or pre-compiled combination before and use it later in rutime without compile. So you generate a bundle with compiled shader combinations. To know more details go to this [section](using_effects.md)
+The effects can compile his combination on-demand in runtime or pre-compiled combination before and use it later in runtime without compile. So you generate a bundle with compiled shader combinations. To know more details go to this [section](using_effects.md)
 
 ## Default Values Metatag
-Evergine allows to inyect contant values constant buffer attributes automatically using tags.
+Evergine allows to inject constant values constant buffer attributes automatically using tags.
 
-Default values can be inyected directly using the <span style="color:lightgreen">[Default(value)]</span> tag:
+Default values can be injected directly using the <span style="color:lightgreen">[Default(value)]</span> tag:
 ```c#
 cbuffer Parameters : register(b0)
 {
@@ -47,11 +47,11 @@ cbuffer Parameters : register(b0)
     float3 Position   : packoffset(c0.y); [Default(2.3, 3.3, 5.6)]
 }
 ```
-Default value tag support the following types: _int_, _float_, _bool_, _float_, _float2_, _float3_, _float4_.
+Default value tag supports the following types: _int_, _float_, _bool_, _float_, _float2_, _float3_, _float4_.
 
-## Inyected Values Metatags
+## Injected Values Metatags
 
-Evergine allows to inyect engine data to resource layout resources _(Constant Buffers attributes and Textures)_ automatically using tags.
+Evergine allows injecting engine data to resource layout resources _(Constant Buffers attributes and Textures)_ automatically using tags.
 
 | Parameters Tag                  | Type | Update Policy |  Description |
 | -------------------- | -----| ----------- | --------- |
@@ -138,7 +138,7 @@ These tags are used inside of a pass block code and are useful to configure whic
 
 ## Override Render Layer Metatags
 
-Theses tags allows the pass modify the render layer properties when the render pipeline run this pass. To know more details about the RenderLayer properties read this [section](../render_layers.md):
+These tags allow the pass to modify the render layer properties when the render pipeline runs this pass. To know more details about the RenderLayer properties read this [section](../render_layers.md):
 
 
 | Rasterization Process Tag      |  Description                               |
