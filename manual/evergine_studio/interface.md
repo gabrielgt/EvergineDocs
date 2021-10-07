@@ -4,28 +4,30 @@
 
 Evergine Studio's interface uses dockable panels to organize different section so you can create your own layout with the panel location that you prefer. The above image shows the default layout and his main panels are:
 
-* **Project Explorer**: is used to manage the [assets](assets/index.md) and [packages](packages.md) of the current project.
-* **Assets Details**: shows the assets of the current folder selected on Project Explorer. Allow you open, rename or create new assets.
-* **Scene Editor**: shows the current scene and has 3 different parts: Viewport, Entity Hierarchy, and Entity Details.
-* **Entities Hierarchy**: shows the entities added to the current scenes and allows you to create, organize or delete entities in your scene.
-* **Entity Details**: shows the properties or the selected entity in the Entities Hierarchy.
+* **Project Explorer**: Is used to manage the [assets](assets/index.md) and [packages](packages.md) of the current project.
+* **Assets Details**: Shows the assets of the current folder selected on Project Explorer. Allow you open, rename or create new assets.
+* **Asset Editor**: Is used to edit assets (scenes, materials, textures, etc..). Some asset types, such as scenes, have dedicated editors where you can edit it. To open a dedicated editor (when available), double-click the asset in the **Asset Details** region.
 
-<br/>
+## Asset Editors
 
 Evergine studio has the following editors that allow you manage the associate asset type:
 
-* **Scene Editor**: Double-clicking a [scene](assets/scenes.md) asset opens a dedicated editor.
-* **Effect Editor**: Double-clicking a [effect](assets/effects.md) asset opens a dedicated editor.
-* **Material Editor**: Double-clicking a [material](assets/materials.md) asset opens a dedicated editor.
-* **Model Editor**: Double-clicking a [model](assets/models.md) asset opens a dedicated editor.
-* **RenderLayer Editor**: Double clicking a [renderLayer](assets/render_layers.md) asset opens a dedicated editor.
-* **Sampler Editor**: Double clicking a [sampler](assets/samplers.md) asset opens a dedicated editor
-* **Sound Editor**: Double clicking a [sound](assets/sounds.md) asset opens a dedicated editor.
-* **Post-Processing Graph Editor**: Double clicking a [Post-Processing graph](assets/post_processing_graph.md) asset opens a dedicated editor.
+| Editors | Description |
+| --- | --- |
+| [**Scene Editor**](../basics/scenes/scene_editor.md) | Double-clicking a [Scene](../basics/scenes/index.md) asset opens a dedicated editor. |
+| [**Effect Editor**](../graphics/effects/effect_editor.md) | Double-clicking an [Effect](../graphics/effects/index.md) asset opens a dedicated editor.|
+| [**Material Editor**](../graphics/materials/material_editor.md) | Double-clicking a [Material](../graphics/materials/material_editor.md) asset opens a dedicated editor. |
+| [**Model Editor**](../graphics/model/model_editor.md) | Double-clicking a [Model](assets/models.md) asset opens a dedicated editor. |
+| [**Render Layer Editor**](../graphics/render_layers/render_layer_editor.md) | Double clicking a [RenderLayer](../graphics/render_layers/index.md) asset opens a dedicated editor. |
+| [**Sampler Editor**](../graphics/samplers/sampler_editor.md) | Double clicking a [Sampler](../graphics/samplers/index.md) asset opens a dedicated editor. |
+| [**Sound Editor**](../audio/sounds/sound_editor.md) | Double clicking a [Sound](../audio/sounds/index.md) asset opens a dedicated editor. |
+| [**Post-Processing Graph Editor**](../graphics/post_processing_graph/post_processing_graph_editor.md) | Double clicking a [Post-Processing graph](../graphics/post_processing_graph/index.md) asset opens a dedicated editor. |
 
-<br/>
+## Evergine Studio Layout
 
-> [!Tip]
-> The default layout can always be restored by using the windows menu.
+As we have mentioned earlier, Evergine Studio layout is customizable. 
+
+By clicking in the Window menu, you can manage the Evergine Studio layout:
 
 ![Graphics](images/RestoreLayout.jpg)
+
