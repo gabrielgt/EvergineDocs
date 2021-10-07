@@ -31,13 +31,13 @@ The **Evergine** low level API allow you to name all the different object types 
 
 To set an object name, in a buffer for example, just set it as a parameter in the factory constructor or set the property Name.
 
-```c#
+```csharp
 this.graphicsContext.Factory.CreateBuffer(ref Description, "Buffer_Name");
 ```
 
 or
 
-```c#
+```csharp
 buffer.Name = "Buffer_Name";
 ```
 
@@ -50,7 +50,7 @@ In addition to naming the **Evergine** low level API also adds the ability to pl
 > [!Tip]
 > Note that contrary to naming objects, debug markers (and regions) have to placed inside of an active command buffer.
 
-```c#
+```csharp
 commandBuffer.BeginDebugMarker("Region_Name");
 // Stuff
 commandBuffer.EndDebugMarker();
@@ -62,7 +62,7 @@ commandBuffer.EndDebugMarker();
 
 By default to optimize the size of DirectX shaders, debugging information is stripped out. This mean that constants and resources will have no names, and the shader source will not be available. To include this debugging information in your shader you need to set the debug mode inside the pass shader code by adding `[Mode Debug]` line:
 
-```c#
+```csharp
 [Begin_Pass:Default]
 
     [Mode Debug]

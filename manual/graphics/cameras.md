@@ -8,7 +8,7 @@ You can create an unlimited number of cameras in a **Scene**. They can be set to
 ## Create a Camera3D from code
 The following sample code can be used to instantiate a new camera entity in a scene.
 
-```c#
+```csharp
 protected override void CreateScene()
 {
     // Create a new camera entity.

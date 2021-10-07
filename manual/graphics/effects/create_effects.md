@@ -33,7 +33,7 @@ The effect file has the `wefx_` extension and always come together a folder with
 
 The following sample code can be used to create a new effect and create a material associated to apply to an entity in your scene.
 
-```c#
+```csharp
 protected override void CreateScene()
 {
     protected override void CreateScene()

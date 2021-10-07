@@ -25,7 +25,7 @@ To check the implementation status of this technology visit [webgpu.io](https://
 
 To create a graphics context based on **WebGPU** just write:
 
-```c#  
+```csharp  
 GraphicsContext graphicsContext = new Evergine.WebGPU.WGPUGraphicsContext();
 graphicsContext.CreateDevice();
 ```

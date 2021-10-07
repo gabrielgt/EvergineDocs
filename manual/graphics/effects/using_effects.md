@@ -6,7 +6,7 @@ In this document, you will learn how to load and use **Effects** in your applica
 
 ## Load Effect from code
 The following sample code can be used to instantiate an existing effect asset, created an associated material, and apply an entity in your scene.
-```c#
+```csharp
 protected override void CreateScene()
 {
     var assetsService = Application.Current.Container.Resolve<AssetsService>();

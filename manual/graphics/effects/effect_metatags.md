@@ -40,7 +40,7 @@ The effects can compile his combination on-demand in runtime or pre-compiled com
 Evergine allows to inject constant values constant buffer attributes automatically using tags.
 
 Default values can be injected directly using the <span style="color:lightgreen">[Default(value)]</span> tag:
-```c#
+```csharp
 cbuffer Parameters : register(b0)
 {
     float SpeedFactor : packoffset(c0.x); [Default(1.5)]
