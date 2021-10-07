@@ -1,6 +1,6 @@
 # Supported Graphics Backends
 ---
-![Supported Graphics APIs](images\SupportedAPIs.png)
+![Supported Graphics APIs](images\supported-apis.png)
 
 **Evergine** supported multiples graphics APIs including DirectX11, DirectX12, Vulkan, OpenGL, Metal and WebGL/WebGPU.
 
