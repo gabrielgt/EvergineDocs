@@ -70,7 +70,7 @@ In this section are described the effects included in [**Evergine.Core** package
 | **2nd Base Color Sampler**    | - |
 
 
-## Distortion Material properties
+## Distortion Effect
 
 |Property                       | Description |
 |-------------------------------|-------------|
