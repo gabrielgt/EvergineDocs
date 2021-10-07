@@ -37,12 +37,3 @@ However, some assets represents just abstract elements that can only be created 
 
 ## In this section
 * [Asset workflow](workflow.md)
-* [Scenes](scenes.md)
-* [Materials](materials.md)
-* [Textures](textures.md)
-* [Samplers](samplers.md)
-* [Models](models.md)
-* [Render Layers](render**layers.md)
-* [Post Processing Graph](post**processing**graph.md)
-* [Sounds](sounds.md)
-* [Effects](effects.md)
