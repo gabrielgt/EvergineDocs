@@ -31,7 +31,7 @@ protected override void CreateScene()
 }
 ```
 
-## How to apply effect to a material from Evergine Studio.
+## How to apply an effect to a material from Evergine Studio.
 
 From [Material Editor](../materials/material_editor.md) you can select the effect that the material will use on the top side of the properties.
 
