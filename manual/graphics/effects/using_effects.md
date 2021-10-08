@@ -1,5 +1,5 @@
 # Using Effects
-
+---
 ![Materials header](images/effects.jpg)
 
 In this document, you will learn how to load and use **Effects** in your applications.

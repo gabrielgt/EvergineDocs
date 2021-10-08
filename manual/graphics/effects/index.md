@@ -1,5 +1,4 @@
 # Effects
-
 ---
 ![Effect header](images/effects.jpg)
 

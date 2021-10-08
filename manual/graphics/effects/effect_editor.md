@@ -1,5 +1,5 @@
 # Effect Editor
-
+---
 ![Material Editor Interface](images/EffectEditor.jpg)
 
 **Effect Editor** allows editing the effect assets. Double click over a effect asset shown in [Assets Details](../../evergine_studio/interface.md) will open this editor. The editor is composed of 2 main parts Shader Text Editor and Viewport:

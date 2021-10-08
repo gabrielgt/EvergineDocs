@@ -1,5 +1,5 @@
 # Material Editor
-
+---
 ![Material Editor Interface](images/MaterialEditor.jpg)
 
 **Material Editor** allows editing the material assets. Double click over a material asset shown in [Assets Details](../../evergine_studio/interface.md) will open this editor. The editor is composed of 3 main parts:

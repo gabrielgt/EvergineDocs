@@ -1,5 +1,5 @@
 # Create Compute Tasks
-
+---
 **Compute Tasks** allows run tasks on GPU. Compute tasks are associated with a compute effect. It is very useful to improve the performance of a hard task that runs slow on the CPU.
 
 ## Compute Effect
@@ -7,7 +7,7 @@ Before creating a Compute task you need to create a compute effect from the Asse
 
 ![Create compute effect](images/CreateComputeEffect.jpg)
 
-This is a example of compute task when the compute apply grayscale filter to input texture and store the result on output texture.
+This is an example of computing task when the compute apply a grayscale filter to input texture and store the result on output texture.
 ```csharp
 [Begin_ResourceLayout]
 
@@ -38,7 +38,7 @@ To use a compute task from code you need a compute effect and the compute task d
 ![Compute task descorator](images/computeTaskDecoratorIcon.jpg)
 
 ## Create a new ComputeTask from code
-The following sample code can be used to create a new computeTask and run into your scene. The example assume that you have a compute effect GPUFilter and its compute task descorator created.
+The following sample code can be used to create a new computeTask and run it into your scene. The example assumes that you have a compute effect GPUFilter and its compute task decorator created.
 
 ```csharp
 protected override void CreateScene()
