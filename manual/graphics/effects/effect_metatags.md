@@ -1,5 +1,5 @@
 # Effect Metatags
-
+---
 In evergine the effect are written in [**HLSL**](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-pguide) languages, but to automatize some tasks evergine includes additional tags that you can add to the HLSL code.
 
 ## Block Metatags
@@ -40,7 +40,7 @@ The effects can compile his combination on-demand in runtime or pre-compiled com
 Evergine allows to inject constant values constant buffer attributes automatically using tags.
 
 Default values can be injected directly using the <span style="color:lightgreen">[Default(value)]</span> tag:
-```c#
+```csharp
 cbuffer Parameters : register(b0)
 {
     float SpeedFactor : packoffset(c0.x); [Default(1.5)]

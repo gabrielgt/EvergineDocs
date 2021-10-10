@@ -1,14 +1,8 @@
-# Using Materials
+# Built-in Effects
+---
+In this section are described the effects included in [**Evergine.Core** package](../evergine_studio/packages.md)
 
-![Materials header](images/materials.jpg)
-
-Materials describe the appearance of object surfaces and how they react to [light](../lights.md).
-
-## Material properties
-
-A material will have the properties define by his effect. In this section are described the materials include in [**Evergine.Core** package](../evergine_studio/packages.md)
-
-### Default Material properties
+## Standard Effect
 
 |Property                       | Description |
 |-------------------------------|-------------|
@@ -24,30 +18,60 @@ A material will have the properties define by his effect. In this section are de
 | **Roughness**                 | - |
 | **Reflectance**               | - |
 | **Reference Alpha**           | - |
-| **MetalRoughness Texture**    | - |
-| **MetalRoughness Sampler**    | - |
-| **Normal Texture**            | - |
-| **Normal Smapler**            | - |
-| **Occlusion Texture**         | - |
-| **Occlusion Sampler**         | - |
-| **EmissiveColor**             | - |
-| **Emissive Compensation**     | - |
-| **Emissive Texture**          | - |
-| **Emissive Sampler**          | - |
-| **ClearCoat**                 | - |
-| **ClearCoat Roughness**       | - |
-| **ClearCoat Normal Texture**  | - |
-| **ClearCoat Normal Sampler**  | - |
 | **Alpha Cutout**              | - |
-| **Dual Texture Blend**        | - |
-| **UV Offsets 1**              | - |
-| **2nd Base Color Texture**    | - |
-| **2nd Base Color Sampler**    | - |
 | **AllowInstancing**           | - |
 | **OrderBias**                 | - |
 | **LayerDescription**          | - |
 
-### Distortion Material properties
+### Metal Roughness
+|Property                       | Description |
+|-------------------------------|-------------|
+| **MetalRoughness Texture**    | - |
+| **MetalRoughness Sampler**    | - |
+
+### Normal
+
+|Property                       | Description |
+|-------------------------------|-------------|
+| **Normal Texture**            | - |
+| **Normal Smapler**            | - |
+
+### Ambient occlusion
+
+|Property                       | Description |
+|-------------------------------|-------------|
+| **Occlusion Texture**         | - |
+| **Occlusion Sampler**         | - |
+
+### Emissive
+
+|Property                       | Description |
+|-------------------------------|-------------|
+| **EmissiveColor**             | - |
+| **Emissive Compensation**     | - |
+| **Emissive Texture**          | - |
+| **Emissive Sampler**          | - |
+
+### Clear Coat
+
+|Property                       | Description |
+|-------------------------------|-------------|
+| **ClearCoat**                 | - |
+| **ClearCoat Roughness**       | - |
+| **ClearCoat Normal Texture**  | - |
+| **ClearCoat Normal Sampler**  | - |
+
+### Dual Texture
+
+|Property                       | Description |
+|-------------------------------|-------------|
+| **Dual Texture Blend**        | - |
+| **UV Offsets 1**              | - |
+| **2nd Base Color Texture**    | - |
+| **2nd Base Color Sampler**    | - |
+
+
+## Distortion Effect
 
 |Property                       | Description |
 |-------------------------------|-------------|

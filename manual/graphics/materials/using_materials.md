@@ -6,7 +6,7 @@ In this document you will learn how to load and use **Materials** in your applic
 
 ## Load Material from code
 The following sample code can be used to instantiate an existing material asset and apply to an entity in your scene.
-```c#
+```csharp
 protected override void CreateScene()
 {
     var assetsService = Application.Current.Container.Resolve<AssetsService>();

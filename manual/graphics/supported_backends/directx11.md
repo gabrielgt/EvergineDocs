@@ -29,7 +29,7 @@ For more information visit [Microsoft support.](https://support.microsoft.com/en
 
 To create a graphics context based on **DirectX11** just write:
 
-```c#
+```csharp
 GraphicsContext graphicsContext = new Evergine.DirectX11.DX11GraphicsContext();
 graphicsContext.CreateDevice();
 ```
