@@ -1,5 +1,5 @@
 # Create Effects
-
+---
 ![Effect header](images/effects.jpg)
 
 An **effect** is a _uber-shader_ so be able to represent a single shader or a large group of shaders. There are two type of effect in Evergine:
