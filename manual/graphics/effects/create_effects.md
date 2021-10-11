@@ -49,7 +49,7 @@ A tipical effect code looks like this:
         float3 Color            : packoffset(c0);   [Default(1, 1, 1)]
     };
     
-    Texture2D ColorTexture        : register(t0);
+    Texture2D ColorTexture       : register(t0);
     SamplerState ColorSampler    : register(s0);
 
 [End_ResourceLayout]

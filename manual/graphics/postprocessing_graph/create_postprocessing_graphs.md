@@ -5,7 +5,7 @@
 The Post-Processing graph is a group of nodes connected that apply visual effects to the output render before drawing on the screen. Each node is a compute [effect](effects.md). 
 
 ## Create a Postprocessing Graph asset in Evergine Studio
-You can create a postprocessing graph click button on ![Plus Icon](../images/plusIcon.jpg) from [Assets Details](../../evergine_studio/interface.md) panel to deploy a create menu options and click on the option _"Create Post-Processing Graph"_
+You can create a postprocessing graph click button on ![Plus Icon](../images/plusIcon.jpg) from the [Assets Details](../../evergine_studio/interface.md) panel to deploy a create menu options and click on the option _"Create Post-Processing Graph"_
 
 ![Create new postprocessing graph menu option](images/AssetsDetailsMenu.jpg)
 
@@ -20,7 +20,7 @@ The postprocessing graph file has the `.wepp` extension.
 ![Postprocessing Graph file](images/postProcessingGraphFile.jpg)
 
 ## Create a new Postprocessing from code
-The following sample code can be used to create a new postprocessing graph and apply to an entity in your scene.
+The following sample code can be used to create a new postprocessing graph and apply it to an entity in your scene.
 
 ```csharp
 protected override void CreateScene()

@@ -1,6 +1,11 @@
 # Compute Tasks
 ---
-**Compute Tasks** allows run tasks on GPU. Compute tasks are associated to a compute effect. It is very useful to improve the performance of a hard task that runs slow on the CPU. The following sections show how to create and use compute tasks in your projects.
+
+**Compute Tasks** are GPU programs that don't use classical GPU pipeline such as vertex transformatioms, fragment shading or geometry programs. he are fully configurable code that can run on a GPU in async. They can be used for massively parallel computational algorithms or to accelerate parts of application rendering. 
+
+Compute tasks need to be associated to a Compute Effect.
+
+The following sections show how to create and use compute tasks in your projects.
 
 ## In this section
 
