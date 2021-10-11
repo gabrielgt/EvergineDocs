@@ -1,5 +1,5 @@
 # Using Compute Tasks
----
+
 **Compute tasks** are very similar to Materials, they are an associated effect too and you also can generate a class decorator to using from code. The main difference is that the compute tasks only can be used from code. Compute Task decorator are generated from [Effect Editor](../effects/effect_editor.md) like [Material decorators](../materials/material_decorators.md).
 
 The compute task decorator helps you set the compute effect resource layout. As input resources, you can use ConstantBuffers, StructureBuffer, Textures, and Samplers. This is an example of a compute task decorator with an input texture and output texture define in its resource layout block:

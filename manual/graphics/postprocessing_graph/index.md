@@ -10,12 +10,13 @@ A postprocessing graph is a group of compute effect nodes that apply effects to 
 
 ## Default Postprocessing Graph
 
-Default evergine project template imports the [**Evergine.Core** package](../packages.md) and this package includes the Default Post-Processing graph with the most important post-processing visual effect common in a project. So in the most of time, you will use this asset reserving to create a new custom post-processing graph only to create new visual effects or to improve performance needs.
+Default Evergine project template imports the [**Evergine.Core** package](../packages.md) and this package includes the Default Post-Processing graph with the most important post-processing visual effect common in a project. So in the most of time, you will use this asset reserving to create a new custom post-processing graph only to create new visual effects or to improve performance needs.
 
 ## In this section
 
 * [Create Postprocessing Graph](create_postprocessing_graphs.md)
 * [Using Postprocessing Graph](using_postprocessing_graphs.md)
 * [Postprocessing Graph Editor](postprocessing_graph_editor.md)
-* [Default postprocessing graph](default_postprocessing_graph.md)
+* [Default postprocessing graph](default_postprocessing_graph/index.md)
 * [Custom postprocessing graph](custom_postprocessing_graph.md)
+* [Postprocessing Graph Decorator](postprocessing_graph_decorator.md)
