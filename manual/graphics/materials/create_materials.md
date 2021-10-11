@@ -1,4 +1,5 @@
 # Create Materials
+---
 ![Material header](images/materials.jpg)
 
 Materials describe the appearance of object surfaces and how they react to [light](../lights.md).
@@ -22,7 +23,7 @@ The material file has the `.wemt` extension.
 The following sample code can be used to create a new material and apply to an entity in your scene.
 In that case the material will be created using the **StandardEffect** effect and the **Opaque** render layer:
 
-```c#
+```csharp
 protected override void CreateScene()
 {
     var assetsService = Application.Current.Container.Resolve<AssetsService>();

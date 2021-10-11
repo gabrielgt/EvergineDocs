@@ -1,12 +1,18 @@
 # Using Effects
-
+---
 ![Materials header](images/effects.jpg)
 
 In this document, you will learn how to load and use **Effects** in your applications.
 
+## How to apply an effect to a material from Evergine Studio.
+
+From [Material Editor](../materials/material_editor.md) you can select the effect that the material will use on the top side of the properties.
+
+![Material Editor](images/ApplyEffect.jpg)
+
 ## Load Effect from code
 The following sample code can be used to instantiate an existing effect asset, created an associated material, and apply an entity in your scene.
-```c#
+```csharp
 protected override void CreateScene()
 {
     var assetsService = Application.Current.Container.Resolve<AssetsService>();
@@ -30,9 +36,3 @@ protected override void CreateScene()
     this.Managers.EntityManager.Add(primitive);
 }
 ```
-
-## How to apply effect to a material from Evergine Studio.
-
-From [Material Editor](../materials/material_editor.md) you can select the effect that the material will use on the top side of the properties.
-
-![Material Editor](images/ApplyEffect.jpg)

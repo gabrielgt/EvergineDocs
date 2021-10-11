@@ -21,7 +21,7 @@ It is the default graphics API used on iOS and MacOS devices and **Apple** updat
 
 To create a graphics context based on **Metal** just write:
 
-```c#
+```csharp
 GraphicsContext graphicsContext = new Evergine.Metal.MTLGraphicsContext();
 graphicsContext.CreateDevice();
 ```

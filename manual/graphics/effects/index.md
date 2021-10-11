@@ -1,13 +1,14 @@
 # Effects
-
 ---
 ![Effect header](images/effects.jpg)
 
-An **effect** is a _uber-shader_ so be able to represent a single shader or a large group of shaders. A shader is a piece of code written in a specific language creates to run on a GPU. The effects in evergine are written using [**HLSL**](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-pguide). The effects automatically translate to another language when it is necessary.
+An **effect** is a _uber-shader_ so be able to represent a single shader or a large group of shaders. A shader is a **GPU program** that can be run  on the GPU and are able to perform rendering calculation using textures, vertoces and other resources. The effects in Evergine are written using [**HLSL**](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-pguide).
 
-## Default Effect
+While HLSL is only supported by DirectX backends (DX11 and DX12), The effects are automatically translated to another language when it is necessary (to GLSL when using OpenGL, or Spir-V in Vulkan).
 
-Default evergine project template imports the [ **Evergine.Core** package](../../evergine_studio/packages.md) package and this package includes several effects like the **Standard Effect** used by Default Material asset. Effects are a type of asset and have a dedicated Editor [Effect Editor](effect_editor.md).
+## Standard Effect
+
+Default evergine project template imports the [ **Evergine.Core** package](../../evergine_studio/packages.md) package and this package includes several effects like the [**Standard Effect**](builtin_effects.md) used by Default Material asset. Effects are a type of asset and have a dedicated Editor [Effect Editor](effect_editor.md).
 
 ## In this section
 
@@ -15,3 +16,4 @@ Default evergine project template imports the [ **Evergine.Core** package](../..
 * [Effect metatags](effect_metatags.md)
 * [Using Effects](using_effects.md)
 * [Effect Editor](effect_editor.md)
+* [Built-in Effect](builtin_effects.md)

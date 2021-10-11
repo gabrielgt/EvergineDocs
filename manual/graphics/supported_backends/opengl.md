@@ -27,14 +27,14 @@ To check the **OpenGL** version available on your system just find out the contr
 
 To create a graphics context based on **OpenGL** just write:
 
-```c#
+```csharp
 GraphicsContext graphicsContext = new Evergine.OpenGL.GLGraphicsContext();
 graphicsContext.CreateDevice();
 ```
 
 To create a graphics context based on **WebGL** just write:
 
-```c#
+```csharp
 GraphicsContext graphicsContext = new Evergine.OpenGL.GLGraphicsContext(GraphicsBackend.WebGL2);
 graphicsContext.CreateDevice();
 ```

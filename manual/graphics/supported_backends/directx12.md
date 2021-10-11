@@ -22,7 +22,7 @@ For more information visit [Microsoft support.](https://support.microsoft.com/en
 
 To create a graphics context based on **DirectX12** just write:
 
-```c#
+```csharp
 GraphicsContext graphicsContext = new Evergine.DirectX12.DX12GraphicsContext();
 graphicsContext.CreateDevice();
 ```
