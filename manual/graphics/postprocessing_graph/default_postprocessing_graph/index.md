@@ -15,7 +15,7 @@ The complete list of postprocessing effects cover by the default postprocessing 
 * [Fidelity Super Resolution (FSR)](fidelity_super_resolution.md)
 * [Sharpen](sharpen.md)
 * [Tonemapping, Vignette, Grain](tonemapping.md)
-* [Anti-Aliasing (FXAA)](anti_aliasing.md)
+* [Anti-Aliasing (FXAA)](anti-aliasing.md)
 
 ## Using default postprocessing graph from Evergine studio
 These effects can be configure from PostprocessingGraphRenderer component inside of a postprocessing volume entity.
