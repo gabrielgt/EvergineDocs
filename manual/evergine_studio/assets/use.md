@@ -1,5 +1,7 @@
 # Use assets
 
+![Use assets](Images/useAssets.png)
+
 We can use an asset in our project in these ways:
 
 * Reference it in an entity **Component**.
