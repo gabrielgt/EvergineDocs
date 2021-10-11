@@ -3,7 +3,7 @@
 ---
 ![Graphics](images/RenderDoc_0.jpg)
 
-RenderDoc is a graphics debugger currently available for Vulkan, DirectX 11/ 12 and OpenGL development on Windows, Linux and Android.
+RenderDoc is a graphics debugger currently available for Vulkan, DirectX 11/    12 and OpenGL development on Windows, Linux and Android.
 It is integrated on **Evergine Studio** to make it easy to debug your application during the development process.
 
 To install the latest RenderDoc version visit the project [website](https://renderdoc.org/)
@@ -74,4 +74,4 @@ By default to optimize the size of DirectX shaders, debugging information is str
 
 ## Alternative graphics debugging technique
 
-If you build a desktop Windows application using DirectX, you can capture a frame and debug it using [Visual Studio graphics debugger](https://docs.microsoft.com/en-us/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics?view=vs-2019) or [PIX on Windows](https://devblogs.microsoft.com/pix/introduction/)
+If you build a desktop Windows application using DirectX, you can capture a frame and debug it using [Visual Studio graphics debugger](https://docs.microsoft.com/en-us/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics?view=vs-2019), [PIX on Windows](https://devblogs.microsoft.com/pix/introduction/) or [NVidia Nsight Graphics](https://developer.nvidia.com/nsight-graphics)
