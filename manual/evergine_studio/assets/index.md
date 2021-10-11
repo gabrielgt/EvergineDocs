@@ -17,7 +17,7 @@ Here are the asset with resource files that **Evergine** currently supports.
 | Asset | Description | Supported file extensions|
 |--------------------|-------------|-------------|
 | Texture | Image file used as texture graphic resource. | .jpg, .jpeg, .png, .bmp, .tga, .ktx, .dds, .hdr|
-| Model | 3d model with geometry, animation and material information. | .gltf, .glb, .fbx, .3ds, .obj, .dae|
+| Model | 3d model with geometry, animation and material information. | .gltf, .glb, .fbx, .3ds, .obj, .dxf, .dae|
 | Sound | Audio file used for music and sound effects | .wav, .mp3, .ogg
 | File | Any file that does not satisfy the previous formats | Any other file.
 
@@ -36,13 +36,5 @@ However, some assets represents just abstract elements that can only be created 
 | Sampler State | Element that represents a texture sampler state description, like **filtering**, **clamping** or **wrapping** information.|
 
 ## In this section
-* [Asset workflow](workflow.md)
-* [Scenes](scenes.md)
-* [Materials](materials.md)
-* [Textures](textures.md)
-* [Samplers](samplers.md)
-* [Models](models.md)
-* [Render Layers](render**layers.md)
-* [Post Processing Graph](post**processing**graph.md)
-* [Sounds](sounds.md)
-* [Effects](effects.md)
+* [Create Assets](create.md)
+* [Edit Assets](edit.md)
