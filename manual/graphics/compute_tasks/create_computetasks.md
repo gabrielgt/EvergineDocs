@@ -99,6 +99,6 @@ protected override void CreateScene()
 }
 ```
 
-The result of the above code will be:
+The result of the above code is:
 
 ![GPU Filter result](images/GPUFilter.jpg)
