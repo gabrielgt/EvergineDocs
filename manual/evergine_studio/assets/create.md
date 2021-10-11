@@ -11,12 +11,12 @@ In **Evergine** there are two ways of creating an asset depending on its type :
 
 You can drag any file into the **Evergine Studio** to import that asset file into the project and create an asset with it. Depending of the file extension **Evergine Studio** will decide what kind of asset will be created in the panel folder:
 
-| Asset type | Supported file extensions|
-|--------------------|-------------|
-| Texture | .jpg, .jpeg, .png, .bmp, .tga, .ktx, .dds, .hdr|
-| Model |  .gltf, .glb, .fbx, .3ds, .obj, .dxf, .dae|
-| Sound |  .wav, .mp3, .ogg
-| File |  Any other file.
+| Asset type | Supported file extensions| 
+|--------------------|-------------|---------|
+| Texture | `.jpg `, `.jpeg `, `.png `, `.bmp `, `.tga `, `.ktx `, `.dds `, `.hdr` |
+| Model |  `.gltf `, `.glb `, `.fbx `, `.3ds `, `.obj `, `.dxf `, `.dae` |
+| Sound |  `.wav `, `.mp3 `, `.ogg` | 
+| File |  Any other file. 
 
 Import an asset by dragging and dropping a resource file from your _File Explorer_ to the **Assets Detail** panel.
 
