@@ -1,5 +1,5 @@
 # Create Compute Tasks
----
+
 **Compute Tasks** allows run tasks on GPU. Compute tasks are associated with a compute effect. It is very useful to improve the performance of a hard task that runs slow on the CPU.
 
 ## Compute Effect
@@ -7,27 +7,29 @@ Before creating a Compute task you need to create a compute effect from the Asse
 
 ![Create compute effect](images/CreateComputeEffect.jpg)
 
-This is an example of computing task when the compute apply a grayscale filter to input texture and store the result on output texture.
+### Example
+This is an example of computing task. In that case the compute applies a grayscale filter to the input texture and stores the result into an output texture. In [Create Effects](../effects/create_effects.md) you will find the structure of this code.
+
 ```csharp
 [Begin_ResourceLayout]
 
-	Texture2D Input				: register(t0);
-	RWTexture2D<float4> Output  : register(u0);
+    Texture2D Input             : register(t0);
+    RWTexture2D<float4> Output  : register(u0);
 
 [End_ResourceLayout]
 
 [Begin_Pass:Grayscale]
 
-	[Profile 11_0]
-	[Entrypoints CS = CS]
+    [Profile 11_0]
+    [Entrypoints CS = CS]
 
-	[numthreads(8, 8, 1)]
-	void CS(uint3 threadID : SV_DispatchThreadID)
-	{
-		float4 color = Input.Load(float3(threadID.xy, 0));
-		color.rgb = color.r * 0.3 + color.g * 0.59 + color.b * 0.11;
-		Output[threadID.xy] = color;
-	}
+    [numthreads(8, 8, 1)]
+    void CS(uint3 threadID : SV_DispatchThreadID)
+    {
+        float4 color = Input.Load(float3(threadID.xy, 0));
+        color.rgb = color.r * 0.3 + color.g * 0.59 + color.b * 0.11;
+        Output[threadID.xy] = color;
+    }
 
 [End_Pass]
 ```
