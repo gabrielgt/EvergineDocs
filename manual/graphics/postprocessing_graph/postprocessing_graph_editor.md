@@ -43,7 +43,7 @@ The graph editor toolbox is located on the top side of the graph editor and allo
 In this panel, you can find all compute effects existing in the project and drag an effect to the graph editor to use it.
 
 ## **Viewport**
-Allows seeing the result of the postprocessing graph applied to the scene (Note. requires save the graph).
+Allows seeing the result of the postprocessing graph applied to the scene _(Note. requires save the graph)_.
 
 | Icon  | Description |
 | ----- | ----------- |

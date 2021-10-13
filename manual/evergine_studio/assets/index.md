@@ -38,4 +38,6 @@ However, some assets represents just abstract elements that can only be created 
 | [Sampler State](../../graphics/sampler_state/index.md) | Element that represents a texture sampler state description, like **filtering**, **clamping** or **wrapping** information.|
 
 ## In this section
-* [Asset workflow](workflow.md)
+* [Create Assets](create.md)
+* [Edit Assets](edit.md)
+* [Use Assets](use.md)
