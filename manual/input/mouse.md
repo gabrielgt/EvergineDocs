@@ -1,5 +1,9 @@
 # Mouse
 
+**Mouse** is the most common input device on desktop platforms. You can access the mouse state by using the `MouseDispatcher`.
+
+## MouseDispatcher
+
 The `MouseDispatcher` is a class used to track mouse button events. It inherits from [`PointerDispatcher`](touch.md) so it can be used to produce touch events using the mouse.
 
 ```csharp
@@ -25,31 +29,40 @@ public abstract class MouseDispatcher : PointerDispatcher
     public abstract bool TrySetCursorType(CursorTypes cursorType);
 }
 ```
-`State` property gets a flag enum that indicates which mouse buttons are pressed at the current frame.
 
-`ScrollDelta` property gets the mouse scroll increment since the last frame.
- - The value *X* indicates a horizontal scroll increment. The value is positive if the mouse wheel is rotated to the right or negative if the mouse wheel is rotated to the left.
- - The value *Y* indicates a vertical scroll increment. The value is positive if the mouse wheel is rotated in an upward direction (away from the user) or negative if the mouse wheel is rotated in a downward direction (toward the user).
+### Properties
 
-`PositionDelta` property gets the mouse delta position since the last frame.
+It gives you the following properties:
 
-`Position` property gets the mouse absolute position at the current frame.
+| Properties | Description |
+| --- | --- |
+| **State** | Gets a flag enum that indicates which mouse buttons are pressed at the current frame.|
+| **Position** | Gets the mouse absolute screen position at the current frame. |
+| **PositionDelta** | property gets the mouse delta position since the last frame. In other words, it describes how much the mouse has. | 
+| **ScrollDelta** | Gets the mouse scroll increment since the last frame. <ul><li>The value **X** indicates a horizontal scroll increment. The value is positive if the mouse wheel is rotated to the right or negative if the mouse wheel is rotated to the left.</li><li>The value **Y** indicates a vertical scroll increment. The value is positive if the mouse wheel is rotated in an upward direction (away from the user) or negative if the mouse wheel is rotated in a downward direction (toward the user).</li></ul>|
+| **CursorType** |  property gets the mouse active cursor type. |
+| **IsMouseOver** | Indicates if the mouse is over the `Surface`. |
 
-`CursorType` property gets the mouse active cursor type.
+### Events
 
-`IsMouseOver` property indicates whether the mouse is inside the `Surface`.
+You can be subscribed to events to ve notified when mouse state change:
 
-`MouseButtonUp` and `MouseButtonDown` events are available to track mouse pressed buttons but it is recommended to use `IsButtonDown` and `ReadButtonState` methods.
- - IsButtonDown: Gets a value indicating whether the current state of a mouse button is [Pressing](button_states.md) or [Pressed](button_states.md).
- - ReadButtonState: Gets the current [state](button_states.md) of a mouse button.
+| Events | Description |
+| --- | --- |
+|  **MouseMove** and **MouseScroll** | This events track changes in mouse position and scroll. |
+| **MouseButtonDown**  and **MouseButtonUp** | This events are available to track mouse pressed buttons but it is recommended to use `IsButtonDown` and `ReadButtonState` methods: <ul><li>**IsButtonDown**: Gets a value indicating whether the current state of a mouse button is [Pressing](button_states.md) or [Pressed](button_states.md).</li><li>**ReadButtonState:** Gets the current [state](button_states.md) of a mouse button.</li></ul> |
+| **MouseLeave** and **MouseEnter** | They indicate if the mouse enter or leave the `Surface`, so, they track changes in the `IsMouseOver` property. |
 
-`MouseLeave` and `MouseEnter` events are available to track changes in `IsMouseOver` property.
+### Useful Methods
 
-`MouseMove` and `MouseScroll` events are available to track changes in mouse position and scroll.
+| Events | Description |
+| --- | --- |
+| **TrySetCursorPosition** | Try to update the cursor position. When this method is supported by the patform, this method will return *true*. |
+| **TrySetCursorType** | Try to update the cursor type. When this method is supported by the patform, this method will return *true*. |
 
-`TrySetCursorPosition` and `TrySetCursorType` methods can be user to try to update the position and and cursor type. When this action is supported by the platform, these methods will return *true*; otherwise *false*.
+### Using MouseDispatcher
 
-The `MouseDispatcher` can be found within the `Display` or `Surface` objects. The following sample code can be used to access the mouse dispatcher from a `Component` or `Service`.
+The MouseDispatcher can be found within the `Display` or `Surface` objects. The following sample code can be used to access the mouse dispatcher from a Component or Service.
 
 ```csharp
 [BindService]
