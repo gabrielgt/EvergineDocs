@@ -1,6 +1,6 @@
 # Bloom, Dirt, LightShaft and Lensflare
 ---
-In this section, multiples effects are explained because the process steps to calculate them are similar and by performance reason, the effects have been implemented together.
+In this section, multiples effects are explained because the process steps to calculate them are similar and they was implemented together for performance reason.
 
 ## Bloom
 
@@ -31,12 +31,14 @@ This effect tries to simulate when the camera lens is dirty and some lens stains
 | ---------- | ----------- |
 | Min.Threshold | Minimun luminance of the pixel will be affected by the effect. |
 | Max. Threshold | Maximum luminance of the pixel will be affected by the effect. |
-| Scale | -- |
+| Scale | Size of the effect. |
 | Intensity | Defines how the render image and the bloom output will be blended. |
 
 ## LensFlare
 
 A **Lens flare** happens when light is scattered or flared in a lens system, often in response to a bright light, producing a sometimes undesirable artifact in the image. This happens through light scattered by the imaging mechanism itself, for example through internal reflection and forward scatter from material imperfections in the lens.
+
+![Lens Flare](images/lensFlare.jpg)
 
 | Parameter  | Description |
 | ---------- | ----------- |
@@ -47,4 +49,4 @@ A **Lens flare** happens when light is scattered or flared in a lens system, oft
 | Halo thickness | External halo thickness. |
 | Halo threshold | The pixels with upper luminance value to the threshold will be used to generate the halo. |
 | Halo Chro. Aberration | Amout of chromatic aberration. |
-| Intensity | -- |
+| Intensity | Defines how the render image and the bloom output will be blended. |

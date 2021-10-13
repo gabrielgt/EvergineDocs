@@ -14,8 +14,8 @@ The complete list of postprocessing effects cover by the default postprocessing 
 * [Bloom, Dirt, LensFlare, LightShaft](bloom.md)
 * [Fidelity Super Resolution (FSR)](fidelity_super_resolution.md)
 * [Sharpen](sharpen.md)
-* [Tonemapping, Vignette, Grain](tonemapping.md)
-* [Anti-Aliasing (FXAA)](anti-aliasing.md)
+* [Tonemapping, Chromatic aberration, Vignette, Grain, Distortion](tonemapping.md)
+* [Fast approximate anti-aliasing (FXAA)](anti-aliasing.md)
 
 ## Using default postprocessing graph from Evergine studio
 These effects can be configure from PostprocessingGraphRenderer component inside of a postprocessing volume entity.
