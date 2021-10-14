@@ -40,4 +40,5 @@ However, some assets represents just abstract elements that can only be created 
 ## In this section
 * [Create Assets](create.md)
 * [Edit Assets](edit.md)
+* [Export Assets](export.md)
 * [Use Assets](use.md)
