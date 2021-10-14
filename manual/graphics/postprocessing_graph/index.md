@@ -19,4 +19,3 @@ Default Evergine project template imports the [**Evergine.Core** package](../pac
 * [Postprocessing Graph Editor](postprocessing_graph_editor.md)
 * [Default postprocessing graph](default_postprocessing_graph/index.md)
 * [Custom postprocessing graph](custom_postprocessing_graph.md)
-* [Postprocessing Graph Decorator](postprocessing_graph_decorator.md)
