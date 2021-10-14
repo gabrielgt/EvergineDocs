@@ -1,11 +1,11 @@
 # Custom Postprocessing graph
 ---
 
-This section, it is explained how to create your custom postprocessing graph. This can be useful for creating and test no available effects in the default postprocessing graph.
+This section, it is explained how to create your custom postprocessing graph. This could be useful if you want to create and test effects that are not available in the default postprocessing graph.
 
 ## Example
 
-For this example, we are going to create a simple filter that renders only the red component of the image.
+For this example, we are going to create a simple filter that renders only the red component of input render.
 
 First, create a compute effect from the [**Assets Details panel**](../../evergine_studio/interface.md):
 
@@ -82,23 +82,27 @@ There are special compute effect metatags used by the Postprocessing graph. The 
 
 <span style="color:lightgreen">[Output(width, height, PixelFormat)]</span>
 
+The metatag parameters are:
+
 | Parameter | Description |
 | --------- | ----------- |
-| ReferenceInput | Input name used to get width, height and Pixel format of the output texture.|
-| ScaleFactor | Defines the scale factor apply to the width and height of the ReferenceInput to get the output width and height dimensions. |
-| PixelFormat | Defines the pixel format of the output texture.|
-| Width | Defines the width dimension of the output texture. |
-| Height | Defines the height dimension of the output texture. |
+| **ReferenceInput** | Input name used to get width, height and Pixel format of the output texture.|
+| **ScaleFactor** | Defines the scale factor apply to the width and height of the ReferenceInput to get the output width and height dimensions. |
+| **PixelFormat** | Defines the pixel format of the output texture.|
+| **Width** | Defines the width dimension of the output texture. |
+| **Height** | Defines the height dimension of the output texture. |
 
-**Example**
+### Example
 In the following example the Depth input texture has _1920x1080_ dimension and _D24_UNorm_S8_UInt_ pixel format.
 
 ```csharp
-    Texture2D<float> Depth : register(t0);
-	RWTexture2D<float4> PositionOutput : register(u0); [Output(Depth, 1, R16G16B16A16_Float)]
-	RWTexture2D<float2> VelocityOutput : register(u1); [Output(Depth, 0.5, R16G16_Float)]
-	RWTexture2D<float> LinealDepthOutput : register(u2); [Output(500, 500, R32_Float)]
+Texture2D<float> Depth : register(t0);
+
+RWTexture2D<float4> PositionOutput : register(u0);   [Output(Depth, 1, R16G16B16A16_Float)]
+RWTexture2D<float2> VelocityOutput : register(u1);   [Output(Depth, 0.5, R16G16_Float)]
+RWTexture2D<float> LinealDepthOutput : register(u2); [Output(500, 500, R32_Float)]
 ```
+
 The result of the resolve the output tags will be:
 
 | Output Texture | Dimensions | Pixel Format |

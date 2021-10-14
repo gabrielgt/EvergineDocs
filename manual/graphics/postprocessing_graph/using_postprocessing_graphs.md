@@ -1,5 +1,5 @@
 # Using Postprocessing Graph
---
+
 ![Postprocessing Graph header](images/PostProcessingGraph.jpg)
 
 In this document, you will learn how to load and use **Postprocesing Graph** in your applications.
@@ -29,20 +29,20 @@ You can apply a postprocessing graph to your scene click on ![Plus Icon](../imag
 ![Create Postprocessing Volume](images/CreatePostprocessingGraph.jpg)
 
 Postprocessing Volume is an entity in your scene composed of 3 components:
-* Transform3D
-* PostProcessingGraphRenderer
-* BoxCollider3D
+* `Transform3D`
+* `PostProcessingGraphRenderer`
+* `BoxCollider3D`
 
-With the PostProcessingGraphRenderer component, you can configure it to work in two modes.
+With the `PostProcessingGraphRenderer` component, you can configure it to work in two modes.
 
 | Mode | Description |
 | ---- | ----------- |
-| Global | All cameras in your scene will be affected by the postprocessing graph. |
-| Volume | The cameras enter into the volume defines by a BoxCollider will be affected by the postprocessing graph. |
+| **Global** | All cameras in your scene will be affected by the postprocessing graph. |
+| **Volume** | The cameras enter into the volume defines by a BoxCollider will be affected by the postprocessing graph. |
 
 In addition, you can configure the _LayerOrder_ to execute the postprocessing in your scene. For example, you can execute the postprocessing after drawing all entities of your scene but before the UI entities.
 
-Finally, The PostProcessingGraphRenderer allows to load a Postprocessing Graph asset and displays all his nodes or his [decorator](postprocessing_graph_decorator.md) associated.
+Finally, The PostProcessingGraphRenderer allows to load a Postprocessing Graph asset and displays all his nodes or his associated [decorator](postprocessing_graph_decorator.md).
 
 ![Postprocessing Renderer](images/PostprocessingGraphRenderer.jpg)
 

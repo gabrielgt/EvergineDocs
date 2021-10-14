@@ -6,4 +6,4 @@
 
 | Parameter  | Description |
 | ---------- | ----------- |
-| Amount     | Increase/reduce the sharpness effect. |
+| **Amount**     | Increase/reduce the sharpness effect. |
