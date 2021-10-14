@@ -9,10 +9,10 @@ The input API defines four valid states for a button. The transition between dif
 
 |State           | Description |
 |--------------------|-------------|
-| Released | The key or button is not pressed for more than one frame in a row.|
-| Pressing | The key or button is pressed and is transitioning from *Released* to *Pressed* state. This state is an intermediate state (rising edge) and will last only one frame.|
-| Pressed | The key or button is pressed for more than one frame in a row.|
-| Releasing | The key or button is not pressed and is transitioning from *Pressed* to *Released* state. This state is an intermediate state (falling edge) and will last only one frame.|
+| **Released** | The key or button is not pressed for more than one frame in a row.|
+| **Pressing** | The key or button is pressed and is transitioning from *Released* to *Pressed* state. This state is an intermediate state (rising edge) and will last only one frame.|
+| **Pressed** | The key or button is pressed for more than one frame in a row.|
+| **Releasing** | The key or button is not pressed and is transitioning from *Pressed* to *Released* state. This state is an intermediate state (falling edge) and will last only one frame.|
 
 > [!TIP]
 > `Pressing` and `Releasing` states are very useful to trigger an action only once every time a key is pressed.

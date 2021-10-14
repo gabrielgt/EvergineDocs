@@ -74,4 +74,4 @@ By default to optimize the size of DirectX shaders, debugging information is str
 
 ## Alternative graphics debugging technique
 
-If you build a desktop Windows application using DirectX, you can capture a frame and debug it using [Visual Studio graphics debugger](https://docs.microsoft.com/en-us/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics?view=vs-2019), [PIX on Windows](https://devblogs.microsoft.com/pix/introduction/) or [NVidia Nsight Graphics](https://developer.nvidia.com/nsight-graphics)
+If you build a desktop Windows application using DirectX, you can capture a frame and debug it using [Visual Studio graphics debugger](https://docs.microsoft.com/en-us/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics?view=vs-2019), [NVidia Nsight Graphics](https://developer.nvidia.com/nsight-graphics) or [PIX on Windows](https://devblogs.microsoft.com/pix/introduction/)

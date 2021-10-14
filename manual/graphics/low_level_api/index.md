@@ -11,13 +11,14 @@ It is a new graphics API inspired on the latest advances on DirectX 12, Vulkan a
 
 ## In this section
 
-* [ResourceFactory](resourcefactory.md)
 * [GraphicsContext](graphicscontext.md)
+* [ResourceFactory](resourcefactory.md)
 * [Buffer](buffer.md)
 * [Texture](texture.md)
 * [Sampler](sampler.md)
 * [Swapchain](swapchain.md)
 * [Framebuffer](framebuffer.md)
+* [QueryHeap](queryheap.md)
 * [Shader](shader.md)
 * [ResourceLayout](resourcelayout.md)
 * [GraphicsPipeline](graphicspipeline.md)
