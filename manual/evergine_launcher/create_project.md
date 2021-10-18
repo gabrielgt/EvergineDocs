@@ -1,1 +1,14 @@
-# Comming Soon
+# Create a new project
+
+To create a new project from **Evergine launcher**, go to the _My Projects_ section and click on the _Create_ button.
+
+![Create new project button](images/CreateButton.jpg)
+
+The project configuration windows will be opened. Then you can choose the _Project Name_, the disc location of your project, and the Evergine version to use. Also, you can choose a single or multiples profiles for your project. 
+
+> [!Tip]
+> New profiles can be added later)_
+
+![Configure new project](images/ConfigureProject.jpg)
+
+Finally, click on the _Create_ button on the bottom right side of the configuration panel to create and open your project in Evergine Studio.
