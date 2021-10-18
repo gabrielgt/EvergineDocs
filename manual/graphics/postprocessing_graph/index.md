@@ -25,3 +25,4 @@ InEvergine, the default project template imports the [**Evergine.Core** package]
 * [Postprocessing Graph Editor](postprocessing_graph_editor.md)
 * [Default postprocessing graph](default_postprocessing_graph/index.md)
 * [Custom postprocessing graph](custom_postprocessing_graph.md)
+* [Create custom Postprocessing Graph from code](create_postprocessing_graphs_from_code.md)
