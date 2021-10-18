@@ -5,9 +5,10 @@
 > For example, we can halve the resolution of a texture for the _Android_ or _iOS_ profiles. Or sets a different _PixelFormat_. 
 
 ## Contextual Actions
-We can apply some actions to the assets regardless its type. **Right click** to an asset in the **Assets Details** panel to show a contextual menu with the following actions:
 
 ![Asset Contextual Menu](Images/assetContextualMenu.png)
+
+We can apply some actions to the assets regardless its type. **Right click** to an asset in the **Assets Details** panel to show a contextual menu with the following actions:
 
 * **Rename** the asset.
 * **Cut** the asset _(For cut/paste operation)_.
@@ -39,13 +40,10 @@ Every **Asset editor** panel is different, but some of the most common areas are
 ### Viewer area
 
 Usually the viewer area of the asset will show a visual representation of the asset. It's also common to have some sort of controls to change the visualization settings. Some examples are:
-
-> [!NOTE]
-> Some examples are:
-> - Enabling / disabling Texture channels.
-> - Selecting the **Level of Mipmap** of a Texture.
-> - Play/Pause a **Model** animation.
-> - Set the geometry where a **Material** is applied.
+* Enabling / disabling Texture channels.
+* Selecting the **Level of Mipmap** of a Texture.
+* Play/Pause a **Model** animation.
+* Set the geometry where a **Material** is applied.
 
 ### Global properties
 

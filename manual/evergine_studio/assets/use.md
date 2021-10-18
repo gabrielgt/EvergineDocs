@@ -9,11 +9,14 @@ We can use an asset in our project in these ways:
 * Load it from code.
 
 ## Reference asset from components.
-Lots of components can use assets. For example, _MeshComponent_ uses **Model** assets and _Sprite_ uses **Texture** assets.
+
+Lots of components can use assets. For example, `MeshComponent` uses **Model** assets and `Sprite` uses **Texture** assets.
 
 When a component uses an asset, it will show a **Asset Selection Control** in its section in the **Entity Details** panel.
 
 ![Assets Selection Control](Images/assetSelectionControl.png)
+
+When a **Scene** is loaded in Evergine, all referenced assets by components will be loaded automatically.
 
 To add an asset to that component, we need to click on it and a **Asset Picking Dialog** will appear, allowing is to select a desired asset. 
 
@@ -107,7 +110,7 @@ assetSceneManager.Unload("SampleTexture.wetx");
 
 ### Force new instance when loading
 
-By default when an asset is loaded either in the **AssetsService** or the **AssetsSceneMangaer** only one instance of the asset is generated. This saves _GPU memory_ and time. 
+By default when an asset is loaded either in the **AssetsService** or the **AssetsSceneManager** only one instance of the asset is generated. This saves _GPU memory_ and time. 
 
 However, in some certain occasions we want to load a *different instance** of an already loaded asset. For example, we want to load and use a **Material** and changing it but we don't want to change the rest of instances, only this one.
 
