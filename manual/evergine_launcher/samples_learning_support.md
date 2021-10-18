@@ -1,7 +1,6 @@
 # Samples, Learning and Support
----
 
-In the Evergine launcher also you can have access to learning and samples sections to learn more about how to use Evergine and the Support section in the case that you have doubts or need help with something.
+In Evergine launcher you can have access to learning and samples sections to learn more about how to use Evergine and the Support section in the case that you have doubts or need help with something.
 
 ## Samples
 
@@ -11,7 +10,7 @@ In this section, you can find an official Evergine sample collection. These samp
 
 ## Learning
 
-In this section, you can find the API Documentation, the official manual, and the official Evergine Youtube channel. 
+Here you can find the the Official Manual, the API Documentation, and the official Evergine Youtube Channel with useful resources. 
 
 ![Learning](images/Learning.jpg)
 
