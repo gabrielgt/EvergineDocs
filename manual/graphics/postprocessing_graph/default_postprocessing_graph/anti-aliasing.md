@@ -1,5 +1,4 @@
 # Fast approximate anti-aliasing (FXAA)
----
 
 **Fast approximate anti-aliasing** is a screen-space anti-aliasing algorithm created by Timothy Lottes at Nvidia.
 

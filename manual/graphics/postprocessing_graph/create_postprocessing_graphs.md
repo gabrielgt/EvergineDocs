@@ -20,7 +20,7 @@ The postprocessing graph file has the `.wepp` extension.
 ![Postprocessing Graph file](images/postProcessingGraphFile.jpg)
 
 ## Create a new Postprocessing from code
-The following sample code can be used to create a new postprocessing graph and apply it to an entity in your scene.
+Although we recommend to create PostProcessing using Evergine Studio, you can achieve this task from code. The following sample code can be used to create a new postprocessing graph and apply it to an entity in your scene.
 
 ```csharp
 protected override void CreateScene()

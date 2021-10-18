@@ -1,7 +1,6 @@
 # Fidelity Super Resolution
----
 
-AMD FidelityFX Super Resolution (FSR) uses cutting-edge upscaling technologies to help boost your framerates in select titles1 and deliver high-quality, high-resolution gaming experiences, without having to upgrade to a new graphics card. More details [here](https://www.amd.com/en/technologies/radeon-software-fidelityfx-super-resolution).
+**AMD FidelityFX Super Resolution (FSR)** uses cutting-edge upscaling technologies to help boost your framerates in select titles1 and deliver high-quality, high-resolution gaming experiences, without having to upgrade to a new graphics card. More details [here](https://www.amd.com/en/technologies/radeon-software-fidelityfx-super-resolution).
 
 This effect allows scale low-resolution image to the final resolution image improving the performance of your render. FSR support 4 recommended configurations:
 
