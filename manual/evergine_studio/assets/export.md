@@ -2,7 +2,7 @@
 
 ![Assets](images/assets.jpg)
 
-**Evergine** usually doesn't load the resource files (`.jpg`, `.fbx`, etc.) directly at runtime. However, it processes the resource files and **compile** or **export** them into actual binary files that can be properly an efficiently loaded into **Evergine**. 
+**Evergine** usually doesn't load the resource files (`.jpg`, `.fbx`, etc.) directly at runtime. However, it processes the resource files and **compile** or **export** them into actual binary files that can be properly and efficiently loaded into **Evergine**. 
 
 For example, the **Model** asset exported file contains areas that can be directly copied into buffers and uploaded into the graphic card. 
 
@@ -33,6 +33,6 @@ Every asset type defines the exported file asset extension (in the same way it d
 1. Gather information about the **resource file** (if any).
 2. Get the **application profile** name.
 3. Check if the asset **metafile** contains specific parameters for the **app profile**.
-    3.1. If there is a specific **profile definition** use those parameters.
-    3.2. Otherwise the asset will use its **default profile** parameters.
+   * If there is a specific **profile definition** use those parameters.
+   * Otherwise the asset will use its **default profile** parameters.
 4. Convey all the parameters of the asset and **generate** the exported binary file.
