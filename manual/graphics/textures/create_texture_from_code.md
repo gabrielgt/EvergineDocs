@@ -31,13 +31,13 @@ protected override void CreateScene()
 ```
 
 ## Create a Texture from code
-Creting a **Texture** demands a little bit more effort, as we need to define two main things:
+Creting a **Texture** demands a little bit more effort, and it's defined in [this article](../low_level_api/texture.md). Bassically we need to define two main things:
 - **TextureDescription** structure. 
 - **DataBoxes** with the texture data.
 
 #### TextureDescription
 
-The **TextureDescription** struct that contains all the specifications of the **Texture** so the graphic card can properly load the **buffer data** accordingly and be able to extract all their information. It contains the following properties:
+The **TextureDescription** struct that contains all the specifications of the **Texture** so the graphic card can properly load the **buffer data** accordingly and be able to extract all their information. 
 
 | Property | Values | Description |
 | -------- | ------ | ----------- |
@@ -52,3 +52,4 @@ The **TextureDescription** struct that contains all the specifications of the **
 | Usage | None, Count2, Count4, Count8, Count16, Count32| Number of samples in the **Texture**.
 
 #### DataBoxes
+A **DataBox** represents one element of texture. Every mipmap level and element of the array defines its own DataBox.
