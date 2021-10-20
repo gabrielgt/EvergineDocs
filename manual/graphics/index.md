@@ -9,7 +9,7 @@ This section explains how to use Evergine for graphics and rendering.
 ## In this section
 
 * [Rendering overview](rendering_overview.md)
-* [Supported graphic backends](supported_backends/index.md)
+* [Supported graphics backends](supported_backends/index.md)
 * [Cameras](cameras.md)
 * [Lights](lights.md)
 * [Materials](materials.md)
