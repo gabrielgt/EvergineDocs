@@ -61,4 +61,12 @@ It's like having a 1x1x1 cube and a vector with the sampling direction at its ce
 **Texture Cube Arrays** take a step further than the normal cubemap and stores an array of texture cubes, so they need an aditional coordinate to retrieve the element of the array.
 
 #### Usage
-**TextureCubes** are mainly used as environment textures, like reflections, or creating a **Skyboxes** for creating the background environment of your scene.
+**TextureCubesArray** is an intersting choice when creating **Reflection Probes** of your scene. in one resource can store all the probes of the scene.
+
+## Texture 3D
+![Texture 3D](Images/texture3D.png)
+A **3D Texture** is an image that contains information in three dimensions rather the standard two.
+
+#### Usage
+They are commonly used to simulate volumetric effects such fog, smoke, for raymarching operations or for sprite animation blending.
+  
