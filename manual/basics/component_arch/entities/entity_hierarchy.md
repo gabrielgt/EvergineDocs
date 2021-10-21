@@ -17,6 +17,8 @@ The Entity has the following properties and methods to maintain and inspect the 
 | **Parent** | `Entity` | Point to the inmediate ascendant of this entity. If the entity has no parents this property is `null` |
 | **ChildEntities** | `IEnumerable<Entity>` | A collection of the inmediate descendants.  |
 
+To add and remove entities, an Entity instance have the following methods:
+
 | Method | Description |
 | --- | --- |
 | `Entity.AddChild(Entity)` | Add a child entity to the current entity. |
