@@ -43,7 +43,7 @@ These are the path representation elements:
 
 Using the example described above...
 
-* The *relative* path from **Wheel1** to **Tire1** would be: `[parent].Wheel2.Tire2`
+* The *relative* path from **Wheel1** to **Tire2** would be: `[parent].Wheel2.Tire2`
 * The *relative* path from **Car** to **Tire1** would be: 
   * `.Wheel1.Tire1`
   * Or: `[this].Wheel1.Tire1`, Notice that `[this]` is optional.
