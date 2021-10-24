@@ -1,5 +1,10 @@
 # Project Structure
 ![Project Structure](images/projectStructure.png)
+
+**Evergine** projects need to be inter-connected so we can deal with different platforms or rendering system, for example. That means that by default an **Evergine** project has a specific structure. 
+
+## Folders / Projects
+
 When we create our **Evergine** application, it defines by default one **Visual Studio Solution** for every **Project profile** we creates. It will also define the following folders:
 
 | Folder | Content description |
