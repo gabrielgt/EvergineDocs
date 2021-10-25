@@ -7,14 +7,18 @@ A **Component** allows to add functionality and logic to an **Entity**. The `Com
 There are two types of Components which are broadly used along the engine:
 * [Behavior:](behaviours.md) It is thought to add logic to the associated Entity. It provices an `Update()` method which is executed on each game loop.
 * [Drawable](drawables.md): In charge of managing the rendering on the screen. In the same way as above one, this provides a `Draw()` abstract method invoked during the rendering cicle. It is suitable to register and update objects to be rendered.
-* Component: You could derive directly from the Component class to add functionality whithout a Update() or Draw() calls. You could register to events or expose some logic, the only limit is your imagination :)
+* **Component**: You could derive directly from the Component class to add functionality whithout an Update() or Draw() calls. You could register to events or expose some logic, the only limit is your imagination :)
 
 ## Component Lifecycle
 Please, check [Lifecycle of element](../lifecycle_elements.md) for details regrding the lifecycle of elements in Evergine, including Components.
 
 ## Using Components
 
+You can deal with Components both in Evergine Studio and directly from code.
+
 ### From Evergine Studio
+
+In Evergine Studio, you can add/remove Components to an Entity, and modify its properties.
 
 #### Add a Component
 In Evergine Studio, first select an Entity that you want to add the Component, and click the ![Add Button](../../graphics/images/plusIcon.jpg)  button in the Entity Details section:
@@ -26,13 +30,15 @@ A Component selector dialog appears. Select the component type that you want to 
 ![Select Component](images/component_selector.png)
 
 #### Remove a Component
-The process of remove a component is quite simple. First, select the Entity that you want to remove one Component. Later, on the Entity Details, right click in the Component name area, and click the Delete button:
+The process of removing a component is quite simple. First, select the Entity that you want to remove one Component. Later, on the Entity Details, right click in the Component name area, and click the Delete button:
 
 ![Delete Component](images/remove_component_everginestudio.png)
 
 ### From Code
 
 #### Add Components
+
+To add Components, you just need to invoke the `Entity.AddComponent()` method:
 
 ```csharp
 
@@ -71,7 +77,7 @@ entity.RemoveAllComponentsOfType<Drawable>(isExactType: false)
 
 ## Create a new Component
 
-Evergine provides a good Component library, but when you are developing a custom application, you will need to create your own Components that match your application requirements.
+Evergine provides a good Component library, but when you are developing a custom application, you will need to create your own Components to accomplish your application requirements.
 
 ### Write the C# code of your Component
 You only need to create a class that inherit from `Component` class, and add to your application project:
