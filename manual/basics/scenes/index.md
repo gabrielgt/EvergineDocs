@@ -1,7 +1,10 @@
 # Scenes
-Comming soon
+---
+![Scene](images/scene.jpg)
 
-Descripción general del concepto de escena
+A **Scene** is a basic scenario where **Entities** are defined. They usually represents one screen, although there are ways for showing more scenes at the same time. 
+
+The above image shows a scene with a robot, light, camera and environment entities.
 
 ## In this section
 * [Create Scenes](create_scenes.md)
