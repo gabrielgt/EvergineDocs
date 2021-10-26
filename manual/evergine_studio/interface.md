@@ -17,9 +17,9 @@ Evergine studio has the following editors that allow you manage the associate as
 | [**Scene Editor**](../basics/scenes/scene_editor.md) | Double-clicking a [Scene](../basics/scenes/index.md) asset opens a dedicated editor. |
 | [**Effect Editor**](../graphics/effects/effect_editor.md) | Double-clicking an [Effect](../graphics/effects/index.md) asset opens a dedicated editor.|
 | [**Material Editor**](../graphics/materials/material_editor.md) | Double-clicking a [Material](../graphics/materials/material_editor.md) asset opens a dedicated editor. |
-| [**Model Editor**](../graphics/model/model_editor.md) | Double-clicking a [Model](assets/models.md) asset opens a dedicated editor. |
-| [**Render Layer Editor**](../graphics/render_layers/render_layer_editor.md) | Double clicking a [RenderLayer](../graphics/render_layers.md) asset opens a dedicated editor. |
-| [**Sampler Editor**](../graphics/samplers/sampler_editor.md) | Double clicking a [Sampler](../graphics/samplers/index.md) asset opens a dedicated editor. |
+| [**Model Editor**](../graphics/models/model_editor.md) | Double-clicking a [Model](../graphics/models/index.md) asset opens a dedicated editor. |
+| [**Render Layer Editor**](../graphics/render_layers.md) | Double clicking a [RenderLayer](../graphics/render_layers.md) asset opens a dedicated editor. |
+| [**Sampler Editor**](../graphics/samplers.md) | Double clicking a [Sampler](../graphics/samplers.md) asset opens a dedicated editor. |
 | [**Sound Editor**](../audio/sounds/sound_editor.md) | Double clicking a [Sound](../audio/sounds/index.md) asset opens a dedicated editor. |
 | [**Post-Processing Graph Editor**](../graphics/postprocessing_graph/postprocessing_graph_editor.md) | Double clicking a [Post-Processing graph](../graphics/postprocessing_graph/index.md) asset opens a dedicated editor. |
 
