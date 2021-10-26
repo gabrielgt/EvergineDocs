@@ -1,16 +1,16 @@
 # Components
 
-![Component Based Architecture](images/component_based_arch.jpg)
+![Component Based Architecture](../images/component_based_arch.jpg)
 
 A **Component** allows to add functionality and logic to an **Entity**. The `Component` class is the one of every component in Evergine. 
 
-There are two types of Components which are broadly used along the engine:
+There are three types of Components which are broadly used along the engine:
+* [Component](index.md): You could derive directly from the Component class to add functionality whithout an Update() or Draw() calls. You could register to events or expose some logic, the only limit is your imagination :)
 * [Behavior:](behaviours.md) It is thought to add logic to the associated Entity. It provices an `Update()` method which is executed on each game loop.
 * [Drawable](drawables.md): In charge of managing the rendering on the screen. In the same way as above one, this provides a `Draw()` abstract method invoked during the rendering cicle. It is suitable to register and update objects to be rendered.
-* **Component**: You could derive directly from the Component class to add functionality whithout an Update() or Draw() calls. You could register to events or expose some logic, the only limit is your imagination :)
 
 ## Component Lifecycle
-Please, check [Lifecycle of element](../lifecycle_elements.md) for details regrding the lifecycle of elements in Evergine, including Components.
+Please, check [Lifecycle of element](../../lifecycle_elements.md) for details regrding the lifecycle of elements in Evergine, including Components.
 
 ## Using Components
 
@@ -21,7 +21,7 @@ You can deal with Components both in Evergine Studio and directly from code.
 In Evergine Studio, you can add/remove Components to an Entity, and modify its properties.
 
 #### Add a Component
-In Evergine Studio, first select an Entity that you want to add the Component, and click the ![Add Button](../../graphics/images/plusIcon.jpg)  button in the Entity Details section:
+In Evergine Studio, first select an Entity that you want to add the Component, and click the ![Add Button](../../../graphics/images/plusIcon.jpg)  button in the Entity Details section:
 
 ![Add component](images/add_component_everginestudio.png)
 

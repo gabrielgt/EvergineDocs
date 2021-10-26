@@ -9,7 +9,7 @@ An **effect** is a _uber-shader_ so be able to represent a single shader or a la
 | Effect type | Description |
 |------------ | ----------- |
 | Graphics Effect | Defines a rasterization pipeline Vertex Shader, Geometry Shader, Hull Shader, Domain shader, Pixel Shader and are useful to create materials. |
-| Compute Effect | Defines a compute pipeline with Compute Shader and are useful to create [compute task]() and [post-processing graph](../postprocessing/index.md) nodes.|
+| Compute Effect | Defines a compute pipeline with Compute Shader and are useful to create [compute task]() and [post-processing graph](../postprocessing_graph/index.md) nodes.|
 
 ## Create a Effect asset in Evergine Studio
 

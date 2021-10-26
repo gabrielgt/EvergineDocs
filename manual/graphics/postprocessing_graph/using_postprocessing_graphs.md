@@ -42,7 +42,7 @@ With the `PostProcessingGraphRenderer` component, you can configure it to work i
 
 In addition, you can configure the _LayerOrder_ to execute the postprocessing in your scene. For example, you can execute the postprocessing after drawing all entities of your scene but before the UI entities.
 
-Finally, The PostProcessingGraphRenderer allows to load a Postprocessing Graph asset and displays all his nodes or his associated [decorator](postprocessing_graph_decorator.md).
+Finally, The PostProcessingGraphRenderer allows to load a Postprocessing Graph asset and displays all his nodes or his associated [decorator](custom_postprocessing_graph.md).
 
 ![Postprocessing Renderer](images/PostprocessingGraphRenderer.jpg)
 

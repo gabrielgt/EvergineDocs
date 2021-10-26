@@ -2,7 +2,7 @@
 ---
 ![PostProcessing graph](images/postProcessingGraph.jpg)
 
-Post-Processing graph allows you to apply visual effects like Tonemapping, Depth of Field, Temporal Anti-Aliasing, SSAO, SSR ... to your scene final render. The Post-Processing graph is a group of nodes connected that apply visual effects to the output render before drawing on the screen. Each node is a compute [effect](effects.md).
+Post-Processing graph allows you to apply visual effects like Tonemapping, Depth of Field, Temporal Anti-Aliasing, SSAO, SSR ... to your scene final render. The Post-Processing graph is a group of nodes connected that apply visual effects to the output render before drawing on the screen. Each node is a compute [effect](../effects/index.md).
 
 With Postprocessing you could obtain a good looking cinematic appearance for your applications:
 
@@ -16,7 +16,7 @@ A postprocessing graph is a group of compute effect nodes that apply effects to 
 
 ## Default Postprocessing Graph
 
-InEvergine, the default project template imports the [**Evergine.Core** package](../packages.md) and this package includes the Default Post-Processing graph with the most important post-processing visual effect common in a project. So in the most of time, you will use this asset reserving to create a new custom post-processing graph only to create new visual effects or to improve performance needs.
+InEvergine, the default project template imports the [**Evergine.Core** package](../../evergine_studio/packages.md) and this package includes the Default Post-Processing graph with the most important post-processing visual effect common in a project. So in the most of time, you will use this asset reserving to create a new custom post-processing graph only to create new visual effects or to improve performance needs.
 
 ## In this section
 

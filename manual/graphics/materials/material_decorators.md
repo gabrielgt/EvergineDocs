@@ -1,10 +1,10 @@
 # Material Decorators
 
-**Material Decorator** is a C# class that simplify the use of custom materials to the users. It allows to define how the effect resource layout elements are shown in the [Material Editor](material_editor.md). To generate material decorator of your effects you need to use the [Effect Editor](../effects/EffectEditor.md).
+**Material Decorator** is a C# class that simplify the use of custom materials to the users. It allows to define how the effect resource layout elements are shown in the [Material Editor](material_editor.md). To generate material decorator of your effects you need to use the [Effect Editor](../effects/effect_editor.md).
 
 ## Generate Material Decorator
 
-From the [Effect Editor](../effects/EffectEditor.md) toolbox push the ![Generate Material Decorator button](images/MaterialDecoratorIcon.jpg) button to generate the Material decorator.
+From the [Effect Editor](../effects/effect_editor.md) toolbox push the ![Generate Material Decorator button](images/MaterialDecoratorIcon.jpg) button to generate the Material decorator.
 
 ![Generate Material Decorator](images/GenerateMaterialDecorator.jpg)
 

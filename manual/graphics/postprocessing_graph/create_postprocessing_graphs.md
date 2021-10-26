@@ -2,7 +2,7 @@
 ---
 ![Postprocessing header](images/PostProcessingGraph.jpg)
 
-The Post-Processing graph is a group of nodes connected that apply visual effects to the output render before drawing on the screen. Each node is a compute [effect](effects.md). 
+The Post-Processing graph is a group of nodes connected that apply visual effects to the output render before drawing on the screen. Each node is a compute [effect](../effects/index.md). 
 
 ## Create a Postprocessing Graph asset in Evergine Studio
 You can create a postprocessing graph click button on ![Plus Icon](../images/plusIcon.jpg) from the [Assets Details](../../evergine_studio/interface.md) panel to deploy a create menu options and click on the option _"Create Post-Processing Graph"_
