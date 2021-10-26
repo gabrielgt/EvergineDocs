@@ -3,7 +3,7 @@ The **Behaviors** are one kind of Component that allows you to do and action eac
 
 The **Behavior Manager** is a manager registered in a scene that manages the execution of all behaviors in each update cycle. The behaviors are registered automatically in the Behavior Manager associated with the scene that contains its entity owner.
 
-## Create a Behavior from code
+## Create a Behavior
 From Visual Studio you can create a c# class with the following template.
 
 ```csharp

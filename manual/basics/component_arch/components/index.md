@@ -1,6 +1,6 @@
 # Components
 
-![Component Based Architecture](images/component_based_arch.jpg)
+![Component Based Architecture](../images/component_based_arch.jpg)
 
 A **Component** allows to add functionality and logic to an **Entity**. The `Component` class is the one of every component in Evergine. 
 
@@ -10,7 +10,7 @@ There are three types of Components which are broadly used along the engine:
 * [Drawable](drawables.md): In charge of managing the rendering on the screen. In the same way as above one, this provides a `Draw()` abstract method invoked during the rendering cicle. It is suitable to register and update objects to be rendered.
 
 ## Component Lifecycle
-Please, check [Lifecycle of element](../lifecycle_elements.md) for details regrding the lifecycle of elements in Evergine, including Components.
+Please, check [Lifecycle of element](../../lifecycle_elements.md) for details regrding the lifecycle of elements in Evergine, including Components.
 
 ## Using Components
 
