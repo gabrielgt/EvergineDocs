@@ -1,4 +1,6 @@
 # Behaviours
+---
+
 The **Behaviors** are one kind of Component that allows you to do and action each update cycle of the application. A behavior is associated with an entity and all behaviors in a scene are managed by **Behavior Manager**.
 
 The **Behavior Manager** is a manager registered in a scene that manages the execution of all behaviors in each update cycle. The behaviors are registered automatically in the Behavior Manager associated with the scene that contains its entity owner.

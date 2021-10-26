@@ -1,4 +1,6 @@
 # Services
+---
+
 The Services are elements that allow you to manage global features. Service is a behavior but is not associated with the entity or scene. The services could be bonded from any [component](component_arch/components/index.md) even other services using the [aplication container](application.md).
 
 There are two kind of services:
@@ -62,7 +64,7 @@ Before using a service is necessary to register it in the [application container
     ...
  ```
 
- ## Use a service
+ ## Using a service
  To use a registered service from a component, behavior, or drawable even another service only need to bind the services.
 
  ```csharp
