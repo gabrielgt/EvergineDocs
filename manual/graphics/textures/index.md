@@ -41,6 +41,5 @@
 ## In this section
 * [Texture types](textureTypes.md)
 * [Import Textures](import_textures.md)
-* [Using Textures](using_textures.md)
 * [How to create a texture from code](create_texture_from_code.md)
 * [Texture Editor](texture_editor.md)

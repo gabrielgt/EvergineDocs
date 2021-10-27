@@ -30,10 +30,10 @@ Panel with all the **Texture** properties. They don't depend on the profile.
 
 | Property | Description |
 |----------|-------------|
-| NinePathType| Sets the ninepath information of the image. It defines how the texture can stretch un a ui component.
-| GenerateMipmaps | If **Evergine** will generate all the mipmaps for the **Texture**.
-| PremultipliedAlpha | If the **RGB** channels are multiplied by the **Alpha (A)** channel.
-| Sampler | The **SamplerState** asset that will defines how the **Texture** is sampled and filtered.
+| **GenerateMipmaps** | If **Evergine** will generate all the mipmaps for the **Texture**.
+| **PremultipliedAlpha** | If the **RGB** channels are multiplied by the **Alpha (A)** channel.
+| **Sampler** | The **SamplerState** asset that will defines how the **Texture** is sampled and filtered.
+| **NinePathType**| **(Currently not supported )** Sets the ninepath information of the image. It defines how the texture can stretch un a ui component.
 
 ## Profile Properties
 Properties that can be changed in every app profile.

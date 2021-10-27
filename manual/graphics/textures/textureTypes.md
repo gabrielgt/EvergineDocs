@@ -19,7 +19,7 @@ They are used for almost everything, like Sprites, Diffuse channel, Normal mappi
 
 The same as the **Texture2D** above, but it contains an array of textures.
 
-Modern graphics APIs support **texture arrays**, which is an array of textures with the same size and format. They are treated as the same _graphic resource_, it also can have **mipmapping** information and can be sampled usind an extra texture coordinate that indicates which array item is needed to be sampled. 
+Modern graphics APIs support **texture arrays**, which is an array of textures with the same size and format. They are treated as the same _graphic resource_, it also can have **mipmapping** information and can be sampled using an extra texture coordinate that indicates which array item is needed to be sampled. 
 
 #### Usage
 They are useful, for example, for creating sprite atlas or animations, which every element of the array containing a frame of the animation or atlas. 
@@ -28,11 +28,10 @@ They are useful, for example, for creating sprite atlas or animations, which eve
 
 ![Texture 1D](Images/texture1D.png)
 
-Texture that only contains only one dimension ( **width** )and are sampled using only one texture coordinate.
+Texture that only contains only one dimension ( **width** ) and are sampled using only one texture coordinate.
 
 #### Usage
 Useful when dealing with one dimensional info like **gradients**, for example.
-
 
 ## Texture 1D Array
 

@@ -3,7 +3,7 @@
 The most common use **Texture** is assigning them into **Materials** and **Components**. However, it's perfectly valid to use and even create a **Texture** from code.
 
 ## Load Texture asset from code
-As explained in [this article](../../evergine**studio/assets/use.md), it's perfectly possible. Here is a sample code for creating a primitive entity with a Diffuse material.
+As explained in [this article](../../evergine_studio/assets/use.md), it's perfectly possible. Here is a sample code for creating a primitive entity with a Diffuse material.
 
 ```csharp
 
@@ -52,4 +52,4 @@ The **TextureDescription** struct that contains all the specifications of the **
 | Usage | None, Count2, Count4, Count8, Count16, Count32| Number of samples in the **Texture**.
 
 #### DataBoxes
-A **DataBox** represents one element of texture. Every mipmap level and element of the array defines its own DataBox.
+A **DataBox** represents a data buffer that contains all pixel of an element of texture. Every mipmap level, array slice or cube face defines its own DataBox.

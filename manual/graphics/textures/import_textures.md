@@ -29,7 +29,7 @@ You can find the texture assets in the Assets Details panel when you select a fo
 | `.tga` | No | Yes | 32 | Texture2D |
 | `.hdr` | No | No | 48 or 96 (high dynamic range) | Texture2D |
 | `.dds` | Yes (S3, DXT1, DXT3, DXT5)  | Yes | Multiple | Texture2D, Texture2DArray, Texture1D, Texture1DArray, TextureCube, TextureCubeArray, Texture3D|
-| `.ktx` |  YEs (ETC1S) | Yes | Multiple | Texture2D, Texture2DArray, Texture1D, Texture1DArray, TextureCube, TextureCubeArray, Texture3D |
+| `.ktx` |  Yes (ETC1S) | Yes | Multiple | Texture2D, Texture2DArray, Texture1D, Texture1DArray, TextureCube, TextureCubeArray, Texture3D |
 
 ## Sampler State association
 A **Texture** graphic resource needs a **Sampler State** asset for properly filtering it. That's why the **Texture** asset contains a reference to a **SamplerState** of your project.
