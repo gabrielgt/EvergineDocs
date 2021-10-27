@@ -17,6 +17,8 @@ Primitive collection:
 * Teapot
 * Torus
 
+The main difference of using primitives instead of a [Model](models/index.md) is that in that case the Mesh is generated procedurally, instead of obtaining it from an asset. It allows you to parametrice the way this mesh is generated.
+
 ## Create primitive from Evergine Studio
 From the Entity Hierarchy panel click on![plus](images/plusIcon.jpg) button and go to Primitives 3D submenu.
 
@@ -32,19 +34,82 @@ protected override void CreateScene()
 
             var material = assetsService.Load<Material>(EvergineContent.Materials.DefaultMaterial);
 
-            Entity e = new Entity()
+            Entity cubeEntity = new Entity()
                 .AddComponent(new Transform3D())
                 .AddComponent(new MaterialComponent() { Material = material })
-                .AddComponent(new CubeMesh())
+                .AddComponent(new CubeMesh()) // A cube primitive
                 .AddComponent(new MeshRenderer());
 
-            this.Managers.EntityManager.Add(e);
+            this.Managers.EntityManager.Add(cubeEntity);
         }
 ```
 > [!Tip]
 > To create primitive only need to change _CubeMesh_ component by _CapsuleMesh_, _ConeMesh_, _CylinderMesh_, _PlaneMesh_, _PyramidMesh_, _SphereMesh_, _TeapotMesh_ or _TorusMesh_ component.
 
+## Cube Parameters
+
+![Cube](images/cube.png)
+
+The component for create this primitive is `CubeMesh`
+
+| Parameter  | Description |
+| -----------| ----------- |
+| **Size** | The size of the cube. Must be greater than 0. |
+| **UVHorizontalFlip** | Value indicating whether to flip the horizontal texture coordinate.|
+| **UVVerticalFlip** | Value indicating whether to flip the vertical texture coordinate.|
+| **InitialU** | The horizontal texture coordinate offset.|
+| **InitialV** | The vertical texture coordinate offset. |
+| **UTile** | The horizontal texture coordinate scale factor.|
+| **VTile** | The vertical texture coordinate scale factor.|
+
+## Sphere Parameters
+
+![Sphere](images/sphere.png)
+
+The component for create this primitive is `SphereMesh`
+
+| Parameter  | Description |
+| -----------| ----------- |
+| **Diameter** | The diameter of the sphere. Must be greater than 0. |
+| **Tessellation** | The tessellation of the sphere. Must be greater than 3. |
+| **UVHorizontalFlip** | Value indicating whether to flip the horizontal texture coordinate.|
+| **UVVerticalFlip** | Value indicating whether to flip the vertical texture coordinate.|
+
+## Plane Parameters
+
+![Plane](images/plane.png)
+
+The component for create this primitive is `PlaneMesh`
+
+| Parameter  | Description |
+| -----------| ----------- |
+| **PlaneNormal** | The normal of the plane. Availables values: <ul><li>XPositive</il><li>YPositive</il><li>ZPositive</il><li>XNegative</il><li>YNegative</il><li>ZNegative</il></ul> |
+| **Width** | The width of the plane. Must be greater than 0.|
+| **Height** | The height of the plane. Must be greater than 0. |
+| **TwoSides** | Value indicating whether the plane has two sides. By default botton face of the plane is not generated. |
+| **UVHorizontalFlip** | Value indicating whether to flip the horizontal texture coordinate.| 
+| **UVVerticalFlip** | Value indicating whether to flip the vertical texture coordinate.|
+| **InitialU** | The horizontal texture coordinate offset.|
+| **InitialV** | The vertical texture coordinate offset.|
+| **UTile** | The horizontal texture coordinate scale factor.|
+| **VTile** | The vertical texture coordinate scale factor.|
+
+## Teapot Parameters
+
+![Teapot](images/teapot.png)
+
+The component for create this primitive is `TeapotMesh`
+
+| Parameter  | Description |
+| -----------| ----------- |
+| **Size** | The size of the teapot. Must be greater than 0. |
+| **Tessellation** | The tessellation of the teapot. Must be greater than 3.|
+
 ## Capsule Parameters
+
+![Capsule](images/capsule.png)
+
+The component for create this primitive is `CapsuleMesh`
 
 | Parameter | Description |
 | -----------| ----------- |
@@ -54,25 +119,21 @@ protected override void CreateScene()
 
 ## Cone Parameters
 
+![Cone](images/cone.png)
+
+The component for create this primitive is `ConeMesh`
+
 | Parameter  | Description |
 | -----------| ----------- |
 | **Height**   | The height of the cone. Must be greater than 0. |
 | **Diameter** | The diameter of the cone. Must be greater than 0. |
 | **Tessellation** | The tessellation of the cone. |
 
-## Cube Parameters
-
-| Parameter  | Description |
-| -----------| ----------- |
-| **Size** | The size of the cube. Must be greater than 0.|
-| **UVHorizontalFlip** | Value indicating whether to flip the horizontal texture coordinate.|
-| **UVVerticalFlip** | Value indicating whether to flip the vertical texture coordinate.|
-| **InitialU** | The horizontal texture coordinate offset.|
-| **InitialV** | The vertical texture coordinate offset. |
-| **UTile** | The horizontal texture coordinate scale factor.|
-| **VTile** | The vertical texture coordinate scale factor.|
-
 ## Cylinder Parameters
+
+![Cylinder](images/cylinder.png)
+
+The component for create this primitive is `CylinderMesh`
 
 | Parameter  | Description |
 | -----------| ----------- |
@@ -80,44 +141,21 @@ protected override void CreateScene()
 | **Diameter** | The diameter of the cylinder. Must be greater than 0. |
 | **Tessellation** | The tessellation of the cylinder. Must be greater than 3. |
 
-## Plane Parameters
-
-| Parameter  | Description |
-| -----------| ----------- |
-| **PlaneNormal** | The normal of the plane. Availables values: _XPositive, YPositive, ZPositive, XNegative, YNegative, ZNegative_. |
-| **Width** | The width of the plane. Must be greater than 0.|
-| **Height** | The height of the plane. Must be greater than 0. |
-| **TwoSides** | Value indicating whether the plane has two sides.|
-| **UVHorizontalFlip** | Value indicating whether to flip the horizontal texture coordinate.| 
-| **UVVerticalFlip** | Value indicating whether to flip the vertical texture coordinate.|
-| **InitialU** | The horizontal texture coordinate offset.|
-| **InitialV** | The vertical texture coordinate offset.|
-| **UTile** | The horizontal texture coordinate scale factor.|
-| **VTile** | The vertical texture coordinate scale factor.|
-
 ## Pyramid Parameters
+
+![Pyramid](images/pyramid.png)
+
+The component for create this primitive is `PyramidMesh`
 
 | Parameter  | Description |
 | -----------| ----------- |
 | Size  | The size of the pyramid. Must be greater than 0. |
 
-## Sphere Parameters
-
-| Parameter  | Description |
-| -----------| ----------- |
-| **Diameter** | The diameter of the sphere. Must be greater than 0. |
-| **Tessellation** | The tessellation of the sphere. Must be greater than 3. |
-| **UVHorizontalFlip** | Value indicating whether to flip the horizontal texture coordinate.|
-| **UVVerticalFlip** | Value indicating whether to flip the vertical texture coordinate.|
-
-## Teapot Parameters
-
-| Parameter  | Description |
-| -----------| ----------- |
-| **Size** | The size of the teapot. Must be greater than 0. |
-| **Tessellation** | The tessellation of the teapot. Must be greater than 3.|
-
 ## Torus Parameters
+
+![Torus](images/torus.png)
+
+The component for create this primitive is `TorusMesh`
 
 | Parameter  | Description |
 | -----------| ----------- |
