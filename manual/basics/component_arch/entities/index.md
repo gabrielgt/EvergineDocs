@@ -17,6 +17,7 @@ Despite entities has no functionality itself, it provides several ways to identi
 | **Name** | `String` | The name of the Entity. Several objects can share the same name. |
 | **Tag** |  `String` | A string **used to categorize** entities. It is useful to tag entities with things in common (for instance, tag all vehicle entities with the tag `"Vehicle"`). Evergine provides ways to get [entity collections](entity_manager.md) sharing the same Tag. |
 | **Components** | `IEnumerable<Component>` | A collection of registered components in this Entity |
+| **Scene** | `Scene` | Point to the Scene in which this Entity has been registered. This value is set after attaching the Entity (see [LifeCycle](../../lifecycle_elements.md) document for further details)|
 
 ## In this section
 * [Entity Manager](entity_manager.md)

@@ -1,9 +1,7 @@
 # Behaviours
 ---
 
-The **Behaviors** are one kind of Component that allows you to do and action each update cycle of the application. A behavior is associated with an entity and all behaviors in a scene are managed by **Behavior Manager**.
-
-The **Behavior Manager** is a manager registered in a scene that manages the execution of all behaviors in each update cycle. The behaviors are registered automatically in the Behavior Manager associated with the scene that contains its entity owner.
+The **Behaviors** are one kind of Component that allows you to do and action each Update cycle of the Application. A Behavior is associated with an Entity and all Behaviors in a scene are managed by **Behavior Manager**.
 
 ## Create a Behavior
 From Visual Studio you can create a c# class with the following template.
@@ -24,15 +22,27 @@ namespace MyProject
 }
 ```
 
+## Update Order
+
+You can indicate the order of execution of every Behavior by setting its `UpdateOrder` property. 
+
+| Property | Description |
+| --- | --- |
+| **UpdateOrder** | Value used to order the execution of every Behavior of the Scene, whether lower values indicate that the Behavior would be updated first. The default value is 0.5 |
+
 ## Behavior family
-There are three behavior families that you can specify in the constructor of your behavior using the base constructor with the `FamilyType` parameter.
+There are three Behavior families that you can specify in the constructor of your Behavior using the base constructor with the `FamilyType` parameter.
  
- *  **DefaultBehavior**: This is the default family when you don't specify anything in the constructor. The behavior only runs in runtime but not in the Evergine Studio.
- *  **PriorityBehavior**: This is a special family that indicates your behavior runs both in runtime and in Evergine Studio.
- *  **PhysicBehavior**: This family is specific to behaviors with physic that manage in the independent thread for performance proposes.
+ *  **DefaultBehavior**: This is the default family when you don't specify anything in the constructor. The Behavior only runs in runtime but not in the Evergine Studio.
+ *  **PriorityBehavior**: This is a special family that indicates your Behavior runs both in runtime and in Evergine Studio.
+ *  **PhysicBehavior**: This family is specific to Physics components that need to be updated by the PhysicsManager.
+
+
+## BehaviorManager
+The **Behavior Manager** is a SceneManager registered by default in every SCene that manages the execution of all Behaviors in each update cycle. All Behaviors are registered automatically into the BehaviorManager when it's attached, and unregistered when the Behaviour is detached.
 
 ## Behavior example
-The following example creates behavior that allows you to rotate your entity every update cycle.
+The following example creates Behavior that allows you to rotate your entity every update cycle.
 
 ```csharp
 using Evergine.Framework;
@@ -48,12 +58,12 @@ namespace MyProject
         private Transform3D transform = null;
 
         public MyBehavior()
-            : base(FamilyType.DefaultBehavior)
+            : base(FamilyType.DefaultBehavior) // This base(...) constructor could be ommited.
         { }
 
         protected override void Update(TimeSpan gameTime)
         {
-            transform.Orientation *= Quaternion.CreateFromEuler(new Vector3(0, (float)gameTime.TotalSeconds, 0));
+            this.transform.LocalOrientation *= Quaternion.CreateFromEuler(new Vector3(0, (float)gameTime.TotalSeconds, 0));
         }
     }
 }
@@ -61,5 +71,5 @@ namespace MyProject
 > [!Tip]
 > BindComponent allows binding other components, to know more about that visit the following [**section**](../Binding.md)
 
-## Add/Remove a behavior
-To add/remove a behavior to/from your entity both from code or Evergine Studio is the same that adding/removing a component because a behavior is a kind of component. You can see how to add/remove a component [here](index.md)
+## Add/Remove a Behavior
+To add/remove a Behavior to/from your entity both from code or Evergine Studio is the same that adding/removing a component because a Behavior is a kind of component. You can see how to add/remove a component [here](index.md)
