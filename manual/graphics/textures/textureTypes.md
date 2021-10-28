@@ -52,7 +52,7 @@ It's like having a 1x1x1 cube and a vector with the sampling direction at its ce
 ![Sample TextureCube](Images/sampleCubemap.png)
 
 #### Usage
-**TextureCubes** are mainly used as environment textures, like reflections, or creating a **Skyboxes** for creating the background environment of your scene.
+**TextureCubes** are mainly used as environment textures for IBL, like radiance and irradiance texture cubes for specular or diffuse components, or creating a **Skyboxes** for creating the background environment of your scene.
 
 
 ## Texture Cube Array
