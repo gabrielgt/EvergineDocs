@@ -1,2 +1,0 @@
-# Drawables
-Comming soon

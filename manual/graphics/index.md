@@ -20,7 +20,6 @@ This section explains how to use Evergine for graphics and rendering.
 * [Render Layers](render_layers.md)
 * [Post Processing Graph](postprocessing_graph/index.md)
 * [Particles](particles.md)
-* [Drawables](drawables.md)
 * [Effects](effects/index.md)
 * [Environment](environment.md)
 * [Line Batch](linebatch.md)
