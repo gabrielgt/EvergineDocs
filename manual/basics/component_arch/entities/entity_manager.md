@@ -18,6 +18,13 @@ entityManager.Add(entity);
 entityManager.Remove(entity);
 ```
 
+## Important Properties
+
+| Method | Description | 
+| ------ | ----------- |
+| **EntityGraph**| Return the entities at the top level on the scene (Those without parent) |
+| **AllEntities** | Return all the entities of the scene, including those who have parent. |
+
 ## Find Entities
 
 You can  find Entities in several ways:

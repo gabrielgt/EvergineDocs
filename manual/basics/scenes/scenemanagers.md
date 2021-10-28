@@ -2,12 +2,14 @@
 
 In **Evergine** the **SceneManagers** are elements that control some important aspects of the scene. They are not based as entities because they behave as a global element of the scene and cannot be attached into a specific entity. 
 
+All SceneManagers in a Scene can be accessed using the `Scene.Managers` property. This allow to register and access SceneManagers.
+
 ## Default SceneManagers.
 **Evergine** scenes are created with some **SceneManagers** by default. These are:
 
-| SceneManager | Access | Description |
+| SceneManager | Access Property | Description |
 | ------------ | ----------- | -----|
-| **EntityManager** | ```this.Managers.EntityManager``` | Controls the entities of the scene. More information below.
+| **EntityManager** | ```this.Managers.EntityManager``` | Controls the entities of the scene. More information in the [EntityManager](../component_arch/entities/entity_manager.md) article.
 | **AssetsSceneManager** | ```this.Managers.AssetsSceneManager``` | Controls the asset of the scene. More information below.
 | **BehaviorManager** | ```this.Managers.BehaviorManager``` | Manages the behavior update execution of the scene and their priority order.
 | **RenderManager** | ```this.Managers.RenderManager``` | Handles the **Rendering** of the scene. More information in the [Rendering](../../graphics/rendering_overview.md) article.
@@ -16,26 +18,6 @@ In **Evergine** the **SceneManagers** are elements that control some important a
 
 >[!NOTE]
 > The **PhysicsManager3D** scene manager is not registered by default although in the project template it's loaded in the **RegisterManagers** method of the template scene class.
-
-### Entity Manager
-
-**Entity Manager** is the manager that controls all the entities in the scene. It contains the graph and also methods for acessing adding and removing entities.
-
-#### Important methods
-
-| Method | Description | 
-| ------ | ----------- |
-| **Add** | Adds an entity to the scene |
-| **Remove** | Removes the entity from the scene.|
-| **Find** |  Search an entity in the scene entity graph by its name or id |
-| **FindAllByTags** | Returns all the entities in the scene with a specified tag. |
-
-#### Important properties
-
-| Method | Description | 
-| ------ | ----------- |
-| **EntityGraph**| Return the entities at the top level on the scene (Those without parent) |
-| **AllEntities** | Return all the entities of the scene, including those who have parent. |
 
 ### Assets Scene Manager
 The **AssetsSceneManager** controls all the asset loaded in the scene. When the scene is disposed **AssetsSceneManager** automatically unloads all the assets of the scene, releasing all the GPU memory in the process. More information in the [Use Assets](../../evergine_studio/assets/use.md) article.
@@ -83,7 +65,31 @@ this.Managers.RemoveManager<PhysicsManager3D>();
 ```
 
 ### Obtaining a SceneManager
-We can obtain a registered **SceneManager** either by using Binding in your class (See the [Binding article](../component_arch/Binding.md)) or just using the next method:
+We can obtain a registered **SceneManager** in several ways.
+
+#### Using [BindSceneManager] attribute
+
+With the [BindSceneManager] attribute in your Component or another custom SceneManager (See the [Binding article](../component_arch/Binding.md))
+
+```csharp
+
+public class MyComponent : Component 
+{    
+    [BindSceneManager]
+    public RenderManager RenderManager;
+
+    protected override void Start()
+    {
+        // Once the component is attached, the RenderManager property has being bound...
+        this.RenderManager.DebugLines = true;
+    }
+}
+
+```
+
+#### Searching the SceneManager directly
+ 
+Using the SceneManager.FindManager<T>() you can find your desired manager
 
 ```csharp
 
@@ -91,5 +97,8 @@ MyManager manager = this.Managers.FindManager<MyManager>();
 
 // This for example will return the BulletPhysicsManager3D registered before.
 PhysicsManager3D physics = this.Managers.FindManager<PhysicsManager3D>();
+
+// For default SceneManagers you can access using quick properties :)
+RenderManager renderManager = this.Managers.RenderManager;
 
 ```

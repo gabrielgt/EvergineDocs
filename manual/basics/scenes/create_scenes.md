@@ -25,19 +25,20 @@ There are two ways of creating a **Scene** from **Evergine Studio**.
 
 To generate a new **Scene** by code we just need to create a new class extending **Scene**:
 
-1. Create a new class in your **Evergine** project (`CodeClass.cs`).
+1. Create a new class in your **Evergine** project (`MyScene.cs` for example).
 2. Make that class inherit from **Scene** class.
 3. You can override the following important methods:
 
 | Method | Description |
 | ------ | ----------- |
-| CreateScene() | Method where all the scene entities are created and added to the **Scene**.
-| RegisterManagers() | Method where the **SceneManagers** are loaded. `base.RegisterManagers()` will register the default **SceneManagers**. 
-| Start() | Called just before the **Scene** start updating and drawing.
-| End() | Ends the scene 
-| Pause() | Called when the scene is paused. It can be due the app being suspended or either manually paused through the **ScrenContextManager**.
-| Resume() | Resume the **Scene** when it's dead..
+| **CreateScene()** | Method where all the scene entities are created and added to the **Scene**.
+| **RegisterManagers()** | Method where the **SceneManagers** are loaded. `base.RegisterManagers()` will register the default **SceneManagers**. 
+| **Start()** | Called just before the **Scene** start updating and drawing.
+| **End()** | Ends the scene 
+| **Pause()** | Called when the scene is paused. It can be due the app being suspended or either manually paused through the **ScrenContextManager**.
+| **Resume()** | Resume the **Scene** when it's dead..
 
+Here is a code example:
 ````csharp
 
 public class MyScene : Scene
@@ -52,7 +53,7 @@ public class MyScene : Scene
     {
         // Add scene entities.
 
-        // Create camera
+        // Create a camera
         var cameraEntity = new Entity("camera")
             .AddComponent(new Transform3D())
             .AddComponent(new Camera3D())

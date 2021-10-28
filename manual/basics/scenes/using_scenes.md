@@ -6,14 +6,13 @@ For loading and launching a **Scene** from code we have to use **ScreenContextMa
 
 A **ScreenContext** represents a list of **Scenes** that can be simultanously loaded in the application at the same time. 
 
-
 ![ScreenContext](images/ScreenContext.png)
 
 >[!NOTE]
 > For example, this the diagram above depicts a **ScreenContext** containing two scenes: _MainScene_ for the application logic, and _UIScene_ another one just the **UI**.
 
 ### ScreenContextManager
-**ScreenContextManager** is an service that manages the **Scene navigation** between scenes or, more accurately, **ScreenContext**.
+**ScreenContextManager** is a [Service](../services.md) that manages the **Scene navigation** between scenes or, more accurately, **ScreenContext**.
 Its main methods are:
 
 | Method | Description | 
@@ -28,6 +27,8 @@ So loading and navigating to a **Scene** by code would be like this (this code i
 ```csharp
 
 // Loads the scenes. will create MyScene and UIScene objects which should be existing classes that intherit Scene class.
+// These scenes are populated with all entities defined in its respectives assets (MainScene.wescene and UIScene.wescene)
+
 var baseScene = assetsService.Load<MyScene>(EvergineContent.Scenes.MainScene_wescene);
 var uiScene = assetsService.Load<UIScene>(EvergineContent.Scenes.UIScene_wescene);
 
