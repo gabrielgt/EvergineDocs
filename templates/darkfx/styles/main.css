@@ -9,6 +9,24 @@
   --color-background-dark: #1e1e1e;
   --color-background-table-alt: #212123;
   --color-background-quote: #69696e;
+
+  /* Scrollbar */
+  --scrollbar-bg-color: #333337;
+  --scrollbar-thumb-bg-color: #212123;
+  --scrollbar-thumb-border-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg-color); 
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg-color); 
+  border-color: var(--scrollbar-thumb-border-color);
 }
 
 body.light-theme {
@@ -473,4 +491,69 @@ input:checked + .slider:before {
     white-space: nowrap;
     text-overflow: ellipsis;
   }
+}
+
+
+
+.evergine-documentation-list {
+  display: contents;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 35px;
+}
+
+.evergine-documentation-list li {
+  margin-left: 0;
+  position: relative;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.evergine-documentation-list li>a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0 10px 20px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.evergine-documentation-list li>a>h2 {
+  margin-left: -3px;  
+}
+
+.evergine-documentation-list li a p {
+  margin-right: 60px;
+  padding-right: 50px;
+}
+
+.evergine-documentation-list li a h2,
+.evergine-documentation-list li a p {
+  color: var(--color-underline);
+  position: relative;
+  margin-top: 0px;
+}
+
+.evergine-documentation-list li a h2:before {
+  display: none;
+}
+
+.evergine-documentation-list li:hover .xi_arrowLink {
+  background-position: 100% 50%;
+}
+
+.evergine-documentation-list li:hover {
+  background-color: var(--color-background-subnav);
 }
