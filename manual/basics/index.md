@@ -27,6 +27,7 @@ Evergine libraries are distributed using [NuGet package system](https://nuget.or
 
 * [Project structure](project_structure.md)
 * [Component Based Architecture](component_arch/index.md)
+* [Bindings](bindings/index.md)
 * [Lifecycle of elements](lifecycle_elements.md)
 * [Scenes](scenes/index.md)
 * [Services](services.md)
