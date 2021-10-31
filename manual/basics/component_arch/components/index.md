@@ -97,3 +97,30 @@ public class MyComponent : Component
     }
 }
 ```
+
+## Allow multiple instances
+
+By default, an Entity can only have one Component per Type (for instance, an Entity can't have more than one Transform3D).
+
+However, in some cases it is useful that an Entity can have more instances per type (for example, if you want to add several colliders).
+
+In that case, you need to add the [AllowMultipleInstances] attribute to your class:
+
+```csharp
+[AllowMultipleInstances]
+public MyComponent : Component
+{
+    // The entity can have multiple instances of this component type...    
+}
+```
+
+```csharp
+// This is valid becuse MyComponent has the [AllowMultipleInstances] attribute...
+Entity entity = new Entity()
+    .AddComponent(new MyComponent()))
+    .AddComponent(new MyComponent()))
+    .AddComponent(new MyComponent()))
+    .AddComponent(new MyComponent()))
+    .AddComponent(new MyComponent()));
+```
+
