@@ -53,5 +53,4 @@ The following diagram gives an overview concerning this
 ## In this section
 * [Entities](entities/index.md)
 * [Components](components/index.md)
-* [Bindings](binding.md)
 * [Prefabs](prefabs.md)

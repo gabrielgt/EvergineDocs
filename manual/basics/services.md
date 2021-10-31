@@ -1,7 +1,7 @@
 # Services
 ---
 
-In Evergine, **Services** are elements that allow you to manage global features. A Service functionality could be accessed from every Scene, Component or Behavior in your application. The services could be bond from any [component](component_arch/components/index.md) even other services using the [aplication container](application.md).
+In Evergine, **Services** are elements that allow you to manage global features. A Service functionality could be accessed from every Scene, Component or Behavior in your application. The services could be bond from any [component](component_arch/components/index.md) even other services using the [aplication container](application/index.md).
 
 Developing custom Evergine services are useful to integrate your application with external external services or APIs.
 
@@ -67,7 +67,7 @@ public class MyUpdatableService : UpdatableService
 
 ## Register a new Service in your Application
 
-Before using a service is necessary to register it in the [application container](application.md) where you can register the type or an instance.
+Before using a service is necessary to register it in the [application container](application/index.md) where you can register the type or an instance.
 
  ```csharp
  public partial class MyApplication : Application

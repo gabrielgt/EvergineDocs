@@ -69,7 +69,7 @@ namespace MyProject
 }
 ```
 > [!Tip]
-> BindComponent allows binding other components, to know more about that visit the following [**section**](../Binding.md)
+> BindComponent allows binding other components, to know more about that visit the following [**section**](../../bindings/index.md)
 
 ## Add/Remove a Behavior
 To add/remove a Behavior to/from your entity both from code or Evergine Studio is the same that adding/removing a component because a Behavior is a kind of component. You can see how to add/remove a component [here](index.md)

@@ -31,4 +31,4 @@ Evergine libraries are distributed using [NuGet package system](https://nuget.or
 * [Lifecycle of elements](lifecycle_elements.md)
 * [Scenes](scenes/index.md)
 * [Services](services.md)
-* [Application](application.md)
+* [Application](application/index.md)

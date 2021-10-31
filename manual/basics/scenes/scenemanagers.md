@@ -69,7 +69,7 @@ We can obtain a registered **SceneManager** in several ways.
 
 #### Using [BindSceneManager] attribute
 
-With the [BindSceneManager] attribute in your Component or another custom SceneManager (See the [Binding article](../component_arch/Binding.md))
+With the [BindSceneManager] attribute in your Component or another custom SceneManager (See the [Binding article](../bindings/index.md))
 
 ```csharp
 

@@ -4,7 +4,7 @@ The **Application Container** is a class responsible to store objects that will 
 
 The application Container could be accessed using the `Container` property in the Application class.
 
-Here you will register all [Services](services.md) of your application, among other instances to control your project (like the [GraphicContext](../grphics/../graphics/low_level_api/graphicscontext.md) to expose the graphic API, or AssetsService to control the asset library of your application, and [ScreenContextManager](scenes/using_scenes.md) to control the scenes that will be played in your application).
+Here you will register all [Services](../services.md) of your application, among other instances to control your project (like the [GraphicContext](../../graphics/low_level_api/graphicscontext.md) to expose the graphic API, or AssetsService to control the asset library of your application, and [ScreenContextManager](../scenes/using_scenes.md) to control the scenes that will be played in your application).
 
 > [!TIP]
 > In general terms, in the **Container** you will register all Services and logic that will be consumed for every Scene or Component in your Application.
