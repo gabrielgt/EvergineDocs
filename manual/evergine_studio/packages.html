@@ -78,6 +78,28 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="packages">Packages</h1>
 
+<p>Packages are Evergine extensions that add specific functionalities and assets to your project.</p>
+<p>When a package is added, its assets (textures, sounds, meshes, etc.), source code (components, behaviors, services, etc.) and its nuget dependencies are automatically added for you, so you can start using them.</p>
+<h2 id="add-a-new-package">Add a new package</h2>
+<p>Unfortunately, there is no way right now from Evergine Studio to automatically search and install an extension in a project. For now, a slightly more manual steps must be done:</p>
+<ol>
+<li>Check each package documentation for its Id, version and nuget dependencies.</li>
+<li>Add it manually to the <code>weproj</code> file at your project root, under the Packages yaml list.</li>
+</ol>
+<pre><code class="lang-yaml">Packages:
+  - Id: Evergine.Core
+    Version: ...
+  - Id: [PACKAGE ID]
+    Version: [VERSION ACCORDING TO YOUR EVERGINE VERSION]
+</code></pre>
+<p>For example:</p>
+<pre><code class="lang-yaml">- Id: Evergine.MRTK.Assets
+  Version: 2021.9.29.2-nightly
+</code></pre>
+<ol start="3">
+<li>Finally, add the nuget dependencies to your root project, the one that contains the <code>EvergineContent.cs</code> file.</li>
+</ol>
+<h2 id="customize-package">Customize package</h2>
 <p>Comming soon</p>
 </article>
           </div>
