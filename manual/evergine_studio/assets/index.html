@@ -79,35 +79,97 @@
 <h1 id="assets">Assets</h1>
 
 <hr>
-<p>Comming soon</p>
+<p><img src="Images/assets.jpg" alt="Assets"></p>
+<p>An <strong>asset</strong> is an item that represents an element in <strong>Evergine Studio</strong> that can be used in your project. It can represent visual or graphic elements like <strong>3D models</strong>, <strong>textures</strong>, or either more abstract engine elements like <strong>sampler states</strong>, <strong>materials</strong> and <strong>render layers</strong>.</p>
+<h2 id="type-of-assets">Type of assets</h2>
+<p>Here it is a summary of different asset types.</p>
+<h3 id="assets-with-resource-file">Assets with resource file</h3>
+<p>Some assets are created using external applications, like <em>3ds Max</em>, <em>Blender</em> or <em>Photoshop</em>.</p>
+<p>These assets are <em>resource files</em> that can be imported in <strong>Evergine Studio</strong> and used in your project, either by the <strong>Studio</strong> or directly by code.</p>
+<p>Here are the asset with resource files that <strong>Evergine</strong> currently supports.</p>
+<table>
+<thead>
+<tr>
+<th>Asset</th>
+<th>Description</th>
+<th>Supported file extensions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../graphics/textures/index.html">Texture</a></td>
+<td>Image file used as texture graphic resource.</td>
+<td><code>.jpg</code>, <code>.jpeg</code>, <code>.png</code>, <code>.bmp</code>, <code>.tga</code>, <code>.ktx</code>, <code>.dds</code>, <code>.hdr</code></td>
+</tr>
+<tr>
+<td><a href="../../graphics/models/index.html">Model</a></td>
+<td>3d model with geometry, animation and material information.</td>
+<td><code>.gltf</code>, <code>.glb</code>, <code>.fbx</code>, <code>.3ds</code>, <code>.obj</code>, <code>.dae</code></td>
+</tr>
+<tr>
+<td><a href="../../audio/sounds/index.html">Sound</a></td>
+<td>Audio file used for music and sound effects</td>
+<td><code>.wav</code>, <code>.mp3</code>, <code>.ogg</code></td>
+</tr>
+<tr>
+<td>File</td>
+<td>Any file that does not satisfy the previous formats</td>
+<td>Any other file.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="assets-created-only-by-evergine">Assets created only by Evergine</h3>
+<p>However, some assets represents just abstract elements that can only be created by <strong>Evergine Studio</strong>, some of them even by code. They don't have any external associated resource file. Some of these assets have complex folder structure, while others are more basic.</p>
+<table>
+<thead>
+<tr>
+<th>Asset</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../basics/scenes/index.html">Scene</a></td>
+<td>Main <strong>Evergine</strong> asset. It defines an entity graph that populates a scene, and also define their components.</td>
+</tr>
+<tr>
+<td><a href="../../graphics/effects/index.html">Effect</a></td>
+<td>Contains a <strong>HLSL shader</strong>. It automatically translates to other shading languages like <strong>GLSL</strong>. They are also flavored with custom attributes and annotations for a better integration.</td>
+</tr>
+<tr>
+<td><a href="../../graphics/postprocessing_graph/index.html">Post Processing Graph</a></td>
+<td>Defines a visual post processing graph node, using <strong>compute shaders</strong> for effects like <em>anti-aliasing</em>, <em>tone mapping</em>, <em>SSAO</em>, and many others.</td>
+</tr>
+<tr>
+<td><a href="../../graphics/materials/index.html">Material</a></td>
+<td>Represents how a geometry is rendered. It references an Effect asset and describes its parameters like textures and values.</td>
+</tr>
+<tr>
+<td><a href="../../basics/component_arch/prefabs.html">Prefab</a></td>
+<td>Contains an entity hierarchy that can be instanced in any scene.</td>
+</tr>
+<tr>
+<td><a href="../../graphics/render_layers.html">Render Layer</a></td>
+<td>Contains <strong>Rasterizer</strong>, <strong>Blending</strong>, <strong>Depth</strong> and <strong>Stencil</strong> information. Every material needs a Render Layer asset.</td>
+</tr>
+<tr>
+<td><a href="../../graphics/samplers.html">Sampler State</a></td>
+<td>Element that represents a texture sampler state description, like <strong>filtering</strong>, <strong>clamping</strong> or <strong>wrapping</strong> information.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="in-this-section">In this section</h2>
 <ul>
-<li><a href="workflow.html">Asset workflow</a></li>
-<li><a href="materials.html">Materials</a></li>
-<li><a href="textures.html">Textures</a></li>
-<li><a href="models.html">Models</a></li>
-<li><a href="render_layers.html">Render Layers</a></li>
-<li><a href="post_processing_graph.html">Post Processing Graph</a></li>
-<li><a href="sounds.html">Sounds</a></li>
-<li><a href="effects.html">Effects</a></li>
+<li><a href="create.html">Create Assets</a></li>
+<li><a href="edit.html">Edit Assets</a></li>
+<li><a href="export.html">Export Assets</a></li>
+<li><a href="use.html">Use Assets</a></li>
 </ul>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="toggle-mode">
-                <div class="icon">
-                  <i aria-hidden="true">☀</i>
-                </div>
-                <label class="switch">
-                  <input type="checkbox" id="switch-style">
-                  <span class="slider round"></span>
-                </label>
-                <div class="icon">
-                  <i aria-hidden="true">☾</i>
-                </div>
-              </div>
           
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
               <h5>In This Article</h5>
@@ -129,22 +191,9 @@
             <div class="pull-left">
               
               <span>Generated by <strong>DocFX</strong></span>
-            </div>
-            <div class="toggle-mode pull-right visible-sm visible-xs">
-              <div class="icon">
-                <i aria-hidden="true">☀</i>
-              </div>
-              <label class="switch">
-                <input type="checkbox" id="switch-style-m">
-                <span class="slider round"></span>
-              </label>
-              <div class="icon">
-                <i aria-hidden="true">☾</i>
-              </div>
-            </div>
+            </div>      
           </div>
         </div>
-        <script type="text/javascript" src="../../../styles/toggle-theme.js"></script>
       </footer>    </div>
     
     <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
