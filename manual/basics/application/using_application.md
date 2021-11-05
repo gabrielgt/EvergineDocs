@@ -56,7 +56,7 @@ The application class will invoke several methods to maintain its lifecycle, and
 | **Initialize()** | Initialize all aspects needed to start your application. Here you will usually navigate to the Scene to be played, and setup initial functionality or services to be consumed during the execution. |
 | **UpdateFrame()** | This method execute the Update cycle of your application. It will notify all UpdatableServices to be updated, including the ScreenContextManager, that will propagate this invocation to the Scene and finally your Components. You can override this method to customize the Update loop. |
 | **DrawFrame()** | This method is triggered to Draw your application. All Scenes will be rendered, and the GraphicsPresenter service will present the rendering results in all displays (windows, XR headsets, off screen rendering, etc...). You can override this method to customize the Draw loop. |
-| **Destrot()** | Use this method to dispose all resources of your application. |
+| **Destroy()** | Use this method to dispose all resources of your application. |
 
 ## Checks if the application is running inside Evergine Studio
 

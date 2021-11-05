@@ -1,6 +1,6 @@
 # Application Container
 
-The **Application Container** is a class responsible to store objects that will be accesses from the entire application. The application iteself does not have functionality itself, and all logic is made using registered instances into the Container.
+The **Application Container** is a class responsible to store objects that will be accesses from the entire application. The application itself does not have functionality itself, and all logic is made using registered instances into the Container.
 
 The application Container could be accessed using the `Container` property in the Application class.
 
@@ -101,7 +101,7 @@ namespace MyProject
 ```
 
 #### Using Resolve() methods
-The Container has the following mehtods to obtains instances:
+The Container has the following methods to obtains instances:
 
 | Methods | Description |
 | --- | --- |

@@ -20,7 +20,7 @@ For simple scenarios, this works quite well and is quite easy to program. Howeve
 ### Entities as an aggregation of Components
 
 To solve this issues, we have chosen the **aggregation of components** approach.
-In ths approach, the functionality is separated into individual componets that are mostly independent of one another. The old object hierarchy is replaced by an object (`Entity`) with a collection of independent components (derived from `Component`).
+In ths approach, the functionality is separated into individual components that are mostly independent of one another. The old object hierarchy is replaced by an object (`Entity`) with a collection of independent components (derived from `Component`).
 
 Each object now only has the functionality that it needs. Any distinct new functionality is implemented by adding a new component.
 
@@ -42,7 +42,7 @@ With the Component architecture, every component is responsible to registers its
 
 ### Summary Diagram
 
-A **Scene** is composed for several [**Entities**](entities/index.md). Each one has a collection of Components that give it the required functionality or data. Every component may be registered into the different **SceneManagets** of the Scene.
+A **Scene** is composed for several [**Entities**](entities/index.md). Each one has a collection of Components that give it the required functionality or data. Every component may be registered into the different **SceneManagers** of the Scene.
 
 The following diagram gives an overview concerning this
 
