@@ -4,7 +4,7 @@ A Buffer represents a block of memory that can be used in GPU operations. You ca
 
 ## Creation
 
-To create a buffer first you need to construct the BufferDescription object:
+To create a buffer first you need to construct the BufferDescription struct, it contains the following list of properties:
 
 ```csharp
 
@@ -26,6 +26,16 @@ BufferDescription bufferDescription = new BufferDescription(expectedSize, expect
 // Create the Buffer
 Buffer buffer = this.GraphicsContext.Factory.CreateBuffer(vertexData, ref bufferDescription);
 ```
+
+## BufferDescription
+
+| Property | Type | Description |
+|--------| ----------- |----------- |
+| **SizeInBytes** | uint | Retrieves or sets the size of the new buffer. |
+| **Flags** | BufferFlags | Buffer flags describing buffer type. |
+| **CpuAccess** | ResourceCpuAccess | Specifies the types of CPU access allowed for this buffer. |
+| **Usage** | ResourceUsage | Usage of this buffer. |
+| **StructureByteStride** | int | The structure byte stride. |
 
 ## ResourceUsage
 
@@ -54,6 +64,16 @@ Identifies how to bind a buffer. This flag gives a hint to the graphics API of h
 | **UnorderedAccess**    | Bind a buffer as unordered access resource. |
 | **BufferStructured**    | Bind a buffer as structured buffer resoruce. |
 | **IndirectBuffer**    | Bind a buffer as indirect buffer to the input-assembler stage. |
+
+## ResourceCpuAccess
+
+Specifies the types of CPU access allowed for a resource.
+
+| ResourceCpuAccess |  Description |
+|--------| ----------- |
+| **None**    | Not specified, **Default value**. |
+| **Write**    | The CPU can be write this resource. |
+| **Read**    | The CPU can be read this resources. |
 
 ## Using Buffers
 
