@@ -4,7 +4,7 @@ A Buffer represents a block of memory that can be used in GPU operations. You ca
 
 ## Creation
 
-To create a buffer first you need to construct the BufferDescription struct, it contains the following list of properties:
+To create a buffer, first you need to create the BufferDescription struct:
 
 ```csharp
 

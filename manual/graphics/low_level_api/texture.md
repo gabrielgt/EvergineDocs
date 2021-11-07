@@ -4,7 +4,7 @@ A texture stores texel information.
 
 ## Creation
 
-To create a texture first you need to construct the TextureDescription struct, it contains the following list of properties:
+To create a texture, first you need to create the TextureDescription struct:
 
 ```csharp
 uint expectedSize = 256;
