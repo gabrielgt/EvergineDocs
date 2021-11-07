@@ -78,6 +78,7 @@ Specifies the types of CPU access allowed for a resource.
 ## Using Buffers
 
 ### How to update a Default Buffer (Buffer created with ResourceUsage.Default)
+
 In that case, you just need to execute the `GraphicsContext.UpdateBufferData(...)` method:
 
 ```csharp
@@ -98,6 +99,7 @@ this.GraphicsContext.UpdateBufferData(buffer, vertexData);
 ```
 
 ### How to copy a Default Buffer into another Default Buffer
+
 In that case you need to execute the` CommandBuffer.CopyBufferDataTo(...)` method. To do this, you need to obtains a `CommandBuffer` instance and enqueue the copy command:
 
 ```csharp
@@ -144,6 +146,7 @@ queue.Dispose();
 ```
 
 ### How to read a Default Buffer content (by using a Staging Buffer)
+
 In order to read a Default Buffer, you need to copy previously the content into a Staging Buffer. Once you do this, you could map the Stagging Buffer to CPU Memory and access the data without problems:
 
 ```csharp
@@ -203,6 +206,7 @@ queue.Dispose();
 ```
 
 ### How to update a Dynamic Buffer from CPU
+
 A Dynamic Buffer could be updated directly from CPU. To do this, you only need to map a Buffer and write the data directly to the mapped pointer:
 
 ```csharp
