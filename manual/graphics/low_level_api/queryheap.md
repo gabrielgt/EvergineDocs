@@ -20,7 +20,7 @@ this.queryHeap = this.graphicsContext.Factory.CreateQueryHeap(ref desc);
 
 ```
 
-## QueryType
+### QueryType
 
 | Value | Description |
 |--------| ----------- |----------- |

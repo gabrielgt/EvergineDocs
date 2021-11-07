@@ -25,7 +25,7 @@ var samplerDescription = new SamplerStateDescription()
 var samplerState = this.graphicsContext.Factory.CreateSamplerState(ref samplerDescription);
 ```
 
-## SamplerStateDescription
+### SamplerStateDescription
 
 | Property | Type | Description |
 |--------| ----------- |----------- |
@@ -40,7 +40,7 @@ var samplerState = this.graphicsContext.Factory.CreateSamplerState(ref samplerDe
 | **MinLOD** | float | Lower end of the mipmap range to clamp access to, where 0 is the largest and most detailed mipmap level and any level higher than that is less detailed. |
 | **MaxLOD** | float | Upper end of the mipmap range to clamp access to, where 0 is the largest and most detailed mipmap level and any level higher than that is less detailed. This value must be greater than or equal to MinLOD. |
 
-## TextureFilter
+### TextureFilter
 
 Defines texture filtering modes for a texture stage.
 
@@ -58,23 +58,103 @@ Defines texture filtering modes for a texture stage.
 | **MinLinear_MagLinear_MipLinear** | Use linear interpolation for minification, magnification, and mip-level sampling. |
 | **Anisotropic** | Use anisotropic interpolation for minification, magnification, and mip-level sampling. |
 
-## TextureAddressMode
+### TextureAddressMode
 
 Your application can assign texture coordinates to any vertex of any primitive. Typically, the u- and v-texture coordinates that you assign to a vertex are in the range of 0.0 to 1.0 inclusive. However, by assigning texture coordinates outside that range, you can create certain special texturing effects.
 
-![Graphics](images/Sampler_TextureAddressMode.jpg)
-
 | Value | Description |
-|--------| ----------- |----------- |
+|--------| ----------- |
 | **Wrap** | Tile the texture at every (u,v) integer junction. For example, for u values between 0 and 3, the texture is repeated three times. |
 | **Mirror** | Flip the texture at every (u,v) integer junction. For u values between 0 and 1. |
 | **Clamp** | Texture coordinates outside the range [0.0, 1.0] are set to the texture color at 0.0 or 1.0, respectively. |
 | **Border** | Texture coordinates outside the range [0.0, 1.0] are set to the border color specified in SamplerStateDescription. |
 | **Mirror_One** | Takes the absolute value of the texture coordinate (thus, mirroring around 0), and then clamps to the maximum value. |
 
-## MaxAnisotropy
+![Graphics](images/Sampler_TextureAddressMode.jpg)
+
+### MaxAnisotropy
 
 Retrieves a value that indicates the maximum valid value for anisotropic filtering.
 Valid values are between 1 and 16.
 
 ![Graphics](images/Sampler_Anisotropy.jpg)
+
+## Presets
+
+To make the sampler construction easy, you can use `Evergine.Common.SamplerStates` to describe the most common sampler descriptions:
+
+| Value |
+|--------|
+| **PointClamp** |
+| **PointWrap** |
+| **PointMirror** |
+| **LinearClamp** |
+| **LinearWrap** |
+| **LinearMirror** |
+| **AnisotropicClamp** |
+| **AnisotropicWrap** |
+| **AnisotropicMirror** |
+
+### Default initialization
+
+```csharp
+public void SetDefault()
+{
+    this.Filter = TextureFilter.MinLinear_MagLinear_MipLinear;
+    this.AddressU = TextureAddressMode.Clamp;
+    this.AddressV = TextureAddressMode.Clamp;
+    this.AddressW = TextureAddressMode.Clamp;
+    this.MinLOD = -1000; // DirectX -float.MaxValue | OpenGL -1000
+    this.MaxLOD = 1000; // DirectX float.MaxValue | OpenGL 1000
+    this.MipLODBias = 0f;
+    this.MaxAnisotropy = 1;
+    this.ComparisonFunc = ComparisonFunction.Never;
+    this.BorderColor = SamplerBorderColor.OpaqueWhite;
+}
+```
+
+### Presets initialization
+
+```csharp
+PointClamp = SamplerStateDescription.Default;
+PointClamp.Filter = TextureFilter.MinPoint_MagPoint_MipPoint;
+
+PointWrap = SamplerStateDescription.Default;
+PointClamp.Filter = TextureFilter.MinPoint_MagPoint_MipPoint;
+PointWrap.AddressU = TextureAddressMode.Wrap;
+PointWrap.AddressV = TextureAddressMode.Wrap;
+PointWrap.AddressW = TextureAddressMode.Wrap;
+
+PointMirror = SamplerStateDescription.Default;
+PointClamp.Filter = TextureFilter.MinPoint_MagPoint_MipPoint;
+PointMirror.AddressU = TextureAddressMode.Mirror;
+PointMirror.AddressV = TextureAddressMode.Mirror;
+PointMirror.AddressW = TextureAddressMode.Mirror;
+
+LinearClamp = SamplerStateDescription.Default;
+
+LinearWrap = SamplerStateDescription.Default;
+LinearWrap.AddressU = TextureAddressMode.Wrap;
+LinearWrap.AddressV = TextureAddressMode.Wrap;
+LinearWrap.AddressW = TextureAddressMode.Wrap;
+
+LinearMirror = SamplerStateDescription.Default;
+LinearMirror.AddressU = TextureAddressMode.Mirror;
+LinearMirror.AddressV = TextureAddressMode.Mirror;
+LinearMirror.AddressW = TextureAddressMode.Mirror;
+
+AnisotropicClamp = SamplerStateDescription.Default;
+AnisotropicClamp.Filter = TextureFilter.Anisotropic;
+
+AnisotropicWrap = SamplerStateDescription.Default;
+AnisotropicWrap.Filter = TextureFilter.Anisotropic;
+AnisotropicWrap.AddressU = TextureAddressMode.Wrap;
+AnisotropicWrap.AddressV = TextureAddressMode.Wrap;
+AnisotropicWrap.AddressW = TextureAddressMode.Wrap;
+
+AnisotropicMirror = SamplerStateDescription.Default;
+AnisotropicMirror.Filter = TextureFilter.Anisotropic;
+AnisotropicMirror.AddressU = TextureAddressMode.Mirror;
+AnisotropicMirror.AddressV = TextureAddressMode.Mirror;
+AnisotropicMirror.AddressW = TextureAddressMode.Mirror;
+```

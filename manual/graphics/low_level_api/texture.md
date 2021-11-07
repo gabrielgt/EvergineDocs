@@ -29,7 +29,7 @@ var description = new TextureDescription()
 var texture = this.GraphicsContext.Factory.CreateTexture(ref description);
 ```
 
-## TextureDescription
+### TextureDescription
 
 | Property | Type | Description |
 |--------| ----------- |----------- |
@@ -46,7 +46,7 @@ var texture = this.GraphicsContext.Factory.CreateTexture(ref description);
 | **SampleCount** | TextureSampleCount | The number of samples in this texture. |
 | **CpuAccess** | ResourceCpuAccess | Flags ResourceCpuAccess to specify the type of CPU access allowed. |
 
-## TextureType
+### TextureType
 
 Specify the texture type.
 
@@ -60,7 +60,7 @@ Specify the texture type.
 | **TextureCubeArray**    | Represent an array of textures cube. |
 | **Texture3D**    | Represent a three dimensions texture. |
 
-## PixelFormat
+### PixelFormat
 
 Specify the bytes format used in each texel. 
 The most common format are:
@@ -97,7 +97,7 @@ The most common format are:
 > [!Note]
 > See the PixelFormat enum at Evergine.Common namespace for the complete list.
 
-## TextureFlags
+### TextureFlags
 
 Identifies how to bing a texture.
 
@@ -110,7 +110,7 @@ Identifies how to bing a texture.
 | **DepthStencil**    | A texture usable as a depth stencil buffer. |
 | **GenerateMipmaps**    | Enables MIP map generation by GPU. |
 
-## ResourceUsage
+### ResourceUsage
 
 Identifies expected resource usage during rendering.
 
@@ -121,7 +121,7 @@ Identifies expected resource usage during rendering.
 | **Dynamic**    | A resource that is accessible by both the GPU (read only) and the CPU (write only). |
 | **Staging**    | A resource that supports data transfer (copy) from the GPU to the CPU. |
 
-## TextureSampleCount
+### TextureSampleCount
 
 Describes the number of samples to use in a Texture.
 
@@ -134,7 +134,7 @@ Describes the number of samples to use in a Texture.
 | **Count16**    | Multisample count of 16 pixels. |
 | **Count32**    | Multisample count of 32 pixels. |
 
-## ResourceCpuAccess
+### ResourceCpuAccess
 
 Specifies the types of CPU access allowed for a resource.
 

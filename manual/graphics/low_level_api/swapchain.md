@@ -34,7 +34,7 @@ var swapChain = this.graphicsContext.CreateSwapChain(swapChainDescriptor);
 swapChain.VerticalSync = false;
 ```
 
-## SwapChainDescription
+### SwapChainDescription
 
 | Property | Type | Description |
 |--------| ----------- |----------- |
@@ -49,7 +49,7 @@ swapChain.VerticalSync = false;
 | **SampleCount** | TextureSampleCount | The sampler count of this swapchain. |
 | **IsWindowed** | bool | Whether the output is in windowed mode. |
 
-## TextureFlags
+### TextureFlags
 
 Identifies how to bing a texture.
 
@@ -62,7 +62,7 @@ Identifies how to bing a texture.
 | **DepthStencil**    | A texture usable as a depth stencil buffer. |
 | **GenerateMipmaps**    | Enables MIP map generation by GPU. |
 
-## TextureSampleCount
+### TextureSampleCount
 
 Describes the number of samples to use in a Texture.
 

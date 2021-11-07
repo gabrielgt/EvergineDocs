@@ -27,7 +27,7 @@ BufferDescription bufferDescription = new BufferDescription(expectedSize, expect
 Buffer buffer = this.GraphicsContext.Factory.CreateBuffer(vertexData, ref bufferDescription);
 ```
 
-## BufferDescription
+### BufferDescription
 
 | Property | Type | Description |
 |--------| ----------- |----------- |
@@ -37,7 +37,7 @@ Buffer buffer = this.GraphicsContext.Factory.CreateBuffer(vertexData, ref buffer
 | **Usage** | ResourceUsage | Usage of this buffer. |
 | **StructureByteStride** | int | The structure byte stride. |
 
-## ResourceUsage
+### ResourceUsage
 
 Identifies expected resource usage during rendering.
 
@@ -48,7 +48,7 @@ Identifies expected resource usage during rendering.
 | **Dynamic**    | A resource that is accessible by both the GPU (read only) and the CPU (write only). |
 | **Staging**    | A resource that supports data transfer (copy) from the GPU to the CPU. |
 
-## BufferFlags
+### BufferFlags
 
 Identifies how to bind a buffer. This flag gives a hint to the graphics API of how this buffer will be used.
 
@@ -65,7 +65,7 @@ Identifies how to bind a buffer. This flag gives a hint to the graphics API of h
 | **BufferStructured**    | Bind a buffer as structured buffer resoruce. |
 | **IndirectBuffer**    | Bind a buffer as indirect buffer to the input-assembler stage. |
 
-## ResourceCpuAccess
+### ResourceCpuAccess
 
 Specifies the types of CPU access allowed for a resource.
 
