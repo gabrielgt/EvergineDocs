@@ -10,7 +10,7 @@ There are three types of Components which are broadly used along the engine:
 * [Drawable](drawables.md): In charge of managing the rendering on the screen. In the same way as above one, this provides a `Draw()` abstract method invoked during the rendering cicle. It is suitable to register and update objects to be rendered.
 
 ## Component Lifecycle
-Please, check [Lifecycle of element](../../lifecycle_elements.md) for details regrding the lifecycle of elements in Evergine, including Components.
+Please, check [Lifecycle of element](../../lifecycle_elements.md) for details regarding the lifecycle of elements in Evergine, including Components.
 
 ## Using Components
 
@@ -57,7 +57,7 @@ entity.AddComponent(new CubeMesh())
 
 You have several options to specify the component or components that you want to remove. You can remove components by indicating the Component instance itself, or by giving the type of the component to remove.
 
-In every methot to remove the component specifying the type, you have the optional parameter `isExactType`, which indicate if the component to search and remove must match the given type, or for contrary, it can be a subclass of the type.
+In every method to remove the component specifying the type, you have the optional parameter `isExactType`, which indicate if the component to search and remove must match the given type, or for contrary, it can be a subclass of the type.
 
 ```csharp
 // Remove a component passing the instance:
