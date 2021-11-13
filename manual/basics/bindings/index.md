@@ -1,5 +1,6 @@
 # Binding Elements
 ---
+
 Evergine allows to bind dependencies automatically across your components, services and sceneManagers.
 
 For example, bindings allow a custom component to require that its Owner Entity has a Transform3D component, and set it to a property during the **Attach** phase (see the [Lifecycle](../lifecycle_elements.md) documents)
@@ -52,5 +53,19 @@ public class MyComponent : Component
 
     // ... 
 }
+```
+
+## Bind Collections
+
+If the [Bind] attribute is set on top of `List<T>` property, they will attempt to search a list of elements that elements that satisfy the dependency:
+
+```csharp
+// Bind with the Transform component of the owner entity...
+[BindComponent]
+private Transform3D transform;
+
+// Bind a list with all Camera3D components of the entire scene...
+[BindComponent(source: BindComponentSource.Scene)]
+private List<Camera3D> sceneCameras;
 ```
 
