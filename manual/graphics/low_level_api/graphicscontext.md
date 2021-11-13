@@ -1,10 +1,8 @@
 # GraphicsContext
 
-
-
 The GraphicsContext is the central class for displaying your application. It's used to create and manage graphic resources.
 
-Like the majority of Low-level-API classes, GraphicsContext is an abstract class that exposes common functionality of each graphics API (e.g. DirectX, Vulkan, Metal...). To use this API just need to create or get access to the GraphicsContext instance indicating the properly implementation depending of which graphic backend are you interested. 
+Like the majority of Low-level-API classes, GraphicsContext is an abstract class that exposes common functionality of each graphics API (e.g. DirectX, Vulkan, Metal...). To use this API just need to create or get access to the GraphicsContext instance indicating the properly implementation depending of which graphic backend are you interested.
 
 In the following example, we are creating a DirectX11 GraphicsContext:
 
@@ -14,17 +12,18 @@ var graphicsContext = new Evergine.DirectX11.DX11GraphicsContext();
 
 Use the specify constructor to initialize a concrete graphics API.
 
-| API |  Class |
-|--------| ----------- |
-| DirectX 11    | `new DX11GraphicsContext()` |
-| DirectX 12    | `new DX12GraphicsContext()` |
-| Vulkan    | `new VKGraphicsContext()` |
-| OpenGL    | `new GLGraphicsContext()` |
-| Metal    | `new MTLGraphicsContext()` |
+| API        | Class                       |
+| ---------- | --------------------------- |
+| DirectX 11 | `new DX11GraphicsContext()` |
+| DirectX 12 | `new DX12GraphicsContext()` |
+| Vulkan     | `new VKGraphicsContext()`   |
+| OpenGL     | `new GLGraphicsContext()`   |
+| Metal      | `new MTLGraphicsContext()`  |
 
 ## Initialize the Device
 
 Once you have created the Graphics context, in order to create resources and render your content, you need to create the graphics device:
+
 ```csharp
 graphicsContext.CreateDevice();
 ```
@@ -40,11 +39,11 @@ graphicsContext.CreateDevice(new ValidationLayer());
 
 By default, the ValidationLayer use exception to notify any issue, but it is possible to change it:
 
-| Notify Method |  Declaration | Description |
-|--------| ----------- | ----------- |
-| **Exception**    | `new ValidationLayer()` | Throws exception with each internal error and stop the execution. |
-| **Trace**        | `new ValidationLayer(ValidationLayer.NotifyMethod.Trace)` | Display all errors in console without stopping the execution |
-| **Event**        | `new ValidationLayer(ValidationLayer.NotifyMethod.Event)` | The ValidationLayer.Error event allow to obtains the error messages |
+| Notify Method | Declaration                                               | Description                                                         |
+| ------------- | --------------------------------------------------------- | ------------------------------------------------------------------- |
+| **Exception** | `new ValidationLayer()`                                   | Throws exception with each internal error and stop the execution.   |
+| **Trace**     | `new ValidationLayer(ValidationLayer.NotifyMethod.Trace)` | Display all errors in console without stopping the execution        |
+| **Event**     | `new ValidationLayer(ValidationLayer.NotifyMethod.Event)` | The ValidationLayer.Error event allow to obtains the error messages |
 
 ## Initialize Swapchain
 
@@ -78,18 +77,18 @@ swapChain.VerticalSync = false;
 
 To create the surface first you need to select an UI technology:
 
-| UI |  Class |
-|--------| ----------- |
-| **Windows Forms**    | Evergine.Forms.FormsWindowsSystem |
-| **WPF**    | Evergine.WPF.WPFWindowsSystem |
-| **SDL**    | Evergine.SDL.SDLWindowsSystem |
-| **Android**    | Evergine.AndroidView.AndroidWindowsSystem |
-| **iOS**    | Evergine.iOSView.iOSWindowsSystem |
-| **UWP**    | Evergine.UWPView.UWPWindowsSystem |
-| **WinUI**    | Evergine.WinUI.WinUIWindowsSystem |
-| **MixedReality**    | Evergine.MixedReality.MixedRealityWindowsSystem |
-| **Web**    | Evergine.Web.WebWindowsSystem |
+| UI                | Class                                           |
+| ----------------- | ----------------------------------------------- |
+| **Windows Forms** | Evergine.Forms.FormsWindowsSystem               |
+| **WPF**           | Evergine.WPF.WPFWindowsSystem                   |
+| **SDL**           | Evergine.SDL.SDLWindowsSystem                   |
+| **Android**       | Evergine.AndroidView.AndroidWindowsSystem       |
+| **iOS**           | Evergine.iOSView.iOSWindowsSystem               |
+| **UWP**           | Evergine.UWPView.UWPWindowsSystem               |
+| **WinUI**         | Evergine.WinUI.WinUIWindowsSystem               |
+| **MixedReality**  | Evergine.MixedReality.MixedRealityWindowsSystem |
+| **Web**           | Evergine.Web.WebWindowsSystem                   |
 
 ## Create from scratch
 
-Visit the [Low-Level test samples](https://github.com/WaveEngine/LowLevelAPIDemo) to learn how to create an application from scratch using this cross-platform API.
+Visit the [Low-Level test samples](https://github.com/evergineteam/LowLevelAPIDemo) to learn how to create an application from scratch using this cross-platform API.
