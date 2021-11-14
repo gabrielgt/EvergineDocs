@@ -1,6 +1,8 @@
 # Texture
 
-A texture stores texel information.
+A **Texture** object in a low-level API is a 2D (even 1D and 3d textures exists) used to provide details to objects or to map information.
+
+Please, reade the [Graphics Texture](../textures/index.md) section for high level asset and how to use in Evergine Studio.
 
 ## Creation
 
