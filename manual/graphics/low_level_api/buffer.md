@@ -31,11 +31,11 @@ Buffer buffer = this.GraphicsContext.Factory.CreateBuffer(vertexData, ref buffer
 
 | Property | Type | Description |
 |--------| ----------- |----------- |
-| **SizeInBytes** | uint | Retrieves or sets the size of the new buffer. |
-| **Flags** | BufferFlags | Buffer flags describing buffer type. |
-| **CpuAccess** | ResourceCpuAccess | Specifies the types of CPU access allowed for this buffer. |
-| **Usage** | ResourceUsage | Usage of this buffer. |
-| **StructureByteStride** | int | The structure byte stride. |
+| **SizeInBytes** | `uint` | Retrieves or sets the size of the new buffer. |
+| **Flags** | `BufferFlags` | Buffer flags describing buffer type. |
+| **CpuAccess** | `ResourceCpuAccess` | Specifies the types of CPU access allowed for this buffer. |
+| **Usage** | `ResourceUsage` | Usage of this buffer. |
+| **StructureByteStride** | `int` | The structure byte stride. |
 
 ### ResourceUsage
 
