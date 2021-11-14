@@ -1,10 +1,10 @@
 # Sampler
 
-Create a sampler-state object that encapsulates sampling information for a texture.
+A **Sampler State** is a low level object that encapsulates how a texture will be sampled in your application.
 
 ## Creation
 
-To create a sampler, first you need to create the BufferDescription struct:
+To create a sampler, first you need to create the SamplerStateDescription struct:
 
 ```csharp
 // Linear clamp sampler state
