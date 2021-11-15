@@ -160,7 +160,8 @@ CommandBuffers are transient single-use objects and do not support reuse.</p>
   </h3>
   <a id="Evergine_Common_Graphics_CommandBuffer_AvailablePointerKeys_" data-uid="Evergine.Common.Graphics.CommandBuffer.AvailablePointerKeys*"></a>
   <h4 id="Evergine_Common_Graphics_CommandBuffer_AvailablePointerKeys" data-uid="Evergine.Common.Graphics.CommandBuffer.AvailablePointerKeys">AvailablePointerKeys</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of all available keys to obtain native pointers.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -383,6 +384,138 @@ BeginDebugMarker has no effect if the calling application is not running under a
         <td><a class="xref" href="Evergine.Common.Graphics.RenderPassDescription.html">RenderPassDescription</a></td>
         <td><span class="parametername">description</span></td>
         <td><p>The renderPass description <a class="xref" href="Evergine.Common.Graphics.RenderPassDescription.html">RenderPassDescription</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Evergine_Common_Graphics_CommandBuffer_Blit_" data-uid="Evergine.Common.Graphics.CommandBuffer.Blit*"></a>
+  <h4 id="Evergine_Common_Graphics_CommandBuffer_Blit_Evergine_Common_Graphics_Texture_Evergine_Common_Graphics_Texture_" data-uid="Evergine.Common.Graphics.CommandBuffer.Blit(Evergine.Common.Graphics.Texture,Evergine.Common.Graphics.Texture)">Blit(Texture, Texture)</h4>
+  <div class="markdown level1 summary"><p>Copies all subresources from this texture in other texture with format conversion and preparing to present in swapchain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Blit(Texture source, Texture destination)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The source <a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a></td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>The destination <a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a> into which data is copied./&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Evergine_Common_Graphics_CommandBuffer_Blit_" data-uid="Evergine.Common.Graphics.CommandBuffer.Blit*"></a>
+  <h4 id="Evergine_Common_Graphics_CommandBuffer_Blit_Evergine_Common_Graphics_Texture_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_Evergine_Common_Graphics_Texture_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_" data-uid="Evergine.Common.Graphics.CommandBuffer.Blit(Evergine.Common.Graphics.Texture,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,Evergine.Common.Graphics.Texture,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32)">Blit(Texture, UInt32, UInt32, UInt32, UInt32, UInt32, Texture, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Copies all subresources from this texture in other texture with format conversion and preparing to present in swapchain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void Blit(Texture source, uint sourceX, uint sourceY, uint sourceZ, uint sourceMipLevel, uint sourceBasedArrayLayer, Texture destination, uint destinationX, uint destinationY, uint destinationZ, uint destinationMipLevel, uint destinationBasedArrayLayer, uint layerCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The source <a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">sourceX</span></td>
+        <td><p>The x-coordinate of the upper left corner of the source region.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">sourceY</span></td>
+        <td><p>The y-coordinate of the upper left corner of the source region.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">sourceZ</span></td>
+        <td><p>The z-coordinate of the upper left corner of the source region.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">sourceMipLevel</span></td>
+        <td><p>The mip level to copy from the source texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">sourceBasedArrayLayer</span></td>
+        <td><p>The starting array layer to copy from the source texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a></td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>The destination <a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a> into which data is copied./&gt;.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">destinationX</span></td>
+        <td><p>The x-coordinate of the upper left corner of the destination region.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">destinationY</span></td>
+        <td><p>The y-coordinate of the upper left corner of the destination region.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">destinationZ</span></td>
+        <td><p>The z-coordinate of the upper left corner of the destination region.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">destinationMipLevel</span></td>
+        <td><p>The mip level to copy the data into.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">destinationBasedArrayLayer</span></td>
+        <td><p>The starting array layer to copy data into.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">layerCount</span></td>
+        <td><p>The number of array layers to copy.</p>
 </td>
       </tr>
     </tbody>
@@ -1521,7 +1654,8 @@ levels contained in the Texture.</p>
   </table>
   <a id="Evergine_Common_Graphics_CommandBuffer_GetNativePointer_" data-uid="Evergine.Common.Graphics.CommandBuffer.GetNativePointer*"></a>
   <h4 id="Evergine_Common_Graphics_CommandBuffer_GetNativePointer_System_String_System_IntPtr__" data-uid="Evergine.Common.Graphics.CommandBuffer.GetNativePointer(System.String,System.IntPtr@)">GetNativePointer(String, out IntPtr)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Obtain a native pointer of this graphics context using the given key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1540,12 +1674,14 @@ levels contained in the Texture.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">pointerKey</span></td>
-        <td></td>
+        <td><p>The pointer key.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.IntPtr</span></td>
         <td><span class="parametername">nativePointer</span></td>
-        <td></td>
+        <td><p>The native pointer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1560,7 +1696,8 @@ levels contained in the Texture.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>True if there are an available pointer with this key.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2104,7 +2241,6 @@ points of interest in a command stream.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void UpdateBufferData&lt;T&gt;(Buffer buffer, ref T data, uint destinationOffsetInBytes = 0U)
-
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -2161,7 +2297,6 @@ points of interest in a command stream.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void UpdateBufferData&lt;T&gt;(Buffer buffer, T[] data, uint destinationOffsetInBytes = 0U)
-
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -2218,7 +2353,6 @@ points of interest in a command stream.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void UpdateBufferData&lt;T&gt;(Buffer buffer, T[] data, uint count, uint destinationOffsetInBytes = 0U)
-
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>

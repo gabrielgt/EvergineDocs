@@ -165,6 +165,55 @@
       </tr>
     </tbody>
   </table>
+  <a id="Evergine_Vulkan_VKExtensionsMethods_GetAccelerationStructureAddress_" data-uid="Evergine.Vulkan.VKExtensionsMethods.GetAccelerationStructureAddress*"></a>
+  <h4 id="Evergine_Vulkan_VKExtensionsMethods_GetAccelerationStructureAddress_WaveEngine_Bindings_Vulkan_VkAccelerationStructureKHR_WaveEngine_Bindings_Vulkan_VkDevice_" data-uid="Evergine.Vulkan.VKExtensionsMethods.GetAccelerationStructureAddress(WaveEngine.Bindings.Vulkan.VkAccelerationStructureKHR,WaveEngine.Bindings.Vulkan.VkDevice)">GetAccelerationStructureAddress(VkAccelerationStructureKHR, VkDevice)</h4>
+  <div class="markdown level1 summary"><p>Get address from native vulkan acceleration structure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong GetAccelerationStructureAddress(this VkAccelerationStructureKHR accelerationStructure, VkDevice device)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkAccelerationStructureKHR</span></td>
+        <td><span class="parametername">accelerationStructure</span></td>
+        <td><p>Native acceleration structure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkDevice</span></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>Vulkan Device.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><p>Acceleration Structure address.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Vulkan_VKExtensionsMethods_GetBufferAddress_" data-uid="Evergine.Vulkan.VKExtensionsMethods.GetBufferAddress*"></a>
   <h4 id="Evergine_Vulkan_VKExtensionsMethods_GetBufferAddress_WaveEngine_Bindings_Vulkan_VkBuffer_WaveEngine_Bindings_Vulkan_VkDevice_" data-uid="Evergine.Vulkan.VKExtensionsMethods.GetBufferAddress(WaveEngine.Bindings.Vulkan.VkBuffer,WaveEngine.Bindings.Vulkan.VkDevice)">GetBufferAddress(VkBuffer, VkDevice)</h4>
   <div class="markdown level1 summary"><p>Get address from native vulkan buffer.</p>
@@ -646,6 +695,92 @@
       <tr>
         <td><span class="xref">WaveEngine.Bindings.Vulkan.VkPrimitiveTopology</span></td>
         <td><p>The native value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Evergine_Vulkan_VKExtensionsMethods_ToVulkan_" data-uid="Evergine.Vulkan.VKExtensionsMethods.ToVulkan*"></a>
+  <h4 id="Evergine_Vulkan_VKExtensionsMethods_ToVulkan_Evergine_Common_Graphics_Raytracing_AccelerationStructureFlags_" data-uid="Evergine.Vulkan.VKExtensionsMethods.ToVulkan(Evergine.Common.Graphics.Raytracing.AccelerationStructureFlags)">ToVulkan(AccelerationStructureFlags)</h4>
+  <div class="markdown level1 summary"><p>To convert from AcelerationStructureFlags to Vulkan VkBuildAccelerationStructureFlagsKHR.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VkBuildAccelerationStructureFlagsKHR ToVulkan(this AccelerationStructureFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Evergine.Common.Graphics.Raytracing.AccelerationStructureFlags.html">AccelerationStructureFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>The flags to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkBuildAccelerationStructureFlagsKHR</span></td>
+        <td><p>The converted flags.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Evergine_Vulkan_VKExtensionsMethods_ToVulkan_" data-uid="Evergine.Vulkan.VKExtensionsMethods.ToVulkan*"></a>
+  <h4 id="Evergine_Vulkan_VKExtensionsMethods_ToVulkan_Evergine_Common_Graphics_Raytracing_AccelerationStructureInstanceFlags_" data-uid="Evergine.Vulkan.VKExtensionsMethods.ToVulkan(Evergine.Common.Graphics.Raytracing.AccelerationStructureInstanceFlags)">ToVulkan(AccelerationStructureInstanceFlags)</h4>
+  <div class="markdown level1 summary"><p>To convert from instanceflags to Vulkan instance flags.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VkGeometryInstanceFlagsKHR ToVulkan(this AccelerationStructureInstanceFlags flags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Evergine.Common.Graphics.Raytracing.AccelerationStructureInstanceFlags.html">AccelerationStructureInstanceFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>The flags to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkGeometryInstanceFlagsKHR</span></td>
+        <td><p>The Vulkan flags.</p>
 </td>
       </tr>
     </tbody>

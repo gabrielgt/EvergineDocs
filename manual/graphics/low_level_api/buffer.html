@@ -80,7 +80,7 @@
 
 <p>A Buffer represents a block of memory that can be used in GPU operations. You can use buffers to store a wide variety of data, including position vectors, normal vectors, texture coordinates in a vertex buffer, indexes in an index buffer for example.</p>
 <h2 id="creation">Creation</h2>
-<p>To create a buffer first you need to construct the BufferDescription object:</p>
+<p>To create a buffer, first you need to create the BufferDescription struct:</p>
 <pre><code class="lang-csharp">
 // Populate some data for the buffer...
 Vector4[] vertexData = new Vector4[]
@@ -100,7 +100,44 @@ BufferDescription bufferDescription = new BufferDescription(expectedSize, expect
 // Create the Buffer
 Buffer buffer = this.GraphicsContext.Factory.CreateBuffer(vertexData, ref bufferDescription);
 </code></pre>
-<h2 id="resourceusage">ResourceUsage</h2>
+<h3 id="bufferdescription">BufferDescription</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SizeInBytes</strong></td>
+<td>uint</td>
+<td>Retrieves or sets the size of the new buffer.</td>
+</tr>
+<tr>
+<td><strong>Flags</strong></td>
+<td>BufferFlags</td>
+<td>Buffer flags describing buffer type.</td>
+</tr>
+<tr>
+<td><strong>CpuAccess</strong></td>
+<td>ResourceCpuAccess</td>
+<td>Specifies the types of CPU access allowed for this buffer.</td>
+</tr>
+<tr>
+<td><strong>Usage</strong></td>
+<td>ResourceUsage</td>
+<td>Usage of this buffer.</td>
+</tr>
+<tr>
+<td><strong>StructureByteStride</strong></td>
+<td>int</td>
+<td>The structure byte stride.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resourceusage">ResourceUsage</h3>
 <p>Identifies expected resource usage during rendering.</p>
 <table>
 <thead>
@@ -128,7 +165,7 @@ Buffer buffer = this.GraphicsContext.Factory.CreateBuffer(vertexData, ref buffer
 </tr>
 </tbody>
 </table>
-<h2 id="bufferflags">BufferFlags</h2>
+<h3 id="bufferflags">BufferFlags</h3>
 <p>Identifies how to bind a buffer. This flag gives a hint to the graphics API of how this buffer will be used.</p>
 <table>
 <thead>
@@ -177,6 +214,30 @@ Buffer buffer = this.GraphicsContext.Factory.CreateBuffer(vertexData, ref buffer
 <tr>
 <td><strong>IndirectBuffer</strong></td>
 <td>Bind a buffer as indirect buffer to the input-assembler stage.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resourcecpuaccess">ResourceCpuAccess</h3>
+<p>Specifies the types of CPU access allowed for a resource.</p>
+<table>
+<thead>
+<tr>
+<th>ResourceCpuAccess</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>None</strong></td>
+<td>Not specified, <strong>Default value</strong>.</td>
+</tr>
+<tr>
+<td><strong>Write</strong></td>
+<td>The CPU can be write this resource.</td>
+</tr>
+<tr>
+<td><strong>Read</strong></td>
+<td>The CPU can be read this resources.</td>
 </tr>
 </tbody>
 </table>

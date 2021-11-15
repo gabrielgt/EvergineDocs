@@ -441,7 +441,8 @@
   </table>
   <a id="Evergine_Vulkan_VKTexture_Name_" data-uid="Evergine.Vulkan.VKTexture.Name*"></a>
   <h4 id="Evergine_Vulkan_VKTexture_Name" data-uid="Evergine.Vulkan.VKTexture.Name">Name</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a string identifying this instance. Can be used in graphics debuggers tools.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -466,7 +467,8 @@
   <div><a class="xref" href="Evergine.Common.Graphics.Texture.html#Evergine_Common_Graphics_Texture_Name">Texture.Name</a></div>
   <a id="Evergine_Vulkan_VKTexture_NativePointer_" data-uid="Evergine.Vulkan.VKTexture.NativePointer*"></a>
   <h4 id="Evergine_Vulkan_VKTexture_NativePointer" data-uid="Evergine.Vulkan.VKTexture.NativePointer">NativePointer</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the native pointer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -491,6 +493,105 @@
   <div><a class="xref" href="Evergine.Common.Graphics.GraphicsResource.html#Evergine_Common_Graphics_GraphicsResource_NativePointer">GraphicsResource.NativePointer</a></div>
   <h3 id="methods">Methods
   </h3>
+  <a id="Evergine_Vulkan_VKTexture_Blit_" data-uid="Evergine.Vulkan.VKTexture.Blit*"></a>
+  <h4 id="Evergine_Vulkan_VKTexture_Blit_WaveEngine_Bindings_Vulkan_VkCommandBuffer_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_Evergine_Common_Graphics_Texture_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_" data-uid="Evergine.Vulkan.VKTexture.Blit(WaveEngine.Bindings.Vulkan.VkCommandBuffer,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,Evergine.Common.Graphics.Texture,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32)">Blit(VkCommandBuffer, UInt32, UInt32, UInt32, UInt32, UInt32, Texture, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Copy a pixel region from source to destination texture with format conversion and preparing to present in swapchain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Blit(VkCommandBuffer commandBuffer, uint sourceX, uint sourceY, uint sourceZ, uint sourceMipLevel, uint sourceBaseArray, Texture destination, uint destinationX, uint destinationY, uint destinationZ, uint destinationMipLevel, uint destinationBasedArray, uint layerCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">WaveEngine.Bindings.Vulkan.VkCommandBuffer</span></td>
+        <td><span class="parametername">commandBuffer</span></td>
+        <td><p>The commandbuffer where execute.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">sourceX</span></td>
+        <td><p>U coord source texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">sourceY</span></td>
+        <td><p>V coord source texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">sourceZ</span></td>
+        <td><p>W coord source texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">sourceMipLevel</span></td>
+        <td><p>Source mip level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">sourceBaseArray</span></td>
+        <td><p>Source array index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Evergine.Common.Graphics.Texture.html">Texture</a></td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>Destination texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">destinationX</span></td>
+        <td><p>U coord destination texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">destinationY</span></td>
+        <td><p>V coord destination texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">destinationZ</span></td>
+        <td><p>W coord destination texture.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">destinationMipLevel</span></td>
+        <td><p>Destination mip level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">destinationBasedArray</span></td>
+        <td><p>Destination array index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">layerCount</span></td>
+        <td><p>Destination layer count.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Evergine_Vulkan_VKTexture_CopyTo_" data-uid="Evergine.Vulkan.VKTexture.CopyTo*"></a>
   <h4 id="Evergine_Vulkan_VKTexture_CopyTo_WaveEngine_Bindings_Vulkan_VkCommandBuffer_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_Evergine_Common_Graphics_Texture_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_" data-uid="Evergine.Vulkan.VKTexture.CopyTo(WaveEngine.Bindings.Vulkan.VkCommandBuffer,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,Evergine.Common.Graphics.Texture,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32)">CopyTo(VkCommandBuffer, UInt32, UInt32, UInt32, UInt32, UInt32, Texture, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)</h4>
   <div class="markdown level1 summary"><p>Copy a pixel region from source to destination texture.</p>

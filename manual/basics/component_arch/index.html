@@ -93,7 +93,7 @@
 <p><img src="images/class_inheritance_issue.png" alt="Class Inheritance Issue"></p>
 <h3 id="entities-as-an-aggregation-of-components">Entities as an aggregation of Components</h3>
 <p>To solve this issues, we have chosen the <strong>aggregation of components</strong> approach.
-In ths approach, the functionality is separated into individual componets that are mostly independent of one another. The old object hierarchy is replaced by an object (<code>Entity</code>) with a collection of independent components (derived from <code>Component</code>).</p>
+In ths approach, the functionality is separated into individual components that are mostly independent of one another. The old object hierarchy is replaced by an object (<code>Entity</code>) with a collection of independent components (derived from <code>Component</code>).</p>
 <p>Each object now only has the functionality that it needs. Any distinct new functionality is implemented by adding a new component.</p>
 <h2 id="entity-component-relationship">Entity-Component relationship</h2>
 <p><strong>Entities</strong> are the fundamental objects in Evergine that represent characters, lights, models and so on.
@@ -107,7 +107,7 @@ An Entity without any Component has no functionality (nothing will be rendered o
 <p>For instance: Every physics related components (RigidBody3D, BoxCollider3D, etc...) are internally registered into the PhysicManager3D when an Entity is spawned into the scene. This allows PhysicManager3D to gather and control all the physic information in the scene.</p>
 </div>
 <h3 id="summary-diagram">Summary Diagram</h3>
-<p>A <strong>Scene</strong> is composed for several <a href="entities/index.html"><strong>Entities</strong></a>. Each one has a collection of Components that give it the required functionality or data. Every component may be registered into the different <strong>SceneManagets</strong> of the Scene.</p>
+<p>A <strong>Scene</strong> is composed for several <a href="entities/index.html"><strong>Entities</strong></a>. Each one has a collection of Components that give it the required functionality or data. Every component may be registered into the different <strong>SceneManagers</strong> of the Scene.</p>
 <p>The following diagram gives an overview concerning this</p>
 <p><img src="images/component_arch.png" alt="Component Based Architecture"></p>
 <h2 id="in-this-section">In this section</h2>
