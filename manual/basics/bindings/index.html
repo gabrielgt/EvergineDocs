@@ -127,6 +127,16 @@
     // ... 
 }
 </code></pre>
+<h2 id="bind-collections">Bind Collections</h2>
+<p>If the [Bind] attribute is set on top of <code>List&lt;T&gt;</code> property, they will attempt to search a list of elements that elements that satisfy the dependency:</p>
+<pre><code class="lang-csharp">// Bind with the Transform component of the owner entity...
+[BindComponent]
+private Transform3D transform;
+
+// Bind a list with all Camera3D components of the entire scene...
+[BindComponent(source: BindComponentSource.Scene)]
+private List&lt;Camera3D&gt; sceneCameras;
+</code></pre>
 </article>
           </div>
           

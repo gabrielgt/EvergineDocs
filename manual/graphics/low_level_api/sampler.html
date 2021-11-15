@@ -78,9 +78,9 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="sampler">Sampler</h1>
 
-<p>Create a sampler-state object that encapsulates sampling information for a texture.</p>
+<p>A <strong>Sampler State</strong> is a low level object that encapsulates how a texture will be sampled in your application.</p>
 <h2 id="creation">Creation</h2>
-<p>To create a sampler, first you need to create the BufferDescription struct:</p>
+<p>To create a sampler, first you need to create the SamplerStateDescription struct:</p>
 <pre><code class="lang-csharp">// Linear clamp sampler state
 var samplerDescription = new SamplerStateDescription()
 {
@@ -110,52 +110,52 @@ var samplerState = this.graphicsContext.Factory.CreateSamplerState(ref samplerDe
 <tbody>
 <tr>
 <td><strong>Filter</strong></td>
-<td>TextureFilter</td>
+<td><code>TextureFilter</code></td>
 <td>Filtering method to use when sampling a texture.</td>
 </tr>
 <tr>
 <td><strong>AddressU</strong></td>
-<td>TextureAddressMode</td>
+<td><code>TextureAddressMode</code></td>
 <td>Method to use for resolving a u texture coordinate that is outside the 0 to 1 range.</td>
 </tr>
 <tr>
 <td><strong>AddressV</strong></td>
-<td>TextureAddressMode</td>
+<td><code>TextureAddressMode</code></td>
 <td>Method to use for resolving a v texture coordinate that is outside the 0 to 1 range.</td>
 </tr>
 <tr>
 <td><strong>AddressW</strong></td>
-<td>TextureAddressMode</td>
+<td><code>TextureAddressMode</code></td>
 <td>Method to use for resolving a w texture coordinate that is outside the 0 to 1 range.</td>
 </tr>
 <tr>
 <td><strong>MipLODBias</strong></td>
-<td>float</td>
+<td><code>float</code></td>
 <td>Offset from the calculated mipmap level. For example, if Direct3D calculates that a texture should be sampled at mipmap level 3 and MipLODBias is 2, then the texture will be sampled at mipmap level 5.</td>
 </tr>
 <tr>
 <td><strong>MaxAnisotropy</strong></td>
-<td>uint</td>
+<td><code>uint</code></td>
 <td>Clamping value used if D3D11_FILTER_ANISOTROPIC or D3D11_FILTER_COMPARISON_ANISOTROPIC is specified in Filter. Valid values are between 1 and 16.</td>
 </tr>
 <tr>
 <td><strong>ComparisonFunc</strong></td>
-<td>ComparisonFunction</td>
+<td><code>ComparisonFunction</code></td>
 <td>A function that compares sampled data against existing sampled data.</td>
 </tr>
 <tr>
 <td><strong>BorderColor</strong></td>
-<td>SamplerBorderColor</td>
+<td><code>SamplerBorderColor</code></td>
 <td>Border color.</td>
 </tr>
 <tr>
 <td><strong>MinLOD</strong></td>
-<td>float</td>
+<td><code>float</code></td>
 <td>Lower end of the mipmap range to clamp access to, where 0 is the largest and most detailed mipmap level and any level higher than that is less detailed.</td>
 </tr>
 <tr>
 <td><strong>MaxLOD</strong></td>
-<td>float</td>
+<td><code>float</code></td>
 <td>Upper end of the mipmap range to clamp access to, where 0 is the largest and most detailed mipmap level and any level higher than that is less detailed. This value must be greater than or equal to MinLOD.</td>
 </tr>
 </tbody>

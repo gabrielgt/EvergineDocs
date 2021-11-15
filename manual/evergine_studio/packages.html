@@ -80,26 +80,72 @@
 
 <p>Packages are Evergine extensions that add specific functionalities and assets to your project.</p>
 <p>When a package is added, its assets (textures, sounds, meshes, etc.), source code (components, behaviors, services, etc.) and its nuget dependencies are automatically added for you, so you can start using them.</p>
+<h2 id="packages-in-evergine-studio">Packages in Evergine Studio</h2>
+<p>To check wich packages are installed in your application, you just need to take a look to the Project Explorer tab in Evergine Studio, and inspect the Dependencies section:</p>
 <p><img src="Images/mrtk_package.png" alt="packages on evergine studio"></p>
 <h2 id="supported-packages">Supported packages</h2>
+<p>Evergine comes gives the possibility to extend your applications using different packages</p>
+<h3 id="evergine-core">Evergine Core</h3>
+<p><strong>Evergine.Core</strong> is the most important package in Evergine, and it is registered into your application by default. It gives your application all default <a href="../graphics/effects/builtin_effects.html">Effects</a>, <a href="../graphics/materials/index.html">Materials</a>, <a href="../graphics/textures/index.html">Textures</a>, <a href="../graphics/postprocessing_graph/index.html">PostProcessingGraph</a> and core functionality to start developing your project.</p>
+<p><img src="Images/evergine_core.png" alt="Evergine.Core package"></p>
+<h4 id="everginecore-package-information">Evergine.Core Package information</h4>
 <ul>
-<li><a href="https://github.com/EvergineTeam/MixedRealityToolkit">Mixed Reality Toolkit</a>
-<ul>
-<li>Id: Evergine.MRTK.Assets</li>
-<li>Latest Version: 2021.11.4.5-nightly</li>
+<li>Id: <strong>Evergine.Core</strong></li>
+<li>Latest Version: <em>This package is installed with the same version as used in your Evergine application</em></li>
 <li>NuGet Dependencies:
 <ul>
-<li>Evergine.Framework</li>
-<li>Evergine.MRTK</li>
+<li><strong>Evergine.Framework</strong></li>
 </ul>
 </li>
 </ul>
-</li>
-<li>Azure Remote Rendering - Comming soon</li>
-<li>CAD Formats - Comming soon</li>
-<li>Noesis - Comming soon</li>
-<li>Bing Maps - Comming soon</li>
+<h3 id="mixed-reality-toolkit">Mixed Reality Toolkit</h3>
+<p><a href="https://github.com/EvergineTeam/MixedRealityToolkit"><strong>Evergine.MRTK</strong></a> is a package that provides a set of components and features used to accelerate cross-platform XR application development in Evergine.
+Evergine.MRTK provides a set of basic building blocks for Evergine development on XR platforms such as:</p>
+<ul>
+<li>Microsoft HoloLens 2</li>
+<li>Windows Mixed Reality hreadsets</li>
+<li>OpenVR headsets (Oculus, HTC Vive, etc..)</li>
 </ul>
+<p><img src="Images/MRTK_Examples.png" alt="Evergine.MRTK"></p>
+<h4 id="everginemrtk-package-information">Evergine.MRTK Package information</h4>
+<ul>
+<li>Id: <strong>Evergine.MRTK.Assets</strong></li>
+<li>Latest Version: <strong>2021.11.4.5-nightly</strong></li>
+<li>NuGet Dependencies:
+<ul>
+<li><strong>Evergine.Framework</strong></li>
+<li><strong>Evergine.MRTK</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="upcoming-packages">Upcoming packages</h3>
+<p>Evergine is on continuous development, and more upcoming packages are comming:</p>
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Azure Remote Rendering</strong></td>
+<td>This package provides integration of Evergine with <a href="https://azure.microsoft.com/es-es/services/remote-rendering/">Azure Remote Rendering</a>, allowing to render on cloud complex industrial scenes and reproduce on portable devices or HoloLens.</td>
+</tr>
+<tr>
+<td><strong>Noesis GUI</strong></td>
+<td>Using <a href="https://www.noesisengine.com/">NoesisGUI</a> with Evergine allows you to create appealing User Interfaces using powerful XAML tools like Microsoft Expression Blend.</td>
+</tr>
+<tr>
+<td><strong>CAD Formats</strong></td>
+<td>Take your industrial CAD/3D model and bring it into your Evergine application.</td>
+</tr>
+<tr>
+<td><strong>Bing Maps</strong></td>
+<td>Provides <a href="https://www.bingmapsportal.com/">Bing Maps</a> integration with Evergine, that allows you to utilize Bing Maps 3D mapping data in your application.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="add-a-new-package">Add a new package</h2>
 <p>Unfortunately, there is no way right now from Evergine Studio to automatically search and install an extension in a project. For now, a slightly more manual steps must be done:</p>
 <ol>
@@ -120,7 +166,10 @@
 <li>Finally, add the nuget dependencies to your root project, the one that contains the <code>EvergineContent.cs</code> file.</li>
 </ol>
 <h2 id="customize-assets">Customize assets</h2>
-<p>To modify an asset included in the package, just open it in the project explorer, modify it, and save. Automatically a new copy of the asset will be created on your local folder project, overwriting the one provided by the package.</p>
+<p>By default, all assets included in a package cannot be modified. This is indicated by this lock icon: <img src="Images/locked_icon.png" alt="lock icon">.</p>
+<p>However, you can modify an asset included in the package. When you modify a package asset, and try to save it, the following message apperas, indicating if you want to create a new copy of this asset in your project:</p>
+<p><img src="Images/package_locked_save.png" alt="confirm"></p>
+<p>Automatically a new copy of the asset will be created on your local folder project, overwriting the one provided by the package. By doing this allows you to modify or adapt Evergine core assets to your application requirements</p>
 <p><img src="Images/asset_edit.png" alt="Asset customization"></p>
 </article>
           </div>

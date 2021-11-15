@@ -78,7 +78,8 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="texture">Texture</h1>
 
-<p>A texture stores texel information.</p>
+<p>A <strong>Texture</strong> object in a low-level API is a 2D (even 1D and 3d textures exists) used to provide details to objects or to map information.</p>
+<p>Please, reade the <a href="../textures/index.html">Graphics Texture</a> section for high level asset and how to use in Evergine Studio.</p>
 <h2 id="creation">Creation</h2>
 <p>To create a texture, first you need to create the TextureDescription struct:</p>
 <pre><code class="lang-csharp">uint expectedSize = 256;
@@ -114,62 +115,62 @@ var texture = this.GraphicsContext.Factory.CreateTexture(ref description);
 <tbody>
 <tr>
 <td><strong>Type</strong></td>
-<td>TextureType</td>
+<td><code>TextureType</code></td>
 <td>Texture type TextureType.</td>
 </tr>
 <tr>
 <td><strong>Format</strong></td>
-<td>PixelFormat</td>
+<td><code>PixelFormat</code></td>
 <td>Texture format PixelFormat.</td>
 </tr>
 <tr>
 <td><strong>Width</strong></td>
-<td>uint</td>
+<td><code>uint</code></td>
 <td>Texture width (in texels).</td>
 </tr>
 <tr>
 <td><strong>Height</strong></td>
-<td>uint</td>
+<td><code>uint</code></td>
 <td>Texture height (in texels).</td>
 </tr>
 <tr>
 <td><strong>Depth</strong></td>
-<td>uint</td>
+<td><code>uint</code></td>
 <td>Texture Depth (in texels).</td>
 </tr>
 <tr>
 <td><strong>ArraySize</strong></td>
-<td>uint</td>
+<td><code>uint</code></td>
 <td>Number of textures in the texture array.</td>
 </tr>
 <tr>
 <td><strong>Faces</strong></td>
-<td>uint</td>
+<td><code>uint</code></td>
 <td>Number of texture faces useful in TextureCube and TextureCubeArray.</td>
 </tr>
 <tr>
 <td><strong>MipLevels</strong></td>
-<td>uint</td>
+<td><code>uint</code></td>
 <td>The maximum number of mipmap levels in the texture.</td>
 </tr>
 <tr>
 <td><strong>Flags</strong></td>
-<td>TextureFlags</td>
+<td><code>TextureFlags</code></td>
 <td>The texture flags TextureFlags.</td>
 </tr>
 <tr>
 <td><strong>Usage</strong></td>
-<td>ResourceUsage</td>
+<td><code>ResourceUsage</code></td>
 <td>Value that identifies how the texture is to be read from and written to.</td>
 </tr>
 <tr>
 <td><strong>SampleCount</strong></td>
-<td>TextureSampleCount</td>
+<td><code>TextureSampleCount</code></td>
 <td>The number of samples in this texture.</td>
 </tr>
 <tr>
 <td><strong>CpuAccess</strong></td>
-<td>ResourceCpuAccess</td>
+<td><code>ResourceCpuAccess</code></td>
 <td>Flags ResourceCpuAccess to specify the type of CPU access allowed.</td>
 </tr>
 </tbody>
@@ -333,7 +334,7 @@ The most common format are:</p>
 </table>
 <div class="NOTE">
 <h5>Note</h5>
-<p>See the PixelFormat enum at Evergine.Common namespace for the complete list.</p>
+<p>See the <a class="xref" href="../../../api/Evergine.Common.Graphics.PixelFormat.html">PixelFormat</a> enum at Evergine.Common namespace for the complete list.</p>
 </div>
 <h3 id="textureflags">TextureFlags</h3>
 <p>Identifies how to bing a texture.</p>
