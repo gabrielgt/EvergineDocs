@@ -1,2 +1,2 @@
 # XR Devices
-Comming soon
+Coming soon

@@ -1,6 +1,6 @@
 # Extensions
 ---
-Comming soon
+Coming soon
 
 ## In this section
 * [NoesisGUI](noesisgui.md)

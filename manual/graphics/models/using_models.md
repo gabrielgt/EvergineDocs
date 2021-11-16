@@ -1,5 +1,5 @@
 # Using Models
-Comming soon
+Coming soon
 
 Aquí se describe cómo se usan los modelos en tu aplicación:
 - Como se carga un modelo en tu escena en Evergine Studio

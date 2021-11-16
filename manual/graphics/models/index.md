@@ -1,6 +1,6 @@
 # Models
 ---
-Comming soon
+Coming soon
 
 Hablar del concepto de modelo, qué es un asset, y que está compuesto de meshes, animaciones, nodos, etc...
 

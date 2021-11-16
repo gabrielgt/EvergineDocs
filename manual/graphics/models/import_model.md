@@ -1,5 +1,5 @@
 # Import a Model
-Comming soon
+Coming soon
 
 Explicar cómo se importa un modelo, qué formatos se soporta (fbx, 3ds,  obj, dae) y mención especial a glTF (glb, gltf)
 

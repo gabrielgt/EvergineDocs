@@ -1,5 +1,5 @@
 # Using Models
-Comming soon
+Coming soon
 
 Aquí se describe cómo se usan los sonidos en tu aplicación:
 - Como se carga un asset de sonido en tu escena en Evergine Studio

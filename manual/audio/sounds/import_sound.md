@@ -1,4 +1,4 @@
 # Import a Sound
-Comming soon
+Coming soon
 
 Explicar cómo se importa un sonido, qué formatos se soporta.

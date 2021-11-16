@@ -1,2 +1,2 @@
 # Line Batch
-Comming soon
+Coming soon

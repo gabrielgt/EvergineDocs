@@ -1,6 +1,6 @@
 # Animation
 ---
-Comming soon
+Coming soon
 
 ## In this section
 * [Animation Clip](animation_clip.md)

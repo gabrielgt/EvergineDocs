@@ -1,6 +1,6 @@
 # XR (Cross-Reality)
 ---
-Comming soon
+Coming soon
 
 ## In this section
 * [General overview](overview.md)

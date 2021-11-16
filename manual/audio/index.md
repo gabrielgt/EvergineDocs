@@ -1,6 +1,6 @@
 # Audio
 ---
-Comming soon
+Coming soon
 
 ## In this section
 * [Sound Components](sound_components.md)

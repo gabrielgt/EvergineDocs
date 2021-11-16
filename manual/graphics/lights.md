@@ -92,7 +92,7 @@ For contrary, if you create regular lights, you could use the basic light proper
 There are different types of lights, each one useful for a different scenario. In general terms, lights are divided in two general categories:
 * **Directional Lights:** These lights have unlimited boundaries, and every object is affected by this light type.
 * **Volume Lights:** The light influence is delimited by a range.
-* **Area Lights:**  A subtype of volume lights that emulate lights comming from an area instead of a point in the space.
+* **Area Lights:**  A subtype of volume lights that emulate lights coming from an area instead of a point in the space.
 
 ### Directional Lights / Photometric Directional Light
 

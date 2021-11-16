@@ -1,2 +1,2 @@
 # XR Platform
-Comming soon
+Coming soon

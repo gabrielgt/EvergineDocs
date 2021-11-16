@@ -1,2 +1,2 @@
 # Project properties & Manage profiles
-Comming soon
+Coming soon
