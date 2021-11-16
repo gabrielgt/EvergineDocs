@@ -6,6 +6,6 @@ Please, note that some dependencies require admin rights and this will be requir
 
 ![Graphics](images/InstallDependencies.jpg)
 
-Once installation process is completed, you will be ready to launch Evergine. See [Evergine Launcher](../evergine_launcher/index) for more information.
+Once installation process is completed, you will be ready to launch Evergine with the Evergine Launcher. First thing you can do is [creating a project with Evergine Launcher](../evergine_launcher/create_project.md).
 
 ![Graphics](images/InstallLaunch.jpg)

@@ -13,7 +13,6 @@ You can read it from start to finish, or use it as a reference
 ## In this section
 
 - [Getting started](get_started/index.md)
-- [Evergine Launcher](evergine_launcher/index.md)
 - [Evergine Studio](evergine_studio/index.md)
 - [Basics](basics/index.md)
 - [Graphics](graphics/index.md)
