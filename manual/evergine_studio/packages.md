@@ -45,7 +45,7 @@ Evergine.MRTK provides a set of basic building blocks for Evergine development o
 
 ### Upcoming packages
 
-Evergine is on continuous development, and more upcoming packages are comming:
+Evergine is on continuous development, and more upcoming packages are coming:
 
 | Package | Description | 
 | --- | --- |
