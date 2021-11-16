@@ -16,6 +16,9 @@ Here you can find the the Official Manual, the API Documentation, and the offici
 
 ## Support
 
-In this section you can find the **official Evergine support** that includes Comunity support where you can create a ticket and vote for existing tickets, **Premium support Portal** where you can create priority tickets that will be resolve in less to 48 hours for an Evergine team member (Only available if you contract Premium support service) and **access to Evergine Source code** (Only available if you contract Source code service).
+In this section you can find the **official Evergine support** that includes:
+-  Comunity support where you can create a ticket and vote for existing tickets.
+- **Priority support Portal** where you can create priority tickets that will be resolve in less to 48 hours for an Evergine team member (only available if you contract _Priorty Support_ service).
+- **Access to Evergine Source code** (only available if you contract _Source Code Access_ service).
 
 ![Support](images/Support.jpg)
