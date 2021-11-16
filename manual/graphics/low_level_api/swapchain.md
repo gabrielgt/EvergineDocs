@@ -38,16 +38,16 @@ swapChain.VerticalSync = false;
 
 | Property | Type | Description |
 |--------| ----------- |----------- |
-| **SurfaceInfo** | SurfaceInfo | Surface information. |
-| **Width** | uint | The swapchain buffers width. |
-| **Height** | uint | The swapchain buffers height. |
-| **RefreshRate** | uint | The screen refresh rate. |
-| **ColorTargetFormat** | PixelFormat | The pixel format of the color target. |
-| **ColorTargetFlags** | TextureFlags | The color texture flags for binding to pipeline stages. The flags ca be combined by a logical OR. |
-| **DepthStencilTargetFormat** | PixelFormat | The pixel format of the depthstencil target. |
-| **DepthStencilTargetFlags** | TextureFlags | The depth texture flags for binding to pipeline stages. The flags ca be combined by a logical OR. |
-| **SampleCount** | TextureSampleCount | The sampler count of this swapchain. |
-| **IsWindowed** | bool | Whether the output is in windowed mode. |
+| **SurfaceInfo** | `SurfaceInfo` | Surface information. |
+| **Width** | `uint` | The swapchain buffers width. |
+| **Height** | `uint` | The swapchain buffers height. |
+| **RefreshRate** | `uint` | The screen refresh rate. |
+| **ColorTargetFormat** | `PixelFormat` | The pixel format of the color target. |
+| **ColorTargetFlags** | `TextureFlags` | The color texture flags for binding to pipeline stages. The flags ca be combined by a logical OR. |
+| **DepthStencilTargetFormat** | `PixelFormat` | The pixel format of the depthstencil target. |
+| **DepthStencilTargetFlags** | `TextureFlags` | The depth texture flags for binding to pipeline stages. The flags ca be combined by a logical OR. |
+| **SampleCount** | `TextureSampleCount` | The sampler count of this swapchain. |
+| **IsWindowed** | `bool` | Whether the output is in windowed mode. |
 
 ### TextureFlags
 

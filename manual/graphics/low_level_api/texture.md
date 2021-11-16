@@ -1,6 +1,8 @@
 # Texture
 
-A texture stores texel information.
+A **Texture** object in a low-level API is a 2D (even 1D and 3d textures exists) used to provide details to objects or to map information.
+
+Please, reade the [Graphics Texture](../textures/index.md) section for high level asset and how to use in Evergine Studio.
 
 ## Creation
 
@@ -33,18 +35,18 @@ var texture = this.GraphicsContext.Factory.CreateTexture(ref description);
 
 | Property | Type | Description |
 |--------| ----------- |----------- |
-| **Type** | TextureType | Texture type TextureType. |
-| **Format** | PixelFormat | Texture format PixelFormat. |
-| **Width** | uint | Texture width (in texels). |
-| **Height** | uint | Texture height (in texels). |
-| **Depth** | uint | Texture Depth (in texels). |
-| **ArraySize** | uint | Number of textures in the texture array. |
-| **Faces** | uint | Number of texture faces useful in TextureCube and TextureCubeArray. |
-| **MipLevels** | uint | The maximum number of mipmap levels in the texture. |
-| **Flags** | TextureFlags | The texture flags TextureFlags. |
-| **Usage** | ResourceUsage | Value that identifies how the texture is to be read from and written to. |
-| **SampleCount** | TextureSampleCount | The number of samples in this texture. |
-| **CpuAccess** | ResourceCpuAccess | Flags ResourceCpuAccess to specify the type of CPU access allowed. |
+| **Type** | `TextureType` | Texture type TextureType. |
+| **Format** | `PixelFormat` | Texture format PixelFormat. |
+| **Width** | `uint` | Texture width (in texels). |
+| **Height** | `uint` | Texture height (in texels). |
+| **Depth** | `uint` | Texture Depth (in texels). |
+| **ArraySize** | `uint` | Number of textures in the texture array. |
+| **Faces** | `uint` | Number of texture faces useful in TextureCube and TextureCubeArray. |
+| **MipLevels** | `uint` | The maximum number of mipmap levels in the texture. |
+| **Flags** | `TextureFlags` | The texture flags TextureFlags. |
+| **Usage** | `ResourceUsage` | Value that identifies how the texture is to be read from and written to. |
+| **SampleCount** | `TextureSampleCount` | The number of samples in this texture. |
+| **CpuAccess** | `ResourceCpuAccess` | Flags ResourceCpuAccess to specify the type of CPU access allowed. |
 
 ### TextureType
 
@@ -95,7 +97,7 @@ The most common format are:
 | **R32G32B32A32_UInt**    | A four-component, 128-bit unsigned-integer format that supports 32 bits per channel including alpha. 1|
 
 > [!Note]
-> See the PixelFormat enum at Evergine.Common namespace for the complete list.
+> See the [PixelFormat](xref:Evergine.Common.Graphics.PixelFormat) enum at Evergine.Common namespace for the complete list.
 
 ### TextureFlags
 

@@ -28,7 +28,7 @@
             "src/Engine/Rendering/Evergine.WebGL/Evergine.WebGL.csproj",
             "src/Extensions/Evergine.NoesisGUI/Evergine.NoesisGUI.csproj",
             "src/Extensions/Evergine.Vuforia/Evergine.Vuforia/Evergine.Vuforia.csproj",
-            "src/Extensions/Evergine.Vuforia/VuforiaSharp/VuforiaSharp.csproj",
+            "src/Extensions/Evergine.Vuforia/VuforiaSharp/Evergine.VuforiaSharp.csproj",
             "src/Extensions/Evergine.Networking/Evergine.Networking.csproj"
           ],
           "src": "../"
@@ -41,45 +41,23 @@
   "build": {
     "content": [
       {
-        "files": [
-          "api/**.yml",
-          "api/index.md"
-        ]
+        "files": ["api/**.yml", "api/index.md"]
       },
       {
-        "files": [
-          "manual/**.md",
-          "manual/**/toc.yml",
-          "toc.yml",
-          "*.md"
-        ],
-        "exclude": [
-          "obj/**",
-          "_site/**"
-        ]
+        "files": ["manual/**.md", "manual/**/toc.yml", "toc.yml", "*.md"],
+        "exclude": ["obj/**", "_site/**"]
       }
     ],
     "resource": [
       {
-        "files": [
-          "manual/**/images/**",
-		      "images/**"
-        ],
-        "exclude": [
-          "obj/**",
-          "_site/**"
-        ]
+        "files": ["manual/**/images/**", "images/**"],
+        "exclude": ["obj/**", "_site/**"]
       }
     ],
     "overwrite": [
       {
-        "files": [
-          "api/**.md"
-        ],
-        "exclude": [
-          "obj/**",
-          "_site/**"
-        ]
+        "files": ["api/**.md"],
+        "exclude": ["obj/**", "_site/**"]
       }
     ],
     "dest": "build/DocOnline",
