@@ -11,4 +11,12 @@ The project configuration windows will be opened. Then you can choose the _Proje
 
 ![Configure new project](images/ConfigureProject.jpg)
 
+## Open your new Evergine project
 Finally, click on the _Create_ button on the bottom right side of the configuration panel to create and open your project in Evergine Studio.
+
+![Evergine Studio](images/new_project.jpg)
+
+
+## Next steps
+
+Larn how to [open your Evergine project in Visual Studio](../get_started/open_in_vs.md)

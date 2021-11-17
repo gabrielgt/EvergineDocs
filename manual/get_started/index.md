@@ -2,7 +2,7 @@
 
 ---
 
-![Graphics](images/EvergineStudio.jpg)
+![Graphics](../evergine_studio/images/evergineStudio.jpg)
 
 Welcome to the Official **Evergine** documentation website. Here you will find everything you need to start creating 3D application from scratch.
 
