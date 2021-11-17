@@ -2,8 +2,6 @@
 ---
 Coming soon
 
-Hablar del concepto de modelo, qué es un asset, y que está compuesto de meshes, animaciones, nodos, etc...
-
 ## In this section
 * [Import Models](import_model.md)
 * [Using Model](using_models.md)
