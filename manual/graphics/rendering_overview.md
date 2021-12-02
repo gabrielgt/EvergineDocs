@@ -1,3 +1,3 @@
-# Lights
+# Rendering Overview
 
-Comming soon
+Coming soon

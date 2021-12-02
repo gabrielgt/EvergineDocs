@@ -1,2 +1,2 @@
 # Sound Components
-Comming soon
+Coming soon

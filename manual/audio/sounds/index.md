@@ -2,7 +2,7 @@
 
 ---
 
-Comming soon
+Coming soon
 
 Hablar del concepto de sonido, describir que es un tipo de asset, y qeu está compuesto por un buffer de audio y tal :)
 

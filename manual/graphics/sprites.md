@@ -1,2 +1,2 @@
 # Sprites
-Comming soon
+Coming soon

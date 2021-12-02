@@ -4,7 +4,7 @@ A Buffer represents a block of memory that can be used in GPU operations. You ca
 
 ## Creation
 
-To create a buffer first you need to construct the BufferDescription object:
+To create a buffer, first you need to create the BufferDescription struct:
 
 ```csharp
 
@@ -27,7 +27,17 @@ BufferDescription bufferDescription = new BufferDescription(expectedSize, expect
 Buffer buffer = this.GraphicsContext.Factory.CreateBuffer(vertexData, ref bufferDescription);
 ```
 
-## ResourceUsage
+### BufferDescription
+
+| Property | Type | Description |
+|--------| ----------- |----------- |
+| **SizeInBytes** | `uint` | Retrieves or sets the size of the new buffer. |
+| **Flags** | `BufferFlags` | Buffer flags describing buffer type. |
+| **CpuAccess** | `ResourceCpuAccess` | Specifies the types of CPU access allowed for this buffer. |
+| **Usage** | `ResourceUsage` | Usage of this buffer. |
+| **StructureByteStride** | `int` | The structure byte stride. |
+
+### ResourceUsage
 
 Identifies expected resource usage during rendering.
 
@@ -38,7 +48,7 @@ Identifies expected resource usage during rendering.
 | **Dynamic**    | A resource that is accessible by both the GPU (read only) and the CPU (write only). |
 | **Staging**    | A resource that supports data transfer (copy) from the GPU to the CPU. |
 
-## BufferFlags
+### BufferFlags
 
 Identifies how to bind a buffer. This flag gives a hint to the graphics API of how this buffer will be used.
 
@@ -55,9 +65,20 @@ Identifies how to bind a buffer. This flag gives a hint to the graphics API of h
 | **BufferStructured**    | Bind a buffer as structured buffer resoruce. |
 | **IndirectBuffer**    | Bind a buffer as indirect buffer to the input-assembler stage. |
 
+### ResourceCpuAccess
+
+Specifies the types of CPU access allowed for a resource.
+
+| ResourceCpuAccess |  Description |
+|--------| ----------- |
+| **None**    | Not specified, **Default value**. |
+| **Write**    | The CPU can be write this resource. |
+| **Read**    | The CPU can be read this resources. |
+
 ## Using Buffers
 
 ### How to update a Default Buffer (Buffer created with ResourceUsage.Default)
+
 In that case, you just need to execute the `GraphicsContext.UpdateBufferData(...)` method:
 
 ```csharp
@@ -78,6 +99,7 @@ this.GraphicsContext.UpdateBufferData(buffer, vertexData);
 ```
 
 ### How to copy a Default Buffer into another Default Buffer
+
 In that case you need to execute the` CommandBuffer.CopyBufferDataTo(...)` method. To do this, you need to obtains a `CommandBuffer` instance and enqueue the copy command:
 
 ```csharp
@@ -124,6 +146,7 @@ queue.Dispose();
 ```
 
 ### How to read a Default Buffer content (by using a Staging Buffer)
+
 In order to read a Default Buffer, you need to copy previously the content into a Staging Buffer. Once you do this, you could map the Stagging Buffer to CPU Memory and access the data without problems:
 
 ```csharp
@@ -183,6 +206,7 @@ queue.Dispose();
 ```
 
 ### How to update a Dynamic Buffer from CPU
+
 A Dynamic Buffer could be updated directly from CPU. To do this, you only need to map a Buffer and write the data directly to the mapped pointer:
 
 ```csharp

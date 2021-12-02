@@ -1,6 +1,6 @@
 # Physics
 ---
-Comming soon
+Coming soon
 
 ## In this section
 * [PhysicManager and Bullet](physicmanager_bullet.md)

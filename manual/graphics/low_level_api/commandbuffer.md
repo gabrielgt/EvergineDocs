@@ -1,3 +1,3 @@
 # CommnadBuffer
 
-Comming soon
+Coming soon

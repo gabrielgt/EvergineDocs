@@ -115,4 +115,4 @@ OnDetach is called when an element is detached
 
 This method is invoke when the element is defintively removed and we want to destroy or dispose objects.
 * A destroyed element cannot be attached again, and it is finally disposed.
-* A good practice is to remove all interanl data of this component (tables, collections, etc...)
+* A good practice is to remove all internal data of this component (tables, collections, etc...)

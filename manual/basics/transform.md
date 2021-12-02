@@ -101,7 +101,7 @@ You can subscribe to transform events to be notified when one of its properties 
 | Method | Description |
 |--- | --- |
 | **LookAt(targetPosition, up)** | Rotates the entity to point to the target position and up vector. All calculations are made in **world space**. |
-| **LOcalLookAt(targetPosition, up)** | Rotates the entity to point to the target position and up vector. All calculations are made in **local space**. |
+| **LocalLookAt(targetPosition, up)** | Rotates the entity to point to the target position and up vector. All calculations are made in **local space**. |
 | **SetLocalTransform (localPosition, localOrientation, localScale)** | Compute the local transform and update all local space properties. |
 
 > [!TIP]

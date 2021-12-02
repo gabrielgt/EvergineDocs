@@ -1,2 +1,2 @@
 # Vuforia
-Comming soon
+Coming soon

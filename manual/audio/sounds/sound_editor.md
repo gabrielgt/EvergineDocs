@@ -1,2 +1,2 @@
 # Sound Editor
-Comming soon
+Coming soon
