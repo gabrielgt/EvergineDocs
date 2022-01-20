@@ -69,7 +69,7 @@ If you modify the collection of used packages, Evergine Studio will be reloaded 
 > [!Note]
 > Notice that to use packages that have third NuGet package dependencies, you still need to install them by hand. Add the nuget dependencies to your root project, the one that contains the `EvergineContent.cs` file.
 
-### Protected add-ons
+### Core add-ons
 Some packages like _Evergine.Core_ are required to be synchronized with project's Evergine version, so they are considered as special packages and can't be managed using this panel.
 
 ![evergine studio packages manager](Images/package_manager_protected.png)
