@@ -52,8 +52,6 @@ public class MyScene : Scene
             .AddComponent(new BillboardRenderer());
 
         this.Managers.EntityManager.Add(billboard);
-
-        // Add camera ...
     }
 }
 ```

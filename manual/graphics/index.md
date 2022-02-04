@@ -21,7 +21,7 @@ This section explains how to use Evergine for graphics and rendering.
 * [Particles](particles.md)
 * [Effects](effects/index.md)
 * [Environment](environment.md)
-* [Line Batch](linebatch.md)
+* [Line Batch](linebatch/index.md)
 * [Lines 3D](lines_3d.md)
 * [Sprites](sprites.md)
 * [Billboards](billboard/index.md)
