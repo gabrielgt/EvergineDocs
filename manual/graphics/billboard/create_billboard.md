@@ -49,7 +49,10 @@ public class MyScene : Scene
                 Sampler = linearClampSampler,
                 BillboardType = BillboardType.Axial_Orientation,
             })
-            .AddComponent(new BillboardRenderer());
+            .AddComponent(new BillboardRenderer()
+            {
+                Layer = layer,
+            });
 
         this.Managers.EntityManager.Add(billboard);
     }
