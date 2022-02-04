@@ -77,9 +77,9 @@ this.RenderManager.LineBatch3D.DrawBoundingSphere(new BoundingSphere(Vector3.Zer
 ``` 
 ![BoundingSphere](images/sphere.jpg)
 
-**DrawBox**
+**DrawRectangle**
 ```csharp
-this.RenderManager.LineBatch3D.DrawBox(Vector3.Zero, Vector3.One, Color.White);
+this.RenderManager.LineBatch3D.DrawRectangle(Vector3.Zero, Vector3.One, Color.White);
 ``` 
 ![Box](images/box.jpg)
 
