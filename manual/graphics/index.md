@@ -24,5 +24,5 @@ This section explains how to use Evergine for graphics and rendering.
 * [Line Batch](linebatch.md)
 * [Lines 3D](lines_3d.md)
 * [Sprites](sprites.md)
-* [Billboards](billboards.md)
+* [Billboards](billboard/index.md)
 * [Low-level API](low_level_api/index.md)
